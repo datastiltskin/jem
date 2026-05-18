@@ -1,0 +1,72 @@
+id: sat
+name: Securities Appellate Tribunal
+name_hindi: प्रतिभूति अपीलीय अधिकरण
+abbreviation: SAT
+aliases:
+  - Securities Appellate Tribunal
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Appellate
+
+created_year: 1995
+# SEBI Act 1992 Chapter VIA inserted by Securities Laws (Amendment) Act 1995.
+
+operational_status: Active
+
+statutory_basis: >
+  Securities and Exchange Board of India Act 1992, Section 15K;
+  Pension Fund Regulatory and Development Authority Act 2013, Section 44;
+  Insurance Regulatory and Development Authority Act 1999, Section 110D
+
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+    - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: "5 years or until age 70, whichever is earlier — SEBI Act 1992 s.15M as amended by TRA 2021"
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+  # MoF — Department of Economic Affairs (DEA), not Revenue.
+  # SAT under DEA demand head (capital markets); distinct from ITAT/CESTAT.
+  # ⚠ VERIFY: confirm entity id 'ministry_of_finance' exists in graph.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+data_quality: partial
+data_quality_notes: >
+  created_year 1995 (Securities Laws Amendment Act 1995 — SAT constituted).
+  Statutory basis lists three Acts; SEBI Act 1992 is primary. PFRDA (2014)
+  and IRDAI jurisdiction added subsequently — verify current IRDAI amendment.
+  ministry_responsible 'ministry_of_finance' — DEA demand head, not Revenue;
+  verify in graph. case_volume null — SAT Annual Report in §3/§7.
+
+sources:
+  - label: "SEBI Act 1992 — SEBI Official Website"
+    url: https://www.sebi.gov.in/legal/acts/aug-1992/the-securities-and-exchange-board-of-india-act-1992_2101.html
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  - label: "Tribunals Reforms Act 2021 — India Code"
+    url: https://india-code.nic.in/acts-detail/MjY5MzQ=
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "SAT — Official Website"
+    url: https://sat.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

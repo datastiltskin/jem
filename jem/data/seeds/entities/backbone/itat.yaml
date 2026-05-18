@@ -1,0 +1,68 @@
+id: itat
+name: Income Tax Appellate Tribunal
+name_hindi: आयकर अपीलीय अधिकरण
+abbreviation: ITAT
+aliases:
+  - Income Tax Appellate Tribunal
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Appellate
+
+created_year: 1941
+# Established 25 January 1941 under Income Tax Act 1922 (Finance Act 1939,
+# s.5A). Continued under Income Tax Act 1961 s.252.
+
+operational_status: Active
+
+statutory_basis: "Income Tax Act 1961, Section 252"
+
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+    - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: "4 years or until age 70, whichever is earlier — Tribunals Reforms Act 2021, s.3(2)"
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+  # MoF — Department of Revenue / CBDT demand head.
+  # ⚠ VERIFY: confirm entity id 'ministry_of_finance' exists in graph.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+data_quality: partial
+data_quality_notes: >
+  created_year 1941 (founding under IT Act 1922); 1961 (current statute) also
+  defensible — maintainer to decide policy. 63+ benches across India.
+  ministry_responsible 'ministry_of_finance' assumed — verify in graph.
+  case_volume and judge_strength null — ITAT Annual Report in §3/§7.
+
+sources:
+  - label: "Income Tax Act 1961 — Income Tax Department"
+    url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  - label: "Tribunals Reforms Act 2021 — India Code"
+    url: https://india-code.nic.in/acts-detail/MjY5MzQ=
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "ITAT — Official Website"
+    url: https://itat.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

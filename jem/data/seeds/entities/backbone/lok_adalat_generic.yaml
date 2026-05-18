@@ -1,0 +1,58 @@
+id: lok_adalat_generic
+name: Lok Adalat
+name_hindi: लोक अदालत
+aliases:
+  - People's Court
+  - Lok Adalat
+
+type: ADRBody
+cluster: tribunals_adr
+level_of_government: Shared_CentralState
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Original
+    - Special
+
+created_year: 1987
+operational_status: Active
+
+statutory_basis: "Legal Services Authorities Act 1987, Section 19"
+# s.21: Award deemed decree of civil court — final and binding; no appeal.
+# Permanent Lok Adalat (public utility services): LSA Act s.22A–22E.
+
+appointment: null
+
+funding:
+  primary_source: Mixed
+  ministry_responsible: null
+  # NALSA National Legal Aid Fund (Central) + State/District Legal Aid Funds.
+
+audit:
+  audited_by: null
+  audit_type: None
+  audit_report_public: false
+
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+  removal_mechanism: null
+  # Award final and binding — no appeal (s.21(2)).
+  # Constitutional challenge only: HC writ under Article 226/227.
+
+data_quality: partial
+data_quality_notes: >
+  Generic entity for the Lok Adalat institution. Individual sessions not
+  modelled separately. Permanent Lok Adalat (s.22A–22E) may warrant a
+  separate entity — Phase-2. No AppealableTo edge from this entity.
+  Designated by nalsa and tn_slsa in relationship files.
+
+sources:
+  - label: "Legal Services Authorities Act 1987 — India Code"
+    url: https://india-code.nic.in/acts-detail/NzI2
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "NALSA — Lok Adalat"
+    url: https://nalsa.gov.in/lok-adalat
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

@@ -1,0 +1,65 @@
+id: cat
+name: Central Administrative Tribunal
+name_hindi: केन्द्रीय प्रशासनिक अधिकरण
+abbreviation: CAT
+aliases:
+  - Central Administrative Tribunal
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Original
+    - Appellate
+
+created_year: 1985
+operational_status: Active
+
+statutory_basis: "Administrative Tribunals Act 1985, Section 4"
+
+appointment:
+  nominates: central_government
+  formally_appoints: president_india
+  consulted:
+    - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: "4 years or until age 70, whichever is earlier — Tribunals Reforms Act 2021, s.3(2)"
+  reappointment_possible: false
+  removal_authority: president_india
+  removal_requires_parliament: false
+  removal_independent_committee: true
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_personnel_dopt
+  # ⚠ VERIFY: confirm entity id 'ministry_personnel_dopt' exists in graph.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+data_quality: partial
+data_quality_notes: >
+  Appointment block verified against AT Act 1985 and TRA 2021.
+  Pre-2021 tenure was 5 years or age 65/62 — TRA 2021 now governs.
+  ministry_responsible 'ministry_personnel_dopt' assumed — verify in graph.
+  case_volume and judge_strength null — CAT Annual Report or DoJ data in §3/§7.
+
+sources:
+  - label: "Administrative Tribunals Act 1985 — India Code"
+    url: https://india-code.nic.in/acts-detail/NzAx
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "Tribunals Reforms Act 2021 — India Code"
+    url: https://india-code.nic.in/acts-detail/MjY5MzQ=
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "DoPT — Central Administrative Tribunal"
+    url: https://dopt.gov.in/cat
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

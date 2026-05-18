@@ -1,0 +1,105 @@
+id: hc_madras_bench_madurai
+name: Madurai Bench of Madras High Court
+abbreviation: MADR
+# ⚠ Verify official abbreviation — 'MADR' inherited from parent stub.
+type: HighCourtBench
+cluster: constitutional_courts
+level_of_government: State
+
+jurisdiction_scope:
+  states_covered:
+    - TN
+  uts_covered: []
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+    - Appellate
+    - Writ
+
+created_year: 1948
+# ⚠ VERIFY: confirm from Madras HC gazette notification / admin order.
+operational_status: Active
+
+constitutional_basis: "Constitution of India, Article 214"
+statutory_basis: "High Courts Act 1861 — bench constituted by CJ administrative order under Letters Patent 1865"
+
+parent_hc: hc_madras
+
+appointment:
+  nominates: collegium_hc_appointment
+  recommends: collegium_hc_appointment
+  consulted:
+    - governor_state
+  consultation_binding: true
+  formally_appoints: president_india
+  criteria_public: false
+  tenure: "Until age 62 (Article 217)"
+  reappointment_possible: false
+  removal_authority: president_india
+  removal_requires_parliament: true
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+
+training:
+  trained_by: []
+  induction_training: false
+  continuing_education: true
+  training_mandatory: false
+
+digital_infrastructure:
+  system_used:
+    - eCourts_Portal
+    - NJDG
+  digital_variant: NIC_Standard
+  integrated_with_njdg: true
+
+structural_variations: []
+
+judge_strength:
+  # allotted null by design — no independent sanctioned strength for benches.
+  # Sanctioned strength set at parent HC (hc_madras) level only.
+  # MAINTAINER: populate appointed from Madras HC website roster:
+  #   https://www.hcmadras.tn.nic.in/ → Judges / Bench Roster (Madurai)
+  # Bench districts: Madurai, Dindigul, Kanniyakumari, Ramanathapuram,
+  # Sivaganga, Tenkasi, Thoothukudi, Theni, Tirunelveli, Virudhunagar.
+  data_as_of: null
+  allotted: null
+  appointed: null
+  vacancy_count: null
+  source_type: HC_Report
+  source_url: https://www.hcmadras.tn.nic.in/
+  notes: >
+    Judges drawn from parent HC pool (hc_madras). allotted null — no
+    per-bench sanctioned allocation. appointed = CJ roster count for
+    Madurai Bench at snapshot date.
+
+data_quality: partial
+data_quality_notes: >
+  judge_strength source_type corrected to HC_Report (DoJ reports show only
+  parent HC totals, not bench breakdown). allotted null by design.
+  created_year 1948 unverified — requires Madras HC gazette / admin order.
+
+sources:
+  - label: "India Code — Constitution & Acts"
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
+  - label: "Madras High Court — Official Website"
+    url: https://www.hcmadras.tn.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

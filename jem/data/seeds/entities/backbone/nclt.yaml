@@ -1,0 +1,69 @@
+id: nclt
+name: National Company Law Tribunal
+name_hindi: राष्ट्रीय कंपनी विधि अधिकरण
+abbreviation: NCLT
+aliases:
+  - National Company Law Tribunal
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Original
+    - Appellate
+
+created_year: 2016
+# CA 2013 s.408 enacted but NCLT constituted by MCA notification 1 June 2016.
+# created_year is operational constitution date; statute date is 2013.
+
+operational_status: Active
+
+statutory_basis: "Companies Act 2013, Section 408; Insolvency and Bankruptcy Code 2016, Section 60"
+
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+    - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: "5 years or until age 67, whichever is earlier — Companies Act 2013, s.413(2) as amended by TRA 2021"
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_corporate_affairs
+  # ⚠ VERIFY: confirm entity id 'ministry_corporate_affairs' exists in graph.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+data_quality: partial
+data_quality_notes: >
+  created_year 2016 (operational); CA 2013 is statute date — maintainer policy.
+  IBC 2016 s.60 significantly expanded NCLT jurisdiction post-2016.
+  NCLAT (CA 2013 s.410) is a separate entity — not created here.
+  ministry_responsible 'ministry_corporate_affairs' assumed — verify in graph.
+  case_volume and judge_strength null — MCA NCLT portal in §3/§7.
+
+sources:
+  - label: "Companies Act 2013 — Ministry of Corporate Affairs"
+    url: https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  - label: "Insolvency and Bankruptcy Code 2016 — India Code"
+    url: https://india-code.nic.in/acts-detail/MjMxMDk=
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "Tribunals Reforms Act 2021 — India Code"
+    url: https://india-code.nic.in/acts-detail/MjY5MzQ=
+    type: CentralAct
+    accessed_date: '2026-05-18'

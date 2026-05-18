@@ -1,0 +1,107 @@
+id: hc_madras_bench_tiruchirappalli
+name: Tiruchirappalli Bench of Madras High Court
+abbreviation: null
+# No verified official abbreviation — populate from HC admin records.
+aliases:
+  - Trichy Bench of Madras High Court
+
+type: HighCourtBench
+cluster: constitutional_courts
+level_of_government: State
+
+jurisdiction_scope:
+  states_covered:
+    - TN
+  uts_covered: []
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+    - Appellate
+    - Writ
+
+created_year: 1948
+# ⚠ VERIFY URGENTLY: placeholder matching Madurai bench stub year.
+# Locate GoTN Gazette or Madras HC admin order for Tiruchirappalli bench
+# constitution. May be more recent (2000s–2010s).
+operational_status: Active
+
+constitutional_basis: "Constitution of India, Article 214"
+statutory_basis: "High Courts Act 1861 — bench constituted by CJ administrative order under Letters Patent 1865"
+
+parent_hc: hc_madras
+
+appointment:
+  nominates: collegium_hc_appointment
+  recommends: collegium_hc_appointment
+  consulted:
+    - governor_state
+  consultation_binding: true
+  formally_appoints: president_india
+  criteria_public: false
+  tenure: "Until age 62 (Article 217)"
+  reappointment_possible: false
+  removal_authority: president_india
+  removal_requires_parliament: true
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+
+training:
+  trained_by: []
+  induction_training: false
+  continuing_education: true
+  training_mandatory: false
+
+digital_infrastructure:
+  system_used:
+    - eCourts_Portal
+    - NJDG
+  digital_variant: NIC_Standard
+  integrated_with_njdg: true
+
+structural_variations: []
+
+judge_strength:
+  # allotted null by design — no per-bench sanctioned allocation.
+  # MAINTAINER: populate appointed from Madras HC website roster:
+  #   https://www.hcmadras.tn.nic.in/ → Judges / Bench Roster (Trichy)
+  # Bench districts: Tiruchirappalli, Ariyalur, Cuddalore, Karur,
+  # Mayiladuthurai, Nagapattinam, Perambalur, Pudukkottai, Thanjavur, Tiruvarur.
+  data_as_of: null
+  allotted: null
+  appointed: null
+  vacancy_count: null
+  source_type: HC_Report
+  source_url: https://www.hcmadras.tn.nic.in/
+  notes: >
+    Judges drawn from parent HC pool (hc_madras). allotted null — no
+    per-bench sanctioned allocation. appointed = CJ roster count for
+    Tiruchirappalli Bench at snapshot date.
+
+data_quality: partial
+data_quality_notes: >
+  Created to fix dangling reference in tn_relationships.yaml.
+  created_year 1948 is an UNVERIFIED placeholder — locate Madras HC
+  gazette notification / admin order before merging to main.
+  BenchOf → hc_madras relationship in tn_relationships.yaml (appended
+  via tn_relationships_APPEND.yaml in this zip).
+
+sources:
+  - label: "Madras High Court — Official Website"
+    url: https://www.hcmadras.tn.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

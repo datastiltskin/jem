@@ -1,0 +1,67 @@
+id: ngt
+name: National Green Tribunal
+name_hindi: राष्ट्रीय हरित अधिकरण
+abbreviation: NGT
+aliases:
+  - National Green Tribunal
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Original
+    - Appellate
+
+created_year: 2010
+# NGT Act 2010 Presidential assent 2 June 2010; operationally constituted
+# 18 October 2010.
+
+operational_status: Active
+
+statutory_basis: "National Green Tribunal Act 2010, Section 4"
+
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+    - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: "5 years or until age 70 (Chairperson) / 67 (Expert Members) — NGT Act 2010, s.7"
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_environment
+  # ⚠ VERIFY: confirm entity id 'ministry_environment' exists in graph.
+  # Alternate ids: ministry_moefcc — check canonical id in repo.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+data_quality: partial
+data_quality_notes: >
+  NGT is EXCLUDED from Tribunals Reforms Act 2021 — appointment under
+  NGT Act 2010 s.5-7 directly. Verify no subsequent amendment changes this.
+  NGT has 5 zonal benches (New Delhi principal; Chennai, Bhopal, Pune,
+  Kolkata zonal) — bench routing Phase-2.
+  ministry_responsible 'ministry_environment' assumed — verify canonical
+  id in graph (may be 'ministry_moefcc'). case_volume null — §3/§7.
+
+sources:
+  - label: "National Green Tribunal Act 2010 — India Code"
+    url: https://india-code.nic.in/acts-detail/MjA2OTU=
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "NGT — Official Website"
+    url: https://greentribunal.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

@@ -1,0 +1,67 @@
+id: tn_slsa
+name: Tamil Nadu State Legal Services Authority
+abbreviation: TNSLSA
+aliases:
+  - Tamil Nadu State Legal Services Authority
+  - TN SLSA
+
+type: ADRBody
+cluster: tribunals_adr
+level_of_government: State
+
+jurisdiction_scope:
+  states_covered:
+    - TN
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+    - Special
+
+created_year: 1995
+# ⚠ VERIFY: exact constitution date from GoTN Gazette or TN SJA records.
+operational_status: Active
+
+statutory_basis: "Legal Services Authorities Act 1987, Section 6"
+
+appointment:
+  nominates: hc_madras
+  formally_appoints: hc_madras
+  consulted:
+    - government_tamilnadu
+  consultation_binding: false
+  criteria_public: true
+  tenure: null
+  reappointment_possible: null
+  removal_authority: hc_madras
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Mixed
+  ministry_responsible: null
+  # State Consolidated Fund (TN) + NALSA grants.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+
+data_quality: partial
+data_quality_notes: >
+  created_year 1995 approximate — verify from GoTN Gazette notification.
+  ReportsTo → nalsa in adr_arbitration_relationships.yaml.
+  tn_slsa → lok_adalat_generic Designates already in tn_relationships.yaml
+  (id: tn_slsa_adr) — not duplicated. DLSAs for 38 TN districts Phase-2.
+
+sources:
+  - label: "Legal Services Authorities Act 1987 — India Code"
+    url: https://india-code.nic.in/acts-detail/NzI2
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "TN SLSA — Official Website"
+    url: https://tnslsa.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

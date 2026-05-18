@@ -7,6 +7,7 @@ Idempotent: overwrites files under jem/data/entities/_generated/ and relationshi
 from __future__ import annotations
 
 import argparse
+import shutil
 from pathlib import Path
 
 import yaml
@@ -24,6 +25,8 @@ from hc_benches_config import (
 ROOT = Path(__file__).resolve().parents[1]  # jem/
 ENT = ROOT / "data" / "entities" / "_generated"
 REL = ROOT / "data" / "relationships"
+SEEDS_ENT = ROOT / "data" / "seeds" / "entities"
+SEEDS_REL = ROOT / "data" / "seeds" / "relationships"
 
 SRC = {
     "label": "India Code — Constitution & Acts",
@@ -84,10 +87,18 @@ TN_DISTRICT_LATTICE: list[tuple[str, str]] = [
 _WRITE_ENTITIES = True
 
 
+def _seed_entity_path(generated_path: Path) -> Path:
+    return SEEDS_ENT / generated_path.relative_to(ENT)
+
+
 def W(path: Path, doc: dict) -> None:
     if not _WRITE_ENTITIES:
         return
     path.parent.mkdir(parents=True, exist_ok=True)
+    seed = _seed_entity_path(path)
+    if seed.is_file():
+        shutil.copy2(seed, path)
+        return
     with open(path, "w", encoding="utf-8") as f:
         f.write("# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md\n")
         yaml.safe_dump(doc, f, sort_keys=False, allow_unicode=True, default_flow_style=False)
@@ -715,6 +726,54 @@ def emit_light_state_pack(ent: Path, code: str, hc_id: str, national_rels: list)
         )
 
 
+def madras_bench_of_rel(bench_id: str, parent_hc: str) -> dict:
+    """Enriched BenchOf for Madras permanent benches (Track D / §6)."""
+    notes = {
+        "hc_madras_bench_madurai": (
+            "Madurai Bench is a permanent bench of the Madras High Court, constituted "
+            "under CJ administrative order pursuant to Letters Patent (Madras) 1865 and "
+            "Article 214 of the Constitution of India. Exercises full HC jurisdiction "
+            "(Original, Appellate, Writ) for 10 southern TN districts per "
+            "hc_benches_config.py TN_DISTRICT_TO_BENCH: Dindigul, Kanniyakumari, Madurai, "
+            "Ramanathapuram, Sivaganga, Tenkasi, Thoothukudi, Theni, Tirunelveli, "
+            "Virudhunagar. TN district routing in tn_relationships.yaml."
+        ),
+        "hc_madras_bench_tiruchirappalli": (
+            "Tiruchirappalli Bench is a permanent bench of the Madras High Court, "
+            "constituted under CJ administrative order pursuant to Letters Patent "
+            "(Madras) 1865 and Article 214 of the Constitution of India. Exercises full "
+            "HC jurisdiction (Original, Appellate, Writ) for 10 central TN districts per "
+            "hc_benches_config.py TN_DISTRICT_TO_BENCH: Ariyalur, Cuddalore, Karur, "
+            "Mayiladuthurai, Nagapattinam, Perambalur, Pudukkottai, Thanjavur, "
+            "Tiruchirappalli, Tiruvarur. TN district routing in tn_relationships.yaml."
+        ),
+    }
+    return {
+        "id": f"{bench_id}_bench_of_{parent_hc}",
+        "source": bench_id,
+        "target": parent_hc,
+        "relationship_type": "BenchOf",
+        "relationship_category": "statutory_ref",
+        "is_binding": True,
+        "notes": notes[bench_id],
+        "data_quality": "partial",
+        "sources": [
+            {
+                "label": "India Code — Constitution & Acts",
+                "url": "https://india-code.nic.in/",
+                "type": "GoIWebsite",
+                "accessed_date": "2026-05-13",
+            },
+            {
+                "label": "Constitution of India, Article 214",
+                "url": "https://india-code.nic.in/",
+                "type": "Constitution",
+                "accessed_date": "2026-05-18",
+            },
+        ],
+    }
+
+
 def district_appellate_target(eid: str, slug: str, default_hc: str) -> str:
     """Resolve HC or HC bench for district appellate/supervision edges."""
     if slug and slug in TN_DISTRICT_TO_BENCH:
@@ -741,16 +800,19 @@ def emit_hc_benches(ent: Path, bench_rels: list) -> None:
     for bench_id, bench_name, parent_hc, seat_city in HC_BENCHES_DEF:
         states = parent_states.get(parent_hc, [])
         W(bench_dir / f"{bench_id}.yaml", hc_bench(bench_id, bench_name, parent_hc, seat_city, states))
-        bench_rels.append(
-            rel(
-                f"{bench_id}_bench_of_{parent_hc}",
-                bench_id,
-                parent_hc,
-                "BenchOf",
-                "statutory_ref",
-                f"Permanent bench at {seat_city} — part of {parent_hc}",
+        if bench_id in ("hc_madras_bench_madurai", "hc_madras_bench_tiruchirappalli"):
+            bench_rels.append(madras_bench_of_rel(bench_id, parent_hc))
+        else:
+            bench_rels.append(
+                rel(
+                    f"{bench_id}_bench_of_{parent_hc}",
+                    bench_id,
+                    parent_hc,
+                    "BenchOf",
+                    "statutory_ref",
+                    f"Permanent bench at {seat_city} — part of {parent_hc}",
+                )
             )
-        )
 
     for eid, _, sts, _, _ in HIGH_COURTS_DEF:
         bench_rels.append(
@@ -1388,15 +1450,19 @@ def main() -> None:
     dump_rels("ka_relationships.yaml", ka_rels)
     dump_rels("tn_relationships.yaml", tn_rels)
     dump_rels("py_relationships.yaml", py_rels)
-    dump_rels(
-        "adr_arbitration_relationships.yaml",
-        adr_arbitration_relationships(),
-        header=(
-            "# JEM relationships — ADR & Arbitration cluster (backbone)\n"
-            "# Track E (§4) — generated by generate_v1_states_bundle.py\n"
-            "# EstablishedUnder → statute deferred until act entities exist in graph.\n"
-        ),
-    )
+    adr_seed = SEEDS_REL / "adr_arbitration_relationships.yaml"
+    if adr_seed.is_file():
+        shutil.copy2(adr_seed, REL / "adr_arbitration_relationships.yaml")
+    else:
+        dump_rels(
+            "adr_arbitration_relationships.yaml",
+            adr_arbitration_relationships(),
+            header=(
+                "# JEM relationships — ADR & Arbitration cluster (backbone)\n"
+                "# Track E (§4) — generated by generate_v1_states_bundle.py\n"
+                "# EstablishedUnder → statute deferred until act entities exist in graph.\n"
+            ),
+        )
 
     print(
         f"Wrote entities under {ENT} and relationships "
