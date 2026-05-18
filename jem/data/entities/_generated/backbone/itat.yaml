@@ -1,10 +1,3 @@
-# ── ITAT — §1 type + §2 funding ──────────────────────────────────────────────
-# New entity (not in bundle stub set); create at this path in repo.
-# §1: type → CentralTribunal, cluster → tribunals_adr
-# §2: funding.ministry_responsible → ministry_of_finance
-# Oldest central tribunal in India — established 1941.
-# ─────────────────────────────────────────────────────────────────────────────
-
 id: itat
 name: Income Tax Appellate Tribunal
 name_hindi: आयकर अपीलीय अधिकरण
@@ -19,43 +12,33 @@ level_of_government: Central
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - Appellate   # appeals from CIT(A) orders — ITA 1961 s.253
+    - Appellate
 
 created_year: 1941
-# Established 25 January 1941 under Income Tax Act 1922 (as amended by
-# Finance Act 1939 inserting s.5A). Continued under Income Tax Act 1961 s.252.
-# created_year is the founding year for entity continuity; the 1961 re-enactment
-# does not create a new entity.
+# Established 25 January 1941 under Income Tax Act 1922 (Finance Act 1939,
+# s.5A). Continued under Income Tax Act 1961 s.252.
 
 operational_status: Active
 
 statutory_basis: "Income Tax Act 1961, Section 252"
 
 appointment:
-  # ITA 1961 s.252(1): Central Government appoints President and Members.
-  # Judicial members: persons who are or have been a member of Indian Legal
-  # Service in Grade I post or held a judicial post for 10 years or
-  # practised as advocate for 10 years.
-  # Accountant members: persons who are or have been a member of Indian
-  # Revenue Service (IRS) of Group A post.
-  # Post-TRA 2021: Search-cum-Selection Committee governs (TRA 2021 s.3(2)).
   nominates: central_government
   formally_appoints: central_government
   consulted:
-    - supreme_court_india   # CJI / designee via selection committee — TRA 2021 s.3
+    - supreme_court_india
   consultation_binding: false
   criteria_public: true
   tenure: "4 years or until age 70, whichever is earlier — Tribunals Reforms Act 2021, s.3(2)"
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-  removal_independent_committee: true   # ITA 1961 s.255A — inquiry by SC judge
+  removal_independent_committee: true
 
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-  # Ministry of Finance — Department of Revenue / CBDT.
-  # ITAT budget flows through MoF demand head for Income Tax administration.
+  # MoF — Department of Revenue / CBDT demand head.
   # ⚠ VERIFY: confirm entity id 'ministry_of_finance' exists in graph.
 
 audit:
@@ -65,17 +48,13 @@ audit:
 
 data_quality: partial
 data_quality_notes: >
-  created_year 1941 reflects founding date (first bench, New Delhi).
-  Statutory basis is ITA 1961 s.252 (current); historical basis IT Act 1922 s.5A.
-  Appointment block reflects TRA 2021 regime; pre-2021 tenure was 4 years
-  or age 62 under earlier ITA provisions.
-  ministry_responsible entity id 'ministry_of_finance' assumed — verify in graph.
-  ITAT has 63+ benches across India as of 2024 — structural_variations
-  and digital_infrastructure fields to be populated in a future session.
-  case_volume and judge_strength null — ITAT Annual Report or NJDG in §3/§7.
+  created_year 1941 (founding under IT Act 1922); 1961 (current statute) also
+  defensible — maintainer to decide policy. 63+ benches across India.
+  ministry_responsible 'ministry_of_finance' assumed — verify in graph.
+  case_volume and judge_strength null — ITAT Annual Report in §3/§7.
 
 sources:
-  - label: "Income Tax Act 1961 — Income Tax Department (GoI)"
+  - label: "Income Tax Act 1961 — Income Tax Department"
     url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx
     type: GoIWebsite
     accessed_date: '2026-05-18'

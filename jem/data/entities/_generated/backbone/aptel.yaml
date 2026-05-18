@@ -1,16 +1,3 @@
-# ── APTEL — §1 type fix + §2 funding ────────────────────────────────────────
-# Changes from stub:
-#   type        : ExecutiveBody → CentralTribunal
-#   cluster     : tribunals_adr (unchanged — correct)
-#   created_year: 1950 (stub placeholder) → 2005 (operational constitution)
-#   statutory_basis: added
-#   abbreviation: added
-#   appointment : added (partial — judicial/technical member split unverified)
-#   funding     : added (primary_source + ministry_responsible)
-#   audit       : added
-#   sources     : expanded (india-code primary; powermin.gov.in corroborating)
-# ─────────────────────────────────────────────────────────────────────────────
-
 id: aptel
 name: Appellate Tribunal for Electricity
 name_hindi: विद्युत अपीलीय अधिकरण
@@ -33,30 +20,22 @@ operational_status: Active
 statutory_basis: "Electricity Act 2003, Sections 110–122"
 
 appointment:
-  # s.113: Chairperson must be a retired judge of the Supreme Court
-  # or a retired Chief Justice of a High Court.
-  # Technical members: persons of ability/experience in law, engineering,
-  # economics, commerce, or public administration (s.113(1)(b)).
-  # Appointment by Central Government; judicial members in consultation with CJI.
   nominates: central_government
   formally_appoints: central_government
   consulted:
-    - supreme_court_india   # for Chairperson / judicial members — s.113 read with SC precedent
-  consultation_binding: false   # CJI consultation practice; statutory text says "in consultation with"
+    - supreme_court_india
+  consultation_binding: false
   criteria_public: true
   tenure: "5 years or until age 70, whichever is earlier (s.114)"
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-  removal_independent_committee: true   # s.116 — inquiry committee required before removal
+  removal_independent_committee: true
 
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_power
-  # ⚠ VERIFY: ministry_of_power must exist as an entity id in the graph.
-  # Union Budget demand head: Ministry of Power (MoP) funds APTEL establishment
-  # and operational expenditure. Confirm against latest Union Budget Detailed
-  # Demands for Grants (DDG), Ministry of Power.
+  # ⚠ VERIFY: confirm entity id 'ministry_of_power' exists in graph.
 
 audit:
   audited_by: cag_india
@@ -65,25 +44,18 @@ audit:
 
 data_quality: partial
 data_quality_notes: >
-  created_year set to 2005 (operational constitution of APTEL under Electricity
-  Act 2003); the Act received Presidential assent 26 May 2003 (created_year 2003
-  is also defensible if the entity is dated to statute, not constitution).
-  Appointment block is partially verified — judicial-member consultation binding
-  status follows practice, not express statutory language; verify against
-  Electricity Act Amendment history and any SC judgment on APTEL appointment.
-  funding.ministry_responsible assumes entity id 'ministry_of_power' — verify
-  this id exists in graph before merging.
-  case_volume and judge_strength left null; populate from APTEL Annual Report
-  or DoJ quarterly vacancy data in a separate §3 / §7 pass.
-  ministry_responsible corroborated by MoP website listing APTEL as attached
-  body, but Union Budget DDG line should be confirmed for budget_figure_crore.
+  created_year 2005 (operational constitution); Electricity Act 2003 enacted
+  May 2003 — 2003 also defensible. ministry_responsible entity id
+  'ministry_of_power' assumed — verify in graph. Confirm against Union Budget
+  DDG (MoP) for budget_figure_crore. case_volume and judge_strength null —
+  populate from APTEL Annual Report or DoJ quarterly vacancy data in §3/§7.
 
 sources:
   - label: "Electricity Act 2003 — India Code"
     url: https://india-code.nic.in/acts-detail/MTQ3MA==
     type: CentralAct
     accessed_date: '2026-05-18'
-  - label: "Ministry of Power — Attached & Subordinate Offices (APTEL listed)"
+  - label: "Ministry of Power — Attached & Subordinate Offices"
     url: https://powermin.gov.in/en/content/attached-subordinate-offices
     type: GoIWebsite
     accessed_date: '2026-05-18'

@@ -1,14 +1,6 @@
-# ── lok_adalat_generic — §4 ADR ──────────────────────────────────────────────
-# Generic institutional entity for Lok Adalat as a class.
-# Already referenced as target in tn_relationships.yaml (tn_slsa_adr edge).
-# Individual Lok Adalats are organised by NALSA/SLSAs/DLSAs; not modelled
-# as separate entities. This node represents the institution type.
-# ─────────────────────────────────────────────────────────────────────────────
-
 id: lok_adalat_generic
 name: Lok Adalat
 name_hindi: लोक अदालत
-abbreviation: null
 aliases:
   - People's Court
   - Lok Adalat
@@ -16,64 +8,44 @@ aliases:
 type: ADRBody
 cluster: tribunals_adr
 level_of_government: Shared_CentralState
-# Lok Adalats organised at national, state, district, and taluka levels
-# by NALSA, SLSAs, DLSAs — shared central-state institution.
 
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - Original   # pre-litigation settlement
-    - Special    # motor accident claims, cheque bounce, utility disputes
+    - Original
+    - Special
 
 created_year: 1987
-# Lok Adalat institutionalised by Legal Services Authorities Act 1987, s.19.
-# Informal Lok Adalat camps predated the Act; 1987 is the statutory origin.
-
 operational_status: Active
 
 statutory_basis: "Legal Services Authorities Act 1987, Section 19"
-# s.19: NALSA / every State or District Legal Services Authority may
-# organise Lok Adalats at such intervals as deemed fit.
-# s.20: Matters eligible for Lok Adalat reference.
-# s.21: Award of Lok Adalat — deemed decree of civil court; final and binding.
-# Permanent Lok Adalat for public utility services: s.22A–22E.
+# s.21: Award deemed decree of civil court — final and binding; no appeal.
+# Permanent Lok Adalat (public utility services): LSA Act s.22A–22E.
 
 appointment: null
-# No fixed appointment structure — Lok Adalat panels constituted
-# ad hoc per session. LSA Act 1987 s.19(3): composed of a sitting/retired
-# judicial officer + other members (lawyers, social workers).
 
 funding:
   primary_source: Mixed
   ministry_responsible: null
-  # Lok Adalat expenses met from NALSA National Legal Aid Fund (Central) and
-  # State/District Legal Aid Funds (State). No single ministry responsible.
-  # Modelled as Mixed (NALSA grant + state contribution).
+  # NALSA National Legal Aid Fund (Central) + State/District Legal Aid Funds.
 
 audit:
   audited_by: null
   audit_type: None
-  # Lok Adalats are not independent legal entities; financial flows audited
-  # through organising authority (NALSA/SLSA/DLSA) accounts.
   audit_report_public: false
 
 complaint_mechanism:
-  # Lok Adalat award is final and binding — no appeal (LSA Act 1987 s.21(2)).
-  # Constitutional challenge only: writ petition to HC under Article 226/227.
-  # No institutional complaint mechanism — disputes resolved by consensus only.
   lokpal_jurisdiction: Not_Applicable
   removal_mechanism: null
+  # Award final and binding — no appeal (s.21(2)).
+  # Constitutional challenge only: HC writ under Article 226/227.
 
 data_quality: partial
 data_quality_notes: >
-  Generic entity representing the Lok Adalat institution. Individual sessions
-  are not modelled separately. Permanent Lok Adalat (LSA Act 1987 ss.22A–22E,
-  for public utility services) may warrant a separate entity — see SPEC §4.
-  Award finality (s.21(2)) is a significant feature: no appellate chain from
-  Lok Adalat (unlike regular tribunals). Graph should not show AppealableTo
-  edge from this entity.
-  Designated as target by tn_slsa (tn_relationships.yaml: tn_slsa_adr) and
-  by nalsa (adr_arbitration_relationships.yaml: nalsa_designates_lok_adalat).
+  Generic entity for the Lok Adalat institution. Individual sessions not
+  modelled separately. Permanent Lok Adalat (s.22A–22E) may warrant a
+  separate entity — Phase-2. No AppealableTo edge from this entity.
+  Designated by nalsa and tn_slsa in relationship files.
 
 sources:
   - label: "Legal Services Authorities Act 1987 — India Code"

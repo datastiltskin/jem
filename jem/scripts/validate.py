@@ -447,15 +447,14 @@ def validate_relationship_file(path: Path, strict: bool = False) -> List[str]:
 
 
 def collect_entity_files(data_dir: Path) -> List[Path]:
-    from data_loader import iter_entity_yaml_paths
-
-    return iter_entity_yaml_paths()
+    return list((data_dir / "entities").rglob("*.yaml"))
 
 
 def collect_relationship_files(data_dir: Path) -> List[Path]:
-    from data_loader import iter_relationship_yaml_paths
-
-    return iter_relationship_yaml_paths()
+    rel_dir = data_dir / "relationships"
+    if not rel_dir.exists():
+        return []
+    return [f for f in rel_dir.glob("*.yaml") if f.is_file()]
 
 
 def run_validation(data_dir: Path, strict: bool = False, single_file: Optional[Path] = None):
@@ -471,13 +470,8 @@ def run_validation(data_dir: Path, strict: bool = False, single_file: Optional[P
         all_errors.extend(errs)
         files_checked = 1
     else:
-        from data_loader import check_duplicate_entity_ids
-
         entity_files = collect_entity_files(data_dir)
         rel_files = collect_relationship_files(data_dir)
-        dup_errors = check_duplicate_entity_ids()
-        if dup_errors:
-            all_errors.extend(f"  [manifest] {e}" for e in dup_errors)
 
         print(f"\nValidating {len(entity_files)} entity files...")
         for f in sorted(entity_files):

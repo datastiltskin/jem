@@ -1,10 +1,3 @@
-# ── NCLT — §1 type + §2 funding ──────────────────────────────────────────────
-# New entity (not in bundle stub set); create at this path in repo.
-# §1: type → CentralTribunal, cluster → tribunals_adr
-# §2: funding.ministry_responsible → ministry_corporate_affairs
-# Note: NCLAT (appellate body) is a separate entity — not covered here.
-# ─────────────────────────────────────────────────────────────────────────────
-
 id: nclt
 name: National Company Law Tribunal
 name_hindi: राष्ट्रीय कंपनी विधि अधिकरण
@@ -19,43 +12,33 @@ level_of_government: Central
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - Original    # winding up, insolvency (IBC), mergers — CA 2013 s.408 + IBC 2016
+    - Original
     - Appellate
 
 created_year: 2016
-# Companies Act 2013 s.408 enacted but NCLT constituted by Ministry of
-# Corporate Affairs notification dated 1 June 2016. CLB (Company Law Board)
-# and BIFR dissolved and jurisdiction transferred to NCLT on same date.
-# created_year is operational constitution date. If policy is "statute date"
-# use 2013.
+# CA 2013 s.408 enacted but NCLT constituted by MCA notification 1 June 2016.
+# created_year is operational constitution date; statute date is 2013.
 
 operational_status: Active
 
 statutory_basis: "Companies Act 2013, Section 408; Insolvency and Bankruptcy Code 2016, Section 60"
 
 appointment:
-  # CA 2013 s.413(1): President and Members appointed by Central Government.
-  # s.409: President must be a retired HC Chief Justice or SC judge.
-  # Judicial members: retired HC judges or persons with 5+ years HC advocate
-  # experience. Technical members: persons with 15+ years in industry/finance.
-  # Post-TRA 2021: Search-cum-Selection Committee governs (TRA 2021 s.3(2)).
   nominates: central_government
   formally_appoints: central_government
   consulted:
-    - supreme_court_india   # CJI / designee — TRA 2021 s.3 selection committee
+    - supreme_court_india
   consultation_binding: false
   criteria_public: true
   tenure: "5 years or until age 67, whichever is earlier — Companies Act 2013, s.413(2) as amended by TRA 2021"
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-  removal_independent_committee: true   # CA 2013 s.415 — inquiry committee
+  removal_independent_committee: true
 
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_corporate_affairs
-  # Ministry of Corporate Affairs (MCA) — NCLT is an attached body of MCA.
-  # NCLT budget under MCA demand head in Union Budget.
   # ⚠ VERIFY: confirm entity id 'ministry_corporate_affairs' exists in graph.
 
 audit:
@@ -65,16 +48,11 @@ audit:
 
 data_quality: partial
 data_quality_notes: >
-  created_year 2016 (operational constitution); CA 2013 enacted is the
-  statute date — maintainer to choose policy.
-  Statutory basis includes IBC 2016 s.60 as NCLT is the adjudicating authority
-  under the Insolvency and Bankruptcy Code — significant expansion of
-  jurisdiction post-2016.
-  NCLAT (National Company Law Appellate Tribunal, CA 2013 s.410) is a separate
-  entity and should have its own YAML — not created here.
-  ministry_responsible entity id 'ministry_corporate_affairs' assumed — verify
-  in graph. case_volume and judge_strength null — MCA NCLT portal or IBBI
-  annual report in §3/§7.
+  created_year 2016 (operational); CA 2013 is statute date — maintainer policy.
+  IBC 2016 s.60 significantly expanded NCLT jurisdiction post-2016.
+  NCLAT (CA 2013 s.410) is a separate entity — not created here.
+  ministry_responsible 'ministry_corporate_affairs' assumed — verify in graph.
+  case_volume and judge_strength null — MCA NCLT portal in §3/§7.
 
 sources:
   - label: "Companies Act 2013 — Ministry of Corporate Affairs"

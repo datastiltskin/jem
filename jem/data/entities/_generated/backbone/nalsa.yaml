@@ -1,0 +1,67 @@
+id: nalsa
+name: National Legal Services Authority
+name_hindi: राष्ट्रीय विधिक सेवा प्राधिकरण
+abbreviation: NALSA
+
+type: ADRBody
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Original
+    - Special
+
+created_year: 1995
+# LSA Act 1987 enacted; NALSA constituted and Regulations in force 9 Nov 1995.
+operational_status: Active
+
+statutory_basis: "Legal Services Authorities Act 1987, Section 3"
+
+appointment:
+  nominates: president_india
+  formally_appoints: president_india
+  consulted:
+    - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: null
+  reappointment_possible: null
+  removal_authority: president_india
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_law_justice
+  # LSA Act 1987 s.17 — National Legal Aid Fund.
+  # ⚠ VERIFY: confirm entity id 'ministry_law_justice' exists in graph.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+  removal_mechanism: >
+    Executive Chairman removal follows SC judge administrative norms.
+    No specific statutory removal mechanism for NALSA leadership.
+
+data_quality: partial
+data_quality_notes: >
+  created_year 1995 (operational); LSA Act 1987 is statute date.
+  Patron-in-Chief (CJI, ex officio) not modelled as appointment relationship.
+  Designates → lok_adalat_generic in adr_arbitration_relationships.yaml.
+  ministry_responsible 'ministry_law_justice' assumed — verify in graph.
+
+sources:
+  - label: "Legal Services Authorities Act 1987 — India Code"
+    url: https://india-code.nic.in/acts-detail/NzI2
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "NALSA — Official Website"
+    url: https://nalsa.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

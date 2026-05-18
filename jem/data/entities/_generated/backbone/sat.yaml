@@ -1,10 +1,3 @@
-# ── SAT — §1 type + §2 funding ───────────────────────────────────────────────
-# New entity (not in bundle stub set); create at this path in repo.
-# §1: type → CentralTribunal, cluster → tribunals_adr
-# §2: funding.ministry_responsible → ministry_of_finance
-# Jurisdiction: appeals from SEBI, PFRDA, IRDAI orders.
-# ─────────────────────────────────────────────────────────────────────────────
-
 id: sat
 name: Securities Appellate Tribunal
 name_hindi: प्रतिभूति अपीलीय अधिकरण
@@ -19,12 +12,10 @@ level_of_government: Central
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - Appellate   # SEBI Act 1992 s.15T; PFRDA Act 2013 s.44; IRDAI Act 1999 s.110D
+    - Appellate
 
 created_year: 1995
-# SEBI Act 1992 Chapter VIA (including s.15K establishing SAT) inserted by
-# Securities Laws (Amendment) Act 1995; SAT constituted and first
-# Presiding Officer appointed 1995.
+# SEBI Act 1992 Chapter VIA inserted by Securities Laws (Amendment) Act 1995.
 
 operational_status: Active
 
@@ -34,34 +25,24 @@ statutory_basis: >
   Insurance Regulatory and Development Authority Act 1999, Section 110D
 
 appointment:
-  # SEBI Act 1992 s.15L(1): Presiding Officer appointed by Central Government
-  # in consultation with CJI.
-  # s.15L(2)(a): Presiding Officer must be a sitting or retired judge of the
-  # Supreme Court or a retired Chief Justice of a High Court.
-  # Members: persons of ability and integrity with experience in securities law,
-  # finance, economics, or accountancy — s.15L(2)(b).
-  # Post-TRA 2021: Search-cum-Selection Committee governs.
   nominates: central_government
   formally_appoints: central_government
   consulted:
-    - supreme_court_india   # CJI consultation — SEBI Act 1992 s.15L(1) + TRA 2021
+    - supreme_court_india
   consultation_binding: false
   criteria_public: true
   tenure: "5 years or until age 70, whichever is earlier — SEBI Act 1992 s.15M as amended by TRA 2021"
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-  removal_independent_committee: true   # SEBI Act 1992 s.15N — inquiry by SC judge
+  removal_independent_committee: true
 
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-  # Ministry of Finance — Department of Economic Affairs (SEBI falls under
-  # DEA, not Revenue). SAT budget under MoF / DEA demand head.
+  # MoF — Department of Economic Affairs (DEA), not Revenue.
+  # SAT under DEA demand head (capital markets); distinct from ITAT/CESTAT.
   # ⚠ VERIFY: confirm entity id 'ministry_of_finance' exists in graph.
-  # Note: distinct demand head from ITAT/CESTAT (Revenue) — DEA handles
-  # capital markets regulatory bodies. budget_figure_crore to be confirmed
-  # from Union Budget DDG for MoF/DEA.
 
 audit:
   audited_by: cag_india
@@ -70,14 +51,11 @@ audit:
 
 data_quality: partial
 data_quality_notes: >
-  created_year 1995 (Securities Laws (Amendment) Act 1995, SAT constituted).
-  Statutory basis lists three Acts — SEBI Act 1992 is primary; PFRDA Act 2013
-  and IRDAI Act 1999 confer additional appellate jurisdiction.
-  SAT jurisdiction expanded to PFRDA orders (2014) and IRDAI orders (per IRDAI
-  Act amendment) — verify current scope of IRDAI appeals via latest amendment.
-  ministry_responsible entity id 'ministry_of_finance' assumed — verify in
-  graph; note this is DEA (not Revenue) demand head, unlike ITAT/CESTAT.
-  case_volume and judge_strength null — SAT Annual Report or MoF/SEBI data in §3/§7.
+  created_year 1995 (Securities Laws Amendment Act 1995 — SAT constituted).
+  Statutory basis lists three Acts; SEBI Act 1992 is primary. PFRDA (2014)
+  and IRDAI jurisdiction added subsequently — verify current IRDAI amendment.
+  ministry_responsible 'ministry_of_finance' — DEA demand head, not Revenue;
+  verify in graph. case_volume null — SAT Annual Report in §3/§7.
 
 sources:
   - label: "SEBI Act 1992 — SEBI Official Website"

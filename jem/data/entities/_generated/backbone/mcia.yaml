@@ -1,0 +1,64 @@
+id: mcia
+name: Mumbai Centre for International Arbitration
+abbreviation: MCIA
+aliases:
+  - Mumbai Centre for International Arbitration
+
+type: ArbitralInstitution
+cluster: arbitration
+level_of_government: State
+
+jurisdiction_scope:
+  states_covered:
+    - MH
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+
+created_year: 2016
+# ⚠ VERIFY: exact incorporation date from MCA Registrar of Companies.
+operational_status: Active
+statutory_basis: null
+
+appointment:
+  nominates: null
+  formally_appoints: null
+  consulted: []
+  consultation_binding: null
+  criteria_public: true
+  tenure: null
+  reappointment_possible: null
+  removal_authority: null
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Party_Fees
+  ministry_responsible: null
+
+audit:
+  audited_by: null
+  audit_type: Internal
+  audit_report_public: false
+
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+  removal_mechanism: >
+    Arbitrator challenge under MCIA Rules 2016 Rule 14. Award challenge
+    under A&C Act 1996 s.34 in Bombay High Court (default seat Mumbai).
+
+data_quality: partial
+data_quality_notes: >
+  Non-statutory body; created_year 2016 from incorporation records —
+  verify from MCA RoC. AwardChallengedIn → hc_bombay in
+  adr_arbitration_relationships.yaml. No ministry_responsible.
+
+sources:
+  - label: "MCIA — Official Website"
+    url: https://www.mcia.world
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  - label: "Arbitration and Conciliation Act 1996 — India Code"
+    url: https://india-code.nic.in/acts-detail/MTA4NDE=
+    type: CentralAct
+    accessed_date: '2026-05-18'

@@ -11,7 +11,6 @@ from pathlib import Path
 
 import yaml
 
-from data_loader import should_skip_generated_write
 from hc_benches_config import (
     HC_BENCHES_DEF,
     KA_DISTRICT_TO_BENCH,
@@ -83,15 +82,10 @@ TN_DISTRICT_LATTICE: list[tuple[str, str]] = [
 
 
 _WRITE_ENTITIES = True
-_WRITE_FORCE = False
 
 
-def W(path: Path, doc: dict, *, force: bool | None = None) -> None:
+def W(path: Path, doc: dict) -> None:
     if not _WRITE_ENTITIES:
-        return
-    use_force = _WRITE_FORCE if force is None else force
-    eid = doc.get("id") if isinstance(doc, dict) else None
-    if not use_force and should_skip_generated_write(path, eid):
         return
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -936,19 +930,13 @@ def parse_generate_args() -> argparse.Namespace:
         help="all = full bundle; relationships = relationship YAML only (no entity writes). "
         "Other slice names are reserved.",
     )
-    p.add_argument(
-        "--force",
-        action="store_true",
-        help="Overwrite hand-maintained / curated paths (use with care)",
-    )
     return p.parse_args()
 
 
 def main() -> None:
-    global _WRITE_ENTITIES, _WRITE_FORCE
+    global _WRITE_ENTITIES
     args = parse_generate_args()
     only = args.only
-    _WRITE_FORCE = args.force
     _WRITE_ENTITIES = only != "relationships"
 
     ENT.mkdir(parents=True, exist_ok=True)
@@ -956,8 +944,7 @@ def main() -> None:
     if only not in ("all", "relationships"):
         raise SystemExit(
             f"--only {only!r} is reserved for a future refactor. "
-            "Use --only all (default) or --only relationships (regen rel YAML only, no entity writes). "
-            "See jem/scripts/generate_safe.sh and jem/data/HAND_MAINTAINED.yaml."
+            "Use --only all (default) or --only relationships (regen rel YAML only, no entity writes)."
         )
 
     for sid in ("government_maharashtra", "government_nct_delhi", "government_karnataka", "government_tamilnadu"):

@@ -1,0 +1,71 @@
+id: diac
+name: Delhi International Arbitration Centre
+abbreviation: DIAC
+aliases:
+  - Delhi International Arbitration Centre
+  - DHCAC
+
+type: ArbitralInstitution
+cluster: arbitration
+level_of_government: State
+
+jurisdiction_scope:
+  states_covered:
+    - DL
+  uts_covered:
+    - DL
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+
+created_year: 2009
+# ⚠ VERIFY: exact constitution year from Delhi HC administrative order.
+operational_status: Active
+statutory_basis: null
+# No dedicated Act. Constituted under Delhi HC rule-making authority / CPC s.89.
+# DIAC Rules 2023 currently in force.
+
+appointment:
+  nominates: null
+  formally_appoints: null
+  consulted:
+    - hc_delhi
+  consultation_binding: true
+  criteria_public: true
+  tenure: null
+  reappointment_possible: null
+  removal_authority: hc_delhi
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Mixed
+  ministry_responsible: null
+
+audit:
+  audited_by: null
+  audit_type: Internal
+  audit_report_public: false
+
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+  removal_mechanism: >
+    Arbitrator challenge under DIAC Rules 2023. Award challenge under
+    A&C Act 1996 s.34 in Delhi High Court.
+
+data_quality: partial
+data_quality_notes: >
+  created_year 2009 unverified — locate Delhi HC admin order. statutory_basis
+  null — update if DIAC-specific legislation enacted. AwardChallengedIn →
+  hc_delhi in adr_arbitration_relationships.yaml.
+  ⚠ hc_delhi entity id must exist in graph — verify.
+
+sources:
+  - label: "DIAC — Official Website"
+    url: https://diac.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  - label: "Arbitration and Conciliation Act 1996 — India Code"
+    url: https://india-code.nic.in/acts-detail/MTA4NDE=
+    type: CentralAct
+    accessed_date: '2026-05-18'

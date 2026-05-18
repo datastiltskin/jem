@@ -1,0 +1,72 @@
+id: ncdrc
+name: National Consumer Disputes Redressal Commission
+name_hindi: राष्ट्रीय उपभोक्ता विवाद प्रतितोष आयोग
+abbreviation: NCDRC
+aliases:
+  - National Consumer Commission
+  - NCDRC
+
+type: ConsumerCommission
+cluster: consumer_redressal
+
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Appellate
+    - Original
+
+created_year: 1988
+operational_status: Active
+
+statutory_basis: >
+  Consumer Protection Act 2019, Section 53
+  (orig. Consumer Protection Act 1986, Section 20 — continued by s.107 of 2019 Act)
+
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+    - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: "5 years or until age 70, whichever is earlier (CPA 2019 s.58)"
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_consumer_affairs
+  # ⚠ VERIFY: confirm entity id 'ministry_consumer_affairs' exists in graph.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+data_quality: partial
+data_quality_notes: >
+  cluster 'tribunals_adr' is temporary fallback — change to
+  'consumer_redressal' after Cursor Fix 1 is applied.
+  created_year 1988 (operational constitution); CPA 1986 enacted is also
+  defensible — maintainer to decide policy.
+  ministry_responsible entity id 'ministry_consumer_affairs' assumed —
+  verify in graph. case_volume and judge_strength null — populate from
+  NCDRC Annual Report or DoJ vacancy data in §3/§7.
+
+sources:
+  - label: "Consumer Protection Act 2019 — India Code"
+    url: https://india-code.nic.in/acts-detail/MjMxMzM=
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "Consumer Protection Act 1986 — India Code (origin statute)"
+    url: https://india-code.nic.in/acts-detail/NzQ3
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "Ministry of Consumer Affairs — NCDRC"
+    url: https://consumeraffairs.nic.in/ncdrc
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

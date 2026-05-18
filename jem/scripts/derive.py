@@ -262,27 +262,36 @@ def load_entity(path: Path) -> Optional[Dict[str, Any]]:
 
 def derive_scores_for_all(data_dir: Path) -> Dict[str, Dict]:
     """Returns dict of entity_id -> derived scores."""
-    from data_loader import load_entities_merged
-
     results = {}
-    for entity in load_entities_merged(data_dir):
-        entity_id = entity.get("id")
-        if not entity_id:
+    entities_dir = data_dir / "entities"
+    seen: set = set()
+    for root in (entities_dir / "_generated", entities_dir):
+        if not root.exists():
             continue
+        for f in sorted(root.rglob("*.yaml")):
+            if "schema" in str(f) or "_TAXONOMY" in str(f) or "_curated" in str(f):
+                continue
+            entity = load_entity(f)
+            if not entity:
+                continue
+            entity_id = entity.get("id")
+            if not entity_id or entity_id in seen:
+                continue
+            seen.add(entity_id)
 
-        ir_score, ir_breakdown = compute_independence_risk(entity)
-        dp_score, dp_breakdown = compute_discretionary_power(entity)
+            ir_score, ir_breakdown = compute_independence_risk(entity)
+            dp_score, dp_breakdown = compute_discretionary_power(entity)
 
-        results[entity_id] = {
-            "independence_risk_score": ir_score,
-            "independence_risk_breakdown": ir_breakdown,
-            "independence_risk_level": classify_ir(ir_score),
-            "discretionary_power_score": dp_score,
-            "discretionary_power_breakdown": dp_breakdown,
-            "scores_validated": entity.get("derived", {}).get("scores_validated", False)
-            if entity.get("derived")
-            else False,
-        }
+            results[entity_id] = {
+                "independence_risk_score": ir_score,
+                "independence_risk_breakdown": ir_breakdown,
+                "independence_risk_level": classify_ir(ir_score),
+                "discretionary_power_score": dp_score,
+                "discretionary_power_breakdown": dp_breakdown,
+                "scores_validated": entity.get("derived", {}).get("scores_validated", False)
+                if entity.get("derived")
+                else False,
+            }
 
     return results
 
@@ -307,28 +316,31 @@ def save_derived_scores(results: Dict, output_path: Path):
 
 def explain_entity(entity_id: str, data_dir: Path):
     """Print detailed explanation of scores for one entity."""
-    from data_loader import load_entities_merged
+    entities_dir = data_dir / "entities"
+    for root in (entities_dir / "_generated", entities_dir):
+        if not root.exists():
+            continue
+        for f in root.rglob("*.yaml"):
+            entity = load_entity(f)
+            if entity and entity.get("id") == entity_id:
+                ir_score, ir_bd = compute_independence_risk(entity)
+                dp_score, dp_bd = compute_discretionary_power(entity)
 
-    for entity in load_entities_merged(data_dir):
-        if entity.get("id") == entity_id:
-            ir_score, ir_bd = compute_independence_risk(entity)
-            dp_score, dp_bd = compute_discretionary_power(entity)
+                print(f"\n{'='*60}")
+                print(f"Score Explanation: {entity.get('name', entity_id)}")
+                print(f"{'='*60}")
+                print(f"\nINDEPENDENCE RISK SCORE: {ir_score} ({classify_ir(ir_score).upper()})")
+                print("Breakdown:")
+                for reason, pts in sorted(ir_bd.items(), key=lambda x: -x[1]):
+                    sign = "+" if pts >= 0 else ""
+                    print(f"  {sign}{pts:+3d}  {reason}")
 
-            print(f"\n{'='*60}")
-            print(f"Score Explanation: {entity.get('name', entity_id)}")
-            print(f"{'='*60}")
-            print(f"\nINDEPENDENCE RISK SCORE: {ir_score} ({classify_ir(ir_score).upper()})")
-            print("Breakdown:")
-            for reason, pts in sorted(ir_bd.items(), key=lambda x: -x[1]):
-                sign = "+" if pts >= 0 else ""
-                print(f"  {sign}{pts:+3d}  {reason}")
-
-            print(f"\nDISCRETIONARY POWER SCORE: {dp_score}")
-            print("Breakdown:")
-            for reason, pts in sorted(dp_bd.items(), key=lambda x: -x[1]):
-                print(f"  +{pts:3d}  {reason}")
-            print()
-            return
+                print(f"\nDISCRETIONARY POWER SCORE: {dp_score}")
+                print("Breakdown:")
+                for reason, pts in sorted(dp_bd.items(), key=lambda x: -x[1]):
+                    print(f"  +{pts:3d}  {reason}")
+                print()
+                return
 
     print(f"Entity '{entity_id}' not found.")
 

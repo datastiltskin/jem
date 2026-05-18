@@ -1,10 +1,3 @@
-# ── CAT — §1 type + §2 funding ───────────────────────────────────────────────
-# New entity (not in bundle stub set); create at this path in repo.
-# §1: type → CentralTribunal, cluster → tribunals_adr
-# §2: funding.ministry_responsible → ministry_personnel_dopt
-# Appointment: Tribunals Reforms Act 2021 selection committee applies.
-# ─────────────────────────────────────────────────────────────────────────────
-
 id: cat
 name: Central Administrative Tribunal
 name_hindi: केन्द्रीय प्रशासनिक अधिकरण
@@ -19,43 +12,31 @@ level_of_government: Central
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - Original     # service matters of Central Government employees — AT Act 1985 s.14
+    - Original
     - Appellate
 
 created_year: 1985
-# AT Act 1985 received Presidential assent 9 May 1985; principal bench
-# in New Delhi operationally constituted 1 November 1985.
-
 operational_status: Active
 
 statutory_basis: "Administrative Tribunals Act 1985, Section 4"
 
 appointment:
-  # AT Act 1985 s.6(1): Chairman appointed by President after consultation with CJI.
-  # s.6(2): Members appointed by President after consultation with Chairman of
-  # CAT and CJI (judicial members).
-  # Post-Tribunals Reforms Act 2021 s.3(2): Search-cum-Selection Committee
-  # comprising CJI or designee, 2 Supreme Court judges, Secretary DoPT,
-  # Secretary Finance now governs appointments.
   nominates: central_government
   formally_appoints: president_india
   consulted:
-    - supreme_court_india   # CJI / designee — AT Act 1985 s.6 + TRA 2021 s.3
+    - supreme_court_india
   consultation_binding: false
   criteria_public: true
   tenure: "4 years or until age 70, whichever is earlier — Tribunals Reforms Act 2021, s.3(2)"
   reappointment_possible: false
   removal_authority: president_india
   removal_requires_parliament: false
-  removal_independent_committee: true   # AT Act 1985 s.9 — inquiry committee required
+  removal_independent_committee: true
 
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_personnel_dopt
-  # Ministry of Personnel, Public Grievances and Pensions — DoPT.
-  # SPEC §2 example cites ministry_personnel_dopt for CAT explicitly.
   # ⚠ VERIFY: confirm entity id 'ministry_personnel_dopt' exists in graph.
-  # Union Budget DDG: Ministry of Personnel demand head covers CAT expenditure.
 
 audit:
   audited_by: cag_india
@@ -64,16 +45,10 @@ audit:
 
 data_quality: partial
 data_quality_notes: >
-  Appointment block verified against AT Act 1985 and TRA 2021 text.
-  tenure updated to TRA 2021 regime (4 years / age 70); pre-2021 tenure was
-  5 years or age 65 (Chairman) / 62 (members) under AT Act 1985 s.8 — confirm
-  whether any incumbent predates TRA 2021 with saved terms.
-  ministry_responsible entity id 'ministry_personnel_dopt' assumed — verify
-  in graph. case_volume and judge_strength null — populate from CAT Annual
-  Report or DoJ vacancy data in §3 / §7 session.
-  Consultation binding status: AT Act 1985 s.6 says "after consultation" —
-  practice not expressly binding; post-Madras Bar Assn. SC judgments reinforce
-  independence norms but TRA 2021 framework governs.
+  Appointment block verified against AT Act 1985 and TRA 2021.
+  Pre-2021 tenure was 5 years or age 65/62 — TRA 2021 now governs.
+  ministry_responsible 'ministry_personnel_dopt' assumed — verify in graph.
+  case_volume and judge_strength null — CAT Annual Report or DoJ data in §3/§7.
 
 sources:
   - label: "Administrative Tribunals Act 1985 — India Code"
@@ -84,7 +59,7 @@ sources:
     url: https://india-code.nic.in/acts-detail/MjY5MzQ=
     type: CentralAct
     accessed_date: '2026-05-18'
-  - label: "DoPT — Central Administrative Tribunal (official page)"
+  - label: "DoPT — Central Administrative Tribunal"
     url: https://dopt.gov.in/cat
     type: GoIWebsite
     accessed_date: '2026-05-18'

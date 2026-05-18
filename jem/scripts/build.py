@@ -182,15 +182,38 @@ def load_yaml_file(path: Path) -> Optional[Any]:
 
 
 def load_all_entities(data_dir: Path) -> List[Dict]:
-    from data_loader import load_entities_merged
-
-    return load_entities_merged(data_dir)
+    entities = []
+    entities_dir = data_dir / "entities"
+    roots = [entities_dir / "_generated", entities_dir]
+    seen_ids: set = set()
+    for root in roots:
+        if not root.exists():
+            continue
+        for f in sorted(root.rglob("*.yaml")):
+            if "schema" in str(f) or "_TAXONOMY" in str(f) or "_curated" in str(f):
+                continue
+            data = load_yaml_file(f)
+            if data and isinstance(data, dict) and "id" in data:
+                eid = data["id"]
+                if eid in seen_ids:
+                    continue
+                seen_ids.add(eid)
+                entities.append(data)
+    return entities
 
 
 def load_all_relationships(data_dir: Path) -> List[Dict]:
-    from data_loader import load_relationships_merged
-
-    return load_relationships_merged(data_dir)
+    relationships = []
+    rel_dir = data_dir / "relationships"
+    if not rel_dir.exists():
+        return relationships
+    for f in sorted(rel_dir.glob("*.yaml")):
+        data = load_yaml_file(f)
+        if data and isinstance(data, dict):
+            rels = data.get("relationships", [])
+            if isinstance(rels, list):
+                relationships.extend(rels)
+    return relationships
 
 
 def load_derived_scores(data_dir: Path) -> Dict[str, Dict]:

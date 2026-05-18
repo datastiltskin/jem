@@ -1,17 +1,9 @@
-# ── CESTAT — §1 type + §2 funding ────────────────────────────────────────────
-# New entity (not in bundle stub set); create at this path in repo.
-# §1: type → CentralTribunal, cluster → tribunals_adr
-# §2: funding.ministry_responsible → ministry_of_finance
-# Entity continuity: established 1982 as CEGAT; renamed CESTAT by Finance
-# Act 2003 when service tax jurisdiction was added.
-# ─────────────────────────────────────────────────────────────────────────────
-
 id: cestat
 name: Customs, Excise and Service Tax Appellate Tribunal
 name_hindi: सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण
 abbreviation: CESTAT
 aliases:
-  - CEGAT                            # prior name: Customs, Excise and Gold (Control) Appellate Tribunal
+  - CEGAT
   - Customs Excise Service Tax Appellate Tribunal
 
 type: CentralTribunal
@@ -21,13 +13,11 @@ level_of_government: Central
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - Appellate   # customs, central excise, service tax — Customs Act 1962 s.129
+    - Appellate
 
 created_year: 1982
-# Established as CEGAT (Customs, Excise and Gold Control Appellate Tribunal)
-# under Customs Act 1962 s.129 as inserted by Finance Act 1980; became
-# operational 1982. Renamed CESTAT and service tax jurisdiction added by
-# Finance Act 2003. Entity continuity maintained from 1982.
+# Established as CEGAT under Customs Act 1962 s.129 (Finance Act 1980);
+# renamed CESTAT and service tax jurisdiction added by Finance Act 2003.
 
 operational_status: Active
 
@@ -37,27 +27,22 @@ statutory_basis: >
   Finance Act 1994, Section 86 (service tax — now subsumed into GST)
 
 appointment:
-  # Customs Act 1962 s.129(2A): President must be a retired HC CJ or SC judge.
-  # s.129(2C): Members include judicial members (retired HC judges / advocates
-  # of 10+ years) and technical members (IRS Group A / 10+ years customs/excise).
-  # Post-TRA 2021: Search-cum-Selection Committee governs.
   nominates: central_government
   formally_appoints: central_government
   consulted:
-    - supreme_court_india   # CJI / designee — TRA 2021 s.3 selection committee
+    - supreme_court_india
   consultation_binding: false
   criteria_public: true
   tenure: "4 years or until age 70, whichever is earlier — Tribunals Reforms Act 2021, s.3(2)"
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-  removal_independent_committee: true   # Customs Act 1962 s.129(6) — inquiry committee
+  removal_independent_committee: true
 
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-  # Ministry of Finance — Department of Revenue / CBIC (Central Board of
-  # Indirect Taxes and Customs). CESTAT budget under MoF demand head.
+  # MoF — Department of Revenue / CBIC demand head (distinct from ITAT/DEA).
   # ⚠ VERIFY: confirm entity id 'ministry_of_finance' exists in graph.
 
 audit:
@@ -67,20 +52,15 @@ audit:
 
 data_quality: partial
 data_quality_notes: >
-  created_year 1982 reflects CEGAT founding (entity continuity).
-  Service tax jurisdiction added 2003 (Finance Act 2003); GST replaced service
-  tax from 1 July 2017 but CESTAT retains jurisdiction over pre-GST service
-  tax disputes.
-  statutory_basis lists three Acts — all currently operative for legacy
-  dispute resolution; Finance Act 1994 s.86 remains relevant for service
-  tax appeals predating GST.
-  ministry_responsible entity id 'ministry_of_finance' assumed — verify
-  in graph. CESTAT shares the id with ITAT funding (both MoF/Revenue); the
-  specific CBIC demand head should be cited for budget_figure_crore in §3.
-  case_volume and judge_strength null — CESTAT Annual Report or CBIC in §3/§7.
+  created_year 1982 (CEGAT founding; entity continuity). Service tax
+  jurisdiction added 2003; GST replaced service tax from 1 July 2017 but
+  CESTAT retains jurisdiction over pre-GST disputes.
+  Finance Act 1994 s.86 remains live for legacy service tax appeals.
+  ministry_responsible 'ministry_of_finance' assumed — CBIC demand head;
+  verify in graph. case_volume null — CESTAT Annual Report in §3/§7.
 
 sources:
-  - label: "Customs Act 1962 — CBIC (GoI)"
+  - label: "Customs Act 1962 — CBIC"
     url: https://www.cbic.gov.in/resources//htdocs-cbec/customs/cs-act/formatted-htmls/cs-act.htm
     type: GoIWebsite
     accessed_date: '2026-05-18'
