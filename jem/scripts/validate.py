@@ -38,7 +38,7 @@ ENTITY_TYPES = [
 
 CLUSTERS = [
     "constitutional_courts", "subordinate_courts", "tribunals_adr",
-    "arbitration", "regulatory_bodies", "executive_interface",
+    "consumer_redressal", "arbitration", "regulatory_bodies", "executive_interface",
     "digital_infrastructure", "financing_audit", "training_professional",
     "appointment_bodies", "legislative_executive"
 ]
@@ -447,11 +447,15 @@ def validate_relationship_file(path: Path, strict: bool = False) -> List[str]:
 
 
 def collect_entity_files(data_dir: Path) -> List[Path]:
-    return list((data_dir / "entities").rglob("*.yaml"))
+    from data_loader import iter_entity_yaml_paths
+
+    return iter_entity_yaml_paths()
 
 
 def collect_relationship_files(data_dir: Path) -> List[Path]:
-    return list((data_dir / "relationships").rglob("*.yaml"))
+    from data_loader import iter_relationship_yaml_paths
+
+    return iter_relationship_yaml_paths()
 
 
 def run_validation(data_dir: Path, strict: bool = False, single_file: Optional[Path] = None):
@@ -467,8 +471,13 @@ def run_validation(data_dir: Path, strict: bool = False, single_file: Optional[P
         all_errors.extend(errs)
         files_checked = 1
     else:
+        from data_loader import check_duplicate_entity_ids
+
         entity_files = collect_entity_files(data_dir)
         rel_files = collect_relationship_files(data_dir)
+        dup_errors = check_duplicate_entity_ids()
+        if dup_errors:
+            all_errors.extend(f"  [manifest] {e}" for e in dup_errors)
 
         print(f"\nValidating {len(entity_files)} entity files...")
         for f in sorted(entity_files):

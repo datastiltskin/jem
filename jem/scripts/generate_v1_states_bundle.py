@@ -6,10 +6,12 @@ Idempotent: overwrites files under jem/data/entities/_generated/ and relationshi
 """
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 
 import yaml
 
+from data_loader import should_skip_generated_write
 from hc_benches_config import (
     HC_BENCHES_DEF,
     KA_DISTRICT_TO_BENCH,
@@ -80,7 +82,17 @@ TN_DISTRICT_LATTICE: list[tuple[str, str]] = [
 ]
 
 
-def W(path: Path, doc: dict) -> None:
+_WRITE_ENTITIES = True
+_WRITE_FORCE = False
+
+
+def W(path: Path, doc: dict, *, force: bool | None = None) -> None:
+    if not _WRITE_ENTITIES:
+        return
+    use_force = _WRITE_FORCE if force is None else force
+    eid = doc.get("id") if isinstance(doc, dict) else None
+    if not use_force and should_skip_generated_write(path, eid):
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         f.write("# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md\n")
@@ -134,6 +146,19 @@ def judge_strength_stub() -> dict:
         "source_type": "DoJ_Report",
         "source_url": "https://doj.gov.in/",
         "notes": "Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG bench strength.",
+    }
+
+
+def bench_judge_strength_stub(parent_hc: str) -> dict:
+    """HighCourtBench — sanctioned strength lives on parent HC only."""
+    return {
+        "allotted": None,
+        "appointed": None,
+        "source_type": "HC_Report",
+        "notes": (
+            f"Judges are drawn from parent HC pool ({parent_hc}). Allotted is null "
+            "— sanctioned strength is set at parent HC level only."
+        ),
     }
 
 
@@ -243,9 +268,10 @@ def hc_bench(
     doc["seat_city"] = seat_city
     doc["data_quality_notes"] = (
         f"Permanent bench at {seat_city}; parent {parent_hc}. "
-        "Populate judge_strength and case_volume from HC website / DoJ / NJDG."
+        "Populate case_volume from HC website / NJDG; bench judge_strength uses HC_Report stub."
     )
-    return with_court_judge_strength(doc)
+    doc["judge_strength"] = bench_judge_strength_stub(parent_hc)
+    return doc
 
 
 def regulatory_state(
@@ -759,8 +785,181 @@ def rel(rel_id: str, src: str, tgt: str, rtype: str, cat: str, notes: str) -> di
     }
 
 
+ADR_SRC_NDIAC_ACT = {
+    "label": "New Delhi International Arbitration Centre Act 2019 — India Code",
+    "url": "https://india-code.nic.in/acts-detail/MjMyMDM=",
+    "type": "CentralAct",
+    "accessed_date": "2026-05-18",
+}
+ADR_SRC_LSA_ACT = {
+    "label": "Legal Services Authorities Act 1987 — India Code",
+    "url": "https://india-code.nic.in/acts-detail/NzI2",
+    "type": "CentralAct",
+    "accessed_date": "2026-05-18",
+}
+ADR_SRC_AC_ACT = {
+    "label": "Arbitration and Conciliation Act 1996 — India Code",
+    "url": "https://india-code.nic.in/acts-detail/MTA4NDE=",
+    "type": "CentralAct",
+    "accessed_date": "2026-05-18",
+}
+
+
+def adr_rel(
+    rel_id: str,
+    src: str,
+    tgt: str,
+    rtype: str,
+    cat: str,
+    notes: str,
+    sources: list[dict],
+) -> dict:
+    return {
+        "id": rel_id,
+        "source": src,
+        "target": tgt,
+        "relationship_type": rtype,
+        "relationship_category": cat,
+        "is_binding": True,
+        "notes": notes,
+        "data_quality": "partial",
+        "sources": sources,
+    }
+
+
+def adr_arbitration_relationships() -> list[dict]:
+    """Track E (§4) — NDIAC, MCIA, DIAC, NALSA, tn_slsa, lok_adalat_generic."""
+    return [
+        adr_rel(
+            "moflj_funds_ndiac",
+            "ministry_law_justice",
+            "ndiac",
+            "PrimaryFunder",
+            "funding",
+            (
+                "Ministry of Law and Justice provides Central Government grants to NDIAC "
+                "under NDIAC Act 2019 s.25(1)(a). Transitional arrangement pending "
+                "self-sustaining fee model."
+            ),
+            [ADR_SRC_NDIAC_ACT],
+        ),
+        adr_rel(
+            "moflj_funds_nalsa",
+            "ministry_law_justice",
+            "nalsa",
+            "PrimaryFunder",
+            "funding",
+            (
+                "Ministry of Law and Justice provides Central Government grants to the "
+                "National Legal Aid Fund (NALSA) under LSA Act 1987 s.17(1)(a). "
+                "NALSA in turn grants funds to State Legal Services Authorities."
+            ),
+            [ADR_SRC_LSA_ACT],
+        ),
+        adr_rel(
+            "ndiac_award_challenged_hc_delhi",
+            "ndiac",
+            "hc_delhi",
+            "AwardChallengedIn",
+            "appellate_chain",
+            (
+                "Awards from NDIAC arbitration proceedings challenged under Arbitration "
+                "and Conciliation Act 1996 s.34. NDIAC seat is New Delhi; Delhi High "
+                "Court is the competent court under A&C Act s.2(1)(e)(i). Appeals from "
+                "s.34 orders lie to HC Division Bench under s.37."
+            ),
+            [ADR_SRC_AC_ACT],
+        ),
+        adr_rel(
+            "mcia_award_challenged_hc_bombay",
+            "mcia",
+            "hc_bombay",
+            "AwardChallengedIn",
+            "appellate_chain",
+            (
+                "Awards from MCIA arbitration proceedings challenged under A&C Act 1996 "
+                "s.34. Default seat is Mumbai; Bombay High Court is typically the "
+                "competent court. Seat is party-determined and may vary per arbitration "
+                "agreement — this edge models the default/typical case."
+            ),
+            [ADR_SRC_AC_ACT],
+        ),
+        adr_rel(
+            "diac_award_challenged_hc_delhi",
+            "diac",
+            "hc_delhi",
+            "AwardChallengedIn",
+            "appellate_chain",
+            (
+                "Awards from DIAC arbitration proceedings challenged under A&C Act 1996 "
+                "s.34 in Delhi High Court. DIAC is administered by Delhi HC itself — "
+                "s.34 challenge venue is Delhi HC by both seat and administration."
+            ),
+            [ADR_SRC_AC_ACT],
+        ),
+        adr_rel(
+            "nalsa_designates_lok_adalat",
+            "nalsa",
+            "lok_adalat_generic",
+            "Designates",
+            "statutory_ref",
+            (
+                "NALSA organises Lok Adalats at national level under LSA Act 1987 s.19. "
+                "State and District Legal Services Authorities organise Lok Adalats at "
+                "state/district level within NALSA's policy framework (see state packs, "
+                "e.g. tn_relationships.yaml tn_slsa_adr)."
+            ),
+            [ADR_SRC_LSA_ACT],
+        ),
+        adr_rel(
+            "tn_slsa_reports_nalsa",
+            "tn_slsa",
+            "nalsa",
+            "ReportsTo",
+            "supervisory",
+            (
+                "State Legal Services Authorities function under NALSA's supervisory "
+                "control (LSA Act 1987 s.6(8)). TN SLSA reports to NALSA on policy, "
+                "accounts, and receives NALSA grants through this channel."
+            ),
+            [ADR_SRC_LSA_ACT],
+        ),
+    ]
+
+
+def parse_generate_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Emit JEM v1 entity/relationship YAML")
+    p.add_argument(
+        "--only",
+        choices=("all", "backbone", "hc-benches", "state-packs", "light-states", "relationships"),
+        default="all",
+        help="all = full bundle; relationships = relationship YAML only (no entity writes). "
+        "Other slice names are reserved.",
+    )
+    p.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite hand-maintained / curated paths (use with care)",
+    )
+    return p.parse_args()
+
+
 def main() -> None:
+    global _WRITE_ENTITIES, _WRITE_FORCE
+    args = parse_generate_args()
+    only = args.only
+    _WRITE_FORCE = args.force
+    _WRITE_ENTITIES = only != "relationships"
+
     ENT.mkdir(parents=True, exist_ok=True)
+
+    if only not in ("all", "relationships"):
+        raise SystemExit(
+            f"--only {only!r} is reserved for a future refactor. "
+            "Use --only all (default) or --only relationships (regen rel YAML only, no entity writes). "
+            "See jem/scripts/generate_safe.sh and jem/data/HAND_MAINTAINED.yaml."
+        )
+
     for sid in ("government_maharashtra", "government_nct_delhi", "government_karnataka", "government_tamilnadu"):
         stale = ENT / "backbone" / f"{sid}.yaml"
         if stale.exists():
@@ -815,7 +1014,7 @@ def main() -> None:
             "cluster": "constitutional_courts",
             "jurisdiction_scope": {"is_all_india": True, "jurisdiction_types": ["Appellate", "Writ"]},
         },
-        stub_exec("ncdrc", "National Consumer Disputes Redressal Commission", "tribunals_adr", "Central"),
+        stub_exec("ncdrc", "National Consumer Disputes Redressal Commission", "consumer_redressal", "Central"),
         stub_exec("aptel", "Appellate Tribunal for Electricity", "tribunals_adr", "Central"),
         {
             **stub_exec("lok_adalat_generic", "Lok Adalat (generic)", "tribunals_adr", "Shared_MultiState"),
@@ -1172,10 +1371,10 @@ def main() -> None:
             rel(f"ka_{bench_id}_supervise_{dist_eid}", bench_id, dist_eid, "AdministrativeSupervision", "supervisory", "Article 235 (Dharwad bench)"),
         )
 
-    def dump_rels(name: str, items: list) -> None:
+    def dump_rels(name: str, items: list, header: str | None = None) -> None:
         p = REL / name
         with open(p, "w", encoding="utf-8") as f:
-            f.write("# JEM generated relationships — data_quality: partial\n")
+            f.write(header or "# JEM generated relationships — data_quality: partial\n")
             yaml.safe_dump({"relationships": items}, f, sort_keys=False, allow_unicode=True)
 
     national_rels: list = list(bench_rels)
@@ -1202,8 +1401,20 @@ def main() -> None:
     dump_rels("ka_relationships.yaml", ka_rels)
     dump_rels("tn_relationships.yaml", tn_rels)
     dump_rels("py_relationships.yaml", py_rels)
+    dump_rels(
+        "adr_arbitration_relationships.yaml",
+        adr_arbitration_relationships(),
+        header=(
+            "# JEM relationships — ADR & Arbitration cluster (backbone)\n"
+            "# Track E (§4) — generated by generate_v1_states_bundle.py\n"
+            "# EstablishedUnder → statute deferred until act entities exist in graph.\n"
+        ),
+    )
 
-    print(f"Wrote entities under {ENT} and relationships (mh/dl/ka/tn/py, national_state_chains)")
+    print(
+        f"Wrote entities under {ENT} and relationships "
+        "(mh/dl/ka/tn/py, national_state_chains, adr_arbitration)"
+    )
 
 
 if __name__ == "__main__":

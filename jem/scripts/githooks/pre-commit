@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Warn if staged changes touch curated data without validation.
+set -euo pipefail
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+JEM="$REPO_ROOT/jem"
+if [[ ! -d "$JEM/scripts" ]]; then
+  exit 0
+fi
+STAGED="$(git diff --cached --name-only -- 'jem/data/entities/_curated' 'jem/data/relationships/_curated' 'jem/data/HAND_MAINTAINED.yaml' 2>/dev/null || true)"
+if [[ -z "$STAGED" ]]; then
+  exit 0
+fi
+echo "pre-commit: curated JEM data staged — running validate --strict"
+(cd "$JEM" && python3 scripts/validate.py --strict) || exit 1
+exit 0

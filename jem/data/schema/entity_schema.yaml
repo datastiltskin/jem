@@ -93,6 +93,7 @@ entity:
       - constitutional_courts
       - subordinate_courts
       - tribunals_adr
+      - consumer_redressal    # NCDRC, State CDRCs, District CDRCs
       - arbitration
       - regulatory_bodies
       - executive_interface       # Police, investigation, prosecution
@@ -400,5 +401,7 @@ entity:
       url: string           # Direct URL to primary source
       type:
         type: enum
-        values: [Constitution, CentralAct, StateAct, SCJudgment, HCJudgment, GazetteNotification, GoIWebsite, OfficialReport]
+        values: [Constitution, CentralAct, StateAct, SCJudgment,
+                 HCJudgment, GazetteNotification, GoIWebsite, OfficialReport,
+                 NJDG, AnnualReport]
       accessed_date: string # YYYY-MM-DD

@@ -1,0 +1,27 @@
+# Paths relative to jem/data/. Generator skips these; curated wins on merge.
+# See jem/scripts/safe_pipeline.sh (daily) and generate_safe.sh (regen).
+
+entity_ids:
+  - hc_madras
+  - hc_madras_bench_madurai
+  - hc_madras_bench_tiruchirappalli
+  - ncdrc
+  - ndiac
+  - nalsa
+  - mcia
+  - diac
+  - tn_slsa
+
+entities:
+  - entities/_curated/high_courts/hc_madras.yaml
+  - entities/_curated/high_courts/benches/hc_madras_bench_madurai.yaml
+  - entities/_curated/high_courts/benches/hc_madras_bench_tiruchirappalli.yaml
+  - entities/_curated/backbone/ncdrc.yaml
+  - entities/_curated/backbone/ndiac.yaml
+  - entities/_curated/backbone/nalsa.yaml
+  - entities/_curated/backbone/mcia.yaml
+  - entities/_curated/backbone/diac.yaml
+  - entities/_curated/states/tn/tn_slsa.yaml
+
+relationships:
+  - relationships/_curated/madras_bench_of.yaml

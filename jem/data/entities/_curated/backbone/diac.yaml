@@ -1,0 +1,110 @@
+# ── DIAC — §4 ADR/Arbitration ────────────────────────────────────────────────
+# New entity. Administered by Delhi High Court under rule-making power.
+# Not a statutory body under a dedicated Central Act.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# jem: hand-maintained — do not regenerate
+id: diac
+name: Delhi International Arbitration Centre
+abbreviation: DIAC
+aliases:
+  - Delhi International Arbitration Centre
+  - DHCAC                   # earlier name: Delhi High Court Arbitration Centre
+
+type: ArbitralInstitution
+cluster: arbitration
+level_of_government: State
+# DIAC is constituted under Delhi HC's administrative/rule-making authority;
+# territorial base is Delhi NCT.
+
+jurisdiction_scope:
+  states_covered:
+    - DL
+  uts_covered:
+    - DL
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+
+created_year: 2009
+# DIAC constituted by Delhi High Court as Delhi High Court Arbitration
+# Centre circa 2009; renamed Delhi International Arbitration Centre
+# and rules updated in subsequent years (DIAC Rules 2023 currently in force).
+# ⚠ VERIFY: confirm exact constitution year from Delhi HC administrative
+# order or gazette notification. 2009 is a commonly cited founding year
+# but primary source not confirmed.
+
+operational_status: Active
+
+statutory_basis: null
+# No dedicated Central or State Act. DIAC constituted under Delhi High
+# Court's inherent rule-making authority and CPC s.89 (court-annexed ADR).
+# DIAC Rules 2023 govern proceedings (Delhi HC notification).
+# ⚠ Flag: if Delhi (Amendment) Act or specific DIAC legislation exists,
+# update statutory_basis and type fields accordingly.
+
+appointment:
+  # DIAC administered by a Committee chaired by a sitting Delhi HC judge
+  # nominated by the Chief Justice of Delhi HC.
+  # Arbitrator appointment: DIAC Rules 2023 — parties appoint; DIAC
+  # Committee appoints in default from empanelled list.
+  nominates: null
+  formally_appoints: null   # Delhi HC CJ nominates committee members
+  consulted:
+    - hc_delhi              # Delhi HC CJ constitutes DIAC committee
+  consultation_binding: true
+  criteria_public: true
+  tenure: null
+  reappointment_possible: null
+  removal_authority: hc_delhi
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Mixed
+  ministry_responsible: null
+  # DIAC is semi-autonomous; initial funding from Delhi HC budget
+  # (Government of NCT Delhi / Delhi HC administration). Case fees
+  # contribute to operational costs. Not funded by a Central Ministry.
+  # ⚠ ministry_responsible null — DIAC is HC-administered, not
+  # Ministry-administered. If Delhi Law Department entity exists in
+  # graph, that may be applicable; verify.
+
+audit:
+  audited_by: null
+  audit_type: Internal
+  # Administered by Delhi HC; financial oversight through HC accounts.
+  # CAG may audit through Delhi HC accounts; verify.
+  audit_report_public: false
+
+complaint_mechanism:
+  # Arbitrator challenge: DIAC Rules 2023 — challenge decided by DIAC Committee.
+  # Award challenge: A&C Act 1996 s.34 in Delhi High Court.
+  # Oversight: Delhi HC CJ has administrative supervision over DIAC.
+  lokpal_jurisdiction: Not_Applicable
+  removal_mechanism: >
+    Arbitrator challenge under DIAC Rules 2023. Award challenge under
+    Arbitration and Conciliation Act 1996, s.34 in Delhi High Court.
+    DIAC administrative decisions subject to Delhi HC oversight.
+
+data_quality: partial
+data_quality_notes: >
+  created_year 2009 unverified — locate Delhi HC administrative order
+  constituting DIAC / DHCAC. DIAC Rules 2023 (current) supersede earlier
+  rules; cite specific gazette notification when verifying.
+  statutory_basis null — no dedicated Act confirmed; update if DIAC-specific
+  legislation enacted. funding.primary_source Mixed (HC budget + fees) is
+  an inference — confirm from Delhi HC annual budget documents.
+  audit_type Internal flagged partial — CAG may audit through Delhi HC
+  consolidated accounts; confirm.
+  AwardChallengedIn → hc_delhi (adr_arbitration_relationships.yaml).
+
+sources:
+  - label: "DIAC — Official Website (Delhi High Court)"
+    url: https://diac.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  - label: "Arbitration and Conciliation Act 1996 — India Code (governing law)"
+    url: https://india-code.nic.in/acts-detail/MTA4NDE=
+    type: CentralAct
+    accessed_date: '2026-05-18'

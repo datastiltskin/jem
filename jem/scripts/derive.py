@@ -262,31 +262,26 @@ def load_entity(path: Path) -> Optional[Dict[str, Any]]:
 
 def derive_scores_for_all(data_dir: Path) -> Dict[str, Dict]:
     """Returns dict of entity_id -> derived scores."""
+    from data_loader import load_entities_merged
+
     results = {}
-    entity_files = list((data_dir / "entities").rglob("*.yaml"))
-
-    for f in sorted(entity_files):
-        if 'schema' in str(f) or '_TAXONOMY' in str(f):
-            continue
-        entity = load_entity(f)
-        if not entity:
-            continue
-
-        entity_id = entity.get('id')
+    for entity in load_entities_merged(data_dir):
+        entity_id = entity.get("id")
         if not entity_id:
-            print(f"  WARNING: No 'id' field in {f.name}")
             continue
 
         ir_score, ir_breakdown = compute_independence_risk(entity)
         dp_score, dp_breakdown = compute_discretionary_power(entity)
 
         results[entity_id] = {
-            'independence_risk_score': ir_score,
-            'independence_risk_breakdown': ir_breakdown,
-            'independence_risk_level': classify_ir(ir_score),
-            'discretionary_power_score': dp_score,
-            'discretionary_power_breakdown': dp_breakdown,
-            'scores_validated': entity.get('derived', {}).get('scores_validated', False) if entity.get('derived') else False
+            "independence_risk_score": ir_score,
+            "independence_risk_breakdown": ir_breakdown,
+            "independence_risk_level": classify_ir(ir_score),
+            "discretionary_power_score": dp_score,
+            "discretionary_power_breakdown": dp_breakdown,
+            "scores_validated": entity.get("derived", {}).get("scores_validated", False)
+            if entity.get("derived")
+            else False,
         }
 
     return results
@@ -312,10 +307,10 @@ def save_derived_scores(results: Dict, output_path: Path):
 
 def explain_entity(entity_id: str, data_dir: Path):
     """Print detailed explanation of scores for one entity."""
-    entity_files = list((data_dir / "entities").rglob("*.yaml"))
-    for f in entity_files:
-        entity = load_entity(f)
-        if entity and entity.get('id') == entity_id:
+    from data_loader import load_entities_merged
+
+    for entity in load_entities_merged(data_dir):
+        if entity.get("id") == entity_id:
             ir_score, ir_bd = compute_independence_risk(entity)
             dp_score, dp_bd = compute_discretionary_power(entity)
 

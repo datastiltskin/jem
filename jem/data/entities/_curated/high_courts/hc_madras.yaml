@@ -1,0 +1,144 @@
+# ── hc_madras — §7 judge_strength update ────────────────────────────────────
+# Changes from stub:
+#   judge_strength.source_url : generic doj.gov.in → specific report index
+#   judge_strength.notes      : generic → actionable lookup instructions
+#   statutory_basis           : null → populated
+#   data_quality_notes        : updated to reflect §7 pass status
+# allotted/appointed remain null — no DoJ/NJDG access in this session.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# jem: hand-maintained — do not regenerate
+id: hc_madras
+name: High Court of Judicature at Madras
+abbreviation: MADR
+type: ConstitutionalCourt
+cluster: constitutional_courts
+level_of_government: Shared_MultiState
+
+jurisdiction_scope:
+  states_covered:
+    - TN
+  uts_covered:
+    - PY
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+    - Appellate
+    - Writ
+
+created_year: 1862
+operational_status: Active
+
+constitutional_basis: "Constitution of India, Article 214 (Chapter VI — High Courts in the States)"
+statutory_basis: "High Courts Act 1861; Letters Patent 1865 (Madras)"
+# Letters Patent (1865) and subsequent High Courts Act define original
+# civil jurisdiction. Supervisory jurisdiction: Article 227.
+
+appointment:
+  nominates: collegium_hc_appointment
+  recommends: collegium_hc_appointment
+  consulted:
+    - governor_state
+  consultation_binding: true
+  formally_appoints: president_india
+  criteria_public: false
+  tenure: "Until age 62 (Article 217)"
+  reappointment_possible: false
+  removal_authority: president_india
+  removal_requires_parliament: true
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+  # High Courts are funded from the State Consolidated Fund of Tamil Nadu.
+  # Salaries and allowances of judges are charged to CFI (Article 229 r/w
+  # Article 112 / Schedule VII) — not a state discretionary grant.
+  # ministry_responsible is null: no single ministry controls HC funding;
+  # state Finance Dept administers the vote. Populate if a specific
+  # state ministry entity is available in the graph.
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+
+training:
+  trained_by: []
+  induction_training: false
+  continuing_education: true
+  training_mandatory: false
+
+digital_infrastructure:
+  system_used:
+    - eCourts_Portal
+    - NJDG
+  digital_variant: NIC_Standard
+  integrated_with_njdg: true
+
+structural_variations: []
+
+judge_strength:
+  # §7 PASS — allotted/appointed NOT populated (no DoJ/NJDG access this session).
+  # MAINTAINER ACTION:
+  #   1. Open DoJ vacancy report index:
+  #      https://doj.gov.in/report-and-committees/judicial-vacancy-reports
+  #      Download the latest quarterly "Statement of Strength of Judges in
+  #      High Courts" PDF. Row for "Madras" gives allotted + appointed.
+  #   2. Cross-check NJDG HC bench strength panel:
+  #      https://njdg.ecourts.gov.in/hcnjdg/
+  #      Select "Madras High Court" → Judge Strength tab.
+  #   3. Record snapshot date as data_as_of (ISO YYYY-MM-DD).
+  #   NOTE: allotted (sanctioned) covers the ENTIRE Madras HC including
+  #   Madurai and Tiruchirappalli benches — there is no per-bench allocation.
+  #   Bench-level appointed counts are set by CJ roster and must be sourced
+  #   separately from HC administrative orders (see bench YAMLs).
+  data_as_of: null
+  allotted: null
+  appointed: null
+  vacancy_count: null   # derive.py may compute as allotted − appointed once populated
+  source_type: DoJ_Report
+  source_url: https://doj.gov.in/report-and-committees/judicial-vacancy-reports
+  notes: >
+    Sanctioned (allotted) and working (appointed) strength cover the full
+    Madras HC including all permanent benches. Source: DoJ quarterly vacancy
+    report → "Statement of Strength of Judges in High Courts", Madras row.
+    Cross-check: NJDG HC panel (https://njdg.ecourts.gov.in/hcnjdg/).
+    Bench-specific appointed counts in hc_madras_bench_madurai.yaml and
+    hc_madras_bench_tiruchirappalli.yaml — those are rostered subsets, not
+    additional posts.
+
+data_quality: partial
+data_quality_notes: >
+  §7 pass complete (structure + source links). allotted and appointed null
+  pending DoJ/NJDG lookup by maintainer — see judge_strength.notes for
+  exact source URLs and lookup steps.
+  statutory_basis added (Letters Patent 1865 + High Courts Act 1861).
+  funding.ministry_responsible left null: HC funding from State Consolidated
+  Fund is not routed through a single ministry entity; populate if a state
+  finance department entity exists in the graph.
+
+sources:
+  - label: "India Code — Constitution & Acts"
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
+  - label: "Supreme Court of India"
+    url: https://main.sci.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
+  - label: "DoJ — Judicial Vacancy Reports (quarterly)"
+    url: https://doj.gov.in/report-and-committees/judicial-vacancy-reports
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  - label: "NJDG — High Court Judge Strength Panel"
+    url: https://njdg.ecourts.gov.in/hcnjdg/
+    type: NJDG
+    accessed_date: '2026-05-18'

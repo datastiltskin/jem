@@ -1,0 +1,99 @@
+# ── NDIAC — §4 ADR/Arbitration ───────────────────────────────────────────────
+# New entity. NDIAC Act 2019 statutory body; absorbed ICADR assets.
+# Common alias "IIAC" (India International Arbitration Centre) not confirmed
+# in statute — flag if a renaming amendment has been enacted post-2021.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# jem: hand-maintained — do not regenerate
+id: ndiac
+name: New Delhi International Arbitration Centre
+name_hindi: नई दिल्ली अन्तर्राष्ट्रीय मध्यस्थता केन्द्र
+abbreviation: NDIAC
+aliases:
+  - IIAC
+  - India International Arbitration Centre   # verify if enacted by amendment
+  - ICADR                                    # predecessor absorbed under NDIAC Act 2019 s.28
+
+type: ArbitralInstitution
+cluster: arbitration
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Original   # institutional arbitration; not a court
+
+created_year: 2019
+# NDIAC Act 2019 (No. 2 of 2019) received Presidential assent 26 July 2019.
+# Predecessor ICADR (International Centre for Alternative Dispute Resolution)
+# established 1995; assets and cases transferred to NDIAC under s.28.
+
+operational_status: Active
+
+statutory_basis: "New Delhi International Arbitration Centre Act 2019, Section 3"
+
+appointment:
+  # NDIAC Act 2019 s.5: Governing Body includes Chairperson + members.
+  # Chairperson: a person of eminent standing with special knowledge in
+  # law, arbitration, justice system, trade or commerce (s.4(1)(a)).
+  # Central Government appoints Chairperson on recommendation of
+  # Search-cum-Selection Committee (s.4(2)).
+  # CJI or SC judge nominated by CJI sits on the selection committee.
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+    - supreme_court_india   # CJI nominates member of selection committee — s.4(2)
+  consultation_binding: false
+  criteria_public: true
+  tenure: "3 years, renewable once — NDIAC Act 2019 s.4(5)"
+  reappointment_possible: true
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true   # s.4(7) — inquiry committee before removal
+
+funding:
+  primary_source: Statutory_Fund
+  ministry_responsible: ministry_law_justice
+  # NDIAC Act 2019 s.25: NDIAC Fund receives Central Government grants,
+  # party fees, arbitrator fees share, and other receipts.
+  # Transitional: government-funded; target model is self-sustaining via fees.
+  # ⚠ VERIFY: confirm entity id 'ministry_law_justice' exists in graph.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  # NDIAC Act 2019 s.27: accounts audited by CAG.
+  audit_report_public: true
+
+complaint_mechanism:
+  # No specific external statutory complaint mechanism.
+  # Institutional complaints: NDIAC Rules / Code of Ethics for arbitrators
+  # adjudicated by Governing Body (s.5).
+  # Challenge to arbitrator: A&C Act 1996 s.13 (challenge procedure).
+  # Award challenge: A&C Act 1996 s.34 in Delhi High Court.
+  lokpal_jurisdiction: Not_Applicable
+  removal_mechanism: >
+    Arbitrator removal under Arbitration and Conciliation Act 1996, s.14
+    (failure/inability to act). NDIAC institutional rules supplement.
+
+data_quality: partial
+data_quality_notes: >
+  Alias 'IIAC' / 'India International Arbitration Centre' used informally
+  and in some government communications — verify whether a formal renaming
+  amendment to NDIAC Act 2019 has been enacted; if so, update name, id,
+  and statutory_basis accordingly.
+  Funding: Statutory_Fund reflects hybrid model (CFI grants + party fees);
+  update to Mixed once NDIAC is self-sustaining.
+  Relationships: PrimaryFunder ← ministry_law_justice; AwardChallengedIn → hc_delhi
+  (adr_arbitration_relationships.yaml). EstablishedUnder → statute deferred.
+  case_volume null — NDIAC Annual Report for filings/awards in §3 session.
+
+sources:
+  - label: "New Delhi International Arbitration Centre Act 2019 — India Code"
+    url: https://india-code.nic.in/acts-detail/MjMyMDM=
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "Ministry of Law and Justice — NDIAC"
+    url: https://doj.gov.in/acts-rules/new-delhi-international-arbitration-centre-act-2019
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

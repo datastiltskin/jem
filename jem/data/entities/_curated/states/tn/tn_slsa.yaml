@@ -1,0 +1,93 @@
+# ── tn_slsa — §4 ADR / TN state entity ──────────────────────────────────────
+# Already referenced in tn_relationships.yaml (source: tn_slsa).
+# Creates the entity YAML to resolve what is currently a bare id reference.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# jem: hand-maintained — do not regenerate
+id: tn_slsa
+name: Tamil Nadu State Legal Services Authority
+name_hindi: null
+abbreviation: TNSLSA
+aliases:
+  - Tamil Nadu State Legal Services Authority
+  - TN SLSA
+
+type: ADRBody
+cluster: tribunals_adr
+level_of_government: State
+
+jurisdiction_scope:
+  states_covered:
+    - TN
+  is_all_india: false
+  jurisdiction_types:
+    - Original   # legal aid, Lok Adalat organisation, pre-litigation mediation
+
+created_year: 1995
+# Legal Services Authorities Act 1987 s.6 mandates State Legal Services
+# Authorities. TN SLSA constituted pursuant to the Act; operational
+# from approximately 1995 when NALSA Regulations came into force.
+# ⚠ VERIFY: exact constitution date from GoTN Gazette or TN SJA records.
+
+operational_status: Active
+
+statutory_basis: "Legal Services Authorities Act 1987, Section 6"
+
+appointment:
+  # LSA Act 1987 s.6:
+  # Patron-in-Chief: Chief Justice of Madras HC (ex officio — s.6(2)(a))
+  # Executive Chairman: sitting HC judge nominated by CJ (s.6(2)(b))
+  # Members: nominated by CJ in consultation with State Government
+  nominates: hc_madras   # CJ of Madras HC nominates Executive Chairman
+  formally_appoints: hc_madras
+  consulted:
+    - government_tamilnadu   # State Government consulted on member nominations
+  consultation_binding: false
+  criteria_public: true
+  tenure: null   # follows HC judge tenure for Executive Chairman
+  reappointment_possible: null
+  removal_authority: hc_madras
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Mixed
+  ministry_responsible: null
+  # LSA Act 1987 s.18: State Legal Aid Fund — State Government grants +
+  # NALSA grants. TN government provides state contribution; NALSA
+  # provides central grants. No single ministry responsible.
+  # State_Consolidated_Fund (TN) is primary; NALSA grants supplement.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  # State fund subject to CAG audit through TN state accounts.
+  audit_report_public: true
+
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+  removal_mechanism: >
+    TN SLSA Executive Chairman removal follows Madras HC judge
+    administrative norms. NALSA oversight of SLSA operations under
+    LSA Act 1987 s.6(8).
+
+data_quality: partial
+data_quality_notes: >
+  created_year 1995 approximate — verify from GoTN Gazette notification
+  constituting TN SLSA. hc_madras entity id assumed correct for
+  Patron-in-Chief/appointment block — verify.
+  government_tamilnadu entity id used in tn_relationships.yaml — verify if expanded.
+  ReportsTo → nalsa (adr_arbitration_relationships.yaml). Designates →
+  lok_adalat_generic in tn_relationships.yaml only (id: tn_slsa_adr).
+  TNSLSA also organises District Legal Services Authorities (DLSAs) in
+  each of TN's 38 districts — DLSA entities not modelled (Phase-2).
+
+sources:
+  - label: "Legal Services Authorities Act 1987 — India Code"
+    url: https://india-code.nic.in/acts-detail/NzI2
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "TN SLSA — Official Website"
+    url: https://tnslsa.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'

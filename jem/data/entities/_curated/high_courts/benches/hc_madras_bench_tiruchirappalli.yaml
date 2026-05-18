@@ -1,0 +1,129 @@
+# ── hc_madras_bench_tiruchirappalli ───────────────────────────────────────────
+# BenchOf → hc_madras: national_state_chains.yaml (hc_madras_bench_tiruchirappalli_bench_of_hc_madras).
+# TN district routing: tn_relationships.yaml. §7 judge_strength: null-allotted pattern.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# jem: hand-maintained — do not regenerate
+id: hc_madras_bench_tiruchirappalli
+name: Tiruchirappalli Bench of Madras High Court
+abbreviation: null
+# No verified official abbreviation for Tiruchirappalli bench;
+# 'MADR' used on parent HC and Madurai bench may not apply here.
+# Populate from HC administrative records if available.
+aliases:
+  - Trichy Bench of Madras High Court   # informal usage
+
+type: HighCourtBench
+cluster: constitutional_courts
+level_of_government: State
+
+jurisdiction_scope:
+  states_covered:
+    - TN
+  uts_covered: []
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+    - Appellate
+    - Writ
+
+created_year: 1948
+# ⚠ VERIFY URGENTLY: created_year 1948 is used as a conservative placeholder
+# matching the Madurai bench stub year. No primary source has been confirmed
+# for Tiruchirappalli bench establishment specifically.
+# Lookup: GoTN Gazette or Madras HC administrative order constituting this
+# bench. If the bench was constituted more recently (e.g. 2000s–2010s),
+# update this field immediately.
+
+operational_status: Active
+
+constitutional_basis: "Constitution of India, Article 214"
+statutory_basis: "High Courts Act 1861 — bench constituted by CJ administrative order under Letters Patent 1865"
+
+parent_hc: hc_madras
+# seat_city: Tiruchirappalli (per hc_benches_config.py)
+
+appointment:
+  nominates: collegium_hc_appointment
+  recommends: collegium_hc_appointment
+  consulted:
+    - governor_state
+  consultation_binding: true
+  formally_appoints: president_india
+  criteria_public: false
+  tenure: "Until age 62 (Article 217) — same as parent HC"
+  reappointment_possible: false
+  removal_authority: president_india
+  removal_requires_parliament: true
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+
+training:
+  trained_by: []
+  induction_training: false
+  continuing_education: true
+  training_mandatory: false
+
+digital_infrastructure:
+  system_used:
+    - eCourts_Portal
+    - NJDG
+  digital_variant: NIC_Standard
+  integrated_with_njdg: true
+
+structural_variations: []
+
+judge_strength:
+  # §7 PASS — allotted null by design (same model as hc_madras_bench_madurai).
+  # MAINTAINER ACTION:
+  #   Same lookup as Madurai bench: Madras HC website roster section or HC
+  #   Annual Report for Tiruchirappalli Bench judge assignment.
+  #   https://www.hcmadras.tn.nic.in/  → Judges / Bench Roster (Trichy)
+  data_as_of: null
+  allotted: null
+  # allotted is null — no independent sanctioned strength for bench entities.
+  # See hc_madras.judge_strength.allotted for parent HC total.
+  appointed: null
+  vacancy_count: null
+  source_type: HC_Report
+  source_url: https://www.hcmadras.tn.nic.in/
+  notes: >
+    Bench judges drawn from parent HC pool (hc_madras). allotted null by design.
+    appointed = judges on CJ roster for Tiruchirappalli Bench at snapshot date.
+    Districts in Tiruchirappalli bench zone: Ariyalur, Cuddalore, Karur,
+    Mayiladuthurai, Nagapattinam, Perambalur, Pudukkottai, Thanjavur,
+    Tiruchirappalli, Tiruvarur (per hc_benches_config.py TN_DISTRICT_TO_BENCH).
+    BenchOf → hc_madras in national_state_chains.yaml; TN routing in tn_relationships.yaml.
+
+data_quality: partial
+data_quality_notes: >
+  BenchOf and TN district routing present (national_state_chains.yaml,
+  tn_relationships.yaml). created_year 1948 unverified — requires Madras HC
+  gazette notification or administrative order as primary source. abbreviation
+  null pending confirmation of official short form.
+
+sources:
+  - label: "Madras High Court — Official Website"
+    url: https://www.hcmadras.tn.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  - label: "hc_benches_config.py — JEM internal"
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
+  # ⚠ Replace second source with primary gazette/HC order when located.

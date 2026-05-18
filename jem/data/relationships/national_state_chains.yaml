@@ -6,7 +6,7 @@ relationships:
   relationship_type: BenchOf
   relationship_category: statutory_ref
   is_binding: true
-  notes: Permanent bench at Madurai — part of hc_madras
+  notes: Permanent bench at Madurai — part of hc_madras (enriched in relationships/_curated/madras_bench_of.yaml)
   data_quality: partial
   sources:
   - &id001
@@ -20,7 +20,7 @@ relationships:
   relationship_type: BenchOf
   relationship_category: statutory_ref
   is_binding: true
-  notes: Permanent bench at Tiruchirappalli — part of hc_madras
+  notes: Permanent bench at Tiruchirappalli — part of hc_madras (enriched in relationships/_curated/madras_bench_of.yaml)
   data_quality: partial
   sources:
   - *id001

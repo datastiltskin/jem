@@ -1,0 +1,97 @@
+# ── NALSA — §4 ADR / Legal Services ─────────────────────────────────────────
+# New entity. Central statutory body; CJI is Patron-in-Chief.
+# Organises Lok Adalats and legal aid — core ADR framework for India.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# jem: hand-maintained — do not regenerate
+id: nalsa
+name: National Legal Services Authority
+name_hindi: राष्ट्रीय विधिक सेवा प्राधिकरण
+abbreviation: NALSA
+aliases:
+  - National Legal Services Authority
+
+type: ADRBody
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Original   # Lok Adalat awards; legal aid; pre-litigation settlement
+
+created_year: 1995
+# Legal Services Authorities Act 1987 (No. 39 of 1987) enacted;
+# NALSA constituted and its Regulations brought into force 9 November 1995.
+# created_year is operational constitution date; statute date is 1987.
+
+operational_status: Active
+
+statutory_basis: "Legal Services Authorities Act 1987, Section 3"
+
+appointment:
+  # LSA Act 1987 s.3:
+  # Patron-in-Chief: Chief Justice of India (ex officio — s.3(2)(a))
+  # Executive Chairman: sitting SC judge nominated by President in
+  # consultation with CJI (s.3(2)(b))
+  # Other members: nominated by President in consultation with CJI
+  nominates: president_india
+  formally_appoints: president_india
+  consulted:
+    - supreme_court_india   # CJI consulted on Executive Chairman — s.3(2)(b)
+  consultation_binding: false   # "in consultation with" — not expressly binding
+  criteria_public: true
+  tenure: null   # tenure not specified in LSA Act 1987 for Executive Chairman; follows SC judge tenure
+  reappointment_possible: null
+  removal_authority: president_india
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_law_justice
+  # LSA Act 1987 s.17: National Legal Aid Fund — Central Government
+  # grants credited to Fund; expenditure met from Fund.
+  # Ministry of Law and Justice is nodal ministry.
+  # ⚠ VERIFY: confirm entity id 'ministry_law_justice' exists in graph.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  # LSA Act 1987 s.19: accounts maintained in prescribed form and audited
+  # by CAG.
+  audit_report_public: true
+
+complaint_mechanism:
+  # NALSA Regulations 1995: complaints about legal services handled
+  # internally by NALSA / State Legal Services Authorities.
+  # No specific external statutory complaint body.
+  # Lok Adalat award: deemed decree of civil court — final and binding;
+  # no appeal (LSA Act 1987 s.21(2)). Not challengeable except by writ.
+  lokpal_jurisdiction: Not_Applicable
+  removal_mechanism: >
+    NALSA Executive Chairman removal follows SC judge removal provisions
+    (by President; no parliamentary impeachment process specified separately).
+
+data_quality: partial
+data_quality_notes: >
+  created_year 1995 (operational constitution); LSA Act enacted 1987.
+  Patron-in-Chief (CJI) role is ex officio and nominal — not modelled as
+  an appointment relationship; noted here for reference.
+  Funding: National Legal Aid Fund is a Statutory Fund under LSA Act 1987
+  s.17; primary_source Consolidated_Fund_India reflects the source of
+  Central Government grants into the Fund.
+  Relationships: PrimaryFunder ← ministry_law_justice; Designates → lok_adalat_generic
+  (adr_arbitration_relationships.yaml). NALSA does not ReportsTo a ministry —
+  CJI patronage is ex officio (not modelled as an edge). EstablishedUnder →
+  statute deferred. State SLSAs (e.g. tn_slsa) ReportsTo nalsa in same file.
+
+sources:
+  - label: "Legal Services Authorities Act 1987 — India Code"
+    url: https://india-code.nic.in/acts-detail/NzI2
+    type: CentralAct
+    accessed_date: '2026-05-18'
+  - label: "NALSA — Official Website"
+    url: https://nalsa.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-05-18'
