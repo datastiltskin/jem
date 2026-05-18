@@ -71,9 +71,3 @@ The Level 3 detail panel always shows a **Judge strength** section for court-lik
 ## 3. HC → Supreme Court appellate backbone
 
 The generator adds `AppealableTo` / `appellate_chain` from each `hc_*` to `supreme_court_india` (Article 136 / SLP framing in `notes`).
-
----
-
-## Prompts
-
-See `jem/docs/CLAUDE_PROMPT_V1_DATA_COMPLETION.md` §7–8 for HC bench and judge-strength completion instructions.
