@@ -105,6 +105,7 @@ relationship:
       - JurisdictionDefinedBy     # Court → statute defining jurisdiction
       - AwardEnforcedIn           # Arbitral award → court
       - AwardChallengedIn         # S.34 A&C Act relationship
+      - BenchOf                   # HC permanent bench → parent High Court
 
   relationship_category:
     type: enum

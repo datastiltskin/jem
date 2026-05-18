@@ -1,6 +1,13 @@
 // JEM — Central State Store
 // All UI state lives here. Modules subscribe to changes.
 
+import {
+  buildDistrictAggregateIndex,
+  PRINCIPAL_HC_BY_STATE_CODE,
+  syntheticAggregateEntity,
+  syntheticAggregateRelationships,
+} from './districtAggregates.js';
+
 // Relationship categories shown in Structure (and as baseline for other modes).
 // Keeps the map navigable — appointment / funding / etc. edges, not appellate-only.
 const DEFAULT_STRUCTURE_LENSES = [
@@ -58,6 +65,10 @@ export const State = {
   hiddenEntityIds: new Set(),
   _childrenByParent: null,
 
+  /** Per-state district lattice: collapsed = generic or synthetic; expanded = every bench row. */
+  _districtAggregateIndex: null,
+  expandedDistrictAggregateIds: new Set(),
+
   // ── Subscribers ────────────────────────────────────────
   _listeners: {},
 
@@ -103,11 +114,53 @@ export const State = {
 
   selectEntity(id) {
     this.selectedEntityId = id;
+    if (id) this.revealEntityOnMapForSelection(id);
     this.emit('entitySelected', id);
     if (id) this.setZoomLevel(3);
   },
 
+  /** District lattice group owned by this principal High Court (e.g. Madras → TN). */
+  districtGroupForPrincipalHc(hcId) {
+    if (!hcId || !this._districtAggregateIndex?.groups) return null;
+    const direct = this._districtAggregateIndex.groups.find(g => g.hcTargetId === hcId);
+    if (direct) return direct;
+    return this._districtAggregateIndex.groups.find(
+      g => PRINCIPAL_HC_BY_STATE_CODE[g.stateCode] === hcId
+    ) || null;
+  },
+
+  /**
+   * Selecting a principal HC should show its district lattice on the map
+   * (expand explorer branch + individual district benches, not only the summary node).
+   */
+  revealEntityOnMapForSelection(id) {
+    if (!id || !this.graph) return;
+    let changed = false;
+
+    const aggToggle = this.getDistrictAggregateToggleForEntityId(id);
+    if (aggToggle && !this.expandedDistrictAggregateIds.has(aggToggle.groupId)) {
+      this.expandedDistrictAggregateIds.add(aggToggle.groupId);
+      this.emit('aggregateChanged', aggToggle.groupId);
+      changed = true;
+    }
+
+    if (this.isPrincipalHighCourt(id) && this.useProgressiveExplorer) {
+      const kids = this._childrenByParent?.[id] || [];
+      if (kids.length && !this.expandedEntityIds.has(id)) {
+        this.expandedEntityIds.add(id);
+        changed = true;
+      }
+      if (this.expandDistrictLatticeForHc(id)) changed = true;
+    }
+
+    if (changed) {
+      this._recomputeHiddenFromExpanded();
+      this.emit('collapseChanged', id);
+    }
+  },
+
   clearEntity() {
+    if (this.selectedEntityId === null) return;
     this.selectedEntityId = null;
     this.emit('entitySelected', null);
     // Return to Level 1 or 2 based on current transform
@@ -197,8 +250,18 @@ export const State = {
     this.emit('derivedToggle', 'caseVolume');
   },
 
+  initDistrictAggregates() {
+    if (!this.graph) return;
+    this._districtAggregateIndex = buildDistrictAggregateIndex(
+      this.graph.entities,
+      this.graph.relationships || []
+    );
+    this.expandedDistrictAggregateIds = new Set();
+  },
+
   initExplorerDefaults() {
     if (!this.graph) return;
+    this.initDistrictAggregates();
     this._childrenByParent = this._buildChildrenByParent();
     const roots = ['supreme_court_india', 'president_india'];
     const anyAppellateChild = roots.some(
@@ -217,13 +280,36 @@ export const State = {
     this.emit('collapseChanged', null);
   },
 
+  isPrincipalHighCourt(id) {
+    return Boolean(id?.startsWith('hc_') && !id.includes('_bench_'));
+  },
+
+  expandDistrictLatticeForHc(hcId) {
+    const g = this.districtGroupForPrincipalHc(hcId);
+    if (!g || this.expandedDistrictAggregateIds.has(g.groupId)) return false;
+    this.expandedDistrictAggregateIds.add(g.groupId);
+    this.emit('aggregateChanged', g.groupId);
+    return true;
+  },
+
+  collapseDistrictLatticeForHc(hcId) {
+    const g = this.districtGroupForPrincipalHc(hcId);
+    if (!g || !this.expandedDistrictAggregateIds.has(g.groupId)) return false;
+    this.expandedDistrictAggregateIds.delete(g.groupId);
+    this.emit('aggregateChanged', g.groupId);
+    return true;
+  },
+
   toggleExpand(entityId) {
     if (!entityId) return;
     if (!this.useProgressiveExplorer) return;
     if (this.expandedEntityIds.has(entityId)) {
       this.expandedEntityIds.delete(entityId);
+      if (this.isPrincipalHighCourt(entityId)) this.collapseDistrictLatticeForHc(entityId);
     } else {
       this.expandedEntityIds.add(entityId);
+      // Blue + reveals appellate children; also open the state's district lattice.
+      if (this.isPrincipalHighCourt(entityId)) this.expandDistrictLatticeForHc(entityId);
     }
     this._recomputeHiddenFromExpanded();
     this.emit('collapseChanged', entityId);
@@ -299,17 +385,96 @@ export const State = {
     this.hiddenEntityIds = new Set([...allIds].filter(id => !visible.has(id)));
   },
 
+  toggleDistrictAggregate(groupId) {
+    if (!groupId || !this._districtAggregateIndex?.groups) return;
+    if (this.expandedDistrictAggregateIds.has(groupId)) {
+      this.expandedDistrictAggregateIds.delete(groupId);
+    } else {
+      this.expandedDistrictAggregateIds.add(groupId);
+    }
+    this.emit('aggregateChanged', groupId);
+  },
+
+  expandAllDistrictAggregates() {
+    if (!this._districtAggregateIndex?.groups) return;
+    for (const g of this._districtAggregateIndex.groups) {
+      this.expandedDistrictAggregateIds.add(g.groupId);
+    }
+    this.emit('aggregateChanged', 'expandDistricts');
+  },
+
+  collapseAllDistrictAggregates() {
+    this.expandedDistrictAggregateIds = new Set();
+    this.emit('aggregateChanged', 'collapseDistricts');
+  },
+
+  getDistrictAggregateToggleForEntityId(id) {
+    if (!this._districtAggregateIndex?.groups) return null;
+    const fromPrincipal = this.districtGroupForPrincipalHc(id);
+    if (fromPrincipal) {
+      return {
+        groupId: fromPrincipal.groupId,
+        stateCode: fromPrincipal.stateCode,
+        expanded: this.expandedDistrictAggregateIds.has(fromPrincipal.groupId),
+      };
+    }
+    for (const g of this._districtAggregateIndex.groups) {
+      const synthId = g.synthetic ? `__jem_agg_${g.stateCode}_district_courts` : null;
+      if (g.proxyId === id || (synthId && synthId === id)) {
+        return {
+          groupId: g.groupId,
+          stateCode: g.stateCode,
+          expanded: this.expandedDistrictAggregateIds.has(g.groupId),
+        };
+      }
+    }
+    return null;
+  },
+
+  _applyDistrictAggregateToList(list) {
+    if (!this._districtAggregateIndex?.groups?.length) return list;
+    const drop = new Set();
+    for (const g of this._districtAggregateIndex.groups) {
+      const expanded = this.expandedDistrictAggregateIds.has(g.groupId);
+      if (!expanded) {
+        for (const mid of g.memberIds) drop.add(mid);
+      } else if (g.proxyId) {
+        drop.add(g.proxyId);
+      }
+    }
+    const out = list.filter(e => !drop.has(e.id));
+    for (const g of this._districtAggregateIndex.groups) {
+      if (!g.synthetic) continue;
+      if (this.expandedDistrictAggregateIds.has(g.groupId)) continue;
+      // Collapsed lattice only when its appellate parent is on screen and drilled into.
+      if (!g.hcTargetId) continue;
+      if (this.hiddenEntityIds.has(g.hcTargetId)) continue;
+      if (this.useProgressiveExplorer && !this.expandedEntityIds.has(g.hcTargetId)) continue;
+      out.push(syntheticAggregateEntity(g, this.graph.entities));
+    }
+    return out;
+  },
+
+  _extraDistrictAggregateRelationships(visibleIds) {
+    const extra = [];
+    if (!this._districtAggregateIndex?.groups) return extra;
+    for (const g of this._districtAggregateIndex.groups) {
+      if (!g.synthetic || this.expandedDistrictAggregateIds.has(g.groupId)) continue;
+      for (const r of syntheticAggregateRelationships(g)) {
+        if (visibleIds.has(r.source) && visibleIds.has(r.target)) extra.push(r);
+      }
+    }
+    return extra;
+  },
+
   // ── Queries ───────────────────────────────────────────
   getVisibleEntities() {
     if (!this.graph) return [];
-    return this.graph.entities.filter(e => {
+    const list = this.graph.entities.filter(e => {
       if (this.hiddenEntityIds.has(e.id)) return false;
       // Time filter
       const created = e.created_year || 1950;
-      const abolished = e.abolished_year || 9999;
       if (created > this.currentYear) return false;
-      // If abolished before current year AND we are past abolition:
-      // still show, but as ghost (handled by renderer opacity)
 
       // Impact filter
       if (this.activeImpactFilter) {
@@ -318,6 +483,33 @@ export const State = {
 
       return true;
     });
+    const out = this._applyDistrictAggregateToList(list);
+    return this._includeExpandedDistrictLatticeMembers(out);
+  },
+
+  /** District benches stay visible when their lattice is expanded, even if explorer path skips them. */
+  _includeExpandedDistrictLatticeMembers(list) {
+    if (!this._districtAggregateIndex?.groups?.length) return list;
+    const have = new Set(list.map(e => e.id));
+    const extra = [];
+    for (const g of this._districtAggregateIndex.groups) {
+      if (!this.expandedDistrictAggregateIds.has(g.groupId)) continue;
+      if (g.hcTargetId && this.hiddenEntityIds.has(g.hcTargetId)) continue;
+      if (this.useProgressiveExplorer && g.hcTargetId && !this.expandedEntityIds.has(g.hcTargetId)) {
+        continue;
+      }
+      for (const mid of g.memberIds) {
+        if (have.has(mid)) continue;
+        const e = this.graph.entities.find(x => x.id === mid);
+        if (!e) continue;
+        const created = e.created_year || 1950;
+        if (created > this.currentYear) continue;
+        if (this.activeImpactFilter && !this._matchesImpactFilter(e, this.activeImpactFilter)) continue;
+        extra.push(e);
+        have.add(mid);
+      }
+    }
+    return extra.length ? list.concat(extra) : list;
   },
 
   _matchesImpactFilter(entity, filter) {
@@ -347,7 +539,7 @@ export const State = {
     if (!this.graph) return [];
     const visibleIds = new Set(this.getVisibleEntities().map(e => e.id));
 
-    return this.graph.relationships.filter(r => {
+    const base = this.graph.relationships.filter(r => {
       // Both endpoints must be visible
       if (!visibleIds.has(r.source) || !visibleIds.has(r.target)) return false;
 
@@ -360,6 +552,7 @@ export const State = {
       }
       return this.activeLenses.has(r.relationship_category);
     });
+    return base.concat(this._extraDistrictAggregateRelationships(visibleIds));
   },
 
   // Graph bundles may nest palettes under `legends` (repo-root graph.json) or
@@ -394,7 +587,17 @@ export const State = {
 
   getEntityById(id) {
     if (!this.graph) return null;
-    return this.graph.entities.find(e => e.id === id) || null;
+    const found = this.graph.entities.find(e => e.id === id);
+    if (found) return found;
+    if (id.startsWith('__jem_agg_') && this._districtAggregateIndex?.groups) {
+      for (const g of this._districtAggregateIndex.groups) {
+        if (!g.synthetic) continue;
+        if (id === `__jem_agg_${g.stateCode}_district_courts`) {
+          return syntheticAggregateEntity(g, this.graph.entities);
+        }
+      }
+    }
+    return null;
   },
 
   isEntityVisible(entity) {

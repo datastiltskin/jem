@@ -3,12 +3,34 @@
 // Derived scores shown with "Pending review" notice if not validated.
 
 import { State } from './state.js';
+import { openNeighborhoodPanel, closeNeighborhoodPanel } from './neighborhoodPanel.js';
+import { buildEntityConnectionSummary, formatCategoryLabel } from './entityConnections.js';
 
 export function openDetailPanel(entity) {
   const panel = document.getElementById('detail-panel');
   const nameEl = document.getElementById('detail-entity-name');
   const typeEl = document.getElementById('detail-entity-type');
   const body = document.getElementById('detail-panel-body');
+
+  if (entity._jemSyntheticAggregate) {
+    closeNeighborhoodPanel();
+    nameEl.textContent = entity.name;
+    typeEl.textContent = 'Collapsed lattice (map convenience)';
+    typeEl.className = 'detail-type';
+    const n = entity.memberCount ?? '—';
+    body.innerHTML = `
+      <div class="detail-quality-banner quality-partial">
+        This node stands in for <strong>${n}</strong> separate district benches on the map.
+      </div>
+      <p style="margin-top:12px;line-height:1.5">
+        Use the <strong>teal + / −</strong> control on the node to expand or collapse just this state.
+        Keyboard: <kbd>+</kbd> or <kbd>=</kbd> expands every state lattice; <kbd>−</kbd> collapses all to one row per state (or this summary where no generic row exists).
+      </p>
+    `;
+    panel.classList.remove('hidden');
+    panel.scrollTop = 0;
+    return;
+  }
 
   nameEl.textContent = entity.name;
   if (entity.name_hindi) {
@@ -22,10 +44,13 @@ export function openDetailPanel(entity) {
 
   panel.classList.remove('hidden');
   panel.scrollTop = 0;
+
+  openNeighborhoodPanel(entity);
 }
 
 export function closeDetailPanel() {
   document.getElementById('detail-panel').classList.add('hidden');
+  closeNeighborhoodPanel();
   State.clearEntity();
 }
 
@@ -53,6 +78,19 @@ function buildPanelHTML(e) {
     ${e.constitutional_basis ? `<div class="detail-row"><span class="lbl">Constitutional basis</span><span class="monospace">${e.constitutional_basis}</span></div>` : ''}
     ${e.statutory_basis ? `<div class="detail-row"><span class="lbl">Statutory basis</span><span>${e.statutory_basis}</span></div>` : ''}
   `);
+
+  // ── Parent HC (permanent bench) ───────────────────────
+  if (d.parent_hc) {
+    html += section('High Court structure', `
+      ${row('Parent High Court', d.parent_hc)}
+    `);
+  }
+
+  // ── Direct structural links (graph) ───────────────────
+  html += buildConnectionsSectionHTML(e.id);
+
+  // ── Judge strength (v2.0) ─────────────────────────────
+  html += buildJudgeStrengthSectionHTML(e, d);
 
   // ── Appointment Chain ──────────────────────────────────
   if (d.appointment) {
@@ -91,6 +129,30 @@ function buildPanelHTML(e) {
       ${f.state_contribution_percent ? row('State share', f.state_contribution_percent + '%') : ''}
       ${f.budget_figure_crore ? row('Budget (₹ crore)', `${f.budget_figure_crore} Cr (FY ${f.budget_year})`) : ''}
     `);
+  }
+
+  // ── Case volume & clog (NJDG / reports) ─────────────────
+  if (d.case_volume && typeof d.case_volume === 'object') {
+    const cv = d.case_volume;
+    const rows = [];
+    if (cv.data_as_of) rows.push(row('Data as of', cv.data_as_of));
+    if (cv.pending_cases != null) rows.push(row('Pending cases (approx.)', String(cv.pending_cases).replace(/\B(?=(\d{3})+(?!\d))/g, ',')));
+    if (cv.filed_last_year != null) rows.push(row('Filed (last year)', String(cv.filed_last_year)));
+    if (cv.disposed_last_year != null) rows.push(row('Disposed (last year)', String(cv.disposed_last_year)));
+    if (cv.disposal_rate != null) rows.push(row('Disposal rate', String(cv.disposal_rate)));
+    if (cv.avg_disposal_days != null) rows.push(row('Avg disposal days', String(cv.avg_disposal_days)));
+    if (cv.sanctioned_strength != null && d.judge_strength?.allotted == null) {
+      rows.push(row('Sanctioned strength (legacy)', String(cv.sanctioned_strength)));
+    }
+    if (cv.working_strength != null && d.judge_strength?.appointed == null) {
+      rows.push(row('Working strength (legacy)', String(cv.working_strength)));
+    }
+    if (cv.clog_severity) rows.push(row('Clog severity', cv.clog_severity));
+    if (cv.source_type) rows.push(row('Volume source type', cv.source_type));
+    if (cv.source_url) rows.push(`<div class="detail-row"><span class="lbl">Volume source</span><span><a href="${cv.source_url}" target="_blank" rel="noopener noreferrer">${cv.source_url}</a></span></div>`);
+    if (rows.length) {
+      html += section('Case volume & clogging', rows.join(''));
+    }
   }
 
   // ── Audit ──────────────────────────────────────────────
@@ -204,6 +266,56 @@ function buildPanelHTML(e) {
 
 // ── HTML Helpers ──────────────────────────────────────────────────────────────
 
+function buildConnectionsSectionHTML(entityId) {
+  const summary = buildEntityConnectionSummary(entityId);
+  if (!summary.all.length) {
+    return section('Structural links (graph)', `
+      <p class="detail-connections-note">No direct relationships recorded in the graph for this entity yet
+      (e.g. HC → Supreme Court appellate links may still be missing from the dataset).</p>
+    `);
+  }
+
+  const blocks = [
+    { title: 'Appellate toward (higher)', rows: summary.appellateToward },
+    { title: 'Appellate from (lower)', rows: summary.appellateFrom },
+    { title: 'Supervises', rows: summary.supervises },
+    { title: 'Supervised by', rows: summary.supervisedBy },
+  ];
+
+  let inner = '';
+  for (const block of blocks) {
+    if (!block.rows.length) {
+      inner += `<div class="detail-row detail-row-muted"><span class="lbl">${block.title}</span><span>—</span></div>`;
+      continue;
+    }
+    inner += `<div class="detail-connection-block">
+      <div class="detail-connection-block-title">${block.title}</div>`;
+    for (const row of block.rows) {
+      inner += `<button type="button" class="detail-connection-row" data-entity-id="${row.entityId}">
+        <span class="detail-connection-name">${row.entityName}</span>
+        <span class="detail-connection-meta">${row.type}${row.note ? ' — ' + row.note.slice(0, 80) : ''}</span>
+      </button>`;
+    }
+    inner += '</div>';
+  }
+
+  const otherEntries = [...summary.byCategory.entries()];
+  if (otherEntries.length) {
+    inner += `<div class="detail-connection-block"><div class="detail-connection-block-title">Other</div>`;
+    for (const [cat, rows] of otherEntries) {
+      for (const row of rows) {
+        inner += `<button type="button" class="detail-connection-row" data-entity-id="${row.entityId}">
+          <span class="detail-connection-name">${row.entityName}</span>
+          <span class="detail-connection-meta">${formatCategoryLabel(cat)} · ${row.directionLabel}</span>
+        </button>`;
+      }
+    }
+    inner += '</div>';
+  }
+
+  return section('Structural links (graph)', inner);
+}
+
 function section(title, content) {
   if (!content || content.trim() === '') return '';
   return `<div class="detail-section">
@@ -237,6 +349,50 @@ function buildBreakdown(breakdown) {
   return html;
 }
 
+function isCourtLikeType(type) {
+  return [
+    'ConstitutionalCourt',
+    'HighCourtBench',
+    'SubordinateCivilCourt',
+    'SubordinateCriminalCourt',
+    'CityCivilCourt',
+    'SpecialCourt',
+    'CentralTribunal',
+    'StateTribunal',
+    'ConsumerCommission',
+  ].includes(type);
+}
+
+function buildJudgeStrengthSectionHTML(entity, d) {
+  if (!isCourtLikeType(entity.type)) return '';
+
+  const js = d.judge_strength || {};
+  const cv = d.case_volume || {};
+  const allotted = js.allotted ?? cv.sanctioned_strength ?? null;
+  const appointed = js.appointed ?? cv.working_strength ?? null;
+  const vacancy =
+    js.vacancy_count != null
+      ? js.vacancy_count
+      : allotted != null && appointed != null
+        ? Math.max(0, allotted - appointed)
+        : null;
+
+  const fmt = (n) => (n == null ? '<em class="muted">Not yet recorded</em>' : String(n));
+  const rows = [
+    row('Judges allotted (sanctioned posts)', fmt(allotted)),
+    row('Judges appointed (in post)', fmt(appointed)),
+    row('Vacancies', fmt(vacancy)),
+    js.data_as_of ? row('Strength data as of', js.data_as_of) : '',
+    js.source_type ? row('Source type', js.source_type) : '',
+    js.source_url
+      ? `<div class="detail-row"><span class="lbl">Source</span><span><a href="${js.source_url}" target="_blank" rel="noopener noreferrer">${js.source_url}</a></span></div>`
+      : '',
+    js.notes ? `<div class="detail-row"><span class="lbl">Notes</span><span>${js.notes}</span></div>` : '',
+  ].filter(Boolean);
+
+  return section('Judge strength', rows.join(''));
+}
+
 function qualityIcon(dq) {
   switch(dq) {
     case 'verified': return '✓';
@@ -258,5 +414,16 @@ export function initPanel() {
   document.getElementById('detail-close').addEventListener('click', closeDetailPanel);
   State.subscribe('entitySelected', id => {
     if (!id) closeDetailPanel();
+  });
+
+  document.getElementById('detail-panel-body')?.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.detail-connection-row');
+    if (!btn) return;
+    e.preventDefault();
+    const id = btn.getAttribute('data-entity-id');
+    const ent = State.getEntityById(id);
+    if (!ent) return;
+    State.selectEntity(id);
+    openDetailPanel(ent);
   });
 }

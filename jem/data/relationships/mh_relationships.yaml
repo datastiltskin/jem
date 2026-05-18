@@ -1,0 +1,216 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: mh_merc_aptel
+  source: merc
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: Electricity appeals to APTEL
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
+- id: mh_cdrc_ncdrc
+  source: mh_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: State CDRC appeals to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_city_civil_hc
+  source: city_civil_court_mumbai
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: City civil appeals to Bombay HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_district_hc
+  source: mh_district_court_mumbai_city
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to HC (principal seat)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_supervise
+  source: hc_bombay
+  target: mh_district_court_mumbai_city
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (representative edge)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_fund_merc
+  source: government_maharashtra
+  target: merc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: State government funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_fund_rera
+  source: government_maharashtra
+  target: mh_rera
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: State government funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_sja_train
+  source: mh_sja
+  target: mh_district_court_pune
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  notes: Judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_slsa_adr
+  source: mh_slsa
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: SLSA lok adalat interface
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_mh_district_court_nagpur_appealable_hc_bombay_bench_nagpur
+  source: mh_district_court_nagpur
+  target: hc_bombay_bench_nagpur
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_hc_bombay_bench_nagpur_supervise_mh_district_court_nagpur
+  source: hc_bombay_bench_nagpur
+  target: mh_district_court_nagpur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_mh_district_court_amravati_appealable_hc_bombay_bench_nagpur
+  source: mh_district_court_amravati
+  target: hc_bombay_bench_nagpur
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_hc_bombay_bench_nagpur_supervise_mh_district_court_amravati
+  source: hc_bombay_bench_nagpur
+  target: mh_district_court_amravati
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_mh_district_court_aurangabad_appealable_hc_bombay_bench_aurangabad
+  source: mh_district_court_aurangabad
+  target: hc_bombay_bench_aurangabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_hc_bombay_bench_aurangabad_supervise_mh_district_court_aurangabad
+  source: hc_bombay_bench_aurangabad
+  target: mh_district_court_aurangabad
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_mh_district_court_nashik_appealable_hc_bombay_bench_aurangabad
+  source: mh_district_court_nashik
+  target: hc_bombay_bench_aurangabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_hc_bombay_bench_aurangabad_supervise_mh_district_court_nashik
+  source: hc_bombay_bench_aurangabad
+  target: mh_district_court_nashik
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_mh_district_court_nanded_appealable_hc_bombay_bench_aurangabad
+  source: mh_district_court_nanded
+  target: hc_bombay_bench_aurangabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_hc_bombay_bench_aurangabad_supervise_mh_district_court_nanded
+  source: hc_bombay_bench_aurangabad
+  target: mh_district_court_nanded
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_mh_district_court_solapur_appealable_hc_bombay_bench_aurangabad
+  source: mh_district_court_solapur
+  target: hc_bombay_bench_aurangabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: mh_hc_bombay_bench_aurangabad_supervise_mh_district_court_solapur
+  source: hc_bombay_bench_aurangabad
+  target: mh_district_court_solapur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001

@@ -1,5 +1,5 @@
 # ============================================================
-# Judiciary Entity Map (India) - JEM — Entity Schema v1.2.0
+# Judiciary Entity Map (India) - JEM — Entity Schema v1.3.0
 # License: CC0
 # Adds: structural_exception, appellate_health, new gap types,
 #       SharedRegulatoryBody type, structural_health_score,
@@ -44,6 +44,8 @@
 # structural_circularity.circularity_score > 0 → "⟳" loop icon
 # role_layer = true → renders as rectangle, not circle
 #
+# type = HighCourtBench → crescent shape (permanent HC bench; distinct from hc_* circle)
+#
 # structural_health_score (auto-computed by derive.py):
 #   0.0–0.3  → RED    (critical failures)
 #   0.3–0.6  → AMBER  (significant concerns)
@@ -82,6 +84,7 @@ entity:
     values:
       # Courts
       - ConstitutionalCourt
+      - HighCourtBench            # Permanent bench of a High Court
       - SubordinateCivilCourt
       - SubordinateCriminalCourt
       - CityCivilCourt
@@ -244,6 +247,26 @@ entity:
   statutory_basis:
     type: string
     required: false
+
+  parent_hc:
+    type: string
+    required: false
+    description: Parent High Court entity id (HighCourtBench only).
+
+  # ── Judge strength (v2.0) ────────────────────────────────
+  judge_strength:
+    type: object
+    required: false
+    fields:
+      data_as_of: string
+      allotted: integer          # Sanctioned posts (DoJ / NJDG)
+      appointed: integer         # Working judges in post
+      vacancy_count: integer
+      source_type:
+        type: enum
+        values: [NJDG_Live, NJDG_Snapshot, DoJ_Report, HC_Report, Tribunal_Report, Estimated]
+      source_url: string
+      notes: string
 
   # ── Amendment History ────────────────────────────────────
   amendment_history:

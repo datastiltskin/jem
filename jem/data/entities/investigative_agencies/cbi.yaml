@@ -1,124 +1,113 @@
-# ============================================================
-# Central Bureau of Investigation (CBI)
-# JEM Entity v0.1.0 | data_quality: verified
-# Cluster: executive_interface (investigative overlay — off by default)
-# ============================================================
-
 id: cbi
 name: Central Bureau of Investigation
 abbreviation: CBI
 aliases:
-  - CBI
-  - Special Police Establishment
-
+- CBI
+- Special Police Establishment
 type: InvestigativeAgency
 cluster: executive_interface
-
 level_of_government: Central
 jurisdiction_scope:
-  is_all_india: false     # Requires state consent for state offences
-  jurisdiction_types: [Special]
-
-created_year: 1963        # CBI formally created 1963; DSPE Act 1946
+  is_all_india: false
+  jurisdiction_types:
+  - Special
+created_year: 1963
 abolished_year: null
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >
-  Delhi Special Police Establishment Act 1946 (DSPE Act).
-  CBI constituted by Ministry of Home Affairs Resolution 1963.
+statutory_basis: 'Delhi Special Police Establishment Act 1946 (DSPE Act). CBI constituted by Ministry of Home Affairs Resolution
+  1963.
 
+  '
 appointment:
-  nominates: dopt_dpc       # Department of Personnel and Training — DPC
+  nominates: dopt_dpc
   recommends: central_vigilance_commission
   consulted: []
   consultation_binding: false
   formally_appoints: central_government
   criteria_public: false
-  tenure: "Minimum 2 years fixed tenure (post-Prakash Singh SC direction)"
+  tenure: Minimum 2 years fixed tenure (post-Prakash Singh SC direction)
   reappointment_possible: true
   removal_authority: central_government
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: Ministry_Budget
   ministry_responsible: ministry_personnel_dopt
   budget_figure_crore: null
   budget_year: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: central_vigilance_commission
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: central_vigilance_commission
-      mechanism: "Complaint to CVC for corruption/misconduct by CBI officials"
-      complainant_has_locus: true
-      is_public_process: false
-      timeframe_defined: false
-      external_to_judiciary: true
-    - body: high_court_competent
-      mechanism: "Writ petition under Article 226 challenging CBI action"
-      complainant_has_locus: true
-      is_public_process: true
-      timeframe_defined: false
-      external_to_judiciary: true
-    - body: supreme_court_india
-      mechanism: "Special Leave Petition or direct writ under Article 32"
-      complainant_has_locus: true
-      is_public_process: true
-      timeframe_defined: false
-      external_to_judiciary: true
-  lokpal_jurisdiction: "Yes"
-  lokpal_jurisdiction_note: >
-    CBI officers are central government servants — Lokpal has jurisdiction
-    for corruption allegations.
-  source: "DSPE Act 1946; Vineet Narain v Union of India (1997) 6 SCC 767"
+  - body: central_vigilance_commission
+    mechanism: Complaint to CVC for corruption/misconduct by CBI officials
+    complainant_has_locus: true
+    is_public_process: false
+    timeframe_defined: false
+    external_to_judiciary: true
+  - body: high_court_competent
+    mechanism: Writ petition under Article 226 challenging CBI action
+    complainant_has_locus: true
+    is_public_process: true
+    timeframe_defined: false
+    external_to_judiciary: true
+  - body: supreme_court_india
+    mechanism: Special Leave Petition or direct writ under Article 32
+    complainant_has_locus: true
+    is_public_process: true
+    timeframe_defined: false
+    external_to_judiciary: true
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: 'CBI officers are central government servants — Lokpal has jurisdiction for corruption allegations.
 
-# ── Judicial Entry Points (investigative overlay) ──────────
-# These relationships are rendered ONLY when investigative overlay is ON
-# Relationship type: InvestigatesOffencesIn
-# CBI cases are filed in Designated Special CBI Courts (Sessions Court level)
-# notified by state governments under BNSS 2023 S. 20
-
+    '
+  source: DSPE Act 1946; Vineet Narain v Union of India (1997) 6 SCC 767
 structural_variations:
-  - variation_id: cbi_state_consent
-    description: >
-      Under DSPE Act Section 6, CBI cannot exercise jurisdiction in a state
-      without that state's general or specific consent. As of 2025, several
-      states have withdrawn general consent (Maharashtra, West Bengal,
-      Chhattisgarh, Rajasthan, Jharkhand, Mizoram, Kerala, Telangana).
-      This means CBI can only investigate in those states when directed by
-      the SC or the relevant High Court.
-    applicable_to: ["Maharashtra", "WestBengal", "Chhattisgarh",
-                    "Rajasthan", "Jharkhand", "Mizoram", "Kerala", "Telangana"]
-    source: "DSPE Act 1946, Section 6; respective State Government notifications"
-    independence_risk_note: >
-      State consent withdrawal structurally restricts central investigation
-      in states with different political dispensations. Creates a gap in
-      central accountability where state police investigates instead.
+- variation_id: cbi_state_consent
+  description: 'Under DSPE Act Section 6, CBI cannot exercise jurisdiction in a state without that state''s general or specific
+    consent. As of 2025, several states have withdrawn general consent (Maharashtra, West Bengal, Chhattisgarh, Rajasthan,
+    Jharkhand, Mizoram, Kerala, Telangana). This means CBI can only investigate in those states when directed by the SC or
+    the relevant High Court.
 
+    '
+  applicable_to:
+  - Maharashtra
+  - WestBengal
+  - Chhattisgarh
+  - Rajasthan
+  - Jharkhand
+  - Mizoram
+  - Kerala
+  - Telangana
+  source: DSPE Act 1946, Section 6; respective State Government notifications
+  independence_risk_note: 'State consent withdrawal structurally restricts central investigation in states with different
+    political dispensations. Creates a gap in central accountability where state police investigates instead.
+
+    '
 data_quality: verified
-data_quality_notes: >
-  "Caged parrot" characterisation from SC in Vineet Narain (1997) is
-  well-documented. State consent withdrawal figures should be verified
-  against latest state government notifications — list may have changed
-  since the entries above.
-
+data_quality_notes: "\"Caged parrot\" characterisation from SC in Vineet Narain (1997) is well-documented. State consent withdrawal\
+  \ figures should be verified against latest state government notifications — list may have changed since the entries above.\n\
+  \ NJDG snapshot case_volume merged"
 sources:
-  - label: "Delhi Special Police Establishment Act 1946"
-    url: "https://india-code.nic.in/DocsPdfData/1946/194643.pdf"
-    type: CentralAct
-    accessed_date: "2025-04-01"
-  - label: "Vineet Narain v Union of India (1997) 6 SCC 767"
-    url: "https://main.sci.gov.in/"
-    type: SCJudgment
-    accessed_date: "2025-04-01"
-  - label: "Prakash Singh v Union of India — police reform directives"
-    url: "https://main.sci.gov.in/"
-    type: SCJudgment
-    accessed_date: "2025-04-01"
+- label: Delhi Special Police Establishment Act 1946
+  url: https://india-code.nic.in/DocsPdfData/1946/194643.pdf
+  type: CentralAct
+  accessed_date: '2025-04-01'
+- label: Vineet Narain v Union of India (1997) 6 SCC 767
+  url: https://main.sci.gov.in/
+  type: SCJudgment
+  accessed_date: '2025-04-01'
+- label: Prakash Singh v Union of India — police reform directives
+  url: https://main.sci.gov.in/
+  type: SCJudgment
+  accessed_date: '2025-04-01'
+- label: National Judicial Data Grid (NJDG)
+  url: https://njdg.ecourts.gov.in/
+  type: NJDG
+  accessed_date: '2024-12-01'
+case_volume:
+  clog_severity: unknown

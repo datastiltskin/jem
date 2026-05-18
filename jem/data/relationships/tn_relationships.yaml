@@ -1,0 +1,826 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: tn_tnerc_aptel
+  source: tnerc
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TNERC appeals to APTEL
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
+- id: tn_cdrc_ncdrc
+  source: tn_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TN SCDRC appeals to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_rera_hc
+  source: tn_rera
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_slsa_adr
+  source: tn_slsa
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: TN SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_fund_rera
+  source: government_tamilnadu
+  target: tn_rera
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: State funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_sja_train_chennai_district
+  source: tn_sja
+  target: tn_district_court_chennai
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  notes: State judicial academy serves all TN districts; representative edge
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_ariyalur_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_ariyalur
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_ariyalur
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_ariyalur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_chengalpattu_appealable_hc_madras
+  source: tn_district_court_chengalpattu
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_chengalpattu
+  source: hc_madras
+  target: tn_district_court_chengalpattu
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_chennai_appealable_hc_madras
+  source: tn_district_court_chennai
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_chennai
+  source: hc_madras
+  target: tn_district_court_chennai
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_coimbatore_appealable_hc_madras
+  source: tn_district_court_coimbatore
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_coimbatore
+  source: hc_madras
+  target: tn_district_court_coimbatore
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_cuddalore_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_cuddalore
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_cuddalore
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_cuddalore
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_dharmapuri_appealable_hc_madras
+  source: tn_district_court_dharmapuri
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_dharmapuri
+  source: hc_madras
+  target: tn_district_court_dharmapuri
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_dindigul_appealable_hc_madras_bench_madurai
+  source: tn_district_court_dindigul
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_dindigul
+  source: hc_madras_bench_madurai
+  target: tn_district_court_dindigul
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_erode_appealable_hc_madras
+  source: tn_district_court_erode
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_erode
+  source: hc_madras
+  target: tn_district_court_erode
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_kallakurichi_appealable_hc_madras
+  source: tn_district_court_kallakurichi
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_kallakurichi
+  source: hc_madras
+  target: tn_district_court_kallakurichi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_kancheepuram_appealable_hc_madras
+  source: tn_district_court_kancheepuram
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_kancheepuram
+  source: hc_madras
+  target: tn_district_court_kancheepuram
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_karur_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_karur
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_karur
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_karur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_kanniyakumari_appealable_hc_madras_bench_madurai
+  source: tn_district_court_kanniyakumari
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_kanniyakumari
+  source: hc_madras_bench_madurai
+  target: tn_district_court_kanniyakumari
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_krishnagiri_appealable_hc_madras
+  source: tn_district_court_krishnagiri
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_krishnagiri
+  source: hc_madras
+  target: tn_district_court_krishnagiri
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_madurai_appealable_hc_madras_bench_madurai
+  source: tn_district_court_madurai
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_madurai
+  source: hc_madras_bench_madurai
+  target: tn_district_court_madurai
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_mayiladuthurai_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_mayiladuthurai
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_mayiladuthurai
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_mayiladuthurai
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_nagapattinam_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_nagapattinam
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_nagapattinam
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_nagapattinam
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_namakkal_appealable_hc_madras
+  source: tn_district_court_namakkal
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_namakkal
+  source: hc_madras
+  target: tn_district_court_namakkal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_nilgiris_appealable_hc_madras
+  source: tn_district_court_nilgiris
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_nilgiris
+  source: hc_madras
+  target: tn_district_court_nilgiris
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_perambalur_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_perambalur
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_perambalur
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_perambalur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_pudukkottai_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_pudukkottai
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_pudukkottai
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_pudukkottai
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_ramanathapuram_appealable_hc_madras_bench_madurai
+  source: tn_district_court_ramanathapuram
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_ramanathapuram
+  source: hc_madras_bench_madurai
+  target: tn_district_court_ramanathapuram
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_ranipet_appealable_hc_madras
+  source: tn_district_court_ranipet
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_ranipet
+  source: hc_madras
+  target: tn_district_court_ranipet
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_salem_appealable_hc_madras
+  source: tn_district_court_salem
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_salem
+  source: hc_madras
+  target: tn_district_court_salem
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_sivaganga_appealable_hc_madras_bench_madurai
+  source: tn_district_court_sivaganga
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_sivaganga
+  source: hc_madras_bench_madurai
+  target: tn_district_court_sivaganga
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_tenkasi_appealable_hc_madras_bench_madurai
+  source: tn_district_court_tenkasi
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_tenkasi
+  source: hc_madras_bench_madurai
+  target: tn_district_court_tenkasi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_thanjavur_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_thanjavur
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_thanjavur
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_thanjavur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_theni_appealable_hc_madras_bench_madurai
+  source: tn_district_court_theni
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_theni
+  source: hc_madras_bench_madurai
+  target: tn_district_court_theni
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_thoothukudi_appealable_hc_madras_bench_madurai
+  source: tn_district_court_thoothukudi
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_thoothukudi
+  source: hc_madras_bench_madurai
+  target: tn_district_court_thoothukudi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_tiruchirappalli_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_tiruchirappalli
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_tiruchirappalli
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_tiruchirappalli
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_tirunelveli_appealable_hc_madras_bench_madurai
+  source: tn_district_court_tirunelveli
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_tirunelveli
+  source: hc_madras_bench_madurai
+  target: tn_district_court_tirunelveli
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_tirupathur_appealable_hc_madras
+  source: tn_district_court_tirupathur
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_tirupathur
+  source: hc_madras
+  target: tn_district_court_tirupathur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_tiruppur_appealable_hc_madras
+  source: tn_district_court_tiruppur
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_tiruppur
+  source: hc_madras
+  target: tn_district_court_tiruppur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_tiruvallur_appealable_hc_madras
+  source: tn_district_court_tiruvallur
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_tiruvallur
+  source: hc_madras
+  target: tn_district_court_tiruvallur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_tiruvannamalai_appealable_hc_madras
+  source: tn_district_court_tiruvannamalai
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_tiruvannamalai
+  source: hc_madras
+  target: tn_district_court_tiruvannamalai
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_tiruvarur_appealable_hc_madras_bench_tiruchirappalli
+  source: tn_district_court_tiruvarur
+  target: hc_madras_bench_tiruchirappalli
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_tiruchirappalli (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_tiruchirappalli_supervise_tiruvarur
+  source: hc_madras_bench_tiruchirappalli
+  target: tn_district_court_tiruvarur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_vellore_appealable_hc_madras
+  source: tn_district_court_vellore
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_vellore
+  source: hc_madras
+  target: tn_district_court_vellore
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_viluppuram_appealable_hc_madras
+  source: tn_district_court_viluppuram
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_supervise_viluppuram
+  source: hc_madras
+  target: tn_district_court_viluppuram
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_district_virudhunagar_appealable_hc_madras_bench_madurai
+  source: tn_district_court_virudhunagar
+  target: hc_madras_bench_madurai
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tn_hc_madras_bench_madurai_supervise_virudhunagar
+  source: hc_madras_bench_madurai
+  target: tn_district_court_virudhunagar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (Madras HC / bench)
+  data_quality: partial
+  sources:
+  - *id001

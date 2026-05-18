@@ -1,0 +1,136 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: ka_kerc_aptel
+  source: kerc
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: Electricity appeals to APTEL
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
+- id: ka_cdrc_ncdrc
+  source: ka_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: State CDRC appeals to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_city_civil_hc
+  source: city_civil_court_bangalore
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: City civil appeals to Karnataka HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_district_hc
+  source: ka_district_court_bengaluru_urban
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_supervise
+  source: hc_karnataka
+  target: ka_district_court_bengaluru_urban
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (representative edge)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_fund_kerc
+  source: government_karnataka
+  target: kerc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: State funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_fund_rera
+  source: government_karnataka
+  target: ka_rera
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: State funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_sja_train
+  source: ka_sja
+  target: ka_district_court_mysuru
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  notes: Judicial academy
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_slsa_adr
+  source: ka_slsa
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: KAR SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_ka_district_court_dharwad_appealable_hc_karnataka_bench_dharwad
+  source: ka_district_court_dharwad
+  target: hc_karnataka_bench_dharwad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to Dharwad bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_hc_karnataka_bench_dharwad_supervise_ka_district_court_dharwad
+  source: hc_karnataka_bench_dharwad
+  target: ka_district_court_dharwad
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (Dharwad bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_ka_district_court_belagavi_appealable_hc_karnataka_bench_dharwad
+  source: ka_district_court_belagavi
+  target: hc_karnataka_bench_dharwad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to Dharwad bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: ka_hc_karnataka_bench_dharwad_supervise_ka_district_court_belagavi
+  source: hc_karnataka_bench_dharwad
+  target: ka_district_court_belagavi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (Dharwad bench)
+  data_quality: partial
+  sources:
+  - *id001

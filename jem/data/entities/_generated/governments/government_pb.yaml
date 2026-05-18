@@ -1,0 +1,20 @@
+# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md
+id: government_pb
+name: Government of Punjab
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - PB
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+data_quality: partial
+data_quality_notes: Stub for graph connectivity; verify appointment/funding against
+  primary sources.
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-13'

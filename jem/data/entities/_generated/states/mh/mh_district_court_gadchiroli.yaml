@@ -1,0 +1,42 @@
+# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md
+id: mh_district_court_gadchiroli
+name: District Court — Gadchiroli
+type: SubordinateCivilCourt
+cluster: subordinate_courts
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - MH
+  is_all_india: false
+  jurisdiction_types:
+  - Civil
+  - Criminal
+created_year: 1860
+operational_status: Active
+constitutional_basis: Constitution of India, Articles 233–237
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+case_volume:
+  data_as_of: '2026-05-14'
+  avg_disposal_days: 1277
+  source_url: https://njdg.ecourts.gov.in/
+  source_type: NJDG_Snapshot
+data_quality: partial
+data_quality_notes: District-level pendency (pending_cases, filed_last_year, disposed_last_year, judge strength) to be filled
+  from NJDG district dashboard and HC/DoJ sources; state average disposal days used as placeholder only.
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-14'
+- label: National Judicial Data Grid (NJDG)
+  url: https://njdg.ecourts.gov.in/
+  type: NJDG
+  accessed_date: '2024-12-01'

@@ -473,6 +473,9 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
                 "digital_infrastructure": e.get("digital_infrastructure"),
                 "structural_variations": e.get("structural_variations", []),
                 "jurisdiction_scope": e.get("jurisdiction_scope"),
+                "case_volume": e.get("case_volume"),
+                "judge_strength": e.get("judge_strength"),
+                "parent_hc": e.get("parent_hc"),
             },
             "position": positions.get(e["id"], {"x": 0, "y": 0}),
         }
@@ -501,7 +504,7 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
     print("\nStep 11: Assembling final graph.json...")
     graph = {
         "meta": {
-            "version": "0.1.0",
+            "version": "1.0.0",
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "entity_count": len(frontend_entities),
             "relationship_count": len(frontend_relationships),

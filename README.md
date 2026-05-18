@@ -190,6 +190,7 @@ Individual DLSA entities (650+), individual district CDRC entries (670+), indivi
 
 | Feature | Why deferred |
 |---|---|
+| **HC permanent benches + judge strength (allotted/appointed)** | **In v2.0 data model** — see `jem/docs/V2_DATA_MODEL.md`; generator emits bench stubs; populate counts from DoJ/NJDG |
 | State/Central Govt as major litigant (diamond nodes) | New node type, `FrequentLitigantIn` relationship, government litigation data from DoJ |
 | Live NJDG API integration | Rate limiting, cache invalidation, staleness UI — v1 uses static snapshots |
 | Case flow Sankey | Separate D3 Sankey module — appeal_rate_percent data needs verification across all tiers |

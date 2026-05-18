@@ -4,6 +4,12 @@
 
 import { State } from './state.js';
 import { openDetailPanel } from './panel.js';
+import {
+  entityNodeShape,
+  nodeShapePathForEntity,
+  shapeLayoutRadius,
+} from './nodeShapes.js';
+import { PRINCIPAL_HC_BY_STATE_CODE } from './districtAggregates.js';
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -16,32 +22,182 @@ const IR_RING_WIDTH = 4;
 
 let svg, root, layerClusters, layerEdges, layerNodes, layerLabels;
 let width, height;
+/** Virtual drawing extent for org-chart (≥ viewport). Pan/zoom moves within this space. */
+let layoutCanvasW = 0;
+let layoutCanvasH = 0;
+let lastGraphContentBounds = null;
 let hoveredNodeId = null;
 let simulation = null;
 let simNodesById = new Map();
+/** Populated during org-chart layout — used for hierarchy-scaled node radii & labels. */
+let lastAppellateRanks = new Map();
+let lastOrgBandById = new Map();
 
 const FORCE_LAYOUT_MIN_NODES = 40;
+
+/** Org-chart layout for full graph or progressive explorer (avoids build.py 2-row cluster strip). */
+function shouldUseOrgChartLayout(entities) {
+  if (entities.length >= FORCE_LAYOUT_MIN_NODES) return true;
+  if (!State.useProgressiveExplorer || entities.length < 2) return false;
+  return true;
+}
 const CLUSTER_PADDING = 120;
 const HIERARCHY_Y_GAP = 90;
 const BAND_GAP = 200;
 const ORG_NODE_Y_GAP = 42;
 /** Minimum center-to-center distance = NODE_SPACING_RADIUS_MULT × largest drawable node radius. */
-const NODE_SPACING_RADIUS_MULT = 5;
+const NODE_SPACING_RADIUS_MULT = 6.2;
+/** Extra vertical budget per row for external labels under circles / rects. */
+const ORG_LABEL_VERTICAL_CLEARANCE = 52;
+const BAND_VERTICAL_GAP = 110;
+/** Clear vertical gap between apex row (SC / President) and the HC cluster below. */
+const APEX_TO_HC_GAP_MULT = 3.2;
+
+/** Tier 0 = apex (SC / President); higher tiers = further down the tree / lower bands. */
+const HIERARCHY_TIER_BASE_RADIUS = [52, 36, 28, 20, 14];
+
+function hierarchyTierForSizing(d) {
+  if (!d) return 4;
+  if (!lastOrgBandById.size) return 2;
+  const id = d.id || '';
+  if (id === 'supreme_court_india' || id === 'president_india') return 0;
+
+  const ar = lastAppellateRanks.get(id);
+  if (typeof ar === 'number' && Number.isFinite(ar)) {
+    if (ar <= 1) return 1;
+    if (ar === 2) return 2;
+    if (ar <= 5) return 3;
+    return 4;
+  }
+
+  const band = lastOrgBandById.get(id);
+  if (band === 0) return 0;
+  if (d.type === 'HighCourtBench' || (d.type === 'ConstitutionalCourt' && id.startsWith('hc_'))) return 1;
+  if (band === 1) return 2;
+  if (band === 2) return 3;
+  return 4;
+}
 
 function drawableNodeRadiusForEntity(d) {
+  const tier = Math.min(
+    HIERARCHY_TIER_BASE_RADIUS.length - 1,
+    Math.max(0, hierarchyTierForSizing(d))
+  );
+  let base = HIERARCHY_TIER_BASE_RADIUS[tier] ?? NODE_BASE_RADIUS;
   if (State.showDiscretionaryPower) {
     const dp = (d.derived || {}).discretionary_power_score || 1;
-    return Math.max(NODE_MIN_RADIUS, Math.min(NODE_BASE_RADIUS * 1.8, NODE_BASE_RADIUS + dp * 1.5));
+    return Math.max(NODE_MIN_RADIUS, Math.min(base * 1.45, base + dp * 1.25));
   }
-  return NODE_BASE_RADIUS;
+  return Math.max(NODE_MIN_RADIUS, base);
+}
+
+/** Judicial / quasi-judicial vs other institutions — drives colour & category, not shape (see renderNodes). */
+function entityVisualKind(e) {
+  if (!e) return 'stakeholder';
+  const t = e.type;
+  const c = e.cluster;
+  if (
+    t === 'ConstitutionalCourt'
+    || t === 'HighCourtBench'
+    || t === 'SubordinateCivilCourt'
+    || t === 'CityCivilCourt'
+    || t === 'SpecialCourt'
+  ) {
+    return 'court';
+  }
+  if (
+    t === 'RegulatoryBodyQJ'
+    || t === 'ADRBody'
+    || t === 'ConsumerCommission'
+    || c === 'tribunals_adr'
+    || c === 'arbitration'
+    || c === 'regulatory_bodies'
+  ) {
+    return 'allied';
+  }
+  return 'stakeholder';
+}
+
+function drawableRectHalfWidth(d) {
+  return drawableNodeRadiusForEntity(d) * 1.45;
+}
+
+function drawableRectHalfHeight(d) {
+  return drawableNodeRadiusForEntity(d) * 0.78;
+}
+
+/** Half-length of the diagonal of the node shape — used for spacing / collisions. */
+function effectiveNodeLayoutRadius(d) {
+  if (entityNodeShape(d) === 'rect') {
+    return Math.hypot(drawableRectHalfWidth(d), drawableRectHalfHeight(d));
+  }
+  return shapeLayoutRadius(d, drawableNodeRadiusForEntity(d));
+}
+
+/** Full caption for apex / High Court nodes; abbreviation elsewhere when zoomed out. */
+function nodeCaptionText(d, zoomScale) {
+  const id = d.id || '';
+  const isApex = id === 'president_india' || id === 'supreme_court_india';
+  const isPrincipalHc = d.type === 'ConstitutionalCourt' && id.startsWith('hc_');
+  const isHcBench = d.type === 'HighCourtBench';
+  if (isApex || isPrincipalHc || isHcBench) {
+    return d.name || d.abbreviation || id;
+  }
+  const abbr = d.abbreviation || d.name || id;
+  if (zoomScale > 1.05) return d.name || abbr;
+  if (zoomScale > 0.72) return abbr;
+  return abbr.length > 22 ? `${abbr.slice(0, 20)}…` : abbr;
+}
+
+/** Vertical offset from node centre to external caption baseline (org chart). */
+function externalLabelYOffset(d, labelFontPx) {
+  const bump = labelFontPx > 18 ? 8 : labelFontPx > 14 ? 5 : 0;
+  if (entityVisualKind(d) === 'stakeholder') {
+    return drawableRectHalfHeight(d) + ORG_LABEL_VERTICAL_CLEARANCE * 0.7 + bump;
+  }
+  return drawableNodeRadiusForEntity(d) + ORG_LABEL_VERTICAL_CLEARANCE * 0.78 + bump;
 }
 
 function maxDrawableNodeRadius(entities) {
   let m = NODE_BASE_RADIUS;
   for (const d of entities) {
-    m = Math.max(m, drawableNodeRadiusForEntity(d));
+    m = Math.max(m, effectiveNodeLayoutRadius(d));
   }
   return m;
+}
+
+/** Hot-reload / legacy DOM: stakeholder groups need rect + in-box label children. */
+function ensureUpgradedNodeShapes(mergedSelection) {
+  const ns = 'http://www.w3.org/2000/svg';
+  mergedSelection.each(function (d) {
+    const g = d3.select(this);
+    g.selectAll('.node-exception-overlay').remove();
+    if (entityVisualKind(d) !== 'stakeholder') return;
+    if (!g.select('.node-rect').empty()) return;
+
+    const circle = g.select('.node-circle').node();
+    const badge = g.select('.node-badge').node();
+    if (!circle || !badge) return;
+
+    function insertAfter(ref, tagName, className) {
+      const el = document.createElementNS(ns, tagName);
+      el.setAttribute('class', className);
+      ref.parentNode.insertBefore(el, ref.nextSibling);
+      return el;
+    }
+
+    if (g.select('.node-ir-ring-rect').empty()) {
+      const el = document.createElementNS(ns, 'rect');
+      el.setAttribute('class', 'node-ir-ring-rect');
+      circle.parentNode.insertBefore(el, circle);
+    }
+
+    let ref = g.select('.node-circle').node();
+    ref = insertAfter(ref, 'rect', 'node-rect');
+    ref = insertAfter(ref, 'circle', 'node-exception-circle');
+    ref = insertAfter(ref, 'rect', 'node-exception-rect');
+    insertAfter(ref, 'text', 'node-inner-label');
+  });
 }
 
 export function initRenderer() {
@@ -55,7 +211,10 @@ export function initRenderer() {
   updateDimensions();
   window.addEventListener('resize', () => {
     updateDimensions();
-    render();
+    if (State.graph) {
+      setupLayout();
+      render();
+    }
   });
 
   // Subscribe to state changes
@@ -67,7 +226,22 @@ export function initRenderer() {
   State.subscribe('lensChanged', () => { setupLayout(); render(); });
   State.subscribe('viewModeChanged', () => { setupLayout(); render(); });
   State.subscribe('filterChanged', () => { setupLayout(); render(); });
-  State.subscribe('collapseChanged', () => { setupLayout(); render(); });
+  State.subscribe('collapseChanged', (entityId) => {
+    setupLayout();
+    render();
+    requestAnimationFrame(() => {
+      if (
+        entityId
+        && State.isPrincipalHighCourt(entityId)
+        && State.expandedEntityIds?.has(entityId)
+      ) {
+        fitGraphToEntityFocus(entityId, { duration: 280, margin: 0.9 });
+      } else {
+        fitGraphToViewport({ duration: 0 });
+      }
+    });
+  });
+  State.subscribe('aggregateChanged', () => { setupLayout(); render(); });
   State.subscribe('derivedToggle', () => { setupLayout(); render(); });
   State.subscribe('zoomLevelChanged', () => render());
 }
@@ -77,6 +251,10 @@ function updateDimensions() {
   width = container.clientWidth;
   height = container.clientHeight;
   svg.attr('width', width).attr('height', height);
+  if (!layoutCanvasW || !layoutCanvasH) {
+    layoutCanvasW = width;
+    layoutCanvasH = height;
+  }
 }
 
 // ── Main Render ───────────────────────────────────────────────────────────────
@@ -116,9 +294,14 @@ function setupLayout() {
 
   // For larger datasets, default to an org-chart (hierarchical) layout:
   // fixed bands + columns, minimal cognitive load.
-  const useOrgChart = entities.length >= FORCE_LAYOUT_MIN_NODES;
+  const useOrgChart = shouldUseOrgChartLayout(entities);
   if (!useOrgChart) {
     teardownSimulation();
+    layoutCanvasW = width;
+    layoutCanvasH = height;
+    lastGraphContentBounds = null;
+    lastAppellateRanks = new Map();
+    lastOrgBandById = new Map();
     return;
   }
 
@@ -132,19 +315,26 @@ function setupLayout() {
   // --- Org-chart bands + state/HC grouping (for legibility) ---
   const bandIndexById = computeOrgBands(entities, ranks);
   const groups = computeHorizontalGroups(entities);
+  const ext = computeOrgLayoutCanvas(width, height, entities.length);
+  layoutCanvasW = ext.layoutW;
+  layoutCanvasH = ext.layoutH;
   // Deterministic org-chart positions (no simulation).
   teardownSimulation();
-  const positions = computeOrgChartPositions({
+  const layoutOut = computeOrgChartPositions({
     entities,
     relationships: rels,
     ranks,
     fallbackRank,
     bandIndexById,
     groups,
-    width,
-    height,
+    layoutW: layoutCanvasW,
+    layoutH: layoutCanvasH,
   });
+  layoutCanvasW = layoutOut.layoutW;
+  layoutCanvasH = layoutOut.layoutH;
+  const positions = layoutOut.positions;
   simNodesById = new Map(Object.entries(positions).map(([id, pos]) => [id, { id, x: pos.x, y: pos.y }]));
+  lastGraphContentBounds = computeEntityPositionsBounds(positions, entities);
 }
 
 function teardownSimulation() {
@@ -453,11 +643,17 @@ export function renderNodes() {
   const irColors = State.getIndependenceRiskColors();
   const dqLegend = State.getDataQualityLegend();
   const osLegend = State.getOperationalStatusLegend();
-  const isLightTheme = document.documentElement.style.colorScheme === 'light'
-    || getComputedStyle(document.documentElement).getPropertyValue('--bg').trim().startsWith('#fafafa')
-    || getComputedStyle(document.documentElement).getPropertyValue('--text-primary').trim() === '#111827';
   const rels = State.getVisibleRelationships();
   const neighborSet = hoveredNodeId ? buildNeighborSet(rels, hoveredNodeId) : null;
+
+  const zoomScale = State.get('zoomScale') ?? State.zoomTransform?.k ?? 1;
+  const kz = Math.max(0.18, Math.min(8, zoomScale || 1));
+  function innerLabelFontPxFor(d) {
+    const base = Math.max(4.2, Math.min(11.5, 8.2 / kz));
+    const tier = hierarchyTierForSizing(d);
+    const mul = tier <= 0 ? 1.32 : tier === 1 ? 1.12 : 1;
+    return Math.min(12.5, base * mul);
+  }
 
   const nodes = layerNodes.selectAll('.node')
     .data(entities, d => d.id);
@@ -471,31 +667,37 @@ export function renderNodes() {
       openDetailPanel(d);
     })
     .on('mouseenter', function(event, d) {
-      d3.select(this).select('.node-circle').attr('filter', 'url(#glow)');
+      d3.select(this).selectAll('.node-shape, .node-circle, .node-rect').attr('filter', 'url(#glow)');
       hoveredNodeId = d.id;
       cancelTooltipHide();
       render(); // re-render with neighbor dimming + tooltips
       showNodeRelationshipsTooltip(event, d, rels);
     })
     .on('mouseleave', function(event, d) {
-      d3.select(this).select('.node-circle').attr('filter', null);
+      d3.select(this).selectAll('.node-shape, .node-circle, .node-rect').attr('filter', null);
       hoveredNodeId = null;
       scheduleHideTooltip(300);
       render();
     });
 
-  // Independence risk ring (outer)
+  // Independence risk ring (court / allied circles)
   enter.append('circle').attr('class', 'node-ir-ring');
-  // Main node circle
+  // Independence risk ring (stakeholder rectangles)
+  enter.append('rect').attr('class', 'node-ir-ring-rect');
+  // Main shapes: path = SC/HC/tribunal/regulatory/arbitration/courts; rect = stakeholders
+  enter.append('path').attr('class', 'node-shape');
   enter.append('circle').attr('class', 'node-circle');
+  enter.append('rect').attr('class', 'node-rect');
   // Structural-exception diagonal stripe (Gaps mode)
-  enter.append('circle').attr('class', 'node-exception-overlay');
+  enter.append('path').attr('class', 'node-exception-shape');
+  enter.append('circle').attr('class', 'node-exception-circle');
+  enter.append('rect').attr('class', 'node-exception-rect');
+  // In-box title on stakeholder (non-bench) rectangles
+  enter.append('text').attr('class', 'node-inner-label');
   // Badge overlay (?, ⚑, "NC")
   enter.append('text').attr('class', 'node-badge');
   enter.append('text').attr('class', 'node-gap-marker');
   enter.append('text').attr('class', 'node-circ-marker');
-  // Expand/collapse control (+ / −)
-  enter.append('g').attr('class', 'node-toggle');
 
   const merged = enter.merge(nodes);
 
@@ -504,7 +706,31 @@ export function renderNodes() {
     return `translate(${pos.x},${pos.y})`;
   });
 
+  ensureUpgradedNodeShapes(merged);
+
   const nodeRadius = drawableNodeRadiusForEntity;
+
+  function innerLabelText(d) {
+    const raw = d.abbreviation || d.name || d.id;
+    const maxW = 2 * drawableRectHalfWidth(d) - 10;
+    const fp = innerLabelFontPxFor(d);
+    const approxChars = Math.max(6, Math.floor(maxW / (fp * 0.52)));
+    return raw.length > approxChars ? `${raw.slice(0, approxChars - 1)}…` : raw;
+  }
+
+  function nodeStrokeAttrs(d) {
+    if (State.viewMode === 'gaps' && d.operational_status === 'De_Facto_Blocked') {
+      return { stroke: '#e67e22', strokeWidth: 3 };
+    }
+    if (State.showIndependenceRisk) {
+      const level = (d.derived || {}).independence_risk_level || 'low';
+      return { stroke: irColors[level] || '#27ae60', strokeWidth: 2 };
+    }
+    const kind = entityVisualKind(d);
+    if (kind === 'court') return { stroke: '#94a3b8', strokeWidth: 2.5 };
+    if (kind === 'allied') return { stroke: '#64748b', strokeWidth: 1.75 };
+    return { stroke: '#444', strokeWidth: 2 };
+  }
 
   // Historical / abolished opacity
   const nodeOpacity = d => {
@@ -513,40 +739,78 @@ export function renderNodes() {
     return osStyle.node_opacity || 1.0;
   };
 
-  // Node circle
-  merged.select('.node-circle')
-    .attr('r', nodeRadius)
-    .attr('fill', d => govLevelFill(d.level_of_government))
-    .attr('stroke', d => {
-      if (State.viewMode === 'gaps' && d.operational_status === 'De_Facto_Blocked') return '#e67e22';
-      if (State.showIndependenceRisk) {
-        const level = (d.derived || {}).independence_risk_level || 'low';
-        return irColors[level] || '#27ae60';
-      }
-      return '#444';
+  const dimIfNotNeighbor = d => {
+    const base = nodeOpacity(d);
+    if (!neighborSet) return base;
+    const isNeighbor = d.id === hoveredNodeId || neighborSet.has(d.id);
+    return isNeighbor ? base : Math.min(base, 0.12);
+  };
+
+  function courtFill(d) {
+    const kind = entityVisualKind(d);
+    if (kind === 'court') return judicialBodyFill(d.level_of_government);
+    if (kind === 'allied') return alliedBodyFill(d);
+    return stakeholderNodeFill(d.level_of_government);
+  }
+
+  function courtStrokeDash(d) {
+    if (d.operational_status === 'Not_Constituted') return '5,3';
+    if (d.operational_status === 'Proposed') return '2,3';
+    if (d.data_quality === 'unverified') return '3,3';
+    return null;
+  }
+
+  function applyShapeAttrs(sel) {
+    sel
+      .attr('fill', courtFill)
+      .attr('stroke', d => nodeStrokeAttrs(d).stroke)
+      .attr('stroke-width', d => nodeStrokeAttrs(d).strokeWidth)
+      .attr('stroke-dasharray', courtStrokeDash)
+      .attr('opacity', dimIfNotNeighbor);
+  }
+
+  // Typed judicial shapes (hexagon, pentagon, crescent, diamond, triangle, square)
+  merged.select('.node-shape')
+    .style('display', d => {
+      const shape = entityNodeShape(d);
+      return shape !== 'rect' && shape !== 'circle' ? null : 'none';
     })
-    .attr('stroke-width', d => (
-      State.viewMode === 'gaps' && d.operational_status === 'De_Facto_Blocked' ? 3 : 2
-    ))
+    .attr('fill-rule', d => (entityNodeShape(d) === 'crescent' ? 'evenodd' : null))
+    .attr('d', d => nodeShapePathForEntity(d, nodeRadius(d)))
+    .call(applyShapeAttrs);
+
+  // Subordinate / city / special courts — circle
+  merged.select('.node-circle')
+    .style('display', d => (entityNodeShape(d) === 'circle' ? null : 'none'))
+    .attr('r', nodeRadius)
+    .call(applyShapeAttrs);
+
+  // Executive, appointment, training, etc. — rectangles
+  merged.select('.node-rect')
+    .style('display', d => (entityNodeShape(d) === 'rect' ? null : 'none'))
+    .attr('x', d => -drawableRectHalfWidth(d))
+    .attr('y', d => -drawableRectHalfHeight(d))
+    .attr('width', d => 2 * drawableRectHalfWidth(d))
+    .attr('height', d => 2 * drawableRectHalfHeight(d))
+    .attr('rx', 8)
+    .attr('ry', 8)
+    .attr('fill', d => stakeholderNodeFill(d.level_of_government))
+    .attr('stroke', d => nodeStrokeAttrs(d).stroke)
+    .attr('stroke-width', d => nodeStrokeAttrs(d).strokeWidth)
     .attr('stroke-dasharray', d => {
-      const os = osLegend[d.operational_status] || {};
       if (d.operational_status === 'Not_Constituted') return '5,3';
       if (d.operational_status === 'Proposed') return '2,3';
       if (d.data_quality === 'unverified') return '3,3';
       return null;
     })
-    .attr('opacity', d => {
-      const base = nodeOpacity(d);
-      if (!neighborSet) return base;
-      const isNeighbor = d.id === hoveredNodeId || neighborSet.has(d.id);
-      return isNeighbor ? base : Math.min(base, 0.12);
-    });
+    .attr('opacity', dimIfNotNeighbor);
 
-  // Independence risk ring — only when toggle is on
+  // Independence risk ring — judicial / allied shapes (circle outline)
   merged.select('.node-ir-ring')
+    .style('display', d => (entityNodeShape(d) !== 'rect' ? null : 'none'))
     .attr('r', d => {
-      if (!State.showIndependenceRisk) return 0;
-      return nodeRadius(d) + IR_RING_OFFSET;
+      if (!State.showIndependenceRisk || entityNodeShape(d) === 'rect') return 0;
+      return shapeLayoutRadius(d, nodeRadius(d)) + IR_RING_OFFSET;
     })
     .attr('fill', 'none')
     .attr('stroke', d => {
@@ -554,24 +818,82 @@ export function renderNodes() {
       return irColors[level] || '#27ae60';
     })
     .attr('stroke-width', IR_RING_WIDTH)
-    .attr('opacity', d => State.showIndependenceRisk ? 0.7 : 0);
+    .attr('opacity', d => (State.showIndependenceRisk && entityNodeShape(d) !== 'rect') ? 0.7 : 0);
 
-  merged.select('.node-exception-overlay')
+  merged.select('.node-ir-ring-rect')
+    .style('display', d => (entityNodeShape(d) === 'rect' ? null : 'none'))
+    .attr('x', d => -drawableRectHalfWidth(d) - IR_RING_OFFSET)
+    .attr('y', d => -drawableRectHalfHeight(d) - IR_RING_OFFSET)
+    .attr('width', d => 2 * drawableRectHalfWidth(d) + 2 * IR_RING_OFFSET)
+    .attr('height', d => 2 * drawableRectHalfHeight(d) + 2 * IR_RING_OFFSET)
+    .attr('rx', 10)
+    .attr('ry', 10)
+    .attr('fill', 'none')
+    .attr('stroke', d => {
+      const level = (d.derived || {}).independence_risk_level || 'low';
+      return irColors[level] || '#27ae60';
+    })
+    .attr('stroke-width', IR_RING_WIDTH)
+    .attr('opacity', d => (State.showIndependenceRisk && entityNodeShape(d) === 'rect') ? 0.72 : 0);
+
+  merged.select('.node-exception-shape')
+    .style('display', d => {
+      const shape = entityNodeShape(d);
+      return shape !== 'rect' && shape !== 'circle' ? null : 'none';
+    })
+    .attr('fill-rule', d => (entityNodeShape(d) === 'crescent' ? 'evenodd' : null))
+    .attr('d', d => nodeShapePathForEntity(d, nodeRadius(d)))
+    .attr('fill', 'url(#pat-exception-stripes)')
+    .attr('opacity', d => {
+      const shape = entityNodeShape(d);
+      return (State.showExceptions && d.structural_exception && shape !== 'rect' && shape !== 'circle') ? 0.52 : 0;
+    })
+    .attr('pointer-events', 'none');
+
+  merged.select('.node-exception-circle')
+    .style('display', d => (entityNodeShape(d) === 'circle' ? null : 'none'))
     .attr('r', d => {
-      if (!State.showExceptions || !d.structural_exception) return 0;
+      if (!State.showExceptions || !d.structural_exception || entityNodeShape(d) !== 'circle') return 0;
       return nodeRadius(d);
     })
     .attr('fill', 'url(#pat-exception-stripes)')
-    .attr('opacity', d => (State.showExceptions && d.structural_exception) ? 0.52 : 0)
+    .attr('opacity', d => (State.showExceptions && d.structural_exception && entityNodeShape(d) === 'circle') ? 0.52 : 0)
     .attr('pointer-events', 'none');
+
+  merged.select('.node-exception-rect')
+    .style('display', d => (entityNodeShape(d) === 'rect' ? null : 'none'))
+    .attr('x', d => -drawableRectHalfWidth(d))
+    .attr('y', d => -drawableRectHalfHeight(d))
+    .attr('width', d => 2 * drawableRectHalfWidth(d))
+    .attr('height', d => 2 * drawableRectHalfHeight(d))
+    .attr('rx', 8)
+    .attr('ry', 8)
+    .attr('fill', 'url(#pat-exception-stripes)')
+    .attr('opacity', d => (State.showExceptions && d.structural_exception && entityVisualKind(d) === 'stakeholder') ? 0.52 : 0)
+    .attr('pointer-events', 'none');
+
+  merged.select('.node-inner-label')
+    .style('display', d => (entityVisualKind(d) === 'stakeholder' ? null : 'none'))
+    .attr('text-anchor', 'middle')
+    .attr('dominant-baseline', 'central')
+    .attr('x', 0)
+    .attr('y', 0)
+    .attr('font-size', d => `${innerLabelFontPxFor(d)}px`)
+    .attr('font-weight', d => (d.type === 'AppointmentBody' ? '650' : '560'))
+    .attr('font-style', d => (d.type === 'ExecutiveBody' ? 'italic' : 'normal'))
+    .attr('font-family', 'Inter, system-ui, -apple-system, sans-serif')
+    .attr('fill', '#e8eef5')
+    .attr('opacity', dimIfNotNeighbor)
+    .text(innerLabelText);
 
   // Badge
   merged.select('.node-badge')
     .attr('text-anchor', 'middle')
     .attr('dominant-baseline', 'central')
-    .attr('dy', d => -nodeRadius(d) + 2)
-    .attr('dx', d => nodeRadius(d) - 2)
+    .attr('dy', d => (entityVisualKind(d) === 'stakeholder' ? -drawableRectHalfHeight(d) + 2 : -nodeRadius(d) + 2))
+    .attr('dx', d => (entityVisualKind(d) === 'stakeholder' ? drawableRectHalfWidth(d) - 2 : nodeRadius(d) - 2))
     .attr('font-size', '10px')
+    .attr('font-weight', d => (entityVisualKind(d) === 'stakeholder' ? '700' : '400'))
     .attr('fill', '#e74c3c')
     .text(d => {
       if (d.operational_status === 'Not_Constituted') return 'NC';
@@ -583,10 +905,11 @@ export function renderNodes() {
   merged.select('.node-gap-marker')
     .attr('text-anchor', 'middle')
     .attr('dominant-baseline', 'central')
-    .attr('dy', d => -nodeRadius(d) - 10)
-    .attr('dx', d => -nodeRadius(d) + 4)
+    .attr('dy', d => (entityVisualKind(d) === 'stakeholder' ? -drawableRectHalfHeight(d) - 10 : -nodeRadius(d) - 10))
+    .attr('dx', d => (entityVisualKind(d) === 'stakeholder' ? -drawableRectHalfWidth(d) + 4 : -nodeRadius(d) + 4))
     .attr('font-size', '18px')
     .attr('font-weight', '800')
+    .attr('font-style', d => (entityVisualKind(d) === 'allied' ? 'italic' : 'normal'))
     .attr('fill', '#e74c3c')
     .attr('pointer-events', 'none')
     .text(d => ((State.showGaps && (d.gap_flag || (d.gap_count || 0) > 0)) ? '*' : ''));
@@ -594,8 +917,8 @@ export function renderNodes() {
   merged.select('.node-circ-marker')
     .attr('text-anchor', 'middle')
     .attr('dominant-baseline', 'central')
-    .attr('dy', d => nodeRadius(d) + 4)
-    .attr('dx', d => nodeRadius(d) - 2)
+    .attr('dy', d => (entityVisualKind(d) === 'stakeholder' ? drawableRectHalfHeight(d) + 4 : nodeRadius(d) + 4))
+    .attr('dx', d => (entityVisualKind(d) === 'stakeholder' ? drawableRectHalfWidth(d) - 2 : nodeRadius(d) - 2))
     .attr('font-size', '14px')
     .attr('fill', '#8e44ad')
     .attr('pointer-events', 'none')
@@ -603,52 +926,6 @@ export function renderNodes() {
       const c = d.circularity_score ?? d.derived?.circularity_score ?? 0;
       return (State.showCircularity && c > 0) ? '⟳' : '';
     });
-
-  // Expand/Collapse control
-  const toggle = merged.select('.node-toggle');
-  toggle.each(function(d) {
-    const g = d3.select(this);
-    g.selectAll('*').remove();
-
-    const kids = State.useProgressiveExplorer
-      && (State._childrenByParent?.[d.id] || []).length > 0;
-    if (!kids) return;
-
-    const r = nodeRadius(d);
-    const isExpanded = State.expandedEntityIds?.has(d.id);
-    // Place to the right of the node so overflow:hidden on the canvas does not clip
-    // the control when the node sits in the top band (was above: −r−10).
-    const x = r + 20;
-    const y = 0;
-    const hw = 11;
-
-    g.attr('transform', `translate(${x},${y})`)
-      .style('cursor', 'pointer')
-      .on('pointerdown', (event) => {
-        event.preventDefault?.();
-        event.stopPropagation?.();
-        State.toggleExpand(d.id);
-      });
-
-    g.append('title')
-      .text(isExpanded ? 'Collapse appellate children' : 'Expand appellate children');
-
-    g.append('rect')
-      .attr('x', -hw).attr('y', -hw)
-      .attr('width', hw * 2).attr('height', hw * 2)
-      .attr('rx', 5)
-      .attr('fill', '#ffffff')
-      .attr('stroke', '#2563eb')
-      .attr('stroke-width', 2);
-
-    g.append('text')
-      .attr('text-anchor', 'middle')
-      .attr('dominant-baseline', 'central')
-      .attr('font-size', '15px')
-      .attr('font-weight', '800')
-      .attr('fill', '#111827')
-      .text(isExpanded ? '−' : '+');
-  });
 
   nodes.exit().remove();
 }
@@ -669,24 +946,36 @@ function renderLabels() {
   // Labels are inside the zoomed #graph-root. Font in user units: F×k ≈ constant screen px.
   // Never use a minimum F≥12 here — at large k that explodes on-screen (was the huge-label bug).
   const k = Math.max(0.18, Math.min(8, zoomScale || 1));
-  const labelFontPx = Math.max(3.5, Math.min(19, 10.5 / k));
+  function benchLabelFontPx(d) {
+    const tier = hierarchyTierForSizing(d);
+    const tierMul = tier <= 0 ? 2.1 : tier === 1 ? 1.75 : tier === 2 ? 1.1 : 1;
+    const basePx = tier <= 0 ? 14.5 : tier === 1 ? 12.5 : 10.5;
+    return Math.max(4.5, Math.min(32, (basePx / k) * tierMul));
+  }
+
+  const benchLabelEntities = entities.filter(e => entityVisualKind(e) !== 'stakeholder');
 
   const labels = layerLabels.selectAll('.node-label')
-    .data(entities, d => d.id);
+    .data(benchLabelEntities, d => d.id);
 
   const enter = labels.enter().append('text').attr('class', 'node-label');
   const merged = enter.merge(labels);
 
-  const nodeR = drawableNodeRadiusForEntity;
-
   merged
     .attr('x', d => (posMap[d.id] || d.position || {x:0}).x)
-    .attr('y', d => (posMap[d.id] || d.position || {y:0}).y + nodeR(d) + 14 + (labelFontPx > 18 ? 4 : 0))
+    .attr('y', d => (posMap[d.id] || d.position || {y:0}).y + externalLabelYOffset(d, benchLabelFontPx(d)))
     .attr('text-anchor', 'middle')
-    .attr('font-size', `${labelFontPx}px`)
+    .attr('font-size', d => `${benchLabelFontPx(d)}px`)
     .attr('font-weight', d => {
       const dq = d.data_quality;
-      if (dq === 'verified') return '700';
+      if (entityVisualKind(d) === 'court') {
+        if (dq === 'verified') return '780';
+        return '520';
+      }
+      if (entityVisualKind(d) === 'allied') {
+        if (dq === 'verified') return '660';
+        return '430';
+      }
       return '400';
     })
     .attr('fill', d => {
@@ -697,6 +986,7 @@ function renderLabels() {
       return style.color || textPrimary;
     })
     .attr('font-style', d => {
+      if (entityVisualKind(d) === 'allied') return 'italic';
       const dq = d.data_quality;
       const dqStyle = dqLegend[dq] || {};
       if (dqStyle.italic) return 'italic';
@@ -717,13 +1007,7 @@ function renderLabels() {
       const isNeighbor = d.id === hoveredNodeId || neighborSet.has(d.id);
       return isNeighbor ? 1.0 : 0.22;
     })
-    .text(d => {
-      const abbr = d.abbreviation || d.name;
-      if (zoomScale > 1.05) return d.name || abbr;
-      if (zoomScale > 0.72) return abbr;
-      // Very zoomed out: still show abbreviation (never hide text entirely).
-      return abbr.length > 22 ? `${abbr.slice(0, 20)}…` : abbr;
-    });
+    .text(d => nodeCaptionText(d, zoomScale));
 
   labels.exit().remove();
 }
@@ -794,7 +1078,7 @@ function computeOrgBands(entities, appellateRanks) {
       continue;
     }
 
-    if (type === 'ConstitutionalCourt' && id.startsWith('hc_')) {
+    if (type === 'HighCourtBench' || (type === 'ConstitutionalCourt' && id.startsWith('hc_'))) {
       band.set(id, 1);
       continue;
     }
@@ -873,6 +1157,354 @@ function computeHorizontalGroups(entities) {
   return map;
 }
 
+/** Bands at this index and below use a narrow vertical ribbon instead of one X column per state. */
+const COMPACT_LAYOUT_MIN_BAND = 2;
+
+/** Virtual canvas — width driven by upper bands + compact ribbons, not entity count alone. */
+function computeOrgLayoutCanvas(viewW, viewH, entityCount, widthHint) {
+  const n = Math.max(0, entityCount);
+  const spread = Math.sqrt(n);
+  const layoutW = Math.min(
+    20000,
+    Math.max(
+      widthHint || 0,
+      viewW * 2.4,
+      viewW + spread * 72 + 720
+    )
+  );
+  const layoutH = Math.min(
+    19000,
+    Math.max(viewH * 4.2, viewH + spread * 95 + 1180)
+  );
+  return { layoutW: Math.round(layoutW), layoutH: Math.round(layoutH) };
+}
+
+function jitterFromId(id, amp) {
+  let h = 0;
+  for (let i = 0; i < (id || '').length; i++) {
+    h = (Math.imul(31, h) + id.charCodeAt(i)) | 0;
+  }
+  const a = ((h & 255) / 255) * 2 - 1;
+  const b = (((h >> 8) & 255) / 255) * 2 - 1;
+  return { dx: a * amp, dy: b * amp * 0.62 };
+}
+
+function compactGridShape(n) {
+  const cols = Math.max(4, Math.ceil(Math.sqrt(n * 1.12)));
+  const rows = Math.ceil(n / cols);
+  return { cols, rows };
+}
+
+function computeCompactRibbonWidth(n, minCenterDist) {
+  if (n <= 0) return 0;
+  const cellW = minCenterDist * 1.18;
+  const { cols } = compactGridShape(n);
+  return cols * cellW + cellW * 0.55 + CLUSTER_PADDING * 2;
+}
+
+function computeCompactBandVerticalHalf(n, minCenterDist, layoutH) {
+  if (n <= 0) return minCenterDist;
+  const rowPitch = minCenterDist * 0.92;
+  const { rows } = compactGridShape(n);
+  const need = (rows * rowPitch) / 2 + minCenterDist * 0.55;
+  return Math.min(layoutH * 0.44, Math.max(minCenterDist * 1.15, need));
+}
+
+/**
+ * Sparse non-linear packing for dense lower bands: brick-offset grid in a narrow
+ * ribbon centred on the canvas (not one column per jurisdiction).
+ */
+function layoutCompactBand({
+  bandEntities,
+  bandBaseY,
+  centerX,
+  minCenterDist,
+  bandClamp,
+  getGroup,
+}) {
+  const n = bandEntities.length;
+  const cellW = minCenterDist * 1.18;
+  const rowPitch = minCenterDist * 0.92;
+  const { cols, rows } = compactGridShape(n);
+  const ribbonW = cols * cellW + cellW * 0.55;
+  const xLo = centerX - ribbonW / 2;
+  const xHi = centerX + ribbonW / 2;
+
+  const sorted = [...bandEntities].sort((a, b) => {
+    const ga = getGroup(a) || '';
+    const gb = getGroup(b) || '';
+    if (ga !== gb) return ga.localeCompare(gb);
+    return (a.id || '').localeCompare(b.id || '');
+  });
+
+  const positions = {};
+  const xStart = centerX - ribbonW / 2 + cellW / 2;
+
+  sorted.forEach((e, idx) => {
+    const col = idx % cols;
+    const row = Math.floor(idx / cols);
+    const brick = (row % 2) * cellW * 0.42;
+    const waveY = Math.sin((col / Math.max(1, cols - 1)) * Math.PI) * rowPitch * 0.22;
+    const j = jitterFromId(e.id, minCenterDist * 0.14);
+    let x = xStart + col * cellW + brick + j.dx;
+    let y = bandBaseY + (row - (rows - 1) / 2) * rowPitch + waveY + j.dy;
+    x = Math.max(xLo + minCenterDist * 0.35, Math.min(xHi - minCenterDist * 0.35, x));
+    y = Math.max(bandBaseY - bandClamp, Math.min(bandBaseY + bandClamp, y));
+    positions[e.id] = { x, y };
+  });
+
+  return { positions, ribbonW, xLo, xHi };
+}
+
+/** Sort key: principal HC then its benches (Madurai after hc_madras, etc.). */
+function judiciarySortKey(e) {
+  const parent = e.parent_hc || e._detail?.parent_hc;
+  if (e.type === 'HighCourtBench' && parent) return `${parent}~${e.id}`;
+  if (e.id?.startsWith('hc_')) return `${e.id}~`;
+  return e.id || '';
+}
+
+/**
+ * Band 1 — HCs + permanent benches: 3-row grid centred under the Supreme Court.
+ * Avoids one-X-column-per-jurisdiction (all MultiState HCs stacked in one pile).
+ */
+function layoutJudiciaryScatterBand({
+  bandEntities,
+  clusterTopY,
+  centerX,
+  minCenterDist,
+}) {
+  const judiciary = bandEntities.filter(
+    e => e.type === 'HighCourtBench'
+      || (e.type === 'ConstitutionalCourt' && e.id?.startsWith('hc_'))
+  );
+  const appointment = bandEntities.filter(
+    e => e.type === 'AppointmentBody' || e.cluster === 'appointment_bodies'
+  );
+  const other = bandEntities.filter(
+    e => !judiciary.includes(e) && !appointment.includes(e)
+  );
+
+  const positions = {};
+  const dist = minCenterDist * 1.48;
+  const cellW = dist * 1.22;
+  const rowPitch = dist * 1.08;
+
+  function scatterPack(entities, clusterTopY, cx, preferRows, topAnchored = true, tightGrid = false) {
+    if (!entities.length) return { xLo: cx, xHi: cx, yMax: clusterTopY };
+    const n = entities.length;
+    let cols;
+    let rows;
+    if (preferRows) {
+      rows = preferRows;
+      cols = Math.ceil(n / rows);
+    } else {
+      cols = Math.max(5, Math.ceil(Math.sqrt(n * 1.05)));
+      rows = Math.ceil(n / cols);
+    }
+    const ribbonW = cols * cellW + cellW * 0.65;
+    const xLo = cx - ribbonW / 2;
+    const xHi = cx + ribbonW / 2;
+    const sorted = [...entities].sort((a, b) => judiciarySortKey(a).localeCompare(judiciarySortKey(b)));
+    const xStart = cx - ribbonW / 2 + cellW / 2;
+    let yMax = clusterTopY;
+    const jitterAmp = tightGrid ? dist * 0.02 : dist * 0.1;
+
+    sorted.forEach((e, idx) => {
+      const col = idx % cols;
+      const row = Math.floor(idx / cols);
+      const brick = tightGrid ? 0 : (row % 2) * cellW * 0.48;
+      const waveY = tightGrid ? 0 : Math.sin((col / Math.max(1, cols - 1)) * Math.PI) * rowPitch * 0.28;
+      const j = jitterFromId(e.id, jitterAmp);
+      let x = xStart + col * cellW + brick + j.dx;
+      let y = topAnchored
+        ? clusterTopY + row * rowPitch + waveY + (tightGrid ? 0 : Math.max(0, j.dy))
+        : clusterTopY + (row - (rows - 1) / 2) * rowPitch + waveY + j.dy;
+      x = Math.max(xLo + dist * 0.4, Math.min(xHi - dist * 0.4, x));
+      y = Math.max(clusterTopY, y);
+      positions[e.id] = { x, y };
+      yMax = Math.max(yMax, y);
+    });
+    return { xLo, xHi, yMax: yMax + rowPitch * 0.65 };
+  }
+
+  const scX = centerX;
+  let xLo = scX;
+  let xHi = scX;
+
+  let yMax = clusterTopY;
+
+  if (judiciary.length) {
+    const pack = scatterPack(judiciary, clusterTopY, scX, 3, true, true);
+    xLo = Math.min(xLo, pack.xLo);
+    xHi = Math.max(xHi, pack.xHi);
+    yMax = Math.max(yMax, pack.yMax);
+  }
+
+  if (appointment.length) {
+    const apptTopY = clusterTopY - rowPitch * 1.85;
+    const apptCx = scX - Math.max(300, cellW * 3.5);
+    const pack = scatterPack(appointment, apptTopY, apptCx, 2, true);
+    xLo = Math.min(xLo, pack.xLo);
+    xHi = Math.max(xHi, pack.xHi);
+    yMax = Math.max(yMax, pack.yMax);
+  }
+
+  if (other.length) {
+    const pack = scatterPack(other, clusterTopY + rowPitch * 0.4, scX + cellW * 2.8, 2, true);
+    xLo = Math.min(xLo, pack.xLo);
+    xHi = Math.max(xHi, pack.xHi);
+    yMax = Math.max(yMax, pack.yMax);
+  }
+
+  return { positions, xLo, xHi, yMin: clusterTopY, yMax };
+}
+
+function principalHcIdForDistrictGroup(g) {
+  return PRINCIPAL_HC_BY_STATE_CODE[g.stateCode] || g.hcTargetId;
+}
+
+/** Expanded district lattices (and collapsed summaries) pack under their principal HC. */
+function collectDistrictLatticePinnedIds(entities) {
+  const pinned = new Set();
+  const index = State._districtAggregateIndex;
+  if (!index?.groups) return pinned;
+  const ids = new Set(entities.map(e => e.id));
+  for (const g of index.groups) {
+    const parentId = principalHcIdForDistrictGroup(g);
+    const parentVisible = parentId && ids.has(parentId);
+    if (!parentVisible) continue;
+    const latticeOpen = State.expandedDistrictAggregateIds?.has(g.groupId);
+    const synthId = g.synthetic ? `__jem_agg_${g.stateCode}_district_courts` : null;
+    if (latticeOpen) {
+      for (const mid of g.memberIds) if (ids.has(mid)) pinned.add(mid);
+    } else if (synthId && ids.has(synthId)) {
+      pinned.add(synthId);
+    }
+  }
+  return pinned;
+}
+
+/**
+ * Place expanded district lattices in a dedicated band below all High Courts
+ * (not directly under one HC node, which overlaps lower HC rows).
+ * @returns {number} bottom Y of the district band, or districtBandTopY if empty
+ */
+function layoutDistrictCourtsUnderParentHc({ entities, positions, minCenterDist, districtBandTopY }) {
+  const index = State._districtAggregateIndex;
+  if (!index?.groups) return districtBandTopY ?? 0;
+  const byId = new Map(entities.map(e => [e.id, e]));
+  const cellW = minCenterDist * 1.12;
+  const rowPitch = minCenterDist * 0.92;
+  const fixedRows = 3;
+  const bandGap = minCenterDist * 1.6 + ORG_LABEL_VERTICAL_CLEARANCE;
+  let yCursor = districtBandTopY + bandGap;
+
+  for (const g of index.groups) {
+    const parentId = principalHcIdForDistrictGroup(g);
+    const parent = byId.get(parentId);
+    const parentPos = positions[parentId];
+    if (!parent || !parentPos) continue;
+
+    const latticeOpen = State.expandedDistrictAggregateIds?.has(g.groupId);
+
+    if (latticeOpen) {
+      const members = [...g.memberIds]
+        .filter(id => byId.has(id))
+        .map(id => byId.get(id))
+        .sort((a, b) => (a.id || '').localeCompare(b.id || ''));
+      if (!members.length) continue;
+
+      const cols = Math.ceil(members.length / fixedRows);
+      const ribbonW = cols * cellW;
+      const xStart = parentPos.x - ribbonW / 2 + cellW / 2;
+      const topY = yCursor;
+
+      members.forEach((e, idx) => {
+        const col = idx % cols;
+        const row = Math.floor(idx / cols);
+        positions[e.id] = {
+          x: xStart + col * cellW,
+          y: topY + row * rowPitch,
+        };
+      });
+      yCursor = topY + fixedRows * rowPitch + ORG_LABEL_VERTICAL_CLEARANCE + minCenterDist * 0.8;
+      continue;
+    }
+
+    const synthId = g.synthetic ? `__jem_agg_${g.stateCode}_district_courts` : null;
+    if (synthId && byId.has(synthId)) {
+      positions[synthId] = { x: parentPos.x, y: yCursor };
+      yCursor += minCenterDist * 1.8;
+    }
+  }
+
+  return yCursor;
+}
+
+/**
+ * Minimum vertical half-height for a band so we can fit a 5/7/9-row zig-zag
+ * (several steps above & below the band centre).
+ */
+function computeBandZigZagVerticalHalf(nBand, minCenterDist, layoutH) {
+  if (nBand <= 8) return minCenterDist * 1.0;
+  const halfZig = nBand > 200 ? 4 : nBand > 55 ? 3 : 2;
+  const rowCount = halfZig * 2 + 1;
+  const rowPitch = minCenterDist * 0.54;
+  const span = ((rowCount - 1) / 2) * rowPitch + minCenterDist * 0.45;
+  return Math.min(layoutH * 0.38, Math.max(minCenterDist * 1.2, span));
+}
+
+/**
+ * Rows within a hierarchy band: 3–4 steps above and below centre (5, 7, or 9 rows).
+ * Row pitch is shrunk if needed to stay inside the band’s vertical clamp.
+ */
+function computeBandZigZagLayout(nBand, minCenterDist, bandVerticalHalf) {
+  if (nBand <= 8) {
+    return { rowCount: 1, rowPitch: 0, halfZig: 0 };
+  }
+  const halfZig = nBand > 200 ? 4 : nBand > 55 ? 3 : 2;
+  const rowCount = halfZig * 2 + 1;
+  let rowPitch = minCenterDist * 0.52;
+  let span = ((rowCount - 1) / 2) * rowPitch;
+  const maxSpan = Math.max(minCenterDist * 1.25, bandVerticalHalf * 0.96);
+  if (span > maxSpan && rowCount > 1) {
+    rowPitch = maxSpan / ((rowCount - 1) / 2);
+    span = ((rowCount - 1) / 2) * rowPitch;
+  }
+  return { rowCount, rowPitch, halfZig };
+}
+
+function computeEntityPositionsBounds(positions, entities) {
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+  const padX = 150;
+  const padTop = 120;
+  const padBottom = 130;
+  for (const e of entities) {
+    const p = positions[e.id];
+    if (!p) continue;
+    const rr = effectiveNodeLayoutRadius(e);
+    const tier = hierarchyTierForSizing(e);
+    const lbl = entityVisualKind(e) !== 'stakeholder'
+      ? 58 + tier * 10
+      : 28 + tier * 4;
+    minX = Math.min(minX, p.x - rr);
+    maxX = Math.max(maxX, p.x + rr);
+    minY = Math.min(minY, p.y - rr);
+    maxY = Math.max(maxY, p.y + rr + lbl);
+  }
+  if (!Number.isFinite(minX)) return null;
+  return {
+    minX: minX - padX,
+    maxX: maxX + padX,
+    minY: minY - padTop,
+    maxY: maxY + padBottom,
+  };
+}
+
 function computeOrgChartPositions({
   entities,
   relationships,
@@ -880,12 +1512,18 @@ function computeOrgChartPositions({
   fallbackRank,
   bandIndexById,
   groups,
-  width,
-  height,
+  layoutW: initialLayoutW,
+  layoutH,
 }) {
+  // Drive hierarchy-sized radii during this layout pass.
+  lastAppellateRanks = ranks;
+  lastOrgBandById = bandIndexById;
+
   // Hybrid layout:
   // - Y is banded (hierarchy)
-  // - X is clustered within each band using same-band links (network feel)
+  // - Band 0: SC + President pinned at top
+  // - Band 1: HCs + benches — zig-zag scatter centred under SC (not one column per state)
+  // - Bands 2+: narrow brick grid ribbon (no state-wide horizontal sprawl)
   const getBand = (e) => bandIndexById.get(e.id) ?? 3;
   const getGroup = (e) => groups.get(e.id) ?? 'Central';
   const getRank = (e) => ranks.get(e.id) ?? fallbackRank;
@@ -893,52 +1531,200 @@ function computeOrgChartPositions({
   const ids = new Set(entities.map(e => e.id));
   const rMax = maxDrawableNodeRadius(entities);
   const minCenterDist = NODE_SPACING_RADIUS_MULT * rMax;
-  const bandPitch = Math.max(BAND_GAP + 40, minCenterDist * 2.15);
-  const bandClampSim = Math.max(70, BAND_GAP * 0.35, minCenterDist * 0.48);
+  const districtLatticePinned = collectDistrictLatticePinnedIds(entities);
 
-  const groupKeys = Array.from(new Set(entities.map(e => getGroup(e))));
-  groupKeys.sort((a, b) => (a === 'Central' ? -1 : b === 'Central' ? 1 : a.localeCompare(b)));
-  const groupCols = Math.max(2, Math.min(8, groupKeys.length));
-  const colW = Math.max(220, (width - CLUSTER_PADDING * 2) / groupCols);
-  const groupX = new Map();
-  groupKeys.forEach((gk, i) => {
-    const col = i % groupCols;
-    const cx = CLUSTER_PADDING + col * colW + colW / 2;
-    groupX.set(gk, cx);
-  });
-
-  // Partition entities by band
   const bandToEntities = new Map();
   for (const e of entities) {
+    if (districtLatticePinned.has(e.id)) continue;
     const b = getBand(e);
     if (!bandToEntities.has(b)) bandToEntities.set(b, []);
     bandToEntities.get(b).push(e);
   }
 
+  const upperBandGroups = new Set();
+  for (const e of entities) {
+    if (getBand(e) < COMPACT_LAYOUT_MIN_BAND) upperBandGroups.add(getGroup(e));
+  }
+  const groupKeys = Array.from(upperBandGroups);
+  groupKeys.sort((a, b) => (a === 'Central' ? -1 : b === 'Central' ? 1 : a.localeCompare(b)));
+
+  const rawColPitch = minCenterDist * 2.35;
+  let minColPitch = rawColPitch;
+  const LAYOUT_W_CAP = 16000;
+  let upperBandW = CLUSTER_PADDING * 2 + Math.max(1, groupKeys.length) * minColPitch;
+  if (upperBandW > LAYOUT_W_CAP) {
+    minColPitch = Math.max(
+      minCenterDist * 1.32,
+      (LAYOUT_W_CAP - CLUSTER_PADDING * 2) / Math.max(1, groupKeys.length)
+    );
+    upperBandW = CLUSTER_PADDING * 2 + groupKeys.length * minColPitch;
+  }
+
+  let maxCompactRibbonW = 0;
+  for (let b = COMPACT_LAYOUT_MIN_BAND; b <= 4; b++) {
+    const arr = bandToEntities.get(b);
+    if (arr?.length) {
+      maxCompactRibbonW = Math.max(maxCompactRibbonW, computeCompactRibbonWidth(arr.length, minCenterDist));
+    }
+  }
+
+  let layoutW = Math.min(
+    LAYOUT_W_CAP,
+    Math.max(initialLayoutW, upperBandW, maxCompactRibbonW)
+  );
+  const usableW = Math.max(240, layoutW - CLUSTER_PADDING * 2);
+  const bandXClampByIndex = new Map();
+
+  function verticalHalfClampForBand(nInBand) {
+    if (nInBand <= 1) return Math.max(130, minCenterDist * 1.2);
+    const cols = Math.max(4, Math.floor(usableW / (minCenterDist * 1.08)));
+    const rows = Math.ceil(nInBand / cols);
+    const rowPitch = minCenterDist * 1.12 + ORG_LABEL_VERTICAL_CLEARANCE * 0.42;
+    const need = (rows * rowPitch) / 2 + minCenterDist * 0.65;
+    return Math.min(layoutH * 0.42, Math.max(140, need));
+  }
+
+  let maxVerticalHalf = 0;
+  for (const arr of bandToEntities.values()) {
+    maxVerticalHalf = Math.max(maxVerticalHalf, verticalHalfClampForBand(arr.length));
+  }
+
+  const bandPitch = Math.max(
+    BAND_GAP + BAND_VERTICAL_GAP,
+    minCenterDist * 2.45,
+    maxVerticalHalf * 2 + BAND_VERTICAL_GAP
+  );
+  const bandClampFloor = Math.max(100, BAND_GAP * 0.36, minCenterDist * 0.52);
+
+  const bandHalfClampByIndex = new Map();
+  for (const [b, arr] of bandToEntities) {
+    const n = arr.length;
+    const base = Math.max(bandClampFloor, verticalHalfClampForBand(n));
+    const extra = b === 1
+      ? computeCompactBandVerticalHalf(n, minCenterDist * 1.35, layoutH)
+      : b >= COMPACT_LAYOUT_MIN_BAND
+        ? computeCompactBandVerticalHalf(n, minCenterDist, layoutH)
+        : computeBandZigZagVerticalHalf(n, minCenterDist, layoutH);
+    bandHalfClampByIndex.set(b, Math.max(base, extra));
+  }
+
+  const groupX = new Map();
+  groupKeys.forEach((gk, i) => {
+    const cx = CLUSTER_PADDING + minColPitch * (i + 0.5);
+    groupX.set(gk, cx);
+  });
+
   const positions = {};
 
-  // Pre-index relationships for within-band links
   const rels = (relationships || [])
     .filter(r => ids.has(r.source) && ids.has(r.target));
 
-  // Pin the very top entities side-by-side — separation respects minCenterDist.
   const topY = CLUSTER_PADDING;
-  const pinSep = Math.max(180, minCenterDist * 1.05);
-  positions['president_india'] = { x: width / 2 - pinSep / 2, y: topY };
-  positions['supreme_court_india'] = { x: width / 2 + pinSep / 2, y: topY };
+  const pinSep = Math.max(240, minCenterDist * 1.25, rMax * 2.4);
+  const apexClearance = rMax * 2.2 + ORG_LABEL_VERTICAL_CLEARANCE + 36;
+  positions['president_india'] = { x: layoutW / 2 - pinSep / 2, y: topY };
+  positions['supreme_court_india'] = { x: layoutW / 2 + pinSep / 2, y: topY };
 
-  // Layout each band independently
+  const bandLayoutMeta = new Map();
+  bandLayoutMeta.set(0, {
+    yMin: topY - rMax,
+    yMax: topY + apexClearance,
+    xLo: layoutW / 2 - pinSep,
+    xHi: layoutW / 2 + pinSep,
+  });
+
   const bandKeys = Array.from(bandToEntities.keys()).sort((a, b) => a - b);
-  for (const band of bandKeys) {
-    const bandEntities = bandToEntities.get(band) || [];
-    const bandBaseY = CLUSTER_PADDING + band * bandPitch;
-    const bandClamp = bandClampSim;
+  const centerX = layoutW / 2;
+  let cursorY = topY + apexClearance + minCenterDist * APEX_TO_HC_GAP_MULT;
 
-    // Nodes for this band
-    const nodes = bandEntities.map(e => {
+  for (const band of bandKeys) {
+    if (band === 0) continue;
+
+    const bandEntities = bandToEntities.get(band) || [];
+    const bandClamp = bandHalfClampByIndex.get(band) ?? bandClampFloor;
+    const bandBaseY = cursorY;
+    const nBand = bandEntities.length;
+    if (!nBand) continue;
+
+    if (band === 1) {
+      const scCenter = positions['supreme_court_india']?.x ?? centerX;
+      const jud = layoutJudiciaryScatterBand({
+        bandEntities,
+        clusterTopY: cursorY,
+        centerX: scCenter,
+        minCenterDist,
+      });
+      bandXClampByIndex.set(band, { lo: jud.xLo, hi: jud.xHi });
+      bandLayoutMeta.set(band, {
+        yMin: jud.yMin,
+        yMax: jud.yMax + ORG_LABEL_VERTICAL_CLEARANCE,
+        xLo: jud.xLo,
+        xHi: jud.xHi,
+      });
+      for (const [id, pos] of Object.entries(jud.positions)) {
+        if (!positions[id]) positions[id] = pos;
+      }
+      cursorY = jud.yMax + minCenterDist * 2.4 + BAND_VERTICAL_GAP;
+      const districtBottom = layoutDistrictCourtsUnderParentHc({
+        entities,
+        positions,
+        minCenterDist,
+        districtBandTopY: cursorY,
+      });
+      cursorY = Math.max(cursorY, districtBottom) + BAND_VERTICAL_GAP;
+      continue;
+    }
+
+    if (band >= COMPACT_LAYOUT_MIN_BAND) {
+      const compact = layoutCompactBand({
+        bandEntities,
+        bandBaseY,
+        centerX,
+        minCenterDist,
+        bandClamp,
+        getGroup,
+      });
+      bandXClampByIndex.set(band, { lo: compact.xLo, hi: compact.xHi });
+      let yMax = bandBaseY;
+      for (const [id, pos] of Object.entries(compact.positions)) {
+        if (!positions[id]) positions[id] = pos;
+        yMax = Math.max(yMax, pos.y);
+      }
+      bandLayoutMeta.set(band, {
+        yMin: bandBaseY - bandClamp,
+        yMax: yMax + ORG_LABEL_VERTICAL_CLEARANCE,
+        xLo: compact.xLo,
+        xHi: compact.xHi,
+      });
+      cursorY = yMax + minCenterDist * 1.8 + BAND_VERTICAL_GAP;
+      continue;
+    }
+
+    const { rowCount, rowPitch } = computeBandZigZagLayout(nBand, minCenterDist, bandClamp);
+    const spreadY = Math.min(bandClamp * 1.85, bandClamp + Math.sqrt(Math.max(0, nBand)) * 14);
+    const xJitter = nBand > 80 ? 36 : 58;
+
+    const orderedBand = [...bandEntities].sort((a, b) => {
+      const ga = getGroup(a) || '';
+      const gb = getGroup(b) || '';
+      if (ga !== gb) return ga.localeCompare(gb);
+      if (getRank(a) !== getRank(b)) return getRank(a) - getRank(b);
+      return (a.id || '').localeCompare(b.id || '');
+    });
+
+    const nodes = orderedBand.map((e, idx) => {
       const pinned = positions[e.id];
-      const x0 = pinned?.x ?? (groupX.get(getGroup(e)) ?? width / 2) + (Math.random() - 0.5) * 60;
-      const y0 = pinned?.y ?? (bandBaseY + (Math.random() - 0.5) * bandClamp);
+      const gx = groupX.get(getGroup(e)) ?? centerX;
+      let yTarget = bandBaseY;
+      let xNudge = 0;
+      if (rowCount > 1 && rowPitch > 0) {
+        const zigRow = idx % rowCount;
+        yTarget = bandBaseY + (zigRow - (rowCount - 1) / 2) * rowPitch;
+        xNudge = ((zigRow % 2) * 2 - 1) * minCenterDist * 0.28;
+      }
+      const x0 = pinned?.x ?? gx + xNudge + (Math.random() - 0.5) * xJitter * 0.55;
+      const yJ = rowCount > 1 ? rowPitch * 0.38 : spreadY;
+      const y0 = pinned?.y ?? (yTarget + (Math.random() - 0.5) * yJ);
       return {
         id: e.id,
         ref: e,
@@ -946,61 +1732,73 @@ function computeOrgChartPositions({
         y: y0,
         _group: getGroup(e),
         _rank: getRank(e),
+        _yTarget: yTarget,
+        _xNudge: xNudge,
       };
     });
     const byId = new Map(nodes.map(n => [n.id, n]));
 
-    // Links only within this band to create local clustering
     const links = rels
       .filter(r => (byId.has(r.source) && byId.has(r.target)))
       .map(r => ({ ...r, source: byId.get(r.source), target: byId.get(r.target) }));
 
-    // Stable order for deterministic packing
-    nodes.sort((a, b) => {
-      if (a._rank !== b._rank) return a._rank - b._rank;
-      return (a.ref.abbreviation || a.ref.name || a.id).localeCompare(b.ref.abbreviation || b.ref.name || b.id);
-    });
-
-    // Mini-simulation: create a “blob” within the band (X grouped, Y softly banded).
-    const linkDist = Math.max(80, minCenterDist * 0.92);
-    const charge = -Math.max(380, minCenterDist * 10);
-    const collideR = minCenterDist / 2;
+    const linkDist = Math.max(112, minCenterDist * 1.08);
+    const charge = -Math.max(520, minCenterDist * 14);
+    const collideR = minCenterDist * 0.58;
+    const yStrength = nBand > 80 ? 0.055 : nBand > 35 ? 0.075 : 0.1;
+    const linkStrength = nBand > 120 ? 0.34 : 0.5;
     const sim = d3.forceSimulation(nodes)
-      .force('link', d3.forceLink(links).id(d => d.id).distance(linkDist).strength(0.72))
+      .force('link', d3.forceLink(links).id(d => d.id).distance(linkDist).strength(linkStrength))
       .force('charge', d3.forceManyBody().strength(charge))
-      .force('collide', d3.forceCollide().radius(() => collideR).iterations(4))
-      .force('x', d3.forceX(d => groupX.get(d._group) ?? width / 2).strength(0.32))
-      .force('y', d3.forceY(bandBaseY).strength(0.16))
+      .force('collide', d3.forceCollide().radius(() => collideR).iterations(7))
+      .force('x', d3.forceX(d => (groupX.get(d._group) ?? centerX) + (d._xNudge || 0)).strength(0.2))
+      .force('y', d3.forceY(d => d._yTarget).strength(yStrength))
       .stop();
 
-    for (let i = 0; i < 220; i++) sim.tick();
+    const simTicks = nBand > 120 ? 520 : nBand > 70 ? 400 : 300;
+    for (let i = 0; i < simTicks; i++) sim.tick();
 
-    // Write back positions
     for (const n of nodes) {
-      if (positions[n.id]) continue; // keep pinned overrides
-      // Clamp to band bounds to keep hierarchy readable.
+      if (positions[n.id]) continue;
       const y = Math.max(bandBaseY - bandClamp, Math.min(bandBaseY + bandClamp, n.y));
       positions[n.id] = { x: n.x, y };
     }
   }
 
-  // Final pass: enforce minimum center-to-center distance within each band.
+  const overlapEntities = entities.filter(e => !districtLatticePinned.has(e.id));
   resolveOverlapsByBand({
-    entities,
+    entities: overlapEntities,
     positions,
     bandIndexById,
-    width,
-    height,
+    layoutW,
+    layoutH,
     minDist: minCenterDist,
     bandPitch,
+    bandHalfClampByIndex,
+    bandClampFloor,
+    bandXClampByIndex,
+    bandLayoutMeta,
   });
 
-  return positions;
+  return { positions, layoutW, layoutH };
 }
 
-function resolveOverlapsByBand({ entities, positions, bandIndexById, width, height, minDist, bandPitch }) {
+function resolveOverlapsByBand({
+  entities,
+  positions,
+  bandIndexById,
+  layoutW,
+  layoutH,
+  minDist,
+  bandPitch,
+  bandHalfClampByIndex,
+  bandClampFloor,
+  bandXClampByIndex,
+  bandLayoutMeta,
+}) {
   const pitch = bandPitch ?? (BAND_GAP + 40);
   const bands = new Map();
+  const byEntity = new Map(entities.map(e => [e.id, e]));
   for (const e of entities) {
     const b = bandIndexById.get(e.id) ?? 3;
     if (!positions[e.id]) continue;
@@ -1012,23 +1810,30 @@ function resolveOverlapsByBand({ entities, positions, bandIndexById, width, heig
 
   for (const [band, ids] of bands.entries()) {
     if (ids.length < 2) continue;
+    const meta = bandLayoutMeta?.get(band);
     const bandBaseY = CLUSTER_PADDING + band * pitch;
-    const bandClamp = Math.max(100, pitch * 0.38, minDist * 0.55);
+    const bandClamp = bandHalfClampByIndex?.get(band)
+      ?? Math.max(bandClampFloor ?? 120, pitch * 0.38, minDist * 0.55);
+    const yMin = meta?.yMin ?? bandBaseY - bandClamp;
+    const yMax = meta?.yMax ?? Math.min(bandBaseY + bandClamp, layoutH - 80);
 
-    for (let iter = 0; iter < 120; iter++) {
+    for (let iter = 0; iter < 380; iter++) {
       let moved = 0;
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
           const aId = ids[i], bId = ids[j];
           const a = positions[aId], bpos = positions[bId];
           if (!a || !bpos) continue;
+          const ea = byEntity.get(aId);
+          const eb = byEntity.get(bId);
+          if (!ea || !eb) continue;
+          const need = effectiveNodeLayoutRadius(ea) + effectiveNodeLayoutRadius(eb) + 14;
           let dx = bpos.x - a.x;
           let dy = bpos.y - a.y;
           const dist = Math.hypot(dx, dy) || 0.0001;
-          if (dist >= minDist) continue;
+          if (dist >= need) continue;
 
-          // Push apart along the separating axis.
-          const push = (minDist - dist) * 0.5;
+          const push = (need - dist) * 0.5;
           dx /= dist; dy /= dist;
           a.x -= dx * push; a.y -= dy * push;
           bpos.x += dx * push; bpos.y += dy * push;
@@ -1036,12 +1841,16 @@ function resolveOverlapsByBand({ entities, positions, bandIndexById, width, heig
         }
       }
 
-      // Keep nodes inside viewport and inside band.
+      const xClamp = bandXClampByIndex?.get(band);
+      const xLo = meta?.xLo ?? xClamp?.lo ?? 56;
+      const xHi = meta?.xHi ?? xClamp?.hi ?? layoutW - 56;
+
       for (const id of ids) {
         const p = positions[id];
         if (!p) continue;
-        p.x = clamp(p.x, 40, width - 40);
-        p.y = clamp(p.y, bandBaseY - bandClamp, bandBaseY + bandClamp);
+        if (band === 0) continue;
+        p.x = clamp(p.x, xLo, xHi);
+        p.y = clamp(p.y, yMin, yMax);
       }
 
       if (moved === 0) break;
@@ -1049,14 +1858,107 @@ function resolveOverlapsByBand({ entities, positions, bandIndexById, width, heig
   }
 }
 
+/**
+ * Fit the org-chart content into the visible canvas (map-style “whole map” view).
+ * No-op when not using org layout or bounds unknown.
+ */
+/** Pan/zoom to a principal HC plus its district lattice (after blue + expand). */
+export function fitGraphToEntityFocus(entityId, opts = {}) {
+  if (!State._zoomSvg?.node || !State._zoom) return;
+  const posMap = buildPositionMap();
+  const focusIds = new Set([entityId]);
+  const dg = State.districtGroupForPrincipalHc?.(entityId);
+  if (dg) {
+    if (State.expandedDistrictAggregateIds?.has(dg.groupId)) {
+      for (const mid of dg.memberIds) focusIds.add(mid);
+    } else {
+      focusIds.add(`__jem_agg_${dg.stateCode}_district_courts`);
+    }
+  }
+  for (const kid of State._childrenByParent?.[entityId] || []) focusIds.add(kid);
+
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+  for (const id of focusIds) {
+    const p = posMap[id];
+    if (!p) continue;
+    const e = State.getEntityById(id);
+    const pad = (e ? effectiveNodeLayoutRadius(e) : 36) + ORG_LABEL_VERTICAL_CLEARANCE + 24;
+    minX = Math.min(minX, p.x - pad);
+    maxX = Math.max(maxX, p.x + pad);
+    minY = Math.min(minY, p.y - pad);
+    maxY = Math.max(maxY, p.y + pad);
+  }
+  if (!Number.isFinite(minX)) {
+    fitGraphToViewport(opts);
+    return;
+  }
+
+  const dur = opts.duration ?? 280;
+  const margin = opts.margin ?? 0.9;
+  const container = document.getElementById('canvas-container');
+  const vw = container?.clientWidth || width || 800;
+  const vh = container?.clientHeight || height || 600;
+  const bw = Math.max(220, maxX - minX);
+  const bh = Math.max(220, maxY - minY);
+  const cx = (minX + maxX) / 2;
+  const cy = (minY + maxY) / 2;
+  const scale0 = margin * Math.min(vw / bw, vh / bh);
+  const ext = State._zoom.scaleExtent();
+  const k = Math.max(ext[0], Math.min(ext[1], scale0));
+  const tx = vw / 2 - k * cx;
+  const ty = vh / 2 - k * cy;
+  const t = d3.zoomIdentity.translate(tx, ty).scale(k);
+  const svgNode = State._zoomSvg.node();
+  if (dur <= 0) {
+    State._zoomSvg.call(State._zoom.transform, t);
+    State.setTransform(d3.zoomTransform(svgNode));
+  } else {
+    State._zoomSvg.transition().duration(dur).call(State._zoom.transform, t)
+      .on('end', () => State.setTransform(d3.zoomTransform(svgNode)));
+  }
+}
+
+export function fitGraphToViewport(opts = {}) {
+  if (!lastGraphContentBounds || !State._zoomSvg?.node || !State._zoom) return;
+  const dur = opts.duration ?? 0;
+  const margin = opts.margin ?? 0.9;
+  const container = document.getElementById('canvas-container');
+  const vw = container?.clientWidth || width || 800;
+  const vh = container?.clientHeight || height || 600;
+  const b = lastGraphContentBounds;
+  const bw = Math.max(180, b.maxX - b.minX);
+  const bh = Math.max(180, b.maxY - b.minY);
+  const cx = (b.minX + b.maxX) / 2;
+  const cy = (b.minY + b.maxY) / 2;
+  const scale0 = margin * Math.min(vw / bw, vh / bh);
+  const ext = State._zoom.scaleExtent();
+  const k = Math.max(ext[0], Math.min(ext[1], scale0));
+  const tx = vw / 2 - k * cx;
+  const ty = vh / 2 - k * cy;
+  const t = d3.zoomIdentity.translate(tx, ty).scale(k);
+  const svgNode = State._zoomSvg.node();
+  if (dur <= 0) {
+    State._zoomSvg.call(State._zoom.transform, t);
+    State.setTransform(d3.zoomTransform(svgNode));
+  } else {
+    State._zoomSvg.transition().duration(dur).call(State._zoom.transform, t)
+      .on('end', () => {
+        State.setTransform(d3.zoomTransform(svgNode));
+      });
+  }
+}
+
 function buildPositionMap() {
   const map = {};
   if (!State.graph) return map;
-  State.graph.entities.forEach(e => {
+  for (const e of State.getVisibleEntities()) {
     const n = simNodesById.get(e.id);
     if (n) map[e.id] = { x: n.x, y: n.y };
-    else if (e.position) map[e.id] = e.position;
-  });
+    else if (e.position) map[e.id] = { ...e.position };
+  }
   return map;
 }
 
@@ -1078,6 +1980,32 @@ function govLevelFill(level) {
     case 'Shared_CentralState': return '#2a3a1a';
     default: return '#2d2d2d';
   }
+}
+
+/** Fills for constitutional / civil court rectangles (slightly lifted from gov circles for in-box labels). */
+function judicialBodyFill(level) {
+  switch (level) {
+    case 'Central': return '#1e3d63';
+    case 'State': return '#1d4a2e';
+    case 'UT': return '#3a2850';
+    case 'Shared_MultiState': return '#3a2418';
+    case 'Shared_CentralState': return '#263818';
+    default: return '#2a2a2a';
+  }
+}
+
+/** Tribunals, regulators, arbitration — distinct muted tones by cluster. */
+function alliedBodyFill(d) {
+  if (d.cluster === 'arbitration') return '#243448';
+  if (d.cluster === 'regulatory_bodies') return '#352d40';
+  if (d.cluster === 'tribunals_adr') return '#1a4550';
+  return '#2c3542';
+}
+
+function stakeholderNodeFill(level) {
+  const base = govLevelFill(level);
+  // Softer than bench nodes so circles read as “actors / institutions” not courts.
+  return base === '#2d2d2d' ? '#353545' : base;
 }
 
 function irLevel(score) {

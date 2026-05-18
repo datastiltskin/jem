@@ -1,0 +1,31 @@
+# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md
+id: derc
+name: Delhi Electricity Regulatory Commission
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: UT
+jurisdiction_scope:
+  uts_covered:
+  - DL
+  is_all_india: false
+  jurisdiction_types:
+  - Civil
+created_year: 2001
+operational_status: Active
+statutory_basis: Electricity Act 2003 — DERC
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-13'

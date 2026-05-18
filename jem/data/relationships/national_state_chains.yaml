@@ -1,0 +1,3256 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: hc_madras_bench_madurai_bench_of_hc_madras
+  source: hc_madras_bench_madurai
+  target: hc_madras
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Madurai — part of hc_madras
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
+- id: hc_madras_bench_tiruchirappalli_bench_of_hc_madras
+  source: hc_madras_bench_tiruchirappalli
+  target: hc_madras
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Tiruchirappalli — part of hc_madras
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_bombay_bench_nagpur_bench_of_hc_bombay
+  source: hc_bombay_bench_nagpur
+  target: hc_bombay
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Nagpur — part of hc_bombay
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_bombay_bench_aurangabad_bench_of_hc_bombay
+  source: hc_bombay_bench_aurangabad
+  target: hc_bombay
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Aurangabad — part of hc_bombay
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_bombay_bench_panaji_bench_of_hc_bombay
+  source: hc_bombay_bench_panaji
+  target: hc_bombay
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Panaji — part of hc_bombay
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_allahabad_bench_lucknow_bench_of_hc_allahabad
+  source: hc_allahabad_bench_lucknow
+  target: hc_allahabad
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Lucknow — part of hc_allahabad
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_calcutta_bench_port_blair_bench_of_hc_calcutta
+  source: hc_calcutta_bench_port_blair
+  target: hc_calcutta
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Port Blair — part of hc_calcutta
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_calcutta_bench_jalpaiguri_bench_of_hc_calcutta
+  source: hc_calcutta_bench_jalpaiguri
+  target: hc_calcutta
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Jalpaiguri — part of hc_calcutta
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_rajasthan_bench_jaipur_bench_of_hc_rajasthan
+  source: hc_rajasthan_bench_jaipur
+  target: hc_rajasthan
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Jaipur — part of hc_rajasthan
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_karnataka_bench_dharwad_bench_of_hc_karnataka
+  source: hc_karnataka_bench_dharwad
+  target: hc_karnataka
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Dharwad — part of hc_karnataka
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_gauhati_bench_kohima_bench_of_hc_gauhati
+  source: hc_gauhati_bench_kohima
+  target: hc_gauhati
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Kohima — part of hc_gauhati
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_gauhati_bench_aizawl_bench_of_hc_gauhati
+  source: hc_gauhati_bench_aizawl
+  target: hc_gauhati
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Aizawl — part of hc_gauhati
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_gauhati_bench_itanagar_bench_of_hc_gauhati
+  source: hc_gauhati_bench_itanagar
+  target: hc_gauhati
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Itanagar — part of hc_gauhati
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_punjab_haryana_bench_shimla_bench_of_hc_punjab_haryana
+  source: hc_punjab_haryana_bench_shimla
+  target: hc_punjab_haryana
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: Permanent bench at Shimla — part of hc_punjab_haryana
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_allahabad_appealable_sc
+  source: hc_allahabad
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_andhra_pradesh_appealable_sc
+  source: hc_andhra_pradesh
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_bombay_appealable_sc
+  source: hc_bombay
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_calcutta_appealable_sc
+  source: hc_calcutta
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_chhattisgarh_appealable_sc
+  source: hc_chhattisgarh
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_delhi_appealable_sc
+  source: hc_delhi
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_gauhati_appealable_sc
+  source: hc_gauhati
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_gujarat_appealable_sc
+  source: hc_gujarat
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_himachal_pradesh_appealable_sc
+  source: hc_himachal_pradesh
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_jammu_kashmir_ladakh_appealable_sc
+  source: hc_jammu_kashmir_ladakh
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_jharkhand_appealable_sc
+  source: hc_jharkhand
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_karnataka_appealable_sc
+  source: hc_karnataka
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_kerala_appealable_sc
+  source: hc_kerala
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_madhya_pradesh_appealable_sc
+  source: hc_madhya_pradesh
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_madras_appealable_sc
+  source: hc_madras
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_manipur_appealable_sc
+  source: hc_manipur
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_meghalaya_appealable_sc
+  source: hc_meghalaya
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_orissa_appealable_sc
+  source: hc_orissa
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_patna_appealable_sc
+  source: hc_patna
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_punjab_haryana_appealable_sc
+  source: hc_punjab_haryana
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_rajasthan_appealable_sc
+  source: hc_rajasthan
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_sikkim_appealable_sc
+  source: hc_sikkim
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_telangana_appealable_sc
+  source: hc_telangana
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_tripura_appealable_sc
+  source: hc_tripura
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_uttarakhand_appealable_sc
+  source: hc_uttarakhand
+  target: supreme_court_india
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: High Court appeals / SLP to Supreme Court (Article 136)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_cdrc_ncdrc
+  source: ap_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AP SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_dist_app
+  source: ap_district_court_principal
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AP district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_hc_super
+  source: hc_andhra_pradesh
+  target: ap_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision AP
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_slsa_lok
+  source: slsa_ap
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: AP SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_fund_cdrc
+  source: government_ap
+  target: ap_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AP funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_rera_hc
+  source: rera_ap
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AP RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_fund_rera
+  source: government_ap
+  target: rera_ap
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AP funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_serc_aptel
+  source: serc_ap
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AP SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_fund_serc
+  source: government_ap
+  target: serc_ap
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AP funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_dist2_app
+  source: ap_district_court_vijayawada
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AP second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_hc_super2
+  source: hc_andhra_pradesh
+  target: ap_district_court_vijayawada
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision AP
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_cdrc_ncdrc
+  source: ar_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AR SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_dist_app
+  source: ar_district_court_principal
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AR district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_hc_super
+  source: hc_gauhati
+  target: ar_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision AR
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_slsa_lok
+  source: slsa_ar
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: AR SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_fund_cdrc
+  source: government_ar
+  target: ar_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AR funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_rera_hc
+  source: rera_ar
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AR RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_fund_rera
+  source: government_ar
+  target: rera_ar
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AR funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_serc_aptel
+  source: serc_ar
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AR SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: ar_fund_serc
+  source: government_ar
+  target: serc_ar
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AR funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_cdrc_ncdrc
+  source: as_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AS SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_dist_app
+  source: as_district_court_principal
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AS district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_hc_super
+  source: hc_gauhati
+  target: as_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision AS
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_slsa_lok
+  source: slsa_as
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: AS SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_fund_cdrc
+  source: government_as
+  target: as_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AS funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_rera_hc
+  source: rera_as
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AS RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_fund_rera
+  source: government_as
+  target: rera_as
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AS funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_serc_aptel
+  source: serc_as
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AS SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_fund_serc
+  source: government_as
+  target: serc_as
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AS funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_dist2_app
+  source: as_district_court_dibrugarh
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AS second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: as_hc_super2
+  source: hc_gauhati
+  target: as_district_court_dibrugarh
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision AS
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_cdrc_ncdrc
+  source: br_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: BR SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_dist_app
+  source: br_district_court_principal
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: BR district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super
+  source: hc_patna
+  target: br_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision BR
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_slsa_lok
+  source: slsa_br
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: BR SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_fund_cdrc
+  source: government_br
+  target: br_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: BR funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_rera_hc
+  source: rera_br
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: BR RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_fund_rera
+  source: government_br
+  target: rera_br
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: BR funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_serc_aptel
+  source: serc_br
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: BR SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_fund_serc
+  source: government_br
+  target: serc_br
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: BR funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_dist2_app
+  source: br_district_court_bhagalpur
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: BR second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super2
+  source: hc_patna
+  target: br_district_court_bhagalpur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision BR
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_cdrc_ncdrc
+  source: cg_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: CG SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_dist_app
+  source: cg_district_court_principal
+  target: hc_chhattisgarh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: CG district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_hc_super
+  source: hc_chhattisgarh
+  target: cg_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision CG
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_slsa_lok
+  source: slsa_cg
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: CG SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_fund_cdrc
+  source: government_cg
+  target: cg_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: CG funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_rera_hc
+  source: rera_cg
+  target: hc_chhattisgarh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: CG RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_fund_rera
+  source: government_cg
+  target: rera_cg
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: CG funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_serc_aptel
+  source: serc_cg
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: CG SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: cg_fund_serc
+  source: government_cg
+  target: serc_cg
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: CG funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_cdrc_ncdrc
+  source: ga_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GA SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_dist_app
+  source: ga_district_court_principal
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GA district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_hc_super
+  source: hc_bombay
+  target: ga_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision GA
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_slsa_lok
+  source: slsa_ga
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: GA SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_fund_cdrc
+  source: government_ga
+  target: ga_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: GA funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_rera_hc
+  source: rera_ga
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GA RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_fund_rera
+  source: government_ga
+  target: rera_ga
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: GA funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_serc_aptel
+  source: serc_ga
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GA SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: ga_fund_serc
+  source: government_ga
+  target: serc_ga
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: GA funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_cdrc_ncdrc
+  source: gj_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GJ SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_dist_app
+  source: gj_district_court_principal
+  target: hc_gujarat
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GJ district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_hc_super
+  source: hc_gujarat
+  target: gj_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision GJ
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_slsa_lok
+  source: slsa_gj
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: GJ SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_fund_cdrc
+  source: government_gj
+  target: gj_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: GJ funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_rera_hc
+  source: rera_gj
+  target: hc_gujarat
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GJ RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_fund_rera
+  source: government_gj
+  target: rera_gj
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: GJ funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_serc_aptel
+  source: serc_gj
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GJ SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_fund_serc
+  source: government_gj
+  target: serc_gj
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: GJ funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_dist2_app
+  source: gj_district_court_vadodara
+  target: hc_gujarat
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: GJ second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: gj_hc_super2
+  source: hc_gujarat
+  target: gj_district_court_vadodara
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision GJ
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_cdrc_ncdrc
+  source: hr_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: HR SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_dist_app
+  source: hr_district_court_principal
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: HR district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super
+  source: hc_punjab_haryana
+  target: hr_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision HR
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_slsa_lok
+  source: slsa_hr
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: HR SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_fund_cdrc
+  source: government_hr
+  target: hr_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: HR funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_rera_hc
+  source: rera_hr
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: HR RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_fund_rera
+  source: government_hr
+  target: rera_hr
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: HR funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_serc_aptel
+  source: serc_hr
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: HR SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_fund_serc
+  source: government_hr
+  target: serc_hr
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: HR funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_cdrc_ncdrc
+  source: hp_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: HP SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_dist_app
+  source: hp_district_court_principal
+  target: hc_himachal_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: HP district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_hc_super
+  source: hc_himachal_pradesh
+  target: hp_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision HP
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_slsa_lok
+  source: slsa_hp
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: HP SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_fund_cdrc
+  source: government_hp
+  target: hp_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: HP funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_rera_hc
+  source: rera_hp
+  target: hc_himachal_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: HP RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_fund_rera
+  source: government_hp
+  target: rera_hp
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: HP funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_serc_aptel
+  source: serc_hp
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: HP SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: hp_fund_serc
+  source: government_hp
+  target: serc_hp
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: HP funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_cdrc_ncdrc
+  source: jk_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: JK SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_dist_app
+  source: jk_district_court_principal
+  target: hc_jammu_kashmir_ladakh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: JK district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_hc_super
+  source: hc_jammu_kashmir_ladakh
+  target: jk_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision JK
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_slsa_lok
+  source: slsa_jk
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: JK SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_fund_cdrc
+  source: government_jk
+  target: jk_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: JK funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_rera_hc
+  source: rera_jk
+  target: hc_jammu_kashmir_ladakh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: JK RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_fund_rera
+  source: government_jk
+  target: rera_jk
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: JK funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_serc_aptel
+  source: serc_jk
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: JK SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: jk_fund_serc
+  source: government_jk
+  target: serc_jk
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: JK funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_cdrc_ncdrc
+  source: jh_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: JH SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_dist_app
+  source: jh_district_court_principal
+  target: hc_jharkhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: JH district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_hc_super
+  source: hc_jharkhand
+  target: jh_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision JH
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_slsa_lok
+  source: slsa_jh
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: JH SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_fund_cdrc
+  source: government_jh
+  target: jh_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: JH funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_rera_hc
+  source: rera_jh
+  target: hc_jharkhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: JH RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_fund_rera
+  source: government_jh
+  target: rera_jh
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: JH funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_serc_aptel
+  source: serc_jh
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: JH SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: jh_fund_serc
+  source: government_jh
+  target: serc_jh
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: JH funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_cdrc_ncdrc
+  source: kl_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: KL SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_dist_app
+  source: kl_district_court_principal
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: KL district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super
+  source: hc_kerala
+  target: kl_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision KL
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_slsa_lok
+  source: slsa_kl
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: KL SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_fund_cdrc
+  source: government_kl
+  target: kl_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: KL funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_rera_hc
+  source: rera_kl
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: KL RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_fund_rera
+  source: government_kl
+  target: rera_kl
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: KL funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_serc_aptel
+  source: serc_kl
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: KL SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_fund_serc
+  source: government_kl
+  target: serc_kl
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: KL funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_cdrc_ncdrc
+  source: mp_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MP SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_dist_app
+  source: mp_district_court_principal
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MP district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super
+  source: hc_madhya_pradesh
+  target: mp_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision MP
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_slsa_lok
+  source: slsa_mp
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: MP SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_fund_cdrc
+  source: government_mp
+  target: mp_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MP funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_rera_hc
+  source: rera_mp
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MP RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_fund_rera
+  source: government_mp
+  target: rera_mp
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MP funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_serc_aptel
+  source: serc_mp
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MP SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_fund_serc
+  source: government_mp
+  target: serc_mp
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MP funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_dist2_app
+  source: mp_district_court_indore
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MP second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super2
+  source: hc_madhya_pradesh
+  target: mp_district_court_indore
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision MP
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_cdrc_ncdrc
+  source: mn_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MN SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_dist_app
+  source: mn_district_court_principal
+  target: hc_manipur
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MN district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_hc_super
+  source: hc_manipur
+  target: mn_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision MN
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_slsa_lok
+  source: slsa_mn
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: MN SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_fund_cdrc
+  source: government_mn
+  target: mn_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MN funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_rera_hc
+  source: rera_mn
+  target: hc_manipur
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MN RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_fund_rera
+  source: government_mn
+  target: rera_mn
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MN funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_serc_aptel
+  source: serc_mn
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MN SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: mn_fund_serc
+  source: government_mn
+  target: serc_mn
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MN funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_cdrc_ncdrc
+  source: ml_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: ML SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_dist_app
+  source: ml_district_court_principal
+  target: hc_meghalaya
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: ML district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_hc_super
+  source: hc_meghalaya
+  target: ml_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision ML
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_slsa_lok
+  source: slsa_ml
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: ML SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_fund_cdrc
+  source: government_ml
+  target: ml_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: ML funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_rera_hc
+  source: rera_ml
+  target: hc_meghalaya
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: ML RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_fund_rera
+  source: government_ml
+  target: rera_ml
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: ML funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_serc_aptel
+  source: serc_ml
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: ML SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: ml_fund_serc
+  source: government_ml
+  target: serc_ml
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: ML funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_cdrc_ncdrc
+  source: mz_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MZ SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_dist_app
+  source: mz_district_court_principal
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MZ district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_hc_super
+  source: hc_gauhati
+  target: mz_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision MZ
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_slsa_lok
+  source: slsa_mz
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: MZ SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_fund_cdrc
+  source: government_mz
+  target: mz_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MZ funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_rera_hc
+  source: rera_mz
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MZ RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_fund_rera
+  source: government_mz
+  target: rera_mz
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MZ funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_serc_aptel
+  source: serc_mz
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: MZ SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: mz_fund_serc
+  source: government_mz
+  target: serc_mz
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: MZ funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_cdrc_ncdrc
+  source: nl_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: NL SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_dist_app
+  source: nl_district_court_principal
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: NL district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_hc_super
+  source: hc_gauhati
+  target: nl_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision NL
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_slsa_lok
+  source: slsa_nl
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: NL SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_fund_cdrc
+  source: government_nl
+  target: nl_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: NL funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_rera_hc
+  source: rera_nl
+  target: hc_gauhati
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: NL RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_fund_rera
+  source: government_nl
+  target: rera_nl
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: NL funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_serc_aptel
+  source: serc_nl
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: NL SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: nl_fund_serc
+  source: government_nl
+  target: serc_nl
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: NL funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_cdrc_ncdrc
+  source: od_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: OD SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_dist_app
+  source: od_district_court_principal
+  target: hc_orissa
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: OD district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_hc_super
+  source: hc_orissa
+  target: od_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision OD
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_slsa_lok
+  source: slsa_od
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: OD SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_fund_cdrc
+  source: government_od
+  target: od_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: OD funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_rera_hc
+  source: rera_od
+  target: hc_orissa
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: OD RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_fund_rera
+  source: government_od
+  target: rera_od
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: OD funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_serc_aptel
+  source: serc_od
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: OD SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: od_fund_serc
+  source: government_od
+  target: serc_od
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: OD funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_cdrc_ncdrc
+  source: pb_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: PB SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_dist_app
+  source: pb_district_court_principal
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: PB district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super
+  source: hc_punjab_haryana
+  target: pb_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision PB
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_slsa_lok
+  source: slsa_pb
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: PB SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_fund_cdrc
+  source: government_pb
+  target: pb_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: PB funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_rera_hc
+  source: rera_pb
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: PB RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_fund_rera
+  source: government_pb
+  target: rera_pb
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: PB funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_serc_aptel
+  source: serc_pb
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: PB SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_fund_serc
+  source: government_pb
+  target: serc_pb
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: PB funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_cdrc_ncdrc
+  source: rj_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: RJ SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_dist_app
+  source: rj_district_court_principal
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: RJ district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super
+  source: hc_rajasthan
+  target: rj_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision RJ
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_slsa_lok
+  source: slsa_rj
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: RJ SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_fund_cdrc
+  source: government_rj
+  target: rj_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: RJ funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_rera_hc
+  source: rera_rj
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: RJ RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_fund_rera
+  source: government_rj
+  target: rera_rj
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: RJ funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_serc_aptel
+  source: serc_rj
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: RJ SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_fund_serc
+  source: government_rj
+  target: serc_rj
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: RJ funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_dist2_app
+  source: rj_district_court_jaipur
+  target: hc_rajasthan_bench_jaipur
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: RJ second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super2
+  source: hc_rajasthan_bench_jaipur
+  target: rj_district_court_jaipur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision RJ
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_cdrc_ncdrc
+  source: sk_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: SK SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_dist_app
+  source: sk_district_court_principal
+  target: hc_sikkim
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: SK district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_hc_super
+  source: hc_sikkim
+  target: sk_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision SK
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_slsa_lok
+  source: slsa_sk
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: SK SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_fund_cdrc
+  source: government_sk
+  target: sk_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: SK funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_rera_hc
+  source: rera_sk
+  target: hc_sikkim
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: SK RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_fund_rera
+  source: government_sk
+  target: rera_sk
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: SK funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_serc_aptel
+  source: serc_sk
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: SK SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: sk_fund_serc
+  source: government_sk
+  target: serc_sk
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: SK funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_cdrc_ncdrc
+  source: ts_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TS SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_dist_app
+  source: ts_district_court_principal
+  target: hc_telangana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TS district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_hc_super
+  source: hc_telangana
+  target: ts_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision TS
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_slsa_lok
+  source: slsa_ts
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: TS SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_fund_cdrc
+  source: government_ts
+  target: ts_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: TS funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_rera_hc
+  source: rera_ts
+  target: hc_telangana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TS RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_fund_rera
+  source: government_ts
+  target: rera_ts
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: TS funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_serc_aptel
+  source: serc_ts
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TS SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_fund_serc
+  source: government_ts
+  target: serc_ts
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: TS funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_dist2_app
+  source: ts_district_court_warangal
+  target: hc_telangana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TS second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: ts_hc_super2
+  source: hc_telangana
+  target: ts_district_court_warangal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision TS
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_cdrc_ncdrc
+  source: tr_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TR SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_dist_app
+  source: tr_district_court_principal
+  target: hc_tripura
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TR district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_hc_super
+  source: hc_tripura
+  target: tr_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision TR
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_slsa_lok
+  source: slsa_tr
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: TR SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_fund_cdrc
+  source: government_tr
+  target: tr_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: TR funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_rera_hc
+  source: rera_tr
+  target: hc_tripura
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TR RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_fund_rera
+  source: government_tr
+  target: rera_tr
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: TR funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_serc_aptel
+  source: serc_tr
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: TR SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: tr_fund_serc
+  source: government_tr
+  target: serc_tr
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: TR funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_cdrc_ncdrc
+  source: up_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UP SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_dist_app
+  source: up_district_court_principal
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UP district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super
+  source: hc_allahabad
+  target: up_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision UP
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_slsa_lok
+  source: slsa_up
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: UP SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_fund_cdrc
+  source: government_up
+  target: up_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: UP funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_rera_hc
+  source: rera_up
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UP RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_fund_rera
+  source: government_up
+  target: rera_up
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: UP funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_serc_aptel
+  source: serc_up
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UP SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_fund_serc
+  source: government_up
+  target: serc_up
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: UP funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_dist2_app
+  source: up_district_court_varanasi
+  target: hc_allahabad_bench_lucknow
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UP second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super2
+  source: hc_allahabad_bench_lucknow
+  target: up_district_court_varanasi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision UP
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_cdrc_ncdrc
+  source: uk_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UK SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_dist_app
+  source: uk_district_court_principal
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UK district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_hc_super
+  source: hc_uttarakhand
+  target: uk_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision UK
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_slsa_lok
+  source: slsa_uk
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: UK SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_fund_cdrc
+  source: government_uk
+  target: uk_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: UK funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_rera_hc
+  source: rera_uk
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UK RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_fund_rera
+  source: government_uk
+  target: rera_uk
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: UK funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_serc_aptel
+  source: serc_uk
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: UK SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: uk_fund_serc
+  source: government_uk
+  target: serc_uk
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: UK funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_cdrc_ncdrc
+  source: wb_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: WB SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_dist_app
+  source: wb_district_court_principal
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: WB district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super
+  source: hc_calcutta
+  target: wb_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision WB
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_slsa_lok
+  source: slsa_wb
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: WB SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_fund_cdrc
+  source: government_wb
+  target: wb_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: WB funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_rera_hc
+  source: rera_wb
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: WB RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_fund_rera
+  source: government_wb
+  target: rera_wb
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: WB funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_serc_aptel
+  source: serc_wb
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: WB SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_fund_serc
+  source: government_wb
+  target: serc_wb
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: WB funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_dist2_app
+  source: wb_district_court_asansol
+  target: hc_calcutta_bench_jalpaiguri
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: WB second district appeals to HC/bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super2
+  source: hc_calcutta_bench_jalpaiguri
+  target: wb_district_court_asansol
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC/bench supervision WB
+  data_quality: partial
+  sources:
+  - *id001
+- id: an_cdrc_ncdrc
+  source: an_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AN SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: an_dist_app
+  source: an_district_court_principal
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AN district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: an_hc_super
+  source: hc_calcutta
+  target: an_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision AN
+  data_quality: partial
+  sources:
+  - *id001
+- id: an_slsa_lok
+  source: slsa_an
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: AN SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: an_fund_cdrc
+  source: government_an
+  target: an_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AN funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: an_rera_hc
+  source: rera_an
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: AN RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: an_fund_rera
+  source: government_an
+  target: rera_an
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: AN funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: ch_cdrc_ncdrc
+  source: ch_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: CH SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ch_dist_app
+  source: ch_district_court_principal
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: CH district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ch_hc_super
+  source: hc_punjab_haryana
+  target: ch_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision CH
+  data_quality: partial
+  sources:
+  - *id001
+- id: ch_slsa_lok
+  source: slsa_ch
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: CH SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: ch_fund_cdrc
+  source: government_ch
+  target: ch_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: CH funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ch_rera_hc
+  source: rera_ch
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: CH RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ch_fund_rera
+  source: government_ch
+  target: rera_ch
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: CH funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: ld_cdrc_ncdrc
+  source: ld_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: LD SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ld_dist_app
+  source: ld_district_court_principal
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: LD district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ld_hc_super
+  source: hc_kerala
+  target: ld_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision LD
+  data_quality: partial
+  sources:
+  - *id001
+- id: ld_slsa_lok
+  source: slsa_ld
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: LD SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: ld_fund_cdrc
+  source: government_ld
+  target: ld_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: LD funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ld_rera_hc
+  source: rera_ld
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: LD RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: ld_fund_rera
+  source: government_ld
+  target: rera_ld
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: LD funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: la_cdrc_ncdrc
+  source: la_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: LA SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: la_dist_app
+  source: la_district_court_principal
+  target: hc_jammu_kashmir_ladakh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: LA district appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: la_hc_super
+  source: hc_jammu_kashmir_ladakh
+  target: la_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: HC supervision LA
+  data_quality: partial
+  sources:
+  - *id001
+- id: la_slsa_lok
+  source: slsa_la
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: LA SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: la_fund_cdrc
+  source: government_la
+  target: la_state_cdrc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: LA funds SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: la_rera_hc
+  source: rera_la
+  target: hc_jammu_kashmir_ladakh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: LA RERA appeals to HC (stub)
+  data_quality: partial
+  sources:
+  - *id001
+- id: la_fund_rera
+  source: government_la
+  target: rera_la
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: LA funds RERA
+  data_quality: partial
+  sources:
+  - *id001
+- id: nat_up_district_court_varanasi_appealable_hc_allahabad_bench_lucknow
+  source: up_district_court_varanasi
+  target: hc_allahabad_bench_lucknow
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: Second district appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: nat_hc_allahabad_bench_lucknow_supervise_up_district_court_varanasi
+  source: hc_allahabad_bench_lucknow
+  target: up_district_court_varanasi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: nat_wb_district_court_asansol_appealable_hc_calcutta_bench_jalpaiguri
+  source: wb_district_court_asansol
+  target: hc_calcutta_bench_jalpaiguri
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: Second district appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: nat_hc_calcutta_bench_jalpaiguri_supervise_wb_district_court_asansol
+  source: hc_calcutta_bench_jalpaiguri
+  target: wb_district_court_asansol
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001
+- id: nat_rj_district_court_jaipur_appealable_hc_rajasthan_bench_jaipur
+  source: rj_district_court_jaipur
+  target: hc_rajasthan_bench_jaipur
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: Second district appeals to HC bench
+  data_quality: partial
+  sources:
+  - *id001
+- id: nat_hc_rajasthan_bench_jaipur_supervise_rj_district_court_jaipur
+  source: hc_rajasthan_bench_jaipur
+  target: rj_district_court_jaipur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 (bench)
+  data_quality: partial
+  sources:
+  - *id001

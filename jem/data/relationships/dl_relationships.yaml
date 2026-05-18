@@ -1,0 +1,96 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: dl_derc_aptel
+  source: derc
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: Electricity appeals to APTEL
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
+- id: dl_cdrc_ncdrc
+  source: dl_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: State CDRC appeals to NCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: dl_district_hc
+  source: dl_district_court_saket
+  target: hc_delhi
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: District appeals to Delhi HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: dl_supervise
+  source: hc_delhi
+  target: dl_district_court_saket
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision (representative edge)
+  data_quality: partial
+  sources:
+  - *id001
+- id: dl_fund_derc
+  source: government_nct_delhi
+  target: derc
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: NCT funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: dl_fund_rera
+  source: government_nct_delhi
+  target: dl_rera
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  notes: NCT funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: dl_sja_train
+  source: dl_sja
+  target: dl_district_court_dwarka
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  notes: Judicial academy
+  data_quality: partial
+  sources:
+  - *id001
+- id: dl_slsa_adr
+  source: dl_slsa
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: DSLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: dl_lg_tension
+  source: dl_lieutenant_governor
+  target: government_nct_delhi
+  relationship_type: PolicyOversight
+  relationship_category: statutory_ref
+  is_binding: true
+  notes: LG vs elected government tension (stub arc)
+  data_quality: partial
+  sources:
+  - *id001

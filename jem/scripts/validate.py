@@ -19,7 +19,7 @@ from typing import Optional, List, Literal, Any
 import yaml
 
 try:
-    from pydantic import BaseModel, Field, field_validator, model_validator, ValidationError
+    from pydantic import BaseModel, ConfigDict, field_validator, model_validator, ValidationError
 except ImportError:
     print("ERROR: pydantic not installed. Run: pip install pydantic pyyaml")
     sys.exit(1)
@@ -27,7 +27,7 @@ except ImportError:
 # ── Controlled Vocabularies ───────────────────────────────────────────────────
 
 ENTITY_TYPES = [
-    "ConstitutionalCourt", "SubordinateCivilCourt", "SubordinateCriminalCourt",
+    "ConstitutionalCourt", "HighCourtBench", "SubordinateCivilCourt", "SubordinateCriminalCourt",
     "CityCivilCourt", "SpecialCourt", "CentralTribunal", "StateTribunal",
     "ConsumerCommission", "ArbitralInstitution", "MediationBody",
     "RegulatoryBodyQJ", "ADRBody", "AppointmentBody", "InvestigativeAgency",
@@ -61,7 +61,8 @@ LOKPAL_VALUES = ["Yes", "No", "Contested", "Not_Applicable"]
 
 SOURCE_TYPES = [
     "Constitution", "CentralAct", "StateAct", "SCJudgment",
-    "HCJudgment", "GazetteNotification", "GoIWebsite", "OfficialReport"
+    "HCJudgment", "GazetteNotification", "GoIWebsite", "OfficialReport",
+    "NJDG", "AnnualReport",
 ]
 
 RELATIONSHIP_TYPES = [
@@ -75,7 +76,8 @@ RELATIONSHIP_TYPES = [
     "InvestigatesOffencesIn", "RequiresConsentOf", "SupervisedBy_Investigation",
     "BuildsMaintains", "FundsDigitalProject", "PolicyDirectionDigital", "ImplementingAgency",
     "ProvidesCourtSecurity", "ProvidesPersonalSecurity", "ThreatAssessedBy",
-    "EstablishedUnder", "JurisdictionDefinedBy", "AwardEnforcedIn", "AwardChallengedIn"
+    "EstablishedUnder", "JurisdictionDefinedBy", "AwardEnforcedIn", "AwardChallengedIn",
+    "BenchOf",
 ]
 
 RELATIONSHIP_CATEGORIES = [
@@ -195,6 +197,65 @@ class JurisdictionScope(BaseModel):
     jurisdiction_types: Optional[List[str]] = []
 
 
+CASE_VOLUME_SOURCE_TYPES = [
+    "NJDG_Live", "NJDG_Snapshot", "DoJ_Report", "Tribunal_Report", "HC_Report", "Estimated",
+    "AnnualReport",
+]
+
+
+class JudgeStrengthModel(BaseModel):
+    """Sanctioned posts vs judges in post (v2.0 — courts & court-like bodies)."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    data_as_of: Optional[str] = None
+    allotted: Optional[int] = None
+    appointed: Optional[int] = None
+    vacancy_count: Optional[int] = None
+    source_type: Optional[str] = None
+    source_url: Optional[str] = None
+    notes: Optional[str] = None
+
+    @field_validator("source_type")
+    @classmethod
+    def validate_js_source_type(cls, v):
+        if v and v not in CASE_VOLUME_SOURCE_TYPES:
+            raise ValueError(
+                f"Invalid judge_strength.source_type '{v}'. Must be one of: {CASE_VOLUME_SOURCE_TYPES}"
+            )
+        return v
+
+
+class CaseVolumeModel(BaseModel):
+    """Optional pendency / clog block (entity_schema.yaml)."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    data_as_of: Optional[str] = None
+    sanctioned_strength: Optional[int] = None
+    working_strength: Optional[int] = None
+    vacancy_count: Optional[int] = None
+    vacancy_rate: Optional[float] = None
+    pending_cases: Optional[int] = None
+    filed_last_year: Optional[int] = None
+    disposed_last_year: Optional[int] = None
+    disposal_rate: Optional[float] = None
+    avg_disposal_days: Optional[float] = None
+    institution_rate_trend: Optional[str] = None
+    source_url: Optional[str] = None
+    source_type: Optional[str] = None
+    clog_severity: Optional[str] = None
+
+    @field_validator("source_type")
+    @classmethod
+    def validate_cv_source_type(cls, v):
+        if v and v not in CASE_VOLUME_SOURCE_TYPES:
+            raise ValueError(
+                f"Invalid case_volume.source_type '{v}'. Must be one of: {CASE_VOLUME_SOURCE_TYPES}"
+            )
+        return v
+
+
 class DigitalInfraModel(BaseModel):
     system_used: Optional[List[str]] = []
     digital_variant: Optional[str] = None
@@ -227,6 +288,7 @@ class EntityModel(BaseModel):
 
     constitutional_basis: Optional[str] = None
     statutory_basis: Optional[str] = None
+    parent_hc: Optional[str] = None
 
     appointment: Optional[AppointmentModel] = None
     funding: Optional[FundingModel] = None
@@ -235,6 +297,9 @@ class EntityModel(BaseModel):
     training: Optional[TrainingModel] = None
     digital_infrastructure: Optional[DigitalInfraModel] = None
     structural_variations: Optional[List[StructuralVariation]] = []
+
+    case_volume: Optional[CaseVolumeModel] = None
+    judge_strength: Optional[JudgeStrengthModel] = None
 
     data_quality: str
     data_quality_notes: Optional[str] = None

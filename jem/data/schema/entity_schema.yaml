@@ -58,7 +58,8 @@ entity:
     type: enum
     required: true
     values:
-      - ConstitutionalCourt       # SC, HCs
+      - ConstitutionalCourt       # SC, HCs (principal seat / consolidated HC node)
+      - HighCourtBench            # Permanent bench of a High Court (Madurai, Nagpur, etc.)
       - SubordinateCivilCourt     # District civil court hierarchy
       - SubordinateCriminalCourt  # Sessions, Magistrate courts
       - CityCivilCourt            # Separate city civil court (Mumbai, Bangalore etc.)
@@ -158,6 +159,32 @@ entity:
     required: false
     description: Central or State Act section(s) creating this entity.
     example: "Arbitration and Conciliation Act 1996, Part IA, Section 43A"
+
+  parent_hc:
+    type: entity_id
+    required: false
+    description: >
+      For type HighCourtBench only — the consolidated High Court entity id
+      (e.g. hc_madras). Also modelled via BenchOf relationship.
+
+  # ── Judge strength (v2.0 — courts & court-like bodies) ─
+  judge_strength:
+    type: object
+    required: false
+    description: >
+      Sanctioned posts vs judges in post. Allotted = sanctioned posts (DoJ/NJDG).
+      Appointed = working strength (judges actually holding post). Distinct from
+      case_volume.sanctioned_strength (legacy alias — prefer judge_strength).
+    fields:
+      data_as_of: string
+      allotted: integer
+      appointed: integer
+      vacancy_count: integer
+      source_type:
+        type: enum
+        values: [NJDG_Live, NJDG_Snapshot, DoJ_Report, HC_Report, Tribunal_Report, Estimated]
+      source_url: string
+      notes: string
 
   # ── Appointment Chain ────────────────────────────────────
   appointment:

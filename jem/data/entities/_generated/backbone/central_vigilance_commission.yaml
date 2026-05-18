@@ -1,0 +1,18 @@
+# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md
+id: central_vigilance_commission
+name: Central Vigilance Commission
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+created_year: 1950
+operational_status: Active
+data_quality: partial
+data_quality_notes: Stub for graph connectivity; verify appointment/funding against
+  primary sources.
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-13'

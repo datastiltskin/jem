@@ -52,12 +52,17 @@
           <button type="button" class="lens-btn lens-investigative" data-lens="investigative" title="CBI/ED investigative overlay (separate layer)">⚠ CBI/ED</button>
         </div>
         <div id="explorer-tree-actions" class="explorer-tree-actions hidden">
-          <span class="lens-label">Appellate tree</span>
-          <div class="explorer-tree-row">
+          <span class="lens-label explorer-appellate-label">Appellate tree</span>
+          <div class="explorer-tree-row" id="explorer-appellate-row">
             <button type="button" class="explorer-tree-btn" id="explorer-expand-tree" title="Reveal full appellate subtree at once">All levels</button>
             <button type="button" class="explorer-tree-btn" id="explorer-collapse-tree" title="Hide everything except President and Supreme Court">Roots only</button>
           </div>
-          <p class="explorer-tree-hint">Nodes with appellate children show + to expand one level or − to collapse.</p>
+          <span class="lens-label" id="explorer-district-label">District benches</span>
+          <div class="explorer-tree-row" id="explorer-district-row">
+            <button type="button" class="explorer-tree-btn" id="explorer-expand-districts" title="Show every district court row in each state lattice">Expand all districts</button>
+            <button type="button" class="explorer-tree-btn" id="explorer-collapse-districts" title="One row per state (uses generic row or a summary node)">Collapse districts</button>
+          </div>
+          <p class="explorer-tree-hint">Use the buttons above to expand or collapse the appellate tree and district benches. Keys: <kbd>−</kbd> collapse all district lattices, <kbd>=</kbd> or <kbd>+</kbd> expand them.</p>
         </div>
         <div id="derived-toggles">
           <button type="button" class="toggle-btn" id="toggle-ir" title="Toggle independence risk heat rings">
@@ -182,6 +187,29 @@
   </div>
   <div id="detail-panel-body">
     <!-- Populated by panel.js -->
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     NEIGHBORHOOD PANEL — ego graph only (with detail panel)
+     ═══════════════════════════════════════════════════ -->
+<div id="neighborhood-panel" class="hidden" role="dialog" aria-modal="true" aria-labelledby="neighborhood-title">
+  <div class="neighborhood-backdrop" aria-hidden="true"></div>
+  <div class="neighborhood-card">
+    <div class="neighborhood-card-header">
+      <div>
+        <div id="neighborhood-title" class="neighborhood-title">Neighborhood</div>
+        <div id="neighborhood-subtitle" class="neighborhood-subtitle"></div>
+      </div>
+      <button type="button" id="neighborhood-close" class="neighborhood-close" aria-label="Close neighborhood map">✕</button>
+    </div>
+    <div id="neighborhood-legend" class="neighborhood-legend" role="toolbar" aria-label="Filter neighborhood links"></div>
+    <div class="neighborhood-body">
+      <div id="neighborhood-graph-scroll" class="neighborhood-graph-scroll" tabindex="0" aria-label="Neighborhood graph — scroll to see all nodes">
+        <svg id="neighborhood-svg" class="neighborhood-svg" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+      <div id="neighborhood-links" class="neighborhood-links" aria-label="Direct connections list"></div>
+    </div>
   </div>
 </div>
 

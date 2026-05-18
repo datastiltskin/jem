@@ -1,119 +1,113 @@
-# ============================================================
-# e-Committee of the Supreme Court of India
-# JEM Entity v0.1.0 | data_quality: verified
-# Key tension: SC body; funded & monitored by executive (DoJ)
-# ============================================================
-
 id: ecommittee_sc
 name: e-Committee of the Supreme Court of India
 abbreviation: e-Committee
 aliases:
-  - eCommittee
-  - eCourts Committee
-
+- eCommittee
+- eCourts Committee
 type: DigitalInfraBody
 cluster: digital_infrastructure
-
-level_of_government: Shared_CentralState    # Policy: SC. Funding: Central GoI.
+level_of_government: Shared_CentralState
 jurisdiction_scope:
   is_all_india: true
-  jurisdiction_types: [PolicyOversight]
-
-created_year: 2005          # Constituted following 2005 ICT Policy proposal
+  jurisdiction_types:
+  - PolicyOversight
+created_year: 2005
 abolished_year: null
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >
-  Constituted by Government of India in pursuance of proposal from
-  Chief Justice of India. No separate statutory basis — functions
-  under the administrative authority of the SC and DoJ MMP framework.
+statutory_basis: 'Constituted by Government of India in pursuance of proposal from Chief Justice of India. No separate statutory
+  basis — functions under the administrative authority of the SC and DoJ MMP framework.
 
+  '
 appointment:
   nominates: chief_justice_india
   recommends: chief_justice_india
   consulted: []
   consultation_binding: true
-  formally_appoints: chief_justice_india   # Chair is a sitting SC judge
+  formally_appoints: chief_justice_india
   criteria_public: false
-  tenure: "At pleasure of CJI — no fixed tenure"
+  tenure: At pleasure of CJI — no fixed tenure
   reappointment_possible: true
   removal_authority: chief_justice_india
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: Ministry_Budget
   ministry_responsible: department_of_justice
-  budget_figure_crore: 7210   # eCourts Phase III total (2023 onwards)
+  budget_figure_crore: 7210
   budget_year: 2023
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: null
-
 complaint_mechanism:
-  bias_complaint_to: []       # Not a decision-making/adjudicatory body
+  bias_complaint_to: []
   lokpal_jurisdiction: Not_Applicable
-  source: "Not applicable — e-Committee is policy/oversight body, not adjudicatory"
-
+  source: Not applicable — e-Committee is policy/oversight body, not adjudicatory
 digital_infrastructure:
-  system_used: [eCourts_MMP, CIS, NJDG, eCourts_Portal, JustIS_App]
+  system_used:
+  - eCourts_MMP
+  - CIS
+  - NJDG
+  - eCourts_Portal
+  - JustIS_App
   digital_variant: NIC_Standard
   integrated_with_njdg: true
-  integration_notes: >
-    e-Committee sets standards; NIC (under MeitY) builds and maintains.
-    High Courts are Implementing Agencies under their respective jurisdictions.
-    The Central Project Coordinator (CPC) in each HC is accountable to the
-    e-Committee via the PPMS portal (ecourts.nic.in).
+  integration_notes: 'e-Committee sets standards; NIC (under MeitY) builds and maintains. High Courts are Implementing Agencies
+    under their respective jurisdictions. The Central Project Coordinator (CPC) in each HC is accountable to the e-Committee
+    via the PPMS portal (ecourts.nic.in).
 
+    '
 structural_variations:
-  - variation_id: ecommittee_dual_principal_problem
-    description: >
-      The e-Committee is chaired by a sitting SC judge (CJI-designated),
-      making it a judicial body. However, eCourts Mission Mode Project is
-      monitored and funded by Department of Justice, Ministry of Law & Justice
-      (executive). This creates a dual-principal problem: e-Committee sets
-      technology policy; DoJ controls the budget. Every technology decision
-      of scale requires DoJ sanction. No formal dispute resolution mechanism
-      exists between the two bodies for technology disagreements.
-    applicable_to: ["all"]
-    source: "ecommitteesci.gov.in; doj.gov.in/division/ecourts/"
-    independence_risk_note: >
-      The executive (DoJ/MeitY) controls the budget and the technical vendor (NIC).
-      The SC (via e-Committee) controls the policy. This structural tension means
-      the judiciary's technology backbone is ultimately dependent on executive
-      goodwill and budget allocation cycles. No SLA or contractual obligation
-      exists between NIC and the courts.
+- variation_id: ecommittee_dual_principal_problem
+  description: 'The e-Committee is chaired by a sitting SC judge (CJI-designated), making it a judicial body. However, eCourts
+    Mission Mode Project is monitored and funded by Department of Justice, Ministry of Law & Justice (executive). This creates
+    a dual-principal problem: e-Committee sets technology policy; DoJ controls the budget. Every technology decision of scale
+    requires DoJ sanction. No formal dispute resolution mechanism exists between the two bodies for technology disagreements.
 
-  - variation_id: hc_custom_systems
-    description: >
-      Several HCs have developed custom Case Management Systems that do not
-      fully conform to NIC CIS standards: Bombay HC (custom CMS),
-      Delhi HC (enhanced digital services), Madras HC (independent IT development).
-      Data from these HCs enters NJDG in non-standard formats, reducing national
-      data reliability. This is a documented standardisation failure.
-    applicable_to: ["Maharashtra", "Delhi", "TamilNadu"]
-    source: "eCourts Phase III documentation; doj.gov.in"
-    independence_risk_note: >
-      HC autonomy (Article 235 administrative independence) conflicts with
-      the e-Committee's mandate for uniform national standards. No enforcement
-      mechanism exists against an HC that builds its own system.
+    '
+  applicable_to:
+  - all
+  source: ecommitteesci.gov.in; doj.gov.in/division/ecourts/
+  independence_risk_note: 'The executive (DoJ/MeitY) controls the budget and the technical vendor (NIC). The SC (via e-Committee)
+    controls the policy. This structural tension means the judiciary''s technology backbone is ultimately dependent on executive
+    goodwill and budget allocation cycles. No SLA or contractual obligation exists between NIC and the courts.
 
+    '
+- variation_id: hc_custom_systems
+  description: 'Several HCs have developed custom Case Management Systems that do not fully conform to NIC CIS standards:
+    Bombay HC (custom CMS), Delhi HC (enhanced digital services), Madras HC (independent IT development). Data from these
+    HCs enters NJDG in non-standard formats, reducing national data reliability. This is a documented standardisation failure.
+
+    '
+  applicable_to:
+  - Maharashtra
+  - Delhi
+  - TamilNadu
+  source: eCourts Phase III documentation; doj.gov.in
+  independence_risk_note: 'HC autonomy (Article 235 administrative independence) conflicts with the e-Committee''s mandate
+    for uniform national standards. No enforcement mechanism exists against an HC that builds its own system.
+
+    '
 data_quality: verified
-
 sources:
-  - label: "e-Committee SC — Official Website"
-    url: "https://ecommitteesci.gov.in/"
-    type: GoIWebsite
-    accessed_date: "2025-04-01"
-  - label: "eCourts MMP — Department of Justice"
-    url: "https://doj.gov.in/division/ecourts/"
-    type: GoIWebsite
-    accessed_date: "2025-04-01"
-  - label: "eCourts Phase III Cabinet Approval"
-    url: "https://pib.gov.in/PressReleasePage.aspx?PRID=1903158"
-    type: GazetteNotification
-    accessed_date: "2025-04-01"
+- label: e-Committee SC — Official Website
+  url: https://ecommitteesci.gov.in/
+  type: GoIWebsite
+  accessed_date: '2025-04-01'
+- label: eCourts MMP — Department of Justice
+  url: https://doj.gov.in/division/ecourts/
+  type: GoIWebsite
+  accessed_date: '2025-04-01'
+- label: eCourts Phase III Cabinet Approval
+  url: https://pib.gov.in/PressReleasePage.aspx?PRID=1903158
+  type: GazetteNotification
+  accessed_date: '2025-04-01'
+- label: National Judicial Data Grid (NJDG)
+  url: https://njdg.ecourts.gov.in/
+  type: NJDG
+  accessed_date: '2024-12-01'
+case_volume:
+  clog_severity: unknown
+data_quality_notes: NJDG snapshot case_volume merged

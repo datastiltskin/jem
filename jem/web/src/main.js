@@ -2,9 +2,10 @@
 // Loads graph.json, initialises all modules, wires events.
 
 import { State } from './state.js';
-import { initRenderer, render } from './renderer.js';
+import { initRenderer, render, fitGraphToViewport } from './renderer.js';
 import { initTimeline } from './timeline.js';
 import { initPanel, openDetailPanel } from './panel.js';
+import { initNeighborhoodPanel } from './neighborhoodPanel.js';
 
 const GRAPH_URL = './public/graph.json';
 
@@ -124,10 +125,12 @@ async function boot() {
     initRenderer();
     initTimeline();
     initPanel();
+    initNeighborhoodPanel();
     initZoom();
     initToolbar();
     initSearch();
     initAboutModal();
+    initDistrictLatticeHotkeys();
 
     State.emit('graphLoaded', graph);
 
@@ -137,6 +140,11 @@ async function boot() {
     // 5. First render — default entity view (not cluster dashboard).
     State.setZoomLevel(1);
     render();
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        fitGraphToViewport({ duration: 0 });
+      });
+    });
 
   } catch (err) {
     console.error('JEM boot error:', err);
@@ -156,7 +164,14 @@ function initZoom() {
   const root = document.getElementById('graph-root');
 
   const zoom = d3.zoom()
-    .scaleExtent([0.1, 8])
+    .scaleExtent([0.02, 32])
+    .translateExtent([[-28000, -24000], [28000, 24000]])
+    .wheelDelta((event) => {
+      const dy = event.deltaMode === 1 ? event.deltaY * 28
+        : event.deltaMode === 2 ? event.deltaY * 900
+        : event.deltaY;
+      return -dy * 0.0016;
+    })
     .on('zoom', (event) => {
       d3.select(root).attr('transform', event.transform);
       State.setTransform(event.transform);
@@ -183,10 +198,7 @@ function initZoom() {
   const zoomReset = (e) => {
     e.preventDefault?.();
     e.stopPropagation?.();
-    State._zoomSvg.transition().duration(400).call(
-      zoom.transform,
-      d3.zoomIdentity.translate(0, 0).scale(0.55)
-    );
+    fitGraphToViewport({ duration: 420 });
     State.setZoomLevel(1);
     render();
   };
@@ -195,11 +207,7 @@ function initZoom() {
   document.getElementById('btn-zoom-out').addEventListener('pointerdown', zoomOut);
   document.getElementById('btn-zoom-reset').addEventListener('pointerdown', zoomReset);
 
-  // Initial transform: show L0 at comfortable scale
-  d3.select(svgEl).call(
-    zoom.transform,
-    d3.zoomIdentity.translate(0, 0).scale(0.55)
-  );
+  d3.select(svgEl).call(zoom.transform, d3.zoomIdentity);
 }
 
 // ── Toolbar ───────────────────────────────────────────────────────────────────
@@ -207,7 +215,12 @@ function initZoom() {
 function syncExplorerTreeActions() {
   const wrap = document.getElementById('explorer-tree-actions');
   if (!wrap) return;
-  wrap.classList.toggle('hidden', !State.useProgressiveExplorer);
+  const hasDist = (State._districtAggregateIndex?.groups?.length || 0) > 0;
+  wrap.classList.toggle('hidden', !State.useProgressiveExplorer && !hasDist);
+  wrap.querySelector('.explorer-appellate-label')?.classList.toggle('hidden', !State.useProgressiveExplorer);
+  document.getElementById('explorer-appellate-row')?.classList.toggle('hidden', !State.useProgressiveExplorer);
+  document.getElementById('explorer-district-label')?.classList.toggle('hidden', !hasDist);
+  document.getElementById('explorer-district-row')?.classList.toggle('hidden', !hasDist);
 }
 
 function syncLensToolbarButtons() {
@@ -327,10 +340,26 @@ function initToolbar() {
   explorerCollapseTree?.addEventListener('pointerdown', (e) =>
     explorerBulk(e, () => State.collapseExplorerToRoots()));
 
+  const explorerExpandDistricts = document.getElementById('explorer-expand-districts');
+  const explorerCollapseDistricts = document.getElementById('explorer-collapse-districts');
+  const districtBulk = (e, fn) => {
+    e.preventDefault?.();
+    e.stopPropagation?.();
+    fn();
+    render();
+  };
+  explorerExpandDistricts?.addEventListener('pointerdown', (e) =>
+    districtBulk(e, () => State.expandAllDistrictAggregates()));
+  explorerCollapseDistricts?.addEventListener('pointerdown', (e) =>
+    districtBulk(e, () => State.collapseAllDistrictAggregates()));
+
   State.subscribe('graphLoaded', () => {
     syncExplorerTreeActions();
   });
   State.subscribe('collapseChanged', () => {
+    syncExplorerTreeActions();
+  });
+  State.subscribe('aggregateChanged', () => {
     syncExplorerTreeActions();
   });
 
@@ -445,6 +474,26 @@ function initSearch() {
 
 function formatType(type) {
   return (type || '').replace(/([A-Z])/g, ' $1').trim();
+}
+
+function initDistrictLatticeHotkeys() {
+  document.addEventListener('keydown', (e) => {
+    if (e.defaultPrevented) return;
+    const el = e.target;
+    if (el && (el.closest?.('input, textarea, select') || el.isContentEditable)) return;
+    if (!State._districtAggregateIndex?.groups?.length) return;
+    if (e.code === 'Minus' || e.code === 'NumpadSubtract' || e.key === '-') {
+      e.preventDefault();
+      State.collapseAllDistrictAggregates();
+      render();
+      return;
+    }
+    if (e.code === 'Equal' || e.code === 'NumpadAdd' || e.key === '=' || (e.key === '+' && e.shiftKey)) {
+      e.preventDefault();
+      State.expandAllDistrictAggregates();
+      render();
+    }
+  });
 }
 
 // ── About panel (slide-over) ──────────────────────────────────────────────────

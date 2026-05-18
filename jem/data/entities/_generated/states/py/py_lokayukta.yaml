@@ -1,0 +1,35 @@
+# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md
+id: py_lokayukta
+name: Puducherry Lokayukta (verify status)
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: UT
+jurisdiction_scope:
+  uts_covered:
+  - PY
+  is_all_india: false
+created_year: 1995
+operational_status: Not_Constituted
+statutory_basis: State Lokayukta / Lokpal interface statutes (stub)
+structural_variations:
+- variation_id: py_lokayukta_appointment_delay
+  description: Document appointment delays post-2019 from official sources when available.
+  applicable_to:
+  - PY
+  source: State Lokayukta portal — verify dates
+  independence_risk_note: Executive interface risk pending review
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: 'Yes'
+data_quality: partial
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-13'

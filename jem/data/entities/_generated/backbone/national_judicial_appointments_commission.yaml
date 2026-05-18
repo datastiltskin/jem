@@ -1,0 +1,22 @@
+# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md
+id: national_judicial_appointments_commission
+name: National Judicial Appointments Commission
+type: AppointmentBody
+cluster: appointment_bodies
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+created_year: 2014
+abolished_year: 2015
+operational_status: Abolished
+data_quality: partial
+data_quality_notes: Abolished by SC in 2015; retained for historical appointment edges.
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-13'
+- label: Supreme Court of India
+  url: https://main.sci.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-13'

@@ -187,6 +187,7 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
 DISCRETIONARY_INDICATORS = {
     # From type
     'ConstitutionalCourt': 4,
+    'HighCourtBench': 4,
     'SubordinateCriminalCourt': 3,    # Bail, remand — wide discretion
     'SubordinateCivilCourt': 2,
     'SpecialCourt': 2,
@@ -237,7 +238,7 @@ def compute_discretionary_power(entity: Dict[str, Any]) -> Tuple[int, Dict[str, 
         breakdown['Has removal authority over other entities'] = 1
 
     # Controls own case listing (documented for SC/HCs via roster)
-    if entity_type == 'ConstitutionalCourt':
+    if entity_type in ('ConstitutionalCourt', 'HighCourtBench'):
         score += 2
         breakdown['Controls own case listing and bench composition (no statutory rule)'] = 2
 
