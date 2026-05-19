@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-05-19T08:05:27.608883+00:00",
-    "entity_count": 494,
-    "relationship_count": 497,
+    "generated_at": "2026-05-19T09:52:38.581247+00:00",
+    "entity_count": 495,
+    "relationship_count": 499,
     "canvas_width": 1800,
     "canvas_height": 1200,
     "year_range": [
@@ -16,7 +16,7 @@
     "appointer_equals_funder_removal_count": 0,
     "no_public_appointment_criteria_count": 42,
     "not_constituted_count": 3,
-    "no_external_complaint_mechanism_count": 493
+    "no_external_complaint_mechanism_count": 494
   },
   "timeline_events": [
     {
@@ -278,7 +278,7 @@
       "id": "subordinate_courts",
       "name": "Subordinate Courts",
       "color": "#2c5282",
-      "entity_count": 190,
+      "entity_count": 191,
       "avg_independence_risk": 1.1,
       "not_constituted_count": 0,
       "position": {
@@ -19651,7 +19651,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 76,
+        "x": 75,
         "y": 732
       }
     },
@@ -19739,7 +19739,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 78,
+        "x": 77,
         "y": 768
       }
     },
@@ -23223,7 +23223,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 113,
+        "x": 112,
         "y": 768
       }
     },
@@ -23466,7 +23466,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 115,
+        "x": 114,
         "y": 732
       }
     },
@@ -23554,7 +23554,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 117,
+        "x": 116,
         "y": 768
       }
     },
@@ -23642,7 +23642,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 119,
+        "x": 118,
         "y": 732
       }
     },
@@ -23885,7 +23885,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 121,
+        "x": 120,
         "y": 768
       }
     },
@@ -23973,7 +23973,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 123,
+        "x": 122,
         "y": 732
       }
     },
@@ -24216,7 +24216,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 125,
+        "x": 124,
         "y": 768
       }
     },
@@ -26393,7 +26393,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 152,
+        "x": 151,
         "y": 768
       }
     },
@@ -26485,7 +26485,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 154,
+        "x": 153,
         "y": 732
       }
     },
@@ -26577,7 +26577,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 156,
+        "x": 155,
         "y": 768
       }
     },
@@ -26669,7 +26669,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 158,
+        "x": 157,
         "y": 732
       }
     },
@@ -26773,7 +26773,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 160,
+        "x": 159,
         "y": 768
       }
     },
@@ -26865,7 +26865,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 162,
+        "x": 161,
         "y": 732
       }
     },
@@ -26957,7 +26957,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 164,
+        "x": 163,
         "y": 768
       }
     },
@@ -27049,7 +27049,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 166,
+        "x": 165,
         "y": 732
       }
     },
@@ -27153,7 +27153,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 168,
+        "x": 167,
         "y": 768
       }
     },
@@ -27245,7 +27245,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 170,
+        "x": 169,
         "y": 732
       }
     },
@@ -27337,7 +27337,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 172,
+        "x": 171,
         "y": 768
       }
     },
@@ -28181,7 +28181,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 189,
+        "x": 188,
         "y": 732
       }
     },
@@ -28273,7 +28273,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 191,
+        "x": 190,
         "y": 768
       }
     },
@@ -28365,7 +28365,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 193,
+        "x": 192,
         "y": 732
       }
     },
@@ -28465,7 +28465,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 195,
+        "x": 194,
         "y": 768
       }
     },
@@ -28935,7 +28935,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 197,
+        "x": 196,
         "y": 732
       }
     },
@@ -29211,7 +29211,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 199,
+        "x": 198,
         "y": 768
       }
     },
@@ -29299,7 +29299,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 201,
+        "x": 200,
         "y": 732
       }
     },
@@ -29542,7 +29542,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 203,
+        "x": 202,
         "y": 768
       }
     },
@@ -29630,7 +29630,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 205,
+        "x": 204,
         "y": 732
       }
     },
@@ -29873,7 +29873,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 207,
+        "x": 206,
         "y": 768
       }
     },
@@ -29961,7 +29961,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 209,
+        "x": 208,
         "y": 732
       }
     },
@@ -30221,7 +30221,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 211,
+        "x": 210,
         "y": 768
       }
     },
@@ -30919,7 +30919,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 213,
+        "x": 212,
         "y": 732
       }
     },
@@ -31011,7 +31011,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 215,
+        "x": 214,
         "y": 768
       }
     },
@@ -31115,7 +31115,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 217,
+        "x": 216,
         "y": 732
       }
     },
@@ -31219,7 +31219,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 219,
+        "x": 218,
         "y": 768
       }
     },
@@ -31587,7 +31587,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 226,
+        "x": 225,
         "y": 768
       }
     },
@@ -31679,7 +31679,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 228,
+        "x": 227,
         "y": 732
       }
     },
@@ -31771,7 +31771,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 230,
+        "x": 229,
         "y": 768
       }
     },
@@ -31863,7 +31863,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 232,
+        "x": 231,
         "y": 732
       }
     },
@@ -31955,7 +31955,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 234,
+        "x": 233,
         "y": 768
       }
     },
@@ -32047,7 +32047,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 236,
+        "x": 235,
         "y": 732
       }
     },
@@ -32139,7 +32139,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 238,
+        "x": 237,
         "y": 768
       }
     },
@@ -32243,7 +32243,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 240,
+        "x": 239,
         "y": 732
       }
     },
@@ -32335,7 +32335,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 242,
+        "x": 241,
         "y": 768
       }
     },
@@ -32439,7 +32439,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 244,
+        "x": 243,
         "y": 732
       }
     },
@@ -32531,7 +32531,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
+        "x": 245,
         "y": 768
       }
     },
@@ -32635,7 +32635,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 248,
+        "x": 247,
         "y": 732
       }
     },
@@ -32723,7 +32723,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 250,
+        "x": 249,
         "y": 768
       }
     },
@@ -32815,7 +32815,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 252,
+        "x": 251,
         "y": 732
       }
     },
@@ -32919,7 +32919,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 254,
+        "x": 253,
         "y": 768
       }
     },
@@ -33011,7 +33011,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 256,
+        "x": 255,
         "y": 732
       }
     },
@@ -33103,7 +33103,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 258,
+        "x": 257,
         "y": 768
       }
     },
@@ -33195,7 +33195,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 260,
+        "x": 259,
         "y": 732
       }
     },
@@ -33299,7 +33299,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 262,
+        "x": 261,
         "y": 768
       }
     },
@@ -33391,7 +33391,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 264,
+        "x": 262,
         "y": 732
       }
     },
@@ -33483,7 +33483,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 266,
+        "x": 264,
         "y": 768
       }
     },
@@ -33575,7 +33575,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 267,
+        "x": 266,
         "y": 732
       }
     },
@@ -33667,7 +33667,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 269,
+        "x": 268,
         "y": 768
       }
     },
@@ -33759,7 +33759,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 271,
+        "x": 270,
         "y": 732
       }
     },
@@ -33863,7 +33863,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 273,
+        "x": 272,
         "y": 768
       }
     },
@@ -33967,7 +33967,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 275,
+        "x": 274,
         "y": 732
       }
     },
@@ -34059,7 +34059,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 277,
+        "x": 276,
         "y": 768
       }
     },
@@ -34151,7 +34151,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 279,
+        "x": 278,
         "y": 732
       }
     },
@@ -34243,7 +34243,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 281,
+        "x": 280,
         "y": 768
       }
     },
@@ -34344,7 +34344,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 283,
+        "x": 282,
         "y": 732
       }
     },
@@ -34805,7 +34805,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 285,
+        "x": 284,
         "y": 768
       }
     },
@@ -34985,7 +34985,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 287,
+        "x": 286,
         "y": 732
       }
     },
@@ -35073,7 +35073,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 289,
+        "x": 288,
         "y": 768
       }
     },
@@ -35316,7 +35316,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 291,
+        "x": 290,
         "y": 732
       }
     },
@@ -35404,7 +35404,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 293,
+        "x": 292,
         "y": 768
       }
     },
@@ -35647,7 +35647,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 295,
+        "x": 294,
         "y": 732
       }
     },
@@ -35735,7 +35735,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 297,
+        "x": 296,
         "y": 768
       }
     },
@@ -35823,7 +35823,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 299,
+        "x": 298,
         "y": 732
       }
     },
@@ -36066,7 +36066,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 301,
+        "x": 299,
         "y": 768
       }
     },
@@ -36154,7 +36154,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 303,
+        "x": 301,
         "y": 732
       }
     },
@@ -36397,7 +36397,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 305,
+        "x": 303,
         "y": 768
       }
     },
@@ -36485,7 +36485,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 307,
+        "x": 305,
         "y": 732
       }
     },
@@ -36728,7 +36728,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 309,
+        "x": 307,
         "y": 768
       }
     },
@@ -36816,7 +36816,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 311,
+        "x": 309,
         "y": 732
       }
     },
@@ -37059,7 +37059,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 313,
+        "x": 311,
         "y": 768
       }
     },
@@ -37147,7 +37147,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 314,
+        "x": 313,
         "y": 732
       }
     },
@@ -37570,7 +37570,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 316,
+        "x": 315,
         "y": 768
       }
     },
@@ -37918,7 +37918,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 318,
+        "x": 317,
         "y": 732
       }
     },
@@ -38006,7 +38006,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 320,
+        "x": 319,
         "y": 768
       }
     },
@@ -38094,7 +38094,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 322,
+        "x": 321,
         "y": 732
       }
     },
@@ -38337,7 +38337,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 324,
+        "x": 323,
         "y": 768
       }
     },
@@ -38425,7 +38425,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 326,
+        "x": 325,
         "y": 732
       }
     },
@@ -38926,7 +38926,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 328,
+        "x": 327,
         "y": 768
       }
     },
@@ -39014,7 +39014,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 330,
+        "x": 329,
         "y": 732
       }
     },
@@ -39114,7 +39114,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 332,
+        "x": 331,
         "y": 768
       }
     },
@@ -39202,7 +39202,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 334,
+        "x": 333,
         "y": 732
       }
     },
@@ -39290,7 +39290,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 336,
+        "x": 335,
         "y": 768
       }
     },
@@ -39378,7 +39378,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 338,
+        "x": 336,
         "y": 732
       }
     },
@@ -39466,7 +39466,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 340,
+        "x": 338,
         "y": 768
       }
     },
@@ -39554,7 +39554,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 342,
+        "x": 340,
         "y": 732
       }
     },
@@ -39642,7 +39642,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 344,
+        "x": 342,
         "y": 768
       }
     },
@@ -39730,7 +39730,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 346,
+        "x": 344,
         "y": 732
       }
     },
@@ -39818,7 +39818,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 348,
+        "x": 346,
         "y": 768
       }
     },
@@ -39906,7 +39906,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 350,
+        "x": 348,
         "y": 732
       }
     },
@@ -39994,7 +39994,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 352,
+        "x": 350,
         "y": 768
       }
     },
@@ -40082,7 +40082,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 354,
+        "x": 352,
         "y": 732
       }
     },
@@ -40170,7 +40170,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 356,
+        "x": 354,
         "y": 768
       }
     },
@@ -40258,7 +40258,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 358,
+        "x": 356,
         "y": 732
       }
     },
@@ -40346,7 +40346,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 360,
+        "x": 358,
         "y": 768
       }
     },
@@ -40434,7 +40434,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 361,
+        "x": 360,
         "y": 732
       }
     },
@@ -40522,7 +40522,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 363,
+        "x": 362,
         "y": 768
       }
     },
@@ -40610,7 +40610,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 365,
+        "x": 364,
         "y": 732
       }
     },
@@ -40698,7 +40698,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 367,
+        "x": 366,
         "y": 768
       }
     },
@@ -40786,7 +40786,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 369,
+        "x": 368,
         "y": 732
       }
     },
@@ -40874,7 +40874,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 371,
+        "x": 370,
         "y": 768
       }
     },
@@ -40962,7 +40962,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 373,
+        "x": 372,
         "y": 732
       }
     },
@@ -41050,7 +41050,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 375,
+        "x": 374,
         "y": 768
       }
     },
@@ -41138,7 +41138,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 377,
+        "x": 375,
         "y": 732
       }
     },
@@ -41226,7 +41226,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 379,
+        "x": 377,
         "y": 768
       }
     },
@@ -41314,7 +41314,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 381,
+        "x": 379,
         "y": 732
       }
     },
@@ -41402,7 +41402,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 383,
+        "x": 381,
         "y": 768
       }
     },
@@ -41490,7 +41490,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 385,
+        "x": 383,
         "y": 732
       }
     },
@@ -41578,7 +41578,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 387,
+        "x": 385,
         "y": 768
       }
     },
@@ -41666,7 +41666,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 389,
+        "x": 387,
         "y": 732
       }
     },
@@ -41754,7 +41754,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 391,
+        "x": 389,
         "y": 768
       }
     },
@@ -41842,7 +41842,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 393,
+        "x": 391,
         "y": 732
       }
     },
@@ -41930,7 +41930,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 395,
+        "x": 393,
         "y": 768
       }
     },
@@ -42018,7 +42018,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 397,
+        "x": 395,
         "y": 732
       }
     },
@@ -42106,7 +42106,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 399,
+        "x": 397,
         "y": 768
       }
     },
@@ -42194,8 +42194,113 @@
         "parent_hc": null
       },
       "position": {
-        "x": 401,
+        "x": 399,
         "y": 732
+      }
+    },
+    {
+      "id": "tn_district_courts_generic",
+      "name": "District Courts — Tamil Nadu (consolidated)",
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "SubordinateCivilCourt",
+      "cluster": "subordinate_courts",
+      "level_of_government": "State",
+      "created_year": 1860,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": "Constitution of India, Articles 233–237",
+      "statutory_basis": null,
+      "data_quality": "partial",
+      "data_quality_notes": "State-wide NJDG aggregate for the collapsed district lattice (38 revenue districts). Expand the lattice (+/− on Madras HC) to see per-district nodes; district-level pendency is filled from NJDG where available (e.g. Chennai). NJDG snapshot case_volume merged\n",
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type SubordinateCivilCourt": 2,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 3,
+        "independence_risk_breakdown": {
+          "Constitutional basis (harder to politicise) (deduction)": -2,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 1,
+        "scores_validated": false
+      },
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "India Code — Constitution & Acts",
+          "url": "https://india-code.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-05-13"
+        },
+        {
+          "label": "National Judicial Data Grid (NJDG)",
+          "url": "https://njdg.ecourts.gov.in/",
+          "type": "NJDG",
+          "accessed_date": "2024-12-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": {
+          "primary_source": "State_Consolidated_Fund"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "lokpal_jurisdiction": "Not_Applicable"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "Civil",
+            "Criminal"
+          ]
+        },
+        "case_volume": {
+          "data_as_of": "2024-12-01",
+          "pending_cases": 3200000,
+          "filed_last_year": 820000,
+          "disposed_last_year": 780000,
+          "avg_disposal_days": 1095,
+          "institution_rate_trend": "rising",
+          "source_url": "https://njdg.ecourts.gov.in/",
+          "source_type": "NJDG_Snapshot",
+          "disposal_rate": 0.9512,
+          "clog_severity": "unknown"
+        },
+        "judge_strength": {
+          "data_as_of": null,
+          "allotted": null,
+          "appointed": null,
+          "source_type": "DoJ_Report",
+          "source_url": "https://doj.gov.in/",
+          "notes": "Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG bench strength."
+        },
+        "parent_hc": null
+      },
+      "position": {
+        "x": 401,
+        "y": 768
       }
     },
     {
@@ -42662,7 +42767,7 @@
       },
       "position": {
         "x": 403,
-        "y": 768
+        "y": 732
       }
     },
     {
@@ -43013,7 +43118,7 @@
       },
       "position": {
         "x": 405,
-        "y": 732
+        "y": 768
       }
     },
     {
@@ -43101,7 +43206,7 @@
       },
       "position": {
         "x": 407,
-        "y": 768
+        "y": 732
       }
     },
     {
@@ -43343,8 +43448,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 408,
-        "y": 732
+        "x": 409,
+        "y": 768
       }
     },
     {
@@ -43431,8 +43536,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 410,
-        "y": 768
+        "x": 411,
+        "y": 732
       }
     },
     {
@@ -43520,7 +43625,7 @@
       },
       "position": {
         "x": 412,
-        "y": 732
+        "y": 768
       }
     },
     {
@@ -43763,7 +43868,7 @@
       },
       "position": {
         "x": 414,
-        "y": 768
+        "y": 732
       }
     },
     {
@@ -43851,7 +43956,7 @@
       },
       "position": {
         "x": 416,
-        "y": 732
+        "y": 768
       }
     },
     {
@@ -44094,7 +44199,7 @@
       },
       "position": {
         "x": 418,
-        "y": 768
+        "y": 732
       }
     },
     {
@@ -44182,7 +44287,7 @@
       },
       "position": {
         "x": 420,
-        "y": 732
+        "y": 768
       }
     },
     {
@@ -44270,7 +44375,7 @@
       },
       "position": {
         "x": 422,
-        "y": 768
+        "y": 732
       }
     },
     {
@@ -44513,7 +44618,7 @@
       },
       "position": {
         "x": 424,
-        "y": 732
+        "y": 768
       }
     },
     {
@@ -44601,7 +44706,7 @@
       },
       "position": {
         "x": 426,
-        "y": 768
+        "y": 732
       }
     },
     {
@@ -44689,7 +44794,7 @@
       },
       "position": {
         "x": 428,
-        "y": 732
+        "y": 768
       }
     },
     {
@@ -54658,6 +54763,50 @@
       "data_quality": "partial",
       "contested_note": null,
       "notes": "State judicial academy serves all TN districts; representative edge",
+      "sources": [
+        {
+          "label": "India Code — Constitution & Acts",
+          "url": "https://india-code.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "id": "tn_district_courts_generic_appealable_hc_madras",
+      "source": "tn_district_courts_generic",
+      "target": "hc_madras",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": null,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Consolidated TN district lattice — appeals to Madras HC (collapsed view)",
+      "sources": [
+        {
+          "label": "India Code — Constitution & Acts",
+          "url": "https://india-code.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "id": "hc_madras_supervise_tn_district_courts_generic",
+      "source": "hc_madras",
+      "target": "tn_district_courts_generic",
+      "relationship_type": "AdministrativeSupervision",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": null,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Article 235 supervision — consolidated TN district courts (collapsed view)",
       "sources": [
         {
           "label": "India Code — Constitution & Acts",

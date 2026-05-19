@@ -1,0 +1,57 @@
+# JEM — Tamil Nadu district lattice: consolidated (collapsed) view for all 38 revenue districts.
+id: tn_district_courts_generic
+name: District Courts — Tamil Nadu (consolidated)
+type: SubordinateCivilCourt
+cluster: subordinate_courts
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - TN
+  is_all_india: false
+  jurisdiction_types:
+  - Civil
+  - Criminal
+created_year: 1860
+operational_status: Active
+constitutional_basis: Constitution of India, Articles 233–237
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+data_quality_notes: >
+  State-wide NJDG aggregate for the collapsed district lattice (38 revenue districts).
+  Expand the lattice (+/− on Madras HC) to see per-district nodes; district-level pendency
+  is filled from NJDG where available (e.g. Chennai). NJDG snapshot case_volume merged
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-13'
+- label: National Judicial Data Grid (NJDG)
+  url: https://njdg.ecourts.gov.in/
+  type: NJDG
+  accessed_date: '2024-12-01'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: DoJ_Report
+  source_url: https://doj.gov.in/
+  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG bench strength.
+case_volume:
+  data_as_of: '2024-12-01'
+  pending_cases: 3200000
+  filed_last_year: 820000
+  disposed_last_year: 780000
+  avg_disposal_days: 1095
+  institution_rate_trend: rising
+  source_url: https://njdg.ecourts.gov.in/
+  source_type: NJDG_Snapshot
+  disposal_rate: 0.9512
+  clog_severity: unknown

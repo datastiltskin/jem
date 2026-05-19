@@ -1378,6 +1378,8 @@ function collectDistrictLatticePinnedIds(entities) {
     const synthId = g.synthetic ? `__jem_agg_${g.stateCode}_district_courts` : null;
     if (latticeOpen) {
       for (const mid of g.memberIds) if (ids.has(mid)) pinned.add(mid);
+    } else if (g.proxyId && ids.has(g.proxyId)) {
+      pinned.add(g.proxyId);
     } else if (synthId && ids.has(synthId)) {
       pinned.add(synthId);
     }
@@ -1433,7 +1435,10 @@ function layoutDistrictCourtsUnderParentHc({ entities, positions, minCenterDist,
     }
 
     const synthId = g.synthetic ? `__jem_agg_${g.stateCode}_district_courts` : null;
-    if (synthId && byId.has(synthId)) {
+    if (g.proxyId && byId.has(g.proxyId)) {
+      positions[g.proxyId] = { x: parentPos.x, y: yCursor };
+      yCursor += minCenterDist * 1.8;
+    } else if (synthId && byId.has(synthId)) {
       positions[synthId] = { x: parentPos.x, y: yCursor };
       yCursor += minCenterDist * 1.8;
     }
@@ -1871,6 +1876,8 @@ export function fitGraphToEntityFocus(entityId, opts = {}) {
   if (dg) {
     if (State.expandedDistrictAggregateIds?.has(dg.groupId)) {
       for (const mid of dg.memberIds) focusIds.add(mid);
+    } else if (dg.proxyId) {
+      focusIds.add(dg.proxyId);
     } else {
       focusIds.add(`__jem_agg_${dg.stateCode}_district_courts`);
     }

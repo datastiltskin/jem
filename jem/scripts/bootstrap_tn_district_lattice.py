@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
 Create the full Tamil Nadu district court lattice (38 districts) under
-jem/data/entities/_generated/states/tn/, remove the aggregate generic entity,
-and append Madras HC appellate + supervision edges in tn_relationships.yaml.
+jem/data/entities/_generated/states/tn/, ensure a consolidated generic entity
+for the collapsed lattice view, and append Madras HC appellate + supervision
+edges in tn_relationships.yaml.
 
-Idempotent: skips YAML that already exists; only deletes generic once.
+Idempotent: skips YAML that already exists; preserves or creates generic.
 
 Usage (from jem/):
   python3 scripts/bootstrap_tn_district_lattice.py
@@ -145,19 +146,94 @@ def main() -> None:
     print(f"TN district YAML created: {created} (skipped existing)")
 
     gen_path = TN_DIR / "tn_district_courts_generic.yaml"
-    if gen_path.exists():
-        gen_path.unlink()
-        print("Removed tn_district_courts_generic.yaml")
+    if not gen_path.exists():
+        generic_doc = {
+            "id": "tn_district_courts_generic",
+            "name": "District Courts — Tamil Nadu (consolidated)",
+            "type": "SubordinateCivilCourt",
+            "cluster": "subordinate_courts",
+            "level_of_government": "State",
+            "jurisdiction_scope": {
+                "states_covered": ["TN"],
+                "is_all_india": False,
+                "jurisdiction_types": ["Civil", "Criminal"],
+            },
+            "created_year": 1860,
+            "operational_status": "Active",
+            "constitutional_basis": "Constitution of India, Articles 233–237",
+            "funding": {"primary_source": "State_Consolidated_Fund"},
+            "audit": {
+                "audited_by": "cag_india",
+                "audit_type": "CAG_Statutory",
+                "audit_report_public": True,
+            },
+            "complaint_mechanism": {"bias_complaint_to": [], "lokpal_jurisdiction": "Not_Applicable"},
+            "data_quality": "partial",
+            "data_quality_notes": (
+                "State-wide NJDG aggregate for collapsed lattice (38 districts). "
+                "Expand lattice for per-district nodes; fill district pendency from NJDG dashboards."
+            ),
+            "sources": [SRC, NJDG],
+        }
+        text = yaml.dump(
+            generic_doc,
+            default_flow_style=False,
+            allow_unicode=True,
+            sort_keys=False,
+            width=120,
+        )
+        gen_path.write_text(
+            "# JEM — Tamil Nadu district lattice: consolidated (collapsed) view\n" + text,
+            encoding="utf-8",
+        )
+        print("Created tn_district_courts_generic.yaml")
+    else:
+        print("Kept existing tn_district_courts_generic.yaml")
 
     data = yaml.safe_load(REL_PATH.read_text(encoding="utf-8"))
     rels: List[dict] = list(data.get("relationships") or [])
     anchor = rels[0]["sources"][0] if rels and rels[0].get("sources") else SRC
 
-    # Drop legacy single-edge + any generic-based edges
+    # Drop legacy single-edge ids only
     rels = [r for r in rels if r.get("id") not in ("tn_district_hc", "tn_generic_hc")]
 
     existing = {r.get("id") for r in rels if isinstance(r, dict)}
     added = 0
+    for rid, src, tgt, rtype, cat, notes in [
+        (
+            "tn_district_courts_generic_appealable_hc_madras",
+            "tn_district_courts_generic",
+            "hc_madras",
+            "AppealableTo",
+            "appellate_chain",
+            "Consolidated TN district lattice — appeals to Madras HC (collapsed view)",
+        ),
+        (
+            "hc_madras_supervise_tn_district_courts_generic",
+            "hc_madras",
+            "tn_district_courts_generic",
+            "AdministrativeSupervision",
+            "supervisory",
+            "Article 235 supervision — consolidated TN district courts (collapsed view)",
+        ),
+    ]:
+        if rid not in existing:
+            rels.append(
+                {
+                    "id": rid,
+                    "source": src,
+                    "target": tgt,
+                    "relationship_type": rtype,
+                    "relationship_category": cat,
+                    "is_binding": True,
+                    "notes": notes,
+                    "data_quality": "partial",
+                    "sources": [anchor],
+                }
+            )
+            existing.add(rid)
+            added += 1
+
     for slug, _ in TN_DISTRICTS:
         eid = f"tn_district_court_{slug}"
         hc_tgt = TN_DISTRICT_TO_BENCH.get(slug, "hc_madras")

@@ -1313,6 +1313,13 @@ def main() -> None:
     ]
     for slug, dname in TN_DISTRICT_LATTICE:
         tn_docs.append(district_court(f"tn_district_court_{slug}", f"District Court — {dname}", "TN"))
+    tn_docs.append(
+        district_court(
+            "tn_district_courts_generic",
+            "District Courts — Tamil Nadu (consolidated)",
+            "TN",
+        )
+    )
     for doc in tn_docs:
         W(tn / f"{doc['id']}.yaml", doc)
 
@@ -1342,6 +1349,22 @@ def main() -> None:
         rel("tn_slsa_adr", "tn_slsa", "lok_adalat_generic", "Designates", "statutory_ref", "TN SLSA lok adalat"),
         rel("tn_fund_rera", "government_tamilnadu", "tn_rera", "PrimaryFunder", "funding", "State funding"),
         rel("tn_sja_train_chennai_district", "tn_sja", "tn_district_court_chennai", "ProvidesContinuingEducation", "training", "State judicial academy serves all TN districts; representative edge"),
+        rel(
+            "tn_district_courts_generic_appealable_hc_madras",
+            "tn_district_courts_generic",
+            "hc_madras",
+            "AppealableTo",
+            "appellate_chain",
+            "Consolidated TN district lattice — appeals to Madras HC (collapsed view)",
+        ),
+        rel(
+            "hc_madras_supervise_tn_district_courts_generic",
+            "hc_madras",
+            "tn_district_courts_generic",
+            "AdministrativeSupervision",
+            "supervisory",
+            "Article 235 supervision — consolidated TN district courts (collapsed view)",
+        ),
     ]
     for slug, _ in TN_DISTRICT_LATTICE:
         eid = f"tn_district_court_{slug}"

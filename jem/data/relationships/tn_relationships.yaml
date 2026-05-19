@@ -64,6 +64,26 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: tn_district_courts_generic_appealable_hc_madras
+  source: tn_district_courts_generic
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  notes: Consolidated TN district lattice — appeals to Madras HC (collapsed view)
+  data_quality: partial
+  sources:
+  - *id001
+- id: hc_madras_supervise_tn_district_courts_generic
+  source: hc_madras
+  target: tn_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  notes: Article 235 supervision — consolidated TN district courts (collapsed view)
+  data_quality: partial
+  sources:
+  - *id001
 - id: tn_district_ariyalur_appealable_hc_madras_bench_madurai
   source: tn_district_court_ariyalur
   target: hc_madras_bench_madurai
