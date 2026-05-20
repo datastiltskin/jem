@@ -1,19 +1,19 @@
 # JEM — Daily schedule & v1.0.0 completion plan
 
 **Threads 1–2 deliverable:** Cursor-safe planning (no Mermaid `gantt` — use tables + flowchart below).  
-**Last updated:** 2026-05-13  
+**Last updated:** 2026-05-20  
 
 ---
 
-## Current baseline (do not ignore)
+## Current baseline (May 2026)
 
 | Signal | Value | Implication |
 |--------|--------|----------------|
-| Repo-root `graph.json` | ~52 KB, **13** entities | Partial-YAML build overwrote the full viewer graph. **v1.0.0 is not shippable** until restored or rebuilt from full YAML. |
-| Entity YAML under `jem/data/entities/` | **4** files | Far below MASTER_CHECKLIST Part 3–3.4 (~390–420 entities after MH+DL+KA). |
-| `jem/web/public/graph.json` | Symlink → `../../../graph.json` | Any default `build.py` (no `--output`) writes the tiny graph into production path. |
+| Repo-root `graph.json` | **~1.87 MB**, **505** entities | Full corpus built; shippable after friedso smoke tests. |
+| Entity YAML | **494+** files under `jem/data/entities/` | MH, DL, KA, TN, PY + backbone in repo. |
+| `jem/web/public/graph.json` | Symlink → `../../../graph.json` | Deploy must ship **repo-root `graph.json`** to `public/graph.json` on host (see release runbook). |
 
-**Conclusion:** “Completing v1.0” in this pass means **(a)** locking the schedule + gates below, **(b)** adding safe tooling + restore procedure, and **(c)** executing **P0 restore** as soon as you have a canonical bundle; **MH/DL/KA YAML authoring** remains the bulk of calendar time after P0.
+**Next:** Operator runs [`V1_RELEASE_RUNBOOK.md`](V1_RELEASE_RUNBOOK.md) (deploy → smoke → tag). GitHub push/CI → **v2** (MASTER_CHECKLIST Part 4.3).
 
 ---
 

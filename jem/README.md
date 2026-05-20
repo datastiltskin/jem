@@ -49,7 +49,7 @@ python scripts/build.py
 The frontend requires no build step. It is vanilla HTML + JS + CSS.
 All CDN dependencies load from jsdelivr/cdnjs.
 
-**Schedule & v1.0.0 path:** [docs/GANTT_AND_V1_PLAN.md](docs/GANTT_AND_V1_PLAN.md) · **Restore canonical data:** [docs/V1_DATA_RESTORE.md](docs/V1_DATA_RESTORE.md) · **Master checklist (audited May 19 2026):** [../MASTER_CHECKLIST.md](../MASTER_CHECKLIST.md) · **NJDG merge:** [docs/NJDG_MERGE_PLAN.md](docs/NJDG_MERGE_PLAN.md)
+**Schedule:** [docs/GANTT_AND_V1_PLAN.md](docs/GANTT_AND_V1_PLAN.md) · **v1 release (deploy/smoke/tag):** [docs/V1_RELEASE_RUNBOOK.md](docs/V1_RELEASE_RUNBOOK.md) · **Session workflow:** [docs/SESSION_WORKFLOW.md](docs/SESSION_WORKFLOW.md) · **Restore data:** [docs/V1_DATA_RESTORE.md](docs/V1_DATA_RESTORE.md) · **Checklist:** [../MASTER_CHECKLIST.md](../MASTER_CHECKLIST.md)
 
 ---
 

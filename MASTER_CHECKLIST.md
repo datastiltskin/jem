@@ -49,18 +49,28 @@
 - [x] **CI scaffold:** `.github/workflows/validate.yml`.
 - [x] **Docs:** `DATA_MODEL.md`, `CONTRIBUTING.md`, `NJDG_MERGE_PLAN.md`, `V2_DATA_MODEL.md`.
 
+### v1.0.0 release (operator — prepared, not yet run)
+
+**Runbook:** [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) · **Preflight:** `./jem/scripts/deploy_prep.sh`
+
+- [ ] **1. Deploy** — rsync `graph.json` + `jem/web/` (see runbook §1; symlink caveat)
+- [ ] **2. Live smoke tests** — runbook §2 checklist on friedso.com
+- [ ] **3. Tag** — `git tag -a v1.0.0` after smoke pass (push deferred to v2 — Part 4.3)
+
 ### Parked (scheduled later — do not block v1.0.0 tag)
 
-- [ ] **District-level NJDG exports** — per-district `pending_cases` / filed / disposed for TN (37/38 districts), MH/KA bootstrap districts (45 placeholders), and other states — see **Part 3.5 § PARKED**.
-- [ ] **Live NJDG API** (`fetch_njdg.py`) — Part 4; static snapshot remains canonical until then.
-- [ ] **Production deploy & GitHub remote QA** — Part 1.2–1.3 (operator tasks).
+- [ ] **District-level NJDG exports** — Part 3.5.2
 
-### Still outstanding (backlog)
+### Deferred to v2 (not v1 blockers)
 
-- [ ] **Gap registry entities** — Part 5 (CESTAT benches, AFT benches, tax chain, etc.).
-- [ ] **Remaining 22 states + UTs** — Part 5.6 community batches.
-- [ ] **v2 Canvas / Sankey / journey mode** — Part 4 (renderer remains SVG for L1/L2).
-- [ ] **`docs/CURSOR_PHASE1_BRIEF.md`**, **`docs/V2_SESSION_SPEC.md`** — not in tree; restore from canonical export if needed.
+- [ ] **GitHub remote + CI QA** — Part 4.3 (push repo, Actions on PR, topics/description)
+- [ ] **Live NJDG API** (`fetch_njdg.py`) — Part 4.2
+
+### Still outstanding (post-v1 backlog)
+
+- [ ] **Gap registry entities** — Part 5
+- [ ] **Remaining 22 states + UTs** — Part 5.6
+- [ ] **v2 Canvas / Sankey / journey mode** — Part 4.2
 
 ---
 
@@ -102,49 +112,21 @@ It contains everything. Structure (this repository):
           └── styles/main.css
 
 - [x] Repository present in workspace *(app in `jem/`, CI at repo root)*
-- [ ] Unzip / confirm all 49 files present *(TBD: full inventory vs April 25 spec — partial tree possible)*
+- [x] ~~Unzip / confirm all 49 files present~~ — **not required for v1** (corpus is 494+ YAML files; April-25 zip inventory is archival only)
 
 ---
 
-### 1.2 Deploy v1 to production (friedso.com)
+### 1.2 Deploy v1 to production (friedso.com) → use release runbook
 
-The `jem/web/` tree is static (HTML/CSS/JS + `public/` assets). `graph.json` is loaded from the repo-root file via `jem/web/public/graph.json` symlink — no app server beyond your normal static hosting (match your existing friedso.com site layout).
+**Prepared:** [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) §1–2 · `./jem/scripts/deploy_prep.sh`
 
-```bash
-# From repo root — adjust user and remote path to your friedso.com host (same pattern as your other apps):
-rsync -avz --delete jem/web/ you@friedso.com:~/path/to/site/apps/jem/
-
-# Confirm public URL loads, e.g. https://friedso.com/apps/jem/ (exact URL depends on your vhost / path)
-```
-
-- [ ] rsync `jem/web/` to friedso.com deploy target
-- [ ] Open public URL — confirm it loads
-- [ ] Confirm search works (type "Supreme Court")
-- [ ] Confirm appellate chain arcs visible by default
-- [ ] Confirm L0 cluster view shows 14 cluster rectangles
-- [ ] Confirm L3 panel opens on entity click
-- [ ] Confirm timeline scroller drag works
-- [ ] Confirm impact bar shows 5 Not_Constituted, 98 gap entities
+- [ ] Complete runbook §1 (deploy) and §2 (smoke tests) — checkboxes tracked there and in §3.4 below
 
 ---
 
-### 1.3 Push to GitHub
+### 1.3 Push to GitHub → **moved to v2 (Part 4.3)**
 
-```bash
-cd jem
-git init
-git remote add origin https://github.com/YOUR-ORG/jem.git
-git add .
-git commit -m "feat: v1 complete — 147 entities, 163 relationships, TN+PY sample"
-git push -u origin main
-```
-
-- [ ] Create GitHub repo (public, CC0 data / MIT code)
-- [ ] Push full repo
-- [ ] Confirm GitHub Actions validate.yml runs on push
-- [ ] Confirm Actions pass (0 errors)
-- [ ] Add topics: india, judiciary, open-data, d3js, legal-tech
-- [ ] Add description: "Open-source structural map of the Indian judicial ecosystem"
+GitHub remote, push, and CI verification are **v2 operator tasks** so v1.0.0 can tag from local/deploy QA without blocking on remote setup.
 
 ---
 
@@ -161,25 +143,15 @@ python scripts/build.py        # should show: 147 entities, 818 KB
 ```
 
 - [x] Open jem/ as Cursor project
-- [x] Run validate.py — confirm clean *(May 19 2026: 0 errors, 494 entity files)*
-- [ ] Read docs/CURSOR_PHASE1_BRIEF.md fully before starting *(file not in `jem/docs/` — restore from canonical export if needed)*
+- [x] Run validate.py — confirm clean *(May 19 2026: 0 errors, 494+ entity files)*
+- [x] ~~Read docs/CURSOR_PHASE1_BRIEF.md~~ — **not required** (MH/DL/KA packs already in `_generated/`; restore file only if re-authoring from scratch)
 - [x] Read docs/DATA_MODEL.md sections on structural_gap and case_volume *(also `V2_DATA_MODEL.md` for judge_strength / HC benches)*
 
-### 2.2 Cursor workflow (repeat for every data session)
+### 2.2 Session workflow (bookmark)
 
-Every session, in this exact order:
-```bash
-1. python scripts/validate.py --strict   # before starting
-2. [make YAML changes]
-3. python scripts/validate.py --strict   # after changes — fix all errors
-4. python scripts/derive.py              # recompute scores + gaps
-5. python scripts/build.py              # recompile graph.json
-6. python scripts/derive.py --clog-report   # spot-check
-7. git add . && git commit -m "data(STATE): description"
-8. rsync -avz --delete web/ you@friedso.com:~/path/to/site/apps/jem/    # deploy (from `jem/`; adjust remote path)
-```
+- [x] **Bookmark:** [`jem/docs/SESSION_WORKFLOW.md`](jem/docs/SESSION_WORKFLOW.md) — validate → derive → build, **graph/bundle overwrite risks**, `build_safe.sh`, deploy pointer
 
-- [ ] Bookmark this workflow — run it in full every session
+Shortcut: `cd jem && ./scripts/safe_pipeline.sh` (does not run bundle generator)
 
 ---
 
@@ -230,7 +202,7 @@ Every session, in this exact order:
 
 - [x] MH validate + derive + build passes 0 errors
 - [x] Committed on main
-- [ ] rsync `jem/web/` to friedso.com
+- [ ] Deploy — v1 release runbook §1–2
 
 ---
 
@@ -266,7 +238,7 @@ Every session, in this exact order:
 
 - [x] DL validate + derive + build passes 0 errors
 - [x] Committed on main
-- [ ] rsync `jem/web/` to friedso.com
+- [ ] Deploy — v1 release runbook §1–2
 
 ---
 
@@ -283,7 +255,7 @@ Every session, in this exact order:
 
 - [x] KA validate + derive + build passes 0 errors
 - [x] Committed on main
-- [ ] rsync `jem/web/` to friedso.com
+- [ ] Deploy — v1 release runbook §1–2
 
 ---
 
@@ -307,9 +279,9 @@ Every session, in this exact order:
 - [x] Run full build: `python3 jem/scripts/build.py` — **494 entities**, **~1.87 MB** `graph.json`
 - [x] State packs MH, DL, KA, TN, PY in repo and graph
 - [x] NJDG snapshot merge applied (139 entities) — Part 3.5
-- [ ] Deploy: `rsync -avz --delete jem/web/ you@friedso.com:~/path/to/site/apps/jem/`
-- [ ] Open live site — confirm state filter + TN district collapse/expand on Madras HC
-- [ ] Tag GitHub release: `git tag v1.0.0 && git push --tags` *(after deploy QA)*
+- [ ] **§1 Deploy** — [`V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) + `deploy_prep.sh`
+- [ ] **§2 Smoke tests** — same runbook (friedso.com)
+- [ ] **§3 Tag** — `git tag -a v1.0.0` locally after smoke pass; `git push` / remote → v2 (Part 4.3)
 
 ---
 
@@ -444,6 +416,19 @@ print(f'TN districts with pending_cases: {with_p}/{len(dist)}')
 - [ ] Journey mode breadcrumb works for District → HC → SC path
 - [ ] `rsync -avz --delete jem/web/ you@friedso.com:~/path/to/site/apps/jem/`
 - [ ] Tag: `git tag v2.0.0 && git push --tags`
+
+### 4.3 GitHub & CI (moved from v1 Part 1.3)
+
+Complete when setting up **v2** remote workflow (not required to cut local `v1.0.0` tag after friedso smoke tests).
+
+- [ ] Create GitHub repo (public, CC0 data / MIT code) or attach `origin`
+- [ ] Push `main` and tags: `git push -u origin main && git push origin v1.0.0`
+- [ ] Confirm `.github/workflows/validate.yml` runs on PRs touching `jem/data/**` or `jem/scripts/**`
+- [ ] Optional v2 CI: add `build.py` dry-run or `deploy_prep.sh` on `main` push
+- [ ] Add topics: `india`, `judiciary`, `open-data`, `d3js`, `legal-tech`
+- [ ] Description: "Open-source structural map of the Indian judicial ecosystem"
+
+Existing workflow (PR only): validate `--strict` + `derive.py` in `jem/` working directory.
 
 ---
 
