@@ -18,9 +18,11 @@ statutory_basis: "Government of India (Allocation of Business) Rules — Ministr
 
 data_quality: partial
 data_quality_notes: >
-  Governance node — not an adjudicatory body. No case_volume or judge_strength.
-  Consulted on NHRC and CVC appointments per respective Acts. Distinct from
-  the Union Home Minister as an individual officeholder.
+  Governance node — administrative ministry (department), not an adjudicatory
+  body and not a PHRA/CVC consultation member. Statutes consult the Union
+  Minister of Home Affairs (minister_home_affairs), who heads this ministry.
+  No case_volume or judge_strength. Budget/administration distinct from
+  ministry_law_justice (NHRC grant-in-aid line).
 
 sources:
   - label: Ministry of Home Affairs — Official Website

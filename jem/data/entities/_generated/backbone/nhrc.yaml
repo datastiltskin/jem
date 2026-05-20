@@ -26,7 +26,7 @@ appointment:
   consulted:
     - prime_minister
     - speaker_lok_sabha
-    - ministry_home_affairs
+    - minister_home_affairs
     - leader_opposition_lok_sabha
     - leader_opposition_rajya_sabha
     - deputy_chairman_rajya_sabha
@@ -70,8 +70,8 @@ data_quality: partial
 data_quality_notes: >
   Core statutory structure verified from PHRA 1993 ss.3-6. Appointment committee
   composition per s.4; tenure per s.6; removal per s.5 (inquiry by SC judge on
-  President's reference). consulted IDs are descriptive strings — graph alignment
-  needed during derive step. case_volume not populated; NHRC annual reports are
+  President's reference). Consulted members are governance nodes (PM, Speaker,
+  Home Minister, LoP, etc.) — not ministries. case_volume not populated; NHRC annual reports are
   public but not yet extracted. funding.ministry_responsible is ministry_law_justice
   per Union Budget demand no. 60 (Department of Justice) which provides NHRC grant.
 

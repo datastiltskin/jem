@@ -1,0 +1,37 @@
+id: minister_home_affairs
+name: Union Minister of Home Affairs
+abbreviation: Home Minister
+
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - union_council_of_ministers
+
+created_year: 1947
+operational_status: Active
+
+statutory_basis: >
+  Constitution of India, Articles 74–75; portfolio allocated under
+  Government of India (Allocation of Business) Rules — Ministry of Home Affairs.
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — individual ministerial office (officeholder), not the
+  Ministry department. PHRA 1993 s.4 and CVC Act 2003 s.4 consult the
+  Minister in charge of Home Affairs, not the Ministry as an abstract body.
+  No case_volume or judge_strength. Heads ministry_home_affairs (see
+  governance_relationships.yaml).
+
+sources:
+  - label: Ministry of Home Affairs — Official Website
+    url: https://www.mha.gov.in/
+    type: GoIWebsite
+    accessed_date: "2026-05-19"
+  - label: Protection of Human Rights Act 1993 — s.4
+    url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+    type: CentralAct
+    accessed_date: "2026-05-19"

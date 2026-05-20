@@ -27,7 +27,7 @@ appointment:
   recommends: recommendation_committee_cvc_s4
   consulted:
     - prime_minister
-    - ministry_home_affairs
+    - minister_home_affairs
     - leader_opposition_lok_sabha
   consultation_binding: true
   criteria_public: true
