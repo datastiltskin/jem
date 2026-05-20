@@ -1,0 +1,29 @@
+id: recommendation_committee_cvc_s4
+name: CVC Act 2003 Section 4 Selection Committee
+abbreviation: CVC s.4 Committee
+
+type: AppointmentBody
+cluster: appointment_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - statutory_appointment_committee
+
+created_year: 2003
+operational_status: Active
+
+statutory_basis: "Central Vigilance Commission Act 2003, s.4"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — recommends Central Vigilance Commissioner and Vigilance
+  Commissioners to the President. Not an adjudicatory body; no case_volume
+  or judge_strength.
+
+sources:
+  - label: Central Vigilance Commission Act 2003
+    url: https://cvc.gov.in/sites/default/files/cvcact.pdf
+    type: CentralAct
+    accessed_date: "2026-05-19"

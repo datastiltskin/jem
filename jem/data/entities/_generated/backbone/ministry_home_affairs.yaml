@@ -1,0 +1,29 @@
+id: ministry_home_affairs
+name: Ministry of Home Affairs
+abbreviation: MHA
+
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - administrative_ministry
+
+created_year: 1947
+operational_status: Active
+
+statutory_basis: "Government of India (Allocation of Business) Rules — Ministry of Home Affairs"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — not an adjudicatory body. No case_volume or judge_strength.
+  Consulted on NHRC and CVC appointments per respective Acts. Distinct from
+  the Union Home Minister as an individual officeholder.
+
+sources:
+  - label: Ministry of Home Affairs — Official Website
+    url: https://www.mha.gov.in/
+    type: GoIWebsite
+    accessed_date: "2026-05-19"

@@ -10,18 +10,13 @@ cluster: legislative_executive
 level_of_government: Central
 created_year: 1985
 operational_status: Active
-statutory_basis: 'Government of India (Allocation of Business) Rules, 1961 — Ministry of Environment, Forest and Climate Change
-  entry; National Green Tribunal Act 2010 (s.3) is the primary legislation constituting NGT; MoEFCC demand head funds NGT.
+statutory_basis: 'Government of India (Allocation of Business) Rules, 1961 — Ministry of Environment, Forest and Climate Change entry; National Green Tribunal Act 2010 (s.3) is the primary legislation constituting NGT; MoEFCC demand head funds NGT.
 
   '
 funding:
   primary_source: Consolidated_Fund_India
 data_quality: partial
-data_quality_notes: "created_year 1985 is the ministry establishment date; confirm exact gazette notification. Ministry renamed\
-  \ in 2014 to add \"Climate Change\" — aliases block captures earlier name for graph resolution. The earlier form \"Ministry\
-  \ of Environment and Forests\" (MoEF) may appear as a source reference in older YAML files; treat as same entity. name_hindi\
-  \ unverified against official letterhead. funding block is ministry-level only; budget_figure_crore not populated.\n NJDG\
-  \ snapshot case_volume merged"
+data_quality_notes: created_year 1985 is the ministry establishment date; confirm exact gazette notification. Ministry renamed in 2014 to add "Climate Change" — aliases block captures earlier name for graph resolution. The earlier form "Ministry of Environment and Forests" (MoEF) may appear as a source reference in older YAML files; treat as same entity. name_hindi unverified against official letterhead. funding block is ministry-level only; budget_figure_crore not populated.
 sources:
 - label: Ministry of Environment, Forest and Climate Change — Official Website
   url: https://moef.gov.in
@@ -31,5 +26,3 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
-case_volume:
-  clog_severity: unknown

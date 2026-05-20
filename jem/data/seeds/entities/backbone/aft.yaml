@@ -31,7 +31,7 @@ appointment:
   nominates: ministry_defence
   recommends: null
   consulted:
-    - chief_justice_of_india
+    - chief_justice_india
   consultation_binding: false
   formally_appoints: president_india
   criteria_public: true

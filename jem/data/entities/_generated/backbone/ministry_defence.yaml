@@ -9,14 +9,13 @@ cluster: legislative_executive
 level_of_government: Central
 created_year: 1947
 operational_status: Active
-statutory_basis: 'Government of India (Allocation of Business) Rules, 1961 — Ministry of Defence entry; Armed Forces Tribunal
-  Act 2007.
+statutory_basis: 'Government of India (Allocation of Business) Rules, 1961 — Ministry of Defence entry; Armed Forces Tribunal Act 2007.
 
   '
 funding:
   primary_source: Consolidated_Fund_India
 data_quality: partial
-data_quality_notes: Stub for graph connectivity (Bundle 2). AFT funding edge. NJDG snapshot case_volume merged
+data_quality_notes: Stub for graph connectivity (Bundle 2). AFT funding edge.
 sources:
 - label: Ministry of Defence — Official Website
   url: https://mod.gov.in
@@ -26,5 +25,3 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
-case_volume:
-  clog_severity: unknown

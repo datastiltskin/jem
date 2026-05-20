@@ -15,8 +15,7 @@ created_year: 1963
 abolished_year: null
 operational_status: Active
 constitutional_basis: null
-statutory_basis: 'Delhi Special Police Establishment Act 1946 (DSPE Act). CBI constituted by Ministry of Home Affairs Resolution
-  1963.
+statutory_basis: 'Delhi Special Police Establishment Act 1946 (DSPE Act). CBI constituted by Ministry of Home Affairs Resolution 1963.
 
   '
 appointment:
@@ -68,10 +67,7 @@ complaint_mechanism:
   source: DSPE Act 1946; Vineet Narain v Union of India (1997) 6 SCC 767
 structural_variations:
 - variation_id: cbi_state_consent
-  description: 'Under DSPE Act Section 6, CBI cannot exercise jurisdiction in a state without that state''s general or specific
-    consent. As of 2025, several states have withdrawn general consent (Maharashtra, West Bengal, Chhattisgarh, Rajasthan,
-    Jharkhand, Mizoram, Kerala, Telangana). This means CBI can only investigate in those states when directed by the SC or
-    the relevant High Court.
+  description: 'Under DSPE Act Section 6, CBI cannot exercise jurisdiction in a state without that state''s general or specific consent. As of 2025, several states have withdrawn general consent (Maharashtra, West Bengal, Chhattisgarh, Rajasthan, Jharkhand, Mizoram, Kerala, Telangana). This means CBI can only investigate in those states when directed by the SC or the relevant High Court.
 
     '
   applicable_to:
@@ -84,14 +80,11 @@ structural_variations:
   - Kerala
   - Telangana
   source: DSPE Act 1946, Section 6; respective State Government notifications
-  independence_risk_note: 'State consent withdrawal structurally restricts central investigation in states with different
-    political dispensations. Creates a gap in central accountability where state police investigates instead.
+  independence_risk_note: 'State consent withdrawal structurally restricts central investigation in states with different political dispensations. Creates a gap in central accountability where state police investigates instead.
 
     '
 data_quality: verified
-data_quality_notes: "\"Caged parrot\" characterisation from SC in Vineet Narain (1997) is well-documented. State consent withdrawal\
-  \ figures should be verified against latest state government notifications — list may have changed since the entries above.\n\
-  \ NJDG snapshot case_volume merged"
+data_quality_notes: '"Caged parrot" characterisation from SC in Vineet Narain (1997) is well-documented. State consent withdrawal figures should be verified against latest state government notifications — list may have changed since the entries above.'
 sources:
 - label: Delhi Special Police Establishment Act 1946
   url: https://india-code.nic.in/DocsPdfData/1946/194643.pdf
@@ -109,5 +102,3 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
-case_volume:
-  clog_severity: unknown

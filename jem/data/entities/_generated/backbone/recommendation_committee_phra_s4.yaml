@@ -1,0 +1,28 @@
+id: recommendation_committee_phra_s4
+name: PHRA 1993 Section 4 Recommendation Committee
+abbreviation: PHRA s.4 Committee
+
+type: AppointmentBody
+cluster: appointment_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - statutory_appointment_committee
+
+created_year: 1993
+operational_status: Active
+
+statutory_basis: "Protection of Human Rights Act 1993, s.4"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — recommends NHRC Chairperson and Members to the President.
+  Not an adjudicatory body; no case_volume or judge_strength.
+
+sources:
+  - label: Protection of Human Rights Act 1993 — s.4
+    url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+    type: CentralAct
+    accessed_date: "2026-05-19"

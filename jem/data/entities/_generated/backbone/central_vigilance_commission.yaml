@@ -23,17 +23,17 @@ operational_status: Active
 statutory_basis: "Central Vigilance Commission Act 2003, s.3"
 
 appointment:
-  formally_appoints: president_of_india
+  formally_appoints: president_india
   recommends: recommendation_committee_cvc_s4
   consulted:
     - prime_minister
-    - minister_home_affairs
+    - ministry_home_affairs
     - leader_opposition_lok_sabha
   consultation_binding: true
   criteria_public: true
   tenure: "4 years from date of assumption of office, or age 65, whichever earlier; CVC Act 2003 s.6"
   reappointment_possible: false
-  removal_authority: president_of_india
+  removal_authority: president_india
   removal_requires_parliament: false
   removal_independent_committee: true
 

@@ -1,0 +1,27 @@
+id: leader_opposition_rajya_sabha
+name: Leader of Opposition in the Rajya Sabha
+
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - parliamentary_office
+
+created_year: 1961
+operational_status: Active
+
+statutory_basis: "PHRA 1993 s.4 — consultation where recognised Leader of Opposition in Rajya Sabha"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — not an adjudicatory body. No case_volume or judge_strength.
+  Consulted on NHRC appointments per PHRA 1993 s.4.
+
+sources:
+  - label: Protection of Human Rights Act 1993 — India Code
+    url: https://www.indiacode.nic.in/
+    type: CentralAct
+    accessed_date: "2026-05-19"

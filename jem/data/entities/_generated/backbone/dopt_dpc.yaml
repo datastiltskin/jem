@@ -1,0 +1,29 @@
+id: dopt_dpc
+name: Department of Personnel and Training — Appointment Committee (CBI Director)
+abbreviation: DoPT DPC
+
+type: AppointmentBody
+cluster: appointment_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - administrative_appointment_committee
+
+created_year: 1963
+operational_status: Active
+
+statutory_basis: "DSPE Act 1946; CVC Act 2003; Vineet Narain directions — CBI Director appointment procedure"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — nominates/recommends CBI Director per post-Vineet Narain
+  procedure involving DoPT, CVC, and PM. Not an adjudicatory body; no
+  case_volume or judge_strength. Related ministry entity: ministry_personnel_dopt.
+
+sources:
+  - label: Department of Personnel and Training — Official Website
+    url: https://dopt.gov.in/
+    type: GoIWebsite
+    accessed_date: "2026-05-19"

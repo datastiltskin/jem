@@ -1,0 +1,29 @@
+id: selection_committee_cpa2019_s54
+name: Consumer Protection Act 2019 Section 54 Selection Committee
+abbreviation: CPA 2019 s.54 Committee
+
+type: AppointmentBody
+cluster: appointment_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - statutory_appointment_committee
+
+created_year: 2019
+operational_status: Active
+
+statutory_basis: "Consumer Protection Act 2019, s.54"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — recommends State Commission (SCDRC) members to the
+  State Government / UT administrator. Not an adjudicatory body; no
+  case_volume or judge_strength.
+
+sources:
+  - label: Consumer Protection Act 2019
+    url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+    type: CentralAct
+    accessed_date: "2026-05-19"

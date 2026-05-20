@@ -5,6 +5,8 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 echo "==> validate --strict"
 python3 scripts/validate.py --strict
+echo "==> validate graph refs"
+python3 scripts/validate_graph_refs.py
 echo "==> derive"
 python3 scripts/derive.py
 echo "==> build"

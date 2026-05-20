@@ -10,8 +10,7 @@ jurisdiction_scope:
 created_year: 1950
 operational_status: Active
 data_quality: partial
-data_quality_notes: Stub for graph connectivity; verify appointment/funding against primary sources. NJDG snapshot case_volume
-  merged
+data_quality_notes: Stub for graph connectivity; verify appointment/funding against primary sources.
 sources:
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
@@ -21,5 +20,3 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
-case_volume:
-  clog_severity: unknown

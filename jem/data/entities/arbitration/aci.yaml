@@ -13,8 +13,7 @@ created_year: 2019
 abolished_year: null
 operational_status: Not_Constituted
 constitutional_basis: null
-statutory_basis: 'Arbitration and Conciliation (Amendment) Act 2019, Part IA, Sections 43A–43M (inserted into Arbitration
-  and Conciliation Act 1996).
+statutory_basis: 'Arbitration and Conciliation (Amendment) Act 2019, Part IA, Sections 43A–43M (inserted into Arbitration and Conciliation Act 1996).
 
   '
 appointment:
@@ -42,29 +41,23 @@ audit:
   conduct_oversight_body: null
 complaint_mechanism:
   bias_complaint_to: []
-  removal_mechanism: 'Central Government, on recommendation of committee. Chairperson removable only on grounds stated in
-    statute.
+  removal_mechanism: 'Central Government, on recommendation of committee. Chairperson removable only on grounds stated in statute.
 
     '
   lokpal_jurisdiction: Not_Applicable
   lokpal_jurisdiction_note: Body not constituted — question does not arise.
   source: Arbitration and Conciliation Act 1996, Section 43F (as amended 2019)
 data_quality: verified
-data_quality_notes: "ACI's non-constitution is confirmed by GoI press release (Feb 2026) and SC notice to Union government\
-  \ to respond to petition seeking its establishment. The Draft Arbitration and Conciliation (Amendment) Bill 2024 proposes\
-  \ revised powers. Status as of April 2025: Bill in public consultation; ACI not constituted.\n NJDG snapshot case_volume\
-  \ merged"
+data_quality_notes: 'ACI''s non-constitution is confirmed by GoI press release (Feb 2026) and SC notice to Union government to respond to petition seeking its establishment. The Draft Arbitration and Conciliation (Amendment) Bill 2024 proposes revised powers. Status as of April 2025: Bill in public consultation; ACI not constituted.'
 structural_variations:
 - variation_id: aci_2024_bill_revision
-  description: 'Draft Arbitration Bill 2024 proposes to replace ACI''s grading power with recognition of arbitral institutions
-    and model rules. This would change the composition and functions defined in the 2019 Act if passed.
+  description: 'Draft Arbitration Bill 2024 proposes to replace ACI''s grading power with recognition of arbitral institutions and model rules. This would change the composition and functions defined in the 2019 Act if passed.
 
     '
   applicable_to:
   - all
   source: Draft Arbitration and Conciliation (Amendment) Bill 2024 — Ministry of Law & Justice
-  independence_risk_note: 'ACI Chairperson appointed by Central Government in consultation with CJI. CJI consultation is binding.
-    However, Government retains formal appointment power.
+  independence_risk_note: 'ACI Chairperson appointed by Central Government in consultation with CJI. CJI consultation is binding. However, Government retains formal appointment power.
 
     '
 sources:
@@ -84,5 +77,3 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
-case_volume:
-  clog_severity: unknown

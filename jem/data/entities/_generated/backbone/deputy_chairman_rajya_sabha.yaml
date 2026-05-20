@@ -1,0 +1,27 @@
+id: deputy_chairman_rajya_sabha
+name: Deputy Chairman of the Rajya Sabha
+
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - constitutional_office
+
+created_year: 1950
+operational_status: Active
+
+statutory_basis: "Constitution of India, Article 89"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — not an adjudicatory body. No case_volume or judge_strength.
+  Consulted on NHRC appointments per PHRA 1993 s.4.
+
+sources:
+  - label: Constitution of India — Article 89
+    url: https://www.indiacode.nic.in/handle/123456789/1
+    type: Constitution
+    accessed_date: "2026-05-19"

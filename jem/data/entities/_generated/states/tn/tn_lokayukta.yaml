@@ -30,6 +30,3 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
-case_volume:
-  clog_severity: unknown
-data_quality_notes: NJDG snapshot case_volume merged

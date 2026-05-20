@@ -15,8 +15,7 @@ created_year: 2005
 abolished_year: null
 operational_status: Active
 constitutional_basis: null
-statutory_basis: 'Constituted by Government of India in pursuance of proposal from Chief Justice of India. No separate statutory
-  basis — functions under the administrative authority of the SC and DoJ MMP framework.
+statutory_basis: 'Constituted by Government of India in pursuance of proposal from Chief Justice of India. No separate statutory basis — functions under the administrative authority of the SC and DoJ MMP framework.
 
   '
 appointment:
@@ -54,31 +53,22 @@ digital_infrastructure:
   - JustIS_App
   digital_variant: NIC_Standard
   integrated_with_njdg: true
-  integration_notes: 'e-Committee sets standards; NIC (under MeitY) builds and maintains. High Courts are Implementing Agencies
-    under their respective jurisdictions. The Central Project Coordinator (CPC) in each HC is accountable to the e-Committee
-    via the PPMS portal (ecourts.nic.in).
+  integration_notes: 'e-Committee sets standards; NIC (under MeitY) builds and maintains. High Courts are Implementing Agencies under their respective jurisdictions. The Central Project Coordinator (CPC) in each HC is accountable to the e-Committee via the PPMS portal (ecourts.nic.in).
 
     '
 structural_variations:
 - variation_id: ecommittee_dual_principal_problem
-  description: 'The e-Committee is chaired by a sitting SC judge (CJI-designated), making it a judicial body. However, eCourts
-    Mission Mode Project is monitored and funded by Department of Justice, Ministry of Law & Justice (executive). This creates
-    a dual-principal problem: e-Committee sets technology policy; DoJ controls the budget. Every technology decision of scale
-    requires DoJ sanction. No formal dispute resolution mechanism exists between the two bodies for technology disagreements.
+  description: 'The e-Committee is chaired by a sitting SC judge (CJI-designated), making it a judicial body. However, eCourts Mission Mode Project is monitored and funded by Department of Justice, Ministry of Law & Justice (executive). This creates a dual-principal problem: e-Committee sets technology policy; DoJ controls the budget. Every technology decision of scale requires DoJ sanction. No formal dispute resolution mechanism exists between the two bodies for technology disagreements.
 
     '
   applicable_to:
   - all
   source: ecommitteesci.gov.in; doj.gov.in/division/ecourts/
-  independence_risk_note: 'The executive (DoJ/MeitY) controls the budget and the technical vendor (NIC). The SC (via e-Committee)
-    controls the policy. This structural tension means the judiciary''s technology backbone is ultimately dependent on executive
-    goodwill and budget allocation cycles. No SLA or contractual obligation exists between NIC and the courts.
+  independence_risk_note: 'The executive (DoJ/MeitY) controls the budget and the technical vendor (NIC). The SC (via e-Committee) controls the policy. This structural tension means the judiciary''s technology backbone is ultimately dependent on executive goodwill and budget allocation cycles. No SLA or contractual obligation exists between NIC and the courts.
 
     '
 - variation_id: hc_custom_systems
-  description: 'Several HCs have developed custom Case Management Systems that do not fully conform to NIC CIS standards:
-    Bombay HC (custom CMS), Delhi HC (enhanced digital services), Madras HC (independent IT development). Data from these
-    HCs enters NJDG in non-standard formats, reducing national data reliability. This is a documented standardisation failure.
+  description: 'Several HCs have developed custom Case Management Systems that do not fully conform to NIC CIS standards: Bombay HC (custom CMS), Delhi HC (enhanced digital services), Madras HC (independent IT development). Data from these HCs enters NJDG in non-standard formats, reducing national data reliability. This is a documented standardisation failure.
 
     '
   applicable_to:
@@ -86,8 +76,7 @@ structural_variations:
   - Delhi
   - TamilNadu
   source: eCourts Phase III documentation; doj.gov.in
-  independence_risk_note: 'HC autonomy (Article 235 administrative independence) conflicts with the e-Committee''s mandate
-    for uniform national standards. No enforcement mechanism exists against an HC that builds its own system.
+  independence_risk_note: 'HC autonomy (Article 235 administrative independence) conflicts with the e-Committee''s mandate for uniform national standards. No enforcement mechanism exists against an HC that builds its own system.
 
     '
 data_quality: verified
@@ -108,6 +97,3 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
-case_volume:
-  clog_severity: unknown
-data_quality_notes: NJDG snapshot case_volume merged

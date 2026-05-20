@@ -192,3 +192,220 @@ relationships:
         url: "https://india-code.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf"
         type: Constitution
         accessed_date: "2025-04-01"
+
+  # ── NHRC appointments (PHRA 1993) ─────────────────────────
+
+  - id: rel_phra_committee_recommends_nhrc_chair
+    source: recommendation_committee_phra_s4
+    target: nhrc
+    relationship_type: Recommends
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Protection of Human Rights Act 1993, s.4"
+    year_established: 1993
+    notes: Committee recommends NHRC Chairperson and Members to the President.
+    data_quality: partial
+    sources:
+      - label: PHRA 1993 s.4
+        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  - id: rel_president_formally_appoints_nhrc
+    source: president_india
+    target: nhrc
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Protection of Human Rights Act 1993, ss.3–6"
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: PHRA 1993
+        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  - id: rel_pm_consulted_nhrc_appointment
+    source: prime_minister
+    target: nhrc
+    relationship_type: ConsultedOn_Appointment
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Protection of Human Rights Act 1993, s.4"
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: PHRA 1993 s.4
+        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  - id: rel_speaker_ls_consulted_nhrc_appointment
+    source: speaker_lok_sabha
+    target: nhrc
+    relationship_type: ConsultedOn_Appointment
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Protection of Human Rights Act 1993, s.4"
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: PHRA 1993 s.4
+        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  - id: rel_mha_consulted_nhrc_appointment
+    source: ministry_home_affairs
+    target: nhrc
+    relationship_type: ConsultedOn_Appointment
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Protection of Human Rights Act 1993, s.4"
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: PHRA 1993 s.4
+        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  # ── CVC appointments (CVC Act 2003) ───────────────────────
+
+  - id: rel_cvc_committee_recommends_cvc
+    source: recommendation_committee_cvc_s4
+    target: central_vigilance_commission
+    relationship_type: Recommends
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Central Vigilance Commission Act 2003, s.4"
+    year_established: 2003
+    data_quality: partial
+    sources:
+      - label: CVC Act 2003 s.4
+        url: https://cvc.gov.in/sites/default/files/cvcact.pdf
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  - id: rel_president_formally_appoints_cvc
+    source: president_india
+    target: central_vigilance_commission
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Central Vigilance Commission Act 2003, s.3"
+    year_established: 2003
+    data_quality: partial
+    sources:
+      - label: CVC Act 2003
+        url: https://cvc.gov.in/sites/default/files/cvcact.pdf
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  # ── CBI Director (DoPT / CVC procedure) ───────────────────
+
+  - id: rel_dopt_dpc_nominates_cbi_director
+    source: dopt_dpc
+    target: cbi
+    relationship_type: Nominates
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "DSPE Act 1946; Vineet Narain v Union of India (1997)"
+    year_established: 1997
+    data_quality: partial
+    sources:
+      - label: Vineet Narain v Union of India (1997) 6 SCC 767
+        url: https://main.sci.gov.in/
+        type: SCJudgment
+        accessed_date: "2026-05-19"
+
+  - id: rel_cvc_recommends_cbi_director
+    source: central_vigilance_commission
+    target: cbi
+    relationship_type: Recommends
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "CVC Act 2003; Vineet Narain directions"
+    year_established: 2003
+    data_quality: partial
+    sources:
+      - label: CVC Act 2003
+        url: https://cvc.gov.in/sites/default/files/cvcact.pdf
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  # ── State ERC / SCDRC appointments ────────────────────────
+
+  - id: rel_ea85_committee_recommends_merc
+    source: selection_committee_electricity_act_s85
+    target: merc
+    relationship_type: Recommends
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Electricity Act 2003, s.85"
+    year_established: 2003
+    data_quality: partial
+    sources:
+      - label: Electricity Act 2003 s.85
+        url: https://powermin.gov.in/en/content/electricity-act-2003
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  - id: rel_mh_gov_appoints_merc_members
+    source: government_maharashtra
+    target: merc
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Electricity Act 2003, s.85"
+    year_established: 2003
+    data_quality: partial
+    sources:
+      - label: Electricity Act 2003 s.85
+        url: https://powermin.gov.in/en/content/electricity-act-2003
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  - id: rel_cpa54_committee_recommends_mh_scdrc
+    source: selection_committee_cpa2019_s54
+    target: mh_scdrc
+    relationship_type: Recommends
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Consumer Protection Act 2019, s.54"
+    year_established: 2019
+    data_quality: partial
+    sources:
+      - label: Consumer Protection Act 2019 s.54
+        url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+        type: CentralAct
+        accessed_date: "2026-05-19"
+
+  - id: rel_mh_gov_appoints_mh_scdrc
+    source: government_maharashtra
+    target: mh_scdrc
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Consumer Protection Act 2019, s.42"
+    year_established: 2019
+    data_quality: partial
+    sources:
+      - label: Consumer Protection Act 2019
+        url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+        type: CentralAct
+        accessed_date: "2026-05-19"

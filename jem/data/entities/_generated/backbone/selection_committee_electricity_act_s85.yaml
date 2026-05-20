@@ -1,0 +1,29 @@
+id: selection_committee_electricity_act_s85
+name: Electricity Act 2003 Section 85 Selection Committee
+abbreviation: EA 2003 s.85 Committee
+
+type: AppointmentBody
+cluster: appointment_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - statutory_appointment_committee
+
+created_year: 2003
+operational_status: Active
+
+statutory_basis: "Electricity Act 2003, s.85"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — recommends State Electricity Regulatory Commission
+  members to the State Government. Not an adjudicatory body; no case_volume
+  or judge_strength at committee level.
+
+sources:
+  - label: Electricity Act 2003 — Ministry of Power
+    url: https://powermin.gov.in/en/content/electricity-act-2003
+    type: CentralAct
+    accessed_date: "2026-05-19"

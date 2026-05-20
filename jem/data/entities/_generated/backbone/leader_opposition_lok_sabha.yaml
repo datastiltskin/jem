@@ -1,0 +1,28 @@
+id: leader_opposition_lok_sabha
+name: Leader of Opposition in the Lok Sabha
+
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - parliamentary_office
+
+created_year: 1977
+operational_status: Active
+
+statutory_basis: "Leaders and Chief Whips of Recognised Parties and Groups in Parliament (Facilities) Act 1998; convention for statutory consultation roles"
+
+data_quality: partial
+data_quality_notes: >
+  Governance node — not an adjudicatory body. No case_volume or judge_strength.
+  Consulted on NHRC and CVC appointments where the Leader of the largest
+  opposition party in Lok Sabha is specified.
+
+sources:
+  - label: Leaders and Chief Whips Act 1998 — India Code
+    url: https://www.indiacode.nic.in/
+    type: CentralAct
+    accessed_date: "2026-05-19"

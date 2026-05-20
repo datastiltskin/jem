@@ -10,19 +10,13 @@ cluster: legislative_executive
 level_of_government: Central
 created_year: 1997
 operational_status: Active
-statutory_basis: 'Government of India (Allocation of Business) Rules, 1961 — Ministry of Consumer Affairs, Food and Public
-  Distribution entry; Consumer Protection Act 2019 (ss.53 ff.) is the primary legislation constituting NCDRC, administered
-  by the Department of Consumer Affairs.
+statutory_basis: 'Government of India (Allocation of Business) Rules, 1961 — Ministry of Consumer Affairs, Food and Public Distribution entry; Consumer Protection Act 2019 (ss.53 ff.) is the primary legislation constituting NCDRC, administered by the Department of Consumer Affairs.
 
   '
 funding:
   primary_source: Consolidated_Fund_India
 data_quality: partial
-data_quality_notes: "created_year 1997 is approximate for the ministry in its current configuration — verify against Allocation\
-  \ of Business gazette notification. Ministry has two departments (Consumer Affairs; Food and Public Distribution); NCDRC\
-  \ sits under Department of Consumer Affairs specifically. Sub-department entity not created per session rules. name_hindi\
-  \ unverified against official letterhead. funding block is ministry-level only; budget_figure_crore not populated.\n NJDG\
-  \ snapshot case_volume merged"
+data_quality_notes: created_year 1997 is approximate for the ministry in its current configuration — verify against Allocation of Business gazette notification. Ministry has two departments (Consumer Affairs; Food and Public Distribution); NCDRC sits under Department of Consumer Affairs specifically. Sub-department entity not created per session rules. name_hindi unverified against official letterhead. funding block is ministry-level only; budget_figure_crore not populated.
 sources:
 - label: Ministry of Consumer Affairs — Official Website
   url: https://consumeraffairs.nic.in
@@ -32,5 +26,3 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
-case_volume:
-  clog_severity: unknown

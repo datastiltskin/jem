@@ -21,12 +21,12 @@ operational_status: Active
 statutory_basis: "Protection of Human Rights Act 1993, s.3"
 
 appointment:
-  formally_appoints: president_of_india
+  formally_appoints: president_india
   recommends: recommendation_committee_phra_s4
   consulted:
     - prime_minister
     - speaker_lok_sabha
-    - minister_home_affairs
+    - ministry_home_affairs
     - leader_opposition_lok_sabha
     - leader_opposition_rajya_sabha
     - deputy_chairman_rajya_sabha
@@ -34,7 +34,7 @@ appointment:
   criteria_public: true
   tenure: "5 years or age 70, whichever earlier; PHRA 1993 s.6"
   reappointment_possible: false
-  removal_authority: president_of_india
+  removal_authority: president_india
   removal_requires_parliament: false
   removal_independent_committee: true
 
