@@ -212,7 +212,7 @@
 | `tn_bar_council` | `tn_bar_council` | `data/entities/_generated/states/tn/tn_bar_council.yaml` | merge case_volume |
 | `tn_cdrc_chennai` | `tn_cdrc_chennai` | `data/entities/_generated/states/tn/tn_cdrc_chennai.yaml` | merge case_volume |
 | `tn_district_court_chennai` | `tn_district_court_chennai` | `data/entities/_generated/states/tn/tn_district_court_chennai.yaml` | merge case_volume |
-| `tn_district_courts_generic` | `tn_district_courts_generic` | — | **no YAML — skip** |
+| `tn_district_courts_generic` | `tn_district_courts_generic` | `data/entities/_generated/states/tn/tn_district_courts_generic.yaml` | merge case_volume |
 | `tn_lokayukta` | `tn_lokayukta` | `data/entities/_generated/states/tn/tn_lokayukta.yaml` | merge case_volume |
 | `tn_rera` | `tn_rera` | `data/entities/_generated/states/tn/tn_rera.yaml` | merge case_volume |
 | `tn_sja` | `tn_sja` | `data/entities/_generated/states/tn/tn_sja.yaml` | merge case_volume |
@@ -223,4 +223,4 @@
 | `trai` | `trai` | `data/entities/_generated/backbone/trai.yaml` | merge case_volume |
 
 ## Summary
-- Mergeable (YAML exists): **138**
+- Mergeable (YAML exists): **139**

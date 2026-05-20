@@ -1,4 +1,3 @@
-# JEM — Tamil Nadu district lattice: consolidated (collapsed) view for all 38 revenue districts.
 id: tn_district_courts_generic
 name: District Courts — Tamil Nadu (consolidated)
 type: SubordinateCivilCourt
@@ -24,10 +23,11 @@ complaint_mechanism:
   bias_complaint_to: []
   lokpal_jurisdiction: Not_Applicable
 data_quality: partial
-data_quality_notes: >
-  State-wide NJDG aggregate for the collapsed district lattice (38 revenue districts).
-  Expand the lattice (+/− on Madras HC) to see per-district nodes; district-level pendency
-  is filled from NJDG where available (e.g. Chennai). NJDG snapshot case_volume merged
+data_quality_notes: 'State-wide NJDG aggregate for the collapsed district lattice (38 revenue districts). Expand the lattice
+  (+/− on Madras HC) to see per-district nodes; district-level pendency is filled from NJDG where available (e.g. Chennai).
+  NJDG snapshot case_volume merged
+
+  '
 sources:
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
@@ -43,7 +43,8 @@ judge_strength:
   appointed: null
   source_type: DoJ_Report
   source_url: https://doj.gov.in/
-  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG bench strength.
+  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG
+    bench strength.
 case_volume:
   data_as_of: '2024-12-01'
   pending_cases: 3200000
@@ -54,4 +55,4 @@ case_volume:
   source_url: https://njdg.ecourts.gov.in/
   source_type: NJDG_Snapshot
   disposal_rate: 0.9512
-  clog_severity: unknown
+  clog_severity: high

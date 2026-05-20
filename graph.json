@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-05-19T09:52:38.581247+00:00",
-    "entity_count": 495,
+    "generated_at": "2026-05-20T04:44:15.418280+00:00",
+    "entity_count": 494,
     "relationship_count": 499,
     "canvas_width": 1800,
     "canvas_height": 1200,
@@ -12,11 +12,11 @@
     ]
   },
   "impact_metrics": {
-    "high_independence_risk_count": 90,
+    "high_independence_risk_count": 89,
     "appointer_equals_funder_removal_count": 0,
     "no_public_appointment_criteria_count": 42,
     "not_constituted_count": 3,
-    "no_external_complaint_mechanism_count": 494
+    "no_external_complaint_mechanism_count": 493
   },
   "timeline_events": [
     {
@@ -211,22 +211,6 @@
       }
     },
     {
-      "id": "executive_interface",
-      "name": "Executive Interface",
-      "color": "#742a2a",
-      "entity_count": 12,
-      "avg_independence_risk": 4.3,
-      "not_constituted_count": 2,
-      "position": {
-        "x": 466,
-        "y": 604,
-        "width": 430,
-        "height": 280,
-        "cluster_col": 1,
-        "cluster_row": 2
-      }
-    },
-    {
       "id": "constitutional_courts",
       "name": "Constitutional Courts",
       "color": "#1a365d",
@@ -320,6 +304,22 @@
         "height": 280,
         "cluster_col": 0,
         "cluster_row": 3
+      }
+    },
+    {
+      "id": "executive_interface",
+      "name": "Executive Interface",
+      "color": "#742a2a",
+      "entity_count": 11,
+      "avg_independence_risk": 4.2,
+      "not_constituted_count": 2,
+      "position": {
+        "x": 466,
+        "y": 604,
+        "width": 430,
+        "height": 280,
+        "cluster_col": 1,
+        "cluster_row": 2
       }
     },
     {
@@ -969,68 +969,102 @@
     {
       "id": "central_vigilance_commission",
       "name": "Central Vigilance Commission",
-      "name_hindi": null,
-      "abbreviation": null,
-      "type": "ExecutiveBody",
-      "cluster": "executive_interface",
+      "name_hindi": "केन्द्रीय सतर्कता आयोग",
+      "abbreviation": "CVC",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
       "level_of_government": "Central",
-      "created_year": 1950,
+      "created_year": 1964,
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": null,
+      "statutory_basis": "Central Vigilance Commission Act 2003, s.3",
       "data_quality": "partial",
-      "data_quality_notes": "Stub for graph connectivity; verify appointment/funding against primary sources.",
+      "data_quality_notes": "CVC originally established 11 February 1964 by executive resolution on the recommendation of the Santhanam Committee on Prevention of Corruption. Given statutory footing by CVC Act 2003 (Act 45 of 2003). created_year is 1964 (original establishment); statutory_basis reflects the operative 2003 Act. ministry_responsible is null — CVC is an independent statutory body reporting to Parliament (annual report laid before each House under CVC Act 2003 s.25); it is not under the administrative control of any ministry. case_volume not populated. consulted IDs are descriptive strings — see handoff report §5. No AppealableTo edge — CVC is a supervisory/investigative body with no appellate hierarchy above it; judicial review lies via Article 226/32. Former duplicate entity id 'cvc' retired; merged into this record.\n",
       "derived": {
         "discretionary_power_breakdown": {
-          "Base discretionary power for type ExecutiveBody": 1,
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
           "No universal mandatory timeline for all decisions": 1
         },
-        "discretionary_power_score": 2,
+        "discretionary_power_score": 5,
         "independence_risk_breakdown": {
-          "Audit reports not public": 1,
-          "Lokpal has no jurisdiction": 1,
           "No bias complaint mechanism exists": 2,
-          "No external financial audit": 1,
           "No independent conduct oversight body": 1
         },
-        "independence_risk_level": "high",
-        "independence_risk_score": 6,
+        "independence_risk_level": "moderate",
+        "independence_risk_score": 3,
         "scores_validated": false
       },
-      "funding_source": null,
+      "funding_source": "Consolidated_Fund_India",
       "funding_ministry": null,
-      "audited_by": null,
-      "audit_report_public": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
       "complaint_external_exists": false,
-      "appointment_criteria_public": null,
-      "reappointment_possible": null,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
       "sources": [
         {
-          "label": "India Code — Constitution & Acts",
-          "url": "https://india-code.nic.in/",
+          "label": "CVC Official Website",
+          "url": "https://cvc.gov.in/",
           "type": "GoIWebsite",
-          "accessed_date": "2026-05-13"
+          "accessed_date": "2026-05-18"
+        },
+        {
+          "label": "Central Vigilance Commission Act 2003",
+          "url": "https://cvc.gov.in/sites/default/files/cvcact.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-18"
         }
       ],
       "_detail": {
-        "appointment": null,
-        "funding": null,
-        "audit": null,
-        "complaint_mechanism": null,
+        "appointment": {
+          "formally_appoints": "president_of_india",
+          "recommends": "recommendation_committee_cvc_s4",
+          "consulted": [
+            "prime_minister",
+            "minister_home_affairs",
+            "leader_opposition_lok_sabha"
+          ],
+          "consultation_binding": true,
+          "criteria_public": true,
+          "tenure": "4 years from date of assumption of office, or age 65, whichever earlier; CVC Act 2003 s.6",
+          "reappointment_possible": false,
+          "removal_authority": "president_of_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true
+        },
+        "complaint_mechanism": {
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokpal_jurisdiction_note": "CVC is itself an anti-corruption oversight body; CVC Commissioner is not a public servant within Lokpal Act 2013 s.14 in the executive sense. Flag as Contested if a contrary position is formally argued.\n"
+        },
         "training": null,
         "digital_infrastructure": null,
         "structural_variations": [],
         "jurisdiction_scope": {
-          "is_all_india": true
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "anti_corruption_oversight",
+            "vigilance_supervision",
+            "inquiry_referral"
+          ]
         },
         "case_volume": null,
         "judge_strength": null,
         "parent_hc": null
       },
       "position": {
-        "x": 523,
-        "y": 768
+        "x": 504,
+        "y": 444
       }
     },
     {
@@ -1382,107 +1416,6 @@
       "position": {
         "x": 644,
         "y": 156
-      }
-    },
-    {
-      "id": "cvc",
-      "name": "Central Vigilance Commission",
-      "name_hindi": "केन्द्रीय सतर्कता आयोग",
-      "abbreviation": "CVC",
-      "type": "RegulatoryBodyQJ",
-      "cluster": "regulatory_bodies",
-      "level_of_government": "Central",
-      "created_year": 1964,
-      "abolished_year": null,
-      "operational_status": "Active",
-      "constitutional_basis": null,
-      "statutory_basis": "Central Vigilance Commission Act 2003, s.3",
-      "data_quality": "partial",
-      "data_quality_notes": "CVC originally established 11 February 1964 by executive resolution on the recommendation of the Santhanam Committee on Prevention of Corruption. Given statutory footing by CVC Act 2003 (Act 45 of 2003). created_year is 1964 (original establishment); statutory_basis reflects the operative 2003 Act. ministry_responsible is null — CVC is an independent statutory body reporting to Parliament (annual report laid before each House under CVC Act 2003 s.25); it is not under the administrative control of any ministry. case_volume not populated. consulted IDs need graph alignment. No AppealableTo edge — CVC is a supervisory/investigative body with no appellate hierarchy above it; judicial review lies via Article 226/32.\n",
-      "derived": {
-        "discretionary_power_breakdown": {
-          "Base discretionary power for type RegulatoryBodyQJ": 3,
-          "Has removal authority over other entities": 1,
-          "No universal mandatory timeline for all decisions": 1
-        },
-        "discretionary_power_score": 5,
-        "independence_risk_breakdown": {
-          "No bias complaint mechanism exists": 2,
-          "No independent conduct oversight body": 1
-        },
-        "independence_risk_level": "moderate",
-        "independence_risk_score": 3,
-        "scores_validated": false
-      },
-      "funding_source": "Consolidated_Fund_India",
-      "funding_ministry": null,
-      "audited_by": "cag_india",
-      "audit_report_public": true,
-      "complaint_external_exists": false,
-      "appointment_criteria_public": true,
-      "reappointment_possible": false,
-      "sources": [
-        {
-          "label": "CVC Official Website",
-          "url": "https://cvc.gov.in/",
-          "type": "GoIWebsite",
-          "accessed_date": "2026-05-18"
-        },
-        {
-          "label": "Central Vigilance Commission Act 2003",
-          "url": "https://cvc.gov.in/sites/default/files/cvcact.pdf",
-          "type": "CentralAct",
-          "accessed_date": "2026-05-18"
-        }
-      ],
-      "_detail": {
-        "appointment": {
-          "formally_appoints": "president_of_india",
-          "recommends": "recommendation_committee_cvc_s4",
-          "consulted": [
-            "prime_minister",
-            "minister_home_affairs",
-            "leader_opposition_lok_sabha"
-          ],
-          "consultation_binding": true,
-          "criteria_public": true,
-          "tenure": "4 years from date of assumption of office, or age 65, whichever earlier; CVC Act 2003 s.6",
-          "reappointment_possible": false,
-          "removal_authority": "president_of_india",
-          "removal_requires_parliament": false,
-          "removal_independent_committee": true
-        },
-        "funding": {
-          "primary_source": "Consolidated_Fund_India",
-          "ministry_responsible": null
-        },
-        "audit": {
-          "audited_by": "cag_india",
-          "audit_type": "CAG_Statutory",
-          "audit_report_public": true
-        },
-        "complaint_mechanism": {
-          "lokpal_jurisdiction": "Not_Applicable",
-          "lokpal_jurisdiction_note": "CVC is itself an anti-corruption oversight body; CVC Commissioner is not a public servant within Lokpal Act 2013 s.14 in the executive sense. Flag as Contested if a contrary position is formally argued.\n"
-        },
-        "training": null,
-        "digital_infrastructure": null,
-        "structural_variations": [],
-        "jurisdiction_scope": {
-          "is_all_india": true,
-          "jurisdiction_types": [
-            "anti_corruption_oversight",
-            "vigilance_supervision",
-            "inquiry_referral"
-          ]
-        },
-        "case_volume": null,
-        "judge_strength": null,
-        "parent_hc": null
-      },
-      "position": {
-        "x": 504,
-        "y": 444
       }
     },
     {
@@ -21071,7 +21004,7 @@
       "id": "derc",
       "name": "Delhi Electricity Regulatory Commission",
       "name_hindi": null,
-      "abbreviation": null,
+      "abbreviation": "DERC",
       "type": "RegulatoryBodyQJ",
       "cluster": "regulatory_bodies",
       "level_of_government": "UT",
@@ -21079,9 +21012,9 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Electricity Act 2003 — DERC",
+      "statutory_basis": "Electricity Act 2003, s.82; Delhi Electricity Reform Act 2000",
       "data_quality": "partial",
-      "data_quality_notes": "NJDG snapshot case_volume merged",
+      "data_quality_notes": "DERC constituted November 2001 under the Delhi Electricity Reform Act 2000; continued under Electricity Act 2003 s.82. level_of_government is UT — Delhi is NCT with a legislature. AppealableTo aptel per Electricity Act 2003 s.111 — in dl_relationships.yaml (id: dl_derc_aptel). case_volume from NJDG snapshot; verify against DERC annual reports at derc.gov.in.\n NJDG snapshot case_volume merged",
       "derived": {
         "discretionary_power_breakdown": {
           "Base discretionary power for type RegulatoryBodyQJ": 3,
@@ -21101,14 +21034,26 @@
       "audited_by": "cag_india",
       "audit_report_public": true,
       "complaint_external_exists": false,
-      "appointment_criteria_public": null,
-      "reappointment_possible": null,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
       "sources": [
         {
-          "label": "India Code — Constitution & Acts",
-          "url": "https://india-code.nic.in/",
+          "label": "DERC Official Website",
+          "url": "https://derc.gov.in/",
           "type": "GoIWebsite",
-          "accessed_date": "2026-05-13"
+          "accessed_date": "2026-05-18"
+        },
+        {
+          "label": "Electricity Act 2003 — Ministry of Power",
+          "url": "https://powermin.gov.in/en/content/electricity-act-2003",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-18"
+        },
+        {
+          "label": "Delhi Electricity Reform Act 2000",
+          "url": "https://derc.gov.in/sites/default/files/Delhi%20Electricity%20Reform%20Act%202000.pdf",
+          "type": "StateAct",
+          "accessed_date": "2026-05-18"
         },
         {
           "label": "National Judicial Data Grid (NJDG)",
@@ -21118,7 +21063,13 @@
         }
       ],
       "_detail": {
-        "appointment": null,
+        "appointment": {
+          "formally_appoints": "lt_governor_delhi",
+          "recommends": "selection_committee_electricity_act_s85",
+          "criteria_public": true,
+          "tenure": "5 years or age 65, whichever earlier; Electricity Act 2003 s.89",
+          "reappointment_possible": false
+        },
         "funding": {
           "primary_source": "State_Consolidated_Fund",
           "ministry_responsible": null
@@ -21141,7 +21092,9 @@
           ],
           "is_all_india": false,
           "jurisdiction_types": [
-            "Civil"
+            "electricity_tariff_regulation",
+            "licensing",
+            "dispute_adjudication_electricity"
           ]
         },
         "case_volume": {
@@ -21243,8 +21196,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 552,
-        "y": 732
+        "x": 525,
+        "y": 768
       }
     },
     {
@@ -22596,8 +22549,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 580,
-        "y": 768
+        "x": 556,
+        "y": 732
       }
     },
     {
@@ -25309,8 +25262,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 609,
-        "y": 732
+        "x": 588,
+        "y": 768
       }
     },
     {
@@ -28568,8 +28521,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 638,
-        "y": 768
+        "x": 619,
+        "y": 732
       }
     },
     {
@@ -29035,7 +28988,7 @@
       "id": "kerc",
       "name": "Karnataka Electricity Regulatory Commission",
       "name_hindi": null,
-      "abbreviation": null,
+      "abbreviation": "KERC",
       "type": "RegulatoryBodyQJ",
       "cluster": "regulatory_bodies",
       "level_of_government": "State",
@@ -29043,9 +28996,9 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Electricity Act 2003 — KERC",
+      "statutory_basis": "Electricity Act 2003, s.82; Karnataka Electricity Reform Act 1999",
       "data_quality": "partial",
-      "data_quality_notes": "NJDG snapshot case_volume merged",
+      "data_quality_notes": "KERC established under Karnataka Electricity Reform Act 1999; continued under Electricity Act 2003 s.82. AppealableTo aptel per Electricity Act 2003 s.111 — in ka_relationships.yaml (id: ka_kerc_aptel). case_volume from NJDG snapshot; verify against KERC annual reports at kerc.karnataka.gov.in.\n NJDG snapshot case_volume merged",
       "derived": {
         "discretionary_power_breakdown": {
           "Base discretionary power for type RegulatoryBodyQJ": 3,
@@ -29065,14 +29018,20 @@
       "audited_by": "cag_india",
       "audit_report_public": true,
       "complaint_external_exists": false,
-      "appointment_criteria_public": null,
-      "reappointment_possible": null,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
       "sources": [
         {
-          "label": "India Code — Constitution & Acts",
-          "url": "https://india-code.nic.in/",
+          "label": "KERC Official Website",
+          "url": "https://kerc.karnataka.gov.in/",
           "type": "GoIWebsite",
-          "accessed_date": "2026-05-13"
+          "accessed_date": "2026-05-18"
+        },
+        {
+          "label": "Electricity Act 2003 — Ministry of Power",
+          "url": "https://powermin.gov.in/en/content/electricity-act-2003",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-18"
         },
         {
           "label": "National Judicial Data Grid (NJDG)",
@@ -29082,7 +29041,13 @@
         }
       ],
       "_detail": {
-        "appointment": null,
+        "appointment": {
+          "formally_appoints": "state_government_karnataka",
+          "recommends": "selection_committee_electricity_act_s85",
+          "criteria_public": true,
+          "tenure": "5 years or age 65, whichever earlier; Electricity Act 2003 s.89",
+          "reappointment_possible": false
+        },
         "funding": {
           "primary_source": "State_Consolidated_Fund",
           "ministry_responsible": null
@@ -29105,7 +29070,9 @@
           ],
           "is_all_india": false,
           "jurisdiction_types": [
-            "Civil"
+            "electricity_tariff_regulation",
+            "licensing",
+            "dispute_adjudication_electricity"
           ]
         },
         "case_volume": {
@@ -30229,7 +30196,7 @@
       "id": "merc",
       "name": "Maharashtra Electricity Regulatory Commission",
       "name_hindi": null,
-      "abbreviation": null,
+      "abbreviation": "MERC",
       "type": "RegulatoryBodyQJ",
       "cluster": "regulatory_bodies",
       "level_of_government": "State",
@@ -30237,9 +30204,9 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Electricity Act 2003 — State Commission (MERc)",
+      "statutory_basis": "Electricity Act 2003, s.82; Maharashtra Electricity Regulatory Commission Act 1999",
       "data_quality": "partial",
-      "data_quality_notes": "NJDG snapshot case_volume merged",
+      "data_quality_notes": "MERC constituted August 1999 under Maharashtra Electricity Regulatory Commission Act 1999 (Maharashtra Act 29 of 1999); continued under Electricity Act 2003 s.82. ministry_responsible is null — Maharashtra Energy Department is the administrative department but carries no JEM entity ID. AppealableTo aptel per Electricity Act 2003 s.111 — in mh_relationships.yaml (id: mh_merc_aptel). judge_strength omitted — ERC members are technical/economic experts, not judges.\n NJDG snapshot case_volume merged",
       "derived": {
         "discretionary_power_breakdown": {
           "Base discretionary power for type RegulatoryBodyQJ": 3,
@@ -30259,14 +30226,20 @@
       "audited_by": "cag_india",
       "audit_report_public": true,
       "complaint_external_exists": false,
-      "appointment_criteria_public": null,
-      "reappointment_possible": null,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
       "sources": [
         {
-          "label": "India Code — Constitution & Acts",
-          "url": "https://india-code.nic.in/",
+          "label": "MERC Official Website",
+          "url": "https://www.mercindia.org.in/",
           "type": "GoIWebsite",
-          "accessed_date": "2026-05-13"
+          "accessed_date": "2026-05-18"
+        },
+        {
+          "label": "Electricity Act 2003 — Ministry of Power",
+          "url": "https://powermin.gov.in/en/content/electricity-act-2003",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-18"
         },
         {
           "label": "National Judicial Data Grid (NJDG)",
@@ -30276,7 +30249,13 @@
         }
       ],
       "_detail": {
-        "appointment": null,
+        "appointment": {
+          "formally_appoints": "state_government_maharashtra",
+          "recommends": "selection_committee_electricity_act_s85",
+          "criteria_public": true,
+          "tenure": "5 years or age 65, whichever earlier; Electricity Act 2003 s.89",
+          "reappointment_possible": false
+        },
         "funding": {
           "primary_source": "State_Consolidated_Fund",
           "ministry_responsible": null
@@ -30299,7 +30278,9 @@
           ],
           "is_all_india": false,
           "jurisdiction_types": [
-            "Civil"
+            "electricity_tariff_regulation",
+            "licensing",
+            "dispute_adjudication_electricity"
           ]
         },
         "case_volume": {
@@ -30401,8 +30382,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 667,
-        "y": 732
+        "x": 650,
+        "y": 768
       }
     },
     {
@@ -34438,8 +34419,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 695,
-        "y": 768
+        "x": 681,
+        "y": 732
       }
     },
     {
@@ -37386,8 +37367,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 724,
-        "y": 732
+        "x": 712,
+        "y": 768
       }
     },
     {
@@ -37743,8 +37724,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 753,
-        "y": 768
+        "x": 743,
+        "y": 732
       }
     },
     {
@@ -38664,8 +38645,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 782,
-        "y": 732
+        "x": 774,
+        "y": 768
       }
     },
     {
@@ -42286,7 +42267,7 @@
           "source_url": "https://njdg.ecourts.gov.in/",
           "source_type": "NJDG_Snapshot",
           "disposal_rate": 0.9512,
-          "clog_severity": "unknown"
+          "clog_severity": "high"
         },
         "judge_strength": {
           "data_as_of": null,
@@ -42384,8 +42365,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 810,
-        "y": 768
+        "x": 806,
+        "y": 732
       }
     },
     {
@@ -45486,8 +45467,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 839,
-        "y": 732
+        "x": 837,
+        "y": 768
       }
     }
   ],

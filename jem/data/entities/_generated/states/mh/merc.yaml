@@ -1,45 +1,36 @@
 id: merc
 name: Maharashtra Electricity Regulatory Commission
 abbreviation: MERC
-
 type: RegulatoryBodyQJ
 cluster: regulatory_bodies
 level_of_government: State
-
 jurisdiction_scope:
   states_covered:
-    - MH
+  - MH
   is_all_india: false
   jurisdiction_types:
-    - electricity_tariff_regulation
-    - licensing
-    - dispute_adjudication_electricity
-
+  - electricity_tariff_regulation
+  - licensing
+  - dispute_adjudication_electricity
 created_year: 1999
 operational_status: Active
-
-statutory_basis: "Electricity Act 2003, s.82; Maharashtra Electricity Regulatory Commission Act 1999"
-
+statutory_basis: Electricity Act 2003, s.82; Maharashtra Electricity Regulatory Commission Act 1999
 appointment:
   formally_appoints: state_government_maharashtra
   recommends: selection_committee_electricity_act_s85
   criteria_public: true
-  tenure: "5 years or age 65, whichever earlier; Electricity Act 2003 s.89"
+  tenure: 5 years or age 65, whichever earlier; Electricity Act 2003 s.89
   reappointment_possible: false
-
 funding:
   primary_source: State_Consolidated_Fund
   ministry_responsible: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
-
 complaint_mechanism:
   bias_complaint_to: []
   lokpal_jurisdiction: Not_Applicable
-
 case_volume:
   data_as_of: '2024-12-01'
   pending_cases: 1450
@@ -50,23 +41,22 @@ case_volume:
   source_type: AnnualReport
   disposal_rate: 0.871
   clog_severity: high
-
 data_quality: partial
-data_quality_notes: >
-  MERC constituted August 1999 under Maharashtra Electricity Regulatory
-  Commission Act 1999 (Maharashtra Act 29 of 1999); continued under
-  Electricity Act 2003 s.82. ministry_responsible is null — Maharashtra
-  Energy Department is the administrative department but carries no JEM
-  entity ID. AppealableTo aptel per Electricity Act 2003 s.111 — in
-  mh_relationships.yaml (id: mh_merc_aptel). judge_strength omitted —
-  ERC members are technical/economic experts, not judges.
-
+data_quality_notes: "MERC constituted August 1999 under Maharashtra Electricity Regulatory Commission Act 1999 (Maharashtra\
+  \ Act 29 of 1999); continued under Electricity Act 2003 s.82. ministry_responsible is null — Maharashtra Energy Department\
+  \ is the administrative department but carries no JEM entity ID. AppealableTo aptel per Electricity Act 2003 s.111 — in\
+  \ mh_relationships.yaml (id: mh_merc_aptel). judge_strength omitted — ERC members are technical/economic experts, not judges.\n\
+  \ NJDG snapshot case_volume merged"
 sources:
-  - label: "MERC Official Website"
-    url: https://www.mercindia.org.in/
-    type: GoIWebsite
-    accessed_date: "2026-05-18"
-  - label: "Electricity Act 2003 — Ministry of Power"
-    url: https://powermin.gov.in/en/content/electricity-act-2003
-    type: CentralAct
-    accessed_date: "2026-05-18"
+- label: MERC Official Website
+  url: https://www.mercindia.org.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-18'
+- label: Electricity Act 2003 — Ministry of Power
+  url: https://powermin.gov.in/en/content/electricity-act-2003
+  type: CentralAct
+  accessed_date: '2026-05-18'
+- label: National Judicial Data Grid (NJDG)
+  url: https://njdg.ecourts.gov.in/
+  type: NJDG
+  accessed_date: '2024-12-01'
