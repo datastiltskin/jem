@@ -7,7 +7,7 @@ Lightweight rules for maintainers and future reviewers. Full context: [`jem/docs
 | Role | GitHub | Responsibilities |
 |------|--------|------------------|
 | **Founder / lead maintainer** | Divya Sornaraja · `@dso6060` | Data curation, schema, deploy to friedso.com, final merge on disputed facts |
-| **Co-maintainer** | Prajna Prayas · `@[CO_MAINTAINER_GITHUB_USERNAME]` — *TBD* | Equal review on PRs; shared CODEOWNERS; no friedso deploy unless delegated later |
+| **Co-maintainer** | Prajna Prayas · [@Prajna1999](https://github.com/Prajna1999) | Equal review on PRs; shared CODEOWNERS; no friedso deploy unless delegated later |
 | **Community contributor** | Any GitHub user | **Data-quality upgrades only** (sources, corrections, notes) via PR or issue |
 | **Domain / legal reviewer** | *TBD* | Advisory review; does not merge unless granted write access |
 | **Think-tank / institution liaison** | *TBD* | Batch review, methodology feedback; contact via Expert Review issue template |

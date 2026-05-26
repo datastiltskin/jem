@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: Maintainer knowledge transfer
-    url: https://github.com/dso6060/REPO_NAME/blob/main/jem/docs/KNOWLEDGE_TRANSFER.md
-    about: Onboarding guide for co-maintainers (update REPO_NAME when repo is created)
+    url: https://github.com/dso6060/jem_prototype/blob/main/jem/docs/KNOWLEDGE_TRANSFER.md
+    about: Onboarding guide for co-maintainers
   - name: Dispute / contested fact (Discussion)
-    url: https://github.com/dso6060/REPO_NAME/discussions/new?category=disputes
-    about: Prefer Discussions for contested facts before opening a PR (update URL after publish)
+    url: https://github.com/dso6060/jem_prototype/discussions/new?category=disputes
+    about: Prefer Discussions for contested facts before opening a PR
   - name: Questions & general Q&A
-    url: https://github.com/dso6060/REPO_NAME/discussions/new?category=q-a
-    about: Structural questions about JEM (update URL after publish)
+    url: https://github.com/dso6060/jem_prototype/discussions/new?category=q-a
+    about: Structural questions about JEM

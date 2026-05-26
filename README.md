@@ -9,6 +9,7 @@ JEM maps *how* courts, tribunals, regulators, and oversight bodies are built —
 → **Live:** `https://friedso.com/apps/jem/` *(adjust to your public URL if different)*  
 → **Data licence:** CC0 (public domain)  
 → **Code licence:** MIT  
+→ **GitHub:** https://github.com/dso6060/jem_prototype  
 → **Maintainer guide:** [`jem/docs/KNOWLEDGE_TRANSFER.md`](jem/docs/KNOWLEDGE_TRANSFER.md) · [`jem/docs/JEM_Knowledge_Transfer.docx`](jem/docs/JEM_Knowledge_Transfer.docx)  
 → **AI data-entry prompt:** [`jem/docs/AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) · **Entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
 

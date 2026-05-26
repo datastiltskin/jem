@@ -5,7 +5,7 @@ Listing a person or organisation does **not** imply they endorse the full datase
 | Role | Name | GitHub | Affiliation | Notes |
 |------|------|--------|-------------|-------|
 | **Founder / lead maintainer** | Divya Sornaraja | [@dso6060](https://github.com/dso6060) | — | Data, deploy (friedso.com), process |
-| **Co-maintainer** | Prajna Prayas | `@[CO_MAINTAINER_GITHUB_USERNAME]` — *TBD* | — | GitHub admin when username confirmed; update `CODEOWNERS` |
+| **Co-maintainer** | Prajna Prayas | [@Prajna1999](https://github.com/Prajna1999) | — | GitHub admin; `CODEOWNERS` |
 | **Domain reviewer (institutional)** | — | — | [TrustBridge](https://trustbridge.in/) | *To officially confirm* — rule-of-law / pendency research; advisory via expert-review workflow |
 | **Legal / structural reviewer** | *[LEGAL_EXPERT_NAME]* | — | *[AFFILIATION]* | *TBD* |
 | **Domain reviewer (courts)** | *[NAME]* | — | *[ORG]* | *TBD* |
@@ -28,7 +28,5 @@ Listing a person or organisation does **not** imply they endorse the full datase
 | Slot | Person | Username | Status |
 |------|--------|----------|--------|
 | Admin 1 | Divya Sornaraja | `@dso6060` | Active |
-| Admin 2 | Prajna Prayas | `@[CO_MAINTAINER_GITHUB_USERNAME]` | TBD |
+| Admin 2 | Prajna Prayas | `@Prajna1999` | Active |
 | Member 3–5 | — | — | Reserved per governance cap |
-
-Update [`.github/CODEOWNERS`](../../.github/CODEOWNERS) when Prajna’s GitHub username is confirmed.

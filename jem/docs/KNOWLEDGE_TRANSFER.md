@@ -8,7 +8,7 @@
 | **Document version** | 1.0 (May 2026) |
 | **Audience** | Co-maintainer (technical background); executive overview — use Cursor/Claude for deep dives |
 | **Primary author** | Divya Sornaraja ([@dso6060](https://github.com/dso6060)) — data, deploy, process design |
-| **Co-maintainer** | Prajna Prayas — equal on GitHub; friedso.com deploy stays with founder |
+| **Co-maintainer** | Prajna Prayas ([@Prajna1999](https://github.com/Prajna1999)) — equal on GitHub; friedso.com deploy stays with founder |
 | **Live demo** | https://friedso.com/apps/jem/ (May 2026 build, ~506 entities) |
 | **Current release label** | **v0.9** (pre-stabilisation; UI/data fixes in progress) |
 | **Licences** | Data CC0 · Code MIT |
@@ -221,7 +221,7 @@ CI does **not** run `build.py` or deploy.
 
 ## 9. GitHub & community launch plan
 
-**Founder:** Divya Sornaraja · `@dso6060` · **Co-maintainer:** Prajna Prayas (add GitHub username to `CODEOWNERS` when known).
+**Founder:** Divya Sornaraja · `@dso6060` · **Co-maintainer:** Prajna Prayas · `@Prajna1999` · Repo: [dso6060/jem_prototype](https://github.com/dso6060/jem_prototype)
 
 Scaffolding is in **`.github/`** (ready before first push):
 
@@ -229,7 +229,7 @@ Scaffolding is in **`.github/`** (ready before first push):
 |------|---------|
 | [`CODEOWNERS`](../../.github/CODEOWNERS) | `@dso6060` on `jem/data`, scripts, web, docs |
 | [`GOVERNANCE.md`](../../.github/GOVERNANCE.md) | Roles, scope, escalation |
-| [`PUBLISH_CHECKLIST.md`](../../.github/PUBLISH_CHECKLIST.md) | Replace `REPO_NAME`, enable Discussions, branch protection |
+| [`PUBLISH_CHECKLIST.md`](../../.github/PUBLISH_CHECKLIST.md) | Publish steps — repo [dso6060/jem_prototype](https://github.com/dso6060/jem_prototype); branch protection TBD |
 | [`pull_request_template.md`](../../.github/pull_request_template.md) | PR checklist |
 | [`ISSUE_TEMPLATE/`](../../.github/ISSUE_TEMPLATE/) | `data_correction`, `source_request`, `bug_report`, `contested_fact`, `expert_review` |
 | [`DISCUSSION_TEMPLATE/`](../../.github/DISCUSSION_TEMPLATE/) | `data-question`, `dispute-escalation` |

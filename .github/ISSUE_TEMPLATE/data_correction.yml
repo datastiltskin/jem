@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         **v0.9 scope:** Corrections to *existing* entities only. Do not request new entity IDs here — maintainers handle structural additions.
-        See [CONTRIBUTING.md](https://github.com/dso6060/REPO_NAME/blob/main/jem/docs/CONTRIBUTING.md).
+        See [CONTRIBUTING.md](https://github.com/dso6060/jem_prototype/blob/main/jem/docs/CONTRIBUTING.md).
 
   - type: input
     id: entity_id

@@ -1,19 +1,11 @@
 # JEM — code owners (CODEOWNERS)
-# GitHub requires valid @usernames. Add co-maintainer when known:
-#   /jem/data/ @dso6060 @CO_MAINTAINER_GITHUB_USERNAME
-#
-# Enable in repo Settings → Branches → main → Require review from Code Owners
+# Enable: Settings → Branches → main → Require review from Code Owners
 
-# Maintainers (founder)
-/jem/data/                    @dso6060
-/jem/scripts/                 @dso6060
-/jem/web/                     @dso6060
-/jem/docs/                    @dso6060
-/.github/                     @dso6060
-/graph.json                   @dso6060
-/README.md                    @dso6060
-/MASTER_CHECKLIST.md          @dso6060
-
-# Co-maintainer: uncomment and replace when GitHub username is confirmed:
-# /jem/data/                  @dso6060 @CO_MAINTAINER_GITHUB_USERNAME
-# /jem/scripts/               @dso6060 @CO_MAINTAINER_GITHUB_USERNAME
+/jem/data/                    @dso6060 @Prajna1999
+/jem/scripts/                 @dso6060 @Prajna1999
+/jem/web/                     @dso6060 @Prajna1999
+/jem/docs/                    @dso6060 @Prajna1999
+/.github/                     @dso6060 @Prajna1999
+/graph.json                   @dso6060 @Prajna1999
+/README.md                    @dso6060 @Prajna1999
+/MASTER_CHECKLIST.md          @dso6060 @Prajna1999
