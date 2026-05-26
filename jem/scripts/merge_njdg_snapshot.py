@@ -416,7 +416,12 @@ def bootstrap_hc_relationships() -> Tuple[int, int]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Merge NJDG case_volume from graph.json into entity YAML")
-    parser.add_argument("--snapshot", type=str, default=str(Path.home() / "Documents" / "jem_add1405" / "graph.json"))
+    parser.add_argument(
+        "--snapshot",
+        type=str,
+        required=True,
+        help="Path to local NJDG graph.json export (not stored in this repository)",
+    )
     parser.add_argument("--plan", type=str, default=None, help="Write markdown plan to this path")
     parser.add_argument("--apply", action="store_true", help="Apply merges to YAML files")
     parser.add_argument("--bootstrap-districts", action="store_true", help="Create missing MH/KA district YAML + HC relationships")

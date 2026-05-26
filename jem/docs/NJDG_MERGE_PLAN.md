@@ -1,5 +1,5 @@
 # NJDG snapshot merge plan
-- Snapshot: `/Users/user/Documents/jem_add1405/graph.json`
+- Snapshot: `path/to/your/njdg-snapshot/graph.json` (local; do not commit)
 - Entities with `_detail.case_volume` in snapshot: **216**
 
 ## Per entity

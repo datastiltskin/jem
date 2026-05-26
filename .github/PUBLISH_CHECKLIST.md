@@ -41,5 +41,5 @@ Repository: **https://github.com/dso6060/jem_prototype** (public)
 
 ## 6. Announce
 
-- [ ] Link live demo: https://friedso.com/apps/jem/
+- [x] Link canonical demo (attribution): https://friedso.com/apps/jem/
 - [ ] Point contributors to `jem/docs/CONTRIBUTING.md` and data-correction template

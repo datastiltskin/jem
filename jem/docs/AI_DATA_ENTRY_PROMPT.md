@@ -64,7 +64,7 @@ PRIMARY SOURCES I HAVE: [paste URLs and access dates]
    python3 scripts/validate_graph_refs.py
    python3 scripts/derive.py
 4. Suggest commit: data(scope): description. If category complete, remind user to update ENTITY_BUILD_ROADMAP.md + README entity table to done and archive prompt.
-5. friedso.com deploy is founder-only; PR needs CI + CODEOWNERS.
+5. Production deploy is founder-only; PR needs CI + CODEOWNERS.
 
 === OUTPUT FORMAT ===
 • Complete YAML in fenced blocks; first line: # jem/data/entities/...

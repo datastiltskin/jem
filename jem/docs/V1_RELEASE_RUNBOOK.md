@@ -1,7 +1,9 @@
 # v1.0.0 release runbook (items 1–3)
 
-**Audience:** operator running friedso.com deploy and git tag.  
+**Audience:** maintainers running production deploy and git tag.  
 **Prerequisite:** `validate.py` clean; repo-root `graph.json` is the build you intend to ship (~500 entities, May 2026 corpus).
+
+**Canonical public demo (attribution only):** https://friedso.com/apps/jem/
 
 ---
 
@@ -12,20 +14,25 @@ cd /path/to/jem/repo
 ./jem/scripts/deploy_prep.sh
 ```
 
-Fix any errors before rsync. See [`SESSION_WORKFLOW.md`](SESSION_WORKFLOW.md) for the daily pipeline and **graph overwrite** risks.
+Fix any errors before upload/rsync. See [`SESSION_WORKFLOW.md`](SESSION_WORKFLOW.md) for the daily pipeline and **graph overwrite** risks.
 
 ---
 
-## 1. Deploy to friedso.com
+## 1. Deploy to production (static host)
 
 `jem/web/public/graph.json` is a **symlink** → repo-root `graph.json`. Static hosts often do not resolve that symlink correctly unless you ship the repo layout or **copy the file**.
+
+Set your deploy target (keep real host/user/path in your shell or private notes — **do not commit**):
+
+```bash
+export JEM_REMOTE='user@your-host.example:~/path/to/apps/jem'
+export JEM_PUBLIC="${JEM_REMOTE}/public"
+export JEM_PUBLIC_URL='https://your-host.example/apps/jem/'   # for smoke tests
+```
 
 ### Recommended (two-step from repo root)
 
 ```bash
-export JEM_REMOTE="you@friedso.com:~/path/to/site/apps/jem"
-export JEM_PUBLIC="${JEM_REMOTE}/public"
-
 # 1) Ship the graph as a real file at public/graph.json
 rsync -avz graph.json "${JEM_PUBLIC}/graph.json"
 
@@ -33,11 +40,16 @@ rsync -avz graph.json "${JEM_PUBLIC}/graph.json"
 rsync -avz --delete jem/web/ "${JEM_REMOTE}/"
 ```
 
-Adjust `JEM_REMOTE` to match your vhost (e.g. `https://friedso.com/apps/jem/`).
+### Other deploy options
+
+| Method | Notes |
+|--------|--------|
+| **rsync over SSH** | Above; use `JEM_REMOTE` you control |
+| **S3 / object storage** | Upload `graph.json` to `public/graph.json` + sync `jem/web/` |
+| **GitHub Pages / Netlify** | Build artifacts only; ensure `public/graph.json` is a real file |
+| **Local smoke** | `cd jem/web && python3 -m http.server 8080` |
 
 ### Optional: materialize locally before one rsync
-
-Only if you prefer a single `jem/web/` tree without relying on symlink at deploy time:
 
 ```bash
 cp graph.json jem/web/public/graph.json   # replaces symlink — restore symlink after deploy if needed
@@ -53,7 +65,7 @@ ln -sf ../../../graph.json jem/web/public/graph.json
 
 ## 2. Live smoke tests
 
-Open the public URL (e.g. `https://friedso.com/apps/jem/`). Check:
+Open **`$JEM_PUBLIC_URL`** (your deployed URL). Check:
 
 | # | Test | Pass criteria |
 |---|------|----------------|
@@ -80,14 +92,13 @@ git log -1 --oneline
 
 git tag -a v1.0.0 -m "JEM v1.0.0 — backbone + MH/DL/KA/TN/PY, NJDG rollup merge"
 
-# Push when remote is ready (deferred to v2 for GitHub setup — see MASTER_CHECKLIST Part 4)
 # git push origin main
 # git push origin v1.0.0
 ```
 
 Record in release notes:
 
-- 505 entities / 512 relationships in shipped `graph.json` (May 2026 build)
+- ~506 entities / ~525 relationships in shipped `graph.json` (May 2026 build)
 - NJDG static snapshot merge (139 entities); district-level NJDG **parked** (Part 3.5.2)
 - TN 38-district lattice + consolidated generic
 

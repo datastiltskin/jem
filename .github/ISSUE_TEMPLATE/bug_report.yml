@@ -8,7 +8,7 @@ body:
     attributes:
       label: Area
       options:
-        - Web map (friedso.com or local jem/web/)
+        - Web map (production URL or local jem/web/)
         - validate.py / derive.py / build.py
         - GitHub Actions CI
         - Documentation

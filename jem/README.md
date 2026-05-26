@@ -6,7 +6,7 @@ An open, honest structural study of the Indian judicial ecosystem.
 Maps institutional relationships — appointment chains, funding flows,
 oversight mechanisms, complaint pathways — not case outcomes.
 
-**Live:** `https://friedso.com/apps/jem/` *(adjust if your public path differs)*  
+**Canonical demo (attribution):** https://friedso.com/apps/jem/  
 **Knowledge transfer (maintainers):** [`docs/KNOWLEDGE_TRANSFER.md`](docs/KNOWLEDGE_TRANSFER.md) · [`docs/JEM_Knowledge_Transfer.docx`](docs/JEM_Knowledge_Transfer.docx)  
 **AI data entry (copy-paste):** [`docs/AI_DATA_ENTRY_PROMPT.md`](docs/AI_DATA_ENTRY_PROMPT.md) · **Build roadmap (1,500+):** [`docs/ENTITY_BUILD_ROADMAP.md`](docs/ENTITY_BUILD_ROADMAP.md)
 
@@ -46,8 +46,8 @@ python scripts/build.py
 # 4b. Safe staging build (does NOT overwrite repo-root graph.json)
 ./scripts/build_safe.sh
 
-# 5. Serve the web directory
-# Deploy web/ to your server at /apps/jem/
+# 5. Local preview or deploy (see docs/V1_RELEASE_RUNBOOK.md — generic static host)
+# cd web && python3 -m http.server 8080
 ```
 
 The frontend requires no build step. It is vanilla HTML + JS + CSS.

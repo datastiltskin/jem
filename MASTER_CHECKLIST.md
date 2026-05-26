@@ -32,7 +32,7 @@
 | Entities tagged `NJDG snapshot case_volume merged` | 139 |
 | State packs (entity YAML count) | MH 51 · DL 22 · KA 43 · TN 49 · PY 6 |
 | TN district lattice | 38 per-district courts + `tn_district_courts_generic` (collapse proxy) |
-| NJDG snapshot source | `/Users/user/Documents/jem_add1405/graph.json` (216 entities with `_detail.case_volume`) |
+| NJDG snapshot source | local `graph.json` snapshot (216 entities with `_detail.case_volume`; path not in repo) |
 | Merge plan | [`jem/docs/NJDG_MERGE_PLAN.md`](jem/docs/NJDG_MERGE_PLAN.md) — 139 mergeable rows applied |
 
 **Recent work (May 20):** Central tribunal + regulator + ministry batch; IIAC rename; DIAC/MCIA/tn_slsa primary-source fields; governance nodes + CBI/Lokpal appointment model; Phase 6 central governance wiring.
@@ -88,7 +88,7 @@
 **Runbook:** [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) · **Preflight:** `./jem/scripts/deploy_prep.sh`
 
 - [ ] **1. Deploy** — rsync `graph.json` + `jem/web/` (see runbook §1; symlink caveat)
-- [ ] **2. Live smoke tests** — runbook §2 checklist on friedso.com
+- [ ] **2. Live smoke tests** — runbook §2 checklist on production URL
 - [ ] **3. Tag** — `git tag -a v1.0.0` after smoke pass (push deferred to v2 — Part 4.3)
 
 ### Parked (scheduled later — do not block v1.0.0 tag)
@@ -97,7 +97,7 @@
 
 ### Deferred to v2.0 (product / infra — not v1.x data releases)
 
-> **Naming:** **v1.x** = data/graph semver tags on friedso.com. **v2.0** = UI + live API + GitHub (Part 4) — separate from v1.1–v1.5 below.
+> **Naming:** **v1.x** = data/graph semver tags on production deploy. **v2.0** = UI + live API + GitHub (Part 4) — separate from v1.1–v1.5 below.
 
 - [ ] **GitHub remote + CI QA** — Part 4.3 (push repo, Actions on PR, topics/description)
 - [ ] **Live NJDG API** (`fetch_njdg.py`) — Part 4.2
@@ -115,7 +115,7 @@
 
 ## VERSION ROADMAP (v1.0.0 → v1.5)
 
-Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` after validate + build + smoke on friedso.com.
+Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` after validate + build + smoke on production URL.
 
 | Release | Scope | Acceptance |
 |---------|--------|------------|
@@ -247,7 +247,7 @@ It contains everything. Structure (this repository):
 
 ---
 
-### 1.2 Deploy v1 to production (friedso.com) → use release runbook
+### 1.2 Deploy v1 to production → use release runbook
 
 **Prepared:** [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) §1–2 · `./jem/scripts/deploy_prep.sh`
 
@@ -426,7 +426,7 @@ Shortcut: `cd jem && ./scripts/safe_pipeline.sh` (does not run bundle generator)
 - [x] State packs MH, DL, KA, TN, PY in repo and graph
 - [x] NJDG snapshot merge applied (139 entities) — Part 3.5
 - [ ] **§1 Deploy** — [`V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) + `deploy_prep.sh`
-- [ ] **§2 Smoke tests** — same runbook (friedso.com)
+- [ ] **§2 Smoke tests** — same runbook (production URL)
 - [ ] **§3 Tag** — `git tag -a v1.0.0` locally after smoke pass; `git push` / remote → v2 (Part 4.3)
 
 ---
@@ -437,10 +437,10 @@ Shortcut: `cd jem && ./scripts/safe_pipeline.sh` (does not run bundle generator)
 
 | Item | Status |
 |------|--------|
-| Source snapshot | `/Users/user/Documents/jem_add1405/graph.json` (216 entities with `_detail.case_volume`) |
+| Source snapshot | local NJDG `graph.json` export (216 entities with `_detail.case_volume`; path not in repo) |
 | Tool | `jem/scripts/merge_njdg_snapshot.py` |
 | Plan | [`jem/docs/NJDG_MERGE_PLAN.md`](jem/docs/NJDG_MERGE_PLAN.md) — **139** mergeable rows applied |
-| Re-apply after YAML changes | `python3 jem/scripts/merge_njdg_snapshot.py --snapshot /Users/user/Documents/jem_add1405/graph.json --apply` |
+| Re-apply after YAML changes | `python3 jem/scripts/merge_njdg_snapshot.py --snapshot /path/to/snapshot/graph.json --apply` |
 | Rebuild graph | `python3 jem/scripts/build.py` |
 | ID remaps in script | `mh_district_court_mumbai` → `mh_district_court_mumbai_city`; `hc_guwahati` → `hc_gauhati` |
 
@@ -513,7 +513,7 @@ print(f'TN districts with pending_cases: {with_p}/{len(dist)}')
 - [ ] Performance test: smooth at 500 entities (test with duplicated data if needed)
 
 #### Priority 2 — NJDG live fetch
-- [x] **Static snapshot path** — `merge_njdg_snapshot.py` + `jem_add1405/graph.json` *(May 2026)*
+- [x] **Static snapshot path** — `merge_njdg_snapshot.py` + local NJDG snapshot *(May 2026)*
 - [ ] **District-level exports** — **v1.3** (Part 3.5.2)
 - [ ] `scripts/fetch_njdg.py` created (live API)
 - [ ] Rate limiting (1 req / 2 seconds) implemented
@@ -560,12 +560,12 @@ print(f'TN districts with pending_cases: {with_p}/{len(dist)}')
 - [ ] Canvas performance: open devtools, confirm <16ms render at current entity count
 - [ ] Sankey displays correctly
 - [ ] Journey mode breadcrumb works for District → HC → SC path
-- [ ] `rsync -avz --delete jem/web/ you@friedso.com:~/path/to/site/apps/jem/`
+- [ ] Deploy per runbook (`JEM_REMOTE` on your static host — see `V1_RELEASE_RUNBOOK.md`)
 - [ ] Tag: `git tag v2.0.0 && git push --tags`
 
 ### 4.3 GitHub & CI (moved from v1 Part 1.3)
 
-Complete when setting up **v2** remote workflow (not required to cut local `v1.0.0` tag after friedso smoke tests).
+Complete when setting up **v2** remote workflow (not required to cut local `v1.0.0` tag after production smoke tests).
 
 - [ ] Create GitHub repo (public, CC0 data / MIT code) or attach `origin`
 - [ ] Push `main` and tags: `git push -u origin main && git push origin v1.0.0`
@@ -744,14 +744,14 @@ Not a Cursor or Claude session task — plan only.
 
 ### 6.2 Data infrastructure
 
-- [x] **One-time NJDG snapshot ingest** — `jem_add1405/graph.json` → entity YAML via `merge_njdg_snapshot.py` (May 2026)
+- [x] **One-time NJDG snapshot ingest** — local snapshot → entity YAML via `merge_njdg_snapshot.py` (May 2026)
 - [ ] **District-level NJDG ingest pipeline** — **v1.3** until exports exist (Part 3.5.2)
 - [ ] Scheduled NJDG fetch: cron on production host, weekly *(requires `fetch_njdg.py`)*
   `0 3 * * 0 cd /path/to/repo && python3 jem/scripts/fetch_njdg.py --all-hcs && python3 jem/scripts/derive.py && python3 jem/scripts/build.py && rsync …`
 - [ ] Historical NJDG snapshots: store `data/cache/njdg/` in git-annex or S3
   (enables year-over-year clog trend in time scroller)
 - [ ] Community contribution pipeline: GitHub Actions auto-builds on merge to main
-  Requires: GitHub Actions deploy step (e.g. SSH/rsync to friedso.com) or webhook to your host
+  Requires: GitHub Actions deploy step (e.g. SSH/rsync to your host) or webhook — credentials in GitHub Secrets, not in repo
 
 ### 6.3 Remaining feature deferrals
 
@@ -821,7 +821,7 @@ Rule: If a task requires domain reasoning about Indian judicial structure or new
 | NJDG snapshot merge (rollup) | 494 | ~1.87 MB | May 19 2026 ✅ |
 | TN generic + 38-district lattice | 494 | ~1.87 MB | May 19 2026 ✅ |
 | Central tribunal + ministry batch | **506** | **~1.86 MB** | **May 20 2026 ✅** |
-| **v1.0.0** tag + friedso deploy | **506** | **~1.86 MB** | **Ready — run runbook** |
+| **v1.0.0** tag + production deploy | **506** | **~1.86 MB** | **Ready — run runbook** |
 | **v1.1** structural (config sync, UP/WB/RJ routing, orphans start) | 506+ | ~1.9 MB | TBD |
 | **v1.2** numerics (`judge_strength`, `case_volume` bulk) | 506+ | ~2.0 MB | TBD |
 | **v1.3** per-district NJDG (TN/MH/KA) | 506+ | ~2.0 MB | TBD (blocked on exports) |

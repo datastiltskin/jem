@@ -6,7 +6,7 @@
 
 JEM maps *how* courts, tribunals, regulators, and oversight bodies are built — appointment chains, funding flows, independence risk, structural gaps, case volume and clogging — not *what* they decide. The goal is **structural literacy**: a dashboard-oriented view of institutional **carrying capacity** for administrators, litigants, journalists, ministry officials, and other stakeholders.
 
-→ **Live:** `https://friedso.com/apps/jem/` *(adjust to your public URL if different)*  
+→ **Canonical demo (attribution):** https://friedso.com/apps/jem/  
 → **Data licence:** CC0 (public domain)  
 → **Code licence:** MIT  
 → **GitHub:** https://github.com/dso6060/jem_prototype  
@@ -297,15 +297,32 @@ python scripts/derive.py --clog-report
 python scripts/derive.py --gaps-only
 ```
 
-**Deploy** (from `jem/`):
+**Deploy** (static hosting — any provider):
+
+1. From repo root, after a clean build:
 
 ```bash
-cd jem && rsync -avz --delete web/ you@friedso.com:~/path/to/site/apps/jem/
+cd jem
+pip install -r scripts/requirements.txt
+python scripts/validate.py --strict
+python scripts/derive.py
+python scripts/build.py
+cd ..
+./jem/scripts/deploy_prep.sh
 ```
 
-Replace `you@friedso.com:~/path/to/site/apps/jem/` with the same deploy target you use for other apps on friedso.com.
+2. Ship **both** artifacts to your host:
+   - Repo-root **`graph.json`** → `public/graph.json` on the server (materialize the file; do not rely on the symlink alone).
+   - **`jem/web/`** (HTML, CSS, JS) → your app directory.
 
-GitHub Actions validates all PRs touching `jem/data/**` or `jem/scripts/**`. Does not auto-deploy.
+3. **Examples** (set your own paths; not stored in this repo):
+   - **rsync/SSH:** `export JEM_REMOTE='user@your-host:~/path/to/apps/jem'` then rsync `graph.json` and `jem/web/` (see [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md)).
+   - **Local preview:** `cd jem/web && python3 -m http.server 8080` (ensure `public/graph.json` resolves).
+   - **Static hosts:** upload `jem/web/` plus `graph.json` as `public/graph.json` (Netlify, S3, GitHub Pages, nginx, etc.).
+
+Production deploy is **maintainer-only**; see the release runbook. GitHub Actions validates PRs touching `jem/data/**` or `jem/scripts/**` — **does not auto-deploy**.
+
+**Mirrors:** You may host copies elsewhere; courtesy attribution: *Structural data from [Judiciary Entity Map (JEM)](https://friedso.com/apps/jem/).*
 
 ---
 

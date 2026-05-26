@@ -8,8 +8,8 @@
 | **Document version** | 1.0 (May 2026) |
 | **Audience** | Co-maintainer (technical background); executive overview — use Cursor/Claude for deep dives |
 | **Primary author** | Divya Sornaraja ([@dso6060](https://github.com/dso6060)) — data, deploy, process design |
-| **Co-maintainer** | Prajna Prayas ([@Prajna1999](https://github.com/Prajna1999)) — equal on GitHub; friedso.com deploy stays with founder |
-| **Live demo** | https://friedso.com/apps/jem/ (May 2026 build, ~506 entities) |
+| **Co-maintainer** | Prajna Prayas ([@Prajna1999](https://github.com/Prajna1999)) — equal on GitHub; production deploy stays with founder |
+| **Canonical demo (attribution)** | https://friedso.com/apps/jem/ (May 2026 build, ~506 entities) |
 | **Current release label** | **v0.9** (pre-stabilisation; UI/data fixes in progress) |
 | **Licences** | Data CC0 · Code MIT |
 | **AI data-entry prompt** | [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md) · also §20 below |
@@ -19,7 +19,7 @@
 
 ## 1. Purpose of this document
 
-This guide transfers everything a **co-maintainer** needs to run the GitHub repository, review community contributions, and understand how JEM works — without requiring ownership of friedso.com hosting.
+This guide transfers everything a **co-maintainer** needs to run the GitHub repository, review community contributions, and understand how JEM works — without requiring access to the founder's production host.
 
 For command-level detail, see also:
 
@@ -102,7 +102,7 @@ For command-level detail, see also:
 │  public/graph.json → symlink to ../../../graph.json             │
 └────────────────────────────┬────────────────────────────────────┘
                              ▼
-                    Static host (e.g. friedso.com/apps/jem/)
+                    Static host (your URL or canonical demo)
 ```
 
 ### 4.2 Repository layout
@@ -213,7 +213,7 @@ CI does **not** run `build.py` or deploy.
 |-----|--------|
 | **Community (initial)** | Data-quality upgrades only: sources, `data_quality`, `data_quality_notes`, correcting factual fields with primary links |
 | **Maintainers (you + co-maintainer)** | New entities, relationships, schema changes, generators, web UI, `derive.py` formulae, releases |
-| **Founder only (for now)** | Deploy to friedso.com |
+| **Founder only (for now)** | Production deploy (private host) |
 
 **Later expansion (explicit decision required):** new state packs, gap-registry entities, relationship bulk wiring.
 
@@ -238,20 +238,19 @@ Scaffolding is in **`.github/`** (ready before first push):
 
 **On publish:** enable Discussions, branch protection (PR + CI + CODEOWNERS), create labels per publish checklist.
 
-**Not in co-maintainer scope:** friedso server access, rsync, DNS.
+**Not in co-maintainer scope:** production server access, rsync credentials, DNS.
 
 ---
 
-## 10. Deployment (founder-operated)
+## 10. Deployment (founder-operated, generic host)
 
-Live URL: **https://friedso.com/apps/jem/**
+**Canonical demo (attribution):** https://friedso.com/apps/jem/
 
-- Deploy path documented in [`V1_RELEASE_RUNBOOK.md`](V1_RELEASE_RUNBOOK.md)
-- **Critical:** ship `graph.json` as a real file at `public/graph.json` (symlinks often break on static hosts)
+- Deploy procedure: [`V1_RELEASE_RUNBOOK.md`](V1_RELEASE_RUNBOOK.md) — rsync, S3, Netlify, or any static host; set `JEM_REMOTE` / `JEM_PUBLIC_URL` locally (never commit real values).
+- **Critical:** ship repo-root `graph.json` as a real file at `public/graph.json` (symlinks often break on static hosts).
 - Preflight: `./jem/scripts/deploy_prep.sh`
-- `_deploy_bundle/` in workspace is a **local deploy archive** — not part of git narrative
 
-**Mirrors:** Anyone may host `jem/web/` + `graph.json` statically; README should ask for attribution: *"Data from Judiciary Entity Map (JEM), https://friedso.com/apps/jem/"*
+**Mirrors:** Anyone may host `jem/web/` + `graph.json`; courtesy attribution: *Structural data from [JEM](https://friedso.com/apps/jem/).*
 
 ---
 
@@ -306,7 +305,7 @@ Live URL: **https://friedso.com/apps/jem/**
 | No public GitHub yet | Founder creates; co-maintainer invited as admin |
 | Contribution process | Documented here; implement templates + CODEOWNERS on create |
 | CI does not build/deploy graph on merge | Maintainers run pipeline locally before release tags |
-| friedso deploy | Founder only |
+| Production deploy | Founder only |
 | Org size | 2 admins now; up to 5 members later |
 | Legal disclaimer | Add to README + site footer (§15) |
 | Live NJDG | Not built — static snapshots only |
@@ -421,7 +420,7 @@ Pick a phased **TASK** from [`ENTITY_BUILD_ROADMAP.md`](ENTITY_BUILD_ROADMAP.md)
 
 ## 21. Origin (brief)
 
-JEM began from the absence of a **public, machine-readable map** of how India's ~1,500 judicial and quasi-judicial bodies connect — appointment power, funding, oversight, and capacity signals — in one place. It is a **personally funded** civic/research infrastructure project, demonstrated at friedso.com, with the intent to move to a **standalone public GitHub** repository that others can fork, mirror, and improve under CC0/MIT.
+JEM began from the absence of a **public, machine-readable map** of how India's ~1,500 judicial and quasi-judicial bodies connect — appointment power, funding, oversight, and capacity signals — in one place. It is a **personally funded** civic/research infrastructure project, with a public demo at https://friedso.com/apps/jem/ (attribution), hosted on **GitHub** at [dso6060/jem_prototype](https://github.com/dso6060/jem_prototype), which others can fork, mirror, and improve under CC0/MIT.
 
 ---
 

@@ -51,10 +51,12 @@ else
 fi
 
 echo ""
-echo "Deploy commands (set JEM_REMOTE first):"
-echo "  export JEM_REMOTE='you@friedso.com:~/path/to/site/apps/jem'"
+echo "Deploy (set JEM_REMOTE to your host — do not commit real values):"
+echo "  export JEM_REMOTE='user@your-host.example:~/path/to/apps/jem'"
+echo "  export JEM_PUBLIC_URL='https://your-host.example/apps/jem/'"
 echo "  rsync -avz ${GRAPH} \"\${JEM_REMOTE}/public/graph.json\""
 echo "  rsync -avz --delete ${JEM_ROOT}/web/ \"\${JEM_REMOTE}/\""
 echo ""
-echo "Smoke tests + tag: see jem/docs/V1_RELEASE_RUNBOOK.md"
+echo "Smoke tests + tag: jem/docs/V1_RELEASE_RUNBOOK.md"
+echo "Canonical demo (attribution): https://friedso.com/apps/jem/"
 echo "OK: preflight passed"

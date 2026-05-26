@@ -6,8 +6,8 @@ Lightweight rules for maintainers and future reviewers. Full context: [`jem/docs
 
 | Role | GitHub | Responsibilities |
 |------|--------|------------------|
-| **Founder / lead maintainer** | Divya Sornaraja · `@dso6060` | Data curation, schema, deploy to friedso.com, final merge on disputed facts |
-| **Co-maintainer** | Prajna Prayas · [@Prajna1999](https://github.com/Prajna1999) | Equal review on PRs; shared CODEOWNERS; no friedso deploy unless delegated later |
+| **Founder / lead maintainer** | Divya Sornaraja · `@dso6060` | Data curation, schema, production deploy (private), final merge on disputed facts |
+| **Co-maintainer** | Prajna Prayas · [@Prajna1999](https://github.com/Prajna1999) | Equal review on PRs; shared CODEOWNERS; no production deploy unless delegated later |
 | **Community contributor** | Any GitHub user | **Data-quality upgrades only** (sources, corrections, notes) via PR or issue |
 | **Domain / legal reviewer** | *TBD* | Advisory review; does not merge unless granted write access |
 | **Think-tank / institution liaison** | *TBD* | Batch review, methodology feedback; contact via Expert Review issue template |
@@ -53,4 +53,4 @@ Widening scope (new states, gap-registry entities) requires an explicit maintain
 
 ## Deploy
 
-Production demo: https://friedso.com/apps/jem/ — deploy access **founder only** unless explicitly delegated. Mirrors may host static `jem/web/` + `graph.json` with credit to JEM / friedso.com as source.
+**Canonical demo (attribution):** https://friedso.com/apps/jem/ — production deploy **founder only** unless delegated. Mirrors may host `jem/web/` + `graph.json` with courtesy credit to that URL.

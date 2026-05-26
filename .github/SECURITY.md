@@ -5,7 +5,7 @@ JEM is a static data + web visualization project. There are no user accounts, se
 ## Reporting
 
 - **Data integrity / malicious PRs:** Open a private security advisory on GitHub (once the repo is published) or email the maintainer listed in [`jem/docs/TEAM.md`](../jem/docs/TEAM.md).
-- **friedso.com hosting:** Contact the site operator (`@dso6060`) — not handled via this repo's co-maintainer by default.
+- **Production hosting:** Contact repo maintainer (`@dso6060`) via GitHub — not handled by co-maintainer by default.
 
 ## Scope
 

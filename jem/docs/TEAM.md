@@ -4,7 +4,7 @@ Listing a person or organisation does **not** imply they endorse the full datase
 
 | Role | Name | GitHub | Affiliation | Notes |
 |------|------|--------|-------------|-------|
-| **Founder / lead maintainer** | Divya Sornaraja | [@dso6060](https://github.com/dso6060) | — | Data, deploy (friedso.com), process |
+| **Founder / lead maintainer** | Divya Sornaraja | [@dso6060](https://github.com/dso6060) | — | Data, production deploy (private), process |
 | **Co-maintainer** | Prajna Prayas | [@Prajna1999](https://github.com/Prajna1999) | — | GitHub admin; `CODEOWNERS` |
 | **Domain reviewer (institutional)** | — | — | [TrustBridge](https://trustbridge.in/) | *To officially confirm* — rule-of-law / pendency research; advisory via expert-review workflow |
 | **Legal / structural reviewer** | *[LEGAL_EXPERT_NAME]* | — | *[AFFILIATION]* | *TBD* |

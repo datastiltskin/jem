@@ -25,7 +25,7 @@ Compare staging file `meta.entity_count` before replacing anything.
    - Entire `jem/data/relationships/` tree  
 2. **Git remote** — if an older commit or branch still has the large tree:  
    `git log --oneline -- graph.json` then `git show <commit>:graph.json` (only if history contains the blob).  
-3. **Live site** — if friedso.com (or another host) serves a known-good build: download **`graph.json`** from the deployed `public/` URL **only if** you trust that build and licence.
+3. **Live site** — if a known-good build is deployed on your host: download **`graph.json`** from `public/graph.json` on that URL **only if** you trust that build and licence. Canonical demo: https://friedso.com/apps/jem/
 
 ## 3. Verify after copy
 
