@@ -1,2 +1,9 @@
 .DS_Store
 .venv/
+
+# Word exports (regenerate from KNOWLEDGE_TRANSFER.md via pandoc)
+*.docx
+~$*.docx
+
+# Local deploy snapshots (not source of truth)
+_deploy_bundle/

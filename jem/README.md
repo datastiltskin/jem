@@ -7,7 +7,7 @@ Maps institutional relationships — appointment chains, funding flows,
 oversight mechanisms, complaint pathways — not case outcomes.
 
 **Live:** `https://friedso.com/apps/jem/` *(adjust if your public path differs)*  
-**Knowledge transfer (maintainers):** [`docs/KNOWLEDGE_TRANSFER.md`](docs/KNOWLEDGE_TRANSFER.md) · [`docs/JEM_Knowledge_Transfer.docx`](docs/JEM_Knowledge_Transfer.docx)
+**Knowledge transfer (maintainers):** [`docs/KNOWLEDGE_TRANSFER.md`](docs/KNOWLEDGE_TRANSFER.md)
 
 ---
 
