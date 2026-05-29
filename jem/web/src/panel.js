@@ -462,6 +462,9 @@ function formatType(type) {
 
 // ── Event Binding (called after DOM ready) ────────────────────────────────────
 
+// Exported so detailView.js can embed the full structural profile inline.
+export { buildPanelHTML };
+
 export function initPanel() {
   document.getElementById('detail-close').addEventListener('click', closeDetailPanel);
   State.subscribe('entitySelected', id => {

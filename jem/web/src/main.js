@@ -10,8 +10,190 @@ import { initPanel } from './panel.js';
 import { initNeighborhoodPanel } from './neighborhoodPanel.js';
 import { initViewStatus, getGapStats, primeGapStats } from './viewStatus.js';
 import { selectAndOpenEntity } from './entitySelection.js';
+import { initSummaryView } from './summaryView.js';
+import { renderDetailView, clearDetailView } from './detailView.js';
 
 const GRAPH_URL = './public/graph.json';
+
+// ── View Router ───────────────────────────────────────────────────────────────
+// Three views: 'summary' | 'detail' | 'map'
+
+let _mapBooted = false;       // full map initialised lazily on first switch
+let _mapReturnTarget = null;  // where the back button goes from map view
+
+function _updateBackBtn() {
+  const backBtn = document.getElementById('btn-summary');
+  if (!backBtn) return;
+  const view = document.body.dataset.appView;
+  if (view === 'map' && _mapReturnTarget?.view === 'detail') {
+    const e = State.getEntityById(_mapReturnTarget.entityId);
+    const label = e ? (e.abbreviation || e.name.split(' ').slice(0, 3).join(' ')) : 'Detail';
+    backBtn.textContent = `← ${label}`;
+  } else {
+    backBtn.textContent = '← Overview';
+  }
+}
+
+function switchView(view, entityId = null) {
+  const prevView = document.body.dataset.appView;
+
+  // Capture return info BEFORE state is cleared below
+  const fromDetailEntityId = document.body.dataset.prevDetailEntity || null;
+
+  // Determine where map's back button should return to
+  if (view === 'map') {
+    if (prevView === 'detail' && fromDetailEntityId) {
+      _mapReturnTarget = { view: 'detail', entityId: fromDetailEntityId };
+    } else if (prevView !== 'map') {
+      // Arrived from summary, initial load, or toolbar direct
+      _mapReturnTarget = { view: 'summary' };
+    }
+    // Already in map — preserve existing return target so the user doesn't lose their path
+  } else if (view === 'summary') {
+    _mapReturnTarget = null;
+  }
+
+  document.body.dataset.appView = view;
+
+  // Clear detail view state when navigating away from it
+  if (prevView === 'detail' && view !== 'detail') {
+    clearDetailView();
+    delete document.body.dataset.prevDetailEntity;
+  }
+
+  const summaryEl   = document.getElementById('summary-view');
+  const detailEl    = document.getElementById('detail-view');
+  const workspaceEl = document.getElementById('app-workspace');
+  const timelineEl  = document.getElementById('timeline-container');
+  const statusEl    = document.getElementById('map-status-bar');
+  const qualEl      = document.getElementById('quality-legend');
+  const govtEl      = document.getElementById('govt-level-legend');
+  const mobileNav   = document.getElementById('mobile-workspace-tabs');
+  const backBtn     = document.getElementById('btn-summary');
+
+  if (summaryEl)   summaryEl.classList.toggle('hidden', view !== 'summary');
+  if (detailEl)    detailEl.classList.toggle('hidden', view !== 'detail');
+  if (workspaceEl) workspaceEl.classList.toggle('hidden', view !== 'map');
+  if (timelineEl)  timelineEl.classList.toggle('hidden', view !== 'map');
+  if (statusEl)    statusEl.classList.toggle('hidden', view !== 'map');
+  if (qualEl)      qualEl.classList.toggle('hidden', view !== 'map');
+  if (govtEl)      govtEl.classList.toggle('hidden', view !== 'map');
+  if (mobileNav)   mobileNav.classList.toggle('hidden', view !== 'map');
+  if (backBtn)     backBtn.classList.toggle('hidden', view === 'summary');
+
+  // Mode switcher and search only make sense in map context
+  document.getElementById('mode-switcher')?.classList.toggle('hidden', view !== 'map');
+
+  // Update back button label after visibility is settled
+  _updateBackBtn();
+
+  if (view === 'summary') {
+    // Nothing to re-init; summaryView is rendered once after graph load
+  } else if (view === 'detail' && entityId) {
+    const fromId = document.body.dataset.prevDetailEntity || null;
+    renderDetailView(entityId, fromId !== entityId ? fromId : null);
+    document.body.dataset.prevDetailEntity = entityId;
+  } else if (view === 'map') {
+    if (!_mapBooted) {
+      _mapBooted = true;
+    }
+    if (entityId) {
+      const e = State.getEntityById(entityId);
+      if (e) {
+        selectAndOpenEntity(e);
+        expandPathToEntity(entityId);
+      }
+    }
+    // Defer render until after the workspace element is visible in the DOM
+    requestAnimationFrame(() => {
+      render();
+      requestAnimationFrame(() => fitFocusToView({ animate: false }));
+    });
+  }
+}
+
+function wireNavigationEvents() {
+  State.subscribe('navigateToDetail', (id) => {
+    switchView('detail', id);
+  });
+
+  State.subscribe('navigateToSummary', () => {
+    switchView('summary');
+  });
+
+  State.subscribe('navigateToMap', (id) => {
+    switchView('map', id);
+  });
+
+  // ← back button: context-aware — returns to detail or summary depending on path
+  document.getElementById('btn-summary')?.addEventListener('click', () => {
+    if (_mapReturnTarget?.view === 'detail' && _mapReturnTarget.entityId) {
+      switchView('detail', _mapReturnTarget.entityId);
+    } else {
+      switchView('summary');
+    }
+  });
+}
+
+// ── Command Palette ───────────────────────────────────────────────────────────
+
+let _commandPaletteActive = false;
+
+function initCommandPalette() {
+  // "/" key opens the search input and populates with ranked entities
+  document.addEventListener('keydown', (e) => {
+    if (e.defaultPrevented) return;
+    const el = e.target;
+    if (el && (el.closest?.('input, textarea, select') || el.isContentEditable)) return;
+    if (e.key === '/') {
+      e.preventDefault();
+      const input = document.getElementById('search-input');
+      if (input) {
+        input.focus();
+        input.value = '';
+        input.dispatchEvent(new Event('input'));
+        showCommandPaletteDefault();
+      }
+    }
+  });
+}
+
+function showCommandPaletteDefault() {
+  const graph = State.graph;
+  if (!graph) return;
+  const results = document.getElementById('search-results');
+  if (!results) return;
+
+  const top20 = [...graph.entities]
+    .filter(e => e.derived?.independence_risk_score != null)
+    .sort((a, b) => (b.derived.independence_risk_score || 0) - (a.derived.independence_risk_score || 0))
+    .slice(0, 20);
+
+  const RISK_COLORS = { low: '#16a34a', moderate: '#d97706', high: '#dc2626', severe: '#7c3aed' };
+  results.innerHTML = `<div class="palette-hint">Top entities by independence risk · press <kbd>/</kbd> then type to search</div>`
+    + top20.map(e => {
+      const level = e.derived?.independence_risk_level;
+      const score = e.derived?.independence_risk_score;
+      const color = level ? RISK_COLORS[level] : '#888';
+      const nc = e.operational_status === 'Not_Constituted' ? '<span class="sr-badge nc">NC</span>' : '';
+      return `<div class="search-result" data-id="${e.id}">
+        <span class="sr-name ${e.data_quality}">${e.name}</span>
+        ${nc}
+        ${level ? `<span class="sr-risk" style="color:${color}">${level} · ${score}</span>` : ''}
+      </div>`;
+    }).join('');
+  results.classList.remove('hidden');
+
+  results.querySelectorAll('.search-result').forEach(el => {
+    el.addEventListener('click', () => {
+      const id = el.dataset.id;
+      const input = document.getElementById('search-input');
+      if (input) { input.value = ''; }
+      results.classList.add('hidden');
+      switchView('detail', id);
+    });
+  });
+}
 
 // ── KPI Strip (declared before boot so the symbol always exists at runtime) ───
 // Four large action cards below the toolbar; each wires one view/filter action.
@@ -143,7 +325,7 @@ async function boot() {
     State.initFocusDefaults();
     primeGapStats(graph);
 
-    // 2. Initialise modules (view status before KPI so gap stats are ready)
+    // 2. Initialise all modules up front so the full-map view works when switched to
     initViewStatus();
     initFocusCanvas();
     initNavigatorTree();
@@ -167,13 +349,24 @@ async function boot() {
       if (State.getEntityById(r)) expandPathToEntity(r);
     });
 
-    document.getElementById('loading-overlay').style.display = 'none';
+    // 3. Wire navigation events and command palette
+    wireNavigationEvents();
+    initCommandPalette();
 
+    // 4. Patch search results so clicking them enters detail view instead of map
+    patchSearchForDetailView();
+
+    // 5. Start on the summary view (map view is already hidden via CSS)
+    document.getElementById('loading-overlay').style.display = 'none';
     State.setZoomLevel(2);
     render();
 
+    initSummaryView();
+    switchView('summary');
+
   } catch (err) {
     console.error('JEM boot error:', err);
+    document.getElementById('loading-overlay').style.display = 'flex';
     document.getElementById('loading-overlay').innerHTML =
       `<div class="loading-error">
         <strong>Failed to load graph data</strong><br>
@@ -181,6 +374,30 @@ async function boot() {
         Run <code>python scripts/build.py</code> to generate <code>web/public/graph.json</code>
       </div>`;
   }
+}
+
+// When in summary/detail view, search results navigate to detail instead of map
+function patchSearchForDetailView() {
+  const results = document.getElementById('search-results');
+  if (!results) return;
+
+  // Observe result clicks; if not in map view, go to detail
+  results.addEventListener('click', (e) => {
+    const row = e.target.closest('.search-result');
+    if (!row) return;
+    const view = document.body.dataset.appView;
+    if (view === 'summary' || view === 'detail') {
+      // Prevent the default search handler from running (it fires on the element itself)
+      // by switching view here first; the existing handler will then noop on empty state
+      e.stopImmediatePropagation();
+      const id = row.dataset.id;
+      const input = document.getElementById('search-input');
+      if (input) { input.value = ''; }
+      results.classList.add('hidden');
+      if (id) switchView('detail', id);
+    }
+    // In map view: let the existing search handler do its thing
+  }, true /* capture — runs before the existing delegated handler */);
 }
 
 function syncNavFacetVisibility() {
