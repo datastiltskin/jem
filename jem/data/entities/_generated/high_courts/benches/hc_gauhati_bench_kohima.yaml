@@ -43,10 +43,38 @@ audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
-  conduct_oversight_body: null
+  conduct_oversight_body: in_house_procedure_sc
 complaint_mechanism:
-  bias_complaint_to: []
-  lokpal_jurisdiction: Not_Applicable
+  bias_complaint_to:
+    - body: chief_justice_india
+      mechanism: >-
+        In-House Procedure (SC Resolution 1999, extended to HC judges). Complaint
+        lodged with the Chief Justice of the concerned High Court; if the allegation
+        is against that Chief Justice, complaint filed directly with the CJI. CJI
+        may constitute a 3-judge in-house committee to inquire. Report is
+        confidential. Complainant has no locus in inquiry proceedings.
+      complainant_has_locus: false
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: false
+  criminal_prosecution:
+    requires_sanction_from: governor_state
+    consultation_required_with: chief_justice_india
+    consultation_binding: true
+  removal_mechanism: >-
+    Address by Parliament — Article 217(1)(b) read with Article 124(4).
+    Motion by 100+ LS MPs or 50+ RS MPs. No HC judge has been successfully
+    removed in Indian history.
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >-
+    SC stayed Lokpal's attempt to assert jurisdiction over HC judges (suo moto,
+    Feb 2025). Lokpal had separately ruled in Jan 2025 that it cannot hear
+    complaints against SC judges (Art 124 basis); the Feb 2025 stay extends
+    the same bar to HC judges. Status: active litigation, but operative bar
+    currently in place.
+  source: >-
+    K. Veeraswami v Union of India (1991) 3 SCC 655; SC In-House Procedure
+    1999; SC Stay Order Feb 2025 (suo moto re HC judges)
 training:
   trained_by: []
   induction_training: false
@@ -60,7 +88,7 @@ digital_infrastructure:
   integrated_with_njdg: true
 structural_variations: []
 data_quality: partial
-data_quality_notes: Permanent bench at Kohima; parent hc_gauhati. Populate judge_strength
+data_quality_notes: Permanent bench at Kohima; parent hc_gauhati. Populate judge_strength complaint_mechanism populated from SC In-House Procedure 1999 and SC Stay Order Feb 2025 (suo moto). criminal_prosecution.requires_sanction_from set to governor_state per Veeraswami (1991) for HC judges. lokpal_jurisdiction No per operative Feb 2025 stay; revisit if SC decides finally. audit.conduct_oversight_body set to in_house_procedure_sc (same procedure governs HC judges).
   and case_volume from HC website / DoJ / NJDG.
 sources:
 - label: India Code — Constitution & Acts
@@ -74,9 +102,12 @@ sources:
 parent_hc: hc_gauhati
 seat_city: Kohima
 judge_strength:
+  source_url: https://ghconline.gov.in/index.php/honble-the-chief-justice-sitting-judges/
+  data_as_of: '2026-06-02'
   allotted: null           # no separate sanctioned allocation per bench
-  appointed: null          # populate only with dated CJ roster snapshot
+  appointed: 2
   source_type: HC_Report
   notes: >
     Judges are drawn from parent HC pool (hc_gauhati). Allotted is null
     — sanctioned strength is set at parent HC level only.
+    Counted judges tagged with "Place of Stationing: Kohima Bench" on Gauhati HC official sitting judges page (excluding retired entries).

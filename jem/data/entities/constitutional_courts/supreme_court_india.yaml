@@ -104,13 +104,14 @@ sources:
   type: NJDG
   accessed_date: '2024-12-01'
 judge_strength:
-  data_as_of: '2024-12-01'
+  data_as_of: '2025-12-24'
   allotted: 34
-  appointed: 34
-  vacancy_count: 0
-  source_type: AnnualReport
-  source_url: https://main.sci.gov.in/
-  notes: Allotted = sanctioned strength of puisne judges + CJI (34); appointed = working strength per SC annual report.
+  appointed: 33
+  vacancy_count: 1
+  source_type: DoJ_Report
+  source_url: https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/2025/12/202512241943014515.pdf
+  notes: >-
+    Sanctioned/working/vacancy from row A; no Pmt/Addl split shown for SC
 case_volume:
   data_as_of: '2024-12-01'
   sanctioned_strength: 34
