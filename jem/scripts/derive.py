@@ -67,45 +67,6 @@ def excluded_score_result() -> Tuple[int, Dict[str, int]]:
     return 0, {GOVERNANCE_EXCLUDED_MESSAGE: 0}
 
 
-# ── Structural Health (master composite) ──────────────────────────────────────
-# Composite of independence_risk + discretionary_power on a 0.0–1.0 scale.
-# 1.0 = structurally healthy; 0.0 = structurally critical.
-# Weights chosen so IR (the stronger structural signal) dominates; tune here.
-IR_WEIGHT = 0.6
-DP_WEIGHT = 0.4
-IR_NORM_DIVISOR = 10.0  # IR ranges 0–10+; clamp at 10
-DP_NORM_DIVISOR = 10.0  # DP ranges 0–10+; clamp at 10
-
-
-def compute_structural_health(
-    ir_score: int, dp_score: int, entity: Dict[str, Any]
-) -> Tuple[Optional[float], Optional[str], Optional[Dict[str, float]]]:
-    """Composite health from IR + DP. Returns (score, level, breakdown) or
-    (None, None, None) for governance officeholders (no IR/DP basis)."""
-    if is_governance_scores_excluded(entity):
-        return None, None, None
-
-    ir_norm = min(ir_score / IR_NORM_DIVISOR, 1.0)
-    dp_norm = min(dp_score / DP_NORM_DIVISOR, 1.0)
-    risk = IR_WEIGHT * ir_norm + DP_WEIGHT * dp_norm
-    health = round(1.0 - risk, 3)
-
-    if health < 0.3:
-        level = "critical"
-    elif health < 0.6:
-        level = "at_risk"
-    elif health < 0.8:
-        level = "watch"
-    else:
-        level = "healthy"
-
-    breakdown = {
-        "Independence risk contribution": round(ir_norm * IR_WEIGHT, 3),
-        "Discretionary power contribution": round(dp_norm * DP_WEIGHT, 3),
-    }
-    return health, level, breakdown
-
-
 # ── Independence Risk Formula ─────────────────────────────────────────────────
 #
 # Higher score = higher structural independence risk.
@@ -335,14 +296,14 @@ def compute_structural_health(
     base_health = 1.0 - (0.6 * p_ir + 0.4 * p_dp)
     final_health = max(0.0, min(1.0, base_health * op_modifier(op_status)))
 
-    # Rank into the exact buckets expected by the frontend.
-    # (renderer.js uses STRUCTURAL_HEALTH_RANK with these keys)
+    # Rank into the exact buckets the frontend filters on
+    # (state.js: structuralHealthBand + HEALTH_COLORS keys).
     if final_health <= 0.3:
         lvl = 'critical'
     elif final_health <= 0.6:
-        lvl = 'concerning'
+        lvl = 'at_risk'
     elif final_health <= 0.8:
-        lvl = 'moderate'
+        lvl = 'watch'
     else:
         lvl = 'healthy'
 
@@ -465,7 +426,7 @@ def derive_scores_for_all(data_dir: Path) -> Dict[str, Dict]:
             ir_score, ir_breakdown = compute_independence_risk(entity)
             dp_score, dp_breakdown = compute_discretionary_power(entity)
             health_score, health_level, health_breakdown = compute_structural_health(
-                ir_score, dp_score, entity
+                entity, ir_score, dp_score
             )
 
             results[entity_id] = {
@@ -514,7 +475,7 @@ def explain_entity(entity_id: str, data_dir: Path):
             if entity and entity.get("id") == entity_id:
                 ir_score, ir_bd = compute_independence_risk(entity)
                 dp_score, dp_bd = compute_discretionary_power(entity)
-                h_score, h_level, h_bd = compute_structural_health(ir_score, dp_score, entity)
+                h_score, h_level, h_bd = compute_structural_health(entity, ir_score, dp_score)
 
                 print(f"\n{'='*60}")
                 print(f"Score Explanation: {entity.get('name', entity_id)}")
