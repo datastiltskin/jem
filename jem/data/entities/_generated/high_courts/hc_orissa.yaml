@@ -39,10 +39,38 @@ audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
-  conduct_oversight_body: null
+  conduct_oversight_body: in_house_procedure_sc
 complaint_mechanism:
-  bias_complaint_to: []
-  lokpal_jurisdiction: Not_Applicable
+  bias_complaint_to:
+    - body: chief_justice_india
+      mechanism: >-
+        In-House Procedure (SC Resolution 1999, extended to HC judges). Complaint
+        lodged with the Chief Justice of the concerned High Court; if the allegation
+        is against that Chief Justice, complaint filed directly with the CJI. CJI
+        may constitute a 3-judge in-house committee to inquire. Report is
+        confidential. Complainant has no locus in inquiry proceedings.
+      complainant_has_locus: false
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: false
+  criminal_prosecution:
+    requires_sanction_from: governor_state
+    consultation_required_with: chief_justice_india
+    consultation_binding: true
+  removal_mechanism: >-
+    Address by Parliament — Article 217(1)(b) read with Article 124(4).
+    Motion by 100+ LS MPs or 50+ RS MPs. No HC judge has been successfully
+    removed in Indian history.
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >-
+    SC stayed Lokpal's attempt to assert jurisdiction over HC judges (suo moto,
+    Feb 2025). Lokpal had separately ruled in Jan 2025 that it cannot hear
+    complaints against SC judges (Art 124 basis); the Feb 2025 stay extends
+    the same bar to HC judges. Status: active litigation, but operative bar
+    currently in place.
+  source: >-
+    K. Veeraswami v Union of India (1991) 3 SCC 655; SC In-House Procedure
+    1999; SC Stay Order Feb 2025 (suo moto re HC judges)
 training:
   trained_by: []
   induction_training: false
@@ -56,7 +84,7 @@ digital_infrastructure:
   integrated_with_njdg: true
 structural_variations: []
 data_quality: partial
-data_quality_notes: Pending NJDG-backed pendency and judge_strength fields per bench. NJDG snapshot case_volume merged
+data_quality_notes: Pending NJDG-backed pendency and judge_strength fields per bench. NJDG snapshot case_volume merged complaint_mechanism populated from SC In-House Procedure 1999 and SC Stay Order Feb 2025 (suo moto). criminal_prosecution.requires_sanction_from set to governor_state per Veeraswami (1991) for HC judges. lokpal_jurisdiction No per operative Feb 2025 stay; revisit if SC decides finally. audit.conduct_oversight_body set to in_house_procedure_sc (same procedure governs HC judges).
 sources:
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
@@ -71,13 +99,14 @@ sources:
   type: NJDG
   accessed_date: '2024-12-01'
 judge_strength:
-  data_as_of: null
-  allotted: null
-  appointed: null
+  data_as_of: '2025-12-24'
+  allotted: 33
+  appointed: 20
+  vacancy_count: 13
   source_type: DoJ_Report
-  source_url: https://doj.gov.in/
-  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG
-    bench strength.
+  source_url: https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/2025/12/202512241943014515.pdf
+  notes: >-
+    Pmt 24 Addl 9 sanctioned; Pmt 20 Addl 0 working; Pmt 4 Addl 9 vacancies
 case_volume:
   data_as_of: '2024-12-01'
   pending_cases: 185000
