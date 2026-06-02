@@ -137,6 +137,7 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
 
     formally_appoints = appt.get('formally_appoints', '')
     nominates = appt.get('nominates', '')
+    recommends = appt.get('recommends', '') or ''
     removal_authority = appt.get('removal_authority', '')
     reappoint = appt.get('reappointment_possible', False)
     criteria_public = appt.get('criteria_public', True)
@@ -150,17 +151,27 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
         'state_government', 'state_home_department'
     ]
 
+    # Constitutional courts are typically "collegium nominates/recommends"
+    # and only then "formally appoints" via president/governor.
+    # We should not treat that formal signature as an executive appointment
+    # that captures discretionary power.
+    collegium_backed = (
+        entity_type in ('ConstitutionalCourt', 'HighCourtBench')
+        and ('collegium' in str(nominates).lower() or 'collegium' in str(recommends).lower())
+    )
+
     if formally_appoints in EXECUTIVE_BODIES:
-        score += 3
-        breakdown['Appointed directly by executive body'] = 3
-    elif formally_appoints and 'collegium' in formally_appoints.lower():
+        if not collegium_backed:
+            score += 3
+            breakdown['Appointed directly by executive body'] = 3
+    elif formally_appoints and 'collegium' in str(formally_appoints).lower():
         score -= 2
         breakdown['Appointed by independent collegium (deduction)'] = -2
     elif formally_appoints and 'parliament' in formally_appoints.lower():
         score -= 1
         breakdown['Appointment via Parliament process (deduction)'] = -1
 
-    if reappoint and formally_appoints in EXECUTIVE_BODIES:
+    if reappoint and formally_appoints in EXECUTIVE_BODIES and not collegium_backed:
         score += 2
         breakdown['Reappointment possible by same executive authority'] = 2
 
@@ -261,6 +272,88 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
         breakdown['Statutory body not constituted — regulatory vacuum'] = 3
 
     return max(0, score), breakdown
+
+
+# ── Structural Health Formula ───────────────────────────────────────────────
+#
+# Structural health is a composite 0.0–1.0 score derived from:
+#   - independence_risk_score (higher IR = lower health)
+#   - discretionary_power_score (higher DP = lower health)
+#   - operational_status (Not_Constituted / de-facto blocked)
+#
+# This is meant to be "system health" for the entity, not correctness of facts.
+def compute_structural_health(
+    entity: Dict[str, Any],
+    ir_score: int,
+    dp_score: int,
+) -> Tuple[Optional[float], Optional[str], Dict[str, Any]]:
+    if is_governance_scores_excluded(entity):
+        return None, None, {GOVERNANCE_EXCLUDED_MESSAGE: 0}
+
+    op_status = entity.get('operational_status', '')
+
+    # Map raw scores to penalties in [0, 1].
+    # (Lower health = higher penalty.)
+    def ir_penalty(ir: int) -> float:
+        lvl = classify_ir(ir)
+        if lvl == 'low':
+            return 0.15
+        if lvl == 'moderate':
+            return 0.30
+        if lvl == 'high':
+            return 0.55
+        return 0.70  # severe
+
+    def dp_penalty(dp: int) -> float:
+        # DP is an integer; we only need a coarse mapping.
+        if dp <= 4:
+            return 0.15
+        if dp <= 8:
+            return 0.35
+        if dp <= 12:
+            return 0.55
+        return 0.70
+
+    def op_modifier(status: str) -> float:
+        if status == 'Active':
+            return 1.0
+        if status == 'Partial_Operational':
+            return 0.75
+        if status == 'De_Facto_Blocked':
+            return 0.55
+        if status == 'Not_Constituted':
+            return 0.25
+        if status == 'Suspended':
+            return 0.6
+        if status == 'Abolished':
+            return 0.1
+        # Proposed / Merged / other statuses:
+        return 0.6
+
+    p_ir = ir_penalty(ir_score)
+    p_dp = dp_penalty(dp_score)
+    base_health = 1.0 - (0.6 * p_ir + 0.4 * p_dp)
+    final_health = max(0.0, min(1.0, base_health * op_modifier(op_status)))
+
+    # Rank into the exact buckets expected by the frontend.
+    # (renderer.js uses STRUCTURAL_HEALTH_RANK with these keys)
+    if final_health <= 0.3:
+        lvl = 'critical'
+    elif final_health <= 0.6:
+        lvl = 'concerning'
+    elif final_health <= 0.8:
+        lvl = 'moderate'
+    else:
+        lvl = 'healthy'
+
+    breakdown: Dict[str, Any] = {
+        'independence_risk_penalty': round(p_ir, 4),
+        'discretionary_power_penalty': round(p_dp, 4),
+        'operational_status_modifier': round(op_modifier(op_status), 4),
+        'base_health_from_ir_dp': round(base_health, 4),
+        'final_structural_health': round(final_health, 4),
+    }
+    return round(final_health, 4), lvl, breakdown
 
 
 # ── Discretionary Power Formula ───────────────────────────────────────────────
