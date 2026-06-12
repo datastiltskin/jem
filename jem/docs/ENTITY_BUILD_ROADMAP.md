@@ -1,6 +1,6 @@
 # JEM — entity build roadmap (~1,500 target)
 
-**Current corpus:** 506 entities (May 2026) · **Target:** ~1,500 structural entities  
+**Current corpus:** 592 entities (Jun 2026) · **Target:** ~1,500 structural entities  
 **Tracker:** this file is the source of truth; [`README.md`](../../README.md#entity-build-progress) mirrors the status table for GitHub.
 
 ## Status legend
@@ -32,7 +32,7 @@
 | C01 | Constitutional courts (SC + 25 HCs) | ~26 | ~27 + benches | **done** | 0 | Maintainer |
 | C02 | HC permanent benches | ~14 | ~13 | **updated** | 1 | Maintainer |
 | C03 | Central tribunals (principal) | ~15 | ~14 | **done** | 0 | Maintainer |
-| C04 | Central tribunals — regional benches (CESTAT×8, AFT×9, DRT×39) | ~56 | 0 | **pending** | 2 | Contributor drafts |
+| C04 | Central tribunals — regional benches (CESTAT×8, AFT×9, DRT×39) | ~56 | ~44 (CESTAT 8, AFT 11, DRT 25) | **updated** | 2 | Mixed |
 | C05 | Quasi-judicial regulators (SEBI, TRAI, SERC/RERA gens) | ~80 | ~76 | **updated** | 1 | Mixed |
 | C06 | Consumer commissions (NCDRC + state/district) | ~70 | ~54 | **updated** | 2 | Contributor drafts |
 | C07 | ADR (NALSA, SLSA, Lok Adalat, mediation, arbitration institutes) | ~40 | ~37 | **updated** | 1 | Mixed |
@@ -47,18 +47,18 @@
 | C16 | State packs — Batch B (MP, BR, KL, PB, HR, OD) | ~360 | scaffold | **pending** | 1 | Contributor drafts |
 | C17 | State packs — Batch C (NE, HP, UK, GA, CG, JH) | ~280 | scaffold | **pending** | 2 | Contributor drafts |
 | C18 | State packs — Batch D (UTs, JK/LA, SK) | ~120 | scaffold | **pending** | 2 | Contributor drafts |
-| C19 | Tax / revenue stack (GSTAT, CIT(A), DRP, VAT tribunals) | ~45 | 0 | **pending** | 2 | Contributor drafts |
+| C19 | Tax / revenue stack (GSTAT, CIT(A), DRP, VAT tribunals) | ~45 | 2 (AO, CIT(A) gens) | **updated** | 2 | Contributor drafts |
 | C20 | Labour (CGIT, EPFAT, state labour courts) | ~35 | 0 | **pending** | 2 | Contributor drafts |
-| C21 | Defence (court martial, AFT benches) | ~12 | AFT principal only | **pending** | 2 | Contributor drafts |
-| C22 | Specialized regulators (FSSAI, AERA, ICADR, PFRDA entity) | ~10 | PFRDA partial | **pending** | 2 | Contributor drafts |
-| C23 | IP (patent controller, TM registry; IPAB historical) | ~5 | IPAB abolished | **pending** | 3 | Contributor drafts |
+| C21 | Defence (court martial, AFT benches) | ~12 | 12 (AFT principal + 11 benches, court_martial_generic) | **updated** | 2 | Maintainer |
+| C22 | Specialized regulators (FSSAI, AERA, ICADR, PFRDA entity) | ~10 | 7 (+ PFRDA partial) | **updated** | 2 | Maintainer |
+| C23 | IP (patent controller, TM registry; IPAB historical) | ~5 | 5 (CGPDTM, TMR, ipab, compat) | **updated** | 3 | Maintainer |
 | C24 | State tribunals (SAT, transport, mental health boards) | ~35 | 0 | **pending** | 3 | Contributor drafts |
 | C25 | People / roles layer (judges, advocates, parties) | ~20 | partial | **pending** | 3 | Optional |
 | C26 | Relationship wiring & orphan cleanup (~139 orphans) | — | partial | **updated** | 1–3 | **Maintainer only** |
-| C27 | Data-quality upgrade (sources, partial→complete) | 506 | ongoing | **updated** | all | Contributor |
-| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 506 | sparse | **pending** | 2 | Maintainer + NJDG |
+| C27 | Data-quality upgrade (sources, partial→complete) | 592 | ongoing | **updated** | all | Contributor |
+| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 592 | sparse | **pending** | 2 | Maintainer + NJDG |
 
-*Last roadmap review: 2026-05-26*
+*Last roadmap review: 2026-06-12 (Batch 3 C21/C22/C23 merged)*
 
 ---
 
@@ -143,13 +143,6 @@ TASK: Draft 8 new CentralTribunal entities: cestat_chennai, cestat_mumbai, cesta
 No relationships.
 ```
 
-#### P2-B · C04 AFT regional benches (9) · `pending` · Contributor
-
-```
-TASK: Draft 9 AFT bench entities (aft_chandigarh, aft_lucknow, aft_kolkata, aft_guwahati, aft_chennai, aft_kochi, aft_jaipur, aft_mumbai, aft_hyderabad). Template: jem/data/entities/_generated/backbone/aft.yaml.
-No relationships.
-```
-
 #### P2-C · C19 Tax stack — CIT(A) generic · `pending` · Contributor
 
 ```
@@ -230,6 +223,21 @@ TASK: (Completed) SC, 25 HCs, central tribunal principal nodes in graph (~506 ba
 
 ```
 TASK: (Completed) Governance graph Phase 6 — ministries, appointment committees, CBI selection committee.
+```
+
+#### ~~P2-B · C04 AFT regional benches~~ · **done** 2026-06
+
+```
+TASK: (Completed) 11 AFT bench entities + BenchOf wiring to principal aft. Includes jammu, jabalpur beyond original 9-bench list.
+```
+
+#### ~~Batch 3 · C21 Defence + C22 Regulators + C23 IP~~ · **done** 2026-06
+
+```
+TASK: (Completed) court_martial_generic, fssai, aera, icadr, press_council_india, state_election_commission_generic,
+insurance_ombudsman_generic, patent_controller, trade_marks_registry, compat. Relationships in
+batch3_c21_c22_c23_relationships.yaml. Schema: ConsultedOn_Removal added for SEC removal inquiry (Art. 243K(2)).
+ipab upgraded in-place (not ipab_abolished). Ministry stubs: MoHFW, MoCA, MIB, MoCI, GBIC.
 ```
 
 ---

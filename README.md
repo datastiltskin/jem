@@ -76,7 +76,7 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 ## Entity build progress
 
-**506 / ~1,500** structural entities in repo (May 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
+**592 / ~1,500** structural entities in repo (Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
 
 | Status | Meaning |
 |--------|---------|
@@ -89,7 +89,7 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 | C01 | Constitutional courts (SC + 25 HCs) | ~26 | **done** | 0 |
 | C02 | HC permanent benches | ~14 | **updated** | 1 |
 | C03 | Central tribunals (principal) | ~15 | **done** | 0 |
-| C04 | Tribunal regional benches (CESTAT, AFT, DRT) | ~56 | **pending** | 2 |
+| C04 | Tribunal regional benches (CESTAT, AFT, DRT) | ~56 | **updated** | 2 |
 | C05 | Quasi-judicial regulators | ~80 | **updated** | 1 |
 | C06 | Consumer commissions | ~70 | **updated** | 2 |
 | C07 | ADR / NALSA / arbitration | ~40 | **updated** | 1 |
@@ -106,14 +106,14 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 | C18 | State packs Batch D (UTs, JK/LA) | ~120 | **pending** | 2 |
 | C19 | Tax / revenue stack | ~45 | **pending** | 2 |
 | C20 | Labour tribunals | ~35 | **pending** | 2 |
-| C21 | Defence (AFT benches, court martial) | ~12 | **pending** | 2 |
-| C22 | Specialized regulators (FSSAI, AERA, …) | ~10 | **pending** | 2 |
-| C23 | IP entities | ~5 | **pending** | 3 |
+| C21 | Defence (AFT benches, court martial) | ~12 | **updated** | 2 |
+| C22 | Specialized regulators (FSSAI, AERA, …) | ~10 | **updated** | 2 |
+| C23 | IP entities | ~5 | **updated** | 3 |
 | C24 | State tribunals (SAT, transport, MHRB) | ~35 | **pending** | 3 |
 | C25 | People / roles layer | ~20 | **pending** | 3 |
 | C26 | Relationship wiring (orphans) | — | **updated** | 1–3 |
-| C27 | Data-quality upgrades | 506 | **updated** | all |
-| C28 | NJDG / judge_strength numerics | 506 | **pending** | 2 |
+| C27 | Data-quality upgrades | 592 | **updated** | all |
+| C28 | NJDG / judge_strength numerics | 592 | **pending** | 2 |
 
 **Contributors:** copy prompts from the roadmap + [`AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) → open a **GitHub issue** with YAML (no email). **New entities:** proposed drafts OK. **Relationships:** maintainers only.
 

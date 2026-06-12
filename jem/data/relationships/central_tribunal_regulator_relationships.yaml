@@ -854,20 +854,19 @@ relationships:
         type: GoIWebsite
         accessed_date: "2026-06-12"
 
-  - id: rel_aft_jammu_bench_of_aft
-    source: aft_jammu
+  - id: rel_aft_srinagar_bench_of_aft
+    source: aft_srinagar
     target: aft
     relationship_type: BenchOf
     relationship_category: statutory_ref
     is_binding: true
     is_constitutional: false
-    statutory_basis: "AFT Act 2007, s.5"
+    statutory_basis: "AFT Act 2007, s.5 — Regional Bench (Srinagar) at Jammu"
     year_established: 2009
     data_quality: partial
     notes: >-
-      Jammu bench per aft.gov.in jurisdiction table. Principal AFT website also
-      references Srinagar — verify co-location vs separate bench before adding
-      aft_srinagar entity.
+      Single statutory bench Regional Bench (Srinagar) at Jammu per aft.gov.in.
+      Supersedes colloquial aft_jammu id.
     sources:
       - label: "AFT Act 2007, s.5"
         url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
