@@ -1,0 +1,192 @@
+relationships:
+- id: rj_cdrc_ncdrc
+  source: rj_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'
+- id: rj_slsa_lok
+  source: slsa_rj
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: RJ SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_fund_rera
+  source: government_rj
+  target: rj_rera
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: RJ RERA funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_dist_principal_hc
+  source: rj_district_court_principal
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ principal district to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super_principal
+  source: hc_rajasthan
+  target: rj_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision RJ principal
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_jodhpur_hc
+  source: rj_district_court_jodhpur
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ jodhpur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super_jodhpur
+  source: hc_rajasthan
+  target: rj_district_court_jodhpur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision jodhpur
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_udaipur_hc
+  source: rj_district_court_udaipur
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ udaipur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super_udaipur
+  source: hc_rajasthan
+  target: rj_district_court_udaipur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision udaipur
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_kota_hc
+  source: rj_district_court_kota
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ kota district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super_kota
+  source: hc_rajasthan
+  target: rj_district_court_kota
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision kota
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_ajmer_hc
+  source: rj_district_court_ajmer
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ ajmer district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super_ajmer
+  source: hc_rajasthan
+  target: rj_district_court_ajmer
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision ajmer
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_bikaner_hc
+  source: rj_district_court_bikaner
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ bikaner district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super_bikaner
+  source: hc_rajasthan
+  target: rj_district_court_bikaner
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision bikaner
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_rj_district_court_jaipur_hc
+  source: rj_district_court_jaipur
+  target: hc_rajasthan_bench_jaipur
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ bench routing
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super_rj_district_court_jaipur
+  source: hc_rajasthan
+  target: rj_district_court_jaipur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision rj_district_court_jaipur
+  data_quality: partial
+  sources:
+  - *id001

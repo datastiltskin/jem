@@ -126,26 +126,6 @@ relationships:
         type: CentralAct
         accessed_date: '2026-06-12'
 
-  - id: rel_itat_to_high_courts_all
-    source: itat
-    target: high_courts_all
-    relationship_type: AppealableTo
-    relationship_category: appellate_chain
-    is_binding: true
-    is_constitutional: false
-    statutory_basis: Income Tax Act 1961 s.260A — appeal on substantial question of law to High Court
-    year_established: 1998
-    notes: >
-      ITAT has 28 benches across zones mapped to different HCs on question of
-      law. Aggregate high_courts_all edge used pending per-zone ITAT bench → HC
-      wiring in dedicated session. Zone mapping documented in itat entity
-      data_quality_notes.
-    data_quality: partial
-    sources:
-      - label: Income Tax Act 1961 s.260A — India Code
-        url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
-        type: CentralAct
-        accessed_date: '2026-06-12'
 
   - id: rel_aar_income_tax_to_high_courts_all
     source: aar_income_tax

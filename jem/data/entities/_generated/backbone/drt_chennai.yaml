@@ -3,92 +3,85 @@ name: Debt Recovery Tribunal, Chennai
 name_hindi: ऋण वसूली अधिकरण, चेन्नई
 abbreviation: DRT Chennai
 aliases:
-  - DRT-I Chennai
-  - Debts Recovery Tribunal Chennai
-
+- DRT-I Chennai
+- Debts Recovery Tribunal Chennai
+- DRT-II Chennai
+- DRT-III Chennai
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - TN
+  - TN
   uts_covered:
-    - PY
+  - PY
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 1994
 operational_status: Active
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; Securitisation and
+  Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002 (SARFAESI Act), s. 17. Territorial jurisdiction
+  defined by Central Government notification under s. 3(1A) RDDBFI Act (as amended by Insolvency and Bankruptcy Code, 2016).
 
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; Securitisation and Reconstruction of Financial Assets and Enforcement of
-  Security Interest Act, 2002 (SARFAESI Act), s. 17. Territorial jurisdiction
-  defined by Central Government notification under s. 3(1A) RDDBFI Act
-  (as amended by Insolvency and Bankruptcy Code, 2016).
-
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_madras
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_madras
-      mechanism: >
-        Supervisory jurisdiction of Madras High Court under Articles 226/227 of the
-        Constitution; writ petition lies before Madras High Court.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_madras
+    mechanism: 'Supervisory jurisdiction of Madras High Court under Articles 226/227 of the Constitution; writ petition lies
+      before Madras High Court.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge; Lokpal
-    jurisdiction does not extend to judicial functions of tribunal officers.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge; Lokpal jurisdiction does
+    not extend to judicial functions of tribunal officers.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  Territorial jurisdiction covering Tamil Nadu and Puducherry confirmed from multiple
-  secondary legal sources. Chennai has three DRT benches (DRT-1, DRT-2, DRT-3) under
-  DRAT Chennai appellate jurisdiction; this entity represents the Chennai location
-  collectively. Separate bench-numbered entities (drt_chennai_1, drt_chennai_2,
-  drt_chennai_3) may be warranted in a future pass when Gazette notification numbers
-  and bench-specific addresses are sourced from drt.gov.in directly. Presiding Officer
-  appointment details from RDDBFI Act s. 4–6.
-  drat_chennai.
+data_quality_notes: 'Territorial jurisdiction covering Tamil Nadu and Puducherry confirmed from multiple secondary legal sources.
+  Chennai has three DRT benches (DRT-1, DRT-2, DRT-3) under DRAT Chennai appellate jurisdiction; this entity represents the
+  Chennai location collectively. Separate bench-numbered entities (drt_chennai_1, drt_chennai_2, drt_chennai_3) may be warranted
+  in a future pass when Gazette notification numbers and bench-specific addresses are sourced from drt.gov.in directly. Presiding
+  Officer appointment details from RDDBFI Act s. 4–6. drat_chennai.
 
+  Option B rollup: 3 physical DRT(s) at this location (DRT-I/II/III) rolled into single city entity per MoF composition table;
+  see drt.etribunals.gov.in.'
 unverified_fields:
-  - field: created_year
-    note: >
-      1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+- field: created_year
+  note: '1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+
+    '
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-11'
-  - label: 'DRT official portal — Ministry of Finance, DFS'
-    url: https://drt.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-11'
-  - label: 'SARFAESI Act 2002, s. 17 (DRT appellate channel)'
-    url: https://india-code.nic.in/CodeofActs13/20020541.pdf
-    type: CentralAct
-    accessed_date: '2026-06-11'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: DRT official portal — Ministry of Finance, DFS
+  url: https://drt.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-11'
+- label: SARFAESI Act 2002, s. 17 (DRT appellate channel)
+  url: https://india-code.nic.in/CodeofActs13/20020541.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'

@@ -55,7 +55,10 @@ jurisdiction_scope:
   - central_excise
   - service_tax
 data_quality: partial
-data_quality_notes: 'Territorial jurisdiction (TS, AP) per cestat.gov.in. Post-bifurcation (2014) both states fall under CBIC Hyderabad zone allocation. Per CESTAT Registrar Notification 03/2015: AP, TS, and Yanam commune of Puducherry.'
+data_quality_notes: 'Territorial jurisdiction (TS, AP) per cestat.gov.in. Post-bifurcation (2014) both states fall under CBIC
+  Hyderabad zone allocation. Per CESTAT Registrar Notification 03/2015: AP, TS, and Yanam commune of Puducherry.
+
+  Quality pass Jun 2026: jurisdiction from Registrar Notifications 01–03/2015; cestat.gov.in source added.'
 sources:
 - label: Customs Act 1962 s.129
   url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf

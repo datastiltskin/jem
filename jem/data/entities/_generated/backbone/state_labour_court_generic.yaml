@@ -1,117 +1,28 @@
 id: state_labour_court_generic
-name: State Labour Court (Generic)
-name_hindi: राज्य श्रम न्यायालय (सामान्य)
-abbreviation: Labour Court
-aliases:
-  - Labour Court
-  - Industrial Labour Court
-
+name: State Labour Court — Generic
+abbreviation: SLC
 type: StateTribunal
 cluster: tribunals_adr
 level_of_government: State
-
 created_year: 1947
-abolished_year: null
 operational_status: Active
-
-constitutional_basis: null
-statutory_basis: >-
-  Industrial Disputes Act 1947, s.7 (Labour Courts). State Governments constitute
-  Labour Courts to adjudicate matters in the Second Schedule of the Act (including
-  propriety or legality of orders under Standing Orders, discharge or dismissal of
-  workmen, withdrawal of customary concessions, illegality/irregularity of strikes
-  or lockouts). Industrial Relations Code 2020 (enacted; rules under finalisation
-  as of June 2026) will replace s.7 when notified — 1947 Act operative.
-
+statutory_basis: Industrial Disputes Act 1947 s.7 — State Government labour courts
 appointment:
-  nominates: null
-  recommends: null
-  consulted: []
   formally_appoints: governor_state
-  criteria_public: true
-  tenure: >-
-    Presiding Officer: person who is or has been a Judge of HC, or District Judge
-    / Additional District Judge for not less than 3 years (IDA 1947 s.7(3)).
-    Tenure as prescribed by State Government.
-  reappointment_possible: null
   removal_authority: governor_state
-  removal_requires_parliament: false
-  removal_independent_committee: false
-
 funding:
   primary_source: State_Consolidated_Fund
-  ministry_responsible: null
-  budget_figure_crore: null
-  budget_year: null
-
 audit:
   audited_by: cag_india
-  audit_type: CAG_Statutory
-  audit_report_public: null
-  conduct_oversight_body: null
-
+  audit_type: CAG_Performance
+  audit_report_public: true
 complaint_mechanism:
   bias_complaint_to: []
-  criminal_prosecution:
-    requires_sanction_from: governor_state
-    consultation_required_with: null
-    consultation_binding: null
-  removal_mechanism: >-
-    State Government may remove on grounds of misbehaviour or incapacity after
-    inquiry (IDA 1947 s.9 as applicable to State Labour Courts).
   lokpal_jurisdiction: Contested
-  lokpal_jurisdiction_note: >-
-    State Lokayukta jurisdiction depends on state-specific Lokayukta Act. Presiding
-    Officer exercises judicial functions; many state acts exclude judicial officers
-    in quasi-judicial roles. Mark contested pending state-specific review.
-  source: IDA 1947 ss.7, 9
-
-structural_variations:
-  - variation_id: labour_court_maharashtra
-    description: Maharashtra — multiple Labour Courts at Mumbai, Pune, Nagpur, Nashik,
-      Aurangabad, and other industrial centres. Constituted under IDA 1947 s.7.
-    applicable_to:
-      - Maharashtra
-    source: IDA 1947 s.7; Maharashtra Labour Gazette notifications
-    independence_risk_note: null
-  - variation_id: labour_court_up
-    description: Uttar Pradesh — Labour Courts at Lucknow, Kanpur, Allahabad/Prayagraj,
-      Varanasi, Agra, Ghaziabad, Meerut, Noida and others.
-    applicable_to:
-      - Uttar Pradesh
-    source: IDA 1947 s.7; UP Labour Dept. notifications
-    independence_risk_note: null
-  - variation_id: labour_court_tamilnadu
-    description: Tamil Nadu — Labour Courts at Chennai, Coimbatore, Madurai, Salem,
-      Tirunelveli. Also Additional Labour Courts at industrial hubs.
-    applicable_to:
-      - Tamil Nadu
-    source: IDA 1947 s.7; TN Labour Dept. notifications
-    independence_risk_note: null
-  - variation_id: labour_court_karnataka
-    description: Karnataka — Labour Courts at Bengaluru (multiple), Hubli-Dharwad,
-      Mangalore, Mysuru.
-    applicable_to:
-      - Karnataka
-    source: IDA 1947 s.7; Karnataka Labour Dept. notifications
-    independence_risk_note: null
-
 data_quality: partial
-data_quality_notes: >-
-  Generic node for State Labour Courts constituted under IDA 1947 s.7. Total
-  estimated at 150–200 benches nationally across industrialised states; exact count
-  not centrally published by MoLE. Appeals from State Labour Court awards lie to
-  the respective HC under Art. 226/227 (writ) — no statutory appeal. Awards are
-  also enforceable as decrees of a Civil Court (IDA s.17A). Industrial Relations
-  Code 2020 will reconstitute Labour Courts when notified. ministry_responsible
-  left null — each state's Labour Department; no uniform central entity_id.
-
+data_quality_notes: Generic scaffold. IRC 2020 notified but not in force as of Jun 2026; IDA 1947 remains operative.
 sources:
-  - label: Industrial Disputes Act 1947 — ss.7, 9, 17A (as amended)
-    url: https://india-code.nic.in/DownloadFile?FileName=A1947-14.pdf
-    type: CentralAct
-    accessed_date: '2026-06-11'
-  - label: MoLE — Labour Bureau statistics on Labour Courts
-    url: https://labourbureau.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-11'
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'

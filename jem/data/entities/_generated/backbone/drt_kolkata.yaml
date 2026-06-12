@@ -3,84 +3,79 @@ name: Debt Recovery Tribunal, Kolkata
 name_hindi: ऋण वसूली अधिकरण, कोलकाता
 abbreviation: DRT Kolkata
 aliases:
-  - DRT Calcutta
-  - Debts Recovery Tribunal Kolkata
-
+- DRT Calcutta
+- Debts Recovery Tribunal Kolkata
+- DRT-I Kolkata
+- DRT-II Kolkata
+- DRT-III Kolkata
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - WB
-    - SK
+  - WB
+  - SK
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 1994
 operational_status: Active
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002,
+  s. 17. Kolkata has three benches (DRT-I, DRT-II, DRT-III) under DRAT Kolkata appellate supervision. Territorial jurisdiction
+  notified by Central Government. Note: Siliguri has a separate DRT bench (drt_siliguri) also under DRAT Kolkata.
 
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Kolkata has three benches (DRT-I, DRT-II, DRT-III)
-  under DRAT Kolkata appellate supervision. Territorial jurisdiction notified by
-  Central Government. Note: Siliguri has a separate DRT bench (drt_siliguri) also
-  under DRAT Kolkata.
-
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_calcutta
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_calcutta
-      mechanism: >
-        Supervisory jurisdiction of Calcutta High Court under Articles 226/227;
-        writ petition before Calcutta High Court.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_calcutta
+    mechanism: 'Supervisory jurisdiction of Calcutta High Court under Articles 226/227; writ petition before Calcutta High
+      Court.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge; Lokpal
-    jurisdiction does not extend to judicial functions of tribunal officers.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge; Lokpal jurisdiction does
+    not extend to judicial functions of tribunal officers.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  Kolkata has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Kolkata.
-  This entity represents the Kolkata location. Territorial jurisdiction covers
-  West Bengal and Sikkim (Siliguri bench separately covers North Bengal/Sikkim
-  catchment; exact split requires Gazette sourcing).
-  AppealableTo → drat_kolkata.
+data_quality_notes: 'Kolkata has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Kolkata. This entity represents the
+  Kolkata location. Territorial jurisdiction covers West Bengal and Sikkim (Siliguri bench separately covers North Bengal/Sikkim
+  catchment; exact split requires Gazette sourcing). AppealableTo → drat_kolkata.
 
+  Option B rollup: 3 physical DRT(s) at this location (DRT-I/II/III) rolled into single city entity per MoF composition table;
+  see drt.etribunals.gov.in.'
 unverified_fields:
-  - field: created_year
-    note: >
-      1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+- field: created_year
+  note: '1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+
+    '
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-11'
-  - label: 'DRT official portal — Ministry of Finance, DFS'
-    url: https://drt.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-11'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: DRT official portal — Ministry of Finance, DFS
+  url: https://drt.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-11'

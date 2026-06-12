@@ -67,7 +67,11 @@ jurisdiction_scope:
   - central_excise
   - service_tax
 data_quality: partial
-data_quality_notes: 'Territorial jurisdiction per cestat.gov.in bench listing covering eastern and north-eastern states. Exact gazette notification demarcating states not individually verified. Judge strength not populated. Per CESTAT bench allocation: eastern and northeastern states plus Andaman & Nicobar.'
+data_quality_notes: 'Territorial jurisdiction per cestat.gov.in bench listing covering eastern and north-eastern states. Exact
+  gazette notification demarcating states not individually verified. Judge strength not populated. Per CESTAT bench allocation:
+  eastern and northeastern states plus Andaman & Nicobar.
+
+  Quality pass Jun 2026: jurisdiction from Registrar Notifications 01–03/2015; cestat.gov.in source added.'
 sources:
 - label: Customs Act 1962 s.129
   url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf

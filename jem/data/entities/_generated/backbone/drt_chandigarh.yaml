@@ -3,107 +3,100 @@ name: Debt Recovery Tribunal, Chandigarh
 name_hindi: ऋण वसूली अधिकरण, चंडीगढ़
 abbreviation: DRT Chandigarh
 aliases:
-  - DRT-I Chandigarh
-  - DRT-II Chandigarh
-  - Debts Recovery Tribunal Chandigarh
-
+- DRT-I Chandigarh
+- DRT-II Chandigarh
+- Debts Recovery Tribunal Chandigarh
+- DRT-III Chandigarh
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - PB
-    - HR
-    - HP
+  - PB
+  - HR
+  - HP
   uts_covered:
-    - CH
-    - JK
-    - LA
+  - CH
+  - JK
+  - LA
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 1994
 operational_status: Active
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002,
+  s. 17. Chandigarh has two benches (DRT-I, DRT-II) under DRAT Delhi appellate supervision. DRT-I has jurisdiction over Punjab
+  (Amritsar, Barnala, Bathinda, Faridkot, Fatehgarh Sahib, Fazilka, Ferozepur, Gurdaspur, Hoshiarpur, Jalandhar, Kapurthala,
+  Ludhiana, Mansa, Moga, Muktsar, Pathankot, Patiala, Rupnagar, Sangrur, SAS Nagar, Nawanshahr, Tarantaran) and Himachal Pradesh.
+  DRT-II has jurisdiction over Haryana and UT Chandigarh (per Gazette notification cited in Tribune India, March 2017).
 
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Chandigarh has two benches (DRT-I, DRT-II) under
-  DRAT Delhi appellate supervision. DRT-I has jurisdiction over Punjab (Amritsar,
-  Barnala, Bathinda, Faridkot, Fatehgarh Sahib, Fazilka, Ferozepur, Gurdaspur,
-  Hoshiarpur, Jalandhar, Kapurthala, Ludhiana, Mansa, Moga, Muktsar, Pathankot,
-  Patiala, Rupnagar, Sangrur, SAS Nagar, Nawanshahr, Tarantaran) and Himachal Pradesh.
-  DRT-II has jurisdiction over Haryana and UT Chandigarh (per Gazette notification
-  cited in Tribune India, March 2017).
-
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_punjab_haryana
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_punjab_haryana
-      mechanism: >
-        Supervisory jurisdiction of Punjab and Haryana High Court under Articles
-        226/227; writ petition before Punjab and Haryana High Court.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_punjab_haryana
+    mechanism: 'Supervisory jurisdiction of Punjab and Haryana High Court under Articles 226/227; writ petition before Punjab
+      and Haryana High Court.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge; Lokpal
-    jurisdiction does not extend to judicial functions of tribunal officers.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge; Lokpal jurisdiction does
+    not extend to judicial functions of tribunal officers.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227; Tribune India 2022
-
 data_quality: partial
-data_quality_notes: >
-  Chandigarh has two DRT benches (DRT-I, DRT-II) under DRAT Delhi. Detailed district-
-  level territorial split sourced from Tribune India reporting (March 2017) on Gazette
-  notification for relocation of Chandigarh DRTs. J&K and Ladakh jurisdiction
-  (per DRTchandigarh Facebook page: "J&K, Punjab, Haryana, Himachal Pradesh") is
-  included but exact post-J&K Reorganisation Act 2019 applicability of RDDBFI requires
-  confirmation; left partial.
+data_quality_notes: 'Chandigarh has two DRT benches (DRT-I, DRT-II) under DRAT Delhi. Detailed district- level territorial
+  split sourced from Tribune India reporting (March 2017) on Gazette notification for relocation of Chandigarh DRTs. J&K and
+  Ladakh jurisdiction (per DRTchandigarh Facebook page: "J&K, Punjab, Haryana, Himachal Pradesh") is included but exact post-J&K
+  Reorganisation Act 2019 applicability of RDDBFI requires confirmation; left partial.
 
+  Option B rollup: 2 physical DRT(s) at this location (DRT-I/II/III) rolled into single city entity per MoF composition table;
+  see drt.etribunals.gov.in.'
 unverified_fields:
-  - field: created_year
-    note: >
-      1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
-  - field: jurisdiction_scope.uts_covered
-    note: >
-      J&K/Ladakh RDDBFI extension post-J&K Reorganisation Act 2019 not confirmed from Gazette.
+- field: created_year
+  note: '1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+
+    '
+- field: jurisdiction_scope.uts_covered
+  note: 'J&K/Ladakh RDDBFI extension post-J&K Reorganisation Act 2019 not confirmed from Gazette.
+
+    '
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-11'
-  - label: 'DRT official portal — Ministry of Finance, DFS'
-    url: https://drt.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-11'
-  - label: >
-      DRT Chandigarh district jurisdiction — Tribune India, Gazette notification
-      (relocated benches, March 2017)
-    url: https://medium.com/@legasisgroup/authority-government-of-india-in-the-ministry-of-finance-department-of-financial-services-4c8e66d6adf2
-    type: GazetteNotification
-    accessed_date: '2026-06-11'
-  - label: 'DRTs for Punjab, Haryana, UT — presiding officers, Feb 2022'
-    url: https://www.tribuneindia.com/news/chandigarh/drts-for-punjab-haryana-ut-get-presiding-officers-371854/
-    type: OfficialReport
-    accessed_date: '2026-06-11'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: DRT official portal — Ministry of Finance, DFS
+  url: https://drt.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-11'
+- label: 'DRT Chandigarh district jurisdiction — Tribune India, Gazette notification (relocated benches, March 2017)
+
+    '
+  url: https://medium.com/@legasisgroup/authority-government-of-india-in-the-ministry-of-finance-department-of-financial-services-4c8e66d6adf2
+  type: GazetteNotification
+  accessed_date: '2026-06-11'
+- label: DRTs for Punjab, Haryana, UT — presiding officers, Feb 2022
+  url: https://www.tribuneindia.com/news/chandigarh/drts-for-punjab-haryana-ut-get-presiding-officers-371854/
+  type: OfficialReport
+  accessed_date: '2026-06-11'

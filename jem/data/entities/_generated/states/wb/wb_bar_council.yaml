@@ -1,0 +1,27 @@
+id: wb_bar_council
+name: Bar Council of WB
+type: ProfessionalBody
+cluster: training_professional
+statutory_basis: Advocates Act 1961
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - WB
+  is_all_india: false
+created_year: 1961
+operational_status: Active
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'

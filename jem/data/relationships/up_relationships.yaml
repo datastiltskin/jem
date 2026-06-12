@@ -1,0 +1,236 @@
+relationships:
+- id: up_cdrc_ncdrc
+  source: up_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'
+- id: up_slsa_lok
+  source: slsa_up
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: UP SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_fund_rera
+  source: government_up
+  target: up_rera
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: UP RERA funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_dist_principal_hc
+  source: up_district_court_principal
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP principal district to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_principal
+  source: hc_allahabad
+  target: up_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision UP principal
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_lucknow_hc
+  source: up_district_court_lucknow
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP lucknow district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_lucknow
+  source: hc_allahabad
+  target: up_district_court_lucknow
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision lucknow
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_prayagraj_hc
+  source: up_district_court_prayagraj
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP prayagraj district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_prayagraj
+  source: hc_allahabad
+  target: up_district_court_prayagraj
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision prayagraj
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_ghaziabad_hc
+  source: up_district_court_ghaziabad
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP ghaziabad district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_ghaziabad
+  source: hc_allahabad
+  target: up_district_court_ghaziabad
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision ghaziabad
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_agra_hc
+  source: up_district_court_agra
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP agra district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_agra
+  source: hc_allahabad
+  target: up_district_court_agra
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision agra
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_meerut_hc
+  source: up_district_court_meerut
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP meerut district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_meerut
+  source: hc_allahabad
+  target: up_district_court_meerut
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision meerut
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_gorakhpur_hc
+  source: up_district_court_gorakhpur
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP gorakhpur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_gorakhpur
+  source: hc_allahabad
+  target: up_district_court_gorakhpur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision gorakhpur
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_bareilly_hc
+  source: up_district_court_bareilly
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP bareilly district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_bareilly
+  source: hc_allahabad
+  target: up_district_court_bareilly
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision bareilly
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_up_district_court_varanasi_hc
+  source: up_district_court_varanasi
+  target: hc_allahabad_bench_lucknow
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP bench routing
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_up_district_court_varanasi
+  source: hc_allahabad
+  target: up_district_court_varanasi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision up_district_court_varanasi
+  data_quality: partial
+  sources:
+  - *id001

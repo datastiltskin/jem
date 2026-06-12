@@ -36,7 +36,12 @@ audit:
 data_quality: partial
 data_quality_notes: "created_year 1941 (founding under IT Act 1922); 1961 (current statute) also defensible — maintainer to\
   \ decide policy. 63+ benches across India. ministry_responsible 'ministry_of_finance' assumed — verify in graph. case_volume\
-  \ and judge_strength null — ITAT Annual Report in §3/§7.\n NJDG snapshot case_volume merged"
+  \ and judge_strength null — ITAT Annual Report in §3/§7.\n NJDG snapshot case_volume merged\nITAT bench → HC mapping (IT\
+  \ Act s.260A, Jun 2026): Delhi→hc_delhi; Mumbai/Pune/Nagpur/Aurangabad→hc_bombay; Chennai→hc_madras; Kolkata→hc_calcutta;\
+  \ Ahmedabad→hc_gujarat; Hyderabad→hc_telangana+hc_andhra_pradesh; Visakhapatnam→hc_andhra_pradesh; Bangalore→hc_karnataka;\
+  \ Allahabad/Lucknow→hc_allahabad; Chandigarh/Amritsar→hc_punjab_haryana; Guwahati→hc_gauhati; Patna→hc_patna; Ranchi→hc_jharkhand;\
+  \ Bhopal/Indore→hc_madhya_pradesh; Jaipur/Jodhpur→hc_rajasthan; Cuttack→hc_orissa; Kochi/Trivandrum→hc_kerala. Per-bench\
+  \ entities itat_* wired in itat_bench_relationships.yaml."
 sources:
 - label: Income Tax Act 1961 — Income Tax Department
   url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx

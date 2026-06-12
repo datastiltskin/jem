@@ -54,7 +54,12 @@ jurisdiction_scope:
   - central_excise
   - service_tax
 data_quality: partial
-data_quality_notes: 'Territorial jurisdiction (UP, UK) per cestat.gov.in bench listing. Bench operates from Allahabad (now Prayagraj); no name change to Prayagraj confirmed on cestat.gov.in as of access date — entity id retained as cestat_allahabad per existing naming. Judge strength not populated. Per CESTAT Registrar Notification 01/2015: Uttar Pradesh. Uttarakhand under Principal Bench Delhi.'
+data_quality_notes: 'Territorial jurisdiction (UP, UK) per cestat.gov.in bench listing. Bench operates from Allahabad (now
+  Prayagraj); no name change to Prayagraj confirmed on cestat.gov.in as of access date — entity id retained as cestat_allahabad
+  per existing naming. Judge strength not populated. Per CESTAT Registrar Notification 01/2015: Uttar Pradesh. Uttarakhand
+  under Principal Bench Delhi.
+
+  Quality pass Jun 2026: jurisdiction from Registrar Notifications 01–03/2015; cestat.gov.in source added.'
 sources:
 - label: Customs Act 1962 s.129
   url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf

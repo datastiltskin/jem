@@ -1,0 +1,53 @@
+id: itat_visakhapatnam
+name: Income Tax Appellate Tribunal — Visakhapatnam Bench
+abbreviation: ITAT Visakhapatnam
+aliases:
+- ITAT Bench Visakhapatnam
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+created_year: 1941
+operational_status: Active
+statutory_basis: Income Tax Act 1961 s.252 — ITAT benches constituted by Central Government
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+  - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: 4 years or age 70 — Tribunals Reforms Act 2021
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: ITAT members — tribunal member Lokpal treatment
+jurisdiction_scope:
+  states_covered:
+  - AP
+  uts_covered: []
+  is_all_india: false
+  jurisdiction_types:
+  - income_tax_appeals
+data_quality: partial
+data_quality_notes: ITAT Visakhapatnam bench. Appeal on substantial question of law to HC per IT Act s.260A. Zone jurisdiction
+  per CBDT/ITAT bench allocation — verify at itat.gov.in.
+sources:
+- label: Income Tax Act 1961 s.252–260A
+  url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: ITAT official website
+  url: https://itat.gov.in
+  type: GoIWebsite
+  accessed_date: '2026-06-12'

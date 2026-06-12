@@ -10,7 +10,8 @@ level_of_government: Central
 created_year: 1982
 operational_status: Active
 constitutional_basis: null
-statutory_basis: Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Customs, Excise and Service Tax Appellate Tribunal (Procedure) Rules 1982; Tribunal Reforms Act 2021
+statutory_basis: Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Customs, Excise and Service
+  Tax Appellate Tribunal (Procedure) Rules 1982; Tribunal Reforms Act 2021
 appointment:
   nominates: central_government
   recommends: null
@@ -43,7 +44,8 @@ complaint_mechanism:
     consultation_binding: null
   removal_mechanism: Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee recommendation to central government
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: Tribunal members are not public servants under Lokpal and Lokayuktas Act 2013 s.14 for this purpose; jurisdiction contested
+  lokpal_jurisdiction_note: Tribunal members are not public servants under Lokpal and Lokayuktas Act 2013 s.14 for this purpose;
+    jurisdiction contested
   source: null
 jurisdiction_scope:
   states_covered:
@@ -56,9 +58,10 @@ jurisdiction_scope:
   - central_excise
   - service_tax
 data_quality: partial
-data_quality_notes: >-
-  Per CESTAT Registrar Notification 03/2015 bench table: TN and Puducherry (PY)
-  except Yanam commune (Yanam under cestat_hyderabad). Judge strength not populated.
+data_quality_notes: 'Per CESTAT Registrar Notification 03/2015 bench table: TN and Puducherry (PY) except Yanam commune (Yanam
+  under cestat_hyderabad). Judge strength not populated.
+
+  Quality pass Jun 2026: jurisdiction from Registrar Notifications 01–03/2015; cestat.gov.in source added.'
 sources:
 - label: Customs Act 1962 s.129 — establishment of CESTAT
   url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf

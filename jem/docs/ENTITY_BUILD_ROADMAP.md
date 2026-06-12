@@ -1,6 +1,6 @@
 # JEM — entity build roadmap (~1,500 target)
 
-**Current corpus:** 599 entities (Jun 2026) · **Target:** ~1,500 structural entities  
+**Current corpus:** 668 entities (Jun 2026) · **Target:** ~1,500 structural entities  
 **Tracker:** this file is the source of truth; [`README.md`](../../README.md#entity-build-progress) mirrors the status table for GitHub.
 
 ## Status legend
@@ -30,35 +30,35 @@
 | ID | Category | Est. entities | In repo (May 2026) | Status | Phase | Owner |
 |----|----------|---------------|----------------------|--------|-------|-------|
 | C01 | Constitutional courts (SC + 25 HCs) | ~26 | ~27 + benches | **done** | 0 | Maintainer |
-| C02 | HC permanent benches | ~14 | ~13 | **updated** | 1 | Maintainer |
+| C02 | HC permanent benches | ~14 | ~13 + UP/WB/RJ routing wired | **updated** | 1 | Maintainer |
 | C03 | Central tribunals (principal) | ~15 | ~14 | **done** | 0 | Maintainer |
-| C04 | Central tribunals — regional benches (CESTAT×8, AFT×9, DRT×39) | ~56 | ~44 (CESTAT 8, AFT 11, DRT 25) | **updated** | 2 | Mixed |
+| C04 | Central tribunals — regional benches (CESTAT×8, AFT×11, DRT×25, ITAT×25) | ~56 | ~69 | **updated** | 2 | Mixed |
 | C05 | Quasi-judicial regulators (SEBI, TRAI, SERC/RERA gens) | ~80 | ~76 | **updated** | 1 | Mixed |
 | C06 | Consumer commissions (NCDRC + state/district) | ~70 | ~54 | **updated** | 2 | Contributor drafts |
 | C07 | ADR (NALSA, SLSA, Lok Adalat, mediation, arbitration institutes) | ~40 | ~37 | **updated** | 1 | Mixed |
 | C08 | Ministries & executive governance | ~60 | ~68 | **done** | 0 | Maintainer |
 | C09 | Appointment bodies & officeholders | ~25 | ~17 | **updated** | 1 | Maintainer |
-| C10 | Digital infrastructure (e-Committee, NIC, CIS, NJDG) | ~8 | ~1 | **pending** | **1** | Maintainer |
-| C11 | Security (CRPF, CISF, state police, court marshal) | ~10 | scaffold | **pending** | 1 | Contributor drafts |
+| C10 | Digital infrastructure (e-Committee, NIC, CIS, NJDG) | ~8 | 4 (e_committee_sc, nic_india, ecourts, njdg) | **updated** | **1** | Maintainer |
+| C11 | Security (CRPF, CISF, state police, court marshal) | ~10 | 5 scaffolds | **updated** | 1 | Contributor drafts |
 | C12 | Investigation & prosecution | ~15 | partial | **updated** | 1 | Mixed |
 | C13 | Training, audit, lokayukta (NJA, CAG, state SJA/SLSA) | ~40 | partial | **updated** | 2 | Contributor drafts |
 | C14 | Phase-1 state packs (MH, DL, KA, TN lattice, PY) | ~220 | ~171 | **done** | 0 | Maintainer |
-| C15 | State packs — Batch A (UP, WB, RJ, AP, TS, GJ) | ~420 | scaffold ~5 each | **pending** | **1** | Contributor drafts |
+| C15 | State packs — Batch A (UP, WB, RJ, AP, TS, GJ) | ~420 | UP/WB/RJ expanded (~18 each); AP/TS/GJ scaffold | **updated** | **1** | Contributor drafts |
 | C16 | State packs — Batch B (MP, BR, KL, PB, HR, OD) | ~360 | scaffold | **pending** | 1 | Contributor drafts |
 | C17 | State packs — Batch C (NE, HP, UK, GA, CG, JH) | ~280 | scaffold | **pending** | 2 | Contributor drafts |
 | C18 | State packs — Batch D (UTs, JK/LA, SK) | ~120 | scaffold | **pending** | 2 | Contributor drafts |
-| C19 | Tax / revenue stack (GSTAT, CIT(A), DRP, VAT tribunals) | ~45 | ~8 (AO, CIT(A), JCIT(A), DRP, AAR, CAAR, GSTAT bench gen) | **updated** | 2 | Contributor drafts |
-| C20 | Labour (CGIT, EPFAT, state labour courts) | ~35 | 9 (cgit_principal + 6 benches + epfat + epfo) | **updated** | 2 | Maintainer |
+| C19 | Tax / revenue stack (GSTAT, CIT(A), DRP, VAT tribunals) | ~45 | ~33 (AO, CIT(A), JCIT(A), ITAT×25, DRP, AAR, CAAR, GSTAT) | **updated** | 2 | Contributor drafts |
+| C20 | Labour (CGIT, EPFAT, state labour courts) | ~35 | 10 (+ state_labour_court_generic) | **updated** | 2 | Maintainer |
 | C21 | Defence (court martial, AFT benches) | ~12 | 12 (AFT principal + 11 benches, court_martial_generic) | **updated** | 2 | Maintainer |
 | C22 | Specialized regulators (FSSAI, AERA, ICADR, PFRDA entity) | ~10 | 7 (+ PFRDA partial) | **updated** | 2 | Maintainer |
 | C23 | IP (patent controller, TM registry; IPAB historical) | ~5 | 5 (CGPDTM, TMR, ipab, compat) | **updated** | 3 | Maintainer |
 | C24 | State tribunals (SAT, transport, mental health boards) | ~35 | 5 (4 generics + state_vat_tribunal_generic) | **updated** | 3 | Contributor drafts |
 | C25 | People / roles layer (judges, advocates, parties) | ~20 | partial | **pending** | 3 | Optional |
 | C26 | Relationship wiring & orphan cleanup (~139 orphans) | — | partial | **updated** | 1–3 | **Maintainer only** |
-| C27 | Data-quality upgrade (sources, partial→complete) | 599 | ongoing | **updated** | all | Contributor |
-| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 599 | sparse | **pending** | 2 | Maintainer + NJDG |
+| C27 | Data-quality upgrade (sources, partial→complete) | 668 | ongoing | **updated** | all | Contributor |
+| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 668 | sparse | **pending** | 2 | Maintainer + NJDG |
 
-*Last roadmap review: 2026-06-12 (drt_b5 — CGIT/EPFAT/EPFO MoLE funding edges; DRT AppealableTo pre-wired)*
+*Last roadmap review: 2026-06-12 (M-T1–M-T6 + Phase 1 batch — ITAT×25, UP/WB/RJ packs, digital, security)*
 
 ---
 
@@ -82,59 +82,6 @@ Copy the **base prompt** from [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.m
 ---
 
 ### Phase 1 — priority (run these first)
-
-#### P1-A · C10 Digital infrastructure · `pending` · Maintainer
-
-```
-TASK: Draft entity YAML (maintainer review) for digital infrastructure cluster: e_committee_sc, nic_india, ecourts_services_generic, njdg_generic — copy structure from jem/data/entities/_generated/backbone/department_of_justice.yaml and existing digital cluster stubs. Statutory basis + funding + complaint paths. data_quality: partial minimum.
-STATE / CLUSTER: digital_infrastructure
-Do not add relationships; list suggested rel_* ids for maintainers in a table at end.
-```
-
-#### P1-B · C11 Security bodies · `pending` · Contributor
-
-```
-TASK: Draft entity YAML (maintainer review) for: crpf, cisf, state_police_generic, court_marshal_sc, sheriff_hc_generic. Template: nearest SecurityBody or ExecutiveBody in jem/data/entities/. Include operational_status and sources[] per field.
-Do not add relationships.
-```
-
-#### P1-C · C15 State pack — Uttar Pradesh (UP) · `pending` · Contributor
-
-```
-TASK: Draft proposed new-entity YAML pack for UP (state code up), mirroring MH pack: up_rera, up_serc or serc_generic state_data, up_bar_council, up_sja, up_slsa, up_lokayukta, up_advocate_general, up_state_cdrc, up_district_courts_generic, 8 named high-volume district courts (Lucknow, Prayagraj, Varanasi, Ghaziabad, Agra, Meerut, Gorakhpur, Bareilly), up_special_courts. Copy jem/data/entities/_generated/states/mh/ as template. IDs must be snake_case with up_ prefix.
-Do not add relationships. Submit as GitHub issue with YAML attachments.
-```
-
-#### P1-D · C15 State pack — West Bengal (WB) · `pending` · Contributor
-
-```
-TASK: Draft proposed new-entity YAML pack for WB mirroring MH: wb_rera, wb_slsa, wb_sja, wb_lokayukta, wb_advocate_general, wb_state_cdrc, wb_district_courts_generic, named districts Kolkata, Howrah, Darjeeling, Murshidabad, Nadia, wb_special_courts. Template: jem/data/entities/_generated/states/mh/.
-No relationships in deliverable.
-```
-
-#### P1-E · C15 State pack — Rajasthan (RJ) · `pending` · Contributor
-
-```
-TASK: Draft proposed new-entity YAML pack for RJ mirroring MH (rera, slsa, sja, lokayukta, AG, state cdrc, generic district rollup, 6 named districts Jaipur, Jodhpur, Udaipur, Kota, Ajmer, Bikaner, special courts).
-No relationships.
-```
-
-#### P1-F · C02 HC bench routing · `updated` · Maintainer only
-
-```
-ROLE: co-maintainer
-TASK: Maintainer-only. Wire bench appellate/supervisory edges for UP, WB, RJ per jem/scripts/hc_benches_config.py — create up_relationships.yaml, wb_relationships.yaml, rj_relationships.yaml. Run validate_graph_refs.py --strict. Do not add new entity files unless bench nodes missing.
-```
-
-#### P1-G · C27 Data-quality — northeast HCs · `updated` · Contributor
-
-```
-TASK: For each HC in NE (hc_gauhati, hc_manipur, hc_meghalaya, hc_tripura, hc_mizoram, hc_sikkim, hc_arunachal_pradesh): upgrade data_quality from unverified/partial to partial/complete with DoJ or HC official source URLs for created_year, operational_status, judge_strength or case_volume if available. One entity per issue or one PR scoped to NE HCs only.
-```
-
----
-
-### Phase 2 — tribunals & regulators
 
 #### P2-D · C06 District CDRC — high-volume states · `pending` · Contributor
 
@@ -221,6 +168,74 @@ TASK: (Completed) 11 AFT bench entities + BenchOf wiring to principal aft. Canon
 ```
 TASK: (Completed) ao_income_tax_generic, cit_appeals_generic, jcit_appeals_generic; DRP/AAR/CAAR pre-existed;
 gstat_bench_generic scaffolded (Not_Constituted). ITAT chain wired: JCIT→ITAT, DRP→ITAT, ITAT→high_courts_all.
+```
+
+#### ~~M-T1 · ITAT per-zone → HC~~ · **done** 2026-06
+
+```
+TASK: (Completed) 25 itat_* bench entities + BenchOf→itat + AppealableTo HC edges in itat_bench_relationships.yaml.
+Removed aggregate rel_itat_to_high_courts_all. Zone table in itat.yaml data_quality_notes.
+```
+
+#### ~~M-T2 · DRT Option B alias pass~~ · **done** 2026-06
+
+```
+TASK: (Completed) DRT-I/II/III aliases and Option B rollup notes on 8 multi-bench city rollups.
+```
+
+#### ~~M-T3 · GSTAT watch~~ · **gated** 2026-06
+
+```
+TASK: (Monitoring) gstat + gstat_bench_generic remain Not_Constituted; M-T3 watch note added. Flip on gazette.
+```
+
+#### ~~M-T4 · state_labour_court_generic~~ · **done** 2026-06
+
+```
+TASK: (Completed) state_labour_court_generic scaffold under C20.
+```
+
+#### ~~M-T5 · CESTAT quality pass~~ · **done** 2026-06
+
+```
+TASK: (Completed) cestat.gov.in source + quality notes on all 8 cestat_* bench entities.
+```
+
+#### ~~M-T6 · AFT Ladakh watch~~ · **gated** 2026-06
+
+```
+TASK: (Monitoring) aft_srinagar M-T6 review note; LA provisional pending post-2019 MoD gazette.
+```
+
+#### ~~P1-A · C10 Digital infrastructure~~ · **done** 2026-06
+
+```
+TASK: (Completed) e_committee_sc, nic_india, ecourts_services_generic, njdg_generic.
+```
+
+#### ~~P1-B · C11 Security bodies~~ · **done** 2026-06
+
+```
+TASK: (Completed) crpf, cisf, state_police_generic, court_marshal_sc, sheriff_hc_generic scaffolds.
+```
+
+#### ~~P1-C/D/E · C15 UP/WB/RJ packs~~ · **done** 2026-06
+
+```
+TASK: (Completed) Core pack entities + named districts per state; up/wb/rj_relationships.yaml wired.
+Remaining: up_serc, full district lattices (v1.4 scope).
+```
+
+#### ~~P1-F · C02 HC bench routing UP/WB/RJ~~ · **done** 2026-06
+
+```
+TASK: (Completed) up_relationships.yaml, wb_relationships.yaml, rj_relationships.yaml.
+```
+
+#### ~~P1-G · C27 NE HC quality~~ · **done** 2026-06
+
+```
+TASK: (Completed) DoJ HC listing source added to 7 NE High Courts.
 ```
 
 #### ~~Tribunal completion batch~~ · **done** 2026-06

@@ -3,126 +3,112 @@ name: Armed Forces Tribunal — Regional Bench, Srinagar (at Jammu)
 name_hindi: सशस्त्र बल अधिकरण — क्षेत्रीय पीठ, श्रीनगर (जम्मू में स्थित)
 abbreviation: AFT RB Srinagar
 aliases:
-  - AFT Srinagar
-  - AFT Srinagar Bench
-  - AFT Jammu
-  - AFT Regional Bench Jammu
-  - Armed Forces Tribunal Srinagar (at Jammu)
-
+- AFT Srinagar
+- AFT Srinagar Bench
+- AFT Jammu
+- AFT Regional Bench Jammu
+- Armed Forces Tribunal Srinagar (at Jammu)
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   is_all_india: false
   states_covered: []
   uts_covered:
-    - JK
-    - LA
+  - JK
+  - LA
   jurisdiction_types:
-    - service_matters
-    - court_martial_appeals
-
+  - service_matters
+  - court_martial_appeals
 created_year: 2016
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >
-  Armed Forces Tribunal Act 2007 s.5(4); MoD Notification SRO-12(E) dated
-  17 November 2016 — "the Bench of the Armed Forces Tribunal, Srinagar
-  (temporarily to be located in Jammu) with effect from the 17th day of
-  November, 2016, which shall have jurisdiction within the territorial limits
-  of the State of Jammu and Kashmir." Cabinet approval for Srinagar and
-  Jabalpur benches: PIB release, 8 August 2014.
+statutory_basis: 'Armed Forces Tribunal Act 2007 s.5(4); MoD Notification SRO-12(E) dated 17 November 2016 — "the Bench of
+  the Armed Forces Tribunal, Srinagar (temporarily to be located in Jammu) with effect from the 17th day of November, 2016,
+  which shall have jurisdiction within the territorial limits of the State of Jammu and Kashmir." Cabinet approval for Srinagar
+  and Jabalpur benches: PIB release, 8 August 2014.
 
+  '
 appointment:
   nominates: ministry_defence
   recommends: null
   consulted:
-    - chief_justice_india
+  - chief_justice_india
   consultation_binding: false
   formally_appoints: president_india
   criteria_public: true
-  tenure: >-
-    Chairperson: 4 years or age 70 whichever earlier; Members: 4 years or age 65
-    whichever earlier (AFT Act 2007 s.8)
+  tenure: 'Chairperson: 4 years or age 70 whichever earlier; Members: 4 years or age 65 whichever earlier (AFT Act 2007 s.8)'
   reappointment_possible: false
   removal_authority: president_india
   removal_requires_parliament: false
   removal_independent_committee: true
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_defence
   state_contribution_percent: null
   budget_figure_crore: null
   budget_year: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: ministry_defence
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: supreme_court_india
-      mechanism: >
-        Appeal from AFT order lies to Supreme Court under AFT Act 2007 s.30
-        (not High Court). Bias complaint against member: petition to SC or
-        administrative complaint to MoD.
-      complainant_has_locus: true
-      is_public_process: true
-      timeframe_defined: true
-      external_to_judiciary: false
+  - body: supreme_court_india
+    mechanism: 'Appeal from AFT order lies to Supreme Court under AFT Act 2007 s.30 (not High Court). Bias complaint against
+      member: petition to SC or administrative complaint to MoD.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    timeframe_defined: true
+    external_to_judiciary: false
   criminal_prosecution:
     requires_sanction_from: central_government
     consultation_required_with: null
     consultation_binding: null
   removal_mechanism: AFT Act 2007 s.10
   lokpal_jurisdiction: Contested
-  lokpal_jurisdiction_note: >
-    AFT judicial members are retired judges; Lokpal jurisdiction for tribunal
-    members contested — see aft_chandigarh (No) vs departmental view (Yes).
-    Marked Contested pending maintainer alignment.
+  lokpal_jurisdiction_note: 'AFT judicial members are retired judges; Lokpal jurisdiction for tribunal members contested —
+    see aft_chandigarh (No) vs departmental view (Yes). Marked Contested pending maintainer alignment.
+
+    '
   source: AFT Act 2007 s.30
-
 data_quality: partial
-data_quality_notes: >
-  SINGLE BENCH — NO SEPARATE AFT JAMMU ENTITY: Official name in SRO-12(E) and on
-  aftdelhi.nic.in / aft.gov.in is "Regional Bench, (Srinagar) at Jammu". One bench,
-  physically at Military Station Sanjuwan, Jammu-180011. "Temporarily" in the 2016
-  gazette has not been rescinded; no notification moving the bench to Srinagar city
-  found as of June 2026. Supersedes aft_jammu stub (colloquial alias only).
+data_quality_notes: 'SINGLE BENCH — NO SEPARATE AFT JAMMU ENTITY: Official name in SRO-12(E) and on aftdelhi.nic.in / aft.gov.in
+  is "Regional Bench, (Srinagar) at Jammu". One bench, physically at Military Station Sanjuwan, Jammu-180011. "Temporarily"
+  in the 2016 gazette has not been rescinded; no notification moving the bench to Srinagar city found as of June 2026. Supersedes
+  aft_jammu stub (colloquial alias only).
 
-  LADAKH GAP: SRO-12(E) predates J&K Reorganisation Act 2019. No updated MoD
-  notification confirming UT of Ladakh coverage found. LA listed in uts_covered
-  provisionally — no other AFT bench notified for Ladakh.
+  LADAKH GAP: SRO-12(E) predates J&K Reorganisation Act 2019. No updated MoD notification confirming UT of Ladakh coverage
+  found. LA listed in uts_covered provisionally — no other AFT bench notified for Ladakh.
 
   Contact: registraraft.jk@gov.in. Appellate path: AFT → SC per s.30 (not HC).
 
-unverified_fields:
-  - field: jurisdiction_scope.uts_covered.LA
-    note: Ladakh coverage not confirmed in post-2019 MoD/AFT gazette notification.
 
+  M-T6 review Jun 2026: no post-2019 Ladakh gazette found; LA remains provisional in uts_covered.'
+unverified_fields:
+- field: jurisdiction_scope.uts_covered.LA
+  note: Ladakh coverage not confirmed in post-2019 MoD/AFT gazette notification.
 sources:
-  - label: AFT Regional Benches — official listing
-    url: https://aft.gov.in/reg-benches
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
-  - label: AFT Contact Us — aftdelhi.nic.in
-    url: https://aftdelhi.nic.in/index.php/contact-us
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
-  - label: MoD PIB — Cabinet approval for Srinagar and Jabalpur benches (2014)
-    url: https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=108404
-    type: OfficialReport
-    accessed_date: '2026-06-12'
-  - label: Daily Excelsior — inauguration report quoting SRO-12(E) (2016-11-25)
-    url: https://www.dailyexcelsior.com/cj-inaugurates-full-fledged-bench-armed-forces-tribunal/
-    type: OfficialReport
-    accessed_date: '2026-06-12'
-  - label: Armed Forces Tribunal Act 2007
-    url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
+- label: AFT Regional Benches — official listing
+  url: https://aft.gov.in/reg-benches
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+- label: AFT Contact Us — aftdelhi.nic.in
+  url: https://aftdelhi.nic.in/index.php/contact-us
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+- label: MoD PIB — Cabinet approval for Srinagar and Jabalpur benches (2014)
+  url: https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=108404
+  type: OfficialReport
+  accessed_date: '2026-06-12'
+- label: Daily Excelsior — inauguration report quoting SRO-12(E) (2016-11-25)
+  url: https://www.dailyexcelsior.com/cj-inaugurates-full-fledged-bench-armed-forces-tribunal/
+  type: OfficialReport
+  accessed_date: '2026-06-12'
+- label: Armed Forces Tribunal Act 2007
+  url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'

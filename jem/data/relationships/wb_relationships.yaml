@@ -1,0 +1,192 @@
+relationships:
+- id: wb_cdrc_ncdrc
+  source: wb_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: WB SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'
+- id: wb_slsa_lok
+  source: slsa_wb
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: WB SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_fund_rera
+  source: government_wb
+  target: wb_rera
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: WB RERA funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_dist_principal_hc
+  source: wb_district_court_principal
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: WB principal district to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super_principal
+  source: hc_calcutta
+  target: wb_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision WB principal
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_kolkata_hc
+  source: wb_district_court_kolkata
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: WB kolkata district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super_kolkata
+  source: hc_calcutta
+  target: wb_district_court_kolkata
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision kolkata
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_howrah_hc
+  source: wb_district_court_howrah
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: WB howrah district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super_howrah
+  source: hc_calcutta
+  target: wb_district_court_howrah
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision howrah
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_darjeeling_hc
+  source: wb_district_court_darjeeling
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: WB darjeeling district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super_darjeeling
+  source: hc_calcutta
+  target: wb_district_court_darjeeling
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision darjeeling
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_murshidabad_hc
+  source: wb_district_court_murshidabad
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: WB murshidabad district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super_murshidabad
+  source: hc_calcutta
+  target: wb_district_court_murshidabad
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision murshidabad
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_nadia_hc
+  source: wb_district_court_nadia
+  target: hc_calcutta
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: WB nadia district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super_nadia
+  source: hc_calcutta
+  target: wb_district_court_nadia
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision nadia
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_wb_district_court_asansol_hc
+  source: wb_district_court_asansol
+  target: hc_calcutta_bench_jalpaiguri
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: WB bench routing
+  data_quality: partial
+  sources:
+  - *id001
+- id: wb_hc_super_wb_district_court_asansol
+  source: hc_calcutta
+  target: wb_district_court_asansol
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision wb_district_court_asansol
+  data_quality: partial
+  sources:
+  - *id001

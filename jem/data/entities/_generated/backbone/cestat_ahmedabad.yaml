@@ -55,7 +55,11 @@ jurisdiction_scope:
   - central_excise
   - service_tax
 data_quality: partial
-data_quality_notes: 'Territorial jurisdiction (GJ, RJ, Dadra & NH and D&D) per cestat.gov.in bench listing. UT Dadra & NH and D&D included based on CBIC zone allocation. Judge strength not populated. Per CESTAT bench allocation: Gujarat and DNHDD only. Rajasthan under Principal Bench Delhi.'
+data_quality_notes: 'Territorial jurisdiction (GJ, RJ, Dadra & NH and D&D) per cestat.gov.in bench listing. UT Dadra & NH
+  and D&D included based on CBIC zone allocation. Judge strength not populated. Per CESTAT bench allocation: Gujarat and DNHDD
+  only. Rajasthan under Principal Bench Delhi.
+
+  Quality pass Jun 2026: jurisdiction from Registrar Notifications 01–03/2015; cestat.gov.in source added.'
 sources:
 - label: Customs Act 1962 s.129
   url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf

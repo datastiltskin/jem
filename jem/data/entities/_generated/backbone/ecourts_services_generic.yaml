@@ -1,0 +1,32 @@
+id: ecourts_services_generic
+name: e-Courts Services (Generic)
+type: ExecutiveBody
+cluster: digital_infrastructure
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+  - digital_infrastructure
+created_year: 2007
+operational_status: Active
+statutory_basis: e-Courts Phase I–III — case information system under e-Committee/DIS
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: department_of_justice
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+- label: e-Committee / NJDG
+  url: https://njdg.ecourts.gov.in/
+  type: NJDG
+  accessed_date: '2026-06-12'
