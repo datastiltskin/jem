@@ -1,0 +1,94 @@
+id: drt_hyderabad
+name: Debt Recovery Tribunal, Hyderabad
+name_hindi: ऋण वसूली अधिकरण, हैदराबाद
+abbreviation: DRT Hyderabad
+aliases:
+  - DRT-I Hyderabad
+  - DRT-II Hyderabad
+  - Debts Recovery Tribunal Hyderabad
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - TS
+    - AP
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 1994
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. Hyderabad has two benches (DRT-I, DRT-II).
+  Territorial jurisdiction notified by Central Government under s. 3(1A) RDDBFI Act.
+  Post-AP bifurcation (2014), Hyderabad DRTs serve both Telangana and Andhra Pradesh;
+  Visakhapatnam has a separate DRT bench for coastal AP.
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_telangana
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_telangana
+      mechanism: >
+        Supervisory jurisdiction of Telangana High Court under Articles 226/227;
+        writ petition before Telangana High Court. Andhra Pradesh High Court may
+        also have supervisory jurisdiction over Hyderabad DRT for AP matters
+        following bifurcation — exact split not definitively resolved in secondary
+        sources; left partial.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge; Lokpal
+    jurisdiction does not extend to judicial functions of tribunal officers.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  Resolved to DRAT Kolkata (drat_kolkata): MoF e-tribunals composition page lists
+  Hyderabad DRT-I and DRT-II under DRAT Kolkata; DRAT Chennai official About Us
+  (drat.tn.nic.in) lists 9 southern DRTs and excludes Hyderabad. vLex/TaxTMI
+  conflict noted in sources — superseded by official listings. Gazette notification
+  reassigning Hyderabad from original DRAT Chennai circuit (G.S.R. 134(E) 2000)
+  to DRAT Kolkata not located in this pass.
+
+unverified_fields:
+  - field: created_year
+    note: >
+      1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+  - field: appellate_assignment
+    note: >
+      Gazette notification reassigning Hyderabad DRT appeals to DRAT Kolkata not verified on egazette.gov.in — resolved from MoF portal + DRAT Chennai negative listing only.
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

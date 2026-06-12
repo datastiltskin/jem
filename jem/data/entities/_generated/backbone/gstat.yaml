@@ -1,0 +1,121 @@
+id: gstat
+name: GST Appellate Tribunal
+name_hindi: जीएसटी अपीलीय अधिकरण
+abbreviation: GSTAT
+aliases:
+  - GST Appellate Tribunal
+  - Goods and Services Tax Appellate Tribunal
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+created_year: 2017
+operational_status: Not_Constituted
+
+constitutional_basis: null
+statutory_basis: >-
+  Central Goods and Services Tax Act, 2017, s.109–110 (as amended by Finance Act
+  2023 — substituted ss.109–110A, inserted s.112A); notified benches under s.109(6).
+  Principal Bench at New Delhi; State Benches in each state/UT.
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: president_india
+  criteria_public: true
+  tenure: >-
+    President: 4 years or age 70, whichever earlier. Judicial Member (former HC
+    Judge): 4 years or age 67. Technical Member (Centre/State): 4 years or age 65.
+  reappointment_possible: false
+  removal_authority: president_india
+  removal_requires_parliament: false
+  removal_independent_committee: true
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: null
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: null
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    Removal by President on recommendation of a committee comprising CJI (or
+    nominee), a retired SC Judge, and Secretaries of Finance and Law Ministries
+    (CGST Act s.110A as amended by Finance Act 2023).
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >-
+    Tribunal members are not public servants under the Lokpal and Lokayuktas Act
+    2013 s.14 read with Schedule; removal mechanism under parent statute.
+  source: CGST Act 2017 s.110A as amended
+
+structural_variations:
+  - variation_id: gstat_principal_bench
+    description: >-
+      Principal Bench at New Delhi comprising President and two Technical Members
+      (Centre + State). Hears appeals from AAAR, transfer petitions, and
+      cross-empowerment matters.
+    applicable_to:
+      - national
+    source: CGST Act 2017 s.109(1)(a) as amended by Finance Act 2023
+    independence_risk_note: >-
+      President post unfilled since enactment (2017–present, June 2026). Tribunal
+      not operationally constituted despite 8+ years of GST implementation.
+  - variation_id: gstat_state_bench
+    description: >-
+      State Benches (one per state/UT or shared for smaller UTs) each comprising
+      one Judicial Member and one Technical Member. 31 planned benches per Finance
+      Act 2023. None constituted as of June 2026.
+    applicable_to:
+      - state_level
+    source: CGST Act 2017 s.109(6) as amended; MoF Notification S.O. 1559(E) dated
+      06.04.2023 (locations notified).
+    independence_risk_note: >-
+      All 31 state/UT benches unoperational. Taxpayers unable to appeal AAR/AAAR
+      orders; writ petitions to High Courts are the de facto remedy.
+
+data_quality: partial
+data_quality_notes: >-
+  Structural_gap: CRITICAL. GSTAT not constituted for 8+ years since GST
+  enactment (July 2017) through Finance Act 2023 amendments and beyond. MoF
+  notified bench locations (April 2023) and amended appointment procedure (Finance
+  Act 2023 s.110A) but President post and all Member posts remain vacant as of
+  June 2026. No case_volume data possible (no sittings). Appointment sub-committee
+  constituted under SC monitoring (Union of India v. Mohit Minerals, W.P.(C)
+  859/2022 — SC directed expeditious constitution, order dated 19 May 2023).
+  budget_figure not separately identified in Union Budget (subsumed under DoR
+  establishment estimates pending constitution).
+
+unverified_fields:
+  - field: sources.mohit_minerals_sc_order
+    note: >
+      SC judgment PDF URL on main.sci.gov.in not independently verified in this pass.
+  - field: funding.budget_figure_crore
+    note: >
+      Union Budget does not disaggregate GSTAT allocation pending constitution.
+
+sources:
+  - label: CGST Act 2017 — ss.109–110 (as amended by Finance Act 2023)
+    url: https://india-code.nic.in/DownloadFile?FileName=A2017-12.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: MoF Notification S.O. 1559(E) — GSTAT bench locations notified
+    url: https://egazette.gov.in/WriteReadData/2023/245026.pdf
+    type: GazetteNotification
+    accessed_date: '2026-06-11'
+  - label: SC Order — Mohit Minerals — directions on GSTAT constitution
+    url: https://main.sci.gov.in/supremecourt/2022/9479/9479_2022_1_1501_46001_Judgement_19-May-2023.pdf
+    type: SCJudgment
+    accessed_date: '2026-06-11'

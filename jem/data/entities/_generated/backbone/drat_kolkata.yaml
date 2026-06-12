@@ -1,0 +1,63 @@
+id: drat_kolkata
+name: Debt Recovery Appellate Tribunal, Kolkata
+name_hindi: ऋण वसूली अपीलीय अधिकरण, कोलकाता
+abbreviation: DRAT Kolkata
+aliases:
+- Debts Recovery Appellate Tribunal Kolkata
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+jurisdiction_scope:
+  states_covered:
+  - WB
+  - TS
+  - AP
+  - OD
+  - AS
+  - SK
+  is_all_india: false
+  jurisdiction_types:
+  - appellate
+  - debt_recovery_appeals
+created_year: 2000
+operational_status: Active
+statutory_basis: >-
+  Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act),
+  s.8 — established vide G.S.R. 257(E), 24 March 2000. Appellate jurisdiction
+  over eastern-region DRT benches including Hyderabad (DRT-I, DRT-II) and
+  Visakhapatnam per MoF e-tribunals composition listing.
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: 'Chairperson: 5 years or age 65, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+funding:
+  primary_source: Ministry_Budget
+  ministry_responsible: ministry_of_finance
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_calcutta
+complaint_mechanism:
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: Judicial officers; Lokpal Act 2013 excludes.
+data_quality: partial
+data_quality_notes: >-
+  Bench-level DRAT entity (C04). Supervises DRT Kolkata 1–3, DRT Hyderabad 1–2,
+  DRT Visakhapatnam, DRT Siliguri, DRT Cuttack, DRT Guwahati per MoF e-tribunals
+  portal composition page. Gazette notification reassigning Hyderabad/Visakhapatnam
+  from DRAT Chennai circuit (original G.S.R. 134(E) 2000) to DRAT Kolkata not
+  independently verified in this pass — see drt_hyderabad unverified_fields.
+sources:
+- label: RDDBFI Act 1993, s.8–18 — DRAT provisions
+  url: https://india-code.nic.in/handle/123456789/1573
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: MoF e-tribunals — DRAT/DRT composition listing
+  url: https://drt.etribunals.gov.in/drtlive/composition.php
+  type: GoIWebsite
+  accessed_date: '2026-06-12'

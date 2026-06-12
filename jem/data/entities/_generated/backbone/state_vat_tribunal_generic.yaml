@@ -1,0 +1,123 @@
+id: state_vat_tribunal_generic
+name: State VAT Appellate Tribunal (Generic)
+name_hindi: राज्य वैट अपीलीय अधिकरण (सामान्य)
+abbreviation: VAT Tribunal
+aliases:
+  - State Sales Tax Tribunal
+  - Commercial Tax Tribunal
+
+type: StateTribunal
+cluster: tribunals_adr
+level_of_government: State
+
+created_year: 2003
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Each state's VAT/commercial-tax legislation, typically: (a) State Value Added
+  Tax Act (2003–2006 era) — Tribunal constituted under respective state act; or
+  (b) pre-VAT state Sales Tax Act tribunal continued. Post-GST (01.07.2017):
+  jurisdiction restricted to pre-GST legacy disputes. Most states retain the
+  tribunal body for legacy matters. A few states have integrated with State Goods
+  and Services Tax Act 2017 appellate mechanisms pending GSTAT constitution.
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: governor_state
+  criteria_public: false
+  tenure: >-
+    Varies by state. Typically Chairperson: retired HC Judge or seniormost member.
+    Members: IRS/SRS (state revenue service) officers or retired judicial officers.
+    Term and eligibility per state-specific rules.
+  reappointment_possible: null
+  removal_authority: governor_state
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: null
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: governor_state
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: Per state VAT/commercial tax act; no uniform national standard.
+  lokpal_jurisdiction: Contested
+  lokpal_jurisdiction_note: >-
+    State Lokayukta jurisdiction varies by state. Some states explicitly exclude
+    tribunal members; others include. Mark contested pending state-specific review.
+  source: State VAT Acts (various)
+
+structural_variations:
+  - variation_id: vat_tribunal_maharashtra
+    description: Maharashtra Sales Tax Tribunal — constituted under MVAT Act 2002 s.84;
+      seat at Mumbai with benches at Nagpur and Pune.
+    applicable_to:
+      - Maharashtra
+    source: Maharashtra Value Added Tax Act 2002 s.84
+    independence_risk_note: null
+  - variation_id: vat_tribunal_up
+    description: UP Commercial Tax Tribunal — constituted under UP VAT Act 2008 s.58.
+    applicable_to:
+      - Uttar Pradesh
+    source: Uttar Pradesh Value Added Tax Act 2008 s.58
+    independence_risk_note: null
+  - variation_id: vat_tribunal_karnataka
+    description: Karnataka Appellate Tribunal (Commercial Taxes) — constituted under
+      KVAT Act 2003 s.62.
+    applicable_to:
+      - Karnataka
+    source: Karnataka Value Added Tax Act 2003 s.62
+    independence_risk_note: null
+  - variation_id: vat_tribunal_tamilnadu
+    description: Tamil Nadu Sales Tax Appellate Tribunal — constituted under TNVAT Act
+      2006 s.56.
+    applicable_to:
+      - Tamil Nadu
+    source: Tamil Nadu Value Added Tax Act 2006 s.56
+    independence_risk_note: null
+  - variation_id: vat_tribunal_gujarat
+    description: Gujarat Value Added Tax Tribunal — constituted under GVAT Act 2003 s.76.
+    applicable_to:
+      - Gujarat
+    source: Gujarat Value Added Tax Act 2003 s.76
+    independence_risk_note: null
+
+data_quality: partial
+data_quality_notes: >-
+  Generic node representing state-level VAT/commercial-tax appellate tribunals
+  (~28 states maintain such bodies). Post-GST (July 2017) jurisdiction is
+  exclusively for pre-GST legacy disputes; no new GST appeals can be filed until
+  GSTAT is constituted. Some states (e.g. Telangana, Andhra Pradesh post-
+  bifurcation) have merged or reconstituted these bodies. created_year 2003 is
+  approximate — reflects the broad wave of state VAT Act enactments (2003–2006);
+  some tribunals predate this under Sales Tax Acts. State-specific entities should
+  be modelled separately when state packs are built (C15–C18). structural_variations
+  cover major states only; 23 additional state variants not yet enumerated.
+  funding.ministry_responsible left null — each state's Finance/Commercial Taxes
+  Department administers; no single entity_id mapped yet in graph.
+
+sources:
+  - label: India — State VAT Acts (collected at India Code)
+    url: https://india-code.nic.in/
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: CBIC — GST Act ss.109–110 and GSTAT status (background context)
+    url: https://www.cbic.gov.in/resources//htdocs-cbec/gst/cgst-act.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'

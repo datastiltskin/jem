@@ -1,0 +1,99 @@
+id: caar_customs
+name: Customs Authority for Advance Rulings
+name_hindi: सीमा शुल्क अग्रिम निर्णय प्राधिकरण
+abbreviation: CAAR
+aliases:
+  - Customs AAR
+  - Authority for Advance Rulings (Customs)
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+created_year: 2021
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Customs Act 1962 ss.28EA–28EI as inserted by Finance Act 2021 s.94 — established
+  two CAARs (Mumbai and New Delhi). Replaced the pre-2021 Authority for Advance
+  Rulings (Customs) (which shared infrastructure with the income-tax AAR and was
+  headed by a retired HC/SC Judge). Finance Act 2021 reconstituted as officer-level
+  body within CBIC.
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: >-
+    Principal Commissioner of Customs or Commissioner of Customs (IRS-C&CE cadre)
+    designated as Authority. Terms of service per IRS service rules; not fixed-term
+    independent appointment.
+  reappointment_possible: null
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Ministry_Budget
+  ministry_responsible: ministry_of_finance
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: null
+  conduct_oversight_body: cbic
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    Officers subject to IRS cadre service rules; no independent removal procedure.
+    Transfers and postings through DoPT/CBIC.
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >-
+    CAAR members are serving IRS officers; public servants under Lokpal Act.
+  source: Customs Act 1962 s.28EA; Lokpal Act 2013 s.14
+
+structural_variations:
+  - variation_id: caar_mumbai
+    description: CAAR Mumbai — jurisdiction over importers/exporters in Western India and
+      certain All-India matters.
+    applicable_to:
+      - Mumbai
+    source: Customs Act 1962 s.28EB; CBIC Notification 77/2021-Cus dated 13.08.2021
+    independence_risk_note: null
+  - variation_id: caar_delhi
+    description: CAAR New Delhi — jurisdiction over importers/exporters in Northern and
+      Eastern India.
+    applicable_to:
+      - Delhi
+    source: Customs Act 1962 s.28EB; CBIC Notification 77/2021-Cus dated 13.08.2021
+    independence_risk_note: null
+
+data_quality: partial
+data_quality_notes: >-
+  Independence concern: same as aar_income_tax — Finance Act 2021 reconstitution
+  shifted from retired HC/SC Judge to serving IRS/CBIC officer. Ruling is binding
+  on applicant and CBIC for 3 years (s.28EH) but subject to HC writ. No statutory
+  appeal. Two CAARs constituted at Mumbai and Delhi per CBIC Notification
+  77/2021-Cus (13.08.2021). Number of rulings issued and pendency figures not
+  publicly available in structured form.
+
+sources:
+  - label: Finance Act 2021 — s.94 inserting ss.28EA–28EI in Customs Act 1962
+    url: https://india-code.nic.in/DownloadFile?FileName=A2021-13.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: CBIC Notification 77/2021-Cus — CAAR constitution at Mumbai and Delhi
+    url: https://www.cbic.gov.in/resources//htdocs-cbec/customs/cs-circulars/cs-circulars-2021/Notfn-77-2021-Cus.pdf
+    type: GazetteNotification
+    accessed_date: '2026-06-11'

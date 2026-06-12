@@ -1,0 +1,18 @@
+id: cbic
+name: Central Board of Indirect Taxes and Customs
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+created_year: 1964
+operational_status: Active
+data_quality: unverified
+data_quality_notes: >-
+  C08 stub for graph connectivity only — expand with CBIC/CBEC reorganisation
+  history and Customs Act basis in C08 pass. Referenced by CAAR oversight.
+sources:
+- label: CBIC — official website
+  url: https://www.cbic.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'

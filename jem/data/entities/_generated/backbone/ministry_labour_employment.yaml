@@ -1,0 +1,19 @@
+id: ministry_labour_employment
+name: Ministry of Labour and Employment
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+created_year: 1950
+operational_status: Active
+data_quality: unverified
+data_quality_notes: >-
+  C08 stub for graph connectivity only — expand appointment, funding, and
+  organisational structure in a dedicated C08 ministry pass. Parent ministry for
+  EPFO, EPFAT, CGIT funding references.
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'

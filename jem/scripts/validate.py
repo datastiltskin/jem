@@ -190,6 +190,13 @@ class StructuralVariation(BaseModel):
     independence_risk_note: Optional[str] = None
 
 
+class UnverifiedFieldModel(BaseModel):
+    """Per-field verification flag surfaced in the L3 detail panel."""
+
+    field: str
+    note: str
+
+
 class JurisdictionScope(BaseModel):
     states_covered: Optional[List[str]] = []
     uts_covered: Optional[List[str]] = []
@@ -297,6 +304,7 @@ class EntityModel(BaseModel):
     training: Optional[TrainingModel] = None
     digital_infrastructure: Optional[DigitalInfraModel] = None
     structural_variations: Optional[List[StructuralVariation]] = []
+    unverified_fields: Optional[List[UnverifiedFieldModel]] = []
 
     case_volume: Optional[CaseVolumeModel] = None
     judge_strength: Optional[JudgeStrengthModel] = None

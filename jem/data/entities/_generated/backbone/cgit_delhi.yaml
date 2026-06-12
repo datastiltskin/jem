@@ -1,0 +1,103 @@
+id: cgit_delhi
+name: Central Government Industrial Tribunal, Delhi
+name_hindi: केन्द्र सरकार औद्योगिक अधिकरण, दिल्ली
+abbreviation: CGIT Delhi
+aliases:
+  - CGIT-cum-National Industrial Tribunal Delhi
+  - Central Government Industrial Tribunal No. 1 Delhi
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+created_year: 1952
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Industrial Disputes Act 1947 s.7A (Central Government Industrial Tribunal) and
+  s.7B (National Industrial Tribunal for inter-state or national importance disputes).
+  Delhi bench is designated CGIT-cum-NIT for matters of national importance
+  referred by Central Government. Currently Industrial Disputes Act replaced by
+  Industrial Relations Code 2020 (not yet in force as of June 2026 — notified but
+  rules not finalised); 1947 Act remains operative.
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: >-
+    Presiding Officer: person who is, or has been, a Judge of an HC, or is
+    qualified to be a Judge of HC (IDA 1947 s.7A(3)). Tenure: as prescribed by
+    Central Government; typically until age 65. Reappointment under conditions
+    laid down.
+  reappointment_possible: true
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_labour_employment
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: null
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    Central Government may remove Presiding Officer on grounds of misbehaviour or
+    incapacity after inquiry (IDA 1947 s.9). No independent committee requirement.
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >-
+    Presiding Officer exercises judicial functions under IDA 1947; not a public
+    servant for Lokpal purposes in judicial capacity. Analogous to tribunal
+    judicial members excluded by convention; confirm against Lokpal Act Schedule
+    for final determination.
+  source: Industrial Disputes Act 1947 ss.7A, 7B, 9
+
+judge_strength:
+  data_as_of: null
+  allotted: 1
+  appointed: null
+  vacancy_count: null
+  source_type: Estimated
+  source_url: https://cgit.labour.gov.in/
+  notes: >-
+    Each CGIT seat has one Presiding Officer post; allotted = 1 per bench.
+    Appointed (working) count not confirmed from official source.
+
+data_quality: partial
+data_quality_notes: >-
+  Delhi CGIT handles references by Central Government under IDA 1947 s.10 in
+  disputes involving Central Government employees or Central sphere industries.
+  Also designated NIT for inter-state disputes of national importance (s.7B).
+  Physical address: CGIT Building, New Delhi. Cases filed pending Industrial
+  Relations Code 2020 enforcement (deferred). Vacancy data not confirmed.
+
+unverified_fields:
+  - field: judge_strength.appointed
+    note: >
+      Working Presiding Officer count not confirmed from MoLE/CGIT portal.
+
+sources:
+  - label: Industrial Disputes Act 1947 — ss.7A, 7B, 10 (as amended)
+    url: https://india-code.nic.in/DownloadFile?FileName=A1947-14.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: MoLE — CGIT portal
+    url: https://cgit.labour.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

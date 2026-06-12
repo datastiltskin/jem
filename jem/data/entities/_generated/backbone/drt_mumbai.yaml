@@ -1,0 +1,91 @@
+id: drt_mumbai
+name: Debt Recovery Tribunal, Mumbai
+name_hindi: ऋण वसूली अधिकरण, मुंबई
+abbreviation: DRT Mumbai
+aliases:
+  - DRT Mumbai
+  - Debts Recovery Tribunal Mumbai
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - MH
+  uts_covered:
+    - DN
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 1994
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. Territorial jurisdiction notified by the Central
+  Government under s. 3(1A) RDDBFI Act (as amended by IBC 2016). Mumbai has three
+  benches (DRT-I, DRT-II, DRT-III) under DRAT Mumbai appellate supervision.
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_bombay
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_bombay
+      mechanism: >
+        Supervisory jurisdiction of Bombay High Court under Articles 226/227;
+        writ petition lies before Bombay High Court.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge; Lokpal
+    jurisdiction does not extend to judicial functions of tribunal officers.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  Mumbai has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Mumbai.
+  This entity represents the Mumbai location; bench-specific entities may be
+  warranted if Gazette notification addresses are sourced from drt.gov.in. Territorial
+  jurisdiction: Maharashtra and DNH&DD (per standard DRT Mumbai practice). Pune and
+  Nagpur are separate DRT locations under the same DRAT Mumbai umbrella.
+
+unverified_fields:
+  - field: created_year
+    note: >
+      1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'
+  - label: 'SARFAESI Act 2002, s. 17'
+    url: https://india-code.nic.in/CodeofActs13/20020541.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'

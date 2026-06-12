@@ -1,0 +1,92 @@
+id: drt_allahabad
+name: Debt Recovery Tribunal, Allahabad
+name_hindi: ऋण वसूली अधिकरण, प्रयागराज
+abbreviation: DRT Allahabad
+aliases:
+  - DRT Prayagraj
+  - Debts Recovery Tribunal Allahabad
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - UP
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 1994
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. DRT Allahabad is under DRAT Allahabad appellate
+  supervision. Territorial jurisdiction notified by Central Government; covers
+  Allahabad division and eastern UP districts not served by DRT Lucknow. DRAT
+  Allahabad also supervises DRT Lucknow, DRT Jabalpur, DRT Dehradun, DRT Patna,
+  and DRT Ranchi per secondary sources.
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_allahabad
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_allahabad
+      mechanism: >
+        Supervisory jurisdiction of Allahabad High Court under Articles 226/227;
+        writ petition before Allahabad High Court.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge; Lokpal
+    jurisdiction does not extend to judicial functions of tribunal officers.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  DRT Allahabad is a single-bench tribunal under DRAT Allahabad. DRAT Allahabad
+  supervision confirmed from vLex India legal source (covers DRTs at Allahabad,
+  Lucknow, Jabalpur). Territorial jurisdiction: Allahabad division and eastern UP
+  districts. Exact district-level split between DRT Allahabad and DRT Lucknow
+  requires Gazette notification sourcing. Allahabad is also the seat of DRAT
+  Allahabad (the principal appellate body for the region).
+
+unverified_fields:
+  - field: created_year
+    note: >
+      1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'
+  - label: 'DRAT Allahabad jurisdiction — MoF e-tribunals composition'
+    url: https://drt.etribunals.gov.in/drtlive/composition.php
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

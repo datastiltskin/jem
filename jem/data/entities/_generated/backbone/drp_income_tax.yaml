@@ -1,0 +1,87 @@
+id: drp_income_tax
+name: Dispute Resolution Panel (Income Tax)
+name_hindi: विवाद समाधान पैनल (आयकर)
+abbreviation: DRP
+aliases:
+  - Dispute Resolution Panel
+  - DRP (IT)
+
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: Central
+
+created_year: 2009
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Income Tax Act 1961, s.144C as inserted by Finance (No.2) Act 2009 s.42. DRP
+  is a collegium of three Principal Commissioners / Commissioners of Income Tax
+  designated by CBDT. Not a separate statutory tribunal — constituted as an
+  alternative dispute resolution mechanism within CBDT for eligible assesses
+  (primarily foreign companies and transfer-pricing cases).
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: cbdt
+  criteria_public: false
+  tenure: >-
+    Members designated by CBDT from serving Principal Commissioners / Commissioners
+    of Income Tax. No fixed tenure; rotational designation at CBDT discretion.
+  reappointment_possible: true
+  removal_authority: cbdt
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Ministry_Budget
+  ministry_responsible: ministry_of_finance
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: Internal
+  audit_report_public: false
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    Members are serving IRS officers subject to departmental proceedings under
+    IRS Rules and CCS (CCA) Rules; no special removal mechanism.
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >-
+    DRP members are serving public servants (IRS); Lokpal jurisdiction applies.
+  source: IT Act 1961 s.144C; Lokpal Act 2013 s.14
+
+data_quality: partial
+data_quality_notes: >-
+  Independence circularity concern: DRP members are CBDT officers adjudicating
+  objections to draft assessment orders passed by CBDT officers. Directions issued
+  by DRP under s.144C(5) are binding on the Assessing Officer but do not preclude
+  ITAT appeal (s.144C(10) — assessee may appeal to ITAT against final order;
+  department may not). DRP is NOT a tribunal distinct from CBDT — it is an
+  internal collegium. Classifying as RegulatoryBodyQJ in regulatory_bodies cluster
+  to reflect quasi-judicial function within the executive; type CentralTribunal
+  would mischaracterise independence. DRP panels constituted at major cities
+  (Delhi, Mumbai, Chennai, Kolkata, Bengaluru, Hyderabad, Pune, Ahmedabad) per
+  CBDT notifications. No public annual report. Pendency data not publicly
+  disaggregated from ITAT inflows.
+
+sources:
+  - label: Income Tax Act 1961 — s.144C (inserted by Finance (No.2) Act 2009)
+    url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: CBDT — DRP designation notifications (periodic)
+    url: https://www.incometaxindia.gov.in/pages/communications/notifications.aspx
+    type: GoIWebsite
+    accessed_date: '2026-06-11'
