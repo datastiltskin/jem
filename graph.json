@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-06-12T07:57:11.649569+00:00",
+    "generated_at": "2026-06-12T13:55:15.219885+00:00",
     "entity_count": 592,
     "relationship_count": 602,
     "canvas_width": 1800,
@@ -14,7 +14,7 @@
   "impact_metrics": {
     "high_independence_risk_count": 114,
     "appointer_equals_funder_removal_count": 1,
-    "no_public_appointment_criteria_count": 54,
+    "no_public_appointment_criteria_count": 57,
     "not_constituted_count": 4,
     "no_external_complaint_mechanism_count": 587
   },
@@ -182,7 +182,7 @@
       "id": "executive_interface",
       "name": "Executive Interface",
       "color": "#742a2a",
-      "entity_count": 18,
+      "entity_count": 17,
       "avg_independence_risk": 0.6,
       "not_constituted_count": 2,
       "position": {
@@ -214,7 +214,7 @@
       "id": "legislative_executive",
       "name": "Legislative Executive",
       "color": "#1f2d3d",
-      "entity_count": 60,
+      "entity_count": 61,
       "avg_independence_risk": 0.0,
       "not_constituted_count": 0,
       "position": {
@@ -361,11 +361,11 @@
       "constitutional_basis": null,
       "statutory_basis": "Income Tax Act 1961, Chapter XIX-B (ss.245N–245V) as substituted by Finance Act 2021 s.98 — reconstituted as 'Board for Advance Rulings' from 'Authority for Advance Rulings'. Two Boards constituted with retired ITAT Presidents/Vice Presidents. Original AAR (single-member, retired SC Judge as Chairman) abolished by Finance Act 2021 w.e.f. 01.04.2021.",
       "data_quality": "partial",
-      "data_quality_notes": "Independence concern: Finance Act 2021 reconstitution replaced retired SC Judge Chairman with senior IRS officers — structural shift from judicial to departmental composition. Contested by taxpayer bar (pending writ petitions in several HCs challenging constitutionality of non-judicial composition for advance rulings). Two Boards (Board-I at New Delhi, Board-II at New Delhi) constituted by notification. Rulings binding on applicant and CBDT (s.245S) but subject to writ jurisdiction of HC under Art.226/227. No appeal to ITAT or HC as of right. created_year reflects original AAR (Finance Act 1993 Chapter XIX-B); reconstitution year 2021.",
+      "data_quality_notes": "Independence concern: Finance Act 2021 reconstitution replaced retired SC Judge Chairman with senior IRS officers — structural shift from judicial to departmental composition. Contested by taxpayer bar (pending writ petitions in several HCs challenging constitutionality of non-judicial composition for advance rulings).   Two Boards at Delhi and Mumbai constituted by CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 — corrected from prior erroneous reference to 92/2021 (drt_b4). Rulings binding on applicant and CBDT (s.245S) but subject to writ jurisdiction of HC under Art.226/227. No appeal to ITAT or HC as of right. created_year reflects original AAR (Finance Act 1993 Chapter XIX-B); reconstitution year 2021.",
       "unverified_fields": [
         {
-          "field": "sources.cbdt_notification_92_2021",
-          "note": "CBDT notification 92/2021 PDF URL not verified against CBDT notifications archive.\n"
+          "field": "sources.cbdt_notification_96_2021_pdf",
+          "note": "Direct incometaxindia.gov.in PDF for Notification 96/2021 returns 404; S.O. 3561(E) text confirmed via taxguru.in transcript.\n"
         }
       ],
       "derived": {
@@ -416,10 +416,16 @@
           "accessed_date": "2026-06-11"
         },
         {
-          "label": "CBDT — Board for Advance Rulings constitution notification 2021",
-          "url": "https://www.incometaxindia.gov.in/communications/notification/notification92_2021.pdf",
+          "label": "CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 — constitutes Board for Advance Rulings at Delhi and Mumbai; AAR ceases operation from 1 September 2021\n",
+          "url": "https://taxguru.in/income-tax/cbdt-constitutes-boards-advance-rulings-delhi-mumbai.html",
           "type": "GazetteNotification",
-          "accessed_date": "2026-06-11"
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Taxmann summary — Notification No. 96/2021 and 97/2021 dated 1 September 2021\n",
+          "url": "https://www.taxmann.com/post/blog/cbdt-notifies-board-for-advance-rulings-effective-from-01-09-2021/",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
         }
       ],
       "_detail": {
@@ -464,8 +470,8 @@
         "structural_variations": [],
         "unverified_fields": [
           {
-            "field": "sources.cbdt_notification_92_2021",
-            "note": "CBDT notification 92/2021 PDF URL not verified against CBDT notifications archive.\n"
+            "field": "sources.cbdt_notification_96_2021_pdf",
+            "note": "Direct incometaxindia.gov.in PDF for Notification 96/2021 returns 404; S.O. 3561(E) text confirmed via taxguru.in transcript.\n"
           }
         ],
         "jurisdiction_scope": null,
@@ -2477,7 +2483,7 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Income Tax Act 1961 s.2(7A) (definition of Assessing Officer); s.120–124 (jurisdiction of AO); s.143–144 (assessment procedure); s.147–148A (reassessment); s.156 (demand notice)",
+      "statutory_basis": "Income Tax Act 1961 s.2(7A) (definition of Assessing Officer); ss.120–133C (jurisdiction, powers, and functions of income-tax authorities including AOs); ss.143–144 (assessment procedure); ss.147–148A (reassessment); s.156 (demand notice). Faceless Assessment Scheme under s.144B (CBDT Notification 60/2020) — assessment largely performed through National Faceless Assessment Centre (NFAC). Appeals against AO orders lie to CIT(A)/JCIT(A) under s.246A, thence to ITAT under s.253.\n",
       "data_quality": "partial",
       "data_quality_notes": "Generic entity representing the Assessing Officer cadre across all Income Tax field formations. AO is the originating authority in the IT appellate chain: AO → CIT(A) → ITAT → HC → SC.\nThis entity models the structural role, not any individual AO or charge/ward. Actual formations are allocated by CBDT through charge orders; individual AO jurisdictions assigned under IT Act 1961 s.120 via CBDT notification.\nNo judge_strength or case_volume fields applicable — volume statistics are reported at CBDT/department level, not per AO unit.",
       "unverified_fields": [],
@@ -2517,6 +2523,12 @@
           "url": "https://incometaxindia.gov.in",
           "type": "GoIWebsite",
           "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Faceless Assessment Scheme — s.144B; CBDT Notification 60/2020 dated 13 August 2020\n",
+          "url": "https://www.incometaxindia.gov.in/communications/notification/notification60_2020.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
         }
       ],
       "_detail": {
@@ -2560,7 +2572,17 @@
         },
         "training": null,
         "digital_infrastructure": null,
-        "structural_variations": [],
+        "structural_variations": [
+          {
+            "variation_id": "ao_faceless_assessment",
+            "description": "Faceless Assessment Scheme launched under s.144B of the IT Act, notified vide CBDT Notification No. 60/2020 and subsequent notifications. Cases assigned to National Faceless Assessment Centre (NFAC), Delhi and Regional Faceless Assessment Centres; assessment completed without face-to-face interaction. Certain categories (international tax, search/seizure, black money) excluded from faceless scheme.\n",
+            "applicable_to": [
+              "ao_income_tax_generic"
+            ],
+            "source": "IT Act 1961 s.144B; CBDT Notification 60/2020 dated 13 August 2020",
+            "independence_risk_note": "Faceless scheme reduces opportunity for AO-taxpayer corruption but raises concerns about due process; multiple HC petitions filed 2020-2023.\n"
+          }
+        ],
         "unverified_fields": [],
         "jurisdiction_scope": {
           "is_all_india": true,
@@ -2578,7 +2600,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 514,
+        "x": 515,
         "y": 768
       }
     },
@@ -3245,12 +3267,14 @@
     {
       "id": "cbdt",
       "name": "Central Board of Direct Taxes",
-      "aliases": [],
+      "aliases": [
+        "Central Board of Direct Taxes"
+      ],
       "jurisdiction_scope": {
         "is_all_india": true
       },
-      "name_hindi": null,
-      "abbreviation": null,
+      "name_hindi": "केन्द्रीय प्रत्यक्ष कर बोर्ड",
+      "abbreviation": "CBDT",
       "type": "ExecutiveBody",
       "cluster": "executive_interface",
       "level_of_government": "Central",
@@ -3258,10 +3282,15 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": null,
-      "data_quality": "unverified",
-      "data_quality_notes": "C08 stub for graph connectivity only — expand as Department/Board entity with IT Act 1961 ss.116–119 basis in C08 pass. Referenced by AAR/DRP appointment and oversight fields.",
-      "unverified_fields": [],
+      "statutory_basis": "Central Board of Revenue Act, 1963, s. 3 (bifurcation of the former Central Board of Revenue into CBDT and CBIC). Functions under the Income Tax Act, 1961 as the apex authority for administration of direct taxes (income tax, corporation tax, wealth tax). CBDT issues circulars, instructions, and notifications binding on income-tax authorities under s. 119 of the Income Tax Act, 1961. Supervises the Income Tax Department, Income Tax Appellate Tribunal (ITAT), Board for Advance Rulings at Delhi and Mumbai (Notification No. 96/2021), Dispute Resolution Panel (DRP), and Commissioner of Income Tax (Appeals) units.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Expanded from C08 stub (drt_b3). Created: 1963 per Central Board of Revenue Act 1963 bifurcation. HQ: North Block, New Delhi. CBDT is a statutory body under the Ministry of Finance (Department of Revenue). Key subordinate/supervised bodies: Income Tax Appellate Tribunal (ITAT), Principal Chief Commissioners across zones, CIT(A) units, Dispute Resolution Panel (DRP), Board for Advance Rulings (BAR) at Delhi and Mumbai. CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 constitutes BAR replacing AAR-IT — corrected from prior erroneous 92/2021 reference (drt_b4). Direct incometaxindia.gov.in PDF for 96/2021 returns 404; S.O. number confirmed via taxguru.in transcript.\n",
+      "unverified_fields": [
+        {
+          "field": "sources.cbdt_notification_96_2021_pdf",
+          "note": "Direct incometaxindia.gov.in PDF for Notification 96/2021 not live (404).\n"
+        }
+      ],
       "derived": {
         "discretionary_power_breakdown": {
           "Scores excluded: governance officeholder or administrative body": 0
@@ -3279,30 +3308,67 @@
         "structural_health_level": null,
         "structural_health_score": null
       },
-      "funding_source": null,
-      "funding_ministry": null,
-      "audited_by": null,
-      "audit_report_public": null,
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
       "complaint_external_exists": false,
-      "appointment_criteria_public": null,
+      "appointment_criteria_public": false,
       "reappointment_possible": null,
       "sources": [
         {
-          "label": "Income Tax Act 1961 — India Code",
-          "url": "https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx",
+          "label": "Central Board of Revenue Act 1963",
+          "url": "https://india-code.nic.in/CodeofActs13/19630054.pdf",
           "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Income Tax Act 1961, s. 119 (CBDT instructions power)",
+          "url": "https://india-code.nic.in/CodeofActs13/19610043.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 — constitutes Board for Advance Rulings; AAR ceases operation\n",
+          "url": "https://taxguru.in/income-tax/cbdt-constitutes-boards-advance-rulings-delhi-mumbai.html",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CBDT official portal — incometaxindia.gov.in",
+          "url": "https://www.incometaxindia.gov.in/",
+          "type": "GoIWebsite",
           "accessed_date": "2026-06-12"
         }
       ],
       "_detail": {
-        "appointment": null,
-        "funding": null,
-        "audit": null,
-        "complaint_mechanism": null,
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_of_finance"
+        },
+        "complaint_mechanism": {
+          "lokpal_jurisdiction": "Not_Applicable",
+          "source": "Central Board of Revenue Act 1963; Income Tax Act 1961"
+        },
         "training": null,
         "digital_infrastructure": null,
         "structural_variations": [],
-        "unverified_fields": [],
+        "unverified_fields": [
+          {
+            "field": "sources.cbdt_notification_96_2021_pdf",
+            "note": "Direct incometaxindia.gov.in PDF for Notification 96/2021 not live (404).\n"
+          }
+        ],
         "jurisdiction_scope": {
           "is_all_india": true
         },
@@ -3311,29 +3377,33 @@
         "parent_hc": null
       },
       "position": {
-        "x": 533,
+        "x": 536,
         "y": 732
       }
     },
     {
       "id": "cbic",
       "name": "Central Board of Indirect Taxes and Customs",
-      "aliases": [],
+      "aliases": [
+        "CBIC",
+        "Central Board of Excise and Customs",
+        "CBEC"
+      ],
       "jurisdiction_scope": {
         "is_all_india": true
       },
-      "name_hindi": null,
-      "abbreviation": null,
+      "name_hindi": "केन्द्रीय अप्रत्यक्ष कर और सीमा शुल्क बोर्ड",
+      "abbreviation": "CBIC",
       "type": "ExecutiveBody",
       "cluster": "executive_interface",
       "level_of_government": "Central",
-      "created_year": 1964,
+      "created_year": 1963,
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": null,
-      "data_quality": "unverified",
-      "data_quality_notes": "C08 stub for graph connectivity only — expand with CBIC/CBEC reorganisation history and Customs Act basis in C08 pass. Referenced by CAAR oversight.",
+      "statutory_basis": "Central Board of Revenue Act, 1963, s. 3 (bifurcation; originally Central Board of Excise and Customs). Renamed CBIC vide notification under Finance Act 2018 (w.e.f. 1 January 2019) to reflect GST mandate. Functions under: Customs Act 1962; Central Excise Act 1944 (legacy); Goods and Services Tax Acts 2017 (CGST, IGST, UTGST); Foreign Trade (Development and Regulation) Act 1992 (partial). CBIC supervises Customs formations, Central Tax Commissioners, GST field formations, CESTAT (appellate tribunal for customs/excise/service tax disputes).\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Expanded from C08 stub (drt_b3). Created: 1963 per Central Board of Revenue Act 1963 bifurcation (as CBEC). Renamed to CBIC effective 1 January 2019 per Finance Act 2018. HQ: North Block, New Delhi. Key supervised bodies/tribunals: CESTAT (Customs, Excise and Service Tax Appellate Tribunal), GST Appellate Authority, Advance Ruling Authorities under GST. Supervises 21 zones, 101 Commissionerates. GSTAT (GST Appellate Tribunal) — being constituted under Finance Act 2023 amendment to CGST Act; not yet fully operational as of August 2025; CBIC is the supervising board for GSTAT once operational.\n",
       "unverified_fields": [],
       "derived": {
         "discretionary_power_breakdown": {
@@ -3352,26 +3422,58 @@
         "structural_health_level": null,
         "structural_health_score": null
       },
-      "funding_source": null,
-      "funding_ministry": null,
-      "audited_by": null,
-      "audit_report_public": null,
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
       "complaint_external_exists": false,
-      "appointment_criteria_public": null,
+      "appointment_criteria_public": false,
       "reappointment_possible": null,
       "sources": [
         {
-          "label": "CBIC — official website",
+          "label": "Central Board of Revenue Act 1963",
+          "url": "https://india-code.nic.in/CodeofActs13/19630054.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Customs Act 1962",
+          "url": "https://india-code.nic.in/CodeofActs13/19620052.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGST Act 2017 (GST framework)",
+          "url": "https://india-code.nic.in/CodeofActs13/20170012.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CBIC official portal",
           "url": "https://www.cbic.gov.in/",
           "type": "GoIWebsite",
           "accessed_date": "2026-06-12"
         }
       ],
       "_detail": {
-        "appointment": null,
-        "funding": null,
-        "audit": null,
-        "complaint_mechanism": null,
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_of_finance"
+        },
+        "complaint_mechanism": {
+          "lokpal_jurisdiction": "Not_Applicable",
+          "source": "Central Board of Revenue Act 1963; Customs Act 1962; CGST Act 2017"
+        },
         "training": null,
         "digital_infrastructure": null,
         "structural_variations": [],
@@ -3384,7 +3486,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 553,
+        "x": 556,
         "y": 768
       }
     },
@@ -6139,7 +6241,7 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Income Tax Act 1961 s.246A (appeals to CIT(A)); s.249–251 (procedure and powers of CIT(A)); Finance Act 2023 — introduction of Joint CIT(A) cadre for small taxpayer appeals; Income Tax (Appellate Tribunal) Rules 1963 (ITAT as second appellate forum above CIT(A))",
+      "statutory_basis": "Income Tax Act 1961 ss.246A (appealable orders), 249–251 (CIT(A) jurisdiction and powers), 253 (further appeal to ITAT). Finance Act 2023 — Joint/Additional CIT(A) units for small taxpayer appeals. Faceless CIT(A) scheme under s.250(6B), notified via CBDT Notification 76/2021 (National Faceless Appeal Centre). ITAT is the second appellate forum above CIT(A).\n",
       "data_quality": "partial",
       "data_quality_notes": "TYPE NOTE: Typed ExecutiveBody / executive_interface rather than RegulatoryBodyQJ because CIT(A) officers are IRS cadre within the Income Tax Department, not independently appointed tribunal members; they exercise quasi-judicial powers departmentally. Maintainer may reconsider if a departmental-adjudicator subtype is added to the schema.\nAPPELLATE CHAIN: AO → CIT(A) → ITAT → HC (questions of law) → SC. CIT(A) is the first appellate forum under IT Act 1961 s.246A.\nJudge-strength concept not applicable — IRS officer posts sanctioned by CBDT/DoPT but not disaggregated publicly per CIT(A) unit.",
       "unverified_fields": [],
@@ -6191,6 +6293,12 @@
           "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1895315",
           "type": "GoIWebsite",
           "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Faceless Appeal Scheme 2021 — CBDT Notification No. 76/2021 dated 27 August 2021 under s.250(6B) of the IT Act; establishes NFAC faceless mechanism\n",
+          "url": "https://www.incometaxindia.gov.in/communications/notification/notification76_2021.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
         }
       ],
       "_detail": {
@@ -6234,7 +6342,17 @@
         },
         "training": null,
         "digital_infrastructure": null,
-        "structural_variations": [],
+        "structural_variations": [
+          {
+            "variation_id": "cit_appeals_faceless",
+            "description": "Faceless CIT(A) scheme launched under s.250(6B) of the IT Act, notified via CBDT Notification No. 76/2021 dated 27 August 2021. Appeals assigned centrally through National Faceless Appeal Centre (NFAC), Delhi; original jurisdiction officer not assigned by taxpayer geography. Fully operational since 2021.\n",
+            "applicable_to": [
+              "cit_appeals_generic"
+            ],
+            "source": "CBDT Notification 76/2021; Finance Act 2021 amendment to IT Act 1961",
+            "independence_risk_note": "Faceless mechanism reduces face-to-face contact but raises concerns about adequacy of oral hearings; several HC writ petitions filed (2021-2024).\n"
+          }
+        ],
         "unverified_fields": [],
         "jurisdiction_scope": {
           "is_all_india": true,
@@ -6259,7 +6377,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 573,
+        "x": 577,
         "y": 732
       },
       "gaps": [
@@ -9561,7 +9679,8 @@
       ],
       "jurisdiction_scope": {
         "states_covered": [
-          "UK"
+          "UK",
+          "UP"
         ],
         "is_all_india": false,
         "jurisdiction_types": [
@@ -9578,10 +9697,15 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide S.O. 454(E) dated 15 February 2017, which carved out the State of Uttarakhand from the erstwhile DRT Lucknow jurisdiction and created a new tribunal at Dehradun effective 16 February 2017. Single-bench tribunal under DRAT Allahabad. Jurisdiction: State of Uttarakhand.\n",
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide S.O. 454(E) dated 15 February 2017, effective 16 February 2017, which created DRT Dehradun and superseded G.S.R. 274(E) dated 31 March 2000 and G.S.R. 71(E) dated 31 January 2002. Official address: Paras Tower, 2nd Floor, Majra Niranjanpur, Saharanpur Road, Dehradun. Jurisdiction: entire State of Uttarakhand, plus Amroha, Bijnor, Moradabad, Rampur, Sambhal, Muzaffarnagar, Saharanpur, and Shamli districts of Uttar Pradesh. Single-bench tribunal under DRAT Allahabad.\n",
       "data_quality": "partial",
-      "data_quality_notes": "Established by S.O. 454(E) dated 15 February 2017, effective 16 February 2017. Gazette notification text confirmed from ibclaw.in. Jurisdiction: State of Uttarakhand (split from DRT Lucknow). DRAT Allahabad supervision confirmed.\n",
-      "unverified_fields": [],
+      "data_quality_notes": "DISTRICT TABLE UPGRADED. Authoritative jurisdiction per S.O. 454(E) dated 15 February 2017 (ibclaw.in full text retrieved 2026-06-12): Uttarakhand (entire state) plus UP districts of Amroha, Bijnor, Moradabad, Rampur, Sambhal, Muzaffarnagar, Saharanpur, and Shamli. Address: Paras Tower, 2nd Floor, Majra Niranjanpur, Saharanpur Road, Dehradun. Note that DRT Dehradun's jurisdiction includes western UP Saharanpur-Moradabad districts — not merely Uttarakhand. HC supervisory jurisdiction for UP districts is left partial.\n",
+      "unverified_fields": [
+        {
+          "field": "complaint_mechanism.bias_complaint_to",
+          "note": "Supervisory HC for western UP districts in Dehradun DRT catchment (Allahabad vs Uttarakhand HC) not definitively resolved.\n"
+        }
+      ],
       "derived": {
         "discretionary_power_breakdown": {
           "Base discretionary power for type CentralTribunal": 2,
@@ -9624,7 +9748,7 @@
           "accessed_date": "2026-06-12"
         },
         {
-          "label": "S.O. 454(E) dated 15 February 2017 — DRT Dehradun established for Uttarakhand; supersedes G.S.R. 274(E) and G.S.R. 71(E)\n",
+          "label": "S.O. 454(E) dated 15 February 2017 — DRT Dehradun established; full district table confirmed (Uttarakhand + western UP districts); address confirmed\n",
           "url": "https://ibclaw.in/notification-no-s-o-454e-dated-15-02-2017-under-rdb-act-1993/",
           "type": "GazetteNotification",
           "accessed_date": "2026-06-12"
@@ -9660,7 +9784,7 @@
           "bias_complaint_to": [
             {
               "body": "hc_uttarakhand",
-              "mechanism": "Supervisory jurisdiction of Uttarakhand High Court under Arts 226/227; writ petition before Uttarakhand High Court at Nainital.\n",
+              "mechanism": "Supervisory jurisdiction of Uttarakhand High Court under Arts 226/227; writ petition before Uttarakhand High Court at Nainital. For UP districts in the Dehradun DRT catchment, supervisory jurisdiction may lie with Allahabad HC principal bench — not definitively resolved; left partial.\n",
               "complainant_has_locus": true,
               "is_public_process": true,
               "external_to_judiciary": false
@@ -9673,10 +9797,16 @@
         "training": null,
         "digital_infrastructure": null,
         "structural_variations": [],
-        "unverified_fields": [],
+        "unverified_fields": [
+          {
+            "field": "complaint_mechanism.bias_complaint_to",
+            "note": "Supervisory HC for western UP districts in Dehradun DRT catchment (Allahabad vs Uttarakhand HC) not definitively resolved.\n"
+          }
+        ],
         "jurisdiction_scope": {
           "states_covered": [
-            "UK"
+            "UK",
+            "UP"
           ],
           "is_all_india": false,
           "jurisdiction_types": [
@@ -10374,15 +10504,10 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Notified vide G.S.R. 181(E) dated 7 April 1998. Single-bench tribunal under DRAT Allahabad. Jurisdiction covers States of Madhya Pradesh and Chhattisgarh (Chhattisgarh became a separate state in 2000; its territory remained within DRT Jabalpur's catchment).\n",
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 181(E) dated 7 April 1998. Single-bench tribunal under DRAT Allahabad. Jurisdiction: States of Madhya Pradesh and Chhattisgarh. Chhattisgarh became a separate state in November 2000 upon the reorganisation of MP; its territory remained within DRT Jabalpur's catchment as no separate Chhattisgarh DRT has been established.\n",
       "data_quality": "partial",
-      "data_quality_notes": "G.S.R. 181(E) dated 7 April 1998 establishes DRT Jabalpur; jurisdiction: States of Madhya Pradesh and Chhattisgarh. DRAT Allahabad supervision confirmed. Note: DRT Jabalpur is notable as the original DRAT Allahabad jurisdiction listing includes it (per GSR 5(E)/2001 DRAT Allahabad setup). HC supervisory jurisdiction: MP High Court at Jabalpur; Chhattisgarh HC at Bilaspur may also have supervisory role for cases from Chhattisgarh territory — not definitively resolved in secondary sources; left partial.\n",
-      "unverified_fields": [
-        {
-          "field": "jurisdiction_scope.states_covered",
-          "note": "Chhattisgarh HC supervisory role over MP DRT for CG territory not resolved.\n"
-        }
-      ],
+      "data_quality_notes": "CG HC SUPERVISORY ROLE RESOLVED (drt_b4). Chhattisgarh High Court at Bilaspur exercises Art. 226/227 supervisory jurisdiction over tribunals in Chhattisgarh territory, including DRT Jabalpur for CG matters (CaseMine judgment Chandrahas Sao v. Authorised Officer). Dual supervisory arrangement: MP HC for MP territory, CG HC for Chhattisgarh territory. Standard post-bifurcation arrangement for central tribunals straddling reorganised states.\n",
+      "unverified_fields": [],
       "derived": {
         "discretionary_power_breakdown": {
           "Base discretionary power for type CentralTribunal": 2,
@@ -10425,9 +10550,15 @@
           "accessed_date": "2026-06-12"
         },
         {
-          "label": "DRT Jabalpur — GSR 181(E) 7.4.1998; jurisdiction: MP and Chhattisgarh\n",
+          "label": "DRT Jabalpur — GSR 181(E) 7.4.1998; jurisdiction: MP and Chhattisgarh",
           "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
           "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Chhattisgarh HC supervisory jurisdiction over Chhattisgarh tribunals — Art. 227 power confirmed; DRT Jabalpur SARFAESI referral by Chhattisgarh HC\n",
+          "url": "https://www.casemine.com/judgement/in/699ff3e72948cd2b68fed9ec",
+          "type": "HCJudgment",
           "accessed_date": "2026-06-12"
         },
         {
@@ -10461,7 +10592,14 @@
           "bias_complaint_to": [
             {
               "body": "hc_madhya_pradesh",
-              "mechanism": "Supervisory jurisdiction of Madhya Pradesh High Court under Arts 226/227; writ petition before Madhya Pradesh High Court at Jabalpur.\n",
+              "mechanism": "Supervisory jurisdiction of Madhya Pradesh High Court (principal seat Jabalpur) under Arts 226/227 for MP-territory matters before DRT Jabalpur.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            },
+            {
+              "body": "hc_chhattisgarh",
+              "mechanism": "Chhattisgarh High Court at Bilaspur exercises Article 226/227 supervisory jurisdiction over courts and tribunals in Chhattisgarh territory per Art. 227 (confirmed: CaseMine judgment shows Chhattisgarh HC directly referring SARFAESI matters to DRT Jabalpur without questioning jurisdiction). Litigants in Chhattisgarh matters before DRT Jabalpur may file writs in either Chhattisgarh HC or MP HC; Chhattisgarh HC has primary supervisory role for its state.\n",
               "complainant_has_locus": true,
               "is_public_process": true,
               "external_to_judiciary": false
@@ -10469,17 +10607,12 @@
           ],
           "lokpal_jurisdiction": "No",
           "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
-          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227; Chhattisgarh HC judgment (Chandrahas Sao v. Authorised Officer)"
         },
         "training": null,
         "digital_infrastructure": null,
         "structural_variations": [],
-        "unverified_fields": [
-          {
-            "field": "jurisdiction_scope.states_covered",
-            "note": "Chhattisgarh HC supervisory role over MP DRT for CG territory not resolved.\n"
-          }
-        ],
+        "unverified_fields": [],
         "jurisdiction_scope": {
           "states_covered": [
             "MP",
@@ -10812,15 +10945,10 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Originally notified vide G.S.R. 274(E) dated 31 March 2000; jurisdiction realigned by S.O. 454(E) dated 15 February 2017 (Dehradun carved out for Uttarakhand) and by S.O. 4719(E) dated 4 October 2022. Single-bench tribunal under DRAT Allahabad.\n",
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Originally notified vide G.S.R. 274(E) dated 31 March 2000 (covering northern UP + Uttarakhand jointly with Allahabad). Jurisdiction realigned by S.O. 454(E) dated 15 February 2017, effective 16 February 2017 (Dehradun/Uttarakhand carved out; Saharanpur division moved to DRT Dehradun). Current authoritative address and district table from S.O. 454(E)/2017: 600/1, University Road, Near Hanuman Setu Mandir, Lucknow-226007. Jurisdiction: Baghpat, Bulandsahar, Gautam Buddha Nagar, Ghaziabad, Hapur, Meerut, Hardoi, Lakhimpur Kheri, Lucknow, Raebareli, Sitapur, and Unnao districts in Uttar Pradesh. Single-bench tribunal under DRAT Allahabad.\n",
       "data_quality": "partial",
-      "data_quality_notes": "Northern UP districts (Ambedkar Nagar, Aligarh, Agra, Barabanki, Balrampur, Bahraich, Bareilly, Bijnor, Bulandshahr, Baghpat, Faizabad, Ghaziabad, Gonda, Gautam Budh Nagar, Hathras, Hardoi, Jyotiba Phule Nagar, Lucknow, Lakhimpur, Meerut, Moradabad, Muzaffarnagar, Mathura, Pratapgarh, Pilibhit, Rampur, Rae Bareilly, Saharanpur, Shahjahanpur, Sitapur, Shravasti, Sultanpur, Unnao) sourced from BankAuctions.in G.S.R. 274(E) listing. Uttarakhand was in DRT Lucknow jurisdiction pre-2017; S.O. 454(E) dated 15 Feb 2017 carved out Dehradun as a separate DRT for Uttarakhand. Current district list per S.O. 4719(E) (4 Oct 2022) not fully extracted — that notification text not retrieved for this circuit; left partial.\n",
-      "unverified_fields": [
-        {
-          "field": "jurisdiction_scope.districts",
-          "note": "Full district list per S.O. 4719(E) dated 4 October 2022 not extracted for Allahabad/Lucknow circuit.\n"
-        }
-      ],
+      "data_quality_notes": "DISTRICT TABLE UPGRADED from partial to sourced. Authoritative district list per S.O. 454(E) dated 15 February 2017 (ibclaw.in full text retrieved 2026-06-12): Baghpat, Bulandsahar, Gautam Buddha Nagar, Ghaziabad, Hapur, Meerut, Hardoi, Lakhimpur Kheri, Lucknow, Raebareli, Sitapur, Unnao. Note: this is a relatively narrow NCR+central-UP footprint compared to the pre-2017 position. The larger UP district list in batch-2 delivery reflected the older G.S.R. 274(E)/2000 scope; this entry supersedes it. Address from S.O. 454(E) table. S.O. 4719(E) dated 4 October 2022 (omnibus circuit redistribution) covered Chennai, Delhi, and Mumbai circuits only — not Allahabad/Lucknow/Dehradun. S.O. 454(E)/2017 remains operative (confirmed: Allahabad HC in Saurabh Gupta v. Union of India).\n",
+      "unverified_fields": [],
       "derived": {
         "discretionary_power_breakdown": {
           "Base discretionary power for type CentralTribunal": 2,
@@ -10863,21 +10991,15 @@
           "accessed_date": "2026-06-12"
         },
         {
-          "label": "DRT official portal — Ministry of Finance, DFS",
-          "url": "https://drt.gov.in/",
-          "type": "GoIWebsite",
-          "accessed_date": "2026-06-12"
-        },
-        {
-          "label": "S.O. 454(E) dated 15 February 2017 — Dehradun DRT established; Lucknow/ Allahabad realigned; supersedes G.S.R. 274(E) and G.S.R. 71(E)\n",
+          "label": "S.O. 454(E) dated 15 February 2017 — full district table for DRT Lucknow confirmed; address confirmed: 600/1, University Road, Lucknow-226007\n",
           "url": "https://ibclaw.in/notification-no-s-o-454e-dated-15-02-2017-under-rdb-act-1993/",
           "type": "GazetteNotification",
           "accessed_date": "2026-06-12"
         },
         {
-          "label": "DRT Lucknow jurisdiction — BankAuctions.in DRT reference",
-          "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
-          "type": "OfficialReport",
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
           "accessed_date": "2026-06-12"
         }
       ],
@@ -10918,12 +11040,7 @@
         "training": null,
         "digital_infrastructure": null,
         "structural_variations": [],
-        "unverified_fields": [
-          {
-            "field": "jurisdiction_scope.districts",
-            "note": "Full district list per S.O. 4719(E) dated 4 October 2022 not extracted for Allahabad/Lucknow circuit.\n"
-          }
-        ],
+        "unverified_fields": [],
         "jurisdiction_scope": {
           "states_covered": [
             "UP"
@@ -11831,19 +11948,14 @@
       "type": "CentralTribunal",
       "cluster": "tribunals_adr",
       "level_of_government": "Central",
-      "created_year": 2002,
+      "created_year": 2017,
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Single-bench tribunal under DRAT Kolkata (per G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules). Jurisdiction: North Bengal districts of West Bengal not covered by DRT Kolkata I/II/III.\n",
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide S.O. 831(E) dated 15 March 2017, effective 16 March 2017, which superseded G.S.R. 84(E) dated 6 February 2002. Address: Hawkers' Co-operative Society Ltd., 1st Floor, Opp. United Bank of India, North Bengal Regional Office, Hill Cart Road, Pradhan Nagar, Siliguri-734003. Jurisdiction per S.O. 831(E) table: Darjeeling, Jalpaiguri, Coochbehar, Uttar Dinajpur, Dakshin Dinajpur, Malda, and Murshidabad districts of West Bengal. Single-bench tribunal under DRAT Kolkata per G.S.R. 538(E)/2018.\n",
       "data_quality": "partial",
-      "data_quality_notes": "DRAT Kolkata supervision confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules). Exact North Bengal districts in jurisdiction not extracted from primary GSR. Created_year: 2002 estimated — Siliguri DRT Recruitment Rules are notably absent from the 2001-era rules consolidated in 2018 (LDC and Steno Rules only from 2017), suggesting establishment circa 2002 (similar era to other new-state DRTs). Jurisdiction: North Bengal districts (Jalpaiguri, Darjeeling, Cooch Behar, Alipurduar, Kalimpong, Malda, Dinajpur, Murshidabad tentatively). Exact list per current gazette required.\n",
-      "unverified_fields": [
-        {
-          "field": "created_year",
-          "note": "2002 is estimate; Siliguri LDC/Steno rules appear from 2017 consolidation — direct G.S.R. establishment notification not retrieved.\n"
-        }
-      ],
+      "data_quality_notes": "DISTRICT TABLE FULLY SOURCED (drt_b4). S.O. 831(E) dated 15 March 2017 text retrieved in full from ibclaw.in (2026-06-12). Seven districts confirmed: Darjeeling, Jalpaiguri, Coochbehar, Uttar Dinajpur, Dakshin Dinajpur, Malda, Murshidabad. Address confirmed. DRT Kolkata-1/2/3 district splits also confirmed from same notification: DRT-1 covers Kolkata city (specified PSs) + Howrah + Hooghly; DRT-2 covers all remaining WB districts (excluding North/South 24 Parganas, the seven Siliguri districts, and Kolkata city areas) + Andaman & Nicobar Islands; DRT-3 covers Kolkata city (other PSs) + North/South 24 Parganas.\n",
+      "unverified_fields": [],
       "derived": {
         "discretionary_power_breakdown": {
           "Base discretionary power for type CentralTribunal": 2,
@@ -11886,6 +11998,12 @@
           "accessed_date": "2026-06-12"
         },
         {
+          "label": "S.O. 831(E) dated 15 March 2017 — DRT Siliguri established effective 16 March 2017; full jurisdiction table for Siliguri + Kolkata DRTs extracted; supersedes G.S.R. 84(E) dated 6 February 2002\n",
+          "url": "https://ibclaw.in/notification-no-s-o-831e-dated-15-03-2017-under-rdb-act-1993/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
           "label": "DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018; lists DRT Siliguri under DRAT Kolkata\n",
           "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp",
           "type": "GazetteNotification",
@@ -11922,7 +12040,7 @@
           "bias_complaint_to": [
             {
               "body": "hc_calcutta",
-              "mechanism": "Supervisory jurisdiction of Calcutta High Court under Arts 226/227; writ petition before Calcutta High Court. Calcutta HC circuit bench at Jalpaiguri may also have supervisory role.\n",
+              "mechanism": "Supervisory jurisdiction of Calcutta High Court under Arts 226/227; writ petition before Calcutta High Court. Calcutta HC Circuit Bench at Jalpaiguri (established 2023) may also exercise territorial supervisory jurisdiction for North Bengal DRT matters — exact allocation not confirmed in secondary sources; left partial.\n",
               "complainant_has_locus": true,
               "is_public_process": true,
               "external_to_judiciary": false
@@ -11935,12 +12053,7 @@
         "training": null,
         "digital_infrastructure": null,
         "structural_variations": [],
-        "unverified_fields": [
-          {
-            "field": "created_year",
-            "note": "2002 is estimate; Siliguri LDC/Steno rules appear from 2017 consolidation — direct G.S.R. establishment notification not retrieved.\n"
-          }
-        ],
+        "unverified_fields": [],
         "jurisdiction_scope": {
           "states_covered": [
             "WB"
@@ -12362,7 +12475,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 592,
+        "x": 598,
         "y": 768
       }
     },
@@ -12785,7 +12898,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 81,
+        "x": 80,
         "y": 156
       }
     },
@@ -12808,12 +12921,8 @@
       "constitutional_basis": null,
       "statutory_basis": "Central Goods and Services Tax Act, 2017, s.109–110 (as amended by Finance Act 2023 — substituted ss.109–110A, inserted s.112A); notified benches under s.109(6). Principal Bench at New Delhi; State Benches in each state/UT.",
       "data_quality": "partial",
-      "data_quality_notes": "Structural_gap: CRITICAL. GSTAT not constituted for 8+ years since GST enactment (July 2017) through Finance Act 2023 amendments and beyond. MoF notified bench locations (April 2023) and amended appointment procedure (Finance Act 2023 s.110A) but President post and all Member posts remain vacant as of June 2026. No case_volume data possible (no sittings). Appointment sub-committee constituted under SC monitoring (Union of India v. Mohit Minerals, W.P.(C) 859/2022 — SC directed expeditious constitution, order dated 19 May 2023). budget_figure not separately identified in Union Budget (subsumed under DoR establishment estimates pending constitution).",
+      "data_quality_notes": "Structural_gap: CRITICAL. GSTAT not constituted for 8+ years since GST enactment (July 2017) through Finance Act 2023 amendments and beyond. MoF notified bench locations (April 2023) and amended appointment procedure (Finance Act 2023 s.110A) but President post and all Member posts remain vacant as of June 2026. No case_volume data possible (no sittings). Appointment sub-committee constituted under SC monitoring (Union of India v. Mohit Minerals, W.P.(C) 859/2022 — SC directed expeditious constitution, order dated 19 May 2023). budget_figure not separately identified in Union Budget (subsumed under DoR establishment estimates pending constitution). Mohit Minerals SC judgment PDF URL verified live on webapi.sci.gov.in (drt_b4); main.sci.gov.in unreachable via automated access.",
       "unverified_fields": [
-        {
-          "field": "sources.mohit_minerals_sc_order",
-          "note": "SC judgment PDF URL on main.sci.gov.in not independently verified in this pass.\n"
-        },
         {
           "field": "funding.budget_figure_crore",
           "note": "Union Budget does not disaggregate GSTAT allocation pending constitution.\n"
@@ -12868,10 +12977,16 @@
           "accessed_date": "2026-06-11"
         },
         {
-          "label": "SC Order — Mohit Minerals — directions on GSTAT constitution",
-          "url": "https://main.sci.gov.in/supremecourt/2022/9479/9479_2022_1_1501_46001_Judgement_19-May-2023.pdf",
+          "label": "Union of India v. M/s Mohit Minerals Pvt. Ltd. — C.A. No. 1390/2022, Supreme Court, decided 19 May 2022 (GST Council recommendations persuasive, not binding; GSTAT constitution context)\n",
+          "url": "https://webapi.sci.gov.in/supremecourt/2020/23083/23083_2020_4_1501_35969_Judgement_19-May-2022.pdf",
           "type": "SCJudgment",
-          "accessed_date": "2026-06-11"
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Finance Act 2023 (No. 8 of 2023) — substituted CGST Act ss.109–110A",
+          "url": "https://india-code.nic.in/CodeofActs13/20230008.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
         }
       ],
       "_detail": {
@@ -12934,10 +13049,6 @@
           }
         ],
         "unverified_fields": [
-          {
-            "field": "sources.mohit_minerals_sc_order",
-            "note": "SC judgment PDF URL on main.sci.gov.in not independently verified in this pass.\n"
-          },
           {
             "field": "funding.budget_figure_crore",
             "note": "Union Budget does not disaggregate GSTAT allocation pending constitution.\n"
@@ -14220,7 +14331,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 87,
+        "x": 86,
         "y": 192
       }
     },
@@ -14299,7 +14410,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 93,
+        "x": 92,
         "y": 156
       }
     },
@@ -14759,7 +14870,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 99,
+        "x": 98,
         "y": 192
       }
     },
@@ -14832,7 +14943,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 105,
+        "x": 104,
         "y": 156
       }
     },
@@ -14906,7 +15017,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 111,
+        "x": 110,
         "y": 192
       }
     },
@@ -14986,7 +15097,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 117,
+        "x": 116,
         "y": 156
       }
     },
@@ -15063,7 +15174,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 123,
+        "x": 122,
         "y": 192
       }
     },
@@ -15142,7 +15253,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 130,
+        "x": 128,
         "y": 156
       }
     },
@@ -15222,7 +15333,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 136,
+        "x": 134,
         "y": 192
       }
     },
@@ -15295,7 +15406,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 142,
+        "x": 140,
         "y": 156
       }
     },
@@ -15374,7 +15485,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 612,
+        "x": 619,
         "y": 732
       }
     },
@@ -15447,29 +15558,32 @@
         "parent_hc": null
       },
       "position": {
-        "x": 148,
+        "x": 146,
         "y": 192
       }
     },
     {
       "id": "ministry_labour_employment",
       "name": "Ministry of Labour and Employment",
-      "aliases": [],
+      "aliases": [
+        "Ministry of Labour & Employment",
+        "MLE"
+      ],
       "jurisdiction_scope": {
         "is_all_india": true
       },
-      "name_hindi": null,
-      "abbreviation": null,
+      "name_hindi": "श्रम और रोजगार मंत्रालय",
+      "abbreviation": "MoLE",
       "type": "ExecutiveBody",
-      "cluster": "executive_interface",
+      "cluster": "legislative_executive",
       "level_of_government": "Central",
-      "created_year": 1950,
+      "created_year": 1947,
       "abolished_year": null,
       "operational_status": "Active",
-      "constitutional_basis": null,
-      "statutory_basis": null,
-      "data_quality": "unverified",
-      "data_quality_notes": "C08 stub for graph connectivity only — expand appointment, funding, and organisational structure in a dedicated C08 ministry pass. Parent ministry for EPFO, EPFAT, CGIT funding references.",
+      "constitutional_basis": "Articles 77, 246 and Schedule VII List I (Union List) Entries 22 (labour and industrial disputes), 23 (social security and insurance), 24 (welfare of workers), 55 (regulation of labour and safety in mines and oilfields) of the Constitution of India.\n",
+      "statutory_basis": "Administers approximately 44 central labour statutes including: Industrial Disputes Act, 1947; Employees' Provident Funds and Miscellaneous Provisions Act, 1952 (via EPFO); Employees' State Insurance Act, 1948 (via ESIC); Minimum Wages Act, 1948; Payment of Wages Act, 1936; Payment of Gratuity Act, 1972; Contract Labour (Regulation and Abolition) Act, 1970; Building and Other Construction Workers Act, 1996; Unorganised Workers' Social Security Act, 2008; Code on Wages 2019; Code on Industrial Relations 2020; Code on Social Security 2020; Occupational Safety, Health and Working Conditions Code 2020. Four Labour Codes (2019-2020) enacted but rules not yet fully notified as of August 2025.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Expanded from C08 stub (drt_b3). HQ: Rafi Marg, New Delhi. Budget figure ₹13,221.73 crore from Wikipedia citing 2023-24 estimate. Key subordinate bodies: EPFO (autonomous), ESIC (autonomous), CGIT-cum-LCs (22 seats), Central Board for Workers' Education (CBWE), Director General of Employment, Director General of Labour Welfare, Chief Labour Commissioner (Central). Four Labour Codes enacted 2019-2020 consolidate 29 central laws — full implementation pending as of August 2025 (rules gazette not complete for all states). Skill development functions transferred to Ministry of Skill Development and Entrepreneurship in 2014.\n",
       "unverified_fields": [],
       "derived": {
         "discretionary_power_breakdown": {
@@ -15488,26 +15602,52 @@
         "structural_health_level": null,
         "structural_health_score": null
       },
-      "funding_source": null,
+      "funding_source": "Consolidated_Fund_India",
       "funding_ministry": null,
-      "audited_by": null,
-      "audit_report_public": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
       "complaint_external_exists": false,
-      "appointment_criteria_public": null,
+      "appointment_criteria_public": false,
       "reappointment_possible": null,
       "sources": [
         {
-          "label": "India Code — Constitution & Acts",
-          "url": "https://india-code.nic.in/",
+          "label": "Ministry of Labour and Employment — official portal",
+          "url": "https://labour.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Industrial Disputes Act 1947 — primary labour statute",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT official portal — Ministry of Labour and Employment",
+          "url": "https://cgit.labour.gov.in/",
           "type": "GoIWebsite",
           "accessed_date": "2026-06-12"
         }
       ],
       "_detail": {
-        "appointment": null,
-        "funding": null,
-        "audit": null,
-        "complaint_mechanism": null,
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "budget_figure_crore": 13221.73,
+          "budget_year": 2024
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true
+        },
+        "complaint_mechanism": {
+          "lokpal_jurisdiction": "Not_Applicable",
+          "source": "Lokpal and Lokayuktas Act 2013 (executives and officials subject to Lokpal in anti-corruption matters, but Ministry as an entity not a complainee)"
+        },
         "training": null,
         "digital_infrastructure": null,
         "structural_variations": [],
@@ -15520,8 +15660,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 632,
-        "y": 768
+        "x": 153,
+        "y": 156
       }
     },
     {
@@ -15599,8 +15739,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 154,
-        "y": 156
+        "x": 159,
+        "y": 192
       }
     },
     {
@@ -15673,8 +15813,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 160,
-        "y": 192
+        "x": 165,
+        "y": 156
       }
     },
     {
@@ -15831,8 +15971,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 166,
-        "y": 156
+        "x": 171,
+        "y": 192
       }
     },
     {
@@ -15910,8 +16050,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 172,
-        "y": 192
+        "x": 177,
+        "y": 156
       }
     },
     {
@@ -15983,8 +16123,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 179,
-        "y": 156
+        "x": 183,
+        "y": 192
       }
     },
     {
@@ -17062,8 +17202,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 185,
-        "y": 192
+        "x": 189,
+        "y": 156
       }
     },
     {
@@ -17422,8 +17562,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 191,
-        "y": 156
+        "x": 195,
+        "y": 192
       }
     },
     {
@@ -17640,8 +17780,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 197,
-        "y": 192
+        "x": 201,
+        "y": 156
       }
     },
     {
@@ -18589,8 +18729,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 203,
-        "y": 156
+        "x": 207,
+        "y": 192
       }
     },
     {
@@ -19871,8 +20011,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 209,
-        "y": 192
+        "x": 213,
+        "y": 156
       }
     },
     {
@@ -19950,8 +20090,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 215,
-        "y": 156
+        "x": 219,
+        "y": 192
       }
     },
     {
@@ -20029,8 +20169,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 222,
-        "y": 192
+        "x": 225,
+        "y": 156
       }
     },
     {
@@ -20108,8 +20248,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 228,
-        "y": 156
+        "x": 231,
+        "y": 192
       }
     },
     {
@@ -20187,8 +20327,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 234,
-        "y": 192
+        "x": 237,
+        "y": 156
       }
     },
     {
@@ -20266,8 +20406,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 240,
-        "y": 156
+        "x": 243,
+        "y": 192
       }
     },
     {
@@ -20345,8 +20485,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
-        "y": 192
+        "x": 249,
+        "y": 156
       }
     },
     {
@@ -20424,8 +20564,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 252,
-        "y": 156
+        "x": 255,
+        "y": 192
       }
     },
     {
@@ -20503,8 +20643,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 258,
-        "y": 192
+        "x": 261,
+        "y": 156
       }
     },
     {
@@ -20582,8 +20722,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 264,
-        "y": 156
+        "x": 267,
+        "y": 192
       }
     },
     {
@@ -20661,8 +20801,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 271,
-        "y": 192
+        "x": 273,
+        "y": 156
       }
     },
     {
@@ -20740,8 +20880,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 277,
-        "y": 156
+        "x": 279,
+        "y": 192
       }
     },
     {
@@ -20819,8 +20959,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 283,
-        "y": 192
+        "x": 285,
+        "y": 156
       }
     },
     {
@@ -20892,8 +21032,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 289,
-        "y": 156
+        "x": 291,
+        "y": 192
       }
     },
     {
@@ -20971,8 +21111,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 295,
-        "y": 192
+        "x": 297,
+        "y": 156
       }
     },
     {
@@ -21050,8 +21190,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 301,
-        "y": 156
+        "x": 303,
+        "y": 192
       }
     },
     {
@@ -21129,8 +21269,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 307,
-        "y": 192
+        "x": 309,
+        "y": 156
       }
     },
     {
@@ -21202,8 +21342,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 314,
-        "y": 156
+        "x": 315,
+        "y": 192
       }
     },
     {
@@ -21281,8 +21421,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 320,
-        "y": 192
+        "x": 321,
+        "y": 156
       }
     },
     {
@@ -21360,8 +21500,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 326,
-        "y": 156
+        "x": 327,
+        "y": 192
       }
     },
     {
@@ -21439,8 +21579,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 332,
-        "y": 192
+        "x": 333,
+        "y": 156
       }
     },
     {
@@ -21518,8 +21658,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 338,
-        "y": 156
+        "x": 340,
+        "y": 192
       }
     },
     {
@@ -21591,8 +21731,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 344,
-        "y": 192
+        "x": 346,
+        "y": 156
       }
     },
     {
@@ -21670,8 +21810,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 350,
-        "y": 156
+        "x": 352,
+        "y": 192
       }
     },
     {
@@ -21749,8 +21889,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 356,
-        "y": 192
+        "x": 358,
+        "y": 156
       }
     },
     {
@@ -21828,8 +21968,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 363,
-        "y": 156
+        "x": 364,
+        "y": 192
       }
     },
     {
@@ -21907,8 +22047,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 369,
-        "y": 192
+        "x": 370,
+        "y": 156
       }
     },
     {
@@ -21986,8 +22126,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 375,
-        "y": 156
+        "x": 376,
+        "y": 192
       }
     },
     {
@@ -22059,8 +22199,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 381,
-        "y": 192
+        "x": 382,
+        "y": 156
       }
     },
     {
@@ -22138,8 +22278,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 387,
-        "y": 156
+        "x": 388,
+        "y": 192
       }
     },
     {
@@ -22217,8 +22357,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 393,
-        "y": 192
+        "x": 394,
+        "y": 156
       }
     },
     {
@@ -22296,8 +22436,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 399,
-        "y": 156
+        "x": 400,
+        "y": 192
       }
     },
     {
@@ -22375,8 +22515,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 405,
-        "y": 192
+        "x": 406,
+        "y": 156
       }
     },
     {
@@ -22455,7 +22595,7 @@
       },
       "position": {
         "x": 412,
-        "y": 156
+        "y": 192
       }
     },
     {
@@ -39254,8 +39394,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 651,
-        "y": 732
+        "x": 639,
+        "y": 768
       }
     },
     {
@@ -40782,7 +40922,7 @@
       },
       "position": {
         "x": 418,
-        "y": 192
+        "y": 156
       }
     },
     {
@@ -40885,8 +41025,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 671,
-        "y": 768
+        "x": 660,
+        "y": 732
       }
     },
     {
@@ -44248,8 +44388,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 691,
-        "y": 732
+        "x": 681,
+        "y": 768
       }
     },
     {
@@ -48249,8 +48389,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 711,
-        "y": 768
+        "x": 702,
+        "y": 732
       }
     },
     {
@@ -50535,8 +50675,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 730,
-        "y": 732
+        "x": 723,
+        "y": 768
       }
     },
     {
@@ -55485,8 +55625,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 750,
-        "y": 768
+        "x": 743,
+        "y": 732
       }
     },
     {
@@ -59144,8 +59284,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 770,
-        "y": 732
+        "x": 764,
+        "y": 768
       }
     },
     {
@@ -59454,7 +59594,7 @@
       },
       "position": {
         "x": 424,
-        "y": 156
+        "y": 192
       }
     },
     {
@@ -59557,8 +59697,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 789,
-        "y": 768
+        "x": 785,
+        "y": 732
       }
     },
     {
@@ -60697,8 +60837,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 809,
-        "y": 732
+        "x": 806,
+        "y": 768
       }
     },
     {
@@ -65319,8 +65459,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 829,
-        "y": 768
+        "x": 826,
+        "y": 732
       }
     },
     {
@@ -69104,8 +69244,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 848,
-        "y": 732
+        "x": 847,
+        "y": 768
       }
     }
   ],
@@ -82836,7 +82976,6 @@
         "mh_advocate_general",
         "mh_lokayukta",
         "ministry_home_affairs",
-        "ministry_labour_employment",
         "py_advocate_general",
         "py_lokayukta",
         "tn_advocate_general",
@@ -82897,6 +83036,7 @@
         "ministry_environment",
         "ministry_health_family_welfare",
         "ministry_information_broadcasting",
+        "ministry_labour_employment",
         "ministry_law_justice",
         "ministry_of_commerce_industry",
         "ministry_of_power",
@@ -84006,7 +84146,7 @@
       "{'states_covered': ['OD'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_cuttack"
       ],
-      "{'states_covered': ['UK'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+      "{'states_covered': ['UK', 'UP'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_dehradun"
       ],
       "{'states_covered': ['RJ', 'UP'], 'uts_covered': ['DL'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [

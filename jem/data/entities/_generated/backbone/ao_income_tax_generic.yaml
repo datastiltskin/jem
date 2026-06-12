@@ -13,7 +13,14 @@ level_of_government: Central
 created_year: 1961
 operational_status: Active
 constitutional_basis: null
-statutory_basis: Income Tax Act 1961 s.2(7A) (definition of Assessing Officer); s.120–124 (jurisdiction of AO); s.143–144 (assessment procedure); s.147–148A (reassessment); s.156 (demand notice)
+statutory_basis: >
+  Income Tax Act 1961 s.2(7A) (definition of Assessing Officer); ss.120–133C
+  (jurisdiction, powers, and functions of income-tax authorities including AOs);
+  ss.143–144 (assessment procedure); ss.147–148A (reassessment); s.156 (demand
+  notice). Faceless Assessment Scheme under s.144B (CBDT Notification 60/2020) —
+  assessment largely performed through National Faceless Assessment Centre (NFAC).
+  Appeals against AO orders lie to CIT(A)/JCIT(A) under s.246A, thence to ITAT
+  under s.253.
 appointment:
   nominates: cbdt
   recommends: null
@@ -56,6 +63,21 @@ jurisdiction_scope:
   - Demand and recovery
   states_covered: []
   uts_covered: []
+structural_variations:
+  - variation_id: ao_faceless_assessment
+    description: >
+      Faceless Assessment Scheme launched under s.144B of the IT Act, notified vide
+      CBDT Notification No. 60/2020 and subsequent notifications. Cases assigned to
+      National Faceless Assessment Centre (NFAC), Delhi and Regional Faceless
+      Assessment Centres; assessment completed without face-to-face interaction.
+      Certain categories (international tax, search/seizure, black money) excluded
+      from faceless scheme.
+    applicable_to:
+      - ao_income_tax_generic
+    source: IT Act 1961 s.144B; CBDT Notification 60/2020 dated 13 August 2020
+    independence_risk_note: >
+      Faceless scheme reduces opportunity for AO-taxpayer corruption but raises
+      concerns about due process; multiple HC petitions filed 2020-2023.
 data_quality: partial
 data_quality_notes: >-
   Generic entity representing the Assessing Officer cadre across all Income Tax field formations. AO is the originating authority in the IT appellate chain: AO → CIT(A) → ITAT → HC → SC.
@@ -72,3 +94,9 @@ sources:
   url: https://incometaxindia.gov.in
   type: GoIWebsite
   accessed_date: '2026-06-11'
+- label: >
+    Faceless Assessment Scheme — s.144B; CBDT Notification 60/2020 dated
+    13 August 2020
+  url: https://www.incometaxindia.gov.in/communications/notification/notification60_2020.pdf
+  type: GazetteNotification
+  accessed_date: '2026-06-12'

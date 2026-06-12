@@ -12,7 +12,12 @@ level_of_government: Central
 created_year: 1974
 operational_status: Active
 constitutional_basis: null
-statutory_basis: Income Tax Act 1961 s.246A (appeals to CIT(A)); s.249–251 (procedure and powers of CIT(A)); Finance Act 2023 — introduction of Joint CIT(A) cadre for small taxpayer appeals; Income Tax (Appellate Tribunal) Rules 1963 (ITAT as second appellate forum above CIT(A))
+statutory_basis: >
+  Income Tax Act 1961 ss.246A (appealable orders), 249–251 (CIT(A) jurisdiction and
+  powers), 253 (further appeal to ITAT). Finance Act 2023 — Joint/Additional CIT(A)
+  units for small taxpayer appeals. Faceless CIT(A) scheme under s.250(6B), notified
+  via CBDT Notification 76/2021 (National Faceless Appeal Centre). ITAT is the second
+  appellate forum above CIT(A).
 appointment:
   nominates: cbdt
   recommends: null
@@ -62,6 +67,19 @@ case_volume:
   source_url: null
   source_type: null
   clog_severity: high
+structural_variations:
+  - variation_id: cit_appeals_faceless
+    description: >
+      Faceless CIT(A) scheme launched under s.250(6B) of the IT Act, notified via
+      CBDT Notification No. 76/2021 dated 27 August 2021. Appeals assigned centrally
+      through National Faceless Appeal Centre (NFAC), Delhi; original jurisdiction
+      officer not assigned by taxpayer geography. Fully operational since 2021.
+    applicable_to:
+      - cit_appeals_generic
+    source: CBDT Notification 76/2021; Finance Act 2021 amendment to IT Act 1961
+    independence_risk_note: >
+      Faceless mechanism reduces face-to-face contact but raises concerns about
+      adequacy of oral hearings; several HC writ petitions filed (2021-2024).
 structural_gap:
   flag: true
   gaps:
@@ -102,4 +120,10 @@ sources:
 - label: Union Budget 2023-24 Highlights — CIT(A) pendency and JCIT(A) deployment
   url: https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1895315
   type: GoIWebsite
+  accessed_date: '2026-06-12'
+- label: >
+    Faceless Appeal Scheme 2021 — CBDT Notification No. 76/2021 dated 27 August
+    2021 under s.250(6B) of the IT Act; establishes NFAC faceless mechanism
+  url: https://www.incometaxindia.gov.in/communications/notification/notification76_2021.pdf
+  type: GazetteNotification
   accessed_date: '2026-06-12'
