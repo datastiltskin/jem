@@ -1,0 +1,91 @@
+id: patent_controller
+name: Controller General of Patents, Designs and Trade Marks
+name_hindi: पेटेंट, डिज़ाइन एवं व्यापार चिह्न महानियंत्रक
+abbreviation: CGPDTM
+
+type: ExecutiveBody
+cluster: regulatory_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Patent grant, opposition and revocation (pre-grant)
+    - Design registration
+    - Trade mark registration (appellate path to High Court post-IPAB)
+    - Geographical indication registration
+
+created_year: 1912
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >
+  Patents Act 1970 § 3 (Controller General); Trade Marks Act 1999 § 3 (Registrar
+  of Trade Marks under CGPDTM); Designs Act 2000 § 3; Geographical Indications of
+  Goods (Registration and Protection) Act 1999 § 3.
+
+appointment:
+  formally_appoints: central_government
+  criteria_public: false
+  tenure: Service appointment (IAS/CSS cadre post)
+  reappointment_possible: true
+  removal_authority: central_government
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_commerce_industry
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: ministry_of_commerce_industry
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: ministry_of_commerce_industry
+      mechanism: Departmental/administrative complaint; writ petition to High Court
+      complainant_has_locus: true
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: false
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: CGPDTM is a Group A Central Government officer; Lokpal jurisdiction applies.
+  source: Patents Act 1970; Trade Marks Act 1999
+
+data_quality: partial
+data_quality_notes: >
+  created_year: 1912 — Patent Office established under Patents & Designs Act 1911
+  (institutional continuity; head office Mumbai). Current statutory basis is Patents
+  Act 1970 (§ 3 — Controller General); use 1970 only if modelling the current Act
+  regime rather than office lineage. statutory_basis field reflects the 1970 Act.
+  Appellate path post-IPAB abolition (2021):
+    — Patent pre-grant/post-grant opposition: Controller → writ/appeal to HC (original side)
+    — Patent revocation (§ 64): HC or Counter-claim in infringement suit
+    — Trade mark rectification / appeal against Registrar: High Court (post-IPAB, § 91)
+    — Design appeal: HC
+  CGPDTM office is in Mumbai (Head Office); branch offices in Delhi, Kolkata, Chennai.
+  Quasi-judicial function: Controllers (Deputy/Assistant Controllers under CGPDTM)
+  hear patent opposition proceedings — this is a quasi-judicial function. They are
+  subordinate officers of the patent office, not tribunal members.
+  case_volume: IP India Annual Report 2022-23 publishes application and disposal
+  data but not in NJDG pendency format. Deferred to Phase-2.
+
+sources:
+  - label: Patents Act 1970
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A197039
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: Trade Marks Act 1999
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A199947
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: IP India official website
+    url: https://ipindia.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

@@ -1,0 +1,80 @@
+id: aera
+name: Airports Economic Regulatory Authority of India
+name_hindi: भारतीय हवाई अड्डा आर्थिक विनियामक प्राधिकरण
+abbreviation: AERA
+
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Airport tariff and user development fee determination
+    - Tariff-related disputes
+
+created_year: 2009
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >
+  Airports Economic Regulatory Authority of India Act 2008 (§ 3 — establishment;
+  § 17 — appellate tribunal reference to TDSAT).
+
+appointment:
+  nominates: ministry_civil_aviation
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: Five years or age 65, whichever earlier (Chairperson)
+  reappointment_possible: false
+  removal_authority: central_government
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_civil_aviation
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: ministry_civil_aviation
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: ministry_civil_aviation
+      mechanism: Administrative complaint to parent ministry
+      complainant_has_locus: true
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: true
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >
+    Removal by Central Government on grounds specified in AERA Act 2008 § 8.
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >
+    AERA Chairperson is a public servant; Lokpal jurisdiction applies under
+    Lokpal & Lokayuktas Act 2013 § 14.
+  source: AERA Act 2008
+
+data_quality: partial
+data_quality_notes: >
+  Appellate path: AERA tariff order → TDSAT (Telecom Disputes Settlement and
+  Appellate Tribunal, which also has jurisdiction over AERA appeals per AERA Act § 17) →
+  Supreme Court. TDSAT acting as AERA Appellate Tribunal is a shared-body arrangement
+  confirmed by Ministry of Civil Aviation notifications.
+  AERA's quasi-judicial function is tariff determination, not case adjudication;
+  no NJDG-integrated pendency data. case_volume deferred to Phase-2.
+
+sources:
+  - label: Airports Economic Regulatory Authority of India Act 2008
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A200817
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: AERA official website
+    url: https://aera.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

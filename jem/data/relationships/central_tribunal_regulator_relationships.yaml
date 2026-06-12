@@ -647,6 +647,404 @@ relationships:
         type: CentralAct
         accessed_date: "2026-06-12"
 
+  # ── C04 AFT regional benches — BenchOf parent tribunal ───────────────────
+
+  - id: rel_aft_chandigarh_bench_of_aft
+    source: aft_chandigarh
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5 — regional benches of the Armed Forces Tribunal"
+    year_established: 2009
+    data_quality: partial
+    notes: Territorial jurisdiction per aft.gov.in/jurisdiction.
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_lucknow_bench_of_aft
+    source: aft_lucknow
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_kolkata_bench_of_aft
+    source: aft_kolkata
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_guwahati_bench_of_aft
+    source: aft_guwahati
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_chennai_bench_of_aft
+    source: aft_chennai
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    notes: Parent regional bench for southern zone; Hyderabad circuit bench sits under this bench.
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_hyderabad_bench_of_aft_chennai
+    source: aft_hyderabad
+    target: aft_chennai
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5 — circuit bench under Chennai regional bench"
+    year_established: 2015
+    data_quality: partial
+    notes: >-
+      Circuit bench at Secunderabad under Chennai regional bench (not a separate
+      regional bench on aft.gov.in jurisdiction table). Telangana coverage only.
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_kochi_bench_of_aft
+    source: aft_kochi
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_jaipur_bench_of_aft
+    source: aft_jaipur
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_mumbai_bench_of_aft
+    source: aft_mumbai
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_jabalpur_bench_of_aft
+    source: aft_jabalpur
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_aft_jammu_bench_of_aft
+    source: aft_jammu
+    target: aft
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AFT Act 2007, s.5"
+    year_established: 2009
+    data_quality: partial
+    notes: >-
+      Jammu bench per aft.gov.in jurisdiction table. Principal AFT website also
+      references Srinagar — verify co-location vs separate bench before adding
+      aft_srinagar entity.
+    sources:
+      - label: "AFT Act 2007, s.5"
+        url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "AFT — bench territorial jurisdiction"
+        url: https://aft.gov.in/jurisdiction
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  # ── C04 CESTAT regional benches — BenchOf parent tribunal ────────────────
+
+  - id: rel_cestat_chennai_bench_of_cestat
+    source: cestat_chennai
+    target: cestat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Customs Act 1962, s.129 — regional benches of CESTAT"
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: "Customs Act 1962, s.129"
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "CESTAT official website"
+        url: https://cestat.gov.in
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_cestat_mumbai_bench_of_cestat
+    source: cestat_mumbai
+    target: cestat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Customs Act 1962, s.129"
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: "Customs Act 1962, s.129"
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "CESTAT official website"
+        url: https://cestat.gov.in
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_cestat_kolkata_bench_of_cestat
+    source: cestat_kolkata
+    target: cestat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Customs Act 1962, s.129"
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: "Customs Act 1962, s.129"
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "CESTAT official website"
+        url: https://cestat.gov.in
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_cestat_bangalore_bench_of_cestat
+    source: cestat_bangalore
+    target: cestat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Customs Act 1962, s.129"
+    year_established: 2000
+    data_quality: partial
+    notes: Bangalore bench established 14 December 2000 per cestat.gov.in/aboutus.
+    sources:
+      - label: "Customs Act 1962, s.129"
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "CESTAT — About Us"
+        url: https://cestat.gov.in/aboutus
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_cestat_ahmedabad_bench_of_cestat
+    source: cestat_ahmedabad
+    target: cestat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Customs Act 1962, s.129"
+    year_established: 2006
+    data_quality: partial
+    notes: Ahmedabad bench established 3 March 2006 per cestat.gov.in/aboutus.
+    sources:
+      - label: "Customs Act 1962, s.129"
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "CESTAT — About Us"
+        url: https://cestat.gov.in/aboutus
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_cestat_hyderabad_bench_of_cestat
+    source: cestat_hyderabad
+    target: cestat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Customs Act 1962, s.129"
+    year_established: 2015
+    data_quality: partial
+    notes: Hyderabad bench established 14 December 2015 per cestat.gov.in/aboutus.
+    sources:
+      - label: "Customs Act 1962, s.129"
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "CESTAT — About Us"
+        url: https://cestat.gov.in/aboutus
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_cestat_allahabad_bench_of_cestat
+    source: cestat_allahabad
+    target: cestat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Customs Act 1962, s.129"
+    year_established: 2015
+    data_quality: partial
+    notes: Allahabad bench established 1 September 2015 per cestat.gov.in/aboutus.
+    sources:
+      - label: "Customs Act 1962, s.129"
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "CESTAT — About Us"
+        url: https://cestat.gov.in/aboutus
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_cestat_chandigarh_bench_of_cestat
+    source: cestat_chandigarh
+    target: cestat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Customs Act 1962, s.129"
+    year_established: 2015
+    data_quality: partial
+    notes: Chandigarh bench established 1 December 2015 per cestat.gov.in/aboutus.
+    sources:
+      - label: "Customs Act 1962, s.129"
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "CESTAT — About Us"
+        url: https://cestat.gov.in/aboutus
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
   # ── PrimaryFunder edges (Ministry → Entity) ───────────────────────────────
 
   - id: rel_mca_funds_nclat

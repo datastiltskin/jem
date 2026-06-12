@@ -1,0 +1,23 @@
+id: ministry_information_broadcasting
+name: Ministry of Information and Broadcasting
+name_hindi: सूचना और प्रसारण मंत्रालय
+abbreviation: MIB
+aliases:
+  - Ministry of Information and Broadcasting
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: Central
+created_year: 1947
+operational_status: Active
+statutory_basis: >-
+  Government of India (Allocation of Business) Rules, 1961 — Ministry of
+  Information and Broadcasting entry; Press Council Act 1978.
+funding:
+  primary_source: Consolidated_Fund_India
+data_quality: partial
+data_quality_notes: Stub for graph connectivity (Batch 3). PCI funding edge.
+sources:
+  - label: Ministry of Information and Broadcasting — Official Website
+    url: https://mib.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

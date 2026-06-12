@@ -1,0 +1,107 @@
+id: state_election_commission_generic
+name: State Election Commission (Generic)
+name_hindi: राज्य निर्वाचन आयोग (सामान्य)
+abbreviation: SEC
+
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: State
+
+jurisdiction_scope:
+  is_all_india: false
+  states_covered: []
+  jurisdiction_types:
+    - Superintendence, direction and control of elections to Panchayats and Municipalities
+    - Election dispute quasi-judicial functions (where state law provides)
+
+created_year: 1993
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: >
+  Article 243K (Panchayats) and Article 243ZA (Municipalities) — inserted by
+  Constitution (73rd Amendment) Act 1992 and Constitution (74th Amendment) Act 1992,
+  both in force from 24 April 1993.
+statutory_basis: >
+  State Election Commission Act / Rules enacted by each state legislature;
+  varies by state. Generic pattern: State Commissioner appointed by Governor,
+  removal procedure mirrors Election Commission of India (requires SC reference
+  per Art. 243K(2)).
+
+appointment:
+  nominates: governor_state
+  formally_appoints: governor_state
+  criteria_public: false
+  tenure: Prescribed by state law (typically 5 years or age 65)
+  reappointment_possible: false
+  removal_authority: governor_state
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: supreme_court_india
+      mechanism: >
+        Election disputes under panchayat/municipal elections: election petition
+        before Election Tribunal constituted by state, not civil court (per Art. 243O / 243ZG).
+        Bias or misconduct complaint against SEC: writ petition to High Court or
+        petition to SC under Art. 32.
+      complainant_has_locus: true
+      is_public_process: true
+      timeframe_defined: false
+      external_to_judiciary: false
+  criminal_prosecution:
+    requires_sanction_from: governor_state
+    consultation_required_with: supreme_court_india
+    consultation_binding: true
+  removal_mechanism: >
+    State Election Commissioner may only be removed by Governor on grounds of
+    misbehaviour after SC inquiry per Art. 243K(2) — identical protection to
+    High Court judges. Standard is therefore very high.
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    State Election Commissioners have constitutional removal protection analogous
+    to HC judges; Lokpal Act 2013 Schedule exclusions and general jurisprudence
+    suggest lokpal jurisdiction does not extend to constitutional offices of this
+    nature. Contested; maintainer should verify state-wise.
+  source: Constitution of India Arts. 243K, 243ZA; state SEC Acts
+
+data_quality: partial
+data_quality_notes: >
+  This is a generic stub covering the common constitutional pattern for all 28 States
+  and 3 UTs with legislatures (J&K, Puducherry, Delhi).
+  Key variations across states:
+    — Some states have merged SEC with general election administration (not best practice).
+    — Jharkhand, Chhattisgarh SECs have faced litigation over non-constitution of
+      panchayat bodies for extended periods.
+    — J&K SEC reconstituted after J&K Reorganisation Act 2019.
+  Appellate path for election disputes: The bar on civil court jurisdiction
+  (Arts. 243O, 243ZG) means election disputes go to state-constituted Election
+  Tribunals → High Court (second appeal / writ) → Supreme Court (SLP).
+  State-specific SEC entities (e.g. sec_maharashtra) should be modelled as separate
+  entities with state_data fields when state packs are created.
+  judge_strength not applicable (SEC is a single-member body by constitutional design).
+
+sources:
+  - label: Constitution of India — Article 243K
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A194700
+    type: Constitution
+    accessed_date: '2026-06-11'
+  - label: Constitution of India — Article 243ZA
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A194700
+    type: Constitution
+    accessed_date: '2026-06-11'
+  - label: Constitution (73rd Amendment) Act 1992
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A199213
+    type: Constitution
+    accessed_date: '2026-06-11'

@@ -1,0 +1,93 @@
+id: press_council_india
+name: Press Council of India
+name_hindi: भारतीय प्रेस परिषद
+abbreviation: PCI
+
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Press standards adjudication
+    - Complaints against newspapers and news agencies
+
+created_year: 1966
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: Press Council Act 1978 (§ 4 — establishment; § 14 — quasi-judicial powers)
+
+appointment:
+  nominates: null
+  recommends: null
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: Three years (Chairman, who must be a retired judge of the Supreme Court)
+  reappointment_possible: false
+  removal_authority: press_council_india
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_information_broadcasting
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: ministry_information_broadcasting
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: ministry_information_broadcasting
+      mechanism: >
+        PCI has an internal inquiry committee process; no independent external
+        bias complaint mechanism. High Court writ jurisdiction available.
+      complainant_has_locus: true
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: false
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >
+    Chairman and members may be removed by PCI itself on grounds of misconduct
+    per Press Council Act 1978 § 6.
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >
+    PCI Chairman (retired SC judge serving in statutory capacity) is a public
+    servant; Lokpal jurisdiction applies under Lokpal & Lokayuktas Act 2013 § 14.
+  source: Press Council Act 1978
+
+data_quality: partial
+data_quality_notes: >
+  Press Council Act 1978 repealed and replaced the Press Council Act 1965 which
+  had established the first PCI in 1966; re-established under 1978 Act.
+  Quasi-judicial function: PCI can censure a newspaper/news agency/editor or
+  journalist but has no punitive power beyond censure — it cannot impose fines
+  or criminal penalties (§ 14).
+  Appellate path: PCI censure order → challenge by writ petition to High Court.
+  Structural gap: PCI's jurisdiction covers only print media; digital/online news
+  portals and TV news channels are outside its statutory remit as of 2026 (pending
+  Press and Registration of Periodicals Act 2023 implementation, which modernises
+  registration but does not expand quasi-judicial scope to digital media).
+  The PRP Act 2023 (in force) supersedes PRB Act 1867 for registration but does
+  not dissolve or restructure PCI.
+
+sources:
+  - label: Press Council Act 1978
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A197858
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: Press Council of India official website
+    url: https://presscouncil.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'
+  - label: Press and Registration of Periodicals Act 2023
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A202344
+    type: CentralAct
+    accessed_date: '2026-06-11'

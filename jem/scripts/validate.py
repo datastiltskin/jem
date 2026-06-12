@@ -66,7 +66,7 @@ SOURCE_TYPES = [
 ]
 
 RELATIONSHIP_TYPES = [
-    "Nominates", "Recommends", "ConsultedOn_Appointment", "FormallyAppoints", "CanRemove",
+    "Nominates", "Recommends", "ConsultedOn_Appointment", "ConsultedOn_Removal", "FormallyAppoints", "CanRemove",
     "PrimaryFunder", "CoFunder", "BudgetAllocatedBy",
     "AppealableTo", "FinalAppealTo", "ReferredTo", "TransferableTo",
     "AdministrativeSupervision", "DisciplinaryControl", "PolicyOversight", "Designates",

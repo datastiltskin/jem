@@ -1,0 +1,23 @@
+id: ministry_civil_aviation
+name: Ministry of Civil Aviation
+name_hindi: नागरिक उड्डयन मंत्रालय
+abbreviation: MoCA
+aliases:
+  - Ministry of Civil Aviation
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: Central
+created_year: 1999
+operational_status: Active
+statutory_basis: >-
+  Government of India (Allocation of Business) Rules, 1961 — Ministry of Civil
+  Aviation entry; Airports Economic Regulatory Authority of India Act 2008.
+funding:
+  primary_source: Consolidated_Fund_India
+data_quality: partial
+data_quality_notes: Stub for graph connectivity (Batch 3). AERA funding edge.
+sources:
+  - label: Ministry of Civil Aviation — Official Website
+    url: https://www.civilaviation.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

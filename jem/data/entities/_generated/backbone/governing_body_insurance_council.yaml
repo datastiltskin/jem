@@ -1,0 +1,24 @@
+id: governing_body_insurance_council
+name: Governing Body of Insurance Council
+name_hindi: बीमा परिषद की शासी निकाय
+abbreviation: GBIC
+aliases:
+  - Council for Insurance Ombudsmen
+  - Governing Body of Insurance Council
+type: ADRBody
+cluster: tribunals_adr
+level_of_government: Central
+created_year: 1998
+operational_status: Active
+statutory_basis: >-
+  Insurance Ombudsman Rules 2017 (GSR 877(E)); Insurance Act 1938 § 114A.
+  GBIC constitutes and administers the Insurance Ombudsman scheme.
+data_quality: partial
+data_quality_notes: >-
+  Industry council (not a government department). Appoints Insurance Ombudsmen
+  at 17 centres across India. Stub for graph connectivity (Batch 3).
+sources:
+  - label: Insurance Ombudsman Rules 2017
+    url: https://irdai.gov.in/web/guest/ombudsman
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

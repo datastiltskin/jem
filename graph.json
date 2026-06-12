@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-06-12T07:12:19.110410+00:00",
-    "entity_count": 577,
-    "relationship_count": 550,
+    "generated_at": "2026-06-12T07:51:24.158114+00:00",
+    "entity_count": 592,
+    "relationship_count": 589,
     "canvas_width": 1800,
     "canvas_height": 1200,
     "year_range": [
@@ -12,11 +12,11 @@
     ]
   },
   "impact_metrics": {
-    "high_independence_risk_count": 106,
-    "appointer_equals_funder_removal_count": 0,
-    "no_public_appointment_criteria_count": 48,
+    "high_independence_risk_count": 115,
+    "appointer_equals_funder_removal_count": 1,
+    "no_public_appointment_criteria_count": 54,
     "not_constituted_count": 4,
-    "no_external_complaint_mechanism_count": 575
+    "no_external_complaint_mechanism_count": 587
   },
   "timeline_events": [
     {
@@ -150,7 +150,7 @@
       "id": "tribunals_adr",
       "name": "Tribunals Adr",
       "color": "#2b6cb0",
-      "entity_count": 164,
+      "entity_count": 168,
       "avg_independence_risk": 5.2,
       "not_constituted_count": 1,
       "position": {
@@ -159,6 +159,22 @@
         "width": 430,
         "height": 280,
         "cluster_col": 0,
+        "cluster_row": 1
+      }
+    },
+    {
+      "id": "regulatory_bodies",
+      "name": "Regulatory Bodies",
+      "color": "#4a235a",
+      "entity_count": 83,
+      "avg_independence_risk": 3.7,
+      "not_constituted_count": 0,
+      "position": {
+        "x": 466,
+        "y": 316,
+        "width": 430,
+        "height": 280,
+        "cluster_col": 1,
         "cluster_row": 1
       }
     },
@@ -195,26 +211,10 @@
       }
     },
     {
-      "id": "regulatory_bodies",
-      "name": "Regulatory Bodies",
-      "color": "#4a235a",
-      "entity_count": 77,
-      "avg_independence_risk": 3.4,
-      "not_constituted_count": 0,
-      "position": {
-        "x": 466,
-        "y": 316,
-        "width": 430,
-        "height": 280,
-        "cluster_col": 1,
-        "cluster_row": 1
-      }
-    },
-    {
       "id": "legislative_executive",
       "name": "Legislative Executive",
       "color": "#1f2d3d",
-      "entity_count": 56,
+      "entity_count": 60,
       "avg_independence_risk": 0.0,
       "not_constituted_count": 0,
       "position": {
@@ -262,8 +262,8 @@
       "id": "arbitration",
       "name": "Arbitration",
       "color": "#3182ce",
-      "entity_count": 4,
-      "avg_independence_risk": 6.5,
+      "entity_count": 5,
+      "avg_independence_risk": 7.4,
       "not_constituted_count": 1,
       "position": {
         "x": 1342,
@@ -479,6 +479,137 @@
       }
     },
     {
+      "id": "aera",
+      "name": "Airports Economic Regulatory Authority of India",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Airport tariff and user development fee determination",
+          "Tariff-related disputes"
+        ]
+      },
+      "name_hindi": "भारतीय हवाई अड्डा आर्थिक विनियामक प्राधिकरण",
+      "abbreviation": "AERA",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Airports Economic Regulatory Authority of India Act 2008 (§ 3 — establishment; § 17 — appellate tribunal reference to TDSAT).\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Appellate path: AERA tariff order → TDSAT (Telecom Disputes Settlement and Appellate Tribunal, which also has jurisdiction over AERA appeals per AERA Act § 17) → Supreme Court. TDSAT acting as AERA Appellate Tribunal is a shared-body arrangement confirmed by Ministry of Civil Aviation notifications. AERA's quasi-judicial function is tariff determination, not case adjudication; no NJDG-integrated pendency data. case_volume deferred to Phase-2.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 5,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Complaint process is not public/transparent": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.53,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.53,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "concerning",
+        "structural_health_score": 0.53
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_civil_aviation",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": true,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Airports Economic Regulatory Authority of India Act 2008",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200817",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AERA official website",
+          "url": "https://aera.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_civil_aviation",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "Five years or age 65, whichever earlier (Chairperson)",
+          "reappointment_possible": false,
+          "removal_authority": "central_government"
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_civil_aviation"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_civil_aviation"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "ministry_civil_aviation",
+              "mechanism": "Administrative complaint to parent ministry",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": true
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Removal by Central Government on grounds specified in AERA Act 2008 § 8.\n",
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "AERA Chairperson is a public servant; Lokpal jurisdiction applies under Lokpal & Lokayuktas Act 2013 § 14.\n",
+          "source": "AERA Act 2008"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Airport tariff and user development fee determination",
+            "Tariff-related disputes"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 498,
+        "y": 480
+      }
+    },
+    {
       "id": "aft",
       "name": "Armed Forces Tribunal",
       "aliases": [
@@ -625,7 +756,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 61,
+        "x": 60,
         "y": 444
       }
     },
@@ -1237,7 +1368,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 70,
+        "x": 69,
         "y": 444
       }
     },
@@ -1379,7 +1510,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 72,
+        "x": 71,
         "y": 480
       }
     },
@@ -1821,7 +1952,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 79,
+        "x": 78,
         "y": 444
       }
     },
@@ -1977,7 +2108,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 81,
+        "x": 80,
         "y": 480
       }
     },
@@ -2531,7 +2662,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 88,
+        "x": 87,
         "y": 444
       }
     },
@@ -2700,7 +2831,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 90,
+        "x": 89,
         "y": 480
       }
     },
@@ -2839,7 +2970,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 92,
+        "x": 91,
         "y": 444
       }
     },
@@ -3067,7 +3198,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 95,
+        "x": 94,
         "y": 480
       }
     },
@@ -3368,8 +3499,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 499,
-        "y": 480
+        "x": 503,
+        "y": 444
       }
     },
     {
@@ -3441,7 +3572,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 63,
+        "x": 62,
         "y": 192
       }
     },
@@ -3572,8 +3703,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 504,
-        "y": 444
+        "x": 507,
+        "y": 480
       }
     },
     {
@@ -3713,7 +3844,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 97,
+        "x": 96,
         "y": 444
       }
     },
@@ -3871,7 +4002,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 99,
+        "x": 98,
         "y": 480
       }
     },
@@ -4025,7 +4156,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 101,
+        "x": 100,
         "y": 444
       }
     },
@@ -4185,7 +4316,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 104,
+        "x": 102,
         "y": 480
       }
     },
@@ -4351,7 +4482,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 106,
+        "x": 105,
         "y": 444
       }
     },
@@ -4511,7 +4642,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 108,
+        "x": 107,
         "y": 480
       }
     },
@@ -4667,7 +4798,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 110,
+        "x": 109,
         "y": 444
       }
     },
@@ -4849,7 +4980,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 113,
+        "x": 111,
         "y": 480
       }
     },
@@ -5007,7 +5138,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 115,
+        "x": 114,
         "y": 444
       }
     },
@@ -5158,7 +5289,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 117,
+        "x": 116,
         "y": 480
       }
     },
@@ -5309,7 +5440,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 119,
+        "x": 118,
         "y": 444
       }
     },
@@ -5458,7 +5589,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 122,
+        "x": 120,
         "y": 480
       }
     },
@@ -5598,7 +5729,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 124,
+        "x": 122,
         "y": 444
       }
     },
@@ -5728,7 +5859,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 126,
+        "x": 125,
         "y": 480
       }
     },
@@ -5858,7 +5989,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 129,
+        "x": 127,
         "y": 444
       }
     },
@@ -6292,6 +6423,276 @@
       }
     },
     {
+      "id": "compat",
+      "name": "Competition Appellate Tribunal",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Appeals against CCI orders under Competition Act 2002",
+          "Compensation claims referred by CCI"
+        ]
+      },
+      "name_hindi": "प्रतिस्पर्धा अपीलीय अधिकरण",
+      "abbreviation": "COMPAT",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": 2017,
+      "operational_status": "Abolished",
+      "constitutional_basis": null,
+      "statutory_basis": "Competition Act 2002 §§ 53A–53U (as inserted by Competition (Amendment) Act 2007, in force 20 May 2009). Abolished by Finance Act 2017 (§ 172 — Tribunal, Appellate Tribunal and other Authorities (Qualification, Experience and Other Conditions of Service of Members) Rules 2017 read with Finance Act 2017 § 160 NCLAT amendment). Jurisdiction transferred to National Company Law Appellate Tribunal (NCLAT) by Finance Act 2017 with effect from 26 May 2017.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "COMPAT was operational from 15 May 2009 (date Chairperson assumed charge) to 26 May 2017 (date NCLAT took over CCI appeal jurisdiction). Appellate chain (historical): CCI order → COMPAT → Supreme Court (§ 53T). Post-abolition chain: CCI order → NCLAT → Supreme Court. The Finance Act 2017 (§ 172, Sixth Schedule) amended Competition Act 2002 § 53A to substitute 'National Company Law Appellate Tribunal' for 'Competition Appellate Tribunal'. All pending matters transferred to NCLAT. Historical note: The abolition of COMPAT was part of a broader rationalisation of appellate tribunals recommended by the Law Commission (272nd Report, 2017) and carried out via the Finance Act 2017 omnibus amendments.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 5,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "No bias complaint mechanism exists": 2,
+          "No publicly stated appointment criteria": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.53,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.053,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 0.1
+        },
+        "structural_health_level": "critical",
+        "structural_health_score": 0.053
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_corporate_affairs",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Competition Act 2002 (§§ 53A–53U, as amended)",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200312",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Finance Act 2017 (§ 172 — COMPAT abolition provisions)",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A201707",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Competition Commission of India — history page",
+          "url": "https://www.cci.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": false,
+          "tenure": "Five years or age 65 (Chairperson); non-renewable",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_corporate_affairs"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_corporate_affairs"
+        },
+        "complaint_mechanism": {
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokpal_jurisdiction_note": "Abolished 2017; not applicable.",
+          "source": "Finance Act 2017"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Appeals against CCI orders under Competition Act 2002",
+            "Compensation claims referred by CCI"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 129,
+        "y": 480
+      }
+    },
+    {
+      "id": "court_martial_generic",
+      "name": "Court Martial (Generic — Army/Navy/Air Force)",
+      "aliases": [
+        "General Court Martial",
+        "Summary Court Martial",
+        "District Court Martial",
+        "Summary General Court Martial"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Criminal (military offences)",
+          "Disciplinary"
+        ]
+      },
+      "name_hindi": "सैन्य न्यायालय (सामान्य)",
+      "abbreviation": "CM",
+      "type": "SpecialCourt",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1950,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Army Act 1950 (Chapters VI–IX); Navy Act 1957 (Chapter VIII); Air Force Act 1950 (Chapter VI); Armed Forces Tribunal Act 2007 (established AFT as external appellate body post-2007).\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Generic stub covering GCM, SGCM, DCM, SCM convened under all three service Acts. Key structural gap: Summary Court Martial (SCM) has no right of appeal to AFT — the accused's sole remedy is post-conviction petition to Chief of Army Staff / Central Government under Army Act 1950 § 164. This is a significant accountability lacuna. Pre-AFT (before 2009 operationalisation), no external judicial body existed; High Courts exercised writ jurisdiction only. Appellate path (post-2007): finding/sentence → Confirming Authority → AFT (for GCM/DCM/SGCM). SCM sentences not appealable to AFT (AFT Act 2007 § 15 read with Army Act § 164). Appointment of court martial members: Convening Officer (generally a senior officer) convenes and nominates members; Judge Advocate (a JAG-branch officer) is appointed to advise on law. No civilian element in composition. No public docket or cause list; proceedings not published. judge_strength not modelled — court martial is an ad-hoc body, not a permanent court with sanctioned judicial posts.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type SpecialCourt": 2,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 5,
+        "independence_risk_breakdown": {
+          "Audit reports not public": 1,
+          "Complaint process is not public/transparent": 1,
+          "No publicly stated appointment criteria": 1
+        },
+        "independence_risk_level": "moderate",
+        "independence_risk_score": 3,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.68,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.68,
+          "independence_risk_penalty": 0.3,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.68
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": false,
+      "complaint_external_exists": true,
+      "appointment_criteria_public": false,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Army Act 1950",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A195046",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Navy Act 1957",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A195728",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Air Force Act 1950",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A195045",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200753",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "formally_appoints": "ministry_defence",
+          "criteria_public": false,
+          "tenure": "Ad-hoc per case",
+          "reappointment_possible": null,
+          "removal_authority": "Convening Officer / Confirming Authority"
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": false,
+          "conduct_oversight_body": "ministry_defence"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "aft",
+              "mechanism": "Statutory appeal / revision to AFT under Armed Forces Tribunal Act 2007",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": true,
+              "external_to_judiciary": true
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "ministry_defence",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Convening authority may dissolve court martial before finding; Judge Advocate General review of proceedings.\n",
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokpal_jurisdiction_note": "Military judicial officers are not public servants within Lokpal & Lokayuktas Act 2013 for purposes of court martial jurisdiction.\n",
+          "source": "Army Act 1950 §§ 108–153; AFT Act 2007"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Criminal (military offences)",
+            "Disciplinary"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 131,
+        "y": 444
+      }
+    },
+    {
       "id": "department_of_justice",
       "name": "Department of Justice",
       "aliases": [],
@@ -6366,7 +6767,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 69,
+        "x": 68,
         "y": 156
       }
     },
@@ -6445,7 +6846,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 76,
+        "x": 74,
         "y": 192
       }
     },
@@ -6590,7 +6991,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 1445,
+        "x": 1432,
         "y": 480
       }
     },
@@ -6928,7 +7329,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 131,
+        "x": 133,
         "y": 480
       }
     },
@@ -7061,7 +7462,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 133,
+        "x": 136,
         "y": 444
       }
     },
@@ -7195,7 +7596,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 135,
+        "x": 138,
         "y": 480
       }
     },
@@ -7335,7 +7736,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 138,
+        "x": 140,
         "y": 444
       }
     },
@@ -7481,7 +7882,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 140,
+        "x": 142,
         "y": 480
       }
     },
@@ -7613,7 +8014,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 142,
+        "x": 145,
         "y": 444
       }
     },
@@ -7733,8 +8134,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 508,
-        "y": 480
+        "x": 512,
+        "y": 444
       }
     },
     {
@@ -7883,7 +8284,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 144,
+        "x": 147,
         "y": 480
       }
     },
@@ -8037,7 +8438,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 147,
+        "x": 149,
         "y": 444
       }
     },
@@ -8188,7 +8589,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 149,
+        "x": 151,
         "y": 480
       }
     },
@@ -8329,7 +8730,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 151,
+        "x": 153,
         "y": 444
       }
     },
@@ -8481,7 +8882,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 153,
+        "x": 156,
         "y": 480
       }
     },
@@ -8661,7 +9062,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 156,
+        "x": 158,
         "y": 444
       }
     },
@@ -8818,7 +9219,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 158,
+        "x": 160,
         "y": 480
       }
     },
@@ -8958,7 +9359,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 160,
+        "x": 162,
         "y": 444
       }
     },
@@ -9108,7 +9509,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 163,
+        "x": 164,
         "y": 480
       }
     },
@@ -9248,7 +9649,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 165,
+        "x": 167,
         "y": 444
       }
     },
@@ -9407,7 +9808,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 167,
+        "x": 169,
         "y": 480
       }
     },
@@ -9554,7 +9955,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 169,
+        "x": 171,
         "y": 444
       }
     },
@@ -9725,7 +10126,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 172,
+        "x": 173,
         "y": 480
       }
     },
@@ -9903,7 +10304,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 174,
+        "x": 176,
         "y": 444
       }
     },
@@ -10055,7 +10456,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 176,
+        "x": 178,
         "y": 480
       }
     },
@@ -10195,7 +10596,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 178,
+        "x": 180,
         "y": 444
       }
     },
@@ -10342,7 +10743,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 181,
+        "x": 182,
         "y": 480
       }
     },
@@ -10498,7 +10899,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 183,
+        "x": 184,
         "y": 444
       }
     },
@@ -10638,7 +11039,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 185,
+        "x": 187,
         "y": 480
       }
     },
@@ -10795,7 +11196,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 187,
+        "x": 189,
         "y": 444
       }
     },
@@ -10935,7 +11336,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 190,
+        "x": 191,
         "y": 480
       }
     },
@@ -11075,7 +11476,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 192,
+        "x": 193,
         "y": 444
       }
     },
@@ -11225,7 +11626,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 194,
+        "x": 195,
         "y": 480
       }
     },
@@ -11365,7 +11766,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 197,
+        "x": 198,
         "y": 444
       }
     },
@@ -11515,7 +11916,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 199,
+        "x": 200,
         "y": 480
       }
     },
@@ -11663,7 +12064,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 201,
+        "x": 202,
         "y": 444
       }
     },
@@ -11802,7 +12203,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 203,
+        "x": 204,
         "y": 480
       }
     },
@@ -12060,6 +12461,222 @@
       }
     },
     {
+      "id": "fssai",
+      "name": "Food Safety and Standards Authority of India",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Food safety licensing and standards",
+          "Quasi-judicial adjudication (Food Safety Appellate Tribunal where notified)",
+          "Appellate orders against licensing authorities"
+        ]
+      },
+      "name_hindi": "भारतीय खाद्य संरक्षा और मानक प्राधिकरण",
+      "abbreviation": "FSSAI",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "Central",
+      "created_year": 2008,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006 (§ 4 — establishment; §§ 68–73 — adjudication)",
+      "data_quality": "partial",
+      "data_quality_notes": "FSS Act 2006 §§ 68–73 provide for Food Safety Appellate Tribunals (FSATs) at state level, but as of 2024 most states have not constituted dedicated FSATs; appeals are heard by High Courts or Designated Officers. Appellate path: order of Adjudicating Officer → FSAT (where constituted) → High Court. FSSAI itself does not hear appeals; it issues regulations and licences. case_volume: FSSAI Annual Report 2022-23 records enforcement actions but does not publish consolidated pendency data in NJDG format. Deferred to Phase-2.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 5,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Complaint process is not public/transparent": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Reappointment possible by same executive authority": 2,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 8,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.53,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.53,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "concerning",
+        "structural_health_score": 0.53
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_health_family_welfare",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": true,
+      "appointment_criteria_public": true,
+      "reappointment_possible": true,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200634",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "FSSAI official website — About Us",
+          "url": "https://www.fssai.gov.in/home/about-fssai/about-fssai.html",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_health_family_welfare",
+          "recommends": null,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Three years (Chairperson); renewable once",
+          "reappointment_possible": true,
+          "removal_authority": "central_government"
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_health_family_welfare"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_health_family_welfare"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "ministry_health_family_welfare",
+              "mechanism": "Complaint to administrative ministry; no dedicated independent bias body",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": true
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Removal by Central Government for insolvency, conviction, incapacity, or absence without leave per FSS Act 2006 § 7.\n",
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "FSSAI Chairperson and CEO are public servants; Lokpal jurisdiction applies under Lokpal & Lokayuktas Act 2013 § 14.\n",
+          "source": "Food Safety and Standards Act 2006"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Food safety licensing and standards",
+            "Quasi-judicial adjudication (Food Safety Appellate Tribunal where notified)",
+            "Appellate orders against licensing authorities"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 516,
+        "y": 480
+      }
+    },
+    {
+      "id": "governing_body_insurance_council",
+      "name": "Governing Body of Insurance Council",
+      "aliases": [
+        "Council for Insurance Ombudsmen",
+        "Governing Body of Insurance Council"
+      ],
+      "jurisdiction_scope": null,
+      "name_hindi": "बीमा परिषद की शासी निकाय",
+      "abbreviation": "GBIC",
+      "type": "ADRBody",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1998,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Insurance Ombudsman Rules 2017 (GSR 877(E)); Insurance Act 1938 § 114A. GBIC constitutes and administers the Insurance Ombudsman scheme.",
+      "data_quality": "partial",
+      "data_quality_notes": "Industry council (not a government department). Appoints Insurance Ombudsmen at 17 centres across India. Stub for graph connectivity (Batch 3).",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type ADRBody": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 2,
+        "independence_risk_breakdown": {
+          "Audit reports not public": 1,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No external financial audit": 1,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": null,
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Insurance Ombudsman Rules 2017",
+          "url": "https://irdai.gov.in/web/guest/ombudsman",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": null,
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 206,
+        "y": 444
+      }
+    },
+    {
       "id": "governor_state",
       "name": "Governors — State aggregate (Article 154 / 163 interface)",
       "aliases": [],
@@ -12128,7 +12745,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 82,
+        "x": 81,
         "y": 156
       }
     },
@@ -12292,8 +12909,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 206,
-        "y": 444
+        "x": 209,
+        "y": 480
       }
     },
     {
@@ -12470,6 +13087,148 @@
       }
     },
     {
+      "id": "icadr",
+      "name": "International Centre for Alternative Dispute Resolution",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Arbitration (domestic and international)",
+          "Mediation",
+          "Conciliation",
+          "Training in ADR"
+        ]
+      },
+      "name_hindi": "वैकल्पिक विवाद समाधान के लिए अंतर्राष्ट्रीय केन्द्र",
+      "abbreviation": "ICADR",
+      "type": "ArbitralInstitution",
+      "cluster": "arbitration",
+      "level_of_government": "Central",
+      "created_year": 1995,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Registered Society under Societies Registration Act 1860. Established by Ministry of Law and Justice; functions under Arbitration and Conciliation Act 1996. ICADR Rules 1996 (as amended) govern proceedings.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "ICADR was established in 1995 as an inter-governmental body on recommendation of the UN General Assembly (UNGA Res 40/72, 1985) for Asia-Pacific region. It is distinct from IIAC (formerly NDIAC), which is a statutory body under the New Delhi International Arbitration Centre Act 2019 (renamed by Act 23 of 2022). Appellate path: arbitral award → challenge petition to High Court (§ 34) → appeal to Division Bench of HC (§ 37) → Supreme Court (SLP). Structural note: ICADR's case volume and institutional activity post-2019 (after IIAC was established as competing statutory body) is not publicly documented. Operational status retained as Active based on ministry website listing; maintainer should verify current programme activity. Funding quantum not publicly disclosed in Union Budget documents; listed under Ministry of Law and Justice grants.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type ArbitralInstitution": 1,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Audit reports not public": 1,
+          "Complaint process is not public/transparent": 1,
+          "Funder == Appointing authority": 2,
+          "No defined timeframe for complaint resolution": 1,
+          "No publicly stated appointment criteria": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "severe",
+        "independence_risk_score": 11,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.52,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.52,
+          "independence_risk_penalty": 0.7,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "concerning",
+        "structural_health_score": 0.52
+      },
+      "funding_source": "Ministry_Budget",
+      "funding_ministry": "ministry_law_justice",
+      "audited_by": "cag_india",
+      "audit_report_public": false,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Arbitration and Conciliation Act 1996",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A199626",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "ICADR official website",
+          "url": "https://www.icadr.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Ministry of Law and Justice — ADR bodies listing",
+          "url": "https://doj.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_law_justice",
+          "formally_appoints": "ministry_law_justice",
+          "criteria_public": false,
+          "tenure": null,
+          "reappointment_possible": null,
+          "removal_authority": "ministry_law_justice"
+        },
+        "funding": {
+          "primary_source": "Ministry_Budget",
+          "ministry_responsible": "ministry_law_justice",
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Performance",
+          "audit_report_public": false,
+          "conduct_oversight_body": "ministry_law_justice"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "ministry_law_justice",
+              "mechanism": "No dedicated external complaint body. Parties may challenge arbitral award in competent court under Arbitration and Conciliation Act 1996 §§ 34, 37.\n",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokpal_jurisdiction_note": "ICADR is a registered society, not a statutory authority; individual arbitrators are not public servants within Lokpal Act 2013.\n",
+          "source": "Arbitration and Conciliation Act 1996; ICADR Rules 1996"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Arbitration (domestic and international)",
+            "Mediation",
+            "Conciliation",
+            "Training in ADR"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 1495,
+        "y": 444
+      }
+    },
+    {
       "id": "iiac",
       "name": "India International Arbitration Centre",
       "aliases": [
@@ -12600,8 +13359,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 1520,
-        "y": 444
+        "x": 1557,
+        "y": 480
       }
     },
     {
@@ -12684,6 +13443,137 @@
       "position": {
         "x": 966,
         "y": 156
+      }
+    },
+    {
+      "id": "insurance_ombudsman_generic",
+      "name": "Insurance Ombudsman (Generic)",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Insurance complaint adjudication (personal lines)",
+          "Mediation / award"
+        ]
+      },
+      "name_hindi": "बीमा लोकपाल (सामान्य)",
+      "abbreviation": null,
+      "type": "ADRBody",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1998,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Insurance Act 1938 § 114A (rule-making power); Insurance Ombudsman Rules 2017 (GSR 877(E), notified 11 September 2017, in force; superseded 1998 Rules). Constituted by Council for Insurance Ombudsmen (Governing Body of Insurance Council — GBIC).\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Official institutional name under Insurance Ombudsman Rules 2017 is 'Insurance Ombudsman' (not an appellate tribunal). The _generic suffix applies: 17 regional ombudsman centres operate under a common statutory scheme; this entity models the generic pattern (cf. state_election_commission_generic, court_martial_generic). Two-tier model:\n  Layer 1 — Insurance Ombudsman (17 offices): consumer-facing mediation and\n  binding award up to Rs. 30 lakh (2017 Rules, as amended 2021).\n  Layer 2 — Securities Appellate Tribunal (SAT): appellate body for IRDAI\n  regulatory orders under Insurance Laws (Amendment) Act 2015 § 110C.\nThis entity models Layer 1. SAT and IRDAI are modelled separately in repo. Former draft id insurance_appellate_generic was incorrect — renamed 2026-06-12.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type ADRBody": 1,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 3,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Audit reports not public": 1,
+          "Complaint process is not public/transparent": 1,
+          "No defined timeframe for complaint resolution": 1
+        },
+        "independence_risk_level": "moderate",
+        "independence_risk_score": 4,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.76,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.76,
+          "independence_risk_penalty": 0.3,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.76
+      },
+      "funding_source": "Mixed",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": false,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Insurance Ombudsman Rules 2017",
+          "url": "https://irdai.gov.in/web/guest/ombudsman",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Insurance Act 1938 § 114A",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A193804",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Insurance Laws (Amendment) Act 2015",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A201504",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "governing_body_insurance_council",
+          "formally_appoints": "governing_body_insurance_council",
+          "criteria_public": true,
+          "tenure": "Three years or age 70, whichever earlier",
+          "reappointment_possible": false,
+          "removal_authority": "governing_body_insurance_council"
+        },
+        "funding": {
+          "primary_source": "Mixed",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "Internal",
+          "audit_report_public": false,
+          "conduct_oversight_body": "irdai"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "irdai",
+              "mechanism": "IRDAI as regulator of insurers can receive systemic complaints. Award may be challenged by writ petition before High Court; no statutory appeal mechanism within Insurance Ombudsman Rules 2017.\n",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokpal_jurisdiction_note": "Insurance Ombudsman is appointed by GBIC (a non-government council), not by Government; not a public servant within Lokpal Act 2013.\n",
+          "source": "Insurance Ombudsman Rules 2017"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Insurance complaint adjudication (personal lines)",
+            "Mediation / award"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 211,
+        "y": 444
       }
     },
     {
@@ -12815,7 +13705,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 208,
+        "x": 213,
         "y": 480
       }
     },
@@ -12956,7 +13846,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 513,
+        "x": 521,
         "y": 444
       }
     },
@@ -13093,7 +13983,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 210,
+        "x": 215,
         "y": 444
       }
     },
@@ -13290,7 +14180,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 89,
+        "x": 87,
         "y": 192
       }
     },
@@ -13369,7 +14259,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 95,
+        "x": 93,
         "y": 156
       }
     },
@@ -13490,7 +14380,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 212,
+        "x": 218,
         "y": 480
       }
     },
@@ -13626,8 +14516,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 1594,
-        "y": 480
+        "x": 1619,
+        "y": 444
       }
     },
     {
@@ -13829,8 +14719,81 @@
         "parent_hc": null
       },
       "position": {
-        "x": 102,
+        "x": 99,
         "y": 192
+      }
+    },
+    {
+      "id": "ministry_civil_aviation",
+      "name": "Ministry of Civil Aviation",
+      "aliases": [
+        "Ministry of Civil Aviation"
+      ],
+      "jurisdiction_scope": null,
+      "name_hindi": "नागरिक उड्डयन मंत्रालय",
+      "abbreviation": "MoCA",
+      "type": "ExecutiveBody",
+      "cluster": "legislative_executive",
+      "level_of_government": "Central",
+      "created_year": 1999,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Government of India (Allocation of Business) Rules, 1961 — Ministry of Civil Aviation entry; Airports Economic Regulatory Authority of India Act 2008.",
+      "data_quality": "partial",
+      "data_quality_notes": "Stub for graph connectivity (Batch 3). AERA funding edge.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Ministry of Civil Aviation — Official Website",
+          "url": "https://www.civilaviation.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": {
+          "primary_source": "Consolidated_Fund_India"
+        },
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 105,
+        "y": 156
       }
     },
     {
@@ -13903,8 +14866,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 108,
-        "y": 156
+        "x": 111,
+        "y": 192
       }
     },
     {
@@ -13983,8 +14946,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 115,
-        "y": 192
+        "x": 117,
+        "y": 156
       }
     },
     {
@@ -14060,8 +15023,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 122,
-        "y": 156
+        "x": 123,
+        "y": 192
       }
     },
     {
@@ -14139,8 +15102,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 128,
-        "y": 192
+        "x": 130,
+        "y": 156
       }
     },
     {
@@ -14219,7 +15182,80 @@
         "parent_hc": null
       },
       "position": {
-        "x": 135,
+        "x": 136,
+        "y": 192
+      }
+    },
+    {
+      "id": "ministry_health_family_welfare",
+      "name": "Ministry of Health and Family Welfare",
+      "aliases": [
+        "Ministry of Health and Family Welfare"
+      ],
+      "jurisdiction_scope": null,
+      "name_hindi": "स्वास्थ्य और परिवार कल्याण मंत्रालय",
+      "abbreviation": "MoHFW",
+      "type": "ExecutiveBody",
+      "cluster": "legislative_executive",
+      "level_of_government": "Central",
+      "created_year": 1947,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Government of India (Allocation of Business) Rules, 1961 — Ministry of Health and Family Welfare entry; Food Safety and Standards Act 2006 (FSSAI).",
+      "data_quality": "partial",
+      "data_quality_notes": "Stub for graph connectivity (Batch 3). FSSAI funding edge.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Ministry of Health and Family Welfare — Official Website",
+          "url": "https://mohfw.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": {
+          "primary_source": "Consolidated_Fund_India"
+        },
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 142,
         "y": 156
       }
     },
@@ -14300,6 +15336,79 @@
       "position": {
         "x": 612,
         "y": 732
+      }
+    },
+    {
+      "id": "ministry_information_broadcasting",
+      "name": "Ministry of Information and Broadcasting",
+      "aliases": [
+        "Ministry of Information and Broadcasting"
+      ],
+      "jurisdiction_scope": null,
+      "name_hindi": "सूचना और प्रसारण मंत्रालय",
+      "abbreviation": "MIB",
+      "type": "ExecutiveBody",
+      "cluster": "legislative_executive",
+      "level_of_government": "Central",
+      "created_year": 1947,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Government of India (Allocation of Business) Rules, 1961 — Ministry of Information and Broadcasting entry; Press Council Act 1978.",
+      "data_quality": "partial",
+      "data_quality_notes": "Stub for graph connectivity (Batch 3). PCI funding edge.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Ministry of Information and Broadcasting — Official Website",
+          "url": "https://mib.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": {
+          "primary_source": "Consolidated_Fund_India"
+        },
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 148,
+        "y": 192
       }
     },
     {
@@ -14450,7 +15559,81 @@
         "parent_hc": null
       },
       "position": {
-        "x": 141,
+        "x": 154,
+        "y": 156
+      }
+    },
+    {
+      "id": "ministry_of_commerce_industry",
+      "name": "Ministry of Commerce and Industry",
+      "aliases": [
+        "Ministry of Commerce and Industry",
+        "Department for Promotion of Industry and Internal Trade"
+      ],
+      "jurisdiction_scope": null,
+      "name_hindi": "वाणिज्य और उद्योग मंत्रालय",
+      "abbreviation": "MoCI",
+      "type": "ExecutiveBody",
+      "cluster": "legislative_executive",
+      "level_of_government": "Central",
+      "created_year": 1947,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Government of India (Allocation of Business) Rules, 1961 — Ministry of Commerce and Industry entry; Patents Act 1970; Trade Marks Act 1999.",
+      "data_quality": "partial",
+      "data_quality_notes": "Stub for graph connectivity (Batch 3). CGPDTM and Trade Marks Registry.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Ministry of Commerce and Industry — Official Website",
+          "url": "https://commerce.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": {
+          "primary_source": "Consolidated_Fund_India"
+        },
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 160,
         "y": 192
       }
     },
@@ -14608,7 +15791,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 148,
+        "x": 166,
         "y": 156
       }
     },
@@ -14687,7 +15870,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 154,
+        "x": 172,
         "y": 192
       }
     },
@@ -14760,7 +15943,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 161,
+        "x": 179,
         "y": 156
       }
     },
@@ -14887,7 +16070,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 215,
+        "x": 220,
         "y": 444
       }
     },
@@ -15357,7 +16540,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 217,
+        "x": 222,
         "y": 480
       }
     },
@@ -15499,7 +16682,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 219,
+        "x": 224,
         "y": 444
       }
     },
@@ -15633,7 +16816,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 221,
+        "x": 226,
         "y": 480
       }
     },
@@ -15766,7 +16949,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 518,
+        "x": 525,
         "y": 480
       }
     },
@@ -15839,8 +17022,151 @@
         "parent_hc": null
       },
       "position": {
-        "x": 168,
+        "x": 185,
         "y": 192
+      }
+    },
+    {
+      "id": "patent_controller",
+      "name": "Controller General of Patents, Designs and Trade Marks",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Patent grant, opposition and revocation (pre-grant)",
+          "Design registration",
+          "Trade mark registration (appellate path to High Court post-IPAB)",
+          "Geographical indication registration"
+        ]
+      },
+      "name_hindi": "पेटेंट, डिज़ाइन एवं व्यापार चिह्न महानियंत्रक",
+      "abbreviation": "CGPDTM",
+      "type": "ExecutiveBody",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "Central",
+      "created_year": 1912,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Patents Act 1970 § 3 (Controller General); Trade Marks Act 1999 § 3 (Registrar of Trade Marks under CGPDTM); Designs Act 2000 § 3; Geographical Indications of Goods (Registration and Protection) Act 1999 § 3.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "created_year: 1912 — Patent Office established under Patents & Designs Act 1911 (institutional continuity; head office Mumbai). Current statutory basis is Patents Act 1970 (§ 3 — Controller General); use 1970 only if modelling the current Act regime rather than office lineage. statutory_basis field reflects the 1970 Act. Appellate path post-IPAB abolition (2021):\n  — Patent pre-grant/post-grant opposition: Controller → writ/appeal to HC (original side)\n  — Patent revocation (§ 64): HC or Counter-claim in infringement suit\n  — Trade mark rectification / appeal against Registrar: High Court (post-IPAB, § 91)\n  — Design appeal: HC\nCGPDTM office is in Mumbai (Head Office); branch offices in Delhi, Kolkata, Chennai. Quasi-judicial function: Controllers (Deputy/Assistant Controllers under CGPDTM) hear patent opposition proceedings — this is a quasi-judicial function. They are subordinate officers of the patent office, not tribunal members. case_volume: IP India Annual Report 2022-23 publishes application and disposal data but not in NJDG pendency format. Deferred to Phase-2.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type ExecutiveBody": 1,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Complaint process is not public/transparent": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "No publicly stated appointment criteria": 1,
+          "Reappointment possible by same executive authority": 2,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "severe",
+        "independence_risk_score": 10,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.52,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.52,
+          "independence_risk_penalty": 0.7,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "concerning",
+        "structural_health_score": 0.52
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_commerce_industry",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": true,
+      "sources": [
+        {
+          "label": "Patents Act 1970",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A197039",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Trade Marks Act 1999",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A199947",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "IP India official website",
+          "url": "https://ipindia.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": false,
+          "tenure": "Service appointment (IAS/CSS cadre post)",
+          "reappointment_possible": true,
+          "removal_authority": "central_government"
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_commerce_industry"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_of_commerce_industry"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "ministry_of_commerce_industry",
+              "mechanism": "Departmental/administrative complaint; writ petition to High Court",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "CGPDTM is a Group A Central Government officer; Lokpal jurisdiction applies.",
+          "source": "Patents Act 1970; Trade Marks Act 1999"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Patent grant, opposition and revocation (pre-grant)",
+            "Design registration",
+            "Trade mark registration (appellate path to High Court post-IPAB)",
+            "Geographical indication registration"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 530,
+        "y": 444
       }
     },
     {
@@ -15977,8 +17303,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 523,
-        "y": 444
+        "x": 534,
+        "y": 480
       }
     },
     {
@@ -16056,8 +17382,147 @@
         "parent_hc": null
       },
       "position": {
-        "x": 174,
+        "x": 191,
         "y": 156
+      }
+    },
+    {
+      "id": "press_council_india",
+      "name": "Press Council of India",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Press standards adjudication",
+          "Complaints against newspapers and news agencies"
+        ]
+      },
+      "name_hindi": "भारतीय प्रेस परिषद",
+      "abbreviation": "PCI",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "Central",
+      "created_year": 1966,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Press Council Act 1978 (§ 4 — establishment; § 14 — quasi-judicial powers)",
+      "data_quality": "partial",
+      "data_quality_notes": "Press Council Act 1978 repealed and replaced the Press Council Act 1965 which had established the first PCI in 1966; re-established under 1978 Act. Quasi-judicial function: PCI can censure a newspaper/news agency/editor or journalist but has no punitive power beyond censure — it cannot impose fines or criminal penalties (§ 14). Appellate path: PCI censure order → challenge by writ petition to High Court. Structural gap: PCI's jurisdiction covers only print media; digital/online news portals and TV news channels are outside its statutory remit as of 2026 (pending Press and Registration of Periodicals Act 2023 implementation, which modernises registration but does not expand quasi-judicial scope to digital media). The PRP Act 2023 (in force) supersedes PRB Act 1867 for registration but does not dissolve or restructure PCI.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 5,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Complaint process is not public/transparent": 1,
+          "No defined timeframe for complaint resolution": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.53,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.53,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "concerning",
+        "structural_health_score": 0.53
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_information_broadcasting",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Press Council Act 1978",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A197858",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Press Council of India official website",
+          "url": "https://presscouncil.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Press and Registration of Periodicals Act 2023",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A202344",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": null,
+          "recommends": null,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "Three years (Chairman, who must be a retired judge of the Supreme Court)",
+          "reappointment_possible": false,
+          "removal_authority": "press_council_india",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_information_broadcasting"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_information_broadcasting"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "ministry_information_broadcasting",
+              "mechanism": "PCI has an internal inquiry committee process; no independent external bias complaint mechanism. High Court writ jurisdiction available.\n",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Chairman and members may be removed by PCI itself on grounds of misconduct per Press Council Act 1978 § 6.\n",
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "PCI Chairman (retired SC judge serving in statutory capacity) is a public servant; Lokpal jurisdiction applies under Lokpal & Lokayuktas Act 2013 § 14.\n",
+          "source": "Press Council Act 1978"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Press standards adjudication",
+            "Complaints against newspapers and news agencies"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 539,
+        "y": 444
       }
     },
     {
@@ -16135,7 +17600,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 181,
+        "x": 197,
         "y": 192
       }
     },
@@ -16274,7 +17739,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 224,
+        "x": 229,
         "y": 444
       }
     },
@@ -16588,7 +18053,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 226,
+        "x": 231,
         "y": 480
       }
     },
@@ -16729,7 +18194,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 528,
+        "x": 543,
         "y": 480
       }
     },
@@ -17084,8 +18549,154 @@
         "parent_hc": null
       },
       "position": {
-        "x": 187,
+        "x": 203,
         "y": 156
+      }
+    },
+    {
+      "id": "state_election_commission_generic",
+      "name": "State Election Commission (Generic)",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": false,
+        "states_covered": [],
+        "jurisdiction_types": [
+          "Superintendence, direction and control of elections to Panchayats and Municipalities",
+          "Election dispute quasi-judicial functions (where state law provides)"
+        ]
+      },
+      "name_hindi": "राज्य निर्वाचन आयोग (सामान्य)",
+      "abbreviation": "SEC",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "State",
+      "created_year": 1993,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": "Article 243K (Panchayats) and Article 243ZA (Municipalities) — inserted by Constitution (73rd Amendment) Act 1992 and Constitution (74th Amendment) Act 1992, both in force from 24 April 1993.\n",
+      "statutory_basis": "State Election Commission Act / Rules enacted by each state legislature; varies by state. Generic pattern: State Commissioner appointed by Governor, removal procedure mirrors Election Commission of India (requires SC reference per Art. 243K(2)).\n",
+      "data_quality": "partial",
+      "data_quality_notes": "This is a generic stub covering the common constitutional pattern for all 28 States and 3 UTs with legislatures (J&K, Puducherry, Delhi). Key variations across states:\n  — Some states have merged SEC with general election administration (not best practice).\n  — Jharkhand, Chhattisgarh SECs have faced litigation over non-constitution of\n    panchayat bodies for extended periods.\n  — J&K SEC reconstituted after J&K Reorganisation Act 2019.\nAppellate path for election disputes: The bar on civil court jurisdiction (Arts. 243O, 243ZG) means election disputes go to state-constituted Election Tribunals → High Court (second appeal / writ) → Supreme Court (SLP). State-specific SEC entities (e.g. sec_maharashtra) should be modelled as separate entities with state_data fields when state packs are created. judge_strength not applicable (SEC is a single-member body by constitutional design).\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 6,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Constitutional basis (harder to politicise) (deduction)": -2,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "No independent conduct oversight body": 1,
+          "No publicly stated appointment criteria": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.53,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.53,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "concerning",
+        "structural_health_score": 0.53
+      },
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Constitution of India — Article 243K",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A194700",
+          "type": "Constitution",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Constitution of India — Article 243ZA",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A194700",
+          "type": "Constitution",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Constitution (73rd Amendment) Act 1992",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A199213",
+          "type": "Constitution",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "governor_state",
+          "formally_appoints": "governor_state",
+          "criteria_public": false,
+          "tenure": "Prescribed by state law (typically 5 years or age 65)",
+          "reappointment_possible": false,
+          "removal_authority": "governor_state",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "supreme_court_india",
+              "mechanism": "Election disputes under panchayat/municipal elections: election petition before Election Tribunal constituted by state, not civil court (per Art. 243O / 243ZG). Bias or misconduct complaint against SEC: writ petition to High Court or petition to SC under Art. 32.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "governor_state",
+            "consultation_required_with": "supreme_court_india",
+            "consultation_binding": true
+          },
+          "removal_mechanism": "State Election Commissioner may only be removed by Governor on grounds of misbehaviour after SC inquiry per Art. 243K(2) — identical protection to High Court judges. Standard is therefore very high.\n",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "State Election Commissioners have constitutional removal protection analogous to HC judges; Lokpal Act 2013 Schedule exclusions and general jurisprudence suggest lokpal jurisdiction does not extend to constitutional offices of this nature. Contested; maintainer should verify state-wise.\n",
+          "source": "Constitution of India Arts. 243K, 243ZA; state SEC Acts"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": false,
+          "states_covered": [],
+          "jurisdiction_types": [
+            "Superintendence, direction and control of elections to Panchayats and Municipalities",
+            "Election dispute quasi-judicial functions (where state law provides)"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 547,
+        "y": 444
       }
     },
     {
@@ -17242,7 +18853,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 228,
+        "x": 233,
         "y": 444
       }
     },
@@ -17400,7 +19011,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 231,
+        "x": 235,
         "y": 480
       }
     },
@@ -17651,7 +19262,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 233,
+        "x": 237,
         "y": 444
       }
     },
@@ -17872,7 +19483,135 @@
         "parent_hc": null
       },
       "position": {
-        "x": 235,
+        "x": 240,
+        "y": 480
+      }
+    },
+    {
+      "id": "trade_marks_registry",
+      "name": "Trade Marks Registry",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Trade mark registration and examination",
+          "Trade mark opposition and rectification (quasi-judicial)"
+        ]
+      },
+      "name_hindi": "व्यापार चिह्न रजिस्ट्री",
+      "abbreviation": "TMR",
+      "type": "ExecutiveBody",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "Central",
+      "created_year": 1940,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Trade Marks Act 1999 §§ 6–9 (Registry and Registrar); Trade Marks Rules 2017.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "created_year: 1940 — Trade Marks Registry established under Trade Marks Act 1940 (original establishment). Current operative statute is Trade Marks Act 1999 (§§ 6–9); use 1999 only if modelling the current Act regime rather than registry lineage. statutory_basis field reflects the 1999 Act. Trade Marks Registry head office: Mumbai. Branch offices: Delhi, Kolkata, Chennai, Ahmedabad. The Registry is subordinate to CGPDTM (patent_controller entity in JEM). Quasi-judicial function: Registrar hears trade mark opposition (§ 21) and rectification proceedings (§ 57); these are appealable to HC post-IPAB abolition. Pre-2021 appellate path: Registrar → IPAB → HC → SC. Post-2021 appellate path: Registrar → High Court (§ 91, as amended by Tribunal Reforms Act 2021) → Division Bench → SC. Relationship to patent_controller: trade_marks_registry is a sub-office under CGPDTM; suggest AdministrativeSupervision edge trade_marks_registry → patent_controller for maintainer wiring.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type ExecutiveBody": 1,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Complaint process is not public/transparent": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "No publicly stated appointment criteria": 1,
+          "Reappointment possible by same executive authority": 2,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "severe",
+        "independence_risk_score": 10,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.52,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.52,
+          "independence_risk_penalty": 0.7,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "concerning",
+        "structural_health_score": 0.52
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_commerce_industry",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": true,
+      "sources": [
+        {
+          "label": "Trade Marks Act 1999",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A199947",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Trade Marks Rules 2017",
+          "url": "https://ipindia.gov.in/trade-marks.htm",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": false,
+          "tenure": "Service appointment under CGPDTM",
+          "reappointment_possible": true,
+          "removal_authority": "central_government"
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_commerce_industry"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_of_commerce_industry"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "patent_controller",
+              "mechanism": "Administrative complaint to CGPDTM (supervisory authority over Registrar of Trade Marks). Writ petition to HC for bias in quasi-judicial proceedings.\n",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "Registrar of Trade Marks is a Group A Central Government officer; Lokpal jurisdiction applies.\n",
+          "source": "Trade Marks Act 1999"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Trade mark registration and examination",
+            "Trade mark opposition and rectification (quasi-judicial)"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 552,
         "y": 480
       }
     },
@@ -18013,7 +19752,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 532,
+        "x": 556,
         "y": 444
       }
     },
@@ -18092,7 +19831,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 194,
+        "x": 209,
         "y": 192
       }
     },
@@ -18171,7 +19910,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 200,
+        "x": 215,
         "y": 156
       }
     },
@@ -18250,7 +19989,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 207,
+        "x": 222,
         "y": 192
       }
     },
@@ -18329,7 +20068,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 213,
+        "x": 228,
         "y": 156
       }
     },
@@ -18408,7 +20147,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 220,
+        "x": 234,
         "y": 192
       }
     },
@@ -18487,7 +20226,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 227,
+        "x": 240,
         "y": 156
       }
     },
@@ -18566,7 +20305,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 233,
+        "x": 246,
         "y": 192
       }
     },
@@ -18645,7 +20384,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 240,
+        "x": 252,
         "y": 156
       }
     },
@@ -18724,7 +20463,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
+        "x": 258,
         "y": 192
       }
     },
@@ -18803,7 +20542,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 253,
+        "x": 264,
         "y": 156
       }
     },
@@ -18882,7 +20621,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 259,
+        "x": 271,
         "y": 192
       }
     },
@@ -18961,7 +20700,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 266,
+        "x": 277,
         "y": 156
       }
     },
@@ -19040,7 +20779,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 273,
+        "x": 283,
         "y": 192
       }
     },
@@ -19113,7 +20852,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 279,
+        "x": 289,
         "y": 156
       }
     },
@@ -19192,7 +20931,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 286,
+        "x": 295,
         "y": 192
       }
     },
@@ -19271,7 +21010,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 292,
+        "x": 301,
         "y": 156
       }
     },
@@ -19350,7 +21089,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 299,
+        "x": 307,
         "y": 192
       }
     },
@@ -19423,7 +21162,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 305,
+        "x": 314,
         "y": 156
       }
     },
@@ -19502,7 +21241,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 312,
+        "x": 320,
         "y": 192
       }
     },
@@ -19581,7 +21320,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 318,
+        "x": 326,
         "y": 156
       }
     },
@@ -19660,7 +21399,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 325,
+        "x": 332,
         "y": 192
       }
     },
@@ -19739,7 +21478,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 332,
+        "x": 338,
         "y": 156
       }
     },
@@ -19812,7 +21551,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 338,
+        "x": 344,
         "y": 192
       }
     },
@@ -19891,7 +21630,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 345,
+        "x": 350,
         "y": 156
       }
     },
@@ -19970,7 +21709,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 351,
+        "x": 356,
         "y": 192
       }
     },
@@ -20049,7 +21788,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 358,
+        "x": 363,
         "y": 156
       }
     },
@@ -20128,7 +21867,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 364,
+        "x": 369,
         "y": 192
       }
     },
@@ -20207,7 +21946,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 371,
+        "x": 375,
         "y": 156
       }
     },
@@ -20280,7 +22019,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 378,
+        "x": 381,
         "y": 192
       }
     },
@@ -20359,7 +22098,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 384,
+        "x": 387,
         "y": 156
       }
     },
@@ -20438,7 +22177,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 391,
+        "x": 393,
         "y": 192
       }
     },
@@ -20517,7 +22256,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 397,
+        "x": 399,
         "y": 156
       }
     },
@@ -20596,7 +22335,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 404,
+        "x": 405,
         "y": 192
       }
     },
@@ -20675,7 +22414,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 410,
+        "x": 412,
         "y": 156
       }
     },
@@ -27954,7 +29693,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 537,
+        "x": 561,
         "y": 480
       }
     },
@@ -28055,7 +29794,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 542,
+        "x": 565,
         "y": 444
       }
     },
@@ -28156,7 +29895,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 547,
+        "x": 570,
         "y": 480
       }
     },
@@ -28257,7 +29996,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 552,
+        "x": 574,
         "y": 444
       }
     },
@@ -28358,7 +30097,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 556,
+        "x": 579,
         "y": 480
       }
     },
@@ -28459,7 +30198,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 561,
+        "x": 583,
         "y": 444
       }
     },
@@ -28560,7 +30299,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 566,
+        "x": 588,
         "y": 480
       }
     },
@@ -28661,7 +30400,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 571,
+        "x": 592,
         "y": 444
       }
     },
@@ -28762,7 +30501,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 576,
+        "x": 596,
         "y": 480
       }
     },
@@ -28863,7 +30602,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 580,
+        "x": 601,
         "y": 444
       }
     },
@@ -28964,7 +30703,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 585,
+        "x": 605,
         "y": 480
       }
     },
@@ -29065,7 +30804,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 590,
+        "x": 610,
         "y": 444
       }
     },
@@ -29166,7 +30905,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 595,
+        "x": 614,
         "y": 480
       }
     },
@@ -29267,7 +31006,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 599,
+        "x": 619,
         "y": 444
       }
     },
@@ -29368,7 +31107,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 604,
+        "x": 623,
         "y": 480
       }
     },
@@ -29469,7 +31208,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 609,
+        "x": 628,
         "y": 444
       }
     },
@@ -29570,7 +31309,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 614,
+        "x": 632,
         "y": 480
       }
     },
@@ -29671,7 +31410,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 619,
+        "x": 636,
         "y": 444
       }
     },
@@ -29772,7 +31511,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 623,
+        "x": 641,
         "y": 480
       }
     },
@@ -29873,7 +31612,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 628,
+        "x": 645,
         "y": 444
       }
     },
@@ -29974,7 +31713,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 633,
+        "x": 650,
         "y": 480
       }
     },
@@ -30075,7 +31814,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 638,
+        "x": 654,
         "y": 444
       }
     },
@@ -30176,7 +31915,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 643,
+        "x": 659,
         "y": 480
       }
     },
@@ -30277,7 +32016,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 647,
+        "x": 663,
         "y": 444
       }
     },
@@ -30378,7 +32117,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 652,
+        "x": 668,
         "y": 480
       }
     },
@@ -30479,7 +32218,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 657,
+        "x": 672,
         "y": 444
       }
     },
@@ -30580,7 +32319,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 662,
+        "x": 677,
         "y": 480
       }
     },
@@ -30681,7 +32420,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 667,
+        "x": 681,
         "y": 444
       }
     },
@@ -30782,7 +32521,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 671,
+        "x": 685,
         "y": 480
       }
     },
@@ -30883,7 +32622,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 676,
+        "x": 690,
         "y": 444
       }
     },
@@ -30984,7 +32723,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 681,
+        "x": 694,
         "y": 480
       }
     },
@@ -31085,7 +32824,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 686,
+        "x": 699,
         "y": 444
       }
     },
@@ -31186,7 +32925,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 691,
+        "x": 703,
         "y": 480
       }
     },
@@ -31287,7 +33026,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 695,
+        "x": 708,
         "y": 444
       }
     },
@@ -31388,7 +33127,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 700,
+        "x": 712,
         "y": 480
       }
     },
@@ -31489,7 +33228,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 705,
+        "x": 717,
         "y": 444
       }
     },
@@ -31590,7 +33329,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 710,
+        "x": 721,
         "y": 480
       }
     },
@@ -31691,7 +33430,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 715,
+        "x": 726,
         "y": 444
       }
     },
@@ -31792,7 +33531,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 719,
+        "x": 730,
         "y": 480
       }
     },
@@ -31893,7 +33632,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 724,
+        "x": 734,
         "y": 444
       }
     },
@@ -31994,7 +33733,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 729,
+        "x": 739,
         "y": 480
       }
     },
@@ -32095,7 +33834,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 734,
+        "x": 743,
         "y": 444
       }
     },
@@ -32196,7 +33935,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 739,
+        "x": 748,
         "y": 480
       }
     },
@@ -32297,7 +34036,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 743,
+        "x": 752,
         "y": 444
       }
     },
@@ -32398,7 +34137,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 748,
+        "x": 757,
         "y": 480
       }
     },
@@ -32499,7 +34238,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 753,
+        "x": 761,
         "y": 444
       }
     },
@@ -32600,7 +34339,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 758,
+        "x": 766,
         "y": 480
       }
     },
@@ -32701,7 +34440,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 763,
+        "x": 770,
         "y": 444
       }
     },
@@ -32802,7 +34541,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 767,
+        "x": 774,
         "y": 480
       }
     },
@@ -32903,7 +34642,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 772,
+        "x": 779,
         "y": 444
       }
     },
@@ -33004,7 +34743,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 777,
+        "x": 783,
         "y": 480
       }
     },
@@ -33105,7 +34844,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 782,
+        "x": 788,
         "y": 444
       }
     },
@@ -33206,7 +34945,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 786,
+        "x": 792,
         "y": 480
       }
     },
@@ -33307,7 +35046,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 791,
+        "x": 797,
         "y": 444
       }
     },
@@ -33408,7 +35147,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 796,
+        "x": 801,
         "y": 480
       }
     },
@@ -33509,7 +35248,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 801,
+        "x": 806,
         "y": 444
       }
     },
@@ -33610,7 +35349,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 806,
+        "x": 810,
         "y": 480
       }
     },
@@ -33711,7 +35450,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 810,
+        "x": 815,
         "y": 444
       }
     },
@@ -33812,7 +35551,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 815,
+        "x": 819,
         "y": 480
       }
     },
@@ -33913,7 +35652,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 820,
+        "x": 823,
         "y": 444
       }
     },
@@ -34014,7 +35753,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 825,
+        "x": 828,
         "y": 480
       }
     },
@@ -34328,7 +36067,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 237,
+        "x": 242,
         "y": 444
       }
     },
@@ -34428,7 +36167,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 240,
+        "x": 244,
         "y": 480
       }
     },
@@ -34852,7 +36591,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 242,
+        "x": 246,
         "y": 444
       }
     },
@@ -34952,7 +36691,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 244,
+        "x": 249,
         "y": 480
       }
     },
@@ -35266,7 +37005,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
+        "x": 251,
         "y": 444
       }
     },
@@ -35366,7 +37105,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 249,
+        "x": 253,
         "y": 480
       }
     },
@@ -35790,7 +37529,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 251,
+        "x": 255,
         "y": 444
       }
     },
@@ -35890,7 +37629,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 253,
+        "x": 257,
         "y": 480
       }
     },
@@ -36314,7 +38053,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 255,
+        "x": 260,
         "y": 444
       }
     },
@@ -36414,7 +38153,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 258,
+        "x": 262,
         "y": 480
       }
     },
@@ -36728,7 +38467,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 260,
+        "x": 264,
         "y": 444
       }
     },
@@ -36828,7 +38567,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 262,
+        "x": 266,
         "y": 480
       }
     },
@@ -37142,7 +38881,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 265,
+        "x": 268,
         "y": 444
       }
     },
@@ -37242,7 +38981,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 267,
+        "x": 271,
         "y": 480
       }
     },
@@ -37381,7 +39120,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 830,
+        "x": 832,
         "y": 444
       }
     },
@@ -37569,7 +39308,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 269,
+        "x": 273,
         "y": 444
       }
     },
@@ -37663,7 +39402,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 271,
+        "x": 275,
         "y": 480
       }
     },
@@ -37757,7 +39496,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 274,
+        "x": 277,
         "y": 444
       }
     },
@@ -37851,7 +39590,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 276,
+        "x": 280,
         "y": 480
       }
     },
@@ -37945,7 +39684,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 278,
+        "x": 282,
         "y": 444
       }
     },
@@ -38039,7 +39778,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 280,
+        "x": 284,
         "y": 480
       }
     },
@@ -39002,7 +40741,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 417,
+        "x": 418,
         "y": 192
       }
     },
@@ -39215,7 +40954,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 834,
+        "x": 837,
         "y": 480
       }
     },
@@ -39423,7 +41162,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 283,
+        "x": 286,
         "y": 444
       }
     },
@@ -39655,7 +41394,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 285,
+        "x": 288,
         "y": 480
       }
     },
@@ -39969,7 +41708,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 287,
+        "x": 291,
         "y": 444
       }
     },
@@ -40069,7 +41808,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 289,
+        "x": 293,
         "y": 480
       }
     },
@@ -40493,7 +42232,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 292,
+        "x": 295,
         "y": 444
       }
     },
@@ -40593,7 +42332,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 294,
+        "x": 297,
         "y": 480
       }
     },
@@ -40907,7 +42646,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 296,
+        "x": 299,
         "y": 444
       }
     },
@@ -41007,7 +42746,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 299,
+        "x": 302,
         "y": 480
       }
     },
@@ -41321,7 +43060,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 301,
+        "x": 304,
         "y": 444
       }
     },
@@ -41421,7 +43160,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 303,
+        "x": 306,
         "y": 480
       }
     },
@@ -41735,7 +43474,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 305,
+        "x": 308,
         "y": 444
       }
     },
@@ -41835,7 +43574,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 308,
+        "x": 310,
         "y": 480
       }
     },
@@ -42149,7 +43888,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 310,
+        "x": 313,
         "y": 444
       }
     },
@@ -42249,7 +43988,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 312,
+        "x": 315,
         "y": 480
       }
     },
@@ -42575,7 +44314,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 314,
+        "x": 317,
         "y": 444
       }
     },
@@ -42669,7 +44408,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 317,
+        "x": 319,
         "y": 480
       }
     },
@@ -42763,7 +44502,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 319,
+        "x": 322,
         "y": 444
       }
     },
@@ -42857,7 +44596,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 321,
+        "x": 324,
         "y": 480
       }
     },
@@ -46587,7 +48326,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 839,
+        "x": 841,
         "y": 444
       }
     },
@@ -46795,7 +48534,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 323,
+        "x": 326,
         "y": 444
       }
     },
@@ -47027,7 +48766,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 326,
+        "x": 328,
         "y": 480
       }
     },
@@ -47160,7 +48899,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 844,
+        "x": 846,
         "y": 480
       }
     },
@@ -47474,7 +49213,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 328,
+        "x": 330,
         "y": 444
       }
     },
@@ -47574,7 +49313,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 330,
+        "x": 333,
         "y": 480
       }
     },
@@ -47888,7 +49627,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 333,
+        "x": 335,
         "y": 444
       }
     },
@@ -47988,7 +49727,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 335,
+        "x": 337,
         "y": 480
       }
     },
@@ -48302,7 +50041,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 337,
+        "x": 339,
         "y": 444
       }
     },
@@ -48402,7 +50141,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 339,
+        "x": 341,
         "y": 480
       }
     },
@@ -48662,7 +50401,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 849,
+        "x": 850,
         "y": 444
       }
     },
@@ -48953,7 +50692,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 342,
+        "x": 344,
         "y": 444
       }
     },
@@ -49059,7 +50798,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 344,
+        "x": 346,
         "y": 480
       }
     },
@@ -49165,7 +50904,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 346,
+        "x": 348,
         "y": 444
       }
     },
@@ -49271,7 +51010,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 348,
+        "x": 350,
         "y": 480
       }
     },
@@ -53823,7 +55562,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 854,
+        "x": 855,
         "y": 480
       }
     },
@@ -54031,7 +55770,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 351,
+        "x": 353,
         "y": 444
       }
     },
@@ -54263,7 +56002,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 353,
+        "x": 355,
         "y": 480
       }
     },
@@ -54577,7 +56316,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 355,
+        "x": 357,
         "y": 444
       }
     },
@@ -54677,7 +56416,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 357,
+        "x": 359,
         "y": 480
       }
     },
@@ -54991,7 +56730,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 360,
+        "x": 361,
         "y": 444
       }
     },
@@ -55091,7 +56830,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 362,
+        "x": 364,
         "y": 480
       }
     },
@@ -55515,7 +57254,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 364,
+        "x": 366,
         "y": 444
       }
     },
@@ -55615,7 +57354,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 367,
+        "x": 368,
         "y": 480
       }
     },
@@ -55929,7 +57668,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 369,
+        "x": 370,
         "y": 444
       }
     },
@@ -56029,7 +57768,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 371,
+        "x": 372,
         "y": 480
       }
     },
@@ -56343,7 +58082,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 373,
+        "x": 375,
         "y": 444
       }
     },
@@ -56443,7 +58182,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 376,
+        "x": 377,
         "y": 480
       }
     },
@@ -56757,7 +58496,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 378,
+        "x": 379,
         "y": 444
       }
     },
@@ -56857,7 +58596,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 380,
+        "x": 381,
         "y": 480
       }
     },
@@ -57171,7 +58910,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 382,
+        "x": 384,
         "y": 444
       }
     },
@@ -57271,7 +59010,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 385,
+        "x": 386,
         "y": 480
       }
     },
@@ -57467,7 +59206,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 387,
+        "x": 388,
         "y": 444
       }
     },
@@ -57674,7 +59413,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 423,
+        "x": 424,
         "y": 156
       }
     },
@@ -57886,7 +59625,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 389,
+        "x": 390,
         "y": 480
       }
     },
@@ -58310,7 +60049,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 391,
+        "x": 392,
         "y": 444
       }
     },
@@ -58410,7 +60149,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 394,
+        "x": 395,
         "y": 480
       }
     },
@@ -58724,7 +60463,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 396,
+        "x": 397,
         "y": 444
       }
     },
@@ -58824,7 +60563,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 398,
+        "x": 399,
         "y": 480
       }
     },
@@ -63649,7 +65388,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 858,
+        "x": 859,
         "y": 444
       }
     },
@@ -64112,7 +65851,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 405,
+        "x": 406,
         "y": 444
       }
     },
@@ -64229,7 +65968,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 863,
+        "x": 864,
         "y": 480
       }
     },
@@ -64329,7 +66068,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 407,
+        "x": 408,
         "y": 480
       }
     },
@@ -65167,7 +66906,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 414,
+        "x": 415,
         "y": 444
       }
     },
@@ -65267,7 +67006,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 416,
+        "x": 417,
         "y": 480
       }
     },
@@ -66205,7 +67944,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 425,
+        "x": 426,
         "y": 480
       }
     },
@@ -66774,8 +68513,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 1669,
-        "y": 444
+        "x": 1682,
+        "y": 480
       }
     },
     {
@@ -68268,6 +70007,446 @@
       ]
     },
     {
+      "id": "rel_cm_aft_appeal",
+      "source": "court_martial_generic",
+      "target": "aft",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "General Court Martial (GCM), District Court Martial (DCM) and Summary General Court Martial (SGCM) orders are appealable to AFT. Summary Court Martial (SCM) orders are NOT appealable to AFT — only revision/habeas corpus routes apply (Union of India v. SPS Vains, 2008 — citation unverified).\n",
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007, s.14",
+          "url": "https://india-code.nic.in/handle/123456789/2093",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cm_mod_fund",
+      "source": "ministry_defence",
+      "target": "court_martial_generic",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1950,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Court martial proceedings are conducted within the armed forces under MoD.",
+      "sources": [
+        {
+          "label": "Ministry of Defence — Official Website",
+          "url": "https://mod.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_fssai_mhfw_fund",
+      "source": "ministry_health_family_welfare",
+      "target": "fssai",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2008,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200634",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_fssai_hc_appeal",
+      "source": "fssai",
+      "target": "high_courts_all",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2008,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Food Safety Appellate Tribunal (FSAT) may be notified by state; where not constituted, appeals and writ challenges lie to High Court.\n",
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006, s.68",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200634",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aera_tdsat_appeal",
+      "source": "aera",
+      "target": "tdsat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "TDSAT acts as the appellate tribunal for AERA orders.",
+      "sources": [
+        {
+          "label": "AERA Act 2008, s.17",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200827",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aera_mca_fund",
+      "source": "ministry_civil_aviation",
+      "target": "aera",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AERA Act 2008",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200827",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_icadr_mlj_fund",
+      "source": "ministry_law_justice",
+      "target": "icadr",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1995,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Ministry of Law and Justice — Official Website",
+          "url": "https://law.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_icadr_hc_award_challenge",
+      "source": "icadr",
+      "target": "high_courts_all",
+      "relationship_type": "AwardChallengedIn",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1996,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Arbitral awards from ICADR-administered proceedings challenged under A&C Act 1996 s.34 in the competent High Court.\n",
+      "sources": [
+        {
+          "label": "Arbitration and Conciliation Act 1996, s.34",
+          "url": "https://india-code.nic.in/acts-detail/NzI2",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_pci_mib_fund",
+      "source": "ministry_information_broadcasting",
+      "target": "press_council_india",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1966,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Press Council Act 1978",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A197815",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_pci_hc_appeal",
+      "source": "press_council_india",
+      "target": "high_courts_all",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1966,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "PCI censure/adjudication challenged by writ petition to High Court.",
+      "sources": [
+        {
+          "label": "Press Council Act 1978, s.14",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A197815",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_sec_gov_appoints",
+      "source": "governor_state",
+      "target": "state_election_commission_generic",
+      "relationship_type": "FormallyAppoints",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": true,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Governor appoints the State Election Commissioner. Pattern varies slightly by state statute but constitutional floor is Art. 243K / 243ZA.\n",
+      "sources": [
+        {
+          "label": "Constitution of India — Article 243K",
+          "url": "https://www.indiacode.nic.in/handle/123456789/1",
+          "type": "Constitution",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_sec_sc_removal",
+      "source": "state_election_commission_generic",
+      "target": "supreme_court_india",
+      "relationship_type": "ConsultedOn_Removal",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": true,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "State Election Commissioner may be removed only on grounds of misbehaviour, after inquiry by the Supreme Court — protection analogous to a High Court judge. Governor acts on SC inquiry outcome.\n",
+      "sources": [
+        {
+          "label": "Constitution of India — Article 243K(2)",
+          "url": "https://www.indiacode.nic.in/handle/123456789/1",
+          "type": "Constitution",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_insombudsman_irdai_oversight",
+      "source": "irdai",
+      "target": "insurance_ombudsman_generic",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2017,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "IRDAI exercises regulatory oversight over the Insurance Ombudsman scheme.",
+      "sources": [
+        {
+          "label": "Insurance Ombudsman Rules 2017",
+          "url": "https://irdai.gov.in/web/guest/ombudsman",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_insombudsman_hc_challenge",
+      "source": "insurance_ombudsman_generic",
+      "target": "high_courts_all",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2017,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "No statutory intra-scheme appeal; ombudsman awards challenged by writ petition to High Court.\n",
+      "sources": [
+        {
+          "label": "Insurance Ombudsman Rules 2017",
+          "url": "https://irdai.gov.in/web/guest/ombudsman",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_ipab_hc_transfer",
+      "source": "ipab",
+      "target": "high_courts_all",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2003,
+      "year_abolished": 2021,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Historical appellate path (pre-2021). Patent and trade mark appeals from IPAB transferred to High Court by Tribunals Reforms Act 2021.\n",
+      "sources": [
+        {
+          "label": "Tribunals Reforms Act 2021",
+          "url": "https://india-code.nic.in/handle/123456789/17128",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_patent_hc_appeal",
+      "source": "patent_controller",
+      "target": "high_courts_all",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2021,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Post-IPAB abolition (2021); patent and design appeals lie to High Court.",
+      "sources": [
+        {
+          "label": "Patents Act 1970, s.117A",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A197039",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_tmr_cgpdtm_supervision",
+      "source": "patent_controller",
+      "target": "trade_marks_registry",
+      "relationship_type": "AdministrativeSupervision",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1940,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Trade Marks Registry is a sub-office of the CGPDTM (patent_controller).",
+      "sources": [
+        {
+          "label": "Trade Marks Act 1999, s.3",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A199947",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_tmr_hc_appeal",
+      "source": "trade_marks_registry",
+      "target": "high_courts_all",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2021,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Post-IPAB abolition; trade mark appeals from Registrar lie to High Court.",
+      "sources": [
+        {
+          "label": "Trade Marks Act 1999, s.91",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A199947",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_compat_nclat_transfer",
+      "source": "compat",
+      "target": "nclat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": 2017,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Historical transfer on COMPAT abolition (26 May 2017).",
+      "sources": [
+        {
+          "label": "Finance Act 2017",
+          "url": "https://india-code.nic.in/handle/123456789/2115",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cci_compat_appeal",
+      "source": "cci",
+      "target": "compat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": 2017,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Historical appellate path (2009–2017). CCI orders appealed to COMPAT until Finance Act 2017 transferred jurisdiction to NCLAT.\n",
+      "sources": [
+        {
+          "label": "Competition Act 2002, s.53A",
+          "url": "https://india-code.nic.in/handle/123456789/2115",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
       "id": "rel_nclt_to_nclat_appellate",
       "source": "nclt",
       "target": "nclat",
@@ -69067,6 +71246,538 @@
           "label": "RDDBFI Act 1993, s.18",
           "url": "https://india-code.nic.in/handle/123456789/1573",
           "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_chandigarh_bench_of_aft",
+      "source": "aft_chandigarh",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Territorial jurisdiction per aft.gov.in/jurisdiction.",
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_lucknow_bench_of_aft",
+      "source": "aft_lucknow",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_kolkata_bench_of_aft",
+      "source": "aft_kolkata",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_guwahati_bench_of_aft",
+      "source": "aft_guwahati",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_chennai_bench_of_aft",
+      "source": "aft_chennai",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Parent regional bench for southern zone; Hyderabad circuit bench sits under this bench.",
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_hyderabad_bench_of_aft_chennai",
+      "source": "aft_hyderabad",
+      "target": "aft_chennai",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2015,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Circuit bench at Secunderabad under Chennai regional bench (not a separate regional bench on aft.gov.in jurisdiction table). Telangana coverage only.",
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_kochi_bench_of_aft",
+      "source": "aft_kochi",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_jaipur_bench_of_aft",
+      "source": "aft_jaipur",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_mumbai_bench_of_aft",
+      "source": "aft_mumbai",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_jabalpur_bench_of_aft",
+      "source": "aft_jabalpur",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_jammu_bench_of_aft",
+      "source": "aft_jammu",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Jammu bench per aft.gov.in jurisdiction table. Principal AFT website also references Srinagar — verify co-location vs separate bench before adding aft_srinagar entity.",
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_chennai_bench_of_cestat",
+      "source": "cestat_chennai",
+      "target": "cestat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962, s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_mumbai_bench_of_cestat",
+      "source": "cestat_mumbai",
+      "target": "cestat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962, s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_kolkata_bench_of_cestat",
+      "source": "cestat_kolkata",
+      "target": "cestat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962, s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_bangalore_bench_of_cestat",
+      "source": "cestat_bangalore",
+      "target": "cestat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2000,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Bangalore bench established 14 December 2000 per cestat.gov.in/aboutus.",
+      "sources": [
+        {
+          "label": "Customs Act 1962, s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CESTAT — About Us",
+          "url": "https://cestat.gov.in/aboutus",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_ahmedabad_bench_of_cestat",
+      "source": "cestat_ahmedabad",
+      "target": "cestat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2006,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Ahmedabad bench established 3 March 2006 per cestat.gov.in/aboutus.",
+      "sources": [
+        {
+          "label": "Customs Act 1962, s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CESTAT — About Us",
+          "url": "https://cestat.gov.in/aboutus",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_hyderabad_bench_of_cestat",
+      "source": "cestat_hyderabad",
+      "target": "cestat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2015,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Hyderabad bench established 14 December 2015 per cestat.gov.in/aboutus.",
+      "sources": [
+        {
+          "label": "Customs Act 1962, s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CESTAT — About Us",
+          "url": "https://cestat.gov.in/aboutus",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_allahabad_bench_of_cestat",
+      "source": "cestat_allahabad",
+      "target": "cestat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2015,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Allahabad bench established 1 September 2015 per cestat.gov.in/aboutus.",
+      "sources": [
+        {
+          "label": "Customs Act 1962, s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CESTAT — About Us",
+          "url": "https://cestat.gov.in/aboutus",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_chandigarh_bench_of_cestat",
+      "source": "cestat_chandigarh",
+      "target": "cestat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2015,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Chandigarh bench established 1 December 2015 per cestat.gov.in/aboutus.",
+      "sources": [
+        {
+          "label": "Customs Act 1962, s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CESTAT — About Us",
+          "url": "https://cestat.gov.in/aboutus",
+          "type": "GoIWebsite",
           "accessed_date": "2026-06-12"
         }
       ]
@@ -79570,6 +82281,8 @@
         "cgit_kolkata",
         "cgit_mumbai",
         "ch_state_cdrc",
+        "compat",
+        "court_martial_generic",
         "dl_cdrc_central",
         "dl_cdrc_east",
         "dl_cdrc_north",
@@ -79613,9 +82326,11 @@
         "epfat",
         "ga_state_cdrc",
         "gj_state_cdrc",
+        "governing_body_insurance_council",
         "gstat",
         "hp_state_cdrc",
         "hr_state_cdrc",
+        "insurance_ombudsman_generic",
         "ipab",
         "itat",
         "jh_state_cdrc",
@@ -79696,43 +82411,23 @@
         "up_state_cdrc",
         "wb_state_cdrc"
       ],
-      "executive_interface": [
-        "ao_income_tax_generic",
-        "cbdt",
-        "cbi",
-        "cbic",
-        "cit_appeals_generic",
-        "dl_advocate_general",
-        "dl_lokayukta",
-        "epfo",
-        "ka_advocate_general",
-        "ka_lokayukta",
-        "mh_advocate_general",
-        "mh_lokayukta",
-        "ministry_home_affairs",
-        "ministry_labour_employment",
-        "py_advocate_general",
-        "py_lokayukta",
-        "tn_advocate_general",
-        "tn_lokayukta"
-      ],
-      "financing_audit": [
-        "cag_india",
-        "ministry_of_finance"
-      ],
       "regulatory_bodies": [
+        "aera",
         "cci",
         "central_vigilance_commission",
         "derc",
         "dl_rera",
         "drp_income_tax",
+        "fssai",
         "irdai",
         "ka_rera",
         "kerc",
         "merc",
         "mh_rera",
         "nhrc",
+        "patent_controller",
         "pfrda",
+        "press_council_india",
         "rera_an",
         "rera_ap",
         "rera_ar",
@@ -79795,9 +82490,35 @@
         "serc_uk",
         "serc_up",
         "serc_wb",
+        "state_election_commission_generic",
         "tn_rera",
         "tnerc",
+        "trade_marks_registry",
         "trai"
+      ],
+      "executive_interface": [
+        "ao_income_tax_generic",
+        "cbdt",
+        "cbi",
+        "cbic",
+        "cit_appeals_generic",
+        "dl_advocate_general",
+        "dl_lokayukta",
+        "epfo",
+        "ka_advocate_general",
+        "ka_lokayukta",
+        "mh_advocate_general",
+        "mh_lokayukta",
+        "ministry_home_affairs",
+        "ministry_labour_employment",
+        "py_advocate_general",
+        "py_lokayukta",
+        "tn_advocate_general",
+        "tn_lokayukta"
+      ],
+      "financing_audit": [
+        "cag_india",
+        "ministry_of_finance"
       ],
       "legislative_executive": [
         "central_government",
@@ -79842,12 +82563,16 @@
         "leader_opposition_lok_sabha",
         "leader_opposition_rajya_sabha",
         "minister_home_affairs",
+        "ministry_civil_aviation",
         "ministry_communications",
         "ministry_consumer_affairs",
         "ministry_corporate_affairs",
         "ministry_defence",
         "ministry_environment",
+        "ministry_health_family_welfare",
+        "ministry_information_broadcasting",
         "ministry_law_justice",
+        "ministry_of_commerce_industry",
         "ministry_of_power",
         "ministry_personnel_dopt",
         "ministry_railways",
@@ -79916,6 +82641,7 @@
       "arbitration": [
         "arbitration_council_india",
         "diac",
+        "icadr",
         "iiac",
         "mcia"
       ],
@@ -80165,6 +82891,7 @@
         "cgit_delhi",
         "cgit_kolkata",
         "cgit_mumbai",
+        "compat",
         "drat",
         "drat_allahabad",
         "drat_chennai",
@@ -80208,95 +82935,14 @@
         "sat",
         "tdsat"
       ],
-      "ExecutiveBody": [
-        "ao_income_tax_generic",
-        "cag_india",
-        "cbdt",
-        "cbic",
-        "central_government",
-        "chief_justice_india",
-        "cit_appeals_generic",
-        "department_of_justice",
-        "deputy_chairman_rajya_sabha",
-        "dl_lieutenant_governor",
-        "dl_lokayukta",
-        "epfo",
-        "government_an",
-        "government_ap",
-        "government_ar",
-        "government_as",
-        "government_br",
-        "government_cg",
-        "government_ch",
-        "government_ga",
-        "government_gj",
-        "government_hp",
-        "government_hr",
-        "government_jh",
-        "government_jk",
-        "government_karnataka",
-        "government_kl",
-        "government_la",
-        "government_ld",
-        "government_maharashtra",
-        "government_ml",
-        "government_mn",
-        "government_mp",
-        "government_mz",
-        "government_nct_delhi",
-        "government_nl",
-        "government_od",
-        "government_pb",
-        "government_rj",
-        "government_sk",
-        "government_tamilnadu",
-        "government_tr",
-        "government_ts",
-        "government_uk",
-        "government_up",
-        "government_wb",
-        "governor_state",
-        "high_court_competent",
-        "in_house_procedure_sc",
-        "ka_lokayukta",
-        "leader_opposition_lok_sabha",
-        "leader_opposition_rajya_sabha",
-        "mh_lokayukta",
-        "minister_home_affairs",
-        "ministry_communications",
-        "ministry_consumer_affairs",
-        "ministry_corporate_affairs",
-        "ministry_defence",
-        "ministry_environment",
-        "ministry_home_affairs",
-        "ministry_labour_employment",
-        "ministry_law_justice",
-        "ministry_of_finance",
-        "ministry_of_power",
-        "ministry_personnel_dopt",
-        "ministry_railways",
-        "national_judicial_academy",
-        "parliament_both_houses",
-        "president_india",
-        "prime_minister",
-        "py_lieutenant_governor",
-        "py_lokayukta",
-        "speaker_lok_sabha",
-        "state_public_service_commission",
-        "tn_lokayukta"
-      ],
-      "StateTribunal": [
-        "board_of_revenue_generic",
-        "state_industrial_tribunal_generic",
-        "state_labour_court_generic",
-        "state_vat_tribunal_generic"
-      ],
       "RegulatoryBodyQJ": [
+        "aera",
         "cci",
         "central_vigilance_commission",
         "derc",
         "dl_rera",
         "drp_income_tax",
+        "fssai",
         "irdai",
         "ka_rera",
         "kerc",
@@ -80304,6 +82950,7 @@
         "mh_rera",
         "nhrc",
         "pfrda",
+        "press_council_india",
         "rera_an",
         "rera_ap",
         "rera_ar",
@@ -80366,9 +83013,99 @@
         "serc_uk",
         "serc_up",
         "serc_wb",
+        "state_election_commission_generic",
         "tn_rera",
         "tnerc",
         "trai"
+      ],
+      "ExecutiveBody": [
+        "ao_income_tax_generic",
+        "cag_india",
+        "cbdt",
+        "cbic",
+        "central_government",
+        "chief_justice_india",
+        "cit_appeals_generic",
+        "department_of_justice",
+        "deputy_chairman_rajya_sabha",
+        "dl_lieutenant_governor",
+        "dl_lokayukta",
+        "epfo",
+        "government_an",
+        "government_ap",
+        "government_ar",
+        "government_as",
+        "government_br",
+        "government_cg",
+        "government_ch",
+        "government_ga",
+        "government_gj",
+        "government_hp",
+        "government_hr",
+        "government_jh",
+        "government_jk",
+        "government_karnataka",
+        "government_kl",
+        "government_la",
+        "government_ld",
+        "government_maharashtra",
+        "government_ml",
+        "government_mn",
+        "government_mp",
+        "government_mz",
+        "government_nct_delhi",
+        "government_nl",
+        "government_od",
+        "government_pb",
+        "government_rj",
+        "government_sk",
+        "government_tamilnadu",
+        "government_tr",
+        "government_ts",
+        "government_uk",
+        "government_up",
+        "government_wb",
+        "governor_state",
+        "high_court_competent",
+        "in_house_procedure_sc",
+        "ka_lokayukta",
+        "leader_opposition_lok_sabha",
+        "leader_opposition_rajya_sabha",
+        "mh_lokayukta",
+        "minister_home_affairs",
+        "ministry_civil_aviation",
+        "ministry_communications",
+        "ministry_consumer_affairs",
+        "ministry_corporate_affairs",
+        "ministry_defence",
+        "ministry_environment",
+        "ministry_health_family_welfare",
+        "ministry_home_affairs",
+        "ministry_information_broadcasting",
+        "ministry_labour_employment",
+        "ministry_law_justice",
+        "ministry_of_commerce_industry",
+        "ministry_of_finance",
+        "ministry_of_power",
+        "ministry_personnel_dopt",
+        "ministry_railways",
+        "national_judicial_academy",
+        "parliament_both_houses",
+        "patent_controller",
+        "president_india",
+        "prime_minister",
+        "py_lieutenant_governor",
+        "py_lokayukta",
+        "speaker_lok_sabha",
+        "state_public_service_commission",
+        "tn_lokayukta",
+        "trade_marks_registry"
+      ],
+      "StateTribunal": [
+        "board_of_revenue_generic",
+        "state_industrial_tribunal_generic",
+        "state_labour_court_generic",
+        "state_vat_tribunal_generic"
       ],
       "AppointmentBody": [
         "collegium_hc_appointment",
@@ -80380,8 +83117,17 @@
         "selection_committee_cpa2019_s54",
         "selection_committee_electricity_act_s85"
       ],
+      "SpecialCourt": [
+        "court_martial_generic",
+        "dl_special_courts",
+        "esi_court_generic",
+        "ka_special_courts",
+        "mh_special_courts",
+        "tn_special_courts"
+      ],
       "ArbitralInstitution": [
         "diac",
+        "icadr",
         "iiac",
         "mcia"
       ],
@@ -80628,44 +83374,10 @@
         "up_state_cdrc",
         "wb_state_cdrc"
       ],
-      "SpecialCourt": [
-        "dl_special_courts",
-        "esi_court_generic",
-        "ka_special_courts",
-        "mh_special_courts",
-        "tn_special_courts"
-      ],
-      "ConstitutionalCourt": [
-        "hc_allahabad",
-        "hc_andhra_pradesh",
-        "hc_bombay",
-        "hc_calcutta",
-        "hc_chhattisgarh",
-        "hc_delhi",
-        "hc_gauhati",
-        "hc_gujarat",
-        "hc_himachal_pradesh",
-        "hc_jammu_kashmir_ladakh",
-        "hc_jharkhand",
-        "hc_karnataka",
-        "hc_kerala",
-        "hc_madhya_pradesh",
-        "hc_madras",
-        "hc_manipur",
-        "hc_meghalaya",
-        "hc_orissa",
-        "hc_patna",
-        "hc_punjab_haryana",
-        "hc_rajasthan",
-        "hc_sikkim",
-        "hc_telangana",
-        "hc_tripura",
-        "hc_uttarakhand",
-        "high_courts_all",
-        "supreme_court_india"
-      ],
       "ADRBody": [
         "dl_slsa",
+        "governing_body_insurance_council",
+        "insurance_ombudsman_generic",
         "ka_slsa",
         "lok_adalat_generic",
         "mh_slsa",
@@ -80702,6 +83414,35 @@
         "slsa_up",
         "slsa_wb",
         "tn_slsa"
+      ],
+      "ConstitutionalCourt": [
+        "hc_allahabad",
+        "hc_andhra_pradesh",
+        "hc_bombay",
+        "hc_calcutta",
+        "hc_chhattisgarh",
+        "hc_delhi",
+        "hc_gauhati",
+        "hc_gujarat",
+        "hc_himachal_pradesh",
+        "hc_jammu_kashmir_ladakh",
+        "hc_jharkhand",
+        "hc_karnataka",
+        "hc_kerala",
+        "hc_madhya_pradesh",
+        "hc_madras",
+        "hc_manipur",
+        "hc_meghalaya",
+        "hc_orissa",
+        "hc_patna",
+        "hc_punjab_haryana",
+        "hc_rajasthan",
+        "hc_sikkim",
+        "hc_telangana",
+        "hc_tripura",
+        "hc_uttarakhand",
+        "high_courts_all",
+        "supreme_court_india"
       ],
       "HighCourtBench": [
         "hc_allahabad_bench_lucknow",
@@ -80750,6 +83491,9 @@
       ]
     },
     "states": {
+      "{'is_all_india': True, 'jurisdiction_types': ['Airport tariff and user development fee determination', 'Tariff-related disputes']}": [
+        "aera"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['service_matters', 'court_martial_appeals', 'military_pensions']}": [
         "aft"
       ],
@@ -80860,6 +83604,12 @@
       "{'is_all_india': True, 'jurisdiction_types': ['Income tax assessments — first appellate forum', 'TDS/TCS disputes', 'Penalty orders under Income Tax Act 1961'], 'states_covered': [], 'uts_covered': []}": [
         "cit_appeals_generic"
       ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Appeals against CCI orders under Competition Act 2002', 'Compensation claims referred by CCI']}": [
+        "compat"
+      ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Criminal (military offences)', 'Disciplinary']}": [
+        "court_martial_generic"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['constitutional_office']}": [
         "deputy_chairman_rajya_sabha",
         "prime_minister",
@@ -80969,11 +83719,20 @@
       "{'states_covered': ['AP'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_visakhapatnam"
       ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Food safety licensing and standards', 'Quasi-judicial adjudication (Food Safety Appellate Tribunal where notified)', 'Appellate orders against licensing authorities']}": [
+        "fssai"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['Appellate', 'Writ']}": [
         "high_courts_all"
       ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Arbitration (domestic and international)', 'Mediation', 'Conciliation', 'Training in ADR']}": [
+        "icadr"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['Original']}": [
         "iiac"
+      ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Insurance complaint adjudication (personal lines)', 'Mediation / award']}": [
+        "insurance_ombudsman_generic"
       ],
       "{'is_all_india': True, 'jurisdiction_types': ['patents_appeals', 'trademark_appeals', 'geographical_indications_appeals']}": [
         "ipab"
@@ -81013,8 +83772,14 @@
       "{'is_all_india': True, 'jurisdiction_types': ['human_rights_inquiry', 'complaints_investigation']}": [
         "nhrc"
       ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Patent grant, opposition and revocation (pre-grant)', 'Design registration', 'Trade mark registration (appellate path to High Court post-IPAB)', 'Geographical indication registration']}": [
+        "patent_controller"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['pension_regulation', 'national_pension_system', 'pension_fund_oversight', 'subscriber_protection']}": [
         "pfrda"
+      ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Press standards adjudication', 'Complaints against newspapers and news agencies']}": [
+        "press_council_india"
       ],
       "{'is_all_india': True, 'jurisdiction_types': ['railway_claims', 'passenger_compensation', 'goods_compensation', 'untoward_incidents']}": [
         "rct"
@@ -81029,8 +83794,14 @@
       "{'is_all_india': True, 'jurisdiction_types': ['securities_regulation', 'market_intermediary_regulation', 'takeover_regulation', 'insider_trading_enforcement']}": [
         "sebi"
       ],
+      "{'is_all_india': False, 'states_covered': [], 'jurisdiction_types': ['Superintendence, direction and control of elections to Panchayats and Municipalities', 'Election dispute quasi-judicial functions (where state law provides)']}": [
+        "state_election_commission_generic"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['appellate', 'telecom_disputes', 'broadcasting_disputes']}": [
         "tdsat"
+      ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Trade mark registration and examination', 'Trade mark opposition and rectification (quasi-judicial)']}": [
+        "trade_marks_registry"
       ],
       "{'is_all_india': True, 'jurisdiction_types': ['telecom_regulation', 'broadcasting_regulation', 'tariff_determination', 'spectrum_recommendations']}": [
         "trai"

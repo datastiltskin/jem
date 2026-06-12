@@ -1,0 +1,23 @@
+id: ministry_health_family_welfare
+name: Ministry of Health and Family Welfare
+name_hindi: स्वास्थ्य और परिवार कल्याण मंत्रालय
+abbreviation: MoHFW
+aliases:
+  - Ministry of Health and Family Welfare
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: Central
+created_year: 1947
+operational_status: Active
+statutory_basis: >-
+  Government of India (Allocation of Business) Rules, 1961 — Ministry of Health
+  and Family Welfare entry; Food Safety and Standards Act 2006 (FSSAI).
+funding:
+  primary_source: Consolidated_Fund_India
+data_quality: partial
+data_quality_notes: Stub for graph connectivity (Batch 3). FSSAI funding edge.
+sources:
+  - label: Ministry of Health and Family Welfare — Official Website
+    url: https://mohfw.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

@@ -1,0 +1,92 @@
+id: icadr
+name: International Centre for Alternative Dispute Resolution
+name_hindi: वैकल्पिक विवाद समाधान के लिए अंतर्राष्ट्रीय केन्द्र
+abbreviation: ICADR
+
+type: ArbitralInstitution
+cluster: arbitration
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Arbitration (domestic and international)
+    - Mediation
+    - Conciliation
+    - Training in ADR
+
+created_year: 1995
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >
+  Registered Society under Societies Registration Act 1860.
+  Established by Ministry of Law and Justice; functions under Arbitration and
+  Conciliation Act 1996.
+  ICADR Rules 1996 (as amended) govern proceedings.
+
+appointment:
+  nominates: ministry_law_justice
+  formally_appoints: ministry_law_justice
+  criteria_public: false
+  tenure: null
+  reappointment_possible: null
+  removal_authority: ministry_law_justice
+
+funding:
+  primary_source: Ministry_Budget
+  ministry_responsible: ministry_law_justice
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Performance
+  audit_report_public: false
+  conduct_oversight_body: ministry_law_justice
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: ministry_law_justice
+      mechanism: >
+        No dedicated external complaint body. Parties may challenge arbitral
+        award in competent court under Arbitration and Conciliation Act 1996 §§ 34, 37.
+      complainant_has_locus: true
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: false
+  lokpal_jurisdiction: Not_Applicable
+  lokpal_jurisdiction_note: >
+    ICADR is a registered society, not a statutory authority; individual
+    arbitrators are not public servants within Lokpal Act 2013.
+  source: Arbitration and Conciliation Act 1996; ICADR Rules 1996
+
+data_quality: partial
+data_quality_notes: >
+  ICADR was established in 1995 as an inter-governmental body on recommendation
+  of the UN General Assembly (UNGA Res 40/72, 1985) for Asia-Pacific region.
+  It is distinct from IIAC (formerly NDIAC), which is a statutory body under
+  the New Delhi International Arbitration Centre Act 2019 (renamed by Act 23 of 2022).
+  Appellate path: arbitral award → challenge petition to High Court (§ 34) →
+  appeal to Division Bench of HC (§ 37) → Supreme Court (SLP).
+  Structural note: ICADR's case volume and institutional activity post-2019 (after
+  IIAC was established as competing statutory body) is not publicly documented.
+  Operational status retained as Active based on ministry website listing; maintainer
+  should verify current programme activity.
+  Funding quantum not publicly disclosed in Union Budget documents; listed under
+  Ministry of Law and Justice grants.
+
+sources:
+  - label: Arbitration and Conciliation Act 1996
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A199626
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: ICADR official website
+    url: https://www.icadr.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'
+  - label: Ministry of Law and Justice — ADR bodies listing
+    url: https://doj.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

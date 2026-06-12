@@ -1,0 +1,88 @@
+id: insurance_ombudsman_generic
+name: Insurance Ombudsman (Generic)
+name_hindi: बीमा लोकपाल (सामान्य)
+abbreviation: null
+
+type: ADRBody
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Insurance complaint adjudication (personal lines)
+    - Mediation / award
+
+created_year: 1998
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >
+  Insurance Act 1938 § 114A (rule-making power); Insurance Ombudsman Rules 2017
+  (GSR 877(E), notified 11 September 2017, in force; superseded 1998 Rules).
+  Constituted by Council for Insurance Ombudsmen (Governing Body of Insurance
+  Council — GBIC).
+
+appointment:
+  nominates: governing_body_insurance_council
+  formally_appoints: governing_body_insurance_council
+  criteria_public: true
+  tenure: Three years or age 70, whichever earlier
+  reappointment_possible: false
+  removal_authority: governing_body_insurance_council
+
+funding:
+  primary_source: Mixed
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: Internal
+  audit_report_public: false
+  conduct_oversight_body: irdai
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: irdai
+      mechanism: >
+        IRDAI as regulator of insurers can receive systemic complaints.
+        Award may be challenged by writ petition before High Court; no statutory
+        appeal mechanism within Insurance Ombudsman Rules 2017.
+      complainant_has_locus: true
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: false
+  lokpal_jurisdiction: Not_Applicable
+  lokpal_jurisdiction_note: >
+    Insurance Ombudsman is appointed by GBIC (a non-government council), not by
+    Government; not a public servant within Lokpal Act 2013.
+  source: Insurance Ombudsman Rules 2017
+
+data_quality: partial
+data_quality_notes: >
+  Official institutional name under Insurance Ombudsman Rules 2017 is 'Insurance
+  Ombudsman' (not an appellate tribunal). The _generic suffix applies: 17 regional
+  ombudsman centres operate under a common statutory scheme; this entity models the
+  generic pattern (cf. state_election_commission_generic, court_martial_generic).
+  Two-tier model:
+    Layer 1 — Insurance Ombudsman (17 offices): consumer-facing mediation and
+    binding award up to Rs. 30 lakh (2017 Rules, as amended 2021).
+    Layer 2 — Securities Appellate Tribunal (SAT): appellate body for IRDAI
+    regulatory orders under Insurance Laws (Amendment) Act 2015 § 110C.
+  This entity models Layer 1. SAT and IRDAI are modelled separately in repo.
+  Former draft id insurance_appellate_generic was incorrect — renamed 2026-06-12.
+
+sources:
+  - label: Insurance Ombudsman Rules 2017
+    url: https://irdai.gov.in/web/guest/ombudsman
+    type: GoIWebsite
+    accessed_date: '2026-06-11'
+  - label: Insurance Act 1938 § 114A
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A193804
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: Insurance Laws (Amendment) Act 2015
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A201504
+    type: CentralAct
+    accessed_date: '2026-06-11'

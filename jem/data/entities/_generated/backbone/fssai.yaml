@@ -1,0 +1,82 @@
+id: fssai
+name: Food Safety and Standards Authority of India
+name_hindi: भारतीय खाद्य संरक्षा और मानक प्राधिकरण
+abbreviation: FSSAI
+
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Food safety licensing and standards
+    - Quasi-judicial adjudication (Food Safety Appellate Tribunal where notified)
+    - Appellate orders against licensing authorities
+
+created_year: 2008
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: Food Safety and Standards Act 2006 (§ 4 — establishment; §§ 68–73 — adjudication)
+
+appointment:
+  nominates: ministry_health_family_welfare
+  recommends: null
+  formally_appoints: president_india
+  criteria_public: true
+  tenure: Three years (Chairperson); renewable once
+  reappointment_possible: true
+  removal_authority: central_government
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_health_family_welfare
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: ministry_health_family_welfare
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: ministry_health_family_welfare
+      mechanism: Complaint to administrative ministry; no dedicated independent bias body
+      complainant_has_locus: true
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: true
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >
+    Removal by Central Government for insolvency, conviction, incapacity, or
+    absence without leave per FSS Act 2006 § 7.
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >
+    FSSAI Chairperson and CEO are public servants; Lokpal jurisdiction applies
+    under Lokpal & Lokayuktas Act 2013 § 14.
+  source: Food Safety and Standards Act 2006
+
+data_quality: partial
+data_quality_notes: >
+  FSS Act 2006 §§ 68–73 provide for Food Safety Appellate Tribunals (FSATs) at
+  state level, but as of 2024 most states have not constituted dedicated FSATs;
+  appeals are heard by High Courts or Designated Officers.
+  Appellate path: order of Adjudicating Officer → FSAT (where constituted) → High Court.
+  FSSAI itself does not hear appeals; it issues regulations and licences.
+  case_volume: FSSAI Annual Report 2022-23 records enforcement actions but does not
+  publish consolidated pendency data in NJDG format. Deferred to Phase-2.
+
+sources:
+  - label: Food Safety and Standards Act 2006
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A200634
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: FSSAI official website — About Us
+    url: https://www.fssai.gov.in/home/about-fssai/about-fssai.html
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

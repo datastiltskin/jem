@@ -1,0 +1,369 @@
+# JEM relationships — Batch 3 (C21 Defence · C22 Specialized Regulators · C23 IP)
+# Wired 2026-06-12 per BATCH3_REL_SUGGESTIONS.md
+# Skipped: rel_irdai_to_sat_appellate (already in central_tribunal_regulator_relationships.yaml)
+
+relationships:
+
+  # ── C21 Defence — Court Martial ───────────────────────────────────────────
+
+  - id: rel_cm_aft_appeal
+    source: court_martial_generic
+    target: aft
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Army Act 1950, s.108–109; Navy Act 1957, s.179; Air Force Act 1950, s.107–108; Armed Forces Tribunal Act 2007, s.14"
+    year_established: 2009
+    notes: >
+      General Court Martial (GCM), District Court Martial (DCM) and Summary
+      General Court Martial (SGCM) orders are appealable to AFT. Summary Court
+      Martial (SCM) orders are NOT appealable to AFT — only revision/habeas corpus
+      routes apply (Union of India v. SPS Vains, 2008 — citation unverified).
+    data_quality: partial
+    sources:
+      - label: "Armed Forces Tribunal Act 2007, s.14"
+        url: https://india-code.nic.in/handle/123456789/2093
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cm_mod_fund
+    source: ministry_defence
+    target: court_martial_generic
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Army Act 1950; Navy Act 1957; Air Force Act 1950 — court martial proceedings under service law"
+    year_established: 1950
+    notes: Court martial proceedings are conducted within the armed forces under MoD.
+    data_quality: partial
+    sources:
+      - label: Ministry of Defence — Official Website
+        url: https://mod.gov.in
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  # ── C22 Specialized Regulators ────────────────────────────────────────────
+
+  - id: rel_fssai_mhfw_fund
+    source: ministry_health_family_welfare
+    target: fssai
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.4"
+    year_established: 2008
+    data_quality: partial
+    sources:
+      - label: "Food Safety and Standards Act 2006"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A200634
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_fssai_hc_appeal
+    source: fssai
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.68–73 — adjudication; writ where FSAT not constituted"
+    year_established: 2008
+    notes: >
+      Food Safety Appellate Tribunal (FSAT) may be notified by state; where not
+      constituted, appeals and writ challenges lie to High Court.
+    data_quality: partial
+    sources:
+      - label: "Food Safety and Standards Act 2006, s.68"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A200634
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_aera_tdsat_appeal
+    source: aera
+    target: tdsat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Airports Economic Regulatory Authority of India Act 2008, s.17"
+    year_established: 2009
+    notes: TDSAT acts as the appellate tribunal for AERA orders.
+    data_quality: partial
+    sources:
+      - label: "AERA Act 2008, s.17"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A200827
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_aera_mca_fund
+    source: ministry_civil_aviation
+    target: aera
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "AERA Act 2008, s.4"
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: "AERA Act 2008"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A200827
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_icadr_mlj_fund
+    source: ministry_law_justice
+    target: icadr
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Arbitration and Conciliation Act 1996 — ICADR under MoLJ"
+    year_established: 1995
+    data_quality: partial
+    sources:
+      - label: Ministry of Law and Justice — Official Website
+        url: https://law.gov.in
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  - id: rel_icadr_hc_award_challenge
+    source: icadr
+    target: high_courts_all
+    relationship_type: AwardChallengedIn
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Arbitration and Conciliation Act 1996, s.34"
+    year_established: 1996
+    notes: >
+      Arbitral awards from ICADR-administered proceedings challenged under
+      A&C Act 1996 s.34 in the competent High Court.
+    data_quality: partial
+    sources:
+      - label: "Arbitration and Conciliation Act 1996, s.34"
+        url: https://india-code.nic.in/acts-detail/NzI2
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_pci_mib_fund
+    source: ministry_information_broadcasting
+    target: press_council_india
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Press Council Act 1978, s.4"
+    year_established: 1966
+    data_quality: partial
+    sources:
+      - label: "Press Council Act 1978"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A197815
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_pci_hc_appeal
+    source: press_council_india
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Press Council Act 1978, s.14 — censure challenged by writ"
+    year_established: 1966
+    notes: PCI censure/adjudication challenged by writ petition to High Court.
+    data_quality: partial
+    sources:
+      - label: "Press Council Act 1978, s.14"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A197815
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_sec_gov_appoints
+    source: governor_state
+    target: state_election_commission_generic
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: "Article 243K(1) and Article 243ZA(1)"
+    year_established: 1993
+    notes: >
+      Governor appoints the State Election Commissioner. Pattern varies slightly
+      by state statute but constitutional floor is Art. 243K / 243ZA.
+    data_quality: partial
+    sources:
+      - label: Constitution of India — Article 243K
+        url: https://www.indiacode.nic.in/handle/123456789/1
+        type: Constitution
+        accessed_date: '2026-06-12'
+
+  - id: rel_sec_sc_removal
+    source: state_election_commission_generic
+    target: supreme_court_india
+    relationship_type: ConsultedOn_Removal
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: "Article 243K(2) and Article 243ZA(2)"
+    year_established: 1993
+    notes: >
+      State Election Commissioner may be removed only on grounds of misbehaviour,
+      after inquiry by the Supreme Court — protection analogous to a High Court
+      judge. Governor acts on SC inquiry outcome.
+    data_quality: partial
+    sources:
+      - label: Constitution of India — Article 243K(2)
+        url: https://www.indiacode.nic.in/handle/123456789/1
+        type: Constitution
+        accessed_date: '2026-06-12'
+
+  - id: rel_insombudsman_irdai_oversight
+    source: irdai
+    target: insurance_ombudsman_generic
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Insurance Ombudsman Rules 2017; IRDAI Act 1999"
+    year_established: 2017
+    notes: IRDAI exercises regulatory oversight over the Insurance Ombudsman scheme.
+    data_quality: partial
+    sources:
+      - label: Insurance Ombudsman Rules 2017
+        url: https://irdai.gov.in/web/guest/ombudsman
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  - id: rel_insombudsman_hc_challenge
+    source: insurance_ombudsman_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Insurance Ombudsman Rules 2017 — award challenged by writ"
+    year_established: 2017
+    notes: >
+      No statutory intra-scheme appeal; ombudsman awards challenged by writ
+      petition to High Court.
+    data_quality: partial
+    sources:
+      - label: Insurance Ombudsman Rules 2017
+        url: https://irdai.gov.in/web/guest/ombudsman
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  # ── C23 IP & Historical Tribunals ─────────────────────────────────────────
+
+  - id: rel_ipab_hc_transfer
+    source: ipab
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Tribunals Reforms Act 2021 — IPAB abolished; appeals transferred to HC"
+    year_established: 2003
+    year_abolished: 2021
+    notes: >
+      Historical appellate path (pre-2021). Patent and trade mark appeals from
+      IPAB transferred to High Court by Tribunals Reforms Act 2021.
+    data_quality: partial
+    sources:
+      - label: "Tribunals Reforms Act 2021"
+        url: https://india-code.nic.in/handle/123456789/17128
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_patent_hc_appeal
+    source: patent_controller
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Patents Act 1970, s.117A; Trade Marks Act 1999, s.91 (post-IPAB)"
+    year_established: 2021
+    notes: Post-IPAB abolition (2021); patent and design appeals lie to High Court.
+    data_quality: partial
+    sources:
+      - label: "Patents Act 1970, s.117A"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A197039
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_tmr_cgpdtm_supervision
+    source: patent_controller
+    target: trade_marks_registry
+    relationship_type: AdministrativeSupervision
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Trade Marks Act 1999, s.3 — Registrar under CGPDTM"
+    year_established: 1940
+    notes: Trade Marks Registry is a sub-office of the CGPDTM (patent_controller).
+    data_quality: partial
+    sources:
+      - label: "Trade Marks Act 1999, s.3"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A199947
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_tmr_hc_appeal
+    source: trade_marks_registry
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Trade Marks Act 1999, s.91 (as amended by Tribunals Reforms Act 2021)"
+    year_established: 2021
+    notes: Post-IPAB abolition; trade mark appeals from Registrar lie to High Court.
+    data_quality: partial
+    sources:
+      - label: "Trade Marks Act 1999, s.91"
+        url: https://india-code.nic.in/CodeSection.aspx?actcode=A199947
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_compat_nclat_transfer
+    source: compat
+    target: nclat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Finance Act 2017 — COMPAT dissolved; jurisdiction to NCLAT"
+    year_established: 2009
+    year_abolished: 2017
+    notes: Historical transfer on COMPAT abolition (26 May 2017).
+    data_quality: partial
+    sources:
+      - label: "Finance Act 2017"
+        url: https://india-code.nic.in/handle/123456789/2115
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cci_compat_appeal
+    source: cci
+    target: compat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Competition Act 2002, s.53A (pre-Finance Act 2017)"
+    year_established: 2009
+    year_abolished: 2017
+    notes: >
+      Historical appellate path (2009–2017). CCI orders appealed to COMPAT until
+      Finance Act 2017 transferred jurisdiction to NCLAT.
+    data_quality: partial
+    sources:
+      - label: "Competition Act 2002, s.53A"
+        url: https://india-code.nic.in/handle/123456789/2115
+        type: CentralAct
+        accessed_date: '2026-06-12'

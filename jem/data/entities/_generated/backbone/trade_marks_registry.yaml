@@ -1,0 +1,81 @@
+id: trade_marks_registry
+name: Trade Marks Registry
+name_hindi: व्यापार चिह्न रजिस्ट्री
+abbreviation: TMR
+
+type: ExecutiveBody
+cluster: regulatory_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Trade mark registration and examination
+    - Trade mark opposition and rectification (quasi-judicial)
+
+created_year: 1940
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >
+  Trade Marks Act 1999 §§ 6–9 (Registry and Registrar); Trade Marks Rules 2017.
+
+appointment:
+  formally_appoints: central_government
+  criteria_public: false
+  tenure: Service appointment under CGPDTM
+  reappointment_possible: true
+  removal_authority: central_government
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_commerce_industry
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: ministry_of_commerce_industry
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: patent_controller
+      mechanism: >
+        Administrative complaint to CGPDTM (supervisory authority over Registrar
+        of Trade Marks). Writ petition to HC for bias in quasi-judicial proceedings.
+      complainant_has_locus: true
+      is_public_process: false
+      timeframe_defined: false
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >
+    Registrar of Trade Marks is a Group A Central Government officer; Lokpal jurisdiction applies.
+  source: Trade Marks Act 1999
+
+data_quality: partial
+data_quality_notes: >
+  created_year: 1940 — Trade Marks Registry established under Trade Marks Act 1940
+  (original establishment). Current operative statute is Trade Marks Act 1999 (§§ 6–9);
+  use 1999 only if modelling the current Act regime rather than registry lineage.
+  statutory_basis field reflects the 1999 Act.
+  Trade Marks Registry head office: Mumbai. Branch offices: Delhi, Kolkata, Chennai, Ahmedabad.
+  The Registry is subordinate to CGPDTM (patent_controller entity in JEM).
+  Quasi-judicial function: Registrar hears trade mark opposition (§ 21) and
+  rectification proceedings (§ 57); these are appealable to HC post-IPAB abolition.
+  Pre-2021 appellate path: Registrar → IPAB → HC → SC.
+  Post-2021 appellate path: Registrar → High Court (§ 91, as amended by
+  Tribunal Reforms Act 2021) → Division Bench → SC.
+  Relationship to patent_controller: trade_marks_registry is a sub-office under
+  CGPDTM; suggest AdministrativeSupervision edge trade_marks_registry → patent_controller
+  for maintainer wiring.
+
+sources:
+  - label: Trade Marks Act 1999
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A199947
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: Trade Marks Rules 2017
+    url: https://ipindia.gov.in/trade-marks.htm
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

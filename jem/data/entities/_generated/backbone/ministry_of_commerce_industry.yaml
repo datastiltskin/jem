@@ -1,0 +1,24 @@
+id: ministry_of_commerce_industry
+name: Ministry of Commerce and Industry
+name_hindi: वाणिज्य और उद्योग मंत्रालय
+abbreviation: MoCI
+aliases:
+  - Ministry of Commerce and Industry
+  - Department for Promotion of Industry and Internal Trade
+type: ExecutiveBody
+cluster: legislative_executive
+level_of_government: Central
+created_year: 1947
+operational_status: Active
+statutory_basis: >-
+  Government of India (Allocation of Business) Rules, 1961 — Ministry of
+  Commerce and Industry entry; Patents Act 1970; Trade Marks Act 1999.
+funding:
+  primary_source: Consolidated_Fund_India
+data_quality: partial
+data_quality_notes: Stub for graph connectivity (Batch 3). CGPDTM and Trade Marks Registry.
+sources:
+  - label: Ministry of Commerce and Industry — Official Website
+    url: https://commerce.gov.in
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

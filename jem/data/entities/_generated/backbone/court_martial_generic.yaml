@@ -1,0 +1,104 @@
+id: court_martial_generic
+name: Court Martial (Generic — Army/Navy/Air Force)
+name_hindi: सैन्य न्यायालय (सामान्य)
+abbreviation: CM
+aliases:
+  - General Court Martial
+  - Summary Court Martial
+  - District Court Martial
+  - Summary General Court Martial
+
+type: SpecialCourt
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Criminal (military offences)
+    - Disciplinary
+
+created_year: 1950
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >
+  Army Act 1950 (Chapters VI–IX); Navy Act 1957 (Chapter VIII);
+  Air Force Act 1950 (Chapter VI); Armed Forces Tribunal Act 2007
+  (established AFT as external appellate body post-2007).
+
+appointment:
+  nominates: ministry_defence
+  formally_appoints: ministry_defence
+  criteria_public: false
+  tenure: Ad-hoc per case
+  reappointment_possible: null
+  removal_authority: Convening Officer / Confirming Authority
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_defence
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: false
+  conduct_oversight_body: ministry_defence
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: aft
+      mechanism: Statutory appeal / revision to AFT under Armed Forces Tribunal Act 2007
+      complainant_has_locus: true
+      is_public_process: false
+      timeframe_defined: true
+      external_to_judiciary: true
+  criminal_prosecution:
+    requires_sanction_from: ministry_defence
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >
+    Convening authority may dissolve court martial before finding;
+    Judge Advocate General review of proceedings.
+  lokpal_jurisdiction: Not_Applicable
+  lokpal_jurisdiction_note: >
+    Military judicial officers are not public servants within Lokpal & Lokayuktas Act 2013
+    for purposes of court martial jurisdiction.
+  source: Army Act 1950 §§ 108–153; AFT Act 2007
+
+data_quality: partial
+data_quality_notes: >
+  Generic stub covering GCM, SGCM, DCM, SCM convened under all three service Acts.
+  Key structural gap: Summary Court Martial (SCM) has no right of appeal to AFT —
+  the accused's sole remedy is post-conviction petition to Chief of Army Staff / Central Government
+  under Army Act 1950 § 164. This is a significant accountability lacuna.
+  Pre-AFT (before 2009 operationalisation), no external judicial body existed;
+  High Courts exercised writ jurisdiction only.
+  Appellate path (post-2007): finding/sentence → Confirming Authority → AFT
+  (for GCM/DCM/SGCM). SCM sentences not appealable to AFT (AFT Act 2007 § 15 read
+  with Army Act § 164).
+  Appointment of court martial members: Convening Officer (generally a senior officer)
+  convenes and nominates members; Judge Advocate (a JAG-branch officer) is appointed
+  to advise on law. No civilian element in composition.
+  No public docket or cause list; proceedings not published.
+  judge_strength not modelled — court martial is an ad-hoc body, not a permanent court
+  with sanctioned judicial posts.
+
+sources:
+  - label: Army Act 1950
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A195046
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: Navy Act 1957
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A195728
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: Air Force Act 1950
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A195045
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: Armed Forces Tribunal Act 2007
+    url: https://india-code.nic.in/CodeSection.aspx?actcode=A200753
+    type: CentralAct
+    accessed_date: '2026-06-11'

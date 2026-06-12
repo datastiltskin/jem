@@ -651,7 +651,7 @@ Each item: entity_id to create, source URL, which Cursor session.
   Source: presscouncil.nic.in | Quasi-judicial media complaints, no enforcement
 - [ ] `state_election_commission_generic` — 28 state SECs
   Source: varies by state | Distinct from ECI. Electoral dispute adjudication.
-- [ ] `insurance_appellate_generic` — IRDAI Insurance Appellate
+- [x] `insurance_ombudsman_generic` — Insurance Ombudsman (17 centres; Batch 3)
   Source: irdai.gov.in | Appeals from Insurance Ombudsman above Rs 50L
 
 ### 5.5 Intellectual Property (lower priority)
