@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-06-12T06:28:04.019285+00:00",
-    "entity_count": 538,
-    "relationship_count": 535,
+    "generated_at": "2026-06-12T06:55:07.657240+00:00",
+    "entity_count": 556,
+    "relationship_count": 550,
     "canvas_width": 1800,
     "canvas_height": 1200,
     "year_range": [
@@ -12,11 +12,11 @@
     ]
   },
   "impact_metrics": {
-    "high_independence_risk_count": 69,
+    "high_independence_risk_count": 87,
     "appointer_equals_funder_removal_count": 0,
     "no_public_appointment_criteria_count": 46,
     "not_constituted_count": 4,
-    "no_external_complaint_mechanism_count": 536
+    "no_external_complaint_mechanism_count": 554
   },
   "timeline_events": [
     {
@@ -150,8 +150,8 @@
       "id": "tribunals_adr",
       "name": "Tribunals Adr",
       "color": "#2b6cb0",
-      "entity_count": 127,
-      "avg_independence_risk": 4.7,
+      "entity_count": 145,
+      "avg_independence_risk": 5.0,
       "not_constituted_count": 1,
       "position": {
         "x": 28,
@@ -625,7 +625,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 62,
+        "x": 61,
         "y": 444
       }
     },
@@ -749,7 +749,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 65,
+        "x": 64,
         "y": 480
       }
     },
@@ -918,7 +918,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 68,
+        "x": 66,
         "y": 444
       }
     },
@@ -1057,7 +1057,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 71,
+        "x": 69,
         "y": 480
       }
     },
@@ -1285,7 +1285,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 74,
+        "x": 71,
         "y": 444
       }
     },
@@ -1931,8 +1931,459 @@
         "parent_hc": null
       },
       "position": {
-        "x": 76,
+        "x": 74,
         "y": 480
+      }
+    },
+    {
+      "id": "cgit_chandigarh_1",
+      "name": "Central Government Industrial Tribunal-cum-Labour Court No. I, Chandigarh",
+      "aliases": [
+        "CGIT Chandigarh-I",
+        "CGIT-cum-LC No. 1 Chandigarh"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "PB",
+          "HP"
+        ],
+        "uts_covered": [
+          "CH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "industrial_disputes",
+          "epf_appeals"
+        ]
+      },
+      "name_hindi": "केन्द्रीय सरकारी औद्योगिक अधिकरण-सह-श्रम न्यायालय संख्या I, चंडीगढ़",
+      "abbreviation": "CGIT-I Chandigarh",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1956,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Industrial Disputes Act, 1947, s. 7A and s. 7B. Established by Central Government notification. Also adjudicates EPF/MP Act 1952 appeals per Finance Act 2017 amendment. Jurisdiction: Punjab, Himachal Pradesh, and UT Chandigarh — specifically handles even-numbered cases (alternating with CGIT-II Chandigarh for odd-numbered cases), per official cgit.labour.gov.in jurisdiction table.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Jurisdiction confirmed from official cgit.labour.gov.in jurisdiction table: Punjab, Himachal Pradesh, UT Chandigarh — even-numbered cases. The two Chandigarh benches (CGIT-I and CGIT-II) have co-extensive territorial jurisdiction but divide cases by case number (even/odd). Separate entities warranted as the official site treats them as distinct seats. Created_year: 1956 is an estimate; specific notification year for Chandigarh seat not sourced. No relationships generated.\n",
+      "unverified_fields": [
+        {
+          "field": "created_year",
+          "note": "1956 is estimate; Chandigarh seat establishment notification year not sourced.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_labour_employment",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A and s. 7B",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT jurisdiction table — official cgit.labour.gov.in; Chandigarh-I: Punjab, HP, UT Chandigarh (even-numbered cases)\n",
+          "url": "https://cgit.labour.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "At pleasure of Central Government; typically until age of superannuation",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_labour_employment"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_punjab_haryana"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_punjab_haryana",
+              "mechanism": "Supervisory jurisdiction of Punjab and Haryana High Court under Arts 226/227; writ petition before Punjab and Haryana High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "source": "Industrial Disputes Act 1947; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "created_year",
+            "note": "1956 is estimate; Chandigarh seat establishment notification year not sourced.\n"
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "PB",
+            "HP"
+          ],
+          "uts_covered": [
+            "CH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "industrial_disputes",
+            "epf_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 76,
+        "y": 444
+      }
+    },
+    {
+      "id": "cgit_chandigarh_2",
+      "name": "Central Government Industrial Tribunal-cum-Labour Court No. II, Chandigarh",
+      "aliases": [
+        "CGIT Chandigarh-II",
+        "CGIT-cum-LC No. 2 Chandigarh"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "PB",
+          "HP"
+        ],
+        "uts_covered": [
+          "CH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "industrial_disputes",
+          "epf_appeals"
+        ]
+      },
+      "name_hindi": "केन्द्रीय सरकारी औद्योगिक अधिकरण-सह-श्रम न्यायालय संख्या II, चंडीगढ़",
+      "abbreviation": "CGIT-II Chandigarh",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1956,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Industrial Disputes Act, 1947, s. 7A and s. 7B. Established by Central Government notification. Also adjudicates EPF/MP Act 1952 appeals per Finance Act 2017 amendment. Jurisdiction: Punjab, Himachal Pradesh, and UT Chandigarh — specifically handles odd-numbered cases (alternating with CGIT-I Chandigarh for even-numbered cases), per official cgit.labour.gov.in jurisdiction table.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Jurisdiction confirmed from official cgit.labour.gov.in jurisdiction table: Punjab, Himachal Pradesh, UT Chandigarh — odd-numbered cases. Co-extensive territory with CGIT-I Chandigarh; cases divided by even/odd number allocation. Created_year: 1956 is an estimate. No relationships generated.\n",
+      "unverified_fields": [
+        {
+          "field": "created_year",
+          "note": "1956 is estimate; Chandigarh seat establishment notification year not sourced.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_labour_employment",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A and s. 7B",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT jurisdiction table — official cgit.labour.gov.in; Chandigarh-II: Punjab, HP, UT Chandigarh (odd-numbered cases)\n",
+          "url": "https://cgit.labour.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "At pleasure of Central Government; typically until age of superannuation",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_labour_employment"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_punjab_haryana"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_punjab_haryana",
+              "mechanism": "Supervisory jurisdiction of Punjab and Haryana High Court under Arts 226/227; writ petition before Punjab and Haryana High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "source": "Industrial Disputes Act 1947; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "created_year",
+            "note": "1956 is estimate; Chandigarh seat establishment notification year not sourced.\n"
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "PB",
+            "HP"
+          ],
+          "uts_covered": [
+            "CH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "industrial_disputes",
+            "epf_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 79,
+        "y": 480
+      }
+    },
+    {
+      "id": "cgit_chennai",
+      "name": "Central Government Industrial Tribunal-cum-Labour Court, Chennai",
+      "aliases": [
+        "CGIT-cum-LC Chennai",
+        "Central Government Industrial Tribunal Chennai"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "uts_covered": [
+          "PY"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "industrial_disputes",
+          "epf_appeals"
+        ]
+      },
+      "name_hindi": "केन्द्रीय सरकारी औद्योगिक अधिकरण-सह-श्रम न्यायालय, चेन्नई",
+      "abbreviation": "CGIT Chennai",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1956,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Industrial Disputes Act, 1947, s. 7A (Central Government Industrial Tribunal) and s. 7B (Labour Court). Established by notification of the Central Government in the Official Gazette. Also has jurisdiction over EPF/MP Act 1952 appeals consequent upon Finance Act, 2017 amendments to the ID Act. Jurisdiction: Tamil Nadu and UT of Puducherry, per official cgit.labour.gov.in jurisdiction table.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Jurisdiction confirmed from official cgit.labour.gov.in jurisdiction table (fetched 2026-06-12): Tamil Nadu and UT of Puducherry. Created_year: 1956 is an estimate — CGIT system was established post-ID Act 1947 amendments; specific notification year for Chennai seat not sourced. Ministry: Ministry of Labour and Employment (under whom CGIT-cum-LCs operate administratively, per cgit.labour.gov.in).\n",
+      "unverified_fields": [
+        {
+          "field": "created_year",
+          "note": "1956 is estimate; Chennai seat establishment notification year not sourced.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_labour_employment",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A and s. 7B",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT jurisdiction table — official cgit.labour.gov.in; Chennai: Tamil Nadu and UT of Puducherry\n",
+          "url": "https://cgit.labour.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "At pleasure of Central Government; typically until age of superannuation",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_labour_employment"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_madras"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_madras",
+              "mechanism": "Supervisory jurisdiction of Madras High Court under Arts 226/227; writ petition lies before Madras High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "source": "Industrial Disputes Act 1947; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "created_year",
+            "note": "1956 is estimate; Chennai seat establishment notification year not sourced.\n"
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "uts_covered": [
+            "PY"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "industrial_disputes",
+            "epf_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 82,
+        "y": 444
       }
     },
     {
@@ -2071,8 +2522,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 79,
-        "y": 444
+        "x": 84,
+        "y": 480
       }
     },
     {
@@ -2201,8 +2652,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 82,
-        "y": 480
+        "x": 87,
+        "y": 444
       }
     },
     {
@@ -2331,8 +2782,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 85,
-        "y": 444
+        "x": 89,
+        "y": 480
       }
     },
     {
@@ -3234,8 +3685,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 88,
-        "y": 480
+        "x": 92,
+        "y": 444
       }
     },
     {
@@ -3367,8 +3818,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 91,
-        "y": 444
+        "x": 94,
+        "y": 480
       }
     },
     {
@@ -3501,8 +3952,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 94,
-        "y": 480
+        "x": 97,
+        "y": 444
       }
     },
     {
@@ -3641,8 +4092,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 97,
-        "y": 444
+        "x": 100,
+        "y": 480
       }
     },
     {
@@ -3675,9 +4126,9 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act), s.8 — established vide G.S.R. 257(E), 24 March 2000. Appellate jurisdiction over eastern-region DRT benches including Hyderabad (DRT-I, DRT-II) and Visakhapatnam per MoF e-tribunals composition listing.",
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act), s.8 — established vide G.S.R. 257(E), 24 March 2000. Appellate circuit for DRT-1/2 Hyderabad and DRT Visakhapatnam confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules First Schedule) and G.S.R. 429(E) (June 2021 amendment). These DRTs were originally in the DRAT Chennai circuit under G.S.R. 134(E), 17 February 2000, before transfer to DRAT Kolkata.",
       "data_quality": "partial",
-      "data_quality_notes": "Bench-level DRAT entity (C04). Supervises DRT Kolkata 1–3, DRT Hyderabad 1–2, DRT Visakhapatnam, DRT Siliguri, DRT Cuttack, DRT Guwahati per MoF e-tribunals portal composition page. Gazette notification reassigning Hyderabad/Visakhapatnam from DRAT Chennai circuit (original G.S.R. 134(E) 2000) to DRAT Kolkata not independently verified in this pass — see drt_hyderabad unverified_fields.",
+      "data_quality_notes": "Bench-level DRAT entity (C04). Supervises DRT Kolkata 1–3, DRT Hyderabad 1–2, DRT Visakhapatnam, DRT Siliguri, DRT Cuttack, DRT Guwahati. Hyderabad and Visakhapatnam transferred from DRAT Chennai circuit (G.S.R. 134(E)/2000) to DRAT Kolkata per G.S.R. 538(E)/2018 Recruitment Rules First Schedule; reconfirmed G.S.R. 429(E)/2021. DRAT Chennai official jurisdiction excludes Hyderabad and Visakhapatnam. Standalone DRAT s.8 reallocation Gazette PDF not located; recruitment rules are conclusive administrative evidence.",
       "unverified_fields": [],
       "derived": {
         "discretionary_power_breakdown": {
@@ -3721,8 +4172,20 @@
           "accessed_date": "2026-06-12"
         },
         {
+          "label": "DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
           "label": "MoF e-tribunals — DRAT/DRT composition listing",
           "url": "https://drt.etribunals.gov.in/drtlive/composition.php",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Chennai official jurisdiction — Hyderabad and Visakhapatnam absent",
+          "url": "https://drat.tn.nic.in/Jurisdiction.htm",
           "type": "GoIWebsite",
           "accessed_date": "2026-06-12"
         }
@@ -3775,8 +4238,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 100,
-        "y": 480
+        "x": 102,
+        "y": 444
       }
     },
     {
@@ -3907,8 +4370,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 103,
-        "y": 444
+        "x": 105,
+        "y": 480
       }
     },
     {
@@ -4177,8 +4640,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 106,
-        "y": 480
+        "x": 107,
+        "y": 444
       }
     },
     {
@@ -4211,7 +4674,7 @@
       "constitutional_basis": null,
       "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Ahmedabad has two benches (DRT-I, DRT-II) under DRAT Mumbai appellate supervision. Territorial jurisdiction notified by Central Government; covers Gujarat; portions of Rajasthan may be shared with DRT Jaipur.\n",
       "data_quality": "partial",
-      "data_quality_notes": "Ahmedabad has two DRT benches (DRT-I, DRT-II) under DRAT Mumbai. DRAT Mumbai supervision confirmed across multiple consistent secondary sources (TaxTMI, jabalpuradvocate.com). Exact Rajasthan district distribution between DRT Ahmedabad and DRT Jaipur requires Gazette notification sourcing. MAINTAINER: wire AppealableTo → drat_mumbai.\n",
+      "data_quality_notes": "Ahmedabad has two DRT benches (DRT-I, DRT-II) under DRAT Mumbai. DRAT Mumbai supervision confirmed across multiple consistent secondary sources (TaxTMI, jabalpuradvocate.com). Exact Rajasthan district distribution between DRT Ahmedabad and DRT Jaipur requires Gazette notification sourcing.\n",
       "unverified_fields": [
         {
           "field": "created_year",
@@ -4331,8 +4794,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 109,
-        "y": 444
+        "x": 110,
+        "y": 480
       }
     },
     {
@@ -4483,6 +4946,147 @@
       },
       "position": {
         "x": 112,
+        "y": 444
+      }
+    },
+    {
+      "id": "drt_aurangabad",
+      "name": "Debt Recovery Tribunal, Aurangabad",
+      "aliases": [
+        "Debts Recovery Tribunal Aurangabad",
+        "DRT Chhatrapati Sambhajinagar"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, औरंगाबाद",
+      "abbreviation": "DRT Aurangabad",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2000,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 909(E) dated 7 December 2000. Single-bench tribunal under DRAT Mumbai. Official address per S.O. 4719(E) dated 4 October 2022: Ground Floor, Jeevan Suman, LIC Building, Plot No. 3, N-5, CIDCO, Aurangabad. Jurisdiction: Aurangabad (Chhatrapati Sambhajinagar), Nanded, Jalna, Beed, Parbhani, Hingoli, Osmanabad (Dharashiv), Latur, Ahmednagar, Jalgaon, Dhule, and Nandurbar districts of Maharashtra.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "G.S.R. 909(E) dated 7 December 2000. Address and jurisdiction per S.O. 4719(E) dated 4 October 2022. Note: Aurangabad was renamed Chhatrapati Sambhajinagar by Maharashtra government (2023); official DRT name in GoI publications still uses Aurangabad as of last sourcing; alias added. DRAT Mumbai confirmed.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 4719(E) dated 4 October 2022 — official jurisdiction table Mumbai circuit; Aurangabad address and district list confirmed\n",
+          "url": "https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_bombay"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_bombay",
+              "mechanism": "Supervisory jurisdiction of Bombay High Court (Aurangabad Bench) under Arts 226/227; writ petition before Bombay HC Aurangabad Bench.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 115,
         "y": 480
       }
     },
@@ -4634,7 +5238,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 114,
+        "x": 117,
         "y": 444
       }
     },
@@ -4674,7 +5278,7 @@
       "constitutional_basis": null,
       "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Chandigarh has two benches (DRT-I, DRT-II) under DRAT Delhi appellate supervision. DRT-I has jurisdiction over Punjab (Amritsar, Barnala, Bathinda, Faridkot, Fatehgarh Sahib, Fazilka, Ferozepur, Gurdaspur, Hoshiarpur, Jalandhar, Kapurthala, Ludhiana, Mansa, Moga, Muktsar, Pathankot, Patiala, Rupnagar, Sangrur, SAS Nagar, Nawanshahr, Tarantaran) and Himachal Pradesh. DRT-II has jurisdiction over Haryana and UT Chandigarh (per Gazette notification cited in Tribune India, March 2017).\n",
       "data_quality": "partial",
-      "data_quality_notes": "Chandigarh has two DRT benches (DRT-I, DRT-II) under DRAT Delhi. Detailed district- level territorial split sourced from Tribune India reporting (March 2017) on Gazette notification for relocation of Chandigarh DRTs. J&K and Ladakh jurisdiction (per DRTchandigarh Facebook page: \"J&K, Punjab, Haryana, Himachal Pradesh\") is included but exact post-J&K Reorganisation Act 2019 applicability of RDDBFI requires confirmation; left partial. MAINTAINER: wire AppealableTo → drat (aggregate entity; supervising DRAT bench-level entities not yet in graph — see data_quality_notes for supervising DRAT).\n",
+      "data_quality_notes": "Chandigarh has two DRT benches (DRT-I, DRT-II) under DRAT Delhi. Detailed district- level territorial split sourced from Tribune India reporting (March 2017) on Gazette notification for relocation of Chandigarh DRTs. J&K and Ladakh jurisdiction (per DRTchandigarh Facebook page: \"J&K, Punjab, Haryana, Himachal Pradesh\") is included but exact post-J&K Reorganisation Act 2019 applicability of RDDBFI requires confirmation; left partial.\n",
       "unverified_fields": [
         {
           "field": "created_year",
@@ -4814,7 +5418,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 117,
+        "x": 120,
         "y": 480
       }
     },
@@ -4849,7 +5453,7 @@
       "constitutional_basis": null,
       "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002 (SARFAESI Act), s. 17. Territorial jurisdiction defined by Central Government notification under s. 3(1A) RDDBFI Act (as amended by Insolvency and Bankruptcy Code, 2016).\n",
       "data_quality": "partial",
-      "data_quality_notes": "Territorial jurisdiction covering Tamil Nadu and Puducherry confirmed from multiple secondary legal sources. Chennai has three DRT benches (DRT-1, DRT-2, DRT-3) under DRAT Chennai appellate jurisdiction; this entity represents the Chennai location collectively. Separate bench-numbered entities (drt_chennai_1, drt_chennai_2, drt_chennai_3) may be warranted in a future pass when Gazette notification numbers and bench-specific addresses are sourced from drt.gov.in directly. Presiding Officer appointment details from RDDBFI Act s. 4–6. MAINTAINER: wire AppealableTo → drat_chennai.\n",
+      "data_quality_notes": "Territorial jurisdiction covering Tamil Nadu and Puducherry confirmed from multiple secondary legal sources. Chennai has three DRT benches (DRT-1, DRT-2, DRT-3) under DRAT Chennai appellate jurisdiction; this entity represents the Chennai location collectively. Separate bench-numbered entities (drt_chennai_1, drt_chennai_2, drt_chennai_3) may be warranted in a future pass when Gazette notification numbers and bench-specific addresses are sourced from drt.gov.in directly. Presiding Officer appointment details from RDDBFI Act s. 4–6. drat_chennai.\n",
       "unverified_fields": [
         {
           "field": "created_year",
@@ -4971,8 +5575,438 @@
         "parent_hc": null
       },
       "position": {
-        "x": 120,
+        "x": 123,
         "y": 444
+      }
+    },
+    {
+      "id": "drt_coimbatore",
+      "name": "Debt Recovery Tribunal, Coimbatore",
+      "aliases": [
+        "Debts Recovery Tribunal Coimbatore"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, कोयंबटूर",
+      "abbreviation": "DRT Coimbatore",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2002,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 221(E) dated 22 March 2002. Single-bench tribunal under DRAT Chennai. Current jurisdiction per S.O. 4717(E) dated 4 October 2022: districts of Coimbatore, Tirupur, Nilgiris, Salem, Karur, Namakkal, and Erode. Address: 2nd & 3rd Floor, District Ex-Service Centre, 27 Travellers Bungalow Road, Coimbatore.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "G.S.R. 221(E) dated 22 March 2002. District jurisdiction per S.O. 4717(E) dated 4 October 2022 (ibclaw): Coimbatore, Tirupur, Nilgiris, Salem, Karur, Namakkal, Erode. DRAT Chennai confirmed by official DRAT Chennai website.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 4717(E) dated 4 October 2022 — current official jurisdiction table for DRAT Chennai circuit; Coimbatore district list confirmed\n",
+          "url": "https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Chennai official website — confirms Coimbatore under DRAT Chennai circuit\n",
+          "url": "https://drat.tn.nic.in/Jurisdiction.htm",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_madras"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_madras",
+              "mechanism": "Supervisory jurisdiction of Madras High Court under Arts 226/227; writ petition before Madras High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 125,
+        "y": 480
+      }
+    },
+    {
+      "id": "drt_cuttack",
+      "name": "Debt Recovery Tribunal, Cuttack",
+      "aliases": [
+        "Debts Recovery Tribunal Cuttack"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "OD"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, कटक",
+      "abbreviation": "DRT Cuttack",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1994,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Single-bench tribunal under DRAT Kolkata (per G.S.R. 257(E)/2000 DRAT Kolkata establishment and G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules). Jurisdiction: State of Odisha (then Orissa).\n",
+      "data_quality": "partial",
+      "data_quality_notes": "DRAT Kolkata original establishment notification G.S.R. 257(E) dated 24 March 2000 listed DRT Cuttack under its jurisdiction. Confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules). Created_year: 1994 is an estimate based on early DRT roll-out phase; specific GSR for DRT Cuttack establishment not extracted — the Recruitment Rules 2001 cited in the 2018 consolidation predate many bench-level rules, suggesting pre-2001 existence.\n",
+      "unverified_fields": [
+        {
+          "field": "created_year",
+          "note": "1994 is estimate; specific G.S.R. establishment number not retrieved.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018; lists DRT Cuttack under DRAT Kolkata\n",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_orissa"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_orissa",
+              "mechanism": "Supervisory jurisdiction of Orissa High Court under Arts 226/227; writ petition before Orissa High Court at Cuttack.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "created_year",
+            "note": "1994 is estimate; specific G.S.R. establishment number not retrieved.\n"
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "OD"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 128,
+        "y": 444
+      }
+    },
+    {
+      "id": "drt_dehradun",
+      "name": "Debt Recovery Tribunal, Dehradun",
+      "aliases": [
+        "Debts Recovery Tribunal Dehradun"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "UK"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, देहरादून",
+      "abbreviation": "DRT Dehradun",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2017,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide S.O. 454(E) dated 15 February 2017, which carved out the State of Uttarakhand from the erstwhile DRT Lucknow jurisdiction and created a new tribunal at Dehradun effective 16 February 2017. Single-bench tribunal under DRAT Allahabad. Jurisdiction: State of Uttarakhand.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Established by S.O. 454(E) dated 15 February 2017, effective 16 February 2017. Gazette notification text confirmed from ibclaw.in. Jurisdiction: State of Uttarakhand (split from DRT Lucknow). DRAT Allahabad supervision confirmed.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 454(E) dated 15 February 2017 — DRT Dehradun established for Uttarakhand; supersedes G.S.R. 274(E) and G.S.R. 71(E)\n",
+          "url": "https://ibclaw.in/notification-no-s-o-454e-dated-15-02-2017-under-rdb-act-1993/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_uttarakhand"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_uttarakhand",
+              "mechanism": "Supervisory jurisdiction of Uttarakhand High Court under Arts 226/227; writ petition before Uttarakhand High Court at Nainital.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "UK"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 130,
+        "y": 480
       }
     },
     {
@@ -5007,7 +6041,7 @@
       "constitutional_basis": null,
       "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Delhi has three benches (DRT-I, DRT-II, DRT-III) under DRAT Delhi appellate supervision. Territorial jurisdiction as notified by Central Government; DRT-I, DRT-II, DRT-III, Delhi each have division of territorial sub-jurisdiction within the Delhi NCT area. Per legal sources, DRT Delhi also covers portions of Uttar Pradesh not covered by DRT Allahabad and DRT Lucknow, subject to Gazette notification.\n",
       "data_quality": "partial",
-      "data_quality_notes": "Delhi has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Delhi. This entity represents the Delhi location; bench-specific entities may be warranted. Territorial sub-jurisdiction of Delhi DRTs is split by area/branch of borrower; specific district-level breakdown requires Gazette notification sourcing from drt.gov.in. Note: DRT Delhi bench jurisdiction cited in Raizada Associates legal source confirms \"multiple benches (DRT-I, DRT-II, DRT-III) each with its own territorial jurisdiction\". MAINTAINER: wire AppealableTo → drat (aggregate entity; supervising DRAT bench-level entities not yet in graph — see data_quality_notes for supervising DRAT).\n",
+      "data_quality_notes": "Delhi has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Delhi. This entity represents the Delhi location; bench-specific entities may be warranted. Territorial sub-jurisdiction of Delhi DRTs is split by area/branch of borrower; specific district-level breakdown requires Gazette notification sourcing from drt.gov.in. Note: DRT Delhi bench jurisdiction cited in Raizada Associates legal source confirms \"multiple benches (DRT-I, DRT-II, DRT-III) each with its own territorial jurisdiction\".\n",
       "unverified_fields": [
         {
           "field": "created_year",
@@ -5130,22 +6164,23 @@
         "parent_hc": null
       },
       "position": {
-        "x": 123,
-        "y": 480
+        "x": 133,
+        "y": 444
       }
     },
     {
-      "id": "drt_hyderabad",
-      "name": "Debt Recovery Tribunal, Hyderabad",
+      "id": "drt_ernakulam",
+      "name": "Debt Recovery Tribunal, Ernakulam",
       "aliases": [
-        "DRT-I Hyderabad",
-        "DRT-II Hyderabad",
-        "Debts Recovery Tribunal Hyderabad"
+        "DRT Kochi",
+        "Debts Recovery Tribunal Ernakulam"
       ],
       "jurisdiction_scope": {
         "states_covered": [
-          "TS",
-          "AP"
+          "KL"
+        ],
+        "uts_covered": [
+          "LD"
         ],
         "is_all_india": false,
         "jurisdiction_types": [
@@ -5153,8 +6188,159 @@
           "sarfaesi_appeals"
         ]
       },
-      "name_hindi": "ऋण वसूली अधिकरण, हैदराबाद",
-      "abbreviation": "DRT Hyderabad",
+      "name_hindi": "ऋण वसूली अधिकरण, एर्नाकुलम",
+      "abbreviation": "DRT Ernakulam",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1999,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Originally established vide G.S.R. 397(E) dated 4 October 1999 as a single bench. A second bench (DRT-2 Ernakulam) was subsequently established. Current jurisdiction per S.O. 4717(E) dated 4 October 2022: DRT-1 covers Ernakulam, Malappuram, Kozhikode, Palakkad, Wayanad, Kannur, and Kasaragod; DRT-2 covers Thiruvananthapuram, Kollam, Pathanamthitta, Kottayam, Alappuzha, Thrissur, and Idukki. Both under DRAT Chennai.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Two Ernakulam benches (DRT-1 and DRT-2). DRT-1 established G.S.R. 397(E) dated 4 October 1999. District jurisdiction per S.O. 4717(E) dated 4 October 2022 (ibclaw) sourced and included above. DRAT Chennai supervision confirmed by official DRAT Chennai website (Jurisdiction page). Lakshadweep under DRT-1 per original BankAuctions.in reference. This entity represents the Ernakulam location; bench- specific entities (drt_ernakulam_1, drt_ernakulam_2) may be warranted when bench addresses are confirmed from drt.gov.in.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 4717(E) dated 4 October 2022 — current official jurisdiction table for DRAT Chennai circuit DRTs (Ernakulam 1 and 2 district lists)\n",
+          "url": "https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Chennai official website — Jurisdiction page confirms Ernakulam-1 and Ernakulam-2 under DRAT Chennai circuit\n",
+          "url": "https://drat.tn.nic.in/Jurisdiction.htm",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_kerala"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_kerala",
+              "mechanism": "Supervisory jurisdiction of Kerala High Court under Arts 226/227; writ petition before Kerala High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "KL"
+          ],
+          "uts_covered": [
+            "LD"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 135,
+        "y": 480
+      }
+    },
+    {
+      "id": "drt_guwahati",
+      "name": "Debt Recovery Tribunal, Guwahati",
+      "aliases": [
+        "Debts Recovery Tribunal Guwahati",
+        "DRT Gauhati"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "AS",
+          "AR",
+          "ML",
+          "MN",
+          "MZ",
+          "NL",
+          "TR",
+          "SK"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, गुवाहाटी",
+      "abbreviation": "DRT Guwahati",
       "type": "CentralTribunal",
       "cluster": "tribunals_adr",
       "level_of_government": "Central",
@@ -5162,17 +6348,13 @@
       "abolished_year": null,
       "operational_status": "Active",
       "constitutional_basis": null,
-      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Hyderabad has two benches (DRT-I, DRT-II). Territorial jurisdiction notified by Central Government under s. 3(1A) RDDBFI Act. Post-AP bifurcation (2014), Hyderabad DRTs serve both Telangana and Andhra Pradesh; Visakhapatnam has a separate DRT bench for coastal AP.\n",
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Single-bench tribunal under DRAT Kolkata (per G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules). Territorial jurisdiction is exceptionally wide — covers all seven North East states (per Gujarat DRT Advocates Association reference) plus Sikkim; one of the largest geographic jurisdictions of any DRT.\n",
       "data_quality": "partial",
-      "data_quality_notes": "Resolved to DRAT Kolkata (drat_kolkata): MoF e-tribunals composition page lists Hyderabad DRT-I and DRT-II under DRAT Kolkata; DRAT Chennai official About Us (drat.tn.nic.in) lists 9 southern DRTs and excludes Hyderabad. vLex/TaxTMI conflict noted in sources — superseded by official listings. Gazette notification reassigning Hyderabad from original DRAT Chennai circuit (G.S.R. 134(E) 2000) to DRAT Kolkata not located in this pass.\n",
+      "data_quality_notes": "DRAT Kolkata supervision confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules, which groups Guwahati under DRAT Kolkata). NE-state jurisdiction confirmed by Gujarat DRT Advocates Association: \"DRT located in Guwahati has jurisdiction over all the seven North Eastern States.\" Sikkim inclusion assumed by coverage gap (no separate DRT for Sikkim). Exact GSR notification number for DRT Guwahati establishment not extracted; created_year: 1994 based on DRAT Kolkata Recruitment Rules supersession list referencing DRT Guwahati Group A/B Rules 2001 (implying prior existence).\n",
       "unverified_fields": [
         {
           "field": "created_year",
-          "note": "1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.\n"
-        },
-        {
-          "field": "appellate_assignment",
-          "note": "Gazette notification reassigning Hyderabad DRT appeals to DRAT Kolkata not verified on egazette.gov.in — resolved from MoF portal + DRAT Chennai negative listing only.\n"
+          "note": "1994 is estimate; specific G.S.R. establishment number not retrieved (2001 Recruitment Rules imply prior existence).\n"
         }
       ],
       "derived": {
@@ -5214,13 +6396,209 @@
           "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
           "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
           "type": "CentralAct",
-          "accessed_date": "2026-06-11"
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018; lists DRT Guwahati under DRAT Kolkata\n",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT Guwahati jurisdiction (7 NE states) — Gujarat DRT Advocates Association\n",
+          "url": "http://gdrtaa.com/drt.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
         },
         {
           "label": "DRT official portal — Ministry of Finance, DFS",
           "url": "https://drt.gov.in/",
           "type": "GoIWebsite",
-          "accessed_date": "2026-06-11"
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_gauhati"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_gauhati",
+              "mechanism": "Supervisory jurisdiction of Gauhati High Court under Arts 226/227; writ petition before Gauhati High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "created_year",
+            "note": "1994 is estimate; specific G.S.R. establishment number not retrieved (2001 Recruitment Rules imply prior existence).\n"
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "AS",
+            "AR",
+            "ML",
+            "MN",
+            "MZ",
+            "NL",
+            "TR",
+            "SK"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 138,
+        "y": 444
+      }
+    },
+    {
+      "id": "drt_hyderabad",
+      "name": "Debt Recovery Tribunal, Hyderabad",
+      "aliases": [
+        "DRT-I Hyderabad",
+        "DRT-II Hyderabad",
+        "Debts Recovery Tribunal Hyderabad"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TS",
+          "AP"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, हैदराबाद",
+      "abbreviation": "DRT Hyderabad",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1999,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Original DRT Hyderabad established vide G.S.R. 647(E) dated 21 September 1999. DRT-2 Hyderabad added by S.O. 254(E) dated 2 February 2017 (existing bench renamed DRT-1 Hyderabad, Telangana). Appellate supervision: DRAT Kolkata per G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules), reconfirmed by G.S.R. 429(E) (June 2021). Originally under DRAT Chennai circuit (G.S.R. 134(E), 17 February 2000) until transfer to DRAT Kolkata circuit by or before the 2018 Recruitment Rules.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "DRAT assignment RESOLVED: DRT Hyderabad (I & II) are under DRAT Kolkata (drat_kolkata). Evidence chain: (1) G.S.R. 134(E), 17 Feb 2000 established DRAT Chennai with Hyderabad and Visakhapatnam in the original southern circuit; (2) S.O. 254(E), 2 Feb 2017 created DRT-2 Hyderabad and realigned post-AP bifurcation jurisdictions; (3) G.S.R. 538(E), 8 Jun 2018 — DRAT Kolkata Recruitment Rules First Schedule groups DRT-1 Hyderabad, DRT-2 Hyderabad, and DRT Visakhapatnam with DRAT Kolkata (common cadre/administrative circuit); (4) G.S.R. 429(E), Jun 2021 amendment reconfirms same grouping; (5) DRAT Chennai official jurisdiction page lists 9 southern DRTs and excludes Hyderabad and Visakhapatnam. vLex and similar sources reflected the superseded G.S.R. 134(E) 2000 table. Specific standalone DRAT s.8 reallocation Gazette PDF not located on egazette.gov.in in this pass; 2018 Recruitment Rules are the conclusive GoI instrument for current appellate circuit assignment.\n",
+      "unverified_fields": [
+        {
+          "field": "sources.gsr_538_egazette_pdf",
+          "note": "Direct egazette.gov.in PDF for G.S.R. 538(E) dated 8 June 2018 not retrieved (portal blocked automated access); CaseMine transcription used as secondary mirror. Manual search: GSR 538(E) + year 2018 + Ministry of Finance.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "G.S.R. 647(E) dated 21 September 1999 — DRT Hyderabad established",
+          "url": "https://taxguru.in/corporate-law/govt-notifies-debts-recovery-tribunals-hyderabad-visakhapatnam.html",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 254(E) dated 2 February 2017 — DRT-2 Hyderabad; bifurcation realignment",
+          "url": "https://taxguru.in/corporate-law/govt-notifies-debts-recovery-tribunals-hyderabad-visakhapatnam.html",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "G.S.R. 134(E) dated 17 February 2000 — DRAT Chennai (original circuit included Hyderabad; superseded for appellate assignment)",
+          "url": "https://drat.tn.nic.in/AboutUs.htm",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018; First Schedule groups DRT-1/2 Hyderabad under DRAT Kolkata",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Chennai official jurisdiction — Hyderabad and Visakhapatnam absent",
+          "url": "https://drat.tn.nic.in/Jurisdiction.htm",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
         }
       ],
       "_detail": {
@@ -5262,12 +6640,8 @@
         "structural_variations": [],
         "unverified_fields": [
           {
-            "field": "created_year",
-            "note": "1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.\n"
-          },
-          {
-            "field": "appellate_assignment",
-            "note": "Gazette notification reassigning Hyderabad DRT appeals to DRAT Kolkata not verified on egazette.gov.in — resolved from MoF portal + DRAT Chennai negative listing only.\n"
+            "field": "sources.gsr_538_egazette_pdf",
+            "note": "Direct egazette.gov.in PDF for G.S.R. 538(E) dated 8 June 2018 not retrieved (portal blocked automated access); CaseMine transcription used as secondary mirror. Manual search: GSR 538(E) + year 2018 + Ministry of Finance.\n"
           }
         ],
         "jurisdiction_scope": {
@@ -5286,8 +6660,300 @@
         "parent_hc": null
       },
       "position": {
-        "x": 126,
+        "x": 141,
+        "y": 480
+      }
+    },
+    {
+      "id": "drt_jabalpur",
+      "name": "Debt Recovery Tribunal, Jabalpur",
+      "aliases": [
+        "Debts Recovery Tribunal Jabalpur"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MP",
+          "CG"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, जबलपुर",
+      "abbreviation": "DRT Jabalpur",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1998,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Notified vide G.S.R. 181(E) dated 7 April 1998. Single-bench tribunal under DRAT Allahabad. Jurisdiction covers States of Madhya Pradesh and Chhattisgarh (Chhattisgarh became a separate state in 2000; its territory remained within DRT Jabalpur's catchment).\n",
+      "data_quality": "partial",
+      "data_quality_notes": "G.S.R. 181(E) dated 7 April 1998 establishes DRT Jabalpur; jurisdiction: States of Madhya Pradesh and Chhattisgarh. DRAT Allahabad supervision confirmed. Note: DRT Jabalpur is notable as the original DRAT Allahabad jurisdiction listing includes it (per GSR 5(E)/2001 DRAT Allahabad setup). HC supervisory jurisdiction: MP High Court at Jabalpur; Chhattisgarh HC at Bilaspur may also have supervisory role for cases from Chhattisgarh territory — not definitively resolved in secondary sources; left partial.\n",
+      "unverified_fields": [
+        {
+          "field": "jurisdiction_scope.states_covered",
+          "note": "Chhattisgarh HC supervisory role over MP DRT for CG territory not resolved.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT Jabalpur — GSR 181(E) 7.4.1998; jurisdiction: MP and Chhattisgarh\n",
+          "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_madhya_pradesh"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_madhya_pradesh",
+              "mechanism": "Supervisory jurisdiction of Madhya Pradesh High Court under Arts 226/227; writ petition before Madhya Pradesh High Court at Jabalpur.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "jurisdiction_scope.states_covered",
+            "note": "Chhattisgarh HC supervisory role over MP DRT for CG territory not resolved.\n"
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MP",
+            "CG"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 143,
         "y": 444
+      }
+    },
+    {
+      "id": "drt_jaipur",
+      "name": "Debt Recovery Tribunal, Jaipur",
+      "aliases": [
+        "Debts Recovery Tribunal Jaipur"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "RJ"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, जयपुर",
+      "abbreviation": "DRT Jaipur",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1994,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Notified vide G.S.R. 655(E) dated 30 August 1994. Current address and jurisdiction per S.O. 4718(E) dated 4 October 2022: 1st Floor, Sudhakarma-II, Lal Kothi Shopping Centre, Tonk Road, Jaipur — jurisdiction: entire State of Rajasthan for amounts below ₹100 crore; amounts of ₹100 crore and above are handled by DRT No. 3, Delhi. Single-bench tribunal under DRAT Delhi.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "GSR G.S.R. 655(E) dated 30 August 1994 establishes DRT Jaipur. Official address and jurisdiction table from S.O. 4718(E) dated 4 October 2022 (ibclaw.in). Jurisdiction: State of Rajasthan for debt below ₹100 crore; above ₹100 crore transferred to DRT-3 Delhi per 2022 notification.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 4718(E) dated 4 October 2022 — official jurisdiction table for Delhi circuit DRTs; address and Rajasthan jurisdiction confirmed\n",
+          "url": "https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT Jaipur — GSR 655(E) 30.8.1994; jurisdiction: Rajasthan",
+          "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_rajasthan"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_rajasthan",
+              "mechanism": "Supervisory jurisdiction of Rajasthan High Court under Arts 226/227; writ petition before Rajasthan High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "RJ"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 146,
+        "y": 480
       }
     },
     {
@@ -5319,7 +6985,7 @@
       "constitutional_basis": null,
       "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Kolkata has three benches (DRT-I, DRT-II, DRT-III) under DRAT Kolkata appellate supervision. Territorial jurisdiction notified by Central Government. Note: Siliguri has a separate DRT bench (drt_siliguri) also under DRAT Kolkata.\n",
       "data_quality": "partial",
-      "data_quality_notes": "Kolkata has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Kolkata. This entity represents the Kolkata location. Territorial jurisdiction covers West Bengal and Sikkim (Siliguri bench separately covers North Bengal/Sikkim catchment; exact split requires Gazette sourcing). MAINTAINER: wire AppealableTo → drat_kolkata.\n",
+      "data_quality_notes": "Kolkata has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Kolkata. This entity represents the Kolkata location. Territorial jurisdiction covers West Bengal and Sikkim (Siliguri bench separately covers North Bengal/Sikkim catchment; exact split requires Gazette sourcing). AppealableTo → drat_kolkata.\n",
       "unverified_fields": [
         {
           "field": "created_year",
@@ -5433,8 +7099,304 @@
         "parent_hc": null
       },
       "position": {
-        "x": 129,
+        "x": 148,
+        "y": 444
+      }
+    },
+    {
+      "id": "drt_lucknow",
+      "name": "Debt Recovery Tribunal, Lucknow",
+      "aliases": [
+        "Debts Recovery Tribunal Lucknow"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "UP"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, लखनऊ",
+      "abbreviation": "DRT Lucknow",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2000,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Originally notified vide G.S.R. 274(E) dated 31 March 2000; jurisdiction realigned by S.O. 454(E) dated 15 February 2017 (Dehradun carved out for Uttarakhand) and by S.O. 4719(E) dated 4 October 2022. Single-bench tribunal under DRAT Allahabad.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Northern UP districts (Ambedkar Nagar, Aligarh, Agra, Barabanki, Balrampur, Bahraich, Bareilly, Bijnor, Bulandshahr, Baghpat, Faizabad, Ghaziabad, Gonda, Gautam Budh Nagar, Hathras, Hardoi, Jyotiba Phule Nagar, Lucknow, Lakhimpur, Meerut, Moradabad, Muzaffarnagar, Mathura, Pratapgarh, Pilibhit, Rampur, Rae Bareilly, Saharanpur, Shahjahanpur, Sitapur, Shravasti, Sultanpur, Unnao) sourced from BankAuctions.in G.S.R. 274(E) listing. Uttarakhand was in DRT Lucknow jurisdiction pre-2017; S.O. 454(E) dated 15 Feb 2017 carved out Dehradun as a separate DRT for Uttarakhand. Current district list per S.O. 4719(E) (4 Oct 2022) not fully extracted — that notification text not retrieved for this circuit; left partial.\n",
+      "unverified_fields": [
+        {
+          "field": "jurisdiction_scope.districts",
+          "note": "Full district list per S.O. 4719(E) dated 4 October 2022 not extracted for Allahabad/Lucknow circuit.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 454(E) dated 15 February 2017 — Dehradun DRT established; Lucknow/ Allahabad realigned; supersedes G.S.R. 274(E) and G.S.R. 71(E)\n",
+          "url": "https://ibclaw.in/notification-no-s-o-454e-dated-15-02-2017-under-rdb-act-1993/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT Lucknow jurisdiction — BankAuctions.in DRT reference",
+          "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_allahabad"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_allahabad",
+              "mechanism": "Supervisory jurisdiction of Allahabad HC (Lucknow Bench) under Arts 226/227; writ petition before Allahabad HC Lucknow Bench.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "jurisdiction_scope.districts",
+            "note": "Full district list per S.O. 4719(E) dated 4 October 2022 not extracted for Allahabad/Lucknow circuit.\n"
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "UP"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 151,
         "y": 480
+      }
+    },
+    {
+      "id": "drt_madurai",
+      "name": "Debt Recovery Tribunal, Madurai",
+      "aliases": [
+        "Debts Recovery Tribunal Madurai"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, मदुरै",
+      "abbreviation": "DRT Madurai",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2007,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 15(E) dated 9 January 2007. Single-bench tribunal under DRAT Chennai. Current address per S.O. 4717(E) dated 4 October 2022: 3rd and 4th Floor, Kalyani Tower, Madurai. Jurisdiction: Madurai, Kanyakumari, Tirunelveli, Tenkasi, Tuticorin, Virudhunagar, Sivaganga, Ramnad, Theni, Trichy, and Dindigul districts of Tamil Nadu.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "G.S.R. 15(E) dated 9 January 2007. District jurisdiction per S.O. 4717(E) dated 4 October 2022 (ibclaw): Madurai, Kanyakumari, Tirunelveli, Tenkasi, Tuticorin, Virudhunagar, Sivaganga, Ramnad, Theni, Trichy, Dindigul. DRAT Chennai confirmed by official website.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 4717(E) dated 4 October 2022 — official jurisdiction table; Madurai address and district list confirmed\n",
+          "url": "https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Chennai official website — confirms Madurai under DRAT Chennai circuit\n",
+          "url": "https://drat.tn.nic.in/Jurisdiction.htm",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_madras"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_madras",
+              "mechanism": "Supervisory jurisdiction of Madras High Court (Madurai Bench) under Arts 226/227; writ petition before Madras HC Madurai Bench.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 153,
+        "y": 444
       }
     },
     {
@@ -5590,8 +7552,288 @@
         "parent_hc": null
       },
       "position": {
-        "x": 132,
+        "x": 156,
+        "y": 480
+      }
+    },
+    {
+      "id": "drt_nagpur",
+      "name": "Debt Recovery Tribunal, Nagpur",
+      "aliases": [
+        "Debts Recovery Tribunal Nagpur"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, नागपुर",
+      "abbreviation": "DRT Nagpur",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2000,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 945(E) dated 29 December 2000 (same notification as DRT Mumbai-2 and DRT Mumbai-3). Single-bench tribunal under DRAT Mumbai. Current jurisdiction per S.O. 4719(E) dated 4 October 2022: Nagpur, Bhandara, Gondia, Wardha, Amravati, Yavatmal, Gadchiroli, Akola, Buldhana, Washim, and Chandrapur districts of Maharashtra, and districts of Chhindwara, Seoni, and Balaghat of Madhya Pradesh.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "G.S.R. 945(E) dated 29 December 2000. District jurisdiction per BankAuctions.in and S.O. 4719(E) dated 4 October 2022 (not fully retrieved for this circuit — ibclaw page token limit reached before Mumbai circuit table). BankAuctions.in lists: Nagpur, Bhandara, Gondiya, Amravati, Chandrapur, Yavatmal, Gadchiroli, Akola, Buldhana, Washim, Wardha. Also covers MP districts Chhindwara, Seoni, Balaghat (per CGIT Nagpur table cross-check). DRAT Mumbai supervision confirmed.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT Nagpur — GSR 945(E) 29.12.2000; jurisdiction: Vidarbha districts of Maharashtra\n",
+          "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_bombay"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_bombay",
+              "mechanism": "Supervisory jurisdiction of Bombay High Court (Nagpur Bench) under Arts 226/227; writ petition before Bombay HC Nagpur Bench.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 158,
         "y": 444
+      }
+    },
+    {
+      "id": "drt_patna",
+      "name": "Debt Recovery Tribunal, Patna",
+      "aliases": [
+        "Debts Recovery Tribunal Patna"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "BR"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, पटना",
+      "abbreviation": "DRT Patna",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1997,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Notified vide G.S.R. 325(E) dated 24 January 1997. Single-bench tribunal under DRAT Allahabad. Jurisdiction: State of Bihar (pre-2002); Jharkhand was carved out to DRT Ranchi vide G.S.R. 113(E) dated 26 February 2002 following Jharkhand's formation in 2000.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "G.S.R. 325(E) dated 24 January 1997 establishes DRT Patna; jurisdiction: State of Bihar. Jharkhand separated to DRT Ranchi (G.S.R. 113(E), 26 Feb 2002) following state bifurcation in 2000. DRAT Allahabad supervision per jabalpuradvocate.com and TaxTMI (consistent across sources).\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT Patna — GSR 325(E) 24.1.1997; jurisdiction: State of Bihar",
+          "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_patna"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_patna",
+              "mechanism": "Supervisory jurisdiction of Patna High Court under Arts 226/227; writ petition before Patna High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "BR"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 161,
+        "y": 480
       }
     },
     {
@@ -5621,7 +7863,7 @@
       "constitutional_basis": null,
       "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. DRT Pune is a single-bench tribunal under DRAT Mumbai appellate supervision. Territorial jurisdiction notified by Central Government; covers Pune division and surrounding Maharashtra districts not served by DRT Mumbai, DRT Nagpur, or DRT Aurangabad.\n",
       "data_quality": "partial",
-      "data_quality_notes": "DRT Pune is a single-bench tribunal under DRAT Mumbai. DRAT Mumbai supervision confirmed across multiple consistent secondary sources. Exact district-level territorial jurisdiction requires Gazette notification sourcing from drt.gov.in. Bombay High Court exercises supervisory jurisdiction (Pune is within Bombay HC territorial jurisdiction). MAINTAINER: wire AppealableTo → drat (aggregate entity; supervising DRAT bench-level entities not yet in graph — see data_quality_notes for supervising DRAT).\n",
+      "data_quality_notes": "DRT Pune is a single-bench tribunal under DRAT Mumbai. DRAT Mumbai supervision confirmed across multiple consistent secondary sources. Exact district-level territorial jurisdiction requires Gazette notification sourcing from drt.gov.in. Bombay High Court exercises supervisory jurisdiction (Pune is within Bombay HC territorial jurisdiction).\n",
       "unverified_fields": [
         {
           "field": "created_year",
@@ -5740,7 +7982,445 @@
         "parent_hc": null
       },
       "position": {
-        "x": 135,
+        "x": 164,
+        "y": 444
+      }
+    },
+    {
+      "id": "drt_ranchi",
+      "name": "Debt Recovery Tribunal, Ranchi",
+      "aliases": [
+        "Debts Recovery Tribunal Ranchi"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "JH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, रांची",
+      "abbreviation": "DRT Ranchi",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2002,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Notified vide G.S.R. 113(E) dated 26 February 2002, established following the creation of Jharkhand state (2000) to serve the new state separately from DRT Patna. Single-bench tribunal under DRAT Allahabad. Jurisdiction: State of Jharkhand.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "G.S.R. 113(E) dated 26 February 2002 establishes DRT Ranchi; jurisdiction: State of Jharkhand. DRAT Allahabad supervision confirmed across jabalpuradvocate.com and TaxTMI.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT Ranchi — GSR 113(E) 26.2.2002; jurisdiction: Jharkhand",
+          "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_jharkhand"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_jharkhand",
+              "mechanism": "Supervisory jurisdiction of Jharkhand High Court under Arts 226/227; writ petition before Jharkhand High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "JH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 166,
+        "y": 480
+      }
+    },
+    {
+      "id": "drt_siliguri",
+      "name": "Debt Recovery Tribunal, Siliguri",
+      "aliases": [
+        "Debts Recovery Tribunal Siliguri"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "WB"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, सिलीगुड़ी",
+      "abbreviation": "DRT Siliguri",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2002,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Single-bench tribunal under DRAT Kolkata (per G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules). Jurisdiction: North Bengal districts of West Bengal not covered by DRT Kolkata I/II/III.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "DRAT Kolkata supervision confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules). Exact North Bengal districts in jurisdiction not extracted from primary GSR. Created_year: 2002 estimated — Siliguri DRT Recruitment Rules are notably absent from the 2001-era rules consolidated in 2018 (LDC and Steno Rules only from 2017), suggesting establishment circa 2002 (similar era to other new-state DRTs). Jurisdiction: North Bengal districts (Jalpaiguri, Darjeeling, Cooch Behar, Alipurduar, Kalimpong, Malda, Dinajpur, Murshidabad tentatively). Exact list per current gazette required.\n",
+      "unverified_fields": [
+        {
+          "field": "created_year",
+          "note": "2002 is estimate; Siliguri LDC/Steno rules appear from 2017 consolidation — direct G.S.R. establishment notification not retrieved.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018; lists DRT Siliguri under DRAT Kolkata\n",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRT official portal — Ministry of Finance, DFS",
+          "url": "https://drt.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_calcutta"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_calcutta",
+              "mechanism": "Supervisory jurisdiction of Calcutta High Court under Arts 226/227; writ petition before Calcutta High Court. Calcutta HC circuit bench at Jalpaiguri may also have supervisory role.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "created_year",
+            "note": "2002 is estimate; Siliguri LDC/Steno rules appear from 2017 consolidation — direct G.S.R. establishment notification not retrieved.\n"
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "WB"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 169,
+        "y": 444
+      }
+    },
+    {
+      "id": "drt_visakhapatnam",
+      "name": "Debt Recovery Tribunal, Visakhapatnam",
+      "aliases": [
+        "DRT Vishakhapatnam",
+        "Debts Recovery Tribunal Visakhapatnam",
+        "DRT Vizag"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "AP"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "debt_recovery",
+          "sarfaesi_appeals"
+        ]
+      },
+      "name_hindi": "ऋण वसूली अधिकरण, विशाखापट्टनम",
+      "abbreviation": "DRT Visakhapatnam",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2002,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 112(E) dated 26 February 2002. Renamed DRT, Visakhapatnam, Andhra Pradesh by S.O. 254(E) dated 2 February 2017 (which also created DRT-2 Hyderabad). Under DRAT Kolkata appellate supervision per G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules). Jurisdiction: coastal Andhra Pradesh districts — East Godavari, West Godavari, Guntur, Krishna, Nellore, Prakasam, Srikakulam, Vizianagaram, and Visakhapatnam.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "DRAT Kolkata supervision RESOLVED — confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules; see drt_hyderabad notes for full history of transfer from original DRAT Chennai circuit under G.S.R. 134(E)/2000). District jurisdiction sourced from BankAuctions.in per G.S.R. 112(E): East Godavari, West Godavari, Guntur, Krishna, Nellore, Prakasam, Srikakulam, Vizianagaram, Visakhapatnam. These are the coastal AP districts; remainder of AP/Telangana covered by DRT Hyderabad. Full DRAT transfer history documented on drt_hyderabad and drat_kolkata (G.S.R. 134(E)/2000 → G.S.R. 538(E)/2018 → G.S.R. 429(E)/2021).\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)",
+          "url": "https://india-code.nic.in/CodeofActs13/19930951.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "G.S.R. 112(E) dated 26 February 2002 — DRT Visakhapatnam established; jurisdiction: coastal AP districts\n",
+          "url": "https://bankauctions.in/asset-recovery/debt-recovery-tribunal/",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "S.O. 254(E) dated 2 February 2017 — DRT renamed DRT, Visakhapatnam, Andhra Pradesh (post-AP bifurcation)\n",
+          "url": "https://taxguru.in/corporate-law/govt-notifies-debts-recovery-tribunals-hyderabad-visakhapatnam.html",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018; confirms DRAT Kolkata supervision\n",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_of_finance",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "5 years or until age 62, whichever is earlier",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "hc_andhra_pradesh"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_andhra_pradesh",
+              "mechanism": "Supervisory jurisdiction of Andhra Pradesh High Court under Arts 226/227; writ petition before AP High Court.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Presiding Officer is a judicial officer equivalent to District Judge.\n",
+          "source": "RDDBFI Act 1993; Constitution of India Arts 226-227"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "AP"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "debt_recovery",
+            "sarfaesi_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 171,
         "y": 480
       }
     },
@@ -5879,7 +8559,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 138,
+        "x": 174,
         "y": 444
       }
     },
@@ -6369,7 +9049,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 141,
+        "x": 176,
         "y": 480
       }
     },
@@ -6892,7 +9572,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 144,
+        "x": 179,
         "y": 444
       }
     },
@@ -7170,7 +9850,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 147,
+        "x": 182,
         "y": 480
       }
     },
@@ -7567,7 +10247,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 150,
+        "x": 184,
         "y": 444
       }
     },
@@ -8964,7 +11644,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 152,
+        "x": 187,
         "y": 480
       }
     },
@@ -9434,7 +12114,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 155,
+        "x": 189,
         "y": 444
       }
     },
@@ -9576,7 +12256,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 158,
+        "x": 192,
         "y": 480
       }
     },
@@ -9710,7 +12390,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 161,
+        "x": 194,
         "y": 444
       }
     },
@@ -10351,7 +13031,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 164,
+        "x": 197,
         "y": 480
       }
     },
@@ -10665,7 +13345,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 167,
+        "x": 199,
         "y": 444
       }
     },
@@ -11319,7 +13999,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 170,
+        "x": 202,
         "y": 480
       }
     },
@@ -11477,7 +14157,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 173,
+        "x": 205,
         "y": 444
       }
     },
@@ -11728,7 +14408,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 176,
+        "x": 207,
         "y": 480
       }
     },
@@ -11949,7 +14629,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 179,
+        "x": 210,
         "y": 444
       }
     },
@@ -28405,7 +31085,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 182,
+        "x": 212,
         "y": 480
       }
     },
@@ -28505,7 +31185,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 185,
+        "x": 215,
         "y": 444
       }
     },
@@ -28929,7 +31609,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 187,
+        "x": 217,
         "y": 480
       }
     },
@@ -29029,7 +31709,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 190,
+        "x": 220,
         "y": 444
       }
     },
@@ -29343,7 +32023,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 193,
+        "x": 223,
         "y": 480
       }
     },
@@ -29443,7 +32123,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 196,
+        "x": 225,
         "y": 444
       }
     },
@@ -29867,7 +32547,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 199,
+        "x": 228,
         "y": 480
       }
     },
@@ -29967,7 +32647,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 202,
+        "x": 230,
         "y": 444
       }
     },
@@ -30391,7 +33071,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 205,
+        "x": 233,
         "y": 480
       }
     },
@@ -30491,7 +33171,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 208,
+        "x": 235,
         "y": 444
       }
     },
@@ -30805,7 +33485,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 211,
+        "x": 238,
         "y": 480
       }
     },
@@ -30905,7 +33585,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 214,
+        "x": 240,
         "y": 444
       }
     },
@@ -31219,7 +33899,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 217,
+        "x": 243,
         "y": 480
       }
     },
@@ -31319,7 +33999,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 220,
+        "x": 246,
         "y": 444
       }
     },
@@ -31646,7 +34326,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 223,
+        "x": 248,
         "y": 480
       }
     },
@@ -31740,7 +34420,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 225,
+        "x": 251,
         "y": 444
       }
     },
@@ -31834,7 +34514,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 228,
+        "x": 253,
         "y": 480
       }
     },
@@ -31928,7 +34608,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 231,
+        "x": 256,
         "y": 444
       }
     },
@@ -32022,7 +34702,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 234,
+        "x": 258,
         "y": 480
       }
     },
@@ -32116,7 +34796,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 237,
+        "x": 261,
         "y": 444
       }
     },
@@ -33500,7 +36180,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 240,
+        "x": 263,
         "y": 480
       }
     },
@@ -33732,7 +36412,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 243,
+        "x": 266,
         "y": 444
       }
     },
@@ -34046,7 +36726,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
+        "x": 269,
         "y": 480
       }
     },
@@ -34146,7 +36826,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 249,
+        "x": 271,
         "y": 444
       }
     },
@@ -34570,7 +37250,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 252,
+        "x": 274,
         "y": 480
       }
     },
@@ -34670,7 +37350,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 255,
+        "x": 276,
         "y": 444
       }
     },
@@ -34984,7 +37664,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 258,
+        "x": 279,
         "y": 480
       }
     },
@@ -35084,7 +37764,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 261,
+        "x": 281,
         "y": 444
       }
     },
@@ -35398,7 +38078,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 263,
+        "x": 284,
         "y": 480
       }
     },
@@ -35498,7 +38178,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 266,
+        "x": 287,
         "y": 444
       }
     },
@@ -35812,7 +38492,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 269,
+        "x": 289,
         "y": 480
       }
     },
@@ -35912,7 +38592,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 272,
+        "x": 292,
         "y": 444
       }
     },
@@ -36226,7 +38906,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 275,
+        "x": 294,
         "y": 480
       }
     },
@@ -36326,7 +39006,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 278,
+        "x": 297,
         "y": 444
       }
     },
@@ -36652,7 +39332,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 281,
+        "x": 299,
         "y": 480
       }
     },
@@ -36746,7 +39426,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 284,
+        "x": 302,
         "y": 444
       }
     },
@@ -36840,7 +39520,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 287,
+        "x": 304,
         "y": 480
       }
     },
@@ -36934,7 +39614,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 290,
+        "x": 307,
         "y": 444
       }
     },
@@ -40872,7 +43552,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 293,
+        "x": 310,
         "y": 480
       }
     },
@@ -41104,7 +43784,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 296,
+        "x": 312,
         "y": 444
       }
     },
@@ -41551,7 +44231,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 299,
+        "x": 315,
         "y": 480
       }
     },
@@ -41651,7 +44331,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 301,
+        "x": 317,
         "y": 444
       }
     },
@@ -41965,7 +44645,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 304,
+        "x": 320,
         "y": 480
       }
     },
@@ -42065,7 +44745,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 307,
+        "x": 322,
         "y": 444
       }
     },
@@ -42379,7 +45059,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 310,
+        "x": 325,
         "y": 480
       }
     },
@@ -42479,7 +45159,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 313,
+        "x": 328,
         "y": 444
       }
     },
@@ -43030,7 +45710,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 316,
+        "x": 330,
         "y": 480
       }
     },
@@ -43136,7 +45816,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 319,
+        "x": 333,
         "y": 444
       }
     },
@@ -43242,7 +45922,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 322,
+        "x": 335,
         "y": 480
       }
     },
@@ -43348,7 +46028,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 325,
+        "x": 338,
         "y": 444
       }
     },
@@ -48108,7 +50788,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 328,
+        "x": 340,
         "y": 480
       }
     },
@@ -48340,7 +51020,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 331,
+        "x": 343,
         "y": 444
       }
     },
@@ -48654,7 +51334,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 334,
+        "x": 345,
         "y": 480
       }
     },
@@ -48754,7 +51434,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 336,
+        "x": 348,
         "y": 444
       }
     },
@@ -49068,7 +51748,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 339,
+        "x": 351,
         "y": 480
       }
     },
@@ -49168,7 +51848,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 342,
+        "x": 353,
         "y": 444
       }
     },
@@ -49592,7 +52272,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 345,
+        "x": 356,
         "y": 480
       }
     },
@@ -49692,7 +52372,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 348,
+        "x": 358,
         "y": 444
       }
     },
@@ -50006,7 +52686,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 351,
+        "x": 361,
         "y": 480
       }
     },
@@ -50106,7 +52786,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 354,
+        "x": 363,
         "y": 444
       }
     },
@@ -50420,7 +53100,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 357,
+        "x": 366,
         "y": 480
       }
     },
@@ -50520,7 +53200,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 360,
+        "x": 369,
         "y": 444
       }
     },
@@ -50834,7 +53514,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 363,
+        "x": 371,
         "y": 480
       }
     },
@@ -50934,7 +53614,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 366,
+        "x": 374,
         "y": 444
       }
     },
@@ -51248,7 +53928,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 369,
+        "x": 376,
         "y": 480
       }
     },
@@ -51348,7 +54028,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 372,
+        "x": 379,
         "y": 444
       }
     },
@@ -51544,7 +54224,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 374,
+        "x": 381,
         "y": 480
       }
     },
@@ -51963,7 +54643,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 377,
+        "x": 384,
         "y": 444
       }
     },
@@ -52387,7 +55067,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 380,
+        "x": 386,
         "y": 480
       }
     },
@@ -52487,7 +55167,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 383,
+        "x": 389,
         "y": 444
       }
     },
@@ -52801,7 +55481,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 386,
+        "x": 392,
         "y": 480
       }
     },
@@ -52901,7 +55581,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 389,
+        "x": 394,
         "y": 444
       }
     },
@@ -53204,7 +55884,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 392,
+        "x": 397,
         "y": 480
       }
     },
@@ -57965,7 +60645,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 395,
+        "x": 399,
         "y": 444
       }
     },
@@ -58189,7 +60869,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 398,
+        "x": 402,
         "y": 480
       }
     },
@@ -58406,7 +61086,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 401,
+        "x": 404,
         "y": 444
       }
     },
@@ -58720,7 +61400,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 404,
+        "x": 407,
         "y": 480
       }
     },
@@ -58820,7 +61500,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 407,
+        "x": 410,
         "y": 444
       }
     },
@@ -59244,7 +61924,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 410,
+        "x": 412,
         "y": 480
       }
     },
@@ -59344,7 +62024,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 412,
+        "x": 415,
         "y": 444
       }
     },
@@ -59658,7 +62338,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 415,
+        "x": 417,
         "y": 480
       }
     },
@@ -59758,7 +62438,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 418,
+        "x": 420,
         "y": 444
       }
     },
@@ -60182,7 +62862,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 421,
+        "x": 422,
         "y": 480
       }
     },
@@ -60282,7 +62962,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 424,
+        "x": 425,
         "y": 444
       }
     },
@@ -62666,7 +65346,7 @@
       "year_abolished": null,
       "data_quality": "partial",
       "contested_note": null,
-      "notes": "Resolved from MoF e-tribunals composition (Hyderabad under DRAT Kolkata) and DRAT Chennai About Us (Hyderabad excluded). Gazette reassigning Hyderabad from original DRAT Chennai circuit not located — see drt_hyderabad unverified_fields.",
+      "notes": "RESOLVED: G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules First Schedule) groups DRT-1/2 Hyderabad under DRAT Kolkata; reconfirmed G.S.R. 429(E)/2021. Originally DRAT Chennai circuit (G.S.R. 134(E)/2000). DRAT Chennai jurisdiction page excludes Hyderabad. See drt_hyderabad data_quality_notes.",
       "sources": [
         {
           "label": "RDDBFI Act 1993, s.18",
@@ -62675,14 +65355,14 @@
           "accessed_date": "2026-06-12"
         },
         {
-          "label": "MoF e-tribunals — DRAT/DRT composition",
-          "url": "https://drt.etribunals.gov.in/drtlive/composition.php",
-          "type": "GoIWebsite",
+          "label": "G.S.R. 538(E) dated 8 June 2018 — DRAT Kolkata Recruitment Rules",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06",
+          "type": "GazetteNotification",
           "accessed_date": "2026-06-12"
         },
         {
-          "label": "DRAT Chennai — About Us",
-          "url": "https://drat.tn.nic.in/AboutUs.htm",
+          "label": "DRAT Chennai — Jurisdiction (Hyderabad absent)",
+          "url": "https://drat.tn.nic.in/Jurisdiction.htm",
           "type": "GoIWebsite",
           "accessed_date": "2026-06-12"
         }
@@ -62785,6 +65465,360 @@
       "data_quality": "partial",
       "contested_note": null,
       "notes": "Maintainer jurisdiction table; J&K/Ladakh extension left partial on entity.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_lucknow_to_drat_allahabad",
+      "source": "drt_lucknow",
+      "target": "drat_allahabad",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 274(E)/2000; S.O. 454(E)/2017; S.O. 4719(E)/2022 circuit.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_jaipur_to_drat_delhi",
+      "source": "drt_jaipur",
+      "target": "drat_delhi",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 655(E)/1994; S.O. 4718(E)/2022 circuit.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_patna_to_drat_allahabad",
+      "source": "drt_patna",
+      "target": "drat_allahabad",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 325(E)/1997 establishment.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_ranchi_to_drat_allahabad",
+      "source": "drt_ranchi",
+      "target": "drat_allahabad",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 113(E)/2002 establishment.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_jabalpur_to_drat_allahabad",
+      "source": "drt_jabalpur",
+      "target": "drat_allahabad",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 181(E)/1998 establishment.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_dehradun_to_drat_allahabad",
+      "source": "drt_dehradun",
+      "target": "drat_allahabad",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2017,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "S.O. 454(E)/2017 — new DRT for Uttarakhand carved from Lucknow circuit.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_guwahati_to_drat_kolkata",
+      "source": "drt_guwahati",
+      "target": "drat_kolkata",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules First Schedule.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "G.S.R. 538(E) dated 8 June 2018",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_cuttack_to_drat_kolkata",
+      "source": "drt_cuttack",
+      "target": "drat_kolkata",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules First Schedule.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "G.S.R. 538(E) dated 8 June 2018",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_siliguri_to_drat_kolkata",
+      "source": "drt_siliguri",
+      "target": "drat_kolkata",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2017,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 538(E)/2018; Siliguri established S.O. 831(E)/2017.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "G.S.R. 538(E) dated 8 June 2018",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_visakhapatnam_to_drat_kolkata",
+      "source": "drt_visakhapatnam",
+      "target": "drat_kolkata",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 112(E)/2002; S.O. 254(E)/2017; G.S.R. 538(E)/2018 DRAT Kolkata circuit (transferred from original DRAT Chennai circuit G.S.R. 134(E)/2000).",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "G.S.R. 538(E) dated 8 June 2018",
+          "url": "https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_ernakulam_to_drat_chennai",
+      "source": "drt_ernakulam",
+      "target": "drat_chennai",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 397(E)/1999; S.O. 4717(E)/2022 circuit.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_coimbatore_to_drat_chennai",
+      "source": "drt_coimbatore",
+      "target": "drat_chennai",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 221(E)/2002; S.O. 4717(E)/2022 circuit.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_madurai_to_drat_chennai",
+      "source": "drt_madurai",
+      "target": "drat_chennai",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 15(E)/2007; S.O. 4717(E)/2022 circuit.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_nagpur_to_drat_mumbai",
+      "source": "drt_nagpur",
+      "target": "drat_mumbai",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 945(E)/2000 establishment.",
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993, s.18",
+          "url": "https://india-code.nic.in/handle/123456789/1573",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drt_aurangabad_to_drat_mumbai",
+      "source": "drt_aurangabad",
+      "target": "drat_mumbai",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "G.S.R. 909(E)/2000; S.O. 4719(E)/2022 circuit.",
       "sources": [
         {
           "label": "RDDBFI Act 1993, s.18",
@@ -73267,6 +76301,9 @@
         "cat",
         "cestat",
         "cg_state_cdrc",
+        "cgit_chandigarh_1",
+        "cgit_chandigarh_2",
+        "cgit_chennai",
         "cgit_delhi",
         "cgit_kolkata",
         "cgit_mumbai",
@@ -73288,14 +76325,29 @@
         "drt",
         "drt_ahmedabad",
         "drt_allahabad",
+        "drt_aurangabad",
         "drt_bengaluru",
         "drt_chandigarh",
         "drt_chennai",
+        "drt_coimbatore",
+        "drt_cuttack",
+        "drt_dehradun",
         "drt_delhi",
+        "drt_ernakulam",
+        "drt_guwahati",
         "drt_hyderabad",
+        "drt_jabalpur",
+        "drt_jaipur",
         "drt_kolkata",
+        "drt_lucknow",
+        "drt_madurai",
         "drt_mumbai",
+        "drt_nagpur",
+        "drt_patna",
         "drt_pune",
+        "drt_ranchi",
+        "drt_siliguri",
+        "drt_visakhapatnam",
         "epfat",
         "ga_state_cdrc",
         "gj_state_cdrc",
@@ -73824,6 +76876,9 @@
         "caar_customs",
         "cat",
         "cestat",
+        "cgit_chandigarh_1",
+        "cgit_chandigarh_2",
+        "cgit_chennai",
         "cgit_delhi",
         "cgit_kolkata",
         "cgit_mumbai",
@@ -73836,14 +76891,29 @@
         "drt",
         "drt_ahmedabad",
         "drt_allahabad",
+        "drt_aurangabad",
         "drt_bengaluru",
         "drt_chandigarh",
         "drt_chennai",
+        "drt_coimbatore",
+        "drt_cuttack",
+        "drt_dehradun",
         "drt_delhi",
+        "drt_ernakulam",
+        "drt_guwahati",
         "drt_hyderabad",
+        "drt_jabalpur",
+        "drt_jaipur",
         "drt_kolkata",
+        "drt_lucknow",
+        "drt_madurai",
         "drt_mumbai",
+        "drt_nagpur",
+        "drt_patna",
         "drt_pune",
+        "drt_ranchi",
+        "drt_siliguri",
+        "drt_visakhapatnam",
         "epfat",
         "gstat",
         "ipab",
@@ -74435,6 +77505,13 @@
       "{'is_all_india': True, 'jurisdiction_types': ['anti_corruption_oversight', 'vigilance_supervision', 'inquiry_referral']}": [
         "central_vigilance_commission"
       ],
+      "{'states_covered': ['PB', 'HP'], 'uts_covered': ['CH'], 'is_all_india': False, 'jurisdiction_types': ['industrial_disputes', 'epf_appeals']}": [
+        "cgit_chandigarh_1",
+        "cgit_chandigarh_2"
+      ],
+      "{'states_covered': ['TN'], 'uts_covered': ['PY'], 'is_all_india': False, 'jurisdiction_types': ['industrial_disputes', 'epf_appeals']}": [
+        "cgit_chennai"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['constitutional_office']}": [
         "deputy_chairman_rajya_sabha",
         "prime_minister",
@@ -74481,7 +77558,13 @@
         "drt_ahmedabad"
       ],
       "{'states_covered': ['UP'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
-        "drt_allahabad"
+        "drt_allahabad",
+        "drt_lucknow"
+      ],
+      "{'states_covered': ['MH'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_aurangabad",
+        "drt_nagpur",
+        "drt_pune"
       ],
       "{'states_covered': ['KA'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_bengaluru"
@@ -74492,11 +77575,33 @@
       "{'states_covered': ['TN'], 'uts_covered': ['PY'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_chennai"
       ],
+      "{'states_covered': ['TN'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_coimbatore",
+        "drt_madurai"
+      ],
+      "{'states_covered': ['OD'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_cuttack"
+      ],
+      "{'states_covered': ['UK'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_dehradun"
+      ],
       "{'states_covered': ['RJ', 'UP'], 'uts_covered': ['DL'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_delhi"
       ],
+      "{'states_covered': ['KL'], 'uts_covered': ['LD'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_ernakulam"
+      ],
+      "{'states_covered': ['AS', 'AR', 'ML', 'MN', 'MZ', 'NL', 'TR', 'SK'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_guwahati"
+      ],
       "{'states_covered': ['TS', 'AP'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_hyderabad"
+      ],
+      "{'states_covered': ['MP', 'CG'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_jabalpur"
+      ],
+      "{'states_covered': ['RJ'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_jaipur"
       ],
       "{'states_covered': ['WB', 'SK'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_kolkata"
@@ -74504,8 +77609,17 @@
       "{'states_covered': ['MH'], 'uts_covered': ['DN'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
         "drt_mumbai"
       ],
-      "{'states_covered': ['MH'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
-        "drt_pune"
+      "{'states_covered': ['BR'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_patna"
+      ],
+      "{'states_covered': ['JH'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_ranchi"
+      ],
+      "{'states_covered': ['WB'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_siliguri"
+      ],
+      "{'states_covered': ['AP'], 'is_all_india': False, 'jurisdiction_types': ['debt_recovery', 'sarfaesi_appeals']}": [
+        "drt_visakhapatnam"
       ],
       "{'is_all_india': True, 'jurisdiction_types': ['Appellate', 'Writ']}": [
         "high_courts_all"

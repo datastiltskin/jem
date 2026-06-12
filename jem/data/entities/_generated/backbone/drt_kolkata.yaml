@@ -68,7 +68,7 @@ data_quality_notes: >
   Kolkata has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Kolkata.
   This entity represents the Kolkata location. Territorial jurisdiction covers
   West Bengal and Sikkim (Siliguri bench separately covers North Bengal/Sikkim
-  catchment; exact split requires Gazette sourcing). MAINTAINER: wire
+  catchment; exact split requires Gazette sourcing).
   AppealableTo → drat_kolkata.
 
 unverified_fields:

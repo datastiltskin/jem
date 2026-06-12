@@ -1,0 +1,100 @@
+id: drt_visakhapatnam
+name: Debt Recovery Tribunal, Visakhapatnam
+name_hindi: ऋण वसूली अधिकरण, विशाखापट्टनम
+abbreviation: DRT Visakhapatnam
+aliases:
+  - DRT Vishakhapatnam
+  - Debts Recovery Tribunal Visakhapatnam
+  - DRT Vizag
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - AP
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 2002
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 112(E) dated 26 February
+  2002. Renamed DRT, Visakhapatnam, Andhra Pradesh by S.O. 254(E) dated 2 February
+  2017 (which also created DRT-2 Hyderabad). Under DRAT Kolkata appellate supervision
+  per G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules). Jurisdiction:
+  coastal Andhra Pradesh districts — East Godavari, West Godavari, Guntur, Krishna,
+  Nellore, Prakasam, Srikakulam, Vizianagaram, and Visakhapatnam.
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_andhra_pradesh
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_andhra_pradesh
+      mechanism: >
+        Supervisory jurisdiction of Andhra Pradesh High Court under Arts 226/227;
+        writ petition before AP High Court.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  DRAT Kolkata supervision RESOLVED — confirmed by G.S.R. 538(E) dated 8 June 2018
+  (DRAT Kolkata Recruitment Rules; see drt_hyderabad notes for full history of
+  transfer from original DRAT Chennai circuit under G.S.R. 134(E)/2000).
+  District jurisdiction sourced from BankAuctions.in per G.S.R. 112(E): East Godavari,
+  West Godavari, Guntur, Krishna, Nellore, Prakasam, Srikakulam, Vizianagaram,
+  Visakhapatnam. These are the coastal AP districts; remainder of AP/Telangana covered
+  by DRT Hyderabad. Full DRAT transfer history documented on drt_hyderabad and
+  drat_kolkata (G.S.R. 134(E)/2000 → G.S.R. 538(E)/2018 → G.S.R. 429(E)/2021).
+
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: >
+      G.S.R. 112(E) dated 26 February 2002 — DRT Visakhapatnam established;
+      jurisdiction: coastal AP districts
+    url: https://bankauctions.in/asset-recovery/debt-recovery-tribunal/
+    type: GazetteNotification
+    accessed_date: '2026-06-12'
+  - label: >
+      S.O. 254(E) dated 2 February 2017 — DRT renamed DRT, Visakhapatnam,
+      Andhra Pradesh (post-AP bifurcation)
+    url: https://taxguru.in/corporate-law/govt-notifies-debts-recovery-tribunals-hyderabad-visakhapatnam.html
+    type: GazetteNotification
+    accessed_date: '2026-06-12'
+  - label: >
+      DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018;
+      confirms DRAT Kolkata supervision
+    url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp
+    type: GazetteNotification
+    accessed_date: '2026-06-12'

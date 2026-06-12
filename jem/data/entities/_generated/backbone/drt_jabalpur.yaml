@@ -1,0 +1,91 @@
+id: drt_jabalpur
+name: Debt Recovery Tribunal, Jabalpur
+name_hindi: ऋण वसूली अधिकरण, जबलपुर
+abbreviation: DRT Jabalpur
+aliases:
+  - Debts Recovery Tribunal Jabalpur
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - MP
+    - CG
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 1998
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. Notified vide G.S.R. 181(E) dated 7 April 1998.
+  Single-bench tribunal under DRAT Allahabad. Jurisdiction covers States of Madhya
+  Pradesh and Chhattisgarh (Chhattisgarh became a separate state in 2000; its
+  territory remained within DRT Jabalpur's catchment).
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_madhya_pradesh
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_madhya_pradesh
+      mechanism: >
+        Supervisory jurisdiction of Madhya Pradesh High Court under Arts 226/227;
+        writ petition before Madhya Pradesh High Court at Jabalpur.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  G.S.R. 181(E) dated 7 April 1998 establishes DRT Jabalpur; jurisdiction: States of
+  Madhya Pradesh and Chhattisgarh. DRAT Allahabad supervision confirmed. Note: DRT
+  Jabalpur is notable as the original DRAT Allahabad jurisdiction listing includes it
+  (per GSR 5(E)/2001 DRAT Allahabad setup). HC supervisory jurisdiction: MP High Court
+  at Jabalpur; Chhattisgarh HC at Bilaspur may also have supervisory role for cases
+  from Chhattisgarh territory — not definitively resolved in secondary sources; left
+  partial.
+
+unverified_fields:
+  - field: jurisdiction_scope.states_covered
+    note: >
+      Chhattisgarh HC supervisory role over MP DRT for CG territory not resolved.
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: >
+      DRT Jabalpur — GSR 181(E) 7.4.1998; jurisdiction: MP and Chhattisgarh
+    url: https://bankauctions.in/asset-recovery/debt-recovery-tribunal/
+    type: OfficialReport
+    accessed_date: '2026-06-12'
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

@@ -1,0 +1,92 @@
+id: drt_siliguri
+name: Debt Recovery Tribunal, Siliguri
+name_hindi: ऋण वसूली अधिकरण, सिलीगुड़ी
+abbreviation: DRT Siliguri
+aliases:
+  - Debts Recovery Tribunal Siliguri
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - WB
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 2002
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. Single-bench tribunal under DRAT Kolkata (per
+  G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules). Jurisdiction: North Bengal
+  districts of West Bengal not covered by DRT Kolkata I/II/III.
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_calcutta
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_calcutta
+      mechanism: >
+        Supervisory jurisdiction of Calcutta High Court under Arts 226/227;
+        writ petition before Calcutta High Court. Calcutta HC circuit bench at
+        Jalpaiguri may also have supervisory role.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  DRAT Kolkata supervision confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata
+  Recruitment Rules). Exact North Bengal districts in jurisdiction not extracted from
+  primary GSR. Created_year: 2002 estimated — Siliguri DRT Recruitment Rules are
+  notably absent from the 2001-era rules consolidated in 2018 (LDC and Steno Rules
+  only from 2017), suggesting establishment circa 2002 (similar era to other new-state
+  DRTs). Jurisdiction: North Bengal districts (Jalpaiguri, Darjeeling, Cooch Behar,
+  Alipurduar, Kalimpong, Malda, Dinajpur, Murshidabad tentatively). Exact list per
+  current gazette required.
+
+unverified_fields:
+  - field: created_year
+    note: >
+      2002 is estimate; Siliguri LDC/Steno rules appear from 2017 consolidation — direct G.S.R. establishment notification not retrieved.
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: >
+      DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018;
+      lists DRT Siliguri under DRAT Kolkata
+    url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp
+    type: GazetteNotification
+    accessed_date: '2026-06-12'
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

@@ -75,7 +75,7 @@ data_quality_notes: >
   specific district-level breakdown requires Gazette notification sourcing from
   drt.gov.in. Note: DRT Delhi bench jurisdiction cited in Raizada Associates legal
   source confirms "multiple benches (DRT-I, DRT-II, DRT-III) each with its own
-  territorial jurisdiction". MAINTAINER: wire AppealableTo → drat (aggregate entity; supervising DRAT bench-level entities not yet in graph — see data_quality_notes for supervising DRAT).
+  territorial jurisdiction".
 
 unverified_fields:
   - field: created_year

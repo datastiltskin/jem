@@ -1,0 +1,82 @@
+id: drt_patna
+name: Debt Recovery Tribunal, Patna
+name_hindi: ऋण वसूली अधिकरण, पटना
+abbreviation: DRT Patna
+aliases:
+  - Debts Recovery Tribunal Patna
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - BR
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 1997
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. Notified vide G.S.R. 325(E) dated 24 January 1997.
+  Single-bench tribunal under DRAT Allahabad. Jurisdiction: State of Bihar (pre-2002);
+  Jharkhand was carved out to DRT Ranchi vide G.S.R. 113(E) dated 26 February 2002
+  following Jharkhand's formation in 2000.
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_patna
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_patna
+      mechanism: >
+        Supervisory jurisdiction of Patna High Court under Arts 226/227;
+        writ petition before Patna High Court.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  G.S.R. 325(E) dated 24 January 1997 establishes DRT Patna; jurisdiction: State of
+  Bihar. Jharkhand separated to DRT Ranchi (G.S.R. 113(E), 26 Feb 2002) following
+  state bifurcation in 2000. DRAT Allahabad supervision per jabalpuradvocate.com
+  and TaxTMI (consistent across sources).
+
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: 'DRT Patna — GSR 325(E) 24.1.1997; jurisdiction: State of Bihar'
+    url: https://bankauctions.in/asset-recovery/debt-recovery-tribunal/
+    type: OfficialReport
+    accessed_date: '2026-06-12'
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

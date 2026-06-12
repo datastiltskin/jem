@@ -79,7 +79,7 @@ data_quality_notes: >
   notification for relocation of Chandigarh DRTs. J&K and Ladakh jurisdiction
   (per DRTchandigarh Facebook page: "J&K, Punjab, Haryana, Himachal Pradesh") is
   included but exact post-J&K Reorganisation Act 2019 applicability of RDDBFI requires
-  confirmation; left partial. MAINTAINER: wire AppealableTo → drat (aggregate entity; supervising DRAT bench-level entities not yet in graph — see data_quality_notes for supervising DRAT).
+  confirmation; left partial.
 
 unverified_fields:
   - field: created_year

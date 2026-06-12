@@ -68,8 +68,7 @@ data_quality_notes: >
   Ahmedabad has two DRT benches (DRT-I, DRT-II) under DRAT Mumbai. DRAT Mumbai
   supervision confirmed across multiple consistent secondary sources (TaxTMI,
   jabalpuradvocate.com). Exact Rajasthan district distribution between DRT Ahmedabad
-  and DRT Jaipur requires Gazette notification sourcing. MAINTAINER: wire
-  AppealableTo → drat_mumbai.
+  and DRT Jaipur requires Gazette notification sourcing.
 
 unverified_fields:
   - field: created_year

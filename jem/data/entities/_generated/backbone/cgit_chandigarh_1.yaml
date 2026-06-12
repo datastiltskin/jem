@@ -1,0 +1,87 @@
+id: cgit_chandigarh_1
+name: Central Government Industrial Tribunal-cum-Labour Court No. I, Chandigarh
+name_hindi: केन्द्रीय सरकारी औद्योगिक अधिकरण-सह-श्रम न्यायालय संख्या I, चंडीगढ़
+abbreviation: CGIT-I Chandigarh
+aliases:
+  - CGIT Chandigarh-I
+  - CGIT-cum-LC No. 1 Chandigarh
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - PB
+    - HP
+  uts_covered:
+    - CH
+  is_all_india: false
+  jurisdiction_types:
+    - industrial_disputes
+    - epf_appeals
+
+created_year: 1956
+operational_status: Active
+
+statutory_basis: >
+  Industrial Disputes Act, 1947, s. 7A and s. 7B. Established by Central Government
+  notification. Also adjudicates EPF/MP Act 1952 appeals per Finance Act 2017 amendment.
+  Jurisdiction: Punjab, Himachal Pradesh, and UT Chandigarh — specifically handles
+  even-numbered cases (alternating with CGIT-II Chandigarh for odd-numbered cases),
+  per official cgit.labour.gov.in jurisdiction table.
+
+appointment:
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: 'At pleasure of Central Government; typically until age of superannuation'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_labour_employment
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_punjab_haryana
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_punjab_haryana
+      mechanism: >
+        Supervisory jurisdiction of Punjab and Haryana High Court under Arts 226/227;
+        writ petition before Punjab and Haryana High Court.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  source: Industrial Disputes Act 1947; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  Jurisdiction confirmed from official cgit.labour.gov.in jurisdiction table:
+  Punjab, Himachal Pradesh, UT Chandigarh — even-numbered cases. The two Chandigarh
+  benches (CGIT-I and CGIT-II) have co-extensive territorial jurisdiction but divide
+  cases by case number (even/odd). Separate entities warranted as the official site
+  treats them as distinct seats. Created_year: 1956 is an estimate; specific
+  notification year for Chandigarh seat not sourced. No relationships generated.
+
+unverified_fields:
+  - field: created_year
+    note: >
+      1956 is estimate; Chandigarh seat establishment notification year not sourced.
+sources:
+  - label: 'Industrial Disputes Act 1947, s. 7A and s. 7B'
+    url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: >
+      CGIT jurisdiction table — official cgit.labour.gov.in; Chandigarh-I:
+      Punjab, HP, UT Chandigarh (even-numbered cases)
+    url: https://cgit.labour.gov.in/jurisdiction
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

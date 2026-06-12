@@ -20,15 +20,18 @@ jurisdiction_scope:
     - debt_recovery
     - sarfaesi_appeals
 
-created_year: 1994
+created_year: 1999
 operational_status: Active
 
 statutory_basis: >
   Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Hyderabad has two benches (DRT-I, DRT-II).
-  Territorial jurisdiction notified by Central Government under s. 3(1A) RDDBFI Act.
-  Post-AP bifurcation (2014), Hyderabad DRTs serve both Telangana and Andhra Pradesh;
-  Visakhapatnam has a separate DRT bench for coastal AP.
+  s. 3; SARFAESI Act, 2002, s. 17. Original DRT Hyderabad established vide G.S.R.
+  647(E) dated 21 September 1999. DRT-2 Hyderabad added by S.O. 254(E) dated
+  2 February 2017 (existing bench renamed DRT-1 Hyderabad, Telangana). Appellate
+  supervision: DRAT Kolkata per G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata
+  Recruitment Rules), reconfirmed by G.S.R. 429(E) (June 2021). Originally under
+  DRAT Chennai circuit (G.S.R. 134(E), 17 February 2000) until transfer to DRAT
+  Kolkata circuit by or before the 2018 Recruitment Rules.
 
 appointment:
   nominates: ministry_of_finance
@@ -69,26 +72,57 @@ complaint_mechanism:
 
 data_quality: partial
 data_quality_notes: >
-  Resolved to DRAT Kolkata (drat_kolkata): MoF e-tribunals composition page lists
-  Hyderabad DRT-I and DRT-II under DRAT Kolkata; DRAT Chennai official About Us
-  (drat.tn.nic.in) lists 9 southern DRTs and excludes Hyderabad. vLex/TaxTMI
-  conflict noted in sources — superseded by official listings. Gazette notification
-  reassigning Hyderabad from original DRAT Chennai circuit (G.S.R. 134(E) 2000)
-  to DRAT Kolkata not located in this pass.
+  DRAT assignment RESOLVED: DRT Hyderabad (I & II) are under DRAT Kolkata
+  (drat_kolkata). Evidence chain: (1) G.S.R. 134(E), 17 Feb 2000 established DRAT
+  Chennai with Hyderabad and Visakhapatnam in the original southern circuit;
+  (2) S.O. 254(E), 2 Feb 2017 created DRT-2 Hyderabad and realigned post-AP
+  bifurcation jurisdictions; (3) G.S.R. 538(E), 8 Jun 2018 — DRAT Kolkata
+  Recruitment Rules First Schedule groups DRT-1 Hyderabad, DRT-2 Hyderabad, and
+  DRT Visakhapatnam with DRAT Kolkata (common cadre/administrative circuit);
+  (4) G.S.R. 429(E), Jun 2021 amendment reconfirms same grouping; (5) DRAT Chennai
+  official jurisdiction page lists 9 southern DRTs and excludes Hyderabad and
+  Visakhapatnam. vLex and similar sources reflected the superseded G.S.R. 134(E)
+  2000 table. Specific standalone DRAT s.8 reallocation Gazette PDF not located
+  on egazette.gov.in in this pass; 2018 Recruitment Rules are the conclusive GoI
+  instrument for current appellate circuit assignment.
 
 unverified_fields:
-  - field: created_year
+  - field: sources.gsr_538_egazette_pdf
     note: >
-      1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
-  - field: appellate_assignment
-    note: >
-      Gazette notification reassigning Hyderabad DRT appeals to DRAT Kolkata not verified on egazette.gov.in — resolved from MoF portal + DRAT Chennai negative listing only.
+      Direct egazette.gov.in PDF for G.S.R. 538(E) dated 8 June 2018 not retrieved
+      (portal blocked automated access); CaseMine transcription used as secondary
+      mirror. Manual search: GSR 538(E) + year 2018 + Ministry of Finance.
+
 sources:
   - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
     url: https://india-code.nic.in/CodeofActs13/19930951.pdf
     type: CentralAct
-    accessed_date: '2026-06-11'
+    accessed_date: '2026-06-12'
+  - label: G.S.R. 647(E) dated 21 September 1999 — DRT Hyderabad established
+    url: https://taxguru.in/corporate-law/govt-notifies-debts-recovery-tribunals-hyderabad-visakhapatnam.html
+    type: GazetteNotification
+    accessed_date: '2026-06-12'
+  - label: S.O. 254(E) dated 2 February 2017 — DRT-2 Hyderabad; bifurcation realignment
+    url: https://taxguru.in/corporate-law/govt-notifies-debts-recovery-tribunals-hyderabad-visakhapatnam.html
+    type: GazetteNotification
+    accessed_date: '2026-06-12'
+  - label: >-
+      G.S.R. 134(E) dated 17 February 2000 — DRAT Chennai (original circuit included
+      Hyderabad; superseded for appellate assignment)
+    url: https://drat.tn.nic.in/AboutUs.htm
+    type: GazetteNotification
+    accessed_date: '2026-06-12'
+  - label: >-
+      DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018;
+      First Schedule groups DRT-1/2 Hyderabad under DRAT Kolkata
+    url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06
+    type: GazetteNotification
+    accessed_date: '2026-06-12'
+  - label: DRAT Chennai official jurisdiction — Hyderabad and Visakhapatnam absent
+    url: https://drat.tn.nic.in/Jurisdiction.htm
+    type: GoIWebsite
+    accessed_date: '2026-06-12'
   - label: 'DRT official portal — Ministry of Finance, DFS'
     url: https://drt.gov.in/
     type: GoIWebsite
-    accessed_date: '2026-06-11'
+    accessed_date: '2026-06-12'

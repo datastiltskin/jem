@@ -1,0 +1,87 @@
+id: drt_aurangabad
+name: Debt Recovery Tribunal, Aurangabad
+name_hindi: ऋण वसूली अधिकरण, औरंगाबाद
+abbreviation: DRT Aurangabad
+aliases:
+  - Debts Recovery Tribunal Aurangabad
+  - DRT Chhatrapati Sambhajinagar
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - MH
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 2000
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 909(E) dated 7 December
+  2000. Single-bench tribunal under DRAT Mumbai. Official address per S.O. 4719(E)
+  dated 4 October 2022: Ground Floor, Jeevan Suman, LIC Building, Plot No. 3, N-5,
+  CIDCO, Aurangabad. Jurisdiction: Aurangabad (Chhatrapati Sambhajinagar), Nanded,
+  Jalna, Beed, Parbhani, Hingoli, Osmanabad (Dharashiv), Latur, Ahmednagar, Jalgaon,
+  Dhule, and Nandurbar districts of Maharashtra.
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_bombay
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_bombay
+      mechanism: >
+        Supervisory jurisdiction of Bombay High Court (Aurangabad Bench) under
+        Arts 226/227; writ petition before Bombay HC Aurangabad Bench.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  G.S.R. 909(E) dated 7 December 2000. Address and jurisdiction per S.O. 4719(E)
+  dated 4 October 2022. Note: Aurangabad was renamed Chhatrapati Sambhajinagar by
+  Maharashtra government (2023); official DRT name in GoI publications still uses
+  Aurangabad as of last sourcing; alias added. DRAT Mumbai confirmed.
+
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: >
+      S.O. 4719(E) dated 4 October 2022 — official jurisdiction table Mumbai circuit;
+      Aurangabad address and district list confirmed
+    url: https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/
+    type: GazetteNotification
+    accessed_date: '2026-06-12'
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

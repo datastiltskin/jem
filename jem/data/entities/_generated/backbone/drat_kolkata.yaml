@@ -23,9 +23,11 @@ created_year: 2000
 operational_status: Active
 statutory_basis: >-
   Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act),
-  s.8 — established vide G.S.R. 257(E), 24 March 2000. Appellate jurisdiction
-  over eastern-region DRT benches including Hyderabad (DRT-I, DRT-II) and
-  Visakhapatnam per MoF e-tribunals composition listing.
+  s.8 — established vide G.S.R. 257(E), 24 March 2000. Appellate circuit for
+  DRT-1/2 Hyderabad and DRT Visakhapatnam confirmed by G.S.R. 538(E) dated
+  8 June 2018 (DRAT Kolkata Recruitment Rules First Schedule) and G.S.R. 429(E)
+  (June 2021 amendment). These DRTs were originally in the DRAT Chennai circuit
+  under G.S.R. 134(E), 17 February 2000, before transfer to DRAT Kolkata.
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
@@ -48,16 +50,26 @@ complaint_mechanism:
 data_quality: partial
 data_quality_notes: >-
   Bench-level DRAT entity (C04). Supervises DRT Kolkata 1–3, DRT Hyderabad 1–2,
-  DRT Visakhapatnam, DRT Siliguri, DRT Cuttack, DRT Guwahati per MoF e-tribunals
-  portal composition page. Gazette notification reassigning Hyderabad/Visakhapatnam
-  from DRAT Chennai circuit (original G.S.R. 134(E) 2000) to DRAT Kolkata not
-  independently verified in this pass — see drt_hyderabad unverified_fields.
+  DRT Visakhapatnam, DRT Siliguri, DRT Cuttack, DRT Guwahati. Hyderabad and
+  Visakhapatnam transferred from DRAT Chennai circuit (G.S.R. 134(E)/2000) to
+  DRAT Kolkata per G.S.R. 538(E)/2018 Recruitment Rules First Schedule; reconfirmed
+  G.S.R. 429(E)/2021. DRAT Chennai official jurisdiction excludes Hyderabad and
+  Visakhapatnam. Standalone DRAT s.8 reallocation Gazette PDF not located;
+  recruitment rules are conclusive administrative evidence.
 sources:
 - label: RDDBFI Act 1993, s.8–18 — DRAT provisions
   url: https://india-code.nic.in/handle/123456789/1573
   type: CentralAct
   accessed_date: '2026-06-12'
+- label: DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018
+  url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
 - label: MoF e-tribunals — DRAT/DRT composition listing
   url: https://drt.etribunals.gov.in/drtlive/composition.php
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+- label: DRAT Chennai official jurisdiction — Hyderabad and Visakhapatnam absent
+  url: https://drat.tn.nic.in/Jurisdiction.htm
   type: GoIWebsite
   accessed_date: '2026-06-12'

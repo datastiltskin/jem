@@ -67,7 +67,7 @@ data_quality_notes: >
   confirmed across multiple consistent secondary sources. Exact district-level
   territorial jurisdiction requires Gazette notification sourcing from drt.gov.in.
   Bombay High Court exercises supervisory jurisdiction (Pune is within Bombay HC
-  territorial jurisdiction). MAINTAINER: wire AppealableTo → drat (aggregate entity; supervising DRAT bench-level entities not yet in graph — see data_quality_notes for supervising DRAT).
+  territorial jurisdiction).
 
 unverified_fields:
   - field: created_year

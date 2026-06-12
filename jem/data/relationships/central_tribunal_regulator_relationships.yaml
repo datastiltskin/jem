@@ -274,20 +274,21 @@ relationships:
     year_established: 1993
     data_quality: partial
     notes: >-
-      Resolved from MoF e-tribunals composition (Hyderabad under DRAT Kolkata) and
-      DRAT Chennai About Us (Hyderabad excluded). Gazette reassigning Hyderabad from
-      original DRAT Chennai circuit not located — see drt_hyderabad unverified_fields.
+      RESOLVED: G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules First
+      Schedule) groups DRT-1/2 Hyderabad under DRAT Kolkata; reconfirmed G.S.R.
+      429(E)/2021. Originally DRAT Chennai circuit (G.S.R. 134(E)/2000). DRAT Chennai
+      jurisdiction page excludes Hyderabad. See drt_hyderabad data_quality_notes.
     sources:
       - label: "RDDBFI Act 1993, s.18"
         url: https://india-code.nic.in/handle/123456789/1573
         type: CentralAct
         accessed_date: "2026-06-12"
-      - label: "MoF e-tribunals — DRAT/DRT composition"
-        url: https://drt.etribunals.gov.in/drtlive/composition.php
-        type: GoIWebsite
+      - label: "G.S.R. 538(E) dated 8 June 2018 — DRAT Kolkata Recruitment Rules"
+        url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06
+        type: GazetteNotification
         accessed_date: "2026-06-12"
-      - label: "DRAT Chennai — About Us"
-        url: https://drat.tn.nic.in/AboutUs.htm
+      - label: "DRAT Chennai — Jurisdiction (Hyderabad absent)"
+        url: https://drat.tn.nic.in/Jurisdiction.htm
         type: GoIWebsite
         accessed_date: "2026-06-12"
 
@@ -365,6 +366,281 @@ relationships:
     year_established: 1993
     data_quality: partial
     notes: Maintainer jurisdiction table; J&K/Ladakh extension left partial on entity.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  # ── C04 DRT batch 2 — location DRT → bench DRAT ─────────────────────────
+
+  - id: rel_drt_lucknow_to_drat_allahabad
+    source: drt_lucknow
+    target: drat_allahabad
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 274(E)/2000; S.O. 454(E)/2017; S.O. 4719(E)/2022 circuit.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_jaipur_to_drat_delhi
+    source: drt_jaipur
+    target: drat_delhi
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 655(E)/1994; S.O. 4718(E)/2022 circuit.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_patna_to_drat_allahabad
+    source: drt_patna
+    target: drat_allahabad
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 325(E)/1997 establishment.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_ranchi_to_drat_allahabad
+    source: drt_ranchi
+    target: drat_allahabad
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 113(E)/2002 establishment.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_jabalpur_to_drat_allahabad
+    source: drt_jabalpur
+    target: drat_allahabad
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 181(E)/1998 establishment.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_dehradun_to_drat_allahabad
+    source: drt_dehradun
+    target: drat_allahabad
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 2017
+    data_quality: partial
+    notes: S.O. 454(E)/2017 — new DRT for Uttarakhand carved from Lucknow circuit.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_guwahati_to_drat_kolkata
+    source: drt_guwahati
+    target: drat_kolkata
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules First Schedule.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "G.S.R. 538(E) dated 8 June 2018"
+        url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06
+        type: GazetteNotification
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_cuttack_to_drat_kolkata
+    source: drt_cuttack
+    target: drat_kolkata
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules First Schedule.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "G.S.R. 538(E) dated 8 June 2018"
+        url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06
+        type: GazetteNotification
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_siliguri_to_drat_kolkata
+    source: drt_siliguri
+    target: drat_kolkata
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 2017
+    data_quality: partial
+    notes: G.S.R. 538(E)/2018; Siliguri established S.O. 831(E)/2017.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "G.S.R. 538(E) dated 8 June 2018"
+        url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06
+        type: GazetteNotification
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_visakhapatnam_to_drat_kolkata
+    source: drt_visakhapatnam
+    target: drat_kolkata
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: >-
+      G.S.R. 112(E)/2002; S.O. 254(E)/2017; G.S.R. 538(E)/2018 DRAT Kolkata circuit
+      (transferred from original DRAT Chennai circuit G.S.R. 134(E)/2000).
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "G.S.R. 538(E) dated 8 June 2018"
+        url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06
+        type: GazetteNotification
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_ernakulam_to_drat_chennai
+    source: drt_ernakulam
+    target: drat_chennai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 397(E)/1999; S.O. 4717(E)/2022 circuit.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_coimbatore_to_drat_chennai
+    source: drt_coimbatore
+    target: drat_chennai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 221(E)/2002; S.O. 4717(E)/2022 circuit.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_madurai_to_drat_chennai
+    source: drt_madurai
+    target: drat_chennai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 15(E)/2007; S.O. 4717(E)/2022 circuit.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_nagpur_to_drat_mumbai
+    source: drt_nagpur
+    target: drat_mumbai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 945(E)/2000 establishment.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_aurangabad_to_drat_mumbai
+    source: drt_aurangabad
+    target: drat_mumbai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: G.S.R. 909(E)/2000; S.O. 4719(E)/2022 circuit.
     sources:
       - label: "RDDBFI Act 1993, s.18"
         url: https://india-code.nic.in/handle/123456789/1573
