@@ -1,0 +1,105 @@
+id: cit_appeals_generic
+name: Commissioner of Income Tax (Appeals) — Generic
+name_hindi: आयकर आयुक्त (अपील) — सामान्य
+abbreviation: CIT(A)
+aliases:
+- Commissioner of Income Tax Appeals
+- Joint Commissioner of Income Tax (Appeals)
+- JCIT(A)
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+created_year: 1974
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Income Tax Act 1961 s.246A (appeals to CIT(A)); s.249–251 (procedure and powers of CIT(A)); Finance Act 2023 — introduction of Joint CIT(A) cadre for small taxpayer appeals; Income Tax (Appellate Tribunal) Rules 1963 (ITAT as second appellate forum above CIT(A))
+appointment:
+  nominates: cbdt
+  recommends: null
+  consulted: []
+  consultation_binding: null
+  formally_appoints: central_government
+  criteria_public: false
+  tenure: IRS cadre service tenure; no fixed term for the adjudicatory function
+  reappointment_possible: null
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+  state_contribution_percent: null
+  budget_figure_crore: null
+  budget_year: null
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: cbdt
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: Departmental proceedings under CCS (CCA) Rules 1965; IRS service rules
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: CIT(A) officers are Group A Central Government servants; Lokpal jurisdiction applies per Lokpal and Lokayuktas Act 2013 s.14(1)(a), unlike independent tribunal members.
+  source: null
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+  - Income tax assessments — first appellate forum
+  - TDS/TCS disputes
+  - Penalty orders under Income Tax Act 1961
+  states_covered: []
+  uts_covered: []
+case_volume:
+  data_as_of: null
+  pending_cases: null
+  filed_last_year: null
+  disposed_last_year: null
+  source_url: null
+  source_type: null
+  clog_severity: high
+structural_gap:
+  flag: true
+  gaps:
+  - gap_id: cit_a_appeal_backlog
+    gap_type: Data_Gap
+    gap_severity: High
+    gap_description: >-
+      Commissioner (Appeals) units are overburdened — appeals filed exceed
+      disposals and pendency carries forward annually (Finance Act 2023
+      memorandum). Union Budget 2023-24 proposed ~100 JCIT(A) posts for small
+      appeals; e-Appeals Scheme 2023 partially addresses backlog. No stable
+      official CBDT disaggregated pending-case count URL at authoring time.
+    gap_source: >-
+      PIB Union Budget 2023-24 Highlights (PRID 1895315); Finance Act 2023
+      s.246 substitution memorandum
+    gap_since_year: 2000
+    gap_status: Partial_Addressed
+data_quality: partial
+data_quality_notes: >-
+  TYPE NOTE: Typed ExecutiveBody / executive_interface rather than RegulatoryBodyQJ because CIT(A) officers are IRS cadre within the Income Tax Department, not independently appointed tribunal members; they exercise quasi-judicial powers departmentally. Maintainer may reconsider if a departmental-adjudicator subtype is added to the schema.
+
+  APPELLATE CHAIN: AO → CIT(A) → ITAT → HC (questions of law) → SC. CIT(A) is the first appellate forum under IT Act 1961 s.246A.
+
+  Judge-strength concept not applicable — IRS officer posts sanctioned by CBDT/DoPT but not disaggregated publicly per CIT(A) unit.
+sources:
+- label: Income Tax Act 1961 s.246A — jurisdiction of CIT(A)
+  url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: Finance Act 2023 — Joint CIT(A) introduction
+  url: https://www.india-code.nic.in/CodeofActs/2023/2023_08.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: Income Tax India — official portal
+  url: https://incometaxindia.gov.in
+  type: GoIWebsite
+  accessed_date: '2026-06-11'
+- label: Union Budget 2023-24 Highlights — CIT(A) pendency and JCIT(A) deployment
+  url: https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1895315
+  type: GoIWebsite
+  accessed_date: '2026-06-12'

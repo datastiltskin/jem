@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-06-12T06:55:07.657240+00:00",
-    "entity_count": 556,
+    "generated_at": "2026-06-12T07:12:19.110410+00:00",
+    "entity_count": 577,
     "relationship_count": 550,
     "canvas_width": 1800,
     "canvas_height": 1200,
@@ -12,11 +12,11 @@
     ]
   },
   "impact_metrics": {
-    "high_independence_risk_count": 87,
+    "high_independence_risk_count": 106,
     "appointer_equals_funder_removal_count": 0,
-    "no_public_appointment_criteria_count": 46,
+    "no_public_appointment_criteria_count": 48,
     "not_constituted_count": 4,
-    "no_external_complaint_mechanism_count": 554
+    "no_external_complaint_mechanism_count": 575
   },
   "timeline_events": [
     {
@@ -150,8 +150,8 @@
       "id": "tribunals_adr",
       "name": "Tribunals Adr",
       "color": "#2b6cb0",
-      "entity_count": 145,
-      "avg_independence_risk": 5.0,
+      "entity_count": 164,
+      "avg_independence_risk": 5.2,
       "not_constituted_count": 1,
       "position": {
         "x": 28,
@@ -160,6 +160,22 @@
         "height": 280,
         "cluster_col": 0,
         "cluster_row": 1
+      }
+    },
+    {
+      "id": "executive_interface",
+      "name": "Executive Interface",
+      "color": "#742a2a",
+      "entity_count": 18,
+      "avg_independence_risk": 0.6,
+      "not_constituted_count": 2,
+      "position": {
+        "x": 466,
+        "y": 604,
+        "width": 430,
+        "height": 280,
+        "cluster_col": 1,
+        "cluster_row": 2
       }
     },
     {
@@ -176,22 +192,6 @@
         "height": 280,
         "cluster_col": 3,
         "cluster_row": 0
-      }
-    },
-    {
-      "id": "executive_interface",
-      "name": "Executive Interface",
-      "color": "#742a2a",
-      "entity_count": 16,
-      "avg_independence_risk": 0.6,
-      "not_constituted_count": 2,
-      "position": {
-        "x": 466,
-        "y": 604,
-        "width": 430,
-        "height": 280,
-        "cluster_col": 1,
-        "cluster_row": 2
       }
     },
     {
@@ -474,7 +474,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 59,
+        "x": 58,
         "y": 480
       }
     },
@@ -630,6 +630,1788 @@
       }
     },
     {
+      "id": "aft_chandigarh",
+      "name": "Armed Forces Tribunal — Chandigarh Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "PB",
+          "HR",
+          "HP"
+        ],
+        "uts_covered": [
+          "CH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — चंडीगढ़ पीठ",
+      "abbreviation": "AFT Chandigarh",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Regional bench per aft.gov.in/jurisdiction: PB, HR, HP, CH. J&K/Ladakh under separate Jammu bench (not yet in corpus). Judge strength not populated.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench listing",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson: 4 years or age 70 whichever earlier; Members: 4 years or age 65 whichever earlier (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10 — inquiry by Supreme Court judge, President removes on report",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Tribunal judicial members not within Lokpal jurisdiction per Lokpal Act 2013 s.14",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "PB",
+            "HR",
+            "HP"
+          ],
+          "uts_covered": [
+            "CH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 63,
+        "y": 480
+      }
+    },
+    {
+      "id": "aft_chennai",
+      "name": "Armed Forces Tribunal — Chennai Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN",
+          "AP"
+        ],
+        "uts_covered": [
+          "PY"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — चेन्नई पीठ",
+      "abbreviation": "AFT Chennai",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction per aft.gov.in; southern states and southern UTs. Per aft.gov.in/jurisdiction: TN, AP, PY. Telangana matters heard at Hyderabad circuit bench (aft_hyderabad). Karnataka and Lakshadweep under Kochi bench.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN",
+            "AP"
+          ],
+          "uts_covered": [
+            "PY"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 65,
+        "y": 444
+      }
+    },
+    {
+      "id": "aft_guwahati",
+      "name": "Armed Forces Tribunal — Guwahati Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "AS",
+          "ML",
+          "AR",
+          "NL",
+          "MN",
+          "MZ",
+          "TR",
+          "SK"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — गुवाहाटी पीठ",
+      "abbreviation": "AFT Guwahati",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Per aft.gov.in/jurisdiction: Northeast region states. No overlap with Kolkata bench eastern states.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "AS",
+            "ML",
+            "AR",
+            "NL",
+            "MN",
+            "MZ",
+            "TR",
+            "SK"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 67,
+        "y": 480
+      }
+    },
+    {
+      "id": "aft_hyderabad",
+      "name": "Armed Forces Tribunal — Hyderabad Circuit Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TS"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — हैदराबाद पीठ",
+      "abbreviation": "AFT Hyderabad",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Circuit bench at Secunderabad under Chennai regional bench (aft.gov.in/jurisdiction). Territorial coverage: Telangana only; Andhra Pradesh remains under aft_chennai. Judge strength not populated.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TS"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 70,
+        "y": 444
+      }
+    },
+    {
+      "id": "aft_jabalpur",
+      "name": "Armed Forces Tribunal — Jabalpur Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MP",
+          "CG"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — जबलपुर पीठ",
+      "abbreviation": "AFT Jabalpur",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Regional bench per aft.gov.in/jurisdiction: MP, CG. Judge strength not populated.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MP",
+            "CG"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 72,
+        "y": 480
+      }
+    },
+    {
+      "id": "aft_jaipur",
+      "name": "Armed Forces Tribunal — Jaipur Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "RJ"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — जयपुर पीठ",
+      "abbreviation": "AFT Jaipur",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction (RJ) per aft.gov.in bench listing. Judge strength not populated.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "RJ"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 74,
+        "y": 444
+      }
+    },
+    {
+      "id": "aft_jammu",
+      "name": "Armed Forces Tribunal — Jammu Bench",
+      "aliases": [
+        "AFT Srinagar Bench"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [],
+        "uts_covered": [
+          "JK",
+          "LA"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — जम्मू पीठ",
+      "abbreviation": "AFT Jammu",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Regional bench per aft.gov.in/jurisdiction for J&K. Post Reorganisation Act 2019, JK and LA listed separately. Principal bench website also references a Srinagar location — confirm whether Srinagar is co-located circuit or distinct bench before adding a separate aft_srinagar entity. Judge strength not populated.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [],
+          "uts_covered": [
+            "JK",
+            "LA"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 76,
+        "y": 480
+      }
+    },
+    {
+      "id": "aft_kochi",
+      "name": "Armed Forces Tribunal — Kochi Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "KL",
+          "KA"
+        ],
+        "uts_covered": [
+          "LD"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — कोच्चि पीठ",
+      "abbreviation": "AFT Kochi",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Per aft.gov.in/jurisdiction: Kerala, Karnataka, Lakshadweep.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "KL",
+            "KA"
+          ],
+          "uts_covered": [
+            "LD"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 79,
+        "y": 444
+      }
+    },
+    {
+      "id": "aft_kolkata",
+      "name": "Armed Forces Tribunal — Kolkata Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "WB",
+          "OD",
+          "BR",
+          "JH"
+        ],
+        "uts_covered": [
+          "AN"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — कोलकाता पीठ",
+      "abbreviation": "AFT Kolkata",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction per aft.gov.in. Kolkata bench covers eastern states (WB, OD, BR, JH); northeastern states likely covered by aft_guwahati. Per aft.gov.in/jurisdiction: WB, OD, BR, JH, Andaman & Nicobar. Northeast states under Guwahati bench.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "WB",
+            "OD",
+            "BR",
+            "JH"
+          ],
+          "uts_covered": [
+            "AN"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 81,
+        "y": 480
+      }
+    },
+    {
+      "id": "aft_lucknow",
+      "name": "Armed Forces Tribunal — Lucknow Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "UP",
+          "UK"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — लखनऊ पीठ",
+      "abbreviation": "AFT Lucknow",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction (UP, UK) per aft.gov.in bench listing. Judge strength not populated.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "UP",
+            "UK"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 83,
+        "y": 444
+      }
+    },
+    {
+      "id": "aft_mumbai",
+      "name": "Armed Forces Tribunal — Mumbai Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MH",
+          "GJ"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — मुंबई पीठ",
+      "abbreviation": "AFT Mumbai",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction per aft.gov.in. West India states (MH, GA, GJ). Per aft.gov.in/jurisdiction: Maharashtra and Gujarat only (Goa not listed).",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website — bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MH",
+            "GJ"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 85,
+        "y": 480
+      }
+    },
+    {
+      "id": "ao_income_tax_generic",
+      "name": "Assessing Officer (Income Tax) — Generic",
+      "aliases": [
+        "Income Tax Officer",
+        "ITO",
+        "Deputy Commissioner of Income Tax (Assessment)",
+        "DCIT (Assessment)"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Income tax assessments (original)",
+          "Reassessments",
+          "TDS processing",
+          "Demand and recovery"
+        ],
+        "states_covered": [],
+        "uts_covered": []
+      },
+      "name_hindi": "आयकर निर्धारण अधिकारी — सामान्य",
+      "abbreviation": "AO (IT)",
+      "type": "ExecutiveBody",
+      "cluster": "executive_interface",
+      "level_of_government": "Central",
+      "created_year": 1961,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Income Tax Act 1961 s.2(7A) (definition of Assessing Officer); s.120–124 (jurisdiction of AO); s.143–144 (assessment procedure); s.147–148A (reassessment); s.156 (demand notice)",
+      "data_quality": "partial",
+      "data_quality_notes": "Generic entity representing the Assessing Officer cadre across all Income Tax field formations. AO is the originating authority in the IT appellate chain: AO → CIT(A) → ITAT → HC → SC.\nThis entity models the structural role, not any individual AO or charge/ward. Actual formations are allocated by CBDT through charge orders; individual AO jurisdictions assigned under IT Act 1961 s.120 via CBDT notification.\nNo judge_strength or case_volume fields applicable — volume statistics are reported at CBDT/department level, not per AO unit.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Income Tax Act 1961 s.2(7A) and s.120–124 — definition and jurisdiction of AO",
+          "url": "https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Income Tax India — official portal",
+          "url": "https://incometaxindia.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "cbdt",
+          "recommends": null,
+          "consulted": [],
+          "consultation_binding": null,
+          "formally_appoints": "central_government",
+          "criteria_public": false,
+          "tenure": "IRS/ITO cadre service tenure; no fixed term",
+          "reappointment_possible": null,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "cbdt"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Departmental proceedings under CCS (CCA) Rules 1965",
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "IRS/ITO officers are Central Government servants; Lokpal jurisdiction applies per Lokpal and Lokayuktas Act 2013 s.14(1)(a).",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Income tax assessments (original)",
+            "Reassessments",
+            "TDS processing",
+            "Demand and recovery"
+          ],
+          "states_covered": [],
+          "uts_covered": []
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 514,
+        "y": 768
+      }
+    },
+    {
       "id": "aptel",
       "name": "Appellate Tribunal for Electricity",
       "aliases": [
@@ -749,8 +2531,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 64,
-        "y": 480
+        "x": 88,
+        "y": 444
       }
     },
     {
@@ -918,8 +2700,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 66,
-        "y": 444
+        "x": 90,
+        "y": 480
       }
     },
     {
@@ -1057,8 +2839,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 69,
-        "y": 480
+        "x": 92,
+        "y": 444
       }
     },
     {
@@ -1285,8 +3067,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 71,
-        "y": 444
+        "x": 95,
+        "y": 480
       }
     },
     {
@@ -1358,8 +3140,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 516,
-        "y": 768
+        "x": 533,
+        "y": 732
       }
     },
     {
@@ -1431,8 +3213,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 538,
-        "y": 732
+        "x": 553,
+        "y": 768
       }
     },
     {
@@ -1931,8 +3713,1302 @@
         "parent_hc": null
       },
       "position": {
-        "x": 74,
+        "x": 97,
+        "y": 444
+      }
+    },
+    {
+      "id": "cestat_ahmedabad",
+      "name": "Customs, Excise and Service Tax Appellate Tribunal — Ahmedabad Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "GJ"
+        ],
+        "uts_covered": [
+          "DN"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "customs",
+          "central_excise",
+          "service_tax"
+        ]
+      },
+      "name_hindi": "सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — अहमदाबाद पीठ",
+      "abbreviation": "CESTAT Ahmedabad",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1982,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Tribunal Reforms Act 2021",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction (GJ, RJ, Dadra & NH and D&D) per cestat.gov.in bench listing. UT Dadra & NH and D&D included based on CBIC zone allocation. Judge strength not populated. Per CESTAT bench allocation: Gujarat and DNHDD only. Rajasthan under Principal Bench Delhi.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Tribunal Reforms Act 2021",
+          "url": "https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)",
+          "url": "https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "central_government",
+          "recommends": null,
+          "consulted": [
+            "supreme_court_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same basis as cestat_chennai",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "GJ"
+          ],
+          "uts_covered": [
+            "DN"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "customs",
+            "central_excise",
+            "service_tax"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 99,
         "y": 480
+      }
+    },
+    {
+      "id": "cestat_allahabad",
+      "name": "Customs, Excise and Service Tax Appellate Tribunal — Allahabad Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "UP"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "customs",
+          "central_excise",
+          "service_tax"
+        ]
+      },
+      "name_hindi": "सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — इलाहाबाद पीठ",
+      "abbreviation": "CESTAT Allahabad",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1982,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Tribunal Reforms Act 2021",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction (UP, UK) per cestat.gov.in bench listing. Bench operates from Allahabad (now Prayagraj); no name change to Prayagraj confirmed on cestat.gov.in as of access date — entity id retained as cestat_allahabad per existing naming. Judge strength not populated. Per CESTAT Registrar Notification 01/2015: Uttar Pradesh. Uttarakhand under Principal Bench Delhi.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Tribunal Reforms Act 2021",
+          "url": "https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)",
+          "url": "https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "central_government",
+          "recommends": null,
+          "consulted": [
+            "supreme_court_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same basis as cestat_chennai",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "UP"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "customs",
+            "central_excise",
+            "service_tax"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 101,
+        "y": 444
+      }
+    },
+    {
+      "id": "cestat_bangalore",
+      "name": "Customs, Excise and Service Tax Appellate Tribunal — Bangalore Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "KA",
+          "KL"
+        ],
+        "uts_covered": [
+          "LD"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "customs",
+          "central_excise",
+          "service_tax"
+        ]
+      },
+      "name_hindi": "सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — बेंगलुरु पीठ",
+      "abbreviation": "CESTAT Bangalore",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1982,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Tribunal Reforms Act 2021",
+      "data_quality": "partial",
+      "data_quality_notes": "Per CESTAT bench allocation: Karnataka, Kerala, Lakshadweep.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Tribunal Reforms Act 2021",
+          "url": "https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)",
+          "url": "https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "central_government",
+          "recommends": null,
+          "consulted": [
+            "supreme_court_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same basis as cestat_chennai",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "KA",
+            "KL"
+          ],
+          "uts_covered": [
+            "LD"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "customs",
+            "central_excise",
+            "service_tax"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 104,
+        "y": 480
+      }
+    },
+    {
+      "id": "cestat_chandigarh",
+      "name": "Customs, Excise and Service Tax Appellate Tribunal — Chandigarh Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "PB",
+          "HR",
+          "HP"
+        ],
+        "uts_covered": [
+          "CH",
+          "JK",
+          "LA"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "customs",
+          "central_excise",
+          "service_tax"
+        ]
+      },
+      "name_hindi": "सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — चंडीगढ़ पीठ",
+      "abbreviation": "CESTAT Chandigarh",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1982,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Tribunal Reforms Act 2021",
+      "data_quality": "partial",
+      "data_quality_notes": "Per CESTAT Registrar Notification 02/2015: CH, PB, HR, HP, JK, LA. Judge strength not populated.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Tribunal Reforms Act 2021",
+          "url": "https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)",
+          "url": "https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "central_government",
+          "recommends": null,
+          "consulted": [
+            "supreme_court_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same basis as cestat_chennai",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "PB",
+            "HR",
+            "HP"
+          ],
+          "uts_covered": [
+            "CH",
+            "JK",
+            "LA"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "customs",
+            "central_excise",
+            "service_tax"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 106,
+        "y": 444
+      }
+    },
+    {
+      "id": "cestat_chennai",
+      "name": "Customs, Excise and Service Tax Appellate Tribunal — Chennai Bench",
+      "aliases": [
+        "CESTAT South Zone Bench"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "uts_covered": [
+          "PY"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "customs",
+          "central_excise",
+          "service_tax"
+        ]
+      },
+      "name_hindi": "सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — चेन्नई पीठ",
+      "abbreviation": "CESTAT Chennai",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1982,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Customs, Excise and Service Tax Appellate Tribunal (Procedure) Rules 1982; Tribunal Reforms Act 2021",
+      "data_quality": "partial",
+      "data_quality_notes": "Per CESTAT Registrar Notification 03/2015 bench table: TN and Puducherry (PY) except Yanam commune (Yanam under cestat_hyderabad). Judge strength not populated.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.129 — establishment of CESTAT",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Tribunal Reforms Act 2021 — appointment and service conditions",
+          "url": "https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT official website — bench listing",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)",
+          "url": "https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "central_government",
+          "recommends": null,
+          "consulted": [
+            "supreme_court_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee recommendation to central government",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Tribunal members are not public servants under Lokpal and Lokayuktas Act 2013 s.14 for this purpose; jurisdiction contested",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "uts_covered": [
+            "PY"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "customs",
+            "central_excise",
+            "service_tax"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 108,
+        "y": 480
+      }
+    },
+    {
+      "id": "cestat_hyderabad",
+      "name": "Customs, Excise and Service Tax Appellate Tribunal — Hyderabad Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "AP",
+          "TS"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "customs",
+          "central_excise",
+          "service_tax"
+        ]
+      },
+      "name_hindi": "सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — हैदराबाद पीठ",
+      "abbreviation": "CESTAT Hyderabad",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1982,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Tribunal Reforms Act 2021",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction (TS, AP) per cestat.gov.in. Post-bifurcation (2014) both states fall under CBIC Hyderabad zone allocation. Per CESTAT Registrar Notification 03/2015: AP, TS, and Yanam commune of Puducherry.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Tribunal Reforms Act 2021",
+          "url": "https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)",
+          "url": "https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "central_government",
+          "recommends": null,
+          "consulted": [
+            "supreme_court_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same basis as cestat_chennai",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "AP",
+            "TS"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "customs",
+            "central_excise",
+            "service_tax"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 110,
+        "y": 444
+      }
+    },
+    {
+      "id": "cestat_kolkata",
+      "name": "Customs, Excise and Service Tax Appellate Tribunal — Kolkata Bench",
+      "aliases": [
+        "CESTAT East Zone Bench"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "WB",
+          "OD",
+          "BR",
+          "JH",
+          "AS",
+          "ML",
+          "TR",
+          "MN",
+          "NL",
+          "MZ",
+          "AR",
+          "SK"
+        ],
+        "uts_covered": [
+          "AN"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "customs",
+          "central_excise",
+          "service_tax"
+        ]
+      },
+      "name_hindi": "सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — कोलकाता पीठ",
+      "abbreviation": "CESTAT Kolkata",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1982,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Tribunal Reforms Act 2021",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction per cestat.gov.in bench listing covering eastern and north-eastern states. Exact gazette notification demarcating states not individually verified. Judge strength not populated. Per CESTAT bench allocation: eastern and northeastern states plus Andaman & Nicobar.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Tribunal Reforms Act 2021",
+          "url": "https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)",
+          "url": "https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "central_government",
+          "recommends": null,
+          "consulted": [
+            "supreme_court_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same basis as cestat_chennai",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "WB",
+            "OD",
+            "BR",
+            "JH",
+            "AS",
+            "ML",
+            "TR",
+            "MN",
+            "NL",
+            "MZ",
+            "AR",
+            "SK"
+          ],
+          "uts_covered": [
+            "AN"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "customs",
+            "central_excise",
+            "service_tax"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 113,
+        "y": 480
+      }
+    },
+    {
+      "id": "cestat_mumbai",
+      "name": "Customs, Excise and Service Tax Appellate Tribunal — Mumbai Bench",
+      "aliases": [
+        "CESTAT West Zone Bench"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MH",
+          "GA"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "customs",
+          "central_excise",
+          "service_tax"
+        ]
+      },
+      "name_hindi": "सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — मुंबई पीठ",
+      "abbreviation": "CESTAT Mumbai",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1982,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Tribunal Reforms Act 2021",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction (MH, GA) per cestat.gov.in bench listing. Goa coverage confirmed by CESTAT Mumbai bench allocation practice. Judge strength not populated — requires DoJ report or cestat.gov.in.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.129",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Tribunal Reforms Act 2021",
+          "url": "https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT official website",
+          "url": "https://cestat.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)",
+          "url": "https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "central_government",
+          "recommends": null,
+          "consulted": [
+            "supreme_court_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same basis as cestat_chennai",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MH",
+            "GA"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "customs",
+            "central_excise",
+            "service_tax"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 115,
+        "y": 444
       }
     },
     {
@@ -2082,8 +5158,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 76,
-        "y": 444
+        "x": 117,
+        "y": 480
       }
     },
     {
@@ -2233,8 +5309,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 79,
-        "y": 480
+        "x": 119,
+        "y": 444
       }
     },
     {
@@ -2382,8 +5458,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 82,
-        "y": 444
+        "x": 122,
+        "y": 480
       }
     },
     {
@@ -2522,8 +5598,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 84,
-        "y": 480
+        "x": 124,
+        "y": 444
       }
     },
     {
@@ -2652,8 +5728,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 87,
-        "y": 444
+        "x": 126,
+        "y": 480
       }
     },
     {
@@ -2782,8 +5858,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 89,
-        "y": 480
+        "x": 129,
+        "y": 444
       }
     },
     {
@@ -2864,6 +5940,173 @@
         "x": 940,
         "y": 192
       }
+    },
+    {
+      "id": "cit_appeals_generic",
+      "name": "Commissioner of Income Tax (Appeals) — Generic",
+      "aliases": [
+        "Commissioner of Income Tax Appeals",
+        "Joint Commissioner of Income Tax (Appeals)",
+        "JCIT(A)"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Income tax assessments — first appellate forum",
+          "TDS/TCS disputes",
+          "Penalty orders under Income Tax Act 1961"
+        ],
+        "states_covered": [],
+        "uts_covered": []
+      },
+      "name_hindi": "आयकर आयुक्त (अपील) — सामान्य",
+      "abbreviation": "CIT(A)",
+      "type": "ExecutiveBody",
+      "cluster": "executive_interface",
+      "level_of_government": "Central",
+      "created_year": 1974,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Income Tax Act 1961 s.246A (appeals to CIT(A)); s.249–251 (procedure and powers of CIT(A)); Finance Act 2023 — introduction of Joint CIT(A) cadre for small taxpayer appeals; Income Tax (Appellate Tribunal) Rules 1963 (ITAT as second appellate forum above CIT(A))",
+      "data_quality": "partial",
+      "data_quality_notes": "TYPE NOTE: Typed ExecutiveBody / executive_interface rather than RegulatoryBodyQJ because CIT(A) officers are IRS cadre within the Income Tax Department, not independently appointed tribunal members; they exercise quasi-judicial powers departmentally. Maintainer may reconsider if a departmental-adjudicator subtype is added to the schema.\nAPPELLATE CHAIN: AO → CIT(A) → ITAT → HC (questions of law) → SC. CIT(A) is the first appellate forum under IT Act 1961 s.246A.\nJudge-strength concept not applicable — IRS officer posts sanctioned by CBDT/DoPT but not disaggregated publicly per CIT(A) unit.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Income Tax Act 1961 s.246A — jurisdiction of CIT(A)",
+          "url": "https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Finance Act 2023 — Joint CIT(A) introduction",
+          "url": "https://www.india-code.nic.in/CodeofActs/2023/2023_08.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Income Tax India — official portal",
+          "url": "https://incometaxindia.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Union Budget 2023-24 Highlights — CIT(A) pendency and JCIT(A) deployment",
+          "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1895315",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "cbdt",
+          "recommends": null,
+          "consulted": [],
+          "consultation_binding": null,
+          "formally_appoints": "central_government",
+          "criteria_public": false,
+          "tenure": "IRS cadre service tenure; no fixed term for the adjudicatory function",
+          "reappointment_possible": null,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "cbdt"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Departmental proceedings under CCS (CCA) Rules 1965; IRS service rules",
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "CIT(A) officers are Group A Central Government servants; Lokpal jurisdiction applies per Lokpal and Lokayuktas Act 2013 s.14(1)(a), unlike independent tribunal members.",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Income tax assessments — first appellate forum",
+            "TDS/TCS disputes",
+            "Penalty orders under Income Tax Act 1961"
+          ],
+          "states_covered": [],
+          "uts_covered": []
+        },
+        "case_volume": {
+          "data_as_of": null,
+          "pending_cases": null,
+          "filed_last_year": null,
+          "disposed_last_year": null,
+          "source_url": null,
+          "source_type": null,
+          "clog_severity": "high"
+        },
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 573,
+        "y": 732
+      },
+      "gaps": [
+        {
+          "flag": true,
+          "gaps": [
+            {
+              "gap_id": "cit_a_appeal_backlog",
+              "gap_type": "Data_Gap",
+              "gap_severity": "High",
+              "gap_description": "Commissioner (Appeals) units are overburdened — appeals filed exceed disposals and pendency carries forward annually (Finance Act 2023 memorandum). Union Budget 2023-24 proposed ~100 JCIT(A) posts for small appeals; e-Appeals Scheme 2023 partially addresses backlog. No stable official CBDT disaggregated pending-case count URL at authoring time.",
+              "gap_source": "PIB Union Budget 2023-24 Highlights (PRID 1895315); Finance Act 2023 s.246 substitution memorandum",
+              "gap_since_year": 2000,
+              "gap_status": "Partial_Addressed"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "collegium_hc_appointment",
@@ -3685,8 +6928,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 92,
-        "y": 444
+        "x": 131,
+        "y": 480
       }
     },
     {
@@ -3818,8 +7061,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 94,
-        "y": 480
+        "x": 133,
+        "y": 444
       }
     },
     {
@@ -3952,8 +7195,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 97,
-        "y": 444
+        "x": 135,
+        "y": 480
       }
     },
     {
@@ -4092,8 +7335,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 100,
-        "y": 480
+        "x": 138,
+        "y": 444
       }
     },
     {
@@ -4238,8 +7481,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 102,
-        "y": 444
+        "x": 140,
+        "y": 480
       }
     },
     {
@@ -4370,8 +7613,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 105,
-        "y": 480
+        "x": 142,
+        "y": 444
       }
     },
     {
@@ -4640,8 +7883,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 107,
-        "y": 444
+        "x": 144,
+        "y": 480
       }
     },
     {
@@ -4794,8 +8037,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 110,
-        "y": 480
+        "x": 147,
+        "y": 444
       }
     },
     {
@@ -4945,8 +8188,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 112,
-        "y": 444
+        "x": 149,
+        "y": 480
       }
     },
     {
@@ -5086,8 +8329,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 115,
-        "y": 480
+        "x": 151,
+        "y": 444
       }
     },
     {
@@ -5238,8 +8481,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 117,
-        "y": 444
+        "x": 153,
+        "y": 480
       }
     },
     {
@@ -5418,8 +8661,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 120,
-        "y": 480
+        "x": 156,
+        "y": 444
       }
     },
     {
@@ -5575,8 +8818,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 123,
-        "y": 444
+        "x": 158,
+        "y": 480
       }
     },
     {
@@ -5715,8 +8958,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 125,
-        "y": 480
+        "x": 160,
+        "y": 444
       }
     },
     {
@@ -5865,8 +9108,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 128,
-        "y": 444
+        "x": 163,
+        "y": 480
       }
     },
     {
@@ -6005,8 +9248,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 130,
-        "y": 480
+        "x": 165,
+        "y": 444
       }
     },
     {
@@ -6164,8 +9407,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 133,
-        "y": 444
+        "x": 167,
+        "y": 480
       }
     },
     {
@@ -6311,8 +9554,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 135,
-        "y": 480
+        "x": 169,
+        "y": 444
       }
     },
     {
@@ -6482,8 +9725,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 138,
-        "y": 444
+        "x": 172,
+        "y": 480
       }
     },
     {
@@ -6660,8 +9903,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 141,
-        "y": 480
+        "x": 174,
+        "y": 444
       }
     },
     {
@@ -6812,8 +10055,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 143,
-        "y": 444
+        "x": 176,
+        "y": 480
       }
     },
     {
@@ -6952,8 +10195,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 146,
-        "y": 480
+        "x": 178,
+        "y": 444
       }
     },
     {
@@ -7099,8 +10342,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 148,
-        "y": 444
+        "x": 181,
+        "y": 480
       }
     },
     {
@@ -7255,8 +10498,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 151,
-        "y": 480
+        "x": 183,
+        "y": 444
       }
     },
     {
@@ -7395,8 +10638,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 153,
-        "y": 444
+        "x": 185,
+        "y": 480
       }
     },
     {
@@ -7552,8 +10795,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 156,
-        "y": 480
+        "x": 187,
+        "y": 444
       }
     },
     {
@@ -7692,8 +10935,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 158,
-        "y": 444
+        "x": 190,
+        "y": 480
       }
     },
     {
@@ -7832,8 +11075,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 161,
-        "y": 480
+        "x": 192,
+        "y": 444
       }
     },
     {
@@ -7982,8 +11225,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 164,
-        "y": 444
+        "x": 194,
+        "y": 480
       }
     },
     {
@@ -8122,8 +11365,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 166,
-        "y": 480
+        "x": 197,
+        "y": 444
       }
     },
     {
@@ -8272,8 +11515,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 169,
-        "y": 444
+        "x": 199,
+        "y": 480
       }
     },
     {
@@ -8420,8 +11663,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 171,
-        "y": 480
+        "x": 201,
+        "y": 444
       }
     },
     {
@@ -8559,8 +11802,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 174,
-        "y": 444
+        "x": 203,
+        "y": 480
       }
     },
     {
@@ -8678,7 +11921,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 560,
+        "x": 592,
         "y": 768
       }
     },
@@ -9049,8 +12292,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 176,
-        "y": 480
+        "x": 206,
+        "y": 444
       }
     },
     {
@@ -9572,8 +12815,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 179,
-        "y": 444
+        "x": 208,
+        "y": 480
       }
     },
     {
@@ -9850,8 +13093,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 182,
-        "y": 480
+        "x": 210,
+        "y": 444
       }
     },
     {
@@ -10247,8 +13490,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 184,
-        "y": 444
+        "x": 212,
+        "y": 480
       }
     },
     {
@@ -11055,7 +14298,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 582,
+        "x": 612,
         "y": 732
       }
     },
@@ -11128,7 +14371,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 604,
+        "x": 632,
         "y": 768
       }
     },
@@ -11644,8 +14887,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 187,
-        "y": 480
+        "x": 215,
+        "y": 444
       }
     },
     {
@@ -12114,8 +15357,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 189,
-        "y": 444
+        "x": 217,
+        "y": 480
       }
     },
     {
@@ -12256,8 +15499,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 192,
-        "y": 480
+        "x": 219,
+        "y": 444
       }
     },
     {
@@ -12390,8 +15633,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 194,
-        "y": 444
+        "x": 221,
+        "y": 480
       }
     },
     {
@@ -13031,8 +16274,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 197,
-        "y": 480
+        "x": 224,
+        "y": 444
       }
     },
     {
@@ -13345,8 +16588,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 199,
-        "y": 444
+        "x": 226,
+        "y": 480
       }
     },
     {
@@ -13999,8 +17242,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 202,
-        "y": 480
+        "x": 228,
+        "y": 444
       }
     },
     {
@@ -14157,8 +17400,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 205,
-        "y": 444
+        "x": 231,
+        "y": 480
       }
     },
     {
@@ -14408,8 +17651,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 207,
-        "y": 480
+        "x": 233,
+        "y": 444
       }
     },
     {
@@ -14629,8 +17872,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 210,
-        "y": 444
+        "x": 235,
+        "y": 480
       }
     },
     {
@@ -31085,8 +34328,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 212,
-        "y": 480
+        "x": 237,
+        "y": 444
       }
     },
     {
@@ -31185,8 +34428,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 215,
-        "y": 444
+        "x": 240,
+        "y": 480
       }
     },
     {
@@ -31609,8 +34852,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 217,
-        "y": 480
+        "x": 242,
+        "y": 444
       }
     },
     {
@@ -31709,8 +34952,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 220,
-        "y": 444
+        "x": 244,
+        "y": 480
       }
     },
     {
@@ -32023,8 +35266,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 223,
-        "y": 480
+        "x": 246,
+        "y": 444
       }
     },
     {
@@ -32123,8 +35366,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 225,
-        "y": 444
+        "x": 249,
+        "y": 480
       }
     },
     {
@@ -32547,8 +35790,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 228,
-        "y": 480
+        "x": 251,
+        "y": 444
       }
     },
     {
@@ -32647,8 +35890,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 230,
-        "y": 444
+        "x": 253,
+        "y": 480
       }
     },
     {
@@ -33071,8 +36314,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 233,
-        "y": 480
+        "x": 255,
+        "y": 444
       }
     },
     {
@@ -33171,8 +36414,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 235,
-        "y": 444
+        "x": 258,
+        "y": 480
       }
     },
     {
@@ -33485,8 +36728,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 238,
-        "y": 480
+        "x": 260,
+        "y": 444
       }
     },
     {
@@ -33585,8 +36828,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 240,
-        "y": 444
+        "x": 262,
+        "y": 480
       }
     },
     {
@@ -33899,8 +37142,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 243,
-        "y": 480
+        "x": 265,
+        "y": 444
       }
     },
     {
@@ -33999,8 +37242,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
-        "y": 444
+        "x": 267,
+        "y": 480
       }
     },
     {
@@ -34232,7 +37475,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 626,
+        "x": 651,
         "y": 732
       }
     },
@@ -34326,8 +37569,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 248,
-        "y": 480
+        "x": 269,
+        "y": 444
       }
     },
     {
@@ -34420,8 +37663,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 251,
-        "y": 444
+        "x": 271,
+        "y": 480
       }
     },
     {
@@ -34514,8 +37757,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 253,
-        "y": 480
+        "x": 274,
+        "y": 444
       }
     },
     {
@@ -34608,8 +37851,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 256,
-        "y": 444
+        "x": 276,
+        "y": 480
       }
     },
     {
@@ -34702,8 +37945,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 258,
-        "y": 480
+        "x": 278,
+        "y": 444
       }
     },
     {
@@ -34796,8 +38039,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 261,
-        "y": 444
+        "x": 280,
+        "y": 480
       }
     },
     {
@@ -35863,7 +39106,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 648,
+        "x": 671,
         "y": 768
       }
     },
@@ -36180,8 +39423,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 263,
-        "y": 480
+        "x": 283,
+        "y": 444
       }
     },
     {
@@ -36412,8 +39655,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 266,
-        "y": 444
+        "x": 285,
+        "y": 480
       }
     },
     {
@@ -36726,8 +39969,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 269,
-        "y": 480
+        "x": 287,
+        "y": 444
       }
     },
     {
@@ -36826,8 +40069,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 271,
-        "y": 444
+        "x": 289,
+        "y": 480
       }
     },
     {
@@ -37250,8 +40493,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 274,
-        "y": 480
+        "x": 292,
+        "y": 444
       }
     },
     {
@@ -37350,8 +40593,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 276,
-        "y": 444
+        "x": 294,
+        "y": 480
       }
     },
     {
@@ -37664,8 +40907,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 279,
-        "y": 480
+        "x": 296,
+        "y": 444
       }
     },
     {
@@ -37764,8 +41007,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 281,
-        "y": 444
+        "x": 299,
+        "y": 480
       }
     },
     {
@@ -38078,8 +41321,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 284,
-        "y": 480
+        "x": 301,
+        "y": 444
       }
     },
     {
@@ -38178,8 +41421,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 287,
-        "y": 444
+        "x": 303,
+        "y": 480
       }
     },
     {
@@ -38492,8 +41735,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 289,
-        "y": 480
+        "x": 305,
+        "y": 444
       }
     },
     {
@@ -38592,8 +41835,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 292,
-        "y": 444
+        "x": 308,
+        "y": 480
       }
     },
     {
@@ -38906,8 +42149,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 294,
-        "y": 480
+        "x": 310,
+        "y": 444
       }
     },
     {
@@ -39006,8 +42249,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 297,
-        "y": 444
+        "x": 312,
+        "y": 480
       }
     },
     {
@@ -39226,7 +42469,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 670,
+        "x": 691,
         "y": 732
       }
     },
@@ -39332,8 +42575,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 299,
-        "y": 480
+        "x": 314,
+        "y": 444
       }
     },
     {
@@ -39426,8 +42669,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 302,
-        "y": 444
+        "x": 317,
+        "y": 480
       }
     },
     {
@@ -39520,8 +42763,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 304,
-        "y": 480
+        "x": 319,
+        "y": 444
       }
     },
     {
@@ -39614,8 +42857,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 307,
-        "y": 444
+        "x": 321,
+        "y": 480
       }
     },
     {
@@ -43227,7 +46470,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 692,
+        "x": 711,
         "y": 768
       }
     },
@@ -43552,8 +46795,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 310,
-        "y": 480
+        "x": 323,
+        "y": 444
       }
     },
     {
@@ -43784,8 +47027,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 312,
-        "y": 444
+        "x": 326,
+        "y": 480
       }
     },
     {
@@ -44231,8 +47474,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 315,
-        "y": 480
+        "x": 328,
+        "y": 444
       }
     },
     {
@@ -44331,8 +47574,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 317,
-        "y": 444
+        "x": 330,
+        "y": 480
       }
     },
     {
@@ -44645,8 +47888,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 320,
-        "y": 480
+        "x": 333,
+        "y": 444
       }
     },
     {
@@ -44745,8 +47988,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 322,
-        "y": 444
+        "x": 335,
+        "y": 480
       }
     },
     {
@@ -45059,8 +48302,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 325,
-        "y": 480
+        "x": 337,
+        "y": 444
       }
     },
     {
@@ -45159,8 +48402,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 328,
-        "y": 444
+        "x": 339,
+        "y": 480
       }
     },
     {
@@ -45513,7 +48756,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 714,
+        "x": 730,
         "y": 732
       }
     },
@@ -45710,8 +48953,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 330,
-        "y": 480
+        "x": 342,
+        "y": 444
       }
     },
     {
@@ -45816,8 +49059,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 333,
-        "y": 444
+        "x": 344,
+        "y": 480
       }
     },
     {
@@ -45922,8 +49165,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 335,
-        "y": 480
+        "x": 346,
+        "y": 444
       }
     },
     {
@@ -46028,8 +49271,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 338,
-        "y": 444
+        "x": 348,
+        "y": 480
       }
     },
     {
@@ -50463,7 +53706,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 736,
+        "x": 750,
         "y": 768
       }
     },
@@ -50788,8 +54031,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 340,
-        "y": 480
+        "x": 351,
+        "y": 444
       }
     },
     {
@@ -51020,8 +54263,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 343,
-        "y": 444
+        "x": 353,
+        "y": 480
       }
     },
     {
@@ -51334,8 +54577,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 345,
-        "y": 480
+        "x": 355,
+        "y": 444
       }
     },
     {
@@ -51434,8 +54677,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 348,
-        "y": 444
+        "x": 357,
+        "y": 480
       }
     },
     {
@@ -51748,8 +54991,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 351,
-        "y": 480
+        "x": 360,
+        "y": 444
       }
     },
     {
@@ -51848,8 +55091,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 353,
-        "y": 444
+        "x": 362,
+        "y": 480
       }
     },
     {
@@ -52272,8 +55515,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 356,
-        "y": 480
+        "x": 364,
+        "y": 444
       }
     },
     {
@@ -52372,8 +55615,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 358,
-        "y": 444
+        "x": 367,
+        "y": 480
       }
     },
     {
@@ -52686,8 +55929,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 361,
-        "y": 480
+        "x": 369,
+        "y": 444
       }
     },
     {
@@ -52786,8 +56029,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 363,
-        "y": 444
+        "x": 371,
+        "y": 480
       }
     },
     {
@@ -53100,8 +56343,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 366,
-        "y": 480
+        "x": 373,
+        "y": 444
       }
     },
     {
@@ -53200,8 +56443,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 369,
-        "y": 444
+        "x": 376,
+        "y": 480
       }
     },
     {
@@ -53514,8 +56757,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 371,
-        "y": 480
+        "x": 378,
+        "y": 444
       }
     },
     {
@@ -53614,8 +56857,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 374,
-        "y": 444
+        "x": 380,
+        "y": 480
       }
     },
     {
@@ -53928,8 +57171,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 376,
-        "y": 480
+        "x": 382,
+        "y": 444
       }
     },
     {
@@ -54028,8 +57271,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 379,
-        "y": 444
+        "x": 385,
+        "y": 480
       }
     },
     {
@@ -54122,7 +57365,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 758,
+        "x": 770,
         "y": 732
       }
     },
@@ -54224,8 +57467,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 381,
-        "y": 480
+        "x": 387,
+        "y": 444
       }
     },
     {
@@ -54535,7 +57778,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 780,
+        "x": 789,
         "y": 768
       }
     },
@@ -54643,8 +57886,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 384,
-        "y": 444
+        "x": 389,
+        "y": 480
       }
     },
     {
@@ -55067,8 +58310,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 386,
-        "y": 480
+        "x": 391,
+        "y": 444
       }
     },
     {
@@ -55167,8 +58410,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 389,
-        "y": 444
+        "x": 394,
+        "y": 480
       }
     },
     {
@@ -55481,8 +58724,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 392,
-        "y": 480
+        "x": 396,
+        "y": 444
       }
     },
     {
@@ -55581,8 +58824,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 394,
-        "y": 444
+        "x": 398,
+        "y": 480
       }
     },
     {
@@ -55675,7 +58918,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 802,
+        "x": 809,
         "y": 732
       }
     },
@@ -55884,8 +59127,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 397,
-        "y": 480
+        "x": 401,
+        "y": 444
       }
     },
     {
@@ -60297,7 +63540,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 824,
+        "x": 829,
         "y": 768
       }
     },
@@ -60645,8 +63888,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 399,
-        "y": 444
+        "x": 403,
+        "y": 480
       }
     },
     {
@@ -60869,8 +64112,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 402,
-        "y": 480
+        "x": 405,
+        "y": 444
       }
     },
     {
@@ -61086,8 +64329,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 404,
-        "y": 444
+        "x": 407,
+        "y": 480
       }
     },
     {
@@ -61400,8 +64643,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 407,
-        "y": 480
+        "x": 410,
+        "y": 444
       }
     },
     {
@@ -61500,8 +64743,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 410,
-        "y": 444
+        "x": 412,
+        "y": 480
       }
     },
     {
@@ -61924,8 +65167,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 412,
-        "y": 480
+        "x": 414,
+        "y": 444
       }
     },
     {
@@ -62024,8 +65267,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 415,
-        "y": 444
+        "x": 416,
+        "y": 480
       }
     },
     {
@@ -62338,8 +65581,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 417,
-        "y": 480
+        "x": 419,
+        "y": 444
       }
     },
     {
@@ -62438,8 +65681,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 420,
-        "y": 444
+        "x": 421,
+        "y": 480
       }
     },
     {
@@ -62862,8 +66105,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 422,
-        "y": 480
+        "x": 423,
+        "y": 444
       }
     },
     {
@@ -62963,7 +66206,7 @@
       },
       "position": {
         "x": 425,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -63386,8 +66629,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 427,
-        "y": 480
+        "x": 428,
+        "y": 444
       }
     },
     {
@@ -64082,7 +67325,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 846,
+        "x": 848,
         "y": 732
       }
     }
@@ -76290,6 +79533,17 @@
       "tribunals_adr": [
         "aar_income_tax",
         "aft",
+        "aft_chandigarh",
+        "aft_chennai",
+        "aft_guwahati",
+        "aft_hyderabad",
+        "aft_jabalpur",
+        "aft_jaipur",
+        "aft_jammu",
+        "aft_kochi",
+        "aft_kolkata",
+        "aft_lucknow",
+        "aft_mumbai",
         "an_state_cdrc",
         "ap_state_cdrc",
         "aptel",
@@ -76300,6 +79554,14 @@
         "caar_customs",
         "cat",
         "cestat",
+        "cestat_ahmedabad",
+        "cestat_allahabad",
+        "cestat_bangalore",
+        "cestat_chandigarh",
+        "cestat_chennai",
+        "cestat_hyderabad",
+        "cestat_kolkata",
+        "cestat_mumbai",
         "cg_state_cdrc",
         "cgit_chandigarh_1",
         "cgit_chandigarh_2",
@@ -76434,14 +79696,12 @@
         "up_state_cdrc",
         "wb_state_cdrc"
       ],
-      "financing_audit": [
-        "cag_india",
-        "ministry_of_finance"
-      ],
       "executive_interface": [
+        "ao_income_tax_generic",
         "cbdt",
         "cbi",
         "cbic",
+        "cit_appeals_generic",
         "dl_advocate_general",
         "dl_lokayukta",
         "epfo",
@@ -76455,6 +79715,10 @@
         "py_lokayukta",
         "tn_advocate_general",
         "tn_lokayukta"
+      ],
+      "financing_audit": [
+        "cag_india",
+        "ministry_of_finance"
       ],
       "regulatory_bodies": [
         "cci",
@@ -76872,10 +80136,29 @@
       "CentralTribunal": [
         "aar_income_tax",
         "aft",
+        "aft_chandigarh",
+        "aft_chennai",
+        "aft_guwahati",
+        "aft_hyderabad",
+        "aft_jabalpur",
+        "aft_jaipur",
+        "aft_jammu",
+        "aft_kochi",
+        "aft_kolkata",
+        "aft_lucknow",
+        "aft_mumbai",
         "aptel",
         "caar_customs",
         "cat",
         "cestat",
+        "cestat_ahmedabad",
+        "cestat_allahabad",
+        "cestat_bangalore",
+        "cestat_chandigarh",
+        "cestat_chennai",
+        "cestat_hyderabad",
+        "cestat_kolkata",
+        "cestat_mumbai",
         "cgit_chandigarh_1",
         "cgit_chandigarh_2",
         "cgit_chennai",
@@ -76925,18 +80208,14 @@
         "sat",
         "tdsat"
       ],
-      "StateTribunal": [
-        "board_of_revenue_generic",
-        "state_industrial_tribunal_generic",
-        "state_labour_court_generic",
-        "state_vat_tribunal_generic"
-      ],
       "ExecutiveBody": [
+        "ao_income_tax_generic",
         "cag_india",
         "cbdt",
         "cbic",
         "central_government",
         "chief_justice_india",
+        "cit_appeals_generic",
         "department_of_justice",
         "deputy_chairman_rajya_sabha",
         "dl_lieutenant_governor",
@@ -77005,6 +80284,12 @@
         "speaker_lok_sabha",
         "state_public_service_commission",
         "tn_lokayukta"
+      ],
+      "StateTribunal": [
+        "board_of_revenue_generic",
+        "state_industrial_tribunal_generic",
+        "state_labour_court_generic",
+        "state_vat_tribunal_generic"
       ],
       "RegulatoryBodyQJ": [
         "cci",
@@ -77468,6 +80753,42 @@
       "{'is_all_india': True, 'jurisdiction_types': ['service_matters', 'court_martial_appeals', 'military_pensions']}": [
         "aft"
       ],
+      "{'states_covered': ['PB', 'HR', 'HP'], 'uts_covered': ['CH'], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_chandigarh"
+      ],
+      "{'states_covered': ['TN', 'AP'], 'uts_covered': ['PY'], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_chennai"
+      ],
+      "{'states_covered': ['AS', 'ML', 'AR', 'NL', 'MN', 'MZ', 'TR', 'SK'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_guwahati"
+      ],
+      "{'states_covered': ['TS'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_hyderabad"
+      ],
+      "{'states_covered': ['MP', 'CG'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_jabalpur"
+      ],
+      "{'states_covered': ['RJ'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_jaipur"
+      ],
+      "{'states_covered': [], 'uts_covered': ['JK', 'LA'], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_jammu"
+      ],
+      "{'states_covered': ['KL', 'KA'], 'uts_covered': ['LD'], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_kochi"
+      ],
+      "{'states_covered': ['WB', 'OD', 'BR', 'JH'], 'uts_covered': ['AN'], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_kolkata"
+      ],
+      "{'states_covered': ['UP', 'UK'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_lucknow"
+      ],
+      "{'states_covered': ['MH', 'GJ'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_mumbai"
+      ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Income tax assessments (original)', 'Reassessments', 'TDS processing', 'Demand and recovery'], 'states_covered': [], 'uts_covered': []}": [
+        "ao_income_tax_generic"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['Appellate']}": [
         "aptel",
         "cestat",
@@ -77505,12 +80826,39 @@
       "{'is_all_india': True, 'jurisdiction_types': ['anti_corruption_oversight', 'vigilance_supervision', 'inquiry_referral']}": [
         "central_vigilance_commission"
       ],
+      "{'states_covered': ['GJ'], 'uts_covered': ['DN'], 'is_all_india': False, 'jurisdiction_types': ['customs', 'central_excise', 'service_tax']}": [
+        "cestat_ahmedabad"
+      ],
+      "{'states_covered': ['UP'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['customs', 'central_excise', 'service_tax']}": [
+        "cestat_allahabad"
+      ],
+      "{'states_covered': ['KA', 'KL'], 'uts_covered': ['LD'], 'is_all_india': False, 'jurisdiction_types': ['customs', 'central_excise', 'service_tax']}": [
+        "cestat_bangalore"
+      ],
+      "{'states_covered': ['PB', 'HR', 'HP'], 'uts_covered': ['CH', 'JK', 'LA'], 'is_all_india': False, 'jurisdiction_types': ['customs', 'central_excise', 'service_tax']}": [
+        "cestat_chandigarh"
+      ],
+      "{'states_covered': ['TN'], 'uts_covered': ['PY'], 'is_all_india': False, 'jurisdiction_types': ['customs', 'central_excise', 'service_tax']}": [
+        "cestat_chennai"
+      ],
+      "{'states_covered': ['AP', 'TS'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['customs', 'central_excise', 'service_tax']}": [
+        "cestat_hyderabad"
+      ],
+      "{'states_covered': ['WB', 'OD', 'BR', 'JH', 'AS', 'ML', 'TR', 'MN', 'NL', 'MZ', 'AR', 'SK'], 'uts_covered': ['AN'], 'is_all_india': False, 'jurisdiction_types': ['customs', 'central_excise', 'service_tax']}": [
+        "cestat_kolkata"
+      ],
+      "{'states_covered': ['MH', 'GA'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['customs', 'central_excise', 'service_tax']}": [
+        "cestat_mumbai"
+      ],
       "{'states_covered': ['PB', 'HP'], 'uts_covered': ['CH'], 'is_all_india': False, 'jurisdiction_types': ['industrial_disputes', 'epf_appeals']}": [
         "cgit_chandigarh_1",
         "cgit_chandigarh_2"
       ],
       "{'states_covered': ['TN'], 'uts_covered': ['PY'], 'is_all_india': False, 'jurisdiction_types': ['industrial_disputes', 'epf_appeals']}": [
         "cgit_chennai"
+      ],
+      "{'is_all_india': True, 'jurisdiction_types': ['Income tax assessments — first appellate forum', 'TDS/TCS disputes', 'Penalty orders under Income Tax Act 1961'], 'states_covered': [], 'uts_covered': []}": [
+        "cit_appeals_generic"
       ],
       "{'is_all_india': True, 'jurisdiction_types': ['constitutional_office']}": [
         "deputy_chairman_rajya_sabha",

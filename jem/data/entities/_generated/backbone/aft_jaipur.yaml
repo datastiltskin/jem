@@ -1,0 +1,69 @@
+id: aft_jaipur
+name: Armed Forces Tribunal — Jaipur Bench
+name_hindi: सशस्त्र बल अधिकरण — जयपुर पीठ
+abbreviation: AFT Jaipur
+aliases: []
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+created_year: 2009
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008
+appointment:
+  nominates: ministry_defence
+  recommends: null
+  consulted:
+  - chief_justice_india
+  consultation_binding: false
+  formally_appoints: president_india
+  criteria_public: true
+  tenure: Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)
+  reappointment_possible: false
+  removal_authority: president_india
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_defence
+  state_contribution_percent: null
+  budget_figure_crore: null
+  budget_year: null
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: AFT Act 2007 s.10
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: Same as aft_chandigarh
+  source: null
+jurisdiction_scope:
+  states_covered:
+  - RJ
+  uts_covered: []
+  is_all_india: false
+  jurisdiction_types:
+  - service_matters
+  - court_martial_appeals
+data_quality: partial
+data_quality_notes: Territorial jurisdiction (RJ) per aft.gov.in bench listing. Judge strength not populated.
+sources:
+- label: Armed Forces Tribunal Act 2007
+  url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: AFT official website
+  url: https://aft.gov.in
+  type: GoIWebsite
+  accessed_date: '2026-06-11'
+- label: AFT official website — bench territorial jurisdiction
+  url: https://aft.gov.in/jurisdiction
+  type: GoIWebsite
+  accessed_date: '2026-06-12'

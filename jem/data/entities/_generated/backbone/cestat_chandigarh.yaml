@@ -1,0 +1,81 @@
+id: cestat_chandigarh
+name: Customs, Excise and Service Tax Appellate Tribunal — Chandigarh Bench
+name_hindi: सीमा शुल्क, उत्पाद शुल्क और सेवा कर अपीलीय अधिकरण — चंडीगढ़ पीठ
+abbreviation: CESTAT Chandigarh
+aliases: []
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+created_year: 1982
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Customs Act 1962 s.129; Central Excise Act 1944 s.35B; Finance Act 1994 s.86; Tribunal Reforms Act 2021
+appointment:
+  nominates: central_government
+  recommends: null
+  consulted:
+  - supreme_court_india
+  consultation_binding: false
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: 4 years or age 70 (whichever earlier) per Tribunal Reforms Act 2021
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+  state_contribution_percent: null
+  budget_figure_crore: null
+  budget_year: null
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: Tribunal Reforms Act 2021 s.7 — Search-cum-Selection Committee
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: Same basis as cestat_chennai
+  source: null
+jurisdiction_scope:
+  states_covered:
+  - PB
+  - HR
+  - HP
+  uts_covered:
+  - CH
+  - JK
+  - LA
+  is_all_india: false
+  jurisdiction_types:
+  - customs
+  - central_excise
+  - service_tax
+data_quality: partial
+data_quality_notes: >-
+  Per CESTAT Registrar Notification 02/2015: CH, PB, HR, HP, JK, LA.
+  Judge strength not populated.
+sources:
+- label: Customs Act 1962 s.129
+  url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: Tribunal Reforms Act 2021
+  url: https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: CESTAT official website
+  url: https://cestat.gov.in
+  type: GoIWebsite
+  accessed_date: '2026-06-11'
+- label: CESTAT bench jurisdiction table (Registrar notifications 01–03/2015)
+  url: https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html
+  type: OfficialReport
+  accessed_date: '2026-06-12'

@@ -1,0 +1,74 @@
+id: aft_chandigarh
+name: Armed Forces Tribunal — Chandigarh Bench
+name_hindi: सशस्त्र बल अधिकरण — चंडीगढ़ पीठ
+abbreviation: AFT Chandigarh
+aliases: []
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+created_year: 2009
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008
+appointment:
+  nominates: ministry_defence
+  recommends: null
+  consulted:
+  - chief_justice_india
+  consultation_binding: false
+  formally_appoints: president_india
+  criteria_public: true
+  tenure: 'Chairperson: 4 years or age 70 whichever earlier; Members: 4 years or age 65 whichever earlier (AFT Act 2007 s.8)'
+  reappointment_possible: false
+  removal_authority: president_india
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_defence
+  state_contribution_percent: null
+  budget_figure_crore: null
+  budget_year: null
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: AFT Act 2007 s.10 — inquiry by Supreme Court judge, President removes on report
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: Tribunal judicial members not within Lokpal jurisdiction per Lokpal Act 2013 s.14
+  source: null
+jurisdiction_scope:
+  states_covered:
+  - PB
+  - HR
+  - HP
+  uts_covered:
+  - CH
+  is_all_india: false
+  jurisdiction_types:
+  - service_matters
+  - court_martial_appeals
+data_quality: partial
+data_quality_notes: >-
+  Regional bench per aft.gov.in/jurisdiction: PB, HR, HP, CH. J&K/Ladakh under
+  separate Jammu bench (not yet in corpus). Judge strength not populated.
+sources:
+- label: Armed Forces Tribunal Act 2007
+  url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: AFT official website — bench listing
+  url: https://aft.gov.in
+  type: GoIWebsite
+  accessed_date: '2026-06-11'
+- label: AFT official website — bench territorial jurisdiction
+  url: https://aft.gov.in/jurisdiction
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
