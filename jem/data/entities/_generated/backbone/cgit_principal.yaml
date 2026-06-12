@@ -1,0 +1,81 @@
+id: cgit_principal
+name: Central Government Industrial Tribunal — Principal (Aggregate)
+name_hindi: केंद्रीय सरकारी औद्योगिक अधिकरण — प्रधान (समुच्चय)
+abbreviation: CGIT
+aliases:
+  - Central Government Industrial Tribunal
+  - CGIT Principal Node
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+created_year: 1947
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >
+  Industrial Disputes Act 1947 ss.7A–7B; Central Government constitutes CGIT
+  benches for industrial disputes involving Central undertakings.
+
+appointment:
+  nominates: ministry_labour_employment
+  recommends: null
+  consulted: []
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: Presiding Officer per IDA 1947 s.7A(3); typically until age 65
+  reappointment_possible: true
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_labour_employment
+  state_contribution_percent: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: ministry_labour_employment
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: Central Government order under IDA 1947 s.7A
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    CGIT presiding officers are quasi-judicial appointees; Lokpal treatment
+    analogous to other tribunal members — mark No pending maintainer review.
+  source: null
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - industrial_disputes
+  states_covered: []
+  uts_covered: []
+
+data_quality: partial
+data_quality_notes: >
+  Aggregate node for CGIT bench lattice. Regional benches: cgit_delhi, cgit_mumbai,
+  cgit_kolkata, cgit_chennai, cgit_chandigarh_1, cgit_chandigarh_2. Award appeal
+  lies to High Court under Article 226/227 (no statutory appellate tribunal).
+  judge_strength not populated per bench.
+
+sources:
+  - label: Industrial Disputes Act 1947 s.7A — India Code
+    url: https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: Ministry of Labour and Employment — CGIT
+    url: https://labour.gov.in/cgit
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

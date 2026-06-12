@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-06-12T13:55:15.219885+00:00",
-    "entity_count": 592,
-    "relationship_count": 602,
+    "generated_at": "2026-06-12T14:02:32.752451+00:00",
+    "entity_count": 599,
+    "relationship_count": 627,
     "canvas_width": 1800,
     "canvas_height": 1200,
     "year_range": [
@@ -12,11 +12,11 @@
     ]
   },
   "impact_metrics": {
-    "high_independence_risk_count": 114,
+    "high_independence_risk_count": 119,
     "appointer_equals_funder_removal_count": 1,
-    "no_public_appointment_criteria_count": 57,
-    "not_constituted_count": 4,
-    "no_external_complaint_mechanism_count": 587
+    "no_public_appointment_criteria_count": 60,
+    "not_constituted_count": 5,
+    "no_external_complaint_mechanism_count": 594
   },
   "timeline_events": [
     {
@@ -150,9 +150,9 @@
       "id": "tribunals_adr",
       "name": "Tribunals Adr",
       "color": "#2b6cb0",
-      "entity_count": 168,
-      "avg_independence_risk": 5.2,
-      "not_constituted_count": 1,
+      "entity_count": 173,
+      "avg_independence_risk": 5.3,
+      "not_constituted_count": 2,
       "position": {
         "x": 28,
         "y": 316,
@@ -166,8 +166,8 @@
       "id": "regulatory_bodies",
       "name": "Regulatory Bodies",
       "color": "#4a235a",
-      "entity_count": 83,
-      "avg_independence_risk": 3.7,
+      "entity_count": 84,
+      "avg_independence_risk": 3.8,
       "not_constituted_count": 0,
       "position": {
         "x": 466,
@@ -182,7 +182,7 @@
       "id": "executive_interface",
       "name": "Executive Interface",
       "color": "#742a2a",
-      "entity_count": 17,
+      "entity_count": 18,
       "avg_independence_risk": 0.6,
       "not_constituted_count": 2,
       "position": {
@@ -916,7 +916,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 63,
+        "x": 62,
         "y": 480
       }
     },
@@ -1662,7 +1662,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 74,
+        "x": 73,
         "y": 444
       }
     },
@@ -1814,7 +1814,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 76,
+        "x": 75,
         "y": 480
       }
     },
@@ -1970,7 +1970,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 78,
+        "x": 77,
         "y": 444
       }
     },
@@ -2266,7 +2266,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 83,
+        "x": 82,
         "y": 444
       }
     },
@@ -2450,7 +2450,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 85,
+        "x": 84,
         "y": 480
       }
     },
@@ -2600,7 +2600,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 515,
+        "x": 514,
         "y": 768
       }
     },
@@ -2724,7 +2724,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 87,
+        "x": 86,
         "y": 444
       }
     },
@@ -2893,7 +2893,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 89,
+        "x": 88,
         "y": 480
       }
     },
@@ -3032,7 +3032,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 91,
+        "x": 90,
         "y": 444
       }
     },
@@ -3260,7 +3260,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 94,
+        "x": 93,
         "y": 480
       }
     },
@@ -3377,7 +3377,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 536,
+        "x": 533,
         "y": 732
       }
     },
@@ -3486,7 +3486,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 556,
+        "x": 553,
         "y": 768
       }
     },
@@ -3986,7 +3986,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 96,
+        "x": 95,
         "y": 444
       }
     },
@@ -4144,7 +4144,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 98,
+        "x": 97,
         "y": 480
       }
     },
@@ -4298,7 +4298,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 100,
+        "x": 99,
         "y": 444
       }
     },
@@ -4458,7 +4458,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 102,
+        "x": 101,
         "y": 480
       }
     },
@@ -4624,7 +4624,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 105,
+        "x": 103,
         "y": 444
       }
     },
@@ -4784,7 +4784,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 107,
+        "x": 105,
         "y": 480
       }
     },
@@ -4940,7 +4940,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 109,
+        "x": 108,
         "y": 444
       }
     },
@@ -5122,7 +5122,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 111,
+        "x": 110,
         "y": 480
       }
     },
@@ -5280,7 +5280,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 114,
+        "x": 112,
         "y": 444
       }
     },
@@ -5431,7 +5431,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 116,
+        "x": 114,
         "y": 480
       }
     },
@@ -5582,7 +5582,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 118,
+        "x": 116,
         "y": 444
       }
     },
@@ -5731,7 +5731,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 120,
+        "x": 118,
         "y": 480
       }
     },
@@ -5871,7 +5871,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 122,
+        "x": 120,
         "y": 444
       }
     },
@@ -6001,7 +6001,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 125,
+        "x": 123,
         "y": 480
       }
     },
@@ -6131,8 +6131,143 @@
         "parent_hc": null
       },
       "position": {
-        "x": 127,
+        "x": 125,
         "y": 444
+      }
+    },
+    {
+      "id": "cgit_principal",
+      "name": "Central Government Industrial Tribunal — Principal (Aggregate)",
+      "aliases": [
+        "Central Government Industrial Tribunal",
+        "CGIT Principal Node"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "industrial_disputes"
+        ],
+        "states_covered": [],
+        "uts_covered": []
+      },
+      "name_hindi": "केंद्रीय सरकारी औद्योगिक अधिकरण — प्रधान (समुच्चय)",
+      "abbreviation": "CGIT",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1947,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Industrial Disputes Act 1947 ss.7A–7B; Central Government constitutes CGIT benches for industrial disputes involving Central undertakings.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Aggregate node for CGIT bench lattice. Regional benches: cgit_delhi, cgit_mumbai, cgit_kolkata, cgit_chennai, cgit_chandigarh_1, cgit_chandigarh_2. Award appeal lies to High Court under Article 226/227 (no statutory appellate tribunal). judge_strength not populated per bench.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "Reappointment possible by same executive authority": 2,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "severe",
+        "independence_risk_score": 9,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.52,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.52,
+          "independence_risk_penalty": 0.7,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "concerning",
+        "structural_health_score": 0.52
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_labour_employment",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": true,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947 s.7A — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Ministry of Labour and Employment — CGIT",
+          "url": "https://labour.gov.in/cgit",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_labour_employment",
+          "recommends": null,
+          "consulted": [],
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "Presiding Officer per IDA 1947 s.7A(3); typically until age 65",
+          "reappointment_possible": true,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_labour_employment",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_labour_employment"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Central Government order under IDA 1947 s.7A",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "CGIT presiding officers are quasi-judicial appointees; Lokpal treatment analogous to other tribunal members — mark No pending maintainer review.\n",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "industrial_disputes"
+          ],
+          "states_covered": [],
+          "uts_covered": []
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 127,
+        "y": 480
       }
     },
     {
@@ -6377,7 +6512,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 577,
+        "x": 573,
         "y": 732
       },
       "gaps": [
@@ -6699,7 +6834,7 @@
       },
       "position": {
         "x": 129,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -6847,7 +6982,7 @@
       },
       "position": {
         "x": 131,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -7488,7 +7623,7 @@
       },
       "position": {
         "x": 133,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -7621,7 +7756,7 @@
       },
       "position": {
         "x": 136,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -7755,7 +7890,7 @@
       },
       "position": {
         "x": 138,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -7895,7 +8030,7 @@
       },
       "position": {
         "x": 140,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -8041,7 +8176,7 @@
       },
       "position": {
         "x": 142,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -8172,8 +8307,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 145,
-        "y": 444
+        "x": 144,
+        "y": 480
       }
     },
     {
@@ -8442,8 +8577,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 147,
-        "y": 480
+        "x": 146,
+        "y": 444
       }
     },
     {
@@ -8596,8 +8731,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 149,
-        "y": 444
+        "x": 148,
+        "y": 480
       }
     },
     {
@@ -8748,7 +8883,7 @@
       },
       "position": {
         "x": 151,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -8889,7 +9024,7 @@
       },
       "position": {
         "x": 153,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -9040,8 +9175,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 156,
-        "y": 480
+        "x": 155,
+        "y": 444
       }
     },
     {
@@ -9220,8 +9355,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 158,
-        "y": 444
+        "x": 157,
+        "y": 480
       }
     },
     {
@@ -9377,8 +9512,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 160,
-        "y": 480
+        "x": 159,
+        "y": 444
       }
     },
     {
@@ -9517,8 +9652,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 162,
-        "y": 444
+        "x": 161,
+        "y": 480
       }
     },
     {
@@ -9667,8 +9802,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 164,
-        "y": 480
+        "x": 163,
+        "y": 444
       }
     },
     {
@@ -9819,8 +9954,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 167,
-        "y": 444
+        "x": 166,
+        "y": 480
       }
     },
     {
@@ -9978,8 +10113,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 169,
-        "y": 480
+        "x": 168,
+        "y": 444
       }
     },
     {
@@ -10125,8 +10260,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 171,
-        "y": 444
+        "x": 170,
+        "y": 480
       }
     },
     {
@@ -10296,8 +10431,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 173,
-        "y": 480
+        "x": 172,
+        "y": 444
       }
     },
     {
@@ -10474,8 +10609,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 176,
-        "y": 444
+        "x": 174,
+        "y": 480
       }
     },
     {
@@ -10629,8 +10764,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 178,
-        "y": 480
+        "x": 176,
+        "y": 444
       }
     },
     {
@@ -10769,8 +10904,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 180,
-        "y": 444
+        "x": 179,
+        "y": 480
       }
     },
     {
@@ -10916,8 +11051,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 182,
-        "y": 480
+        "x": 181,
+        "y": 444
       }
     },
     {
@@ -11056,8 +11191,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 184,
-        "y": 444
+        "x": 183,
+        "y": 480
       }
     },
     {
@@ -11196,8 +11331,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 187,
-        "y": 480
+        "x": 185,
+        "y": 444
       }
     },
     {
@@ -11353,8 +11488,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 189,
-        "y": 444
+        "x": 187,
+        "y": 480
       }
     },
     {
@@ -11493,8 +11628,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 191,
-        "y": 480
+        "x": 189,
+        "y": 444
       }
     },
     {
@@ -11633,8 +11768,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 193,
-        "y": 444
+        "x": 191,
+        "y": 480
       }
     },
     {
@@ -11783,8 +11918,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 195,
-        "y": 480
+        "x": 194,
+        "y": 444
       }
     },
     {
@@ -11923,8 +12058,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 198,
-        "y": 444
+        "x": 196,
+        "y": 480
       }
     },
     {
@@ -12069,8 +12204,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 200,
-        "y": 480
+        "x": 198,
+        "y": 444
       }
     },
     {
@@ -12217,8 +12352,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 202,
-        "y": 444
+        "x": 200,
+        "y": 480
       }
     },
     {
@@ -12356,8 +12491,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 204,
-        "y": 480
+        "x": 202,
+        "y": 444
       }
     },
     {
@@ -12475,7 +12610,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 598,
+        "x": 592,
         "y": 768
       }
     },
@@ -12825,8 +12960,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 206,
-        "y": 444
+        "x": 204,
+        "y": 480
       }
     },
     {
@@ -13055,6 +13190,141 @@
           }
         ],
         "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 206,
+        "y": 444
+      }
+    },
+    {
+      "id": "gstat_bench_generic",
+      "name": "GST Appellate Tribunal — Bench (Generic)",
+      "aliases": [
+        "GST Appellate Tribunal Bench",
+        "GSTAT State Bench"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "gst_appeals"
+        ],
+        "states_covered": [],
+        "uts_covered": []
+      },
+      "name_hindi": "जीएसटी अपीलीय अधिकरण — पीठ (सामान्य)",
+      "abbreviation": "GSTAT Bench",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2023,
+      "abolished_year": null,
+      "operational_status": "Not_Constituted",
+      "constitutional_basis": null,
+      "statutory_basis": "Central Goods and Services Tax Act 2017 ss.109–110 (as amended by Finance Act 2023); GST Appellate Tribunal (Appointment and Conditions of Service of President and Members) Rules 2023. Principal Bench at New Delhi; State Benches as notified.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Generic scaffold only. GSTAT Principal and State Benches not operationalised as of Jun 2026 despite statutory framework (Finance Act 2023). Do not create individual state-bench entities until gazette notifications confirm constitution. Parent aggregate: gstat (Not_Constituted). Pre-GST and interim appeals remain with High Courts.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1,
+          "Removal by same authority that appoints (no independent committee)": 1,
+          "Statutory body not constituted — regulatory vacuum": 3
+        },
+        "independence_risk_level": "severe",
+        "independence_risk_score": 10,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.52,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.13,
+          "independence_risk_penalty": 0.7,
+          "operational_status_modifier": 0.25
+        },
+        "structural_health_level": "critical",
+        "structural_health_score": 0.13
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "CGST Act 2017 s.109 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/2017/2017_12.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CBIC — GSTAT information",
+          "url": "https://cbic-gst.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": null,
+          "recommends": null,
+          "consulted": [],
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": null,
+          "reappointment_possible": null,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": null,
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokpal_jurisdiction_note": "Tribunal not yet constituted as of Jun 2026.",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "gst_appeals"
+          ],
+          "states_covered": [],
+          "uts_covered": []
+        },
         "case_volume": null,
         "judge_strength": null,
         "parent_hc": null
@@ -13997,7 +14267,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 521,
+        "x": 520,
         "y": 444
       }
     },
@@ -14136,6 +14406,133 @@
       "position": {
         "x": 215,
         "y": 444
+      }
+    },
+    {
+      "id": "jcit_appeals_generic",
+      "name": "Joint Commissioner of Income Tax (Appeals) — Generic",
+      "aliases": [
+        "Joint CIT(A)",
+        "Joint Commissioner of Income Tax Appeals",
+        "Additional CIT(A) — small appeals cadre"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "income_tax_appeals_small_taxpayer"
+        ],
+        "states_covered": [],
+        "uts_covered": []
+      },
+      "name_hindi": "संयुक्त आयकर आयुक्त (अपील) — सामान्य",
+      "abbreviation": "JCIT(A)",
+      "type": "ExecutiveBody",
+      "cluster": "executive_interface",
+      "level_of_government": "Central",
+      "created_year": 2023,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Finance Act 2023 — Joint/Additional CIT(A) cadre for small-taxpayer appeals; Income Tax Act 1961 ss.246A, 249–251; appeals to ITAT under s.253.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Cadre created by Finance Act 2023 to decongest CIT(A) docket (~100 JCIT(A) posts notified). Threshold and case-allocation rules in CBDT circulars; exact sanctioned strength not publicly consolidated as of Jun 2026. Parallel first appellate tier alongside cit_appeals_generic for qualifying small appeals.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Finance Act 2023 — Income-tax Act amendments",
+          "url": "https://www.india-code.nic.in/CodeofActs/2023/2023_08.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Income Tax India — official portal",
+          "url": "https://www.incometaxindia.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "cbdt",
+          "recommends": null,
+          "consulted": [],
+          "consultation_binding": null,
+          "formally_appoints": "central_government",
+          "criteria_public": false,
+          "tenure": "IRS cadre service tenure; no fixed term for adjudicatory function",
+          "reappointment_possible": null,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "cbdt"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Departmental proceedings under CCS (CCA) Rules 1965; IRS service rules",
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "JCIT(A) officers are Group A Central Government servants; Lokpal jurisdiction applies per Lokpal and Lokayuktas Act 2013 s.14(1)(a).\n",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "income_tax_appeals_small_taxpayer"
+          ],
+          "states_covered": [],
+          "uts_covered": []
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 612,
+        "y": 732
       }
     },
     {
@@ -14531,7 +14928,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 218,
+        "x": 217,
         "y": 480
       }
     },
@@ -15485,8 +15882,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 619,
-        "y": 732
+        "x": 632,
+        "y": 768
       }
     },
     {
@@ -16250,7 +16647,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 220,
+        "x": 219,
         "y": 444
       }
     },
@@ -17345,7 +17742,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 530,
+        "x": 529,
         "y": 444
       }
     },
@@ -17701,7 +18098,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 539,
+        "x": 538,
         "y": 444
       }
     },
@@ -17919,7 +18316,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 229,
+        "x": 228,
         "y": 444
       }
     },
@@ -18233,7 +18630,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 231,
+        "x": 230,
         "y": 480
       }
     },
@@ -18374,7 +18771,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 543,
+        "x": 542,
         "y": 480
       }
     },
@@ -18734,6 +19131,118 @@
       }
     },
     {
+      "id": "state_administrative_tribunal_generic",
+      "name": "State Administrative Tribunal — Generic (Non-CAT)",
+      "aliases": [],
+      "jurisdiction_scope": null,
+      "name_hindi": "राज्य प्रशासनिक अधिकरण — सामान्य",
+      "abbreviation": "State AT",
+      "type": "StateTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "State",
+      "created_year": 1985,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": "Constitution of India Article 323-B empowers Parliament and State Legislatures to establish tribunals for service-condition disputes.\n",
+      "statutory_basis": "Administrative Tribunals Act 1985 s.4(2); few states (Maharashtra, Karnataka, Himachal Pradesh, Odisha, Tamil Nadu historically) have operated State ATs; most state employees use CAT or High Court directly.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Generic scaffold distinct from CAT (central). Trend since L. Chandra Kumar (1997) is direct HC jurisdiction for many matters. Do not conflate with CAT or HC service benches. Appeal from State AT typically lies to High Court.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type StateTribunal": 1,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 3,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Constitutional basis (harder to politicise) (deduction)": -2,
+          "Lokpal jurisdiction contested — active litigation": 0,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "moderate",
+        "independence_risk_score": 5,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.76,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.76,
+          "independence_risk_penalty": 0.3,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.76
+      },
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Administrative Tribunals Act 1985 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1985/1985_13.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": null,
+          "recommends": null,
+          "consulted": [],
+          "formally_appoints": "governor_state",
+          "criteria_public": true,
+          "tenure": "Per AT Act 1985 and state rules",
+          "reappointment_possible": null,
+          "removal_authority": "governor_state",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Performance",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "governor_state",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Governor order under Administrative Tribunals Act 1985",
+          "lokpal_jurisdiction": "Contested",
+          "lokpal_jurisdiction_note": "State Lokayukta jurisdiction varies by state Act.",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 232,
+        "y": 444
+      }
+    },
+    {
       "id": "state_election_commission_generic",
       "name": "State Election Commission (Generic)",
       "aliases": [],
@@ -18877,6 +19386,122 @@
       "position": {
         "x": 547,
         "y": 444
+      }
+    },
+    {
+      "id": "state_electricity_appellate_tribunal_generic",
+      "name": "State Electricity Ombudsman / Appellate Mechanism — Generic",
+      "aliases": [
+        "State Electricity Ombudsman",
+        "SERC consumer grievance mechanism"
+      ],
+      "jurisdiction_scope": null,
+      "name_hindi": "राज्य विद्युत अपीलीय / लोकपाल तंत्र — सामान्य",
+      "abbreviation": null,
+      "type": "StateTribunal",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "State",
+      "created_year": 2003,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Electricity Act 2003 ss.42(6), 111 — SERC orders appeal to APTEL (central); s.42(6) enables state Electricity Ombudsman schemes for distribution-licensee consumer complaints. This entity models residual state-level ombudsman / grievance forums distinct from APTEL.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Most regulatory appeals go to APTEL (aptel entity), not a separate state appellate tribunal. Scaffold for state Electricity Ombudsman offices under s.42(6). Verify per-state constitutions before creating named entities.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type StateTribunal": 1,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal jurisdiction contested — active litigation": 0,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1,
+          "No publicly stated appointment criteria": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 8,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Electricity Act 2003 ss.42, 111 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/2003/2003_36.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": null,
+          "recommends": null,
+          "consulted": [],
+          "formally_appoints": "governor_state",
+          "criteria_public": false,
+          "tenure": "Per state electricity rules",
+          "reappointment_possible": null,
+          "removal_authority": "governor_state",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Performance",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "governor_state",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "State government order per state electricity rules",
+          "lokpal_jurisdiction": "Contested",
+          "lokpal_jurisdiction_note": "Ombudsman officer status varies; Lokayukta applicability contested.",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 551,
+        "y": 480
       }
     },
     {
@@ -19033,8 +19658,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 233,
-        "y": 444
+        "x": 234,
+        "y": 480
       }
     },
     {
@@ -19191,7 +19816,118 @@
         "parent_hc": null
       },
       "position": {
-        "x": 235,
+        "x": 237,
+        "y": 444
+      }
+    },
+    {
+      "id": "state_mental_health_review_board_generic",
+      "name": "State Mental Health Review Board — Generic",
+      "aliases": [],
+      "jurisdiction_scope": null,
+      "name_hindi": "राज्य मानसिक स्वास्थ्य समीक्षा बोर्ड — सामान्य",
+      "abbreviation": "MHRB",
+      "type": "StateTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "State",
+      "created_year": 2017,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Mental Healthcare Act 2017 s.73; State Governments establish Mental Health Review Boards exercising quasi-judicial functions over admission, advance directives, and discharge orders.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Generic scaffold. Board composition per s.73: district judge or ADJ (chair), psychiatry professional, civil-society representative. Operationalisation varies significantly by state; several states have not fully constituted district boards. Appeal from MHRB order lies to High Court under s.83.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type StateTribunal": 1,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 3,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal jurisdiction contested — active litigation": 0,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Mental Healthcare Act 2017 s.73 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/2017/2017_10.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "governor_state",
+          "recommends": null,
+          "consulted": [],
+          "formally_appoints": "governor_state",
+          "criteria_public": true,
+          "tenure": "Per state rules under MHCA 2017",
+          "reappointment_possible": null,
+          "removal_authority": "governor_state",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Performance",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "governor_state",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "State government order under MHCA 2017",
+          "lokpal_jurisdiction": "Contested",
+          "lokpal_jurisdiction_note": "State Lokayukta jurisdiction varies by state.",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 239,
         "y": 480
       }
     },
@@ -19275,6 +20011,119 @@
       "position": {
         "x": 831,
         "y": 192
+      }
+    },
+    {
+      "id": "state_transport_appellate_tribunal_generic",
+      "name": "State Transport Appellate Tribunal — Generic",
+      "aliases": [],
+      "jurisdiction_scope": null,
+      "name_hindi": "राज्य परिवहन अपीलीय अधिकरण — सामान्य",
+      "abbreviation": "STAT",
+      "type": "StateTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "State",
+      "created_year": 1988,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Motor Vehicles Act 1988 s.89; State Government constitutes a State Transport Appellate Tribunal to hear appeals from Regional Transport Authority orders.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Generic scaffold. Not all states maintain a separately constituted STAT; some route appeals to High Court benches. judge_strength and case_volume left null — populate at state-specific entity level. Appeal from STAT typically lies to HC.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type StateTribunal": 1,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal jurisdiction contested — active litigation": 0,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1,
+          "No publicly stated appointment criteria": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 8,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Motor Vehicles Act 1988 s.89 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1988/1988_59.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": null,
+          "recommends": null,
+          "consulted": [],
+          "formally_appoints": "governor_state",
+          "criteria_public": false,
+          "tenure": "Varies by state rules",
+          "reappointment_possible": null,
+          "removal_authority": "governor_state",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Performance",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "governor_state",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "State government order per state transport rules",
+          "lokpal_jurisdiction": "Contested",
+          "lokpal_jurisdiction_note": "State Lokayukta jurisdiction varies by state Act.",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 241,
+        "y": 444
       }
     },
     {
@@ -19442,8 +20291,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 237,
-        "y": 444
+        "x": 243,
+        "y": 480
       }
     },
     {
@@ -19663,8 +20512,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 240,
-        "y": 480
+        "x": 245,
+        "y": 444
       }
     },
     {
@@ -19791,8 +20640,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 552,
-        "y": 480
+        "x": 556,
+        "y": 444
       }
     },
     {
@@ -19932,8 +20781,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 556,
-        "y": 444
+        "x": 560,
+        "y": 480
       }
     },
     {
@@ -29873,8 +30722,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 561,
-        "y": 480
+        "x": 564,
+        "y": 444
       }
     },
     {
@@ -29974,8 +30823,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 565,
-        "y": 444
+        "x": 569,
+        "y": 480
       }
     },
     {
@@ -30075,8 +30924,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 570,
-        "y": 480
+        "x": 573,
+        "y": 444
       }
     },
     {
@@ -30176,8 +31025,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 574,
-        "y": 444
+        "x": 578,
+        "y": 480
       }
     },
     {
@@ -30277,8 +31126,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 579,
-        "y": 480
+        "x": 582,
+        "y": 444
       }
     },
     {
@@ -30378,8 +31227,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 583,
-        "y": 444
+        "x": 586,
+        "y": 480
       }
     },
     {
@@ -30479,8 +31328,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 588,
-        "y": 480
+        "x": 591,
+        "y": 444
       }
     },
     {
@@ -30580,8 +31429,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 592,
-        "y": 444
+        "x": 595,
+        "y": 480
       }
     },
     {
@@ -30681,8 +31530,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 596,
-        "y": 480
+        "x": 600,
+        "y": 444
       }
     },
     {
@@ -30782,8 +31631,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 601,
-        "y": 444
+        "x": 604,
+        "y": 480
       }
     },
     {
@@ -30883,8 +31732,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 605,
-        "y": 480
+        "x": 608,
+        "y": 444
       }
     },
     {
@@ -30984,8 +31833,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 610,
-        "y": 444
+        "x": 613,
+        "y": 480
       }
     },
     {
@@ -31085,8 +31934,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 614,
-        "y": 480
+        "x": 617,
+        "y": 444
       }
     },
     {
@@ -31186,8 +32035,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 619,
-        "y": 444
+        "x": 622,
+        "y": 480
       }
     },
     {
@@ -31287,8 +32136,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 623,
-        "y": 480
+        "x": 626,
+        "y": 444
       }
     },
     {
@@ -31388,8 +32237,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 628,
-        "y": 444
+        "x": 630,
+        "y": 480
       }
     },
     {
@@ -31489,8 +32338,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 632,
-        "y": 480
+        "x": 635,
+        "y": 444
       }
     },
     {
@@ -31590,8 +32439,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 636,
-        "y": 444
+        "x": 639,
+        "y": 480
       }
     },
     {
@@ -31691,8 +32540,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 641,
-        "y": 480
+        "x": 644,
+        "y": 444
       }
     },
     {
@@ -31792,8 +32641,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 645,
-        "y": 444
+        "x": 648,
+        "y": 480
       }
     },
     {
@@ -31893,8 +32742,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 650,
-        "y": 480
+        "x": 652,
+        "y": 444
       }
     },
     {
@@ -31994,8 +32843,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 654,
-        "y": 444
+        "x": 657,
+        "y": 480
       }
     },
     {
@@ -32095,8 +32944,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 659,
-        "y": 480
+        "x": 661,
+        "y": 444
       }
     },
     {
@@ -32196,8 +33045,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 663,
-        "y": 444
+        "x": 666,
+        "y": 480
       }
     },
     {
@@ -32297,8 +33146,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 668,
-        "y": 480
+        "x": 670,
+        "y": 444
       }
     },
     {
@@ -32398,8 +33247,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 672,
-        "y": 444
+        "x": 674,
+        "y": 480
       }
     },
     {
@@ -32499,8 +33348,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 677,
-        "y": 480
+        "x": 679,
+        "y": 444
       }
     },
     {
@@ -32600,8 +33449,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 681,
-        "y": 444
+        "x": 683,
+        "y": 480
       }
     },
     {
@@ -32701,8 +33550,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 685,
-        "y": 480
+        "x": 688,
+        "y": 444
       }
     },
     {
@@ -32802,8 +33651,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 690,
-        "y": 444
+        "x": 692,
+        "y": 480
       }
     },
     {
@@ -32903,8 +33752,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 694,
-        "y": 480
+        "x": 696,
+        "y": 444
       }
     },
     {
@@ -33004,8 +33853,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 699,
-        "y": 444
+        "x": 701,
+        "y": 480
       }
     },
     {
@@ -33105,8 +33954,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 703,
-        "y": 480
+        "x": 705,
+        "y": 444
       }
     },
     {
@@ -33206,8 +34055,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 708,
-        "y": 444
+        "x": 710,
+        "y": 480
       }
     },
     {
@@ -33307,8 +34156,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 712,
-        "y": 480
+        "x": 714,
+        "y": 444
       }
     },
     {
@@ -33408,8 +34257,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 717,
-        "y": 444
+        "x": 718,
+        "y": 480
       }
     },
     {
@@ -33509,8 +34358,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 721,
-        "y": 480
+        "x": 723,
+        "y": 444
       }
     },
     {
@@ -33610,8 +34459,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 726,
-        "y": 444
+        "x": 727,
+        "y": 480
       }
     },
     {
@@ -33711,8 +34560,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 730,
-        "y": 480
+        "x": 732,
+        "y": 444
       }
     },
     {
@@ -33812,8 +34661,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 734,
-        "y": 444
+        "x": 736,
+        "y": 480
       }
     },
     {
@@ -33913,8 +34762,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 739,
-        "y": 480
+        "x": 740,
+        "y": 444
       }
     },
     {
@@ -34014,8 +34863,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 743,
-        "y": 444
+        "x": 745,
+        "y": 480
       }
     },
     {
@@ -34115,8 +34964,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 748,
-        "y": 480
+        "x": 749,
+        "y": 444
       }
     },
     {
@@ -34216,8 +35065,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 752,
-        "y": 444
+        "x": 754,
+        "y": 480
       }
     },
     {
@@ -34317,8 +35166,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 757,
-        "y": 480
+        "x": 758,
+        "y": 444
       }
     },
     {
@@ -34418,8 +35267,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 761,
-        "y": 444
+        "x": 762,
+        "y": 480
       }
     },
     {
@@ -34519,8 +35368,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 766,
-        "y": 480
+        "x": 767,
+        "y": 444
       }
     },
     {
@@ -34620,8 +35469,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 770,
-        "y": 444
+        "x": 771,
+        "y": 480
       }
     },
     {
@@ -34721,8 +35570,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 774,
-        "y": 480
+        "x": 776,
+        "y": 444
       }
     },
     {
@@ -34822,8 +35671,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 779,
-        "y": 444
+        "x": 780,
+        "y": 480
       }
     },
     {
@@ -34923,8 +35772,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 783,
-        "y": 480
+        "x": 784,
+        "y": 444
       }
     },
     {
@@ -35024,8 +35873,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 788,
-        "y": 444
+        "x": 789,
+        "y": 480
       }
     },
     {
@@ -35125,8 +35974,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 792,
-        "y": 480
+        "x": 793,
+        "y": 444
       }
     },
     {
@@ -35226,8 +36075,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 797,
-        "y": 444
+        "x": 798,
+        "y": 480
       }
     },
     {
@@ -35327,8 +36176,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 801,
-        "y": 480
+        "x": 802,
+        "y": 444
       }
     },
     {
@@ -35429,7 +36278,7 @@
       },
       "position": {
         "x": 806,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -35529,8 +36378,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 810,
-        "y": 480
+        "x": 811,
+        "y": 444
       }
     },
     {
@@ -35631,7 +36480,7 @@
       },
       "position": {
         "x": 815,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -35731,8 +36580,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 819,
-        "y": 480
+        "x": 820,
+        "y": 444
       }
     },
     {
@@ -35832,8 +36681,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 823,
-        "y": 444
+        "x": 824,
+        "y": 480
       }
     },
     {
@@ -35934,7 +36783,7 @@
       },
       "position": {
         "x": 828,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -36247,8 +37096,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 242,
-        "y": 444
+        "x": 247,
+        "y": 480
       }
     },
     {
@@ -36347,8 +37196,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 244,
-        "y": 480
+        "x": 249,
+        "y": 444
       }
     },
     {
@@ -36771,8 +37620,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
-        "y": 444
+        "x": 252,
+        "y": 480
       }
     },
     {
@@ -36871,8 +37720,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 249,
-        "y": 480
+        "x": 254,
+        "y": 444
       }
     },
     {
@@ -37185,8 +38034,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 251,
-        "y": 444
+        "x": 256,
+        "y": 480
       }
     },
     {
@@ -37285,8 +38134,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 253,
-        "y": 480
+        "x": 258,
+        "y": 444
       }
     },
     {
@@ -37709,8 +38558,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 255,
-        "y": 444
+        "x": 260,
+        "y": 480
       }
     },
     {
@@ -37809,8 +38658,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 257,
-        "y": 480
+        "x": 262,
+        "y": 444
       }
     },
     {
@@ -38233,8 +39082,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 260,
-        "y": 444
+        "x": 264,
+        "y": 480
       }
     },
     {
@@ -38333,8 +39182,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 262,
-        "y": 480
+        "x": 267,
+        "y": 444
       }
     },
     {
@@ -38647,8 +39496,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 264,
-        "y": 444
+        "x": 269,
+        "y": 480
       }
     },
     {
@@ -38747,8 +39596,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 266,
-        "y": 480
+        "x": 271,
+        "y": 444
       }
     },
     {
@@ -39061,8 +39910,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 268,
-        "y": 444
+        "x": 273,
+        "y": 480
       }
     },
     {
@@ -39161,8 +40010,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 271,
-        "y": 480
+        "x": 275,
+        "y": 444
       }
     },
     {
@@ -39300,8 +40149,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 832,
-        "y": 444
+        "x": 833,
+        "y": 480
       }
     },
     {
@@ -39394,8 +40243,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 639,
-        "y": 768
+        "x": 651,
+        "y": 732
       }
     },
     {
@@ -39488,8 +40337,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 273,
-        "y": 444
+        "x": 277,
+        "y": 480
       }
     },
     {
@@ -39582,8 +40431,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 275,
-        "y": 480
+        "x": 280,
+        "y": 444
       }
     },
     {
@@ -39676,8 +40525,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 277,
-        "y": 444
+        "x": 282,
+        "y": 480
       }
     },
     {
@@ -39770,8 +40619,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 280,
-        "y": 480
+        "x": 284,
+        "y": 444
       }
     },
     {
@@ -39864,8 +40713,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 282,
-        "y": 444
+        "x": 286,
+        "y": 480
       }
     },
     {
@@ -39958,8 +40807,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 284,
-        "y": 480
+        "x": 288,
+        "y": 444
       }
     },
     {
@@ -41025,8 +41874,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 660,
-        "y": 732
+        "x": 671,
+        "y": 768
       }
     },
     {
@@ -41135,7 +41984,7 @@
       },
       "position": {
         "x": 837,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -41342,8 +42191,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 286,
-        "y": 444
+        "x": 290,
+        "y": 480
       }
     },
     {
@@ -41574,8 +42423,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 288,
-        "y": 480
+        "x": 292,
+        "y": 444
       }
     },
     {
@@ -41888,8 +42737,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 291,
-        "y": 444
+        "x": 295,
+        "y": 480
       }
     },
     {
@@ -41988,8 +42837,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 293,
-        "y": 480
+        "x": 297,
+        "y": 444
       }
     },
     {
@@ -42412,8 +43261,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 295,
-        "y": 444
+        "x": 299,
+        "y": 480
       }
     },
     {
@@ -42512,8 +43361,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 297,
-        "y": 480
+        "x": 301,
+        "y": 444
       }
     },
     {
@@ -42826,8 +43675,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 299,
-        "y": 444
+        "x": 303,
+        "y": 480
       }
     },
     {
@@ -42926,8 +43775,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 302,
-        "y": 480
+        "x": 305,
+        "y": 444
       }
     },
     {
@@ -43240,8 +44089,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 304,
-        "y": 444
+        "x": 307,
+        "y": 480
       }
     },
     {
@@ -43340,8 +44189,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 306,
-        "y": 480
+        "x": 310,
+        "y": 444
       }
     },
     {
@@ -43654,8 +44503,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 308,
-        "y": 444
+        "x": 312,
+        "y": 480
       }
     },
     {
@@ -43754,8 +44603,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 310,
-        "y": 480
+        "x": 314,
+        "y": 444
       }
     },
     {
@@ -44068,8 +44917,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 313,
-        "y": 444
+        "x": 316,
+        "y": 480
       }
     },
     {
@@ -44168,8 +45017,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 315,
-        "y": 480
+        "x": 318,
+        "y": 444
       }
     },
     {
@@ -44388,8 +45237,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 681,
-        "y": 768
+        "x": 691,
+        "y": 732
       }
     },
     {
@@ -44494,8 +45343,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 317,
-        "y": 444
+        "x": 320,
+        "y": 480
       }
     },
     {
@@ -44588,8 +45437,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 319,
-        "y": 480
+        "x": 323,
+        "y": 444
       }
     },
     {
@@ -44682,8 +45531,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 322,
-        "y": 444
+        "x": 325,
+        "y": 480
       }
     },
     {
@@ -44776,8 +45625,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 324,
-        "y": 480
+        "x": 327,
+        "y": 444
       }
     },
     {
@@ -48389,8 +49238,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 702,
-        "y": 732
+        "x": 711,
+        "y": 768
       }
     },
     {
@@ -48506,8 +49355,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 841,
-        "y": 444
+        "x": 842,
+        "y": 480
       }
     },
     {
@@ -48714,8 +49563,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 326,
-        "y": 444
+        "x": 329,
+        "y": 480
       }
     },
     {
@@ -48946,8 +49795,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 328,
-        "y": 480
+        "x": 331,
+        "y": 444
       }
     },
     {
@@ -49080,7 +49929,7 @@
       },
       "position": {
         "x": 846,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -49393,8 +50242,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 330,
-        "y": 444
+        "x": 333,
+        "y": 480
       }
     },
     {
@@ -49493,8 +50342,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 333,
-        "y": 480
+        "x": 335,
+        "y": 444
       }
     },
     {
@@ -49807,8 +50656,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 335,
-        "y": 444
+        "x": 338,
+        "y": 480
       }
     },
     {
@@ -49907,8 +50756,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 337,
-        "y": 480
+        "x": 340,
+        "y": 444
       }
     },
     {
@@ -50221,8 +51070,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 339,
-        "y": 444
+        "x": 342,
+        "y": 480
       }
     },
     {
@@ -50321,8 +51170,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 341,
-        "y": 480
+        "x": 344,
+        "y": 444
       }
     },
     {
@@ -50582,7 +51431,7 @@
       },
       "position": {
         "x": 850,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -50675,8 +51524,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 723,
-        "y": 768
+        "x": 730,
+        "y": 732
       }
     },
     {
@@ -50872,8 +51721,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 344,
-        "y": 444
+        "x": 346,
+        "y": 480
       }
     },
     {
@@ -50978,8 +51827,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 346,
-        "y": 480
+        "x": 348,
+        "y": 444
       }
     },
     {
@@ -51084,8 +51933,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 348,
-        "y": 444
+        "x": 350,
+        "y": 480
       }
     },
     {
@@ -51190,8 +52039,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 350,
-        "y": 480
+        "x": 353,
+        "y": 444
       }
     },
     {
@@ -55625,8 +56474,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 743,
-        "y": 732
+        "x": 750,
+        "y": 768
       }
     },
     {
@@ -55743,7 +56592,7 @@
       },
       "position": {
         "x": 855,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -55950,8 +56799,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 353,
-        "y": 444
+        "x": 355,
+        "y": 480
       }
     },
     {
@@ -56182,8 +57031,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 355,
-        "y": 480
+        "x": 357,
+        "y": 444
       }
     },
     {
@@ -56496,8 +57345,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 357,
-        "y": 444
+        "x": 359,
+        "y": 480
       }
     },
     {
@@ -56596,8 +57445,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 359,
-        "y": 480
+        "x": 361,
+        "y": 444
       }
     },
     {
@@ -56910,8 +57759,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 361,
-        "y": 444
+        "x": 363,
+        "y": 480
       }
     },
     {
@@ -57010,8 +57859,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 364,
-        "y": 480
+        "x": 366,
+        "y": 444
       }
     },
     {
@@ -57434,8 +58283,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 366,
-        "y": 444
+        "x": 368,
+        "y": 480
       }
     },
     {
@@ -57534,8 +58383,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 368,
-        "y": 480
+        "x": 370,
+        "y": 444
       }
     },
     {
@@ -57848,8 +58697,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 370,
-        "y": 444
+        "x": 372,
+        "y": 480
       }
     },
     {
@@ -57948,8 +58797,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 372,
-        "y": 480
+        "x": 374,
+        "y": 444
       }
     },
     {
@@ -58262,8 +59111,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 375,
-        "y": 444
+        "x": 376,
+        "y": 480
       }
     },
     {
@@ -58362,8 +59211,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 377,
-        "y": 480
+        "x": 378,
+        "y": 444
       }
     },
     {
@@ -58676,8 +59525,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 379,
-        "y": 444
+        "x": 381,
+        "y": 480
       }
     },
     {
@@ -58776,8 +59625,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 381,
-        "y": 480
+        "x": 383,
+        "y": 444
       }
     },
     {
@@ -59090,8 +59939,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 384,
-        "y": 444
+        "x": 385,
+        "y": 480
       }
     },
     {
@@ -59190,8 +60039,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 386,
-        "y": 480
+        "x": 387,
+        "y": 444
       }
     },
     {
@@ -59284,8 +60133,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 764,
-        "y": 768
+        "x": 770,
+        "y": 732
       }
     },
     {
@@ -59386,8 +60235,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 388,
-        "y": 444
+        "x": 389,
+        "y": 480
       }
     },
     {
@@ -59697,8 +60546,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 785,
-        "y": 732
+        "x": 789,
+        "y": 768
       }
     },
     {
@@ -59805,8 +60654,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 390,
-        "y": 480
+        "x": 391,
+        "y": 444
       }
     },
     {
@@ -60229,8 +61078,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 392,
-        "y": 444
+        "x": 393,
+        "y": 480
       }
     },
     {
@@ -60329,8 +61178,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 395,
-        "y": 480
+        "x": 396,
+        "y": 444
       }
     },
     {
@@ -60643,8 +61492,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 397,
-        "y": 444
+        "x": 398,
+        "y": 480
       }
     },
     {
@@ -60743,8 +61592,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 399,
-        "y": 480
+        "x": 400,
+        "y": 444
       }
     },
     {
@@ -60837,8 +61686,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 806,
-        "y": 768
+        "x": 809,
+        "y": 732
       }
     },
     {
@@ -61046,8 +61895,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 401,
-        "y": 444
+        "x": 402,
+        "y": 480
       }
     },
     {
@@ -65459,8 +66308,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 826,
-        "y": 732
+        "x": 829,
+        "y": 768
       }
     },
     {
@@ -65569,7 +66418,7 @@
       },
       "position": {
         "x": 859,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -65807,8 +66656,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 403,
-        "y": 480
+        "x": 404,
+        "y": 444
       }
     },
     {
@@ -66032,7 +66881,7 @@
       },
       "position": {
         "x": 406,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -66149,7 +66998,7 @@
       },
       "position": {
         "x": 864,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -66248,8 +67097,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 408,
-        "y": 480
+        "x": 409,
+        "y": 444
       }
     },
     {
@@ -66562,8 +67411,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 410,
-        "y": 444
+        "x": 411,
+        "y": 480
       }
     },
     {
@@ -66662,8 +67511,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 412,
-        "y": 480
+        "x": 413,
+        "y": 444
       }
     },
     {
@@ -67087,7 +67936,7 @@
       },
       "position": {
         "x": 415,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -67187,7 +68036,7 @@
       },
       "position": {
         "x": 417,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -67501,7 +68350,7 @@
       },
       "position": {
         "x": 419,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -67601,7 +68450,7 @@
       },
       "position": {
         "x": 421,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -68024,8 +68873,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 423,
-        "y": 444
+        "x": 424,
+        "y": 480
       }
     },
     {
@@ -68125,7 +68974,7 @@
       },
       "position": {
         "x": 426,
-        "y": 480
+        "y": 444
       }
     },
     {
@@ -68549,7 +69398,7 @@
       },
       "position": {
         "x": 428,
-        "y": 444
+        "y": 480
       }
     },
     {
@@ -69244,8 +70093,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 847,
-        "y": 768
+        "x": 848,
+        "y": 732
       }
     }
   ],
@@ -82703,6 +83552,556 @@
           "accessed_date": "2026-05-13"
         }
       ]
+    },
+    {
+      "id": "rel_drat_chennai_benchof_drat",
+      "source": "drat_chennai",
+      "target": "drat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drat_mumbai_benchof_drat",
+      "source": "drat_mumbai",
+      "target": "drat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drat_delhi_benchof_drat",
+      "source": "drat_delhi",
+      "target": "drat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drat_kolkata_benchof_drat",
+      "source": "drat_kolkata",
+      "target": "drat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drat_allahabad_benchof_drat",
+      "source": "drat_allahabad",
+      "target": "drat",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "RDDBFI Act 1993 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_jcit_appeals_to_itat",
+      "source": "jcit_appeals_generic",
+      "target": "itat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2023,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Income Tax Act 1961 s.253 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_drp_to_itat",
+      "source": "drp_income_tax",
+      "target": "itat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Income Tax Act 1961 s.144C — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_itat_to_high_courts_all",
+      "source": "itat",
+      "target": "high_courts_all",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1998,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "ITAT has 28 benches across zones mapped to different HCs on question of law. Aggregate high_courts_all edge used pending per-zone ITAT bench → HC wiring in dedicated session. Zone mapping documented in itat entity data_quality_notes.\n",
+      "sources": [
+        {
+          "label": "Income Tax Act 1961 s.260A — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aar_income_tax_to_high_courts_all",
+      "source": "aar_income_tax",
+      "target": "high_courts_all",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": false,
+      "is_constitutional": true,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Writ jurisdiction; not a statutory appeal. Aggregate edge pending per-HC wiring.",
+      "sources": [
+        {
+          "label": "Income Tax Act 1961 s.245W — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_caar_customs_to_cestat",
+      "source": "caar_customs",
+      "target": "cestat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2021,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.28F — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_delhi_benchof_cgit",
+      "source": "cgit_delhi",
+      "target": "cgit_principal",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947 s.7A — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_mumbai_benchof_cgit",
+      "source": "cgit_mumbai",
+      "target": "cgit_principal",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947 s.7A — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_kolkata_benchof_cgit",
+      "source": "cgit_kolkata",
+      "target": "cgit_principal",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947 s.7A — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chennai_benchof_cgit",
+      "source": "cgit_chennai",
+      "target": "cgit_principal",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947 s.7A — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chandigarh_1_benchof_cgit",
+      "source": "cgit_chandigarh_1",
+      "target": "cgit_principal",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947 s.7A — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chandigarh_2_benchof_cgit",
+      "source": "cgit_chandigarh_2",
+      "target": "cgit_principal",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947 s.7A — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_chennai_to_hc_madras",
+      "source": "cestat_chennai",
+      "target": "hc_madras",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Appeal on substantial question of law; factual findings of CESTAT are final",
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_bangalore_to_hc_karnataka",
+      "source": "cestat_bangalore",
+      "target": "hc_karnataka",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_mumbai_to_hc_bombay",
+      "source": "cestat_mumbai",
+      "target": "hc_bombay",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_ahmedabad_to_hc_gujarat",
+      "source": "cestat_ahmedabad",
+      "target": "hc_gujarat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_kolkata_to_hc_calcutta",
+      "source": "cestat_kolkata",
+      "target": "hc_calcutta",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_allahabad_to_hc_allahabad",
+      "source": "cestat_allahabad",
+      "target": "hc_allahabad",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_chandigarh_to_hc_punjab_haryana",
+      "source": "cestat_chandigarh",
+      "target": "hc_punjab_haryana",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1982,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_hyderabad_to_hc_telangana",
+      "source": "cestat_hyderabad",
+      "target": "hc_telangana",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2019,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Post-bifurcation (2014), Hyderabad bench covers TS and AP territory. TS matters → hc_telangana; AP matters → hc_andhra_pradesh.\n",
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cestat_hyderabad_to_hc_andhra_pradesh",
+      "source": "cestat_hyderabad",
+      "target": "hc_andhra_pradesh",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2019,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "AP-portion of CESTAT Hyderabad bench jurisdiction post-2014 bifurcation.",
+      "sources": [
+        {
+          "label": "Customs Act 1962 s.130 — India Code",
+          "url": "https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
     }
   ],
   "browse_index": {
@@ -82746,6 +84145,7 @@
         "cgit_delhi",
         "cgit_kolkata",
         "cgit_mumbai",
+        "cgit_principal",
         "ch_state_cdrc",
         "compat",
         "court_martial_generic",
@@ -82794,6 +84194,7 @@
         "gj_state_cdrc",
         "governing_body_insurance_council",
         "gstat",
+        "gstat_bench_generic",
         "hp_state_cdrc",
         "hr_state_cdrc",
         "insurance_ombudsman_generic",
@@ -82864,8 +84265,11 @@
         "slsa_uk",
         "slsa_up",
         "slsa_wb",
+        "state_administrative_tribunal_generic",
         "state_industrial_tribunal_generic",
         "state_labour_court_generic",
+        "state_mental_health_review_board_generic",
+        "state_transport_appellate_tribunal_generic",
         "state_vat_tribunal_generic",
         "tdsat",
         "tn_cdrc_chennai",
@@ -82957,6 +84361,7 @@
         "serc_up",
         "serc_wb",
         "state_election_commission_generic",
+        "state_electricity_appellate_tribunal_generic",
         "tn_rera",
         "tnerc",
         "trade_marks_registry",
@@ -82971,6 +84376,7 @@
         "dl_advocate_general",
         "dl_lokayukta",
         "epfo",
+        "jcit_appeals_generic",
         "ka_advocate_general",
         "ka_lokayukta",
         "mh_advocate_general",
@@ -83357,6 +84763,7 @@
         "cgit_delhi",
         "cgit_kolkata",
         "cgit_mumbai",
+        "cgit_principal",
         "compat",
         "drat",
         "drat_allahabad",
@@ -83392,6 +84799,7 @@
         "drt_visakhapatnam",
         "epfat",
         "gstat",
+        "gstat_bench_generic",
         "ipab",
         "itat",
         "nclat",
@@ -83534,6 +84942,7 @@
         "governor_state",
         "high_court_competent",
         "in_house_procedure_sc",
+        "jcit_appeals_generic",
         "ka_lokayukta",
         "leader_opposition_lok_sabha",
         "leader_opposition_rajya_sabha",
@@ -83569,8 +84978,12 @@
       ],
       "StateTribunal": [
         "board_of_revenue_generic",
+        "state_administrative_tribunal_generic",
+        "state_electricity_appellate_tribunal_generic",
         "state_industrial_tribunal_generic",
         "state_labour_court_generic",
+        "state_mental_health_review_board_generic",
+        "state_transport_appellate_tribunal_generic",
         "state_vat_tribunal_generic"
       ],
       "AppointmentBody": [
@@ -84067,6 +85480,9 @@
       "{'states_covered': ['TN'], 'uts_covered': ['PY'], 'is_all_india': False, 'jurisdiction_types': ['industrial_disputes', 'epf_appeals']}": [
         "cgit_chennai"
       ],
+      "{'is_all_india': True, 'jurisdiction_types': ['industrial_disputes'], 'states_covered': [], 'uts_covered': []}": [
+        "cgit_principal"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['Income tax assessments — first appellate forum', 'TDS/TCS disputes', 'Penalty orders under Income Tax Act 1961'], 'states_covered': [], 'uts_covered': []}": [
         "cit_appeals_generic"
       ],
@@ -84188,6 +85604,9 @@
       "{'is_all_india': True, 'jurisdiction_types': ['Food safety licensing and standards', 'Quasi-judicial adjudication (Food Safety Appellate Tribunal where notified)', 'Appellate orders against licensing authorities']}": [
         "fssai"
       ],
+      "{'is_all_india': True, 'jurisdiction_types': ['gst_appeals'], 'states_covered': [], 'uts_covered': []}": [
+        "gstat_bench_generic"
+      ],
       "{'is_all_india': True, 'jurisdiction_types': ['Appellate', 'Writ']}": [
         "high_courts_all"
       ],
@@ -84205,6 +85624,9 @@
       ],
       "{'is_all_india': True, 'jurisdiction_types': ['insurance_regulation', 'policyholder_protection', 'insurer_licensing', 'intermediary_regulation']}": [
         "irdai"
+      ],
+      "{'is_all_india': True, 'jurisdiction_types': ['income_tax_appeals_small_taxpayer'], 'states_covered': [], 'uts_covered': []}": [
+        "jcit_appeals_generic"
       ],
       "{'states_covered': ['KA'], 'jurisdiction_types': ['consumer_disputes_redressal']}": [
         "ka_scdrc"

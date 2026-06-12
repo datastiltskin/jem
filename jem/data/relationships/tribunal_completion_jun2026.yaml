@@ -1,0 +1,436 @@
+relationships:
+
+  # ══════════════════════════════════════════════════════════════════
+  # DRAT BenchOf → drat aggregate (5 benches)
+  # DRT→DRAT AppealableTo edges already in central_tribunal_regulator_relationships.yaml
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_drat_chennai_benchof_drat
+    source: drat_chennai
+    target: drat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: RDDBFI Act 1993 s.8
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: RDDBFI Act 1993 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_drat_mumbai_benchof_drat
+    source: drat_mumbai
+    target: drat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: RDDBFI Act 1993 s.8
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: RDDBFI Act 1993 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_drat_delhi_benchof_drat
+    source: drat_delhi
+    target: drat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: RDDBFI Act 1993 s.8
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: RDDBFI Act 1993 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_drat_kolkata_benchof_drat
+    source: drat_kolkata
+    target: drat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: RDDBFI Act 1993 s.8
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: RDDBFI Act 1993 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_drat_allahabad_benchof_drat
+    source: drat_allahabad
+    target: drat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: RDDBFI Act 1993 s.8
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - label: RDDBFI Act 1993 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1993/1993_51.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  # ══════════════════════════════════════════════════════════════════
+  # Tax appellate chain (net-new edges only)
+  # rel_cit_a_to_itat_appellate already exists
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_jcit_appeals_to_itat
+    source: jcit_appeals_generic
+    target: itat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Income Tax Act 1961 s.253(1)(a) — appeal to ITAT from JCIT(A) order;
+      Finance Act 2023 cadre confirmed appealable to ITAT.
+    year_established: 2023
+    data_quality: partial
+    sources:
+      - label: Income Tax Act 1961 s.253 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_drp_to_itat
+    source: drp_income_tax
+    target: itat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Income Tax Act 1961 s.144C(12) — AO order conforming to DRP directions
+      is appealable to ITAT under s.253.
+    year_established: 2009
+    data_quality: partial
+    sources:
+      - label: Income Tax Act 1961 s.144C — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_itat_to_high_courts_all
+    source: itat
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Income Tax Act 1961 s.260A — appeal on substantial question of law to High Court
+    year_established: 1998
+    notes: >
+      ITAT has 28 benches across zones mapped to different HCs on question of
+      law. Aggregate high_courts_all edge used pending per-zone ITAT bench → HC
+      wiring in dedicated session. Zone mapping documented in itat entity
+      data_quality_notes.
+    data_quality: partial
+    sources:
+      - label: Income Tax Act 1961 s.260A — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_aar_income_tax_to_high_courts_all
+    source: aar_income_tax
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    statutory_basis: >
+      Income Tax Act 1961 s.245W — challenge to AAR ruling by writ petition
+      under Article 226 to relevant High Court (no statutory appellate body).
+    year_established: 1993
+    notes: Writ jurisdiction; not a statutory appeal. Aggregate edge pending per-HC wiring.
+    data_quality: partial
+    sources:
+      - label: Income Tax Act 1961 s.245W — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_caar_customs_to_cestat
+    source: caar_customs
+    target: cestat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.28F — appeal from CAAR ruling lies to CESTAT
+    year_established: 2021
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.28F — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  # ══════════════════════════════════════════════════════════════════
+  # CGIT BenchOf → cgit_principal (6 benches)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_cgit_delhi_benchof_cgit
+    source: cgit_delhi
+    target: cgit_principal
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Industrial Disputes Act 1947 s.7A
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: Industrial Disputes Act 1947 s.7A — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_mumbai_benchof_cgit
+    source: cgit_mumbai
+    target: cgit_principal
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Industrial Disputes Act 1947 s.7A
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: Industrial Disputes Act 1947 s.7A — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_kolkata_benchof_cgit
+    source: cgit_kolkata
+    target: cgit_principal
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Industrial Disputes Act 1947 s.7A
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: Industrial Disputes Act 1947 s.7A — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chennai_benchof_cgit
+    source: cgit_chennai
+    target: cgit_principal
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Industrial Disputes Act 1947 s.7A
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: Industrial Disputes Act 1947 s.7A — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chandigarh_1_benchof_cgit
+    source: cgit_chandigarh_1
+    target: cgit_principal
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Industrial Disputes Act 1947 s.7A
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: Industrial Disputes Act 1947 s.7A — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chandigarh_2_benchof_cgit
+    source: cgit_chandigarh_2
+    target: cgit_principal
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Industrial Disputes Act 1947 s.7A
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: Industrial Disputes Act 1947 s.7A — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1947/1947_14.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  # ══════════════════════════════════════════════════════════════════
+  # CESTAT regional benches → High Court (question of law)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_cestat_chennai_to_hc_madras
+    source: cestat_chennai
+    target: hc_madras
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 1982
+    notes: Appeal on substantial question of law; factual findings of CESTAT are final
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cestat_bangalore_to_hc_karnataka
+    source: cestat_bangalore
+    target: hc_karnataka
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cestat_mumbai_to_hc_bombay
+    source: cestat_mumbai
+    target: hc_bombay
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cestat_ahmedabad_to_hc_gujarat
+    source: cestat_ahmedabad
+    target: hc_gujarat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cestat_kolkata_to_hc_calcutta
+    source: cestat_kolkata
+    target: hc_calcutta
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cestat_allahabad_to_hc_allahabad
+    source: cestat_allahabad
+    target: hc_allahabad
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cestat_chandigarh_to_hc_punjab_haryana
+    source: cestat_chandigarh
+    target: hc_punjab_haryana
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 1982
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cestat_hyderabad_to_hc_telangana
+    source: cestat_hyderabad
+    target: hc_telangana
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 2019
+    notes: >
+      Post-bifurcation (2014), Hyderabad bench covers TS and AP territory.
+      TS matters → hc_telangana; AP matters → hc_andhra_pradesh.
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cestat_hyderabad_to_hc_andhra_pradesh
+    source: cestat_hyderabad
+    target: hc_andhra_pradesh
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962 s.130; Central Excise Act 1944 s.35G
+    year_established: 2019
+    notes: AP-portion of CESTAT Hyderabad bench jurisdiction post-2014 bifurcation.
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 s.130 — India Code
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'

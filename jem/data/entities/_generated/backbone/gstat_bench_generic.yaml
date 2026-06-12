@@ -1,0 +1,81 @@
+id: gstat_bench_generic
+name: GST Appellate Tribunal — Bench (Generic)
+name_hindi: जीएसटी अपीलीय अधिकरण — पीठ (सामान्य)
+abbreviation: GSTAT Bench
+aliases:
+  - GST Appellate Tribunal Bench
+  - GSTAT State Bench
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+created_year: 2023
+operational_status: Not_Constituted
+
+constitutional_basis: null
+statutory_basis: >
+  Central Goods and Services Tax Act 2017 ss.109–110 (as amended by Finance Act
+  2023); GST Appellate Tribunal (Appointment and Conditions of Service of President
+  and Members) Rules 2023. Principal Bench at New Delhi; State Benches as notified.
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: null
+  reappointment_possible: null
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+  state_contribution_percent: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: null
+  lokpal_jurisdiction: Not_Applicable
+  lokpal_jurisdiction_note: Tribunal not yet constituted as of Jun 2026.
+  source: null
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - gst_appeals
+  states_covered: []
+  uts_covered: []
+
+data_quality: partial
+data_quality_notes: >
+  Generic scaffold only. GSTAT Principal and State Benches not operationalised
+  as of Jun 2026 despite statutory framework (Finance Act 2023). Do not create
+  individual state-bench entities until gazette notifications confirm constitution.
+  Parent aggregate: gstat (Not_Constituted). Pre-GST and interim appeals remain
+  with High Courts.
+
+sources:
+  - label: CGST Act 2017 s.109 — India Code
+    url: https://www.india-code.nic.in/CodeofActs/2017/2017_12.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: CBIC — GSTAT information
+    url: https://cbic-gst.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

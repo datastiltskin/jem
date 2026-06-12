@@ -1,6 +1,6 @@
 # JEM — entity build roadmap (~1,500 target)
 
-**Current corpus:** 592 entities (Jun 2026) · **Target:** ~1,500 structural entities  
+**Current corpus:** 599 entities (Jun 2026) · **Target:** ~1,500 structural entities  
 **Tracker:** this file is the source of truth; [`README.md`](../../README.md#entity-build-progress) mirrors the status table for GitHub.
 
 ## Status legend
@@ -47,18 +47,18 @@
 | C16 | State packs — Batch B (MP, BR, KL, PB, HR, OD) | ~360 | scaffold | **pending** | 1 | Contributor drafts |
 | C17 | State packs — Batch C (NE, HP, UK, GA, CG, JH) | ~280 | scaffold | **pending** | 2 | Contributor drafts |
 | C18 | State packs — Batch D (UTs, JK/LA, SK) | ~120 | scaffold | **pending** | 2 | Contributor drafts |
-| C19 | Tax / revenue stack (GSTAT, CIT(A), DRP, VAT tribunals) | ~45 | 2 (AO, CIT(A) gens) | **updated** | 2 | Contributor drafts |
-| C20 | Labour (CGIT, EPFAT, state labour courts) | ~35 | 0 | **pending** | 2 | Contributor drafts |
+| C19 | Tax / revenue stack (GSTAT, CIT(A), DRP, VAT tribunals) | ~45 | ~8 (AO, CIT(A), JCIT(A), DRP, AAR, CAAR, GSTAT bench gen) | **updated** | 2 | Contributor drafts |
+| C20 | Labour (CGIT, EPFAT, state labour courts) | ~35 | 7 (cgit_principal + 6 benches) | **updated** | 2 | Contributor drafts |
 | C21 | Defence (court martial, AFT benches) | ~12 | 12 (AFT principal + 11 benches, court_martial_generic) | **updated** | 2 | Maintainer |
 | C22 | Specialized regulators (FSSAI, AERA, ICADR, PFRDA entity) | ~10 | 7 (+ PFRDA partial) | **updated** | 2 | Maintainer |
 | C23 | IP (patent controller, TM registry; IPAB historical) | ~5 | 5 (CGPDTM, TMR, ipab, compat) | **updated** | 3 | Maintainer |
-| C24 | State tribunals (SAT, transport, mental health boards) | ~35 | 0 | **pending** | 3 | Contributor drafts |
+| C24 | State tribunals (SAT, transport, mental health boards) | ~35 | 5 (4 generics + state_vat_tribunal_generic) | **updated** | 3 | Contributor drafts |
 | C25 | People / roles layer (judges, advocates, parties) | ~20 | partial | **pending** | 3 | Optional |
 | C26 | Relationship wiring & orphan cleanup (~139 orphans) | — | partial | **updated** | 1–3 | **Maintainer only** |
-| C27 | Data-quality upgrade (sources, partial→complete) | 592 | ongoing | **updated** | all | Contributor |
-| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 592 | sparse | **pending** | 2 | Maintainer + NJDG |
+| C27 | Data-quality upgrade (sources, partial→complete) | 599 | ongoing | **updated** | all | Contributor |
+| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 599 | sparse | **pending** | 2 | Maintainer + NJDG |
 
-*Last roadmap review: 2026-06-12 (Batch 3 C21/C22/C23 merged)*
+*Last roadmap review: 2026-06-12 (tribunal completion batch — DRAT BenchOf, tax chain, CGIT, CESTAT→HC, state generics)*
 
 ---
 
@@ -136,20 +136,6 @@ TASK: For each HC in NE (hc_gauhati, hc_manipur, hc_meghalaya, hc_tripura, hc_mi
 
 ### Phase 2 — tribunals & regulators
 
-#### P2-A · C04 CESTAT regional benches (8) · `pending` · Contributor
-
-```
-TASK: Draft 8 new CentralTribunal entities: cestat_chennai, cestat_mumbai, cestat_kolkata, cestat_bangalore, cestat_ahmedabad, cestat_hyderabad, cestat_allahabad, cestat_chandigarh. Parent act + bench jurisdiction states in data_quality_notes. operational_status from cestat.gov.in. Template: jem/data/entities/_generated/backbone/cestat.yaml. Not_Constituted if bench inactive.
-No relationships.
-```
-
-#### P2-C · C19 Tax stack — CIT(A) generic · `pending` · Contributor
-
-```
-TASK: Draft cit_appeals_generic and ao_income_tax_generic as quasi-judicial / executive adjudication entities with statutory_basis, appointment, funding from CBDT, gap notes on backlog. Template: regulatory or executive bodies. Mark extreme backlog in structural_gap if sourced.
-No relationships.
-```
-
 #### P2-D · C06 District CDRC — high-volume states · `pending` · Contributor
 
 ```
@@ -225,10 +211,30 @@ TASK: (Completed) SC, 25 HCs, central tribunal principal nodes in graph (~506 ba
 TASK: (Completed) Governance graph Phase 6 — ministries, appointment committees, CBI selection committee.
 ```
 
+#### ~~P2-A · C04 CESTAT regional benches (8)~~ · **done** 2026-06
+
+```
+TASK: (Completed) 8 CESTAT bench entities + BenchOf to cestat + AppealableTo HC edges (tribunal_completion_jun2026.yaml).
+```
+
 #### ~~P2-B · C04 AFT regional benches~~ · **done** 2026-06
 
 ```
-TASK: (Completed) 11 AFT bench entities + BenchOf wiring to principal aft. Includes jammu, jabalpur beyond original 9-bench list.
+TASK: (Completed) 11 AFT bench entities + BenchOf wiring to principal aft. Canonical Ladakh/J&K seat: aft_srinagar (not aft_jammu).
+```
+
+#### ~~P2-C · C19 Tax stack — CIT(A) / JCIT(A)~~ · **done** 2026-06
+
+```
+TASK: (Completed) ao_income_tax_generic, cit_appeals_generic, jcit_appeals_generic; DRP/AAR/CAAR pre-existed;
+gstat_bench_generic scaffolded (Not_Constituted). ITAT chain wired: JCIT→ITAT, DRP→ITAT, ITAT→high_courts_all.
+```
+
+#### ~~Tribunal completion batch~~ · **done** 2026-06
+
+```
+TASK: (Completed) DRAT BenchOf×5, CGIT BenchOf×6 (cgit_principal), CESTAT→HC×9, tax appellate edges.
+Skipped: duplicate DRT→DRAT (25 pre-wired), state_sales_tax (covered by state_vat_tribunal_generic).
 ```
 
 #### ~~Batch 3 · C21 Defence + C22 Regulators + C23 IP~~ · **done** 2026-06

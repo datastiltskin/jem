@@ -1,0 +1,83 @@
+id: jcit_appeals_generic
+name: Joint Commissioner of Income Tax (Appeals) — Generic
+name_hindi: संयुक्त आयकर आयुक्त (अपील) — सामान्य
+abbreviation: JCIT(A)
+aliases:
+  - Joint CIT(A)
+  - Joint Commissioner of Income Tax Appeals
+  - Additional CIT(A) — small appeals cadre
+
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+
+created_year: 2023
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >
+  Finance Act 2023 — Joint/Additional CIT(A) cadre for small-taxpayer appeals;
+  Income Tax Act 1961 ss.246A, 249–251; appeals to ITAT under s.253.
+
+appointment:
+  nominates: cbdt
+  recommends: null
+  consulted: []
+  consultation_binding: null
+  formally_appoints: central_government
+  criteria_public: false
+  tenure: IRS cadre service tenure; no fixed term for adjudicatory function
+  reappointment_possible: null
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+  state_contribution_percent: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: cbdt
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: Departmental proceedings under CCS (CCA) Rules 1965; IRS service rules
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >
+    JCIT(A) officers are Group A Central Government servants; Lokpal jurisdiction
+    applies per Lokpal and Lokayuktas Act 2013 s.14(1)(a).
+  source: null
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - income_tax_appeals_small_taxpayer
+  states_covered: []
+  uts_covered: []
+
+data_quality: partial
+data_quality_notes: >
+  Cadre created by Finance Act 2023 to decongest CIT(A) docket (~100 JCIT(A)
+  posts notified). Threshold and case-allocation rules in CBDT circulars; exact
+  sanctioned strength not publicly consolidated as of Jun 2026. Parallel first
+  appellate tier alongside cit_appeals_generic for qualifying small appeals.
+
+sources:
+  - label: Finance Act 2023 — Income-tax Act amendments
+    url: https://www.india-code.nic.in/CodeofActs/2023/2023_08.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: Income Tax India — official portal
+    url: https://www.incometaxindia.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'
