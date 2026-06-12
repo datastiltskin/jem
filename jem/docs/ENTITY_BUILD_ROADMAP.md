@@ -48,7 +48,7 @@
 | C17 | State packs — Batch C (NE, HP, UK, GA, CG, JH) | ~280 | scaffold | **pending** | 2 | Contributor drafts |
 | C18 | State packs — Batch D (UTs, JK/LA, SK) | ~120 | scaffold | **pending** | 2 | Contributor drafts |
 | C19 | Tax / revenue stack (GSTAT, CIT(A), DRP, VAT tribunals) | ~45 | ~8 (AO, CIT(A), JCIT(A), DRP, AAR, CAAR, GSTAT bench gen) | **updated** | 2 | Contributor drafts |
-| C20 | Labour (CGIT, EPFAT, state labour courts) | ~35 | 7 (cgit_principal + 6 benches) | **updated** | 2 | Contributor drafts |
+| C20 | Labour (CGIT, EPFAT, state labour courts) | ~35 | 9 (cgit_principal + 6 benches + epfat + epfo) | **updated** | 2 | Maintainer |
 | C21 | Defence (court martial, AFT benches) | ~12 | 12 (AFT principal + 11 benches, court_martial_generic) | **updated** | 2 | Maintainer |
 | C22 | Specialized regulators (FSSAI, AERA, ICADR, PFRDA entity) | ~10 | 7 (+ PFRDA partial) | **updated** | 2 | Maintainer |
 | C23 | IP (patent controller, TM registry; IPAB historical) | ~5 | 5 (CGPDTM, TMR, ipab, compat) | **updated** | 3 | Maintainer |
@@ -58,7 +58,7 @@
 | C27 | Data-quality upgrade (sources, partial→complete) | 599 | ongoing | **updated** | all | Contributor |
 | C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 599 | sparse | **pending** | 2 | Maintainer + NJDG |
 
-*Last roadmap review: 2026-06-12 (tribunal completion batch — DRAT BenchOf, tax chain, CGIT, CESTAT→HC, state generics)*
+*Last roadmap review: 2026-06-12 (drt_b5 — CGIT/EPFAT/EPFO MoLE funding edges; DRT AppealableTo pre-wired)*
 
 ---
 
@@ -161,13 +161,6 @@ No relationships.
 
 ### Phase 3 — scale to 1,500+
 
-#### P3-A · C04 DRT benches (39) · `pending` · Maintainer-led batches
-
-```
-TASK: Draft DRT bench entities in batches of 10: batch 1 IDs drt_chennai, drt_mumbai, drt_delhi, drt_kolkata, drt_bangalore, drt_hyderabad, drt_ahmedabad, drt_pune, drt_allahabad, drt_chandigarh. Template: jem/data/entities/_generated/backbone/drt.yaml. List parent DRAT for maintainer wiring.
-No relationships in file.
-```
-
 #### P3-B · C18 Remaining state packs Batch C · `pending` · Contributor
 
 ```
@@ -237,6 +230,23 @@ TASK: (Completed) DRAT BenchOf×5, CGIT BenchOf×6 (cgit_principal), CESTAT→HC
 Skipped: duplicate DRT→DRAT (25 pre-wired), state_sales_tax (covered by state_vat_tribunal_generic).
 ```
 
+#### ~~P3-A · C04 DRT batches 1–2 (25 location entities)~~ · **done** 2026-06
+
+```
+TASK: (Completed) 25 DRT location entities (batches 1+2); 5 DRAT bench entities; 25 AppealableTo
+edges in central_tribunal_regulator_relationships.yaml. Gazette passes b3+b4: Siliguri 2017,
+Lucknow/Dehradun S.O. 454(E), Hyderabad→DRAT Kolkata (G.S.R. 538(E)/2018), Jabalpur dual-HC.
+BLOCKED: bench-numbered sub-entities (drt_city_n) — gated on drt.gov.in.
+```
+
+#### ~~drt_b5 · C20 MoLE funding wiring~~ · **done** 2026-06
+
+```
+TASK: (Completed) 16 edges in cgit_epfat_mole_relationships.yaml — all 6 CGIT benches
+PrimaryFunder + PolicyOversight → ministry_labour_employment; EPFAT and EPFO funding/oversight.
+Skipped drt_appellate_relationships.yaml (25 DRT→DRAT edges already wired; b5 used drt_bangalore).
+```
+
 #### ~~Batch 3 · C21 Defence + C22 Regulators + C23 IP~~ · **done** 2026-06
 
 ```
@@ -245,6 +255,20 @@ insurance_ombudsman_generic, patent_controller, trade_marks_registry, compat. Re
 batch3_c21_c22_c23_relationships.yaml. Schema: ConsultedOn_Removal added for SEC removal inquiry (Art. 243K(2)).
 ipab upgraded in-place (not ipab_abolished). Ministry stubs: MoHFW, MoCA, MIB, MoCI, GBIC.
 ```
+
+---
+
+## Open items (gated)
+
+| Item | Gate | Owner |
+|------|------|-------|
+| `drt_city_n` bench-numbered sub-entities | `drt.gov.in` accessible | Maintainer |
+| GSTAT bench stubs | GSTAT constituted | Maintainer |
+| CGIT/EPFAT `judge_strength` numerics | MoLE quarterly data | Maintainer |
+| Labour Code IRC 2020 transition notes | Labour Codes notified | Maintainer |
+| G.S.R. 538(E)/2018 eGazette PDF | Manual `egazette.gov.in` fetch | Maintainer |
+| CBDT Notification 96/2021 direct PDF | `incometaxindia.gov.in` archive | Maintainer |
+| EPFAT operational status | MoLE confirmation post–Finance Act 2017 | Maintainer |
 
 ---
 

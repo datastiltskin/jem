@@ -1,0 +1,342 @@
+# JEM relationships — C20 Labour (drt_b5)
+# CGIT benches + EPFAT/EPFO → ministry_labour_employment funding and oversight.
+# DRT AppealableTo edges: already in central_tribunal_regulator_relationships.yaml (25).
+
+relationships:
+
+  # ── CGIT → ministry_labour_employment (PrimaryFunder) ─────────────────────
+
+  - id: rel_cgit_delhi_funded_by_mole
+    source: cgit_delhi
+    target: ministry_labour_employment
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGIT-cum-Labour Courts are established
+      by the Central Government under the Ministry of Labour and Employment and
+      funded from the Consolidated Fund of India via MoLE budget allocations.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A — CGIT established by Central Govt'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+      - label: 'CGIT official portal — Ministry of Labour and Employment'
+        url: https://cgit.labour.gov.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_mumbai_funded_by_mole
+    source: cgit_mumbai
+    target: ministry_labour_employment
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGIT-cum-Labour Courts are established
+      by the Central Government under the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+      - label: 'CGIT official portal — Ministry of Labour and Employment'
+        url: https://cgit.labour.gov.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_kolkata_funded_by_mole
+    source: cgit_kolkata
+    target: ministry_labour_employment
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGIT-cum-Labour Courts are established
+      by the Central Government under the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+      - label: 'CGIT official portal — Ministry of Labour and Employment'
+        url: https://cgit.labour.gov.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chennai_funded_by_mole
+    source: cgit_chennai
+    target: ministry_labour_employment
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGIT-cum-Labour Courts are established
+      by the Central Government under the Ministry of Labour and Employment and
+      funded from the Consolidated Fund of India via MoLE budget allocations.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A — CGIT established by Central Govt'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+      - label: 'CGIT official portal — Ministry of Labour and Employment'
+        url: https://cgit.labour.gov.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chandigarh_1_funded_by_mole
+    source: cgit_chandigarh_1
+    target: ministry_labour_employment
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGIT-cum-Labour Courts are established
+      by the Central Government under the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+      - label: 'CGIT official portal — Ministry of Labour and Employment'
+        url: https://cgit.labour.gov.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chandigarh_2_funded_by_mole
+    source: cgit_chandigarh_2
+    target: ministry_labour_employment
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGIT-cum-Labour Courts are established
+      by the Central Government under the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+      - label: 'CGIT official portal — Ministry of Labour and Employment'
+        url: https://cgit.labour.gov.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  # ── CGIT → ministry_labour_employment (PolicyOversight) ────────────────────
+
+  - id: rel_cgit_delhi_reports_to_mole
+    source: cgit_delhi
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGITs function under administrative
+      oversight of the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_mumbai_reports_to_mole
+    source: cgit_mumbai
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGITs function under administrative
+      oversight of the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_kolkata_reports_to_mole
+    source: cgit_kolkata
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGITs function under administrative
+      oversight of the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chennai_reports_to_mole
+    source: cgit_chennai
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGITs are constituted by the Central
+      Government and function under the administrative oversight of the Ministry of
+      Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chandigarh_1_reports_to_mole
+    source: cgit_chandigarh_1
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGITs function under administrative
+      oversight of the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_cgit_chandigarh_2_reports_to_mole
+    source: cgit_chandigarh_2
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Industrial Disputes Act, 1947, s. 7A; CGITs function under administrative
+      oversight of the Ministry of Labour and Employment.
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - label: 'Industrial Disputes Act 1947, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  # ── EPFAT → ministry_labour_employment ────────────────────────────────────
+
+  - id: rel_epfat_funded_by_mole
+    source: epfat
+    target: ministry_labour_employment
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      Employees' Provident Funds and Miscellaneous Provisions Act, 1952, s. 7A
+      (Appellate Tribunal); Finance Act 2017 amended EPF Act to route most EPF
+      appeals to CGIT-cum-LCs. EPFAT funded via MoLE budget.
+    year_established: 1952
+    data_quality: partial
+    notes: >
+      Finance Act 2017 transferred most fresh EPF appeals to CGIT-cum-LCs under
+      ID Act s. 7A. EPFAT continues to handle pending pre-2017 matters and specific
+      categories. Verify with MoLE whether EPFAT remains constituted as of 2025
+      or has been wound down; entity should be marked Abolished if dissolved.
+    sources:
+      - label: 'Employees Provident Funds and Miscellaneous Provisions Act 1952, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19520019.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+      - label: 'CGIT official portal — Ministry of Labour and Employment'
+        url: https://cgit.labour.gov.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-12'
+
+  - id: rel_epfat_policy_oversight_mole
+    source: epfat
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      EPF & MP Act 1952, s. 7A; EPFAT is constituted by the Central Government
+      under MoLE administrative control.
+    year_established: 1952
+    data_quality: partial
+    sources:
+      - label: 'EPF & MP Act 1952, s. 7A'
+        url: https://india-code.nic.in/CodeofActs13/19520019.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  # ── EPFO → ministry_labour_employment ─────────────────────────────────────
+
+  - id: rel_epfo_policy_oversight_mole
+    source: epfo
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      EPF & MP Act 1952; EPFO is a statutory body under MoLE. Central Board of
+      Trustees (EPFO) chaired by Union Minister of Labour and Employment.
+    year_established: 1952
+    data_quality: partial
+    sources:
+      - label: 'EPF & MP Act 1952 — EPFO statutory basis'
+        url: https://india-code.nic.in/CodeofActs13/19520019.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'
+
+  - id: rel_epfo_funded_by_mole
+    source: epfo
+    target: ministry_labour_employment
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >
+      EPF & MP Act 1952; EPFO administrative expenses funded via Consolidated Fund
+      of India through MoLE budget; corpus is member-contribution-funded separately.
+    year_established: 1952
+    data_quality: partial
+    notes: >
+      EPFO's administrative budget flows through MoLE; the provident fund corpus
+      itself is held in trust and is not GoI budget. This edge covers the
+      administrative/operational funding relationship only.
+    sources:
+      - label: 'EPF & MP Act 1952'
+        url: https://india-code.nic.in/CodeofActs13/19520019.pdf
+        type: CentralAct
+        accessed_date: '2026-06-12'

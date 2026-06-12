@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-06-12T14:02:32.752451+00:00",
+    "generated_at": "2026-06-12T14:06:36.417877+00:00",
     "entity_count": 599,
-    "relationship_count": 627,
+    "relationship_count": 643,
     "canvas_width": 1800,
     "canvas_height": 1200,
     "year_range": [
@@ -73402,6 +73402,400 @@
           "url": "https://www.indiacode.nic.in/handle/123456789/1546",
           "type": "CentralAct",
           "accessed_date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_delhi_funded_by_mole",
+      "source": "cgit_delhi",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A — CGIT established by Central Govt",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT official portal — Ministry of Labour and Employment",
+          "url": "https://cgit.labour.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_mumbai_funded_by_mole",
+      "source": "cgit_mumbai",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT official portal — Ministry of Labour and Employment",
+          "url": "https://cgit.labour.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_kolkata_funded_by_mole",
+      "source": "cgit_kolkata",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT official portal — Ministry of Labour and Employment",
+          "url": "https://cgit.labour.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chennai_funded_by_mole",
+      "source": "cgit_chennai",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A — CGIT established by Central Govt",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT official portal — Ministry of Labour and Employment",
+          "url": "https://cgit.labour.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chandigarh_1_funded_by_mole",
+      "source": "cgit_chandigarh_1",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT official portal — Ministry of Labour and Employment",
+          "url": "https://cgit.labour.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chandigarh_2_funded_by_mole",
+      "source": "cgit_chandigarh_2",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT official portal — Ministry of Labour and Employment",
+          "url": "https://cgit.labour.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_delhi_reports_to_mole",
+      "source": "cgit_delhi",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_mumbai_reports_to_mole",
+      "source": "cgit_mumbai",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_kolkata_reports_to_mole",
+      "source": "cgit_kolkata",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chennai_reports_to_mole",
+      "source": "cgit_chennai",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chandigarh_1_reports_to_mole",
+      "source": "cgit_chandigarh_1",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_cgit_chandigarh_2_reports_to_mole",
+      "source": "cgit_chandigarh_2",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1947,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Industrial Disputes Act 1947, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19470014.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_epfat_funded_by_mole",
+      "source": "epfat",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1952,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Finance Act 2017 transferred most fresh EPF appeals to CGIT-cum-LCs under ID Act s. 7A. EPFAT continues to handle pending pre-2017 matters and specific categories. Verify with MoLE whether EPFAT remains constituted as of 2025 or has been wound down; entity should be marked Abolished if dissolved.\n",
+      "sources": [
+        {
+          "label": "Employees Provident Funds and Miscellaneous Provisions Act 1952, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19520019.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "CGIT official portal — Ministry of Labour and Employment",
+          "url": "https://cgit.labour.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_epfat_policy_oversight_mole",
+      "source": "epfat",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1952,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "EPF & MP Act 1952, s. 7A",
+          "url": "https://india-code.nic.in/CodeofActs13/19520019.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_epfo_policy_oversight_mole",
+      "source": "epfo",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1952,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "EPF & MP Act 1952 — EPFO statutory basis",
+          "url": "https://india-code.nic.in/CodeofActs13/19520019.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_epfo_funded_by_mole",
+      "source": "epfo",
+      "target": "ministry_labour_employment",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1952,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "EPFO's administrative budget flows through MoLE; the provident fund corpus itself is held in trust and is not GoI budget. This edge covers the administrative/operational funding relationship only.\n",
+      "sources": [
+        {
+          "label": "EPF & MP Act 1952",
+          "url": "https://india-code.nic.in/CodeofActs13/19520019.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
         }
       ]
     },
