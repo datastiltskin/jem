@@ -23,10 +23,11 @@ operational_status: Active
 
 statutory_basis: >
   Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Notified vide G.S.R. 181(E) dated 7 April 1998.
-  Single-bench tribunal under DRAT Allahabad. Jurisdiction covers States of Madhya
-  Pradesh and Chhattisgarh (Chhattisgarh became a separate state in 2000; its
-  territory remained within DRT Jabalpur's catchment).
+  s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 181(E) dated 7 April 1998.
+  Single-bench tribunal under DRAT Allahabad. Jurisdiction: States of Madhya Pradesh
+  and Chhattisgarh. Chhattisgarh became a separate state in November 2000 upon the
+  reorganisation of MP; its territory remained within DRT Jabalpur's catchment as
+  no separate Chhattisgarh DRT has been established.
 
 appointment:
   nominates: ministry_of_finance
@@ -51,39 +52,51 @@ complaint_mechanism:
   bias_complaint_to:
     - body: hc_madhya_pradesh
       mechanism: >
-        Supervisory jurisdiction of Madhya Pradesh High Court under Arts 226/227;
-        writ petition before Madhya Pradesh High Court at Jabalpur.
+        Supervisory jurisdiction of Madhya Pradesh High Court (principal seat Jabalpur)
+        under Arts 226/227 for MP-territory matters before DRT Jabalpur.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+    - body: hc_chhattisgarh
+      mechanism: >
+        Chhattisgarh High Court at Bilaspur exercises Article 226/227 supervisory
+        jurisdiction over courts and tribunals in Chhattisgarh territory per Art. 227
+        (confirmed: CaseMine judgment shows Chhattisgarh HC directly referring SARFAESI
+        matters to DRT Jabalpur without questioning jurisdiction). Litigants in
+        Chhattisgarh matters before DRT Jabalpur may file writs in either Chhattisgarh
+        HC or MP HC; Chhattisgarh HC has primary supervisory role for its state.
       complainant_has_locus: true
       is_public_process: true
       external_to_judiciary: false
   lokpal_jurisdiction: 'No'
   lokpal_jurisdiction_note: >
     Presiding Officer is a judicial officer equivalent to District Judge.
-  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227; Chhattisgarh HC
+    judgment (Chandrahas Sao v. Authorised Officer)
 
 data_quality: partial
 data_quality_notes: >
-  G.S.R. 181(E) dated 7 April 1998 establishes DRT Jabalpur; jurisdiction: States of
-  Madhya Pradesh and Chhattisgarh. DRAT Allahabad supervision confirmed. Note: DRT
-  Jabalpur is notable as the original DRAT Allahabad jurisdiction listing includes it
-  (per GSR 5(E)/2001 DRAT Allahabad setup). HC supervisory jurisdiction: MP High Court
-  at Jabalpur; Chhattisgarh HC at Bilaspur may also have supervisory role for cases
-  from Chhattisgarh territory — not definitively resolved in secondary sources; left
-  partial.
+  CG HC SUPERVISORY ROLE RESOLVED (drt_b4). Chhattisgarh High Court at Bilaspur
+  exercises Art. 226/227 supervisory jurisdiction over tribunals in Chhattisgarh
+  territory, including DRT Jabalpur for CG matters (CaseMine judgment Chandrahas
+  Sao v. Authorised Officer). Dual supervisory arrangement: MP HC for MP territory,
+  CG HC for Chhattisgarh territory. Standard post-bifurcation arrangement for central
+  tribunals straddling reorganised states.
 
-unverified_fields:
-  - field: jurisdiction_scope.states_covered
-    note: >
-      Chhattisgarh HC supervisory role over MP DRT for CG territory not resolved.
 sources:
   - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
     url: https://india-code.nic.in/CodeofActs13/19930951.pdf
     type: CentralAct
     accessed_date: '2026-06-12'
-  - label: >
-      DRT Jabalpur — GSR 181(E) 7.4.1998; jurisdiction: MP and Chhattisgarh
+  - label: 'DRT Jabalpur — GSR 181(E) 7.4.1998; jurisdiction: MP and Chhattisgarh'
     url: https://bankauctions.in/asset-recovery/debt-recovery-tribunal/
     type: OfficialReport
+    accessed_date: '2026-06-12'
+  - label: >
+      Chhattisgarh HC supervisory jurisdiction over Chhattisgarh tribunals —
+      Art. 227 power confirmed; DRT Jabalpur SARFAESI referral by Chhattisgarh HC
+    url: https://www.casemine.com/judgement/in/699ff3e72948cd2b68fed9ec
+    type: HCJudgment
     accessed_date: '2026-06-12'
   - label: 'DRT official portal — Ministry of Finance, DFS'
     url: https://drt.gov.in/

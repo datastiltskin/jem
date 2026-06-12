@@ -72,16 +72,18 @@ data_quality_notes: >-
   Chairman with senior IRS officers — structural shift from judicial to
   departmental composition. Contested by taxpayer bar (pending writ petitions in
   several HCs challenging constitutionality of non-judicial composition for
-  advance rulings). Two Boards (Board-I at New Delhi, Board-II at New Delhi)
-  constituted by notification. Rulings binding on applicant and CBDT (s.245S) but
+  advance rulings).   Two Boards at Delhi and Mumbai constituted by CBDT Notification No. 96/2021
+  (S.O. 3561(E)) dated 1 September 2021 — corrected from prior erroneous reference
+  to 92/2021 (drt_b4). Rulings binding on applicant and CBDT (s.245S) but
   subject to writ jurisdiction of HC under Art.226/227. No appeal to ITAT or HC
   as of right. created_year reflects original AAR (Finance Act 1993 Chapter XIX-B);
   reconstitution year 2021.
 
 unverified_fields:
-  - field: sources.cbdt_notification_92_2021
+  - field: sources.cbdt_notification_96_2021_pdf
     note: >
-      CBDT notification 92/2021 PDF URL not verified against CBDT notifications archive.
+      Direct incometaxindia.gov.in PDF for Notification 96/2021 returns 404;
+      S.O. 3561(E) text confirmed via taxguru.in transcript.
 
 sources:
   - label: Finance Act 2021 — s.98 substituting Chapter XIX-B of IT Act 1961
@@ -92,7 +94,15 @@ sources:
     url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx
     type: CentralAct
     accessed_date: '2026-06-11'
-  - label: CBDT — Board for Advance Rulings constitution notification 2021
-    url: https://www.incometaxindia.gov.in/communications/notification/notification92_2021.pdf
+  - label: >
+      CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 —
+      constitutes Board for Advance Rulings at Delhi and Mumbai; AAR ceases
+      operation from 1 September 2021
+    url: https://taxguru.in/income-tax/cbdt-constitutes-boards-advance-rulings-delhi-mumbai.html
     type: GazetteNotification
-    accessed_date: '2026-06-11'
+    accessed_date: '2026-06-12'
+  - label: >
+      Taxmann summary — Notification No. 96/2021 and 97/2021 dated 1 September 2021
+    url: https://www.taxmann.com/post/blog/cbdt-notifies-board-for-advance-rulings-effective-from-01-09-2021/
+    type: OfficialReport
+    accessed_date: '2026-06-12'

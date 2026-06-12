@@ -1,18 +1,74 @@
 id: cbic
 name: Central Board of Indirect Taxes and Customs
+name_hindi: केन्द्रीय अप्रत्यक्ष कर और सीमा शुल्क बोर्ड
+abbreviation: CBIC
+aliases:
+  - CBIC
+  - Central Board of Excise and Customs
+  - CBEC
+
 type: ExecutiveBody
 cluster: executive_interface
 level_of_government: Central
+
 jurisdiction_scope:
   is_all_india: true
-created_year: 1964
+
+created_year: 1963
 operational_status: Active
-data_quality: unverified
-data_quality_notes: >-
-  C08 stub for graph connectivity only — expand with CBIC/CBEC reorganisation
-  history and Customs Act basis in C08 pass. Referenced by CAAR oversight.
+
+statutory_basis: >
+  Central Board of Revenue Act, 1963, s. 3 (bifurcation; originally Central Board of
+  Excise and Customs). Renamed CBIC vide notification under Finance Act 2018 (w.e.f.
+  1 January 2019) to reflect GST mandate. Functions under: Customs Act 1962; Central
+  Excise Act 1944 (legacy); Goods and Services Tax Acts 2017 (CGST, IGST, UTGST);
+  Foreign Trade (Development and Regulation) Act 1992 (partial). CBIC supervises
+  Customs formations, Central Tax Commissioners, GST field formations, CESTAT
+  (appellate tribunal for customs/excise/service tax disputes).
+
+appointment:
+  formally_appoints: central_government
+  criteria_public: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: ministry_of_finance
+
+complaint_mechanism:
+  lokpal_jurisdiction: 'Not_Applicable'
+  source: Central Board of Revenue Act 1963; Customs Act 1962; CGST Act 2017
+
+data_quality: partial
+data_quality_notes: >
+  Expanded from C08 stub (drt_b3). Created: 1963 per Central Board of Revenue Act
+  1963 bifurcation (as CBEC). Renamed to CBIC effective 1 January 2019 per Finance
+  Act 2018. HQ: North Block, New Delhi. Key supervised bodies/tribunals: CESTAT
+  (Customs, Excise and Service Tax Appellate Tribunal), GST Appellate Authority,
+  Advance Ruling Authorities under GST. Supervises 21 zones, 101 Commissionerates.
+  GSTAT (GST Appellate Tribunal) — being constituted under Finance Act 2023 amendment
+  to CGST Act; not yet fully operational as of August 2025; CBIC is the supervising
+  board for GSTAT once operational.
+
 sources:
-- label: CBIC — official website
-  url: https://www.cbic.gov.in/
-  type: GoIWebsite
-  accessed_date: '2026-06-12'
+  - label: 'Central Board of Revenue Act 1963'
+    url: https://india-code.nic.in/CodeofActs13/19630054.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: 'Customs Act 1962'
+    url: https://india-code.nic.in/CodeofActs13/19620052.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: 'CGST Act 2017 (GST framework)'
+    url: https://india-code.nic.in/CodeofActs13/20170012.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: 'CBIC official portal'
+    url: https://www.cbic.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

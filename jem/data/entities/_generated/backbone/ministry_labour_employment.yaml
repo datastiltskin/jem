@@ -1,19 +1,78 @@
 id: ministry_labour_employment
 name: Ministry of Labour and Employment
+name_hindi: श्रम और रोजगार मंत्रालय
+abbreviation: MoLE
+aliases:
+  - Ministry of Labour & Employment
+  - MLE
+
 type: ExecutiveBody
-cluster: executive_interface
+cluster: legislative_executive
 level_of_government: Central
+
 jurisdiction_scope:
   is_all_india: true
-created_year: 1950
+
+created_year: 1947
 operational_status: Active
-data_quality: unverified
-data_quality_notes: >-
-  C08 stub for graph connectivity only — expand appointment, funding, and
-  organisational structure in a dedicated C08 ministry pass. Parent ministry for
-  EPFO, EPFAT, CGIT funding references.
+
+constitutional_basis: >
+  Articles 77, 246 and Schedule VII List I (Union List) Entries 22 (labour and
+  industrial disputes), 23 (social security and insurance), 24 (welfare of workers),
+  55 (regulation of labour and safety in mines and oilfields) of the Constitution of
+  India.
+
+statutory_basis: >
+  Administers approximately 44 central labour statutes including: Industrial Disputes
+  Act, 1947; Employees' Provident Funds and Miscellaneous Provisions Act, 1952 (via
+  EPFO); Employees' State Insurance Act, 1948 (via ESIC); Minimum Wages Act, 1948;
+  Payment of Wages Act, 1936; Payment of Gratuity Act, 1972; Contract Labour
+  (Regulation and Abolition) Act, 1970; Building and Other Construction Workers Act,
+  1996; Unorganised Workers' Social Security Act, 2008; Code on Wages 2019; Code on
+  Industrial Relations 2020; Code on Social Security 2020; Occupational Safety, Health
+  and Working Conditions Code 2020. Four Labour Codes (2019-2020) enacted but rules
+  not yet fully notified as of August 2025.
+
+appointment:
+  formally_appoints: central_government
+  criteria_public: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  budget_figure_crore: 13221.73
+  budget_year: 2024
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+
+complaint_mechanism:
+  lokpal_jurisdiction: 'Not_Applicable'
+  source: Lokpal and Lokayuktas Act 2013 (executives and officials subject to
+    Lokpal in anti-corruption matters, but Ministry as an entity not a complainee)
+
+data_quality: partial
+data_quality_notes: >
+  Expanded from C08 stub (drt_b3). HQ: Rafi Marg, New Delhi. Budget figure
+  ₹13,221.73 crore from Wikipedia citing 2023-24 estimate. Key subordinate bodies:
+  EPFO (autonomous), ESIC (autonomous), CGIT-cum-LCs (22 seats), Central Board for
+  Workers' Education (CBWE), Director General of Employment, Director General of Labour
+  Welfare, Chief Labour Commissioner (Central). Four Labour Codes enacted 2019-2020
+  consolidate 29 central laws — full implementation pending as of August 2025 (rules
+  gazette not complete for all states). Skill development functions transferred to
+  Ministry of Skill Development and Entrepreneurship in 2014.
+
 sources:
-- label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
-  type: GoIWebsite
-  accessed_date: '2026-06-12'
+  - label: 'Ministry of Labour and Employment — official portal'
+    url: https://labour.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'
+  - label: 'Industrial Disputes Act 1947 — primary labour statute'
+    url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'
+  - label: 'CGIT official portal — Ministry of Labour and Employment'
+    url: https://cgit.labour.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-12'

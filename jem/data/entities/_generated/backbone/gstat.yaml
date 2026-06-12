@@ -96,12 +96,11 @@ data_quality_notes: >-
   constituted under SC monitoring (Union of India v. Mohit Minerals, W.P.(C)
   859/2022 — SC directed expeditious constitution, order dated 19 May 2023).
   budget_figure not separately identified in Union Budget (subsumed under DoR
-  establishment estimates pending constitution).
+  establishment estimates pending constitution). Mohit Minerals SC judgment PDF
+  URL verified live on webapi.sci.gov.in (drt_b4); main.sci.gov.in unreachable via
+  automated access.
 
 unverified_fields:
-  - field: sources.mohit_minerals_sc_order
-    note: >
-      SC judgment PDF URL on main.sci.gov.in not independently verified in this pass.
   - field: funding.budget_figure_crore
     note: >
       Union Budget does not disaggregate GSTAT allocation pending constitution.
@@ -115,7 +114,14 @@ sources:
     url: https://egazette.gov.in/WriteReadData/2023/245026.pdf
     type: GazetteNotification
     accessed_date: '2026-06-11'
-  - label: SC Order — Mohit Minerals — directions on GSTAT constitution
-    url: https://main.sci.gov.in/supremecourt/2022/9479/9479_2022_1_1501_46001_Judgement_19-May-2023.pdf
+  - label: >
+      Union of India v. M/s Mohit Minerals Pvt. Ltd. — C.A. No. 1390/2022,
+      Supreme Court, decided 19 May 2022 (GST Council recommendations persuasive,
+      not binding; GSTAT constitution context)
+    url: https://webapi.sci.gov.in/supremecourt/2020/23083/23083_2020_4_1501_35969_Judgement_19-May-2022.pdf
     type: SCJudgment
-    accessed_date: '2026-06-11'
+    accessed_date: '2026-06-12'
+  - label: Finance Act 2023 (No. 8 of 2023) — substituted CGST Act ss.109–110A
+    url: https://india-code.nic.in/CodeofActs13/20230008.pdf
+    type: CentralAct
+    accessed_date: '2026-06-12'

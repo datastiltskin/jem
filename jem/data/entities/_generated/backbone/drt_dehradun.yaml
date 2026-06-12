@@ -12,6 +12,7 @@ level_of_government: Central
 jurisdiction_scope:
   states_covered:
     - UK
+    - UP
   is_all_india: false
   jurisdiction_types:
     - debt_recovery
@@ -23,9 +24,12 @@ operational_status: Active
 statutory_basis: >
   Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
   s. 3; SARFAESI Act, 2002, s. 17. Established vide S.O. 454(E) dated 15 February
-  2017, which carved out the State of Uttarakhand from the erstwhile DRT Lucknow
-  jurisdiction and created a new tribunal at Dehradun effective 16 February 2017.
-  Single-bench tribunal under DRAT Allahabad. Jurisdiction: State of Uttarakhand.
+  2017, effective 16 February 2017, which created DRT Dehradun and superseded
+  G.S.R. 274(E) dated 31 March 2000 and G.S.R. 71(E) dated 31 January 2002.
+  Official address: Paras Tower, 2nd Floor, Majra Niranjanpur, Saharanpur Road,
+  Dehradun. Jurisdiction: entire State of Uttarakhand, plus Amroha, Bijnor,
+  Moradabad, Rampur, Sambhal, Muzaffarnagar, Saharanpur, and Shamli districts of
+  Uttar Pradesh. Single-bench tribunal under DRAT Allahabad.
 
 appointment:
   nominates: ministry_of_finance
@@ -50,8 +54,10 @@ complaint_mechanism:
   bias_complaint_to:
     - body: hc_uttarakhand
       mechanism: >
-        Supervisory jurisdiction of Uttarakhand High Court under Arts 226/227;
-        writ petition before Uttarakhand High Court at Nainital.
+        Supervisory jurisdiction of Uttarakhand High Court under Arts 226/227; writ
+        petition before Uttarakhand High Court at Nainital. For UP districts in the
+        Dehradun DRT catchment, supervisory jurisdiction may lie with Allahabad HC
+        principal bench — not definitively resolved; left partial.
       complainant_has_locus: true
       is_public_process: true
       external_to_judiciary: false
@@ -62,9 +68,19 @@ complaint_mechanism:
 
 data_quality: partial
 data_quality_notes: >
-  Established by S.O. 454(E) dated 15 February 2017, effective 16 February 2017.
-  Gazette notification text confirmed from ibclaw.in. Jurisdiction: State of
-  Uttarakhand (split from DRT Lucknow). DRAT Allahabad supervision confirmed.
+  DISTRICT TABLE UPGRADED. Authoritative jurisdiction per S.O. 454(E) dated 15
+  February 2017 (ibclaw.in full text retrieved 2026-06-12): Uttarakhand (entire state)
+  plus UP districts of Amroha, Bijnor, Moradabad, Rampur, Sambhal, Muzaffarnagar,
+  Saharanpur, and Shamli. Address: Paras Tower, 2nd Floor, Majra Niranjanpur,
+  Saharanpur Road, Dehradun. Note that DRT Dehradun's jurisdiction includes western
+  UP Saharanpur-Moradabad districts — not merely Uttarakhand. HC supervisory
+  jurisdiction for UP districts is left partial.
+
+unverified_fields:
+  - field: complaint_mechanism.bias_complaint_to
+    note: >
+      Supervisory HC for western UP districts in Dehradun DRT catchment (Allahabad
+      vs Uttarakhand HC) not definitively resolved.
 
 sources:
   - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
@@ -72,8 +88,8 @@ sources:
     type: CentralAct
     accessed_date: '2026-06-12'
   - label: >
-      S.O. 454(E) dated 15 February 2017 — DRT Dehradun established for Uttarakhand;
-      supersedes G.S.R. 274(E) and G.S.R. 71(E)
+      S.O. 454(E) dated 15 February 2017 — DRT Dehradun established; full
+      district table confirmed (Uttarakhand + western UP districts); address confirmed
     url: https://ibclaw.in/notification-no-s-o-454e-dated-15-02-2017-under-rdb-act-1993/
     type: GazetteNotification
     accessed_date: '2026-06-12'

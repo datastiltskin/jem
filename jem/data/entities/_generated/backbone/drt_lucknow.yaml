@@ -23,9 +23,14 @@ operational_status: Active
 statutory_basis: >
   Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
   s. 3; SARFAESI Act, 2002, s. 17. Originally notified vide G.S.R. 274(E) dated
-  31 March 2000; jurisdiction realigned by S.O. 454(E) dated 15 February 2017
-  (Dehradun carved out for Uttarakhand) and by S.O. 4719(E) dated 4 October 2022.
-  Single-bench tribunal under DRAT Allahabad.
+  31 March 2000 (covering northern UP + Uttarakhand jointly with Allahabad). Jurisdiction
+  realigned by S.O. 454(E) dated 15 February 2017, effective 16 February 2017
+  (Dehradun/Uttarakhand carved out; Saharanpur division moved to DRT Dehradun). Current
+  authoritative address and district table from S.O. 454(E)/2017: 600/1, University
+  Road, Near Hanuman Setu Mandir, Lucknow-226007. Jurisdiction: Baghpat, Bulandsahar,
+  Gautam Buddha Nagar, Ghaziabad, Hapur, Meerut, Hardoi, Lakhimpur Kheri, Lucknow,
+  Raebareli, Sitapur, and Unnao districts in Uttar Pradesh. Single-bench tribunal
+  under DRAT Allahabad.
 
 appointment:
   nominates: ministry_of_finance
@@ -62,37 +67,29 @@ complaint_mechanism:
 
 data_quality: partial
 data_quality_notes: >
-  Northern UP districts (Ambedkar Nagar, Aligarh, Agra, Barabanki, Balrampur,
-  Bahraich, Bareilly, Bijnor, Bulandshahr, Baghpat, Faizabad, Ghaziabad, Gonda,
-  Gautam Budh Nagar, Hathras, Hardoi, Jyotiba Phule Nagar, Lucknow, Lakhimpur,
-  Meerut, Moradabad, Muzaffarnagar, Mathura, Pratapgarh, Pilibhit, Rampur, Rae
-  Bareilly, Saharanpur, Shahjahanpur, Sitapur, Shravasti, Sultanpur, Unnao) sourced
-  from BankAuctions.in G.S.R. 274(E) listing. Uttarakhand was in DRT Lucknow
-  jurisdiction pre-2017; S.O. 454(E) dated 15 Feb 2017 carved out Dehradun as a
-  separate DRT for Uttarakhand. Current district list per S.O. 4719(E) (4 Oct 2022)
-  not fully extracted — that notification text not retrieved for this circuit; left
-  partial.
+  DISTRICT TABLE UPGRADED from partial to sourced. Authoritative district list per
+  S.O. 454(E) dated 15 February 2017 (ibclaw.in full text retrieved 2026-06-12):
+  Baghpat, Bulandsahar, Gautam Buddha Nagar, Ghaziabad, Hapur, Meerut, Hardoi,
+  Lakhimpur Kheri, Lucknow, Raebareli, Sitapur, Unnao. Note: this is a relatively
+  narrow NCR+central-UP footprint compared to the pre-2017 position. The larger
+  UP district list in batch-2 delivery reflected the older G.S.R. 274(E)/2000 scope;
+  this entry supersedes it. Address from S.O. 454(E) table. S.O. 4719(E) dated
+  4 October 2022 (omnibus circuit redistribution) covered Chennai, Delhi, and Mumbai
+  circuits only — not Allahabad/Lucknow/Dehradun. S.O. 454(E)/2017 remains operative
+  (confirmed: Allahabad HC in Saurabh Gupta v. Union of India).
 
-unverified_fields:
-  - field: jurisdiction_scope.districts
-    note: >
-      Full district list per S.O. 4719(E) dated 4 October 2022 not extracted for Allahabad/Lucknow circuit.
 sources:
   - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
     url: https://india-code.nic.in/CodeofActs13/19930951.pdf
     type: CentralAct
     accessed_date: '2026-06-12'
-  - label: 'DRT official portal — Ministry of Finance, DFS'
-    url: https://drt.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
   - label: >
-      S.O. 454(E) dated 15 February 2017 — Dehradun DRT established; Lucknow/
-      Allahabad realigned; supersedes G.S.R. 274(E) and G.S.R. 71(E)
+      S.O. 454(E) dated 15 February 2017 — full district table for DRT Lucknow
+      confirmed; address confirmed: 600/1, University Road, Lucknow-226007
     url: https://ibclaw.in/notification-no-s-o-454e-dated-15-02-2017-under-rdb-act-1993/
     type: GazetteNotification
     accessed_date: '2026-06-12'
-  - label: 'DRT Lucknow jurisdiction — BankAuctions.in DRT reference'
-    url: https://bankauctions.in/asset-recovery/debt-recovery-tribunal/
-    type: OfficialReport
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
     accessed_date: '2026-06-12'
