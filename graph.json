@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-06-12T07:51:24.158114+00:00",
+    "generated_at": "2026-06-12T07:54:41.977541+00:00",
     "entity_count": 592,
     "relationship_count": 589,
     "canvas_width": 1800,
@@ -12,7 +12,7 @@
     ]
   },
   "impact_metrics": {
-    "high_independence_risk_count": 115,
+    "high_independence_risk_count": 114,
     "appointer_equals_funder_removal_count": 1,
     "no_public_appointment_criteria_count": 54,
     "not_constituted_count": 4,
@@ -1661,150 +1661,6 @@
       }
     },
     {
-      "id": "aft_jammu",
-      "name": "Armed Forces Tribunal — Jammu Bench",
-      "aliases": [
-        "AFT Srinagar Bench"
-      ],
-      "jurisdiction_scope": {
-        "states_covered": [],
-        "uts_covered": [
-          "JK",
-          "LA"
-        ],
-        "is_all_india": false,
-        "jurisdiction_types": [
-          "service_matters",
-          "court_martial_appeals"
-        ]
-      },
-      "name_hindi": "सशस्त्र बल अधिकरण — जम्मू पीठ",
-      "abbreviation": "AFT Jammu",
-      "type": "CentralTribunal",
-      "cluster": "tribunals_adr",
-      "level_of_government": "Central",
-      "created_year": 2009,
-      "abolished_year": null,
-      "operational_status": "Active",
-      "constitutional_basis": null,
-      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
-      "data_quality": "partial",
-      "data_quality_notes": "Regional bench per aft.gov.in/jurisdiction for J&K. Post Reorganisation Act 2019, JK and LA listed separately. Principal bench website also references a Srinagar location — confirm whether Srinagar is co-located circuit or distinct bench before adding a separate aft_srinagar entity. Judge strength not populated.",
-      "unverified_fields": [],
-      "derived": {
-        "discretionary_power_breakdown": {
-          "Base discretionary power for type CentralTribunal": 2,
-          "Has removal authority over other entities": 1,
-          "No universal mandatory timeline for all decisions": 1
-        },
-        "discretionary_power_score": 4,
-        "independence_risk_breakdown": {
-          "Appointed directly by executive body": 3,
-          "Lokpal has no jurisdiction": 1,
-          "No bias complaint mechanism exists": 2,
-          "No independent conduct oversight body": 1
-        },
-        "independence_risk_level": "high",
-        "independence_risk_score": 7,
-        "scores_validated": false,
-        "structural_health_breakdown": {
-          "base_health_from_ir_dp": 0.61,
-          "discretionary_power_penalty": 0.15,
-          "final_structural_health": 0.61,
-          "independence_risk_penalty": 0.55,
-          "operational_status_modifier": 1.0
-        },
-        "structural_health_level": "moderate",
-        "structural_health_score": 0.61
-      },
-      "funding_source": "Consolidated_Fund_India",
-      "funding_ministry": "ministry_defence",
-      "audited_by": "cag_india",
-      "audit_report_public": true,
-      "complaint_external_exists": false,
-      "appointment_criteria_public": true,
-      "reappointment_possible": false,
-      "sources": [
-        {
-          "label": "Armed Forces Tribunal Act 2007",
-          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
-          "type": "CentralAct",
-          "accessed_date": "2026-06-12"
-        },
-        {
-          "label": "AFT official website — bench territorial jurisdiction",
-          "url": "https://aft.gov.in/jurisdiction",
-          "type": "GoIWebsite",
-          "accessed_date": "2026-06-12"
-        }
-      ],
-      "_detail": {
-        "appointment": {
-          "nominates": "ministry_defence",
-          "recommends": null,
-          "consulted": [
-            "chief_justice_india"
-          ],
-          "consultation_binding": false,
-          "formally_appoints": "president_india",
-          "criteria_public": true,
-          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
-          "reappointment_possible": false,
-          "removal_authority": "president_india",
-          "removal_requires_parliament": false,
-          "removal_independent_committee": true
-        },
-        "funding": {
-          "primary_source": "Consolidated_Fund_India",
-          "ministry_responsible": "ministry_defence",
-          "state_contribution_percent": null,
-          "budget_figure_crore": null,
-          "budget_year": null
-        },
-        "audit": {
-          "audited_by": "cag_india",
-          "audit_type": "CAG_Statutory",
-          "audit_report_public": true,
-          "conduct_oversight_body": null
-        },
-        "complaint_mechanism": {
-          "bias_complaint_to": [],
-          "criminal_prosecution": {
-            "requires_sanction_from": "central_government",
-            "consultation_required_with": null,
-            "consultation_binding": null
-          },
-          "removal_mechanism": "AFT Act 2007 s.10",
-          "lokpal_jurisdiction": "No",
-          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
-          "source": null
-        },
-        "training": null,
-        "digital_infrastructure": null,
-        "structural_variations": [],
-        "unverified_fields": [],
-        "jurisdiction_scope": {
-          "states_covered": [],
-          "uts_covered": [
-            "JK",
-            "LA"
-          ],
-          "is_all_india": false,
-          "jurisdiction_types": [
-            "service_matters",
-            "court_martial_appeals"
-          ]
-        },
-        "case_volume": null,
-        "judge_strength": null,
-        "parent_hc": null
-      },
-      "position": {
-        "x": 76,
-        "y": 480
-      }
-    },
-    {
       "id": "aft_kochi",
       "name": "Armed Forces Tribunal — Kochi Bench",
       "aliases": [],
@@ -1952,8 +1808,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 78,
-        "y": 444
+        "x": 76,
+        "y": 480
       }
     },
     {
@@ -2108,8 +1964,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 80,
-        "y": 480
+        "x": 78,
+        "y": 444
       }
     },
     {
@@ -2256,8 +2112,8 @@
         "parent_hc": null
       },
       "position": {
-        "x": 83,
-        "y": 444
+        "x": 80,
+        "y": 480
       }
     },
     {
@@ -2394,6 +2250,190 @@
           ],
           "uts_covered": [],
           "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 83,
+        "y": 444
+      }
+    },
+    {
+      "id": "aft_srinagar",
+      "name": "Armed Forces Tribunal — Regional Bench, Srinagar (at Jammu)",
+      "aliases": [
+        "AFT Srinagar",
+        "AFT Srinagar Bench",
+        "AFT Jammu",
+        "AFT Regional Bench Jammu",
+        "Armed Forces Tribunal Srinagar (at Jammu)"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": false,
+        "states_covered": [],
+        "uts_covered": [
+          "JK",
+          "LA"
+        ],
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "सशस्त्र बल अधिकरण — क्षेत्रीय पीठ, श्रीनगर (जम्मू में स्थित)",
+      "abbreviation": "AFT RB Srinagar",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2016,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5(4); MoD Notification SRO-12(E) dated 17 November 2016 — \"the Bench of the Armed Forces Tribunal, Srinagar (temporarily to be located in Jammu) with effect from the 17th day of November, 2016, which shall have jurisdiction within the territorial limits of the State of Jammu and Kashmir.\" Cabinet approval for Srinagar and Jabalpur benches: PIB release, 8 August 2014.\n",
+      "data_quality": "partial",
+      "data_quality_notes": "SINGLE BENCH — NO SEPARATE AFT JAMMU ENTITY: Official name in SRO-12(E) and on aftdelhi.nic.in / aft.gov.in is \"Regional Bench, (Srinagar) at Jammu\". One bench, physically at Military Station Sanjuwan, Jammu-180011. \"Temporarily\" in the 2016 gazette has not been rescinded; no notification moving the bench to Srinagar city found as of June 2026. Supersedes aft_jammu stub (colloquial alias only).\nLADAKH GAP: SRO-12(E) predates J&K Reorganisation Act 2019. No updated MoD notification confirming UT of Ladakh coverage found. LA listed in uts_covered provisionally — no other AFT bench notified for Ladakh.\nContact: registraraft.jk@gov.in. Appellate path: AFT → SC per s.30 (not HC).\n",
+      "unverified_fields": [
+        {
+          "field": "jurisdiction_scope.uts_covered.LA",
+          "note": "Ladakh coverage not confirmed in post-2019 MoD/AFT gazette notification."
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "Lokpal jurisdiction contested — active litigation": 0
+        },
+        "independence_risk_level": "moderate",
+        "independence_risk_score": 4,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.76,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.76,
+          "independence_risk_penalty": 0.3,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "moderate",
+        "structural_health_score": 0.76
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "AFT Regional Benches — official listing",
+          "url": "https://aft.gov.in/reg-benches",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT Contact Us — aftdelhi.nic.in",
+          "url": "https://aftdelhi.nic.in/index.php/contact-us",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "MoD PIB — Cabinet approval for Srinagar and Jabalpur benches (2014)",
+          "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=108404",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Daily Excelsior — inauguration report quoting SRO-12(E) (2016-11-25)",
+          "url": "https://www.dailyexcelsior.com/cj-inaugurates-full-fledged-bench-armed-forces-tribunal/",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson: 4 years or age 70 whichever earlier; Members: 4 years or age 65 whichever earlier (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_defence"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "supreme_court_india",
+              "mechanism": "Appeal from AFT order lies to Supreme Court under AFT Act 2007 s.30 (not High Court). Bias complaint against member: petition to SC or administrative complaint to MoD.\n",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "timeframe_defined": true,
+              "external_to_judiciary": false
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "Contested",
+          "lokpal_jurisdiction_note": "AFT judicial members are retired judges; Lokpal jurisdiction for tribunal members contested — see aft_chandigarh (No) vs departmental view (Yes). Marked Contested pending maintainer alignment.\n",
+          "source": "AFT Act 2007 s.30"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "jurisdiction_scope.uts_covered.LA",
+            "note": "Ladakh coverage not confirmed in post-2019 MoD/AFT gazette notification."
+          }
+        ],
+        "jurisdiction_scope": {
+          "is_all_india": false,
+          "states_covered": [],
+          "uts_covered": [
+            "JK",
+            "LA"
+          ],
           "jurisdiction_types": [
             "service_matters",
             "court_martial_appeals"
@@ -71531,8 +71571,8 @@
       ]
     },
     {
-      "id": "rel_aft_jammu_bench_of_aft",
-      "source": "aft_jammu",
+      "id": "rel_aft_srinagar_bench_of_aft",
+      "source": "aft_srinagar",
       "target": "aft",
       "relationship_type": "BenchOf",
       "relationship_category": "statutory_ref",
@@ -71542,7 +71582,7 @@
       "year_abolished": null,
       "data_quality": "partial",
       "contested_note": null,
-      "notes": "Jammu bench per aft.gov.in jurisdiction table. Principal AFT website also references Srinagar — verify co-location vs separate bench before adding aft_srinagar entity.",
+      "notes": "Single statutory bench Regional Bench (Srinagar) at Jammu per aft.gov.in. Supersedes colloquial aft_jammu id.",
       "sources": [
         {
           "label": "AFT Act 2007, s.5",
@@ -82250,11 +82290,11 @@
         "aft_hyderabad",
         "aft_jabalpur",
         "aft_jaipur",
-        "aft_jammu",
         "aft_kochi",
         "aft_kolkata",
         "aft_lucknow",
         "aft_mumbai",
+        "aft_srinagar",
         "an_state_cdrc",
         "ap_state_cdrc",
         "aptel",
@@ -82868,11 +82908,11 @@
         "aft_hyderabad",
         "aft_jabalpur",
         "aft_jaipur",
-        "aft_jammu",
         "aft_kochi",
         "aft_kolkata",
         "aft_lucknow",
         "aft_mumbai",
+        "aft_srinagar",
         "aptel",
         "caar_customs",
         "cat",
@@ -83515,9 +83555,6 @@
       "{'states_covered': ['RJ'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
         "aft_jaipur"
       ],
-      "{'states_covered': [], 'uts_covered': ['JK', 'LA'], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
-        "aft_jammu"
-      ],
       "{'states_covered': ['KL', 'KA'], 'uts_covered': ['LD'], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
         "aft_kochi"
       ],
@@ -83529,6 +83566,9 @@
       ],
       "{'states_covered': ['MH', 'GJ'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
         "aft_mumbai"
+      ],
+      "{'is_all_india': False, 'states_covered': [], 'uts_covered': ['JK', 'LA'], 'jurisdiction_types': ['service_matters', 'court_martial_appeals']}": [
+        "aft_srinagar"
       ],
       "{'is_all_india': True, 'jurisdiction_types': ['Income tax assessments (original)', 'Reassessments', 'TDS processing', 'Demand and recovery'], 'states_covered': [], 'uts_covered': []}": [
         "ao_income_tax_generic"

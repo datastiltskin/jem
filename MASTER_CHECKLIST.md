@@ -1,7 +1,7 @@
 # Judiciary Entity Map (India) - JEM — Master Build & Deployment Checklist
 # Generated: April 25 2026
 # Last full repo audit: **May 20 2026 (post parallel-agent pass)** — see PROGRESS & REPO AUDIT below
-# Current build: **506 entities**, **525 relationships**, **~1.86 MB** `graph.json` (`validate.py` 0 errors)
+# Current build: **592 entities**, **589 relationships**, **~2.86 MB** `graph.json` (`validate.py` 0 errors)
 # ============================================================
 # HOW TO USE THIS FILE
 # - Work top to bottom
@@ -13,14 +13,14 @@
 
 ---
 
-## REPO AUDIT (May 20 2026 — post parallel-agent pass)
+## REPO AUDIT (Jun 12 2026 — post Batch 3 C21/C22/C23)
 
 | Metric | Value |
 |--------|--------|
-| Entity YAML files | **506** |
-| Relationship files | 12+ packs (**525** edges in `graph.json`) |
-| `graph.json` size | **~1.86 MB** (1,904,005 bytes after `build.py`) |
-| `validate.py` | **0 errors** (518 files checked) |
+| Entity YAML files | **592** |
+| Relationship files | 13+ packs (**589** edges in `graph.json`) |
+| `graph.json` size | **~2.86 MB** (2,858,700 bytes after `build.py`) |
+| `validate.py` | **0 errors** (605 files checked) |
 | Relationship orphans (no source/target edge) | **~139** — see “Still outstanding” below |
 | `CentralTribunal` entities | **14** (aptel, cat, cestat, itat, nclt, ngt, sat, nclat, tdsat, aft, drt, drat, rct, ipab) |
 | `RegulatoryBodyQJ` (backbone) | trai, sebi, cci, irdai, pfrda |
@@ -170,9 +170,9 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 
 - [ ] §5.1 Tax/revenue stack (CESTAT benches, CIT(A), GSTAT, etc.)
 - [ ] §5.2 Labour (CGIT benches, EPFO, ESI courts)
-- [ ] §5.3 Defence (AFT regional benches, court martial generic)
-- [ ] §5.4 Regulators (PFRDA entity if distinct from QJ node, FSSAI, AERA, ICADR, etc.)
-- [ ] §5.5 IP (IPAB historical — may overlap v1.0 `ipab` abolished node)
+- [x] §5.3 Defence (AFT regional benches, court martial generic) — Batch 3 + prior AFT bench pass
+- [x] §5.4 Regulators (FSSAI, AERA, ICADR, PCI, SEC generic, Insurance Ombudsman) — Batch 3; PFRDA entity still partial
+- [x] §5.5 IP (CGPDTM, TMR, COMPAT historical; `ipab` abolished in-place) — Batch 3
 - [ ] Tag `v1.5.0`
 
 ### v1.x audit commands (run before every tag)
@@ -624,16 +624,16 @@ Each item: entity_id to create, source URL, which Cursor session.
 
 ### 5.3 Defence (medium priority)
 
-- [ ] `aft_chandigarh` — covers PB, HR, HP, JK, LA
-- [ ] `aft_lucknow` — covers UP, UK
-- [ ] `aft_kolkata` — covers WB, BR, JH, OD, NE states
-- [ ] `aft_guwahati` — covers NE states
-- [ ] `aft_chennai` — covers TN, KE, PY, AP, TS
-- [ ] `aft_kochi` — covers KE, Lakshadweep
-- [ ] `aft_jaipur` — covers RJ, GJ
-- [ ] `aft_mumbai` — covers MH, GA
-- [ ] `aft_hyderabad` — covers TS, AP
-- [ ] `court_martial_generic` — Army/Navy/Air Force court martial (generic)
+- [x] `aft_chandigarh` — covers PB, HR, HP, JK, LA
+- [x] `aft_lucknow` — covers UP, UK
+- [x] `aft_kolkata` — covers WB, BR, JH, OD, NE states
+- [x] `aft_guwahati` — covers NE states
+- [x] `aft_chennai` — covers TN, KE, PY, AP, TS
+- [x] `aft_kochi` — covers KE, Lakshadweep
+- [x] `aft_jaipur` — covers RJ, GJ
+- [x] `aft_mumbai` — covers MH, GA
+- [x] `aft_hyderabad` — covers TS, AP
+- [x] `court_martial_generic` — Army/Navy/Air Force court martial (generic) — Batch 3
   Source: Army Act 1950, Navy Act 1957, Air Force Act 1950
   Gap: No external appeal until AFT. Accused has no right to civilian counsel in summary CM.
 
@@ -641,29 +641,31 @@ Each item: entity_id to create, source URL, which Cursor session.
 
 - [ ] `pfrda` — Pension Fund Regulatory and Development Authority
   Source: pfrda.org.in | Statutory: PFRDA Act 2013
-- [ ] `fssai` — Food Safety and Standards Authority of India
+- [x] `fssai` — Food Safety and Standards Authority of India — Batch 3
   Source: fssai.gov.in | Quasi-judicial functions, appellate → HC
-- [ ] `aera` — Airport Economic Regulatory Authority
+- [x] `aera` — Airport Economic Regulatory Authority — Batch 3
   Source: aera.gov.in | Appellate → TDSAT (confirmed by SC)
-- [ ] `icadr` — International Centre for ADR, Delhi
+- [x] `icadr` — International Centre for ADR, Delhi — Batch 3
   Source: icadr.in | GoI-funded, domestic + international arbitration
-- [ ] `press_council_india` — Press Council of India
+- [x] `press_council_india` — Press Council of India — Batch 3
   Source: presscouncil.nic.in | Quasi-judicial media complaints, no enforcement
-- [ ] `state_election_commission_generic` — 28 state SECs
+- [x] `state_election_commission_generic` — 28 state SECs — Batch 3
   Source: varies by state | Distinct from ECI. Electoral dispute adjudication.
 - [x] `insurance_ombudsman_generic` — Insurance Ombudsman (17 centres; Batch 3)
   Source: irdai.gov.in | Appeals from Insurance Ombudsman above Rs 50L
 
 ### 5.5 Intellectual Property (lower priority)
 
-- [ ] `ipab_abolished` — IPAB (IP Appellate Board) — Abolished 2021
+- [x] `ipab` — IPAB (IP Appellate Board) — Abolished 2021 (in-place upgrade, not ipab_abolished)
   Type: CentralTribunal, operational_status: Abolished, abolished_year: 2021
   Gap: Abolition without adequate transition — HC hearing IP appeals without specialist benches
   Source: The Tribunal Reforms Act 2021
-- [ ] `patent_controller` — Office of the Controller General of Patents, Designs and Trade Marks
-  Source: ipindia.gov.in | Pre-grant/post-grant opposition (adjudicatory functions)
+- [x] `patent_controller` — Office of the Controller General of Patents, Designs and Trade Marks — Batch 3
+  Source: ipindia.gov.in | created_year 1912 (office); Patents Act 1970 in statutory_basis
   Gap: Backlog in post-grant opposition proceedings
-- [ ] `trade_marks_registry` — Trade Marks Registry (adjudicatory on opposition, cancellation)
+- [x] `trade_marks_registry` — Trade Marks Registry (adjudicatory on opposition, cancellation) — Batch 3
+  created_year 1940 (registry); Trade Marks Act 1999 in statutory_basis
+- [x] `compat` — Competition Appellate Tribunal (abolished 2017; jurisdiction → NCLAT) — Batch 3
 
 ### 5.6 State-level — remaining 22 states + 5 UTs (community / Phase 2)
 
