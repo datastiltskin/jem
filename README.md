@@ -10,12 +10,13 @@ JEM maps *how* courts, tribunals, regulators, and oversight bodies are built —
 → **Data licence:** CC0 (public domain)  
 → **Code licence:** MIT  
 → **GitHub:** https://github.com/dso6060/jem_prototype  
+→ **Maintainer:** [@dso6060](https://github.com/dso6060) · dso.experiments@gmail.com · co-maintainer [@Prajna1999](https://github.com/Prajna1999)  
 → **Maintainer guide:** [`jem/docs/KNOWLEDGE_TRANSFER.md`](jem/docs/KNOWLEDGE_TRANSFER.md) · [`jem/docs/JEM_Knowledge_Transfer.docx`](jem/docs/JEM_Knowledge_Transfer.docx)  
 → **AI data-entry prompt:** [`jem/docs/AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) · **Entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
 
 ### Disclaimer
 
-Judiciary Entity Map (India) (JEM) presents structural information about institutions and their formal relationships, derived from public sources. It does not provide legal advice, predict case outcomes, or assess individual conduct. Independence Risk and Discretionary Power scores are algorithmic indicators of *structural design*, not findings of bias or misconduct. Data may be incomplete or outdated; verify critical facts against primary sources before relying on them in litigation, policy, or journalism. Corrections are welcome via GitHub with citations (once the public repository is published).
+Judiciary Entity Map (India) (JEM) presents structural information about institutions and their formal relationships, derived from public sources. It does not provide legal advice, predict case outcomes, or assess individual conduct. Independence Risk and Discretionary Power scores are algorithmic indicators of *structural design*, not findings of bias or misconduct. Data may be incomplete or outdated; verify critical facts against primary sources before relying on them in litigation, policy, or journalism. Corrections are welcome via [GitHub issues](https://github.com/dso6060/jem_prototype/issues/new?template=data_correction.yml) with citations.
 
 ---
 
@@ -76,7 +77,7 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 ## Entity build progress
 
-**592 / ~1,500** structural entities in repo (Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
+**668 / ~1,500** structural entities in repo (Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
 
 | Status | Meaning |
 |--------|---------|
@@ -89,31 +90,31 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 | C01 | Constitutional courts (SC + 25 HCs) | ~26 | **done** | 0 |
 | C02 | HC permanent benches | ~14 | **updated** | 1 |
 | C03 | Central tribunals (principal) | ~15 | **done** | 0 |
-| C04 | Tribunal regional benches (CESTAT, AFT, DRT) | ~56 | **updated** | 2 |
+| C04 | Tribunal regional benches (CESTAT, AFT, DRT, ITAT) | ~69 | **updated** | 2 |
 | C05 | Quasi-judicial regulators | ~80 | **updated** | 1 |
 | C06 | Consumer commissions | ~70 | **updated** | 2 |
 | C07 | ADR / NALSA / arbitration | ~40 | **updated** | 1 |
 | C08 | Ministries & governance | ~60 | **done** | 0 |
 | C09 | Appointment bodies | ~25 | **updated** | 1 |
-| C10 | Digital infrastructure | ~8 | **pending** | **1** |
-| C11 | Security bodies | ~10 | **pending** | 1 |
+| C10 | Digital infrastructure | ~8 | **updated** | **1** |
+| C11 | Security bodies | ~10 | **updated** | 1 |
 | C12 | Investigation & prosecution | ~15 | **updated** | 1 |
 | C13 | Training, audit, lokayukta | ~40 | **updated** | 2 |
 | C14 | State packs MH, DL, KA, TN, PY | ~220 | **done** | 0 |
-| C15 | State packs Batch A (UP, WB, RJ, AP, TS, GJ) | ~420 | **pending** | **1** |
+| C15 | State packs Batch A (UP, WB, RJ, AP, TS, GJ) | ~420 | **updated** | **1** |
 | C16 | State packs Batch B | ~360 | **pending** | 1 |
 | C17 | State packs Batch C (NE, hills) | ~280 | **pending** | 2 |
 | C18 | State packs Batch D (UTs, JK/LA) | ~120 | **pending** | 2 |
-| C19 | Tax / revenue stack | ~45 | **pending** | 2 |
-| C20 | Labour tribunals | ~35 | **pending** | 2 |
+| C19 | Tax / revenue stack | ~45 | **updated** | 2 |
+| C20 | Labour tribunals | ~35 | **updated** | 2 |
 | C21 | Defence (AFT benches, court martial) | ~12 | **updated** | 2 |
 | C22 | Specialized regulators (FSSAI, AERA, …) | ~10 | **updated** | 2 |
 | C23 | IP entities | ~5 | **updated** | 3 |
-| C24 | State tribunals (SAT, transport, MHRB) | ~35 | **pending** | 3 |
+| C24 | State tribunals (SAT, transport, MHRB) | ~35 | **updated** | 3 |
 | C25 | People / roles layer | ~20 | **pending** | 3 |
 | C26 | Relationship wiring (orphans) | — | **updated** | 1–3 |
-| C27 | Data-quality upgrades | 592 | **updated** | all |
-| C28 | NJDG / judge_strength numerics | 592 | **pending** | 2 |
+| C27 | Data-quality upgrades | 668 | **updated** | all |
+| C28 | NJDG / judge_strength numerics | 668 | **pending** | 2 |
 
 **Contributors:** copy prompts from the roadmap + [`AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) → open a **GitHub issue** with YAML (no email). **New entities:** proposed drafts OK. **Relationships:** maintainers only.
 
