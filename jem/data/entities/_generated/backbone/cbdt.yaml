@@ -1,0 +1,19 @@
+id: cbdt
+name: Central Board of Direct Taxes
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+created_year: 1963
+operational_status: Active
+data_quality: unverified
+data_quality_notes: >-
+  C08 stub for graph connectivity only — expand as Department/Board entity with
+  IT Act 1961 ss.116–119 basis in C08 pass. Referenced by AAR/DRP appointment
+  and oversight fields.
+sources:
+- label: Income Tax Act 1961 — India Code
+  url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx
+  type: CentralAct
+  accessed_date: '2026-06-12'

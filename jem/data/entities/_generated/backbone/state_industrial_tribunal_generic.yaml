@@ -1,0 +1,116 @@
+id: state_industrial_tribunal_generic
+name: State Industrial Tribunal (Generic)
+name_hindi: राज्य औद्योगिक अधिकरण (सामान्य)
+abbreviation: State IT
+aliases:
+  - State Industrial Tribunal
+  - Industrial Tribunal (State)
+
+type: StateTribunal
+cluster: tribunals_adr
+level_of_government: State
+
+created_year: 1947
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Industrial Disputes Act 1947, s.7A (Industrial Tribunals). State Governments
+  constitute State Industrial Tribunals to adjudicate matters in the Second and
+  Third Schedules of the Act (Third Schedule includes wages, hours, bonus, profit-
+  sharing, retrenchment, closure). State Industrial Tribunals have wider jurisdiction
+  than Labour Courts. Distinction from CGIT (s.7A): State-sphere industries are
+  referred to State Industrial Tribunals; Central-sphere industries to CGIT.
+  Industrial Relations Code 2020 (enacted; not yet operative as of June 2026).
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: governor_state
+  criteria_public: true
+  tenure: >-
+    Presiding Officer: person who is or has been a Judge of an HC (IDA 1947 s.7A(3)).
+    Tenure as prescribed by State Government.
+  reappointment_possible: null
+  removal_authority: governor_state
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: null
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: governor_state
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    State Government may remove on grounds of misbehaviour or incapacity after
+    inquiry (IDA 1947 s.9).
+  lokpal_jurisdiction: Contested
+  lokpal_jurisdiction_note: >-
+    State Lokayukta jurisdiction varies by state-specific Lokayukta Act. Mark
+    contested pending state-specific review. Presiding Officer exercises judicial
+    function; many state acts exclude such roles.
+  source: IDA 1947 ss.7A, 9
+
+structural_variations:
+  - variation_id: sit_maharashtra
+    description: Maharashtra — State Industrial Tribunals at Mumbai, Pune, Nagpur (multiple
+      benches). One of the highest-volume state tribunals nationally.
+    applicable_to:
+      - Maharashtra
+    source: IDA 1947 s.7A; Maharashtra Labour notifications
+    independence_risk_note: null
+  - variation_id: sit_up
+    description: Uttar Pradesh — State Industrial Tribunals at Lucknow, Kanpur, Noida.
+    applicable_to:
+      - Uttar Pradesh
+    source: IDA 1947 s.7A; UP Labour notifications
+    independence_risk_note: null
+  - variation_id: sit_tamilnadu
+    description: Tamil Nadu — State Industrial Tribunals at Chennai and additional seats.
+    applicable_to:
+      - Tamil Nadu
+    source: IDA 1947 s.7A; TN Labour notifications
+    independence_risk_note: null
+  - variation_id: sit_gujarat
+    description: Gujarat — State Industrial Tribunals at Ahmedabad.
+    applicable_to:
+      - Gujarat
+    source: IDA 1947 s.7A; Gujarat Labour notifications
+    independence_risk_note: null
+
+data_quality: partial
+data_quality_notes: >-
+  Generic node for State Industrial Tribunals (state sphere) constituted under
+  IDA 1947 s.7A. Distinction from cgit_* nodes: these handle State Government
+  references for state-sphere industries (industries not in the Central sphere
+  list per IDA s.2(a) read with Ministry of Labour orders). Appeals from State
+  IT awards lie to respective HC under Art. 226/227; no statutory appeal route.
+  Awards enforceable as Civil Court decrees (s.17A). Industrial Relations Code
+  2020 will replace this structure when notified. Count: 20–30 benches nationally;
+  exact figure not centrally published. ministry_responsible left null — each
+  state's Labour Department.
+
+sources:
+  - label: Industrial Disputes Act 1947 — ss.7A, 9, 17A (as amended)
+    url: https://india-code.nic.in/DownloadFile?FileName=A1947-14.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: MoLE — Labour Bureau statistics
+    url: https://labourbureau.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

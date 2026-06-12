@@ -1,0 +1,102 @@
+id: esi_court_generic
+name: Employees' State Insurance Court (Generic)
+name_hindi: कर्मचारी राज्य बीमा न्यायालय (सामान्य)
+abbreviation: ESI Court
+aliases:
+  - ESI Court
+  - ESIC Court
+
+type: SpecialCourt
+cluster: subordinate_courts
+level_of_government: Shared_CentralState
+
+created_year: 1948
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Employees' State Insurance Act 1948, ss.74–82 (Chapter VII — Adjudication of
+  Disputes and Claims). ESI Courts are designated by the respective State
+  Government from existing civil or judicial magistrate courts; no separate
+  infrastructure. Jurisdiction over disputes as to ESI contributions, benefits,
+  penalties. Appeals from ESI Court lie to the respective High Court (s.82).
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: governor_state
+  criteria_public: false
+  tenure: >-
+    Presiding Officer: a Judge of a Civil Court of the rank of a Munsiff / Civil
+    Judge (or higher) designated by the State Government under s.74(3). Not a
+    separately created post — designation of existing judicial officer.
+  reappointment_possible: null
+  removal_authority: governor_state
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: null
+  audit_type: None
+  audit_report_public: null
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: governor_state
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    Designated judicial officer; complaints through High Court administrative
+    supervision channel. No special removal mechanism under ESI Act.
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >-
+    Designated judicial officer exercises judicial functions; excluded from Lokpal
+    jurisdiction in judicial capacity.
+  source: ESI Act 1948 ss.74–82
+
+structural_variations:
+  - variation_id: esi_court_state
+    description: >-
+      Each state with ESI coverage has one or more ESI Courts, typically co-located
+      with existing civil courts at district HQ or industrial town. Number varies
+      by state industrial activity (~150 designated courts nationally estimated).
+    applicable_to:
+      - state_level
+    source: ESI Act 1948 s.74(2) — State Government notifies courts by state gazette
+    independence_risk_note: >-
+      Designated civil/magistrate courts with own docket; ESI matters added as
+      additional jurisdiction. Capacity strain where industrial disputes heavy
+      (e.g. Tamil Nadu, Maharashtra, Karnataka).
+
+data_quality: partial
+data_quality_notes: >-
+  Generic node for approximately 150 ESI Courts designated under ESI Act s.74
+  across industrialised states. Not a separately constituted tribunal — existing
+  civil courts designated by state governments. Exact count and list of designated
+  courts not centrally published by ESIC. Appeals from ESI Court → respective HC
+  under s.82. cluster: subordinate_courts is appropriate (designated civil court
+  jurisdiction); type: SpecialCourt reflects the specialised ESI jurisdiction
+  designation. funding via State_Consolidated_Fund (court infrastructure) while
+  ESIC (central body) provides administrative support — mixed funding pattern not
+  separately quantifiable. ministry_responsible left null (each state's Law/Labour
+  Dept. designates; no single central entity_id applicable).
+
+sources:
+  - label: Employees' State Insurance Act 1948 — ss.74–82
+    url: https://india-code.nic.in/DownloadFile?FileName=A1948-34.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: ESIC — official website
+    url: https://www.esic.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

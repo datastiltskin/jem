@@ -85,6 +85,16 @@ function buildPanelHTML(e) {
     ${e.data_quality_notes ? `— ${e.data_quality_notes}` : ''}
   </div>`;
 
+  const unverified = e.unverified_fields || d.unverified_fields || [];
+  if (unverified.length) {
+    html += section('Unverified fields', unverified.map((u) => `
+      <div class="detail-row contested-flag">
+        <span class="lbl">${u.field}</span>
+        <span>⚑ ${u.note}</span>
+      </div>
+    `).join(''));
+  }
+
   // ── Lifecycle ──────────────────────────────────────────
   html += section('Lifecycle', `
     <div class="detail-row"><span class="lbl">Established</span><span>${e.created_year}</span></div>

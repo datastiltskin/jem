@@ -1,0 +1,100 @@
+id: epfat
+name: Employees' Provident Fund Appellate Tribunal
+name_hindi: कर्मचारी भविष्य निधि अपीलीय अधिकरण
+abbreviation: EPFAT
+aliases:
+  - EPF Appellate Tribunal
+  - EPFAT New Delhi
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+created_year: 1952
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Employees' Provident Funds and Miscellaneous Provisions Act 1952, s.7D (as
+  amended). EPFAT hears appeals against orders passed by EPF authorities under
+  ss.7A, 7B, 14B of the Act. Seat at New Delhi. Note: Employees' Provident Funds
+  and Miscellaneous Provisions Act 1952 and EPFAT are continued under Social
+  Security Code 2020 (enacted but not yet fully notified/operative as of June 2026;
+  1952 Act remains governing law).
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: >-
+    Presiding Officer: person who is or has been a Judge of a High Court, or is
+    qualified to be appointed as HC Judge (EPF Act s.7D(3)). Tenure as prescribed
+    by Central Government; typically until age 65.
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_labour_employment
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: null
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    Central Government may remove Presiding Officer on grounds specified in EPF
+    Act s.7E (incapacity, misbehaviour). No independent committee.
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >-
+    Presiding Officer exercises judicial function; tribunal member exclusion applies
+    — pending Lokpal Act Schedule review for final determination.
+  source: EPF Act 1952 ss.7D, 7E
+
+judge_strength:
+  data_as_of: null
+  allotted: 1
+  appointed: null
+  vacancy_count: null
+  source_type: Estimated
+  source_url: https://epfat.gov.in/
+  notes: Single-member tribunal (one Presiding Officer post at New Delhi).
+
+data_quality: partial
+data_quality_notes: >-
+  EPFAT is a single-bench tribunal at New Delhi adjudicating appeals from EPFO
+  order under EPF Act ss.7A (determination of dues), 7B (review), 14B (damages).
+  Appeals from EPFAT lie to HC under Art. 226/227 and to Supreme Court under
+  Art.136. Social Security Code 2020 (enacted; rules under consultation) will
+  eventually subsume EPFAT into broader Social Security Appellate Tribunal
+  framework — transition not yet implemented. Pendency data not publicly available
+  in structured form. Website: https://epfat.gov.in/.
+
+unverified_fields:
+  - field: judge_strength.appointed
+    note: >
+      Working Presiding Officer count not confirmed from DoJ/MoLE public portal.
+
+sources:
+  - label: EPF and Miscellaneous Provisions Act 1952 — ss.7D, 7E (as amended)
+    url: https://india-code.nic.in/DownloadFile?FileName=A1952-19.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: EPFAT official website
+    url: https://epfat.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

@@ -1,0 +1,96 @@
+id: epfo
+name: Employees' Provident Fund Organisation
+name_hindi: कर्मचारी भविष्य निधि संगठन
+abbreviation: EPFO
+aliases:
+  - Employees' Provident Fund Organisation of India
+  - EPFO India
+
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+
+created_year: 1952
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Employees' Provident Funds and Miscellaneous Provisions Act 1952, ss.5A–5AA
+  (Central Board of Trustees), ss.5D–5E (Central Provident Fund Commissioner).
+  EPFO exercises quasi-judicial functions through its officers under ss.7A
+  (determination of EPF dues — Enquiry Officers), 7B (review), 14B (imposition
+  of damages). These officer-level adjudicative orders are appealable to EPFAT.
+  EPFO itself is a statutory executive body; only its adjudicatory officers have
+  quasi-judicial character.
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: >-
+    Central Provident Fund Commissioner: IAS/CSS officer appointed by Central
+    Government. Regional PF Commissioners: EPFO cadre officers. Central Board of
+    Trustees: tripartite body (government, employer, employee representatives);
+    constituted under s.5A.
+  reappointment_possible: null
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Statutory_Fund
+  ministry_responsible: ministry_labour_employment
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: ministry_labour_employment
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: ministry_labour_employment
+      mechanism: >-
+        Subscriber grievances via EPFIGMS (https://epfigms.gov.in/); officer
+        complaints through administrative hierarchy.
+      complainant_has_locus: true
+      is_public_process: true
+      timeframe_defined: false
+      external_to_judiciary: true
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: Service rules for EPFO officers; Central Board by Central Government.
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >-
+    EPFO officers are public servants; Lokpal jurisdiction applies for the
+    executive/enforcement functions. Quasi-judicial orders are separately
+    appealable to EPFAT.
+  source: EPF Act 1952; Lokpal Act 2013 s.14
+
+data_quality: partial
+data_quality_notes: >-
+  EPFO is classified ExecutiveBody (not CentralTribunal) because it is primarily
+  an executive/statutory fund management body. Its quasi-judicial enforcement
+  function (ss.7A, 14B orders) is exercised by designated officers whose orders
+  feed EPFAT's appellate jurisdiction. EPFO administers EPF, EPS (Employees'
+  Pension Scheme 1995), and EDLI (Employees' Deposit Linked Insurance Scheme 1976).
+  Manages ~280 million subscriber accounts (as of 2024 EPFO annual report);
+  collects ~INR 1.8 lakh crore annually. Social Security Code 2020 will reconstitute
+  governance structure when notified.
+
+sources:
+  - label: EPF and Miscellaneous Provisions Act 1952 — ss.5A–7B (as amended)
+    url: https://india-code.nic.in/DownloadFile?FileName=A1952-19.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: EPFO — official website
+    url: https://www.epfindia.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

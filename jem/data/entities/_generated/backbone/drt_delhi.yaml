@@ -1,0 +1,96 @@
+id: drt_delhi
+name: Debt Recovery Tribunal, Delhi
+name_hindi: ऋण वसूली अधिकरण, दिल्ली
+abbreviation: DRT Delhi
+aliases:
+  - DRT Delhi
+  - Debts Recovery Tribunal Delhi
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+jurisdiction_scope:
+  states_covered:
+    - RJ
+    - UP
+  uts_covered:
+    - DL
+  is_all_india: false
+  jurisdiction_types:
+    - debt_recovery
+    - sarfaesi_appeals
+
+created_year: 1994
+operational_status: Active
+
+statutory_basis: >
+  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
+  s. 3; SARFAESI Act, 2002, s. 17. Delhi has three benches (DRT-I, DRT-II, DRT-III)
+  under DRAT Delhi appellate supervision. Territorial jurisdiction as notified by
+  Central Government; DRT-I, DRT-II, DRT-III, Delhi each have division of territorial
+  sub-jurisdiction within the Delhi NCT area. Per legal sources, DRT Delhi also
+  covers portions of Uttar Pradesh not covered by DRT Allahabad and DRT Lucknow,
+  subject to Gazette notification.
+
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: '5 years or until age 62, whichever is earlier'
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: hc_delhi
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_delhi
+      mechanism: >
+        Supervisory jurisdiction of Delhi High Court under Articles 226/227;
+        writ petition before Delhi High Court.
+      complainant_has_locus: true
+      is_public_process: true
+      external_to_judiciary: false
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >
+    Presiding Officer is a judicial officer equivalent to District Judge; Lokpal
+    jurisdiction does not extend to judicial functions of tribunal officers.
+  source: RDDBFI Act 1993; Constitution of India Arts 226-227
+
+data_quality: partial
+data_quality_notes: >
+  Delhi has three DRT benches (DRT-I, DRT-II, DRT-III) under DRAT Delhi.
+  This entity represents the Delhi location; bench-specific entities may be warranted.
+  Territorial sub-jurisdiction of Delhi DRTs is split by area/branch of borrower;
+  specific district-level breakdown requires Gazette notification sourcing from
+  drt.gov.in. Note: DRT Delhi bench jurisdiction cited in Raizada Associates legal
+  source confirms "multiple benches (DRT-I, DRT-II, DRT-III) each with its own
+  territorial jurisdiction". MAINTAINER: wire AppealableTo → drat (aggregate entity; supervising DRAT bench-level entities not yet in graph — see data_quality_notes for supervising DRAT).
+
+unverified_fields:
+  - field: created_year
+    note: >
+      1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
+sources:
+  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
+    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: 'DRT official portal — Ministry of Finance, DFS'
+    url: https://drt.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'
+  - label: 'How to file a case in DRT Delhi — bench structure confirmed'
+    url: https://www.raizadaassociates.com/blog/how-to-file-a-case-in-drt-delh/
+    type: OfficialReport
+    accessed_date: '2026-06-11'

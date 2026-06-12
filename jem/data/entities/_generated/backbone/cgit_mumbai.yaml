@@ -1,0 +1,87 @@
+id: cgit_mumbai
+name: Central Government Industrial Tribunal, Mumbai
+name_hindi: केन्द्र सरकार औद्योगिक अधिकरण, मुम्बई
+abbreviation: CGIT Mumbai
+aliases:
+  - Central Government Industrial Tribunal No. 1 Mumbai
+  - CGIT Bombay
+
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+
+created_year: 1952
+abolished_year: null
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Industrial Disputes Act 1947 s.7A. Mumbai bench handles Central Government
+  references for Western India (Maharashtra, Gujarat, Goa, and Union Territories
+  in the region). IDA 1947 operative; Industrial Relations Code 2020 not yet
+  in force as of June 2026.
+
+appointment:
+  nominates: null
+  recommends: null
+  consulted: []
+  formally_appoints: central_government
+  criteria_public: true
+  tenure: >-
+    Presiding Officer: HC Judge or qualified for HC judgeship (IDA 1947 s.7A(3)).
+    Tenure as prescribed; typically up to age 65.
+  reappointment_possible: true
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_labour_employment
+  budget_figure_crore: null
+  budget_year: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: null
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: central_government
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    Central Government may remove Presiding Officer on grounds of misbehaviour or
+    incapacity after inquiry (IDA 1947 s.9).
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: >-
+    As cgit_delhi — presiding officer in judicial capacity; see note there.
+  source: Industrial Disputes Act 1947 ss.7A, 9
+
+judge_strength:
+  data_as_of: null
+  allotted: 1
+  appointed: null
+  vacancy_count: null
+  source_type: Estimated
+  source_url: https://cgit.labour.gov.in/
+  notes: One Presiding Officer post per CGIT seat.
+
+data_quality: partial
+data_quality_notes: >-
+  Mumbai CGIT covers Central sphere industries in Western India. Physical seat:
+  Mumbai. Jurisdiction: Central Government references under IDA 1947 s.10 for
+  Western region.
+
+sources:
+  - label: Industrial Disputes Act 1947 — s.7A
+    url: https://india-code.nic.in/DownloadFile?FileName=A1947-14.pdf
+    type: CentralAct
+    accessed_date: '2026-06-11'
+  - label: MoLE — CGIT portal
+    url: https://cgit.labour.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-11'

@@ -148,13 +148,228 @@ relationships:
     is_constitutional: false
     statutory_basis: "RDDBFI Act 1993, s.18 — any person aggrieved by DRT order may appeal to DRAT"
     year_established: 1993
-    notes: Appeal must be filed within 45 days; pre-deposit condition applies.
+    notes: >-
+      Aggregate DRT→DRAT edge retained for constellation view. Location-level DRT
+      entities (C04 batch 1) have bench-specific AppealableTo edges below.
     data_quality: verified
     sources:
       - label: "RDDBFI Act 1993, s.18"
         url: https://india-code.nic.in/handle/123456789/1573
         type: CentralAct
         accessed_date: "2025-01-15"
+
+  # ── C04 DRT batch 1 — location DRT → bench DRAT ─────────────────────────
+
+  - id: rel_drt_chennai_to_drat_chennai
+    source: drt_chennai
+    target: drat_chennai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: DRAT Chennai official About Us lists Chennai DRTs under this bench.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "DRAT Chennai — About Us"
+        url: https://drat.tn.nic.in/AboutUs.htm
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_mumbai_to_drat_mumbai
+    source: drt_mumbai
+    target: drat_mumbai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: MoF e-tribunals composition listing.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "MoF e-tribunals — DRAT/DRT composition"
+        url: https://drt.etribunals.gov.in/drtlive/composition.php
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_delhi_to_drat_delhi
+    source: drt_delhi
+    target: drat_delhi
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: >-
+      Wired per maintainer jurisdiction table; some practitioner sources route Delhi
+      DRT appeals to DRAT Allahabad — verify Gazette before upgrading to verified.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_kolkata_to_drat_kolkata
+    source: drt_kolkata
+    target: drat_kolkata
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: MoF e-tribunals composition listing.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "MoF e-tribunals — DRAT/DRT composition"
+        url: https://drt.etribunals.gov.in/drtlive/composition.php
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_bengaluru_to_drat_chennai
+    source: drt_bengaluru
+    target: drat_chennai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: DRAT Chennai official About Us lists Bengaluru DRTs under this bench.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "DRAT Chennai — About Us"
+        url: https://drat.tn.nic.in/AboutUs.htm
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_hyderabad_to_drat_kolkata
+    source: drt_hyderabad
+    target: drat_kolkata
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: >-
+      Resolved from MoF e-tribunals composition (Hyderabad under DRAT Kolkata) and
+      DRAT Chennai About Us (Hyderabad excluded). Gazette reassigning Hyderabad from
+      original DRAT Chennai circuit not located — see drt_hyderabad unverified_fields.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "MoF e-tribunals — DRAT/DRT composition"
+        url: https://drt.etribunals.gov.in/drtlive/composition.php
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+      - label: "DRAT Chennai — About Us"
+        url: https://drat.tn.nic.in/AboutUs.htm
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_ahmedabad_to_drat_mumbai
+    source: drt_ahmedabad
+    target: drat_mumbai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: MoF e-tribunals composition listing.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "MoF e-tribunals — DRAT/DRT composition"
+        url: https://drt.etribunals.gov.in/drtlive/composition.php
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_pune_to_drat_mumbai
+    source: drt_pune
+    target: drat_mumbai
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: MoF e-tribunals composition listing.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "MoF e-tribunals — DRAT/DRT composition"
+        url: https://drt.etribunals.gov.in/drtlive/composition.php
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_allahabad_to_drat_allahabad
+    source: drt_allahabad
+    target: drat_allahabad
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: MoF e-tribunals composition listing.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
+      - label: "MoF e-tribunals — DRAT/DRT composition"
+        url: https://drt.etribunals.gov.in/drtlive/composition.php
+        type: GoIWebsite
+        accessed_date: "2026-06-12"
+
+  - id: rel_drt_chandigarh_to_drat_delhi
+    source: drt_chandigarh
+    target: drat_delhi
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "RDDBFI Act 1993, s.18"
+    year_established: 1993
+    data_quality: partial
+    notes: Maintainer jurisdiction table; J&K/Ladakh extension left partial on entity.
+    sources:
+      - label: "RDDBFI Act 1993, s.18"
+        url: https://india-code.nic.in/handle/123456789/1573
+        type: CentralAct
+        accessed_date: "2026-06-12"
 
   # ── PrimaryFunder edges (Ministry → Entity) ───────────────────────────────
 
