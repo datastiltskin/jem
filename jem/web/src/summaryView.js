@@ -2,6 +2,7 @@
 // Landing page: stat band, risk-distribution small multiples, high-risk registry, all-entities table.
 
 import { State } from './state.js';
+import { buildAppellateHierarchy } from './entityConnections.js';
 
 const RISK_COLORS = {
   low:      '#16a34a',
@@ -641,6 +642,713 @@ function renderEntitiesTab(members) {
   return `<div class="dr-entities">${rows}</div>`;
 }
 
+// ── Temporal structure (decade mirror chart + slider) ────────────────────────
+// Births up, deaths down. Constitutional events overlaid as vertical markers.
+// A draggable year scrubber focuses a year — chart highlights the decade, and
+// an inline list shows entities created or abolished within a window.
+
+const TEMPORAL_DECADE_START = 1950;
+const TEMPORAL_DECADE_END = Math.floor(new Date().getFullYear() / 10) * 10; // current decade start
+const FOCUS_WINDOW_YEARS = 3; // ±3 yr window when scrubbing
+
+// Pick bucket size based on visible span: decade > 40yr, 5yr 15–40, yearly < 15.
+function _pickBucketSize(span) {
+  if (span > 40) return 10;
+  if (span > 15) return 5;
+  return 1;
+}
+
+function _bucketLabel(start, size) {
+  if (size === 10) return `${String(start).slice(2)}s`;
+  if (size === 5)  return `${start}`;
+  return String(start);
+}
+
+function _buildBuckets(entities, rangeStart, rangeEnd) {
+  const size = _pickBucketSize(rangeEnd - rangeStart);
+  const aligned = Math.floor(rangeStart / size) * size;
+  const buckets = [];
+  for (let y = aligned; y < rangeEnd; y += size) {
+    buckets.push({ start: y, size, label: _bucketLabel(y, size), births: [], deaths: [] });
+  }
+  const bucketOf = (yr) => {
+    if (yr == null) return null;
+    const idx = Math.floor((yr - aligned) / size);
+    if (idx < 0 || idx >= buckets.length) return null;
+    return buckets[idx];
+  };
+  for (const e of entities) {
+    const b1 = bucketOf(e.created_year);
+    if (b1) b1.births.push(e);
+    const b2 = bucketOf(e.abolished_year);
+    if (b2) b2.deaths.push(e);
+  }
+  return { buckets, size };
+}
+
+function _eventTypeColor(type) {
+  return {
+    constitutional: '#7c3aed',
+    institutional:  '#0891b2',
+    reform:         '#16a34a',
+    judgment:       '#dc2626',
+  }[type] || '#6b7280';
+}
+
+function renderTemporalStructure(opts = {}) {
+  const entities = State.graph?.entities || [];
+  const events = (State.graph?.timeline_events || []).slice().sort((a, b) => a.year - b.year);
+  const fullStart = TEMPORAL_DECADE_START;
+  const fullEnd = TEMPORAL_DECADE_END + 10;
+  const rangeStart = opts.rangeStart ?? fullStart;
+  const rangeEnd = opts.rangeEnd ?? fullEnd;
+  const brushMode = !!opts.brushMode;
+  const isZoomed = rangeStart !== fullStart || rangeEnd !== fullEnd;
+  const { buckets, size: bucketSize } = _buildBuckets(entities, rangeStart, rangeEnd);
+
+  const maxBirths = Math.max(1, ...buckets.map(b => b.births.length));
+  const maxDeaths = Math.max(1, ...buckets.map(b => b.deaths.length));
+  const yMax = Math.max(maxBirths, maxDeaths);
+
+  // Layout
+  const W = 760, H = 300, PAD_L = 64, PAD_R = 20, PAD_T = 36, PAD_B = 64;
+  const plotW = W - PAD_L - PAD_R;
+  const plotH = H - PAD_T - PAD_B;
+  const midY = PAD_T + plotH / 2;
+  const halfH = plotH / 2;
+  const barW = plotW / buckets.length;
+  const barGap = Math.max(4, barW * 0.18);
+  const usableBarW = barW - barGap;
+
+  const yearToX = (yr) => PAD_L + ((yr - rangeStart) / (rangeEnd - rangeStart)) * plotW;
+
+  // Bars — labels thin out when bucketSize=1 to avoid label collisions.
+  const labelEvery = bucketSize === 1 ? Math.max(1, Math.ceil(buckets.length / 12)) : 1;
+  const barsSVG = buckets.map((b, i) => {
+    const x = PAD_L + i * barW + barGap / 2;
+    const bH = (b.births.length / yMax) * halfH;
+    const dH = (b.deaths.length / yMax) * halfH;
+    const showLabel = i % labelEvery === 0;
+    return `
+      <g class="ts-bar-group" data-bucket-start="${b.start}" data-bucket-size="${b.size}">
+        ${bH > 0 ? `<rect class="ts-bar ts-bar-birth" x="${x}" y="${midY - bH}" width="${usableBarW}" height="${bH}" data-kind="birth" data-bucket-start="${b.start}" data-bucket-size="${b.size}"><title>${b.births.length} created in ${b.label}${b.size > 1 ? ` (${b.start}–${b.start + b.size - 1})` : ''}</title></rect>` : ''}
+        ${dH > 0 ? `<rect class="ts-bar ts-bar-death" x="${x}" y="${midY}" width="${usableBarW}" height="${dH}" data-kind="death" data-bucket-start="${b.start}" data-bucket-size="${b.size}"><title>${b.deaths.length} abolished in ${b.label}${b.size > 1 ? ` (${b.start}–${b.start + b.size - 1})` : ''}</title></rect>` : ''}
+        ${showLabel ? `<text class="ts-bar-label" x="${x + usableBarW / 2}" y="${H - PAD_B + 16}" text-anchor="middle">${b.label}</text>` : ''}
+        ${b.births.length ? `<text class="ts-bar-count ts-bar-count-birth" x="${x + usableBarW / 2}" y="${midY - bH - 3}" text-anchor="middle">${b.births.length}</text>` : ''}
+        ${b.deaths.length ? `<text class="ts-bar-count ts-bar-count-death" x="${x + usableBarW / 2}" y="${midY + dH + 10}" text-anchor="middle">${b.deaths.length}</text>` : ''}
+      </g>
+    `;
+  }).join('');
+
+  // Constitutional event markers (only those in visible range)
+  const eventsSVG = events.map((ev, i) => {
+    if (ev.year < rangeStart || ev.year > rangeEnd) return '';
+    const x = yearToX(ev.year);
+    const color = _eventTypeColor(ev.type);
+    return `
+      <g class="ts-event" data-event-index="${i}">
+        <line x1="${x}" x2="${x}" y1="${PAD_T - 6}" y2="${H - PAD_B}" stroke="${color}" stroke-dasharray="3 3" stroke-width="1" />
+        <circle cx="${x}" cy="${PAD_T - 6}" r="4" fill="${color}" />
+        <title>${ev.year} — ${ev.label}</title>
+      </g>
+    `;
+  }).join('');
+
+  // Mid axis (zero baseline)
+  const midAxis = `<line x1="${PAD_L}" x2="${W - PAD_R}" y1="${midY}" y2="${midY}" stroke="#111827" stroke-width="1" />`;
+
+  // Y labels — direction header + max-count ticks.
+  // Direction labels sit at the SVG's very left edge (anchor start at x=2),
+  // so they stay confined to the left gutter and never collide with bars.
+  const yLabels = `
+    <text class="ts-axis-dir ts-axis-dir-up"   x="2" y="${PAD_T - 14}"      text-anchor="start">↑ Created</text>
+    <text class="ts-axis-dir ts-axis-dir-down" x="2" y="${H - PAD_B + 18}" text-anchor="start">↓ Abolished</text>
+    <text class="ts-axis-tick" x="${PAD_L - 8}" y="${midY - halfH + 4}" text-anchor="end">${yMax}</text>
+    <text class="ts-axis-tick" x="${PAD_L - 8}" y="${midY + 4}" text-anchor="end">0</text>
+    <text class="ts-axis-tick" x="${PAD_L - 8}" y="${midY + halfH + 4}" text-anchor="end">${yMax}</text>
+    <line class="ts-axis-line" x1="${PAD_L}" x2="${PAD_L}" y1="${PAD_T}" y2="${H - PAD_B}" />
+  `;
+
+  // Range rail at the bottom — two handles for zoom + one thumb for focus.
+  const scrubY = H - PAD_B + 30;
+  const scrubX1 = PAD_L;
+  const scrubX2 = W - PAD_R;
+  const proposedFocus = opts.focusYear ?? Math.round(rangeStart + (rangeEnd - rangeStart) * 0.5);
+  const initialFocusYear = Math.max(rangeStart, Math.min(rangeEnd, proposedFocus));
+
+  // ALL three rail elements (handles + focus thumb) share the SAME coordinate
+  // system: the full-rail axis (1950 → fullEnd). This is what makes them
+  // visually consistent — the focus thumb always sits between the handles.
+  const fullRailYearToX = (yr) =>
+    PAD_L + ((yr - fullStart) / (fullEnd - fullStart)) * plotW;
+  const leftHandleX  = fullRailYearToX(rangeStart);
+  const rightHandleX = fullRailYearToX(rangeEnd);
+  const focusX       = fullRailYearToX(initialFocusYear);
+
+  const railSVG = `
+    <g class="ts-rail">
+      <line class="ts-rail-line ts-rail-full" x1="${scrubX1}" x2="${scrubX2}" y1="${scrubY}" y2="${scrubY}" />
+      <line class="ts-rail-line ts-rail-range" x1="${leftHandleX}" x2="${rightHandleX}" y1="${scrubY}" y2="${scrubY}" />
+      <text class="ts-rail-end ts-rail-end-l" x="${scrubX1}" y="${scrubY + 20}" text-anchor="start">${fullStart}</text>
+      <text class="ts-rail-end ts-rail-end-r" x="${scrubX2}" y="${scrubY + 20}" text-anchor="end">${fullEnd}</text>
+      <circle class="ts-handle ts-handle-left"  cx="${leftHandleX}"  cy="${scrubY}" r="6" data-role="handle-left"  />
+      <circle class="ts-handle ts-handle-right" cx="${rightHandleX}" cy="${scrubY}" r="6" data-role="handle-right" />
+      <circle class="ts-scrub-thumb" cx="${focusX}" cy="${scrubY}" r="7" data-role="thumb" />
+      <text class="ts-scrub-year" x="${focusX}" y="${scrubY + 20}" text-anchor="middle">${initialFocusYear}</text>
+    </g>
+    <g class="ts-tip" style="display:none" pointer-events="none">
+      <rect class="ts-tip-bg" rx="4" ry="4" width="120" height="30" />
+      <text class="ts-tip-text" x="60" y="19" text-anchor="middle"></text>
+    </g>
+  `;
+
+  const eventLegend = ['constitutional', 'institutional', 'reform', 'judgment'].map(t =>
+    `<span class="ts-evl"><span class="ts-evl-dot" style="background:${_eventTypeColor(t)}"></span>${t}</span>`
+  ).join('');
+
+  const bucketLabel = bucketSize === 10 ? 'decade' : bucketSize === 5 ? '5-yr' : 'year';
+  const span = rangeEnd - rangeStart;
+
+  // Preset eras — policy-researcher language. Each renders as a clickable pill.
+  const currentYear = new Date().getFullYear();
+  const presets = [
+    { label: 'All',                          s: fullStart, e: fullEnd },
+    { label: 'Pre-tribunalisation 1950–85',  s: 1950,      e: 1985 },
+    { label: 'Liberalisation 1991–2010',     s: 1991,      e: 2010 },
+    { label: 'Tribunals Reforms era 2017+',  s: 2017,      e: fullEnd },
+    { label: 'Last 25 yr',                   s: currentYear - 25, e: fullEnd },
+  ];
+  const presetsHTML = presets.map(p => {
+    const active = p.s === rangeStart && p.e === rangeEnd;
+    return `<button type="button" class="ts-preset${active ? ' ts-preset-active' : ''}" data-start="${p.s}" data-end="${p.e}">${p.label}</button>`;
+  }).join('');
+
+  return `
+    <div class="ts-wrap" data-focus-year="${initialFocusYear}" data-range-start="${rangeStart}" data-range-end="${rangeEnd}">
+      <div class="ts-meta">
+        <span><span class="ts-meta-num">${entities.filter(e => e.created_year).length}</span> entities with creation year ·
+        <span class="ts-meta-num">${entities.filter(e => e.abolished_year).length}</span> with abolition year ·
+        <span class="ts-meta-num">${events.length}</span> constitutional moments</span>
+        <span class="ts-status">
+          <span class="ts-bucket-info">${buckets.length} ${bucketLabel} bucket${buckets.length === 1 ? '' : 's'} · ${span} yr span</span>
+        </span>
+      </div>
+      <div class="ts-presets">${presetsHTML}</div>
+      <div class="ts-svg-wrap">
+        <svg class="ts-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          ${midAxis}
+          ${yLabels}
+          ${barsSVG}
+          ${eventsSVG}
+          ${railSVG}
+        </svg>
+      </div>
+      <div class="ts-legend">${eventLegend}<span class="ts-legend-hint">click event = focus · double-click = zoom ±15 yr</span></div>
+      <div class="ts-focus-panel" id="ts-focus-panel"></div>
+    </div>
+  `;
+}
+// "Spine + anomalies" — researcher-grade overview rather than a 600-node graph.
+//   Left:  the canonical 5-tier appellate structure with curated reference
+//          entities at each tier (the rest is available via the catalog drawer
+//          and per-entity profiles).
+//   Right: structural anomalies in the appellate chain — entities flagged as
+//          Not Constituted, Partial Operational, or carrying documented
+//          structural gaps. These are the editorial story.
+//
+// Why this shape: a policy researcher already knows there is a Supreme Court
+// and 25 High Courts; the value of an "appellate hierarchy" overview is to
+// surface *what is structurally broken*, not enumerate names already familiar.
+
+const TIER_DEFS = [
+  { key: 0, name: 'Constitutional apex',                 note: 'Final appellate jurisdiction under Article 136 (SLP).' },
+  { key: 1, name: 'Constitutional courts & central tribunals', note: 'High Courts under Article 214; central tribunals under their parent statutes.' },
+  { key: 2, name: 'Permanent benches & state tribunals', note: 'Permanent HC benches; state-level appellate tribunals.' },
+  { key: 3, name: 'Subordinate appellate & regional',    note: 'District & sessions courts; regional tribunal benches.' },
+  { key: 4, name: 'First-instance & quasi-judicial',     note: 'Trial-level courts and original-jurisdiction quasi-judicial bodies.' },
+];
+
+function _entitiesInAppellateGraph() {
+  const set = new Set();
+  for (const r of State.graph?.relationships || []) {
+    if (r.relationship_category === 'appellate_chain') {
+      set.add(r.source); set.add(r.target);
+    }
+  }
+  return set;
+}
+
+// Structural anomaly register — every category a legal-policy researcher would
+// consider materially anomalous. Project-wide, not restricted to the appellate
+// graph (Not Constituted entities by definition have no edges).
+//
+// Severity order (informs default-open state + colour):
+//   critical → Not Constituted, De Facto Blocked, Abolished
+//   high     → Suspended, Partial Operational, Merged
+//   moderate → Structural exception, Contested data, Structural gaps
+function _appellateAnomalyGroups() {
+  const entities = State.graph?.entities || [];
+  const now = new Date().getFullYear();
+
+  // Per-row fact: the single most relevant datum for a researcher (year + context).
+  const fact = (e, cat) => {
+    if (cat === 'Not Constituted' && e.created_year) {
+      return `${e.created_year} · ${now - e.created_year} yr pending`;
+    }
+    if (cat === 'Abolished' && e.abolished_year) {
+      return `Abolished ${e.abolished_year}`;
+    }
+    if (cat === 'Suspended' && e.suspended_year) return `Suspended ${e.suspended_year}`;
+    if (cat === 'Merged') {
+      const into = e.merged_into || e._detail?.merged_into;
+      return into ? `→ ${into}` : 'Merged';
+    }
+    if (cat === 'De Facto Blocked') return 'Non-operational in practice';
+    if (cat === 'Partial Operational') return 'Partial coverage';
+    if (cat === 'Structural exception') return 'Deviates from statutory template';
+    if (cat === 'Contested data') return e.data_quality_notes ? 'Sources disagree' : 'Data contested';
+    if (cat === 'Structural gaps') {
+      const n = Number(e.gap_count) || (e.gaps?.length || 0);
+      return `${n} gap${n === 1 ? '' : 's'}`;
+    }
+    return '';
+  };
+
+  const groups = {
+    'Not Constituted':      { severity: 'critical',  entities: [] },
+    'Abolished':            { severity: 'abolished', entities: [] },
+    'De Facto Blocked':     { severity: 'critical',  entities: [] },
+    'Suspended':            { severity: 'high',     entities: [] },
+    'Partial Operational':  { severity: 'high',     entities: [] },
+    'Merged':               { severity: 'high',     entities: [] },
+    'Structural exception': { severity: 'moderate', entities: [] },
+    'Contested data':       { severity: 'moderate', entities: [] },
+    'Structural gaps':      { severity: 'moderate', entities: [] },
+  };
+
+  // First pass: assign by primary operational_status. An entity sits in exactly
+  // one status bucket so the count tallies cleanly with the stat band.
+  for (const e of entities) {
+    const status = e.operational_status;
+    const row = { id: e.id, name: e.name, abbr: e.abbreviation };
+    let placed = null;
+    if      (status === 'Not_Constituted')      placed = 'Not Constituted';
+    else if (status === 'Abolished')            placed = 'Abolished';
+    else if (status === 'De_Facto_Blocked')     placed = 'De Facto Blocked';
+    else if (status === 'Suspended')            placed = 'Suspended';
+    else if (status === 'Partial_Operational')  placed = 'Partial Operational';
+    else if (status === 'Merged')               placed = 'Merged';
+    if (placed) {
+      row.fact = fact(e, placed);
+      groups[placed].entities.push(row);
+    }
+  }
+
+  // Second pass: structural-exception, contested data quality, and documented
+  // gaps for *active* entities only (we don't want to double-count an Abolished
+  // entity into a gaps bucket — the abolition IS the anomaly).
+  for (const e of entities) {
+    if (['Not_Constituted', 'Abolished', 'De_Facto_Blocked', 'Suspended', 'Partial_Operational', 'Merged']
+        .includes(e.operational_status)) continue;
+    const row = { id: e.id, name: e.name, abbr: e.abbreviation };
+    if (e.structural_exception) {
+      row.fact = fact(e, 'Structural exception');
+      groups['Structural exception'].entities.push(row);
+      continue;
+    }
+    if (e.data_quality === 'contested') {
+      row.fact = fact(e, 'Contested data');
+      groups['Contested data'].entities.push(row);
+      continue;
+    }
+    const gapCount = Number(e.gap_count) || (e.gaps?.length || 0);
+    if (gapCount > 0) {
+      row.fact = fact({ ...e, gap_count: gapCount }, 'Structural gaps');
+      groups['Structural gaps'].entities.push(row);
+    }
+  }
+
+  // Sort within group: by name (researcher scan-pattern).
+  for (const k of Object.keys(groups)) {
+    groups[k].entities.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+  }
+
+  return Object.entries(groups)
+    .filter(([, g]) => g.entities.length)
+    .map(([tag, g]) => ({ tag, severity: g.severity, entities: g.entities }));
+}
+
+function _wireTemporalStructure(tsWrap, entities) {
+  const events = (State.graph?.timeline_events || []).slice().sort((a, b) => a.year - b.year);
+  const W = 760, PAD_L = 64, PAD_R = 20;
+  const plotW = W - PAD_L - PAD_R;
+  const fullStart = TEMPORAL_DECADE_START;
+  const fullEnd = TEMPORAL_DECADE_END + 10;
+  const MIN_SPAN = 5; // smallest zoom span in years
+
+  const getState = () => {
+    const wrap = tsWrap.querySelector('.ts-wrap');
+    return {
+      wrap,
+      svg: tsWrap.querySelector('.ts-svg'),
+      focusPanel: tsWrap.querySelector('#ts-focus-panel'),
+      tip: tsWrap.querySelector('.ts-tip'),
+      tipBg: tsWrap.querySelector('.ts-tip-bg'),
+      tipText: tsWrap.querySelector('.ts-tip-text'),
+      handleL: tsWrap.querySelector('.ts-handle-left'),
+      handleR: tsWrap.querySelector('.ts-handle-right'),
+      railRange: tsWrap.querySelector('.ts-rail-range'),
+      thumb: tsWrap.querySelector('.ts-scrub-thumb'),
+      focusLine: tsWrap.querySelector('.ts-scrub-focus-line'),
+      yearText: tsWrap.querySelector('.ts-scrub-year'),
+      rangeStart: parseInt(wrap.dataset.rangeStart, 10),
+      rangeEnd: parseInt(wrap.dataset.rangeEnd, 10),
+      focusYear: parseInt(wrap.dataset.focusYear, 10),
+    };
+  };
+
+  const rerender = (overrides = {}) => {
+    const s = getState();
+    tsWrap.innerHTML = renderTemporalStructure({
+      rangeStart: overrides.rangeStart ?? s.rangeStart,
+      rangeEnd:   overrides.rangeEnd   ?? s.rangeEnd,
+      focusYear:  overrides.focusYear  ?? s.focusYear,
+    });
+    refreshFocusPanel();
+  };
+
+  // Coordinate helpers
+  // Visible-range x ↔ year (for the focus thumb / chart plot).
+  const visibleXToYear = (clientX) => {
+    const { svg, rangeStart, rangeEnd } = getState();
+    const rect = svg.getBoundingClientRect();
+    const scale = rect.width / W;
+    const localX = (clientX - rect.left) / scale;
+    const px = Math.max(PAD_L, Math.min(W - PAD_R, localX));
+    const yr = rangeStart + ((px - PAD_L) / plotW) * (rangeEnd - rangeStart);
+    return Math.round(yr);
+  };
+  const yearToVisibleLocalX = (yr, rangeStart, rangeEnd) =>
+    PAD_L + ((yr - rangeStart) / (rangeEnd - rangeStart)) * plotW;
+  // Full-rail x ↔ year (for the range handles, which span the entire timeline regardless of zoom).
+  const fullRailXToYear = (clientX) => {
+    const { svg } = getState();
+    const rect = svg.getBoundingClientRect();
+    const scale = rect.width / W;
+    const localX = (clientX - rect.left) / scale;
+    const px = Math.max(PAD_L, Math.min(W - PAD_R, localX));
+    const yr = fullStart + ((px - PAD_L) / plotW) * (fullEnd - fullStart);
+    return Math.round(yr);
+  };
+  const yearToFullRailX = (yr) =>
+    PAD_L + ((yr - fullStart) / (fullEnd - fullStart)) * plotW;
+
+  const refreshFocusPanel = () => {
+    const { wrap, focusPanel } = getState();
+    const year = parseInt(wrap.dataset.focusYear, 10);
+    const lo = year - FOCUS_WINDOW_YEARS;
+    const hi = year + FOCUS_WINDOW_YEARS;
+    const created = entities.filter(e => e.created_year != null && e.created_year >= lo && e.created_year <= hi);
+    const abolished = entities.filter(e => e.abolished_year != null && e.abolished_year >= lo && e.abolished_year <= hi);
+    const nearEvents = events.filter(ev => ev.year >= lo && ev.year <= hi);
+    const chip = (e, kind) => `<button type="button" class="ts-chip ts-chip-${kind}" data-entity-id="${e.id}" title="${(e.name || '').replace(/"/g, '&quot;')}">${e.abbreviation || e.name} <span class="ts-chip-yr">${kind === 'birth' ? e.created_year : e.abolished_year}</span></button>`;
+    const eventRow = nearEvents.length ? `
+      <div class="ts-focus-events">
+        ${nearEvents.map(ev => `<span class="ts-focus-event" style="border-left-color:${_eventTypeColor(ev.type)}"><strong>${ev.year}</strong> · ${ev.label}</span>`).join('')}
+      </div>` : '';
+    if (!created.length && !abolished.length && !nearEvents.length) {
+      focusPanel.innerHTML = `<p class="ts-focus-empty">Nothing within ±${FOCUS_WINDOW_YEARS} years of ${year}.</p>`;
+      return;
+    }
+    focusPanel.innerHTML = `
+      <div class="ts-focus-head">
+        <span class="ts-focus-year">${year}</span>
+        <span class="ts-focus-window">within ±${FOCUS_WINDOW_YEARS} yr</span>
+        <span class="ts-focus-counts">
+          <span class="ts-focus-count ts-focus-count-birth">${created.length} created</span>
+          <span class="ts-focus-count ts-focus-count-death">${abolished.length} abolished</span>
+        </span>
+      </div>
+      ${eventRow}
+      ${created.length ? `<div class="ts-focus-row"><span class="ts-focus-row-label">Born</span><div class="ts-focus-chips">${created.map(e => chip(e, 'birth')).join('')}</div></div>` : ''}
+      ${abolished.length ? `<div class="ts-focus-row"><span class="ts-focus-row-label">Abolished</span><div class="ts-focus-chips">${abolished.map(e => chip(e, 'death')).join('')}</div></div>` : ''}
+    `;
+  };
+
+  refreshFocusPanel();
+
+  // ── Move focus thumb (always at full-rail x for consistency with handles) ─
+  const moveScrubberTo = (year) => {
+    const { wrap, rangeStart, rangeEnd, thumb, yearText } = getState();
+    year = Math.max(rangeStart, Math.min(rangeEnd, year));
+    wrap.dataset.focusYear = year;
+    const x = yearToFullRailX(year);
+    thumb?.setAttribute('cx', x);
+    if (yearText) { yearText.setAttribute('x', x); yearText.textContent = year; }
+    refreshFocusPanel();
+  };
+  // Visual-only thumb update (no panel refresh — used during handle drag).
+  const syncThumbVisual = () => {
+    const { wrap, thumb, yearText } = getState();
+    const yr = parseInt(wrap.dataset.focusYear, 10);
+    const x = yearToFullRailX(yr);
+    thumb?.setAttribute('cx', x);
+    if (yearText) { yearText.setAttribute('x', x); yearText.textContent = yr; }
+  };
+
+  // ── Tooltip ───────────────────────────────────────────────────
+  const showTip = (anchorX, anchorY, text) => {
+    const { tip, tipBg, tipText } = getState();
+    if (!tip) return;
+    // Measure: monospace text — estimate width by char count.
+    const w = Math.max(80, text.length * 7 + 16);
+    tipBg.setAttribute('width', w);
+    tip.setAttribute('transform', `translate(${anchorX - w / 2}, ${anchorY - 42})`);
+    tipText.setAttribute('x', w / 2);
+    tipText.textContent = text;
+    tip.style.display = '';
+  };
+  const hideTip = () => {
+    const { tip } = getState();
+    if (tip) tip.style.display = 'none';
+  };
+
+  // ── Drag dispatcher ───────────────────────────────────────────
+  // dragRole: 'handle-left' | 'handle-right' | 'thumb' | 'plot' | null
+  let dragRole = null;
+  let pendingRangeStart = null;
+  let pendingRangeEnd = null;
+
+  const startDrag = (target, clientX) => {
+    const role = target.closest('[data-role]')?.dataset.role;
+    if (role === 'handle-left' || role === 'handle-right' || role === 'thumb') {
+      dragRole = role;
+      const s = getState();
+      pendingRangeStart = s.rangeStart;
+      pendingRangeEnd = s.rangeEnd;
+      updateDrag(clientX);
+      return true;
+    }
+    if (target.closest('.ts-svg') && !target.closest('.ts-bar, .ts-event circle, .ts-rail')) {
+      // Clicking on the chart plot area scrubs focus along the visible axis.
+      dragRole = 'plot';
+      moveScrubberTo(visibleXToYear(clientX));
+      return true;
+    }
+    return false;
+  };
+
+  const updateDrag = (clientX) => {
+    const s = getState();
+    if (dragRole === 'handle-left') {
+      // Use the THUMB radius as the floor so the handle can never overlap the focus thumb
+      // visually — focus year auto-clamps in lockstep.
+      const yr = fullRailXToYear(clientX);
+      const clamped = Math.max(fullStart, Math.min(pendingRangeEnd - MIN_SPAN, yr));
+      pendingRangeStart = clamped;
+      const x = yearToFullRailX(clamped);
+      s.handleL?.setAttribute('cx', x);
+      s.railRange?.setAttribute('x1', x);
+      showTip(x, parseFloat(s.handleL?.getAttribute('cy') || 0),
+        `From ${clamped} · span ${pendingRangeEnd - clamped}`);
+      // Live-clamp focus year if it now falls outside pending range.
+      const curFocus = parseInt(s.wrap.dataset.focusYear, 10);
+      if (curFocus < pendingRangeStart) {
+        s.wrap.dataset.focusYear = pendingRangeStart;
+        syncThumbVisual();
+      }
+    } else if (dragRole === 'handle-right') {
+      const yr = fullRailXToYear(clientX);
+      const clamped = Math.max(pendingRangeStart + MIN_SPAN, Math.min(fullEnd, yr));
+      pendingRangeEnd = clamped;
+      const x = yearToFullRailX(clamped);
+      s.handleR?.setAttribute('cx', x);
+      s.railRange?.setAttribute('x2', x);
+      showTip(x, parseFloat(s.handleR?.getAttribute('cy') || 0),
+        `To ${clamped} · span ${clamped - pendingRangeStart}`);
+      const curFocus = parseInt(s.wrap.dataset.focusYear, 10);
+      if (curFocus > pendingRangeEnd) {
+        s.wrap.dataset.focusYear = pendingRangeEnd;
+        syncThumbVisual();
+      }
+    } else if (dragRole === 'thumb') {
+      // Thumb is on the full-rail axis — use the same conversion.
+      moveScrubberTo(fullRailXToYear(clientX));
+    } else if (dragRole === 'plot') {
+      // Plot-area drag uses the visible (zoomed) axis.
+      moveScrubberTo(visibleXToYear(clientX));
+    }
+  };
+
+  const endDrag = () => {
+    if (!dragRole) return;
+    if (dragRole === 'handle-left' || dragRole === 'handle-right') {
+      hideTip();
+      const s = getState();
+      if (pendingRangeStart !== s.rangeStart || pendingRangeEnd !== s.rangeEnd) {
+        const curFocus = parseInt(s.wrap.dataset.focusYear, 10);
+        const newFocus = Math.max(pendingRangeStart, Math.min(pendingRangeEnd, curFocus));
+        rerender({ rangeStart: pendingRangeStart, rangeEnd: pendingRangeEnd, focusYear: newFocus });
+      }
+    }
+    dragRole = null;
+    pendingRangeStart = null;
+    pendingRangeEnd = null;
+  };
+
+  tsWrap.addEventListener('mousedown', (ev) => {
+    if (ev.target.closest('.ts-preset, .ts-chip, .ts-bar, .ts-event circle')) return;
+    if (startDrag(ev.target, ev.clientX)) ev.preventDefault();
+  });
+  document.addEventListener('mousemove', (ev) => { if (dragRole) updateDrag(ev.clientX); });
+  document.addEventListener('mouseup', endDrag);
+
+  tsWrap.addEventListener('touchstart', (ev) => {
+    if (ev.target.closest('.ts-preset, .ts-chip, .ts-bar, .ts-event circle')) return;
+    if (ev.touches[0]) startDrag(ev.target, ev.touches[0].clientX);
+  }, { passive: true });
+  document.addEventListener('touchmove', (ev) => { if (dragRole && ev.touches[0]) updateDrag(ev.touches[0].clientX); }, { passive: true });
+  document.addEventListener('touchend', endDrag);
+
+  // ── Click delegation (presets, bars, event single-click, chips) ──────
+  tsWrap.addEventListener('click', (ev) => {
+    const preset = ev.target.closest('.ts-preset');
+    if (preset) {
+      const s = parseInt(preset.dataset.start, 10);
+      const e = parseInt(preset.dataset.end, 10);
+      rerender({ rangeStart: s, rangeEnd: e, focusYear: Math.round((s + e) / 2) });
+      return;
+    }
+    const bar = ev.target.closest('.ts-bar');
+    if (bar) {
+      const start = parseInt(bar.dataset.bucketStart, 10);
+      const size = parseInt(bar.dataset.bucketSize, 10);
+      moveScrubberTo(start + Math.floor(size / 2));
+      return;
+    }
+    const evt = ev.target.closest('.ts-event');
+    if (evt) {
+      const idx = parseInt(evt.dataset.eventIndex, 10);
+      const e = events[idx];
+      if (e) moveScrubberTo(e.year);
+      return;
+    }
+    const chipBtn = ev.target.closest('.ts-chip');
+    if (chipBtn) State.emit('navigateToDetail', chipBtn.dataset.entityId);
+  });
+
+  // ── Double-click an event marker → zoom ±15 yr around it ─────
+  tsWrap.addEventListener('dblclick', (ev) => {
+    const evt = ev.target.closest('.ts-event');
+    if (!evt) return;
+    const idx = parseInt(evt.dataset.eventIndex, 10);
+    const e = events[idx];
+    if (!e) return;
+    const s = Math.max(fullStart, e.year - 15);
+    const ee = Math.min(fullEnd, e.year + 15);
+    rerender({ rangeStart: s, rangeEnd: ee, focusYear: e.year });
+  });
+}
+
+function renderAppellateHierarchy() {
+  const { tiers } = buildAppellateHierarchy();
+  if (!tiers.length || tiers.every(t => !t.length)) {
+    return '<p class="sum-empty">No appellate-chain relationships in the dataset yet.</p>';
+  }
+
+  // Curate each tier: surface 4 reference entities. Sort by structural salience —
+  // anomaly status first (so a Not Constituted entity at tier 1 is visible),
+  // then by entity name length (shorter ≈ more canonical) as a stable secondary.
+  const inGraph = _entitiesInAppellateGraph();
+  const salience = (id) => {
+    const e = State.getEntityById(id);
+    if (!e) return 99;
+    if (e.operational_status === 'Not_Constituted') return 0;
+    if (e.operational_status === 'De_Facto_Blocked') return 1;
+    if (e.operational_status === 'Partial_Operational') return 2;
+    return 10;
+  };
+
+  const referenceChip = (id) => {
+    const e = State.getEntityById(id);
+    if (!e) return '';
+    const label = e.abbreviation || e.name;
+    const full = (e.name || id).replace(/"/g, '&quot;');
+    const flag = e.operational_status === 'Not_Constituted' ? '<span class="ah-flag" title="Not Constituted">NOT CONSTITUTED</span>'
+               : e.operational_status === 'De_Facto_Blocked' ? '<span class="ah-flag ah-flag-blocked" title="De Facto Blocked">DE FACTO BLOCKED</span>'
+               : e.operational_status === 'Abolished'        ? `<span class="ah-flag ah-flag-abolished" title="Abolished${e.abolished_year ? ' ' + e.abolished_year : ''}">ABOLISHED${e.abolished_year ? ' ' + e.abolished_year : ''}</span>`
+               : '';
+    const chipClass = e.operational_status === 'Abolished' ? 'ah-chip ah-chip-abolished' : 'ah-chip';
+    return `<button type="button" class="${chipClass}" data-entity-id="${id}" title="${full}"><span class="ah-chip-label">${label}</span>${flag}</button>`;
+  };
+
+  const tierRow = (tier, ti) => {
+    const def = TIER_DEFS[ti] || { name: `Tier ${ti + 1}`, note: '' };
+    const sorted = [...tier].sort((a, b) => salience(a) - salience(b) || (State.getEntityById(a)?.name || a).length - (State.getEntityById(b)?.name || b).length);
+    const refs = sorted.slice(0, 4).map(referenceChip).join('');
+    const moreCount = tier.length - 4;
+    const rest = sorted.slice(4).map(referenceChip).join('');
+    return `
+      <div class="ah-tier-row">
+        <div class="ah-tier-num">${ti + 1}</div>
+        <div class="ah-tier-body">
+          <div class="ah-tier-head">
+            <span class="ah-tier-name">${def.name}</span>
+            <span class="ah-tier-count">${tier.length} ${tier.length === 1 ? 'entity' : 'entities'}</span>
+          </div>
+          ${def.note ? `<div class="ah-tier-note">${def.note}</div>` : ''}
+          <div class="ah-tier-refs">
+            ${refs}
+            ${moreCount > 0 ? `<details class="ah-tier-more-wrap"><summary class="ah-tier-more">+ ${moreCount} more</summary><div class="ah-tier-rest">${rest}</div></details>` : ''}
+          </div>
+        </div>
+      </div>
+    `;
+  };
+
+  const anomalyGroups = _appellateAnomalyGroups();
+  const anomalyTotal = anomalyGroups.reduce((acc, g) => acc + g.entities.length, 0);
+  const anomalyHTML = anomalyGroups.length ? anomalyGroups.map(g => `
+    <details class="ah-anom-group ah-anom-sev-${g.severity}" ${g.tag === 'Not Constituted' ? 'open' : ''}>
+      <summary class="ah-anom-group-head">
+        <span class="ah-anom-group-tag">${g.tag}</span>
+        <span class="ah-anom-group-count">${g.entities.length}</span>
+      </summary>
+      <div class="ah-anom-list">
+        ${g.entities.map(a => `
+          <button type="button" class="ah-anom" data-entity-id="${a.id}">
+            <span class="ah-anom-name">${a.name}</span>
+            ${a.fact ? `<span class="ah-anom-fact">${a.fact}</span>` : ''}
+          </button>
+        `).join('')}
+      </div>
+    </details>
+  `).join('') : '<p class="ah-anom-empty">No structural anomalies flagged in appellate graph.</p>';
+
+  const totalEntities = tiers.reduce((acc, t) => acc + t.length, 0);
+
+  return `
+    <div class="ah-wrap">
+      <div class="ah-meta">
+        <span class="ah-meta-num">${totalEntities}</span> entities across
+        <span class="ah-meta-num">${tiers.length}</span> appellate tiers ·
+        <span class="ah-meta-num">${anomalyTotal}</span> structural anomalies
+      </div>
+      <div class="ah-grid">
+        <section class="ah-spine" aria-label="Appellate spine">
+          <header class="ah-col-head">The spine</header>
+          ${tiers.map(tierRow).join('')}
+        </section>
+        <aside class="ah-anomalies" aria-label="Structural anomalies">
+          <header class="ah-col-head">Structural anomaly register</header>
+          <p class="ah-col-sub">Every materially anomalous entity across the map — by operational status (Not Constituted, Abolished, Suspended, Merged, etc.), structural exception, contested data quality, or documented gap. One row per entity, single primary category.</p>
+          ${anomalyHTML}
+        </aside>
+      </div>
+    </div>
+  `;
+}
+
 function buildClusterDrillHTML(clusterId, entities, filterIds = null) {
   const label = CLUSTER_LABELS[clusterId] || clusterId;
   const idSet = filterIds ? new Set(filterIds) : null;
@@ -741,6 +1449,209 @@ function showClusterDrill(clusterId, entities, container, filterIds = null) {
 
 // ── Main render ───────────────────────────────────────────────────────────────
 
+// ── Stat-band detail panels (researcher hat: dense, sourced, one-line-per-row) ─
+const CURRENT_YEAR = new Date().getFullYear();
+
+function _statPanelEntities(stat, entities) {
+  if (stat === 'risk') {
+    return entities
+      .filter(e => ['high', 'severe'].includes(e.derived?.independence_risk_level))
+      .sort((a, b) => (b.derived?.independence_risk_score ?? 0) - (a.derived?.independence_risk_score ?? 0));
+  }
+  if (stat === 'nc') {
+    return entities
+      .filter(e => e.operational_status === 'Not_Constituted')
+      .sort((a, b) => (a.created_year ?? 9999) - (b.created_year ?? 9999));
+  }
+  if (stat === 'abolished') {
+    return entities
+      .filter(e => e.operational_status === 'Abolished')
+      .sort((a, b) => (b.abolished_year ?? 0) - (a.abolished_year ?? 0));
+  }
+  if (stat === 'disposal') {
+    return entities
+      .filter(e => e._detail?.case_volume?.disposal_rate != null)
+      .sort((a, b) => (a._detail.case_volume.disposal_rate) - (b._detail.case_volume.disposal_rate));
+  }
+  return entities;
+}
+
+function _statPanelMeta(stat, list, totalEntities) {
+  if (stat === 'coverage') return {
+    title: 'Coverage',
+    blurb: `${totalEntities} entities mapped against the ~1,500-entity universe (Constitution + central + state + UT). Coverage is sparse for state-level subordinate courts; central and constitutional layers are substantially complete.`,
+    column: 'By govt level · count · share',
+  };
+  if (stat === 'risk') return {
+    title: 'High or severe independence risk',
+    blurb: 'Algorithmic indicator of structural design — not findings of conduct. Drivers include appointer-litigant conflict, executive removal authority without judicial concurrence, opaque appointment criteria, and reappointment dependency.',
+    column: 'IR score · level',
+  };
+  if (stat === 'nc') return {
+    title: 'Legislated but not constituted',
+    blurb: 'Entities created by statute but not yet operationalised — appellate vacuums where the legislated remedy does not exist in practice. Litigants typically route through writ jurisdiction (HC under Article 226) instead.',
+    column: 'Legislated · years pending',
+  };
+  if (stat === 'abolished') return {
+    title: 'Abolished',
+    blurb: 'Entities formally dissolved by statute, gazette notification, or judicial order. Their dissolution typically routed caseload to successor courts (e.g. IPAB → HCs after 2021 Tribunals Reforms Act). Transitional provisions are often the structural research question.',
+    column: 'Abolished · years since',
+  };
+  if (stat === 'disposal') return {
+    title: 'Case-volume tracked entities · worst disposal first',
+    blurb: 'Ratio of cases disposed to cases filed in the most recent NJDG snapshot. Below 1.0 means backlog is growing. Coverage limited to entities with NJDG data published in this build.',
+    column: 'Disposal · pending',
+  };
+  return { title: '', blurb: '', column: '' };
+}
+
+function _statRow(stat, e) {
+  const meta = [];
+  if (stat === 'risk') {
+    const lvl = e.derived?.independence_risk_level || '—';
+    const sc = e.derived?.independence_risk_score ?? '—';
+    meta.push(`<span class="sp-row-score">${sc}</span><span class="sp-row-lvl sp-lvl-${lvl}">${lvl.toUpperCase()}</span>`);
+  } else if (stat === 'nc') {
+    const yr = e.created_year;
+    const yrsPending = yr ? (CURRENT_YEAR - yr) : null;
+    meta.push(`<span class="sp-row-yr">${yr || '—'}</span>${yrsPending != null ? `<span class="sp-row-pending">${yrsPending} yr unconstituted</span>` : ''}`);
+  } else if (stat === 'abolished') {
+    const yr = e.abolished_year;
+    const yrsSince = yr ? (CURRENT_YEAR - yr) : null;
+    meta.push(`<span class="sp-row-yr">${yr || '—'}</span>${yrsSince != null ? `<span class="sp-row-pending">${yrsSince} yr ago</span>` : ''}`);
+  } else if (stat === 'disposal') {
+    const cv = e._detail?.case_volume || {};
+    const rate = cv.disposal_rate != null ? cv.disposal_rate.toFixed(2) : '—';
+    const pending = cv.pending_cases != null ? cv.pending_cases.toLocaleString() : '—';
+    meta.push(`<span class="sp-row-score">${rate}</span><span class="sp-row-pending">${pending} pending</span>`);
+  } else if (stat === 'coverage') {
+    meta.push(`<span class="sp-row-cluster">${(e.cluster || '').replace(/_/g, ' ')}</span><span class="sp-row-gov">${(e.level_of_government || '').replace(/_/g, ' ')}</span>`);
+  }
+  return `<button type="button" class="sp-row" data-entity-id="${e.id}">
+    <span class="sp-row-name">${e.name}${e.abbreviation && e.abbreviation !== e.name ? ` <span class="sp-row-abbr">(${e.abbreviation})</span>` : ''}</span>
+    <span class="sp-row-meta">${meta.join('')}</span>
+  </button>`;
+}
+
+// Govt-level segmentation for the coverage panel. Order matters: it drives
+// stack order in the segmented bar and the legend.
+const GOV_LEVELS = [
+  { key: 'Central',             short: 'C',   label: 'Central' },
+  { key: 'Shared_CentralState', short: 'C/S', label: 'Shared' },
+  { key: 'Shared_MultiState',   short: 'M/S', label: 'Multi-state' },
+  { key: 'State',               short: 'S',   label: 'State' },
+  { key: 'UT',                  short: 'UT',  label: 'UT' },
+];
+
+// Coverage filter state — set of selected govt-level keys, or null for "all".
+// Lives on the DOM (data-filter-levels) so it survives focus across re-renders
+// without needing global state.
+function _coverageActiveSet(scope) {
+  const raw = scope?.dataset?.filterLevels;
+  if (raw == null || raw === '') return null;
+  return new Set(raw.split(',').filter(Boolean));
+}
+
+function _renderCoveragePanel(entities, selected) {
+  // If `selected` is null we treat all levels as active.
+  const isActive = (key) => !selected || selected.has(key);
+  const filtered = entities.filter(e => isActive(e.level_of_government || 'unknown'));
+  const filteredTotal = filtered.length || 1; // avoid /0 in pct
+
+  // Group filtered entities by cluster.
+  const byCluster = new Map();
+  for (const e of filtered) {
+    const c = e.cluster || 'unknown';
+    if (!byCluster.has(c)) byCluster.set(c, []);
+    byCluster.get(c).push(e);
+  }
+
+  const rows = [...byCluster.entries()]
+    .sort((a, b) => b[1].length - a[1].length)
+    .map(([clusterId, list]) => {
+      const total = list.length;
+      const pct = ((total / filteredTotal) * 100).toFixed(1);
+      const label = CLUSTER_LABELS[clusterId] || clusterId.replace(/_/g, ' ');
+
+      const counts = {};
+      for (const e of list) {
+        const lv = e.level_of_government || 'unknown';
+        counts[lv] = (counts[lv] || 0) + 1;
+      }
+      const orderedLevels = GOV_LEVELS.filter(l => counts[l.key]);
+      const otherCount = total - orderedLevels.reduce((s, l) => s + counts[l.key], 0);
+      const segments = orderedLevels.map(l => {
+        const w = (counts[l.key] / total) * 100;
+        return `<span class="sp-seg sp-seg-${l.key.toLowerCase().replace('_','-')}" style="width:${w}%" title="${l.label}: ${counts[l.key]}"></span>`;
+      }).join('') + (otherCount > 0
+        ? `<span class="sp-seg sp-seg-unknown" style="width:${(otherCount / total) * 100}%" title="Unspecified: ${otherCount}"></span>`
+        : '');
+
+      const breakdown = orderedLevels.map(l =>
+        `<span class="sp-gov-tag sp-gov-${l.key.toLowerCase().replace('_','-')}">${l.short} ${counts[l.key]}</span>`
+      ).join('');
+
+      return `<button type="button" class="sp-row sp-row-cluster-bar" data-cluster-id="${clusterId}">
+        <span class="sp-row-name">${label}</span>
+        <span class="sp-row-meta">
+          <span class="sp-gov-breakdown">${breakdown}</span>
+          <span class="sp-row-score">${total}</span>
+          <span class="sp-bar sp-bar-stacked">${segments}</span>
+          <span class="sp-row-pending">${pct}%</span>
+        </span>
+      </button>`;
+    }).join('');
+
+  // Legend doubles as filter UI. Inactive levels are visibly muted.
+  const legend = GOV_LEVELS.map(l => {
+    const active = isActive(l.key);
+    return `<button type="button" class="sp-legend-item${active ? ' sp-legend-active' : ' sp-legend-inactive'}" data-level-key="${l.key}" aria-pressed="${active}">
+      <span class="sp-legend-swatch sp-seg-${l.key.toLowerCase().replace('_','-')}"></span>${l.label}
+    </button>`;
+  }).join('');
+
+  // Filter summary: count of entities in current selection vs total.
+  const filterNote = selected
+    ? `<span class="sp-filter-note">${filtered.length} of ${entities.length} shown · <button type="button" class="sp-filter-reset">reset</button></span>`
+    : `<span class="sp-filter-note sp-filter-note-mute">Click a level to filter</span>`;
+
+  return `<div class="sp-legend-row">
+    <div class="sp-legend">${legend}</div>
+    ${filterNote}
+  </div>${rows || '<p class="sp-empty">No entities match the current filter.</p>'}`;
+}
+
+function renderStatPanel(stat, entities, opts = {}) {
+  const meta = _statPanelMeta(stat, null, entities.length);
+  let body;
+  if (stat === 'coverage') {
+    body = _renderCoveragePanel(entities, opts.coverageFilter || null);
+  } else {
+    const list = _statPanelEntities(stat, entities);
+    if (!list.length) {
+      body = '<p class="sp-empty">No matching entities in the current dataset.</p>';
+    } else {
+      body = list.map(e => _statRow(stat, e)).join('');
+    }
+  }
+  return `
+    <div class="sp-card" data-stat="${stat}">
+      <div class="sp-head">
+        <div>
+          <h3 class="sp-title">${meta.title}</h3>
+          <p class="sp-blurb">${meta.blurb}</p>
+        </div>
+        <button type="button" class="sp-close" aria-label="Close" title="Close">✕</button>
+      </div>
+      <div class="sp-col-head">
+        <span class="sp-col-name">Entity</span>
+        <span class="sp-col-meta">${meta.column}</span>
+      </div>
+      <div class="sp-list">${body}</div>
+    </div>
+  `;
+}
+
 export function initSummaryView() {
   const graph = State.graph;
   if (!graph) return;
@@ -756,6 +1667,8 @@ export function initSummaryView() {
     ?? entities.filter(e => e.operational_status === 'Not_Constituted').length;
   const highRiskCount = metrics.high_independence_risk_count
     ?? entities.filter(e => ['high', 'severe'].includes(e.derived?.independence_risk_level)).length;
+  const abolishedCount = metrics.abolished_count
+    ?? entities.filter(e => e.operational_status === 'Abolished').length;
 
   container.innerHTML = `
     <div class="sum-inner">
@@ -765,24 +1678,29 @@ export function initSummaryView() {
         <p class="sum-subtitle">Structural map of appointment chains, funding flows, independence risk, and systemic gaps across India's judicial ecosystem.</p>
       </div>
 
-      <div class="stat-band">
-        <div class="stat-item">
+      <div class="stat-band" id="stat-band" role="tablist">
+        <button type="button" class="stat-item" data-stat="coverage" aria-expanded="false">
           <span class="stat-num">${entities.length}<span class="stat-denom"> / ~1,500</span></span>
           <span class="stat-lbl">Entities mapped</span>
-        </div>
-        <div class="stat-item stat-item-risk">
+        </button>
+        <button type="button" class="stat-item stat-item-risk" data-stat="risk" aria-expanded="false">
           <span class="stat-num">${highRiskCount}</span>
           <span class="stat-lbl">High or severe independence risk</span>
-        </div>
-        <div class="stat-item stat-item-nc">
+        </button>
+        <button type="button" class="stat-item stat-item-nc" data-stat="nc" aria-expanded="false">
           <span class="stat-num">${notConstitutedCount}</span>
           <span class="stat-lbl">Legislated but not constituted</span>
-        </div>
-        ${avgDisposal ? `<div class="stat-item">
+        </button>
+        <button type="button" class="stat-item stat-item-abolished" data-stat="abolished" aria-expanded="false">
+          <span class="stat-num">${abolishedCount}</span>
+          <span class="stat-lbl">Abolished</span>
+        </button>
+        ${avgDisposal ? `<button type="button" class="stat-item" data-stat="disposal" aria-expanded="false">
           <span class="stat-num">${avgDisposal}</span>
-          <span class="stat-lbl">Avg disposal rate (of entities with NJDG data)</span>
-        </div>` : ''}
+          <span class="stat-lbl">Avg disposal rate (NJDG-tracked entities)</span>
+        </button>` : ''}
       </div>
+      <div class="stat-panel" id="stat-panel" hidden></div>
 
       <div class="sm-section sp-section">
         <div class="sm-section-head">
@@ -790,6 +1708,14 @@ export function initSummaryView() {
         </div>
         <p class="sm-note-global">Each card is a preview of the entity's structural report. Step through with arrows or swipe.</p>
         ${renderSpotlightCarousel(spotlightSet(entities), entities.length)}
+      </div>
+
+      <div class="sm-section">
+        <div class="sm-section-head">
+          <span class="sm-section-title">Appellate hierarchy</span>
+        </div>
+        <p class="sm-note-global">The five-tier appellate spine on the left; a project-wide structural anomaly register on the right — every entity flagged by operational status, structural exception, contested data, or documented gap. Click any reference entity or anomaly to open its structural profile.</p>
+        <div class="ah-section-wrap" id="appellate-hierarchy-wrap"></div>
       </div>
 
       <div class="sm-section">
@@ -803,9 +1729,38 @@ export function initSummaryView() {
         <div class="strip-wrap" id="strip-plot-wrap"></div>
       </div>
 
+      <div class="sm-section sm-section-timeline">
+        <div class="sm-section-head">
+          <span class="sm-section-title">Timeline · how we got here</span>
+        </div>
+        <p class="sm-note-global">Three quarters of a century of judicial institution-building, decade by decade. Creations rise above the line, abolitions fall below; constitutional moments are dotted in. Drag the focus year to see what was born or dissolved near any moment — or jump to a policy era.</p>
+        <div class="ts-section-wrap" id="temporal-structure-wrap"></div>
+      </div>
 
     </div>
   `;
+
+  // ── Render temporal structure ─────────────────────────────────────────────
+  requestAnimationFrame(() => {
+    const tsWrap = container.querySelector('#temporal-structure-wrap');
+    if (!tsWrap) return;
+    tsWrap.innerHTML = renderTemporalStructure();
+    _wireTemporalStructure(tsWrap, entities);
+  });
+
+  // ── Render appellate hierarchy ─────────────────────────────────────────────
+  requestAnimationFrame(() => {
+    const ahWrap = container.querySelector('#appellate-hierarchy-wrap');
+    if (ahWrap) {
+      ahWrap.innerHTML = renderAppellateHierarchy();
+      ahWrap.addEventListener('click', ev => {
+        const target = ev.target.closest('.ah-chip, .ah-anom');
+        if (!target) return;
+        const id = target.dataset.entityId;
+        if (id) State.emit('navigateToDetail', id);
+      });
+    }
+  });
 
   // ── Render strip plot (sized to container after DOM paint) ───────────────
   requestAnimationFrame(() => {
@@ -877,6 +1832,111 @@ export function initSummaryView() {
   // ── Wire spotlight carousel ────────────────────────────────────────────────
   const featured = spotlightSet(entities);
   wireSpotlightCarousel(container, featured);
+
+  // ── Wire stat-band tiles → toggle detail panel ─────────────────────────────
+  const statBand = container.querySelector('#stat-band');
+  const statPanel = container.querySelector('#stat-panel');
+  let openStat = null;
+  const closeStatPanel = () => {
+    statPanel.hidden = true;
+    statPanel.innerHTML = '';
+    statBand?.querySelectorAll('.stat-item').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.classList.remove('stat-item-active');
+    });
+    openStat = null;
+  };
+  statBand?.addEventListener('click', e => {
+    const btn = e.target.closest('.stat-item');
+    if (!btn) return;
+    const stat = btn.dataset.stat;
+    if (stat === openStat) { closeStatPanel(); return; }
+    statPanel.innerHTML = renderStatPanel(stat, entities);
+    statPanel.hidden = false;
+    statBand.querySelectorAll('.stat-item').forEach(b => {
+      const isActive = b === btn;
+      b.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+      b.classList.toggle('stat-item-active', isActive);
+    });
+    openStat = stat;
+    // Scroll the panel into view if it ends up offscreen.
+    requestAnimationFrame(() => {
+      const r = statPanel.getBoundingClientRect();
+      if (r.bottom > window.innerHeight) {
+        statPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+  // Coverage-panel-local filter state, kept on the .sp-card dataset for resilience.
+  const _rerenderCoverage = (card) => {
+    const selectedRaw = card.dataset.coverageFilter || '';
+    const selected = selectedRaw ? new Set(selectedRaw.split(',')) : null;
+    const fresh = renderStatPanel('coverage', entities, { coverageFilter: selected });
+    statPanel.innerHTML = fresh;
+    // Re-apply dataset to the new card (innerHTML wipes prior dataset).
+    const newCard = statPanel.querySelector('.sp-card');
+    if (newCard) newCard.dataset.coverageFilter = selectedRaw;
+  };
+
+  statPanel.addEventListener('click', e => {
+    if (e.target.closest('.sp-close')) { closeStatPanel(); return; }
+
+    const card = e.target.closest('.sp-card');
+    const isCoverage = card?.dataset.stat === 'coverage';
+
+    // Legend filter toggle
+    const legendBtn = e.target.closest('.sp-legend-item');
+    if (legendBtn && isCoverage) {
+      e.preventDefault();
+      e.stopPropagation();
+      const key = legendBtn.dataset.levelKey;
+      const currentRaw = card.dataset.coverageFilter || '';
+      const all = GOV_LEVELS.map(l => l.key);
+      let selected;
+      if (!currentRaw) {
+        // First click: deselect the one clicked = keep all others.
+        selected = new Set(all.filter(k => k !== key));
+      } else {
+        selected = new Set(currentRaw.split(','));
+        if (selected.has(key)) selected.delete(key); else selected.add(key);
+      }
+      // If everything is back in: clear filter (null state). If nothing: keep empty set but show empty.
+      if (selected.size === all.length) {
+        card.dataset.coverageFilter = '';
+      } else {
+        card.dataset.coverageFilter = [...selected].join(',');
+      }
+      _rerenderCoverage(card);
+      return;
+    }
+
+    // Reset filter
+    if (e.target.closest('.sp-filter-reset') && isCoverage) {
+      e.preventDefault();
+      e.stopPropagation();
+      card.dataset.coverageFilter = '';
+      _rerenderCoverage(card);
+      return;
+    }
+
+    // Cluster row → drill overlay, respecting active filter when set
+    const clusterRow = e.target.closest('.sp-row-cluster-bar');
+    if (clusterRow) {
+      e.preventDefault();
+      e.stopPropagation();
+      const cid = clusterRow.dataset.clusterId;
+      const selectedRaw = isCoverage ? (card.dataset.coverageFilter || '') : '';
+      if (selectedRaw) {
+        const sel = new Set(selectedRaw.split(','));
+        const ids = entities
+          .filter(en => en.cluster === cid && sel.has(en.level_of_government || 'unknown'))
+          .map(en => en.id);
+        showClusterDrill(cid, entities, container, ids);
+      } else {
+        showClusterDrill(cid, entities, container);
+      }
+    }
+  });
 
   // ── Wire card actions, browse-all, generic entity links ───────────────────
   container.addEventListener('click', e => {

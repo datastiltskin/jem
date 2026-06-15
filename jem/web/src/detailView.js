@@ -3,6 +3,7 @@
 
 import { State } from './state.js';
 import { buildPanelHTML } from './panel.js';
+import { getAppellateUpstream, getAppellateDownstream } from './entityConnections.js';
 
 const RISK_COLORS = {
   low:      '#16a34a',
@@ -103,6 +104,16 @@ function statusPill(e) {
   return '';
 }
 
+// Convert snake_case / Title_Case identifiers into human-readable labels for UI.
+function humanize(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/_/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
 function clogColor(severity) {
   const map = { critical: '#a32d2d', high: '#c2722b', moderate: '#8a7a2b', low: '#1d7a5a', unknown: '#888' };
   return map[severity] || '#888';
@@ -125,7 +136,7 @@ function renderBreakdown(breakdown, label, maxScore) {
     .map(([factor, pts]) => {
       const isPos = pts > 0;
       return `<tr>
-        <td class="bd-factor">${factor}</td>
+        <td class="bd-factor">${humanize(factor)}</td>
         <td class="bd-pts ${isPos ? 'bd-pts-pos' : 'bd-pts-neg'}">${isPos ? '+' : ''}${pts}</td>
       </tr>`;
     }).join('');
@@ -136,7 +147,80 @@ function renderBreakdown(breakdown, label, maxScore) {
   </div>`;
 }
 
+// Fused IR + DP breakdown — single table with a source tag column so each factor
+// is still traceable to its scoring stream.
+function renderFusedBreakdown(irBd, dpBd, irColor) {
+  const entries = [];
+  if (irBd) for (const [k, v] of Object.entries(irBd)) if (v !== 0) entries.push({ source: 'IR', factor: k, pts: v, color: irColor });
+  if (dpBd) for (const [k, v] of Object.entries(dpBd)) if (v !== 0) entries.push({ source: 'DP', factor: k, pts: v, color: '#6366f1' });
+  if (!entries.length) return '<div class="bd-empty">No contributing factors recorded.</div>';
+
+  entries.sort((a, b) => b.pts - a.pts);
+  const rows = entries.map(e => {
+    const isPos = e.pts > 0;
+    return `<tr>
+      <td class="bd-source"><span class="bd-source-tag" style="background:${e.color}1a;color:${e.color};border:1px solid ${e.color}55">${e.source}</span></td>
+      <td class="bd-factor">${humanize(e.factor)}</td>
+      <td class="bd-pts ${isPos ? 'bd-pts-pos' : 'bd-pts-neg'}">${isPos ? '+' : ''}${e.pts}</td>
+    </tr>`;
+  }).join('');
+
+  return `<table class="bd-table bd-table-fused"><tbody>${rows}</tbody></table>`;
+}
+
 // ── Case volume ───────────────────────────────────────────────────────────────
+
+// ── "Where this fits" — appellate chain strip ────────────────────────────────
+// Renders 2-hop upstream + 2-hop downstream from the focal entity as a horizontal
+// breadcrumb. Each node is clickable → opens its detail. Hidden when the focal
+// entity has no appellate edges.
+function renderAppellateChainStrip(entity) {
+  const upstream = getAppellateUpstream(entity.id, 3);   // higher courts
+  const downstream = getAppellateDownstream(entity.id, 3); // lower courts
+  if (!upstream.length && !downstream.length) return '';
+
+  const nodeChip = (id, focal = false) => {
+    const e = State.getEntityById(id);
+    if (!e) return '';
+    const label = e.abbreviation || e.name;
+    return `<button type="button" class="wtf-node${focal ? ' wtf-node-focal' : ''}" data-entity-id="${id}" title="${(e.name || '').replace(/"/g, '&quot;')}">${label}</button>`;
+  };
+
+  const tierGroup = (tier) => `<span class="wtf-tier">${tier.map(id => nodeChip(id)).join('<span class="wtf-sib-sep">·</span>')}</span>`;
+
+  // Render highest tier first (so upstream chain reads left → right going DOWN to focal).
+  const upChain = [...upstream].reverse().map(tierGroup);
+  const downChain = downstream.map(tierGroup);
+
+  const arrow = '<span class="wtf-arrow" aria-hidden="true">›</span>';
+  const parts = [
+    ...upChain,
+    nodeChip(entity.id, true),
+    ...downChain,
+  ];
+
+  return `
+    <div class="wtf-card">
+      <div class="wtf-head">
+        <span class="wtf-label">Appellate chain — where this fits</span>
+        <span class="wtf-hint">higher courts ← → lower courts</span>
+      </div>
+      <div class="wtf-strip">
+        ${parts.join(arrow)}
+      </div>
+    </div>
+  `;
+}
+
+// Inline summary stats shown in the collapsed `<summary>` line of the Case Volume section.
+function renderCaseVolumeSummary(cv) {
+  if (!cv) return '';
+  const parts = [];
+  if (cv.clog_severity) parts.push(`<span class="dv-stat-chip" style="color:${clogColor(cv.clog_severity)};border-color:${clogColor(cv.clog_severity)}">${cv.clog_severity.toUpperCase()}</span>`);
+  if (cv.pending_cases != null) parts.push(`<span class="dv-stat-mute">${fmtNum(cv.pending_cases)} pending</span>`);
+  if (cv.disposal_rate != null) parts.push(`<span class="dv-stat-mute">${cv.disposal_rate.toFixed(2)} disposal</span>`);
+  return parts.join(' · ');
+}
 
 function renderCaseVolume(cv) {
   if (!cv) return '';
@@ -898,6 +982,13 @@ export function renderDetailView(entityId, fromEntityId = null) {
         <button class="dv-back-btn" id="dv-back">${backLabel}</button>
         <span class="dv-breadcrumb">${CLUSTER_LABELS[entity.cluster] || entity.cluster || ''}</span>
         <div class="dv-actions-top">
+          <button class="dv-action-btn dv-copy-link" id="dv-copy-link" title="Copy shareable link to this entity profile">
+            <svg class="dv-link-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/>
+              <path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/>
+            </svg>
+            <span class="dv-action-label">Share</span>
+          </button>
           <button class="dv-action-btn dv-export-xlsx" id="dv-export-xlsx" title="Download per-entity raw data as multi-sheet Excel file">↓ XLSX</button>
           <button class="dv-action-btn dv-export-pdf" id="dv-export-pdf" title="Print / save as PDF">↓ Export PDF</button>
         </div>
@@ -920,11 +1011,12 @@ export function renderDetailView(entityId, fromEntityId = null) {
           ${isScoreExcluded ? `
             <div class="dv-no-score">Structural scores not computed for this entity type (governance anchor).</div>
           ` : `
-            <div class="health-hero" style="--h-color:${healthColor}">
+            <!-- 1. Summary score card (sticky, not collapsible) -->
+            <div class="summary-score-card" style="--h-color:${healthColor}">
               <div class="health-hero-top">
                 <div class="health-hero-num">${healthScore != null ? healthScore.toFixed(2) : '—'}</div>
                 <div class="health-hero-meta">
-                  <div class="health-hero-label">STRUCTURAL HEALTH</div>
+                  <div class="health-hero-label">STRUCTURAL HEALTH INDICATOR</div>
                   ${healthLabel ? `<div class="health-hero-band">${healthLabel.toUpperCase()}</div>` : ''}
                 </div>
               </div>
@@ -933,42 +1025,63 @@ export function renderDetailView(entityId, fromEntityId = null) {
               ${isNotValidated ? '<div class="ir-pending">⚐ Scores pending community review</div>' : ''}
             </div>
 
-            <div class="dv-constituents">
-              <div class="dv-const-head">Constituents</div>
-
-              ${score != null ? `
-                <div class="dv-const-block">
-                  <div class="dv-const-row">
-                    <span class="dv-const-label">↳ Independence Risk</span>
-                    <span class="dv-const-score" style="color:${RISK_COLORS[level] || '#888'}">${score} · ${(level || '').toUpperCase()}</span>
-                  </div>
-                  <div class="dv-const-explain">${RISK_EXPLAIN[level] || ''}</div>
-                  ${renderBreakdown(derived.independence_risk_breakdown, 'Independence risk', 15)}
+            ${(score != null || dpScore != null) ? `
+              <!-- 2. Constituent score breakdown (open by default) -->
+              <details class="dv-section dv-section-constituents" open>
+                <summary>Constituent score breakdown</summary>
+                <div class="dv-section-body">
+                  ${score != null ? `
+                    <div class="constituent-block">
+                      <div class="constituent-head">
+                        <span class="constituent-name">Independence Risk</span>
+                        <span class="constituent-score" style="color:${RISK_COLORS[level] || '#888'}">${score} · ${(level || '').toUpperCase()}</span>
+                      </div>
+                      <div class="constituent-bar"><div class="constituent-fill" style="width:${Math.min(100, (score / 15) * 100)}%;background:${RISK_COLORS[level] || '#888'}"></div></div>
+                      <div class="constituent-explain">${RISK_EXPLAIN[level] || ''}</div>
+                      <details class="constituent-bd">
+                        <summary>Factor breakdown</summary>
+                        ${renderBreakdown(derived.independence_risk_breakdown, 'Independence risk', 15)}
+                      </details>
+                    </div>
+                  ` : ''}
+                  ${dpScore != null ? `
+                    <div class="constituent-block">
+                      <div class="constituent-head">
+                        <span class="constituent-name">Discretionary Power</span>
+                        <span class="constituent-score" style="color:#6366f1">${dpScore}</span>
+                      </div>
+                      <div class="constituent-bar"><div class="constituent-fill" style="width:${Math.min(100, (dpScore / 20) * 100)}%;background:#6366f1"></div></div>
+                      <details class="constituent-bd">
+                        <summary>Factor breakdown</summary>
+                        ${renderBreakdown(derived.discretionary_power_breakdown, 'Discretionary power', 15)}
+                      </details>
+                    </div>
+                  ` : ''}
                 </div>
-              ` : ''}
-
-              ${dpScore != null ? `
-                <div class="dv-const-block">
-                  <div class="dv-const-row">
-                    <span class="dv-const-label">↳ Discretionary Power</span>
-                    <span class="dv-const-score" style="color:#6366f1">${dpScore}</span>
-                  </div>
-                  <div class="dp-bar-wrap"><div class="dp-bar" style="width:${Math.min(100, (dpScore / 20) * 100)}%"></div></div>
-                  ${renderBreakdown(derived.discretionary_power_breakdown, 'Discretionary power', 15)}
-                </div>
-              ` : ''}
-            </div>
+              </details>
+            ` : ''}
           `}
 
-          ${renderCaseVolume(detail.case_volume)}
+          ${renderAppellateChainStrip(entity)}
 
-          <div class="dv-full-profile">
-            <div class="dv-profile-head">
-              <span class="dv-profile-title">Full structural profile</span>
-              <span class="dv-profile-hint">appointment · funding · audit · complaint · sources</span>
+          ${renderCaseVolume(detail.case_volume) ? `
+            <!-- 3. Case volume & clog (collapsed by default, summary surfaces key stats) -->
+            <details class="dv-section">
+              <summary>
+                <span>Case volume & clog</span>
+                <span class="dv-section-summary-stats">${renderCaseVolumeSummary(detail.case_volume)}</span>
+              </summary>
+              <div class="dv-section-body">${renderCaseVolume(detail.case_volume)}</div>
+            </details>
+          ` : ''}
+
+          <!-- 4. Profile (collapsed by default) -->
+          <details class="dv-section">
+            <summary>Profile</summary>
+            <div class="dv-section-body">
+              <div class="dv-profile-body" id="dv-profile-body"></div>
             </div>
-            <div class="dv-profile-body" id="dv-profile-body"></div>
-          </div>
+          </details>
         </div>
 
         <!-- Right: neighborhood graph -->
@@ -990,7 +1103,7 @@ export function renderDetailView(entityId, fromEntityId = null) {
   // Auto-render the full structural profile (open by default)
   const _profileBody = container.querySelector('#dv-profile-body');
   if (_profileBody) {
-    _profileBody.innerHTML = buildPanelHTML(entity);
+    _profileBody.innerHTML = buildPanelHTML(entity, { omitRiskIndicators: true });
     _profileBody.dataset.rendered = '1';
     _profileBody.addEventListener('click', ev => {
       const lnk = ev.target.closest('.detail-connection-row');
@@ -1014,6 +1127,51 @@ export function renderDetailView(entityId, fromEntityId = null) {
   // ── Wire XLSX export ────────────────────────────────────────────────────────
   container.querySelector('#dv-export-xlsx')?.addEventListener('click', () => {
     downloadEntityXLSX(entity);
+  });
+
+  // ── Wire "Where this fits" chips → navigate to that entity ─────────────────
+  container.querySelector('.wtf-card')?.addEventListener('click', (ev) => {
+    const btn = ev.target.closest('.wtf-node');
+    if (!btn) return;
+    const id = btn.dataset.entityId;
+    if (id && id !== entity.id) State.emit('navigateToDetail', id);
+  });
+
+  // ── Wire Copy-link ─────────────────────────────────────────────────────────
+  // Builds a fresh URL from window.location so it works regardless of how the
+  // user arrived (deep-link, search, navigation history).
+  container.querySelector('#dv-copy-link')?.addEventListener('click', async (ev) => {
+    const btn = ev.currentTarget;
+    const labelEl = btn.querySelector('.dv-action-label');
+    const shareUrl = `${location.origin}${location.pathname}${location.search}#/entity/${encodeURIComponent(entity.id)}`;
+    const flash = (label, cls) => {
+      const prev = labelEl ? labelEl.textContent : btn.textContent;
+      if (labelEl) labelEl.textContent = label; else btn.textContent = label;
+      btn.classList.add(cls);
+      setTimeout(() => {
+        if (labelEl) labelEl.textContent = prev; else btn.textContent = prev;
+        btn.classList.remove(cls);
+      }, 1500);
+    };
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        // Fallback for non-secure contexts (file://, http://) where Clipboard API is gated.
+        const ta = document.createElement('textarea');
+        ta.value = shareUrl;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      flash('Copied ✓', 'dv-copy-ok');
+    } catch (err) {
+      console.error('Copy link failed:', err);
+      flash('Copy failed', 'dv-copy-err');
+    }
   });
 
   // ── Wire lens toggles ───────────────────────────────────────────────────────

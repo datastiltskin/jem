@@ -37,7 +37,7 @@ export function openDetailPanel(entity) {
     nameEl.innerHTML = `${entity.name}<span class="detail-name-hindi"> ${entity.name_hindi}</span>`;
   }
 
-  typeEl.textContent = `${formatType(entity.type)} · ${entity.level_of_government} · ${entity.operational_status}`;
+  typeEl.textContent = `${formatType(entity.type)} · ${humanize(entity.level_of_government)} · ${humanize(entity.operational_status)}`;
   typeEl.className = `detail-type status-${entity.operational_status.toLowerCase().replace('_','-')}`;
 
   body.innerHTML = buildPanelHTML(entity);
@@ -64,7 +64,7 @@ export function closeDetailPanel() {
   State.clearEntity();
 }
 
-function buildPanelHTML(e) {
+function buildPanelHTML(e, opts = {}) {
   const d = e._detail || {};
   const derived = e.derived || {};
   const irColors = State.graph ? State.getIndependenceRiskColors() : {};
@@ -99,7 +99,7 @@ function buildPanelHTML(e) {
   html += section('Lifecycle', `
     <div class="detail-row"><span class="lbl">Established</span><span>${e.created_year}</span></div>
     ${e.abolished_year ? `<div class="detail-row abolished"><span class="lbl">Abolished</span><span>${e.abolished_year}</span></div>` : ''}
-    <div class="detail-row"><span class="lbl">Status</span><span class="status-badge status-${(e.operational_status||'').toLowerCase().replace('_','-')}">${e.operational_status}</span></div>
+    <div class="detail-row"><span class="lbl">Status</span><span class="status-badge status-${(e.operational_status||'').toLowerCase().replace('_','-')}">${humanize(e.operational_status)}</span></div>
     ${e.constitutional_basis ? `<div class="detail-row"><span class="lbl">Constitutional basis</span><span class="monospace">${e.constitutional_basis}</span></div>` : ''}
     ${e.statutory_basis ? `<div class="detail-row"><span class="lbl">Statutory basis</span><span>${e.statutory_basis}</span></div>` : ''}
   `);
@@ -238,7 +238,11 @@ function buildPanelHTML(e) {
   html += buildStructuralGapsSectionHTML(e);
 
   // ── Derived Scores ─────────────────────────────────────
-  if (State.viewMode === 'risk' && irScore === undefined && dpScore === undefined && healthScore == null) {
+  // Suppressed in detail view (omitRiskIndicators) since the Indicator card
+  // and Constituent breakdown widgets already render this information.
+  if (opts.omitRiskIndicators) {
+    // skip block
+  } else if (State.viewMode === 'risk' && irScore === undefined && dpScore === undefined && healthScore == null) {
     html += section('Structural Risk Indicators', `
       <p class="detail-empty-hint">Structural-health, independence-risk and discretionary-power scores are not computed for this entity yet.</p>
     `);
@@ -441,7 +445,7 @@ function buildBreakdown(breakdown) {
       const cls = pts > 0 ? 'breakdown-positive' : 'breakdown-negative';
       html += `<div class="breakdown-row ${cls}">
         <span class="breakdown-pts">${sign}${pts}</span>
-        <span class="breakdown-reason">${reason}</span>
+        <span class="breakdown-reason">${humanize(reason)}</span>
       </div>`;
     });
   html += '</div>';
@@ -505,6 +509,15 @@ function qualityIcon(dq) {
 
 function formatType(type) {
   return (type || '').replace(/([A-Z])/g, ' $1').trim();
+}
+
+function humanize(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/_/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\w/g, c => c.toUpperCase());
 }
 
 // ── Event Binding (called after DOM ready) ────────────────────────────────────
