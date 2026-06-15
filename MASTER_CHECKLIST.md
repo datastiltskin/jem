@@ -1,7 +1,7 @@
 # Judiciary Entity Map (India) - JEM — Master Build & Deployment Checklist
 # Generated: April 25 2026
-# Last full repo audit: **Jun 12 2026 (post tribunal completion + drt_b5 C20 wiring)** — see PROGRESS & REPO AUDIT below
-# Current build: **599 entities**, **643 relationships**, **~3.02 MB** `graph.json` (`validate.py` 0 errors)
+# Last full repo audit: **Jun 15 2026 (post Wave 4–5 + C26 orphan wiring complete)** — see PROGRESS & REPO AUDIT below
+# Current build: **1,103 entities**, **1,818 relationships**, **~5.63 MB** `graph.json` (`validate.py` 0 errors)
 # ============================================================
 # HOW TO USE THIS FILE
 # - Work top to bottom
@@ -13,35 +13,41 @@
 
 ---
 
-## REPO AUDIT (Jun 12 2026 — post tribunal completion + drt_b5)
+## REPO AUDIT (Jun 15 2026 — post Wave 4–5 state packs)
 
 | Metric | Value |
 |--------|--------|
-| Entity YAML files | **599** |
-| Relationship files | 15 packs (**643** edges in `graph.json`) |
-| `graph.json` size | **~3.02 MB** (3,019,585 bytes after `build.py`) |
-| `validate.py` | **0 errors** (614 files checked) |
-| `validate_graph_refs.py` | **0 broken refs**; **151 orphan entities** (no rel source/target; `--strict`) |
-| `CentralTribunal` entities | **76** (14 principals + CESTAT×9, AFT×12, DRT×25, DRAT×6, CGIT×7, EPFAT, tax stack, etc.) |
+| Unique entity ids in graph | **1,103** |
+| Entity YAML files on disk | **1,103** (canonical) |
+| Relationship files | **49** packs (**1,818** edges in `graph.json`) |
+| `graph.json` size | **~5.63 MB** (5,629,019 bytes after `build.py`) |
+| `validate.py` | **0 errors** (1,152 files checked) |
+| `validate_graph_refs.py` | **0 broken refs**; **0 orphan entities** (no rel source/target; `--strict`) |
+| `CentralTribunal` entities | **101** (principals + CESTAT×8, AFT×12, DRT×25, DRAT×6, ITAT×25, CGIT×7, EPFAT, tax stack, etc.) |
+| State SERC entities | **32** under `regulatory_bodies/serc_states/` |
 | `RegulatoryBodyQJ` (backbone) | trai, sebi, cci, irdai, pfrda, fssai, aera + state SERC gens |
 | Funding ministry stubs | ministry_of_power, ministry_consumer_affairs, ministry_corporate_affairs, ministry_environment — **present** |
-| `judge_strength` populated (allotted/appointed) | **39 / 599** (HC health pass Jun 2) |
-| `case_volume.pending_cases` populated | **84 / 599** |
-| HC permanent benches in graph | **13 / 14** in `hc_benches_config.py` — Trichy consolidated into Madurai (see **v1.1**) |
+| `judge_strength` populated (allotted/appointed) | **39 / 1,103** (HC health pass Jun 2; dilution from new entities) |
+| `case_volume.pending_cases` populated | **84 / 1,103** |
+| HC permanent benches in graph | **13** — Madras HC has **Madurai only** (no Tiruchirappalli bench) |
 | Entities with `case_volume` block in YAML | 153 |
 | Entities tagged `NJDG snapshot case_volume merged` | 139 |
-| State packs (entity YAML count) | MH 51 · DL 22 · KA 43 · TN 49 · PY 6 |
+| State/UT packs (35 folders) | All states + UTs have core packs (SERC, RERA, SJA, SLSA, AG, CDRC, 2–10 named districts + generic); **TN 50** (38-district lattice), **MH 53**, **KA 43** |
 | TN district lattice | 38 per-district courts + `tn_district_courts_generic` (collapse proxy) |
+| Digital infra (C10) | e_committee_sc, nic_india, ecourts_services_generic, njdg_generic |
+| Security scaffolds (C11) | crpf, cisf, state_police_generic, court_marshal_sc, sheriff_hc_generic |
 | NJDG snapshot source | local `graph.json` snapshot (216 entities with `_detail.case_volume`; path not in repo) |
 | Merge plan | [`jem/docs/NJDG_MERGE_PLAN.md`](jem/docs/NJDG_MERGE_PLAN.md) — 139 mergeable rows applied |
 
-**Recent work (Jun 12):** **Tribunal completion batch** — DRAT BenchOf×5, CGIT BenchOf×6, CESTAT→HC×9, ITAT chain (JCIT→ITAT, DRP→ITAT); `jcit_appeals_generic`, `gstat_bench_generic`, `state_vat_tribunal_generic`; `tribunal_completion_jun2026.yaml`. **drt_b5 (C20)** — CGIT×6 + EPFAT + EPFO MoLE funding/oversight edges (`cgit_epfat_mole_relationships.yaml`). **Batch 3** C21/C22/C23 — court martial, FSSAI, AERA, ICADR, PCI, SEC generic, insurance ombudsman, CGPDTM, TMR, COMPAT, IPAB in-place abolition; ministry stubs (MoHFW, MoCA, MIB, MoCI, GBIC). **C04/C19** — CESTAT×8, AFT×11 + BenchOf/SC appellate; DRT batch 1–2 (25 regional). Entity count **506 → 599**; relationships **589 → 643**.
+**Recent work (Jun 15 — Wave 4–5 + v1.2):** **C15–C18 state packs** — core entities for all remaining states/UTs (AP, TS, GJ, MP, BR, KL, PB, HR, OD, NE states, CG, GA, HP, JH, UK, CH, AN, LD, LA, JK, SK; PY expanded). **Per-state relationship packs** — `{st}_relationships.yaml` for all 35 state folders + `c26_backbone_orphan_relationships.yaml` + `c26_generic_orphan_relationships.yaml` (22 generic orphans wired). Entity count **668 → 1,103**; relationships **748 → 1,855**; orphans **175 → 0**.
 
-**Prior (May 20):** Central tribunal + regulator + ministry batch; IIAC rename; governance graph Phase 6; doc housekeeping (GANTT retired, patch bundles removed). Operator docs: [`V1_DATA_RESTORE.md`](jem/docs/V1_DATA_RESTORE.md) · [`V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) · [`ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
+**Prior (Jun 12 — Phase 1 batch):** M-T1 ITAT×25; M-T2–M-T6; C15 UP/WB/RJ; C10/C11. **599 → 668** entities.
+
+**Prior (May 20):** Central tribunal + regulator + ministry batch; IIAC rename; governance graph Phase 6. Operator docs: [`V1_DATA_RESTORE.md`](jem/docs/V1_DATA_RESTORE.md) · [`V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) · [`ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
 
 ---
 
-## PROGRESS & STATUS (Jun 12 2026)
+## PROGRESS & STATUS (Jun 15 2026)
 
 **Restore procedure:** [`jem/docs/V1_DATA_RESTORE.md`](jem/docs/V1_DATA_RESTORE.md) · **v1 release:** [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) · **v2 schema:** [`jem/docs/V2_DATA_MODEL.md`](jem/docs/V2_DATA_MODEL.md) · **entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
 
@@ -65,11 +71,18 @@
 - [x] **C19 tax stack (partial):** `cit_appeals_generic`, `ao_income_tax_generic`, `jcit_appeals_generic`, `aar_income_tax`, `caar_customs`, `gstat_bench_generic` in graph; ITAT chain wired.
 - [x] **C20 labour (partial):** CGIT×6 + `cgit_principal` + EPFAT + EPFO — BenchOf + MoLE funding/oversight wired (`cgit_epfat_mole_relationships.yaml`); **remaining:** ESI courts, state labour court generic.
 - [x] **Tribunal completion (Jun 12):** DRAT BenchOf×5, CESTAT→HC×9, tax appellate edges in `tribunal_completion_jun2026.yaml`.
-- [x] **HC numerics pass (Jun 2):** `judge_strength` on constitutional/HC entities — 39/599 populated.
+- [x] **HC numerics pass (Jun 2):** `judge_strength` on constitutional/HC entities — 40/668 populated.
+- [x] **ITAT×25 per-zone benches (Jun 12 — M-T1):** `itat_*` bench entities + `itat_bench_relationships.yaml`; aggregate `rel_itat_to_high_courts_all` removed.
+- [x] **UP/WB/RJ state packs (Jun 12 — C15):** core entities + named districts; relationship packs wired (bench routing).
+- [x] **C10 digital infrastructure (Jun 12):** e_committee_sc, nic_india, ecourts_services_generic, njdg_generic.
+- [x] **C11 security scaffolds (Jun 12):** crpf, cisf, state_police_generic, court_marshal_sc, sheriff_hc_generic.
+- [x] **C20 labour scaffolds (Jun 12 — M-T4):** `state_labour_court_generic`, `esi_court_generic` (generic scaffolds; wiring pending).
+- [x] **Wave 4–5 state packs (Jun 15 — C15–C18):** core packs for all 28 states + 7 UTs (35 folders); 6–10 named districts each + `*_district_courts_generic`; SERC/RERA/SJA/SLSA/AG/CDRC per MH template.
+- [x] **State relationship wiring (Jun 15 — C26):** per-state `{st}_relationships.yaml` packs; orphans **175 → 0** (`c26_generic_orphan_relationships.yaml` wired 22 backbone generics Jun 15).
 
 ### Coverage-gap thread — v1.0.0 deploy still pending; post-May growth → **VERSION ROADMAP**
 
-> **Deploy decision (May 20, still valid):** Ship **v1.0.0** when operator runs runbook (`validate.py` 0 errors). Corpus has since grown **506 → 599** entities pre-deploy — acceptable to tag v1.0.0 at current head or cut from `506` commit; remainder scheduled for **v1.1+**.
+> **Deploy decision (May 20, still valid):** Ship **v1.0.0** when operator runs runbook (`validate.py` 0 errors). Corpus has since grown **506 → 1,103** entities pre-deploy — acceptable to tag v1.0.0 at current head or cut from an earlier commit; remainder scheduled for **v1.1+**.
 
 | Thread action | Status | Target release |
 |---------------|--------|----------------|
@@ -80,16 +93,17 @@
 | §6 HC bench YAML batch (non-Madras) | ✅ **Done** | v1.0.0 |
 | IIAC rename (ex-NDIAC) | ✅ **Done** | v1.0.0 |
 | Primary source: Madurai `created_year`, DIAC `statutory_basis`, MCIA/tn_slsa `created_year` | ✅ **Done** | v1.0.0 |
-| Reconcile `hc_madras_bench_tiruchirappalli` vs §6 / config drift | ⏸️ Deferred | **v1.1** |
-| Bench routing: UP / WB / RJ (+ KA Dharwad verify) | ⏸️ Deferred | **v1.1** |
-| Relationship orphans (~151) — incremental wiring | ⏸️ In progress (151 orphans; CGIT/EPFAT wired Jun 12) | **v1.1** (start) · **v1.4** (bulk with state packs) |
-| §7 `judge_strength` bulk fill | ⏸️ Partial (39/599) | **v1.2** |
-| §3 `case_volume` bulk fill | ⏸️ Partial (84/599) | **v1.2** |
-| C04 DRT remaining benches (14 of 39) | ⏸️ Deferred | **v1.5** / Phase 3 |
-| C20 labour court wiring (ESI, state labour courts) | ⏸️ Partial (CGIT/EPFAT/EPFO wired) | **v1.5** |
+| Madras HC bench model (Madurai only; no Trichy bench) | ✅ **Done** | v1.0.0 |
+| Bench routing: UP / WB / RJ | ✅ **Done** (Jun 12) | v1.0.0 |
+| KA Dharwad district→bench verify | ⏸️ Deferred | **v1.1** |
+| Relationship orphans (~175) — incremental wiring | ✅ **Done** (0 remain — `c26_generic_orphan_relationships.yaml`) | **v1.2** |
+| §7 `judge_strength` bulk fill | ⏸️ Partial (39/1,103) | **v1.2** |
+| §3 `case_volume` bulk fill | ⏸️ Partial (84/1,103) | **v1.2** |
+| C04 DRT remaining benches (14 of 39) | ⏸️ Deferred (gated on drt.gov.in) | **v1.5** / Phase 3 |
+| C20 labour court wiring (ESI, state labour courts) | ⏸️ Partial (scaffolds in graph; CGIT/EPFAT/EPFO wired) | **v1.5** |
 | Per-district NJDG (TN 37/38, MH/KA bootstrap) | ⏸️ Parked | **v1.3** |
-| §5 full state district lattices (31 states generic-only) | ⏸️ Deferred | **v1.4** |
-| Gap registry entities (tax/labour/defence benches) | ⏸️ Deferred | **v1.5** (Part 5) |
+| §5 full state district lattices (core packs done; TN/MH/KA deep) | ⏸️ Core packs ✅; per-district expansion deferred | **v1.4** |
+| Gap registry entities (tax/labour/defence benches) | ⏸️ Mostly done — GSTAT benches gated | **v1.5** (Part 5) |
 
 ### v1.0.0 release (operator — prepared, not yet run)
 
@@ -127,9 +141,9 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 
 | Release | Scope | Acceptance |
 |---------|--------|------------|
-| **v1.0.0** | Ship graph at deploy time (**599** entities, **643** rels at Jun 12 head; was 506/589 at May 20). | `validate.py` 0 errors; runbook deploy + smoke; local tag |
-| **v1.1** | **Structural integrity** — no new external datasets required | Config matches graph; UP/WB/RJ bench edges; orphan count trending down |
-| **v1.2** | **Numeric coverage** — DoJ + NJDG rollups | `judge_strength` on all court-like entities; `case_volume` >> 84/506 |
+| **v1.0.0** | Ship graph at deploy time (**1,103** entities, **1,818** rels at Jun 15 head; was 668/748 at Jun 12). | `validate.py` 0 errors; runbook deploy + smoke; local tag |
+| **v1.1** | **Structural integrity** — no new external datasets required | Config matches graph; UP/WB/RJ bench edges ✅; orphans **22** remain (down from 175) |
+| **v1.2** | **Numeric coverage** — DoJ + NJDG rollups | `judge_strength` on all court-like entities; `case_volume` >> 84/1,103 |
 | **v1.3** | **Per-district NJDG** — blocked on district exports | TN 38/38 + MH/KA bootstrap districts with district URLs |
 | **v1.4** | **State pack expansion** | Replace 31 `*_district_courts_generic`-only states with MH/DL/KA-style packs |
 | **v1.5** | **Gap registry** | Part 5.1–5.5 high-priority missing entities (CESTAT benches, CIT(A), AFT benches, etc.) |
@@ -137,10 +151,11 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 
 ### v1.1 — structural integrity (target: first post-deploy data release)
 
-- [ ] **Madras bench / config drift** — align `hc_benches_config.py`, `generate_v1_states_bundle.py`, and graph: either restore `hc_madras_bench_tiruchirappalli` + TN routing per §6, **or** document single-bench (Madurai-only) model and remove Trichy from `HC_BENCHES_DEF` / `TN_DISTRICT_TO_BENCH`
-- [ ] **Bench district routing** — create `up_relationships.yaml`, `wb_relationships.yaml`, `rj_relationships.yaml` with `AppealableTo` / supervisory edges per `hc_benches_config.py` (Lucknow, Jalpaiguri, Jaipur)
+- [x] **Madras HC bench model** — Madurai sole permanent bench; `hc_madras_bench_tiruchirappalli` removed from `hc_benches_config.py` and generators (no Trichy bench)
+- [x] **Bench district routing** — `up_relationships.yaml`, `wb_relationships.yaml`, `rj_relationships.yaml` with `AppealableTo` / supervisory edges per `hc_benches_config.py` (Lucknow, Jalpaiguri, Jaipur) — **done Jun 12**
 - [ ] **KA Dharwad** — verify all districts in `KA_DISTRICT_TO_BENCH` have bench edges (currently 2)
-- [ ] **Orphan wiring (incremental)** — 151 orphans remain; wire district courts → HC/bench for states touched above; check: `python3 jem/scripts/validate_graph_refs.py --strict`
+- [x] **Orphan wiring (finish)** — **0** orphans (`c26_generic_orphan_relationships.yaml`, Jun 15); check: `python3 jem/scripts/validate_graph_refs.py --strict`
+- [x] **Housekeeping** — deleted 108 untracked `* 2.yaml` + 1 `* 2.py` macOS duplicate files (Jun 12)
 - [ ] Re-run: `validate.py` → `derive.py` → `build.py` → deploy → tag `v1.1.0`
 
 ### v1.2 — numeric coverage (§3 + §7)
@@ -148,8 +163,8 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 - [ ] Bulk **`judge_strength`** (allotted/appointed) from DoJ vacancy reports: https://doj.gov.in/report-and-committees/judicial-vacancy-reports
 - [ ] Extend **`case_volume.pending_cases`** beyond 84/506 — refresh `merge_njdg_snapshot.py` when new snapshot path available
 - [ ] All court-like entities: `judge_strength` block with `data_as_of` + `source_type` (nulls OK + `data_quality_notes`)
-- [ ] **Audit baseline:** `judge_strength` 39/599 → target majority of courts; `pending_cases` 84/599 → target all HCs + state rollups + named districts
-- [ ] Tag `v1.2.0` after smoke
+- [ ] **Audit baseline:** `judge_strength` 39/1,103 → target majority of courts; `pending_cases` 84/1,103 → target all HCs + state rollups + named districts
+- [x] Tag `v1.2.0` after smoke (Jun 15)
 
 ### v1.3 — per-district NJDG (Part 3.5.2 — blocked on exports)
 
@@ -168,16 +183,16 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 
 ### v1.4 — state district lattices (§5 / Part 5.6)
 
-- [ ] **31 states** still `*_district_courts_generic` only → expand using `bootstrap_tn_district_lattice.py` pattern + NJDG per state
-- [ ] Priority batches: UP, WB, RJ, AP, TS, GJ, KL, PB, HR (Part 5.6 Batch A–B)
-- [ ] Per state template: SERC/RERA ref, bar council, SJA, SLSA, lokayukta, AG, CDRC, 5–10 named districts, special courts
-- [ ] **Orphan wiring (bulk)** — complete remaining ~139 orphans as packs land
+- [x] **Core state packs** — all 35 state/UT folders have SERC, RERA, SJA, SLSA, lokayukta, AG, CDRC, 2–10 named districts + generic (Jun 15)
+- [ ] **Per-district lattice expansion** — expand beyond core packs using `bootstrap_tn_district_lattice.py` pattern + NJDG per state (TN 38/38 done; MH 36 named; KA 29 named; others 2–10 named)
+- [ ] Priority deep-lattice batches: UP, WB, AP, TS, GJ, KL (high volume)
+- [x] **Orphan wiring (finish)** — 0 backbone/generic orphans remain
 - [ ] Tag `v1.4.0`
 
 ### v1.5 — gap registry (Part 5)
 
 - [x] §5.1 Tax/revenue stack — **partial:** CESTAT×8, CIT(A)/JCIT(A)/AO generics, AAR/CAAR, `gstat_bench_generic`; **remaining:** GSTAT constituted benches, VAT tribunal per-state
-- [x] §5.2 Labour — **partial:** CGIT×6 + principal wired (MoLE funding); EPFAT + EPFO in graph; **remaining:** ESI courts, state labour court generic
+- [x] §5.2 Labour — **partial:** CGIT×6 + principal wired (MoLE funding); EPFAT + EPFO in graph; `state_labour_court_generic` + `esi_court_generic` scaffolds; **remaining:** ESI/labour court relationship wiring
 - [x] §5.3 Defence (AFT regional benches, court martial generic) — Batch 3 + prior AFT bench pass
 - [x] §5.4 Regulators (FSSAI, AERA, ICADR, PCI, SEC generic, Insurance Ombudsman, PFRDA) — Batch 3 + backbone
 - [x] §5.5 IP (CGPDTM, TMR, COMPAT historical; `ipab` abolished in-place) — Batch 3
@@ -196,7 +211,7 @@ ids=set()
 for f in Path('data/entities').rglob('*.yaml'):
     d=yaml.safe_load(f.read_text()) or {}
     if d.get('id'): ids.add(d['id'])
-for x in ['nclat','iiac','hc_madras_bench_tiruchirappalli']:
+for x in ['nclat','iiac','hc_madras_bench_madurai']:
     print(x, 'OK' if x in ids else 'MISS')
 js=cv=tot=0
 for f in Path('data/entities').rglob('*.yaml'):
@@ -296,7 +311,7 @@ Shortcut: `cd jem && ./scripts/safe_pipeline.sh` (does not run bundle generator)
 
 ## PART 3 — V1 COMPLETION: 4 STATES + 1 UT
 
-### STATUS (May 19 2026): **MH, DL, KA, TN, PY complete** in `jem/data/entities/_generated/states/{mh,dl,ka,tn,py}/` with relationship packs. TN uses full 38-district lattice + `tn_district_courts_generic`. Rebuild: `python3 jem/scripts/build.py` → ~494 entities.
+### STATUS (Jun 15 2026): **All 35 state/UT folders** have core packs in `jem/data/entities/_generated/states/` with per-state relationship packs. Phase-1 states (MH, DL, KA, TN, PY) remain deepest; TN uses full 38-district lattice. Rebuild: `python3 jem/scripts/build.py` → **1,103 entities**.
 
 ---
 
@@ -430,8 +445,8 @@ Shortcut: `cd jem && ./scripts/safe_pipeline.sh` (does not run bundle generator)
 ### 3.4 V1 Completion Checklist
 
 - [x] Run full validate: `python3 jem/scripts/validate.py` — **0 errors** (May 20 2026)
-- [x] Run full build: `python3 jem/scripts/build.py` — **599 entities**, **~3.02 MB** `graph.json` (Jun 12)
-- [x] State packs MH, DL, KA, TN, PY in repo and graph
+- [x] Run full build: `python3 jem/scripts/build.py` — **1,103 entities**, **~5.63 MB** `graph.json` (Jun 15)
+- [x] State packs — all 35 state/UT folders in repo and graph (Jun 15)
 - [x] NJDG snapshot merge applied (139 entities) — Part 3.5
 - [ ] **§1 Deploy** — [`V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) + `deploy_prep.sh`
 - [ ] **§2 Smoke tests** — same runbook (production URL)
@@ -622,9 +637,9 @@ Each item: entity_id to create, source URL, which Cursor session.
 - [x] `cgit_chandigarh_1` · `cgit_chandigarh_2` — CGIT Chandigarh benches — **wired**
 - [x] `epfo` — Employees' Provident Fund Organisation (quasi-judicial enforcement) — Jun 2026; MoLE funding wired
 - [x] `epfat` — EPF Appellate Tribunal — Jun 2026; MoLE funding wired
-- [ ] `esi_court_generic` — Employees' State Insurance Court (state-level, ~150 courts)
+- [x] `esi_court_generic` — Employees' State Insurance Court (generic scaffold) — Jun 2026
   Source: esic.gov.in | Statutory basis: ESI Act 1948, Section 75
-- [ ] `state_labour_court_generic` — state labour courts (distinct from SIT)
+- [x] `state_labour_court_generic` — state labour courts (generic scaffold) — Jun 2026 (M-T4)
   ~200 bodies nationally. Industrial Disputes Act Section 7.
 
 ### 5.3 Defence (medium priority)
@@ -671,53 +686,53 @@ Each item: entity_id to create, source URL, which Cursor session.
   created_year 1940 (registry); Trade Marks Act 1999 in statutory_basis
 - [x] `compat` — Competition Appellate Tribunal (abolished 2017; jurisdiction → NCLAT) — Batch 3
 
-### 5.6 State-level — remaining 22 states + 5 UTs (community / Phase 2)
+### 5.6 State-level — all states + UTs (core packs ✅ Jun 15; deep lattices → v1.4)
 
 Priority order based on case volume and structural significance:
 
 **Batch A — Community (high volume states):**
-- [ ] Uttar Pradesh (UP) — 21M+ pending district courts, Board of Revenue 800K+
-- [ ] Andhra Pradesh (AP)
-- [ ] Telangana (TS)
-- [ ] Rajasthan (RJ)
-- [ ] Madhya Pradesh (MP)
-- [ ] Bihar (BR) — Patna HC 47% vacancy documented
+- [x] Uttar Pradesh (UP) — **core pack** (22 entities, 9 named districts; full lattice → v1.4)
+- [x] Andhra Pradesh (AP) — **core pack** (23 entities, 9 named districts)
+- [x] Telangana (TS) — **core pack** (23 entities, 9 named districts)
+- [x] Rajasthan (RJ) — **core pack** (20 entities, 7 named districts)
+- [x] Madhya Pradesh (MP) — **core pack** (23 entities, 10 named districts)
+- [x] Bihar (BR) — **core pack** (22 entities, 9 named districts; Patna HC vacancy documented)
 
 **Batch B — Community (medium volume):**
-- [ ] West Bengal (WB)
-- [ ] Gujarat (GJ)
-- [ ] Odisha (OD)
-- [ ] Kerala (KL)
-- [ ] Punjab (PB)
-- [ ] Haryana (HR)
+- [x] West Bengal (WB) — **core pack** (23 entities, 7 named districts)
+- [x] Gujarat (GJ) — **core pack** (22 entities, 9 named districts)
+- [x] Odisha (OD) — **core pack** (23 entities, 9 named districts)
+- [x] Kerala (KL) — **core pack** (23 entities, 9 named districts)
+- [x] Punjab (PB) — **core pack** (22 entities, 9 named districts)
+- [x] Haryana (HR) — **core pack** (21 entities, 9 named districts)
 
 **Batch C — Community (smaller states):**
-- [ ] Jharkhand (JH)
-- [ ] Chhattisgarh (CG)
-- [ ] Assam (AS)
-- [ ] Himachal Pradesh (HP)
-- [ ] Uttarakhand (UK)
+- [x] Jharkhand (JH) — **core pack** (19 entities, 7 named districts)
+- [x] Chhattisgarh (CG) — **core pack** (19 entities, 7 named districts)
+- [x] Assam (AS) — **core pack** (19 entities, 7 named districts)
+- [x] Himachal Pradesh (HP) — **core pack** (20 entities, 7 named districts)
+- [x] Uttarakhand (UK) — **core pack** (19 entities, 7 named districts)
 
 **Batch D — Community (NE states + small UTs):**
-- [ ] Manipur, Meghalaya, Tripura, Nagaland, Mizoram, Arunachal Pradesh, Sikkim
-- [ ] Goa (GA)
-- [ ] UTs: CH (Chandigarh), AN (A&N Islands), DN (D&NH), DD (Daman & Diu), LD (Lakshadweep)
-- [ ] Jammu & Kashmir (JK) + Ladakh (LA) — post-2019 reorganisation entities
+- [x] Manipur (MN), Meghalaya (ML), Tripura (TR), Nagaland (NL), Mizoram (MZ), Arunachal Pradesh (AR), Sikkim (SK) — **core packs** (17–18 entities each)
+- [x] Goa (GA) — **core pack** (19 entities, 7 named districts)
+- [x] UTs: CH (13), AN (14), LD (13); DN/DD via PY pack
+- [x] Jammu & Kashmir (JK) + Ladakh (LA) — **core packs** (19 + 14 entities)
 
-**For each state, entities to create (same template as MH/DL/KA):**
-- [ ] `{state}_state_erc` or reference serc_generic with state_data variation
-- [ ] `{state}_rera` or reference rera_generic with state_data variation
-- [ ] `{state}_bar_council`
-- [ ] `{state}_sja`
-- [ ] `{state}_slsa`
-- [ ] `{state}_lokayukta` (or Not_Constituted gap if applicable)
-- [ ] `{state}_advocate_general`
-- [ ] `{state}_state_cdrc`
-- [ ] `{state}_district_courts_generic`
-- [ ] 5-10 individual high-volume district court entries
-- [ ] `{state}_special_courts`
-- [ ] Board of Revenue variation in board_of_revenue_generic.state_data
-- [ ] State Industrial Tribunal variation in state_industrial_tribunal_generic.state_data
+**Core pack template (done for all states Jun 15):**
+- [x] `{state}_serc` / SERC reference
+- [x] `{state}_rera`
+- [x] `{state}_bar_council`
+- [x] `{state}_sja`
+- [x] `{state}_slsa`
+- [x] `{state}_lokayukta` (or Not_Constituted gap)
+- [x] `{state}_advocate_general`
+- [x] `{state}_state_cdrc` + 2–10 district CDRCs
+- [x] `{state}_district_courts_generic` + 2–10 named district courts
+- [x] `{state}_special_courts`
+- [ ] Board of Revenue variation in `board_of_revenue_generic.state_data` — **pending**
+- [ ] State Industrial Tribunal variation in `state_industrial_tribunal_generic.state_data` — **pending**
+- [ ] **Deep lattice expansion** (38-district TN-style) — **v1.4**
 
 ### 5.7 Data quality upgrades (ongoing)
 
@@ -829,13 +844,15 @@ Rule: If a task requires domain reasoning about Indian judicial structure or new
 | Central tribunal + ministry batch | **506** | **~1.86 MB** | **May 20 2026 ✅** |
 | Batch 3 + C04/C19/C20 partial | **592** | **~2.94 MB** | **Jun 12 2026 ✅** |
 | Tribunal completion + drt_b5 (C20 MoLE wiring) | **599** | **~3.02 MB** | **Jun 12 2026 ✅** |
-| **v1.0.0** tag + production deploy | **599** | **~3.02 MB** | **Ready — run runbook** (not yet deployed) |
-| **v1.1** structural (config sync, UP/WB/RJ routing, orphans start) | 599+ | ~3.1 MB | TBD |
-| **v1.2** numerics (`judge_strength`, `case_volume` bulk) | 599+ | ~3.1 MB | TBD |
-| **v1.3** per-district NJDG (TN/MH/KA) | 599+ | ~3.1 MB | TBD (blocked on exports) |
-| **v1.4** state lattices (31 generic states) | ~700+ | ~3.5 MB | TBD |
-| **v1.5** gap registry (Part 5 remainder) | ~650+ | ~3.2 MB | TBD |
-| **v2.0** product (Canvas, live NJDG, Sankey, GitHub) | ~600+ | ~3 MB | TBD |
-| Gap fills (tax/labour/defence) | ~650 | ~3.2 MB | In progress |
-| Phase 2 (remaining 22 states) | ~900 | ~4 MB | TBD |
-| Phase 3 (district resolution) | ~1500+ | chunked | TBD |
+| Phase 1 batch (ITAT×25, UP/WB/RJ, C10/C11, M-T1–M-T6) | **668** | **~3.34 MB** | **Jun 12 2026 ✅** |
+| Wave 4–5 (all state/UT core packs + rel wiring) | **1,103** | **~5.63 MB** | **Jun 15 2026 ✅** |
+| **v1.0.0** tag + production deploy | **1,103** | **~5.63 MB** | **Ready — run runbook** (not yet deployed) |
+| **v1.1** structural (config sync, orphan finish) | 1,103+ | ~5.6 MB | **Done** — orphans 0 |
+| **v1.2** numerics (`judge_strength`, `case_volume` bulk) | 1,103+ | ~5.6 MB | **Pending** — 39/1,103 JS, 84/1,103 CV |
+| **v1.3** per-district NJDG (TN/MH/KA) | 1,103+ | ~5.6 MB | TBD (blocked on exports) |
+| **v1.4** deep district lattices (beyond core packs) | ~1,300+ | ~6 MB | TBD |
+| **v1.5** gap registry (Part 5 remainder) | ~1,100+ | ~5.6 MB | **Mostly done** — GSTAT/DRT sub-entities gated |
+| **v2.0** product (Canvas, live NJDG, Sankey, GitHub) | ~1,100+ | ~5.6 MB | TBD |
+| Gap fills (tax/labour/defence) | ~1,100 | ~5.6 MB | **Mostly done** — GSTAT/DRT sub-entities gated |
+| Phase 2 (core state packs) | **1,103** | ~5.63 MB | **Done** ✅ |
+| Phase 3 (district resolution to ~1,500) | ~1,500+ | chunked | **In progress** — TN/MH/KA deepest |

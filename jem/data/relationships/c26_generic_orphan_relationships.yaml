@@ -1,0 +1,500 @@
+# C26 generic orphan wiring — backbone rollup nodes, tax boards, security scaffolds
+# Wired 2026-06-15; resolves remaining 22 orphans from validate_graph_refs.py --strict
+
+relationships:
+
+  # ── GSTAT ────────────────────────────────────────────────────────────────
+
+  - id: rel_gstat_bench_benchof_gstat
+    source: gstat_bench_generic
+    target: gstat
+    relationship_type: BenchOf
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: CGST Act 2017 s.109(6) as amended by Finance Act 2023
+    notes: Generic GSTAT state bench scaffold — part of GST Appellate Tribunal structure.
+    data_quality: partial
+    sources:
+      - &india_code
+        label: India Code — Constitution & Acts
+        url: https://india-code.nic.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-15'
+
+  - id: rel_mof_oversight_gstat
+    source: ministry_of_finance
+    target: gstat
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: CGST Act 2017 ss.109–110A; Finance Act 2023
+    notes: MoF administers GST appellate tribunal constitution and bench notifications.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mof_fund_gstat
+    source: ministry_of_finance
+    target: gstat
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: CGST Act 2017 s.109
+    notes: GSTAT establishment costs flow through Union Ministry of Finance budget.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ── CAT & state administrative tribunals ─────────────────────────────────
+
+  - id: rel_dopt_fund_cat
+    source: ministry_personnel_dopt
+    target: cat
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Administrative Tribunals Act 1985 s.4
+    notes: DoPT funds Central Administrative Tribunal through Union Budget.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_dopt_oversight_cat
+    source: ministry_personnel_dopt
+    target: cat
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Administrative Tribunals Act 1985
+    notes: DoPT is the administrative ministry for CAT.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_cat_appealable_hc
+    source: cat
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Administrative Tribunals Act 1985; L. Chandra Kumar v. Union of India (1997)
+    notes: CAT orders subject to HC writ/supervisory jurisdiction post-L. Chandra Kumar.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_dopt_oversight_state_at_generic
+    source: ministry_personnel_dopt
+    target: state_administrative_tribunal_generic
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Administrative Tribunals Act 1985 s.4(2)
+    notes: State ATs constituted under AT Act 1985; DoPT sets central policy framework.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_state_at_generic_appealable_hc
+    source: state_administrative_tribunal_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Administrative Tribunals Act 1985; L. Chandra Kumar v. Union of India (1997)
+    notes: State Administrative Tribunal orders appealable/reviewable in High Court.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ── State generic tribunals ──────────────────────────────────────────────
+
+  - id: rel_state_vat_generic_appealable_hc
+    source: state_vat_tribunal_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: State VAT Acts (various); pre-GST legacy disputes
+    notes: State VAT tribunal orders appealable to High Court; post-GST legacy docket only.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_governor_fund_state_vat_generic
+    source: governor_state
+    target: state_vat_tribunal_generic
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    notes: State VAT tribunals funded from state consolidated fund via Governor-in-Council.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_state_transport_generic_appealable_hc
+    source: state_transport_appellate_tribunal_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Motor Vehicles Act 1988 s.89
+    notes: State Transport Appellate Tribunal appeals lie to High Court.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_governor_oversight_state_transport_generic
+    source: governor_state
+    target: state_transport_appellate_tribunal_generic
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Motor Vehicles Act 1988 s.89
+    notes: State Government constitutes STAT under MV Act; no Union road-transport ministry node in graph.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mhfw_oversight_mhrb_generic
+    source: ministry_health_family_welfare
+    target: state_mental_health_review_board_generic
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Mental Healthcare Act 2017 s.73
+    notes: Union MoHFW sets national policy framework; states establish MHRBs.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_state_electricity_generic_appealable_aptel
+    source: state_electricity_appellate_tribunal_generic
+    target: aptel
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Electricity Act 2003 s.111
+    notes: SERC-level electricity disputes ultimately appealable to APTEL.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_bor_generic_appealable_hc
+    source: board_of_revenue_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: Board of Revenue orders appealable to respective High Court.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_governor_fund_bor_generic
+    source: governor_state
+    target: board_of_revenue_generic
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    notes: Board of Revenue funded from state consolidated fund; generic state rollup node.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ── Tax boards (CBDT / CBIC) ─────────────────────────────────────────────
+
+  - id: rel_mof_oversight_cbdt
+    source: ministry_of_finance
+    target: cbdt
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Central Board of Revenue Act 1963 s.3
+    notes: CBDT functions under administrative control of Ministry of Finance.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mof_fund_cbdt
+    source: ministry_of_finance
+    target: cbdt
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Central Board of Revenue Act 1963
+    notes: CBDT establishment and operations funded through MoF budget.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mof_oversight_cbic
+    source: ministry_of_finance
+    target: cbic
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Central Board of Revenue Act 1963 s.3; Finance Act 2018
+    notes: CBIC functions under administrative control of Ministry of Finance.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mof_fund_cbic
+    source: ministry_of_finance
+    target: cbic
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Central Board of Revenue Act 1963
+    notes: CBIC establishment and operations funded through MoF budget.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ── Security bodies ──────────────────────────────────────────────────────
+
+  - id: rel_mha_oversight_cisf
+    source: ministry_home_affairs
+    target: cisf
+    relationship_type: PolicyOversight
+    relationship_category: security
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: CISF Act 1968
+    notes: CISF is a Central Armed Police Force under MHA.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mha_fund_cisf
+    source: ministry_home_affairs
+    target: cisf
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: CISF Act 1968
+    notes: CISF budget allocated through Ministry of Home Affairs demand head.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mha_oversight_crpf
+    source: ministry_home_affairs
+    target: crpf
+    relationship_type: PolicyOversight
+    relationship_category: security
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: CRPF Act 1949
+    notes: CRPF is a Central Armed Police Force under MHA.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mha_fund_crpf
+    source: ministry_home_affairs
+    target: crpf
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: CRPF Act 1949
+    notes: CRPF budget allocated through Ministry of Home Affairs demand head.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mha_oversight_state_police_generic
+    source: ministry_home_affairs
+    target: state_police_generic
+    relationship_type: PolicyOversight
+    relationship_category: security
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Police Act 1861; Constitution Seventh Schedule List II Entry 2
+    notes: MHA sets IPS cadre and model police policy; states operate police forces.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ── Courts & SC internal ─────────────────────────────────────────────────
+
+  - id: rel_sc_oversight_court_marshal
+    source: supreme_court_india
+    target: court_marshal_sc
+    relationship_type: PolicyOversight
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 136
+    notes: SC appellate jurisdiction over court martial (pre-AFT Act 2007 framework).
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_hc_all_supervise_sheriff_generic
+    source: high_courts_all
+    target: sheriff_hc_generic
+    relationship_type: AdministrativeSupervision
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    notes: Sheriff offices attached to High Courts for process service.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_sc_conduct_oversight_in_house
+    source: supreme_court_india
+    target: in_house_procedure_sc
+    relationship_type: ConductOversight
+    relationship_category: audit
+    is_binding: true
+    is_constitutional: false
+    notes: SC In-House Procedure governs judicial conduct complaints for SC and HC judges.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_cbi_writ_hc_competent
+    source: cbi
+    target: high_court_competent
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 226
+    notes: Writ jurisdiction — competent High Court for challenging CBI action.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_hc_competent_under_high_courts_all
+    source: high_court_competent
+    target: high_courts_all
+    relationship_type: JurisdictionDefinedBy
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 226
+    notes: Generic HC-competence stub maps to pan-India High Court writ jurisdiction.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ── Commerce / insurance ─────────────────────────────────────────────────
+
+  - id: rel_moci_oversight_cgpdtm
+    source: ministry_of_commerce_industry
+    target: patent_controller
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Patents Act 1970; Trade Marks Act 1999
+    notes: CGPDTM (patent_controller) functions under MoCI.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_moci_fund_cgpdtm
+    source: ministry_of_commerce_industry
+    target: patent_controller
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Patents Act 1970
+    notes: CGPDTM budget flows through Ministry of Commerce and Industry.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_irdai_oversight_gbic
+    source: irdai
+    target: governing_body_insurance_council
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Insurance Ombudsman Rules 2017 (GSR 877(E))
+    notes: IRDAI oversees Insurance Ombudsman scheme administered by GBIC.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ── RERA UTs (DD / DN — central administration) ──────────────────────────
+
+  - id: rel_central_fund_rera_dd
+    source: central_government
+    target: rera_dd
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Real Estate (Regulation and Development) Act 2016
+    notes: Daman & Diu UT RERA funded via Union/UT administration (no separate government_dd stub).
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_rera_dd_appealable_hc_bombay
+    source: rera_dd
+    target: hc_bombay
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: RERA Act 2016 s.44
+    notes: DD falls under Bombay High Court territorial jurisdiction.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_central_fund_rera_dn
+    source: central_government
+    target: rera_dn
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Real Estate (Regulation and Development) Act 2016
+    notes: Dadra & Nagar Haveli UT RERA funded via Union/UT administration (no separate government_dn stub).
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_rera_dn_appealable_hc_bombay
+    source: rera_dn
+    target: hc_bombay
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: RERA Act 2016 s.44
+    notes: DNH falls under Bombay High Court territorial jurisdiction.
+    data_quality: partial
+    sources:
+      - *india_code

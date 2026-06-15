@@ -43,10 +43,10 @@
 | C12 | Investigation & prosecution | ~15 | partial | **updated** | 1 | Mixed |
 | C13 | Training, audit, lokayukta (NJA, CAG, state SJA/SLSA) | ~40 | partial | **updated** | 2 | Contributor drafts |
 | C14 | Phase-1 state packs (MH, DL, KA, TN lattice, PY) | ~220 | ~171 | **done** | 0 | Maintainer |
-| C15 | State packs — Batch A (UP, WB, RJ, AP, TS, GJ) | ~420 | UP/WB/RJ expanded (~18 each); AP/TS/GJ scaffold | **updated** | **1** | Contributor drafts |
-| C16 | State packs — Batch B (MP, BR, KL, PB, HR, OD) | ~360 | scaffold | **pending** | 1 | Contributor drafts |
-| C17 | State packs — Batch C (NE, HP, UK, GA, CG, JH) | ~280 | scaffold | **pending** | 2 | Contributor drafts |
-| C18 | State packs — Batch D (UTs, JK/LA, SK) | ~120 | scaffold | **pending** | 2 | Contributor drafts |
+| C15 | State packs — Batch A (UP, WB, RJ, AP, TS, GJ) | ~420 | UP/WB/RJ/AP/TS/GJ full packs | **updated** | **1** | Contributor drafts |
+| C16 | State packs — Batch B (MP, BR, KL, PB, HR, OD) | ~360 | MP/BR/KL/PB/HR/OD full packs | **updated** | 1 | Contributor drafts |
+| C17 | State packs — Batch C (NE, HP, UK, GA, CG, JH) | ~280 | NE+CG/GA/HP/JH/UK full packs (Jun 2026) | **updated** | 2 | Contributor drafts |
+| C18 | State packs — Batch D (UTs, JK/LA, SK) | ~120 | CH/AN/LD/LA/JK/SK/PY expanded | **updated** | 2 | Contributor drafts |
 | C19 | Tax / revenue stack (GSTAT, CIT(A), DRP, VAT tribunals) | ~45 | ~33 (AO, CIT(A), JCIT(A), ITAT×25, DRP, AAR, CAAR, GSTAT) | **updated** | 2 | Contributor drafts |
 | C20 | Labour (CGIT, EPFAT, state labour courts) | ~35 | 10 (+ state_labour_court_generic) | **updated** | 2 | Maintainer |
 | C21 | Defence (court martial, AFT benches) | ~12 | 12 (AFT principal + 11 benches, court_martial_generic) | **updated** | 2 | Maintainer |
@@ -54,11 +54,11 @@
 | C23 | IP (patent controller, TM registry; IPAB historical) | ~5 | 5 (CGPDTM, TMR, ipab, compat) | **updated** | 3 | Maintainer |
 | C24 | State tribunals (SAT, transport, mental health boards) | ~35 | 5 (4 generics + state_vat_tribunal_generic) | **updated** | 3 | Contributor drafts |
 | C25 | People / roles layer (judges, advocates, parties) | ~20 | partial | **pending** | 3 | Optional |
-| C26 | Relationship wiring & orphan cleanup (~139 orphans) | — | partial | **updated** | 1–3 | **Maintainer only** |
+| C26 | Relationship wiring & orphan cleanup (~139 orphans) | — | **done** | **done** | 1–3 | **Maintainer only** |
 | C27 | Data-quality upgrade (sources, partial→complete) | 668 | ongoing | **updated** | all | Contributor |
-| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 668 | sparse | **pending** | 2 | Maintainer + NJDG |
+| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 668 | sparse | **partial** | 2 | Maintainer + NJDG |
 
-*Last roadmap review: 2026-06-12 (M-T1–M-T6 + Phase 1 batch — ITAT×25, UP/WB/RJ packs, digital, security)*
+*Last roadmap review: 2026-06-15 (Wave 4–5 state packs — NE/CG/GA/HP/JH/UK + UTs; ~1,100 entities)*
 
 ---
 
@@ -69,6 +69,8 @@
 | **0** | Backbone shipped | C01, C03, C08, C14 | 506 (baseline) |
 | **1** | Structural integrity + thin clusters filled | C02, C10, C11, C15 (Batch A start), C26 (incremental), C27 | +150–250 → ~700 |
 | **2** | State expansion + tribunals | C15–C18, C04, C06, C19–C22 | +400–500 → ~1,200 |
+
+**Phase 2 acceptance rubric:** [`PHASE2_ACCEPTANCE_RUBRIC.md`](PHASE2_ACCEPTANCE_RUBRIC.md)
 | **3** | District resolution + remainder | C06 districts, C04 DRT benches, C23–C25, C28 | +300+ → **1,500+** |
 
 ---
