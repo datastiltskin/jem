@@ -1,0 +1,439 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: uk_cdrc_ncdrc
+  source: uk_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_slsa_lok
+  source: slsa_uk
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: UK SLSA lok adalat
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_fund_rera
+  source: government_uk
+  target: rera_uk
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: UK RERA funding
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_fund_serc
+  source: government_uk
+  target: serc_uk
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: UK SERC funding
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_serc_aptel
+  source: serc_uk
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK SERC to APTEL
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_dist_principal_hc
+  source: uk_district_court_principal
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK principal district to HC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_super_principal
+  source: hc_uttarakhand
+  target: uk_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision UK principal
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_district_courts_generic_hc
+  source: uk_district_courts_generic
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK district rollup to HC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_super_district_courts_generic
+  source: hc_uttarakhand
+  target: uk_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision UK rollup
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_sja_train
+  source: uk_sja
+  target: uk_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: UK judicial academy training
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_dehradun_hc
+  source: uk_district_court_dehradun
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK dehradun appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_super_dehradun
+  source: hc_uttarakhand
+  target: uk_district_court_dehradun
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision dehradun
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_nainital_hc
+  source: uk_district_court_nainital
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK nainital appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_super_nainital
+  source: hc_uttarakhand
+  target: uk_district_court_nainital
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision nainital
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_haridwar_hc
+  source: uk_district_court_haridwar
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK haridwar appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_super_haridwar
+  source: hc_uttarakhand
+  target: uk_district_court_haridwar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision haridwar
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_haldwani_hc
+  source: uk_district_court_haldwani
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK haldwani appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_super_haldwani
+  source: hc_uttarakhand
+  target: uk_district_court_haldwani
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision haldwani
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_roorkee_hc
+  source: uk_district_court_roorkee
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK roorkee appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_super_roorkee
+  source: hc_uttarakhand
+  target: uk_district_court_roorkee
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision roorkee
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_pauri_hc
+  source: uk_district_court_pauri
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UK pauri appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_super_pauri
+  source: hc_uttarakhand
+  target: uk_district_court_pauri
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision pauri
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_cdrc_dehradun_scdrc
+  source: uk_cdrc_dehradun
+  target: uk_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: dehradun DCDRC to UK SCDRC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_cdrc_nainital_scdrc
+  source: uk_cdrc_nainital
+  target: uk_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: nainital DCDRC to UK SCDRC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_cdrc_haridwar_scdrc
+  source: uk_cdrc_haridwar
+  target: uk_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: haridwar DCDRC to UK SCDRC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_cdrc_haldwani_scdrc
+  source: uk_cdrc_haldwani
+  target: uk_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: haldwani DCDRC to UK SCDRC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_gov_appoints_advocate_general
+  source: governor_state
+  target: uk_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: uk_gov_fund_bar_council
+  source: government_uk
+  target: uk_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: uk_gov_fund_lokayukta
+  source: government_uk
+  target: uk_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_uk_special_courts_appealable_hc_uttarakhand
+  source: uk_special_courts
+  target: hc_uttarakhand
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: uk_hc_uttarakhand_supervise_uk_special_courts
+  source: hc_uttarakhand
+  target: uk_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

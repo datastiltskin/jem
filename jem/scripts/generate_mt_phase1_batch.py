@@ -561,9 +561,7 @@ NE_HCS = [
     "hc_manipur",
     "hc_meghalaya",
     "hc_tripura",
-    "hc_mizoram",
     "hc_sikkim",
-    "hc_arunachal_pradesh",
 ]
 
 

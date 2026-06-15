@@ -1,0 +1,475 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: ap_cdrc_ncdrc
+  source: ap_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_slsa_lok
+  source: slsa_ap
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: AP SLSA lok adalat
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_fund_rera
+  source: government_ap
+  target: rera_ap
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: AP RERA funding
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_fund_serc
+  source: government_ap
+  target: serc_ap
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: AP SERC funding
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_serc_aptel
+  source: serc_ap
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP SERC to APTEL
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_dist_principal_hc
+  source: ap_district_court_principal
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP principal district to HC
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_principal
+  source: hc_andhra_pradesh
+  target: ap_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision AP principal
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_vijayawada_hc
+  source: ap_district_court_vijayawada
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP vijayawada district appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_vijayawada
+  source: hc_andhra_pradesh
+  target: ap_district_court_vijayawada
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision vijayawada
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_visakhapatnam_hc
+  source: ap_district_court_visakhapatnam
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP visakhapatnam district appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_visakhapatnam
+  source: hc_andhra_pradesh
+  target: ap_district_court_visakhapatnam
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision visakhapatnam
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_guntur_hc
+  source: ap_district_court_guntur
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP guntur district appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_guntur
+  source: hc_andhra_pradesh
+  target: ap_district_court_guntur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision guntur
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_tirupati_hc
+  source: ap_district_court_tirupati
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP tirupati district appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_tirupati
+  source: hc_andhra_pradesh
+  target: ap_district_court_tirupati
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision tirupati
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_kurnool_hc
+  source: ap_district_court_kurnool
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP kurnool district appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_kurnool
+  source: hc_andhra_pradesh
+  target: ap_district_court_kurnool
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision kurnool
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_rajahmundry_hc
+  source: ap_district_court_rajahmundry
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP rajahmundry district appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_rajahmundry
+  source: hc_andhra_pradesh
+  target: ap_district_court_rajahmundry
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision rajahmundry
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_nellore_hc
+  source: ap_district_court_nellore
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP nellore district appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_nellore
+  source: hc_andhra_pradesh
+  target: ap_district_court_nellore
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision nellore
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_kadapa_hc
+  source: ap_district_court_kadapa
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP kadapa district appellate
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_super_kadapa
+  source: hc_andhra_pradesh
+  target: ap_district_court_kadapa
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision kadapa
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_district_courts_generic_hc
+  source: ap_district_courts_generic
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: AP collapsed district rollup appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_hc_super_district_courts_generic
+  source: hc_andhra_pradesh
+  target: ap_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision AP district rollup
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_sja_train
+  source: ap_sja
+  target: ap_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: AP judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_cdrc_visakhapatnam_scdrc
+  source: ap_cdrc_visakhapatnam
+  target: ap_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Visakhapatnam DCDRC to AP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_cdrc_vijayawada_scdrc
+  source: ap_cdrc_vijayawada
+  target: ap_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Vijayawada DCDRC to AP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_cdrc_guntur_scdrc
+  source: ap_cdrc_guntur
+  target: ap_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Guntur DCDRC to AP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_cdrc_tirupati_scdrc
+  source: ap_cdrc_tirupati
+  target: ap_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Tirupati DCDRC to AP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: ap_gov_appoints_advocate_general
+  source: governor_state
+  target: ap_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: ap_gov_fund_bar_council
+  source: government_ap
+  target: ap_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: ap_gov_fund_lokayukta
+  source: government_ap
+  target: ap_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_ap_special_courts_appealable_hc_andhra_pradesh
+  source: ap_special_courts
+  target: hc_andhra_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ap_hc_andhra_pradesh_supervise_ap_special_courts
+  source: hc_andhra_pradesh
+  target: ap_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

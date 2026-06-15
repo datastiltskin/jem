@@ -73,7 +73,8 @@ data_quality_notes: 'Structural_gap: CRITICAL. GSTAT not constituted for 8+ year
   (subsumed under DoR establishment estimates pending constitution). Mohit Minerals SC judgment PDF URL verified live on webapi.sci.gov.in
   (drt_b4); main.sci.gov.in unreachable via automated access.
 
-  M-T3 watch Jun 2026: still Not_Constituted; monitor egazette.gov.in and CBIC for bench notifications.'
+  M-T3 watch Jun 2026: still Not_Constituted; monitor egazette.gov.in and CBIC for bench notifications. v1.2 judge_strength
+  stub attached'
 unverified_fields:
 - field: funding.budget_figure_crore
   note: 'Union Budget does not disaggregate GSTAT allocation pending constitution.
@@ -99,3 +100,10 @@ sources:
   url: https://india-code.nic.in/CodeofActs13/20230008.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

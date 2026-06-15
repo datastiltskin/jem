@@ -1,0 +1,32 @@
+id: ml_lokayukta
+name: Meghalaya Lokayukta
+type: StatutoryBodyNotConstituted
+cluster: executive_interface
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - ML
+  is_all_india: false
+created_year: 2025
+operational_status: Not_Constituted
+statutory_basis: Meghalaya Lokayukta Act 2014 (passed; notification status unverified)
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+sources:
+- label: Meghalaya Lokayukta portal
+  url: https://meghalaya.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
+data_quality_notes: 'DG-L4: upgrade if Act notified. Body not constituted.'

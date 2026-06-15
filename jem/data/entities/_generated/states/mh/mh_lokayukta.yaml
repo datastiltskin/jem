@@ -7,16 +7,9 @@ jurisdiction_scope:
   states_covered:
   - MH
   is_all_india: false
-created_year: 1971
+created_year: 1972
 operational_status: Active
-statutory_basis: State Lokayukta / Lokpal interface statutes (stub)
-structural_variations:
-- variation_id: mh_lokayukta_appointment_delay
-  description: Document appointment delays post-2019 from official sources when available.
-  applicable_to:
-  - MH
-  source: State Lokayukta portal — verify dates
-  independence_risk_note: Executive interface risk pending review
+statutory_basis: Maharashtra Lokayukta and Upa-Lokayuktas Act 1971
 funding:
   primary_source: State_Consolidated_Fund
 audit:
@@ -28,11 +21,11 @@ complaint_mechanism:
   lokpal_jurisdiction: 'Yes'
 data_quality: partial
 sources:
+- label: Maharashtra Lokayukta portal
+  url: https://lokayuktamaharashtra.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
   type: GoIWebsite
-  accessed_date: '2026-05-13'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
+  accessed_date: '2026-06-15'

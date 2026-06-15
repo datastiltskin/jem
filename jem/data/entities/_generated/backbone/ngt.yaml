@@ -38,7 +38,7 @@ data_quality: partial
 data_quality_notes: "NGT is EXCLUDED from Tribunals Reforms Act 2021 — appointment under NGT Act 2010 s.5-7 directly. Verify\
   \ no subsequent amendment changes this. NGT has 5 zonal benches (New Delhi principal; Chennai, Bhopal, Pune, Kolkata zonal)\
   \ — bench routing Phase-2. ministry_responsible 'ministry_environment' assumed — verify canonical id in graph (may be 'ministry_moefcc').\
-  \ case_volume null — §3/§7.\n NJDG snapshot case_volume merged"
+  \ case_volume null — §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
 sources:
 - label: National Green Tribunal Act 2010 — India Code
   url: https://india-code.nic.in/acts-detail/MjA2OTU=
@@ -62,3 +62,10 @@ case_volume:
   source_type: Tribunal_Report
   disposal_rate: 0.8
   clog_severity: high
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://greentribunal.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

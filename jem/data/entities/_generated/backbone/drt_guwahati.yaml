@@ -3,104 +3,100 @@ name: Debt Recovery Tribunal, Guwahati
 name_hindi: ऋण वसूली अधिकरण, गुवाहाटी
 abbreviation: DRT Guwahati
 aliases:
-  - Debts Recovery Tribunal Guwahati
-  - DRT Gauhati
-
+- Debts Recovery Tribunal Guwahati
+- DRT Gauhati
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - AS
-    - AR
-    - ML
-    - MN
-    - MZ
-    - NL
-    - TR
-    - SK
+  - AS
+  - AR
+  - ML
+  - MN
+  - MZ
+  - NL
+  - TR
+  - SK
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 1994
 operational_status: Active
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002,
+  s. 17. Single-bench tribunal under DRAT Kolkata (per G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules). Territorial jurisdiction
+  is exceptionally wide — covers all seven North East states (per Gujarat DRT Advocates Association reference) plus Sikkim;
+  one of the largest geographic jurisdictions of any DRT.
 
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Single-bench tribunal under DRAT Kolkata (per
-  G.S.R. 538(E)/2018 DRAT Kolkata Recruitment Rules). Territorial jurisdiction is
-  exceptionally wide — covers all seven North East states (per Gujarat DRT Advocates
-  Association reference) plus Sikkim; one of the largest geographic jurisdictions
-  of any DRT.
-
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_gauhati
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_gauhati
-      mechanism: >
-        Supervisory jurisdiction of Gauhati High Court under Arts 226/227;
-        writ petition before Gauhati High Court.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_gauhati
+    mechanism: 'Supervisory jurisdiction of Gauhati High Court under Arts 226/227; writ petition before Gauhati High Court.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  DRAT Kolkata supervision confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata
-  Recruitment Rules, which groups Guwahati under DRAT Kolkata). NE-state jurisdiction
-  confirmed by Gujarat DRT Advocates Association: "DRT located in Guwahati has
-  jurisdiction over all the seven North Eastern States." Sikkim inclusion assumed
-  by coverage gap (no separate DRT for Sikkim). Exact GSR notification number for
-  DRT Guwahati establishment not extracted; created_year: 1994 based on DRAT Kolkata
-  Recruitment Rules supersession list referencing DRT Guwahati Group A/B Rules 2001
-  (implying prior existence).
-
+data_quality_notes: 'DRAT Kolkata supervision confirmed by G.S.R. 538(E) dated 8 June 2018 (DRAT Kolkata Recruitment Rules,
+  which groups Guwahati under DRAT Kolkata). NE-state jurisdiction confirmed by Gujarat DRT Advocates Association: "DRT located
+  in Guwahati has jurisdiction over all the seven North Eastern States." Sikkim inclusion assumed by coverage gap (no separate
+  DRT for Sikkim). Exact GSR notification number for DRT Guwahati establishment not extracted; created_year: 1994 based on
+  DRAT Kolkata Recruitment Rules supersession list referencing DRT Guwahati Group A/B Rules 2001 (implying prior existence).
+  v1.2 judge_strength stub attached'
 unverified_fields:
-  - field: created_year
-    note: >
-      1994 is estimate; specific G.S.R. establishment number not retrieved (2001 Recruitment Rules imply prior existence).
+- field: created_year
+  note: '1994 is estimate; specific G.S.R. establishment number not retrieved (2001 Recruitment Rules imply prior existence).
+
+    '
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
-  - label: >
-      DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018;
-      lists DRT Guwahati under DRAT Kolkata
-    url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp
-    type: GazetteNotification
-    accessed_date: '2026-06-12'
-  - label: >
-      DRT Guwahati jurisdiction (7 NE states) — Gujarat DRT Advocates Association
-    url: http://gdrtaa.com/drt.html
-    type: OfficialReport
-    accessed_date: '2026-06-12'
-  - label: 'DRT official portal — Ministry of Finance, DFS'
-    url: https://drt.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: 'DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018; lists DRT Guwahati under DRAT Kolkata
+
+    '
+  url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
+- label: 'DRT Guwahati jurisdiction (7 NE states) — Gujarat DRT Advocates Association
+
+    '
+  url: http://gdrtaa.com/drt.html
+  type: OfficialReport
+  accessed_date: '2026-06-12'
+- label: DRT official portal — Ministry of Finance, DFS
+  url: https://drt.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

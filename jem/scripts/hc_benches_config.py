@@ -7,9 +7,8 @@ from __future__ import annotations
 
 # (bench_id, display_name, parent_hc_id, seat_city)
 HC_BENCHES_DEF: list[tuple[str, str, str, str]] = [
-    # Madras HC
+    # Madras HC — sole permanent bench at Madurai (est. 2004); no Tiruchirappalli bench
     ("hc_madras_bench_madurai", "Madurai Bench of Madras High Court", "hc_madras", "Madurai"),
-    ("hc_madras_bench_tiruchirappalli", "Tiruchirappalli Bench of Madras High Court", "hc_madras", "Tiruchirappalli"),
     # Bombay HC
     ("hc_bombay_bench_nagpur", "Nagpur Bench of Bombay High Court", "hc_bombay", "Nagpur"),
     ("hc_bombay_bench_aurangabad", "Aurangabad Bench of Bombay High Court", "hc_bombay", "Aurangabad"),
@@ -39,20 +38,10 @@ TN_DISTRICT_TO_BENCH: dict[str, str] = {
     "ramanathapuram": "hc_madras_bench_madurai",
     "sivaganga": "hc_madras_bench_madurai",
     "tenkasi": "hc_madras_bench_madurai",
-    "thoothukudi": "hc_madras_bench_madurai",
     "theni": "hc_madras_bench_madurai",
+    "thoothukudi": "hc_madras_bench_madurai",
     "tirunelveli": "hc_madras_bench_madurai",
     "virudhunagar": "hc_madras_bench_madurai",
-    "ariyalur": "hc_madras_bench_tiruchirappalli",
-    "cuddalore": "hc_madras_bench_tiruchirappalli",
-    "karur": "hc_madras_bench_tiruchirappalli",
-    "mayiladuthurai": "hc_madras_bench_tiruchirappalli",
-    "nagapattinam": "hc_madras_bench_tiruchirappalli",
-    "perambalur": "hc_madras_bench_tiruchirappalli",
-    "pudukkottai": "hc_madras_bench_tiruchirappalli",
-    "thanjavur": "hc_madras_bench_tiruchirappalli",
-    "tiruchirappalli": "hc_madras_bench_tiruchirappalli",
-    "tiruvarur": "hc_madras_bench_tiruchirappalli",
 }
 
 # MH explicit district entity id → bench id

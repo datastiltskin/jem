@@ -20,11 +20,9 @@ jurisdiction_scope:
   - debt_recovery_appeals
 created_year: 2000
 operational_status: Active
-statutory_basis: >-
-  Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act),
-  s.8 — established vide G.S.R. 134(E), 17 February 2000. Appellate jurisdiction
-  over southern-region DRT benches per MoF notification and DRAT Chennai official
-  listing (9 DRTs: Chennai 1–3, Bengaluru 1–2, Coimbatore, Ernakulam 1–2, Madurai).
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act), s.8 — established vide
+  G.S.R. 134(E), 17 February 2000. Appellate jurisdiction over southern-region DRT benches per MoF notification and DRAT Chennai
+  official listing (9 DRTs: Chennai 1–3, Bengaluru 1–2, Coimbatore, Ernakulam 1–2, Madurai).'
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
@@ -45,10 +43,9 @@ complaint_mechanism:
   lokpal_jurisdiction: 'No'
   lokpal_jurisdiction_note: Judicial officers; Lokpal Act 2013 excludes.
 data_quality: partial
-data_quality_notes: >-
-  Bench-level DRAT entity (C04). Supervises DRT Chennai, DRT Bengaluru, DRT
-  Coimbatore, DRT Ernakulam, DRT Madurai per DRAT Chennai About Us (drat.tn.nic.in).
-  Hyderabad and Visakhapatnam are under DRAT Kolkata, not this bench.
+data_quality_notes: Bench-level DRAT entity (C04). Supervises DRT Chennai, DRT Bengaluru, DRT Coimbatore, DRT Ernakulam, DRT
+  Madurai per DRAT Chennai About Us (drat.tn.nic.in). Hyderabad and Visakhapatnam are under DRAT Kolkata, not this bench.
+  v1.2 judge_strength stub attached
 sources:
 - label: RDDBFI Act 1993, s.8–18 — DRAT provisions
   url: https://india-code.nic.in/handle/123456789/1573
@@ -58,3 +55,10 @@ sources:
   url: https://drat.tn.nic.in/AboutUs.htm
   type: GoIWebsite
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

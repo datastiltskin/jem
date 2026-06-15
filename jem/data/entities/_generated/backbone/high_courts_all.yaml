@@ -12,10 +12,17 @@ jurisdiction_scope:
 created_year: 1950
 operational_status: Active
 data_quality: partial
-data_quality_notes: Stub for graph connectivity; verify appointment/funding against
-  primary sources.
+data_quality_notes: Stub for graph connectivity; verify appointment/funding against primary sources. v1.2 judge_strength stub
+  attached
 sources:
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
+judge_strength:
+  data_as_of: '2025-12-24'
+  allotted: null
+  appointed: null
+  source_type: DoJ_Report
+  source_url: https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/2025/12/202512241943014515.pdf
+  notes: Populate allotted/appointed from DoJ quarterly vacancy report row for this court.

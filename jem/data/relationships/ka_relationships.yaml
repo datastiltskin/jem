@@ -134,3 +134,875 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: ka_gov_appoints_advocate_general
+  source: governor_state
+  target: ka_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: ka_ka_cdrc_bengaluru_appealable_ka_state_cdrc
+  source: ka_cdrc_bengaluru
+  target: ka_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: ka_ka_cdrc_hubballi_appealable_ka_state_cdrc
+  source: ka_cdrc_hubballi
+  target: ka_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: ka_ka_cdrc_mangaluru_appealable_ka_state_cdrc
+  source: ka_cdrc_mangaluru
+  target: ka_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: ka_ka_cdrc_mysuru_appealable_ka_state_cdrc
+  source: ka_cdrc_mysuru
+  target: ka_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: ka_ka_district_court_bagalkot_appealable_hc_karnataka
+  source: ka_district_court_bagalkot
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_bagalkot
+  source: hc_karnataka
+  target: ka_district_court_bagalkot
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_ballari_appealable_hc_karnataka
+  source: ka_district_court_ballari
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_ballari
+  source: hc_karnataka
+  target: ka_district_court_ballari
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_bengaluru_rural_appealable_hc_karnataka
+  source: ka_district_court_bengaluru_rural
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_bengaluru_rural
+  source: hc_karnataka
+  target: ka_district_court_bengaluru_rural
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_bidar_appealable_hc_karnataka
+  source: ka_district_court_bidar
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_bidar
+  source: hc_karnataka
+  target: ka_district_court_bidar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_chamarajanagar_appealable_hc_karnataka
+  source: ka_district_court_chamarajanagar
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_chamarajanagar
+  source: hc_karnataka
+  target: ka_district_court_chamarajanagar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_chikkaballapur_appealable_hc_karnataka
+  source: ka_district_court_chikkaballapur
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_chikkaballapur
+  source: hc_karnataka
+  target: ka_district_court_chikkaballapur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_chikkamagaluru_appealable_hc_karnataka
+  source: ka_district_court_chikkamagaluru
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_chikkamagaluru
+  source: hc_karnataka
+  target: ka_district_court_chikkamagaluru
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_chitradurga_appealable_hc_karnataka
+  source: ka_district_court_chitradurga
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_chitradurga
+  source: hc_karnataka
+  target: ka_district_court_chitradurga
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_davangere_appealable_hc_karnataka
+  source: ka_district_court_davangere
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_davangere
+  source: hc_karnataka
+  target: ka_district_court_davangere
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_gadag_appealable_hc_karnataka
+  source: ka_district_court_gadag
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_gadag
+  source: hc_karnataka
+  target: ka_district_court_gadag
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_hassan_appealable_hc_karnataka
+  source: ka_district_court_hassan
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_hassan
+  source: hc_karnataka
+  target: ka_district_court_hassan
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_haveri_appealable_hc_karnataka
+  source: ka_district_court_haveri
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_haveri
+  source: hc_karnataka
+  target: ka_district_court_haveri
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_kalaburagi_appealable_hc_karnataka
+  source: ka_district_court_kalaburagi
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_kalaburagi
+  source: hc_karnataka
+  target: ka_district_court_kalaburagi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_kodagu_appealable_hc_karnataka
+  source: ka_district_court_kodagu
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_kodagu
+  source: hc_karnataka
+  target: ka_district_court_kodagu
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_kolar_appealable_hc_karnataka
+  source: ka_district_court_kolar
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_kolar
+  source: hc_karnataka
+  target: ka_district_court_kolar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_mandya_appealable_hc_karnataka
+  source: ka_district_court_mandya
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_mandya
+  source: hc_karnataka
+  target: ka_district_court_mandya
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_mangaluru_appealable_hc_karnataka
+  source: ka_district_court_mangaluru
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_mangaluru
+  source: hc_karnataka
+  target: ka_district_court_mangaluru
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_raichur_appealable_hc_karnataka
+  source: ka_district_court_raichur
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_raichur
+  source: hc_karnataka
+  target: ka_district_court_raichur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_ramanagara_appealable_hc_karnataka
+  source: ka_district_court_ramanagara
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_ramanagara
+  source: hc_karnataka
+  target: ka_district_court_ramanagara
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_shivamogga_appealable_hc_karnataka
+  source: ka_district_court_shivamogga
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_shivamogga
+  source: hc_karnataka
+  target: ka_district_court_shivamogga
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_tumkuru_appealable_hc_karnataka
+  source: ka_district_court_tumkuru
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_tumkuru
+  source: hc_karnataka
+  target: ka_district_court_tumkuru
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_udupi_appealable_hc_karnataka
+  source: ka_district_court_udupi
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_udupi
+  source: hc_karnataka
+  target: ka_district_court_udupi
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_uttara_kannada_appealable_hc_karnataka
+  source: ka_district_court_uttara_kannada
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_uttara_kannada
+  source: hc_karnataka
+  target: ka_district_court_uttara_kannada
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_vijayapura_appealable_hc_karnataka
+  source: ka_district_court_vijayapura
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_vijayapura
+  source: hc_karnataka
+  target: ka_district_court_vijayapura
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_court_yadgir_appealable_hc_karnataka
+  source: ka_district_court_yadgir
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_court_yadgir
+  source: hc_karnataka
+  target: ka_district_court_yadgir
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_ka_district_courts_generic_appealable_hc_karnataka
+  source: ka_district_courts_generic
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_district_courts_generic
+  source: hc_karnataka
+  target: ka_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: ka_gov_fund_lokayukta
+  source: government_karnataka
+  target: ka_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_ka_special_courts_appealable_hc_karnataka
+  source: ka_special_courts
+  target: hc_karnataka
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: ka_hc_karnataka_supervise_ka_special_courts
+  source: hc_karnataka
+  target: ka_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

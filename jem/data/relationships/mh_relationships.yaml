@@ -214,3 +214,977 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: mh_gov_appoints_advocate_general
+  source: governor_state
+  target: mh_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: mh_gov_fund_bar_council
+  source: government_maharashtra
+  target: mh_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: mh_mh_cdrc_aurangabad_appealable_mh_state_cdrc
+  source: mh_cdrc_aurangabad
+  target: mh_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: mh_mh_cdrc_mumbai_appealable_mh_state_cdrc
+  source: mh_cdrc_mumbai
+  target: mh_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: mh_mh_cdrc_nagpur_appealable_mh_state_cdrc
+  source: mh_cdrc_nagpur
+  target: mh_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: mh_mh_cdrc_pune_appealable_mh_state_cdrc
+  source: mh_cdrc_pune
+  target: mh_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: mh_mh_district_court_ahmednagar_appealable_hc_bombay
+  source: mh_district_court_ahmednagar
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_ahmednagar
+  source: hc_bombay
+  target: mh_district_court_ahmednagar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_akola_appealable_hc_bombay
+  source: mh_district_court_akola
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_akola
+  source: hc_bombay
+  target: mh_district_court_akola
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_beed_appealable_hc_bombay
+  source: mh_district_court_beed
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_beed
+  source: hc_bombay
+  target: mh_district_court_beed
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_bhandara_appealable_hc_bombay
+  source: mh_district_court_bhandara
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_bhandara
+  source: hc_bombay
+  target: mh_district_court_bhandara
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_buldhana_appealable_hc_bombay
+  source: mh_district_court_buldhana
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_buldhana
+  source: hc_bombay
+  target: mh_district_court_buldhana
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_chandrapur_appealable_hc_bombay
+  source: mh_district_court_chandrapur
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_chandrapur
+  source: hc_bombay
+  target: mh_district_court_chandrapur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_dhule_appealable_hc_bombay
+  source: mh_district_court_dhule
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_dhule
+  source: hc_bombay
+  target: mh_district_court_dhule
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_gadchiroli_appealable_hc_bombay
+  source: mh_district_court_gadchiroli
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_gadchiroli
+  source: hc_bombay
+  target: mh_district_court_gadchiroli
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_gondia_appealable_hc_bombay
+  source: mh_district_court_gondia
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_gondia
+  source: hc_bombay
+  target: mh_district_court_gondia
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_hingoli_appealable_hc_bombay
+  source: mh_district_court_hingoli
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_hingoli
+  source: hc_bombay
+  target: mh_district_court_hingoli
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_jalgaon_appealable_hc_bombay
+  source: mh_district_court_jalgaon
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_jalgaon
+  source: hc_bombay
+  target: mh_district_court_jalgaon
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_jalna_appealable_hc_bombay
+  source: mh_district_court_jalna
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_jalna
+  source: hc_bombay
+  target: mh_district_court_jalna
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_kolhapur_appealable_hc_bombay
+  source: mh_district_court_kolhapur
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_kolhapur
+  source: hc_bombay
+  target: mh_district_court_kolhapur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_latur_appealable_hc_bombay
+  source: mh_district_court_latur
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_latur
+  source: hc_bombay
+  target: mh_district_court_latur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_mumbai_suburban_appealable_hc_bombay
+  source: mh_district_court_mumbai_suburban
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_mumbai_suburban
+  source: hc_bombay
+  target: mh_district_court_mumbai_suburban
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_nandurbar_appealable_hc_bombay
+  source: mh_district_court_nandurbar
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_nandurbar
+  source: hc_bombay
+  target: mh_district_court_nandurbar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_osmanabad_appealable_hc_bombay
+  source: mh_district_court_osmanabad
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_osmanabad
+  source: hc_bombay
+  target: mh_district_court_osmanabad
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_palghar_appealable_hc_bombay
+  source: mh_district_court_palghar
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_palghar
+  source: hc_bombay
+  target: mh_district_court_palghar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_parbhani_appealable_hc_bombay
+  source: mh_district_court_parbhani
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_parbhani
+  source: hc_bombay
+  target: mh_district_court_parbhani
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_raigad_appealable_hc_bombay
+  source: mh_district_court_raigad
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_raigad
+  source: hc_bombay
+  target: mh_district_court_raigad
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_ratnagiri_appealable_hc_bombay
+  source: mh_district_court_ratnagiri
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_ratnagiri
+  source: hc_bombay
+  target: mh_district_court_ratnagiri
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_sangli_appealable_hc_bombay
+  source: mh_district_court_sangli
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_sangli
+  source: hc_bombay
+  target: mh_district_court_sangli
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_satara_appealable_hc_bombay
+  source: mh_district_court_satara
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_satara
+  source: hc_bombay
+  target: mh_district_court_satara
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_sindhudurg_appealable_hc_bombay
+  source: mh_district_court_sindhudurg
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_sindhudurg
+  source: hc_bombay
+  target: mh_district_court_sindhudurg
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_thane_appealable_hc_bombay
+  source: mh_district_court_thane
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_thane
+  source: hc_bombay
+  target: mh_district_court_thane
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_wardha_appealable_hc_bombay
+  source: mh_district_court_wardha
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_wardha
+  source: hc_bombay
+  target: mh_district_court_wardha
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_washim_appealable_hc_bombay
+  source: mh_district_court_washim
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_washim
+  source: hc_bombay
+  target: mh_district_court_washim
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_court_yavatmal_appealable_hc_bombay
+  source: mh_district_court_yavatmal
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_court_yavatmal
+  source: hc_bombay
+  target: mh_district_court_yavatmal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_mh_district_courts_generic_appealable_hc_bombay
+  source: mh_district_courts_generic
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District court appeals to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_district_courts_generic
+  source: hc_bombay
+  target: mh_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: Article 235 HC supervision over district court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: mh_gov_fund_lokayukta
+  source: government_maharashtra
+  target: mh_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_mh_special_courts_appealable_hc_bombay
+  source: mh_special_courts
+  target: hc_bombay
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mh_hc_bombay_supervise_mh_special_courts
+  source: hc_bombay
+  target: mh_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

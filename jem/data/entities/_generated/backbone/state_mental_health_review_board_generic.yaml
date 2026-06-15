@@ -2,20 +2,16 @@ id: state_mental_health_review_board_generic
 name: State Mental Health Review Board — Generic
 name_hindi: राज्य मानसिक स्वास्थ्य समीक्षा बोर्ड — सामान्य
 abbreviation: MHRB
-
 type: StateTribunal
 cluster: tribunals_adr
 level_of_government: State
-
 created_year: 2017
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >
-  Mental Healthcare Act 2017 s.73; State Governments establish Mental Health
-  Review Boards exercising quasi-judicial functions over admission, advance
-  directives, and discharge orders.
+statutory_basis: 'Mental Healthcare Act 2017 s.73; State Governments establish Mental Health Review Boards exercising quasi-judicial
+  functions over admission, advance directives, and discharge orders.
 
+  '
 appointment:
   nominates: governor_state
   recommends: null
@@ -27,19 +23,16 @@ appointment:
   removal_authority: governor_state
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: State_Consolidated_Fund
   ministry_responsible: null
   budget_figure_crore: null
   budget_year: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Performance
   audit_report_public: true
   conduct_oversight_body: null
-
 complaint_mechanism:
   bias_complaint_to: []
   criminal_prosecution:
@@ -50,16 +43,19 @@ complaint_mechanism:
   lokpal_jurisdiction: Contested
   lokpal_jurisdiction_note: State Lokayukta jurisdiction varies by state.
   source: null
-
 data_quality: partial
-data_quality_notes: >
-  Generic scaffold. Board composition per s.73: district judge or ADJ (chair),
-  psychiatry professional, civil-society representative. Operationalisation varies
-  significantly by state; several states have not fully constituted district boards.
-  Appeal from MHRB order lies to High Court under s.83.
-
+data_quality_notes: 'Generic scaffold. Board composition per s.73: district judge or ADJ (chair), psychiatry professional,
+  civil-society representative. Operationalisation varies significantly by state; several states have not fully constituted
+  district boards. Appeal from MHRB order lies to High Court under s.83. v1.2 judge_strength stub attached'
 sources:
-  - label: Mental Healthcare Act 2017 s.73 — India Code
-    url: https://www.india-code.nic.in/CodeofActs/2017/2017_10.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
+- label: Mental Healthcare Act 2017 s.73 — India Code
+  url: https://www.india-code.nic.in/CodeofActs/2017/2017_10.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

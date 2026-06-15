@@ -2,30 +2,24 @@ id: compat
 name: Competition Appellate Tribunal
 name_hindi: प्रतिस्पर्धा अपीलीय अधिकरण
 abbreviation: COMPAT
-
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 created_year: 2009
 abolished_year: 2017
 operational_status: Abolished
-
 constitutional_basis: null
-statutory_basis: >
-  Competition Act 2002 §§ 53A–53U (as inserted by Competition (Amendment) Act 2007,
-  in force 20 May 2009). Abolished by Finance Act 2017 (§ 172 — Tribunal, Appellate
-  Tribunal and other Authorities (Qualification, Experience and Other Conditions of
-  Service of Members) Rules 2017 read with Finance Act 2017 § 160 NCLAT amendment).
-  Jurisdiction transferred to National Company Law Appellate Tribunal (NCLAT) by
-  Finance Act 2017 with effect from 26 May 2017.
+statutory_basis: 'Competition Act 2002 §§ 53A–53U (as inserted by Competition (Amendment) Act 2007, in force 20 May 2009).
+  Abolished by Finance Act 2017 (§ 172 — Tribunal, Appellate Tribunal and other Authorities (Qualification, Experience and
+  Other Conditions of Service of Members) Rules 2017 read with Finance Act 2017 § 160 NCLAT amendment). Jurisdiction transferred
+  to National Company Law Appellate Tribunal (NCLAT) by Finance Act 2017 with effect from 26 May 2017.
 
+  '
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - Appeals against CCI orders under Competition Act 2002
-    - Compensation claims referred by CCI
-
+  - Appeals against CCI orders under Competition Act 2002
+  - Compensation claims referred by CCI
 appointment:
   formally_appoints: central_government
   criteria_public: false
@@ -33,45 +27,43 @@ appointment:
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_corporate_affairs
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: ministry_corporate_affairs
-
 complaint_mechanism:
   lokpal_jurisdiction: Not_Applicable
   lokpal_jurisdiction_note: Abolished 2017; not applicable.
   source: Finance Act 2017
-
 data_quality: partial
-data_quality_notes: >
-  COMPAT was operational from 15 May 2009 (date Chairperson assumed charge) to
-  26 May 2017 (date NCLAT took over CCI appeal jurisdiction).
-  Appellate chain (historical): CCI order → COMPAT → Supreme Court (§ 53T).
-  Post-abolition chain: CCI order → NCLAT → Supreme Court.
-  The Finance Act 2017 (§ 172, Sixth Schedule) amended Competition Act 2002 § 53A
-  to substitute 'National Company Law Appellate Tribunal' for 'Competition Appellate
-  Tribunal'. All pending matters transferred to NCLAT.
-  Historical note: The abolition of COMPAT was part of a broader rationalisation
-  of appellate tribunals recommended by the Law Commission (272nd Report, 2017)
-  and carried out via the Finance Act 2017 omnibus amendments.
-
+data_quality_notes: 'COMPAT was operational from 15 May 2009 (date Chairperson assumed charge) to 26 May 2017 (date NCLAT
+  took over CCI appeal jurisdiction). Appellate chain (historical): CCI order → COMPAT → Supreme Court (§ 53T). Post-abolition
+  chain: CCI order → NCLAT → Supreme Court. The Finance Act 2017 (§ 172, Sixth Schedule) amended Competition Act 2002 § 53A
+  to substitute ''National Company Law Appellate Tribunal'' for ''Competition Appellate Tribunal''. All pending matters transferred
+  to NCLAT. Historical note: The abolition of COMPAT was part of a broader rationalisation of appellate tribunals recommended
+  by the Law Commission (272nd Report, 2017) and carried out via the Finance Act 2017 omnibus amendments. v1.2 judge_strength
+  stub attached'
 sources:
-  - label: Competition Act 2002 (§§ 53A–53U, as amended)
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A200312
-    type: CentralAct
-    accessed_date: '2026-06-11'
-  - label: Finance Act 2017 (§ 172 — COMPAT abolition provisions)
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A201707
-    type: CentralAct
-    accessed_date: '2026-06-11'
-  - label: Competition Commission of India — history page
-    url: https://www.cci.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-11'
+- label: Competition Act 2002 (§§ 53A–53U, as amended)
+  url: https://india-code.nic.in/CodeSection.aspx?actcode=A200312
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: Finance Act 2017 (§ 172 — COMPAT abolition provisions)
+  url: https://india-code.nic.in/CodeSection.aspx?actcode=A201707
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: Competition Commission of India — history page
+  url: https://www.cci.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-11'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

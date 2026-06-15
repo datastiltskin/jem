@@ -3,31 +3,23 @@ name: Railway Claims Tribunal
 name_hindi: रेलवे दावा अधिकरण
 abbreviation: RCT
 aliases:
-  - Railway Claims Tribunal of India
-
+- Railway Claims Tribunal of India
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - railway_claims
-    - passenger_compensation
-    - goods_compensation
-    - untoward_incidents
-
+  - railway_claims
+  - passenger_compensation
+  - goods_compensation
+  - untoward_incidents
 created_year: 1989
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >-
-  Railway Claims Tribunal Act 1987 (Act 54 of 1987), s.3 — establishment;
-  s.13 — jurisdiction over claims for compensation for loss, destruction,
-  damage, deterioration or non-delivery of animals or goods entrusted to
-  railways, and claims for refunds of freight; s.16A — untoward incidents
-  (added by Railways Act 1989 amendment).
-
+statutory_basis: Railway Claims Tribunal Act 1987 (Act 54 of 1987), s.3 — establishment; s.13 — jurisdiction over claims for
+  compensation for loss, destruction, damage, deterioration or non-delivery of animals or goods entrusted to railways, and
+  claims for refunds of freight; s.16A — untoward incidents (added by Railways Act 1989 amendment).
 appointment:
   nominates: ministry_railways
   recommends: null
@@ -35,56 +27,44 @@ appointment:
   consultation_binding: null
   formally_appoints: central_government
   criteria_public: true
-  tenure: "Chairperson and Members: 5 years or age 65, whichever is earlier"
+  tenure: 'Chairperson and Members: 5 years or age 65, whichever is earlier'
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: Ministry_Budget
   ministry_responsible: ministry_railways
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: ministry_railways
-
 complaint_mechanism:
-  lokpal_jurisdiction: "No"
+  lokpal_jurisdiction: 'No'
   lokpal_jurisdiction_note: Judicial officers; Lokpal Act 2013 excludes.
-  removal_mechanism: >-
-    Removal by Central Government after inquiry on grounds of misbehaviour
-    (RCT Act 1987, s.9)
-
+  removal_mechanism: Removal by Central Government after inquiry on grounds of misbehaviour (RCT Act 1987, s.9)
 case_volume:
   data_as_of: null
   pending_cases: null
   source_type: AnnualReport
   source_url: null
-
 judge_strength:
   data_as_of: null
   allotted: null
   appointed: null
   source_type: DoJ_Report
-  source_url: null
-  notes: >-
-    Principal Bench at New Delhi; Circuit Benches at multiple locations.
-    Exact sanctioned strength not verified.
-
+  source_url: https://doj.gov.in/
+  notes: Principal Bench at New Delhi; Circuit Benches at multiple locations. Exact sanctioned strength not verified.
 data_quality: partial
-data_quality_notes: >-
-  ministry_railways entity id assumed present in graph — flag if absent
-  and substitute correct id. Case volume and judge strength left partial.
-
+data_quality_notes: ministry_railways entity id assumed present in graph — flag if absent and substitute correct id. Case
+  volume and judge strength left partial. v1.2 judge_strength stub attached
 sources:
-  - label: "Railway Claims Tribunal Act 1987 (Act 54 of 1987)"
-    url: https://india-code.nic.in/handle/123456789/1877
-    type: CentralAct
-    accessed_date: "2025-01-15"
-  - label: "RCT official website"
-    url: https://rct.indianrailways.gov.in
-    type: GoIWebsite
-    accessed_date: "2025-01-15"
+- label: Railway Claims Tribunal Act 1987 (Act 54 of 1987)
+  url: https://india-code.nic.in/handle/123456789/1877
+  type: CentralAct
+  accessed_date: '2025-01-15'
+- label: RCT official website
+  url: https://rct.indianrailways.gov.in
+  type: GoIWebsite
+  accessed_date: '2025-01-15'

@@ -21,10 +21,8 @@ jurisdiction_scope:
   - debt_recovery_appeals
 created_year: 2000
 operational_status: Active
-statutory_basis: >-
-  Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act),
-  s.8. Appellate jurisdiction over north/central-region DRT benches including
-  Allahabad, Lucknow, Jabalpur, Dehradun, Patna, Ranchi per secondary legal
+statutory_basis: Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act), s.8. Appellate jurisdiction
+  over north/central-region DRT benches including Allahabad, Lucknow, Jabalpur, Dehradun, Patna, Ranchi per secondary legal
   databases; verify against MoF composition listing.
 appointment:
   nominates: ministry_of_finance
@@ -46,10 +44,9 @@ complaint_mechanism:
   lokpal_jurisdiction: 'No'
   lokpal_jurisdiction_note: Judicial officers; Lokpal Act 2013 excludes.
 data_quality: partial
-data_quality_notes: >-
-  Bench-level DRAT entity (C04). Some sources route Delhi/Chandigarh DRT appeals
-  to DRAT Allahabad operationally; batch-1 DRT Chandigarh wired to drat_delhi per
-  Gazette-based maintainer table — revisit if primary source confirms Allahabad routing.
+data_quality_notes: Bench-level DRAT entity (C04). Some sources route Delhi/Chandigarh DRT appeals to DRAT Allahabad operationally;
+  batch-1 DRT Chandigarh wired to drat_delhi per Gazette-based maintainer table — revisit if primary source confirms Allahabad
+  routing. v1.2 judge_strength stub attached
 sources:
 - label: RDDBFI Act 1993, s.8–18 — DRAT provisions
   url: https://india-code.nic.in/handle/123456789/1573
@@ -59,3 +56,10 @@ sources:
   url: https://drt.etribunals.gov.in/drtlive/composition.php
   type: GoIWebsite
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

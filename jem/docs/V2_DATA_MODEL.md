@@ -27,7 +27,7 @@ Permanent benches of a High Court (e.g. Madurai Bench of Madras HC) are **not** 
 
 ### District routing
 
-Where a state pack lists explicit districts, appellate and supervision edges may target a **bench** instead of the parent HC when configured in `jem/scripts/hc_benches_config.py` (TN Madurai/Trichy zones, MH Nagpur/Aurangabad, KA Dharwad, etc.). Principal-seat districts continue to use `hc_*` directly.
+Where a state pack lists explicit districts, appellate and supervision edges may target a **bench** instead of the parent HC when configured in `jem/scripts/hc_benches_config.py` (TN Madurai bench, MH Nagpur/Aurangabad, KA Dharwad, etc.). Principal-seat districts continue to use `hc_*` directly.
 
 ### Generator
 

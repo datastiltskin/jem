@@ -3,93 +3,87 @@ name: Debt Recovery Tribunal, Lucknow
 name_hindi: ऋण वसूली अधिकरण, लखनऊ
 abbreviation: DRT Lucknow
 aliases:
-  - Debts Recovery Tribunal Lucknow
-
+- Debts Recovery Tribunal Lucknow
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - UP
+  - UP
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 2000
 operational_status: Active
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002,
+  s. 17. Originally notified vide G.S.R. 274(E) dated 31 March 2000 (covering northern UP + Uttarakhand jointly with Allahabad).
+  Jurisdiction realigned by S.O. 454(E) dated 15 February 2017, effective 16 February 2017 (Dehradun/Uttarakhand carved out;
+  Saharanpur division moved to DRT Dehradun). Current authoritative address and district table from S.O. 454(E)/2017: 600/1,
+  University Road, Near Hanuman Setu Mandir, Lucknow-226007. Jurisdiction: Baghpat, Bulandsahar, Gautam Buddha Nagar, Ghaziabad,
+  Hapur, Meerut, Hardoi, Lakhimpur Kheri, Lucknow, Raebareli, Sitapur, and Unnao districts in Uttar Pradesh. Single-bench
+  tribunal under DRAT Allahabad.
 
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Originally notified vide G.S.R. 274(E) dated
-  31 March 2000 (covering northern UP + Uttarakhand jointly with Allahabad). Jurisdiction
-  realigned by S.O. 454(E) dated 15 February 2017, effective 16 February 2017
-  (Dehradun/Uttarakhand carved out; Saharanpur division moved to DRT Dehradun). Current
-  authoritative address and district table from S.O. 454(E)/2017: 600/1, University
-  Road, Near Hanuman Setu Mandir, Lucknow-226007. Jurisdiction: Baghpat, Bulandsahar,
-  Gautam Buddha Nagar, Ghaziabad, Hapur, Meerut, Hardoi, Lakhimpur Kheri, Lucknow,
-  Raebareli, Sitapur, and Unnao districts in Uttar Pradesh. Single-bench tribunal
-  under DRAT Allahabad.
-
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_allahabad
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_allahabad
-      mechanism: >
-        Supervisory jurisdiction of Allahabad HC (Lucknow Bench) under Arts 226/227;
-        writ petition before Allahabad HC Lucknow Bench.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_allahabad
+    mechanism: 'Supervisory jurisdiction of Allahabad HC (Lucknow Bench) under Arts 226/227; writ petition before Allahabad
+      HC Lucknow Bench.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  DISTRICT TABLE UPGRADED from partial to sourced. Authoritative district list per
-  S.O. 454(E) dated 15 February 2017 (ibclaw.in full text retrieved 2026-06-12):
-  Baghpat, Bulandsahar, Gautam Buddha Nagar, Ghaziabad, Hapur, Meerut, Hardoi,
-  Lakhimpur Kheri, Lucknow, Raebareli, Sitapur, Unnao. Note: this is a relatively
-  narrow NCR+central-UP footprint compared to the pre-2017 position. The larger
-  UP district list in batch-2 delivery reflected the older G.S.R. 274(E)/2000 scope;
-  this entry supersedes it. Address from S.O. 454(E) table. S.O. 4719(E) dated
-  4 October 2022 (omnibus circuit redistribution) covered Chennai, Delhi, and Mumbai
-  circuits only — not Allahabad/Lucknow/Dehradun. S.O. 454(E)/2017 remains operative
-  (confirmed: Allahabad HC in Saurabh Gupta v. Union of India).
-
+data_quality_notes: 'DISTRICT TABLE UPGRADED from partial to sourced. Authoritative district list per S.O. 454(E) dated 15
+  February 2017 (ibclaw.in full text retrieved 2026-06-12): Baghpat, Bulandsahar, Gautam Buddha Nagar, Ghaziabad, Hapur, Meerut,
+  Hardoi, Lakhimpur Kheri, Lucknow, Raebareli, Sitapur, Unnao. Note: this is a relatively narrow NCR+central-UP footprint
+  compared to the pre-2017 position. The larger UP district list in batch-2 delivery reflected the older G.S.R. 274(E)/2000
+  scope; this entry supersedes it. Address from S.O. 454(E) table. S.O. 4719(E) dated 4 October 2022 (omnibus circuit redistribution)
+  covered Chennai, Delhi, and Mumbai circuits only — not Allahabad/Lucknow/Dehradun. S.O. 454(E)/2017 remains operative (confirmed:
+  Allahabad HC in Saurabh Gupta v. Union of India). v1.2 judge_strength stub attached'
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
-  - label: >
-      S.O. 454(E) dated 15 February 2017 — full district table for DRT Lucknow
-      confirmed; address confirmed: 600/1, University Road, Lucknow-226007
-    url: https://ibclaw.in/notification-no-s-o-454e-dated-15-02-2017-under-rdb-act-1993/
-    type: GazetteNotification
-    accessed_date: '2026-06-12'
-  - label: 'DRT official portal — Ministry of Finance, DFS'
-    url: https://drt.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: 'S.O. 454(E) dated 15 February 2017 — full district table for DRT Lucknow confirmed; address confirmed: 600/1, University
+    Road, Lucknow-226007
+
+    '
+  url: https://ibclaw.in/notification-no-s-o-454e-dated-15-02-2017-under-rdb-act-1993/
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
+- label: DRT official portal — Ministry of Finance, DFS
+  url: https://drt.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

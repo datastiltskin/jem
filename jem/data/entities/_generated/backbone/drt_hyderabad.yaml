@@ -73,7 +73,7 @@ data_quality_notes: 'DRAT assignment RESOLVED: DRT Hyderabad (I & II) are under 
   assignment.
 
   Option B rollup: 3 physical DRT(s) at this location (DRT-I/II/III) rolled into single city entity per MoF composition table;
-  see drt.etribunals.gov.in.'
+  see drt.etribunals.gov.in. v1.2 judge_strength stub attached'
 unverified_fields:
 - field: sources.gsr_538_egazette_pdf
   note: 'Direct egazette.gov.in PDF for G.S.R. 538(E) dated 8 June 2018 not retrieved (portal blocked automated access); CaseMine
@@ -111,3 +111,10 @@ sources:
   url: https://drt.gov.in/
   type: GoIWebsite
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

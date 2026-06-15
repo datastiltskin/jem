@@ -53,10 +53,8 @@ jurisdiction_scope:
   - service_matters
   - court_martial_appeals
 data_quality: partial
-data_quality_notes: >-
-  Circuit bench at Secunderabad under Chennai regional bench (aft.gov.in/jurisdiction).
-  Territorial coverage: Telangana only; Andhra Pradesh remains under aft_chennai.
-  Judge strength not populated.
+data_quality_notes: 'Circuit bench at Secunderabad under Chennai regional bench (aft.gov.in/jurisdiction). Territorial coverage:
+  Telangana only; Andhra Pradesh remains under aft_chennai. Judge strength not populated. v1.2 judge_strength stub attached'
 sources:
 - label: Armed Forces Tribunal Act 2007
   url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
@@ -70,3 +68,10 @@ sources:
   url: https://aft.gov.in/jurisdiction
   type: GoIWebsite
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

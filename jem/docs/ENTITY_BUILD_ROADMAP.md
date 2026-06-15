@@ -1,6 +1,6 @@
 # JEM — entity build roadmap (~1,500 target)
 
-**Current corpus:** 668 entities (Jun 2026) · **Target:** ~1,500 structural entities  
+**Current corpus:** 1,103 entities (v1.2.0, Jun 2026) · **Target:** ~1,500 structural entities  
 **Tracker:** this file is the source of truth; [`README.md`](../../README.md#entity-build-progress) mirrors the status table for GitHub.
 
 ## Status legend
@@ -56,7 +56,7 @@
 | C25 | People / roles layer (judges, advocates, parties) | ~20 | partial | **pending** | 3 | Optional |
 | C26 | Relationship wiring & orphan cleanup (~139 orphans) | — | **done** | **done** | 1–3 | **Maintainer only** |
 | C27 | Data-quality upgrade (sources, partial→complete) | 668 | ongoing | **updated** | all | Contributor |
-| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 668 | sparse | **partial** | 2 | Maintainer + NJDG |
+| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 1103 | partial (746 stubs) | **partial** | 2 | Maintainer + NJDG |
 
 *Last roadmap review: 2026-06-15 (Wave 4–5 state packs — NE/CG/GA/HP/JH/UK + UTs; ~1,100 entities)*
 

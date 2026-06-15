@@ -1,3 +1,4 @@
+# JEM generated relationships — data_quality: partial
 relationships:
 - id: up_cdrc_ncdrc
   source: up_state_cdrc
@@ -234,3 +235,175 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: up_fund_serc
+  source: government_up
+  target: serc_up
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: UP funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_serc_aptel
+  source: serc_up
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP SERC appeals to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_cdrc_lucknow_scdrc
+  source: up_cdrc_lucknow
+  target: up_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Lucknow DCDRC to UP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_cdrc_kanpur_scdrc
+  source: up_cdrc_kanpur
+  target: up_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Kanpur DCDRC to UP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_cdrc_ghaziabad_scdrc
+  source: up_cdrc_ghaziabad
+  target: up_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Ghaziabad DCDRC to UP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_cdrc_prayagraj_scdrc
+  source: up_cdrc_prayagraj
+  target: up_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Prayagraj DCDRC to UP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_district_courts_generic_hc
+  source: up_district_courts_generic
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: UP collapsed district rollup appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_hc_super_district_courts_generic
+  source: hc_allahabad
+  target: up_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision UP district rollup
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_sja_train
+  source: up_sja
+  target: up_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: UP judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: up_gov_appoints_advocate_general
+  source: governor_state
+  target: up_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: up_gov_fund_bar_council
+  source: government_up
+  target: up_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: up_gov_fund_lokayukta
+  source: government_up
+  target: up_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: up_up_special_courts_appealable_hc_allahabad
+  source: up_special_courts
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: up_hc_allahabad_supervise_up_special_courts
+  source: hc_allahabad
+  target: up_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

@@ -66,7 +66,7 @@ data_quality_notes: 'Mumbai has three DRT benches (DRT-I, DRT-II, DRT-III) under
   the same DRAT Mumbai umbrella.
 
   Option B rollup: 3 physical DRT(s) at this location (DRT-I/II/III) rolled into single city entity per MoF composition table;
-  see drt.etribunals.gov.in.'
+  see drt.etribunals.gov.in. v1.2 judge_strength stub attached'
 unverified_fields:
 - field: created_year
   note: '1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
@@ -85,3 +85,10 @@ sources:
   url: https://india-code.nic.in/CodeofActs13/20020541.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

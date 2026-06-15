@@ -31,4 +31,12 @@ sources:
   accessed_date: '2024-12-01'
 case_volume:
   clog_severity: unknown
-data_quality_notes: NJDG snapshot case_volume merged
+data_quality_notes: NJDG snapshot case_volume merged v1.2 judge_strength stub attached
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: DoJ_Report
+  source_url: https://doj.gov.in/
+  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG
+    bench strength.

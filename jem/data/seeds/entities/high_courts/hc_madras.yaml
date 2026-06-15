@@ -81,8 +81,8 @@ judge_strength:
   source_type: DoJ_Report
   source_url: https://doj.gov.in/report-and-committees/judicial-vacancy-reports
   notes: >
-    Sanctioned strength covers full Madras HC including Madurai and
-    Tiruchirappalli benches. Bench-level appointed counts are rostered
+    Sanctioned strength covers full Madras HC including the Madurai
+    permanent bench. Bench-level appointed counts are rostered
     subsets — see bench YAMLs. Cross-check: NJDG HC panel.
 
 data_quality: partial

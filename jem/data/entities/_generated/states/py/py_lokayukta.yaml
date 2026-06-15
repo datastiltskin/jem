@@ -1,22 +1,15 @@
 id: py_lokayukta
-name: Puducherry Lokayukta (verify status)
-type: ExecutiveBody
+name: Puducherry Lokayukta
+type: StatutoryBodyNotConstituted
 cluster: executive_interface
-level_of_government: UT
+level_of_government: State
 jurisdiction_scope:
-  uts_covered:
+  states_covered:
   - PY
   is_all_india: false
-created_year: 1995
+created_year: 2025
 operational_status: Not_Constituted
-statutory_basis: State Lokayukta / Lokpal interface statutes (stub)
-structural_variations:
-- variation_id: py_lokayukta_appointment_delay
-  description: Document appointment delays post-2019 from official sources when available.
-  applicable_to:
-  - PY
-  source: State Lokayukta portal — verify dates
-  independence_risk_note: Executive interface risk pending review
+statutory_basis: No Lokayukta Act for Puducherry UT as of 2025
 funding:
   primary_source: State_Consolidated_Fund
 audit:
@@ -25,14 +18,16 @@ audit:
   audit_report_public: true
 complaint_mechanism:
   bias_complaint_to: []
-  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction: Not_Applicable
 data_quality: partial
 sources:
+- label: Puducherry Lokayukta portal
+  url: https://py.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
   type: GoIWebsite
-  accessed_date: '2026-05-13'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
+  accessed_date: '2026-06-15'
+data_quality_notes: UT; Central Lokpal may cover applicable functionaries. Body not
+  constituted.

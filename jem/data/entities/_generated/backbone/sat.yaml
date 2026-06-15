@@ -40,7 +40,7 @@ data_quality: partial
 data_quality_notes: "created_year 1995 (Securities Laws Amendment Act 1995 — SAT constituted). Statutory basis lists three\
   \ Acts; SEBI Act 1992 is primary. PFRDA (2014) and IRDAI jurisdiction added subsequently — verify current IRDAI amendment.\
   \ ministry_responsible 'ministry_of_finance' — DEA demand head, not Revenue; verify in graph. case_volume null — SAT Annual\
-  \ Report in §3/§7.\n NJDG snapshot case_volume merged"
+  \ Report in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
 sources:
 - label: SEBI Act 1992 — SEBI Official Website
   url: https://www.sebi.gov.in/legal/acts/aug-1992/the-securities-and-exchange-board-of-india-act-1992_2101.html
@@ -68,3 +68,10 @@ case_volume:
   avg_disposal_days: 365
   disposal_rate: 0.9079
   clog_severity: high
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://sebi.gov.in/sebiweb/home/HomeAction.html?do=recognised#
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

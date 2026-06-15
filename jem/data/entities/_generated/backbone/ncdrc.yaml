@@ -42,7 +42,8 @@ data_quality: partial
 data_quality_notes: "cluster 'tribunals_adr' is temporary fallback — change to 'consumer_redressal' after Cursor Fix 1 is\
   \ applied. created_year 1988 (operational constitution); CPA 1986 enacted is also defensible — maintainer to decide policy.\
   \ ministry_responsible entity id 'ministry_consumer_affairs' assumed — verify in graph. case_volume and judge_strength null\
-  \ — populate from NCDRC Annual Report or DoJ vacancy data in §3/§7.\n NJDG snapshot case_volume merged"
+  \ — populate from NCDRC Annual Report or DoJ vacancy data in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength\
+  \ stub attached"
 sources:
 - label: Consumer Protection Act 2019 — India Code
   url: https://india-code.nic.in/acts-detail/MjMxMzM=
@@ -70,3 +71,11 @@ case_volume:
   source_type: Tribunal_Report
   disposal_rate: 0.7778
   clog_severity: critical
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: DoJ_Report
+  source_url: https://doj.gov.in/
+  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG
+    bench strength.

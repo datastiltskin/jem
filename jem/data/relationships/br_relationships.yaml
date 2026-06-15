@@ -1,0 +1,409 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: br_cdrc_ncdrc
+  source: br_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: br_slsa_lok
+  source: slsa_br
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: BR SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_fund_rera
+  source: government_br
+  target: rera_br
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: BR RERA funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_fund_serc
+  source: government_br
+  target: serc_br
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: BR SERC funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_serc_aptel
+  source: serc_br
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_dist_principal_hc
+  source: br_district_court_principal
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR principal district to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_principal
+  source: hc_patna
+  target: br_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision BR principal
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_patna_hc
+  source: br_district_court_patna
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR patna district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_patna
+  source: hc_patna
+  target: br_district_court_patna
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision patna
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_muzaffarpur_hc
+  source: br_district_court_muzaffarpur
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR muzaffarpur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_muzaffarpur
+  source: hc_patna
+  target: br_district_court_muzaffarpur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision muzaffarpur
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_bhagalpur_hc
+  source: br_district_court_bhagalpur
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR bhagalpur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_bhagalpur
+  source: hc_patna
+  target: br_district_court_bhagalpur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision bhagalpur
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_gaya_hc
+  source: br_district_court_gaya
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR gaya district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_gaya
+  source: hc_patna
+  target: br_district_court_gaya
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision gaya
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_darbhanga_hc
+  source: br_district_court_darbhanga
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR darbhanga district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_darbhanga
+  source: hc_patna
+  target: br_district_court_darbhanga
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision darbhanga
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_purnia_hc
+  source: br_district_court_purnia
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR purnia district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_purnia
+  source: hc_patna
+  target: br_district_court_purnia
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision purnia
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_arrah_hc
+  source: br_district_court_arrah
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR arrah district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_arrah
+  source: hc_patna
+  target: br_district_court_arrah
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision arrah
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_munger_hc
+  source: br_district_court_munger
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR munger district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_munger
+  source: hc_patna
+  target: br_district_court_munger
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision munger
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_district_courts_generic_hc
+  source: br_district_courts_generic
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: BR collapsed district rollup appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_hc_super_district_courts_generic
+  source: hc_patna
+  target: br_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision BR district rollup
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_sja_train
+  source: br_sja
+  target: br_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: BR judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_cdrc_patna_scdrc
+  source: br_cdrc_patna
+  target: br_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Patna DCDRC to BR SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_cdrc_muzaffarpur_scdrc
+  source: br_cdrc_muzaffarpur
+  target: br_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Muzaffarpur DCDRC to BR SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_cdrc_bhagalpur_scdrc
+  source: br_cdrc_bhagalpur
+  target: br_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Bhagalpur DCDRC to BR SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_cdrc_gaya_scdrc
+  source: br_cdrc_gaya
+  target: br_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Gaya DCDRC to BR SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: br_gov_appoints_advocate_general
+  source: governor_state
+  target: br_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: br_gov_fund_bar_council
+  source: government_br
+  target: br_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: br_gov_fund_lokayukta
+  source: government_br
+  target: br_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: br_br_special_courts_appealable_hc_patna
+  source: br_special_courts
+  target: hc_patna
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: br_hc_patna_supervise_br_special_courts
+  source: hc_patna
+  target: br_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

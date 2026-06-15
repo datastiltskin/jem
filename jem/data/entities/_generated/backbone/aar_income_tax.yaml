@@ -3,106 +3,94 @@ name: Board for Advance Rulings (Income Tax)
 name_hindi: अग्रिम निर्णय बोर्ड (आयकर)
 abbreviation: BAR-IT
 aliases:
-  - Authority for Advance Rulings (Income Tax)
-  - AAR (Income Tax)
-  - Board for Advance Rulings
-  - BAR
-
+- Authority for Advance Rulings (Income Tax)
+- AAR (Income Tax)
+- Board for Advance Rulings
+- BAR
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 created_year: 1993
 abolished_year: null
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >-
-  Income Tax Act 1961, Chapter XIX-B (ss.245N–245V) as substituted by Finance Act
-  2021 s.98 — reconstituted as 'Board for Advance Rulings' from 'Authority for
-  Advance Rulings'. Two Boards constituted with retired ITAT Presidents/Vice
-  Presidents. Original AAR (single-member, retired SC Judge as Chairman)
-  abolished by Finance Act 2021 w.e.f. 01.04.2021.
-
+statutory_basis: Income Tax Act 1961, Chapter XIX-B (ss.245N–245V) as substituted by Finance Act 2021 s.98 — reconstituted
+  as 'Board for Advance Rulings' from 'Authority for Advance Rulings'. Two Boards constituted with retired ITAT Presidents/Vice
+  Presidents. Original AAR (single-member, retired SC Judge as Chairman) abolished by Finance Act 2021 w.e.f. 01.04.2021.
 appointment:
   nominates: null
   recommends: null
   consulted: []
   formally_appoints: central_government
   criteria_public: true
-  tenure: >-
-    Board Chairman: retired officer of Indian Revenue Service (IRS) at Commissioner
-    level or above. Members: IRS officers. Tenure and terms as prescribed under
-    s.245-OB rules. Contrast pre-2021 AAR where Chairman was retired SC Judge.
+  tenure: 'Board Chairman: retired officer of Indian Revenue Service (IRS) at Commissioner level or above. Members: IRS officers.
+    Tenure and terms as prescribed under s.245-OB rules. Contrast pre-2021 AAR where Chairman was retired SC Judge.'
   reappointment_possible: null
   removal_authority: central_government
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: Ministry_Budget
   ministry_responsible: ministry_of_finance
   budget_figure_crore: null
   budget_year: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: null
   conduct_oversight_body: cbdt
-
 complaint_mechanism:
   bias_complaint_to: []
   criminal_prosecution:
     requires_sanction_from: central_government
     consultation_required_with: null
     consultation_binding: null
-  removal_mechanism: >-
-    As per IT Act s.245-OB and rules; members are IRS officers subject to service
-    rules and departmental proceedings. No independent removal committee.
+  removal_mechanism: As per IT Act s.245-OB and rules; members are IRS officers subject to service rules and departmental
+    proceedings. No independent removal committee.
   lokpal_jurisdiction: 'Yes'
-  lokpal_jurisdiction_note: >-
-    Board members are public servants (IRS officers) and subject to Lokpal
-    jurisdiction unlike judicial members of pre-2021 AAR.
+  lokpal_jurisdiction_note: Board members are public servants (IRS officers) and subject to Lokpal jurisdiction unlike judicial
+    members of pre-2021 AAR.
   source: IT Act 1961 s.245-OB; Lokpal and Lokayuktas Act 2013 s.14
-
 data_quality: partial
-data_quality_notes: >-
-  Independence concern: Finance Act 2021 reconstitution replaced retired SC Judge
-  Chairman with senior IRS officers — structural shift from judicial to
-  departmental composition. Contested by taxpayer bar (pending writ petitions in
-  several HCs challenging constitutionality of non-judicial composition for
-  advance rulings).   Two Boards at Delhi and Mumbai constituted by CBDT Notification No. 96/2021
-  (S.O. 3561(E)) dated 1 September 2021 — corrected from prior erroneous reference
-  to 92/2021 (drt_b4). Rulings binding on applicant and CBDT (s.245S) but
-  subject to writ jurisdiction of HC under Art.226/227. No appeal to ITAT or HC
-  as of right. created_year reflects original AAR (Finance Act 1993 Chapter XIX-B);
-  reconstitution year 2021.
-
+data_quality_notes: 'Independence concern: Finance Act 2021 reconstitution replaced retired SC Judge Chairman with senior
+  IRS officers — structural shift from judicial to departmental composition. Contested by taxpayer bar (pending writ petitions
+  in several HCs challenging constitutionality of non-judicial composition for advance rulings).   Two Boards at Delhi and
+  Mumbai constituted by CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 — corrected from prior erroneous
+  reference to 92/2021 (drt_b4). Rulings binding on applicant and CBDT (s.245S) but subject to writ jurisdiction of HC under
+  Art.226/227. No appeal to ITAT or HC as of right. created_year reflects original AAR (Finance Act 1993 Chapter XIX-B); reconstitution
+  year 2021. v1.2 judge_strength stub attached'
 unverified_fields:
-  - field: sources.cbdt_notification_96_2021_pdf
-    note: >
-      Direct incometaxindia.gov.in PDF for Notification 96/2021 returns 404;
-      S.O. 3561(E) text confirmed via taxguru.in transcript.
+- field: sources.cbdt_notification_96_2021_pdf
+  note: 'Direct incometaxindia.gov.in PDF for Notification 96/2021 returns 404; S.O. 3561(E) text confirmed via taxguru.in
+    transcript.
 
+    '
 sources:
-  - label: Finance Act 2021 — s.98 substituting Chapter XIX-B of IT Act 1961
-    url: https://india-code.nic.in/DownloadFile?FileName=A2021-13.pdf
-    type: CentralAct
-    accessed_date: '2026-06-11'
-  - label: Income Tax Act 1961 — Chapter XIX-B (ss.245N–245V as amended)
-    url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx
-    type: CentralAct
-    accessed_date: '2026-06-11'
-  - label: >
-      CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 —
-      constitutes Board for Advance Rulings at Delhi and Mumbai; AAR ceases
-      operation from 1 September 2021
-    url: https://taxguru.in/income-tax/cbdt-constitutes-boards-advance-rulings-delhi-mumbai.html
-    type: GazetteNotification
-    accessed_date: '2026-06-12'
-  - label: >
-      Taxmann summary — Notification No. 96/2021 and 97/2021 dated 1 September 2021
-    url: https://www.taxmann.com/post/blog/cbdt-notifies-board-for-advance-rulings-effective-from-01-09-2021/
-    type: OfficialReport
-    accessed_date: '2026-06-12'
+- label: Finance Act 2021 — s.98 substituting Chapter XIX-B of IT Act 1961
+  url: https://india-code.nic.in/DownloadFile?FileName=A2021-13.pdf
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: Income Tax Act 1961 — Chapter XIX-B (ss.245N–245V as amended)
+  url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx
+  type: CentralAct
+  accessed_date: '2026-06-11'
+- label: 'CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 — constitutes Board for Advance Rulings at Delhi
+    and Mumbai; AAR ceases operation from 1 September 2021
+
+    '
+  url: https://taxguru.in/income-tax/cbdt-constitutes-boards-advance-rulings-delhi-mumbai.html
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
+- label: 'Taxmann summary — Notification No. 96/2021 and 97/2021 dated 1 September 2021
+
+    '
+  url: https://www.taxmann.com/post/blog/cbdt-notifies-board-for-advance-rulings-effective-from-01-09-2021/
+  type: OfficialReport
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

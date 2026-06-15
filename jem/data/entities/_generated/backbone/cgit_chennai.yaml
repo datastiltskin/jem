@@ -3,83 +3,79 @@ name: Central Government Industrial Tribunal-cum-Labour Court, Chennai
 name_hindi: केन्द्रीय सरकारी औद्योगिक अधिकरण-सह-श्रम न्यायालय, चेन्नई
 abbreviation: CGIT Chennai
 aliases:
-  - CGIT-cum-LC Chennai
-  - Central Government Industrial Tribunal Chennai
-
+- CGIT-cum-LC Chennai
+- Central Government Industrial Tribunal Chennai
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - TN
+  - TN
   uts_covered:
-    - PY
+  - PY
   is_all_india: false
   jurisdiction_types:
-    - industrial_disputes
-    - epf_appeals
-
+  - industrial_disputes
+  - epf_appeals
 created_year: 1956
 operational_status: Active
+statutory_basis: 'Industrial Disputes Act, 1947, s. 7A (Central Government Industrial Tribunal) and s. 7B (Labour Court).
+  Established by notification of the Central Government in the Official Gazette. Also has jurisdiction over EPF/MP Act 1952
+  appeals consequent upon Finance Act, 2017 amendments to the ID Act. Jurisdiction: Tamil Nadu and UT of Puducherry, per official
+  cgit.labour.gov.in jurisdiction table.
 
-statutory_basis: >
-  Industrial Disputes Act, 1947, s. 7A (Central Government Industrial Tribunal) and
-  s. 7B (Labour Court). Established by notification of the Central Government in the
-  Official Gazette. Also has jurisdiction over EPF/MP Act 1952 appeals consequent upon
-  Finance Act, 2017 amendments to the ID Act. Jurisdiction: Tamil Nadu and UT of
-  Puducherry, per official cgit.labour.gov.in jurisdiction table.
-
+  '
 appointment:
   formally_appoints: central_government
   criteria_public: true
-  tenure: 'At pleasure of Central Government; typically until age of superannuation'
+  tenure: At pleasure of Central Government; typically until age of superannuation
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_labour_employment
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_madras
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_madras
-      mechanism: >
-        Supervisory jurisdiction of Madras High Court under Arts 226/227; writ
-        petition lies before Madras High Court.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_madras
+    mechanism: 'Supervisory jurisdiction of Madras High Court under Arts 226/227; writ petition lies before Madras High Court.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
   source: Industrial Disputes Act 1947; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  Jurisdiction confirmed from official cgit.labour.gov.in jurisdiction table (fetched
-  2026-06-12): Tamil Nadu and UT of Puducherry. Created_year: 1956 is an estimate —
-  CGIT system was established post-ID Act 1947 amendments; specific notification year
-  for Chennai seat not sourced. Ministry: Ministry of Labour and Employment (under
-  whom CGIT-cum-LCs operate administratively, per cgit.labour.gov.in).
-
+data_quality_notes: 'Jurisdiction confirmed from official cgit.labour.gov.in jurisdiction table (fetched 2026-06-12): Tamil
+  Nadu and UT of Puducherry. Created_year: 1956 is an estimate — CGIT system was established post-ID Act 1947 amendments;
+  specific notification year for Chennai seat not sourced. Ministry: Ministry of Labour and Employment (under whom CGIT-cum-LCs
+  operate administratively, per cgit.labour.gov.in). v1.2 judge_strength stub attached'
 unverified_fields:
-  - field: created_year
-    note: >
-      1956 is estimate; Chennai seat establishment notification year not sourced.
+- field: created_year
+  note: '1956 is estimate; Chennai seat establishment notification year not sourced.
+
+    '
 sources:
-  - label: 'Industrial Disputes Act 1947, s. 7A and s. 7B'
-    url: https://india-code.nic.in/CodeofActs13/19470014.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
-  - label: >
-      CGIT jurisdiction table — official cgit.labour.gov.in; Chennai: Tamil Nadu
-      and UT of Puducherry
-    url: https://cgit.labour.gov.in/jurisdiction
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
+- label: Industrial Disputes Act 1947, s. 7A and s. 7B
+  url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: 'CGIT jurisdiction table — official cgit.labour.gov.in; Chennai: Tamil Nadu and UT of Puducherry
+
+    '
+  url: https://cgit.labour.gov.in/jurisdiction
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

@@ -3,85 +3,82 @@ name: Debt Recovery Tribunal, Nagpur
 name_hindi: ऋण वसूली अधिकरण, नागपुर
 abbreviation: DRT Nagpur
 aliases:
-  - Debts Recovery Tribunal Nagpur
-
+- Debts Recovery Tribunal Nagpur
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - MH
+  - MH
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 2000
 operational_status: Active
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002,
+  s. 17. Established vide G.S.R. 945(E) dated 29 December 2000 (same notification as DRT Mumbai-2 and DRT Mumbai-3). Single-bench
+  tribunal under DRAT Mumbai. Current jurisdiction per S.O. 4719(E) dated 4 October 2022: Nagpur, Bhandara, Gondia, Wardha,
+  Amravati, Yavatmal, Gadchiroli, Akola, Buldhana, Washim, and Chandrapur districts of Maharashtra, and districts of Chhindwara,
+  Seoni, and Balaghat of Madhya Pradesh.
 
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 945(E) dated 29 December
-  2000 (same notification as DRT Mumbai-2 and DRT Mumbai-3). Single-bench tribunal
-  under DRAT Mumbai. Current jurisdiction per S.O. 4719(E) dated 4 October 2022:
-  Nagpur, Bhandara, Gondia, Wardha, Amravati, Yavatmal, Gadchiroli, Akola, Buldhana,
-  Washim, and Chandrapur districts of Maharashtra, and districts of Chhindwara, Seoni,
-  and Balaghat of Madhya Pradesh.
-
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_bombay
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_bombay
-      mechanism: >
-        Supervisory jurisdiction of Bombay High Court (Nagpur Bench) under Arts
-        226/227; writ petition before Bombay HC Nagpur Bench.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_bombay
+    mechanism: 'Supervisory jurisdiction of Bombay High Court (Nagpur Bench) under Arts 226/227; writ petition before Bombay
+      HC Nagpur Bench.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  G.S.R. 945(E) dated 29 December 2000. District jurisdiction per BankAuctions.in
-  and S.O. 4719(E) dated 4 October 2022 (not fully retrieved for this circuit — ibclaw
-  page token limit reached before Mumbai circuit table). BankAuctions.in lists: Nagpur,
-  Bhandara, Gondiya, Amravati, Chandrapur, Yavatmal, Gadchiroli, Akola, Buldhana,
-  Washim, Wardha. Also covers MP districts Chhindwara, Seoni, Balaghat (per CGIT
-  Nagpur table cross-check). DRAT Mumbai supervision confirmed.
-
+data_quality_notes: 'G.S.R. 945(E) dated 29 December 2000. District jurisdiction per BankAuctions.in and S.O. 4719(E) dated
+  4 October 2022 (not fully retrieved for this circuit — ibclaw page token limit reached before Mumbai circuit table). BankAuctions.in
+  lists: Nagpur, Bhandara, Gondiya, Amravati, Chandrapur, Yavatmal, Gadchiroli, Akola, Buldhana, Washim, Wardha. Also covers
+  MP districts Chhindwara, Seoni, Balaghat (per CGIT Nagpur table cross-check). DRAT Mumbai supervision confirmed. v1.2 judge_strength
+  stub attached'
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
-  - label: >
-      DRT Nagpur — GSR 945(E) 29.12.2000; jurisdiction: Vidarbha districts of Maharashtra
-    url: https://bankauctions.in/asset-recovery/debt-recovery-tribunal/
-    type: GazetteNotification
-    accessed_date: '2026-06-12'
-  - label: 'DRT official portal — Ministry of Finance, DFS'
-    url: https://drt.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: 'DRT Nagpur — GSR 945(E) 29.12.2000; jurisdiction: Vidarbha districts of Maharashtra
+
+    '
+  url: https://bankauctions.in/asset-recovery/debt-recovery-tribunal/
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
+- label: DRT official portal — Ministry of Finance, DFS
+  url: https://drt.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

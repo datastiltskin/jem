@@ -1,0 +1,409 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: hr_cdrc_ncdrc
+  source: hr_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: hr_slsa_lok
+  source: slsa_hr
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: HR SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_fund_rera
+  source: government_hr
+  target: rera_hr
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: HR RERA funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_fund_serc
+  source: government_hr
+  target: serc_hr
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: HR SERC funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_serc_aptel
+  source: serc_hr
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_dist_principal_hc
+  source: hr_district_court_principal
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR principal district to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_principal
+  source: hc_punjab_haryana
+  target: hr_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision HR principal
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_gurugram_hc
+  source: hr_district_court_gurugram
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR gurugram district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_gurugram
+  source: hc_punjab_haryana
+  target: hr_district_court_gurugram
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision gurugram
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_faridabad_hc
+  source: hr_district_court_faridabad
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR faridabad district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_faridabad
+  source: hc_punjab_haryana
+  target: hr_district_court_faridabad
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision faridabad
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_rohtak_hc
+  source: hr_district_court_rohtak
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR rohtak district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_rohtak
+  source: hc_punjab_haryana
+  target: hr_district_court_rohtak
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision rohtak
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hisar_hc
+  source: hr_district_court_hisar
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR hisar district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_hisar
+  source: hc_punjab_haryana
+  target: hr_district_court_hisar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision hisar
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_karnal_hc
+  source: hr_district_court_karnal
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR karnal district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_karnal
+  source: hc_punjab_haryana
+  target: hr_district_court_karnal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision karnal
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_panipat_hc
+  source: hr_district_court_panipat
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR panipat district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_panipat
+  source: hc_punjab_haryana
+  target: hr_district_court_panipat
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision panipat
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_ambala_hc
+  source: hr_district_court_ambala
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR ambala district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_ambala
+  source: hc_punjab_haryana
+  target: hr_district_court_ambala
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision ambala
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_sonipat_hc
+  source: hr_district_court_sonipat
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR sonipat district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_sonipat
+  source: hc_punjab_haryana
+  target: hr_district_court_sonipat
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision sonipat
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_district_courts_generic_hc
+  source: hr_district_courts_generic
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: HR collapsed district rollup appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_hc_super_district_courts_generic
+  source: hc_punjab_haryana
+  target: hr_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision HR district rollup
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_sja_train
+  source: hr_sja
+  target: hr_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: HR judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_cdrc_gurugram_scdrc
+  source: hr_cdrc_gurugram
+  target: hr_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Gurugram DCDRC to HR SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_cdrc_faridabad_scdrc
+  source: hr_cdrc_faridabad
+  target: hr_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Faridabad DCDRC to HR SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_cdrc_rohtak_scdrc
+  source: hr_cdrc_rohtak
+  target: hr_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Rohtak DCDRC to HR SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_cdrc_hisar_scdrc
+  source: hr_cdrc_hisar
+  target: hr_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Hisar DCDRC to HR SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: hr_gov_appoints_advocate_general
+  source: governor_state
+  target: hr_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: hr_gov_fund_bar_council
+  source: government_hr
+  target: hr_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: hr_gov_fund_lokayukta
+  source: government_hr
+  target: hr_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: hr_hr_special_courts_appealable_hc_punjab_haryana
+  source: hr_special_courts
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: hr_hc_punjab_haryana_supervise_hr_special_courts
+  source: hc_punjab_haryana
+  target: hr_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

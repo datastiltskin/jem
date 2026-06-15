@@ -1,0 +1,32 @@
+id: ar_lokayukta
+name: Arunachal Pradesh Lokayukta
+type: StatutoryBodyNotConstituted
+cluster: executive_interface
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - AR
+  is_all_india: false
+created_year: 2025
+operational_status: Not_Constituted
+statutory_basis: No dedicated Lokayukta Act enacted in Arunachal Pradesh as of 2025
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+data_quality_notes: Body not constituted; verify if state legislation enacted post-2025.
+sources:
+- label: Arunachal Pradesh Government Portal
+  url: https://arunachalpradesh.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'

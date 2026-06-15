@@ -19,10 +19,8 @@ jurisdiction_scope:
   - debt_recovery_appeals
 created_year: 2000
 operational_status: Active
-statutory_basis: >-
-  Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act),
-  s.8. Appellate jurisdiction over western-region DRT benches including Mumbai,
-  Pune, Ahmedabad per MoF e-tribunals composition listing.
+statutory_basis: Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act), s.8. Appellate jurisdiction
+  over western-region DRT benches including Mumbai, Pune, Ahmedabad per MoF e-tribunals composition listing.
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
@@ -43,7 +41,8 @@ complaint_mechanism:
   lokpal_jurisdiction: 'No'
   lokpal_jurisdiction_note: Judicial officers; Lokpal Act 2013 excludes.
 data_quality: partial
-data_quality_notes: Bench-level DRAT entity (C04). Supervises DRT Mumbai, DRT Pune, DRT Ahmedabad.
+data_quality_notes: Bench-level DRAT entity (C04). Supervises DRT Mumbai, DRT Pune, DRT Ahmedabad. v1.2 judge_strength stub
+  attached
 sources:
 - label: RDDBFI Act 1993, s.8–18 — DRAT provisions
   url: https://india-code.nic.in/handle/123456789/1573
@@ -53,3 +52,10 @@ sources:
   url: https://drt.etribunals.gov.in/drtlive/composition.php
   type: GoIWebsite
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

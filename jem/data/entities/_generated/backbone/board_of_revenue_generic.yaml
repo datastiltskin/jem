@@ -3,126 +3,105 @@ name: Board of Revenue (Generic)
 name_hindi: राजस्व बोर्ड (सामान्य)
 abbreviation: BoR
 aliases:
-  - Board of Revenue
-  - Revenue Board
-
+- Board of Revenue
+- Revenue Board
 type: StateTribunal
 cluster: tribunals_adr
 level_of_government: State
-
 created_year: 1951
 abolished_year: null
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >-
-  Constituted under state-specific Board of Revenue Acts or Revenue Codes.
-  Principal examples: Board of Revenue Act (Uttar Pradesh) 1922 (as amended);
-  Rajasthan Board of Revenue Act 1949; Madhya Pradesh Land Revenue Code 1954
-  (Part II); Tamil Nadu Board of Revenue Abolition Act 1980 (abolished in TN —
-  see structural_variations). Exercises highest revisional/appellate jurisdiction
-  over revenue/land records, land acquisition compensation, and tenancy matters
-  within the state.
-
+statutory_basis: 'Constituted under state-specific Board of Revenue Acts or Revenue Codes. Principal examples: Board of Revenue
+  Act (Uttar Pradesh) 1922 (as amended); Rajasthan Board of Revenue Act 1949; Madhya Pradesh Land Revenue Code 1954 (Part
+  II); Tamil Nadu Board of Revenue Abolition Act 1980 (abolished in TN — see structural_variations). Exercises highest revisional/appellate
+  jurisdiction over revenue/land records, land acquisition compensation, and tenancy matters within the state.'
 appointment:
   nominates: null
   recommends: null
   consulted: []
   formally_appoints: governor_state
   criteria_public: false
-  tenure: >-
-    Members (Board Members / Revenue Members): IAS officers of senior grade or
-    retired HC Judges in some states. Chairperson ex officio or designated.
-    Tenure per state cadre rules.
+  tenure: 'Members (Board Members / Revenue Members): IAS officers of senior grade or retired HC Judges in some states. Chairperson
+    ex officio or designated. Tenure per state cadre rules.'
   reappointment_possible: null
   removal_authority: governor_state
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: State_Consolidated_Fund
   ministry_responsible: null
   budget_figure_crore: null
   budget_year: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: null
   conduct_oversight_body: null
-
 complaint_mechanism:
   bias_complaint_to: []
   criminal_prosecution:
     requires_sanction_from: governor_state
     consultation_required_with: null
     consultation_binding: null
-  removal_mechanism: Per state Board of Revenue Act; members are IAS/state service officers
-    subject to service rules.
+  removal_mechanism: Per state Board of Revenue Act; members are IAS/state service officers subject to service rules.
   lokpal_jurisdiction: Contested
-  lokpal_jurisdiction_note: >-
-    Members are state government officers; state Lokayukta jurisdiction depends on
-    state-specific Lokayukta Act definition of 'public functionary'. Mark contested
-    pending state-specific review.
+  lokpal_jurisdiction_note: Members are state government officers; state Lokayukta jurisdiction depends on state-specific
+    Lokayukta Act definition of 'public functionary'. Mark contested pending state-specific review.
   source: State Board of Revenue Acts (various)
-
 structural_variations:
-  - variation_id: bor_uttar_pradesh
-    description: Board of Revenue, Uttar Pradesh — seat at Allahabad/Prayagraj;
-      exercises revisional jurisdiction over all revenue courts in UP.
-    applicable_to:
-      - Uttar Pradesh
-    source: Board of Revenue Act (UP) 1922
-    independence_risk_note: null
-  - variation_id: bor_rajasthan
-    description: Board of Revenue, Rajasthan — seat at Ajmer; principal revenue appellate
-      authority for Rajasthan.
-    applicable_to:
-      - Rajasthan
-    source: Rajasthan Board of Revenue Act 1949
-    independence_risk_note: null
-  - variation_id: bor_madhya_pradesh
-    description: Board of Revenue, Madhya Pradesh — constituted under MP Land Revenue
-      Code 1954.
-    applicable_to:
-      - Madhya Pradesh
-    source: Madhya Pradesh Land Revenue Code 1954 Chapter II
-    independence_risk_note: null
-  - variation_id: bor_odisha
-    description: Board of Revenue, Odisha — constituted under Orissa Board of Revenue
-      Act 1951.
-    applicable_to:
-      - Odisha
-    source: Orissa Board of Revenue Act 1951
-    independence_risk_note: null
-  - variation_id: bor_tamilnadu_abolished
-    description: Board of Revenue, Tamil Nadu — ABOLISHED by Tamil Nadu Board of Revenue
-      Abolition Act 1980. Jurisdiction transferred to HC original side (revenue
-      cases) and Revenue Divisional Officers.
-    applicable_to:
-      - Tamil Nadu
-    source: Tamil Nadu Board of Revenue Abolition Act 1980
-    independence_risk_note: Abolished — modelling only for completeness and historical
-      appellate chain accuracy.
-
+- variation_id: bor_uttar_pradesh
+  description: Board of Revenue, Uttar Pradesh — seat at Allahabad/Prayagraj; exercises revisional jurisdiction over all revenue
+    courts in UP.
+  applicable_to:
+  - Uttar Pradesh
+  source: Board of Revenue Act (UP) 1922
+  independence_risk_note: null
+- variation_id: bor_rajasthan
+  description: Board of Revenue, Rajasthan — seat at Ajmer; principal revenue appellate authority for Rajasthan.
+  applicable_to:
+  - Rajasthan
+  source: Rajasthan Board of Revenue Act 1949
+  independence_risk_note: null
+- variation_id: bor_madhya_pradesh
+  description: Board of Revenue, Madhya Pradesh — constituted under MP Land Revenue Code 1954.
+  applicable_to:
+  - Madhya Pradesh
+  source: Madhya Pradesh Land Revenue Code 1954 Chapter II
+  independence_risk_note: null
+- variation_id: bor_odisha
+  description: Board of Revenue, Odisha — constituted under Orissa Board of Revenue Act 1951.
+  applicable_to:
+  - Odisha
+  source: Orissa Board of Revenue Act 1951
+  independence_risk_note: null
+- variation_id: bor_tamilnadu_abolished
+  description: Board of Revenue, Tamil Nadu — ABOLISHED by Tamil Nadu Board of Revenue Abolition Act 1980. Jurisdiction transferred
+    to HC original side (revenue cases) and Revenue Divisional Officers.
+  applicable_to:
+  - Tamil Nadu
+  source: Tamil Nadu Board of Revenue Abolition Act 1980
+  independence_risk_note: Abolished — modelling only for completeness and historical appellate chain accuracy.
 data_quality: partial
-data_quality_notes: >-
-  Generic node. Boards of Revenue are quasi-judicial state bodies sitting atop
-  the revenue courts hierarchy (Tehsildar → SDO → Collector → Commissioner →
-  Board of Revenue). Not all states retain a Board of Revenue; Tamil Nadu abolished
-  it (1980), Karnataka merged functions into Revenue Appellate Tribunal, and some
-  NE states never had one. Appeals from BoR orders lie to the respective HC.
-  created_year 1951 is approximate (many BoRs predate Independence; reconstituted
-  under post-1950 state statutes). ministry_responsible left null — state Revenue
-  or Land Records Department is the administrative parent; no universal entity_id
-  mapped in graph yet.
-
+data_quality_notes: Generic node. Boards of Revenue are quasi-judicial state bodies sitting atop the revenue courts hierarchy
+  (Tehsildar → SDO → Collector → Commissioner → Board of Revenue). Not all states retain a Board of Revenue; Tamil Nadu abolished
+  it (1980), Karnataka merged functions into Revenue Appellate Tribunal, and some NE states never had one. Appeals from BoR
+  orders lie to the respective HC. created_year 1951 is approximate (many BoRs predate Independence; reconstituted under post-1950
+  state statutes). ministry_responsible left null — state Revenue or Land Records Department is the administrative parent;
+  no universal entity_id mapped in graph yet. v1.2 judge_strength stub attached
 sources:
-  - label: Rajasthan Board of Revenue Act 1949
-    url: https://india-code.nic.in/DownloadFile?FileName=A1949-21Rajasthan.pdf
-    type: StateAct
-    accessed_date: '2026-06-11'
-  - label: UP Board of Revenue — official website
-    url: https://bor.up.nic.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-11'
+- label: Rajasthan Board of Revenue Act 1949
+  url: https://india-code.nic.in/DownloadFile?FileName=A1949-21Rajasthan.pdf
+  type: StateAct
+  accessed_date: '2026-06-11'
+- label: UP Board of Revenue — official website
+  url: https://bor.up.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-11'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

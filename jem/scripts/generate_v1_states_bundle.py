@@ -730,22 +730,12 @@ def madras_bench_of_rel(bench_id: str, parent_hc: str) -> dict:
     """Enriched BenchOf for Madras permanent benches (Track D / §6)."""
     notes = {
         "hc_madras_bench_madurai": (
-            "Madurai Bench is a permanent bench of the Madras High Court, constituted "
-            "under CJ administrative order pursuant to Letters Patent (Madras) 1865 and "
-            "Article 214 of the Constitution of India. Exercises full HC jurisdiction "
-            "(Original, Appellate, Writ) for 10 southern TN districts per "
-            "hc_benches_config.py TN_DISTRICT_TO_BENCH: Dindigul, Kanniyakumari, Madurai, "
-            "Ramanathapuram, Sivaganga, Tenkasi, Thoothukudi, Theni, Tirunelveli, "
-            "Virudhunagar. TN district routing in tn_relationships.yaml."
-        ),
-        "hc_madras_bench_tiruchirappalli": (
-            "Tiruchirappalli Bench is a permanent bench of the Madras High Court, "
-            "constituted under CJ administrative order pursuant to Letters Patent "
-            "(Madras) 1865 and Article 214 of the Constitution of India. Exercises full "
-            "HC jurisdiction (Original, Appellate, Writ) for 10 central TN districts per "
-            "hc_benches_config.py TN_DISTRICT_TO_BENCH: Ariyalur, Cuddalore, Karur, "
-            "Mayiladuthurai, Nagapattinam, Perambalur, Pudukkottai, Thanjavur, "
-            "Tiruchirappalli, Tiruvarur. TN district routing in tn_relationships.yaml."
+            "Madurai Bench is the sole permanent bench of the Madras High Court (est. 2004), "
+            "constituted under the Madras High Court (Establishment of a Permanent Bench at "
+            "Madurai) Order, 2004. Exercises full HC jurisdiction for 10 southern TN districts "
+            "per hc_benches_config.py TN_DISTRICT_TO_BENCH. No permanent bench at Tiruchirappalli. "
+            "Central/northern TN districts appeal to hc_madras principal seat. TN district routing "
+            "in tn_relationships.yaml."
         ),
     }
     return {
@@ -800,7 +790,7 @@ def emit_hc_benches(ent: Path, bench_rels: list) -> None:
     for bench_id, bench_name, parent_hc, seat_city in HC_BENCHES_DEF:
         states = parent_states.get(parent_hc, [])
         W(bench_dir / f"{bench_id}.yaml", hc_bench(bench_id, bench_name, parent_hc, seat_city, states))
-        if bench_id in ("hc_madras_bench_madurai", "hc_madras_bench_tiruchirappalli"):
+        if bench_id == "hc_madras_bench_madurai":
             bench_rels.append(madras_bench_of_rel(bench_id, parent_hc))
         else:
             bench_rels.append(

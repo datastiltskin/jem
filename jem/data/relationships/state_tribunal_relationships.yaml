@@ -1,0 +1,249 @@
+# C24 State tribunal appellate wiring (VAT, SAT, industrial tribunals)
+relationships:
+
+  - id: rel_ap_vat_tribunal_hc
+    source: ap_vat_tribunal
+    target: hc_andhra_pradesh
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: AP VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - &id001
+        label: India Code — Constitution & Acts
+        url: https://india-code.nic.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-15'
+
+  - id: rel_ts_vat_tribunal_hc
+    source: ts_vat_tribunal
+    target: hc_telangana
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: TS VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_gj_vat_tribunal_hc
+    source: gj_vat_tribunal
+    target: hc_gujarat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: GJ VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_mp_vat_tribunal_hc
+    source: mp_vat_tribunal
+    target: hc_madhya_pradesh
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: MP VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_wb_vat_tribunal_hc
+    source: wb_vat_tribunal
+    target: hc_calcutta
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: WB VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_br_vat_tribunal_hc
+    source: br_vat_tribunal
+    target: hc_patna
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: BR VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_kl_vat_tribunal_hc
+    source: kl_vat_tribunal
+    target: hc_kerala
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: KL VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_pb_vat_tribunal_hc
+    source: pb_vat_tribunal
+    target: hc_punjab_haryana
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: PB VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_od_vat_tribunal_hc
+    source: od_vat_tribunal
+    target: hc_orissa
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: OD VAT Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_mh_sat_hc
+    source: mh_sat
+    target: hc_bombay
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: Maharashtra SAT to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_hp_sat_hc
+    source: hp_sat
+    target: hc_himachal_pradesh
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: HP SAT to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_ap_sat_hc
+    source: ap_sat
+    target: hc_andhra_pradesh
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: AP SAT to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_wb_sat_hc
+    source: wb_sat
+    target: hc_calcutta
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: WB SAT to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_od_sat_hc
+    source: od_sat
+    target: hc_orissa
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: OD SAT to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_kl_sat_hc
+    source: kl_sat
+    target: hc_kerala
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: KL SAT to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_jk_sat_hc
+    source: jk_sat
+    target: hc_jammu_kashmir_ladakh
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: JK Services Tribunal to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_ts_sat_hc
+    source: ts_sat
+    target: hc_telangana
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    notes: Telangana SAT to HC
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_mh_industrial_tribunal_hc
+    source: mh_industrial_tribunal
+    target: hc_bombay
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 226/227 — HC writ over IDA awards
+    notes: No direct statutory appeal; writ jurisdiction
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_wb_industrial_tribunal_hc
+    source: wb_industrial_tribunal
+    target: hc_calcutta
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 226/227 — HC writ over IDA awards
+    notes: No direct statutory appeal; writ jurisdiction
+    data_quality: partial
+    sources:
+      - *id001
+
+  - id: rel_tn_industrial_tribunal_hc
+    source: tn_industrial_tribunal
+    target: hc_madras
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 226/227 — HC writ over IDA awards
+    notes: No direct statutory appeal; writ jurisdiction
+    data_quality: partial
+    sources:
+      - *id001

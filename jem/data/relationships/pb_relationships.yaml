@@ -1,0 +1,409 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: pb_cdrc_ncdrc
+  source: pb_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: pb_slsa_lok
+  source: slsa_pb
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: PB SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_fund_rera
+  source: government_pb
+  target: rera_pb
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: PB RERA funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_fund_serc
+  source: government_pb
+  target: serc_pb
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: PB SERC funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_serc_aptel
+  source: serc_pb
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_dist_principal_hc
+  source: pb_district_court_principal
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB principal district to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_principal
+  source: hc_punjab_haryana
+  target: pb_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision PB principal
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_ludhiana_hc
+  source: pb_district_court_ludhiana
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB ludhiana district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_ludhiana
+  source: hc_punjab_haryana
+  target: pb_district_court_ludhiana
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision ludhiana
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_amritsar_hc
+  source: pb_district_court_amritsar
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB amritsar district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_amritsar
+  source: hc_punjab_haryana
+  target: pb_district_court_amritsar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision amritsar
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_jalandhar_hc
+  source: pb_district_court_jalandhar
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB jalandhar district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_jalandhar
+  source: hc_punjab_haryana
+  target: pb_district_court_jalandhar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision jalandhar
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_patiala_hc
+  source: pb_district_court_patiala
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB patiala district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_patiala
+  source: hc_punjab_haryana
+  target: pb_district_court_patiala
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision patiala
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_bathinda_hc
+  source: pb_district_court_bathinda
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB bathinda district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_bathinda
+  source: hc_punjab_haryana
+  target: pb_district_court_bathinda
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision bathinda
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_mohali_hc
+  source: pb_district_court_mohali
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB mohali district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_mohali
+  source: hc_punjab_haryana
+  target: pb_district_court_mohali
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision mohali
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hoshiarpur_hc
+  source: pb_district_court_hoshiarpur
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB hoshiarpur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_hoshiarpur
+  source: hc_punjab_haryana
+  target: pb_district_court_hoshiarpur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision hoshiarpur
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_pathankot_hc
+  source: pb_district_court_pathankot
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB pathankot district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_pathankot
+  source: hc_punjab_haryana
+  target: pb_district_court_pathankot
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision pathankot
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_district_courts_generic_hc
+  source: pb_district_courts_generic
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: PB collapsed district rollup appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_hc_super_district_courts_generic
+  source: hc_punjab_haryana
+  target: pb_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision PB district rollup
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_sja_train
+  source: pb_sja
+  target: pb_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: PB judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_cdrc_ludhiana_scdrc
+  source: pb_cdrc_ludhiana
+  target: pb_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Ludhiana DCDRC to PB SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_cdrc_amritsar_scdrc
+  source: pb_cdrc_amritsar
+  target: pb_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Amritsar DCDRC to PB SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_cdrc_jalandhar_scdrc
+  source: pb_cdrc_jalandhar
+  target: pb_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Jalandhar DCDRC to PB SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_cdrc_patiala_scdrc
+  source: pb_cdrc_patiala
+  target: pb_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Patiala DCDRC to PB SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: pb_gov_appoints_advocate_general
+  source: governor_state
+  target: pb_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: pb_gov_fund_bar_council
+  source: government_pb
+  target: pb_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: pb_gov_fund_lokayukta
+  source: government_pb
+  target: pb_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: pb_pb_special_courts_appealable_hc_punjab_haryana
+  source: pb_special_courts
+  target: hc_punjab_haryana
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: pb_hc_punjab_haryana_supervise_pb_special_courts
+  source: hc_punjab_haryana
+  target: pb_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

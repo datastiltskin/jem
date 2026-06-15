@@ -1,15 +1,15 @@
 id: wb_lokayukta
-name: Lokayukta — WB
+name: West Bengal Lokayukta
 type: ExecutiveBody
 cluster: executive_interface
-statutory_basis: WB Lokayukta Act
 level_of_government: State
 jurisdiction_scope:
   states_covered:
   - WB
   is_all_india: false
-created_year: 1961
+created_year: 2003
 operational_status: Active
+statutory_basis: West Bengal Lokayukta Act 2003 (amended 2016)
 funding:
   primary_source: State_Consolidated_Fund
 audit:
@@ -21,7 +21,12 @@ complaint_mechanism:
   lokpal_jurisdiction: 'Yes'
 data_quality: partial
 sources:
+- label: West Bengal Lokayukta portal
+  url: https://wb.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
   type: GoIWebsite
-  accessed_date: '2026-06-12'
+  accessed_date: '2026-06-15'
+data_quality_notes: 'DG-L2: appointment controversy — verify operational state.'

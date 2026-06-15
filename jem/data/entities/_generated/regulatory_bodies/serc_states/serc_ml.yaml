@@ -1,6 +1,5 @@
-# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md
 id: serc_ml
-name: State Electricity Regulatory Commission — ML
+name: Meghalaya Electricity Regulatory Commission
 type: RegulatoryBodyQJ
 cluster: regulatory_bodies
 level_of_government: State
@@ -12,7 +11,8 @@ jurisdiction_scope:
   - Civil
 created_year: 1999
 operational_status: Active
-statutory_basis: Electricity Act 2003 — State Electricity Regulatory Commission
+statutory_basis: Electricity Act 2003, s.82 EA 2003 (constitution of State Electricity
+  Regulatory Commissions); s.111 (appeals from SERC orders to APTEL).
 funding:
   primary_source: State_Consolidated_Fund
   ministry_responsible: null
@@ -25,7 +25,13 @@ complaint_mechanism:
   lokpal_jurisdiction: Not_Applicable
 data_quality: partial
 sources:
+- label: MeERC Official Website
+  url: https://meerc.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
+abbreviation: MeERC
+data_quality_notes: Claude SERC enrichment Jun 2026.

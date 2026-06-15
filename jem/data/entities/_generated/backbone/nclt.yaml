@@ -38,7 +38,7 @@ data_quality: partial
 data_quality_notes: "created_year 2016 (operational); CA 2013 is statute date — maintainer policy. IBC 2016 s.60 significantly\
   \ expanded NCLT jurisdiction post-2016. NCLAT (CA 2013 s.410) is a separate entity — not created here. ministry_responsible\
   \ 'ministry_corporate_affairs' assumed — verify in graph. case_volume and judge_strength null — MCA NCLT portal in §3/§7.\n\
-  \ NJDG snapshot case_volume merged"
+  \ NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
 sources:
 - label: Companies Act 2013 — Ministry of Corporate Affairs
   url: https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html
@@ -68,3 +68,10 @@ case_volume:
   source_type: Tribunal_Report
   disposal_rate: 0.7778
   clog_severity: high
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://nclt.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

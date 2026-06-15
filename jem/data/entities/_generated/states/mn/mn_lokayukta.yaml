@@ -1,0 +1,33 @@
+id: mn_lokayukta
+name: Manipur Lokayukta
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - MN
+  is_all_india: false
+created_year: 2014
+operational_status: Active
+statutory_basis: Manipur Lokayukta Act 2014
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: 'Yes'
+data_quality: partial
+sources:
+- label: Manipur Lokayukta portal
+  url: https://manipur.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
+data_quality_notes: 'DG-L1: appointment history interrupted — verify incumbent; may
+  be Not_Constituted.'

@@ -58,7 +58,8 @@ data_quality: partial
 data_quality_notes: 'Territorial jurisdiction (TS, AP) per cestat.gov.in. Post-bifurcation (2014) both states fall under CBIC
   Hyderabad zone allocation. Per CESTAT Registrar Notification 03/2015: AP, TS, and Yanam commune of Puducherry.
 
-  Quality pass Jun 2026: jurisdiction from Registrar Notifications 01–03/2015; cestat.gov.in source added.'
+  Quality pass Jun 2026: jurisdiction from Registrar Notifications 01–03/2015; cestat.gov.in source added. v1.2 judge_strength
+  stub attached'
 sources:
 - label: Customs Act 1962 s.129
   url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
@@ -76,3 +77,10 @@ sources:
   url: https://taxguru.in/excise-duty/all-about-filing-of-appeal-before-cestat-part-i.html
   type: OfficialReport
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

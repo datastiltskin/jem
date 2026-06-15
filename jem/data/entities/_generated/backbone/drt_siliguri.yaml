@@ -3,99 +3,92 @@ name: Debt Recovery Tribunal, Siliguri
 name_hindi: ऋण वसूली अधिकरण, सिलीगुड़ी
 abbreviation: DRT Siliguri
 aliases:
-  - Debts Recovery Tribunal Siliguri
-
+- Debts Recovery Tribunal Siliguri
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - WB
+  - WB
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 2017
 operational_status: Active
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002,
+  s. 17. Established vide S.O. 831(E) dated 15 March 2017, effective 16 March 2017, which superseded G.S.R. 84(E) dated 6
+  February 2002. Address: Hawkers'' Co-operative Society Ltd., 1st Floor, Opp. United Bank of India, North Bengal Regional
+  Office, Hill Cart Road, Pradhan Nagar, Siliguri-734003. Jurisdiction per S.O. 831(E) table: Darjeeling, Jalpaiguri, Coochbehar,
+  Uttar Dinajpur, Dakshin Dinajpur, Malda, and Murshidabad districts of West Bengal. Single-bench tribunal under DRAT Kolkata
+  per G.S.R. 538(E)/2018.
 
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Established vide S.O. 831(E) dated 15 March 2017,
-  effective 16 March 2017, which superseded G.S.R. 84(E) dated 6 February 2002.
-  Address: Hawkers' Co-operative Society Ltd., 1st Floor, Opp. United Bank of India,
-  North Bengal Regional Office, Hill Cart Road, Pradhan Nagar, Siliguri-734003.
-  Jurisdiction per S.O. 831(E) table: Darjeeling, Jalpaiguri, Coochbehar, Uttar
-  Dinajpur, Dakshin Dinajpur, Malda, and Murshidabad districts of West Bengal.
-  Single-bench tribunal under DRAT Kolkata per G.S.R. 538(E)/2018.
-
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_calcutta
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_calcutta
-      mechanism: >
-        Supervisory jurisdiction of Calcutta High Court under Arts 226/227; writ
-        petition before Calcutta High Court. Calcutta HC Circuit Bench at Jalpaiguri
-        (established 2023) may also exercise territorial supervisory jurisdiction for
-        North Bengal DRT matters — exact allocation not confirmed in secondary sources;
-        left partial.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_calcutta
+    mechanism: 'Supervisory jurisdiction of Calcutta High Court under Arts 226/227; writ petition before Calcutta High Court.
+      Calcutta HC Circuit Bench at Jalpaiguri (established 2023) may also exercise territorial supervisory jurisdiction for
+      North Bengal DRT matters — exact allocation not confirmed in secondary sources; left partial.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  DISTRICT TABLE FULLY SOURCED (drt_b4). S.O. 831(E) dated 15 March 2017 text
-  retrieved in full from ibclaw.in (2026-06-12). Seven districts confirmed:
-  Darjeeling, Jalpaiguri, Coochbehar, Uttar Dinajpur, Dakshin Dinajpur, Malda,
-  Murshidabad. Address confirmed. DRT Kolkata-1/2/3 district splits also confirmed
-  from same notification: DRT-1 covers Kolkata city (specified PSs) + Howrah + Hooghly;
-  DRT-2 covers all remaining WB districts (excluding North/South 24 Parganas, the
-  seven Siliguri districts, and Kolkata city areas) + Andaman & Nicobar Islands;
-  DRT-3 covers Kolkata city (other PSs) + North/South 24 Parganas.
-
+data_quality_notes: 'DISTRICT TABLE FULLY SOURCED (drt_b4). S.O. 831(E) dated 15 March 2017 text retrieved in full from ibclaw.in
+  (2026-06-12). Seven districts confirmed: Darjeeling, Jalpaiguri, Coochbehar, Uttar Dinajpur, Dakshin Dinajpur, Malda, Murshidabad.
+  Address confirmed. DRT Kolkata-1/2/3 district splits also confirmed from same notification: DRT-1 covers Kolkata city (specified
+  PSs) + Howrah + Hooghly; DRT-2 covers all remaining WB districts (excluding North/South 24 Parganas, the seven Siliguri
+  districts, and Kolkata city areas) + Andaman & Nicobar Islands; DRT-3 covers Kolkata city (other PSs) + North/South 24 Parganas.
+  v1.2 judge_strength stub attached'
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
-  - label: >
-      S.O. 831(E) dated 15 March 2017 — DRT Siliguri established effective 16 March
-      2017; full jurisdiction table for Siliguri + Kolkata DRTs extracted; supersedes
-      G.S.R. 84(E) dated 6 February 2002
-    url: https://ibclaw.in/notification-no-s-o-831e-dated-15-03-2017-under-rdb-act-1993/
-    type: GazetteNotification
-    accessed_date: '2026-06-12'
-  - label: >
-      DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018;
-      lists DRT Siliguri under DRAT Kolkata
-    url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp
-    type: GazetteNotification
-    accessed_date: '2026-06-12'
-  - label: 'DRT official portal — Ministry of Finance, DFS'
-    url: https://drt.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: 'S.O. 831(E) dated 15 March 2017 — DRT Siliguri established effective 16 March 2017; full jurisdiction table for
+    Siliguri + Kolkata DRTs extracted; supersedes G.S.R. 84(E) dated 6 February 2002
+
+    '
+  url: https://ibclaw.in/notification-no-s-o-831e-dated-15-03-2017-under-rdb-act-1993/
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
+- label: 'DRAT Kolkata Recruitment Rules 2018 — G.S.R. 538(E) dated 8 June 2018; lists DRT Siliguri under DRAT Kolkata
+
+    '
+  url: https://www.casemine.com/act/in/5f5f11199fca195c05ccdf06/amp
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
+- label: DRT official portal — Ministry of Finance, DFS
+  url: https://drt.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

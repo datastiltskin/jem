@@ -1,4 +1,3 @@
-# JEM generated relationships — data_quality: partial
 relationships:
 - id: tn_tnerc_aptel
   source: tnerc
@@ -86,16 +85,16 @@ relationships:
   - *id001
 - id: tn_district_ariyalur_appealable_hc_madras_bench_madurai
   source: tn_district_court_ariyalur
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_ariyalur
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_ariyalur
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -166,16 +165,16 @@ relationships:
   - *id001
 - id: tn_district_cuddalore_appealable_hc_madras_bench_madurai
   source: tn_district_court_cuddalore
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_cuddalore
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_cuddalore
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -286,16 +285,16 @@ relationships:
   - *id001
 - id: tn_district_karur_appealable_hc_madras_bench_madurai
   source: tn_district_court_karur
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_karur
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_karur
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -366,16 +365,16 @@ relationships:
   - *id001
 - id: tn_district_mayiladuthurai_appealable_hc_madras_bench_madurai
   source: tn_district_court_mayiladuthurai
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_mayiladuthurai
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_mayiladuthurai
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -386,16 +385,16 @@ relationships:
   - *id001
 - id: tn_district_nagapattinam_appealable_hc_madras_bench_madurai
   source: tn_district_court_nagapattinam
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_nagapattinam
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_nagapattinam
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -446,16 +445,16 @@ relationships:
   - *id001
 - id: tn_district_perambalur_appealable_hc_madras_bench_madurai
   source: tn_district_court_perambalur
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_perambalur
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_perambalur
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -466,16 +465,16 @@ relationships:
   - *id001
 - id: tn_district_pudukkottai_appealable_hc_madras_bench_madurai
   source: tn_district_court_pudukkottai
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_pudukkottai
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_pudukkottai
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -586,16 +585,16 @@ relationships:
   - *id001
 - id: tn_district_thanjavur_appealable_hc_madras_bench_madurai
   source: tn_district_court_thanjavur
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_thanjavur
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_thanjavur
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -646,16 +645,16 @@ relationships:
   - *id001
 - id: tn_district_tiruchirappalli_appealable_hc_madras_bench_madurai
   source: tn_district_court_tiruchirappalli
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_tiruchirappalli
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_tiruchirappalli
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -766,16 +765,16 @@ relationships:
   - *id001
 - id: tn_district_tiruvarur_appealable_hc_madras_bench_madurai
   source: tn_district_court_tiruvarur
-  target: hc_madras_bench_madurai
+  target: hc_madras
   relationship_type: AppealableTo
   relationship_category: appellate_chain
   is_binding: true
-  notes: District court appeals to hc_madras_bench_madurai (Madras HC / bench)
+  notes: District court appeals to hc_madras (Madras HC principal seat)
   data_quality: partial
   sources:
   - *id001
 - id: tn_hc_madras_bench_madurai_supervise_tiruvarur
-  source: hc_madras_bench_madurai
+  source: hc_madras
   target: tn_district_court_tiruvarur
   relationship_type: AdministrativeSupervision
   relationship_category: supervisory
@@ -844,3 +843,135 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: tn_gov_appoints_advocate_general
+  source: governor_state
+  target: tn_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: tn_gov_fund_bar_council
+  source: government_tamilnadu
+  target: tn_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: tn_tn_cdrc_chennai_appealable_tn_state_cdrc
+  source: tn_cdrc_chennai
+  target: tn_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: District CDRC appeals to state commission
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Consumer Protection Act 2019
+- id: tn_gov_fund_lokayukta
+  source: government_tamilnadu
+  target: tn_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: tn_tn_special_courts_appealable_hc_madras
+  source: tn_special_courts
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: tn_hc_madras_supervise_tn_special_courts
+  source: hc_madras
+  target: tn_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235
+- id: tn_fund_serc_tn
+  source: government_tamilnadu
+  target: serc_tn
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds electricity regulatory commission
+  data_quality: partial
+  statutory_basis: Electricity Act 2003
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: tn_serc_tn_aptel
+  source: serc_tn
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: SERC orders appealable to APTEL
+  data_quality: partial
+  statutory_basis: Electricity Act 2003
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: tn_fund_rera_tn
+  source: government_tamilnadu
+  target: rera_tn
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds RERA authority
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'

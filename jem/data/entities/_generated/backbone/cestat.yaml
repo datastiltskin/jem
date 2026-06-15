@@ -41,7 +41,7 @@ data_quality: partial
 data_quality_notes: "created_year 1982 (CEGAT founding; entity continuity). Service tax jurisdiction added 2003; GST replaced\
   \ service tax from 1 July 2017 but CESTAT retains jurisdiction over pre-GST disputes. Finance Act 1994 s.86 remains live\
   \ for legacy service tax appeals. ministry_responsible 'ministry_of_finance' assumed — CBIC demand head; verify in graph.\
-  \ case_volume null — CESTAT Annual Report in §3/§7.\n NJDG snapshot case_volume merged"
+  \ case_volume null — CESTAT Annual Report in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
 sources:
 - label: Customs Act 1962 — CBIC
   url: https://www.cbic.gov.in/resources//htdocs-cbec/customs/cs-act/formatted-htmls/cs-act.htm
@@ -71,3 +71,10 @@ case_volume:
   disposed_last_year: 18000
   disposal_rate: 0.8182
   clog_severity: high
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://cestat.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

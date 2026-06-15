@@ -57,13 +57,13 @@ judge_strength:
   allotted: null
   appointed: null
   source_type: DoJ_Report
-  source_url: null
+  source_url: https://nclat.gov.in/
   notes: Sanctioned strength set by MCA; vacancy data in DoJ quarterly reports. Exact figures not verified at time of authoring
     — left partial.
 data_quality: partial
 data_quality_notes: Entity created from public statutory sources. Judge strength and case_volume figures not populated — pending
   DoJ report cross-check. Ministry id ministry_corporate_affairs assumed present in graph; flag if absent. NJDG snapshot case_volume
-  merged
+  merged v1.2 judge_strength stub attached
 sources:
 - label: Companies Act 2013, s.410–413 (NCLAT provisions)
   url: https://india-code.nic.in/handle/123456789/2197

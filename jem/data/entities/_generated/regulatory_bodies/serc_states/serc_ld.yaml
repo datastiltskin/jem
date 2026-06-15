@@ -1,0 +1,31 @@
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+created_year: 2003
+operational_status: Active
+statutory_basis: Electricity Act 2003, s.82; UT/state commission framework
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+data_quality_notes: UT SERC scaffold — verify constitution and official URL.
+id: serc_ld
+name: Lakshadweep Electricity Regulatory functions
+abbreviation: LDERC
+level_of_government: UT
+jurisdiction_scope:
+  states_covered:
+  - LD
+  is_all_india: false
+  jurisdiction_types:
+  - Civil
+sources:
+- label: LDERC reference
+  url: https://lakshadweep.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'

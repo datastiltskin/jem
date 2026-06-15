@@ -9,20 +9,7 @@ jurisdiction_scope:
   is_all_india: false
 created_year: 1984
 operational_status: Active
-statutory_basis: State Lokayukta / Lokpal interface statutes (stub)
-structural_variations:
-- variation_id: ka_lokayukta_appointment_delay
-  description: Document appointment delays post-2019 from official sources when available.
-  applicable_to:
-  - KA
-  source: State Lokayukta portal — verify dates
-  independence_risk_note: Executive interface risk pending review
-- variation_id: ka_lokayukta_independence_2023
-  description: 2023 amendment context — verify independence impact from primary materials.
-  applicable_to:
-  - KA
-  source: Rajamohan Reddy v State of Karnataka (2023) — cite official neutral citation when verified
-  independence_risk_note: Policy conflict risk — pending domain review
+statutory_basis: Karnataka Lokayukta Act 1984
 funding:
   primary_source: State_Consolidated_Fund
 audit:
@@ -34,11 +21,11 @@ complaint_mechanism:
   lokpal_jurisdiction: 'Yes'
 data_quality: partial
 sources:
+- label: Karnataka Lokayukta portal
+  url: https://lokayukta.kar.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
   type: GoIWebsite
-  accessed_date: '2026-05-13'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
+  accessed_date: '2026-06-15'

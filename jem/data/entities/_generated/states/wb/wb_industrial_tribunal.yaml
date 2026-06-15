@@ -1,0 +1,36 @@
+id: wb_industrial_tribunal
+name: West Bengal Industrial Tribunal
+type: StateTribunal
+cluster: tribunals_adr
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - WB
+  is_all_india: false
+created_year: 2003
+operational_status: Active
+statutory_basis: Industrial Disputes Act 1947 s.7A
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+data_quality_notes: Post-GST legacy docket where applicable; HC writ/appeal wired in state_tribunal_relationships.yaml. v1.2
+  judge_strength stub attached
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

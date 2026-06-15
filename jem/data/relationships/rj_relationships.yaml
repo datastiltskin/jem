@@ -1,3 +1,4 @@
+# JEM generated relationships — data_quality: partial
 relationships:
 - id: rj_cdrc_ncdrc
   source: rj_state_cdrc
@@ -190,3 +191,175 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: rj_fund_serc
+  source: government_rj
+  target: serc_rj
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: RJ funds SERC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_serc_aptel
+  source: serc_rj
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ SERC appeals to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_district_courts_generic_hc
+  source: rj_district_courts_generic
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: RJ collapsed district rollup appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_hc_super_district_courts_generic
+  source: hc_rajasthan
+  target: rj_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision RJ district rollup
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_sja_train
+  source: rj_sja
+  target: rj_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: RJ judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_cdrc_jaipur_scdrc
+  source: rj_cdrc_jaipur
+  target: rj_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Jaipur DCDRC to RJ SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_cdrc_jodhpur_scdrc
+  source: rj_cdrc_jodhpur
+  target: rj_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Jodhpur DCDRC to RJ SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_cdrc_udaipur_scdrc
+  source: rj_cdrc_udaipur
+  target: rj_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Udaipur DCDRC to RJ SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_cdrc_kota_scdrc
+  source: rj_cdrc_kota
+  target: rj_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Kota DCDRC to RJ SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: rj_gov_appoints_advocate_general
+  source: governor_state
+  target: rj_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: rj_gov_fund_bar_council
+  source: government_rj
+  target: rj_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: rj_gov_fund_lokayukta
+  source: government_rj
+  target: rj_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: rj_rj_special_courts_appealable_hc_rajasthan
+  source: rj_special_courts
+  target: hc_rajasthan
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: rj_hc_rajasthan_supervise_rj_special_courts
+  source: hc_rajasthan
+  target: rj_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

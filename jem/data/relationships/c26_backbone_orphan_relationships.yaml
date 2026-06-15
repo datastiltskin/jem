@@ -1,0 +1,158 @@
+# C26 orphan reduction — backbone / digital cluster edges
+# Wired 2026-06-15; generic rollup nodes deferred (no parent target in graph)
+
+relationships:
+
+  - id: rel_molj_oversight_doj
+    source: ministry_law_justice
+    target: department_of_justice
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Government of India (Allocation of Business) Rules
+    notes: Department of Justice functions under the Ministry of Law and Justice.
+    data_quality: partial
+    sources:
+      - label: Ministry of Law and Justice — Official Website
+        url: https://law.gov.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-15'
+
+  - id: rel_molj_fund_aci
+    source: ministry_law_justice
+    target: arbitration_council_india
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Arbitration and Conciliation (Amendment) Act 2019
+    notes: Arbitration Council of India constituted under MoLJ.
+    data_quality: partial
+    sources:
+      - label: India Code — Constitution & Acts
+        url: https://india-code.nic.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-15'
+
+  - id: rel_molj_fund_nja
+    source: ministry_law_justice
+    target: national_judicial_academy
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: National Judicial Academy Act 1993
+    notes: NJA Bhopal funded through Union Ministry of Law and Justice.
+    data_quality: partial
+    sources:
+      - label: India Code — Constitution & Acts
+        url: https://india-code.nic.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-15'
+
+  - id: rel_sc_oversight_ecommittee
+    source: supreme_court_india
+    target: e_committee_sc
+    relationship_type: PolicyOversight
+    relationship_category: digital
+    is_binding: true
+    is_constitutional: false
+    notes: e-Committee is constituted by the Chief Justice of India for court ICT policy.
+    data_quality: partial
+    sources:
+      - label: e-Committee / NJDG
+        url: https://njdg.ecourts.gov.in/
+        type: NJDG
+        accessed_date: '2026-06-15'
+
+  - id: rel_doj_fund_ecommittee
+    source: department_of_justice
+    target: e_committee_sc
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    notes: e-Courts project budget flows through Department of Justice.
+    data_quality: partial
+    sources:
+      - label: e-Committee / NJDG
+        url: https://njdg.ecourts.gov.in/
+        type: NJDG
+        accessed_date: '2026-06-15'
+
+  - id: rel_ecommittee_digital_ecourts
+    source: e_committee_sc
+    target: ecourts_services_generic
+    relationship_type: PolicyDirectionDigital
+    relationship_category: digital
+    is_binding: true
+    is_constitutional: false
+    notes: e-Committee sets ICT policy for pan-India e-Courts services layer.
+    data_quality: partial
+    sources:
+      - label: e-Committee / NJDG
+        url: https://njdg.ecourts.gov.in/
+        type: NJDG
+        accessed_date: '2026-06-15'
+
+  - id: rel_nic_builds_njdg
+    source: nic_india
+    target: njdg_generic
+    relationship_type: BuildsMaintains
+    relationship_category: digital
+    is_binding: true
+    is_constitutional: false
+    notes: NIC develops and maintains NJDG infrastructure for the e-Courts project.
+    data_quality: partial
+    sources:
+      - label: National Judicial Data Grid (NJDG)
+        url: https://njdg.ecourts.gov.in/
+        type: NJDG
+        accessed_date: '2026-06-15'
+
+  - id: rel_ecommittee_digital_nic
+    source: e_committee_sc
+    target: nic_india
+    relationship_type: PolicyDirectionDigital
+    relationship_category: digital
+    is_binding: true
+    is_constitutional: false
+    notes: e-Committee directs NIC on court digitisation deliverables.
+    data_quality: partial
+    sources:
+      - label: e-Committee / NJDG
+        url: https://njdg.ecourts.gov.in/
+        type: NJDG
+        accessed_date: '2026-06-15'
+
+  - id: rel_sc_oversight_ecommittee_legacy
+    source: supreme_court_india
+    target: ecommittee_sc
+    relationship_type: PolicyOversight
+    relationship_category: digital
+    is_binding: true
+    is_constitutional: false
+    notes: Legacy e-Committee entity id — same SC policy oversight pattern.
+    data_quality: partial
+    sources:
+      - label: e-Committee / NJDG
+        url: https://njdg.ecourts.gov.in/
+        type: NJDG
+        accessed_date: '2026-06-15'
+
+  - id: rel_cag_reports_parliament
+    source: cag_india
+    target: parliament_both_houses
+    relationship_type: ReportsTo
+    relationship_category: audit
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 151
+    notes: CAG audit reports laid before Parliament.
+    data_quality: partial
+    sources:
+      - label: Constitution of India — Article 151
+        url: https://india-code.nic.in/
+        type: Constitution
+        accessed_date: '2026-06-15'

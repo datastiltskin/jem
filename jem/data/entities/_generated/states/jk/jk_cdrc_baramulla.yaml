@@ -1,0 +1,36 @@
+id: jk_cdrc_baramulla
+name: Baramulla District Consumer Disputes Redressal Commission
+type: ConsumerCommission
+cluster: tribunals_adr
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - JK
+  is_all_india: false
+created_year: 2019
+operational_status: Active
+statutory_basis: Consumer Protection Act 2019 — District commissions
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-15'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: DoJ_Report
+  source_url: https://doj.gov.in/
+  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG
+    bench strength.
+data_quality_notes: v1.2 judge_strength stub attached

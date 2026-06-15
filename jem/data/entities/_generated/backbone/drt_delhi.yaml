@@ -69,7 +69,7 @@ data_quality_notes: 'Delhi has three DRT benches (DRT-I, DRT-II, DRT-III) under 
   own territorial jurisdiction".
 
   Option B rollup: 3 physical DRT(s) at this location (DRT-I/II/III) rolled into single city entity per MoF composition table;
-  see drt.etribunals.gov.in.'
+  see drt.etribunals.gov.in. v1.2 judge_strength stub attached'
 unverified_fields:
 - field: created_year
   note: '1994 reflects RDDBFI Act commencement; per-bench Gazette establishment date not verified.
@@ -88,3 +88,10 @@ sources:
   url: https://www.raizadaassociates.com/blog/how-to-file-a-case-in-drt-delh/
   type: OfficialReport
   accessed_date: '2026-06-11'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

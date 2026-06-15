@@ -2,23 +2,19 @@ id: state_electricity_appellate_tribunal_generic
 name: State Electricity Ombudsman / Appellate Mechanism — Generic
 name_hindi: राज्य विद्युत अपीलीय / लोकपाल तंत्र — सामान्य
 aliases:
-  - State Electricity Ombudsman
-  - SERC consumer grievance mechanism
-
+- State Electricity Ombudsman
+- SERC consumer grievance mechanism
 type: StateTribunal
 cluster: regulatory_bodies
 level_of_government: State
-
 created_year: 2003
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >
-  Electricity Act 2003 ss.42(6), 111 — SERC orders appeal to APTEL (central);
-  s.42(6) enables state Electricity Ombudsman schemes for distribution-licensee
-  consumer complaints. This entity models residual state-level ombudsman /
-  grievance forums distinct from APTEL.
+statutory_basis: 'Electricity Act 2003 ss.42(6), 111 — SERC orders appeal to APTEL (central); s.42(6) enables state Electricity
+  Ombudsman schemes for distribution-licensee consumer complaints. This entity models residual state-level ombudsman / grievance
+  forums distinct from APTEL.
 
+  '
 appointment:
   nominates: null
   recommends: null
@@ -30,19 +26,16 @@ appointment:
   removal_authority: governor_state
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: State_Consolidated_Fund
   ministry_responsible: null
   budget_figure_crore: null
   budget_year: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Performance
   audit_report_public: true
   conduct_oversight_body: null
-
 complaint_mechanism:
   bias_complaint_to: []
   criminal_prosecution:
@@ -53,15 +46,19 @@ complaint_mechanism:
   lokpal_jurisdiction: Contested
   lokpal_jurisdiction_note: Ombudsman officer status varies; Lokayukta applicability contested.
   source: null
-
 data_quality: partial
-data_quality_notes: >
-  Most regulatory appeals go to APTEL (aptel entity), not a separate state
-  appellate tribunal. Scaffold for state Electricity Ombudsman offices under
-  s.42(6). Verify per-state constitutions before creating named entities.
-
+data_quality_notes: Most regulatory appeals go to APTEL (aptel entity), not a separate state appellate tribunal. Scaffold
+  for state Electricity Ombudsman offices under s.42(6). Verify per-state constitutions before creating named entities. v1.2
+  judge_strength stub attached
 sources:
-  - label: Electricity Act 2003 ss.42, 111 — India Code
-    url: https://www.india-code.nic.in/CodeofActs/2003/2003_36.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
+- label: Electricity Act 2003 ss.42, 111 — India Code
+  url: https://www.india-code.nic.in/CodeofActs/2003/2003_36.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

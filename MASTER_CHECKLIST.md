@@ -1,7 +1,7 @@
 # Judiciary Entity Map (India) - JEM — Master Build & Deployment Checklist
 # Generated: April 25 2026
 # Last full repo audit: **Jun 15 2026 (post Wave 4–5 + C26 orphan wiring complete)** — see PROGRESS & REPO AUDIT below
-# Current build: **1,103 entities**, **1,818 relationships**, **~5.63 MB** `graph.json` (`validate.py` 0 errors)
+# Current build: **1,103 entities**, **1,855 relationships**, **~5.63 MB** `graph.json` (`validate.py` 0 errors)
 # ============================================================
 # HOW TO USE THIS FILE
 # - Work top to bottom
@@ -19,7 +19,7 @@
 |--------|--------|
 | Unique entity ids in graph | **1,103** |
 | Entity YAML files on disk | **1,103** (canonical) |
-| Relationship files | **49** packs (**1,818** edges in `graph.json`) |
+| Relationship files | **50** packs (**1,855** edges in `graph.json`) |
 | `graph.json` size | **~5.63 MB** (5,629,019 bytes after `build.py`) |
 | `validate.py` | **0 errors** (1,152 files checked) |
 | `validate_graph_refs.py` | **0 broken refs**; **0 orphan entities** (no rel source/target; `--strict`) |
@@ -78,7 +78,22 @@
 - [x] **C11 security scaffolds (Jun 12):** crpf, cisf, state_police_generic, court_marshal_sc, sheriff_hc_generic.
 - [x] **C20 labour scaffolds (Jun 12 — M-T4):** `state_labour_court_generic`, `esi_court_generic` (generic scaffolds; wiring pending).
 - [x] **Wave 4–5 state packs (Jun 15 — C15–C18):** core packs for all 28 states + 7 UTs (35 folders); 6–10 named districts each + `*_district_courts_generic`; SERC/RERA/SJA/SLSA/AG/CDRC per MH template.
-- [x] **State relationship wiring (Jun 15 — C26):** per-state `{st}_relationships.yaml` packs; orphans **175 → 0** (`c26_generic_orphan_relationships.yaml` wired 22 backbone generics Jun 15).
+- [x] **State relationship wiring (Jun 15 — C26):** per-state `{st}_relationships.yaml` packs; orphans **175 → 0** (`c26_backbone_orphan_relationships.yaml` + `c26_generic_orphan_relationships.yaml`).
+
+### What remains to complete the project (~1,500 entity target)
+
+| Priority | Workstream | Gap | Best tool | Blocks deploy? |
+|----------|------------|-----|-----------|----------------|
+| **P0** | **v1.0.0 ship** — runbook deploy + smoke + local tag | Operator step only | Human | **Yes** — first public semver |
+| **P1** | **v1.1 finish** — KA Dharwad bench verify; `board_of_revenue_generic` / `state_industrial_tribunal_generic` `state_data` | ~3 config items | **Cursor** | No |
+| **P2** | **v1.2 numerics** — `judge_strength` **39/1,103**; `case_volume` **84/1,103** | ~1,000+ court-like entities | **Cursor** bulk + **Claude** field design | No |
+| **P3** | **v1.4 district lattices** — 31 states at 2–10 named districts vs TN 38 / MH 36 / KA 29 | **~400 entities** → ~1,500 | **Cursor** (generator + YAML) | No |
+| **P4** | **v1.5 gap registry** — GSTAT benches (gated), DRT `drt_city_n` (gated), labour/ESI wiring, 28 Board of Revenue | ~50–80 when ungated | **Claude** domain + **Cursor** YAML | No |
+| **P5** | **v1.3 per-district NJDG** — TN **1/38** with `pending_cases` | Blocked on district exports | Maintainer + NJDG | No |
+| **P6** | **v2.0 product** — Canvas, live `fetch_njdg.py`, Sankey, journey mode, GitHub remote | Part 4 | **Claude** architecture + **Cursor** impl | No |
+| **Ongoing** | **C27 data quality** — **1,094/1,103** at `partial`; 9 `verified` | Community + reviewers | **Cursor** + sources | No |
+
+**Critical path to structural completeness (~1,500):** P0 → P1 → P3 → P4. **Critical path to metric usefulness:** P2 + P5. **Critical path to product completeness:** P6.
 
 ### Coverage-gap thread — v1.0.0 deploy still pending; post-May growth → **VERSION ROADMAP**
 
@@ -96,7 +111,7 @@
 | Madras HC bench model (Madurai only; no Trichy bench) | ✅ **Done** | v1.0.0 |
 | Bench routing: UP / WB / RJ | ✅ **Done** (Jun 12) | v1.0.0 |
 | KA Dharwad district→bench verify | ⏸️ Deferred | **v1.1** |
-| Relationship orphans (~175) — incremental wiring | ✅ **Done** (0 remain — `c26_generic_orphan_relationships.yaml`) | **v1.2** |
+| Relationship orphans (~175) — incremental wiring | ✅ **Done** (0 remain — C26 packs) | **v1.1** |
 | §7 `judge_strength` bulk fill | ⏸️ Partial (39/1,103) | **v1.2** |
 | §3 `case_volume` bulk fill | ⏸️ Partial (84/1,103) | **v1.2** |
 | C04 DRT remaining benches (14 of 39) | ⏸️ Deferred (gated on drt.gov.in) | **v1.5** / Phase 3 |
@@ -126,7 +141,7 @@
 
 ### Still outstanding (scheduled releases — see VERSION ROADMAP)
 
-- [ ] **v1.1** — config sync, bench routing, orphan wiring (start)
+- [ ] **v1.1** — KA Dharwad verify + generic `state_data` (orphans ✅)
 - [ ] **v1.2** — `judge_strength` + `case_volume` numeric bulk fill
 - [ ] **v1.3** — per-district NJDG (when exports exist)
 - [ ] **v1.4** — non-TN state district lattices (Part 5.6)
@@ -141,8 +156,8 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 
 | Release | Scope | Acceptance |
 |---------|--------|------------|
-| **v1.0.0** | Ship graph at deploy time (**1,103** entities, **1,818** rels at Jun 15 head; was 668/748 at Jun 12). | `validate.py` 0 errors; runbook deploy + smoke; local tag |
-| **v1.1** | **Structural integrity** — no new external datasets required | Config matches graph; UP/WB/RJ bench edges ✅; orphans **22** remain (down from 175) |
+| **v1.0.0** | Ship graph at deploy time (**1,103** entities, **1,855** rels at Jun 15 head; was 668/748 at Jun 12). | `validate.py` 0 errors; runbook deploy + smoke; local tag |
+| **v1.1** | **Structural integrity** — no new external datasets required | Config matches graph; UP/WB/RJ bench edges ✅; orphans **0** ✅; KA Dharwad + generic `state_data` remain |
 | **v1.2** | **Numeric coverage** — DoJ + NJDG rollups | `judge_strength` on all court-like entities; `case_volume` >> 84/1,103 |
 | **v1.3** | **Per-district NJDG** — blocked on district exports | TN 38/38 + MH/KA bootstrap districts with district URLs |
 | **v1.4** | **State pack expansion** | Replace 31 `*_district_courts_generic`-only states with MH/DL/KA-style packs |
@@ -153,7 +168,7 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 
 - [x] **Madras HC bench model** — Madurai sole permanent bench; `hc_madras_bench_tiruchirappalli` removed from `hc_benches_config.py` and generators (no Trichy bench)
 - [x] **Bench district routing** — `up_relationships.yaml`, `wb_relationships.yaml`, `rj_relationships.yaml` with `AppealableTo` / supervisory edges per `hc_benches_config.py` (Lucknow, Jalpaiguri, Jaipur) — **done Jun 12**
-- [ ] **KA Dharwad** — verify all districts in `KA_DISTRICT_TO_BENCH` have bench edges (currently 2)
+- [ ] **KA Dharwad** — verify all districts in `KA_DISTRICT_TO_BENCH` have bench edges (**29/29** named KA districts wired in `ka_relationships.yaml`; confirm `hc_benches_config.py` table matches e-Courts roster)
 - [x] **Orphan wiring (finish)** — **0** orphans (`c26_generic_orphan_relationships.yaml`, Jun 15); check: `python3 jem/scripts/validate_graph_refs.py --strict`
 - [x] **Housekeeping** — deleted 108 untracked `* 2.yaml` + 1 `* 2.py` macOS duplicate files (Jun 12)
 - [ ] Re-run: `validate.py` → `derive.py` → `build.py` → deploy → tag `v1.1.0`
@@ -164,7 +179,7 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 - [ ] Extend **`case_volume.pending_cases`** beyond 84/506 — refresh `merge_njdg_snapshot.py` when new snapshot path available
 - [ ] All court-like entities: `judge_strength` block with `data_as_of` + `source_type` (nulls OK + `data_quality_notes`)
 - [ ] **Audit baseline:** `judge_strength` 39/1,103 → target majority of courts; `pending_cases` 84/1,103 → target all HCs + state rollups + named districts
-- [x] Tag `v1.2.0` after smoke (Jun 15)
+- [ ] Tag `v1.2.0` after smoke
 
 ### v1.3 — per-district NJDG (Part 3.5.2 — blocked on exports)
 
@@ -811,7 +826,97 @@ These need their own repos. JEM's schema is a usable starting point.
 
 ---
 
-## PART 8 — TOKEN BUDGET RULES
+## PART 8 — DELEGATION PLAYBOOK (Cursor vs Claude)
+
+Use this when planning the next sessions. **Rule of thumb:** Cursor for volume and repo execution; Claude for domain judgment and architecture you cannot template.
+
+### Strengths & weaknesses
+
+| Dimension | **Cursor** (Agent + terminal) | **Claude** (co-maintainer / research) |
+|-----------|-------------------------------|----------------------------------------|
+| Bulk YAML from templates | ✅ Fast — 10–50 entities/session | ❌ Token-heavy; drifts on repetition |
+| `validate.py` / `derive.py` / `build.py` loop | ✅ Native terminal + fix-on-fail | ⚠️ Possible but awkward |
+| Generator scripts (`generate_v1_states_bundle.py`, lattice bootstrap) | ✅ Edit + run + diff in one session | ⚠️ Better for design review than execution |
+| Relationship wiring (maintainer) | ✅ Mechanical edges from config tables | ✅ Better when appellate routing is ambiguous |
+| Schema / `derive.py` formula changes | ⚠️ Can do, but easy to miss knock-on effects | ✅ Strong — read full `entity_schema.yaml` + score logic |
+| Independence-risk / structural-gap reasoning | ⚠️ Shallow without sources | ✅ Strong — statute + collegium context |
+| V2 architecture (Canvas, Sankey, `fetch_njdg.py`) | ✅ Implementation once spec exists | ✅ Strong — system design + API shape |
+| Primary-source research (gazettes, DoJ reports) | ⚠️ Needs URLs supplied in prompt | ✅ Strong — synthesize across sources |
+| GitHub issues / contributor YAML triage | ✅ Validate + merge | ⚠️ Overkill |
+| Essay / Pendency Lab / external writing | ❌ Wrong tool | ✅ Keep separate — no code context |
+
+### Recommended next sessions (in order)
+
+| # | Session | Tool | Est. output |
+|---|---------|------|-------------|
+| 1 | **Ship v1.0.0** — `deploy_prep.sh` → rsync → smoke → `git tag v1.0.0` | Operator | Live map at current 1,103 entities |
+| 2 | **Close v1.1** — KA Dharwad audit + `board_of_revenue_generic` / `state_industrial_tribunal_generic` `state_data` | Cursor | Tag `v1.1.0` |
+| 3 | **v1.2 numerics batch A** — HC + SC `judge_strength` from DoJ vacancy report | Cursor | +26 entities with numerics |
+| 4 | **v1.2 numerics batch B** — state rollup `case_volume` refresh if new NJDG snapshot available | Cursor | +50–100 entities |
+| 5 | **v1.4 lattice — UP** — bootstrap full district lattice from `bootstrap_tn_district_lattice.py` pattern | Cursor | +60–70 entities |
+| 6 | **v1.5 labour wiring** — ESI + state labour court edges (maintainer) | Claude brief → Cursor apply | Relationship pack |
+| 7 | **v2 spec** — Canvas renderer + `fetch_njdg.py` API contract | Claude | `V2_SESSION_SPEC.md` refresh |
+| 8 | **v2 impl** — Canvas hit-test + live NJDG stub | Cursor | Part 4.2 partial |
+
+### Copy-paste prompts
+
+**Cursor — P1 KA Dharwad close-out**
+```
+Audit KA district→bench routing: compare jem/scripts/hc_benches_config.py KA_DISTRICT_TO_BENCH
+against jem/data/relationships/ka_relationships.yaml AppealableTo edges for all ka_district_court_*.
+Fix any missing edges. Run validate.py → derive.py → build.py. Do not add relationships for other states.
+```
+
+**Cursor — P2 judge_strength HC pass**
+```
+Using DoJ judicial vacancy report (https://doj.gov.in/report-and-committees/judicial-vacancy-reports),
+populate judge_strength (allotted, appointed, data_as_of, source in data_quality_notes) on all
+ConstitutionalCourt and HighCourtBench entities missing numerics. Template: existing hc_delhi.yaml block.
+Run safe_pipeline.sh. Target: all 26 constitutional/HC nodes.
+```
+
+**Cursor — P3 UP district lattice**
+```
+Bootstrap UP full district lattice mirroring TN: use bootstrap_tn_district_lattice.py pattern for state code up.
+Create up_district_court_* YAML for all UP districts with AppealableTo → hc_allahabad or hc_allahabad_bench_lucknow
+per hc_benches_config.py. Wire edges in up_relationships.yaml only. validate → derive → build.
+```
+
+**Claude — v1.5 labour relationship design**
+```
+JEM co-maintainer session. Design relationship pack for esi_court_generic and state_labour_court_generic:
+MoLE funding, appellate to HC, state-level instantiation pattern. Output edge list (source, target, type, statutory_basis)
+for maintainer to paste into labour_tribunal_relationships.yaml. No YAML files — design only.
+Read jem/data/entities/_generated/backbone/esi_court_generic.yaml and C20 entries in ENTITY_BUILD_ROADMAP.md.
+```
+
+**Claude — v2 architecture**
+```
+Design refresh for jem/docs/V2_SESSION_SPEC.md: Canvas renderer migration plan for 1,100+ nodes,
+fetch_njdg.py API contract (rate limit, cache path, build.py --live flag), and minimal Sankey data shape.
+Constraints: vanilla JS, no bundler, graph.json ≤10 MB at 1,500 entities. No implementation — spec only.
+```
+
+**Cursor — contributor triage**
+```
+Validate YAML attached to GitHub issue [paste]. Run validate.py --entity on each file.
+Fix schema errors only; do not upgrade data_quality to verified without primary URL per field.
+Summarize: merge-ready / needs sources / reject.
+```
+
+### Parallelization (safe to run concurrently)
+
+| Track A (Cursor) | Track B (Cursor) | Track C (Claude) |
+|------------------|------------------|------------------|
+| UP district lattice YAML | WB district lattice YAML | Labour wiring spec |
+| `judge_strength` HC pass | `judge_strength` tribunal pass | v2 Canvas spec |
+| CDRC drafts per state (no rels) | SERC source upgrades | GSTAT watch / gated entities |
+
+**Never parallelize:** two agents editing the same `{st}_relationships.yaml` or `graph.json` build on one branch.
+
+---
+
+## PART 9 — TOKEN BUDGET RULES
 
 To keep Claude sessions available for research writing:
 
@@ -847,7 +952,7 @@ Rule: If a task requires domain reasoning about Indian judicial structure or new
 | Phase 1 batch (ITAT×25, UP/WB/RJ, C10/C11, M-T1–M-T6) | **668** | **~3.34 MB** | **Jun 12 2026 ✅** |
 | Wave 4–5 (all state/UT core packs + rel wiring) | **1,103** | **~5.63 MB** | **Jun 15 2026 ✅** |
 | **v1.0.0** tag + production deploy | **1,103** | **~5.63 MB** | **Ready — run runbook** (not yet deployed) |
-| **v1.1** structural (config sync, orphan finish) | 1,103+ | ~5.6 MB | **Done** — orphans 0 |
+| **v1.1** structural (KA verify, generic state_data) | 1,103+ | ~5.6 MB | **Nearly done** — orphans 0 ✅ |
 | **v1.2** numerics (`judge_strength`, `case_volume` bulk) | 1,103+ | ~5.6 MB | **Pending** — 39/1,103 JS, 84/1,103 CV |
 | **v1.3** per-district NJDG (TN/MH/KA) | 1,103+ | ~5.6 MB | TBD (blocked on exports) |
 | **v1.4** deep district lattices (beyond core packs) | ~1,300+ | ~6 MB | TBD |

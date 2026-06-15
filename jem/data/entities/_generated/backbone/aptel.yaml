@@ -37,7 +37,7 @@ data_quality: partial
 data_quality_notes: "created_year 2005 (operational constitution); Electricity Act 2003 enacted May 2003 — 2003 also defensible.\
   \ ministry_responsible entity id 'ministry_of_power' assumed — verify in graph. Confirm against Union Budget DDG (MoP) for\
   \ budget_figure_crore. case_volume and judge_strength null — populate from APTEL Annual Report or DoJ quarterly vacancy\
-  \ data in §3/§7.\n NJDG snapshot case_volume merged"
+  \ data in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
 sources:
 - label: Electricity Act 2003 — India Code
   url: https://india-code.nic.in/acts-detail/MTQ3MA==
@@ -53,3 +53,10 @@ sources:
   accessed_date: '2024-12-01'
 case_volume:
   clog_severity: unknown
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://aptel.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

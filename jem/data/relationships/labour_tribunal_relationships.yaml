@@ -1,0 +1,57 @@
+# C20 Labour tribunal wiring — Claude deliverable D3 (hc appeals deferred to state packs)
+relationships:
+
+  - id: rel_esi_court_policy_mole
+    source: esi_court_generic
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      Employees' State Insurance Act 1948, s.74 (constitution of ESI Courts);
+      s.75 (matters decided by ESI Courts). MoLE sets central policy framework.
+    year_established: 1952
+    notes: ESI Courts constituted by state governments; central policy via MoLE.
+    data_quality: partial
+    sources:
+      - label: Employees' State Insurance Act 1948 — India Code
+        url: https://india-code.nic.in/handle/123456789/1581
+        type: CentralAct
+        accessed_date: '2026-06-15'
+
+  - id: rel_state_labour_court_policy_mole
+    source: state_labour_court_generic
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: >-
+      Industrial Disputes Act 1947, s.7 (Labour Courts constituted by appropriate
+      Government). State constitutes; MoLE sets legislative framework.
+    notes: State Labour Courts are independent judicial bodies.
+    data_quality: partial
+    sources:
+      - label: Industrial Disputes Act 1947 s.7 — India Code
+        url: https://india-code.nic.in/handle/123456789/1344
+        type: CentralAct
+        accessed_date: '2026-06-15'
+
+  - id: rel_state_industrial_tribunal_policy_mole
+    source: state_industrial_tribunal_generic
+    target: ministry_labour_employment
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: >-
+      Industrial Disputes Act 1947, s.7A (Industrial Tribunals constituted by
+      appropriate Government).
+    notes: National Industrial Tribunals (s.7B) wired separately via CGIT pack.
+    data_quality: partial
+    sources:
+      - label: Industrial Disputes Act 1947 s.7A — India Code
+        url: https://india-code.nic.in/handle/123456789/1344
+        type: CentralAct
+        accessed_date: '2026-06-15'

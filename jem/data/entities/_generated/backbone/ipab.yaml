@@ -3,32 +3,23 @@ name: Intellectual Property Appellate Board
 name_hindi: बौद्धिक संपदा अपीलीय बोर्ड
 abbreviation: IPAB
 aliases:
-  - IP Appellate Board
-
+- IP Appellate Board
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - patents_appeals
-    - trademark_appeals
-    - geographical_indications_appeals
-
+  - patents_appeals
+  - trademark_appeals
+  - geographical_indications_appeals
 created_year: 2003
 abolished_year: 2021
 operational_status: Abolished
-
 constitutional_basis: null
-statutory_basis: >-
-  Trade Marks Act 1999, s.83 (establishment); Patents Act 1970, s.116
-  (jurisdiction); Geographical Indications of Goods (Registration and
-  Protection) Act 1999, s.31. Abolished by Tribunals Reforms
-  (Rationalisation and Conditions of Service) Ordinance 2021 (later
-  enacted as Tribunals Reforms Act 2021, s.3(3) read with Second
-  Schedule).
-
+statutory_basis: Trade Marks Act 1999, s.83 (establishment); Patents Act 1970, s.116 (jurisdiction); Geographical Indications
+  of Goods (Registration and Protection) Act 1999, s.31. Abolished by Tribunals Reforms (Rationalisation and Conditions of
+  Service) Ordinance 2021 (later enacted as Tribunals Reforms Act 2021, s.3(3) read with Second Schedule).
 appointment:
   nominates: ministry_of_finance
   recommends: null
@@ -36,45 +27,44 @@ appointment:
   consultation_binding: null
   formally_appoints: central_government
   criteria_public: false
-  tenure: "Chairperson: 5 years or age 65; Technical/Judicial Members: 5 years or age 65"
+  tenure: 'Chairperson: 5 years or age 65; Technical/Judicial Members: 5 years or age 65'
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: Ministry_Budget
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: false
   conduct_oversight_body: ministry_of_finance
-
 complaint_mechanism:
-  lokpal_jurisdiction: "Not_Applicable"
+  lokpal_jurisdiction: Not_Applicable
   lokpal_jurisdiction_note: Body abolished in 2021.
   removal_mechanism: Abolished; no removal mechanism applicable.
-
 data_quality: partial
-data_quality_notes: >
-  Patent appeals transferred to HC (Patents Act 1970 s.117A as amended
-  by TRA 2021). Trade mark appeals transferred to HC (TM Act 1999 s.91
-  as amended by TRA 2021). No appellate chain from ipab post-abolition.
-  Entity retained as abolished node for historical completeness; no
-  AppealableTo edges should be added.
-
+data_quality_notes: Patent appeals transferred to HC (Patents Act 1970 s.117A as amended by TRA 2021). Trade mark appeals
+  transferred to HC (TM Act 1999 s.91 as amended by TRA 2021). No appellate chain from ipab post-abolition. Entity retained
+  as abolished node for historical completeness; no AppealableTo edges should be added. v1.2 judge_strength stub attached
 sources:
-  - label: "Tribunals Reforms Act 2021, s.3(3) and Second Schedule — abolition of IPAB"
-    url: https://india-code.nic.in/handle/123456789/17128
-    type: CentralAct
-    accessed_date: "2025-01-15"
-  - label: "Trade Marks Act 1999, s.83 — original establishment of IPAB"
-    url: https://india-code.nic.in/handle/123456789/2063
-    type: CentralAct
-    accessed_date: "2025-01-15"
-  - label: "Patents Act 1970, s.116–117A — IPAB jurisdiction and transfer"
-    url: https://india-code.nic.in/handle/123456789/1392
-    type: CentralAct
-    accessed_date: "2025-01-15"
+- label: Tribunals Reforms Act 2021, s.3(3) and Second Schedule — abolition of IPAB
+  url: https://india-code.nic.in/handle/123456789/17128
+  type: CentralAct
+  accessed_date: '2025-01-15'
+- label: Trade Marks Act 1999, s.83 — original establishment of IPAB
+  url: https://india-code.nic.in/handle/123456789/2063
+  type: CentralAct
+  accessed_date: '2025-01-15'
+- label: Patents Act 1970, s.116–117A — IPAB jurisdiction and transfer
+  url: https://india-code.nic.in/handle/123456789/1392
+  type: CentralAct
+  accessed_date: '2025-01-15'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

@@ -1,0 +1,431 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: mp_cdrc_ncdrc
+  source: mp_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mp_slsa_lok
+  source: slsa_mp
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: MP SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_fund_rera
+  source: government_mp
+  target: rera_mp
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: MP RERA funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_fund_serc
+  source: government_mp
+  target: serc_mp
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: MP SERC funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_serc_aptel
+  source: serc_mp
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_dist_principal_hc
+  source: mp_district_court_principal
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP principal district to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_principal
+  source: hc_madhya_pradesh
+  target: mp_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision MP principal
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_indore_hc
+  source: mp_district_court_indore
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP indore district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_indore
+  source: hc_madhya_pradesh
+  target: mp_district_court_indore
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision indore
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_bhopal_hc
+  source: mp_district_court_bhopal
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP bhopal district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_bhopal
+  source: hc_madhya_pradesh
+  target: mp_district_court_bhopal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision bhopal
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_jabalpur_hc
+  source: mp_district_court_jabalpur
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP jabalpur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_jabalpur
+  source: hc_madhya_pradesh
+  target: mp_district_court_jabalpur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision jabalpur
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_gwalior_hc
+  source: mp_district_court_gwalior
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP gwalior district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_gwalior
+  source: hc_madhya_pradesh
+  target: mp_district_court_gwalior
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision gwalior
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_ujjain_hc
+  source: mp_district_court_ujjain
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP ujjain district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_ujjain
+  source: hc_madhya_pradesh
+  target: mp_district_court_ujjain
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision ujjain
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_sagar_hc
+  source: mp_district_court_sagar
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP sagar district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_sagar
+  source: hc_madhya_pradesh
+  target: mp_district_court_sagar
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision sagar
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_rewa_hc
+  source: mp_district_court_rewa
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP rewa district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_rewa
+  source: hc_madhya_pradesh
+  target: mp_district_court_rewa
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision rewa
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_satna_hc
+  source: mp_district_court_satna
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP satna district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_satna
+  source: hc_madhya_pradesh
+  target: mp_district_court_satna
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision satna
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_ratlam_hc
+  source: mp_district_court_ratlam
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP ratlam district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_ratlam
+  source: hc_madhya_pradesh
+  target: mp_district_court_ratlam
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision ratlam
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_district_courts_generic_hc
+  source: mp_district_courts_generic
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: MP collapsed district rollup appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_hc_super_district_courts_generic
+  source: hc_madhya_pradesh
+  target: mp_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision MP district rollup
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_sja_train
+  source: mp_sja
+  target: mp_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: MP judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_cdrc_indore_scdrc
+  source: mp_cdrc_indore
+  target: mp_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Indore DCDRC to MP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_cdrc_bhopal_scdrc
+  source: mp_cdrc_bhopal
+  target: mp_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Bhopal DCDRC to MP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_cdrc_jabalpur_scdrc
+  source: mp_cdrc_jabalpur
+  target: mp_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Jabalpur DCDRC to MP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_cdrc_gwalior_scdrc
+  source: mp_cdrc_gwalior
+  target: mp_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Gwalior DCDRC to MP SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: mp_gov_appoints_advocate_general
+  source: governor_state
+  target: mp_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: mp_gov_fund_bar_council
+  source: government_mp
+  target: mp_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: mp_gov_fund_lokayukta
+  source: government_mp
+  target: mp_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mp_mp_special_courts_appealable_hc_madhya_pradesh
+  source: mp_special_courts
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: mp_hc_madhya_pradesh_supervise_mp_special_courts
+  source: hc_madhya_pradesh
+  target: mp_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

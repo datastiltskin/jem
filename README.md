@@ -10,6 +10,7 @@ JEM maps *how* courts, tribunals, regulators, and oversight bodies are built —
 → **Data licence:** CC0 (public domain)  
 → **Code licence:** MIT  
 → **GitHub:** https://github.com/dso6060/jem_prototype  
+→ **Release:** `v1.2.0` (Jun 2026) — **1,103 entities**, **1,855 relationships**, **0 orphan nodes**  
 → **Maintainer:** [@dso6060](https://github.com/dso6060) ·  · co-maintainer [@Prajna1999](https://github.com/Prajna1999)  
 → **Maintainer guide:** [`jem/docs/KNOWLEDGE_TRANSFER.md`](jem/docs/KNOWLEDGE_TRANSFER.md) · [`jem/docs/JEM_Knowledge_Transfer.docx`](jem/docs/JEM_Knowledge_Transfer.docx)  
 → **AI data-entry prompt:** [`jem/docs/AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) · **Entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
@@ -41,7 +42,9 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 ## V1 entity coverage
 
-**Constitutional courts:** Supreme Court · All 25 High Courts (complete)
+**Snapshot (v1.2.0, Jun 2026):** full structural packs for **all states and UTs** (35 codes), central tribunal bench lattice (CESTAT×8, AFT×11, DRT×25, ITAT×25), tax/labour/defence/IP stacks, and **0 orphan entities** in `graph.json`. TN retains the deepest district lattice (38 courts); other states use core pack + named high-volume districts.
+
+**Constitutional courts:** Supreme Court · All 25 High Courts (complete) · 13 permanent HC benches
 
 **Central tribunals:** NCLT · NCLAT · NGT · ITAT · SAT · CAT · DRT · DRAT · TDSAT · APTEL · ATFE · CESTAT · AFT · GSTAT (Not_Constituted)
 
@@ -71,13 +74,15 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 **People/Roles:** CJI · SC Judge · HC Judge · District Judge · Magistrate · Advocate · Senior Advocate · AOR · Petitioner · Respondent · Accused · Victim · Registrar General
 
-**Sample state — Tamil Nadu + Puducherry UT**
+**Sample state — Tamil Nadu + Puducherry UT** (TN also has full per-district lattice)
+
+**All other states/UTs:** core pack (SERC/RERA, SJA, SLSA, lokayukta, AG, SCDRC, district CDRCs, 5–10 named district courts, special courts) — see `jem/data/entities/_generated/states/`
 
 ---
 
 ## Entity build progress
 
-**668 / ~1,500** structural entities in repo (Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
+**1,103 / ~1,500** structural entities in repo (**v1.2.0**, Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md) · acceptance rubric: [`jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md`](jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md).
 
 | Status | Meaning |
 |--------|---------|
@@ -101,20 +106,20 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 | C12 | Investigation & prosecution | ~15 | **updated** | 1 |
 | C13 | Training, audit, lokayukta | ~40 | **updated** | 2 |
 | C14 | State packs MH, DL, KA, TN, PY | ~220 | **done** | 0 |
-| C15 | State packs Batch A (UP, WB, RJ, AP, TS, GJ) | ~420 | **updated** | **1** |
-| C16 | State packs Batch B | ~360 | **pending** | 1 |
-| C17 | State packs Batch C (NE, hills) | ~280 | **pending** | 2 |
-| C18 | State packs Batch D (UTs, JK/LA) | ~120 | **pending** | 2 |
+| C15 | State packs Batch A (UP, WB, RJ, AP, TS, GJ) | ~420 | **updated** | 1 |
+| C16 | State packs Batch B (MP, BR, KL, PB, HR, OD) | ~360 | **updated** | 1 |
+| C17 | State packs Batch C (NE, HP, UK, GA, CG, JH) | ~280 | **updated** | 2 |
+| C18 | State packs Batch D (UTs, JK/LA, SK, PY) | ~120 | **updated** | 2 |
 | C19 | Tax / revenue stack | ~45 | **updated** | 2 |
 | C20 | Labour tribunals | ~35 | **updated** | 2 |
 | C21 | Defence (AFT benches, court martial) | ~12 | **updated** | 2 |
 | C22 | Specialized regulators (FSSAI, AERA, …) | ~10 | **updated** | 2 |
 | C23 | IP entities | ~5 | **updated** | 3 |
-| C24 | State tribunals (SAT, transport, MHRB) | ~35 | **updated** | 3 |
+| C24 | State tribunals (SAT, transport, MHRB, VAT) | ~35 | **updated** | 3 |
 | C25 | People / roles layer | ~20 | **pending** | 3 |
-| C26 | Relationship wiring (orphans) | — | **updated** | 1–3 |
-| C27 | Data-quality upgrades | 668 | **updated** | all |
-| C28 | NJDG / judge_strength numerics | 668 | **pending** | 2 |
+| C26 | Relationship wiring (orphans) | — | **done** | 1–3 |
+| C27 | Data-quality upgrades | 1103 | **updated** | all |
+| C28 | NJDG / judge_strength numerics | 1103 | **partial** | 2 |
 
 **Contributors:** copy prompts from the roadmap + [`AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) → open a **GitHub issue** with YAML (no email). **New entities:** proposed drafts OK. **Relationships:** maintainers only.
 
@@ -134,7 +139,7 @@ The canonical record of everything not yet in the data layer, deferred to v2, ou
 |---|---|---|
 | GSTAT | Not constituted — 8 years since legislation. 15,000+ GST cases at HCs instead. | Critical |
 | ACI | Not constituted — 6 years since legislation. SC issued notice 2025. | Critical |
-| TN Lokayukta | Not constituted — 9 years. No anti-corruption oversight for India's 2nd-largest GDP state. | Critical |
+| TN Lokayukta | Operational status contested — verify against state portal vs historical gap notes | High |
 | AFT | No HC appeal path — only direct SC SLP. 44% vacancy. MoD appointer-litigant loop. | Critical/High |
 | Allahabad HC | 43% vacancy — 69 of 160 posts. India's highest-volume HC. | Critical |
 | Patna HC | 47% vacancy — 25 of 53 posts. | Critical |
@@ -161,7 +166,9 @@ The canonical record of everything not yet in the data layer, deferred to v2, ou
 
 ### B. Known entities not yet in v1 — community contribution needed
 
-**Tax / Revenue tribunals (high priority):**
+> **Note (v1.2.0):** Many items below are now **in graph** as principals, regional benches, or generics (CESTAT×8, AFT×11, DRT×25, ITAT×25, CGIT, EPFAT, IP stack, state VAT/SAT stubs). This section lists remaining depth work — per-bench DRT sub-entities, constituted GSTAT benches, per-district NJDG numerics.
+
+**Tax / Revenue tribunals (remaining depth):**
 
 | Entity | Notes |
 |---|---|
@@ -224,19 +231,11 @@ The canonical record of everything not yet in the data layer, deferred to v2, ou
 
 ### C. State-level entities by phase
 
-**Phase 1 — Cursor Pro (from 28 April):**
+**Phase 1 — complete (MH, DL, KA, TN, PY):** full packs; TN has 38-district lattice.
 
-| State/UT | Entity count (est.) | Key additions |
-|---|---|---|
-| Maharashtra | ~140 | City Civil Court Mumbai · MERC · MahaRERA · MH Lokayukta · 36 district courts |
-| Delhi | ~80 | DERC · Delhi RERA · Delhi Lokayukta · 11 district courts |
-| Karnataka | ~120 | City Civil Court Bangalore · KERC · KA RERA · KA Lokayukta · 31 district courts |
+**Phase 2 — complete (v1.2.0):** core packs for all remaining states and UTs (AP, TS, GJ, UP, WB, RJ, MP, BR, KL, PB, HR, OD, NE states, CG, GA, HP, JH, UK, CH, AN, LD, LA, JK, SK, PY).
 
-**Phase 2 — Community PRs:**
-
-All remaining states — same entity types as Phase 1, scaled to each state's district count.
-
-**Phase 3 — District resolution:**
+**Phase 3 — District resolution (next):**
 
 Individual DLSA entities (650+), individual district CDRC entries (670+), individual DRT bench entities.
 
@@ -253,7 +252,7 @@ Individual DLSA entities (650+), individual district CDRC entries (670+), indivi
 | Appointment delay pipeline | `avg_days_vacancy_unfilled` data not yet populated |
 | Litigant journey mode | New interaction model, separate state machine |
 | Canvas renderer for L1/L2 | Required for 60fps at 500+ nodes — SVG sufficient for current entity count |
-| Chunked graph.json | Required at 1500+ entities — 658KB manageable now |
+| Chunked graph.json | Required at 1500+ entities — ~5.5 MB manageable at 1,103 |
 | Year-over-year clog trend | Needs multiple NJDG historical snapshots |
 | Funding flow Sankey | Budget figures incomplete across entities |
 | COMPAT (abolished) as historical entity | Needs historical rendering only — time scroller work |
@@ -331,19 +330,19 @@ GitHub: https://github.com/dso6060/jem_prototype — Actions validates PRs; **do
 
 ## Phased expansion
 
-| Phase | Scope | Mechanism | When |
+| Phase | Scope | Mechanism | Status |
 |---|---|---|---|
-| 0 | Central institutions + TN + PY sample | Built | Done |
-| 1 | MH + DL + KA full state entities | Cursor Pro | From 28 April |
-| 2 | Remaining 22 states + 5 UTs | Community PRs | Ongoing |
-| 3 | District resolution (DLSAs, individual CDRCs) | Community PRs | Ongoing |
+| 0 | Central institutions + TN + PY sample | Maintainer | **Done** |
+| 1 | MH + DL + KA full state entities | Maintainer | **Done** |
+| 2 | All remaining states + UTs (core packs) | Maintainer + agents | **Done** (`v1.2.0`) |
+| 3 | District resolution (DLSAs, per-district NJDG, DRT sub-benches) | Community + maintainer | **Next** |
 | 4 | Revenue courts, Board of Revenue per state | Specialist contributors | Open |
 
 ---
 
 ## Contributing
 
-See [jem/docs/CONTRIBUTING.md](jem/docs/CONTRIBUTING.md). **v0.9:** community contributions are **data-quality upgrades on existing entities** only; maintainers handle new entities and relationship topology.
+See [jem/docs/CONTRIBUTING.md](jem/docs/CONTRIBUTING.md). **v1.2+:** contributors may submit **proposed entity YAML** via GitHub issues; maintainers merge after `validate.py`. **Relationships** remain maintainer-only.
 
 GitHub scaffolding (issue/PR templates, CODEOWNERS, governance): [`.github/`](.github/) · publish steps: [`.github/PUBLISH_CHECKLIST.md`](.github/PUBLISH_CHECKLIST.md) · team placeholders: [`jem/docs/TEAM.md`](jem/docs/TEAM.md).
 

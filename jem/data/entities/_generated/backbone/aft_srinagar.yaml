@@ -87,7 +87,8 @@ data_quality_notes: 'SINGLE BENCH — NO SEPARATE AFT JAMMU ENTITY: Official nam
   Contact: registraraft.jk@gov.in. Appellate path: AFT → SC per s.30 (not HC).
 
 
-  M-T6 review Jun 2026: no post-2019 Ladakh gazette found; LA remains provisional in uts_covered.'
+  M-T6 review Jun 2026: no post-2019 Ladakh gazette found; LA remains provisional in uts_covered. v1.2 judge_strength stub
+  attached'
 unverified_fields:
 - field: jurisdiction_scope.uts_covered.LA
   note: Ladakh coverage not confirmed in post-2019 MoD/AFT gazette notification.
@@ -112,3 +113,10 @@ sources:
   url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

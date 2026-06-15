@@ -2,22 +2,19 @@ id: state_administrative_tribunal_generic
 name: State Administrative Tribunal — Generic (Non-CAT)
 name_hindi: राज्य प्रशासनिक अधिकरण — सामान्य
 abbreviation: State AT
-
 type: StateTribunal
 cluster: tribunals_adr
 level_of_government: State
-
 created_year: 1985
 operational_status: Active
+constitutional_basis: 'Constitution of India Article 323-B empowers Parliament and State Legislatures to establish tribunals
+  for service-condition disputes.
 
-constitutional_basis: >
-  Constitution of India Article 323-B empowers Parliament and State Legislatures
-  to establish tribunals for service-condition disputes.
-statutory_basis: >
-  Administrative Tribunals Act 1985 s.4(2); few states (Maharashtra, Karnataka,
-  Himachal Pradesh, Odisha, Tamil Nadu historically) have operated State ATs;
-  most state employees use CAT or High Court directly.
+  '
+statutory_basis: 'Administrative Tribunals Act 1985 s.4(2); few states (Maharashtra, Karnataka, Himachal Pradesh, Odisha,
+  Tamil Nadu historically) have operated State ATs; most state employees use CAT or High Court directly.
 
+  '
 appointment:
   nominates: null
   recommends: null
@@ -29,19 +26,16 @@ appointment:
   removal_authority: governor_state
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: State_Consolidated_Fund
   ministry_responsible: null
   budget_figure_crore: null
   budget_year: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Performance
   audit_report_public: true
   conduct_oversight_body: null
-
 complaint_mechanism:
   bias_complaint_to: []
   criminal_prosecution:
@@ -52,15 +46,19 @@ complaint_mechanism:
   lokpal_jurisdiction: Contested
   lokpal_jurisdiction_note: State Lokayukta jurisdiction varies by state Act.
   source: null
-
 data_quality: partial
-data_quality_notes: >
-  Generic scaffold distinct from CAT (central). Trend since L. Chandra Kumar (1997)
-  is direct HC jurisdiction for many matters. Do not conflate with CAT or HC service
-  benches. Appeal from State AT typically lies to High Court.
-
+data_quality_notes: Generic scaffold distinct from CAT (central). Trend since L. Chandra Kumar (1997) is direct HC jurisdiction
+  for many matters. Do not conflate with CAT or HC service benches. Appeal from State AT typically lies to High Court. v1.2
+  judge_strength stub attached
 sources:
-  - label: Administrative Tribunals Act 1985 — India Code
-    url: https://www.india-code.nic.in/CodeofActs/1985/1985_13.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
+- label: Administrative Tribunals Act 1985 — India Code
+  url: https://www.india-code.nic.in/CodeofActs/1985/1985_13.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

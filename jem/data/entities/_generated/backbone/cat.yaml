@@ -37,7 +37,7 @@ audit:
 data_quality: partial
 data_quality_notes: "Appointment block verified against AT Act 1985 and TRA 2021. Pre-2021 tenure was 5 years or age 65/62\
   \ — TRA 2021 now governs. ministry_responsible 'ministry_personnel_dopt' assumed — verify in graph. case_volume and judge_strength\
-  \ null — CAT Annual Report or DoJ data in §3/§7.\n NJDG snapshot case_volume merged"
+  \ null — CAT Annual Report or DoJ data in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
 sources:
 - label: Administrative Tribunals Act 1985 — India Code
   url: https://india-code.nic.in/acts-detail/NzAx
@@ -65,3 +65,10 @@ case_volume:
   avg_disposal_days: 912
   disposal_rate: 0.65
   clog_severity: critical
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://cgat.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

@@ -1,0 +1,40 @@
+# JEM generated bundle — data_quality: partial; expand sources per CONTRIBUTING.md
+id: br_district_court_muzaffarpur
+name: District Court — Muzaffarpur
+type: SubordinateCivilCourt
+cluster: subordinate_courts
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - BR
+  is_all_india: false
+  jurisdiction_types:
+  - Civil
+  - Criminal
+created_year: 1860
+operational_status: Active
+constitutional_basis: Constitution of India, Articles 233–237
+funding:
+  primary_source: State_Consolidated_Fund
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+data_quality_notes: Pendency and judge_strength TBD from NJDG district dashboard.
+sources:
+- label: India Code — Constitution & Acts
+  url: https://india-code.nic.in/
+  type: GoIWebsite
+  accessed_date: '2026-05-13'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: DoJ_Report
+  source_url: https://doj.gov.in/
+  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate
+    from DoJ quarterly vacancy report or NJDG bench strength.

@@ -16,8 +16,8 @@ created_year: 1993
 operational_status: Active
 constitutional_basis: null
 statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act), s.8–18 — hears appeals
-  from DRT orders. Five DRAT benches: Allahabad, Chennai, Delhi, Kolkata, Mumbai. Aggregate entity; bench-level nodes
-  drat_allahabad, drat_chennai, drat_delhi, drat_kolkata, drat_mumbai added C04 2026-06.'
+  from DRT orders. Five DRAT benches: Allahabad, Chennai, Delhi, Kolkata, Mumbai. Aggregate entity; bench-level nodes drat_allahabad,
+  drat_chennai, drat_delhi, drat_kolkata, drat_mumbai added C04 2026-06.'
 appointment:
   nominates: ministry_of_finance
   recommends: null
@@ -49,12 +49,12 @@ judge_strength:
   allotted: null
   appointed: null
   source_type: DoJ_Report
-  source_url: null
+  source_url: https://dfs.gov.in/financial-institutions/drat
   notes: 4 DRAT benches; one Chairperson each. Exact figures not verified.
 data_quality: partial
 data_quality_notes: Aggregate entity for constellation view. Bench-level entities drat_allahabad, drat_chennai, drat_delhi,
-  drat_kolkata, drat_mumbai hold location-specific appellate jurisdiction. Case volume and strength data left partial.
-  NJDG snapshot case_volume merged
+  drat_kolkata, drat_mumbai hold location-specific appellate jurisdiction. Case volume and strength data left partial. NJDG
+  snapshot case_volume merged v1.2 judge_strength stub attached
 sources:
 - label: RDDBFI Act 1993, s.8–18 — DRAT provisions
   url: https://india-code.nic.in/handle/123456789/1573

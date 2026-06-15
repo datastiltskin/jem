@@ -41,7 +41,7 @@ data_quality_notes: "created_year 1941 (founding under IT Act 1922); 1961 (curre
   \ Ahmedabad→hc_gujarat; Hyderabad→hc_telangana+hc_andhra_pradesh; Visakhapatnam→hc_andhra_pradesh; Bangalore→hc_karnataka;\
   \ Allahabad/Lucknow→hc_allahabad; Chandigarh/Amritsar→hc_punjab_haryana; Guwahati→hc_gauhati; Patna→hc_patna; Ranchi→hc_jharkhand;\
   \ Bhopal/Indore→hc_madhya_pradesh; Jaipur/Jodhpur→hc_rajasthan; Cuttack→hc_orissa; Kochi/Trivandrum→hc_kerala. Per-bench\
-  \ entities itat_* wired in itat_bench_relationships.yaml."
+  \ entities itat_* wired in itat_bench_relationships.yaml. v1.2 judge_strength stub attached"
 sources:
 - label: Income Tax Act 1961 — Income Tax Department
   url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx
@@ -68,3 +68,10 @@ case_volume:
   avg_disposal_days: 1095
   disposal_rate: 0.7091
   clog_severity: critical
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://itat.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

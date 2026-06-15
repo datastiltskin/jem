@@ -3,83 +3,81 @@ name: Debt Recovery Tribunal, Coimbatore
 name_hindi: ऋण वसूली अधिकरण, कोयंबटूर
 abbreviation: DRT Coimbatore
 aliases:
-  - Debts Recovery Tribunal Coimbatore
-
+- Debts Recovery Tribunal Coimbatore
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - TN
+  - TN
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 2002
 operational_status: Active
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002,
+  s. 17. Established vide G.S.R. 221(E) dated 22 March 2002. Single-bench tribunal under DRAT Chennai. Current jurisdiction
+  per S.O. 4717(E) dated 4 October 2022: districts of Coimbatore, Tirupur, Nilgiris, Salem, Karur, Namakkal, and Erode. Address:
+  2nd & 3rd Floor, District Ex-Service Centre, 27 Travellers Bungalow Road, Coimbatore.
 
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Established vide G.S.R. 221(E) dated 22 March 2002.
-  Single-bench tribunal under DRAT Chennai. Current jurisdiction per S.O. 4717(E)
-  dated 4 October 2022: districts of Coimbatore, Tirupur, Nilgiris, Salem, Karur,
-  Namakkal, and Erode. Address: 2nd & 3rd Floor, District Ex-Service Centre,
-  27 Travellers Bungalow Road, Coimbatore.
-
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_madras
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_madras
-      mechanism: >
-        Supervisory jurisdiction of Madras High Court under Arts 226/227;
-        writ petition before Madras High Court.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_madras
+    mechanism: 'Supervisory jurisdiction of Madras High Court under Arts 226/227; writ petition before Madras High Court.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  G.S.R. 221(E) dated 22 March 2002. District jurisdiction per S.O. 4717(E) dated
-  4 October 2022 (ibclaw): Coimbatore, Tirupur, Nilgiris, Salem, Karur, Namakkal,
-  Erode. DRAT Chennai confirmed by official DRAT Chennai website.
-
+data_quality_notes: 'G.S.R. 221(E) dated 22 March 2002. District jurisdiction per S.O. 4717(E) dated 4 October 2022 (ibclaw):
+  Coimbatore, Tirupur, Nilgiris, Salem, Karur, Namakkal, Erode. DRAT Chennai confirmed by official DRAT Chennai website. v1.2
+  judge_strength stub attached'
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
-  - label: >
-      S.O. 4717(E) dated 4 October 2022 — current official jurisdiction table
-      for DRAT Chennai circuit; Coimbatore district list confirmed
-    url: https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/
-    type: GazetteNotification
-    accessed_date: '2026-06-12'
-  - label: >
-      DRAT Chennai official website — confirms Coimbatore under DRAT Chennai circuit
-    url: https://drat.tn.nic.in/Jurisdiction.htm
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: 'S.O. 4717(E) dated 4 October 2022 — current official jurisdiction table for DRAT Chennai circuit; Coimbatore district
+    list confirmed
+
+    '
+  url: https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
+- label: 'DRAT Chennai official website — confirms Coimbatore under DRAT Chennai circuit
+
+    '
+  url: https://drat.tn.nic.in/Jurisdiction.htm
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

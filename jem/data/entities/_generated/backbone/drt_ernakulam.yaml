@@ -3,92 +3,87 @@ name: Debt Recovery Tribunal, Ernakulam
 name_hindi: ऋण वसूली अधिकरण, एर्नाकुलम
 abbreviation: DRT Ernakulam
 aliases:
-  - DRT Kochi
-  - Debts Recovery Tribunal Ernakulam
-
+- DRT Kochi
+- Debts Recovery Tribunal Ernakulam
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
-
 jurisdiction_scope:
   states_covered:
-    - KL
+  - KL
   uts_covered:
-    - LD
+  - LD
   is_all_india: false
   jurisdiction_types:
-    - debt_recovery
-    - sarfaesi_appeals
-
+  - debt_recovery
+  - sarfaesi_appeals
 created_year: 1999
 operational_status: Active
-
-statutory_basis: >
-  Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act),
-  s. 3; SARFAESI Act, 2002, s. 17. Originally established vide G.S.R. 397(E) dated
-  4 October 1999 as a single bench. A second bench (DRT-2 Ernakulam) was subsequently
-  established. Current jurisdiction per S.O. 4717(E) dated 4 October 2022:
-  DRT-1 covers Ernakulam, Malappuram, Kozhikode, Palakkad, Wayanad, Kannur, and
-  Kasaragod; DRT-2 covers Thiruvananthapuram, Kollam, Pathanamthitta, Kottayam,
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act, 1993 (RDDBFI Act), s. 3; SARFAESI Act, 2002,
+  s. 17. Originally established vide G.S.R. 397(E) dated 4 October 1999 as a single bench. A second bench (DRT-2 Ernakulam)
+  was subsequently established. Current jurisdiction per S.O. 4717(E) dated 4 October 2022: DRT-1 covers Ernakulam, Malappuram,
+  Kozhikode, Palakkad, Wayanad, Kannur, and Kasaragod; DRT-2 covers Thiruvananthapuram, Kollam, Pathanamthitta, Kottayam,
   Alappuzha, Thrissur, and Idukki. Both under DRAT Chennai.
 
+  '
 appointment:
   nominates: ministry_of_finance
   formally_appoints: central_government
   criteria_public: true
-  tenure: '5 years or until age 62, whichever is earlier'
+  tenure: 5 years or until age 62, whichever is earlier
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
-
 funding:
   primary_source: Consolidated_Fund_India
   ministry_responsible: ministry_of_finance
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
   audit_report_public: true
   conduct_oversight_body: hc_kerala
-
 complaint_mechanism:
   bias_complaint_to:
-    - body: hc_kerala
-      mechanism: >
-        Supervisory jurisdiction of Kerala High Court under Arts 226/227;
-        writ petition before Kerala High Court.
-      complainant_has_locus: true
-      is_public_process: true
-      external_to_judiciary: false
+  - body: hc_kerala
+    mechanism: 'Supervisory jurisdiction of Kerala High Court under Arts 226/227; writ petition before Kerala High Court.
+
+      '
+    complainant_has_locus: true
+    is_public_process: true
+    external_to_judiciary: false
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: >
-    Presiding Officer is a judicial officer equivalent to District Judge.
+  lokpal_jurisdiction_note: 'Presiding Officer is a judicial officer equivalent to District Judge.
+
+    '
   source: RDDBFI Act 1993; Constitution of India Arts 226-227
-
 data_quality: partial
-data_quality_notes: >
-  Two Ernakulam benches (DRT-1 and DRT-2). DRT-1 established G.S.R. 397(E) dated
-  4 October 1999. District jurisdiction per S.O. 4717(E) dated 4 October 2022 (ibclaw)
-  sourced and included above. DRAT Chennai supervision confirmed by official DRAT
-  Chennai website (Jurisdiction page). Lakshadweep under DRT-1 per original
-  BankAuctions.in reference. This entity represents the Ernakulam location; bench-
-  specific entities (drt_ernakulam_1, drt_ernakulam_2) may be warranted when bench
-  addresses are confirmed from drt.gov.in.
-
+data_quality_notes: Two Ernakulam benches (DRT-1 and DRT-2). DRT-1 established G.S.R. 397(E) dated 4 October 1999. District
+  jurisdiction per S.O. 4717(E) dated 4 October 2022 (ibclaw) sourced and included above. DRAT Chennai supervision confirmed
+  by official DRAT Chennai website (Jurisdiction page). Lakshadweep under DRT-1 per original BankAuctions.in reference. This
+  entity represents the Ernakulam location; bench- specific entities (drt_ernakulam_1, drt_ernakulam_2) may be warranted when
+  bench addresses are confirmed from drt.gov.in. v1.2 judge_strength stub attached
 sources:
-  - label: 'RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)'
-    url: https://india-code.nic.in/CodeofActs13/19930951.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
-  - label: >
-      S.O. 4717(E) dated 4 October 2022 — current official jurisdiction table
-      for DRAT Chennai circuit DRTs (Ernakulam 1 and 2 district lists)
-    url: https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/
-    type: GazetteNotification
-    accessed_date: '2026-06-12'
-  - label: >
-      DRAT Chennai official website — Jurisdiction page confirms Ernakulam-1
-      and Ernakulam-2 under DRAT Chennai circuit
-    url: https://drat.tn.nic.in/Jurisdiction.htm
-    type: GoIWebsite
-    accessed_date: '2026-06-12'
+- label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
+  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+- label: 'S.O. 4717(E) dated 4 October 2022 — current official jurisdiction table for DRAT Chennai circuit DRTs (Ernakulam
+    1 and 2 district lists)
+
+    '
+  url: https://ibclaw.in/central-government-hereby-notifies-the-jurisdiction-of-the-debts-recovery-tribunals-notification-dated-04-10-2022/
+  type: GazetteNotification
+  accessed_date: '2026-06-12'
+- label: 'DRAT Chennai official website — Jurisdiction page confirms Ernakulam-1 and Ernakulam-2 under DRAT Chennai circuit
+
+    '
+  url: https://drat.tn.nic.in/Jurisdiction.htm
+  type: GoIWebsite
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

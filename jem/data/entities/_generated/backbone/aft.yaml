@@ -62,13 +62,13 @@ judge_strength:
   allotted: null
   appointed: null
   source_type: DoJ_Report
-  source_url: null
+  source_url: https://aft.gov.in/
   notes: Multiple Regional Benches (Principal Bench Delhi + 8 regional benches). Total sanctioned and working member strength
     not verified at authoring time.
 data_quality: partial
 data_quality_notes: 'Entity created from statutory sources. ministry_defence entity id assumed present in graph — flag if
   absent. Note: AFT appeals go directly to the Supreme Court (AFT Act 2007, s.30) — NOT to High Courts. Appellate relationship
-  recorded as AppealableTo supreme_court_india. NJDG snapshot case_volume merged'
+  recorded as AppealableTo supreme_court_india. NJDG snapshot case_volume merged v1.2 judge_strength stub attached'
 sources:
 - label: Armed Forces Tribunal Act 2007 (Act 55 of 2007)
   url: https://india-code.nic.in/handle/123456789/2093

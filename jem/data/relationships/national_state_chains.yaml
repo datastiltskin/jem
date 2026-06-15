@@ -8,12 +8,11 @@ relationships:
   is_binding: true
   notes: >
     Madurai Bench is the sole permanent bench of the Madras High Court (est.
-    2004). Exercises full HC jurisdiction for southern and central TN districts
-    including: Ariyalur, Cuddalore, Dindigul, Kanniyakumari, Karur, Madurai,
-    Mayiladuthurai, Nagapattinam, Perambalur, Pudukkottai, Ramanathapuram,
-    Sivaganga, Tenkasi, Thanjavur, Theni, Thoothukudi, Tiruchirappalli,
-    Tirunelveli, Tiruvarur, Virudhunagar. Former erroneous
-    hc_madras_bench_tiruchirappalli entity removed; districts re-pointed here.
+    2004). No permanent bench exists at Tiruchirappalli. Exercises full HC
+    jurisdiction for 10 southern TN districts per hc_benches_config.py
+    TN_DISTRICT_TO_BENCH: Dindigul, Kanniyakumari, Madurai, Ramanathapuram,
+    Sivaganga, Tenkasi, Thoothukudi, Theni, Tirunelveli, Virudhunagar.
+    Central/northern TN districts appeal to hc_madras principal seat.
   data_quality: verified
   sources:
   - &id001

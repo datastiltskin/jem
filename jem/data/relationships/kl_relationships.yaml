@@ -1,0 +1,409 @@
+# JEM generated relationships — data_quality: partial
+relationships:
+- id: kl_cdrc_ncdrc
+  source: kl_state_cdrc
+  target: ncdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL SCDRC to NCDRC
+  data_quality: partial
+  sources:
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: kl_slsa_lok
+  source: slsa_kl
+  target: lok_adalat_generic
+  relationship_type: Designates
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: KL SLSA lok adalat
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_fund_rera
+  source: government_kl
+  target: rera_kl
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: KL RERA funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_fund_serc
+  source: government_kl
+  target: serc_kl
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: KL SERC funding
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_serc_aptel
+  source: serc_kl
+  target: aptel
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL SERC to APTEL
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_dist_principal_hc
+  source: kl_district_court_principal
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL principal district to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_principal
+  source: hc_kerala
+  target: kl_district_court_principal
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision KL principal
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_thiruvananthapuram_hc
+  source: kl_district_court_thiruvananthapuram
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL thiruvananthapuram district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_thiruvananthapuram
+  source: hc_kerala
+  target: kl_district_court_thiruvananthapuram
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision thiruvananthapuram
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_ernakulam_hc
+  source: kl_district_court_ernakulam
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL ernakulam district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_ernakulam
+  source: hc_kerala
+  target: kl_district_court_ernakulam
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision ernakulam
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_kozhikode_hc
+  source: kl_district_court_kozhikode
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL kozhikode district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_kozhikode
+  source: hc_kerala
+  target: kl_district_court_kozhikode
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision kozhikode
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_thrissur_hc
+  source: kl_district_court_thrissur
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL thrissur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_thrissur
+  source: hc_kerala
+  target: kl_district_court_thrissur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision thrissur
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_kollam_hc
+  source: kl_district_court_kollam
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL kollam district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_kollam
+  source: hc_kerala
+  target: kl_district_court_kollam
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision kollam
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_alappuzha_hc
+  source: kl_district_court_alappuzha
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL alappuzha district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_alappuzha
+  source: hc_kerala
+  target: kl_district_court_alappuzha
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision alappuzha
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_kannur_hc
+  source: kl_district_court_kannur
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL kannur district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_kannur
+  source: hc_kerala
+  target: kl_district_court_kannur
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision kannur
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_palakkad_hc
+  source: kl_district_court_palakkad
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL palakkad district appellate
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_palakkad
+  source: hc_kerala
+  target: kl_district_court_palakkad
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision palakkad
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_district_courts_generic_hc
+  source: kl_district_courts_generic
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: KL collapsed district rollup appeals to HC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_hc_super_district_courts_generic
+  source: hc_kerala
+  target: kl_district_courts_generic
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: false
+  notes: HC supervision KL district rollup
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_sja_train
+  source: kl_sja
+  target: kl_district_court_principal
+  relationship_type: ProvidesContinuingEducation
+  relationship_category: training
+  is_binding: true
+  is_constitutional: false
+  notes: KL judicial academy training
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_cdrc_thiruvananthapuram_scdrc
+  source: kl_cdrc_thiruvananthapuram
+  target: kl_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Thiruvananthapuram DCDRC to KL SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_cdrc_ernakulam_scdrc
+  source: kl_cdrc_ernakulam
+  target: kl_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Ernakulam DCDRC to KL SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_cdrc_kozhikode_scdrc
+  source: kl_cdrc_kozhikode
+  target: kl_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Kozhikode DCDRC to KL SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_cdrc_thrissur_scdrc
+  source: kl_cdrc_thrissur
+  target: kl_state_cdrc
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Thrissur DCDRC to KL SCDRC
+  data_quality: partial
+  sources:
+  - *id001
+- id: kl_gov_appoints_advocate_general
+  source: governor_state
+  target: kl_advocate_general
+  relationship_type: FormallyAppoints
+  relationship_category: appointment
+  is_binding: true
+  is_constitutional: true
+  notes: Governor appoints Advocate General (Art. 165)
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 165
+- id: kl_gov_fund_bar_council
+  source: government_kl
+  target: kl_bar_council
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State consolidated fund support for State Bar Council
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Advocates Act 1961
+- id: kl_gov_fund_lokayukta
+  source: government_kl
+  target: kl_lokayukta
+  relationship_type: PrimaryFunder
+  relationship_category: funding
+  is_binding: true
+  is_constitutional: false
+  notes: State government funds Lokayukta institution
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: kl_kl_special_courts_appealable_hc_kerala
+  source: kl_special_courts
+  target: hc_kerala
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: Special court orders appealable to High Court
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+- id: kl_hc_kerala_supervise_kl_special_courts
+  source: hc_kerala
+  target: kl_special_courts
+  relationship_type: AdministrativeSupervision
+  relationship_category: supervisory
+  is_binding: true
+  is_constitutional: true
+  notes: High Court administrative supervision over special courts
+  data_quality: partial
+  sources:
+  - label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-15'
+  statutory_basis: Constitution of India, Article 235

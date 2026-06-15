@@ -41,7 +41,7 @@ jurisdiction_scope:
   - income_tax_appeals
 data_quality: partial
 data_quality_notes: ITAT Aurangabad bench. Appeal on substantial question of law to HC per IT Act s.260A. Zone jurisdiction
-  per CBDT/ITAT bench allocation — verify at itat.gov.in.
+  per CBDT/ITAT bench allocation — verify at itat.gov.in. v1.2 judge_strength stub attached
 sources:
 - label: Income Tax Act 1961 s.252–260A
   url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
@@ -51,3 +51,10 @@ sources:
   url: https://itat.gov.in
   type: GoIWebsite
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

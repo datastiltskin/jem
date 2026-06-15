@@ -2,19 +2,16 @@ id: state_transport_appellate_tribunal_generic
 name: State Transport Appellate Tribunal — Generic
 name_hindi: राज्य परिवहन अपीलीय अधिकरण — सामान्य
 abbreviation: STAT
-
 type: StateTribunal
 cluster: tribunals_adr
 level_of_government: State
-
 created_year: 1988
 operational_status: Active
-
 constitutional_basis: null
-statutory_basis: >
-  Motor Vehicles Act 1988 s.89; State Government constitutes a State Transport
-  Appellate Tribunal to hear appeals from Regional Transport Authority orders.
+statutory_basis: 'Motor Vehicles Act 1988 s.89; State Government constitutes a State Transport Appellate Tribunal to hear
+  appeals from Regional Transport Authority orders.
 
+  '
 appointment:
   nominates: null
   recommends: null
@@ -26,19 +23,16 @@ appointment:
   removal_authority: governor_state
   removal_requires_parliament: false
   removal_independent_committee: false
-
 funding:
   primary_source: State_Consolidated_Fund
   ministry_responsible: null
   budget_figure_crore: null
   budget_year: null
-
 audit:
   audited_by: cag_india
   audit_type: CAG_Performance
   audit_report_public: true
   conduct_oversight_body: null
-
 complaint_mechanism:
   bias_complaint_to: []
   criminal_prosecution:
@@ -49,15 +43,19 @@ complaint_mechanism:
   lokpal_jurisdiction: Contested
   lokpal_jurisdiction_note: State Lokayukta jurisdiction varies by state Act.
   source: null
-
 data_quality: partial
-data_quality_notes: >
-  Generic scaffold. Not all states maintain a separately constituted STAT; some
-  route appeals to High Court benches. judge_strength and case_volume left null —
-  populate at state-specific entity level. Appeal from STAT typically lies to HC.
-
+data_quality_notes: Generic scaffold. Not all states maintain a separately constituted STAT; some route appeals to High Court
+  benches. judge_strength and case_volume left null — populate at state-specific entity level. Appeal from STAT typically
+  lies to HC. v1.2 judge_strength stub attached
 sources:
-  - label: Motor Vehicles Act 1988 s.89 — India Code
-    url: https://www.india-code.nic.in/CodeofActs/1988/1988_59.pdf
-    type: CentralAct
-    accessed_date: '2026-06-12'
+- label: Motor Vehicles Act 1988 s.89 — India Code
+  url: https://www.india-code.nic.in/CodeofActs/1988/1988_59.pdf
+  type: CentralAct
+  accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

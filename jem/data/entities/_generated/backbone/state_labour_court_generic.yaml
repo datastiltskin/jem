@@ -20,9 +20,17 @@ complaint_mechanism:
   bias_complaint_to: []
   lokpal_jurisdiction: Contested
 data_quality: partial
-data_quality_notes: Generic scaffold. IRC 2020 notified but not in force as of Jun 2026; IDA 1947 remains operative.
+data_quality_notes: Generic scaffold. IRC 2020 notified but not in force as of Jun 2026; IDA 1947 remains operative. v1.2
+  judge_strength stub attached
 sources:
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/
   type: GoIWebsite
   accessed_date: '2026-06-12'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
