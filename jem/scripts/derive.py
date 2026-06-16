@@ -296,14 +296,14 @@ def compute_structural_health(
     base_health = 1.0 - (0.6 * p_ir + 0.4 * p_dp)
     final_health = max(0.0, min(1.0, base_health * op_modifier(op_status)))
 
-    # Rank into the exact buckets expected by the frontend.
-    # (renderer.js uses STRUCTURAL_HEALTH_RANK with these keys)
+    # Rank into the exact buckets the frontend filters on
+    # (state.js: structuralHealthBand + HEALTH_COLORS keys).
     if final_health <= 0.3:
         lvl = 'critical'
     elif final_health <= 0.6:
-        lvl = 'concerning'
+        lvl = 'at_risk'
     elif final_health <= 0.8:
-        lvl = 'moderate'
+        lvl = 'watch'
     else:
         lvl = 'healthy'
 

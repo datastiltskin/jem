@@ -34,6 +34,72 @@ function _updateBackBtn() {
   }
 }
 
+// ── URL hash routing ──────────────────────────────────────────────────────────
+// Shareable deep-links via fragment: '#/entity/<id>' opens the detail view,
+// '#/map' opens the map. Empty/absent hash = summary.
+// Hash-only (not pathname) so static hosts need no rewrites.
+
+function _entityIdFromHash() {
+  const m = (location.hash || '').match(/^#\/entity\/(.+)$/);
+  return m ? decodeURIComponent(m[1]) : null;
+}
+
+function _hashViewFromHash() {
+  if (/^#\/entity\/.+/.test(location.hash)) return 'detail';
+  if (location.hash === '#/map') return 'map';
+  return 'summary';
+}
+
+let _suppressHashSync = false;
+
+function _syncHashForView(view, entityId) {
+  if (_suppressHashSync) return;
+  let target = '';
+  if (view === 'detail' && entityId) target = `#/entity/${encodeURIComponent(entityId)}`;
+  else if (view === 'map') target = '#/map';
+  // Empty hash for summary.
+  if (location.hash === target) return;
+  const url = target ? `${location.pathname}${location.search}${target}` : `${location.pathname}${location.search}`;
+  history.pushState(null, '', url);
+}
+
+function _showMissingEntityToast(id) {
+  const el = document.createElement('div');
+  el.className = 'jem-toast jem-toast-warn';
+  el.textContent = `Entity “${id}” not found — showing overview.`;
+  document.body.appendChild(el);
+  requestAnimationFrame(() => el.classList.add('jem-toast-in'));
+  setTimeout(() => {
+    el.classList.remove('jem-toast-in');
+    setTimeout(() => el.remove(), 300);
+  }, 3200);
+}
+
+function _applyHashRoute() {
+  const view = _hashViewFromHash();
+  _suppressHashSync = true;
+  try {
+    if (view === 'detail') {
+      const id = _entityIdFromHash();
+      const e = id ? State.getEntityById(id) : null;
+      if (e) {
+        switchView('detail', id);
+      } else {
+        if (id) _showMissingEntityToast(id);
+        // Clear the bad hash so refresh doesn't re-toast.
+        history.replaceState(null, '', `${location.pathname}${location.search}`);
+        switchView('summary');
+      }
+    } else if (view === 'map') {
+      switchView('map');
+    } else {
+      switchView('summary');
+    }
+  } finally {
+    _suppressHashSync = false;
+  }
+}
+
 function switchView(view, entityId = null) {
   const prevView = document.body.dataset.appView;
 
@@ -110,6 +176,8 @@ function switchView(view, entityId = null) {
       requestAnimationFrame(() => fitFocusToView({ animate: false }));
     });
   }
+
+  _syncHashForView(view, entityId);
 }
 
 function wireNavigationEvents() {
@@ -362,7 +430,18 @@ async function boot() {
     render();
 
     initSummaryView();
-    switchView('summary');
+
+    // Hash deep-link: open the entity / view encoded in location.hash if any,
+    // otherwise default to summary. Browser back/forward and pasted URLs
+    // re-route via the popstate/hashchange listeners below.
+    if (location.hash) {
+      _applyHashRoute();
+    } else {
+      switchView('summary');
+    }
+
+    window.addEventListener('popstate', _applyHashRoute);
+    window.addEventListener('hashchange', _applyHashRoute);
 
   } catch (err) {
     console.error('JEM boot error:', err);

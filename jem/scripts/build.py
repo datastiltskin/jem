@@ -558,6 +558,74 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
         }
         frontend_relationships.append(fr)
 
+    # ── Step 10b: Backfill missing District Court → High Court edges ─────────
+    # 184 subordinate-court entities exist; ~half lack an explicit AppealableTo
+    # relationship in the YAML. Infer the parent HC from the state-code prefix
+    # in the entity id so the graph is structurally complete. These are tagged
+    # data_quality: "inferred" so they're visually distinct from curated edges.
+    STATE_CODE_TO_HC = {
+        "an": "hc_calcutta", "ap": "hc_andhra_pradesh", "ar": "hc_gauhati",
+        "as": "hc_gauhati", "br": "hc_patna", "ch": "hc_punjab_haryana",
+        "cg": "hc_chhattisgarh", "dd": "hc_bombay", "dl": "hc_delhi",
+        "ga": "hc_bombay", "gj": "hc_gujarat", "hr": "hc_punjab_haryana",
+        "hp": "hc_himachal_pradesh", "jk": "hc_jammu_kashmir_ladakh",
+        "jh": "hc_jharkhand", "ka": "hc_karnataka", "kl": "hc_kerala",
+        "la": "hc_jammu_kashmir_ladakh", "ld": "hc_kerala",
+        "mp": "hc_madhya_pradesh", "mh": "hc_bombay", "mn": "hc_manipur",
+        "ml": "hc_meghalaya", "mz": "hc_gauhati", "nl": "hc_gauhati",
+        "or": "hc_orissa", "od": "hc_orissa", "py": "hc_madras",
+        "pb": "hc_punjab_haryana", "rj": "hc_rajasthan", "sk": "hc_sikkim",
+        "tn": "hc_madras", "tg": "hc_telangana", "ts": "hc_telangana",
+        "tr": "hc_tripura",
+        "up": "hc_allahabad", "uk": "hc_uttarakhand", "wb": "hc_calcutta",
+    }
+    SUBORDINATE_TYPES = {
+        "SubordinateCivilCourt", "SubordinateCriminalCourt", "CityCivilCourt",
+        "SpecialCourt", "FastTrackCourt", "FamilyCourt", "CommercialCourt",
+        "RevenueCourt",
+    }
+    entity_ids = {e["id"] for e in frontend_entities}
+    has_appellate_parent = set()
+    for r in frontend_relationships:
+        if r.get("relationship_category") == "appellate_chain":
+            has_appellate_parent.add(r["source"])
+
+    inferred = 0
+    for e in frontend_entities:
+        if e.get("type") not in SUBORDINATE_TYPES:
+            continue
+        eid = e["id"]
+        if eid in has_appellate_parent:
+            continue
+        # Use jurisdiction_scope.states_covered first; fall back to id prefix.
+        scope = (e.get("_detail") or {}).get("jurisdiction_scope") or {}
+        states = scope.get("states_covered") or []
+        target_hc = None
+        if states:
+            target_hc = STATE_CODE_TO_HC.get(states[0].lower())
+        if not target_hc:
+            prefix = eid.split("_", 1)[0].lower()
+            target_hc = STATE_CODE_TO_HC.get(prefix)
+        if not target_hc or target_hc not in entity_ids:
+            continue
+        frontend_relationships.append({
+            "id": f"inferred_appellate_{eid}",
+            "source": eid,
+            "target": target_hc,
+            "relationship_type": "AppealableTo",
+            "relationship_category": "appellate_chain",
+            "is_binding": True,
+            "is_constitutional": False,
+            "year_established": None,
+            "year_abolished": None,
+            "data_quality": "inferred",
+            "contested_note": None,
+            "notes": "Edge inferred at build time from entity id / state code; not present in relationships YAML",
+            "sources": [],
+        })
+        inferred += 1
+    print(f"  Backfilled {inferred} District Court → HC edges (data_quality=inferred)")
+
     print("\nStep 11: Building browse index...")
     browse_index = compute_browse_index(frontend_entities)
 
