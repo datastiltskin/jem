@@ -10,7 +10,7 @@ JEM maps *how* courts, tribunals, regulators, and oversight bodies are built —
 → **Data licence:** CC0 (public domain)  
 → **Code licence:** MIT  
 → **GitHub:** https://github.com/dso6060/jem_prototype  
-→ **Release:** `v1.0.0` (Jun 2026) — **1,103 entities**, **1,858 relationships**, **0 orphan nodes** · summary/detail UI refresh  
+→ **Release:** `v1.0.0` (Jun 2026) — **1,117 entities**, **1,882 relationships**, **0 orphan nodes** · audit passes 1–4 + QA sprint (Jun 2026)  
 → **Maintainer:** [@dso6060](https://github.com/dso6060) ·  · co-maintainer [@Prajna1999](https://github.com/Prajna1999) (UI)  
 → **Maintainer guide:** [`jem/docs/KNOWLEDGE_TRANSFER.md`](jem/docs/KNOWLEDGE_TRANSFER.md) · [`jem/docs/JEM_Knowledge_Transfer.docx`](jem/docs/JEM_Knowledge_Transfer.docx)  
 → **AI data-entry prompt:** [`jem/docs/AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) · **Entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
@@ -42,7 +42,7 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 ## V1 entity coverage
 
-**Snapshot (v1.0.0, Jun 2026):** full structural packs for **all states and UTs** (35 codes), central tribunal bench lattice (CESTAT×9 locations, AFT×11 locations / 15 courts, DRT×39 + DRAT×5, ITAT×63 benches / 27 stations — graph has 25 ITAT station entities), tax/labour/defence/IP stacks, and **0 orphan entities** in `graph.json`. TN retains the deepest district lattice (38 courts); other states use core pack + named high-volume districts. Frontend: redesigned summary dashboard, detail panel, and entity connection views (`feature/ui-cleanup` merged).
+**Snapshot (v1.0.0, Jun 2026):** full structural packs for **all states and UTs** (35 codes), central tribunal bench lattice (CESTAT×9 locations, AFT×11 locations / 15 courts, DRT×39 + DRAT×5, ITAT×63 benches / 27 stations — graph has 27 ITAT station entities), tax/labour/defence/IP stacks, regulators (IFSCA, CERC, IBBI, NMC), and **0 orphan entities** in `graph.json`. TN retains the deepest district lattice (38 courts); other states use core pack + named high-volume districts.
 
 **Constitutional courts:** Supreme Court · All 25 High Courts (complete) · 13 permanent HC benches
 
@@ -82,7 +82,7 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 ## Entity build progress
 
-**1,103 / ~1,500** structural entities in repo (**v1.0.0**, Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md) · acceptance rubric: [`jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md`](jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md).
+**1,117 / ~1,500** structural entities in repo (**v1.0.0**, Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md) · acceptance rubric: [`jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md`](jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md).
 
 | Status | Meaning |
 |--------|---------|
@@ -118,8 +118,8 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 | C24 | State tribunals (SAT, transport, MHRB, VAT) | ~35 | **updated** | 3 |
 | C25 | People / roles layer | ~20 | **pending** | 3 |
 | C26 | Relationship wiring (orphans) | — | **done** | 1–3 |
-| C27 | Data-quality upgrades | 1103 | **updated** | all |
-| C28 | NJDG / judge_strength numerics | 1103 | **partial** — see below | 2 |
+| C27 | Data-quality upgrades | 1117 | **updated** | all |
+| C28 | NJDG / judge_strength numerics | 1117 | **partial** — see below | 2 |
 
 **Contributors:** copy prompts from the roadmap + [`AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) → open a **GitHub issue** with YAML (no email). **New entities:** proposed drafts OK. **Relationships:** maintainers only.
 
@@ -306,7 +306,7 @@ Individual DLSA entities (650+), individual district CDRC entries (670+), indivi
 | Appointment delay pipeline | `avg_days_vacancy_unfilled` data not yet populated |
 | Litigant journey mode | New interaction model, separate state machine |
 | Canvas renderer for L1/L2 | Required for 60fps at 500+ nodes — SVG sufficient for current entity count |
-| Chunked graph.json | Required at 1500+ entities — ~5.5 MB manageable at 1,103 |
+| Chunked graph.json | Required at 1500+ entities — ~5.6 MB manageable at 1,117 |
 | Year-over-year clog trend | Needs multiple NJDG historical snapshots |
 | Funding flow Sankey | Budget figures incomplete across entities |
 | COMPAT (abolished) as historical entity | Needs historical rendering only — time scroller work |
