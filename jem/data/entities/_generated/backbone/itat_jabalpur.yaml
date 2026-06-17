@@ -1,0 +1,62 @@
+id: itat_jabalpur
+name: Income Tax Appellate Tribunal — Jabalpur Bench
+abbreviation: ITAT Jabalpur
+aliases:
+- ITAT Bench Jabalpur
+type: CentralTribunal
+cluster: tribunals_adr
+level_of_government: Central
+created_year: 1941
+operational_status: Active
+statutory_basis: Income Tax Act 1961 s.252 — ITAT benches constituted by Central Government
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+  - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: 4 years or age 70 — Tribunals Reforms Act 2021
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: 'No'
+  lokpal_jurisdiction_note: ITAT members — tribunal member Lokpal treatment
+jurisdiction_scope:
+  states_covered:
+  - MP
+  uts_covered: []
+  is_all_india: false
+  jurisdiction_types:
+  - income_tax_appeals
+data_quality: verified
+data_quality_notes: >-
+  Separate ITAT bench at Jabalpur (Flora House, Napier Town) per itat.gov.in
+  Benches page — distinct from Indore bench; Lucknow Zone. Appeal on substantial
+  question of law to Madhya Pradesh High Court per IT Act s.260A.
+sources:
+- label: ITAT — Benches of the Tribunal (Jabalpur)
+  url: https://itat.gov.in/page/benches_of_tribunal
+  type: GoIWebsite
+  accessed_date: '2026-06-17'
+- label: Income Tax Act 1961 s.252–260A
+  url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+  type: CentralAct
+  accessed_date: '2026-06-17'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

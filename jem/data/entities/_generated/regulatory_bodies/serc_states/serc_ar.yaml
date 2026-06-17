@@ -24,6 +24,7 @@ complaint_mechanism:
   bias_complaint_to: []
   lokpal_jurisdiction: Not_Applicable
 data_quality: partial
+data_quality_notes:IR scoring (IR≈3): no +3 executive appointment — Electricity Act 2003 s.85 Selection Committee (retired SC/HC judge + expert) recommends members; state government appoints. Rubric excludes discretionary executive +3 for this reason.
 sources:
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/

@@ -35,14 +35,15 @@ audit:
   audit_report_public: true
 data_quality: partial
 data_quality_notes: "created_year 1941 (founding under IT Act 1922); 1961 (current statute) also defensible — maintainer to\
-  \ decide policy. 63 benches at 27 stations (DoLJ / itat.gov.in, 2025). Graph models 25 station-level bench entities;\
-  \ full bench lattice incomplete. ministry_responsible 'ministry_of_finance' assumed — verify in graph. case_volume\
-  \ and judge_strength null — ITAT Annual Report in §3/§7.\n NJDG snapshot case_volume merged\nITAT bench → HC mapping (IT\
-  \ Act s.260A, Jun 2026): Delhi→hc_delhi; Mumbai/Pune/Nagpur/Aurangabad→hc_bombay; Chennai→hc_madras; Kolkata→hc_calcutta;\
-  \ Ahmedabad→hc_gujarat; Hyderabad→hc_telangana+hc_andhra_pradesh; Visakhapatnam→hc_andhra_pradesh; Bangalore→hc_karnataka;\
-  \ Allahabad/Lucknow→hc_allahabad; Chandigarh/Amritsar→hc_punjab_haryana; Guwahati→hc_gauhati; Patna→hc_patna; Ranchi→hc_jharkhand;\
-  \ Bhopal/Indore→hc_madhya_pradesh; Jaipur/Jodhpur→hc_rajasthan; Cuttack→hc_orissa; Kochi/Trivandrum→hc_kerala. Per-bench\
-  \ entities itat_* wired in itat_bench_relationships.yaml. v1.2 judge_strength stub attached"
+  \ decide policy. 63 benches at 27 stations (DoLJ / itat.gov.in, 2025). Graph models 27 station-level bench entities\
+  \ (added Jabalpur + Varanasi Jun 2026); itat.gov.in also lists Agra, Panaji, Raipur, Rajkot, Surat — pending.\
+  \ ministry_responsible ministry_of_finance. case_volume and judge_strength from ITAT Annual Report.\n NJDG snapshot\
+  \ case_volume merged\nITAT bench → HC mapping (IT Act s.260A, Jun 2026): Delhi→hc_delhi; Mumbai/Pune/Nagpur/Aurangabad→hc_bombay;\
+  \ Chennai→hc_madras; Kolkata→hc_calcutta; Ahmedabad→hc_gujarat; Hyderabad→hc_telangana+hc_andhra_pradesh;\
+  \ Visakhapatnam→hc_andhra_pradesh; Bangalore→hc_karnataka; Allahabad/Lucknow/Varanasi→hc_allahabad;\
+  \ Chandigarh/Amritsar→hc_punjab_haryana; Guwahati→hc_gauhati; Patna→hc_patna; Ranchi→hc_jharkhand;\
+  \ Bhopal/Indore/Jabalpur→hc_madhya_pradesh; Jaipur/Jodhpur→hc_rajasthan; Cuttack→hc_orissa;\
+  \ Kochi/Trivandrum→hc_kerala. Per-bench entities itat_* wired in itat_bench_relationships.yaml. v1.2 judge_strength stub attached"
 sources:
 - label: Income Tax Act 1961 — Income Tax Department
   url: https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx

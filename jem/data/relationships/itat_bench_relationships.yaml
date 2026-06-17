@@ -564,3 +564,53 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: rel_itat_jabalpur_benchof_itat
+  source: itat_jabalpur
+  target: itat
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: ITAT Jabalpur bench (Lucknow Zone) — itat.gov.in
+  data_quality: verified
+  sources:
+  - label: ITAT — Benches of the Tribunal
+    url: https://itat.gov.in/page/benches_of_tribunal
+    type: GoIWebsite
+    accessed_date: '2026-06-17'
+- id: rel_itat_jabalpur_to_hc_madhya_pradesh
+  source: itat_jabalpur
+  target: hc_madhya_pradesh
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: ITAT Jabalpur → MP HC on question of law (IT Act s.260A)
+  data_quality: verified
+  sources:
+  - *id001
+- id: rel_itat_varanasi_benchof_itat
+  source: itat_varanasi
+  target: itat
+  relationship_type: BenchOf
+  relationship_category: statutory_ref
+  is_binding: true
+  is_constitutional: false
+  notes: ITAT Varanasi bench (Lucknow Zone) — itat.gov.in
+  data_quality: verified
+  sources:
+  - label: ITAT — Benches of the Tribunal
+    url: https://itat.gov.in/page/benches_of_tribunal
+    type: GoIWebsite
+    accessed_date: '2026-06-17'
+- id: rel_itat_varanasi_to_hc_allahabad
+  source: itat_varanasi
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  notes: ITAT Varanasi → Allahabad HC on question of law (IT Act s.260A)
+  data_quality: verified
+  sources:
+  - *id001

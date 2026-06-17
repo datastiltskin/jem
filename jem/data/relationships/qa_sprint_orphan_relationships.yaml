@@ -1,0 +1,166 @@
+# QA sprint Jun 2026 — wire orphan entities (ag_india, sg_india, lokpal_india, gram_nyayalaya_generic)
+
+relationships:
+
+  - id: rel_central_gov_recommends_ag
+    source: central_government
+    target: ag_india
+    relationship_type: Recommends
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 76(1) — Attorney-General appointed by President on advice of GoI
+    notes: Union Cabinet advises President on AG appointment.
+    data_quality: verified
+    sources:
+      - label: Constitution of India — Article 76
+        url: https://india-code.nic.in/
+        type: Constitution
+        accessed_date: '2026-06-17'
+
+  - id: rel_president_appoints_ag
+    source: president_india
+    target: ag_india
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 76(1)
+    notes: President issues formal warrant; acts on Union Cabinet advice.
+    data_quality: verified
+    sources:
+      - label: Constitution of India — Article 76
+        url: https://india-code.nic.in/
+        type: Constitution
+        accessed_date: '2026-06-17'
+
+  - id: rel_ag_represents_union_sc
+    source: ag_india
+    target: supreme_court_india
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: true
+    constitutional_basis: Article 76(2) — AG appears for Union in SC and HCs
+    notes: Principal law officer; appears for Union in Supreme Court and selected High Court matters.
+    data_quality: verified
+    sources:
+      - label: Constitution of India — Article 76(2)
+        url: https://india-code.nic.in/
+        type: Constitution
+        accessed_date: '2026-06-17'
+
+  - id: rel_central_gov_recommends_sg
+    source: central_government
+    target: sg_india
+    relationship_type: Recommends
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Law Officers (Conditions of Service) Rules, 1987
+    notes: Solicitor General appointed by President on recommendation of Union Government.
+    data_quality: verified
+    sources:
+      - label: Law Officers (Conditions of Service) Rules, 1987
+        url: https://india-code.nic.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-17'
+
+  - id: rel_president_appoints_sg
+    source: president_india
+    target: sg_india
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Law Officers (Conditions of Service) Rules, 1987
+    notes: Statutory law officer; assists AG; not a constitutional post.
+    data_quality: verified
+    sources:
+      - label: Law Officers (Conditions of Service) Rules, 1987
+        url: https://india-code.nic.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-17'
+
+  - id: rel_sg_assists_ag_sc
+    source: sg_india
+    target: supreme_court_india
+    relationship_type: PolicyOversight
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    notes: Assists AG; appears for Union in Supreme Court and High Courts as directed.
+    data_quality: verified
+    sources:
+      - label: Law Officers (Conditions of Service) Rules, 1987
+        url: https://india-code.nic.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-17'
+
+  - id: rel_lokpal_committee_recommends_lokpal
+    source: selection_committee_lokpal
+    target: lokpal_india
+    relationship_type: Recommends
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Lokpal and Lokayuktas Act 2013, s.4
+    notes: Selection Committee recommends Chairperson and Members; President appoints.
+    data_quality: verified
+    sources:
+      - label: Lokpal and Lokayuktas Act 2013 — s.4
+        url: https://india-code.nic.in/handle/123456789/2335
+        type: CentralAct
+        accessed_date: '2026-06-17'
+
+  - id: rel_president_appoints_lokpal
+    source: president_india
+    target: lokpal_india
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Lokpal and Lokayuktas Act 2013, s.4(4)
+    notes: President appoints on recommendation of Selection Committee.
+    data_quality: verified
+    sources:
+      - label: Lokpal and Lokayuktas Act 2013 — s.4
+        url: https://india-code.nic.in/handle/123456789/2335
+        type: CentralAct
+        accessed_date: '2026-06-17'
+
+  - id: rel_lokpal_appealable_sc
+    source: lokpal_india
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Lokpal and Lokayuktas Act 2013 — judicial review / certiorari to Supreme Court
+    notes: >-
+      Orders and decisions of Lokpal subject to judicial review; further appeal
+      to Supreme Court on questions of law as applicable.
+    data_quality: partial
+    sources:
+      - label: Lokpal and Lokayuktas Act 2013
+        url: https://india-code.nic.in/handle/123456789/2335
+        type: CentralAct
+        accessed_date: '2026-06-17'
+
+  - id: rel_gram_nyayalaya_appealable_district_courts
+    source: gram_nyayalaya_generic
+    target: district_courts
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Gram Nyayalayas Act 2008, s.29 — appeal to District Court
+    notes: >-
+      Appeals from Gram Nyayalaya decisions lie to the District Court as
+      prescribed under the Gram Nyayalayas Act 2008.
+    data_quality: verified
+    sources:
+      - label: Gram Nyayalayas Act 2008 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-06-17'

@@ -13,7 +13,7 @@ complaint_mechanism:
   bias_complaint_to: []
   lokpal_jurisdiction: Not_Applicable
 data_quality: partial
-data_quality_notes: UT SERC scaffold — verify constitution and official URL.
+data_quality_notes: UT SERC scaffold — verify constitution and official URL. IR scoring ~3 — no +3 executive appointment; Electricity Act 2003 s.85 Selection Committee (retired SC/HC judge + expert) recommends members; rubric excludes discretionary executive +3.
 id: serc_py
 name: Puducherry Electricity Regulatory Commission
 abbreviation: PYERC

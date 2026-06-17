@@ -93,6 +93,7 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
     complaint = entity.get('complaint_mechanism') or {}
     op_status = entity.get('operational_status', '')
     entity_type = entity.get('type', '')
+    entity_id = entity.get('id', '')
 
     # ── Appointment factors ───────────────────────────────
 
@@ -121,8 +122,12 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
         and ('collegium' in str(nominates).lower() or 'collegium' in str(recommends).lower())
     )
 
+    # NALSA: Patron-in-Chief is CJI; Executive Chairman is senior SC judge designated
+    # by CJI (LSA Act 1987). President's formal appointment is not discretionary control.
+    cji_led_statutory = entity_id == 'nalsa'
+
     if formally_appoints in EXECUTIVE_BODIES:
-        if not collegium_backed:
+        if not collegium_backed and not cji_led_statutory:
             score += 3
             breakdown['Appointed directly by executive body'] = 3
     elif formally_appoints and 'collegium' in str(formally_appoints).lower():
@@ -132,7 +137,7 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
         score -= 1
         breakdown['Appointment via Parliament process (deduction)'] = -1
 
-    if reappoint and formally_appoints in EXECUTIVE_BODIES and not collegium_backed:
+    if reappoint and formally_appoints in EXECUTIVE_BODIES and not collegium_backed and not cji_led_statutory:
         score += 2
         breakdown['Reappointment possible by same executive authority'] = 2
 
@@ -153,7 +158,7 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
     funding_source = funding.get('primary_source', '')
     funding_ministry = funding.get('ministry_responsible', '')
 
-    if funding_source in ['Ministry_Budget'] and formally_appoints in EXECUTIVE_BODIES:
+    if funding_source in ['Ministry_Budget'] and formally_appoints in EXECUTIVE_BODIES and not cji_led_statutory:
         score += 2
         breakdown['Funder == Appointing authority'] = 2
 

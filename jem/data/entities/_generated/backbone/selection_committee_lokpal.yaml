@@ -1,0 +1,35 @@
+id: selection_committee_lokpal
+name: Lokpal Selection Committee (Lokpal Act 2013 s.4)
+abbreviation: Lokpal Selection Committee
+
+type: AppointmentBody
+cluster: appointment_bodies
+level_of_government: Central
+
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - statutory_appointment_committee
+
+created_year: 2014
+operational_status: Active
+
+statutory_basis: >
+  Lokpal and Lokayuktas Act 2013, s.4. Selection Committee comprises the Prime
+  Minister (Chairperson), Speaker of Lok Sabha, Leader of Opposition in Lok Sabha,
+  Chief Justice of India or a sitting Supreme Court judge nominated by the CJI,
+  and one eminent jurist. President appoints Chairperson and Members on the
+  recommendation of the Selection Committee.
+
+data_quality: verified
+data_quality_notes: Governance node — statutory selection committee; not an adjudicatory body.
+
+sources:
+  - label: Lokpal and Lokayuktas Act 2013 — s.4
+    url: https://india-code.nic.in/handle/123456789/2335
+    type: CentralAct
+    accessed_date: '2026-06-17'
+  - label: Lokpal official website
+    url: https://lokpal.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-17'

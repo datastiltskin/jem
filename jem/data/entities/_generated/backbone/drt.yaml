@@ -60,9 +60,10 @@ judge_strength:
   notes: 39 benches operational across India as of public records; each bench has one Presiding Officer. Exact sanctioned
     vs working strength not verified at authoring time.
 data_quality: partial
-data_quality_notes: Entity models the DRT system as a single central entity (39 DRTs, 5 DRATs per DFS); graph has 25 regional
-  DRT bench entities — incomplete lattice. Ministry id ministry_of_finance assumed present in graph. Case volume and strength
-  data left partial. NJDG snapshot case_volume merged v1.2 judge_strength stub attached
+data_quality_notes: Entity models the DRT system as a single central entity (39 DRTs, 5 DRATs per DFS); graph has 26 regional
+  DRT bench entities (incl. Jabalpur) — ~13 benches still missing per financialservices.gov.in/drt-drat (e.g. Amravati,
+  Bhopal, Indore, Jammu, Jodhpur, Ludhiana, Raipur, Sambalpur, Surat, Thiruvananthapuram, Varanasi). Known incomplete
+  lattice — self-disclosed. Ministry id ministry_of_finance. NJDG snapshot case_volume merged v1.2 judge_strength stub attached
 sources:
 - label: DFS — 39 DRTs and 5 DRATs
   url: https://financialservices.gov.in/drt-drat
