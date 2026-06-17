@@ -101,6 +101,25 @@ relationships:
         type: CentralAct
         accessed_date: "2025-01-15"
 
+  - id: rel_cerc_to_aptel_appellate
+    source: cerc
+    target: aptel
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Electricity Act 2003, s.125 — appeals from CERC orders lie to APTEL"
+    year_established: 2003
+    notes: >-
+      Central Electricity Regulatory Commission orders are appealable to the
+      Appellate Tribunal for Electricity under Electricity Act 2003.
+    data_quality: verified
+    sources:
+      - label: "Electricity Act 2003, s.125"
+        url: https://india-code.nic.in/acts-detail/MTQ3MA==
+        type: CentralAct
+        accessed_date: "2026-06-17"
+
   - id: rel_pfrda_to_sat_appellate
     source: pfrda
     target: sat
@@ -1438,6 +1457,70 @@ relationships:
         url: https://india-code.nic.in/handle/123456789/2039
         type: CentralAct
         accessed_date: "2025-01-15"
+
+  - id: rel_mof_funds_ifsca
+    source: ministry_of_finance
+    target: ifsca
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "IFSCA Act 2019 — IFSCA under Department of Economic Affairs, Ministry of Finance"
+    year_established: 2020
+    data_quality: verified
+    sources:
+      - label: "IFSCA Act 2019"
+        url: https://www.ifsca.gov.in/
+        type: CentralAct
+        accessed_date: "2026-06-17"
+
+  - id: rel_mop_funds_cerc
+    source: ministry_of_power
+    target: cerc
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Electricity Act 2003, s.76 — CERC expenses from Consolidated Fund of India; Ministry of Power administers"
+    year_established: 1998
+    data_quality: verified
+    sources:
+      - label: "Electricity Act 2003, s.76"
+        url: https://india-code.nic.in/acts-detail/MTQ3MA==
+        type: CentralAct
+        accessed_date: "2026-06-17"
+
+  - id: rel_mca_funds_ibbi
+    source: ministry_corporate_affairs
+    target: ibbi
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "IBC 2016, s.188 — IBBI under Ministry of Corporate Affairs"
+    year_established: 2016
+    data_quality: verified
+    sources:
+      - label: "Insolvency and Bankruptcy Code, 2016, s.188"
+        url: https://www.ibbi.gov.in/
+        type: CentralAct
+        accessed_date: "2026-06-17"
+
+  - id: rel_mohfw_funds_nmc
+    source: ministry_health_family_welfare
+    target: nmc
+    relationship_type: PrimaryFunder
+    relationship_category: funding
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "NMC Act 2019 — National Medical Commission under Ministry of Health and Family Welfare"
+    year_established: 2020
+    data_quality: verified
+    sources:
+      - label: "National Medical Commission Act, 2019"
+        url: https://www.nmc.org.in/
+        type: CentralAct
+        accessed_date: "2026-06-17"
 
   - id: rel_mof_funds_pfrda
     source: ministry_of_finance

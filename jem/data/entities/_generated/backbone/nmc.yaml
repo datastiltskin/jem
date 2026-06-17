@@ -1,0 +1,67 @@
+id: nmc
+name: National Medical Commission
+abbreviation: NMC
+aliases:
+- National Medical Commission
+- Medical Council of India
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+  - medical_education_regulation
+  - medical_practitioner_licensing
+  - professional_misconduct
+created_year: 2020
+operational_status: Active
+constitutional_basis: null
+statutory_basis: National Medical Commission Act, 2019 (Act 30 of 2019), s.3 (establishment). Constituted 25 September
+  2020; replaced Medical Council of India.
+appointment:
+  nominates: ministry_health_family_welfare
+  formally_appoints: central_government
+  consulted: []
+  consultation_binding: null
+  criteria_public: true
+  tenure: As prescribed under NMC Act 2019
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_health_family_welfare
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+structural_gap:
+  flag: true
+  gaps:
+  - gap_id: nmc_no_medical_negligence_tribunal
+    gap_type: Jurisdiction_Gap
+    gap_severity: Moderate
+    gap_description: >-
+      No dedicated medical negligence tribunal — patient appeals and misconduct
+      routes largely through consumer courts and NMC Autonomous Boards. As of
+      Sep 2025 (NMC fifth anniversary), no patient appeals reported heard.
+    gap_source: nmc.org.in; Vision IAS Oct 2025; README gap registry
+    gap_since_year: 2020
+    gap_status: Open
+complaint_mechanism:
+  lokpal_jurisdiction: 'No'
+data_quality: verified
+data_quality_notes: Headquartered New Delhi. Under Ministry of Health and Family Welfare. Regulatory and quasi-judicial
+  functions including licensing and misconduct inquiries.
+sources:
+- label: NMC — Official Website
+  url: https://www.nmc.org.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-17'
+- label: National Medical Commission Act, 2019 — India Code
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-17'
+case_volume:
+  clog_severity: unknown

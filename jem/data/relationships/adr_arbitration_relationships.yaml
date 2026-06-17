@@ -1,6 +1,6 @@
 # JEM relationships — ADR & Arbitration cluster (backbone)
 # Track E (§4) — 2026-05-18
-# Scope: NDIAC, MCIA, DIAC, NALSA, tn_slsa, lok_adalat_generic
+# Scope: IIAC (formerly NDIAC), MCIA, DIAC, NALSA, tn_slsa, lok_adalat_generic
 # EstablishedUnder → statute deferred until act entities exist in graph.
 
 relationships:
@@ -13,8 +13,8 @@ relationships:
   relationship_category: funding
   is_binding: true
   notes: >
-    Ministry of Law and Justice provides Central Government grants to NDIAC
-    under NDIAC Act 2019 s.25(1)(a). Transitional arrangement pending
+    Ministry of Law and Justice provides Central Government grants to IIAC
+    (formerly NDIAC) under NDIAC Act 2019 s.25(1)(a). Transitional arrangement pending
     self-sustaining fee model.
   data_quality: partial
   sources:
@@ -50,8 +50,8 @@ relationships:
   relationship_category: appellate_chain
   is_binding: true
   notes: >
-    Awards from NDIAC arbitration proceedings challenged under Arbitration
-    and Conciliation Act 1996 s.34. NDIAC seat is New Delhi; Delhi High
+    Awards from IIAC (formerly NDIAC) arbitration proceedings challenged under Arbitration
+    and Conciliation Act 1996 s.34. IIAC seat is New Delhi; Delhi High
     Court is the competent court under A&C Act s.2(1)(e)(i). Appeals from
     s.34 orders lie to HC Division Bench under s.37.
   data_quality: partial

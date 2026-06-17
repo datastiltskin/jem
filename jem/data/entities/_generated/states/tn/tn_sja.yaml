@@ -1,5 +1,9 @@
 id: tn_sja
 name: Tamil Nadu State Judicial Academy
+abbreviation: TNSJA
+aliases:
+- TNSJA
+- Tamil Nadu State Judicial Academy
 type: TrainingBody
 cluster: training_professional
 level_of_government: State
@@ -7,11 +11,23 @@ jurisdiction_scope:
   states_covered:
   - TN
   is_all_india: false
-created_year: 1992
+created_year: 2001
 operational_status: Active
-statutory_basis: State judicial academy statutes / rules
+statutory_basis: Established 23 April 2001; governed by High Court of Madras; funded by Government of Tamil Nadu
+appointment:
+  nominates: hc_madras
+  formally_appoints: hc_madras
+  consulted: []
+  consultation_binding: null
+  criteria_public: true
+  tenure: null
+  reappointment_possible: null
+  removal_authority: hc_madras
+  removal_requires_parliament: false
+  removal_independent_committee: false
 funding:
   primary_source: State_Consolidated_Fund
+  ministry_responsible: null
 audit:
   audited_by: cag_india
   audit_type: CAG_Statutory
@@ -19,12 +35,14 @@ audit:
 complaint_mechanism:
   bias_complaint_to: []
   lokpal_jurisdiction: Not_Applicable
-data_quality: partial
+data_quality: verified
+data_quality_notes: Headquartered Chennai with regional centres in Madurai and Coimbatore. Actively conducts induction
+  and continuing judicial education programmes (e.g. Civil Judges 2024 Batch).
 sources:
-- label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+- label: TNSJA — Official Website (tnsja.tn.gov.in)
+  url: https://tnsja.tn.gov.in/
   type: GoIWebsite
-  accessed_date: '2026-05-13'
+  accessed_date: '2026-06-17'
 - label: National Judicial Data Grid (NJDG)
   url: https://njdg.ecourts.gov.in/
   type: NJDG

@@ -45,9 +45,11 @@ complaint_mechanism:
 
     '
 data_quality: verified
-data_quality_notes: Inaugurated 25 Nov 2009 by CJI K.G. Balakrishnan; established under Delhi HC administrative charter by
-  then CJ Ajit Prakash Shah (CJ May 2008 – Feb 2010). First ever HC-annexed institutional arbitration centre. AwardChallengedIn
-  → hc_delhi in adr_arbitration_relationships.yaml. NJDG snapshot case_volume merged
+data_quality_notes: >-
+  Inaugurated 25 Nov 2009 by CJI K.G. Balakrishnan; established under Delhi HC administrative charter by
+  then CJ Ajit Prakash Shah (CJ May 2008 – Feb 2010). First ever HC-annexed institutional arbitration centre — distinct
+  from IIAC (statutory body of national importance under MoLJ). 2024 caseload — 10,015 cases; 15,359 hearings (up from
+  1,959 hearings in 2020). AwardChallengedIn → hc_delhi in adr_arbitration_relationships.yaml. NJDG snapshot case_volume merged
 sources:
 - label: DIAC About Page (inauguration date and founding CJ)
   url: https://dhcdiac.nic.in/about-diac/
@@ -61,6 +63,10 @@ sources:
   url: https://india-code.nic.in/acts-detail/MTA4NDE=
   type: CentralAct
   accessed_date: '2026-05-18'
+- label: Legal500 India — institutional arbitration 2026 (2024 caseload)
+  url: https://www.legal500.com/
+  type: OfficialReport
+  accessed_date: '2026-06-17'
 - label: National Judicial Data Grid (NJDG)
   url: https://njdg.ecourts.gov.in/
   type: NJDG

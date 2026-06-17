@@ -1,0 +1,56 @@
+id: cerc
+name: Central Electricity Regulatory Commission
+name_hindi: केंद्रीय विद्युत नियामक आयोग
+abbreviation: CERC
+aliases:
+- Central Electricity Regulatory Commission
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+  - electricity_regulation
+  - tariff_regulation
+  - inter_state_transmission
+created_year: 1998
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Electricity Regulatory Commissions Act, 1998; Electricity Act, 2003, s.76 (functions and powers).
+  Constituted 24 July 1998; quasi-judicial status under Electricity Act 2003.
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted:
+  - supreme_court_india
+  consultation_binding: false
+  criteria_public: true
+  tenure: Chairperson and Members as per Electricity Act 2003 s.78
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_power
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  lokpal_jurisdiction: 'No'
+data_quality: verified
+data_quality_notes: Composition — Chairperson + 3 Members (+ ex-officio Member from Central Electricity Authority).
+  Appointed by Central Government on recommendation of Selection Committee. Appeals from CERC orders lie to APTEL.
+  Distinct from State Electricity Regulatory Commissions (SERCs).
+sources:
+- label: CERC — Official Website (cercind.gov.in)
+  url: https://cercind.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-17'
+- label: Electricity Act 2003 — India Code
+  url: https://india-code.nic.in/acts-detail/MTQ3MA==
+  type: CentralAct
+  accessed_date: '2026-06-17'
+case_volume:
+  clog_severity: unknown

@@ -202,7 +202,7 @@ The canonical record of everything not yet in the data layer, deferred to v2, ou
 | AG / SG | AG India is constitutional (Art. 76); SG and ASGs are statutory only — scoring must not treat SG as constitutional. | — |
 | NCLT | Complaint goes to appointing ministry (MCA) — structural conflict. | High |
 | Collegium SC | No criteria, no timeline, no external review. NJAC struck down 2015. | High |
-| State Police | No binding obligation to provide HC judge security. Active litigation 2024–25. | Critical |
+| State Police | No explicit statutory obligation on state police to provide HC judge security (executive function). | Critical |
 | NIC India | No SLA with courts. Answers to MeitY, not judiciary. | High |
 | CESTAT | MoF appointer-litigant loop — CBIC is respondent in every case. | High |
 | TNERC | State appoints regulator + owns TANGEDCO (primary regulated entity). | High |

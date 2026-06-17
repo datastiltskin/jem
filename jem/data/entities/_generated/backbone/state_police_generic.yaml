@@ -17,7 +17,23 @@ audit:
 complaint_mechanism:
   bias_complaint_to: []
   lokpal_jurisdiction: Contested
+structural_gap:
+  flag: true
+  gaps:
+  - gap_id: state_police_no_statutory_hc_judge_security
+    gap_type: Security_Gap
+    gap_severity: Critical
+    gap_description: >-
+      No explicit statutory duty on state police forces to provide security to
+      High Court judges independent of executive notification or specific court
+      order — security provisioning is an executive function without a binding
+      all-India obligation.
+    gap_source: State Police Acts (generic); JEM gap registry review Jun 2026
+    gap_since_year: 1950
+    gap_status: Open
 data_quality: partial
+data_quality_notes: Generic placeholder for state police forces under respective State Police Acts. Prior README claim of
+  "active litigation 2024–25" removed — no primary case citation verified in Pass 4 audit.
 sources:
 - label: India Code — Constitution & Acts
   url: https://india-code.nic.in/

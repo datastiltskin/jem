@@ -1,0 +1,54 @@
+id: ibbi
+name: Insolvency and Bankruptcy Board of India
+abbreviation: IBBI
+aliases:
+- Insolvency and Bankruptcy Board of India
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+  - insolvency_regulation
+  - bankruptcy_regulation
+  - insolvency_professionals
+created_year: 2016
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Insolvency and Bankruptcy Code, 2016 (Act 31 of 2016), s.188 (establishment). Operational from
+  1 October 2016.
+appointment:
+  nominates: ministry_corporate_affairs
+  formally_appoints: central_government
+  consulted: []
+  consultation_binding: null
+  criteria_public: true
+  tenure: Chairperson and whole-time Members as per IBC 2016
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_corporate_affairs
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  lokpal_jurisdiction: 'No'
+data_quality: verified
+data_quality_notes: Under Ministry of Corporate Affairs. Exercises quasi-legislative (rule-making), executive, and
+  quasi-judicial powers under IBC 2016. Composition — Chairperson + whole-time Members (including representatives from
+  Finance, Corporate Affairs, and Law ministries).
+sources:
+- label: IBBI — Official Website
+  url: https://www.ibbi.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-17'
+- label: Insolvency and Bankruptcy Code, 2016 — India Code
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-17'
+case_volume:
+  clog_severity: unknown

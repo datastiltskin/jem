@@ -40,9 +40,10 @@ complaint_mechanism:
 
     '
 data_quality: verified
-data_quality_notes: MCIA Arbitration Rules effective 15 Jun 2016; Centre officially inaugurated 8 Oct 2016. Incorporated as
-  an independent not-for-profit organisation. Exact MCA21 registration date not publicly disclosed; year 2016 confirmed from
-  official MCIA website. AwardChallengedIn → hc_bombay in adr_arbitration_relationships.yaml. NJDG snapshot case_volume merged
+data_quality_notes: Private (non-statutory) arbitration institution — distinct from IIAC (statutory body of national
+  importance). MCIA Arbitration Rules effective 15 Jun 2016; MCIA Rules 2025 issued. Centre officially inaugurated 8 Oct
+  2016. Incorporated as an independent not-for-profit organisation. AwardChallengedIn → hc_bombay in
+  adr_arbitration_relationships.yaml. NJDG snapshot case_volume merged
 sources:
 - label: MCIA About Us
   url: https://mcia.org.in/about.php

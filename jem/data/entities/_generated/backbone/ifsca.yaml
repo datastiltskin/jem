@@ -1,0 +1,55 @@
+id: ifsca
+name: International Financial Services Centres Authority
+abbreviation: IFSCA
+aliases:
+- International Financial Services Centres Authority
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+  - ifsc_regulation
+  - securities_regulation
+  - banking_regulation
+  - insurance_regulation
+created_year: 2020
+operational_status: Active
+constitutional_basis: null
+statutory_basis: International Financial Services Centres Authority Act, 2019 (Act 50 of 2019), s.3 (establishment);
+  notified operational 27 April 2020. Unified regulator for IFSCs — supersedes separate RBI, SEBI, IRDAI, and PFRDA roles
+  within IFSCs.
+appointment:
+  nominates: ministry_of_finance
+  formally_appoints: central_government
+  consulted: []
+  consultation_binding: null
+  criteria_public: true
+  tenure: Chairperson and Members as prescribed under IFSCA Act 2019
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: true
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+complaint_mechanism:
+  lokpal_jurisdiction: 'No'
+data_quality: verified
+data_quality_notes: Headquartered at GIFT City, Gandhinagar, Gujarat. Under Department of Economic Affairs, Ministry of
+  Finance. Quasi-judicial adjudication of regulatory disputes within IFSCs.
+sources:
+- label: IFSCA — Official Website
+  url: https://www.ifsca.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-17'
+- label: IFSCA Act 2019 — India Code
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-17'
+case_volume:
+  clog_severity: unknown
