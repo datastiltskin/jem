@@ -3,6 +3,7 @@
 
 import { State } from './state.js';
 import { getProfileSections } from './panel.js';
+import { commentsHTML, wireComments } from './comments.js';
 
 const LEFT_PROFILE_KEYS  = new Set(['lifecycle', 'parent_hc', 'judges', 'appointment', 'funding']);
 const RIGHT_PROFILE_KEYS = new Set(['audit', 'complaint', 'gaps', 'sources']);
@@ -1201,8 +1202,12 @@ export function renderDetailView(entityId, fromEntityId = null) {
         </div>
 
       </div>
+
+      <div class="dv-tab-activity">${commentsHTML('entity:' + entity.id, { title: 'Comments' })}</div>
     </div>
   `;
+
+  wireComments(container);
 
   // Any .detail-connection-row inside a themed widget should navigate.
   container.querySelector('.dv-layout')?.addEventListener('click', ev => {

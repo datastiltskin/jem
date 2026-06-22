@@ -5,6 +5,7 @@
 import { State } from './state.js';
 import { openNeighborhoodPanel, closeNeighborhoodPanel } from './neighborhoodPanel.js';
 import { buildEntityConnectionSummary, formatCategoryLabel } from './entityConnections.js';
+import { commentsHTML, wireComments } from './comments.js';
 
 export function openDetailPanel(entity) {
   const panel = document.getElementById('detail-panel');
@@ -41,6 +42,7 @@ export function openDetailPanel(entity) {
   typeEl.className = `detail-type status-${entity.operational_status.toLowerCase().replace('_','-')}`;
 
   body.innerHTML = buildPanelHTML(entity);
+  wireComments(body);
 
   showDetailChrome();
   panel.scrollTop = 0;
@@ -224,6 +226,9 @@ function buildPanelHTML(e, opts = {}) {
 
   // ── Sources ────────────────────────────────────────────
   html += section('Primary Sources', sourcesBody(e));
+
+  // ── Comments (UI only — backend later) ──
+  html += commentsHTML('entity:' + e.id, { title: 'Comments' });
 
   return html;
 }

@@ -3,6 +3,7 @@
 
 import { State } from './state.js';
 import { buildAppellateHierarchy } from './entityConnections.js';
+import { commentsHTML, wireComments } from './comments.js';
 
 const RISK_COLORS = {
   low:      '#16a34a',
@@ -1773,6 +1774,14 @@ export function initSummaryView() {
         <div class="ts-section-wrap" id="temporal-structure-wrap"></div>
       </div>
 
+      <div class="sm-section">
+        <div class="sm-section-head">
+          <span class="sm-section-title">Community feedback</span>
+        </div>
+        <p class="sm-note-global">Flag a source, propose a correction, or share context. Upvote what matters. Backend coming soon.</p>
+        ${commentsHTML('overview', { title: 'Discussion' })}
+      </div>
+
     </div>
   `;
 
@@ -1783,6 +1792,8 @@ export function initSummaryView() {
     tsWrap.innerHTML = renderTemporalStructure();
     _wireTemporalStructure(tsWrap, entities);
   });
+
+  wireComments(container);
 
   // ── Render appellate hierarchy ─────────────────────────────────────────────
   requestAnimationFrame(() => {
