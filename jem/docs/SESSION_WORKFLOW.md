@@ -71,8 +71,8 @@ Production serves branch **`friedso_v1`**, not `main`. See [`V1_RELEASE_RUNBOOK.
 
 ```bash
 git checkout friedso_v1 && git pull --ff-only origin friedso_v1
-./jem/scripts/deploy_friedso_production.sh
-# optional: JEM_REMOTE=... ./jem/scripts/deploy_friedso_production.sh --deploy
+./jem/scripts/deploy_friedso_production.sh --both
+# optional single-host: JEM_REMOTE=... ./jem/scripts/deploy_friedso_production.sh --deploy
 ```
 
 Promote `main` → `friedso_v1` via PR (founder merges after local validate + smoke).

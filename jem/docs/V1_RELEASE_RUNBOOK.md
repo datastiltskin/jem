@@ -18,6 +18,7 @@ git fetch origin
 git checkout friedso_v1
 git pull --ff-only origin friedso_v1
 ./jem/scripts/deploy_friedso_production.sh          # validate → derive → build → bundle
+./jem/scripts/deploy_friedso_production.sh --both  # + sync friedso repo, prod, and staging
 ./jem/scripts/deploy_friedso_production.sh --deploy # rsync when JEM_REMOTE is set
 ```
 

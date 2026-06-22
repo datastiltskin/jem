@@ -7,8 +7,13 @@
 # Usage (from repo root):
 #   ./jem/scripts/deploy_friedso_production.sh
 #   ./jem/scripts/deploy_friedso_production.sh --deploy
+#   ./jem/scripts/deploy_friedso_production.sh --both          # prod + staging + friedso repo copy
 #   JEM_REMOTE='user@host:~/path/to/apps/jem' ./jem/scripts/deploy_friedso_production.sh --deploy
 #
+# --both defaults (override with env):
+#   JEM_REMOTE_PROD=root@157.10.98.182:/srv/friedso/prod/web/site/apps/jem
+#   JEM_REMOTE_STAGE=root@157.10.98.182:/srv/friedso/stage/web/site/apps/jem
+#   FRIEDSO_JEM_DIR=../friedso/web/site/apps/jem  (relative to jem repo root)
 # Promote main → friedso_v1 (founder merges PR after local smoke on a branch):
 #   git fetch origin
 #   gh pr create --base friedso_v1 --head main --title "deploy: promote main to friedso_v1"
@@ -22,11 +27,16 @@ GRAPH="${REPO_ROOT}/graph.json"
 DEPLOY_BRANCH="${JEM_DEPLOY_BRANCH:-friedso_v1}"
 MIN_ENTITIES=400
 DO_DEPLOY=0
+DEPLOY_BOTH=0
 BUNDLE_NAME=""
+JEM_REMOTE_PROD="${JEM_REMOTE_PROD:-root@157.10.98.182:/srv/friedso/prod/web/site/apps/jem}"
+JEM_REMOTE_STAGE="${JEM_REMOTE_STAGE:-root@157.10.98.182:/srv/friedso/stage/web/site/apps/jem}"
+FRIEDSO_JEM_DIR="${FRIEDSO_JEM_DIR:-}"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --deploy) DO_DEPLOY=1; shift ;;
+    --both) DEPLOY_BOTH=1; DO_DEPLOY=1; shift ;;
     --branch)
       DEPLOY_BRANCH="$2"
       shift 2
@@ -162,17 +172,47 @@ echo "Next: smoke test per jem/docs/V1_RELEASE_RUNBOOK.md §2"
 echo "      export JEM_PUBLIC_URL='https://friedso.com/apps/jem/'"
 echo ""
 
-if [[ "${DO_DEPLOY}" -eq 1 ]]; then
-  if [[ -z "${JEM_REMOTE:-}" ]]; then
-    echo "ERROR: --deploy requires JEM_REMOTE in environment" >&2
-    exit 1
-  fi
-  JEM_PUBLIC="${JEM_REMOTE%/}/public"
-  echo "==> rsync to \${JEM_REMOTE}"
-  rsync -avz "${BUNDLE_DIR}/public/graph.json" "${JEM_PUBLIC}/graph.json"
+deploy_to_remote() {
+  local remote="$1"
+  local label="$2"
+  local public="${remote%/}/public"
+  echo "==> rsync to ${label}: ${remote}"
+  rsync -avz "${BUNDLE_DIR}/public/graph.json" "${public}/graph.json"
   rsync -avz --delete \
     --exclude 'public/graph.json' \
-    "${BUNDLE_DIR}/" "${JEM_REMOTE%/}/"
-  echo "OK: deployed to \${JEM_REMOTE}"
-  echo "Run smoke tests at \${JEM_PUBLIC_URL:-https://friedso.com/apps/jem/}"
+    "${BUNDLE_DIR}/" "${remote%/}/"
+  echo "OK: deployed to ${label} (${remote})"
+}
+
+sync_friedso_repo_copy() {
+  local target="${FRIEDSO_JEM_DIR:-${REPO_ROOT}/../friedso/web/site/apps/jem}"
+  if [[ ! -d "$(dirname "${target}")" ]]; then
+    echo "WARN: friedso apps dir missing — skip local repo sync (${target})" >&2
+    return 0
+  fi
+  echo "==> sync bundle → friedso repo (${target})"
+  rsync -avz --delete \
+    --exclude 'public/graph.json' \
+    "${BUNDLE_DIR}/" "${target}/"
+  rsync -avz "${BUNDLE_DIR}/public/graph.json" "${target}/public/graph.json"
+  echo "OK: friedso repo copy updated at ${target}"
+}
+
+if [[ "${DO_DEPLOY}" -eq 1 ]]; then
+  if [[ "${DEPLOY_BOTH}" -eq 1 ]]; then
+    sync_friedso_repo_copy
+    deploy_to_remote "${JEM_REMOTE_PROD}" "production"
+    deploy_to_remote "${JEM_REMOTE_STAGE}" "staging"
+    echo ""
+    echo "Smoke tests:"
+    echo "  Production: https://friedso.com/apps/jem/"
+    echo "  Staging:    https://staging.friedso.com/apps/jem/"
+  else
+    if [[ -z "${JEM_REMOTE:-}" ]]; then
+      echo "ERROR: --deploy requires JEM_REMOTE (or use --both for prod+staging defaults)" >&2
+      exit 1
+    fi
+    deploy_to_remote "${JEM_REMOTE}" "remote"
+    echo "Run smoke tests at \${JEM_PUBLIC_URL:-https://friedso.com/apps/jem/}"
+  fi
 fi
