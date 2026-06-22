@@ -67,7 +67,15 @@ cp build/graph.staging.json ../graph.json
 
 ## Deploy / release (v1.0.0)
 
-See [`V1_RELEASE_RUNBOOK.md`](V1_RELEASE_RUNBOOK.md) — preflight, rsync, smoke tests, git tag.
+Production serves branch **`friedso_v1`**, not `main`. See [`V1_RELEASE_RUNBOOK.md`](V1_RELEASE_RUNBOOK.md) — preflight, rsync, smoke tests, git tag.
+
+```bash
+git checkout friedso_v1 && git pull --ff-only origin friedso_v1
+./jem/scripts/deploy_friedso_production.sh
+# optional: JEM_REMOTE=... ./jem/scripts/deploy_friedso_production.sh --deploy
+```
+
+Promote `main` → `friedso_v1` via PR (founder merges after local validate + smoke).
 
 ---
 

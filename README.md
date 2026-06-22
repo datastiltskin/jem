@@ -374,7 +374,7 @@ cd ..
    - **Local preview:** `cd jem/web && python3 -m http.server 8080` (ensure `public/graph.json` resolves).
    - **Static hosts:** upload `jem/web/` plus `graph.json` as `public/graph.json` (Netlify, S3, GitHub Pages, nginx, etc.).
 
-Production deploy is **maintainer-only** (local helpers not in this repo — see [`jem/scripts/MAINTAINER_SCRIPTS.md`](jem/scripts/MAINTAINER_SCRIPTS.md)). Public workflow: [`jem/docs/SESSION_WORKFLOW.md`](jem/docs/SESSION_WORKFLOW.md) · [`deploy_prep.sh`](jem/scripts/deploy_prep.sh).
+Production deploy is **maintainer-only** from branch **`friedso_v1`** (see [`.github/GOVERNANCE.md`](.github/GOVERNANCE.md)). Public workflow: [`jem/docs/SESSION_WORKFLOW.md`](jem/docs/SESSION_WORKFLOW.md) · [`deploy_friedso_production.sh`](jem/scripts/deploy_friedso_production.sh) · [`deploy_prep.sh`](jem/scripts/deploy_prep.sh).
 
 GitHub: https://github.com/dso6060/jem_prototype — Actions validates PRs; **does not auto-deploy**.
 

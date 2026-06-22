@@ -5,15 +5,36 @@
 
 **Canonical public demo (attribution only):** https://friedso.com/apps/jem/
 
+**Deploy branch:** `friedso_v1` — production always serves this branch. `main` continues for active development; promote to `friedso_v1` via PR after validate + smoke test (founder merges only — see [`GOVERNANCE.md`](../../.github/GOVERNANCE.md)).
+
 ---
 
 ## 0. Preflight (run locally)
 
-**Recommended:** run `./jem/scripts/deploy_prep.sh`, then ship `graph.json` + `jem/web/` per §1 below.
+**Recommended:** checkout `friedso_v1`, then run:
+
+```bash
+git fetch origin
+git checkout friedso_v1
+git pull --ff-only origin friedso_v1
+./jem/scripts/deploy_friedso_production.sh          # validate → derive → build → bundle
+./jem/scripts/deploy_friedso_production.sh --deploy # rsync when JEM_REMOTE is set
+```
+
+Or run `./jem/scripts/deploy_prep.sh` for checks only, then ship `graph.json` + `jem/web/` per §1 below.
 
 Maintainers with a **local copy** of `build_friedso_deploy_bundle.sh` (not in public GitHub — see `jem/scripts/MAINTAINER_SCRIPTS.md`) can build `_deploy_bundle/jem-web-*` and optional `--deploy`.
 
 Fix any errors before upload/rsync. See [`SESSION_WORKFLOW.md`](SESSION_WORKFLOW.md) for the daily pipeline and **graph overwrite** risks.
+
+### Promote `main` → `friedso_v1`
+
+When `main` has changes you want on friedso.com:
+
+```bash
+gh pr create --base friedso_v1 --head main --title "deploy: promote main to friedso_v1"
+# Founder: run deploy_friedso_production.sh locally on friedso_v1 after merge, then smoke §2
+```
 
 ---
 
@@ -86,12 +107,13 @@ If `graph.json` 404s or shows ~13 entities, the deploy did not ship the repo-roo
 
 ```bash
 cd /path/to/jem/repo
-git status   # clean, on main (or release branch)
+git checkout friedso_v1
+git status   # clean, on friedso_v1
 git log -1 --oneline
 
 git tag -a v1.0.0 -m "JEM v1.0.0 — 1,103 entities, full state/UT packs, UI refresh"
 
-# git push origin main
+# git push origin friedso_v1
 # git push origin v1.0.0
 ```
 

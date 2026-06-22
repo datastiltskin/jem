@@ -22,6 +22,7 @@ Repository: **https://github.com/dso6060/jem_prototype** (public)
 - [ ] **Settings → General → Features:** enable **Issues** and **Discussions**
 - [ ] **Discussions → Categories:** ensure `Q&A` and `Disputes` (or map templates to existing categories)
 - [ ] **Settings → Branches → `main`:** require PR, require status checks (`Validate JEM Data`), require CODEOWNERS review
+- [x] **Branch `friedso_v1`:** production deploy line for friedso.com; ruleset `friedso_v1 production deploy` (PR required; merge bypass @dso6060 only)
 - [x] Invite co-maintainer **@Prajna1999** as collaborator (admin); `CODEOWNERS` updated
 
 ## 4. Labels (create if not auto-created)

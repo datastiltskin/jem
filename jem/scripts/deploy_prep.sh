@@ -51,6 +51,8 @@ else
 fi
 
 echo ""
+echo "Production deploy branch: friedso_v1 (see jem/docs/V1_RELEASE_RUNBOOK.md)"
+echo "Full pipeline + bundle: ./jem/scripts/deploy_friedso_production.sh"
 echo "Deploy (set JEM_REMOTE to your host — do not commit real values):"
 echo "  export JEM_REMOTE='user@your-host.example:~/path/to/apps/jem'"
 echo "  export JEM_PUBLIC_URL='https://your-host.example/apps/jem/'"

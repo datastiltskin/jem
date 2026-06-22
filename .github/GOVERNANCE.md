@@ -54,3 +54,18 @@ Widening scope (new states, gap-registry entities) requires an explicit maintain
 ## Deploy
 
 **Canonical demo (attribution):** https://friedso.com/apps/jem/ — production deploy **founder only** unless delegated. Mirrors may host `jem/web/` + `graph.json` with courtesy credit to that URL.
+
+### Branches
+
+| Branch | Purpose |
+|--------|---------|
+| `main` | Active development (data + UI); may move ahead of production |
+| `friedso_v1` | **Production line** for friedso.com — deploy only from here |
+
+**Rules (GitHub ruleset `friedso_v1 production deploy`):**
+
+- Changes reach `friedso_v1` via **pull request** (no direct pushes).
+- Only [@dso6060](https://github.com/dso6060) can **merge** PRs into `friedso_v1` (ruleset bypass on pull requests).
+- Co-maintainers work on `main`; founder promotes to `friedso_v1` after `./jem/scripts/deploy_friedso_production.sh` + smoke tests ([`V1_RELEASE_RUNBOOK.md`](../jem/docs/V1_RELEASE_RUNBOOK.md)).
+
+Personal repos cannot use classic “restrict push to user” branch protection; the ruleset above enforces the same intent.

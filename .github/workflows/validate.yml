@@ -7,7 +7,7 @@ on:
       - 'jem/scripts/**'
       - '.github/workflows/validate.yml'
   push:
-    branches: [main]
+    branches: [main, friedso_v1]
     paths:
       - 'jem/data/**'
       - 'jem/scripts/**'
