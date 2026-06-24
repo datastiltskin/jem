@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEM Researcher Chat</title>
+  <style>
+    :root { --bg: #0f1419; --panel: #1a2332; --text: #e8edf4; --muted: #8b9cb3; --accent: #3d8bfd; --user: #1f3d5c; }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; height: 100vh; display: flex; flex-direction: column; }
+    header { padding: 1rem 1.5rem; border-bottom: 1px solid #2d3a4f; }
+    header h1 { margin: 0; font-size: 1.2rem; }
+    header p { margin: 0.25rem 0 0; color: var(--muted); font-size: 0.85rem; }
+    #messages { flex: 1; overflow-y: auto; padding: 1rem 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .msg { max-width: 80%; padding: 0.75rem 1rem; border-radius: 8px; line-height: 1.5; white-space: pre-wrap; }
+    .user { align-self: flex-end; background: var(--user); }
+    .assistant { align-self: flex-start; background: var(--panel); border: 1px solid #2d3a4f; }
+    .declined { border-color: #e5534b; }
+    form { display: flex; gap: 0.5rem; padding: 1rem 1.5rem; border-top: 1px solid #2d3a4f; }
+    input { flex: 1; background: var(--panel); border: 1px solid #2d3a4f; color: var(--text); padding: 0.6rem 0.75rem; border-radius: 6px; font-size: 1rem; }
+    button { background: var(--accent); color: #fff; border: none; padding: 0.6rem 1.2rem; border-radius: 6px; cursor: pointer; }
+    button:disabled { opacity: 0.5; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JEM Researcher Chat</h1>
+    <p>Structural map of India's judiciary — not legal advice</p>
+  </header>
+  <div id="messages"></div>
+  <form id="chat-form">
+    <input id="input" type="text" placeholder="Ask about entities, relationships, structural gaps…" autocomplete="off" required>
+    <button type="submit">Send</button>
+  </form>
+  <script>
+    const messages = document.getElementById('messages');
+    const form = document.getElementById('chat-form');
+    const input = document.getElementById('input');
+
+    function addMsg(text, role, declined) {
+      const div = document.createElement('div');
+      div.className = 'msg ' + role + (declined ? ' declined' : '');
+      div.textContent = text;
+      messages.appendChild(div);
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const text = input.value.trim();
+      if (!text) return;
+      addMsg(text, 'user');
+      input.value = '';
+      input.disabled = true;
+      try {
+        const resp = await fetch('/api/v1/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text }),
+        });
+        const data = await resp.json();
+        addMsg(data.reply, 'assistant', data.declined);
+      } catch (err) {
+        addMsg('Error: could not reach chat API.', 'assistant', true);
+      }
+      input.disabled = false;
+      input.focus();
+    });
+  </script>
+</body>
+</html>

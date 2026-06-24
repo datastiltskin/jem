@@ -82,7 +82,8 @@ data_quality_notes: 'Generic node for State Industrial Tribunals (state sphere) 
   list per IDA s.2(a) read with Ministry of Labour orders). Appeals from State IT awards lie to respective HC under Art. 226/227;
   no statutory appeal route. Awards enforceable as Civil Court decrees (s.17A). Industrial Relations Code 2020 will replace
   this structure when notified. Count: 20–30 benches nationally; exact figure not centrally published. ministry_responsible
-  left null — each state''s Labour Department. v1.2 judge_strength stub attached'
+  left null — each state''s Labour Department. v1.2 judge_strength stub attached. NEEDS_SOURCE: per-state bench inventory
+  and presiding-officer strength — state labour department notifications / MoLE Labour Bureau.'
 sources:
 - label: Industrial Disputes Act 1947 — ss.7A, 9, 17A (as amended)
   url: https://india-code.nic.in/DownloadFile?FileName=A1947-14.pdf

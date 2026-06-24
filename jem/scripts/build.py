@@ -490,6 +490,8 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
             "statutory_basis": e.get("statutory_basis"),
             "data_quality": e.get("data_quality"),
             "data_quality_notes": e.get("data_quality_notes"),
+            "role_layer": e.get("role_layer"),
+            "role_type": e.get("role_type"),
             "unverified_fields": e.get("unverified_fields", []),
             "derived": e.get("derived", {}),
             "funding_source": (e.get("funding") or {}).get("primary_source"),

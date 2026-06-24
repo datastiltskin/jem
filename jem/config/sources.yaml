@@ -1,0 +1,24 @@
+# JEM fetch sources — stub configuration
+
+sources:
+  - id: doj_vacancy_quarterly
+    name: Department of Justice — Quarterly Vacancy Report
+    url: https://doj.gov.in/
+    type: OfficialReport
+    enabled: true
+    fetch_interval_hours: 168
+
+  - id: ecourts_njdg
+    name: National Judicial Data Grid
+    url: https://njdg.ecourts.gov.in/
+    type: NJDG
+    enabled: false
+    fetch_interval_hours: 24
+    notes: Phase-2 — requires authenticated scrape spec
+
+  - id: egazette_appointments
+    name: eGazette — Judicial Appointments
+    url: https://egazette.nic.in/
+    type: GazetteNotification
+    enabled: true
+    fetch_interval_hours: 24

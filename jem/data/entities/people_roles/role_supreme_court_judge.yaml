@@ -1,0 +1,22 @@
+# jem/data/entities/people_roles/role_supreme_court_judge.yaml
+id: role_supreme_court_judge
+name: Supreme Court Judge (role archetype)
+type: JudicialOfficerRole
+cluster: people_roles
+role_layer: true
+role_type: JudicialOfficer
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+created_year: 1950
+operational_status: Active
+constitutional_basis: Articles 124-147, Constitution of India
+statutory_basis: null
+data_quality: partial
+data_quality_notes: Collegium-recommended; President appoints. No named individuals
+  in JEM. Numerics (judge_strength, case_volume) not applicable to role archetypes.
+sources:
+- label: Constitution of India
+  url: https://india-code.nic.in/
+  type: Constitution
+  accessed_date: '2026-06-24'

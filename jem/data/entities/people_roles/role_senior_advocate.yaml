@@ -1,0 +1,23 @@
+# jem/data/entities/people_roles/role_senior_advocate.yaml
+id: role_senior_advocate
+name: Senior Advocate (role archetype)
+type: LegalProfessionalRole
+cluster: people_roles
+role_layer: true
+role_type: LegalProfessional
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+created_year: 1950
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Advocates Act 1961, Section 16
+data_quality: partial
+data_quality_notes: Designation by HC or SC; restricted to briefing and arguing via
+  junior in some courts. Numerics (judge_strength, case_volume) not applicable to
+  role archetypes.
+sources:
+- label: Advocates Act 1961, Section 16
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-24'

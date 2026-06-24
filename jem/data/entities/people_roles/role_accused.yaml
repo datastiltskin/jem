@@ -1,0 +1,23 @@
+# jem/data/entities/people_roles/role_accused.yaml
+id: role_accused
+name: Accused (role archetype)
+type: PartyRole
+cluster: people_roles
+role_layer: true
+role_type: Party
+level_of_government: State
+jurisdiction_scope:
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Code of Criminal Procedure 1973; Bharatiya Nagarik Suraksha Sanhita
+  2023 (transition)
+data_quality: partial
+data_quality_notes: Party in criminal proceedings; structural rights vary by court
+  type. Numerics (judge_strength, case_volume) not applicable to role archetypes.
+sources:
+- label: Code of Criminal Procedure 1973
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-24'

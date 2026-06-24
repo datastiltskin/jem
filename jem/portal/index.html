@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEM Expert Portal — Staging Review</title>
+  <style>
+    :root { --bg: #0f1419; --card: #1a2332; --text: #e8edf4; --muted: #8b9cb3; --accent: #3d8bfd; --danger: #e5534b; --ok: #3fb950; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.4rem; margin: 0 0 0.25rem; }
+    .subtitle { color: var(--muted); margin-bottom: 1.5rem; }
+    .card { background: var(--card); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; border: 1px solid #2d3a4f; }
+    .meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem; }
+    .excerpt { background: #0d1117; padding: 0.75rem; border-radius: 4px; font-size: 0.9rem; margin: 0.5rem 0 1rem; white-space: pre-wrap; }
+    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+    button, .btn { border: none; border-radius: 4px; padding: 0.4rem 0.9rem; cursor: pointer; font-size: 0.9rem; }
+    .approve { background: var(--ok); color: #000; }
+    .reject { background: var(--danger); color: #fff; }
+    input[type=text] { background: #0d1117; border: 1px solid #2d3a4f; color: var(--text); padding: 0.35rem 0.5rem; border-radius: 4px; }
+    .empty { color: var(--muted); padding: 2rem; text-align: center; }
+    .badge { display: inline-block; background: #2d3a4f; padding: 0.1rem 0.5rem; border-radius: 3px; font-size: 0.75rem; }
+  </style>
+</head>
+<body>
+  <h1>JEM Expert Portal</h1>
+  <p class="subtitle">Staging review queue — {{ count }} record(s) awaiting review</p>
+
+  {% if items %}
+    {% for item in items %}
+    <div class="card">
+      <div class="meta">
+        <strong>#{{ item.id }}</strong> · {{ item.entity_name }}
+        · <span class="badge">{{ item.event_type }}</span>
+        · confidence {{ "%.2f"|format(item.confidence) }}
+        {% if item.event_date %}· {{ item.event_date }}{% endif %}
+      </div>
+      {% if item.position %}<div class="meta">Position: {{ item.position }}</div>{% endif %}
+      {% if item.reference_number %}<div class="meta">Ref: {{ item.reference_number }}</div>{% endif %}
+      <div class="excerpt">{{ item.verbatim_excerpt }}</div>
+      {% if item.source_url %}<div class="meta"><a href="{{ item.source_url }}" style="color:var(--accent)">Source</a></div>{% endif %}
+      <div class="actions">
+        <form method="post" action="/portal/staging/{{ item.id }}/approve" style="display:flex;gap:0.5rem;align-items:center">
+          <input type="hidden" name="actor" value="expert">
+          <input type="text" name="entity_id" placeholder="entity_id (optional)">
+          <button type="submit" class="approve">Approve &amp; Promote</button>
+        </form>
+        <form method="post" action="/portal/staging/{{ item.id }}/reject">
+          <input type="hidden" name="actor" value="expert">
+          <input type="hidden" name="reason" value="Rejected by expert">
+          <button type="submit" class="reject">Reject</button>
+        </form>
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p class="empty">No records in needs_review status.</p>
+  {% endif %}
+</body>
+</html>

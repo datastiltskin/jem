@@ -1,0 +1,23 @@
+# jem/data/entities/people_roles/role_chief_justice.yaml
+id: role_chief_justice
+name: Chief Justice of India (role archetype)
+type: JudicialOfficerRole
+cluster: people_roles
+role_layer: true
+role_type: JudicialOfficer
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+created_year: 1950
+operational_status: Active
+constitutional_basis: Articles 124, 124A, 128, Constitution of India
+statutory_basis: null
+data_quality: partial
+data_quality_notes: Generic CJI role for litigant-journey mapping. Officeholder node
+  chief_justice_india covers appointment-chain wiring. Numerics (judge_strength, case_volume)
+  not applicable to role archetypes.
+sources:
+- label: Constitution of India
+  url: https://india-code.nic.in/
+  type: Constitution
+  accessed_date: '2026-06-24'

@@ -33,14 +33,15 @@ ENTITY_TYPES = [
     "RegulatoryBodyQJ", "ADRBody", "AppointmentBody", "InvestigativeAgency",
     "ProsecutionBody", "TrainingBody", "AuditBody", "DigitalInfraBody",
     "SecurityBody", "FinancingBody", "LegislativeBody", "ExecutiveBody",
-    "LegalOfficer", "ProfessionalBody", "StatutoryBodyNotConstituted", "ProposedBody"
+    "LegalOfficer", "ProfessionalBody", "StatutoryBodyNotConstituted", "ProposedBody",
+    "JudicialOfficerRole", "CourtAdminRole", "LegalProfessionalRole", "ProsecutionRole", "PartyRole",
 ]
 
 CLUSTERS = [
     "constitutional_courts", "subordinate_courts", "tribunals_adr",
     "consumer_redressal", "arbitration", "regulatory_bodies", "executive_interface",
     "digital_infrastructure", "financing_audit", "training_professional",
-    "appointment_bodies", "legislative_executive"
+    "appointment_bodies", "legislative_executive", "security", "people_roles",
 ]
 
 GOV_LEVELS = ["Central", "State", "UT", "Shared_MultiState", "Shared_CentralState"]
@@ -308,6 +309,9 @@ class EntityModel(BaseModel):
 
     case_volume: Optional[CaseVolumeModel] = None
     judge_strength: Optional[JudgeStrengthModel] = None
+
+    role_layer: Optional[bool] = None
+    role_type: Optional[str] = None
 
     data_quality: str
     data_quality_notes: Optional[str] = None

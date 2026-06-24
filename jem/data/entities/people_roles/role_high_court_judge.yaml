@@ -1,0 +1,22 @@
+# jem/data/entities/people_roles/role_high_court_judge.yaml
+id: role_high_court_judge
+name: High Court Judge (role archetype)
+type: JudicialOfficerRole
+cluster: people_roles
+role_layer: true
+role_type: JudicialOfficer
+level_of_government: State
+jurisdiction_scope:
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+constitutional_basis: Articles 217-224, Constitution of India
+statutory_basis: null
+data_quality: partial
+data_quality_notes: HC collegium + Governor + President appointment chain. Role archetype
+  only. Numerics (judge_strength, case_volume) not applicable to role archetypes.
+sources:
+- label: Constitution of India
+  url: https://india-code.nic.in/
+  type: Constitution
+  accessed_date: '2026-06-24'

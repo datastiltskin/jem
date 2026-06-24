@@ -83,12 +83,14 @@ structural_variations:
   source: Tamil Nadu Board of Revenue Abolition Act 1980
   independence_risk_note: Abolished — modelling only for completeness and historical appellate chain accuracy.
 data_quality: partial
-data_quality_notes: Generic node. Boards of Revenue are quasi-judicial state bodies sitting atop the revenue courts hierarchy
+data_quality_notes: >-
+  Generic node. Boards of Revenue are quasi-judicial state bodies sitting atop the revenue courts hierarchy
   (Tehsildar → SDO → Collector → Commissioner → Board of Revenue). Not all states retain a Board of Revenue; Tamil Nadu abolished
   it (1980), Karnataka merged functions into Revenue Appellate Tribunal, and some NE states never had one. Appeals from BoR
   orders lie to the respective HC. created_year 1951 is approximate (many BoRs predate Independence; reconstituted under post-1950
   state statutes). ministry_responsible left null — state Revenue or Land Records Department is the administrative parent;
-  no universal entity_id mapped in graph yet. v1.2 judge_strength stub attached
+  no universal entity_id mapped in graph yet. v1.2 judge_strength stub attached. NEEDS_SOURCE — per-state operational status
+  and member strength from state Board of Revenue Acts or revenue department annual reports.
 sources:
 - label: Rajasthan Board of Revenue Act 1949
   url: https://india-code.nic.in/DownloadFile?FileName=A1949-21Rajasthan.pdf

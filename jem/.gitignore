@@ -24,3 +24,13 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Build orchestration (ephemeral Claude CLI output)
+.claude/outputs/
+.claude/build_log.md
+
+# SQLite (production DB — never commit)
+data/jem.db
+data/jem.db-shm
+data/jem.db-wal
+data/digests/

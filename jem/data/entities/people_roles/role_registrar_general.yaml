@@ -1,0 +1,22 @@
+# jem/data/entities/people_roles/role_registrar_general.yaml
+id: role_registrar_general
+name: Registrar General (role archetype)
+type: CourtAdminRole
+cluster: people_roles
+role_layer: true
+role_type: CourtAdminStaff
+level_of_government: State
+jurisdiction_scope:
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+constitutional_basis: null
+statutory_basis: High Courts Act / state court rules (varies by HC)
+data_quality: partial
+data_quality_notes: Senior court administration; not a judicial officer for appeal
+  purposes. Numerics (judge_strength, case_volume) not applicable to role archetypes.
+sources:
+- label: High Courts Act / state court rules (varies by HC)
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-24'

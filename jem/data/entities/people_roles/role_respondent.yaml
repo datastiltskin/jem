@@ -1,0 +1,22 @@
+# jem/data/entities/people_roles/role_respondent.yaml
+id: role_respondent
+name: Respondent / Defendant (role archetype)
+type: PartyRole
+cluster: people_roles
+role_layer: true
+role_type: Party
+level_of_government: State
+jurisdiction_scope:
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Code of Civil Procedure 1908
+data_quality: partial
+data_quality_notes: Opposing party in civil or writ proceedings. Numerics (judge_strength,
+  case_volume) not applicable to role archetypes.
+sources:
+- label: Code of Civil Procedure 1908
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-24'

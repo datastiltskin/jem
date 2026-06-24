@@ -1,0 +1,1 @@
+"""JEM FastAPI application."""

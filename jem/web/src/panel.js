@@ -87,6 +87,8 @@ function buildPanelHTML(e, opts = {}) {
     ${e.data_quality_notes ? `— ${e.data_quality_notes}` : ''}
   </div>`;
 
+  html += dataCompletenessBanner(e, d);
+
   const unverified = e.unverified_fields || d.unverified_fields || [];
   if (unverified.length) {
     html += section('Unverified fields', unverified.map((u) => `
@@ -114,27 +116,8 @@ function buildPanelHTML(e, opts = {}) {
 
   // ── Case volume & clog (NJDG / reports) ─────────────────
   // ponytail: detail view renders its own Case volume section; skip here to avoid duplication.
-  if (!opts.omitCaseVolume && d.case_volume && typeof d.case_volume === 'object') {
-    const cv = d.case_volume;
-    const rows = [];
-    if (cv.data_as_of) rows.push(row('Data as of', cv.data_as_of));
-    if (cv.pending_cases != null) rows.push(row('Pending cases (approx.)', String(cv.pending_cases).replace(/\B(?=(\d{3})+(?!\d))/g, ',')));
-    if (cv.filed_last_year != null) rows.push(row('Filed (last year)', String(cv.filed_last_year)));
-    if (cv.disposed_last_year != null) rows.push(row('Disposed (last year)', String(cv.disposed_last_year)));
-    if (cv.disposal_rate != null) rows.push(row('Disposal rate', String(cv.disposal_rate)));
-    if (cv.avg_disposal_days != null) rows.push(row('Avg disposal days', String(cv.avg_disposal_days)));
-    if (cv.sanctioned_strength != null && d.judge_strength?.allotted == null) {
-      rows.push(row('Sanctioned strength (legacy)', String(cv.sanctioned_strength)));
-    }
-    if (cv.working_strength != null && d.judge_strength?.appointed == null) {
-      rows.push(row('Working strength (legacy)', String(cv.working_strength)));
-    }
-    if (cv.clog_severity) rows.push(row('Clog severity', cv.clog_severity));
-    if (cv.source_type) rows.push(row('Volume source type', cv.source_type));
-    if (cv.source_url) rows.push(`<div class="detail-row"><span class="lbl">Volume source</span><span><a href="${cv.source_url}" target="_blank" rel="noopener noreferrer">${cv.source_url}</a></span></div>`);
-    if (rows.length) {
-      html += section('Case volume & clogging', rows.join(''));
-    }
+  if (!opts.omitCaseVolume) {
+    html += section('Case volume & clogging', caseVolumeBody(e, d));
   }
 
   // ── Audit ──────────────────────────────────────────────
@@ -534,6 +517,14 @@ function judgeStrengthBody(entity, d) {
         : null;
 
   const fmt = (n) => (n == null ? '<em class="muted">Not yet recorded</em>' : String(n));
+  let html = '';
+
+  if (!d.judge_strength) {
+    html += `<p class="detail-data-flag data-flag-absent">No judge_strength block — maintainer stub not yet attached.</p>`;
+  } else if (allotted == null && appointed == null) {
+    html += `<p class="detail-data-flag data-flag-stub">Stub awaiting maintainer fill — allotted/appointed blocked on DoJ vacancy report or HC roster.</p>`;
+  }
+
   const rows = [
     row('Judges allotted (sanctioned posts)', fmt(allotted)),
     row('Judges appointed (in post)', fmt(appointed)),
@@ -546,7 +537,81 @@ function judgeStrengthBody(entity, d) {
     js.notes ? `<div class="detail-row"><span class="lbl">Notes</span><span>${js.notes}</span></div>` : '',
   ].filter(Boolean);
 
-  return rows.join('');
+  return html + rows.join('');
+}
+
+function caseVolumeBody(entity, d) {
+  if (!isCourtLikeType(entity.type)) {
+    return '<p class="detail-empty-hint">Case volume metrics apply to court-like bodies only.</p>';
+  }
+
+  const cv = d.case_volume || {};
+  const hasNumeric =
+    cv.pending_cases != null
+    || cv.filed_last_year != null
+    || cv.disposed_last_year != null
+    || cv.avg_disposal_days != null;
+
+  let html = '';
+  if (!d.case_volume) {
+    html += `<p class="detail-data-flag data-flag-absent">No case_volume block — structural entity only.</p>`;
+  } else if (!hasNumeric) {
+    html += `<p class="detail-data-flag data-flag-blocked">Blocked on primary source — NJDG district export or court annual report not yet merged.</p>`;
+  }
+
+  const rows = [];
+  if (cv.data_as_of) rows.push(row('Data as of', cv.data_as_of));
+  if (cv.pending_cases != null) rows.push(row('Pending cases (approx.)', String(cv.pending_cases).replace(/\B(?=(\d{3})+(?!\d))/g, ',')));
+  if (cv.filed_last_year != null) rows.push(row('Filed (last year)', String(cv.filed_last_year)));
+  if (cv.disposed_last_year != null) rows.push(row('Disposed (last year)', String(cv.disposed_last_year)));
+  if (cv.disposal_rate != null) rows.push(row('Disposal rate', String(cv.disposal_rate)));
+  if (cv.avg_disposal_days != null) rows.push(row('Avg disposal days', String(cv.avg_disposal_days)));
+  if (cv.sanctioned_strength != null && d.judge_strength?.allotted == null) {
+    rows.push(row('Sanctioned strength (legacy)', String(cv.sanctioned_strength)));
+  }
+  if (cv.working_strength != null && d.judge_strength?.appointed == null) {
+    rows.push(row('Working strength (legacy)', String(cv.working_strength)));
+  }
+  if (cv.clog_severity) rows.push(row('Clog severity', cv.clog_severity));
+  if (cv.source_type) rows.push(row('Volume source type', cv.source_type));
+  if (cv.source_url) {
+    rows.push(`<div class="detail-row"><span class="lbl">Volume source</span><span><a href="${cv.source_url}" target="_blank" rel="noopener noreferrer">${cv.source_url}</a></span></div>`);
+  }
+
+  if (!rows.length && !html) {
+    return '<p class="detail-empty-hint">Case volume block present but all fields are null.</p>';
+  }
+  return html + rows.join('');
+}
+
+function dataCompletenessBanner(entity, d) {
+  if (entity.role_layer || entity.cluster === 'people_roles') {
+    return `<div class="detail-data-flag data-flag-role">Role archetype — no numerics or named individuals; toggle People/Roles lens to show on map.</div>`;
+  }
+
+  const flags = [];
+  const courtLike = isCourtLikeType(entity.type);
+  const js = d.judge_strength || {};
+  const cv = d.case_volume || {};
+  const cvPopulated = cv.pending_cases != null || cv.filed_last_year != null;
+
+  if (courtLike) {
+    if (!d.judge_strength) flags.push('judge strength block missing');
+    else if (js.allotted == null && js.appointed == null) flags.push('judge strength stub (null allotted/appointed)');
+    if (!cvPopulated) flags.push('case volume absent or null');
+  }
+
+  if (entity.data_quality === 'unverified') {
+    flags.push('structural fields unverified');
+  }
+  if (entity.data_quality === 'contested') {
+    flags.push('contested data — see sources');
+  }
+
+  if (!flags.length) return '';
+
+  const chips = flags.map((f) => `<span class="data-flag-chip">${f}</span>`).join('');
+  return `<div class="detail-data-summary">${chips}</div>`;
 }
 
 function qualityIcon(dq) {
