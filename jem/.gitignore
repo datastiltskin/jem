@@ -5,6 +5,15 @@ __pycache__/
 .venv/
 venv/
 *.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Secrets — use .env.example as template
+.env
+.env.*
+!.env.example
 
 # Staging graph from build_safe.sh (optional local only)
 build/
