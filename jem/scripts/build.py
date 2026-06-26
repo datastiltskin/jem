@@ -523,13 +523,27 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
             "position": positions.get(e["id"], {"x": 0, "y": 0}),
         }
         # Gap / health fields (schema v1.3) for Gaps mode, detail panel, reports
-        if e.get("gap_flag") is not None:
-            fe["gap_flag"] = e.get("gap_flag")
+        gap_flag = e.get("gap_flag")
+        gap_list: list = list(e.get("gaps") or [])
+        structural_gap = e.get("structural_gap")
+        if isinstance(structural_gap, dict):
+            if gap_flag is None and structural_gap.get("flag") is not None:
+                gap_flag = structural_gap.get("flag")
+            inner = structural_gap.get("gaps") or []
+            if isinstance(inner, list):
+                gap_list.extend(inner)
+        elif isinstance(structural_gap, list):
+            gap_list.extend(structural_gap)
+        elif structural_gap:
+            gap_list.append(structural_gap)
+        if gap_flag is not None:
+            fe["gap_flag"] = gap_flag
         if e.get("gap_count") is not None:
             fe["gap_count"] = e.get("gap_count")
-        gaps = e.get("gaps") or e.get("structural_gap")
-        if gaps:
-            fe["gaps"] = gaps if isinstance(gaps, list) else [gaps]
+        elif gap_list:
+            fe["gap_count"] = len(gap_list)
+        if gap_list:
+            fe["gaps"] = gap_list
         if e.get("structural_exception"):
             fe["structural_exception"] = True
         if e.get("circularity_score") is not None:

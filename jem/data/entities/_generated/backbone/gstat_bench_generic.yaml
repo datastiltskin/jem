@@ -54,6 +54,25 @@ jurisdiction_scope:
   - gst_appeals
   states_covered: []
   uts_covered: []
+structural_gap:
+  flag: true
+  gaps:
+  - gap_id: gstat_state_bench_members_pending
+    gap_type: Appointment_Gap
+    gap_severity: Critical
+    gap_description: >-
+      State/UT GSTAT benches notified under MoF S.O. 1559(E) (6 Apr 2023) but
+      judicial and technical member appointments at most state benches remain
+      incomplete as of June 2026. GST appeals from many states still lie before
+      High Courts pending functional state benches.
+    gap_source: MoF Notification S.O. 1559(E); GSTAT Procedure Rules 2025 (G.S.R. 256(E))
+    gap_since_year: 2023
+    gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      Bench-wise operationalisation follows Central Government appointment
+      notifications under CGST Act 2017 s.109(6) and GSTAT Rules 2023. No
+      statutory completion date; monitor Gazette notifications and
+      efiling.gstat.gov.in for member orders per state bench.
 data_quality: partial
 data_quality_notes: 'Generic scaffold only. GSTAT Principal Bench operational since Sep 2023; state bench notifications issued
   incrementally; member appointments at state benches remain incomplete (Jun 2026). Do not create individual state-bench

@@ -79,6 +79,12 @@ structural_gap:
     gap_source: GSTAT Procedure Rules 2025 notification (24 Apr 2025); CBIC/GSTAT establishment notifications
     gap_since_year: 2017
     gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      No fixed statutory deadline for full operationalisation. State bench member
+      appointments under CGST Act 2017 s.109(6) proceed via Union/state
+      notifications; MoF issued bench-location notification S.O. 1559(E) on
+      6 April 2023. Timeline contingent on DoR/CBIC recruitment — monitor Gazette
+      and efiling.gstat.gov.in for bench-wise constitution orders.
 data_quality: partial
 data_quality_notes: 'Structural_gap: CRITICAL (partial operationalisation). GSTAT Principal Bench established 1 September
   2023; President appointed 3 May 2024 (ACC); GSTAT Procedure Rules 2025 notified 24 April 2025. Tribunal is partially functional

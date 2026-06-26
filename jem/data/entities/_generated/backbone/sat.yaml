@@ -56,6 +56,9 @@ structural_gap:
       gap_source: Business Standard / Hindu BusinessLine, Apr 2024
       gap_since_year: 2023
       gap_status: Partial_Addressed
+      gap_resolution_note: >-
+        Quorum restored Apr 2024 with new Presiding Officer; ongoing risk if PO
+        post falls vacant again. Monitor sat.gov.in and DoJ vacancy reports.
     - gap_id: sat_single_bench_national
       gap_type: Capacity_Gap
       gap_severity: Moderate
@@ -66,6 +69,10 @@ structural_gap:
       gap_source: sat.gov.in; News on Air, Jul 2024
       gap_since_year: 1995
       gap_status: Open
+      gap_resolution_note: >-
+        Additional benches require Central Government notification under SAT
+        establishment rules; Union Budget 2016 announced expansion but no fixed
+        timeline. Contingent on legislative/administrative action — not date-bound.
 sources:
 - label: SEBI Act 1992 — SEBI Official Website
   url: https://www.sebi.gov.in/legal/acts/aug-1992/the-securities-and-exchange-board-of-india-act-1992_2101.html

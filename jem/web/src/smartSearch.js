@@ -2,18 +2,7 @@
 // Answers common researcher questions from sourced fields only.
 
 import { isScoredEntity, shouldShowStructuralScores } from './scoreDisplay.js';
-
-function extractGapEntries(entity) {
-  const out = [];
-  for (const block of entity.gaps || []) {
-    if (!block || typeof block !== 'object') continue;
-    const list = Array.isArray(block.gaps) ? block.gaps : (block.gap_id ? [block] : []);
-    for (const g of list) {
-      if (g && typeof g === 'object') out.push(g);
-    }
-  }
-  return out;
-}
+import { extractGapEntries } from './gapDisplay.js';
 
 function judgeStrength(e) {
   const js = e._detail?.judge_strength;

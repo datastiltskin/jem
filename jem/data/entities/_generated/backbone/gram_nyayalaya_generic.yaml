@@ -55,6 +55,11 @@ structural_gap:
     gap_source: DoJ Gram Nyayalaya dashboard; MoS Law Lok Sabha reply Oct 2025
     gap_since_year: 2009
     gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      State governments constitute Gram Nyayalayas under Gram Nyayalayas Act 2008
+      s.3; no Union deadline for full national rollout. Expansion depends on state
+      notifications and judicial officer postings — monitor DoJ operational dashboard
+      and state High Court notifications.
 data_quality: partial
 data_quality_notes: 'Aggregate generic node. Operational count 333/488 notified (Oct 2025) per MoS Law Arjun Ram Meghwal Lok
   Sabha reply; DoJ dashboard shows 337 operational (state totals may lag reply). Prior claim "UP: zero" is incorrect — UP

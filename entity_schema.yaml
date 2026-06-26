@@ -482,6 +482,10 @@ entity:
           gap_status:
             type: enum
             values: [Open, Partial_Addressed, Addressed, Contested]
+          gap_resolution_note:
+            type: string
+            required: false
+            description: Expected path or timeline to close the gap; cite source or state if indeterminate
 
   # ── Structural Circularity ───────────────────────────────
   structural_circularity:

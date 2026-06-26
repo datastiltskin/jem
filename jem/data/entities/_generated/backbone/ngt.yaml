@@ -47,6 +47,10 @@ structural_gap:
     gap_source: NGT Act 2010 s.4; Indian Express, 11 Aug 2025
     gap_since_year: 2010
     gap_status: Open
+    gap_resolution_note: >-
+      Restoration to NGT Act 2010 s.4 minima (10 judicial + 10 expert members)
+      requires Central Government appointments under ss.5–7. No statutory
+      completion date; monitor greentribunal.gov.in and Gazette appointment orders.
 data_quality: partial
 data_quality_notes: "NGT is EXCLUDED from Tribunals Reforms Act 2021 — appointment under NGT Act 2010 s.5-7 directly. 5 locations: Principal Bench New Delhi + 4 zonal (Eastern Kolkata, Western Pune/Mumbai, Central Bhopal, Southern Chennai). Western Zone formally designated Pune; bench has historically sat at Mumbai — NGT's own docs ambiguous. Member strength Aug 2025: 6 judicial + 7 expert (both below s.4 minimum of 10 each).\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
 sources:

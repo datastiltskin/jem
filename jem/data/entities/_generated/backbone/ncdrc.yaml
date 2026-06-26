@@ -53,6 +53,10 @@ structural_gap:
     gap_source: Department of Consumer Affairs statement, Aug 2025; consumeraffairs.nic.in
     gap_since_year: 2024
     gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      Backlog reassessment pending fresh NJDG or e-Jagriti pending-case export;
+      no statutory resolution timeline. DoCA monthly disposal metrics are throughput
+      indicators only.
 sources:
 - label: Consumer Protection Act 2019 — India Code
   url: https://india-code.nic.in/acts-detail/MjMxMzM=

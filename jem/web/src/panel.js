@@ -8,6 +8,7 @@ import { buildEntityConnectionSummary, formatCategoryLabel } from './entityConne
 import { commentsHTML, wireComments } from './comments.js';
 import { shouldShowStructuralScores } from './scoreDisplay.js';
 import { getJurisdictionProfileSections } from './jurisdictionDisplay.js';
+import { entityHasGapContent, renderGapListHTML } from './gapDisplay.js';
 
 export function openDetailPanel(entity) {
   const panel = document.getElementById('detail-panel');
@@ -233,28 +234,10 @@ function buildPanelHTML(e, opts = {}) {
 // ── HTML Helpers ──────────────────────────────────────────────────────────────
 
 function structuralGapsBody(e) {
-  const gapList = e.gaps || [];
-  const gapCount = Number(e.gap_count) || 0;
-  const hasRecorded =
-    e.gap_flag
-    || gapCount > 0
-    || gapList.length > 0
-    || e.structural_exception
-    || (e.circularity_score ?? e.derived?.circularity_score ?? 0) > 0;
+  const hasRecorded = entityHasGapContent(e);
 
   if (hasRecorded) {
-    let inner = '';
-    if (gapList.length) {
-      inner += '<ul class="detail-gap-list">';
-      for (const g of gapList) {
-        const type = (g && typeof g === 'object' ? g.gap_type : g) || 'gap';
-        const note = g?.note || g?.description || '';
-        inner += `<li><strong>${String(type).replace(/_/g, ' ')}</strong>${note ? ` — ${note}` : ''}</li>`;
-      }
-      inner += '</ul>';
-    } else if (gapCount > 0 || e.gap_flag) {
-      inner += `<p>${gapCount || 1} documented gap(s) — see map markers (*) in Gaps mode.</p>`;
-    }
+    let inner = renderGapListHTML(e);
     if (e.structural_exception) {
       inner += '<p class="detail-empty-hint">Marked as structural exception (deviates from statutory template).</p>';
     }
@@ -268,13 +251,7 @@ function structuralGapsBody(e) {
 
 // Returns true when structuralGapsBody() will surface anything for this entity.
 function hasGapsContent(e) {
-  return Boolean(
-    e.gap_flag
-    || Number(e.gap_count) > 0
-    || (e.gaps || []).length > 0
-    || e.structural_exception
-    || (e.circularity_score ?? e.derived?.circularity_score ?? 0) > 0
-  );
+  return entityHasGapContent(e);
 }
 
 function lifecycleBody(e) {
