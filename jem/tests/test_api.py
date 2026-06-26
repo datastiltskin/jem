@@ -11,6 +11,14 @@ def test_health(api_client) -> None:
     assert body["entity_count"] == 9
 
 
+def test_get_relationship_by_id(api_client) -> None:
+    resp = api_client.get("/api/v1/relationships/rel_aft_to_sc_appellate")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["id"] == "rel_aft_to_sc_appellate"
+    assert body["source"] == "aft"
+
+
 def test_get_entity(api_client) -> None:
     resp = api_client.get("/api/v1/entities/supreme_court_india")
     assert resp.status_code == 200

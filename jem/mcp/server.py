@@ -6,9 +6,10 @@ import json
 from typing import Any, Callable
 
 from fastapi import APIRouter, Request
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from starlette.responses import Response
 
+from api.chrome import templates
 from api.deps import connect, get_db_path
 from mcp.tools import get_entity, get_relationships, get_structural_gaps, search_entities
 
@@ -85,6 +86,14 @@ def call_tool(name: str, arguments: dict | None = None) -> dict:
 
 def create_mcp_router() -> APIRouter:
     router = APIRouter(prefix="/mcp", tags=["mcp"])
+
+    @router.get("/", response_class=HTMLResponse)
+    def mcp_home(request: Request) -> HTMLResponse:
+        return templates.TemplateResponse(
+            request,
+            "mcp_index.html",
+            {"tools": list_tools()},
+        )
 
     @router.get("/tools")
     def tools_list() -> dict:

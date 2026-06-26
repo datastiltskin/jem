@@ -4,18 +4,14 @@ from __future__ import annotations
 
 import json
 import sqlite3
-from pathlib import Path
 from typing import Optional
 
 from fastapi import APIRouter, Depends, Form, HTTPException, Request
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
-from fastapi.templating import Jinja2Templates
 
 from agents.dedup import promote_to_vacancy_event
+from api.chrome import templates
 from api.deps import connect, get_db, get_db_path
-
-PORTAL_DIR = Path(__file__).resolve().parent
-templates = Jinja2Templates(directory=str(PORTAL_DIR))
 
 
 def _audit(
@@ -53,7 +49,7 @@ def create_portal_router() -> APIRouter:
         items = [dict(row) for row in rows]
         return templates.TemplateResponse(
             request,
-            "index.html",
+            "portal_index.html",
             {"items": items, "count": len(items)},
         )
 

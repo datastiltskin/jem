@@ -6,6 +6,8 @@ import { State } from './state.js';
 import { openNeighborhoodPanel, closeNeighborhoodPanel } from './neighborhoodPanel.js';
 import { buildEntityConnectionSummary, formatCategoryLabel } from './entityConnections.js';
 import { commentsHTML, wireComments } from './comments.js';
+import { shouldShowStructuralScores } from './scoreDisplay.js';
+import { getJurisdictionProfileSections } from './jurisdictionDisplay.js';
 
 export function openDetailPanel(entity) {
   const panel = document.getElementById('detail-panel');
@@ -102,6 +104,16 @@ function buildPanelHTML(e, opts = {}) {
   // ── Lifecycle ──────────────────────────────────────────
   html += section('Lifecycle', lifecycleBody(e));
 
+  // ── Jurisdiction (territorial scope + appellate routing) ─
+  const jurisdictionParts = getJurisdictionProfileSections(e);
+  if (jurisdictionParts.length === 1) {
+    html += section('Jurisdiction', jurisdictionParts[0].body);
+  } else if (jurisdictionParts.length > 1) {
+    for (const part of jurisdictionParts) {
+      html += section(part.title, part.body);
+    }
+  }
+
   // ── Parent HC (permanent bench) ───────────────────────
   if (d.parent_hc) html += section('High Court structure', parentHCBody(d));
 
@@ -133,6 +145,8 @@ function buildPanelHTML(e, opts = {}) {
   // and Constituent breakdown widgets already render this information.
   if (opts.omitRiskIndicators) {
     // skip block
+  } else if (!shouldShowStructuralScores(e)) {
+    // governance anchors, abolished institutions — no structural score UI
   } else if (State.viewMode === 'risk' && irScore === undefined && dpScore === undefined && healthScore == null) {
     html += section('Structural Risk Indicators', `
       <p class="detail-empty-hint">Structural-health, independence-risk and discretionary-power scores are not computed for this entity yet.</p>
@@ -387,20 +401,21 @@ function sourcesBody(e) {
 }
 
 // Themed-widget catalogue consumed by the detail view to distribute sections
-// across left/right columns. Each entry has a stable `key`, a display `title`,
-// the inner-HTML `body` (already empty-checked), and `defaultOpen`.
+// across left/right columns. Each entry has a stable `key`, display `title`,
+// inner-HTML `body`, and optional `weight` for column balancing.
 export function getProfileSections(entity) {
   const d = entity._detail || {};
   const list = [
-    { key: 'lifecycle',      title: 'Lifecycle',                          body: lifecycleBody(entity),  defaultOpen: true  },
-    { key: 'parent_hc',      title: 'High Court structure',               body: parentHCBody(d),        defaultOpen: false },
-    { key: 'judges',         title: 'Judge strength',                     body: judgeStrengthBody(entity, d), defaultOpen: true  },
-    { key: 'appointment',    title: 'Appointment chain',                  body: appointmentBody(d),     defaultOpen: false },
-    { key: 'funding',        title: 'Funding',                            body: fundingBody(d),         defaultOpen: false },
-    { key: 'audit',          title: 'Audit & oversight',                  body: auditBody(d),           defaultOpen: false },
-    { key: 'complaint',      title: 'Complaint mechanism (Bias / Misconduct)', body: complaintBody(d),  defaultOpen: false },
-    { key: 'gaps',           title: 'Structural gaps',                    body: structuralGapsBody(entity), defaultOpen: hasGapsContent(entity) },
-    { key: 'sources',        title: 'Primary sources',                    body: sourcesBody(entity),    defaultOpen: false },
+    { key: 'lifecycle',      title: 'Lifecycle',                          body: lifecycleBody(entity), weight: 2 },
+    ...getJurisdictionProfileSections(entity),
+    { key: 'parent_hc',      title: 'High Court structure',               body: parentHCBody(d), weight: 2 },
+    { key: 'judges',         title: 'Judge strength',                     body: judgeStrengthBody(entity, d), weight: 3 },
+    { key: 'appointment',    title: 'Appointment chain',                  body: appointmentBody(d), weight: 4 },
+    { key: 'funding',        title: 'Funding',                            body: fundingBody(d), weight: 3 },
+    { key: 'audit',          title: 'Audit & oversight',                  body: auditBody(d), weight: 3 },
+    { key: 'complaint',      title: 'Complaint mechanism (Bias / Misconduct)', body: complaintBody(d), weight: 5 },
+    { key: 'gaps',           title: 'Structural gaps',                    body: structuralGapsBody(entity), weight: 2 },
+    { key: 'sources',        title: 'Primary sources',                    body: sourcesBody(entity), weight: 3 + Math.min(4, (entity.sources || []).length) },
   ];
   return list.filter(s => s.body && s.body.trim());
 }

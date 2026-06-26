@@ -221,19 +221,7 @@ case "${SESSION}" in
 
 "5")
   check_prereqs 1
-  log "SESSION 5: Harness + Chat UI"
-  claude_reason "s5_system_prompt"
-  gate "CRITICAL: Review harness system prompt — ${OUTPUTS}/s5_system_prompt.md"
-  if [[ -f "${OUTPUTS}/s5_system_prompt.md" && -z "${DRY_RUN}" ]]; then
-    cp "${OUTPUTS}/s5_system_prompt.md" "harness/system_prompt.txt"
-  fi
-  claude_reason "s5_test_pairs"
-  if [[ -f "${OUTPUTS}/s5_test_pairs.md" && -z "${DRY_RUN}" ]]; then
-    cp "${OUTPUTS}/s5_test_pairs.md" "tests/fixtures/harness_test_pairs.md"
-  fi
-  gate "Review test pairs — ${OUTPUTS}/s5_test_pairs.md"
-  cursor_gate "cursor_s5_harness"
-  run_tests "test_harness"
+  log "SESSION 5: skipped (Researcher Chat removed — use REST search / MCP / map UI)"
   log "SESSION 5 COMPLETE"
   ;;
 

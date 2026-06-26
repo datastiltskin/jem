@@ -1,5 +1,9 @@
 # Judiciary Entity Map (India) - JEM
 
+<p align="center">
+  <img src="jem/web/public/assets/jem-lockup.png" alt="JEM" width="320">
+</p>
+
 **Open structural map of India's judicial ecosystem — institutional capacity, relationships, and systemic gaps.**
 
 *Working name during early builds was “d3lem”; the project and paths are now **JEM** / `jem/`.*

@@ -1,6 +1,7 @@
 // JEM — Group report tab + print
 import { State } from './state.js';
 import { selectAndOpenEntity } from './entitySelection.js';
+import { printBrandBlock } from './brand.js';
 
 let bodyEl;
 
@@ -54,6 +55,7 @@ export function renderGroupReport() {
   }
 
   let html = `
+    ${printBrandBlock()}
     <div class="group-report-summary">
       <div class="gr-stat"><span class="gr-num">${entities.length}</span><span class="gr-lbl">Entities</span></div>
       <div class="gr-stat"><span class="gr-num">${gapCount}</span><span class="gr-lbl">With gaps</span></div>

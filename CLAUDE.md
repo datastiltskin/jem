@@ -136,7 +136,7 @@ This layer **coexists** with the YAML pipeline above; it does not replace `jem/d
 - SQLite (`data/jem.db`) — primary store, direct queries
 - FastAPI — researcher HTTP API (Session 2)
 - MCP Python SDK — MCP server, SSE transport, mounted on FastAPI (Session 3)
-- Anthropic API (claude-sonnet-4-6) — chatbot harness + fetcher extraction (Sessions 4–5)
+- Anthropic API (claude-sonnet-4-6) — fetcher/verifier extraction only (Session 4A)
 - pytest — all tests; fixture DB never production DB
 
 ## Schema ground truth
@@ -167,7 +167,7 @@ Machine-readable DDL: `jem/config/schema.sql` (derived from schema_lock.md).
 - [x] Session 3: MCP Server
 - [x] Session 4A: Fetcher Agent
 - [x] Session 4B: Expert Portal
-- [x] Session 5: Harness + Chat UI
+- [x] Session 5: ~~Harness + Chat UI~~ (removed — search via REST / map UI)
 - [x] Session 6: Operational Monitor
 - [ ] QA: Full audit
 

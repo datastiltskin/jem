@@ -9,12 +9,14 @@ import sqlite3
 import sys
 from pathlib import Path
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 3
 
 JEM_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DB = JEM_ROOT / "data" / "jem.db"
 DEFAULT_GRAPH = JEM_ROOT.parent / "graph.json"
 SCHEMA_SQL = JEM_ROOT / "config" / "schema.sql"
+SCHEMA_V2_SQL = JEM_ROOT / "config" / "schema_v2.sql"
+SCHEMA_V3_SQL = JEM_ROOT / "config" / "schema_v3.sql"
 
 ENTITY_SCALAR_KEYS = {
     "id",
@@ -67,11 +69,21 @@ def connect(db_path: Path) -> sqlite3.Connection:
 
 def apply_schema(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA_SQL.read_text())
+    if SCHEMA_V2_SQL.exists():
+        conn.executescript(SCHEMA_V2_SQL.read_text())
+    if SCHEMA_V3_SQL.exists():
+        conn.executescript(SCHEMA_V3_SQL.read_text())
     conn.commit()
 
 
 def drop_all(conn: sqlite3.Connection) -> None:
     tables = [
+        "correction_votes",
+        "correction_proposals",
+        "insight_requests",
+        "mcp_tokens",
+        "sessions",
+        "users",
         "data_conflicts",
         "audit_log",
         "staging_records",

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Judiciary Entity Map (India) - JEM</title>
+  <link rel="icon" href="public/assets/jem-favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="public/assets/jem-app-icon.svg">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,28 +16,39 @@
      TOOLBAR — title, search, modes, advanced, zoom
      ═══════════════════════════════════════════════════ -->
 <div id="toolbar">
-  <div class="app-title">Judiciary Entity Map (India) - JEM</div>
+  <div class="toolbar-primary">
+    <div class="toolbar-brand-search">
+      <button type="button" id="btn-home" class="app-home-btn app-logo-btn" title="Back to overview" aria-label="JEM — Judiciary Entity Map (India)">
+        <img src="public/assets/jem-lockup.png" class="jem-toolbar-logo" alt="" width="160" height="68" decoding="async">
+      </button>
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search entity or ask: HC pendency, largest vacancy…" autocomplete="off" aria-controls="search-results insight-panel" aria-expanded="false">
+        <div id="search-results" class="hidden"></div>
+      </div>
+    </div>
 
-  <div id="search-container">
-    <input type="text" id="search-input" placeholder="Search entity, article, statute…" autocomplete="off">
-    <div id="search-results" class="hidden"></div>
+    <div class="toolbar-actions">
+      <div id="mode-switcher" role="group" aria-label="View mode">
+        <button type="button" class="mode-btn mode-btn-structure active" data-mode="structure" title="Appellate hierarchy only, government level colouring">Structure</button>
+        <button type="button" class="mode-btn mode-btn-risk" data-mode="risk" title="Independence risk rings and discretionary power sizing">Risk</button>
+        <button type="button" class="mode-btn mode-btn-gaps" data-mode="gaps" title="Structural gaps, exceptions, circularity, broken appellate paths">Gaps</button>
+      </div>
+
+      <div id="zoom-controls" class="hidden" aria-hidden="true">
+        <button id="btn-zoom-in" title="Zoom in">+</button>
+        <button id="btn-zoom-reset" title="Reset view">⌂</button>
+        <button id="btn-zoom-out" title="Zoom out">−</button>
+        <span id="zoom-level-label">Map</span>
+      </div>
+
+      <button id="btn-about" class="btn-ghost" title="About this project">About</button>
+    </div>
   </div>
 
-  <div id="mode-switcher" role="group" aria-label="View mode">
-    <button type="button" class="mode-btn mode-btn-structure active" data-mode="structure" title="Appellate hierarchy only, government level colouring">Structure</button>
-    <button type="button" class="mode-btn mode-btn-risk" data-mode="risk" title="Independence risk rings and discretionary power sizing">Risk</button>
-    <button type="button" class="mode-btn mode-btn-gaps" data-mode="gaps" title="Structural gaps, exceptions, circularity, broken appellate paths">Gaps</button>
+  <div id="search-wrap">
+    <div id="search-insight-chips" class="search-insight-chips" aria-label="Common structural questions"></div>
+    <div id="insight-panel" class="insight-panel hidden" aria-live="polite"></div>
   </div>
-
-  <div id="zoom-controls" class="hidden" aria-hidden="true">
-    <button id="btn-zoom-in" title="Zoom in">+</button>
-    <button id="btn-zoom-reset" title="Reset view">⌂</button>
-    <button id="btn-zoom-out" title="Zoom out">−</button>
-    <span id="zoom-level-label">Map</span>
-  </div>
-
-  <button id="btn-summary" class="btn-ghost btn-summary hidden" title="Return to overview">← Overview</button>
-  <button id="btn-about" class="btn-ghost" title="About this project">About</button>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════
@@ -47,6 +60,11 @@
      DETAIL VIEW — entity drill-down
      ═══════════════════════════════════════════════════ -->
 <div id="detail-view" class="detail-view" aria-label="Entity detail"></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     ABOUT VIEW — methodology & markers
+     ═══════════════════════════════════════════════════ -->
+<div id="about-view" class="about-view hidden" aria-label="About JEM"></div>
 
 <!-- ═══════════════════════════════════════════════════════
      APP WORKSPACE — Navigator | Focus Trinity | Inspector
@@ -198,6 +216,7 @@
         </g>
       </svg>
       <div id="loading-overlay">
+        <img src="public/assets/jem-mark.svg" class="loading-logo jem-mark" alt="" width="40" height="40" decoding="async">
         <div class="loading-spinner"></div>
         <div class="loading-text">Loading Judiciary Entity Map (India) - JEM…</div>
       </div>
@@ -245,6 +264,13 @@
         <p>Select an entity in the map or tree to view its full structural profile — appointment, funding, gaps, risk scores, and sources.</p>
       </div>
       <div id="detail-panel" class="hidden">
+        <header class="jem-print-brand" aria-hidden="true">
+          <img src="public/assets/jem-mark.svg" class="jem-print-brand-mark" alt="JEM" width="32" height="32" decoding="async">
+          <div class="jem-print-brand-text">
+            <strong class="jem-print-brand-name">JEM</strong>
+            <span class="jem-print-brand-tag">Judiciary Entity Map (India)</span>
+          </div>
+        </header>
         <div id="detail-panel-header">
           <div>
             <div id="detail-entity-name"></div>
@@ -313,86 +339,12 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════
-     ABOUT PANEL — slide-over from right (same chrome as detail)
-     ═══════════════════════════════════════════════════ -->
-<div id="about-panel" class="hidden">
-  <div id="about-panel-header">
-    <div></div>
-    <button id="about-close" type="button" aria-label="Close">✕</button>
-  </div>
-  <div id="about-panel-body">
-    <h2>Judiciary Entity Map (India) - JEM</h2>
-    <p>Structural map of the Indian judicial ecosystem. Not case outcomes — how courts,
-tribunals and regulatory bodies are built, funded, appointed and held accountable.</p>
-
-    <h3>Scores</h3>
-
-    <h4>Structural Health (0.0–1.0) — master composite</h4>
-    <p>Headline indicator shown as the ring colour around each entity bubble.
-    Composite of two constituents below, on a 1.0 = healthy ↔ 0.0 = critical scale.</p>
-    <p>Bands: <strong style="color:#e74c3c">Critical</strong> (&lt;0.3) ·
-    <strong style="color:#f39c12">At Risk</strong> (0.3–0.6) ·
-    <strong style="color:#f1c40f">Watch</strong> (0.6–0.8) ·
-    <strong style="color:#27ae60">Healthy</strong> (≥0.8)</p>
-    <p>Formula: <code>health = 1 − (0.6 · normalised IR + 0.4 · normalised DP)</code>.
-    Constituents (IR, DP) use their own palettes inside the entity detail panel.</p>
-    <p><em>Weight rationale:</em> Independence Risk (0.6) is weighted higher than Discretionary Power (0.4) because executive capture of appointment and funding chains is treated as the primary structural threat to institutional independence. These weights are an <strong>editorial choice pending community review</strong> — not derived from a published methodological study. See <code>jem/scripts/derive.py</code> and <code>docs/DATA_MODEL.md</code>.</p>
-
-    <h4>Independence Risk (0–15+) — constituent</h4>
-    <p>Structural vulnerability to executive influence.</p>
-    <table>
-      <tr><td>Appointed by executive body</td><td>+3</td></tr>
-      <tr><td>Reappointment by same executive</td><td>+2</td></tr>
-      <tr><td>Funder = Appointing authority</td><td>+2</td></tr>
-      <tr><td>No external complaint mechanism</td><td>+2</td></tr>
-      <tr><td>No public appointment criteria</td><td>+1</td></tr>
-      <tr><td>Removal by appointer, no committee</td><td>+1</td></tr>
-      <tr><td>Constitutional basis</td><td>−2</td></tr>
-      <tr><td>Collegium-appointed</td><td>−2</td></tr>
-      <tr><td>Removal via Parliamentary address (President issues order under Arts 124(4), 218)</td><td>−1</td></tr>
-    </table>
-    <p><em>Note:</em> For SC and HC judges, Constitutional basis (−2) and Parliamentary-address removal (−1) <strong>both apply and are additive</strong> — removal requires a special-majority address in both Houses, followed by a Presidential order.</p>
-    <p>Levels: Low (0–2) · Moderate (3–5) · High (6–8) · Severe (9+)</p>
-
-    <h4>Discretionary Power (0–10+) — constituent</h4>
-    <p>Opacity of criteria, removal authority over others, absence of mandatory timelines.</p>
-
-    <h4>Clog Severity</h4>
-    <p>From disposal rate (disposed ÷ filed) and avg disposal days.</p>
-    <ul>
-      <li>Critical: rate &lt;0.85 <strong>AND</strong> days &gt;730 (both dimensions stressed)</li>
-      <li>High: rate &lt;0.95 <strong>OR</strong> days &gt;365 (either dimension alone triggers High — a court with fast disposal but a 0.94 rate, or slow disposal with a healthy rate, still flags High)</li>
-      <li>Moderate: rate &lt;1.0</li>
-      <li>Low: rate ≥1.0 AND days ≤365</li>
-    </ul>
-    <p><em>Note:</em> The AND/OR asymmetry between Critical and High is intentional but means "High clog" does not always imply both backlog <em>and</em> slow disposal — check the underlying numbers in the entity card.</p>
-
-    <h3>Markers</h3>
-    <ul>
-      <li><strong>*</strong> red asterisk — documented structural gap</li>
-      <li><strong>⟳</strong> — structural circularity (appointer is also litigant, etc.)</li>
-      <li><strong>⊘</strong> — appellate path blocked in practice</li>
-      <li><strong>NC</strong> — legislated but not yet constituted</li>
-      <li><strong>EX</strong> amber stripe — structural exception (deviates from statutory template)</li>
-      <li><strong>UT</strong> teal — Union Territory (no legislature or limited legislature)</li>
-      <li>Double ring — shared jurisdiction across multiple states</li>
-    </ul>
-
-    <h3>Data</h3>
-    <p>Sources: Constitution of India · Central Acts · SC judgments · NJDG ·
-DoJ Annual Reports · Tribunal Annual Reports · CAG Reports.</p>
-    <p>Data licence: CC0. Code: MIT.</p>
-    <p>Scores are auto-computed. ⚐ = pending community review.</p>
-    <a href="https://github.com/your-org/jem">GitHub →</a>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════
      SCRIPTS — CDN then local modules
      ═══════════════════════════════════════════════════ -->
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
-<script type="module" src="src/main.js"></script>
+<script src="public/api-config.js"></script>
+<script type="module" src="src/main.js?v=20260626h"></script>
 
 </body>
 </html>

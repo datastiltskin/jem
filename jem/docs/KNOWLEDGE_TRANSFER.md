@@ -26,6 +26,8 @@ For command-level detail, see also:
 - [`SESSION_WORKFLOW.md`](SESSION_WORKFLOW.md) — daily validate → derive → build
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contributor rules
 - [`DATA_MODEL.md`](DATA_MODEL.md) — score formulae
+- [`MCP_SETUP.md`](MCP_SETUP.md) — REST search, MCP tools, API setup
+- [`MCP_SETUP.md`](MCP_SETUP.md) — REST API, MCP HTTP tools, Cursor integration
 - [`MASTER_CHECKLIST.md`](../../MASTER_CHECKLIST.md) — version roadmap v0.9 → v2.0
 
 ---

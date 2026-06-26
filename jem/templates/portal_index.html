@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JEM Expert Portal — Staging Review</title>
+  <link rel="icon" href="/public/assets/jem-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/public/jem-chrome.css">
   <style>
     :root { --bg: #0f1419; --card: #1a2332; --text: #e8edf4; --muted: #8b9cb3; --accent: #3d8bfd; --danger: #e5534b; --ok: #3fb950; }
     * { box-sizing: border-box; }
-    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 1.5rem; line-height: 1.5; }
-    h1 { font-size: 1.4rem; margin: 0 0 0.25rem; }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 1rem 1.25rem 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; margin: 0 0 0.25rem; }
     .subtitle { color: var(--muted); margin-bottom: 1.5rem; }
     .card { background: var(--card); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; border: 1px solid #2d3a4f; }
     .meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem; }
@@ -20,9 +22,14 @@
     input[type=text] { background: #0d1117; border: 1px solid #2d3a4f; color: var(--text); padding: 0.35rem 0.5rem; border-radius: 4px; }
     .empty { color: var(--muted); padding: 2rem; text-align: center; }
     .badge { display: inline-block; background: #2d3a4f; padding: 0.1rem 0.5rem; border-radius: 3px; font-size: 0.75rem; }
+    .jem-chrome { border-bottom-color: #2d3a4f; }
+    .jem-chrome-nav a { color: var(--accent); }
+    .jem-chrome-nav a.active { color: var(--text); }
   </style>
 </head>
 <body>
+  {{ jem_toolbar("portal") }}
+
   <h1>JEM Expert Portal</h1>
   <p class="subtitle">Staging review queue — {{ count }} record(s) awaiting review</p>
 

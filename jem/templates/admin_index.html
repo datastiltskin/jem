@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JEM Admin</title>
+  <link rel="icon" href="/public/assets/jem-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/public/jem-chrome.css">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 0 auto; padding: 1rem 1.25rem 2rem; color: #111; }
+    h1 { font-size: 1.25rem; margin: 0 0 0.5rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-bottom: 2rem; }
+    th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    .actions form { display: inline; }
+    button { cursor: pointer; padding: 0.25rem 0.6rem; }
+    .warn { background: #fff8e6; border: 1px solid #f0d78c; padding: 0.75rem; border-radius: 4px; }
+    .source { font-size: 0.75rem; word-break: break-all; color: #444; }
+  </style>
+</head>
+<body>
+  {{ jem_toolbar("admin") }}
+
+  <h1>JEM Admin</h1>
+
+  {% if not user %}
+  <p class="warn">Sign in required. Use dev login locally (<code>POST /api/v1/auth/dev/login</code>) or LinkedIn OAuth in production.</p>
+  {% elif not user.is_maintainer %}
+  <p class="warn">Signed in as {{ user.display_name }} ({{ user.role }}). Maintainer role required.</p>
+  {% else %}
+  <p class="meta">Signed in as {{ user.display_name }} · {{ pending_count }} pending correction(s)</p>
+
+  <h2>Pending corrections</h2>
+  {% if pending %}
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Scope</th><th>Author</th><th>Body</th><th>Source</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in pending %}
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.scope }}</td>
+        <td>{{ item.author_name }}</td>
+        <td>{{ item.body }}</td>
+        <td class="source"><a href="{{ item.source_url }}" target="_blank" rel="noopener">{{ item.source_url }}</a></td>
+        <td class="actions">
+          <form method="post" action="/admin/corrections/{{ item.id }}/approve">
+            <button type="submit">Approve</button>
+          </form>
+          <form method="post" action="/admin/corrections/{{ item.id }}/reject">
+            <input type="text" name="reason" placeholder="Reason" maxlength="200">
+            <button type="submit">Reject</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>No pending corrections.</p>
+  {% endif %}
+
+  <h2>Users</h2>
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Name</th><th>Provider</th><th>Role</th><th>Approved</th><th>Set role</th></tr>
+    </thead>
+    <tbody>
+      {% for u in users %}
+      <tr>
+        <td>{{ u.id }}</td>
+        <td>{{ u.display_name }}</td>
+        <td>{{ u.oauth_provider }}</td>
+        <td>{{ u.role }}</td>
+        <td>{{ u.approved_correction_count }}</td>
+        <td>
+          <form method="post" action="/admin/users/{{ u.id }}/role">
+            <select name="role">
+              {% for r in ['new', 'trusted', 'expert', 'maintainer'] %}
+              <option value="{{ r }}" {% if u.role == r %}selected{% endif %}>{{ r }}</option>
+              {% endfor %}
+            </select>
+            <button type="submit">Save</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</body>
+</html>

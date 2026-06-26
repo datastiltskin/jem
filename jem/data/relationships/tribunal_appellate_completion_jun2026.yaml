@@ -1,0 +1,437 @@
+# Tribunal appellate chain completion — Jun 2026
+# Verified statutory citations only; partial data_quality where writ-only or generic upstream.
+# Pipeline: validate.py → validate_graph_refs.py → derive.py → build.py
+
+relationships:
+
+  # ══════════════════════════════════════════════════════════════════
+  # FEMA / ATFE chain
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_fema_aa_to_atfe
+    source: fema_adjudicating_authority_generic
+    target: atfe
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Foreign Exchange Management Act 1999, s.17 — appeal to Appellate Tribunal against order of adjudicating authority appointed under s.16
+    year_established: 2000
+    notes: >-
+      Officers designated under FEMA s.16 (typically ED officers in adjudicating
+      capacity). Distinct from ED investigation function.
+    data_quality: partial
+    sources:
+      - &india_code
+        label: India Code — Constitution & Acts
+        url: https://india-code.nic.in/
+        type: GoIWebsite
+        accessed_date: '2026-06-26'
+
+  - id: rel_atfe_to_hc_delhi
+    source: atfe
+    target: hc_delhi
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Foreign Exchange Management Act 1999, s.19 — appeal to High Court on substantial question of law arising from Appellate Tribunal order
+    year_established: 2000
+    notes: >-
+      ATFE principal seat at New Delhi. Competent HC for principal-bench orders
+      is Delhi High Court; other benches (if constituted) would map to respective HCs.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ══════════════════════════════════════════════════════════════════
+  # Electricity — APTEL terminal appeal (SERC/CERC → APTEL already wired)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_aptel_to_sc
+    source: aptel
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Electricity Act 2003, s.125(3) — appeal to Supreme Court on question of law from Appellate Tribunal order
+    year_established: 2005
+    notes: >-
+      Terminal statutory appellate tier for electricity regulatory chain:
+      SERC/CERC orders → APTEL (ss.111, 125) → SC (s.125(3)). Factual findings
+      of APTEL are final; SC review limited to questions of law.
+    data_quality: verified
+    sources:
+      - label: Electricity Act 2003 — s.125 (India Code)
+        url: https://india-code.nic.in/acts-detail/MTQ3MA==
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # EPF — EPFO adjudicatory orders → EPFAT → HC
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_epfo_to_epfat
+    source: epfo
+    target: epfat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      Employees' Provident Funds and Miscellaneous Provisions Act 1952, s.7D —
+      Tribunal constituted to hear appeals against orders under ss.7A, 7B, 14B
+    year_established: 1952
+    notes: EPFO enquiry officers pass adjudicatory orders; EPFAT is the statutory first appeal forum.
+    data_quality: partial
+    sources:
+      - label: EPF Act 1952 — ss.7A–7D (India Code)
+        url: https://india-code.nic.in/DownloadFile?FileName=A1952-19.pdf
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  - id: rel_epfat_to_hc_delhi
+    source: epfat
+    target: hc_delhi
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Employees' Provident Funds and Miscellaneous Provisions Act 1952, s.7I — appeal to High Court within 60 days from Tribunal order
+    year_established: 1952
+    notes: EPFAT single bench at New Delhi; competent HC is Delhi High Court.
+    data_quality: partial
+    sources:
+      - label: EPF Act 1952 — s.7I (India Code)
+        url: https://india-code.nic.in/DownloadFile?FileName=A1952-19.pdf
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # NGT — environmental appellate authorities → NGT → SC
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_env_appellate_auth_to_ngt
+    source: environmental_appellate_authority_generic
+    target: ngt
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: National Green Tribunal Act 2010, s.16 — appeal to NGT against orders of appellate authorities under listed environmental Acts
+    year_established: 2010
+    notes: >-
+      Rollup upstream for Water Act, Air Act, EPA, FCA, Biodiversity Act and
+      other s.16-listed statutes. NGT original jurisdiction under s.14 is
+      separate and not represented by this edge.
+    data_quality: partial
+    sources:
+      - label: NGT Act 2010 — s.16 (India Code)
+        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  - id: rel_ngt_to_sc
+    source: ngt
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: National Green Tribunal Act 2010, s.22 — appeal to Supreme Court on question of law from NGT order
+    year_established: 2010
+    data_quality: verified
+    sources:
+      - label: NGT Act 2010 — s.22 (India Code)
+        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # Railway Claims Tribunal
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_rct_to_sc
+    source: rct
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Railway Claims Tribunal Act 1987, s.22 — appeal to Supreme Court from Claims Tribunal decision or order
+    year_established: 1989
+    notes: RCT is court of first instance for railway compensation claims; SC is statutory appellate forum.
+    data_quality: verified
+    sources:
+      - label: Railway Claims Tribunal Act 1987 — s.22 (India Code)
+        url: https://india-code.nic.in/handle/123456789/1877
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # Securities Appellate Tribunal (SEBI / IRDAI / PFRDA upstream exists)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_sat_to_sc
+    source: sat
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      SEBI Act 1992, s.15Z(2) — appeal to Supreme Court on question of law from
+      SAT order; parallel provisions for IRDAI (s.18A) and PFRDA (s.36) appeals
+      routed through SAT
+    year_established: 1995
+    data_quality: verified
+    sources:
+      - label: SEBI Act 1992 — s.15Z (India Code)
+        url: https://india-code.nic.in/handle/123456789/2080
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # GST Appellate Tribunal (partially operational)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_gstat_to_high_courts_all
+    source: gstat
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Central Goods and Services Tax Act 2017, s.112 — appeal to High Court on substantial question of law from Appellate Tribunal order
+    year_established: 2023
+    notes: >-
+      Aggregate edge pending per-state-bench → competent HC wiring (cf. CESTAT
+      bench pattern in tribunal_completion_jun2026.yaml). GSTAT partially
+      operational; upstream from Commissioner (Appeals) under s.107 not yet modelled.
+    data_quality: partial
+    sources:
+      - label: CGST Act 2017 — s.112 (India Code)
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # Aggregate tribunal → HC rollup (bench-level edges already exist)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_cestat_aggregate_to_high_courts_all
+    source: cestat
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Customs Act 1962, s.130 — appeal to High Court on substantial question of law from CESTAT order
+    year_established: 1982
+    notes: >-
+      Constellation-level rollup. Regional benches have bench-specific HC edges
+      in tribunal_completion_jun2026.yaml.
+    data_quality: partial
+    sources:
+      - label: Customs Act 1962 — s.130 (India Code)
+        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  - id: rel_itat_aggregate_to_high_courts_all
+    source: itat
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Income Tax Act 1961, s.260A — appeal to High Court on substantial question of law from ITAT order
+    year_established: 1941
+    notes: >-
+      Constellation-level rollup. Station benches have bench-specific HC edges
+      in itat_bench_relationships.yaml.
+    data_quality: partial
+    sources:
+      - label: Income Tax Act 1961 — s.260A (India Code)
+        url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # CGIT — awards final under ID Act; HC review via writ (Art 226/227)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_cgit_principal_writ_hc
+    source: cgit_principal
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, s.17 — award binding; challenge only by constitutional writ to High Court
+    year_established: 1947
+    notes: Writ-only path; no statutory appeal from CGIT award. Aggregate covers all CGIT benches.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_cgit_delhi_writ_hc
+    source: cgit_delhi
+    target: hc_delhi
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, s.17 — award final; writ jurisdiction of Delhi High Court
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_cgit_mumbai_writ_hc
+    source: cgit_mumbai
+    target: hc_bombay
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, s.17
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_cgit_kolkata_writ_hc
+    source: cgit_kolkata
+    target: hc_calcutta
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, s.17
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_cgit_chennai_writ_hc
+    source: cgit_chennai
+    target: hc_madras
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, s.17
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_cgit_chandigarh_1_writ_hc
+    source: cgit_chandigarh_1
+    target: hc_punjab_haryana
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, s.17
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_cgit_chandigarh_2_writ_hc
+    source: cgit_chandigarh_2
+    target: hc_punjab_haryana
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, s.17
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ══════════════════════════════════════════════════════════════════
+  # DRAT benches — writ review to SC (aggregate edge exists; bench-level)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_drat_chennai_writ_sc
+    source: drat_chennai
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 136
+    statutory_basis: Recovery of Debts Due to Banks and Financial Institutions Act 1993 — no statutory appeal; SC under Art.136
+    year_established: 1993
+    notes: De facto review path; mirrors rel_drat_appellate_sc on aggregate drat node.
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_drat_mumbai_writ_sc
+    source: drat_mumbai
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 136
+    statutory_basis: RDDBFI Act 1993 — no statutory appeal from DRAT
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_drat_delhi_writ_sc
+    source: drat_delhi
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 136
+    statutory_basis: RDDBFI Act 1993 — no statutory appeal from DRAT
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_drat_kolkata_writ_sc
+    source: drat_kolkata
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 136
+    statutory_basis: RDDBFI Act 1993 — no statutory appeal from DRAT
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_drat_allahabad_writ_sc
+    source: drat_allahabad
+    target: supreme_court_india
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 136
+    statutory_basis: RDDBFI Act 1993 — no statutory appeal from DRAT
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - *india_code

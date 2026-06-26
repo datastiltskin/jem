@@ -12,7 +12,7 @@ from pathlib import Path
 JEM_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DB = JEM_ROOT / "data" / "jem.db"
 DEFAULT_GRAPH = JEM_ROOT.parent / "graph.json"
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 3
 
 REQUIRED_TABLES = {
     "schema_version",
@@ -26,6 +26,12 @@ REQUIRED_TABLES = {
     "staging_records",
     "audit_log",
     "data_conflicts",
+    "users",
+    "sessions",
+    "correction_proposals",
+    "correction_votes",
+    "mcp_tokens",
+    "insight_requests",
 }
 
 ENTITIES_REQUIRED_COLUMNS = {

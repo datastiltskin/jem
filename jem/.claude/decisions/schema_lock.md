@@ -226,4 +226,82 @@
 
 ## 8. Schema Version
 
-Current locked version: **1**
+Current locked version: **2**
+
+### v2 additions (community corrections + auth)
+
+#### users
+
+| Column | Type | Constraints |
+|--------|------|-------------|
+| id | INTEGER | PRIMARY KEY AUTOINCREMENT |
+| oauth_provider | TEXT | NOT NULL |
+| oauth_sub | TEXT | NOT NULL, UNIQUE with oauth_provider |
+| display_name | TEXT | NOT NULL |
+| avatar_url | TEXT | |
+| profile_url | TEXT | |
+| email | TEXT | |
+| role | TEXT | NOT NULL DEFAULT 'new' (`new` \| `trusted` \| `expert` \| `maintainer`) |
+| approved_correction_count | INTEGER | NOT NULL DEFAULT 0 |
+| created_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
+| last_login_at | TEXT | |
+
+#### sessions
+
+| Column | Type | Constraints |
+|--------|------|-------------|
+| id | TEXT | PRIMARY KEY |
+| user_id | INTEGER | NOT NULL REFERENCES users(id) ON DELETE CASCADE |
+| expires_at | TEXT | NOT NULL |
+| created_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
+
+#### correction_proposals
+
+| Column | Type | Constraints |
+|--------|------|-------------|
+| id | INTEGER | PRIMARY KEY AUTOINCREMENT |
+| scope | TEXT | NOT NULL (e.g. `entity:supreme_court_india`, `overview`) |
+| entity_id | TEXT | REFERENCES entities(id) ON DELETE SET NULL |
+| body | TEXT | NOT NULL |
+| source_url | TEXT | NOT NULL |
+| status | TEXT | NOT NULL DEFAULT 'pending_review' |
+| author_id | INTEGER | NOT NULL REFERENCES users(id) ON DELETE CASCADE |
+| reviewed_by | INTEGER | REFERENCES users(id) ON DELETE SET NULL |
+| review_note | TEXT | |
+| created_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
+| reviewed_at | TEXT | |
+
+#### correction_votes
+
+| Column | Type | Constraints |
+|--------|------|-------------|
+| user_id | INTEGER | NOT NULL REFERENCES users(id) |
+| proposal_id | INTEGER | NOT NULL REFERENCES correction_proposals(id) |
+| created_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
+| PRIMARY KEY | (user_id, proposal_id) | |
+
+#### mcp_tokens (Phase 2 — expert MCP bearer tokens)
+
+| Column | Type | Constraints |
+|--------|------|-------------|
+| id | INTEGER | PRIMARY KEY AUTOINCREMENT |
+| user_id | INTEGER | NOT NULL REFERENCES users(id) ON DELETE CASCADE |
+| token_hash | TEXT | NOT NULL UNIQUE |
+| label | TEXT | |
+| expires_at | TEXT | |
+| revoked_at | TEXT | |
+| created_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
+
+#### insight_requests (v3 — smart-search telemetry)
+
+| Column | Type | Constraints |
+|--------|------|-------------|
+| id | INTEGER | PRIMARY KEY AUTOINCREMENT |
+| insight_id | TEXT | NOT NULL UNIQUE |
+| title | TEXT | NOT NULL |
+| query_text | TEXT | |
+| request_count | INTEGER | NOT NULL DEFAULT 1 |
+| first_requested_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
+| last_requested_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
+
+Cap: retain at most **1000** distinct `insight_id` rows; prune oldest by `last_requested_at` on insert.
