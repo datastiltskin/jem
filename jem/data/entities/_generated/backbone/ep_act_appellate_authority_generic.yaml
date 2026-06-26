@@ -1,0 +1,48 @@
+id: ep_act_appellate_authority_generic
+name: Appellate Authority under Environment (Protection) Act 1986 (Generic)
+abbreviation: EPA AA
+aliases:
+  - Appellate Authority under EPA 1986
+type: RegulatoryBodyQJ
+cluster: tribunals_adr
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Appellate
+created_year: 1986
+operational_status: Active
+constitutional_basis: null
+statutory_basis: >-
+  Environment (Protection) Act 1986 — appellate mechanism for orders under the
+  Act and rules made thereunder. NGT Act 2010, s.16 — appeal from appellate
+  authority under EPA lies to National Green Tribunal (National Environment
+  Appellate Authority abolished by NGT Act).
+appointment:
+  nominates: null
+  formally_appoints: null
+  consulted: []
+  criteria_public: false
+  tenure: null
+  reappointment_possible: null
+  removal_authority: null
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_environment
+audit:
+  audited_by: null
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+data_quality_notes: >-
+  Generic node for EPA 1986 appellate authorities listed in NGT Act 2010 s.16.
+  NEAA abolished on NGT constitution; appeals now route to NGT.
+sources:
+  - label: Environment (Protection) Act 1986 (India Code)
+    url: https://india-code.nic.in/
+    type: CentralAct
+    accessed_date: '2026-06-26'
+  - label: NGT Act 2010 — s.16 (India Code)
+    url: https://india-code.nic.in/acts-detail/MjA2OTU=
+    type: CentralAct
+    accessed_date: '2026-06-26'

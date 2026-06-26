@@ -41,12 +41,43 @@ audit:
   audit_report_public: null
 complaint_mechanism:
   lokpal_jurisdiction: Not_Applicable
+structural_variations:
+  - variation_id: ngt_s16_water_act
+    description: >-
+      Appellate authorities under Water (Prevention and Control of Pollution)
+      Act 1974 s.28 — modelled as water_act_appellate_authority_generic.
+    applicable_to:
+      - water_act_appellate_authority_generic
+    source: NGT Act 2010 s.16; Water Act 1974 s.28
+  - variation_id: ngt_s16_air_act
+    description: >-
+      Appellate authorities under Air (Prevention and Control of Pollution)
+      Act 1981 s.31 — modelled as air_act_appellate_authority_generic.
+    applicable_to:
+      - air_act_appellate_authority_generic
+    source: NGT Act 2010 s.16; Air Act 1981 s.31
+  - variation_id: ngt_s16_epa
+    description: >-
+      Appellate authorities under Environment (Protection) Act 1986 — modelled
+      as ep_act_appellate_authority_generic (NEAA abolished by NGT Act).
+    applicable_to:
+      - ep_act_appellate_authority_generic
+    source: NGT Act 2010 s.16; EPA 1986
+  - variation_id: ngt_s16_fca
+    description: >-
+      Appellate pathway for Forest (Conservation) Act 1980 orders — modelled as
+      forest_conservation_appellate_authority_generic.
+    applicable_to:
+      - forest_conservation_appellate_authority_generic
+    source: NGT Act 2010 s.16; FCA 1980
 data_quality: partial
 data_quality_notes: >-
   Rollup placeholder for upstream appellate authorities listed in NGT Act 2010
   s.16. NGT also exercises original jurisdiction under s.14 — not modelled on
-  this edge. Per-Act appellate bodies (e.g. under Water Act s.28) should be
-  split into dedicated entities when state/central packs are enriched.
+  this edge. Per-Act appellate bodies split Jun 2026: water_act, air_act,
+  ep_act, forest_conservation generics each have dedicated edges to ngt; this
+  node retains aggregate rollup for remaining s.16-listed Acts (Water Cess,
+  Public Liability Insurance, Biological Diversity).
 sources:
   - label: National Green Tribunal Act 2010 — s.16 (India Code)
     url: https://india-code.nic.in/acts-detail/MjA2OTU=

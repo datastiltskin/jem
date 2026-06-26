@@ -1,18 +1,4 @@
 relationships:
-- id: tn_tnerc_aptel
-  source: tnerc
-  target: aptel
-  relationship_type: AppealableTo
-  relationship_category: appellate_chain
-  is_binding: true
-  notes: TNERC appeals to APTEL
-  data_quality: partial
-  sources:
-  - &id001
-    label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
-    type: GoIWebsite
-    accessed_date: '2026-05-13'
 - id: tn_cdrc_ncdrc
   source: tn_state_cdrc
   target: ncdrc
@@ -22,7 +8,11 @@ relationships:
   notes: TN SCDRC appeals to NCDRC
   data_quality: partial
   sources:
-  - *id001
+  - &id001
+    label: India Code — Constitution & Acts
+    url: https://india-code.nic.in/
+    type: GoIWebsite
+    accessed_date: '2026-05-13'
 - id: tn_rera_hc
   source: tn_rera
   target: hc_madras
@@ -963,7 +953,7 @@ relationships:
     accessed_date: '2026-06-15'
 - id: tn_fund_rera_tn
   source: government_tamilnadu
-  target: rera_tn
+  target: tn_rera
   relationship_type: PrimaryFunder
   relationship_category: funding
   is_binding: true

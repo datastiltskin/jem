@@ -553,6 +553,8 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
             "relationship_category": r.get("relationship_category"),
             "is_binding": r.get("is_binding"),
             "is_constitutional": r.get("is_constitutional"),
+            "constitutional_basis": r.get("constitutional_basis"),
+            "statutory_basis": r.get("statutory_basis"),
             "year_established": r.get("year_established"),
             "year_abolished": r.get("year_abolished"),
             "data_quality": r.get("data_quality"),

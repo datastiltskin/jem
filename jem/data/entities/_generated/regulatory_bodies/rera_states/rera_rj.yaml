@@ -11,7 +11,7 @@ jurisdiction_scope:
   jurisdiction_types:
   - Civil
 created_year: 2017
-operational_status: Active
+operational_status: Merged
 statutory_basis: Real Estate (Regulation and Development) Act 2016 — state/UT RERA
 funding:
   primary_source: State_Consolidated_Fund
@@ -29,3 +29,6 @@ sources:
   url: https://india-code.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
+data_quality_notes: >-
+  Merged into rj_rera (canonical id). Duplicate Rajasthan RERA node; use
+  rj_rera for appellate and funding edges.

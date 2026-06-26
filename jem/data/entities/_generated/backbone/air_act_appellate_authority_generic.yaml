@@ -1,0 +1,47 @@
+id: air_act_appellate_authority_generic
+name: Appellate Authority under Air Act 1981 (Generic)
+abbreviation: Air Act AA
+aliases:
+  - Appellate Authority under Air (Prevention and Control of Pollution) Act 1981
+type: RegulatoryBodyQJ
+cluster: tribunals_adr
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Appellate
+created_year: 1981
+operational_status: Active
+constitutional_basis: null
+statutory_basis: >-
+  Air (Prevention and Control of Pollution) Act 1981, s.31 — appeal against
+  order of State Board lies to appellate authority. NGT Act 2010, s.16 — appeal
+  from such appellate authority lies to National Green Tribunal.
+appointment:
+  nominates: null
+  formally_appoints: null
+  consulted: []
+  criteria_public: false
+  tenure: null
+  reappointment_possible: null
+  removal_authority: null
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_environment
+audit:
+  audited_by: null
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+data_quality: partial
+data_quality_notes: >-
+  Generic node for appellate authorities under Air Act 1981 s.31. State-level
+  constitution varies; upstream of NGT per NGT Act 2010 s.16.
+sources:
+  - label: Air Act 1981 — s.31 (India Code)
+    url: https://india-code.nic.in/
+    type: CentralAct
+    accessed_date: '2026-06-26'
+  - label: NGT Act 2010 — s.16 (India Code)
+    url: https://india-code.nic.in/acts-detail/MjA2OTU=
+    type: CentralAct
+    accessed_date: '2026-06-26'

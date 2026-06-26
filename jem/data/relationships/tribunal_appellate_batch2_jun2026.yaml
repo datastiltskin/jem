@@ -1,0 +1,206 @@
+# Tribunal appellate batch 2 — Jun 2026 (Claude gap audit Group A)
+# Verified statutory citations only.
+
+relationships:
+
+  - id: rel_ibbi_to_nclat
+    source: ibbi
+    target: nclat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Insolvency and Bankruptcy Code 2016, s.221 — appeal to NCLAT against order of Board under Chapter VII
+    year_established: 2016
+    data_quality: verified
+    sources:
+      - &india_code
+        label: India Code — Constitution & Acts
+        url: https://india-code.nic.in/acts-detail/MTM3ODA=
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  - id: rel_state_it_generic_writ_hc
+    source: state_industrial_tribunal_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, s.17 — award binding and final; challenge only by writ to High Court
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_state_labour_court_generic_writ_hc
+    source: state_labour_court_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Industrial Disputes Act 1947, ss.7, 17 — Labour Court award final; writ jurisdiction of HC
+    year_established: 1947
+    data_quality: partial
+    sources:
+      - *india_code
+
+  - id: rel_mhrb_generic_to_hc
+    source: state_mental_health_review_board_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Mental Healthcare Act 2017, s.82(5) — appeal to concerned High Court from Mental Health Review Board decision
+    year_established: 2017
+    data_quality: partial
+    sources:
+      - label: Mental Healthcare Act 2017 — s.82 (India Code)
+        url: https://india-code.nic.in/acts-detail/MjE0NTE=
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  - id: rel_state_ec_generic_writ_hc
+    source: state_election_commission_generic
+    target: high_courts_all
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: Article 226
+    statutory_basis: Constitution of India, Art 243K — State Election Commission orders challengeable by writ; no statutory appellate tribunal
+    year_established: 1993
+    data_quality: partial
+    sources:
+      - *india_code
+
+  # ══════════════════════════════════════════════════════════════════
+  # GST — Commissioner (Appeals) → GSTAT upstream
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_gst_commr_appeals_to_gstat
+    source: gst_commissioner_appeals_generic
+    target: gstat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      Central Goods and Services Tax Act 2017, s.112 — appeal to Appellate
+      Tribunal from order of Appellate Authority (Commissioner Appeals under
+      s.107) or Revisional Authority (s.108)
+    year_established: 2017
+    notes: >-
+      First appellate tier under CGST is Commissioner (Appeals) s.107; GSTAT is
+      second appellate forum. Adjudicating Authority → Commr(A) → GSTAT chain.
+    data_quality: partial
+    sources:
+      - label: CGST Act 2017 — ss.107, 112 (India Code)
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # FEMA — Special Director s.37 → ATFE s.18
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_fema_special_director_to_atfe
+    source: fema_special_director_generic
+    target: atfe
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      Foreign Exchange Management Act 1999, s.18 — appeal to Appellate Tribunal
+      against order of Special Director under s.37
+    year_established: 2000
+    notes: >-
+      Distinct from fema_adjudicating_authority_generic → atfe under s.17.
+      Same tribunal (ATFE), separate statutory gateway.
+    data_quality: partial
+    sources:
+      - label: FEMA 1999 — ss.18, 37 (India Code)
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  # ══════════════════════════════════════════════════════════════════
+  # NGT — per-Act s.16 upstream (major Acts)
+  # ══════════════════════════════════════════════════════════════════
+
+  - id: rel_water_act_aa_to_ngt
+    source: water_act_appellate_authority_generic
+    target: ngt
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      National Green Tribunal Act 2010, s.16 — appeal to NGT from appellate
+      authority under Water (Prevention and Control of Pollution) Act 1974
+    year_established: 2010
+    data_quality: partial
+    sources:
+      - label: NGT Act 2010 — s.16 (India Code)
+        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  - id: rel_air_act_aa_to_ngt
+    source: air_act_appellate_authority_generic
+    target: ngt
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      National Green Tribunal Act 2010, s.16 — appeal to NGT from appellate
+      authority under Air (Prevention and Control of Pollution) Act 1981
+    year_established: 2010
+    data_quality: partial
+    sources:
+      - label: NGT Act 2010 — s.16 (India Code)
+        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  - id: rel_ep_act_aa_to_ngt
+    source: ep_act_appellate_authority_generic
+    target: ngt
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      National Green Tribunal Act 2010, s.16 — appeal to NGT from appellate
+      authority under Environment (Protection) Act 1986
+    year_established: 2010
+    data_quality: partial
+    sources:
+      - label: NGT Act 2010 — s.16 (India Code)
+        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        type: CentralAct
+        accessed_date: '2026-06-26'
+
+  - id: rel_fca_aa_to_ngt
+    source: forest_conservation_appellate_authority_generic
+    target: ngt
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: >-
+      National Green Tribunal Act 2010, s.16 — appeal to NGT from appellate
+      authority under Forest (Conservation) Act 1980
+    year_established: 2010
+    data_quality: partial
+    sources:
+      - label: NGT Act 2010 — s.16 (India Code)
+        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        type: CentralAct
+        accessed_date: '2026-06-26'
