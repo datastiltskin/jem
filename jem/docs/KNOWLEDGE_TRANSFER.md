@@ -223,7 +223,7 @@ CI does **not** run `build.py` or deploy.
 
 ## 9. GitHub & community launch plan
 
-**Founder:** [@dso6060](https://github.com/dso6060) · **Co-maintainer:** [@Prajna1999](https://github.com/Prajna1999) · Repo: [dso6060/jem_prototype](https://github.com/dso6060/jem_prototype)
+**Founder:** [@dso6060](https://github.com/dso6060) · **Co-maintainer:** [@Prajna1999](https://github.com/Prajna1999) · Repo: [dso6060/jem](https://github.com/dso6060/jem)
 
 Scaffolding is in **`.github/`** (ready before first push):
 
@@ -231,7 +231,7 @@ Scaffolding is in **`.github/`** (ready before first push):
 |------|---------|
 | [`CODEOWNERS`](../../.github/CODEOWNERS) | `@dso6060` on `jem/data`, scripts, web, docs |
 | [`GOVERNANCE.md`](../../.github/GOVERNANCE.md) | Roles, scope, escalation |
-| [`PUBLISH_CHECKLIST.md`](../../.github/PUBLISH_CHECKLIST.md) | Publish steps — repo [dso6060/jem_prototype](https://github.com/dso6060/jem_prototype); branch protection TBD |
+| [`PUBLISH_CHECKLIST.md`](../../.github/PUBLISH_CHECKLIST.md) | Publish steps — repo [dso6060/jem](https://github.com/dso6060/jem); branch protection TBD |
 | [`pull_request_template.md`](../../.github/pull_request_template.md) | PR checklist |
 | [`ISSUE_TEMPLATE/`](../../.github/ISSUE_TEMPLATE/) | `data_correction`, `source_request`, `bug_report`, `contested_fact`, `expert_review` |
 | [`DISCUSSION_TEMPLATE/`](../../.github/DISCUSSION_TEMPLATE/) | `data-question`, `dispute-escalation` |
@@ -422,7 +422,7 @@ Pick a phased **TASK** from [`ENTITY_BUILD_ROADMAP.md`](ENTITY_BUILD_ROADMAP.md)
 
 ## 21. Origin (brief)
 
-JEM began from the absence of a **public, machine-readable map** of how India's ~1,500 judicial and quasi-judicial bodies connect — appointment power, funding, oversight, and capacity signals — in one place. It is a **personally funded** civic/research infrastructure project, with a public demo at https://friedso.com/apps/jem/ (attribution), hosted on **GitHub** at [dso6060/jem_prototype](https://github.com/dso6060/jem_prototype), which others can fork, mirror, and improve under CC0/MIT.
+JEM began from the absence of a **public, machine-readable map** of how India's ~1,500 judicial and quasi-judicial bodies connect — appointment power, funding, oversight, and capacity signals — in one place. It is a **personally funded** civic/research infrastructure project, with a public demo at https://friedso.com/apps/jem/ (attribution), hosted on **GitHub** at [dso6060/jem](https://github.com/dso6060/jem), which others can fork, mirror, and improve under CC0/MIT.
 
 ---
 

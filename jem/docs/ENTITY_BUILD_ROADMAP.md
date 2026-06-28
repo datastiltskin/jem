@@ -19,7 +19,7 @@
 4. Commit: `docs(roadmap): mark <category> done` (+ data commits if applicable).
 5. **Relationships** for that category: wire in a separate maintainer-only session (not contributor prompts).
 
-**Contributors:** GitHub issues only — use [data correction](https://github.com/dso6060/jem_prototype/issues/new?template=data_correction.yml) or attach YAML to an issue.  
+**Contributors:** GitHub issues only — use [data correction](https://github.com/dso6060/jem/issues/new?template=data_correction.yml) or attach YAML to an issue.  
 **New entities:** proposed drafts welcome; maintainers merge after `validate.py`.  
 **Relationships:** maintainer-only.
 

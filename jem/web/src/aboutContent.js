@@ -4,7 +4,7 @@ import { JEM_HOME_INTRO, JEM_HOME_STATUS } from './siteCopy.js';
 import { State } from './state.js';
 import { logoWordmarkHTML } from './brand.js';
 
-const GITHUB = 'https://github.com/dso6060/jem_prototype';
+const GITHUB = 'https://github.com/dso6060/jem';
 const ISSUES = `${GITHUB}/issues`;
 const DEMO = 'https://friedso.com/apps/jem/';
 

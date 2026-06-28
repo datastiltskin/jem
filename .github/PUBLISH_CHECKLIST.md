@@ -1,10 +1,10 @@
 # GitHub publish checklist
 
-Repository: **https://github.com/dso6060/jem_prototype** (public)
+Repository: **https://github.com/dso6060/jem** (public)
 
 ## 1. Create repository
 
-- [x] Create public repo `jem_prototype` under `@dso6060`
+- [x] Create public repo `jem` under `@dso6060` (renamed from `jem_prototype`)
 - [x] Push `main` with `.github/` scaffolding
 - [x] Description: *Open structural map of India's judicial ecosystem — institutional capacity, relationships, and systemic gaps.*
 - [x] Topics: `india`, `judiciary`, `open-data`, `legal-tech`
@@ -14,7 +14,7 @@ Repository: **https://github.com/dso6060/jem_prototype** (public)
 
 ## 2. Replace placeholders
 
-- [x] `REPO_NAME` → `jem_prototype` in issue templates, SUPPORT, CONTRIBUTING, roadmap, AI prompt
+- [x] `REPO_NAME` → `jem` in issue templates, SUPPORT, CONTRIBUTING, roadmap, AI prompt (was `jem_prototype`)
 - [x] Co-maintainer `@Prajna1999` in `CODEOWNERS` and `TEAM.md`
 
 ## 3. Repository settings

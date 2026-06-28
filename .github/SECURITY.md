@@ -6,7 +6,7 @@ JEM is an open structural map (YAML → `graph.json` → web UI) with an optiona
 
 ## Reporting
 
-- **Data integrity / malicious PRs:** [GitHub security advisory](https://github.com/dso6060/jem_prototype/security/advisories/new) (private report to maintainers).
+- **Data integrity / malicious PRs:** [GitHub security advisory](https://github.com/dso6060/jem/security/advisories/new) (private report to maintainers).
 - **Production hosting:** [@dso6060](https://github.com/dso6060) via GitHub — not handled by co-maintainer by default.
 
 ## Scope
