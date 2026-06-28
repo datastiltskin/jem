@@ -17,21 +17,26 @@ import { renderAboutPage } from './aboutContent.js';
 
 const GRAPH_URL = './public/graph.json';
 
-/** Keep summary/detail below the full toolbar when search chips wrap to a second row. */
+/** Keep app chrome below site header + toolbar when search chips wrap to a second row. */
 function syncChromeTop() {
+  const siteHeader = document.querySelector('.site-header');
   const toolbar = document.getElementById('toolbar');
   if (!toolbar) return;
-  const h = Math.ceil(toolbar.getBoundingClientRect().height);
-  document.documentElement.style.setProperty('--jem-chrome-top', `${h}px`);
+  const headerH = siteHeader ? Math.ceil(siteHeader.getBoundingClientRect().height) : 0;
+  const toolbarH = Math.ceil(toolbar.getBoundingClientRect().height);
+  document.documentElement.style.setProperty('--jem-site-header-height', `${headerH}px`);
+  document.documentElement.style.setProperty('--jem-chrome-top', `${headerH + toolbarH}px`);
 }
 
 function initChromeTopSync() {
+  const siteHeader = document.querySelector('.site-header');
   const toolbar = document.getElementById('toolbar');
   if (!toolbar) return;
   syncChromeTop();
   if (typeof ResizeObserver !== 'undefined') {
     const ro = new ResizeObserver(() => syncChromeTop());
     ro.observe(toolbar);
+    if (siteHeader) ro.observe(siteHeader);
   }
   window.addEventListener('resize', syncChromeTop);
 }

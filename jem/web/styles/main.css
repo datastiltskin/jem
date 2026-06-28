@@ -35,8 +35,9 @@
   --jem-cluster-rows: 4;
   --jem-cluster-gap: 8px;
 
-  /* Fixed chrome (toolbar 64px; status bar + timeline below map) */
-  --jem-chrome-top: 64px;
+  /* Fixed chrome (site header 64px + toolbar 64px; status bar + timeline below map) */
+  --jem-site-header-height: 64px;
+  --jem-chrome-top: calc(var(--jem-site-header-height) + 64px);
   --jem-timeline-height: 54px;
   --jem-status-bar-height: 28px;
   --jem-chrome-bottom: calc(var(--jem-timeline-height) + var(--jem-status-bar-height));
@@ -76,10 +77,20 @@ code { font-family: var(--font-mono); background: rgba(255,255,255,0.08); paddin
 }
 .btn-ghost:hover { border-color: var(--accent); color: var(--text-primary); background: rgba(37, 99, 235, 0.06); }
 
+/* ── Friedso site header (shared with other apps) ─────────────────────────── */
+body.jem-app .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1600;
+}
+
 /* ── Toolbar ──────────────────────────────────────────────────────────────── */
 #toolbar {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: var(--jem-site-header-height);
+  left: 0; right: 0;
   min-height: 64px;
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
@@ -2800,6 +2811,7 @@ em.muted { color: var(--text-dim); font-style: italic; }
     color: #111827 !important;
   }
 
+  .site-header,
   #toolbar, #nav-panel, #focus-panel, #timeline-container, .inspector-resizer,
   #map-status-bar, #neighborhood-panel, .inspector-tabs, .group-report-toolbar,
   .btn-print-mini, #detail-close, .mobile-workspace-tabs,
@@ -4466,6 +4478,7 @@ details.dv-const-block[open] > summary::after { transform: rotate(90deg); }
   }
 
   /* ── Hide chrome — only entity profile content prints ── */
+  body.jem-print-detail .site-header,
   body.jem-print-detail #toolbar,
   body.jem-print-detail #summary-view,
   body.jem-print-detail #app-workspace,
