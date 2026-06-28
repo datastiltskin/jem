@@ -4,6 +4,9 @@
 import { State } from './state.js';
 import { buildAppellateHierarchy } from './entityConnections.js';
 import { commentsHTML, wireComments } from './comments.js';
+import { logoWordmarkHTML } from './brand.js';
+import { JEM_HOME_INTRO, JEM_HOME_STATUS } from './siteCopy.js';
+import { shouldShowStructuralScores } from './scoreDisplay.js';
 
 const RISK_COLORS = {
   low:      '#16a34a',
@@ -178,7 +181,7 @@ function renderStripPlot(entities, svgWidth) {
   const rows  = buildStripData(entities);
   const svgH  = HEADER_H + rows.length * ROW_H + AXIS_H;
 
-  let svg = `<svg class="strip-svg" viewBox="0 0 ${svgWidth} ${svgH}"
+  let svg = `<svg class="strip-svg" viewBox="0 0 ${svgWidth} ${svgH}" preserveAspectRatio="xMidYMid meet"
     role="img" aria-label="Structural health distribution by cluster">`;
 
   // ── Background health zones ────────────────────────────────────────────────
@@ -292,6 +295,90 @@ Health ≈ ${score.toFixed(2)} (${healthLevelLabel(level)})
   return svg;
 }
 
+function wireStripPlotSvg(wrap, svgEl) {
+  if (!svgEl) return;
+  const highlightCluster = (clusterId) => {
+    svgEl.querySelectorAll('.strip-bubble').forEach(b => {
+      const active = b.dataset.clusterId === clusterId;
+      b.style.fillOpacity = active ? '0.9' : '0.1';
+      b.style.strokeOpacity = active ? '1' : '0.1';
+    });
+    svgEl.querySelectorAll('.strip-cluster-label').forEach(t => {
+      t.style.opacity = t.dataset.clusterId === clusterId ? '1' : '0.25';
+      t.style.fontWeight = t.dataset.clusterId === clusterId ? '700' : '';
+    });
+    svgEl.querySelectorAll('.strip-guide').forEach((line, i) => {
+      const rowCl = svgEl.querySelectorAll('.strip-row-bg')[i]?.dataset.clusterId;
+      line.style.strokeOpacity = rowCl === clusterId ? '1' : '0.2';
+    });
+    svgEl.querySelectorAll('.strip-row-bg').forEach(r => {
+      r.style.fill = r.dataset.clusterId === clusterId ? 'rgba(51,51,46,0.04)' : 'transparent';
+    });
+  };
+  const resetHighlight = () => {
+    svgEl.querySelectorAll('.strip-bubble').forEach(b => {
+      b.style.fillOpacity = '';
+      b.style.strokeOpacity = '';
+    });
+    svgEl.querySelectorAll('.strip-cluster-label').forEach(t => {
+      t.style.opacity = '';
+      t.style.fontWeight = '';
+    });
+    svgEl.querySelectorAll('.strip-guide').forEach(l => { l.style.strokeOpacity = ''; });
+    svgEl.querySelectorAll('.strip-row-bg').forEach(r => { r.style.fill = 'transparent'; });
+  };
+
+  svgEl.onmouseover = (ev) => {
+    const el = ev.target.closest('[data-cluster-id]');
+    if (el) highlightCluster(el.dataset.clusterId);
+  };
+  svgEl.onmouseleave = resetHighlight;
+}
+
+function mountStripPlot(container, entities) {
+  const wrap = container.querySelector('#strip-plot-wrap');
+  if (!wrap) return;
+
+  let resizeTimer = null;
+  let lastWidth = 0;
+
+  const paint = () => {
+    const w = Math.round(wrap.getBoundingClientRect().width);
+    if (w < 240 || Math.abs(w - lastWidth) < 2) return;
+    lastWidth = w;
+    wrap.innerHTML = renderStripPlot(entities, w);
+    wireStripPlotSvg(wrap, wrap.querySelector('svg'));
+  };
+
+  const schedulePaint = () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(paint, 40);
+  };
+
+  if (!wrap.dataset.stripWired) {
+    wrap.dataset.stripWired = '1';
+    wrap.addEventListener('click', (ev) => {
+      const bubble = ev.target.closest('.strip-bubble');
+      if (bubble) {
+        const clusterId = bubble.dataset.clusterId;
+        const ids = JSON.parse(decodeURIComponent(bubble.dataset.ids || '[]'));
+        showClusterDrill(clusterId, entities, container, ids);
+        return;
+      }
+      const labelText = ev.target.closest('.strip-cluster-label');
+      if (labelText) {
+        showClusterDrill(labelText.dataset.clusterId, entities, container);
+      }
+    });
+  }
+
+  if (typeof ResizeObserver !== 'undefined') {
+    const ro = new ResizeObserver(schedulePaint);
+    ro.observe(wrap);
+  }
+  requestAnimationFrame(() => requestAnimationFrame(schedulePaint));
+}
+
 // ── High-risk entity registry ─────────────────────────────────────────────────
 
 // ── Spotlight carousel ────────────────────────────────────────────────────────
@@ -299,6 +386,7 @@ Health ≈ ${score.toFixed(2)} (${healthLevelLabel(level)})
 
 function spotlightSet(entities) {
   return entities
+    .filter(shouldShowStructuralScores)
     .filter(e => {
       const lvl = e.derived?.structural_health_level;
       return lvl === 'critical' || lvl === 'at_risk';
@@ -1517,56 +1605,68 @@ function _statPanelMeta(stat, list, totalEntities) {
   if (stat === 'coverage') return {
     title: 'Coverage',
     blurb: `${totalEntities} entities mapped against the ~1,500-entity universe (Constitution + central + state + UT). Coverage is sparse for state-level subordinate courts; central and constitutional layers are substantially complete.`,
-    column: 'By govt level · count · share',
+    col2: 'Govt level',
+    col3: 'Count · share',
   };
   if (stat === 'risk') return {
     title: 'High or severe independence risk',
     blurb: 'Algorithmic indicator of structural design — not findings of conduct. Drivers include appointer-litigant conflict, executive removal authority without judicial concurrence, opaque appointment criteria, and reappointment dependency.',
-    column: 'IR score · level',
+    col2: 'IR score',
+    col3: 'Level',
   };
   if (stat === 'nc') return {
     title: 'Legislated but not constituted',
     blurb: 'Entities created by statute but not yet operationalised — appellate vacuums where the legislated remedy does not exist in practice. Litigants typically route through writ jurisdiction (HC under Article 226) instead.',
-    column: 'Legislated · years pending',
+    col2: 'Legislated',
+    col3: 'Years pending',
   };
   if (stat === 'abolished') return {
     title: 'Abolished',
     blurb: 'Entities formally dissolved by statute, gazette notification, or judicial order. Their dissolution typically routed caseload to successor courts (e.g. IPAB → HCs after 2021 Tribunals Reforms Act). Transitional provisions are often the structural research question.',
-    column: 'Abolished · years since',
+    col2: 'Abolished',
+    col3: 'Years since',
   };
   if (stat === 'disposal') return {
     title: 'Case-volume tracked entities · worst disposal first',
     blurb: 'Ratio of cases disposed to cases filed in the most recent NJDG snapshot. Below 1.0 means backlog is growing. Coverage limited to entities with NJDG data published in this build.',
-    column: 'Disposal · pending',
+    col2: 'Disposal',
+    col3: 'Pending',
   };
-  return { title: '', blurb: '', column: '' };
+  return { title: '', blurb: '', col2: '', col3: '' };
 }
 
 function _statRow(stat, e) {
-  const meta = [];
+  let col2 = '';
+  let col3 = '';
   if (stat === 'risk') {
     const lvl = e.derived?.independence_risk_level || '—';
     const sc = e.derived?.independence_risk_score ?? '—';
-    meta.push(`<span class="sp-row-score">${sc}</span><span class="sp-row-lvl sp-lvl-${lvl}">${lvl.toUpperCase()}</span>`);
+    col2 = `<span class="sp-row-score">${sc}</span>`;
+    col3 = `<span class="sp-row-lvl sp-lvl-${lvl}">${lvl.toUpperCase()}</span>`;
   } else if (stat === 'nc') {
     const yr = e.created_year;
     const yrsPending = yr ? (CURRENT_YEAR - yr) : null;
-    meta.push(`<span class="sp-row-yr">${yr || '—'}</span>${yrsPending != null ? `<span class="sp-row-pending">${yrsPending} yr unconstituted</span>` : ''}`);
+    col2 = `<span class="sp-row-yr">${yr || '—'}</span>`;
+    col3 = yrsPending != null ? `<span class="sp-row-pending">${yrsPending} yr unconstituted</span>` : '<span class="sp-row-pending">—</span>';
   } else if (stat === 'abolished') {
     const yr = e.abolished_year;
     const yrsSince = yr ? (CURRENT_YEAR - yr) : null;
-    meta.push(`<span class="sp-row-yr">${yr || '—'}</span>${yrsSince != null ? `<span class="sp-row-pending">${yrsSince} yr ago</span>` : ''}`);
+    col2 = `<span class="sp-row-yr">${yr || '—'}</span>`;
+    col3 = yrsSince != null ? `<span class="sp-row-pending">${yrsSince} yr ago</span>` : '<span class="sp-row-pending">—</span>';
   } else if (stat === 'disposal') {
     const cv = e._detail?.case_volume || {};
     const rate = cv.disposal_rate != null ? cv.disposal_rate.toFixed(2) : '—';
     const pending = cv.pending_cases != null ? cv.pending_cases.toLocaleString() : '—';
-    meta.push(`<span class="sp-row-score">${rate}</span><span class="sp-row-pending">${pending} pending</span>`);
+    col2 = `<span class="sp-row-score">${rate}</span>`;
+    col3 = `<span class="sp-row-pending">${pending} pending</span>`;
   } else if (stat === 'coverage') {
-    meta.push(`<span class="sp-row-cluster">${(e.cluster || '').replace(/_/g, ' ')}</span><span class="sp-row-gov">${(e.level_of_government || '').replace(/_/g, ' ')}</span>`);
+    col2 = `<span class="sp-row-cluster">${(e.cluster || '').replace(/_/g, ' ')}</span>`;
+    col3 = `<span class="sp-row-gov">${(e.level_of_government || '').replace(/_/g, ' ')}</span>`;
   }
   return `<button type="button" class="sp-row" data-entity-id="${e.id}">
-    <span class="sp-row-name">${e.name}${e.abbreviation && e.abbreviation !== e.name ? ` <span class="sp-row-abbr">(${e.abbreviation})</span>` : ''}</span>
-    <span class="sp-row-meta">${meta.join('')}</span>
+    <span class="sp-cell sp-cell-name sp-row-name">${e.name}${e.abbreviation && e.abbreviation !== e.name ? ` <span class="sp-row-abbr">(${e.abbreviation})</span>` : ''}</span>
+    <span class="sp-cell sp-cell-col2">${col2}</span>
+    <span class="sp-cell sp-cell-col3">${col3}</span>
   </button>`;
 }
 
@@ -1672,7 +1772,7 @@ function renderStatPanel(stat, entities, opts = {}) {
     }
   }
   return `
-    <div class="sp-card" data-stat="${stat}">
+    <div class="sp-card${stat === 'coverage' ? ' sp-table-coverage' : ' sp-grid-table'}" data-stat="${stat}">
       <div class="sp-head">
         <div>
           <h3 class="sp-title">${meta.title}</h3>
@@ -1681,8 +1781,9 @@ function renderStatPanel(stat, entities, opts = {}) {
         <button type="button" class="sp-close" aria-label="Close" title="Close">✕</button>
       </div>
       <div class="sp-col-head">
-        <span class="sp-col-name">Entity</span>
-        <span class="sp-col-meta">${meta.column}</span>
+        <span class="sp-cell sp-cell-name">Entity</span>
+        <span class="sp-cell sp-cell-col2">${meta.col2}</span>
+        <span class="sp-cell sp-cell-col3">${meta.col3}</span>
       </div>
       <div class="sp-list">${body}</div>
     </div>
@@ -1711,8 +1812,9 @@ export function initSummaryView() {
     <div class="sum-inner">
 
       <div class="sum-masthead">
-        <h1 class="sum-title">Judiciary Entity Map — India</h1>
-        <p class="sum-subtitle">Structural map of appointment chains, funding flows, independence risk, and systemic gaps across India's judicial ecosystem.</p>
+        ${logoWordmarkHTML({ className: 'sum-logo-wordmark', width: 460 })}
+        <p class="sum-subtitle">${JEM_HOME_INTRO}</p>
+        <p class="sum-subtitle sum-subtitle-status">${JEM_HOME_STATUS}</p>
       </div>
 
       <div class="stat-band" id="stat-band" role="tablist">
@@ -1739,20 +1841,20 @@ export function initSummaryView() {
       </div>
       <div class="stat-panel" id="stat-panel" hidden></div>
 
-      <div class="sm-section sp-section">
-        <div class="sm-section-head">
-          <span class="sm-section-title">Spotlight · critical &amp; at-risk entities</span>
-        </div>
-        <p class="sm-note-global">Each card is a preview of the entity's structural report. Step through with arrows or swipe.</p>
-        ${renderSpotlightCarousel(spotlightSet(entities), entities.length)}
-      </div>
-
       <div class="sm-section">
         <div class="sm-section-head">
           <span class="sm-section-title">Judicial hierarchy</span>
         </div>
         <p class="sm-note-global">From the Supreme Court down two parallel branches — the constitutional/judicial cascade and the tribunal/quasi-judicial cascade. Each step shows the count and a few reference entities; click any chip to open its structural profile.</p>
         <div class="ah-section-wrap" id="appellate-hierarchy-wrap"></div>
+      </div>
+
+      <div class="sm-section sm-section-timeline">
+        <div class="sm-section-head">
+          <span class="sm-section-title">Timeline · how we got here</span>
+        </div>
+        <p class="sm-note-global">Three quarters of a century of judicial institution-building, decade by decade. Creations rise above the line, abolitions fall below; constitutional moments are dotted in. Drag the focus year to see what was born or dissolved near any moment — or jump to a policy era.</p>
+        <div class="ts-section-wrap" id="temporal-structure-wrap"></div>
       </div>
 
       <div class="sm-section">
@@ -1766,12 +1868,12 @@ export function initSummaryView() {
         <div class="strip-wrap" id="strip-plot-wrap"></div>
       </div>
 
-      <div class="sm-section sm-section-timeline">
+      <div class="sm-section sp-section">
         <div class="sm-section-head">
-          <span class="sm-section-title">Timeline · how we got here</span>
+          <span class="sm-section-title">Spotlight · critical &amp; at-risk entities</span>
         </div>
-        <p class="sm-note-global">Three quarters of a century of judicial institution-building, decade by decade. Creations rise above the line, abolitions fall below; constitutional moments are dotted in. Drag the focus year to see what was born or dissolved near any moment — or jump to a policy era.</p>
-        <div class="ts-section-wrap" id="temporal-structure-wrap"></div>
+        <p class="sm-note-global">Each card is a preview of the entity's structural report. Step through with arrows or swipe.</p>
+        ${renderSpotlightCarousel(spotlightSet(entities), entities.length)}
       </div>
 
       <div class="sm-section">
@@ -1809,72 +1911,8 @@ export function initSummaryView() {
     }
   });
 
-  // ── Render strip plot (sized to container after DOM paint) ───────────────
-  requestAnimationFrame(() => {
-    const wrap = container.querySelector('#strip-plot-wrap');
-    if (wrap) {
-      const w = Math.max(480, wrap.clientWidth || 560);
-      wrap.innerHTML = renderStripPlot(entities, w);
-
-      // Wire bubble clicks → drill-down filtered to that score
-      wrap.addEventListener('click', ev => {
-        const bubble = ev.target.closest('.strip-bubble');
-        if (bubble) {
-          const clusterId = bubble.dataset.clusterId;
-          const score = +bubble.dataset.score;
-          const ids = JSON.parse(decodeURIComponent(bubble.dataset.ids || '[]'));
-          showClusterDrill(clusterId, entities, container, ids);
-          return;
-        }
-        // Cluster label text → drill all entities in that cluster
-        const labelText = ev.target.closest('.strip-cluster-label');
-        if (labelText) {
-          showClusterDrill(labelText.dataset.clusterId, entities, container);
-        }
-      });
-
-      // Wire row hover highlighting
-      const svgEl = wrap.querySelector('svg');
-      if (svgEl) {
-        const highlightCluster = (clusterId) => {
-          svgEl.querySelectorAll('.strip-bubble').forEach(b => {
-            const active = b.dataset.clusterId === clusterId;
-            b.style.fillOpacity = active ? '0.9' : '0.1';
-            b.style.strokeOpacity = active ? '1' : '0.1';
-          });
-          svgEl.querySelectorAll('.strip-cluster-label').forEach(t => {
-            t.style.opacity = t.dataset.clusterId === clusterId ? '1' : '0.25';
-            t.style.fontWeight = t.dataset.clusterId === clusterId ? '700' : '';
-          });
-          svgEl.querySelectorAll('.strip-guide').forEach((line, i) => {
-            const rowCl = svgEl.querySelectorAll('.strip-row-bg')[i]?.dataset.clusterId;
-            line.style.strokeOpacity = rowCl === clusterId ? '1' : '0.2';
-          });
-          svgEl.querySelectorAll('.strip-row-bg').forEach(r => {
-            r.style.fill = r.dataset.clusterId === clusterId ? 'rgba(51,51,46,0.04)' : 'transparent';
-          });
-        };
-        const resetHighlight = () => {
-          svgEl.querySelectorAll('.strip-bubble').forEach(b => {
-            b.style.fillOpacity = '';
-            b.style.strokeOpacity = '';
-          });
-          svgEl.querySelectorAll('.strip-cluster-label').forEach(t => {
-            t.style.opacity = '';
-            t.style.fontWeight = '';
-          });
-          svgEl.querySelectorAll('.strip-guide').forEach(l => { l.style.strokeOpacity = ''; });
-          svgEl.querySelectorAll('.strip-row-bg').forEach(r => { r.style.fill = 'transparent'; });
-        };
-
-        svgEl.addEventListener('mouseover', ev => {
-          const el = ev.target.closest('[data-cluster-id]');
-          if (el) highlightCluster(el.dataset.clusterId);
-        });
-        svgEl.addEventListener('mouseleave', resetHighlight);
-      }
-    }
-  });
+  // ── Render strip plot (sized to container; re-paint on resize) ───────────
+  mountStripPlot(container, entities);
 
   // ── Wire spotlight carousel ────────────────────────────────────────────────
   const featured = spotlightSet(entities);

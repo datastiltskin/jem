@@ -1,0 +1,59 @@
+id: fema_adjudicating_authority_generic
+name: FEMA Adjudicating Authority (Generic)
+name_hindi: विदेशी मुद्रा प्रबंधन अधिनियम निर्णयन प्राधिकारी (सामान्य)
+abbreviation: FEMA AA
+aliases:
+  - FEMA Adjudicating Officer
+  - Adjudicating Authority under FEMA
+type: RegulatoryBodyQJ
+cluster: tribunals_adr
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Adjudicatory
+created_year: 2000
+operational_status: Active
+constitutional_basis: null
+statutory_basis: >-
+  Foreign Exchange Management Act 1999, s.16 — Central Government may appoint
+  officers of the Central Government as adjudicating authorities for holding
+  inquiries into contraventions under Chapter IV. Orders of the adjudicating
+  authority are appealable to the Appellate Tribunal under s.17. Penalties
+  imposed by the Special Director under s.37 are separately appealable to the
+  same Tribunal under s.18.
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted: []
+  consultation_binding: null
+  criteria_public: false
+  tenure: null
+  reappointment_possible: null
+  removal_authority: central_government
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+audit:
+  audited_by: null
+  audit_type: null
+  audit_report_public: null
+complaint_mechanism:
+  lokpal_jurisdiction: 'No'
+data_quality: partial
+data_quality_notes: >-
+  Generic node for officers designated under FEMA s.16. In practice, officers
+  of the Enforcement Directorate (Department of Revenue, MoF) are routinely
+  designated; ED is the investigating agency but adjudication is a separate
+  quasi-judicial function. Do not conflate ED investigation with adjudicating
+  authority orders. Special Director penalties (s.37) follow s.18 appeal route
+  to ATFE — same tribunal, distinct statutory gateway.
+sources:
+  - label: FEMA 1999 — ss.16–18 (India Code)
+    url: https://india-code.nic.in/
+    type: CentralAct
+    accessed_date: '2026-06-26'
+  - label: Enforcement Directorate — official website
+    url: https://enforcementdirectorate.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-26'

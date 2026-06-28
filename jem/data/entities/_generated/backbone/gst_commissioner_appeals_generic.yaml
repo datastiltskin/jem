@@ -1,0 +1,65 @@
+id: gst_commissioner_appeals_generic
+name: Commissioner (Appeals) — GST Generic
+name_hindi: आयुक्त (अपील) — जीएसटी सामान्य
+abbreviation: Commr(A) GST
+aliases:
+  - Commissioner Appeals under CGST Act
+  - Appellate Authority under CGST Act
+  - GST Appellate Authority
+type: ExecutiveBody
+cluster: executive_interface
+level_of_government: Central
+created_year: 2017
+operational_status: Active
+constitutional_basis: null
+statutory_basis: >-
+  Central Goods and Services Tax Act 2017, s.107 — any person aggrieved by a
+  decision or order of an adjudicating authority may appeal to the Appellate
+  Authority (Commissioner Appeals). s.108 provides revisional jurisdiction.
+  s.112 — appeal from Appellate Authority or Revisional Authority order lies
+  to the Appellate Tribunal (GSTAT).
+appointment:
+  nominates: cbic
+  formally_appoints: central_government
+  consulted: []
+  consultation_binding: null
+  criteria_public: false
+  tenure: IRS/CBIC cadre service tenure; no fixed term for adjudicatory function
+  reappointment_possible: null
+  removal_authority: central_government
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: cbic
+complaint_mechanism:
+  bias_complaint_to: []
+  lokpal_jurisdiction: 'Yes'
+  lokpal_jurisdiction_note: >-
+    Commissioner (Appeals) officers are Group A Central Government servants;
+    Lokpal jurisdiction applies per Lokpal and Lokayuktas Act 2013 s.14(1)(a).
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - GST adjudication appeals — first appellate forum
+  states_covered: []
+  uts_covered: []
+data_quality: partial
+data_quality_notes: >-
+  Generic node for Commissioner (Appeals) / Appellate Authority under CGST Act
+  2017 s.107. Officers are CBIC/IRS cadre exercising quasi-judicial powers
+  departmentally — not independently appointed tribunal members. Appellate chain:
+  Adjudicating Authority → Commissioner (Appeals) s.107 → GSTAT s.112 → HC
+  s.112 (substantial question of law).
+sources:
+  - label: CGST Act 2017 — ss.107–108, 112 (India Code)
+    url: https://india-code.nic.in/
+    type: CentralAct
+    accessed_date: '2026-06-26'
+  - label: CBIC — official portal
+    url: https://www.cbic.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-26'

@@ -46,9 +46,14 @@ structural_gap:
       No dedicated medical negligence tribunal — patient appeals and misconduct
       routes largely through consumer courts and NMC Autonomous Boards. As of
       Sep 2025 (NMC fifth anniversary), no patient appeals reported heard.
-    gap_source: nmc.org.in; Vision IAS Oct 2025; README gap registry
+    gap_source: National Medical Commission Act 2019; nmc.org.in
     gap_since_year: 2020
     gap_status: Open
+    gap_resolution_note: >-
+      NMC Act 2019 routes professional misconduct through Autonomous Boards
+      and Ethics/Medical Registration Board — no dedicated medical-negligence
+      tribunal foreseen. Patient remedies remain consumer forums and civil
+      courts; monitor NMC annual reports for appeals-heard statistics.
 complaint_mechanism:
   lokpal_jurisdiction: 'No'
 data_quality: verified

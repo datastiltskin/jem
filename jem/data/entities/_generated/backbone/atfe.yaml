@@ -3,24 +3,25 @@ name: Appellate Tribunal for Foreign Exchange
 name_hindi: विदेशी मुद्रा अपीलीय अधिकरण
 abbreviation: ATFE
 aliases:
-  - Appellate Tribunal for Foreign Exchange
-  - FEMA Appellate Tribunal
+- Appellate Tribunal for Foreign Exchange
+- FEMA Appellate Tribunal
 type: CentralTribunal
 cluster: tribunals_adr
 level_of_government: Central
 jurisdiction_scope:
   is_all_india: true
   jurisdiction_types:
-    - Appellate
+  - Appellate
 created_year: 2000
 operational_status: Active
 constitutional_basis: null
-statutory_basis: Foreign Exchange Management Act 1999 (FEMA), Chapter V — appeals against Adjudicating Authority and Special Director orders.
+statutory_basis: Foreign Exchange Management Act 1999 (FEMA), Chapter V — appeals against Adjudicating Authority and Special
+  Director orders.
 appointment:
   nominates: central_government
   formally_appoints: central_government
   consulted:
-    - supreme_court_india
+  - supreme_court_india
   consultation_binding: false
   criteria_public: true
   tenure: 5 years or age 65, whichever earlier
@@ -37,15 +38,21 @@ complaint_mechanism:
   lokpal_jurisdiction: 'No'
   lokpal_jurisdiction_note: Tribunal judicial members excluded from Lokpal jurisdiction per convention.
 data_quality: partial
-data_quality_notes: >-
-  Quasi-judicial appellate body under FEMA (MoF/Department of Revenue jurisdiction).
-  Not under MHA despite ED investigating FEMA/PMLA offences. Principal seat New Delhi.
+data_quality_notes: Quasi-judicial appellate body under FEMA (MoF/Department of Revenue jurisdiction). Not under MHA despite
+  ED investigating FEMA/PMLA offences. Principal seat New Delhi. v1.2 judge_strength stub attached
 sources:
-  - label: FEMA 1999 — India Code
-    url: https://india-code.nic.in/
-    type: CentralAct
-    accessed_date: '2026-06-17'
-  - label: Enforcement Directorate — parent Department of Revenue, MoF
-    url: https://enforcementdirectorate.gov.in/
-    type: GoIWebsite
-    accessed_date: '2026-06-17'
+- label: FEMA 1999 — India Code
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-17'
+- label: Enforcement Directorate — parent Department of Revenue, MoF
+  url: https://enforcementdirectorate.gov.in/
+  type: GoIWebsite
+  accessed_date: '2026-06-17'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: Tribunal_Report
+  source_url: https://doj.gov.in/
+  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.

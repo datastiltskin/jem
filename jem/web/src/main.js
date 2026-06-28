@@ -12,27 +12,35 @@ import { initViewStatus, getGapStats, primeGapStats } from './viewStatus.js';
 import { selectAndOpenEntity } from './entitySelection.js';
 import { initSummaryView } from './summaryView.js';
 import { renderDetailView, clearDetailView } from './detailView.js';
+import { initSmartSearch, entityDisplayName } from './smartSearch.js';
+import { renderAboutPage } from './aboutContent.js';
 
 const GRAPH_URL = './public/graph.json';
 
+/** Keep summary/detail below the full toolbar when search chips wrap to a second row. */
+function syncChromeTop() {
+  const toolbar = document.getElementById('toolbar');
+  if (!toolbar) return;
+  const h = Math.ceil(toolbar.getBoundingClientRect().height);
+  document.documentElement.style.setProperty('--jem-chrome-top', `${h}px`);
+}
+
+function initChromeTopSync() {
+  const toolbar = document.getElementById('toolbar');
+  if (!toolbar) return;
+  syncChromeTop();
+  if (typeof ResizeObserver !== 'undefined') {
+    const ro = new ResizeObserver(() => syncChromeTop());
+    ro.observe(toolbar);
+  }
+  window.addEventListener('resize', syncChromeTop);
+}
+
 // ── View Router ───────────────────────────────────────────────────────────────
-// Three views: 'summary' | 'detail' | 'map'
+// Views: 'summary' | 'detail' | 'map' | 'about'
 
 let _mapBooted = false;       // full map initialised lazily on first switch
-let _mapReturnTarget = null;  // where the back button goes from map view
-
-function _updateBackBtn() {
-  const backBtn = document.getElementById('btn-summary');
-  if (!backBtn) return;
-  const view = document.body.dataset.appView;
-  if (view === 'map' && _mapReturnTarget?.view === 'detail') {
-    const e = State.getEntityById(_mapReturnTarget.entityId);
-    const label = e ? (e.abbreviation || e.name.split(' ').slice(0, 3).join(' ')) : 'Detail';
-    backBtn.textContent = `← ${label}`;
-  } else {
-    backBtn.textContent = '← Overview';
-  }
-}
+let _mapReturnTarget = null;  // reserved for map navigation context
 
 // ── URL hash routing ──────────────────────────────────────────────────────────
 // Shareable deep-links via fragment: '#/entity/<id>' opens the detail view,
@@ -47,6 +55,7 @@ function _entityIdFromHash() {
 function _hashViewFromHash() {
   if (/^#\/entity\/.+/.test(location.hash)) return 'detail';
   if (location.hash === '#/map') return 'map';
+  if (location.hash === '#/about') return 'about';
   return 'summary';
 }
 
@@ -57,6 +66,7 @@ function _syncHashForView(view, entityId) {
   let target = '';
   if (view === 'detail' && entityId) target = `#/entity/${encodeURIComponent(entityId)}`;
   else if (view === 'map') target = '#/map';
+  else if (view === 'about') target = '#/about';
   // Empty hash for summary.
   if (location.hash === target) return;
   const url = target ? `${location.pathname}${location.search}${target}` : `${location.pathname}${location.search}`;
@@ -92,6 +102,8 @@ function _applyHashRoute() {
       }
     } else if (view === 'map') {
       switchView('map');
+    } else if (view === 'about') {
+      switchView('about');
     } else {
       switchView('summary');
     }
@@ -129,36 +141,41 @@ function switchView(view, entityId = null) {
 
   const summaryEl   = document.getElementById('summary-view');
   const detailEl    = document.getElementById('detail-view');
+  const aboutEl     = document.getElementById('about-view');
   const workspaceEl = document.getElementById('app-workspace');
   const timelineEl  = document.getElementById('timeline-container');
   const statusEl    = document.getElementById('map-status-bar');
   const qualEl      = document.getElementById('quality-legend');
   const govtEl      = document.getElementById('govt-level-legend');
   const mobileNav   = document.getElementById('mobile-workspace-tabs');
-  const backBtn     = document.getElementById('btn-summary');
+  const aboutBtn    = document.getElementById('btn-about');
 
   if (summaryEl)   summaryEl.classList.toggle('hidden', view !== 'summary');
   if (detailEl)    detailEl.classList.toggle('hidden', view !== 'detail');
+  if (aboutEl)     aboutEl.classList.toggle('hidden', view !== 'about');
   if (workspaceEl) workspaceEl.classList.toggle('hidden', view !== 'map');
   if (timelineEl)  timelineEl.classList.toggle('hidden', view !== 'map');
   if (statusEl)    statusEl.classList.toggle('hidden', view !== 'map');
   if (qualEl)      qualEl.classList.toggle('hidden', view !== 'map');
   if (govtEl)      govtEl.classList.toggle('hidden', view !== 'map');
   if (mobileNav)   mobileNav.classList.toggle('hidden', view !== 'map');
-  if (backBtn)     backBtn.classList.toggle('hidden', view === 'summary');
+  if (aboutBtn)    aboutBtn.classList.toggle('active', view === 'about');
 
   // Mode switcher and search only make sense in map context
   document.getElementById('mode-switcher')?.classList.toggle('hidden', view !== 'map');
 
-  // Update back button label after visibility is settled
-  _updateBackBtn();
-
   if (view === 'summary') {
     // Nothing to re-init; summaryView is rendered once after graph load
+  } else if (view === 'about') {
+    window.__jemSmartSearch?.collapseSearchUI?.({ clearInput: true });
+    renderAboutView();
+    syncChromeTop();
   } else if (view === 'detail' && entityId) {
+    window.__jemSmartSearch?.collapseSearchUI?.();
     const fromId = document.body.dataset.prevDetailEntity || null;
     renderDetailView(entityId, fromId !== entityId ? fromId : null);
     document.body.dataset.prevDetailEntity = entityId;
+    syncChromeTop();
   } else if (view === 'map') {
     if (!_mapBooted) {
       _mapBooted = true;
@@ -182,6 +199,7 @@ function switchView(view, entityId = null) {
 
 function wireNavigationEvents() {
   State.subscribe('navigateToDetail', (id) => {
+    window.__jemSmartSearch?.collapseSearchUI?.();
     switchView('detail', id);
   });
 
@@ -193,13 +211,9 @@ function wireNavigationEvents() {
     switchView('map', id);
   });
 
-  // ← back button: context-aware — returns to detail or summary depending on path
-  document.getElementById('btn-summary')?.addEventListener('click', () => {
-    if (_mapReturnTarget?.view === 'detail' && _mapReturnTarget.entityId) {
-      switchView('detail', _mapReturnTarget.entityId);
-    } else {
-      switchView('summary');
-    }
+  document.getElementById('btn-home')?.addEventListener('click', () => {
+    window.__jemSmartSearch?.collapseSearchUI?.({ clearInput: true });
+    switchView('summary');
   });
 }
 
@@ -245,7 +259,7 @@ function showCommandPaletteDefault() {
       const color = level ? RISK_COLORS[level] : '#888';
       const nc = e.operational_status === 'Not_Constituted' ? '<span class="sr-badge nc">NC</span>' : '';
       return `<div class="search-result" data-id="${e.id}">
-        <span class="sr-name ${e.data_quality}">${e.name}</span>
+        <span class="sr-name ${e.data_quality}">${entityDisplayName(e)}</span>
         ${nc}
         ${level ? `<span class="sr-risk" style="color:${color}">${level} · ${score}</span>` : ''}
       </div>`;
@@ -377,6 +391,7 @@ function populateKpiCards(metrics) {
 // ── Boot Sequence ─────────────────────────────────────────────────────────────
 
 async function boot() {
+  initChromeTopSync();
   try {
     // 1. Load data
     const response = await fetch(GRAPH_URL);
@@ -402,8 +417,8 @@ async function boot() {
     initPanel();
     initNeighborhoodPanel();
     initToolbar();
-    initSearch();
-    initAboutModal();
+    initSearch(graph);
+    initAboutPage();
     initDistrictLatticeHotkeys();
     initMobileWorkspaceTabs();
     initInspectorResize();
@@ -430,6 +445,7 @@ async function boot() {
     render();
 
     initSummaryView();
+    renderAboutView();
 
     // Hash deep-link: open the entity / view encoded in location.hash if any,
     // otherwise default to summary. Browser back/forward and pasted URLs
@@ -464,6 +480,7 @@ function patchSearchForDetailView() {
   results.addEventListener('click', (e) => {
     const row = e.target.closest('.search-result');
     if (!row) return;
+    if (row.classList.contains('search-insight-hit')) return;
     const view = document.body.dataset.appView;
     if (view === 'summary' || view === 'detail') {
       // Prevent the default search handler from running (it fires on the element itself)
@@ -762,59 +779,63 @@ function initMobileWorkspaceTabs() {
 
 // ── Search ────────────────────────────────────────────────────────────────────
 
-function initSearch() {
+function initSearch(graph) {
   const input = document.getElementById('search-input');
   const results = document.getElementById('search-results');
-  let fuse = null;
+  const panel = document.getElementById('insight-panel');
+  const chips = document.getElementById('search-insight-chips');
 
-  State.subscribe('graphLoaded', (graph) => {
-    fuse = new Fuse(graph.entities, {
-      keys: ['name', 'abbreviation', 'aliases', 'constitutional_basis', 'statutory_basis'],
-      threshold: 0.35,
+  const pickEntity = (id) => {
+    window.__jemSmartSearch?.collapseSearchUI?.();
+    const entity = State.getEntityById(id);
+    if (!entity) return;
+    selectAndOpenEntity(entity);
+    expandPathToEntity(id);
+    switchView('detail', id);
+  };
+
+  const wireSearch = (g) => {
+    const fuse = new Fuse(g.entities, {
+      keys: [
+        { name: 'name', weight: 0.55 },
+        { name: 'abbreviation', weight: 0.25 },
+        { name: 'aliases', weight: 0.15 },
+        { name: 'constitutional_basis', weight: 0.03 },
+        { name: 'statutory_basis', weight: 0.02 },
+      ],
+      threshold: 0.28,
+      minMatchCharLength: 3,
+      ignoreLocation: false,
       includeScore: true,
     });
     window.__jemFuse = fuse;
-  });
 
-  input.addEventListener('input', () => {
-    const q = input.value.trim();
-    if (!q || !fuse) {
-      results.classList.add('hidden');
-      return;
-    }
-    const hits = fuse.search(q).slice(0, 8);
-    if (!hits.length) {
-      results.innerHTML = `<div class="search-empty">No matches for “${q}”. Try an abbreviation (e.g. SC, ITAT), statute name, or constitutional article.</div>`;
-      results.classList.remove('hidden');
-      return;
-    }
-    results.innerHTML = hits.map(h => {
-      const e = h.item;
-      return `<div class="search-result" data-id="${e.id}">
-        <span class="sr-name ${e.data_quality}">${e.name}</span>
-        <span class="sr-type">${formatType(e.type)}</span>
-        ${e.operational_status === 'Not_Constituted' ? '<span class="sr-badge nc">NC</span>' : ''}
-      </div>`;
-    }).join('');
-    results.classList.remove('hidden');
-
-    results.querySelectorAll('.search-result').forEach(el => {
-      el.addEventListener('click', () => {
-        const id = el.dataset.id;
-        const entity = State.getEntityById(id);
-        if (entity) {
-          selectAndOpenEntity(entity);
-          expandPathToEntity(id);
-          input.value = '';
-          results.classList.add('hidden');
-        }
-      });
+    const api = initSmartSearch({
+      graph: g,
+      inputEl: input,
+      resultsEl: results,
+      panelEl: panel,
+      chipsEl: chips,
+      fuseFactory: (items, opts) => new Fuse(items, opts),
+      onEntityPick: pickEntity,
+      onLayoutChange: syncChromeTop,
     });
-  });
+    api.setEntityFuse(fuse);
+    window.__jemSmartSearch = api;
+    return api;
+  };
+
+  const api = graph ? wireSearch(graph) : null;
+
+  if (!graph) {
+    State.subscribe('graphLoaded', wireSearch);
+  }
 
   document.addEventListener('click', (e) => {
-    if (!input.contains(e.target) && !results.contains(e.target)) {
+    const toolbar = document.getElementById('toolbar');
+    if (toolbar && !toolbar.contains(e.target)) {
       results.classList.add('hidden');
+      window.__jemSmartSearch?.refreshSearchChrome?.();
     }
   });
 }
@@ -843,22 +864,20 @@ function initDistrictLatticeHotkeys() {
   });
 }
 
-// ── About panel (slide-over) ──────────────────────────────────────────────────
+function renderAboutView() {
+  renderAboutPage();
+}
 
-function initAboutModal() {
-  const panel = document.getElementById('about-panel');
-  const open = (e) => {
-    e.preventDefault?.();
-    e.stopPropagation?.();
-    panel.classList.remove('hidden');
-  };
-  const close = (e) => {
-    e.preventDefault?.();
-    e.stopPropagation?.();
-    panel.classList.add('hidden');
-  };
-  document.getElementById('btn-about').addEventListener('pointerdown', open);
-  document.getElementById('about-close').addEventListener('pointerdown', close);
+function initAboutPage() {
+  document.getElementById('btn-about')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (document.body.dataset.appView === 'about') {
+      switchView('summary');
+      return;
+    }
+    window.__jemSmartSearch?.collapseSearchUI?.({ clearInput: true });
+    switchView('about');
+  });
 }
 
 // ── Start ─────────────────────────────────────────────────────────────────────

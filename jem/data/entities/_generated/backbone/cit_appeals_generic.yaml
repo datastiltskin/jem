@@ -97,6 +97,21 @@ structural_gap:
       s.246 substitution memorandum
     gap_since_year: 2000
     gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      Union Budget 2023-24 sanctioned ~100 JCIT(A) posts for small appeals;
+      e-Appeals Scheme 2023 and NFAC faceless processing partially address
+      backlog. Monitor CBDT annual reports for disaggregated CIT(A) pendency.
+    gap_spillover:
+    - affected_body: high_courts_all
+      spillover_type: writ_load
+      metric_note: >-
+        Faceless CIT(A)/NFAC scheme (CBDT Notification 76/2021) challenged in
+        multiple High Court writ petitions 2021–2024; taxpayers sought Article 226
+        relief when first appellate forum was centralised — no aggregate HC docket count published.
+      source_url: https://www.incometaxindia.gov.in/communications/notification/notification76_2021.pdf
+      source_label: CBDT Notification 76/2021 — Faceless Appeal Scheme (GoI primary)
+      data_as_of: '2021-08-27'
+      spillover_data_quality: partial
 data_quality: partial
 data_quality_notes: >-
   TYPE NOTE: Typed ExecutiveBody / executive_interface rather than RegulatoryBodyQJ because CIT(A) officers are IRS cadre within the Income Tax Department, not independently appointed tribunal members; they exercise quasi-judicial powers departmentally. Maintainer may reconsider if a departmental-adjudicator subtype is added to the schema.

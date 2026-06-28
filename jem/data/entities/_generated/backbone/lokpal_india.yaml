@@ -47,7 +47,7 @@ structural_gap:
   flag: true
   gaps:
     - gap_id: lokpal_chairperson_vacancy_closed
-      gap_type: Capacity_Gap
+      gap_type: Appointment_Gap
       gap_severity: Moderate
       gap_description: >-
         Chairperson vacancy May 2022–Mar 2024 (Pinaki Chandra Ghose retired 27 May 2022;
@@ -56,6 +56,10 @@ structural_gap:
       gap_source: Rashtrapati Bhavan; The Hindu, 10 Mar 2024
       gap_since_year: 2022
       gap_status: Closed
+      gap_resolution_note: >-
+        Chairperson vacancy closed 10 Mar 2024 (Justice A.M. Khanwilkar sworn
+        in). Historical gap only — full bench operational; monitor lokpal.gov.in
+        for future vacancies at end of five-year terms.
 data_quality: partial
 data_quality_notes: >-
   Fully operational as of Mar 2024. Chairperson Justice Ajay Manikrao Khanwilkar

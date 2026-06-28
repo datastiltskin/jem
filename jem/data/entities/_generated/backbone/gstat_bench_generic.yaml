@@ -54,6 +54,38 @@ jurisdiction_scope:
   - gst_appeals
   states_covered: []
   uts_covered: []
+structural_gap:
+  flag: true
+  gaps:
+  - gap_id: gstat_state_bench_members_pending
+    gap_type: Appointment_Gap
+    gap_severity: Critical
+    gap_description: >-
+      State/UT GSTAT benches notified under MoF S.O. 1559(E) (6 Apr 2023).
+      MoF Office Order 03/2025 (26 Dec 2025) allotted 83 appointed judicial and
+      technical members to benches nationwide; join-by 21 Jan 2026. Operational
+      rollout phased — some benches await state-provided courtrooms. GST appeals
+      from non-functional benches may still route to High Courts (CGST Act s.112).
+    gap_source: MoF Notification S.O. 1559(E); GSTAT Procedure Rules 2025 (G.S.R. 256(E))
+    gap_since_year: 2023
+    gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      Bench-wise operationalisation follows Central Government appointment
+      notifications under CGST Act 2017 s.109(6). Office Order 03/2025
+      (26 Dec 2025) assigned 83 members to state benches; monitor
+      efiling.gstat.gov.in for hearing commencement per bench.
+    gap_spillover:
+    - affected_body: high_courts_all
+      spillover_type: appellate_backlog
+      metric_note: >-
+        CGST Act s.112 High Court appeals on substantial questions of law
+        absorbed GST tribunal workload while state GSTAT benches lacked
+        appointed members; spillover eases as benches operationalise but
+        no aggregate HC docket count published by DoJ for GST-only writs.
+      source_url: https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter18/section112_v1.00.html
+      source_label: CGST Act 2017 s.112 — HC appellate jurisdiction (CBIC repository)
+      data_as_of: '2026-06-26'
+      spillover_data_quality: partial
 data_quality: partial
 data_quality_notes: 'Generic scaffold only. GSTAT Principal Bench operational since Sep 2023; state bench notifications issued
   incrementally; member appointments at state benches remain incomplete (Jun 2026). Do not create individual state-bench
@@ -73,9 +105,13 @@ sources:
   type: GazetteNotification
   accessed_date: '2026-06-17'
 judge_strength:
-  data_as_of: null
+  data_as_of: '2025-12-26'
   allotted: null
-  appointed: null
+  appointed: 83
+  vacancy_count: null
   source_type: Tribunal_Report
-  source_url: https://doj.gov.in/
-  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+  source_url: https://efiling.gstat.gov.in/
+  notes: >-
+    Generic scaffold — aggregate of state-bench members allotted under MoF Office
+    Order 03/2025 (26 Dec 2025). Per-bench strength not modelled until individual
+    bench entities are created from Gazette notifications.

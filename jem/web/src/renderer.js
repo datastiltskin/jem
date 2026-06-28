@@ -11,6 +11,7 @@ import {
   shapeLayoutRadius,
 } from './nodeShapes.js';
 import { PRINCIPAL_HC_BY_STATE_CODE } from './districtAggregates.js';
+import { shouldShowStructuralScores } from './scoreDisplay.js';
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -919,6 +920,7 @@ export function renderNodes() {
   // Structural health ring (master composite). Always on for scored entities;
   // hidden for governance officeholders (null health score).
   function healthBandFor(d) {
+    if (!shouldShowStructuralScores(d)) return null;
     const dh = d.derived || {};
     return dh.structural_health_level || State.structuralHealthBand(dh.structural_health_score);
   }
@@ -2370,6 +2372,7 @@ function hideTooltip() {
 }
 
 function htmlScoreMicroCard(node) {
+  if (!shouldShowStructuralScores(node)) return '';
   const d = node.derived || {};
   const healthColors = State.getStructuralHealthColors();
   const irColors = State.getIndependenceRiskColors();

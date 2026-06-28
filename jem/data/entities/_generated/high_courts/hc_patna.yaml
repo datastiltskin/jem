@@ -87,8 +87,8 @@ structural_gap:
   flag: true
   gaps:
   - gap_id: hc_patna_judge_vacancy
-    gap_type: Capacity_Gap
-    gap_severity: Moderate
+    gap_type: Appointment_Gap
+    gap_severity: High
     gap_description: >-
       ~17% vacancy — 9 of 53 posts unfilled (44 judges working) after seven
       appointments notified June 2026; down from 16 vacancies (37 working)
@@ -96,6 +96,20 @@ structural_gap:
     gap_source: DoJ appointment notification; Bar & Bench Jun 2026
     gap_since_year: null
     gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      Seven judges appointed and sworn in 15 Jun 2026 reduced vacancies from 16
+      to 9; remaining posts via collegium pipeline. Monitor DoJ vacancy reports.
+    gap_spillover:
+    - affected_body: hc_patna
+      spillover_type: appellate_backlog
+      metric_note: >-
+        ~280,000 pending cases (NJDG Dec 2024) with clog_severity critical;
+        vacancy reduction (37→44 judges, Jun 2026) may ease backlog but
+        pendency remains among highest HC dockets in JEM.
+      source_url: https://njdg.ecourts.gov.in/
+      source_label: NJDG snapshot Dec 2024
+      data_as_of: '2024-12-01'
+      spillover_data_quality: partial
 data_quality: partial
 data_quality_notes: Pending NJDG-backed pendency and judge_strength fields per bench. NJDG snapshot case_volume merged complaint_mechanism populated from SC In-House Procedure 1999 and SC Stay Order Feb 2025 (suo moto). criminal_prosecution.requires_sanction_from set to governor_state per Veeraswami (1991) for HC judges. lokpal_jurisdiction No per operative Feb 2025 stay; revisit if SC decides finally. audit.conduct_oversight_body set to in_house_procedure_sc (same procedure governs HC judges).
 sources:

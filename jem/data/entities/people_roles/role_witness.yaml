@@ -1,0 +1,22 @@
+# jem/data/entities/people_roles/role_witness.yaml
+id: role_witness
+name: Witness (role archetype)
+type: PartyRole
+cluster: people_roles
+role_layer: true
+role_type: Witness
+level_of_government: State
+jurisdiction_scope:
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Indian Evidence Act 1872; Bharatiya Sakshya Adhiniyam 2023
+data_quality: partial
+data_quality_notes: Testifies in proceedings; not a party but journey-mode actor.
+  Numerics (judge_strength, case_volume) not applicable to role archetypes.
+sources:
+- label: Indian Evidence Act 1872
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-24'

@@ -113,3 +113,71 @@ GitHub Actions (`.github/workflows/validate.yml`) runs on every PR touching `jem
 - `data_quality: verified` only when a direct GoI primary source URL is included.
 - No case outcomes. No individual judge names. No editorial commentary.
 - Relationships (appointment, appellate, funding arcs) are maintainer-only; contributors may submit data-quality upgrades on existing entities.
+
+---
+
+# Part B — Build Orchestration (Sessions 0–6)
+
+Run orchestration from `jem/`:
+
+```bash
+cd jem
+./jem_build.sh [0|1|2|3|4a|4b|5|6|qa] [--dry-run]
+```
+
+## Project (infrastructure layer)
+
+Judicial Entity Map India — data infrastructure for legal researchers. Live at friedso.com. Server: VyomCloud 4GB RAM / 2 cores. No local LLM. All LLM calls via Anthropic API (external).
+
+This layer **coexists** with the YAML pipeline above; it does not replace `jem/data/` or `jem/web/`.
+
+## Stack
+
+- SQLite (`data/jem.db`) — primary store, direct queries
+- FastAPI — researcher HTTP API (Session 2)
+- MCP Python SDK — MCP server, SSE transport, mounted on FastAPI (Session 3)
+- Anthropic API (claude-sonnet-4-6) — fetcher/verifier extraction only (Session 4A)
+- pytest — all tests; fixture DB never production DB
+
+## Schema ground truth
+
+Always refer to `jem/.claude/decisions/schema_lock.md` before any DB-touching code. Never deviate from locked column names.
+
+Machine-readable DDL: `jem/config/schema.sql` (derived from schema_lock.md).
+
+## Data quality rules (non-negotiable)
+
+- Every auto-fetched record requires `verbatim_excerpt`
+- `confidence < 0.85` → staging status = `needs_review`
+- No record moves staging → target without `audit_log` entry
+- `data_conflicts` surfaced, never silently resolved
+- Extraction prompts loaded from `jem/.claude/prompts/`, never inline
+
+## What Claude CLI must never do
+
+- Generate SQL that touches production `data/jem.db`
+- Modify extraction or verification prompts without writing new version to `jem/.claude/prompts/` with timestamp suffix
+- Auto-approve architectural changes — write to `jem/.claude/decisions/` and wait for confirmation
+
+## Session status
+
+- [x] Session 0: Schema Lock
+- [x] Session 1: SQLite Foundation
+- [x] Session 2: FastAPI
+- [x] Session 3: MCP Server
+- [x] Session 4A: Fetcher Agent
+- [x] Session 4B: Expert Portal
+- [x] Session 5: ~~Harness + Chat UI~~ (removed — search via REST / map UI)
+- [x] Session 6: Operational Monitor
+- [ ] QA: Full audit
+
+## DB commands (Session 1+)
+
+```bash
+cd jem
+pip install -r scripts/requirements-dev.txt
+python scripts/build_db.py          # Migrate graph.json → data/jem.db
+python scripts/build_db.py --force  # Rebuild
+python scripts/validate_db.py       # Schema + FK integrity check
+pytest tests/ -k test_db -v
+```

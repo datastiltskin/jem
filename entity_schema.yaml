@@ -482,6 +482,30 @@ entity:
           gap_status:
             type: enum
             values: [Open, Partial_Addressed, Addressed, Contested]
+          gap_resolution_note:
+            type: string
+            required: false
+            description: Expected path or timeline to close the gap; cite source or state if indeterminate
+          gap_spillover:
+            type: list[object]
+            required: false
+            description: Documented case-load spillover to another forum caused by this gap
+            item_fields:
+              affected_body: string
+              spillover_type:
+                type: enum
+                values:
+                  - writ_load
+                  - appellate_backlog
+                  - interim_stay_cluster
+                  - trial_court_pendency
+              metric_note: string
+              source_url: string
+              source_label: string
+              data_as_of: string
+              spillover_data_quality:
+                type: enum
+                values: [verified, partial]
 
   # ── Structural Circularity ───────────────────────────────
   structural_circularity:

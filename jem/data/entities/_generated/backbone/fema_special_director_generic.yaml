@@ -1,0 +1,55 @@
+id: fema_special_director_generic
+name: FEMA Special Director (Generic)
+name_hindi: विदेशी मुद्रा प्रबंधन विशेष निदेशक (सामान्य)
+abbreviation: FEMA SD
+aliases:
+  - Special Director under FEMA
+  - Director of Enforcement (adjudicatory capacity under s.37)
+type: RegulatoryBodyQJ
+cluster: tribunals_adr
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Adjudicatory
+created_year: 2000
+operational_status: Active
+constitutional_basis: null
+statutory_basis: >-
+  Foreign Exchange Management Act 1999, s.37 — Special Director (Director of
+  Enforcement or other officer authorised by Central Government) may impose
+  penalty for contravention under Chapter IV. s.18 — any person aggrieved by
+  an order of the Special Director may appeal to the Appellate Tribunal (ATFE).
+appointment:
+  nominates: central_government
+  formally_appoints: central_government
+  consulted: []
+  consultation_binding: null
+  criteria_public: false
+  tenure: null
+  reappointment_possible: null
+  removal_authority: central_government
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_of_finance
+audit:
+  audited_by: null
+  audit_type: null
+  audit_report_public: null
+complaint_mechanism:
+  lokpal_jurisdiction: 'No'
+data_quality: partial
+data_quality_notes: >-
+  Distinct statutory gateway from FEMA s.16 adjudicating authority (modelled on
+  fema_adjudicating_authority_generic → ATFE under s.17). Special Director
+  penalties under s.37 appeal to ATFE under s.18. Same tribunal (ATFE) but
+  separate appeal provision.
+sources:
+  - label: FEMA 1999 — ss.18, 37 (India Code)
+    url: https://india-code.nic.in/
+    type: CentralAct
+    accessed_date: '2026-06-26'
+  - label: Enforcement Directorate — official website
+    url: https://enforcementdirectorate.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-26'

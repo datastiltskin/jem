@@ -1,0 +1,22 @@
+# jem/data/entities/people_roles/role_advocate.yaml
+id: role_advocate
+name: Advocate (role archetype)
+type: LegalProfessionalRole
+cluster: people_roles
+role_layer: true
+role_type: LegalProfessional
+level_of_government: State
+jurisdiction_scope:
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Advocates Act 1961
+data_quality: partial
+data_quality_notes: Enrolled advocate; appears in subordinate courts and HCs per enrollment.
+  Numerics (judge_strength, case_volume) not applicable to role archetypes.
+sources:
+- label: Advocates Act 1961
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-24'

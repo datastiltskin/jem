@@ -87,7 +87,7 @@ structural_gap:
   flag: true
   gaps:
   - gap_id: hc_allahabad_judge_vacancy
-    gap_type: Capacity_Gap
+    gap_type: Appointment_Gap
     gap_severity: Critical
     gap_description: >-
       ~50% judicial vacancy — 80 of 160 posts unfilled (working strength
@@ -95,6 +95,21 @@ structural_gap:
     gap_source: DoJ judicial vacancy report / HC roster (Jul 2025)
     gap_since_year: null
     gap_status: Open
+    gap_resolution_note: >-
+      Vacancies filled via collegium recommendations and Presidential warrants;
+      no statutory timeline for vacancy fill. Monitor DoJ judicial vacancy
+      reports and HC roster at doj.gov.in.
+    gap_spillover:
+    - affected_body: hc_allahabad
+      spillover_type: appellate_backlog
+      metric_note: >-
+        ~1.1 million pending cases (NJDG snapshot Dec 2024) with ~50% judicial
+        vacancy (80 of 160 posts, Jul 2025 DoJ) — India's highest-volume HC;
+        unfilled posts correlate with prolonged disposal times (avg ~1,460 days).
+      source_url: https://njdg.ecourts.gov.in/
+      source_label: NJDG snapshot + DoJ vacancy report 1 Aug 2025
+      data_as_of: '2025-08-01'
+      spillover_data_quality: partial
 data_quality: partial
 data_quality_notes: Pending NJDG-backed pendency and judge_strength fields per bench. NJDG snapshot case_volume merged complaint_mechanism populated from SC In-House Procedure 1999 and SC Stay Order Feb 2025 (suo moto). criminal_prosecution.requires_sanction_from set to governor_state per Veeraswami (1991) for HC judges. lokpal_jurisdiction No per operative Feb 2025 stay; revisit if SC decides finally. audit.conduct_oversight_body set to in_house_procedure_sc (same procedure governs HC judges).
 sources:
@@ -106,24 +121,25 @@ sources:
   url: https://main.sci.gov.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
-- label: DoJ judicial vacancy report — Allahabad HC 80/160 working strength (Jul 2025)
-  url: https://doj.gov.in/report-and-committees/judicial-vacancy-reports
+- label: DoJ judicial vacancy report — Allahabad HC 80/160 working strength (1 Aug 2025)
+  url: https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/2025/08/202508041218934287.pdf
   type: OfficialReport
-  accessed_date: '2026-06-17'
+  accessed_date: '2026-06-26'
 - label: National Judicial Data Grid (NJDG)
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
 judge_strength:
-  data_as_of: '2025-07-25'
+  data_as_of: '2025-08-01'
   allotted: 160
   appointed: 80
   vacancy_count: 80
   source_type: DoJ_Report
-  source_url: https://doj.gov.in/report-and-committees/judicial-vacancy-reports
+  source_url: https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/2025/08/202508041218934287.pdf
   notes: >-
-    ~50% vacancy snapshot (Jul 2025): 80 working judges of 160 sanctioned posts;
-    80 vacancies. Prior Dec 2024 DoJ figure (110 working) superseded.
+    DoJ vacancy report as on 1 Aug 2025: 80 working judges of 160 sanctioned
+    posts (80 vacancies). 24 judges appointed Sep 2025 per collegium notification
+    — not yet reflected in this snapshot; monitor DoJ for updated figures.
 case_volume:
   data_as_of: '2024-12-01'
   sanctioned_strength: 160

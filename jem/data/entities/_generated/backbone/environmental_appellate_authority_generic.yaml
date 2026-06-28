@@ -1,0 +1,89 @@
+id: environmental_appellate_authority_generic
+name: Environmental Statutory Appellate Authority (Generic)
+name_hindi: पर्यावरणीय वैधानिक अपीलीय प्राधिकारी (सामान्य)
+abbreviation: Env Appellate Auth
+aliases:
+  - Appellate Authority under environmental Acts
+type: RegulatoryBodyQJ
+cluster: tribunals_adr
+level_of_government: Central
+jurisdiction_scope:
+  is_all_india: true
+  jurisdiction_types:
+    - Appellate
+created_year: 2010
+operational_status: Active
+constitutional_basis: null
+statutory_basis: >-
+  National Green Tribunal Act 2010, s.16 — any person aggrieved by an order or
+  decision of the appellate authority under the Water (Prevention and Control of
+  Pollution) Act 1974, the Water (Prevention and Control of Pollution) Cess Act
+  1977, the Forest (Conservation) Act 1980, the Air (Prevention and Control of
+  Pollution) Act 1981, the Environment (Protection) Act 1986, the Public
+  Liability Insurance Act 1991, or the Biological Diversity Act 2002, may appeal
+  to the National Green Tribunal. Generic rollup node pending per-Act appellate
+  authority entities.
+appointment:
+  nominates: null
+  formally_appoints: null
+  consulted: []
+  consultation_binding: null
+  criteria_public: false
+  tenure: null
+  reappointment_possible: null
+  removal_authority: null
+funding:
+  primary_source: Consolidated_Fund_India
+  ministry_responsible: ministry_environment
+audit:
+  audited_by: null
+  audit_type: null
+  audit_report_public: null
+complaint_mechanism:
+  lokpal_jurisdiction: Not_Applicable
+structural_variations:
+  - variation_id: ngt_s16_water_act
+    description: >-
+      Appellate authorities under Water (Prevention and Control of Pollution)
+      Act 1974 s.28 — modelled as water_act_appellate_authority_generic.
+    applicable_to:
+      - water_act_appellate_authority_generic
+    source: NGT Act 2010 s.16; Water Act 1974 s.28
+  - variation_id: ngt_s16_air_act
+    description: >-
+      Appellate authorities under Air (Prevention and Control of Pollution)
+      Act 1981 s.31 — modelled as air_act_appellate_authority_generic.
+    applicable_to:
+      - air_act_appellate_authority_generic
+    source: NGT Act 2010 s.16; Air Act 1981 s.31
+  - variation_id: ngt_s16_epa
+    description: >-
+      Appellate authorities under Environment (Protection) Act 1986 — modelled
+      as ep_act_appellate_authority_generic (NEAA abolished by NGT Act).
+    applicable_to:
+      - ep_act_appellate_authority_generic
+    source: NGT Act 2010 s.16; EPA 1986
+  - variation_id: ngt_s16_fca
+    description: >-
+      Appellate pathway for Forest (Conservation) Act 1980 orders — modelled as
+      forest_conservation_appellate_authority_generic.
+    applicable_to:
+      - forest_conservation_appellate_authority_generic
+    source: NGT Act 2010 s.16; FCA 1980
+data_quality: partial
+data_quality_notes: >-
+  Rollup placeholder for upstream appellate authorities listed in NGT Act 2010
+  s.16. NGT also exercises original jurisdiction under s.14 — not modelled on
+  this edge. Per-Act appellate bodies split Jun 2026: water_act, air_act,
+  ep_act, forest_conservation generics each have dedicated edges to ngt; this
+  node retains aggregate rollup for remaining s.16-listed Acts (Water Cess,
+  Public Liability Insurance, Biological Diversity).
+sources:
+  - label: National Green Tribunal Act 2010 — s.16 (India Code)
+    url: https://india-code.nic.in/acts-detail/MjA2OTU=
+    type: CentralAct
+    accessed_date: '2026-06-26'
+  - label: NGT — official website
+    url: https://greentribunal.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-06-26'

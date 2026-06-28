@@ -14,7 +14,7 @@ chmod +x jem/scripts/build_friedso_deploy_bundle.sh jem/scripts/publish_github.s
 | Script | Purpose |
 |--------|---------|
 | `build_friedso_deploy_bundle.sh` | Validate, build `graph.json`, write `_deploy_bundle/jem-web-*` |
-| `publish_github.sh` | Validate, stage, commit, optional push to `dso6060/jem_prototype` |
+| `publish_github.sh` | Validate, stage, commit, optional push to `dso6060/jem` |
 
 They are listed in `.gitignore` under the repo clone. Refresh the backup folder when you change either script.
 

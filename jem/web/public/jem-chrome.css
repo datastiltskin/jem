@@ -1,0 +1,63 @@
+/* Shared header for API satellite pages (admin, portal, docs, MCP). */
+
+.jem-chrome {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  padding: 10px 0 16px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.jem-chrome-home {
+  display: block;
+  line-height: 0;
+  flex-shrink: 0;
+}
+.jem-chrome-logo {
+  display: block;
+  height: 44px;
+  width: auto;
+  max-width: min(200px, 42vw);
+}
+.jem-chrome-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 0.875rem;
+}
+.jem-chrome-nav a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.jem-chrome-nav a:hover { text-decoration: underline; }
+.jem-chrome-nav a.active {
+  color: #111827;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Swagger UI — inject via customCss */
+.swagger-ui .topbar {
+  background: #fbfbf8 !important;
+  padding: 10px 0 !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+.swagger-ui .topbar .download-url-wrapper { display: none; }
+.swagger-ui .topbar .link {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  max-width: none !important;
+}
+.swagger-ui .topbar .link::before {
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 44px;
+  background: url("/public/assets/jem-lockup.png") no-repeat left center;
+  background-size: contain;
+  flex-shrink: 0;
+}
+.swagger-ui .topbar .link img { display: none; }
+.swagger-ui .topbar .link span { font-size: 0.95rem; color: #374151; }

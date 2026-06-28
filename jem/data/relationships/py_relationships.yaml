@@ -37,6 +37,24 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: py_rera_hc
+  source: rera_py
+  target: hc_madras
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  statutory_basis: >-
+    Real Estate (Regulation and Development) Act 2016, s.58 — appeal to High
+    Court from Appellate Tribunal order; Puducherry UT under Madras HC
+    jurisdiction
+  notes: PY RERA appeals to Madras HC
+  data_quality: partial
+  sources:
+  - label: RERA Act 2016 — ss.43, 58 (India Code)
+    url: https://india-code.nic.in/acts-detail/MjE2MTc=
+    type: CentralAct
+    accessed_date: '2026-06-26'
 - id: py_district_courts_hc
   source: py_district_courts
   target: hc_madras

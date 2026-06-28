@@ -6,6 +6,9 @@ import { State } from './state.js';
 import { openNeighborhoodPanel, closeNeighborhoodPanel } from './neighborhoodPanel.js';
 import { buildEntityConnectionSummary, formatCategoryLabel } from './entityConnections.js';
 import { commentsHTML, wireComments } from './comments.js';
+import { shouldShowStructuralScores } from './scoreDisplay.js';
+import { getJurisdictionProfileSections } from './jurisdictionDisplay.js';
+import { entityHasGapContent, renderGapListHTML, entityHasSpilloverContent, spilloverSummaryText } from './gapDisplay.js';
 
 export function openDetailPanel(entity) {
   const panel = document.getElementById('detail-panel');
@@ -87,6 +90,8 @@ function buildPanelHTML(e, opts = {}) {
     ${e.data_quality_notes ? `— ${e.data_quality_notes}` : ''}
   </div>`;
 
+  html += dataCompletenessBanner(e, d);
+
   const unverified = e.unverified_fields || d.unverified_fields || [];
   if (unverified.length) {
     html += section('Unverified fields', unverified.map((u) => `
@@ -99,6 +104,16 @@ function buildPanelHTML(e, opts = {}) {
 
   // ── Lifecycle ──────────────────────────────────────────
   html += section('Lifecycle', lifecycleBody(e));
+
+  // ── Jurisdiction (territorial scope + appellate routing) ─
+  const jurisdictionParts = getJurisdictionProfileSections(e);
+  if (jurisdictionParts.length === 1) {
+    html += section('Jurisdiction', jurisdictionParts[0].body);
+  } else if (jurisdictionParts.length > 1) {
+    for (const part of jurisdictionParts) {
+      html += section(part.title, part.body);
+    }
+  }
 
   // ── Parent HC (permanent bench) ───────────────────────
   if (d.parent_hc) html += section('High Court structure', parentHCBody(d));
@@ -114,27 +129,8 @@ function buildPanelHTML(e, opts = {}) {
 
   // ── Case volume & clog (NJDG / reports) ─────────────────
   // ponytail: detail view renders its own Case volume section; skip here to avoid duplication.
-  if (!opts.omitCaseVolume && d.case_volume && typeof d.case_volume === 'object') {
-    const cv = d.case_volume;
-    const rows = [];
-    if (cv.data_as_of) rows.push(row('Data as of', cv.data_as_of));
-    if (cv.pending_cases != null) rows.push(row('Pending cases (approx.)', String(cv.pending_cases).replace(/\B(?=(\d{3})+(?!\d))/g, ',')));
-    if (cv.filed_last_year != null) rows.push(row('Filed (last year)', String(cv.filed_last_year)));
-    if (cv.disposed_last_year != null) rows.push(row('Disposed (last year)', String(cv.disposed_last_year)));
-    if (cv.disposal_rate != null) rows.push(row('Disposal rate', String(cv.disposal_rate)));
-    if (cv.avg_disposal_days != null) rows.push(row('Avg disposal days', String(cv.avg_disposal_days)));
-    if (cv.sanctioned_strength != null && d.judge_strength?.allotted == null) {
-      rows.push(row('Sanctioned strength (legacy)', String(cv.sanctioned_strength)));
-    }
-    if (cv.working_strength != null && d.judge_strength?.appointed == null) {
-      rows.push(row('Working strength (legacy)', String(cv.working_strength)));
-    }
-    if (cv.clog_severity) rows.push(row('Clog severity', cv.clog_severity));
-    if (cv.source_type) rows.push(row('Volume source type', cv.source_type));
-    if (cv.source_url) rows.push(`<div class="detail-row"><span class="lbl">Volume source</span><span><a href="${cv.source_url}" target="_blank" rel="noopener noreferrer">${cv.source_url}</a></span></div>`);
-    if (rows.length) {
-      html += section('Case volume & clogging', rows.join(''));
-    }
+  if (!opts.omitCaseVolume) {
+    html += section('Case volume & clogging', caseVolumeBody(e, d));
   }
 
   // ── Audit ──────────────────────────────────────────────
@@ -150,6 +146,8 @@ function buildPanelHTML(e, opts = {}) {
   // and Constituent breakdown widgets already render this information.
   if (opts.omitRiskIndicators) {
     // skip block
+  } else if (!shouldShowStructuralScores(e)) {
+    // governance anchors, abolished institutions — no structural score UI
   } else if (State.viewMode === 'risk' && irScore === undefined && dpScore === undefined && healthScore == null) {
     html += section('Structural Risk Indicators', `
       <p class="detail-empty-hint">Structural-health, independence-risk and discretionary-power scores are not computed for this entity yet.</p>
@@ -236,28 +234,10 @@ function buildPanelHTML(e, opts = {}) {
 // ── HTML Helpers ──────────────────────────────────────────────────────────────
 
 function structuralGapsBody(e) {
-  const gapList = e.gaps || [];
-  const gapCount = Number(e.gap_count) || 0;
-  const hasRecorded =
-    e.gap_flag
-    || gapCount > 0
-    || gapList.length > 0
-    || e.structural_exception
-    || (e.circularity_score ?? e.derived?.circularity_score ?? 0) > 0;
+  const hasRecorded = entityHasGapContent(e);
 
   if (hasRecorded) {
-    let inner = '';
-    if (gapList.length) {
-      inner += '<ul class="detail-gap-list">';
-      for (const g of gapList) {
-        const type = (g && typeof g === 'object' ? g.gap_type : g) || 'gap';
-        const note = g?.note || g?.description || '';
-        inner += `<li><strong>${String(type).replace(/_/g, ' ')}</strong>${note ? ` — ${note}` : ''}</li>`;
-      }
-      inner += '</ul>';
-    } else if (gapCount > 0 || e.gap_flag) {
-      inner += `<p>${gapCount || 1} documented gap(s) — see map markers (*) in Gaps mode.</p>`;
-    }
+    let inner = renderGapListHTML(e);
     if (e.structural_exception) {
       inner += '<p class="detail-empty-hint">Marked as structural exception (deviates from statutory template).</p>';
     }
@@ -271,13 +251,7 @@ function structuralGapsBody(e) {
 
 // Returns true when structuralGapsBody() will surface anything for this entity.
 function hasGapsContent(e) {
-  return Boolean(
-    e.gap_flag
-    || Number(e.gap_count) > 0
-    || (e.gaps || []).length > 0
-    || e.structural_exception
-    || (e.circularity_score ?? e.derived?.circularity_score ?? 0) > 0
-  );
+  return entityHasGapContent(e);
 }
 
 function lifecycleBody(e) {
@@ -404,20 +378,21 @@ function sourcesBody(e) {
 }
 
 // Themed-widget catalogue consumed by the detail view to distribute sections
-// across left/right columns. Each entry has a stable `key`, a display `title`,
-// the inner-HTML `body` (already empty-checked), and `defaultOpen`.
+// across left/right columns. Each entry has a stable `key`, display `title`,
+// inner-HTML `body`, and optional `weight` for column balancing.
 export function getProfileSections(entity) {
   const d = entity._detail || {};
   const list = [
-    { key: 'lifecycle',      title: 'Lifecycle',                          body: lifecycleBody(entity),  defaultOpen: true  },
-    { key: 'parent_hc',      title: 'High Court structure',               body: parentHCBody(d),        defaultOpen: false },
-    { key: 'judges',         title: 'Judge strength',                     body: judgeStrengthBody(entity, d), defaultOpen: true  },
-    { key: 'appointment',    title: 'Appointment chain',                  body: appointmentBody(d),     defaultOpen: false },
-    { key: 'funding',        title: 'Funding',                            body: fundingBody(d),         defaultOpen: false },
-    { key: 'audit',          title: 'Audit & oversight',                  body: auditBody(d),           defaultOpen: false },
-    { key: 'complaint',      title: 'Complaint mechanism (Bias / Misconduct)', body: complaintBody(d),  defaultOpen: false },
-    { key: 'gaps',           title: 'Structural gaps',                    body: structuralGapsBody(entity), defaultOpen: hasGapsContent(entity) },
-    { key: 'sources',        title: 'Primary sources',                    body: sourcesBody(entity),    defaultOpen: false },
+    { key: 'lifecycle',      title: 'Lifecycle',                          body: lifecycleBody(entity), weight: 2 },
+    ...getJurisdictionProfileSections(entity),
+    { key: 'parent_hc',      title: 'High Court structure',               body: parentHCBody(d), weight: 2 },
+    { key: 'judges',         title: 'Judge strength',                     body: judgeStrengthBody(entity, d), weight: 3 },
+    { key: 'appointment',    title: 'Appointment chain',                  body: appointmentBody(d), weight: 4 },
+    { key: 'funding',        title: 'Funding',                            body: fundingBody(d), weight: 3 },
+    { key: 'audit',          title: 'Audit & oversight',                  body: auditBody(d), weight: 3 },
+    { key: 'complaint',      title: 'Complaint mechanism (Bias / Misconduct)', body: complaintBody(d), weight: 5 },
+    { key: 'gaps',           title: 'Structural gaps',                    body: structuralGapsBody(entity), weight: 2 },
+    { key: 'sources',        title: 'Primary sources',                    body: sourcesBody(entity), weight: 3 + Math.min(4, (entity.sources || []).length) },
   ];
   return list.filter(s => s.body && s.body.trim());
 }
@@ -534,6 +509,14 @@ function judgeStrengthBody(entity, d) {
         : null;
 
   const fmt = (n) => (n == null ? '<em class="muted">Not yet recorded</em>' : String(n));
+  let html = '';
+
+  if (!d.judge_strength) {
+    html += `<p class="detail-data-flag data-flag-absent">No judge_strength block — maintainer stub not yet attached.</p>`;
+  } else if (allotted == null && appointed == null) {
+    html += `<p class="detail-data-flag data-flag-stub">Stub awaiting maintainer fill — allotted/appointed blocked on DoJ vacancy report or HC roster.</p>`;
+  }
+
   const rows = [
     row('Judges allotted (sanctioned posts)', fmt(allotted)),
     row('Judges appointed (in post)', fmt(appointed)),
@@ -546,7 +529,90 @@ function judgeStrengthBody(entity, d) {
     js.notes ? `<div class="detail-row"><span class="lbl">Notes</span><span>${js.notes}</span></div>` : '',
   ].filter(Boolean);
 
-  return rows.join('');
+  return html + rows.join('');
+}
+
+function caseVolumeBody(entity, d) {
+  if (!isCourtLikeType(entity.type)) {
+    return '<p class="detail-empty-hint">Case volume metrics apply to court-like bodies only.</p>';
+  }
+
+  const cv = d.case_volume || {};
+  const hasNumeric =
+    cv.pending_cases != null
+    || cv.filed_last_year != null
+    || cv.disposed_last_year != null
+    || cv.avg_disposal_days != null;
+
+  let html = '';
+  if (!d.case_volume) {
+    html += `<p class="detail-data-flag data-flag-absent">No case_volume block — structural entity only.</p>`;
+  } else if (!hasNumeric) {
+    html += `<p class="detail-data-flag data-flag-blocked">Blocked on primary source — NJDG district export or court annual report not yet merged.</p>`;
+  }
+
+  const rows = [];
+  if (cv.data_as_of) rows.push(row('Data as of', cv.data_as_of));
+  if (cv.pending_cases != null) rows.push(row('Pending cases (approx.)', String(cv.pending_cases).replace(/\B(?=(\d{3})+(?!\d))/g, ',')));
+  if (cv.filed_last_year != null) rows.push(row('Filed (last year)', String(cv.filed_last_year)));
+  if (cv.disposed_last_year != null) rows.push(row('Disposed (last year)', String(cv.disposed_last_year)));
+  if (cv.disposal_rate != null) rows.push(row('Disposal rate', String(cv.disposal_rate)));
+  if (cv.avg_disposal_days != null) rows.push(row('Avg disposal days', String(cv.avg_disposal_days)));
+  if (cv.sanctioned_strength != null && d.judge_strength?.allotted == null) {
+    rows.push(row('Sanctioned strength (legacy)', String(cv.sanctioned_strength)));
+  }
+  if (cv.working_strength != null && d.judge_strength?.appointed == null) {
+    rows.push(row('Working strength (legacy)', String(cv.working_strength)));
+  }
+  if (cv.clog_severity) rows.push(row('Clog severity', `<span class="clog-severity clog-${String(cv.clog_severity).toLowerCase()}">${cv.clog_severity}</span>`));
+  if (cv.source_type) rows.push(row('Volume source type', cv.source_type));
+  if (cv.source_url) {
+    rows.push(`<div class="detail-row"><span class="lbl">Volume source</span><span><a href="${cv.source_url}" target="_blank" rel="noopener noreferrer">${cv.source_url}</a></span></div>`);
+  }
+
+  if (!rows.length && !html) {
+    return '<p class="detail-empty-hint">Case volume block present but all fields are null.</p>';
+  }
+  return html + rows.join('');
+}
+
+function dataCompletenessBanner(entity, d) {
+  if (entity.role_layer || entity.cluster === 'people_roles') {
+    return `<div class="detail-data-flag data-flag-role">Role archetype — no numerics or named individuals; toggle People/Roles lens to show on map.</div>`;
+  }
+
+  const flags = [];
+  const courtLike = isCourtLikeType(entity.type);
+  const js = d.judge_strength || {};
+  const cv = d.case_volume || {};
+  const cvPopulated = cv.pending_cases != null || cv.filed_last_year != null;
+
+  if (courtLike) {
+    if (!d.judge_strength) flags.push('judge strength block missing');
+    else if (js.allotted == null && js.appointed == null) flags.push('judge strength stub (null allotted/appointed)');
+    if (!cvPopulated) flags.push('case volume absent or null');
+  }
+
+  if (entity.data_quality === 'unverified') {
+    flags.push('structural fields unverified');
+  }
+  if (entity.data_quality === 'contested') {
+    flags.push('contested data — see sources');
+  }
+
+  if (entityHasSpilloverContent(entity)) {
+    flags.push(spilloverSummaryText(entity));
+  }
+
+  const cvClog = cv.clog_severity;
+  if (cvClog && ['critical', 'high'].includes(String(cvClog).toLowerCase())) {
+    flags.push(`case clog: ${cvClog}`);
+  }
+
+  if (!flags.length) return '';
+
+  const chips = flags.map((f) => `<span class="data-flag-chip">${f}</span>`).join('');
+  return `<div class="detail-data-summary">${chips}</div>`;
 }
 
 function qualityIcon(dq) {

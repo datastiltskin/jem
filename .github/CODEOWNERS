@@ -1,11 +1,11 @@
 # JEM — code owners (CODEOWNERS)
 # Enable: Settings → Branches → main → Require review from Code Owners
 
-/jem/data/                    @dso6060 @Prajna1999
-/jem/scripts/                 @dso6060 @Prajna1999
-/jem/web/                     @dso6060 @Prajna1999
-/jem/docs/                    @dso6060 @Prajna1999
-/.github/                     @dso6060 @Prajna1999
-/graph.json                   @dso6060 @Prajna1999
-/README.md                    @dso6060 @Prajna1999
-/MASTER_CHECKLIST.md          @dso6060 @Prajna1999
+/jem/data/                    @dso6060 @Prajna1999 @agriyakhetarpal
+/jem/scripts/                 @dso6060 @Prajna1999 @agriyakhetarpal
+/jem/web/                     @dso6060 @Prajna1999 @agriyakhetarpal
+/jem/docs/                    @dso6060 @Prajna1999 @agriyakhetarpal
+/.github/                     @dso6060 @Prajna1999 @agriyakhetarpal
+/graph.json                   @dso6060 @Prajna1999 @agriyakhetarpal
+/README.md                    @dso6060 @Prajna1999 @agriyakhetarpal
+/MASTER_CHECKLIST.md          @dso6060 @Prajna1999 @agriyakhetarpal

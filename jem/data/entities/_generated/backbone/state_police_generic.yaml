@@ -31,6 +31,10 @@ structural_gap:
     gap_source: State Police Acts (generic); JEM gap registry review Jun 2026
     gap_since_year: 1950
     gap_status: Open
+    gap_resolution_note: >-
+      No all-India statutory mandate for HC judge security in State Police Acts;
+      provisioning remains via state executive orders and High Court administrative
+      directions — closing requires state legislation or uniform central protocol.
 data_quality: partial
 data_quality_notes: Generic placeholder for state police forces under respective State Police Acts. Prior README claim of
   "active litigation 2024–25" removed — no primary case citation verified in Pass 4 audit.

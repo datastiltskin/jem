@@ -1,0 +1,22 @@
+# jem/data/entities/people_roles/role_family_court_judge.yaml
+id: role_family_court_judge
+name: Family Court Judge (role archetype)
+type: JudicialOfficerRole
+cluster: people_roles
+role_layer: true
+role_type: JudicialOfficer
+level_of_government: State
+jurisdiction_scope:
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Family Courts Act 1984, Section 4
+data_quality: partial
+data_quality_notes: Distinct appointment criteria from general district judiciary.
+  Numerics (judge_strength, case_volume) not applicable to role archetypes.
+sources:
+- label: Family Courts Act 1984, Section 4
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-24'

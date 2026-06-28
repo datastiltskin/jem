@@ -3,15 +3,15 @@
 
 import { State } from './state.js';
 import { getProfileSections } from './panel.js';
+import { balanceProfileColumns } from './profileLayout.js';
 import { commentsHTML, wireComments } from './comments.js';
 
-const LEFT_PROFILE_KEYS  = new Set(['lifecycle', 'parent_hc', 'judges', 'appointment', 'funding']);
-const RIGHT_PROFILE_KEYS = new Set(['audit', 'complaint', 'gaps', 'sources']);
-
-// Mobile tab bucketing — used only at ≤900px via CSS. On desktop every
-// section renders side-by-side as before.
 const SECTION_TAB_MAP = {
   lifecycle:   'setup',
+  jurisdiction_scope: 'setup',
+  jurisdiction_circuit: 'setup',
+  jurisdiction_routing: 'setup',
+  jurisdiction_routes: 'setup',
   parent_hc:   'setup',
   judges:      'setup',
   appointment: 'setup',
@@ -24,14 +24,22 @@ const SECTION_TAB_MAP = {
 
 function renderProfileWidget(s) {
   const tab = SECTION_TAB_MAP[s.key] || 'setup';
+  const collapsed = s.key === 'jurisdiction_routes' || s.key === 'judges';
+  const openAttr = collapsed ? '' : ' open';
   return `
-    <details class="dv-section dv-tab-${tab}"${s.defaultOpen ? ' open' : ''}>
+    <details class="dv-section dv-tab-${tab}"${openAttr}>
       <summary><span>${s.title}</span></summary>
       <div class="dv-section-body">${s.body}</div>
     </details>
   `;
 }
-import { getAppellateUpstream, getAppellateDownstream } from './entityConnections.js';
+import { getAppellateChainForEntity } from './entityConnections.js';
+import { printBrandBlock } from './brand.js';
+import { scoreTip } from './scoreHelp.js';
+import {
+  shouldShowStructuralScores,
+  structuralScoresHiddenMessage,
+} from './scoreDisplay.js';
 
 const RISK_COLORS = {
   low:      '#16a34a',
@@ -199,13 +207,55 @@ function renderFusedBreakdown(irBd, dpBd, irColor) {
 // ── Case volume ───────────────────────────────────────────────────────────────
 
 // ── "Where this fits" — appellate chain strip ────────────────────────────────
-// Renders 2-hop upstream + 2-hop downstream from the focal entity as a horizontal
-// breadcrumb. Each node is clickable → opens its detail. Hidden when the focal
-// entity has no appellate edges.
+// Renders upstream + downstream from the focal entity as a horizontal breadcrumb.
+// Generic / aggregate / placeholder rows are excluded. Each node is clickable.
+const APPELLATE_HIGHER_LABEL = 'higher courts or court-like';
+const APPELLATE_LOWER_LABEL = 'lower courts or court-like';
+
+function appellateCountSuffix(n) {
+  return n > 2 ? ` (${n})` : '';
+}
+
+function appellateChainHint(upCount, downCount) {
+  return `${APPELLATE_HIGHER_LABEL}${appellateCountSuffix(upCount)} ← → ${APPELLATE_LOWER_LABEL}${appellateCountSuffix(downCount)}`;
+}
+
+function renderAppellateExportList(entity, upstream, downstream, upCount, downCount) {
+  const item = (id) => {
+    const e = State.getEntityById(id);
+    if (!e) return '';
+    const abbr = e.abbreviation && e.abbreviation !== e.name ? ` (${e.abbreviation})` : '';
+    return `<li>${e.name}${abbr}</li>`;
+  };
+  const upFlat = [...upstream].reverse().flat();
+  const downFlat = downstream.flat();
+
+  const block = (title, count, ids) => {
+    if (!ids.length) return '';
+    return `
+      <div class="wtf-export-block">
+        <div class="wtf-export-title">${title} (${count})</div>
+        <ol class="wtf-export-ol">${ids.map(item).join('')}</ol>
+      </div>
+    `;
+  };
+
+  const focalAbbr = entity.abbreviation && entity.abbreviation !== entity.name
+    ? ` (${entity.abbreviation})`
+    : '';
+
+  return `
+    <div class="wtf-export-list" aria-hidden="true">
+      ${block(APPELLATE_HIGHER_LABEL, upCount, upFlat)}
+      <div class="wtf-export-focal"><strong>${entity.name}</strong>${focalAbbr} — focal entity</div>
+      ${block(APPELLATE_LOWER_LABEL, downCount, downFlat)}
+    </div>
+  `;
+}
+
 function renderAppellateChainStrip(entity) {
-  const upstream = getAppellateUpstream(entity.id, 3);   // higher courts
-  const downstream = getAppellateDownstream(entity.id, 3); // lower courts
-  if (!upstream.length && !downstream.length) return '';
+  const { upstream, downstream, upCount, downCount, hasEdges } = getAppellateChainForEntity(entity.id);
+  if (!hasEdges) return '';
 
   const nodeChip = (id, focal = false) => {
     const e = State.getEntityById(id);
@@ -214,9 +264,8 @@ function renderAppellateChainStrip(entity) {
     return `<button type="button" class="wtf-node${focal ? ' wtf-node-focal' : ''}" data-entity-id="${id}" title="${(e.name || '').replace(/"/g, '&quot;')}">${label}</button>`;
   };
 
-  const tierGroup = (tier) => `<span class="wtf-tier">${tier.map(id => nodeChip(id)).join('<span class="wtf-sib-sep">·</span>')}</span>`;
+  const tierGroup = (tier) => `<span class="wtf-tier">${tier.map((id) => nodeChip(id)).join('<span class="wtf-sib-sep">·</span>')}</span>`;
 
-  // Render highest tier first (so upstream chain reads left → right going DOWN to focal).
   const upChain = [...upstream].reverse().map(tierGroup);
   const downChain = downstream.map(tierGroup);
 
@@ -231,11 +280,12 @@ function renderAppellateChainStrip(entity) {
     <div class="wtf-card">
       <div class="wtf-head">
         <span class="wtf-label">Appellate chain — where this fits</span>
-        <span class="wtf-hint">higher courts ← → lower courts</span>
+        <span class="wtf-hint">${appellateChainHint(upCount, downCount)}</span>
       </div>
       <div class="wtf-strip">
         ${parts.join(arrow)}
       </div>
+      ${renderAppellateExportList(entity, upstream, downstream, upCount, downCount)}
     </div>
   `;
 }
@@ -802,52 +852,67 @@ function buildEntityWorkbookSheets(entity) {
     ],
   });
 
+  const js = det.jurisdiction_scope || entity.jurisdiction_scope;
+  if (js && typeof js === 'object') {
+    const rows = [
+      ['is_all_india', js.is_all_india ?? ''],
+      ['states_covered', Array.isArray(js.states_covered) ? js.states_covered.join(', ') : ''],
+      ['uts_covered', Array.isArray(js.uts_covered) ? js.uts_covered.join(', ') : ''],
+      ['is_shared_multi', js.is_shared_multi ?? ''],
+      ['shared_appointer', js.shared_appointer || ''],
+      ['jurisdiction_types', Array.isArray(js.jurisdiction_types) ? js.jurisdiction_types.join(', ') : ''],
+    ].filter(([, v]) => v !== '' && v !== undefined && v !== null);
+    if (rows.length) sheets.push({ name: 'Jurisdiction', aoa: [['Field', 'Value'], ...rows] });
+  }
+
   // ── Scores ──
-  sheets.push({
-    name: 'Scores',
-    aoa: [
-      ['Score', 'Value', 'Level'],
-      ['Structural Health', d.structural_health_score ?? '', d.structural_health_level || ''],
-      ['Independence Risk', d.independence_risk_score ?? '', d.independence_risk_level || ''],
-      ['Discretionary Power', d.discretionary_power_score ?? '', ''],
-      ['scores_validated', d.scores_validated ?? '', ''],
-    ],
-  });
+  if (shouldShowStructuralScores(entity)) {
+    sheets.push({
+      name: 'Scores',
+      aoa: [
+        ['Score', 'Value', 'Level'],
+        ['Structural Health', d.structural_health_score ?? '', d.structural_health_level || ''],
+        ['Independence Risk', d.independence_risk_score ?? '', d.independence_risk_level || ''],
+        ['Discretionary Power', d.discretionary_power_score ?? '', ''],
+        ['scores_validated', d.scores_validated ?? '', ''],
+      ],
+    });
+  }
 
   // ── Health contributions ──
-  const hBd = d.structural_health_breakdown;
-  if (hBd && Object.keys(hBd).length) {
-    sheets.push({
-      name: 'Health Contributions',
-      aoa: [
-        ['Contribution', 'Risk weight (subtracted from 1.0)'],
-        ...Object.entries(hBd).map(([k, v]) => [k, typeof v === 'number' ? +v.toFixed(3) : v]),
-      ],
-    });
-  }
+  if (shouldShowStructuralScores(entity)) {
+    const hBd = d.structural_health_breakdown;
+    if (hBd && Object.keys(hBd).length) {
+      sheets.push({
+        name: 'Health Contributions',
+        aoa: [
+          ['Contribution', 'Risk weight (subtracted from 1.0)'],
+          ...Object.entries(hBd).map(([k, v]) => [k, typeof v === 'number' ? +v.toFixed(3) : v]),
+        ],
+      });
+    }
 
-  // ── IR factors ──
-  const irBd = d.independence_risk_breakdown;
-  if (irBd && Object.keys(irBd).length) {
-    sheets.push({
-      name: 'IR Factors',
-      aoa: [
-        ['Factor', 'Points'],
-        ...Object.entries(irBd).sort((a, b) => b[1] - a[1]),
-      ],
-    });
-  }
+    const irBd = d.independence_risk_breakdown;
+    if (irBd && Object.keys(irBd).length) {
+      sheets.push({
+        name: 'IR Factors',
+        aoa: [
+          ['Factor', 'Points'],
+          ...Object.entries(irBd).sort((a, b) => b[1] - a[1]),
+        ],
+      });
+    }
 
-  // ── DP factors ──
-  const dpBd = d.discretionary_power_breakdown;
-  if (dpBd && Object.keys(dpBd).length) {
-    sheets.push({
-      name: 'DP Factors',
-      aoa: [
-        ['Factor', 'Points'],
-        ...Object.entries(dpBd).sort((a, b) => b[1] - a[1]),
-      ],
-    });
+    const dpBd = d.discretionary_power_breakdown;
+    if (dpBd && Object.keys(dpBd).length) {
+      sheets.push({
+        name: 'DP Factors',
+        aoa: [
+          ['Factor', 'Points'],
+          ...Object.entries(dpBd).sort((a, b) => b[1] - a[1]),
+        ],
+      });
+    }
   }
 
   // ── Appointment ──
@@ -1042,7 +1107,7 @@ export function renderDetailView(entityId, fromEntityId = null) {
   const healthLevel = derived.structural_health_level || State.structuralHealthBand?.(healthScore);
   const healthColors = State.getStructuralHealthColors?.() || {};
   const healthColor = healthLevel ? (healthColors[healthLevel] || '#888') : '#888';
-  const isScoreExcluded = score == null && dpScore == null && healthScore == null;
+  const showScores = shouldShowStructuralScores(entity);
   const isNotValidated = derived.scores_validated === false;
 
   const prevEntityId = _historyStack[_historyStack.length - 1];
@@ -1058,11 +1123,13 @@ export function renderDetailView(entityId, fromEntityId = null) {
   const healthLabel = healthLevel ? HEALTH_LEVEL_LABELS[healthLevel] || healthLevel : null;
 
   const profileSections = getProfileSections(entity);
-  const leftProfileHTML  = profileSections.filter(s => LEFT_PROFILE_KEYS.has(s.key)).map(renderProfileWidget).join('');
-  const rightProfileHTML = profileSections.filter(s => RIGHT_PROFILE_KEYS.has(s.key)).map(renderProfileWidget).join('');
+  const { left: leftSections, right: rightSections } = balanceProfileColumns(profileSections);
+  const leftProfileHTML  = leftSections.map(renderProfileWidget).join('');
+  const rightProfileHTML = rightSections.map(renderProfileWidget).join('');
 
   container.innerHTML = `
     <div class="dv-inner">
+      ${printBrandBlock()}
       <div class="dv-nav">
         <button class="dv-back-btn" id="dv-back">${backLabel}</button>
         <span class="dv-breadcrumb">${CLUSTER_LABELS[entity.cluster] || entity.cluster || ''}</span>
@@ -1083,11 +1150,11 @@ export function renderDetailView(entityId, fromEntityId = null) {
         <div class="dv-mobile-identity">
           <h1 class="dv-name dv-name-mobile">${entity.name}</h1>
           ${statusPill(entity)}
-          ${!isScoreExcluded ? `
+          ${showScores ? `
             <div class="dv-mobile-health" style="--h-color:${healthColor}">
               <div class="dv-mobile-health-num">${healthScore != null ? healthScore.toFixed(2) : '—'}</div>
               <div class="dv-mobile-health-meta">
-                <div class="dv-mobile-health-label">Structural health</div>
+                <div class="dv-mobile-health-label">Structural health ${scoreTip('structural_health')}</div>
                 ${healthLabel ? `<div class="dv-mobile-health-band">${healthLabel.toUpperCase()}</div>` : ''}
               </div>
             </div>
@@ -1098,7 +1165,7 @@ export function renderDetailView(entityId, fromEntityId = null) {
           <button type="button" class="dv-tab-btn active" role="tab" data-dv-tab="activity" aria-selected="true">Activity</button>
           <button type="button" class="dv-tab-btn" role="tab" data-dv-tab="setup" aria-selected="false">Profile</button>
           <button type="button" class="dv-tab-btn" role="tab" data-dv-tab="network" aria-selected="false">Relationships</button>
-          <button type="button" class="dv-tab-btn" role="tab" data-dv-tab="score" aria-selected="false">Score</button>
+          ${showScores ? '<button type="button" class="dv-tab-btn" role="tab" data-dv-tab="score" aria-selected="false">Score</button>' : ''}
         </nav>
       </div>
 
@@ -1118,15 +1185,15 @@ export function renderDetailView(entityId, fromEntityId = null) {
             ${entity.created_year ? `<span class="dv-year">Est. ${entity.created_year}</span>` : ''}
           </div>
 
-          ${isScoreExcluded ? `
-            <div class="dv-no-score dv-tab-score">Structural scores not computed for this entity type (governance anchor).</div>
+          ${!showScores ? `
+            <div class="dv-no-score dv-tab-score">${structuralScoresHiddenMessage(entity)}</div>
           ` : `
             <!-- 1. Summary score card (sticky, not collapsible) -->
             <div class="summary-score-card dv-tab-score" style="--h-color:${healthColor}">
               <div class="health-hero-top">
                 <div class="health-hero-num">${healthScore != null ? healthScore.toFixed(2) : '—'}</div>
                 <div class="health-hero-meta">
-                  <div class="health-hero-label">STRUCTURAL HEALTH INDICATOR</div>
+                  <div class="health-hero-label">STRUCTURAL HEALTH INDICATOR ${scoreTip('structural_health')}</div>
                   ${healthLabel ? `<div class="health-hero-band">${healthLabel.toUpperCase()}</div>` : ''}
                 </div>
               </div>
@@ -1143,7 +1210,7 @@ export function renderDetailView(entityId, fromEntityId = null) {
                   ${score != null ? `
                     <div class="constituent-block">
                       <div class="constituent-head">
-                        <span class="constituent-name">Independence Risk</span>
+                        <span class="constituent-name">Independence Risk ${scoreTip('independence_risk')}</span>
                         <span class="constituent-score" style="color:${RISK_COLORS[level] || '#888'}">${score} · ${(level || '').toUpperCase()}</span>
                       </div>
                       <div class="constituent-bar"><div class="constituent-fill" style="width:${Math.min(100, (score / 15) * 100)}%;background:${RISK_COLORS[level] || '#888'}"></div></div>
@@ -1157,7 +1224,7 @@ export function renderDetailView(entityId, fromEntityId = null) {
                   ${dpScore != null ? `
                     <div class="constituent-block">
                       <div class="constituent-head">
-                        <span class="constituent-name">Discretionary Power</span>
+                        <span class="constituent-name">Discretionary Power ${scoreTip('discretionary_power')}</span>
                         <span class="constituent-score" style="color:#6366f1">${dpScore}</span>
                       </div>
                       <div class="constituent-bar"><div class="constituent-fill" style="width:${Math.min(100, (dpScore / 20) * 100)}%;background:#6366f1"></div></div>
@@ -1190,7 +1257,7 @@ export function renderDetailView(entityId, fromEntityId = null) {
           ${renderCaseVolume(detail.case_volume) ? `
             <details class="dv-section dv-tab-activity" open>
               <summary>
-                <span>Case volume & clog</span>
+                <span>Case volume &amp; clog ${scoreTip('clog_severity')}</span>
                 <span class="dv-section-summary-stats">${renderCaseVolumeSummary(detail.case_volume)}</span>
               </summary>
               <div class="dv-section-body">${renderCaseVolume(detail.case_volume)}</div>
@@ -1320,15 +1387,28 @@ export function renderDetailView(entityId, fromEntityId = null) {
   });
 
   // ── Wire PDF export ─────────────────────────────────────────────────────────
-  // The profile section is already open by default and the map is excluded from print
-  // via @media print rules in main.css (.jem-print-detail body class).
   container.querySelector('#dv-export-pdf')?.addEventListener('click', () => {
+    const detailView = document.getElementById('detail-view');
+    const reopened = [];
+    // Expand profile sections only — not score ? tooltips (details.score-tip).
+    detailView?.querySelectorAll('details.dv-section, details.constituent-bd').forEach((el) => {
+      if (!el.open) reopened.push(el);
+      el.setAttribute('open', '');
+    });
+    detailView?.querySelectorAll('details.score-tip[open]').forEach((el) => {
+      el.removeAttribute('open');
+    });
+
     document.body.classList.add('jem-print-detail');
-    const done = () => {
+    const cleanup = () => {
       document.body.classList.remove('jem-print-detail');
-      window.removeEventListener('afterprint', done);
+      reopened.forEach((el) => el.removeAttribute('open'));
+      window.removeEventListener('afterprint', cleanup);
+      window.removeEventListener('beforeprint', ensurePrintClass);
     };
-    window.addEventListener('afterprint', done);
+    const ensurePrintClass = () => document.body.classList.add('jem-print-detail');
+    window.addEventListener('beforeprint', ensurePrintClass);
+    window.addEventListener('afterprint', cleanup);
     window.print();
   });
 

@@ -174,6 +174,58 @@ export function getAppellateDownstream(entityId, maxHops = 3) {
   return tiers;
 }
 
+const APPELLATE_CHAIN_MAX_HOPS = 64;
+
+/** Map collapse / generic rows — not individual institutions (see lattice README). */
+export function isAggregateOrGenericEntity(e) {
+  if (!e) return true;
+  if (e._jemSyntheticAggregate) return true;
+  const id = e.id || '';
+  if (id.endsWith('_generic') || /_generic$/.test(id)) return true;
+  const name = e.name || '';
+  if (/\(remaining districts\)|\(consolidated\)|\(Generic\)|\(generic\)|\(aggregate\)|\(collapsed/i.test(name)) {
+    return true;
+  }
+  if (/—\s*Generic\b/i.test(name)) return true;
+  return false;
+}
+
+function filterConcreteEntityIds(ids) {
+  return ids.filter((id) => {
+    const e = State.getEntityById(id);
+    return e && !isAggregateOrGenericEntity(e);
+  });
+}
+
+export function filterAppellateTiers(tiers) {
+  return tiers
+    .map((tier) => filterConcreteEntityIds(tier))
+    .filter((tier) => tier.length > 0);
+}
+
+function entityHasAppellateEdges(entityId) {
+  const { out, incoming } = _appellateAdjacency();
+  return Boolean((out.get(entityId)?.length) || (incoming.get(entityId)?.length));
+}
+
+/**
+ * Full appellate chain for profile strip / export: concrete entities only,
+ * generic / aggregate / placeholder rows excluded.
+ */
+export function getAppellateChainForEntity(entityId, maxHops = APPELLATE_CHAIN_MAX_HOPS) {
+  const upstream = filterAppellateTiers(getAppellateUpstream(entityId, maxHops));
+  const downstream = filterAppellateTiers(getAppellateDownstream(entityId, maxHops));
+  const upIds = [...new Set(upstream.flat())];
+  const downIds = [...new Set(downstream.flat())];
+  return {
+    upstream,
+    downstream,
+    upCount: upIds.length,
+    downCount: downIds.length,
+    hasEdges: entityHasAppellateEdges(entityId),
+  };
+}
+
 /**
  * Build the full appellate hierarchy as ordered tiers, where tier 0 are roots
  * (no outgoing appellate edges = top of chain, e.g. Supreme Court).

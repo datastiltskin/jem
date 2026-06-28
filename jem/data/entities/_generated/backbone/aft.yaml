@@ -58,18 +58,21 @@ case_volume:
   disposal_rate: 0.8211
   clog_severity: critical
 judge_strength:
-  data_as_of: null
-  allotted: null
-  appointed: null
+  data_as_of: '2026-03-30'
+  allotted: 34
+  appointed: 23
+  vacancy_count: 11
   source_type: DoJ_Report
-  source_url: https://aft.gov.in/
-  notes: Multiple Regional Benches (Principal Bench Delhi + 8 regional benches). Total sanctioned and working member strength
-    not verified at authoring time.
+  source_url: https://doj.gov.in/report-and-committees/judicial-vacancy-reports
+  notes: >-
+    Rajya Sabha reply (MoS Defence Sanjay Seth, 30 Mar 2026): 11 of 34 member
+    posts vacant nationally; bench-level breakdown in gap aft_bench_vacancies_mar2026.
+    case_volume.working_strength (19) may reflect older principal-bench snapshot.
 structural_gap:
   flag: true
   gaps:
   - gap_id: aft_no_hc_appeal
-    gap_type: Appellate_Gap
+    gap_type: Appellate_Vacuum
     gap_severity: Critical
     gap_description: >-
       No High Court appeal path — appeals lie directly to Supreme Court under
@@ -77,8 +80,11 @@ structural_gap:
     gap_source: Armed Forces Tribunal Act 2007 s.30
     gap_since_year: 2009
     gap_status: Open
+    gap_resolution_note: >-
+      Direct SC appeal under AFT Act 2007 s.30 is statutory design — closing
+      this gap requires legislative amendment to insert an HC appellate tier.
   - gap_id: aft_mod_appointer_litigant
-    gap_type: Circularity
+    gap_type: Circularity_Gap
     gap_severity: High
     gap_description: >-
       Ministry of Defence nominates members, funds the tribunal, and is the
@@ -86,8 +92,12 @@ structural_gap:
     gap_source: AFT Act 2007; MoD as primary funder and nominating authority
     gap_since_year: 2009
     gap_status: Open
+    gap_resolution_note: >-
+      Structural under AFT Act 2007 — MoD nominates members and is respondent
+      in service litigation; reform requires statutory change to appointment
+      and funding architecture.
   - gap_id: aft_bench_vacancies_mar2026
-    gap_type: Capacity_Gap
+    gap_type: Appointment_Gap
     gap_severity: High
     gap_description: >-
       Bench-by-bench vacancies (Rajya Sabha, Mar 2026): Jabalpur, Guwahati,
@@ -97,6 +107,22 @@ structural_gap:
     gap_source: MoS Defence Sanjay Seth, Rajya Sabha reply, 30 Mar 2026
     gap_since_year: 2026
     gap_status: Open
+    gap_resolution_note: >-
+      Vacant member posts filled via Central Government appointments under
+      AFT Act 2007 ss.6–7 on MoD recommendation; monitor DoJ tribunal vacancy
+      reports and Rajya Sabha/Lok Sabha replies for bench-wise updates.
+    gap_spillover:
+    - affected_body: supreme_court_india
+      spillover_type: appellate_backlog
+      metric_note: >-
+        AFT appeals lie directly to SC (s.30); Rajya Sabha reply (Mar 2026)
+        cited ~11,097 pending AFT cases nationally while multiple regional
+        benches had full member vacancies — disposal delays push service-matter
+        appeals to the SC docket rather than HC writ forums.
+      source_url: https://www.thehindu.com/news/national/armed-forces-tribunal-faces-11097-pending-cases-vacancies-across-benches-raise-concern/article70803376.ece
+      source_label: The Hindu — Rajya Sabha AFT pendency reply, Mar 2026
+      data_as_of: '2026-03-30'
+      spillover_data_quality: partial
 data_quality: partial
 data_quality_notes: 'Entity created from statutory sources. Bench lattice: 11 locations (Principal Bench New Delhi + 10 regional benches) but 15 sitting courts total — Delhi, Chandigarh, and Lucknow each have 3 courts; other regional benches have 1 court each (PIB 2009; aftdelhi.nic.in). README shorthand AFT×11 = 11 location entities, not 15 courts. Note: AFT appeals go directly to the Supreme Court (AFT Act 2007, s.30) — NOT to High Courts. Member vacancy is bench-specific; no verified aggregate vacancy percentage — do not cite a single %. NJDG snapshot case_volume merged v1.2 judge_strength stub attached'
 sources:

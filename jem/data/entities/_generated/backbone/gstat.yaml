@@ -69,16 +69,59 @@ structural_gap:
   flag: true
   gaps:
   - gap_id: gstat_partial_operational
-    gap_type: Institutional_Gap
+    gap_type: Appointment_Gap
     gap_severity: Critical
     gap_description: >-
       Principal Bench constituted (Sep 2023); President appointed May 2024;
-      GSTAT Procedure Rules 2025 in force. State bench member appointments
-      remain incomplete; GST appeals still pending at High Courts (~8,100+
-      per Procedure Rules notification — figure contested by source).
-    gap_source: GSTAT Procedure Rules 2025 notification (24 Apr 2025); CBIC/GSTAT establishment notifications
+      GSTAT Procedure Rules 2025 in force. MoF Dept of Revenue Office Order
+      03/2025 (26 Dec 2025) allotted benches to 83 appointed judicial/technical
+      members with join-by 21 Jan 2026; nationwide hearings phased through 2026.
+      Some state benches may still lack courtrooms/infrastructure; transitional
+      HC writ/s.112 routes persist where benches are not yet functional.
+    gap_source: GSTAT Procedure Rules 2025 (G.S.R. 256(E)); MoF S.O. 3568(E) Sep 2023; CBIC/GSTAT establishment notifications
     gap_since_year: 2017
     gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      No fixed statutory deadline for full operationalisation. Bench-location
+      notification S.O. 1559(E) (6 Apr 2023); 83 members appointed and bench-allotted
+      via Office Order 03/2025 (26 Dec 2025). GSTAT transitional order 17 Sep 2025
+      (S.O. 4220(E)) opened filing to 30 Jun 2026 for pre-01 Apr 2026 orders.
+      Monitor efiling.gstat.gov.in and Gazette for bench-wise hearing commencement.
+    gap_spillover:
+    - affected_body: high_courts_all
+      spillover_type: writ_load
+      metric_note: >-
+        Before GSTAT was constituted, taxpayers approached High Courts under
+        Article 226 for relief from GST demands/recoveries when no tribunal
+        forum existed; tax commentary cites CBIC Compliance Audit reporting
+        8,100+ pending GST appeals (2,800+ over one year) as context for
+        G.S.R. 256(E) Procedure Rules 2025 — primary CBIC audit URL not
+        independently verified in JEM audit.
+      source_url: https://timesofindia.indiatimes.com/business/india-business/a-game-changer-for-taxpayers-gst-appellate-tribunal-rules-notified-all-you-need-to-know/articleshow/120651485.cms
+      source_label: Times of India — GSTAT Procedure Rules 2025 (Khaitan & Co. quote citing CBIC Compliance Audit)
+      data_as_of: '2025-04-24'
+      spillover_data_quality: partial
+    - affected_body: hc_delhi
+      spillover_type: writ_load
+      metric_note: >-
+        Delhi HC declined writ in Mahanadi Exporttek (W.P.(C) 2025) where
+        petitioner challenged GST refund rejection — held GSTAT operational
+        with virtual hearings and relegated petitioner to s.112 appeal.
+      source_url: https://taxguru.in/goods-and-service-tax/delhi-hc-refuses-gst-refund-writ-effective-statutory-appeal-gstat.html
+      source_label: Delhi HC — Mahanadi Exporttek Pvt Ltd v. Union (tax commentary)
+      data_as_of: '2025-08-22'
+      spillover_data_quality: partial
+    - affected_body: hc_telangana
+      spillover_type: writ_load
+      metric_note: >-
+        Telangana HC declined writ in Upakar Infra Projects (W.P. 509/2026);
+        petitioner had filed writ because GSTAT was not constituted earlier;
+        Court held efficacious s.112 remedy now available and directed appeal
+        to GSTAT with statutory pre-deposit.
+      source_url: https://taxguru.in/goods-and-service-tax/telangana-hc-refuses-writ-gstat-functional-appeals.html
+      source_label: Telangana HC — M/s Upakar Infra Projects v. Commissioner (tax commentary)
+      data_as_of: '2026-03-09'
+      spillover_data_quality: partial
 data_quality: partial
 data_quality_notes: 'Structural_gap: CRITICAL (partial operationalisation). GSTAT Principal Bench established 1 September
   2023; President appointed 3 May 2024 (ACC); GSTAT Procedure Rules 2025 notified 24 April 2025. Tribunal is partially functional
@@ -119,14 +162,26 @@ sources:
   url: https://efiling.gstat.gov.in/downloads/manual/Procedure_Rules.pdf
   type: GazetteNotification
   accessed_date: '2026-06-17'
+- label: MoF S.O. 4220(E) — transitional GSTAT filing window to 30 Jun 2026
+  url: https://egazette.gov.in/
+  type: GazetteNotification
+  accessed_date: '2026-06-26'
+- label: MoF Dept of Revenue Office Order 03/2025 — bench allotment to 83 GSTAT members
+  url: https://efiling.gstat.gov.in/
+  type: GazetteNotification
+  accessed_date: '2026-06-26'
 - label: ACC appoints Justice Sanjaya Kumar Mishra as GSTAT President — Economic Times, 3 May 2024
   url: https://economictimes.indiatimes.com/news/economy/policy/centre-approves-appointment-of-sanjaya-kumar-mishra-as-president-gstat/articleshow/109807255.cms
   type: OfficialReport
   accessed_date: '2026-06-17'
 judge_strength:
-  data_as_of: null
+  data_as_of: '2025-12-26'
   allotted: null
-  appointed: null
+  appointed: 83
+  vacancy_count: null
   source_type: Tribunal_Report
-  source_url: https://doj.gov.in/
-  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+  source_url: https://efiling.gstat.gov.in/
+  notes: >-
+    83 judicial/technical members bench-allotted under MoF Dept of Revenue Office
+    Order 03/2025 (26 Dec 2025); President appointed separately May 2024. Sanctioned
+    post aggregate across 31 state benches not published — allotted left null.

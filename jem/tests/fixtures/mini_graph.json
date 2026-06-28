@@ -1,0 +1,1827 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-06-22T13:46:18.077561+00:00",
+    "entity_count": 9,
+    "relationship_count": 20,
+    "canvas_width": 1800,
+    "canvas_height": 1200,
+    "year_range": [
+      1950,
+      2026
+    ],
+    "fixture": true
+  },
+  "entities": [
+    {
+      "id": "supreme_court_india",
+      "name": "Supreme Court of India",
+      "aliases": [
+        "Apex Court",
+        "The Supreme Court"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Original",
+          "Appellate",
+          "Writ",
+          "Advisory"
+        ]
+      },
+      "name_hindi": "\u092d\u093e\u0930\u0924 \u0915\u093e \u0909\u091a\u094d\u091a\u0924\u092e \u0928\u094d\u092f\u093e\u092f\u093e\u0932\u092f",
+      "abbreviation": "SC",
+      "type": "ConstitutionalCourt",
+      "cluster": "constitutional_courts",
+      "level_of_government": "Central",
+      "created_year": 1950,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": "Constitution of India, Articles 124\u2013147",
+      "statutory_basis": null,
+      "data_quality": "verified",
+      "data_quality_notes": "NJDG snapshot case_volume merged",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type ConstitutionalCourt": 4,
+          "Controls own case listing and bench composition (no statutory rule)": 2,
+          "Entity-specific documented extra-statutory discretion": 5,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 14,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Complainant has no locus in the inquiry process": 1,
+          "Complaint process is not public/transparent": 1,
+          "Constitutional basis (harder to politicise) (deduction)": -2,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "No publicly stated appointment criteria": 1,
+          "Removal requires Parliamentary process (deduction)": -1
+        },
+        "independence_risk_level": "moderate",
+        "independence_risk_score": 3,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.54,
+          "discretionary_power_penalty": 0.7,
+          "final_structural_health": 0.54,
+          "independence_risk_penalty": 0.3,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "at_risk",
+        "structural_health_score": 0.54
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Constitution of India \u2014 Articles 124-147",
+          "url": "https://india-code.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf",
+          "type": "Constitution",
+          "accessed_date": "2025-04-01"
+        },
+        {
+          "label": "Supreme Court of India \u2014 Official Website",
+          "url": "https://main.sci.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2025-04-01"
+        },
+        {
+          "label": "eCourts Phase III \u2014 NJDG-SC launch",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1957318",
+          "type": "GazetteNotification",
+          "accessed_date": "2025-04-01"
+        },
+        {
+          "label": "National Judicial Data Grid (NJDG)",
+          "url": "https://njdg.ecourts.gov.in/",
+          "type": "NJDG",
+          "accessed_date": "2024-12-01"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "collegium_sc",
+          "recommends": "collegium_sc",
+          "consulted": [],
+          "consultation_binding": true,
+          "formally_appoints": "president_india",
+          "criteria_public": false,
+          "tenure": "Until age 65 (Article 124(2))",
+          "reappointment_possible": false,
+          "removal_authority": "parliament_both_houses",
+          "removal_requires_parliament": true,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_of_finance",
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "in_house_procedure_sc"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "chief_justice_india",
+              "mechanism": "In-House Procedure (SC Resolution 1999). Complaint to CJI. CJI constitutes 3-judge committee. Report is confidential. Complainant has no locus in inquiry proceedings.\n",
+              "complainant_has_locus": false,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "president_india",
+            "consultation_required_with": "chief_justice_india",
+            "consultation_binding": true
+          },
+          "removal_mechanism": "Impeachment \u2014 Article 124(4). Motion by 100+ LS MPs or 50+ RS MPs. Never successfully completed in Indian history.",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Lokpal ruled in Jan 2025 that it cannot hear complaints against SC judges because the SC is established by Article 124 (Constitution), not an Act of Parliament. SC stayed Lokpal's attempt to assert jurisdiction over HC judges (suo moto, Feb 2025). Status: active litigation.\n",
+          "source": "K. Veeraswami v Union of India (1991) 3 SCC 655; SC In-House Procedure 1999; SC Stay Order Feb 2025 (suo moto)"
+        },
+        "training": {
+          "trained_by": [
+            "national_judicial_academy"
+          ],
+          "induction_training": false,
+          "continuing_education": true,
+          "training_mandatory": false
+        },
+        "digital_infrastructure": {
+          "system_used": [
+            "NJDG_SC",
+            "eCourts_Portal",
+            "SCI_Website"
+          ],
+          "digital_variant": "NIC_Standard",
+          "integrated_with_njdg": true,
+          "integration_notes": "NJDG-SC portal launched in 2023 as part of eCourts Phase III. SC data was the last to be integrated into national NJDG.\n"
+        },
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Original",
+            "Appellate",
+            "Writ",
+            "Advisory"
+          ]
+        },
+        "case_volume": {
+          "data_as_of": "2024-12-01",
+          "sanctioned_strength": 34,
+          "working_strength": 34,
+          "pending_cases": 80000,
+          "filed_last_year": 82000,
+          "disposed_last_year": 68000,
+          "avg_disposal_days": 547,
+          "institution_rate_trend": "rising",
+          "source_url": "https://main.sci.gov.in/case-status",
+          "source_type": "AnnualReport",
+          "disposal_rate": 0.8293,
+          "clog_severity": "high"
+        },
+        "judge_strength": {
+          "data_as_of": "2025-12-24",
+          "allotted": 34,
+          "appointed": 33,
+          "vacancy_count": 1,
+          "source_type": "DoJ_Report",
+          "source_url": "https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/2025/12/202512241943014515.pdf",
+          "notes": "Sanctioned/working/vacancy from row A; no Pmt/Addl split shown for SC"
+        },
+        "parent_hc": null
+      },
+      "position": {
+        "x": 1298,
+        "y": 192
+      }
+    },
+    {
+      "id": "hc_delhi",
+      "name": "High Court of Delhi",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [],
+        "uts_covered": [
+          "DL"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "Original",
+          "Appellate",
+          "Writ"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": "DELH",
+      "type": "ConstitutionalCourt",
+      "cluster": "constitutional_courts",
+      "level_of_government": "UT",
+      "created_year": 1966,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": "Constitution of India, Chapter VI \u2014 High Courts in the States",
+      "statutory_basis": null,
+      "data_quality": "partial",
+      "data_quality_notes": "Pending NJDG-backed pendency and judge_strength fields per bench. NJDG snapshot case_volume merged complaint_mechanism populated from SC In-House Procedure 1999 and SC Stay Order Feb 2025 (suo moto). criminal_prosecution.requires_sanction_from set to governor_state per Veeraswami (1991) for HC judges. lokpal_jurisdiction No per operative Feb 2025 stay; revisit if SC decides finally. audit.conduct_oversight_body set to in_house_procedure_sc (same procedure governs HC judges).",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type ConstitutionalCourt": 4,
+          "Controls own case listing and bench composition (no statutory rule)": 2,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 9,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Complainant has no locus in the inquiry process": 1,
+          "Complaint process is not public/transparent": 1,
+          "Constitutional basis (harder to politicise) (deduction)": -2,
+          "Lokpal has no jurisdiction": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "No publicly stated appointment criteria": 1,
+          "Removal requires Parliamentary process (deduction)": -1
+        },
+        "independence_risk_level": "moderate",
+        "independence_risk_score": 3,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.6,
+          "discretionary_power_penalty": 0.55,
+          "final_structural_health": 0.6,
+          "independence_risk_penalty": 0.3,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "at_risk",
+        "structural_health_score": 0.6
+      },
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "India Code \u2014 Constitution & Acts",
+          "url": "https://india-code.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-05-13"
+        },
+        {
+          "label": "Supreme Court of India",
+          "url": "https://main.sci.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-05-13"
+        },
+        {
+          "label": "National Judicial Data Grid (NJDG)",
+          "url": "https://njdg.ecourts.gov.in/",
+          "type": "NJDG",
+          "accessed_date": "2024-12-01"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "collegium_hc_appointment",
+          "recommends": "collegium_hc_appointment",
+          "consulted": [
+            "governor_state"
+          ],
+          "consultation_binding": true,
+          "formally_appoints": "president_india",
+          "criteria_public": false,
+          "tenure": "Until age 62 (Article 217)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": true,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "in_house_procedure_sc"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "chief_justice_india",
+              "mechanism": "In-House Procedure (SC Resolution 1999, extended to HC judges). Complaint lodged with the Chief Justice of the concerned High Court; if the allegation is against that Chief Justice, complaint filed directly with the CJI. CJI may constitute a 3-judge in-house committee to inquire. Report is confidential. Complainant has no locus in inquiry proceedings.",
+              "complainant_has_locus": false,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "governor_state",
+            "consultation_required_with": "chief_justice_india",
+            "consultation_binding": true
+          },
+          "removal_mechanism": "Address by Parliament \u2014 Article 217(1)(b) read with Article 124(4). Motion by 100+ LS MPs or 50+ RS MPs. No HC judge has been successfully removed in Indian history.",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "SC stayed Lokpal's attempt to assert jurisdiction over HC judges (suo moto, Feb 2025). Lokpal had separately ruled in Jan 2025 that it cannot hear complaints against SC judges (Art 124 basis); the Feb 2025 stay extends the same bar to HC judges. Status: active litigation, but operative bar currently in place.",
+          "source": "K. Veeraswami v Union of India (1991) 3 SCC 655; SC In-House Procedure 1999; SC Stay Order Feb 2025 (suo moto re HC judges)"
+        },
+        "training": {
+          "trained_by": [],
+          "induction_training": false,
+          "continuing_education": true,
+          "training_mandatory": false
+        },
+        "digital_infrastructure": {
+          "system_used": [
+            "eCourts_Portal",
+            "NJDG"
+          ],
+          "digital_variant": "NIC_Standard",
+          "integrated_with_njdg": true
+        },
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [],
+          "uts_covered": [
+            "DL"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "Original",
+            "Appellate",
+            "Writ"
+          ]
+        },
+        "case_volume": {
+          "data_as_of": "2024-12-01",
+          "pending_cases": 960000,
+          "filed_last_year": 180000,
+          "disposed_last_year": 160000,
+          "avg_disposal_days": 1825,
+          "source_url": "https://njdg.ecourts.gov.in/",
+          "source_type": "NJDG_Snapshot",
+          "disposal_rate": 0.8889,
+          "clog_severity": "high"
+        },
+        "judge_strength": {
+          "data_as_of": "2025-12-24",
+          "allotted": 60,
+          "appointed": 44,
+          "vacancy_count": 16,
+          "source_type": "DoJ_Report",
+          "source_url": "https://cdnbbsr.s3waas.gov.in/s35d6646aad9bcc0be55b2c82f69750387/uploads/2025/12/202512241943014515.pdf",
+          "notes": "Pmt 45 Addl 15 sanctioned; Pmt 44 Addl 0 working; Pmt 1 Addl 15 vacancies"
+        },
+        "parent_hc": null
+      },
+      "position": {
+        "x": 1128,
+        "y": 192
+      }
+    },
+    {
+      "id": "president_india",
+      "name": "President of India",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true
+      },
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "ExecutiveBody",
+      "cluster": "legislative_executive",
+      "level_of_government": "Central",
+      "created_year": 1950,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": null,
+      "data_quality": "partial",
+      "data_quality_notes": "Stub for graph connectivity; verify appointment/funding against primary sources.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": null,
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "India Code \u2014 Constitution & Acts",
+          "url": "https://india-code.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-05-13"
+        },
+        {
+          "label": "National Judicial Data Grid (NJDG)",
+          "url": "https://njdg.ecourts.gov.in/",
+          "type": "NJDG",
+          "accessed_date": "2024-12-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": null,
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 195,
+        "y": 192
+      }
+    },
+    {
+      "id": "chief_justice_india",
+      "name": "Chief Justice of India (office)",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true
+      },
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "ExecutiveBody",
+      "cluster": "constitutional_courts",
+      "level_of_government": "Central",
+      "created_year": 1950,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": null,
+      "data_quality": "partial",
+      "data_quality_notes": "Stub for graph connectivity; verify appointment/funding against primary sources.",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "discretionary_power_score": 0,
+        "independence_risk_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "independence_risk_level": "low",
+        "independence_risk_score": 0,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "Scores excluded: governance officeholder or administrative body": 0
+        },
+        "structural_health_level": null,
+        "structural_health_score": null
+      },
+      "funding_source": null,
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "India Code \u2014 Constitution & Acts",
+          "url": "https://india-code.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-05-13"
+        },
+        {
+          "label": "National Judicial Data Grid (NJDG)",
+          "url": "https://njdg.ecourts.gov.in/",
+          "type": "NJDG",
+          "accessed_date": "2024-12-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": null,
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 940,
+        "y": 192
+      }
+    },
+    {
+      "id": "aar_income_tax",
+      "name": "Board for Advance Rulings (Income Tax)",
+      "aliases": [
+        "Authority for Advance Rulings (Income Tax)",
+        "AAR (Income Tax)",
+        "Board for Advance Rulings",
+        "BAR"
+      ],
+      "jurisdiction_scope": null,
+      "name_hindi": "\u0905\u0917\u094d\u0930\u093f\u092e \u0928\u093f\u0930\u094d\u0923\u092f \u092c\u094b\u0930\u094d\u0921 (\u0906\u092f\u0915\u0930)",
+      "abbreviation": "BAR-IT",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 1993,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Income Tax Act 1961, Chapter XIX-B (ss.245N\u2013245V) as substituted by Finance Act 2021 s.98 \u2014 reconstituted as 'Board for Advance Rulings' from 'Authority for Advance Rulings'. Two Boards constituted with retired ITAT Presidents/Vice Presidents. Original AAR (single-member, retired SC Judge as Chairman) abolished by Finance Act 2021 w.e.f. 01.04.2021.",
+      "data_quality": "partial",
+      "data_quality_notes": "Independence concern: Finance Act 2021 reconstitution replaced retired SC Judge Chairman with senior IRS officers \u2014 structural shift from judicial to departmental composition. Contested by taxpayer bar (pending writ petitions in several HCs challenging constitutionality of non-judicial composition for advance rulings).   Two Boards at Delhi and Mumbai constituted by CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 \u2014 corrected from prior erroneous reference to 92/2021 (drt_b4). Rulings binding on applicant and CBDT (s.245S) but subject to writ jurisdiction of HC under Art.226/227. No appeal to ITAT or HC as of right. created_year reflects original AAR (Finance Act 1993 Chapter XIX-B); reconstitution year 2021. v1.2 judge_strength stub attached",
+      "unverified_fields": [
+        {
+          "field": "sources.cbdt_notification_96_2021_pdf",
+          "note": "Direct incometaxindia.gov.in PDF for Notification 96/2021 returns 404; S.O. 3561(E) text confirmed via taxguru.in transcript.\n"
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Audit reports not public": 1,
+          "Funder == Appointing authority": 2,
+          "No bias complaint mechanism exists": 2,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "severe",
+        "independence_risk_score": 9,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.52,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.52,
+          "independence_risk_penalty": 0.7,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "at_risk",
+        "structural_health_score": 0.52
+      },
+      "funding_source": "Ministry_Budget",
+      "funding_ministry": "ministry_of_finance",
+      "audited_by": "cag_india",
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "Finance Act 2021 \u2014 s.98 substituting Chapter XIX-B of IT Act 1961",
+          "url": "https://india-code.nic.in/DownloadFile?FileName=A2021-13.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "Income Tax Act 1961 \u2014 Chapter XIX-B (ss.245N\u2013245V as amended)",
+          "url": "https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "CBDT Notification No. 96/2021 (S.O. 3561(E)) dated 1 September 2021 \u2014 constitutes Board for Advance Rulings at Delhi and Mumbai; AAR ceases operation from 1 September 2021\n",
+          "url": "https://taxguru.in/income-tax/cbdt-constitutes-boards-advance-rulings-delhi-mumbai.html",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "Taxmann summary \u2014 Notification No. 96/2021 and 97/2021 dated 1 September 2021\n",
+          "url": "https://www.taxmann.com/post/blog/cbdt-notifies-board-for-advance-rulings-effective-from-01-09-2021/",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": null,
+          "recommends": null,
+          "consulted": [],
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "Board Chairman: retired officer of Indian Revenue Service (IRS) at Commissioner level or above. Members: IRS officers. Tenure and terms as prescribed under s.245-OB rules. Contrast pre-2021 AAR where Chairman was retired SC Judge.",
+          "reappointment_possible": null,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "Ministry_Budget",
+          "ministry_responsible": "ministry_of_finance",
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": null,
+          "conduct_oversight_body": "cbdt"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "As per IT Act s.245-OB and rules; members are IRS officers subject to service rules and departmental proceedings. No independent removal committee.",
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "Board members are public servants (IRS officers) and subject to Lokpal jurisdiction unlike judicial members of pre-2021 AAR.",
+          "source": "IT Act 1961 s.245-OB; Lokpal and Lokayuktas Act 2013 s.14"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "sources.cbdt_notification_96_2021_pdf",
+            "note": "Direct incometaxindia.gov.in PDF for Notification 96/2021 returns 404; S.O. 3561(E) text confirmed via taxguru.in transcript.\n"
+          }
+        ],
+        "jurisdiction_scope": null,
+        "case_volume": null,
+        "judge_strength": {
+          "data_as_of": null,
+          "allotted": null,
+          "appointed": null,
+          "source_type": "Tribunal_Report",
+          "source_url": "https://doj.gov.in/",
+          "notes": "Member/chair strength from tribunal annual report or DoJ quarterly vacancy data."
+        },
+        "parent_hc": null
+      },
+      "position": {
+        "x": 57,
+        "y": 480
+      }
+    },
+    {
+      "id": "aera",
+      "name": "Airports Economic Regulatory Authority of India",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "Airport tariff and user development fee determination",
+          "Tariff-related disputes"
+        ]
+      },
+      "name_hindi": "\u092d\u093e\u0930\u0924\u0940\u092f \u0939\u0935\u093e\u0908 \u0905\u0921\u094d\u0921\u093e \u0906\u0930\u094d\u0925\u093f\u0915 \u0935\u093f\u0928\u093f\u092f\u093e\u092e\u0915 \u092a\u094d\u0930\u093e\u0927\u093f\u0915\u0930\u0923",
+      "abbreviation": "AERA",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Airports Economic Regulatory Authority of India Act 2008 (\u00a7 3 \u2014 establishment; \u00a7 17 \u2014 appellate tribunal reference to TDSAT).\n",
+      "data_quality": "partial",
+      "data_quality_notes": "Appellate path: AERA tariff order \u2192 TDSAT (Telecom Disputes Settlement and Appellate Tribunal, which also has jurisdiction over AERA appeals per AERA Act \u00a7 17) \u2192 Supreme Court. TDSAT acting as AERA Appellate Tribunal is a shared-body arrangement confirmed by Ministry of Civil Aviation notifications. AERA's quasi-judicial function is tariff determination, not case adjudication; no NJDG-integrated pendency data. case_volume deferred to Phase-2.\n",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 5,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Complaint process is not public/transparent": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.53,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.53,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "at_risk",
+        "structural_health_score": 0.53
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_civil_aviation",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": true,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Airports Economic Regulatory Authority of India Act 2008",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200817",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AERA official website",
+          "url": "https://aera.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_civil_aviation",
+          "formally_appoints": "central_government",
+          "criteria_public": true,
+          "tenure": "Five years or age 65, whichever earlier (Chairperson)",
+          "reappointment_possible": false,
+          "removal_authority": "central_government"
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_civil_aviation"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_civil_aviation"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "ministry_civil_aviation",
+              "mechanism": "Administrative complaint to parent ministry",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": true
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Removal by Central Government on grounds specified in AERA Act 2008 \u00a7 8.\n",
+          "lokpal_jurisdiction": "Yes",
+          "lokpal_jurisdiction_note": "AERA Chairperson is a public servant; Lokpal jurisdiction applies under Lokpal & Lokayuktas Act 2013 \u00a7 14.\n",
+          "source": "AERA Act 2008"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "Airport tariff and user development fee determination",
+            "Tariff-related disputes"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 498,
+        "y": 480
+      }
+    },
+    {
+      "id": "aft",
+      "name": "Armed Forces Tribunal",
+      "aliases": [
+        "Armed Forces Tribunal of India"
+      ],
+      "jurisdiction_scope": {
+        "is_all_india": true,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals",
+          "military_pensions"
+        ]
+      },
+      "name_hindi": "\u0938\u0936\u0938\u094d\u0924\u094d\u0930 \u0938\u0947\u0928\u093e \u0905\u0927\u093f\u0915\u0930\u0923",
+      "abbreviation": "AFT",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 (Act 55 of 2007); commenced 8 August 2009 via Gazette notification. Jurisdiction covers service matters of Army, Navy, Air Force personnel and appeals from court-martial convictions/sentences under Army Act 1950, Navy Act 1957, Air Force Act 1950.",
+      "data_quality": "partial",
+      "data_quality_notes": "Entity created from statutory sources. Bench lattice: 11 locations (Principal Bench New Delhi + 10 regional benches) but 15 sitting courts total \u2014 Delhi, Chandigarh, and Lucknow each have 3 courts; other regional benches have 1 court each (PIB 2009; aftdelhi.nic.in). README shorthand AFT\u00d711 = 11 location entities, not 15 courts. Note: AFT appeals go directly to the Supreme Court (AFT Act 2007, s.30) \u2014 NOT to High Courts. Member vacancy is bench-specific; no verified aggregate vacancy percentage \u2014 do not cite a single %. NJDG snapshot case_volume merged v1.2 judge_strength stub attached",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Funder == Appointing authority": 2,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 8,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Ministry_Budget",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007 (Act 55 of 2007)",
+          "url": "https://india-code.nic.in/handle/123456789/2093",
+          "type": "CentralAct",
+          "accessed_date": "2025-01-15"
+        },
+        {
+          "label": "AFT official website \u2014 bench structure (11 locations, 15 courts)",
+          "url": "https://aftdelhi.nic.in/index.php",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-17"
+        },
+        {
+          "label": "PIB \u2014 AFT inaugurated; 15 courts across Delhi, Chandigarh, Lucknow and regional benches",
+          "url": "https://www.pib.gov.in/newsite/erelcontent.aspx?relid=56489",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-17"
+        },
+        {
+          "label": "Rajya Sabha reply \u2014 AFT bench vacancies, 30 Mar 2026",
+          "url": "https://www.thehindu.com/news/national/armed-forces-tribunal-faces-11097-pending-cases-vacancies-across-benches-raise-concern/article70803376.ece",
+          "type": "OfficialReport",
+          "accessed_date": "2026-06-17"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson (retd. SC/HC judge): 4 years or age 70; Members: 4 years or age 65; no reappointment",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Ministry_Budget",
+          "ministry_responsible": "ministry_defence"
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "ministry_defence"
+        },
+        "complaint_mechanism": {
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "AFT members are retired judges; Lokpal Act 2013 excludes judicial officers.",
+          "removal_mechanism": "Removal by President on grounds of misbehaviour after inquiry by a judge of the Supreme Court (AFT Act 2007, s.11)"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "is_all_india": true,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals",
+            "military_pensions"
+          ]
+        },
+        "case_volume": {
+          "data_as_of": "2024-12-01",
+          "sanctioned_strength": 34,
+          "working_strength": 19,
+          "pending_cases": 48000,
+          "avg_disposal_days": 1095,
+          "source_url": "https://aftdelhi.nic.in/",
+          "source_type": "Tribunal_Report",
+          "filed_last_year": 9500,
+          "disposed_last_year": 7800,
+          "disposal_rate": 0.8211,
+          "clog_severity": "critical"
+        },
+        "judge_strength": {
+          "data_as_of": null,
+          "allotted": null,
+          "appointed": null,
+          "source_type": "DoJ_Report",
+          "source_url": "https://aft.gov.in/",
+          "notes": "Multiple Regional Benches (Principal Bench Delhi + 8 regional benches). Total sanctioned and working member strength not verified at authoring time."
+        },
+        "parent_hc": null
+      },
+      "position": {
+        "x": 58,
+        "y": 444
+      },
+      "gaps": [
+        {
+          "flag": true,
+          "gaps": [
+            {
+              "gap_id": "aft_no_hc_appeal",
+              "gap_type": "Appellate_Gap",
+              "gap_severity": "Critical",
+              "gap_description": "No High Court appeal path \u2014 appeals lie directly to Supreme Court under AFT Act 2007 s.30 (SLP route).",
+              "gap_source": "Armed Forces Tribunal Act 2007 s.30",
+              "gap_since_year": 2009,
+              "gap_status": "Open"
+            },
+            {
+              "gap_id": "aft_mod_appointer_litigant",
+              "gap_type": "Circularity",
+              "gap_severity": "High",
+              "gap_description": "Ministry of Defence nominates members, funds the tribunal, and is the respondent in service-matter litigation \u2014 appointer-litigant loop.",
+              "gap_source": "AFT Act 2007; MoD as primary funder and nominating authority",
+              "gap_since_year": 2009,
+              "gap_status": "Open"
+            },
+            {
+              "gap_id": "aft_bench_vacancies_mar2026",
+              "gap_type": "Capacity_Gap",
+              "gap_severity": "High",
+              "gap_description": "Bench-by-bench vacancies (Rajya Sabha, Mar 2026): Jabalpur, Guwahati, Srinagar each 2/2 vacant; Chandigarh, Lucknow, Kochi, Chennai, Kolkata each 1 vacancy; Principal Bench Delhi fully staffed; 11 of 34 member posts vacant nationally. No single aggregate % \u2014 use bench table.",
+              "gap_source": "MoS Defence Sanjay Seth, Rajya Sabha reply, 30 Mar 2026",
+              "gap_since_year": 2026,
+              "gap_status": "Open"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aft_chandigarh",
+      "name": "Armed Forces Tribunal \u2014 Chandigarh Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "PB",
+          "HR",
+          "HP"
+        ],
+        "uts_covered": [
+          "CH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "\u0938\u0936\u0938\u094d\u0924\u094d\u0930 \u092c\u0932 \u0905\u0927\u093f\u0915\u0930\u0923 \u2014 \u091a\u0902\u0921\u0940\u0917\u0922\u093c \u092a\u0940\u0920",
+      "abbreviation": "AFT Chandigarh",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Regional bench per aft.gov.in/jurisdiction: PB, HR, HP, CH. J&K/Ladakh under separate Jammu bench (not yet in corpus). Judge strength not populated. v1.2 judge_strength stub attached",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website \u2014 bench listing",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website \u2014 bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson: 4 years or age 70 whichever earlier; Members: 4 years or age 65 whichever earlier (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10 \u2014 inquiry by Supreme Court judge, President removes on report",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Tribunal judicial members not within Lokpal jurisdiction per Lokpal Act 2013 s.14",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "PB",
+            "HR",
+            "HP"
+          ],
+          "uts_covered": [
+            "CH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": {
+          "data_as_of": null,
+          "allotted": null,
+          "appointed": null,
+          "source_type": "Tribunal_Report",
+          "source_url": "https://doj.gov.in/",
+          "notes": "Member/chair strength from tribunal annual report or DoJ quarterly vacancy data."
+        },
+        "parent_hc": null
+      },
+      "position": {
+        "x": 59,
+        "y": 480
+      }
+    },
+    {
+      "id": "aft_chennai",
+      "name": "Armed Forces Tribunal \u2014 Chennai Bench",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN",
+          "AP"
+        ],
+        "uts_covered": [
+          "PY"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "service_matters",
+          "court_martial_appeals"
+        ]
+      },
+      "name_hindi": "\u0938\u0936\u0938\u094d\u0924\u094d\u0930 \u092c\u0932 \u0905\u0927\u093f\u0915\u0930\u0923 \u2014 \u091a\u0947\u0928\u094d\u0928\u0908 \u092a\u0940\u0920",
+      "abbreviation": "AFT Chennai",
+      "type": "CentralTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "Central",
+      "created_year": 2009,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Armed Forces Tribunal Act 2007 s.5; Armed Forces Tribunal (Procedure) Rules 2008",
+      "data_quality": "partial",
+      "data_quality_notes": "Territorial jurisdiction per aft.gov.in; southern states and southern UTs. Per aft.gov.in/jurisdiction: TN, AP, PY. Telangana matters heard at Hyderabad circuit bench (aft_hyderabad). Karnataka and Lakshadweep under Kochi bench. v1.2 judge_strength stub attached",
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CentralTribunal": 2,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "Consolidated_Fund_India",
+      "funding_ministry": "ministry_defence",
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website",
+          "url": "https://aft.gov.in",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-11"
+        },
+        {
+          "label": "AFT official website \u2014 bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "ministry_defence",
+          "recommends": null,
+          "consulted": [
+            "chief_justice_india"
+          ],
+          "consultation_binding": false,
+          "formally_appoints": "president_india",
+          "criteria_public": true,
+          "tenure": "Chairperson age 70 / 4 yr; Members age 65 / 4 yr (AFT Act 2007 s.8)",
+          "reappointment_possible": false,
+          "removal_authority": "president_india",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": true
+        },
+        "funding": {
+          "primary_source": "Consolidated_Fund_India",
+          "ministry_responsible": "ministry_defence",
+          "state_contribution_percent": null,
+          "budget_figure_crore": null,
+          "budget_year": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "central_government",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "AFT Act 2007 s.10",
+          "lokpal_jurisdiction": "No",
+          "lokpal_jurisdiction_note": "Same as aft_chandigarh",
+          "source": null
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN",
+            "AP"
+          ],
+          "uts_covered": [
+            "PY"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "service_matters",
+            "court_martial_appeals"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": {
+          "data_as_of": null,
+          "allotted": null,
+          "appointed": null,
+          "source_type": "Tribunal_Report",
+          "source_url": "https://doj.gov.in/",
+          "notes": "Member/chair strength from tribunal annual report or DoJ quarterly vacancy data."
+        },
+        "parent_hc": null
+      },
+      "position": {
+        "x": 60,
+        "y": 444
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "iiac_award_challenged_hc_delhi",
+      "source": "iiac",
+      "target": "hc_delhi",
+      "relationship_type": "AwardChallengedIn",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": null,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Awards from IIAC (formerly NDIAC) arbitration proceedings challenged under Arbitration and Conciliation Act 1996 s.34. IIAC seat is New Delhi; Delhi High Court is the competent court under A&C Act s.2(1)(e)(i). Appeals from s.34 orders lie to HC Division Bench under s.37.\n",
+      "sources": [
+        {
+          "label": "Arbitration and Conciliation Act 1996 \u2014 India Code",
+          "url": "https://india-code.nic.in/acts-detail/MTA4NDE=",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-18"
+        }
+      ]
+    },
+    {
+      "id": "diac_award_challenged_hc_delhi",
+      "source": "diac",
+      "target": "hc_delhi",
+      "relationship_type": "AwardChallengedIn",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": null,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Awards from DIAC arbitration proceedings challenged under A&C Act 1996 s.34 in Delhi High Court. DIAC is administered by Delhi HC itself \u2014 s.34 challenge venue is Delhi HC by both seat and administration.\n",
+      "sources": [
+        {
+          "label": "Arbitration and Conciliation Act 1996 \u2014 India Code",
+          "url": "https://india-code.nic.in/acts-detail/MTA4NDE=",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-18"
+        }
+      ]
+    },
+    {
+      "id": "rel_collegium_sc_recommends_sc_judges",
+      "source": "collegium_sc",
+      "target": "supreme_court_india",
+      "relationship_type": "Recommends",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": true,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "verified",
+      "contested_note": null,
+      "notes": "The Collegium system is entirely judge-made \u2014 not written in the Constitution. Article 124(2) says President appoints \"in consultation with\" CJI and other judges. SC in Second Judges Case (1993) held this consultation is binding; CJI's recommendation is determinative. This reversed SP Gupta (1981) which had held executive supremacy. The 99th Amendment NJAC (2014) attempted to change this but was struck down in Supreme Court Advocates-on-Record v Union of India (2015).\n",
+      "sources": [
+        {
+          "label": "Constitution Article 124(2)",
+          "url": "https://india-code.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf",
+          "type": "Constitution",
+          "accessed_date": "2025-04-01"
+        },
+        {
+          "label": "Supreme Court Advocates-on-Record v Union of India (1993) 4 SCC 441",
+          "url": "https://main.sci.gov.in/",
+          "type": "SCJudgment",
+          "accessed_date": "2025-04-01"
+        }
+      ]
+    },
+    {
+      "id": "rel_president_formally_appoints_sc_judges",
+      "source": "president_india",
+      "target": "supreme_court_india",
+      "relationship_type": "FormallyAppoints",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": true,
+      "year_established": 1950,
+      "year_abolished": null,
+      "data_quality": "verified",
+      "contested_note": null,
+      "notes": "Formal instrument of appointment issued by President. In practice, President acts on Collegium's recommendation. Post-1993, President cannot appoint a judge the Collegium has not recommended.\n",
+      "sources": [
+        {
+          "label": "Constitution Article 124(2)",
+          "url": "https://india-code.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf",
+          "type": "Constitution",
+          "accessed_date": "2025-04-01"
+        }
+      ]
+    },
+    {
+      "id": "rel_njac_recommends_sc_hc_judges_ABOLISHED",
+      "source": "national_judicial_appointments_commission",
+      "target": "supreme_court_india",
+      "relationship_type": "Recommends",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": true,
+      "year_established": 2014,
+      "year_abolished": 2015,
+      "data_quality": "verified",
+      "contested_note": null,
+      "notes": "NJAC was constituted by 99th Constitutional Amendment. Would have replaced the Collegium with a 6-member commission including CJI, 2 senior SC judges, Law Minister, and 2 eminent persons. Struck down by SC 5-judge bench in Supreme Court Advocates-on-Record v Union of India (2015) as violating the basic structure of judicial independence. This relationship is HISTORICAL \u2014 rendered as faded/ghosted in the UI when time slider is set after 2015.\n",
+      "sources": [
+        {
+          "label": "99th Constitutional Amendment Act 2014",
+          "url": "https://india-code.nic.in/",
+          "type": "CentralAct",
+          "accessed_date": "2025-04-01"
+        },
+        {
+          "label": "Supreme Court Advocates-on-Record v Union of India (2015) 5 SCC 1",
+          "url": "https://main.sci.gov.in/",
+          "type": "SCJudgment",
+          "accessed_date": "2025-04-01"
+        }
+      ]
+    },
+    {
+      "id": "rel_president_formally_appoints_nhrc",
+      "source": "president_india",
+      "target": "nhrc",
+      "relationship_type": "FormallyAppoints",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "PHRA 1993",
+          "url": "https://nhrc.nic.in/sites/default/files/PHRA.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "id": "rel_president_formally_appoints_cvc",
+      "source": "president_india",
+      "target": "central_vigilance_commission",
+      "relationship_type": "FormallyAppoints",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2003,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "CVC Act 2003",
+          "url": "https://cvc.gov.in/sites/default/files/cvcact.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "id": "rel_cji_cbi_selection_committee_member",
+      "source": "chief_justice_india",
+      "target": "cbi",
+      "relationship_type": "ConsultedOn_Appointment",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2014,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "CJI or a Supreme Court judge nominated by the CJI is a statutory member of the CBI Director selection committee.\n",
+      "sources": [
+        {
+          "label": "Lokpal and Lokayuktas Act 2013 \u2014 s.4A",
+          "url": "https://www.indiacode.nic.in/",
+          "type": "CentralAct",
+          "accessed_date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "id": "rel_cm_aft_appeal",
+      "source": "court_martial_generic",
+      "target": "aft",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "General Court Martial (GCM), District Court Martial (DCM) and Summary General Court Martial (SGCM) orders are appealable to AFT. Summary Court Martial (SCM) orders are NOT appealable to AFT \u2014 only revision/habeas corpus routes apply (Union of India v. SPS Vains, 2008 \u2014 citation unverified).\n",
+      "sources": [
+        {
+          "label": "Armed Forces Tribunal Act 2007, s.14",
+          "url": "https://india-code.nic.in/handle/123456789/2093",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aera_tdsat_appeal",
+      "source": "aera",
+      "target": "tdsat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "TDSAT acts as the appellate tribunal for AERA orders.",
+      "sources": [
+        {
+          "label": "AERA Act 2008, s.17",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200827",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aera_mca_fund",
+      "source": "ministry_civil_aviation",
+      "target": "aera",
+      "relationship_type": "PrimaryFunder",
+      "relationship_category": "funding",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AERA Act 2008",
+          "url": "https://india-code.nic.in/CodeSection.aspx?actcode=A200827",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_sec_sc_removal",
+      "source": "state_election_commission_generic",
+      "target": "supreme_court_india",
+      "relationship_type": "ConsultedOn_Removal",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": true,
+      "year_established": 1993,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "State Election Commissioner may be removed only on grounds of misbehaviour, after inquiry by the Supreme Court \u2014 protection analogous to a High Court judge. Governor acts on SC inquiry outcome.\n",
+      "sources": [
+        {
+          "label": "Constitution of India \u2014 Article 243K(2)",
+          "url": "https://www.indiacode.nic.in/handle/123456789/1",
+          "type": "Constitution",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_sc_oversight_nja",
+      "source": "supreme_court_india",
+      "target": "national_judicial_academy",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "CJI chairs NJA Governing Council; academy works under directions of the Supreme Court despite GoI funding via DoJ.",
+      "sources": [
+        {
+          "label": "NJA \u2014 Official Website",
+          "url": "https://nja.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-17"
+        }
+      ]
+    },
+    {
+      "id": "rel_sc_oversight_ecommittee",
+      "source": "supreme_court_india",
+      "target": "e_committee_sc",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "digital",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "e-Committee is constituted by the Chief Justice of India for court ICT policy.",
+      "sources": [
+        {
+          "label": "e-Committee / NJDG",
+          "url": "https://njdg.ecourts.gov.in/",
+          "type": "NJDG",
+          "accessed_date": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "id": "rel_sc_oversight_ecommittee_legacy",
+      "source": "supreme_court_india",
+      "target": "ecommittee_sc",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "digital",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Legacy e-Committee entity id \u2014 same SC policy oversight pattern.",
+      "sources": [
+        {
+          "label": "e-Committee / NJDG",
+          "url": "https://njdg.ecourts.gov.in/",
+          "type": "NJDG",
+          "accessed_date": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "id": "rel_sc_oversight_court_marshal",
+      "source": "supreme_court_india",
+      "target": "court_marshal_sc",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": true,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "SC appellate jurisdiction over court martial (pre-AFT Act 2007 framework).",
+      "sources": [
+        {
+          "label": "India Code \u2014 Constitution & Acts",
+          "url": "https://india-code.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "id": "rel_sc_conduct_oversight_in_house",
+      "source": "supreme_court_india",
+      "target": "in_house_procedure_sc",
+      "relationship_type": "ConductOversight",
+      "relationship_category": "audit",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "SC In-House Procedure governs judicial conduct complaints for SC and HC judges.",
+      "sources": [
+        {
+          "label": "India Code \u2014 Constitution & Acts",
+          "url": "https://india-code.nic.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_to_sc_appellate",
+      "source": "aft",
+      "target": "supreme_court_india",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "verified",
+      "contested_note": null,
+      "notes": "AFT Act 2007, s.30 confines further appeal to the Supreme Court. High Courts have no appellate or writ jurisdiction over AFT orders (this was upheld by SC in Union of India v. Major General Shri Kant Sharma). This is a deliberate statutory design to centralise appeals.",
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.30",
+          "url": "https://india-code.nic.in/handle/123456789/2093",
+          "type": "CentralAct",
+          "accessed_date": "2025-01-15"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_chandigarh_bench_of_aft",
+      "source": "aft_chandigarh",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Territorial jurisdiction per aft.gov.in/jurisdiction.",
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT \u2014 bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    },
+    {
+      "id": "rel_aft_lucknow_bench_of_aft",
+      "source": "aft_lucknow",
+      "target": "aft",
+      "relationship_type": "BenchOf",
+      "relationship_category": "statutory_ref",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": 2009,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "AFT Act 2007, s.5",
+          "url": "https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-06-12"
+        },
+        {
+          "label": "AFT \u2014 bench territorial jurisdiction",
+          "url": "https://aft.gov.in/jurisdiction",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-06-12"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# jem/data/entities/people_roles/role_victim.yaml
+id: role_victim
+name: Victim / Complainant (role archetype)
+type: PartyRole
+cluster: people_roles
+role_layer: true
+role_type: Party
+level_of_government: State
+jurisdiction_scope:
+  is_all_india: false
+created_year: 1950
+operational_status: Active
+constitutional_basis: null
+statutory_basis: Code of Criminal Procedure 1973; Bharatiya Nyaya Sanhita 2023 (victim
+  rights provisions)
+data_quality: partial
+data_quality_notes: Complainant or victim participant; distinct from public prosecutor.
+  Numerics (judge_strength, case_volume) not applicable to role archetypes.
+sources:
+- label: Code of Criminal Procedure 1973
+  url: https://india-code.nic.in/
+  type: CentralAct
+  accessed_date: '2026-06-24'

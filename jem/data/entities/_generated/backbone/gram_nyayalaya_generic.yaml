@@ -47,24 +47,45 @@ structural_gap:
   flag: true
   gaps:
   - gap_id: gram_nyayalaya_under_rollout
-    gap_type: Capacity_Gap
+    gap_type: Appointment_Gap
     gap_severity: High
-    gap_description: >-
-      333 of 488 notified Gram Nyayalayas operational in 11 States/UTs
-      (Oct 2025 Lok Sabha reply). Law Commission 114th Report (1986) envisaged
-      ~6,000 village courts nationwide; rollout remains far below target.
-      UP leads with 109 operational (not zero). AP, Telangana, J&K, Ladakh
-      have notified courts but none operational.
+    gap_description: 333 of 488 notified Gram Nyayalayas operational in 11 States/UTs (Oct 2025 Lok Sabha reply). Law Commission
+      114th Report (1986) envisaged ~6,000 village courts nationwide; rollout remains far below target. UP leads with 109
+      operational (not zero). AP, Telangana, J&K, Ladakh have notified courts but none operational.
     gap_source: DoJ Gram Nyayalaya dashboard; MoS Law Lok Sabha reply Oct 2025
     gap_since_year: 2009
     gap_status: Partial_Addressed
+    gap_resolution_note: >-
+      State governments constitute Gram Nyayalayas under Gram Nyayalayas Act 2008
+      s.3; no Union deadline for full national rollout. Expansion depends on state
+      notifications and judicial officer postings — monitor DoJ operational dashboard
+      and state High Court notifications.
+    gap_spillover:
+    - affected_body: gram_nyayalaya_generic
+      spillover_type: trial_court_pendency
+      metric_note: >-
+        DoJ operational dashboard: 337 Gram Nyayalayas operational across
+        reporting states (grand total); Lok Sabha reply 31 Oct 2025 cited 333
+        operational in 11 states of 488 notified.
+      source_url: https://dashboard.doj.gov.in/gn/operational_gram_nyayalaya
+      source_label: DoJ Gram Nyayalaya operational dashboard
+      data_as_of: '2026-06-26'
+      spillover_data_quality: verified
+    - affected_body: district_courts_all
+      spillover_type: trial_court_pendency
+      metric_note: >-
+        SC bench (Aug 2024, NFSFJ): only 309 of ~6,000 envisaged Gram Nyayalayas
+        functional; trial courts carry 4.5+ crore pending cases — SC noted
+        activating village courts could ease district-court clog.
+      source_url: https://timesofindia.indiatimes.com/india/16-years-on-only-481-rural-courts-set-up-6000-needed-sc-told/articleshow/111698191.cms
+      source_label: Times of India — SC hearing National Federation of Societies for Fast Justice, Aug 2024
+      data_as_of: '2024-08-16'
+      spillover_data_quality: partial
 data_quality: partial
-data_quality_notes: >-
-  Aggregate generic node. Operational count 333/488 notified (Oct 2025) per
-  MoS Law Arjun Ram Meghwal Lok Sabha reply; DoJ dashboard shows 337 operational
-  (state totals may lag reply). Prior claim "UP: zero" is incorrect — UP has
-  109–111 operational per official sources. Target ~6,000 from Law Commission
-  114th Report (1986), not a statutory cap in the 2008 Act.
+data_quality_notes: 'Aggregate generic node. Operational count 333/488 notified (Oct 2025) per MoS Law Arjun Ram Meghwal Lok
+  Sabha reply; DoJ dashboard shows 337 operational (state totals may lag reply). Prior claim "UP: zero" is incorrect — UP
+  has 109–111 operational per official sources. Target ~6,000 from Law Commission 114th Report (1986), not a statutory cap
+  in the 2008 Act. v1.2 judge_strength stub attached'
 sources:
 - label: Gram Nyayalayas Act 2008 — India Code
   url: https://india-code.nic.in/
@@ -78,3 +99,11 @@ sources:
   url: https://www.newkerala.com/news/o/333-gram-nyayalayas-operational-11-states-arjun-ram-meghwal-669
   type: OfficialReport
   accessed_date: '2026-06-17'
+judge_strength:
+  data_as_of: null
+  allotted: null
+  appointed: null
+  source_type: DoJ_Report
+  source_url: https://doj.gov.in/
+  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG
+    bench strength.

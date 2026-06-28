@@ -46,7 +46,7 @@ structural_gap:
   flag: true
   gaps:
     - gap_id: sat_quorum_crisis_dec2023
-      gap_type: Capacity_Gap
+      gap_type: Appointment_Gap
       gap_severity: High
       gap_description: >-
         Near-functional collapse Dec 2023–Apr 2024 — Presiding Officer Justice Tarun
@@ -56,8 +56,33 @@ structural_gap:
       gap_source: Business Standard / Hindu BusinessLine, Apr 2024
       gap_since_year: 2023
       gap_status: Partial_Addressed
+      gap_resolution_note: >-
+        Quorum restored Apr 2024 with new Presiding Officer; ongoing risk if PO
+        post falls vacant again. Monitor sat.gov.in and DoJ vacancy reports.
+      gap_spillover:
+      - affected_body: high_courts_all
+        spillover_type: writ_load
+        metric_note: >-
+          Dec 2023–Apr 2024 SAT lacked judicial quorum; securities lawyers
+          reported litigants constrained to approach High Courts for urgent
+          relief against SEBI ex-parte orders — scope narrower than tribunal
+          merits review. Business Standard (Feb 2024) quoted practitioners
+          on HC writ fallback during vacancy.
+        source_url: https://www.business-standard.com/companies/news/securities-appellate-tribunal-functioning-crippled-due-to-lack-of-members-124021201195_1.html
+        source_label: Business Standard — SAT quorum crisis Feb 2024
+        data_as_of: '2024-02-12'
+        spillover_data_quality: partial
+      - affected_body: sat
+        spillover_type: appellate_backlog
+        metric_note: >-
+          SAT case_volume snapshot (Dec 2024): 420 pending; avg disposal
+          365 days; backlog grew during adjournments when bench lacked PO.
+        source_url: https://satweb.sat.gov.in/
+        source_label: SAT official site + JEM case_volume snapshot
+        data_as_of: '2024-12-01'
+        spillover_data_quality: partial
     - gap_id: sat_single_bench_national
-      gap_type: Capacity_Gap
+      gap_type: Appointment_Gap
       gap_severity: Moderate
       gap_description: >-
         Only one SAT bench (Mumbai) for nationwide SEBI/IRDAI/PFRDA appeals.
@@ -66,6 +91,10 @@ structural_gap:
       gap_source: sat.gov.in; News on Air, Jul 2024
       gap_since_year: 1995
       gap_status: Open
+      gap_resolution_note: >-
+        Additional benches require Central Government notification under SAT
+        establishment rules; Union Budget 2016 announced expansion but no fixed
+        timeline. Contingent on legislative/administrative action — not date-bound.
 sources:
 - label: SEBI Act 1992 — SEBI Official Website
   url: https://www.sebi.gov.in/legal/acts/aug-1992/the-securities-and-exchange-board-of-india-act-1992_2101.html
@@ -90,7 +119,7 @@ sources:
 case_volume:
   data_as_of: '2024-12-01'
   source_type: AnnualReport
-  source_url: ''
+  source_url: https://satweb.sat.gov.in/
   pending_cases: 420
   filed_last_year: 380
   disposed_last_year: 345
@@ -98,9 +127,14 @@ case_volume:
   disposal_rate: 0.9079
   clog_severity: high
 judge_strength:
-  data_as_of: null
+  data_as_of: '2026-06-26'
   allotted: null
-  appointed: null
+  appointed: 3
+  vacancy_count: null
   source_type: Tribunal_Report
-  source_url: https://sebi.gov.in/sebiweb/home/HomeAction.html?do=recognised#
-  notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+  source_url: https://satweb.sat.gov.in/
+  notes: >-
+    Presiding Officer Justice P.S. Dinesh Kumar + Technical Members Meera Swarup
+    and Dr. Dheeraj Bhatnagar per SAT website (Jun 2026). Judicial Member
+    appointment (Jan 2025) reportedly not joined — no sanctioned post count on
+    sat.gov.in; allotted left null.

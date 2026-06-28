@@ -10,7 +10,7 @@ jurisdiction_scope:
   jurisdiction_types:
   - Civil
 created_year: 1999
-operational_status: Active
+operational_status: Merged
 statutory_basis: Electricity Act 2003 — TNERC
 funding:
   primary_source: State_Consolidated_Fund
@@ -42,4 +42,7 @@ case_volume:
   avg_disposal_days: 730
   disposal_rate: 0.875
   clog_severity: high
-data_quality_notes: NJDG snapshot case_volume merged
+data_quality_notes: >-
+  Merged into serc_tn (canonical id). Duplicate Tamil Nadu Electricity
+  Regulatory Commission node; use serc_tn for all relationships. NJDG snapshot
+  case_volume merged on deprecated id.

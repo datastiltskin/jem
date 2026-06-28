@@ -12,7 +12,7 @@ Copy everything inside the **prompt box** below into **Claude**, **Cursor Agent*
 
 | Role | What you do | What maintainers do |
 |------|-------------|---------------------|
-| **Contributor** | Use the prompt + a roadmap `TASK` → produce YAML **drafts** → **[GitHub issue only](https://github.com/dso6060/jem_prototype/issues/new?template=data_correction.yml)** with attachments | `validate.py`, merge, relationships, release |
+| **Contributor** | Use the prompt + a roadmap `TASK` → produce YAML **drafts** → **[GitHub issue only](https://github.com/dso6060/jem/issues/new?template=data_correction.yml)** with attachments | `validate.py`, merge, relationships, release |
 | **Co-maintainer** | `ROLE: co-maintainer` → validate locally → PR | Review issues; merge; wire relationships |
 
 | Rule | Detail |
@@ -84,7 +84,7 @@ Begin by stating ROLE, CATEGORY_ID, and TASK; list files you will read; then del
 **Contributors**
 
 1. Save YAML from the chat.
-2. Open a **[GitHub issue only](https://github.com/dso6060/jem_prototype/issues/new?template=data_correction.yml)** — title `[data] C15 UP pack` (example), attach files, include the field/source table.
+2. Open a **[GitHub issue only](https://github.com/dso6060/jem/issues/new?template=data_correction.yml)** — title `[data] C15 UP pack` (example), attach files, include the field/source table.
 3. Maintainers validate: `python3 scripts/validate.py --entity path/to/file.yaml`
 
 **Co-maintainers**

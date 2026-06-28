@@ -37,6 +37,23 @@ relationships:
   data_quality: partial
   sources:
   - *id001
+- id: up_rera_hc
+  source: up_rera
+  target: hc_allahabad
+  relationship_type: AppealableTo
+  relationship_category: appellate_chain
+  is_binding: true
+  is_constitutional: false
+  statutory_basis: >-
+    Real Estate (Regulation and Development) Act 2016, s.58 — appeal to High
+    Court from Appellate Tribunal order
+  notes: UP RERA appeals to Allahabad HC
+  data_quality: partial
+  sources:
+  - label: RERA Act 2016 — ss.43, 58 (India Code)
+    url: https://india-code.nic.in/acts-detail/MjE2MTc=
+    type: CentralAct
+    accessed_date: '2026-06-26'
 - id: up_dist_principal_hc
   source: up_district_court_principal
   target: hc_allahabad

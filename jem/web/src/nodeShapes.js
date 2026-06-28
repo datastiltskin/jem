@@ -59,6 +59,7 @@ function isSubordinateCourt(entity) {
  */
 export function entityNodeShape(entity) {
   if (!entity) return 'rect';
+  if (entity.role_layer) return 'rect';
   if (isHighCourtBenchEntity(entity)) return 'crescent';
   if (isSupremeCourt(entity)) return 'hexagon';
   if (isPrincipalHighCourt(entity)) return 'pentagon';

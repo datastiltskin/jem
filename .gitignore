@@ -1,6 +1,11 @@
 .DS_Store
 .venv/
 
+# Local secrets (API keys, deploy overrides)
+.env
+.env.*
+!.env.example
+
 # Word exports (regenerate from KNOWLEDGE_TRANSFER.md via pandoc)
 *.docx
 ~$*.docx
