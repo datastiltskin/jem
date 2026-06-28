@@ -75,6 +75,27 @@ python3 -m uvicorn api.main:app --reload --port 8000
 
 ---
 
+## Discovering entity ids
+
+JEM uses **stable snake_case slugs** (`supreme_court_india`, `nclt`, `gstat`) — not display names. There is no “list all ids” endpoint; **search first**:
+
+```bash
+# 1. Search by name or abbreviation
+curl -s 'http://localhost:8000/api/v1/entities?q=NCLT&limit=5' | jq '.entities[].id'
+
+# 2. Use the returned id for detail and relationships
+curl -s http://localhost:8000/api/v1/entities/nclt | jq .
+curl -s 'http://localhost:8000/api/v1/relationships?entity_id=nclt' | jq .
+```
+
+**MCP equivalent:** call `search_entities` with `{"q": "NCLT"}`, then `get_entity` / `get_relationships` with the `id` from results.
+
+**Browse without ids:** `GET /api/v1/clusters/summary` returns per-cluster counts and average structural health.
+
+**OpenAPI:** `http://localhost:8000/docs` documents the search-first workflow on entity and relationship parameters.
+
+---
+
 ## REST API (recommended for scripts and search)
 
 Base path: `/api/v1`
@@ -171,7 +192,7 @@ JEM’s MCP layer is **HTTP-mounted on FastAPI**, not a standalone stdio MCP pro
 
 1. **HTTP via agent** — Option B (no extra config).
 2. **Custom MCP bridge** — wrap `/mcp/tools/*` in a small stdio proxy.
-3. **Future** — full FastMCP / SDK SSE integration is stubbed in `mount_mcp()` but not yet the primary path.
+3. **Native stdio (future)** — see [`MCP_STDIO.md`](MCP_STDIO.md) for requirements and friedso VPS notes. Stdio runs on your machine; the VPS hosts HTTP/REST if exposed publicly.
 
 ### Option D — Static `graph.json`
 

@@ -16,7 +16,14 @@ router = APIRouter(tags=["relationships"])
 @router.get("/relationships")
 def list_relationships(
     conn: sqlite3.Connection = Depends(get_db),
-    entity_id: Optional[str] = Query(None, description="Match source or target"),
+    entity_id: Optional[str] = Query(
+        None,
+        description=(
+            "Entity id (snake_case slug) matching relationship source or target. "
+            "Find ids with GET /api/v1/entities?q=… first."
+        ),
+        examples=["aft", "gstat"],
+    ),
     source: Optional[str] = None,
     target: Optional[str] = None,
     relationship_category: Optional[str] = None,

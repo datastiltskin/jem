@@ -8,6 +8,34 @@ const GITHUB = 'https://github.com/dso6060/jem';
 const ISSUES = `${GITHUB}/issues`;
 const DEMO = 'https://friedso.com/apps/jem/';
 
+const MAINTAINERS = [
+  {
+    name: 'Divya Sornaraja',
+    linkedin: 'https://www.linkedin.com/in/divya-sornaraja-12a14a14',
+    github: 'https://github.com/dso6060',
+    handle: '@dso6060',
+    role: 'lead maintainer (data, pipeline, deploy)',
+  },
+  {
+    name: 'Prajna Prayas',
+    linkedin: 'https://www.linkedin.com/in/prajna-prayas',
+    github: 'https://github.com/Prajna1999',
+    handle: '@Prajna1999',
+    role: 'co-maintainer (UI, GitHub admin)',
+  },
+  {
+    name: 'Agriya Khetarpal',
+    linkedin: 'https://www.linkedin.com/in/agriyakhetarpal',
+    github: 'https://github.com/agriyakhetarpal',
+    handle: '@agriyakhetarpal',
+    role: 'co-maintainer (public repo, GitHub admin)',
+  },
+];
+
+function maintainerLine({ name, linkedin, github, handle, role }) {
+  return `<li><a href="${linkedin}" target="_blank" rel="noopener noreferrer">${name}</a>(<a href="${github}" target="_blank" rel="noopener noreferrer">${handle}</a>) — ${role}</li>`;
+}
+
 function apiLinks(origin) {
   const base = origin || null;
   const row = (label, path, note = '') => {
@@ -94,6 +122,7 @@ export function aboutPageHTML(ctx = {}) {
         <div class="about-nav-card">
           <h3>API &amp; maintainer tools</h3>
           <p class="about-muted">Requires the FastAPI server (<code>uvicorn api.main:app</code>). Paths below are relative to that host.</p>
+          <p class="about-muted"><strong>Entity ids:</strong> search first — <code>GET /api/v1/entities?q=NCLT</code> returns an <code>id</code> slug (e.g. <code>nclt</code>). Use that for detail and relationships. Cluster overview: <code>GET /api/v1/clusters/summary</code>.</p>
           ${apiLinks(ctx.apiOrigin)}
         </div>
         <div class="about-nav-card">
@@ -126,6 +155,13 @@ export function aboutPageHTML(ctx = {}) {
     </section>
 
     <section class="about-section">
+      <h2>MCP for researchers &amp; AI agents</h2>
+      <p>JEM exposes four <strong>MCP HTTP tools</strong> on the same server as the REST API: <code>search_entities</code>, <code>get_entity</code>, <code>get_relationships</code>, and <code>get_structural_gaps</code>. They read the same SQLite database as the map and return structured JSON with <code>data_quality</code> flags and source URLs.</p>
+      <p><strong>When is MCP useful?</strong> If you use Cursor, Claude, or another agent to research Indian judicial structure, MCP (or REST) lets the agent query live data instead of uploading a stale <code>graph.json</code> snapshot. It is <em>not</em> needed for browsing the map — use toolbar search for that. Tools refuse legal advice, case outcomes, and judge-name requests.</p>
+      <p><strong>How to use it:</strong> run <code>uvicorn api.main:app</code> locally (see <a href="${GITHUB}/blob/main/jem/docs/MCP_SETUP.md" target="_blank" rel="noopener noreferrer">MCP setup guide</a>), then point your agent at <code>/mcp/tools</code> or REST <code>/api/v1/</code>. Always <strong>search first</strong> (<code>search_entities</code> or <code>GET /entities?q=…</code>) to discover entity ids before calling <code>get_entity</code>. Native stdio MCP for Cursor <code>mcp.json</code> is discussed in <a href="${GITHUB}/blob/main/jem/docs/MCP_STDIO.md" target="_blank" rel="noopener noreferrer">MCP_STDIO.md</a> — not yet shipped; HTTP works today.</p>
+    </section>
+
+    <section class="about-section">
       <h2>Project status &amp; what's pending</h2>
       <ul>
         <li><strong>Coverage gap</strong> — ${entityCount} of ~1,500 entities mapped; state district lattices and some quasi-judicial bodies remain incomplete per the <a href="${GITHUB}/blob/main/jem/docs/ENTITY_BUILD_ROADMAP.md" target="_blank" rel="noopener noreferrer">roadmap</a></li>
@@ -134,7 +170,11 @@ export function aboutPageHTML(ctx = {}) {
         <li><strong>QA sprint</strong> — full operational audit of all 1,500 targets is ongoing</li>
         <li><strong>Auth</strong> — LinkedIn sign-in for corrections in production; dev mock login locally (see <a href="${GITHUB}/blob/main/jem/docs/AUTH_SETUP.md" target="_blank" rel="noopener noreferrer">AUTH_SETUP</a>)</li>
       </ul>
-      <p>Maintainers: <a href="https://github.com/dso6060" target="_blank" rel="noopener noreferrer">@dso6060</a> (lead) · <a href="https://github.com/Prajna1999" target="_blank" rel="noopener noreferrer">@Prajna1999</a> (co-maintainer). Contributors welcome — researchers for sourcing and validation, engineers for schema and tooling.</p>
+      <p>Maintainers of the <a href="${GITHUB}" target="_blank" rel="noopener noreferrer">public repository</a>:</p>
+      <ul class="about-maintainers">
+        ${MAINTAINERS.map(maintainerLine).join('\n        ')}
+      </ul>
+      <p>Contributors welcome — researchers for sourcing and validation, engineers for schema and tooling. Full team listing: <a href="${GITHUB}/blob/main/jem/docs/TEAM.md" target="_blank" rel="noopener noreferrer">TEAM.md</a>.</p>
     </section>
 
     <section class="about-section">

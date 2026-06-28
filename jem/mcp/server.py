@@ -17,24 +17,32 @@ ToolFn = Callable[[Any, dict], dict]
 
 TOOL_REGISTRY: dict[str, dict[str, Any]] = {
     "get_entity": {
-        "description": "Retrieve a judicial entity by id with data_quality flags",
+        "description": "Retrieve a judicial entity by id with data_quality flags. Call search_entities first if you do not know the id.",
         "handler": get_entity.run,
         "input_schema": {
             "type": "object",
-            "properties": {"entity_id": {"type": "string"}},
+            "properties": {
+                "entity_id": {
+                    "type": "string",
+                    "description": "Stable snake_case slug (e.g. supreme_court_india, nclt). Discover via search_entities.",
+                },
+            },
             "required": ["entity_id"],
         },
     },
     "search_entities": {
-        "description": "Search entities by name, cluster, type, or state",
+        "description": "Search entities by name, cluster, type, or state — start here to discover entity ids.",
         "handler": search_entities.run,
         "input_schema": {
             "type": "object",
             "properties": {
-                "q": {"type": "string"},
-                "cluster": {"type": "string"},
-                "type": {"type": "string"},
-                "limit": {"type": "integer"},
+                "q": {
+                    "type": "string",
+                    "description": "Name, abbreviation, or alias substring (e.g. NCLT, GSTAT).",
+                },
+                "cluster": {"type": "string", "description": "Filter by cluster slug (e.g. tribunals)."},
+                "type": {"type": "string", "description": "Filter by entity type."},
+                "limit": {"type": "integer", "description": "Max results (default 50)."},
             },
         },
     },
@@ -44,7 +52,10 @@ TOOL_REGISTRY: dict[str, dict[str, Any]] = {
         "input_schema": {
             "type": "object",
             "properties": {
-                "entity_id": {"type": "string"},
+                "entity_id": {
+                    "type": "string",
+                    "description": "Entity id from search_entities (matches source or target).",
+                },
                 "relationship_category": {"type": "string"},
             },
         },
@@ -55,8 +66,11 @@ TOOL_REGISTRY: dict[str, dict[str, Any]] = {
         "input_schema": {
             "type": "object",
             "properties": {
-                "entity_id": {"type": "string"},
-                "cluster": {"type": "string"},
+                "entity_id": {
+                    "type": "string",
+                    "description": "Entity id from search_entities.",
+                },
+                "cluster": {"type": "string", "description": "Optional cluster filter when entity_id omitted."},
             },
         },
     },

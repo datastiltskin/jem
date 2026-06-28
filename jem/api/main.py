@@ -29,7 +29,14 @@ def create_app() -> FastAPI:
     app = FastAPI(
         title="JEM Researcher API",
         version="1.0.0",
-        description="Judiciary Entity Map (India) — structural data for legal researchers",
+        description=(
+            "Judiciary Entity Map (India) — structural data for legal researchers.\n\n"
+            "**Getting started:** use `GET /api/v1/entities` to search by name, abbreviation, "
+            "or alias (`q=NCLT`). Each result includes an `id` field — pass that slug to "
+            "`GET /api/v1/entities/{entity_id}` and `GET /api/v1/relationships?entity_id=…`.\n\n"
+            "Browse clusters without ids: `GET /api/v1/clusters/summary`.\n\n"
+            "MCP HTTP tools: `/mcp/tools` (same database). See jem/docs/MCP_SETUP.md."
+        ),
         docs_url=None,
         redoc_url=None,
     )

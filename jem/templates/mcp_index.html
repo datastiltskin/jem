@@ -23,6 +23,11 @@
   <h1>MCP tools</h1>
   <p class="lead">HTTP tool registry for agents. Machine-readable listing at <a class="json" href="/mcp/tools">/mcp/tools</a> · SSE stream at <code>/mcp/sse</code>.</p>
 
+  <div class="tool" style="border-color:#bfdbfe;background:#eff6ff">
+    <h2>Discover entity ids first</h2>
+    <p>JEM ids are snake_case slugs (<code>nclt</code>, <code>gstat</code>) — not display names. Call <strong>search_entities</strong> with <code>q</code> before <strong>get_entity</strong> or <strong>get_relationships</strong>. REST equivalent: <code>GET /api/v1/entities?q=…</code>. Cluster overview without ids: <code>GET /api/v1/clusters/summary</code>.</p>
+  </div>
+
   {% for tool in tools %}
   <div class="tool">
     <h2>{{ tool.name }}</h2>

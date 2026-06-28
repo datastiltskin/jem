@@ -5,7 +5,7 @@ from __future__ import annotations
 import sqlite3
 from typing import Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Path, Query
 
 from api.deps import get_db
 from api.serializers import entity_row_to_dict
@@ -21,7 +21,17 @@ def _not_found(entity_id: str) -> HTTPException:
 
 
 @router.get("/{entity_id}")
-def get_entity(entity_id: str, conn: sqlite3.Connection = Depends(get_db)) -> dict:
+def get_entity(
+    entity_id: str = Path(
+        ...,
+        description=(
+            "Stable snake_case slug from JEM (e.g. supreme_court_india, nclt, gstat). "
+            "Discover ids via GET /api/v1/entities?q=… — do not guess."
+        ),
+        examples=["supreme_court_india", "nclt", "aft"],
+    ),
+    conn: sqlite3.Connection = Depends(get_db),
+) -> dict:
     row = conn.execute("SELECT * FROM entities WHERE id = ?", (entity_id,)).fetchone()
     if row is None:
         raise _not_found(entity_id)
@@ -31,7 +41,14 @@ def get_entity(entity_id: str, conn: sqlite3.Connection = Depends(get_db)) -> di
 @router.get("")
 def search_entities(
     conn: sqlite3.Connection = Depends(get_db),
-    q: Optional[str] = Query(None, description="Search name, abbreviation, or alias"),
+    q: Optional[str] = Query(
+        None,
+        description=(
+            "Search name, abbreviation, or alias. Each hit includes an `id` field — "
+            "use that slug for GET /entities/{entity_id} and MCP get_entity."
+        ),
+        examples=["NCLT", "Armed Forces Tribunal", "gstat"],
+    ),
     cluster: Optional[str] = None,
     type: Optional[str] = Query(None, alias="type"),
     operational_status: Optional[str] = None,

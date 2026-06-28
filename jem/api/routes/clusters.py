@@ -14,6 +14,7 @@ router = APIRouter(prefix="/clusters", tags=["clusters"])
 
 @router.get("/summary")
 def cluster_summary(conn: sqlite3.Connection = Depends(get_db)) -> dict:
+    """Aggregate counts and average structural health per cluster — no entity ids required."""
     rows = conn.execute(
         """
         SELECT cluster, data_quality, operational_status, entity_json
