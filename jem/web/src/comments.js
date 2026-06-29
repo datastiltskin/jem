@@ -1,33 +1,13 @@
 // Correction proposals + upvotes. Uses API when JEM_API_BASE is set or auto-detected.
 
+import {
+  apiFetch,
+  linkedinButtonHtml,
+  linkedinLoginHref,
+  loadAuthState,
+} from './auth.js';
+
 const STORES = new Map(); // scope -> in-memory fallback
-
-let apiBasePromise = null;
-
-function resolveApiBase() {
-  if (window.JEM_API_BASE !== undefined) {
-    return Promise.resolve(window.JEM_API_BASE || null);
-  }
-  if (apiBasePromise) return apiBasePromise;
-  apiBasePromise = (async () => {
-    for (const base of ['/api/v1', '/api/jem/v1']) {
-      try {
-        const r = await fetch(`${base}/health`, { credentials: 'same-origin' });
-        if (r.ok) return base;
-      } catch (_) { /* try next */ }
-    }
-    return null;
-  })();
-  return apiBasePromise;
-}
-
-function apiFetch(base, path, options = {}) {
-  return fetch(`${base}${path}`, {
-    credentials: 'same-origin',
-    headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
-    ...options,
-  });
-}
 
 export function commentsHTML(scope = 'global', { title = 'Corrections' } = {}) {
   return `
@@ -108,7 +88,8 @@ function wireSection(section) {
     if (!me) {
       if (authEl) {
         if (authProviders?.linkedin) {
-          authEl.innerHTML = `<a href="${apiBase}/auth/linkedin/login" class="dv-comment-signin">Sign in with LinkedIn</a>`;
+          const href = linkedinLoginHref(apiBase, window.location.href);
+          authEl.innerHTML = linkedinButtonHtml(href, { className: 'dv-comment-signin jem-linkedin-signin' });
         } else {
           authEl.textContent = 'Sign-in not configured on API';
         }
@@ -165,16 +146,11 @@ function wireSection(section) {
   };
 
   const init = async () => {
-    apiBase = await resolveApiBase();
+    const state = await loadAuthState();
+    apiBase = state.apiBase;
+    authProviders = state.providers;
+    me = state.me;
     if (apiBase) {
-      try {
-        const provResp = await apiFetch(apiBase, '/auth/providers');
-        if (provResp.ok) authProviders = await provResp.json();
-      } catch (_) { /* offline */ }
-      try {
-        const meResp = await apiFetch(apiBase, '/auth/me');
-        if (meResp.ok) me = await meResp.json();
-      } catch (_) { /* offline */ }
       try {
         await loadRemote();
       } catch (_) {

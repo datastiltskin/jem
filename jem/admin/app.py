@@ -8,6 +8,7 @@ from typing import Optional
 from fastapi import APIRouter, Depends, Form, HTTPException, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
 
+from api.auth import oauth
 from api.auth.deps import optional_user, require_maintainer
 from api.auth.session import User, audit, promote_if_trusted
 from api.chrome import templates
@@ -30,7 +31,14 @@ def create_admin_router() -> APIRouter:
                 dict(r)
                 for r in conn.execute(
                     """
-                    SELECT cp.*, u.display_name AS author_name
+                    SELECT cp.*,
+                           u.display_name AS author_name,
+                           u.email AS author_email,
+                           u.avatar_url AS author_avatar,
+                           u.profile_url AS author_profile_url,
+                           u.role AS author_role,
+                           u.approved_correction_count AS author_approved_count,
+                           u.oauth_provider AS author_provider
                     FROM correction_proposals cp
                     JOIN users u ON u.id = cp.author_id
                     WHERE cp.status = 'pending_review'
@@ -48,6 +56,11 @@ def create_admin_router() -> APIRouter:
                 "pending": pending,
                 "users": users,
                 "pending_count": len(pending),
+                "linkedin_login_url": (
+                    f"{oauth.public_api_prefix()}/auth/linkedin/login"
+                    if oauth.linkedin_configured()
+                    else None
+                ),
             },
         )
 

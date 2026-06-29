@@ -1151,28 +1151,14 @@ body.jem-resizing-inspector * {
 .group-report-row { cursor: pointer; }
 .group-report-row:hover { background: rgba(37, 99, 235, 0.06); }
 
-/* ── Loading ──────────────────────────────────────────────────────────────── */
-#loading-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg);
-  z-index: 100;
+/* ── Boot splash ──────────────────────────────────────────────────────────── */
+#jem-boot-screen .loading-error {
+  max-width: min(420px, 88vw);
+  text-align: center;
+  line-height: 1.7;
+  color: #e74c3c;
+  font-size: 12px;
 }
-.loading-logo { margin-bottom: 14px; opacity: 0.9; }
-.loading-spinner {
-  width: 40px; height: 40px;
-  border: 3px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-.loading-text { margin-top: 16px; color: var(--text-secondary); font-size: 12px; }
-.loading-error { color: #e74c3c; text-align: center; padding: 20px; line-height: 1.7; }
 
 /* ── Map status bar (one line, below canvas — not over the map) ───────────── */
 #map-status-bar {
@@ -2815,7 +2801,7 @@ em.muted { color: var(--text-dim); font-style: italic; }
   #toolbar, #nav-panel, #focus-panel, #timeline-container, .inspector-resizer,
   #map-status-bar, #neighborhood-panel, .inspector-tabs, .group-report-toolbar,
   .btn-print-mini, #detail-close, .mobile-workspace-tabs,
-  #govt-level-legend, #about-panel, #search-results, #insight-panel, #loading-overlay {
+  #govt-level-legend, #about-panel, #search-results, #insight-panel {
     display: none !important;
   }
 
@@ -6267,10 +6253,44 @@ body[data-app-view="about"]   #zoom-controls { display: none !important; }
   margin: 6px 0 0;
 }
 
-.dv-comment-signin {
+.dv-comment-signin,
+.jem-linkedin-signin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 12px;
-  color: #2563eb;
+  font-weight: 600;
+  color: #fff;
+  background: #0a66c2;
+  border-radius: 999px;
+  padding: 6px 14px;
   text-decoration: none;
+  white-space: nowrap;
+}
+.jem-linkedin-signin:hover {
+  background: #004182;
+  color: #fff;
+  text-decoration: none;
+}
+
+.toolbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 4px;
+}
+.jem-auth-user {
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.jem-auth-logout {
+  font-size: 12px;
+  padding: 4px 10px;
 }
 
 .dv-comment.pending { opacity: 0.85; }

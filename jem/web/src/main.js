@@ -14,6 +14,8 @@ import { initSummaryView } from './summaryView.js';
 import { renderDetailView, clearDetailView } from './detailView.js';
 import { initSmartSearch, entityDisplayName } from './smartSearch.js';
 import { renderAboutPage } from './aboutContent.js';
+import { initToolbarAuth } from './auth.js';
+import { mountMapShell } from './mapShell.js';
 
 const GRAPH_URL = './public/graph.json';
 
@@ -182,9 +184,7 @@ function switchView(view, entityId = null) {
     document.body.dataset.prevDetailEntity = entityId;
     syncChromeTop();
   } else if (view === 'map') {
-    if (!_mapBooted) {
-      _mapBooted = true;
-    }
+    ensureMapBooted();
     if (entityId) {
       const e = State.getEntityById(entityId);
       if (e) {
@@ -393,10 +393,61 @@ function populateKpiCards(metrics) {
   syncKpiCardActive();
 }
 
+function ensureMapBooted() {
+  if (_mapBooted) return;
+  _mapBooted = true;
+
+  mountMapShell();
+
+  initViewStatus();
+  initFocusCanvas();
+  initNavigatorTree();
+  initGroupReport();
+  initTimeline();
+  initPanel();
+  initNeighborhoodPanel();
+  initToolbar();
+  initMobileWorkspaceTabs();
+  initInspectorResize();
+  syncNavFacetVisibility();
+
+  const graph = State.graph;
+  if (graph) {
+    State.emit('graphLoaded', graph);
+    populateKpiCards(graph.impact_metrics || {});
+    expandPathToEntity(State.focusEntityId);
+    ['supreme_court_india', 'president_india'].forEach((id) => {
+      if (State.getEntityById(id)) expandPathToEntity(id);
+    });
+    State.setZoomLevel(2);
+    render();
+  }
+}
+
+function finishBoot() {
+  document.body.classList.add('jem-ready');
+  const boot = document.getElementById('jem-boot-screen');
+  if (boot) boot.setAttribute('aria-busy', 'false');
+}
+
+function showBootError(err) {
+  const boot = document.getElementById('jem-boot-screen');
+  if (!boot) return;
+  boot.setAttribute('aria-busy', 'false');
+  boot.innerHTML = `
+    <img src="public/assets/jem-logo.png" class="jem-boot-wordmark" alt="JEM — Judiciary Entity Map (India)" width="460" height="212" decoding="async">
+    <div class="loading-error">
+      <strong>Failed to load graph data</strong><br>
+      ${err.message}<br><br>
+      Run <code>python scripts/build.py</code> to generate <code>web/public/graph.json</code>
+    </div>`;
+}
+
 // ── Boot Sequence ─────────────────────────────────────────────────────────────
 
 async function boot() {
   initChromeTopSync();
+  initToolbarAuth(document.getElementById('toolbar-auth'));
   try {
     // 1. Load data
     const response = await fetch(GRAPH_URL);
@@ -413,48 +464,18 @@ async function boot() {
     State.initFocusDefaults();
     primeGapStats(graph);
 
-    // 2. Initialise all modules up front so the full-map view works when switched to
-    initViewStatus();
-    initFocusCanvas();
-    initNavigatorTree();
-    initGroupReport();
-    initTimeline();
-    initPanel();
-    initNeighborhoodPanel();
-    initToolbar();
     initSearch(graph);
     initAboutPage();
     initDistrictLatticeHotkeys();
-    initMobileWorkspaceTabs();
-    initInspectorResize();
-    syncNavFacetVisibility();
 
-    populateKpiCards(graph.impact_metrics || {});
-
-    State.emit('graphLoaded', graph);
-    expandPathToEntity(State.focusEntityId);
-    ['supreme_court_india', 'president_india'].forEach(r => {
-      if (State.getEntityById(r)) expandPathToEntity(r);
-    });
-
-    // 3. Wire navigation events and command palette
     wireNavigationEvents();
     initCommandPalette();
-
-    // 4. Patch search results so clicking them enters detail view instead of map
     patchSearchForDetailView();
-
-    // 5. Start on the summary view (map view is already hidden via CSS)
-    document.getElementById('loading-overlay').style.display = 'none';
-    State.setZoomLevel(2);
-    render();
 
     initSummaryView();
     renderAboutView();
+    finishBoot();
 
-    // Hash deep-link: open the entity / view encoded in location.hash if any,
-    // otherwise default to summary. Browser back/forward and pasted URLs
-    // re-route via the popstate/hashchange listeners below.
     if (location.hash) {
       _applyHashRoute();
     } else {
@@ -466,13 +487,7 @@ async function boot() {
 
   } catch (err) {
     console.error('JEM boot error:', err);
-    document.getElementById('loading-overlay').style.display = 'flex';
-    document.getElementById('loading-overlay').innerHTML =
-      `<div class="loading-error">
-        <strong>Failed to load graph data</strong><br>
-        ${err.message}<br><br>
-        Run <code>python scripts/build.py</code> to generate <code>web/public/graph.json</code>
-      </div>`;
+    showBootError(err);
   }
 }
 

@@ -16,6 +16,11 @@
     button { cursor: pointer; padding: 0.25rem 0.6rem; }
     .warn { background: #fff8e6; border: 1px solid #f0d78c; padding: 0.75rem; border-radius: 4px; }
     .source { font-size: 0.75rem; word-break: break-all; color: #444; }
+    .author-cell { display: flex; gap: 0.5rem; align-items: flex-start; min-width: 12rem; }
+    .author-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; flex-shrink: 0; background: #e5e7eb; }
+    .author-meta { font-size: 0.8rem; line-height: 1.35; }
+    .author-meta .muted { color: #666; font-size: 0.75rem; }
+    .author-meta a { color: #0a66c2; }
   </style>
 </head>
 <body>
@@ -24,7 +29,14 @@
   <h1>JEM Admin</h1>
 
   {% if not user %}
-  <p class="warn">Sign in required. Use dev login locally (<code>POST /api/v1/auth/dev/login</code>) or LinkedIn OAuth in production.</p>
+  <p class="warn">
+    Sign in required.
+    {% if linkedin_login_url %}
+    <a href="{{ linkedin_login_url }}" class="jem-linkedin-signin" style="display:inline-flex;margin-top:0.5rem">Sign in with LinkedIn</a>
+    {% else %}
+    Use dev login locally (<code>POST /api/v1/auth/dev/login</code>) or configure LinkedIn OAuth.
+    {% endif %}
+  </p>
   {% elif not user.is_maintainer %}
   <p class="warn">Signed in as {{ user.display_name }} ({{ user.role }}). Maintainer role required.</p>
   {% else %}
@@ -43,7 +55,29 @@
       <tr>
         <td>{{ item.id }}</td>
         <td>{{ item.scope }}</td>
-        <td>{{ item.author_name }}</td>
+        <td>
+          <div class="author-cell">
+            {% if item.author_avatar %}
+            <img class="author-avatar" src="{{ item.author_avatar }}" alt="" width="32" height="32">
+            {% else %}
+            <div class="author-avatar" aria-hidden="true"></div>
+            {% endif %}
+            <div class="author-meta">
+              {% if item.author_profile_url %}
+              <a href="{{ item.author_profile_url }}" target="_blank" rel="noopener">{{ item.author_name }}</a>
+              {% else %}
+              <strong>{{ item.author_name }}</strong>
+              {% endif %}
+              <div class="muted">{{ item.author_provider }} · {{ item.author_role }} · {{ item.author_approved_count }} approved</div>
+              {% if item.author_email %}
+              <div class="muted"><a href="mailto:{{ item.author_email }}">{{ item.author_email }}</a></div>
+              {% endif %}
+              {% if item.author_provider == 'linkedin' and not item.author_profile_url %}
+              <div class="muted">LinkedIn OIDC does not expose a public profile URL — use name and email to verify identity.</div>
+              {% endif %}
+            </div>
+          </div>
+        </td>
         <td>{{ item.body }}</td>
         <td class="source"><a href="{{ item.source_url }}" target="_blank" rel="noopener">{{ item.source_url }}</a></td>
         <td class="actions">
@@ -66,13 +100,20 @@
   <h2>Users</h2>
   <table>
     <thead>
-      <tr><th>ID</th><th>Name</th><th>Provider</th><th>Role</th><th>Approved</th><th>Set role</th></tr>
+      <tr><th>ID</th><th>Name</th><th>Contact</th><th>Provider</th><th>Role</th><th>Approved</th><th>Set role</th></tr>
     </thead>
     <tbody>
       {% for u in users %}
       <tr>
         <td>{{ u.id }}</td>
-        <td>{{ u.display_name }}</td>
+        <td>
+          {% if u.profile_url %}
+          <a href="{{ u.profile_url }}" target="_blank" rel="noopener">{{ u.display_name }}</a>
+          {% else %}
+          {{ u.display_name }}
+          {% endif %}
+        </td>
+        <td class="muted">{% if u.email %}<a href="mailto:{{ u.email }}">{{ u.email }}</a>{% else %}—{% endif %}</td>
         <td>{{ u.oauth_provider }}</td>
         <td>{{ u.role }}</td>
         <td>{{ u.approved_correction_count }}</td>

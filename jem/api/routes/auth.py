@@ -43,10 +43,12 @@ def _user_response(user: User) -> UserResponse:
 
 
 def _set_session_cookie(response: Response, token: str) -> None:
+    secure = oauth.base_url().startswith("https://")
     response.set_cookie(
         key=SESSION_COOKIE,
         value=token,
         httponly=True,
+        secure=secure,
         samesite="lax",
         max_age=SESSION_DAYS * 86400,
         path="/",
@@ -75,13 +77,15 @@ def logout(
 
 
 @router.get("/linkedin/login")
-def linkedin_login() -> RedirectResponse:
+def linkedin_login(
+    next: Optional[str] = Query(None, description="Return URL after sign-in (friedso.com only)"),
+) -> RedirectResponse:
     if not oauth.linkedin_configured():
         raise HTTPException(
             status_code=503,
             detail="LinkedIn OAuth not configured (set LINKEDIN_CLIENT_ID and LINKEDIN_CLIENT_SECRET)",
         )
-    url, _ = oauth.linkedin_login_url()
+    url, _ = oauth.linkedin_login_url(next)
     return RedirectResponse(url=url, status_code=302)
 
 
@@ -95,7 +99,8 @@ def linkedin_callback(
 ) -> RedirectResponse:
     if error:
         raise HTTPException(status_code=400, detail=f"LinkedIn OAuth error: {error}")
-    if not code or not state or not oauth.pop_oauth_state(state):
+    entry = oauth.pop_oauth_state(state or "")
+    if not code or not entry:
         raise HTTPException(status_code=400, detail="Invalid OAuth state")
     if not oauth.linkedin_configured():
         raise HTTPException(status_code=503, detail="LinkedIn OAuth not configured")
@@ -105,7 +110,8 @@ def linkedin_callback(
     user = upsert_oauth_user(conn, provider="linkedin", **profile)
     token = create_session(conn, user.id)
 
-    redirect = RedirectResponse(url=f"{oauth.base_url()}/admin/", status_code=302)
+    return_to = oauth.safe_return_url(entry.get("next"))
+    redirect = RedirectResponse(url=return_to, status_code=302)
     _set_session_cookie(redirect, token)
     return redirect
 
@@ -133,9 +139,12 @@ def dev_login(
 
 @router.get("/providers")
 def auth_providers() -> dict:
+    prefix = oauth.public_api_prefix()
+    login_path = f"{prefix}/auth/linkedin/login" if oauth.linkedin_configured() else None
     return {
         "mode": oauth.auth_mode(),
         "linkedin": oauth.linkedin_configured(),
         "dev_login": oauth.dev_login_available(),
-        "linkedin_login_url": "/api/v1/auth/linkedin/login" if oauth.linkedin_configured() else None,
+        "linkedin_login_url": login_path,
+        "oauth_redirect_uri": oauth.oauth_redirect_uri() if oauth.linkedin_configured() else None,
     }
