@@ -249,6 +249,14 @@ export function aboutPageHTML(ctx = {}) {
 }
 
 function resolveApiOrigin() {
+  const { hostname, origin } = window.location;
+  const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
+
+  if (!isLocal) {
+    // Hosted map (friedso.com, staging, etc.) — API routes live on the same origin.
+    return origin;
+  }
+
   const base = window.JEM_API_BASE;
   if (typeof base === 'string' && base) {
     try {
