@@ -121,7 +121,8 @@ export function aboutPageHTML(ctx = {}) {
         </div>
         <div class="about-nav-card">
           <h3>API &amp; maintainer tools</h3>
-          <p class="about-muted">Requires the FastAPI server (<code>uvicorn api.main:app</code>). Paths below are relative to that host.</p>
+          <p class="about-muted">Requires the FastAPI server (<code>uvicorn api.main:app</code>). The public demo at friedso.com ships the <strong>map only</strong> — API, portal, admin, and MCP run on your local uvicorn host (or a maintainer-deployed API), not on friedso.com paths.</p>
+          <p class="about-muted">Setup: <a href="${GITHUB}/blob/main/jem/docs/MCP_SETUP.md" target="_blank" rel="noopener noreferrer">API &amp; MCP setup guide</a></p>
           <p class="about-muted"><strong>Entity ids:</strong> search first — <code>GET /api/v1/entities?q=NCLT</code> returns an <code>id</code> slug (e.g. <code>nclt</code>). Use that for detail and relationships. Cluster overview: <code>GET /api/v1/clusters/summary</code>.</p>
           ${apiLinks(ctx.apiOrigin)}
         </div>
@@ -249,13 +250,10 @@ export function aboutPageHTML(ctx = {}) {
 }
 
 function resolveApiOrigin() {
-  const { hostname, origin } = window.location;
+  const { hostname } = window.location;
   const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
-
-  if (!isLocal) {
-    // Hosted map (friedso.com, staging, etc.) — API routes live on the same origin.
-    return origin;
-  }
+  // Hosted demo (friedso.com) serves static map only — no API on same origin.
+  if (!isLocal) return null;
 
   const base = window.JEM_API_BASE;
   if (typeof base === 'string' && base) {
