@@ -8,7 +8,7 @@ import { crescentPathD, isHighCourtBenchEntity } from './nodeShapes.js';
 let sim = null;
 let resizeObs = null;
 let nbZoom = null;
-let nbZoomTransform = d3.zoomIdentity;
+let nbZoomTransform = null;
 let lastNbNodes = null;
 let currentFocusId = null;
 let renderGeneration = 0;
@@ -319,7 +319,7 @@ function runLayout(svgEl, entities, rels, focusId, filter, { resetZoom = false }
     svgNode.call(nbZoom).on('dblclick.zoom', resetNeighborhoodZoomFit);
   }
 
-  const t = resetZoom
+  const t = resetZoom || !nbZoomTransform
     ? fitNeighborhoodTransform(nodes, focusId, viewW, viewH)
     : nbZoomTransform;
   applyNeighborhoodZoomTransform(svgEl, root, t, false);
