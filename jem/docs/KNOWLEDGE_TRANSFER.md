@@ -8,7 +8,7 @@
 | **Document version** | 1.0 (May 2026) |
 | **Audience** | Co-maintainer (technical background); executive overview — use Cursor/Claude for deep dives |
 | **Primary author** | Divya Sornaraja ([@dso6060](https://github.com/dso6060)) — data, deploy, process design |
-| **Co-maintainer** | Prajna Prayas ([@Prajna1999](https://github.com/Prajna1999)) — equal on GitHub; production deploy stays with founder |
+| **Co-maintainers** | Prajna Prayas ([@Prajna1999](https://github.com/Prajna1999)) and Agriya Khetarpal ([@agriyakhetarpal](https://github.com/agriyakhetarpal)) — equal on GitHub; production deploy stays with founder |
 | **Canonical demo (attribution)** | https://friedso.com/apps/jem/ (v1.0.0 build, **1,103** entities — deploy pending) |
 | **Current release label** | **v1.0.0** (Jun 2026) — first public semver; UI merged from `feature/ui-cleanup` |
 | **Licences** | Data CC0 · Code MIT |
@@ -50,7 +50,7 @@ For command-level detail, see also:
 | Git tags | `v1.0.0` (Jun 2026), `v1.2.0` (data-only milestone, Jun 15) |
 | `graph.json` meta.version | `1.0.0` |
 | Data entry | Founder + Cursor/Claude sessions only |
-| GitHub remote | **Not yet created** (founder will create; name TBD on call) |
+| GitHub remote | [`datastiltskin/jem`](https://github.com/datastiltskin/jem) (public repo) |
 | Community contributions | **Not open yet** — planned: data-quality upgrades only |
 
 **Funding:** Personally funded to date; no grants documented. May change later.
@@ -223,7 +223,7 @@ CI does **not** run `build.py` or deploy.
 
 ## 9. GitHub & community launch plan
 
-**Founder:** [@dso6060](https://github.com/dso6060) · **Co-maintainer:** [@Prajna1999](https://github.com/Prajna1999) · Repo: [dso6060/jem](https://github.com/dso6060/jem)
+**Founder:** [@dso6060](https://github.com/dso6060) · **Co-maintainers:** [@Prajna1999](https://github.com/Prajna1999) and [@agriyakhetarpal](https://github.com/agriyakhetarpal) · Repo: [datastiltskin/jem](https://github.com/datastiltskin/jem)
 
 Scaffolding is in **`.github/`** (ready before first push):
 
@@ -231,7 +231,7 @@ Scaffolding is in **`.github/`** (ready before first push):
 |------|---------|
 | [`CODEOWNERS`](../../.github/CODEOWNERS) | `@dso6060` on `jem/data`, scripts, web, docs |
 | [`GOVERNANCE.md`](../../.github/GOVERNANCE.md) | Roles, scope, escalation |
-| [`PUBLISH_CHECKLIST.md`](../../.github/PUBLISH_CHECKLIST.md) | Publish steps — repo [dso6060/jem](https://github.com/dso6060/jem); branch protection TBD |
+| [`PUBLISH_CHECKLIST.md`](../../.github/PUBLISH_CHECKLIST.md) | Publish steps — repo [datastiltskin/jem](https://github.com/datastiltskin/jem); branch protection TBD |
 | [`pull_request_template.md`](../../.github/pull_request_template.md) | PR checklist |
 | [`ISSUE_TEMPLATE/`](../../.github/ISSUE_TEMPLATE/) | `data_correction`, `source_request`, `bug_report`, `contested_fact`, `expert_review` |
 | [`DISCUSSION_TEMPLATE/`](../../.github/DISCUSSION_TEMPLATE/) | `data-question`, `dispute-escalation` |
@@ -304,7 +304,7 @@ Scaffolding is in **`.github/`** (ready before first push):
 
 | Gap | Status / action |
 |-----|------------------|
-| No public GitHub yet | Founder creates; co-maintainer invited as admin |
+| Public GitHub repo live | Founder + co-maintainers maintain access and branch protection |
 | Contribution process | Documented here; implement templates + CODEOWNERS on create |
 | CI does not build/deploy graph on merge | Maintainers run pipeline locally before release tags |
 | Production deploy | Founder only |
@@ -375,7 +375,7 @@ python3 scripts/derive.py --explain nclt
 | Role | Contact |
 |------|---------|
 | Project founder / deploy | **Divya Sornaraja** · GitHub [@dso6060](https://github.com/dso6060) |
-| Co-maintainer | **Prajna Prayas** · GitHub username TBD (add to `CODEOWNERS` when confirmed) |
+| Co-maintainers | **Prajna Prayas** (`@Prajna1999`) · **Agriya Khetarpal** (`@agriyakhetarpal`) |
 | Domain reviewers (institutional) | [TrustBridge Rule of Law Foundation](https://trustbridge.in/) — *partnership / advisory role to be officially confirmed* |
 
 ---
@@ -422,7 +422,7 @@ Pick a phased **TASK** from [`ENTITY_BUILD_ROADMAP.md`](ENTITY_BUILD_ROADMAP.md)
 
 ## 21. Origin (brief)
 
-JEM began from the absence of a **public, machine-readable map** of how India's ~1,500 judicial and quasi-judicial bodies connect — appointment power, funding, oversight, and capacity signals — in one place. It is a **personally funded** civic/research infrastructure project, with a public demo at https://friedso.com/apps/jem/ (attribution), hosted on **GitHub** at [dso6060/jem](https://github.com/dso6060/jem), which others can fork, mirror, and improve under CC0/MIT.
+JEM began from the absence of a **public, machine-readable map** of how India's ~1,500 judicial and quasi-judicial bodies connect — appointment power, funding, oversight, and capacity signals — in one place. It is a **personally funded** civic/research infrastructure project, with a public demo at https://friedso.com/apps/jem/ (attribution), hosted on **GitHub** at [datastiltskin/jem](https://github.com/datastiltskin/jem), which others can fork, mirror, and improve under CC0/MIT.
 
 ---
 

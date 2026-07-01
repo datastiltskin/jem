@@ -7,7 +7,7 @@ Lightweight rules for maintainers and future reviewers. Full context: [`jem/docs
 | Role | GitHub | Responsibilities |
 |------|--------|------------------|
 | **Founder / lead maintainer** | [@dso6060](https://github.com/dso6060) | GitHub | Data curation, schema, production deploy (private), final merge on disputed facts |
-| **Co-maintainer** | Prajna Prayas · [@Prajna1999](https://github.com/Prajna1999) | Equal review on PRs; shared CODEOWNERS; no production deploy unless delegated later |
+| **Co-maintainers** | Prajna Prayas · [@Prajna1999](https://github.com/Prajna1999); Agriya Khetarpal · [@agriyakhetarpal](https://github.com/agriyakhetarpal) | Equal review on PRs; shared CODEOWNERS; no production deploy unless delegated later |
 | **Community contributor** | Any GitHub user | **Data-quality upgrades only** (sources, corrections, notes) via PR or issue |
 | **Domain / legal reviewer** | *TBD* | Advisory review; does not merge unless granted write access |
 | **Think-tank / institution liaison** | *TBD* | Batch review, methodology feedback; contact via Expert Review issue template |
@@ -45,11 +45,11 @@ Widening scope (new states, gap-registry entities) requires an explicit maintain
 
 ## Repository settings (checklist when repo is created)
 
-- [ ] Public repo under org or `@dso6060`
+- [x] Public repo under `@datastiltskin`
 - [ ] Enable **Discussions**
 - [ ] Branch protection on `main`: require PR, require status checks, require CODEOWNERS review
 - [ ] Allow squash merge; disallow force-push to `main`
-- [ ] Add co-maintainer as **Admin** when username is known; update `CODEOWNERS`
+- [x] Add co-maintainers as **Admin** and keep `CODEOWNERS` updated
 
 ## Deploy
 

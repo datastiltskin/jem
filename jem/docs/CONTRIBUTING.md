@@ -8,7 +8,7 @@
 | `data_quality` / `data_quality_notes` with citations | Schema or `derive.py` formula changes |
 | Request `contested` with two primary sources | `derived.scores_validated: true` |
 
-**GitHub:** Use the [data correction](https://github.com/dso6060/jem/issues/new?template=data_correction.yml) issue template or open a PR (checklist auto-applied).
+**GitHub:** Use the [data correction](https://github.com/datastiltskin/jem/issues/new?template=data_correction.yml) issue template or open a PR (checklist auto-applied).
 
 Governance: [`.github/GOVERNANCE.md`](../../.github/GOVERNANCE.md) · Team: [`TEAM.md`](TEAM.md)
 

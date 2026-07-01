@@ -13,15 +13,15 @@ JEM maps *how* courts, tribunals, regulators, and oversight bodies are built —
 → **Canonical demo (attribution):** https://friedso.com/apps/jem/  
 → **Data licence:** CC0 (public domain)  
 → **Code licence:** MIT  
-→ **GitHub:** https://github.com/dso6060/jem  
+→ **GitHub:** https://github.com/datastiltskin/jem  
 → **Release:** `v1.0.0` (Jun 2026) — **1,117 entities**, **1,882 relationships**, **0 orphan nodes** · audit passes 1–4 + QA sprint (Jun 2026)  
-→ **Maintainer:** [@dso6060](https://github.com/dso6060) · co-maintainer [@Prajna1999](https://github.com/Prajna1999) (UI) — contact via [GitHub Issues](https://github.com/dso6060/jem/issues)  
+→ **Maintainers:** [@dso6060](https://github.com/dso6060) · co-maintainers [@Prajna1999](https://github.com/Prajna1999) (UI) and [@agriyakhetarpal](https://github.com/agriyakhetarpal) (public repo) — contact via [GitHub Issues](https://github.com/datastiltskin/jem/issues)  
 → **Maintainer guide:** [`jem/docs/KNOWLEDGE_TRANSFER.md`](jem/docs/KNOWLEDGE_TRANSFER.md) · [`jem/docs/JEM_Knowledge_Transfer.docx`](jem/docs/JEM_Knowledge_Transfer.docx)  
 → **AI data-entry prompt:** [`jem/docs/AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) · **Entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
 
 ### Disclaimer
 
-Judiciary Entity Map (India) (JEM) presents structural information about institutions and their formal relationships, derived from public sources. It does not provide legal advice, predict case outcomes, or assess individual conduct. Independence Risk and Discretionary Power scores are algorithmic indicators of *structural design*, not findings of bias or misconduct. Data may be incomplete or outdated; verify critical facts against primary sources before relying on them in litigation, policy, or journalism. Corrections are welcome via [GitHub issues](https://github.com/dso6060/jem/issues/new?template=data_correction.yml) with citations.
+Judiciary Entity Map (India) (JEM) presents structural information about institutions and their formal relationships, derived from public sources. It does not provide legal advice, predict case outcomes, or assess individual conduct. Independence Risk and Discretionary Power scores are algorithmic indicators of *structural design*, not findings of bias or misconduct. Data may be incomplete or outdated; verify critical facts against primary sources before relying on them in litigation, policy, or journalism. Corrections are welcome via [GitHub issues](https://github.com/datastiltskin/jem/issues/new?template=data_correction.yml) with citations.
 
 ---
 
@@ -380,7 +380,7 @@ cd ..
 
 Production deploy is **maintainer-only** from branch **`friedso_v1`** (see [`.github/GOVERNANCE.md`](.github/GOVERNANCE.md)). Public workflow: [`jem/docs/SESSION_WORKFLOW.md`](jem/docs/SESSION_WORKFLOW.md) · [`deploy_friedso_production.sh`](jem/scripts/deploy_friedso_production.sh) · [`deploy_prep.sh`](jem/scripts/deploy_prep.sh).
 
-GitHub: https://github.com/dso6060/jem — Actions validates PRs; **does not auto-deploy**.
+GitHub: https://github.com/datastiltskin/jem — Actions validates PRs; **does not auto-deploy**.
 
 **Mirrors:** You may host copies elsewhere; courtesy attribution: *Structural data from [Judiciary Entity Map (JEM)](https://friedso.com/apps/jem/).*
 

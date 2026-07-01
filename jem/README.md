@@ -11,10 +11,12 @@ Maps institutional relationships — appointment chains, funding flows,
 oversight mechanisms, complaint pathways — not case outcomes.
 
 **Canonical demo (attribution):** https://friedso.com/apps/jem/  
+**GitHub:** https://github.com/datastiltskin/jem  
 **Release:** `v1.0.0` (Jun 2026) — 1,103 entities · summary/detail UI refresh  
 **Knowledge transfer (maintainers):** [`docs/KNOWLEDGE_TRANSFER.md`](docs/KNOWLEDGE_TRANSFER.md) · [`docs/JEM_Knowledge_Transfer.docx`](docs/JEM_Knowledge_Transfer.docx)  
 **AI data entry (copy-paste):** [`docs/AI_DATA_ENTRY_PROMPT.md`](docs/AI_DATA_ENTRY_PROMPT.md) · **Build roadmap (1,500+):** [`docs/ENTITY_BUILD_ROADMAP.md`](docs/ENTITY_BUILD_ROADMAP.md)  
-**MCP / API setup:** [`docs/MCP_SETUP.md`](docs/MCP_SETUP.md)
+**MCP / API setup:** [`docs/MCP_SETUP.md`](docs/MCP_SETUP.md)  
+**Maintainers:** [@dso6060](https://github.com/dso6060) · co-maintainers [@Prajna1999](https://github.com/Prajna1999) and [@agriyakhetarpal](https://github.com/agriyakhetarpal)
 
 ---
 
