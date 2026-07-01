@@ -106,11 +106,19 @@ async function loadGraph() {
 async function afterGraphLoaded() {
   if (_appDataBooted) return;
   _appDataBooted = true;
-  await initSearch(State.graph);
   initCommandPalette();
   patchSearchForDetailView();
   initSummaryView();
   renderAboutView();
+  void initSearch(State.graph).catch((err) => {
+    console.error('JEM search init error:', err);
+    const input = document.getElementById('search-input');
+    if (input) {
+      input.placeholder = 'Search temporarily unavailable';
+      input.disabled = true;
+      input.title = 'Search failed to initialize. Reload or try again later.';
+    }
+  });
 }
 
 function revealMapChrome() {
@@ -948,7 +956,12 @@ async function initSearch(graph) {
     switchView('detail', id);
   };
 
-  const Fuse = await loadFuse();
+  const Fuse = await Promise.race([
+    loadFuse(),
+    new Promise((_, reject) => {
+      window.setTimeout(() => reject(new Error('Fuse.js load timed out')), 4000);
+    }),
+  ]);
 
   const wireSearch = (g) => {
     const fuse = new Fuse(g.entities, {
