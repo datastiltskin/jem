@@ -1,7 +1,7 @@
 # v1.0.0 release runbook (items 1–3)
 
 **Audience:** maintainers running production deploy and git tag.  
-**Prerequisite:** `validate.py` clean; repo-root `graph.json` is the build you intend to ship (**1,103** entities, Jun 2026 corpus).
+**Prerequisite:** `validate.py` clean; repo-root `graph.json` is the build you intend to ship (**1,145** entities, **1,810** relationships, Jun 2026 corpus).
 
 **Canonical public demo (attribution only):** https://friedso.com/apps/jem/
 
@@ -112,7 +112,7 @@ git checkout friedso_v1
 git status   # clean, on friedso_v1
 git log -1 --oneline
 
-git tag -a v1.0.0 -m "JEM v1.0.0 — 1,103 entities, full state/UT packs, UI refresh"
+git tag -a v1.0.0 -m "JEM v1.0.0 — 1,145 entities, 1,810 relationships, full state/UT packs, UI refresh"
 
 # git push origin friedso_v1
 # git push origin v1.0.0
@@ -120,7 +120,7 @@ git tag -a v1.0.0 -m "JEM v1.0.0 — 1,103 entities, full state/UT packs, UI ref
 
 Record in release notes:
 
-- **1,103** entities / **1,858** relationships in shipped `graph.json` (Jun 2026)
+- **1,145** entities / **1,810** relationships in shipped `graph.json` (Jun 2026)
 - Full state/UT core packs (35 codes); central tribunal bench lattice
 - Summary/detail UI refresh (co-maintainer @Prajna1999); `entityConnections.js`; DC→HC edge backfill at build
 - NJDG static snapshot merge (139 entities); district-level NJDG **parked** (Part 3.5.2)

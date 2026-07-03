@@ -9,7 +9,7 @@
 | **Audience** | Co-maintainer (technical background); executive overview — use Cursor/Claude for deep dives |
 | **Primary author** | Divya Sornaraja ([@dso6060](https://github.com/dso6060)) — data, deploy, process design |
 | **Co-maintainers** | Prajna Prayas ([@Prajna1999](https://github.com/Prajna1999)) and Agriya Khetarpal ([@agriyakhetarpal](https://github.com/agriyakhetarpal)) — equal on GitHub; production deploy stays with founder |
-| **Canonical demo (attribution)** | https://friedso.com/apps/jem/ (v1.0.0 build, **1,103** entities — deploy pending) |
+| **Canonical demo (attribution)** | https://friedso.com/apps/jem/ (v1.0.0 build, **1,145** entities, **1,810** relationships) |
 | **Current release label** | **v1.0.0** (Jun 2026) — first public semver; UI merged from `feature/ui-cleanup` |
 | **Licences** | Data CC0 · Code MIT |
 | **AI data-entry prompt** | [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md) · also §20 below |
@@ -42,11 +42,11 @@ For command-level detail, see also:
 
 | Metric | Value |
 |--------|--------|
-| Entity YAML files | 1,103 |
-| Relationships in `graph.json` | 1,858 |
-| Built graph size | ~5.5 MB |
+| Entity YAML files | 1,145 |
+| Relationships in `graph.json` | 1,810 |
+| Built graph size | ~5.8 MB |
 | `validate.py` | 0 errors (strict) |
-| Live site | May 2026 build (~506 entities) — **v1.0.0 deploy pending** |
+| Live site | v1.0.0 build (**1,145** entities, **1,810** relationships — Jun 2026) |
 | Git tags | `v1.0.0` (Jun 2026), `v1.2.0` (data-only milestone, Jun 15) |
 | `graph.json` meta.version | `1.0.0` |
 | Data entry | Founder + Cursor/Claude sessions only |
@@ -260,7 +260,7 @@ Scaffolding is in **`.github/`** (ready before first push):
 
 | Label | Meaning |
 |-------|---------|
-| **v1.0.0 (public)** | First public semver release (Jun 2026) — 1,103 entities, full state/UT packs, UI refresh |
+| **v1.0.0 (public)** | First public semver release (Jun 2026) — 1,145 entities, 1,810 relationships, full state/UT packs, UI refresh |
 | **graph.json `meta.version: 1.0.0`** | Internal compiler label — not the same as git tag |
 | **git tags** | `v1.0.0` (Jun 16 2026, UI + corpus); `v1.2.0` (Jun 15 data milestone, pre-UI merge) |
 
@@ -339,7 +339,7 @@ Optional future: `CONTRIBUTORS.md` listing merged PR authors.
 
 - [ ] Clone repo; `cd jem && pip install -r scripts/requirements.txt`
 - [ ] Run `python3 scripts/validate.py --strict` (expect 0 errors)
-- [ ] Run `./scripts/safe_pipeline.sh`; confirm `graph.json` meta ~1,103 entities
+- [ ] Run `./scripts/safe_pipeline.sh`; confirm `graph.json` meta ~1,145 entities
 - [ ] Open local `jem/web/` via static server; click SC, Madras HC, TN district collapse
 - [ ] Read `DATA_MODEL.md` § governance exclusions + score formulae
 - [ ] Read `SESSION_WORKFLOW.md` § overwrite risks (`build.py`, generators)

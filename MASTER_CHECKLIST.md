@@ -1,7 +1,7 @@
 # Judiciary Entity Map (India) - JEM — Master Build & Deployment Checklist
 # Generated: April 25 2026
-# Last full repo audit: **Jun 15 2026 (post Wave 4–5 + C26 orphan wiring complete)** — see PROGRESS & REPO AUDIT below
-# Current build: **1,103 entities**, **1,855 relationships**, **~5.63 MB** `graph.json` (`validate.py` 0 errors)
+# Last full repo audit: **Jun 29 2026 (post QA sprint + people/roles layer)** — see PROGRESS & REPO AUDIT below
+# Current build: **1,145 entities**, **1,810 relationships**, **~5.8 MB** `graph.json` (`validate.py` 0 errors)
 # ============================================================
 # HOW TO USE THIS FILE
 # - Work top to bottom
@@ -13,24 +13,20 @@
 
 ---
 
-## REPO AUDIT (Jun 15 2026 — post Wave 4–5 state packs)
+## REPO AUDIT (Jun 29 2026 — post QA sprint)
 
 | Metric | Value |
 |--------|--------|
-| Unique entity ids in graph | **1,103** |
-| Entity YAML files on disk | **1,103** (canonical) |
-| Relationship files | **50** packs (**1,855** edges in `graph.json`) |
-| `graph.json` size | **~5.63 MB** (5,629,019 bytes after `build.py`) |
-| `validate.py` | **0 errors** (1,152 files checked) |
-| `validate_graph_refs.py` | **0 broken refs**; **0 orphan entities** (no rel source/target; `--strict`) |
-| `CentralTribunal` entities | **101** (principals + CESTAT×8, AFT×12, DRT×25, DRAT×6, ITAT×25, CGIT×7, EPFAT, tax stack, etc.) |
-| State SERC entities | **32** under `regulatory_bodies/serc_states/` |
-| `RegulatoryBodyQJ` (backbone) | trai, sebi, cci, irdai, pfrda, fssai, aera + state SERC gens |
-| Funding ministry stubs | ministry_of_power, ministry_consumer_affairs, ministry_corporate_affairs, ministry_environment — **present** |
-| `judge_strength` populated (allotted/appointed) | **39 / 1,103** (HC health pass Jun 2; dilution from new entities) |
-| `case_volume.pending_cases` populated | **84 / 1,103** |
+| Unique entity ids in graph | **1,145** |
+| Entity YAML files on disk | **1,145** (canonical) |
+| Relationship files | **50** packs (**1,810** edges in `graph.json`) |
+| `graph.json` size | **~5.8 MB** |
+| `validate.py` | **0 errors** (strict) |
+| `validate_graph_refs.py` | **0 broken refs**; **25 orphan entities** (`--strict`: 5 state RERA stubs + 20 people/roles scaffolds) |
+| `judge_strength` populated (allotted/appointed) | **44 / 1,145** |
+| `case_volume.pending_cases` populated | **83 / 1,145** |
 | HC permanent benches in graph | **13** — Madras HC has **Madurai only** (no Tiruchirappalli bench) |
-| Entities with `case_volume` block in YAML | 153 |
+| Entities with `case_volume` block in YAML | 157 |
 | Entities tagged `NJDG snapshot case_volume merged` | 139 |
 | State/UT packs (35 folders) | All states + UTs have core packs (SERC, RERA, SJA, SLSA, AG, CDRC, 2–10 named districts + generic); **TN 50** (38-district lattice), **MH 53**, **KA 43** |
 | TN district lattice | 38 per-district courts + `tn_district_courts_generic` (collapse proxy) |
@@ -156,7 +152,7 @@ Semantic data releases after **v1.0.0** deploy. Tag with `git tag -a v1.x.y` aft
 
 | Release | Scope | Acceptance |
 |---------|--------|------------|
-| **v1.0.0** | Ship graph at deploy time (**1,103** entities, **1,858** rels; UI merge Jun 16). | `validate.py` 0 errors; local tag ✅; friedso deploy pending |
+| **v1.0.0** | Ship graph at deploy time (**1,145** entities, **1,810** rels; UI merge Jun 16). | `validate.py` 0 errors; local tag ✅; friedso deploy ✅ (Jun 2026) |
 | **v1.1** | **Structural integrity** — no new external datasets required | Config matches graph; UP/WB/RJ bench edges ✅; orphans **0** ✅; KA Dharwad + generic `state_data` remain |
 | **v1.2** | **Numeric coverage** — DoJ + NJDG rollups | `judge_strength` on all court-like entities; `case_volume` >> 84/1,103 |
 | **v1.3** | **Per-district NJDG** — blocked on district exports | TN 38/38 + MH/KA bootstrap districts with district URLs |
@@ -952,10 +948,10 @@ Rule: If a task requires domain reasoning about Indian judicial structure or new
 | Tribunal completion + drt_b5 (C20 MoLE wiring) | **599** | **~3.02 MB** | **Jun 12 2026 ✅** |
 | Phase 1 batch (ITAT×25, UP/WB/RJ, C10/C11, M-T1–M-T6) | **668** | **~3.34 MB** | **Jun 12 2026 ✅** |
 | Wave 4–5 (all state/UT core packs + rel wiring) | **1,103** | **~5.63 MB** | **Jun 15 2026 ✅** |
-| **v1.0.0** tag + production deploy | **1,103** | **~5.63 MB** | **Tagged Jun 16 2026** ✅ · friedso deploy pending |
-| **v1.1** structural (KA verify, generic state_data) | 1,103+ | ~5.6 MB | **Nearly done** — orphans 0 ✅ |
-| **v1.2** numerics (`judge_strength`, `case_volume` bulk) | 1,103+ | ~5.6 MB | **Pending** — 39/1,103 JS, 84/1,103 CV |
-| **v1.3** per-district NJDG (TN/MH/KA) | 1,103+ | ~5.6 MB | TBD (blocked on exports) |
+| **v1.0.0** tag + production deploy | **1,145** | **~5.8 MB** | **Tagged Jun 16 2026** ✅ · friedso deploy ✅ (Jun 2026) |
+| **v1.1** structural (KA verify, generic state_data) | 1,145+ | ~5.8 MB | **Nearly done** — 25 orphans (RERA + roles) pending |
+| **v1.2** numerics (`judge_strength`, `case_volume` bulk) | 1,145+ | ~5.8 MB | **Pending** — 44/1,145 JS, 83/1,145 CV |
+| **v1.3** per-district NJDG (TN/MH/KA) | 1,145+ | ~5.8 MB | TBD (blocked on exports) |
 | **v1.4** deep district lattices (beyond core packs) | ~1,300+ | ~6 MB | TBD |
 | **v1.5** gap registry (Part 5 remainder) | ~1,100+ | ~5.6 MB | **Mostly done** — GSTAT/DRT sub-entities gated |
 | **v2.0** product (Canvas, live NJDG, Sankey, GitHub) | ~1,100+ | ~5.6 MB | TBD |

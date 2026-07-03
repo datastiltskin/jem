@@ -1,6 +1,6 @@
 # JEM — entity build roadmap (~1,500 target)
 
-**Current corpus:** 1,103 entities (v1.0.0, Jun 2026) · **Target:** ~1,500 structural entities  
+**Current corpus:** 1,145 entities (v1.0.0, Jun 2026) · **Target:** ~1,500 structural entities  
 **Tracker:** this file is the source of truth; [`README.md`](../../README.md#entity-build-progress) mirrors the status table for GitHub.
 
 ## Status legend
