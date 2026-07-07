@@ -16,6 +16,13 @@ Governance: [`.github/GOVERNANCE.md`](../../.github/GOVERNANCE.md) · Team: [`TE
 
 ---
 
+## Structural vs institutional accuracy
+
+CI validates schema and reference integrity (L0–L3), not whether every institution
+exists in law. See [`RCA_AI_HALLUCINATION_TRICHY_BENCH.md`](RCA_AI_HALLUCINATION_TRICHY_BENCH.md)
+and [`DATA_QUALITY_GATES.md`](DATA_QUALITY_GATES.md). New `HighCourtBench` or tribunal
+bench entities require a bench-specific primary source before merge.
+
 ## Principles
 
 1. **Primary sources only.** Every `data_quality: verified` field requires a direct link to an official GoI source: india-code.nic.in, official gazette notification, Supreme Court judgment on main.sci.gov.in, or official ministry website.

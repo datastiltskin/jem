@@ -24,6 +24,8 @@ This guide transfers everything a **co-maintainer** needs to run the GitHub repo
 For command-level detail, see also:
 
 - [`SESSION_WORKFLOW.md`](SESSION_WORKFLOW.md) — daily validate → derive → build
+- [`DATA_QUALITY_GATES.md`](DATA_QUALITY_GATES.md) — what CI guarantees (L0–L5)
+- [`RCA_AI_HALLUCINATION_TRICHY_BENCH.md`](RCA_AI_HALLUCINATION_TRICHY_BENCH.md) — AI hallucination RCA (May 2026)
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contributor rules
 - [`DATA_MODEL.md`](DATA_MODEL.md) — score formulae
 - [`MCP_SETUP.md`](MCP_SETUP.md) — REST search, MCP tools, API setup

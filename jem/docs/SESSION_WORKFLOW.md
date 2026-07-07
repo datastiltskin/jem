@@ -17,6 +17,8 @@ python3 scripts/validate.py --strict
 # 3. After editing
 python3 scripts/validate.py --strict
 python3 scripts/validate_graph_refs.py
+pytest tests/test_institutions.py -v   # config ↔ bench ↔ routing (L4 partial)
+python3 scripts/audit_graph_semantics.py
 python3 scripts/derive.py
 python3 scripts/build.py          # ⚠ see overwrite warning below
 python3 scripts/derive.py --clog-report   # optional spot-check
