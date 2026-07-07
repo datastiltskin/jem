@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use the JEM dataset, please cite the dataset record (not the live demo URL)."
+type: dataset
+title: "Judiciary Entity Map (India): structural entity graph"
+version: 1.0.0
+date-released: 2026-07-07
+license: CC0-1.0
+authors:
+  - family-names: Sornaraja
+    given-names: Divya
+    affiliation: Friedso Experiments
+repository-code: "https://github.com/datastiltskin/jem"
+url: "https://github.com/datastiltskin/jem"
+abstract: >-
+  Versioned knowledge graph of India's judicial and quasi-judicial ecosystem:
+  constitutional courts, tribunals, regulators, consumer commissions, and the
+  appointment, funding, audit, and complaint chains connecting them. Release
+  v1.0.0 (July 2026) contains 1,145 entities and 1,810 typed relationships,
+  each grounded where possible in constitutional text, statute, gazette
+  notification, or official report. Data CC0; pipeline scripts MIT.
+keywords:
+  - India
+  - judiciary
+  - tribunals
+  - institutional mapping
+  - knowledge graph
+  - state capacity
+  - open data
+identifiers:
+  - type: url
+    value: "https://github.com/datastiltskin/jem/releases/tag/v1.0.0"
+  # After Zenodo publish, add:
+  # - type: doi
+  #   value: "10.5281/zenodo.XXXXXXX"
+related-resources:
+  - type: software
+    title: "JEM interactive map viewer and pipeline (MIT)"
+    # doi: "10.5281/zenodo.YYYYYYY"  # software record — add after publish
+    repository: "https://github.com/datastiltskin/jem"
+preferred-citation:
+  type: dataset
+  title: "Judiciary Entity Map (India): structural entity graph v1.0.0"
+  authors:
+    - family-names: Sornaraja
+      given-names: Divya
+  version: 1.0.0
+  year: 2026
+  # doi: "10.5281/zenodo.XXXXXXX"  # uncomment after dataset DOI assigned

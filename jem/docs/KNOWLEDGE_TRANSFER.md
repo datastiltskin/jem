@@ -256,13 +256,23 @@ Scaffolding is in **`.github/`** (ready before first push):
 
 ---
 
-## 11. Versioning note: v1.0.0 vs build metadata
+## 11. Versioning: git tag, graph meta, schema, and Zenodo
 
 | Label | Meaning |
 |-------|---------|
-| **v1.0.0 (public)** | First public semver release (Jun 2026) — 1,145 entities, 1,810 relationships, full state/UT packs, UI refresh |
-| **graph.json `meta.version: 1.0.0`** | Internal compiler label — not the same as git tag |
-| **git tags** | `v1.0.0` (Jun 16 2026, UI + corpus); `v1.2.0` (Jun 15 data milestone, pre-UI merge) |
+| **Git tag `vX.Y.Z`** | Immutable public release pointer — **primary reproducibility anchor** |
+| **`graph.json meta.version`** | Matches the release when built from a tagged commit (`RELEASE_VERSION` env, `--version` CLI, or exact git tag via `build.py`) |
+| **Entity schema `v0.1.0`** | Field-definition version in `jem/data/schema/entity_schema.yaml`; bump only on breaking schema changes |
+| **Zenodo DOI** | Archival citation for papers — split: dataset (CC0) + software (MIT); see [`ZENODO_v1.0.0.md`](ZENODO_v1.0.0.md) |
+
+**Paper citation rule:** cite the **Zenodo dataset DOI** and git tag `v1.0.0`, not the live demo URL (friedso.com) and not `meta.version` in isolation.
+
+| Release | Git tag | Corpus | Notes |
+|---------|---------|--------|-------|
+| **v1.0.0** (paper) | `v1.0.0` → `faa29b8` | 1,145 entities · 1,810 rels · 25 scaffold orphans | Public release (Jul 2026); Zenodo + paper cite this tag |
+| **v1.2.0** (data milestone) | `v1.2.0` | 1,103 entities · 1,855 rels | Pre–QA-sprint numerics milestone |
+
+`build.py` previously hardcoded `meta.version: 1.0.0`; that debt is fixed — rebuilds now inherit the release label from git or `RELEASE_VERSION`.
 
 ---
 
