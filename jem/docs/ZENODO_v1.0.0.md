@@ -1,7 +1,7 @@
 # Zenodo release v1.0.0 — upload guide (updated July 2026)
 
-**Git ref:** `v1.0.0` → commit `faa29b8` (`main`)  
-**Corpus:** 1,145 entities · 1,810 relationships · 25 scaffold orphans · 187 high/severe IR
+**Git ref:** `v1.0.0` → commit `f3a5904` (`main`)  
+**Corpus:** 1,145 entities · 1,835 relationships · 0 orphan nodes · 187 high/severe IR
 
 ---
 
@@ -35,16 +35,15 @@ Pre-built archives (`python3 jem/scripts/package_zenodo_release.py --ref v1.0.0`
 ```
 Judiciary Entity Map (JEM) is an open, source-linked structural dataset of India's
 judicial and quasi-judicial ecosystem. Release v1.0.0 (July 2026) contains 1,145
-entities and 1,810 typed relationships spanning constitutional courts, high court
+entities and 1,835 typed relationships spanning constitutional courts, high court
 benches, subordinate court lattices, central and state tribunals, regulatory bodies,
 consumer commissions, ombudsmen, and the appointment, funding, audit, complaint,
 and appellate chains that connect them.
 
-Twenty-five scaffold nodes (state RERA stubs and people/roles layer) await
-relationship wiring; all institutional entities in the typology analysis are wired
-through at least one sourced relationship. Entity schema v0.1.0. Licence: CC0 1.0.
+Zero orphan nodes under strict graph-reference checking. Entity schema v0.1.0.
+Licence: CC0 1.0.
 
-Git tag: v1.0.0 (commit faa29b8). Related publication: "The Forum Problem" (2026).
+Git tag: v1.0.0 (commit f3a5904).
 ```
 
 ### Software Zenodo abstract
@@ -57,6 +56,8 @@ Licence: MIT. Pair with the dataset Zenodo record (CC0).
 
 ---
 
-## Paper citation (after DOI)
+## Post-publish
 
-See [`PAPER_carrying_capacity_submission.md`](PAPER_carrying_capacity_submission.md) — submission-ready manuscript with updated corpus figures.
+- Paste dataset DOI into root `CITATION.cff`
+- Paste software DOI into `jem/CITATION-software.cff`
+- Cross-link all three Zenodo records (GitHub archive + split uploads)

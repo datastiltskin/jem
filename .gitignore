@@ -13,6 +13,6 @@
 # Local deploy snapshots (not source of truth)
 _deploy_bundle/
 
-# Maintainer-only scripts (keep locally; not published to GitHub)
-jem/scripts/build_friedso_deploy_bundle.sh
-jem/scripts/publish_github.sh
+# Personal / draft papers — not for public repo
+jem/docs/PAPER_*.md
+
