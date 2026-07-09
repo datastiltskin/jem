@@ -13,15 +13,14 @@ JEM maps *how* courts, tribunals, regulators, and oversight bodies are built —
 → **Canonical demo (attribution):** https://friedso.com/apps/jem/  
 → **Data licence:** CC0 (public domain)  
 → **Code licence:** MIT  
-→ **GitHub:** https://github.com/dso6060/jem  
-→ **Release:** `v1.0.0` (Jun 2026) — **1,117 entities**, **1,882 relationships**, **0 orphan nodes** · audit passes 1–4 + QA sprint (Jun 2026)  
-→ **Maintainer:** [@dso6060](https://github.com/dso6060) · co-maintainer [@Prajna1999](https://github.com/Prajna1999) (UI) — contact via [GitHub Issues](https://github.com/dso6060/jem/issues)  
-→ **Maintainer guide:** [`jem/docs/KNOWLEDGE_TRANSFER.md`](jem/docs/KNOWLEDGE_TRANSFER.md) · [`jem/docs/JEM_Knowledge_Transfer.docx`](jem/docs/JEM_Knowledge_Transfer.docx)  
+→ **GitHub:** https://github.com/datastiltskin/jem  
+→ **Release:** `v1.0.0` (Jul 2026) — **1,145 entities**, **1,835 relationships**, **0 orphan nodes** (C24/C25 wired Jul 2026) · audit passes 1–4 + QA sprint (Jun 2026)
+→ **Maintainers:** [@dso6060](https://github.com/dso6060) · co-maintainers [@Prajna1999](https://github.com/Prajna1999) (UI) and [@agriyakhetarpal](https://github.com/agriyakhetarpal) (public repo) — contact via [GitHub Issues](https://github.com/datastiltskin/jem/issues)  
 → **AI data-entry prompt:** [`jem/docs/AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) · **Entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
 
 ### Disclaimer
 
-Judiciary Entity Map (India) (JEM) presents structural information about institutions and their formal relationships, derived from public sources. It does not provide legal advice, predict case outcomes, or assess individual conduct. Independence Risk and Discretionary Power scores are algorithmic indicators of *structural design*, not findings of bias or misconduct. Data may be incomplete or outdated; verify critical facts against primary sources before relying on them in litigation, policy, or journalism. Corrections are welcome via [GitHub issues](https://github.com/dso6060/jem/issues/new?template=data_correction.yml) with citations.
+Judiciary Entity Map (India) (JEM) presents structural information about institutions and their formal relationships, derived from public sources. It does not provide legal advice, predict case outcomes, or assess individual conduct. Independence Risk and Discretionary Power scores are algorithmic indicators of *structural design*, not findings of bias or misconduct. Data may be incomplete or outdated; verify critical facts against primary sources before relying on them in litigation, policy, or journalism. Corrections are welcome via [GitHub issues](https://github.com/datastiltskin/jem/issues/new?template=data_correction.yml) with citations.
 
 ---
 
@@ -46,7 +45,7 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 ## V1 entity coverage
 
-**Snapshot (v1.0.0, Jun 2026):** full structural packs for **all states and UTs** (35 codes), central tribunal bench lattice (CESTAT×9 locations, AFT×11 locations / 15 courts, DRT×39 + DRAT×5, ITAT×63 benches / 27 stations — graph has 27 ITAT station entities), tax/labour/defence/IP stacks, regulators (IFSCA, CERC, IBBI, NMC), and **0 orphan entities** in `graph.json`. TN retains the deepest district lattice (38 courts); other states use core pack + named high-volume districts.
+**Snapshot (v1.0.0, Jun 2026):** full structural packs for **all states and UTs** (35 codes), central tribunal bench lattice (CESTAT×9 locations, AFT×11 locations / 15 courts, DRT×39 + DRAT×5, ITAT×63 benches / 27 stations — graph has 27 ITAT station entities), tax/labour/defence/IP stacks, regulators (IFSCA, CERC, IBBI, NMC), and **25 orphan entities** in `graph.json` (`validate_graph_refs.py --strict`: 5 state RERA stubs + 20 people/roles scaffolds). TN retains the deepest district lattice (38 courts); other states use core pack + named high-volume districts.
 
 **Constitutional courts:** Supreme Court · All 25 High Courts (complete) · 13 permanent HC benches
 
@@ -86,7 +85,7 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 ## Entity build progress
 
-**1,117 / ~1,500** structural entities in repo (**v1.0.0**, Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md) · acceptance rubric: [`jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md`](jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md).
+**1,145 / ~1,500** structural entities in repo (**v1.0.0**, Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
 
 | Status | Meaning |
 |--------|---------|
@@ -122,8 +121,8 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 | C24 | State tribunals (SAT, transport, MHRB, VAT) | ~35 | **updated** | 3 |
 | C25 | People / roles layer | ~20 | **pending** | 3 |
 | C26 | Relationship wiring (orphans) | — | **done** | 1–3 |
-| C27 | Data-quality upgrades | 1117 | **updated** | all |
-| C28 | NJDG / judge_strength numerics | 1117 | **partial** — see below | 2 |
+| C27 | Data-quality upgrades | 1145 | **updated** | all |
+| C28 | NJDG / judge_strength numerics | 1145 | **partial** — see below | 2 |
 
 **Contributors:** copy prompts from the roadmap + [`AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) → open a **GitHub issue** with YAML (no email). **New entities:** proposed drafts OK. **Relationships:** maintainers only.
 
@@ -139,8 +138,8 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 | Field | Entities with block | With real numbers | Status |
 |---|---|---|---|
-| `judge_strength` (allotted / appointed) | **746** | **39** | Stubs attached; bulk fill blocked on DoJ / HC rosters |
-| `case_volume` / pending caseload | **153** | **84** | Rollup merge from prior NJDG snapshot only |
+| `judge_strength` (allotted / appointed) | **750** | **44** | Stubs attached; bulk fill blocked on DoJ / HC rosters |
+| `case_volume` / pending caseload | **157** | **83** | Rollup merge from prior NJDG snapshot only |
 
 Scripts: [`populate_v12_numerics.py`](jem/scripts/populate_v12_numerics.py) (idempotent stubs) · [`merge_njdg_snapshot.py`](jem/scripts/merge_njdg_snapshot.py) (external snapshot) · plan: [`NJDG_MERGE_PLAN.md`](jem/docs/NJDG_MERGE_PLAN.md).
 
@@ -173,7 +172,7 @@ python3 scripts/validate.py --strict && python3 scripts/derive.py && python3 scr
 
 | Milestone | Numerics scope |
 |---|---|
-| **v1.0.0** (current) | Schema + 746 `judge_strength` stubs + 84 rollup `case_volume` rows |
+| **v1.0.0** (current) | Schema + 750 `judge_strength` stubs + 83 rollup `case_volume` rows |
 | **v1.3** | Per-district NJDG when district exports exist (TN 38/38, MH/KA bootstrap districts) |
 | **v2.0** | Live NJDG API, staleness UI, year-over-year clog trends |
 
@@ -310,7 +309,7 @@ Individual DLSA entities (650+), individual district CDRC entries (670+), indivi
 | Appointment delay pipeline | `avg_days_vacancy_unfilled` data not yet populated |
 | Litigant journey mode | New interaction model, separate state machine |
 | Canvas renderer for L1/L2 | Required for 60fps at 500+ nodes — SVG sufficient for current entity count |
-| Chunked graph.json | Required at 1500+ entities — ~5.6 MB manageable at 1,117 |
+| Chunked graph.json | Required at 1500+ entities — ~5.8 MB manageable at 1,145 |
 | Year-over-year clog trend | Needs multiple NJDG historical snapshots |
 | Funding flow Sankey | Budget figures incomplete across entities |
 | COMPAT (abolished) as historical entity | Needs historical rendering only — time scroller work |
@@ -374,13 +373,13 @@ cd ..
    - **`jem/web/`** (HTML, CSS, JS) → your app directory.
 
 3. **Examples** (set your own paths; not stored in this repo):
-   - **rsync/SSH:** `export JEM_REMOTE='user@your-host:~/path/to/apps/jem'` then rsync `graph.json` and `jem/web/` (see [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md)).
+   - **rsync/SSH:** `export JEM_REMOTE='user@your-host:~/path/to/apps/jem'` then rsync `graph.json` and `jem/web/` to your host.
    - **Local preview:** `cd jem/web && python3 -m http.server 8080` (ensure `public/graph.json` resolves).
    - **Static hosts:** upload `jem/web/` plus `graph.json` as `public/graph.json` (Netlify, S3, GitHub Pages, nginx, etc.).
 
 Production deploy is **maintainer-only** from branch **`friedso_v1`** (see [`.github/GOVERNANCE.md`](.github/GOVERNANCE.md)). Public workflow: [`jem/docs/SESSION_WORKFLOW.md`](jem/docs/SESSION_WORKFLOW.md) · [`deploy_friedso_production.sh`](jem/scripts/deploy_friedso_production.sh) · [`deploy_prep.sh`](jem/scripts/deploy_prep.sh).
 
-GitHub: https://github.com/dso6060/jem — Actions validates PRs; **does not auto-deploy**.
+GitHub: https://github.com/datastiltskin/jem — Actions validates PRs; **does not auto-deploy**.
 
 **Mirrors:** You may host copies elsewhere; courtesy attribution: *Structural data from [Judiciary Entity Map (JEM)](https://friedso.com/apps/jem/).*
 
@@ -402,7 +401,7 @@ GitHub: https://github.com/dso6060/jem — Actions validates PRs; **does not aut
 
 See [jem/docs/CONTRIBUTING.md](jem/docs/CONTRIBUTING.md). **v1.2+:** contributors may submit **proposed entity YAML** via GitHub issues; maintainers merge after `validate.py`. **Relationships** remain maintainer-only.
 
-GitHub scaffolding (issue/PR templates, CODEOWNERS, governance): [`.github/`](.github/) · publish steps: [`.github/PUBLISH_CHECKLIST.md`](.github/PUBLISH_CHECKLIST.md) · team placeholders: [`jem/docs/TEAM.md`](jem/docs/TEAM.md).
+GitHub scaffolding (issue/PR templates, CODEOWNERS, governance): [`.github/`](.github/) · publish steps: [`.github/PUBLISH_CHECKLIST.md`](.github/PUBLISH_CHECKLIST.md).
 
 Every field that affects a score or gap marker needs a primary source. `data_quality: unverified` renders with a dashed border — always better to be honest about what is and is not verified.
 

@@ -1,21 +1,21 @@
 # GitHub publish checklist
 
-Repository: **https://github.com/dso6060/jem** (public)
+Repository: **https://github.com/datastiltskin/jem** (public)
 
 ## 1. Create repository
 
-- [x] Create public repo `jem` under `@dso6060` (renamed from `jem_prototype`)
+- [x] Create public repo `jem` under `@datastiltskin` (renamed from `jem_prototype`)
 - [x] Push `main` with `.github/` scaffolding
 - [x] Description: *Open structural map of India's judicial ecosystem — institutional capacity, relationships, and systemic gaps.*
 - [x] Topics: `india`, `judiciary`, `open-data`, `legal-tech`
 - [x] Homepage: https://friedso.com/apps/jem/
-- [x] Maintainer contact: [@dso6060](https://github.com/dso6060) (GitHub Issues / security advisories only — no public email)
+- [x] Maintainer contacts: [@dso6060](https://github.com/dso6060), [@Prajna1999](https://github.com/Prajna1999), [@agriyakhetarpal](https://github.com/agriyakhetarpal) (GitHub Issues / security advisories only — no public email)
 - [ ] Licence: MIT (code) — note in README that `jem/data/` is CC0
 
 ## 2. Replace placeholders
 
 - [x] `REPO_NAME` → `jem` in issue templates, SUPPORT, CONTRIBUTING, roadmap, AI prompt (was `jem_prototype`)
-- [x] Co-maintainer `@Prajna1999` in `CODEOWNERS` and `TEAM.md`
+- [x] Co-maintainers `@Prajna1999` and `@agriyakhetarpal` in `CODEOWNERS`
 
 ## 3. Repository settings
 
@@ -23,7 +23,7 @@ Repository: **https://github.com/dso6060/jem** (public)
 - [ ] **Discussions → Categories:** ensure `Q&A` and `Disputes` (or map templates to existing categories)
 - [ ] **Settings → Branches → `main`:** require PR, require status checks (`Validate JEM Data`), require CODEOWNERS review
 - [x] **Branch `friedso_v1`:** production deploy line for friedso.com; ruleset `friedso_v1 production deploy` (PR required; merge bypass @dso6060 only)
-- [x] Invite co-maintainer **@Prajna1999** as collaborator (admin); `CODEOWNERS` updated
+- [x] Invite co-maintainers **@Prajna1999** and **@agriyakhetarpal** as collaborators (admin); `CODEOWNERS` updated
 
 ## 4. Labels (create if not auto-created)
 

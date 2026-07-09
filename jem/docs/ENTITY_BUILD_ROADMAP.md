@@ -1,6 +1,6 @@
 # JEM — entity build roadmap (~1,500 target)
 
-**Current corpus:** 1,103 entities (v1.0.0, Jun 2026) · **Target:** ~1,500 structural entities  
+**Current corpus:** 1,145 entities (v1.0.0, Jun 2026) · **Target:** ~1,500 structural entities  
 **Tracker:** this file is the source of truth; [`README.md`](../../README.md#entity-build-progress) mirrors the status table for GitHub.
 
 ## Status legend
@@ -19,7 +19,7 @@
 4. Commit: `docs(roadmap): mark <category> done` (+ data commits if applicable).
 5. **Relationships** for that category: wire in a separate maintainer-only session (not contributor prompts).
 
-**Contributors:** GitHub issues only — use [data correction](https://github.com/dso6060/jem/issues/new?template=data_correction.yml) or attach YAML to an issue.  
+**Contributors:** GitHub issues only — use [data correction](https://github.com/datastiltskin/jem/issues/new?template=data_correction.yml) or attach YAML to an issue.  
 **New entities:** proposed drafts welcome; maintainers merge after `validate.py`.  
 **Relationships:** maintainer-only.
 
@@ -70,7 +70,6 @@
 | **1** | Structural integrity + thin clusters filled | C02, C10, C11, C15 (Batch A start), C26 (incremental), C27 | +150–250 → ~700 |
 | **2** | State expansion + tribunals | C15–C18, C04, C06, C19–C22 | +400–500 → ~1,200 |
 
-**Phase 2 acceptance rubric:** [`PHASE2_ACCEPTANCE_RUBRIC.md`](PHASE2_ACCEPTANCE_RUBRIC.md)
 | **3** | District resolution + remainder | C06 districts, C04 DRT benches, C23–C25, C28 | +300+ → **1,500+** |
 
 ---
@@ -302,4 +301,4 @@ When opening a GitHub issue with drafted YAML:
 
 ---
 
-*Sync README after edits. Regenerate KT docx: `pandoc jem/docs/KNOWLEDGE_TRANSFER.md -o jem/docs/JEM_Knowledge_Transfer.docx`*
+*Sync README after edits.*

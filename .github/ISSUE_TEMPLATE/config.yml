@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Maintainer knowledge transfer
-    url: https://github.com/dso6060/jem/blob/main/jem/docs/KNOWLEDGE_TRANSFER.md
-    about: Onboarding guide for co-maintainers
+  - name: Contributor guide
+    url: https://github.com/datastiltskin/jem/blob/main/jem/docs/CONTRIBUTING.md
+    about: How to submit corrections, sources, and YAML drafts
   - name: Dispute / contested fact (Discussion)
-    url: https://github.com/dso6060/jem/discussions/new?category=disputes
+    url: https://github.com/datastiltskin/jem/discussions/new?category=disputes
     about: Prefer Discussions for contested facts before opening a PR
   - name: Questions & general Q&A
-    url: https://github.com/dso6060/jem/discussions/new?category=q-a
+    url: https://github.com/datastiltskin/jem/discussions/new?category=q-a
     about: Structural questions about JEM
