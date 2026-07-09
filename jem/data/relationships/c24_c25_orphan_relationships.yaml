@@ -1,0 +1,369 @@
+# C24/C25 orphan wiring — RERA duplicate scaffolds + people/roles layer
+# Designed via Claude CLI (prompt: .claude/prompts/c24_c25_orphan_wiring.md)
+# Wired 2026-07-07; target: 0 orphans under validate_graph_refs.py --strict
+
+relationships:
+
+  # ── C24: duplicate RERA scaffolds → canonical state-pack ids ─────────────
+
+  - id: rel_rera_rj_establishedunder_rj_rera
+    source: rera_rj
+    target: rj_rera
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Real Estate (Regulation and Development) Act 2016
+    notes: Duplicate scaffold → canonical id rj_rera. Use rj_rera for appellate and funding edges.
+    data_quality: partial
+    sources:
+      - &rera_act
+        label: Real Estate (Regulation and Development) Act 2016 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-07-07'
+
+  - id: rel_rera_tn_establishedunder_tn_rera
+    source: rera_tn
+    target: tn_rera
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Real Estate (Regulation and Development) Act 2016
+    notes: Duplicate scaffold → canonical id tn_rera.
+    data_quality: partial
+    sources:
+      - *rera_act
+
+  - id: rel_rera_up_establishedunder_up_rera
+    source: rera_up
+    target: up_rera
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Real Estate (Regulation and Development) Act 2016
+    notes: Duplicate scaffold → canonical id up_rera.
+    data_quality: partial
+    sources:
+      - *rera_act
+
+  - id: rel_rera_wb_establishedunder_wb_rera
+    source: rera_wb
+    target: wb_rera
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Real Estate (Regulation and Development) Act 2016
+    notes: Duplicate scaffold → canonical id wb_rera.
+    data_quality: partial
+    sources:
+      - *rera_act
+
+  - id: rel_tnerc_establishedunder_serc_tn
+    source: tnerc
+    target: serc_tn
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Electricity Act 2003, s.82
+    notes: Duplicate scaffold → canonical id serc_tn. Use serc_tn for appellate and funding edges.
+    data_quality: partial
+    sources:
+      - label: Electricity Act 2003 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-07-07'
+
+  # ── C25: judicial officer role archetypes ────────────────────────────────
+
+  - id: rel_role_chief_justice_establishedunder_chief_justice_india
+    source: role_chief_justice
+    target: chief_justice_india
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: true
+    statutory_basis: Constitution of India, Article 124(1)
+    notes: JudicialOfficerRole archetype; officeholder node chief_justice_india holds appointment wiring.
+    data_quality: partial
+    sources:
+      - &constitution
+        label: Constitution of India — India Code
+        url: https://india-code.nic.in/
+        type: Constitution
+        accessed_date: '2026-07-07'
+
+  - id: rel_role_sc_judge_establishedunder_supreme_court_india
+    source: role_supreme_court_judge
+    target: supreme_court_india
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: true
+    statutory_basis: Constitution of India, Article 124(1)
+    notes: JudicialOfficerRole archetype; Supreme Court judge under Article 124.
+    data_quality: partial
+    sources:
+      - *constitution
+
+  - id: rel_role_hc_judge_establishedunder_collegium_hc_appointment
+    source: role_high_court_judge
+    target: collegium_hc_appointment
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: true
+    statutory_basis: Constitution of India, Article 217
+    notes: JudicialOfficerRole archetype; HC judge under Article 217 via collegium process.
+    data_quality: partial
+    sources:
+      - *constitution
+
+  - id: rel_role_district_judge_establishedunder_tn_district_courts_generic
+    source: role_district_judge
+    target: tn_district_courts_generic
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: true
+    statutory_basis: Constitution of India, Article 233
+    notes: JudicialOfficerRole archetype; tn_district_courts_generic as national exemplar lattice.
+    data_quality: partial
+    sources:
+      - *constitution
+
+  - id: rel_role_sessions_judge_establishedunder_district_courts
+    source: role_sessions_judge
+    target: district_courts
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Code of Criminal Procedure 1973, s.9
+    notes: JudicialOfficerRole archetype; Sessions Judge under CrPC s.9 / BNSS s.9.
+    data_quality: partial
+    sources:
+      - &crpc
+        label: Code of Criminal Procedure 1973 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-07-07'
+
+  - id: rel_role_magistrate_jurisdictiondefinedby_district_courts
+    source: role_magistrate
+    target: district_courts
+    relationship_type: JurisdictionDefinedBy
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Code of Criminal Procedure 1973, s.11
+    notes: JudicialOfficerRole archetype; Judicial Magistrate under CrPC s.11 / BNSS s.11.
+    data_quality: partial
+    sources:
+      - *crpc
+
+  - id: rel_role_metro_magistrate_jurisdictiondefinedby_district_courts
+    source: role_metropolitan_magistrate
+    target: district_courts
+    relationship_type: JurisdictionDefinedBy
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Code of Criminal Procedure 1973, s.16
+    notes: JudicialOfficerRole archetype; Metropolitan Magistrate under CrPC s.16 / BNSS s.16.
+    data_quality: partial
+    sources:
+      - *crpc
+
+  - id: rel_role_family_court_judge_establishedunder_district_courts
+    source: role_family_court_judge
+    target: district_courts
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Family Courts Act 1984, s.3
+    notes: JudicialOfficerRole archetype; Family Courts Act 1984 s.3; district_courts anchor.
+    data_quality: partial
+    sources:
+      - label: Family Courts Act 1984 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-07-07'
+
+  - id: rel_role_court_registrar_establishedunder_district_courts
+    source: role_court_registrar
+    target: district_courts
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: State court rules / CrPC court administration provisions
+    notes: CourtAdminRole archetype; registrar staff within subordinate court administration.
+    data_quality: partial
+    sources:
+      - *crpc
+
+  - id: rel_role_registrar_general_establishedunder_supreme_court_india
+    source: role_registrar_general
+    target: supreme_court_india
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: true
+    statutory_basis: Supreme Court Rules; Constitution of India, Article 146
+    notes: CourtAdminRole archetype; Registrar General pattern at apex court; SC as institutional anchor.
+    data_quality: partial
+    sources:
+      - *constitution
+
+  - id: rel_role_public_prosecutor_establishedunder_district_courts
+    source: role_public_prosecutor
+    target: district_courts
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Code of Criminal Procedure 1973, Chapter XXIV
+    notes: ProsecutionRole archetype; Public Prosecutor conducts prosecution in criminal courts.
+    data_quality: partial
+    sources:
+      - *crpc
+
+  # ── C25: legal professional role archetypes ──────────────────────────────
+
+  - id: rel_role_advocate_establishedunder_mh_bar_council
+    source: role_advocate
+    target: mh_bar_council
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Advocates Act 1961
+    notes: LegalProfessionalRole archetype; mh_bar_council as national exemplar for state bar enrollment.
+    data_quality: partial
+    sources:
+      - &advocates_act
+        label: Advocates Act 1961 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-07-07'
+
+  - id: rel_role_senior_advocate_establishedunder_supreme_court_india
+    source: role_senior_advocate
+    target: supreme_court_india
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Advocates Act 1961, s.16
+    notes: LegalProfessionalRole archetype; Senior Advocate designation by Supreme Court or High Court.
+    data_quality: partial
+    sources:
+      - *advocates_act
+
+  - id: rel_role_advocate_on_record_establishedunder_supreme_court_india
+    source: role_advocate_on_record
+    target: supreme_court_india
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Supreme Court Rules; Advocates Act 1961
+    notes: LegalProfessionalRole archetype; AoR enrolled for Supreme Court practice.
+    data_quality: partial
+    sources:
+      - *advocates_act
+
+  - id: rel_role_defence_counsel_establishedunder_mh_bar_council
+    source: role_defence_counsel
+    target: mh_bar_council
+    relationship_type: EstablishedUnder
+    relationship_category: statutory_ref
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: Advocates Act 1961; Code of Criminal Procedure 1973
+    notes: LegalProfessionalRole archetype; defence counsel enrolled advocate appearing in criminal proceedings.
+    data_quality: partial
+    sources:
+      - *advocates_act
+
+  # ── C25: party role archetypes (litigant-journey layer) ──────────────────
+
+  - id: rel_role_accused_jurisdictiondefinedby_supreme_court_india
+    source: role_accused
+    target: supreme_court_india
+    relationship_type: JurisdictionDefinedBy
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Code of Criminal Procedure 1973; Constitution of India
+    notes: PartyRole archetype; litigant-journey mapping — accused appears in criminal proceedings before courts/tribunals.
+    data_quality: partial
+    sources:
+      - *crpc
+
+  - id: rel_role_petitioner_jurisdictiondefinedby_supreme_court_india
+    source: role_petitioner
+    target: supreme_court_india
+    relationship_type: JurisdictionDefinedBy
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Code of Civil Procedure 1908; Constitution of India (writ petitioner)
+    notes: PartyRole archetype; initiating party in civil or constitutional proceedings.
+    data_quality: partial
+    sources:
+      - label: Code of Civil Procedure 1908 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-07-07'
+
+  - id: rel_role_respondent_jurisdictiondefinedby_supreme_court_india
+    source: role_respondent
+    target: supreme_court_india
+    relationship_type: JurisdictionDefinedBy
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Code of Civil Procedure 1908; Constitution of India
+    notes: PartyRole archetype; respondent in civil or constitutional proceedings.
+    data_quality: partial
+    sources:
+      - label: Code of Civil Procedure 1908 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-07-07'
+
+  - id: rel_role_victim_jurisdictiondefinedby_supreme_court_india
+    source: role_victim
+    target: supreme_court_india
+    relationship_type: JurisdictionDefinedBy
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Code of Criminal Procedure 1973; victim rights statutes
+    notes: PartyRole archetype; victim/complainant in criminal proceedings.
+    data_quality: partial
+    sources:
+      - *crpc
+
+  - id: rel_role_witness_jurisdictiondefinedby_supreme_court_india
+    source: role_witness
+    target: supreme_court_india
+    relationship_type: JurisdictionDefinedBy
+    relationship_category: statutory_ref
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: Indian Evidence Act 1872; Code of Criminal Procedure 1973
+    notes: PartyRole archetype; witness in judicial proceedings.
+    data_quality: partial
+    sources:
+      - label: Indian Evidence Act 1872 — India Code
+        url: https://india-code.nic.in/
+        type: CentralAct
+        accessed_date: '2026-07-07'

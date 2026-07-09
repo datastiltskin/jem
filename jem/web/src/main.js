@@ -16,6 +16,8 @@ import { initSmartSearch, entityDisplayName } from './smartSearch.js';
 import { renderAboutPage } from './aboutContent.js';
 import { initToolbarAuth } from './auth.js';
 import { mountMapShell } from './mapShell.js';
+import { loadD3 } from './loadD3.js';
+import { loadFuse } from './loadFuse.js';
 
 const GRAPH_URL = './public/graph.json';
 
@@ -43,10 +45,113 @@ function initChromeTopSync() {
   window.addEventListener('resize', syncChromeTop);
 }
 
+// ── Lazy map boot (option C — hybrid gate) ────────────────────────────────────
+// Cold #/map: gate defers graph.json fetch until the user clicks.
+// Overview/detail: graph loads on boot; map workspace inits on first map visit.
+// Graph already in memory: spinner only (auto-approved).
+
+let _mapLoadApproved = false;
+let _appDataBooted = false;
+let _searchPatchWired = false;
+
+let _resolveMapLoad;
+const _mapLoadPromise = new Promise((resolve) => { _resolveMapLoad = resolve; });
+
+function approveMapLoad() {
+  if (_mapLoadApproved) return;
+  _mapLoadApproved = true;
+  _resolveMapLoad();
+}
+
+function setMapLoadPane(gate, spinner) {
+  document.getElementById('map-load-gate')?.classList.toggle('hidden', !gate);
+  document.getElementById('map-load-spinner')?.classList.toggle('hidden', !spinner);
+}
+
+function showMapBootError(err) {
+  const stage = document.getElementById('map-load-stage');
+  if (!stage) return;
+  stage.classList.remove('hidden');
+  setMapLoadPane(false, false);
+  stage.innerHTML =
+    `<div class="loading-error map-load-error">
+      <strong>Failed to load map</strong><br>
+      ${err.message}
+    </div>`;
+}
+
+function applyGraph(graph) {
+  State.graph = graph;
+  const cw = graph.meta?.canvas_width;
+  const ch = graph.meta?.canvas_height;
+  if (cw && ch) {
+    document.documentElement.style.setProperty('--jem-canvas-width', `${cw}px`);
+    document.documentElement.style.setProperty('--jem-canvas-height', `${ch}px`);
+  }
+  State.initExplorerDefaults();
+  State.initFocusDefaults();
+  primeGapStats(graph);
+  State.emit('graphLoaded', graph);
+}
+
+async function loadGraph() {
+  if (State.graph) return State.graph;
+  const response = await fetch(GRAPH_URL);
+  if (!response.ok) throw new Error(`Failed to load graph.json: ${response.status}`);
+  const graph = await response.json();
+  applyGraph(graph);
+  return graph;
+}
+
+async function afterGraphLoaded() {
+  if (_appDataBooted) return;
+  _appDataBooted = true;
+  await initSearch(State.graph);
+  initCommandPalette();
+  patchSearchForDetailView();
+  initSummaryView();
+  renderAboutView();
+}
+
+function revealMapChrome() {
+  document.getElementById('map-load-stage')?.classList.add('hidden');
+  document.getElementById('app-workspace')?.classList.remove('hidden');
+  document.getElementById('timeline-container')?.classList.remove('hidden');
+  document.getElementById('map-status-bar')?.classList.remove('hidden');
+  document.getElementById('quality-legend')?.classList.remove('hidden');
+  document.getElementById('govt-level-legend')?.classList.remove('hidden');
+  document.getElementById('mobile-workspace-tabs')?.classList.remove('hidden');
+  document.getElementById('mode-switcher')?.classList.remove('hidden');
+  const overlay = document.getElementById('loading-overlay');
+  if (overlay) overlay.style.display = 'none';
+}
+
+function initMapGate() {
+  document.getElementById('btn-load-map')?.addEventListener('click', () => {
+    approveMapLoad();
+    setMapLoadPane(false, true);
+  });
+
+  document.getElementById('btn-map-gate-back')?.addEventListener('click', async () => {
+    history.replaceState(null, '', `${location.pathname}${location.search}`);
+    try {
+      if (!State.graph) {
+        await loadGraph();
+        await afterGraphLoaded();
+      }
+      switchView('summary');
+    } catch (err) {
+      console.error('JEM overview load error:', err);
+      showBootError(err);
+    }
+  });
+}
+
 // ── View Router ───────────────────────────────────────────────────────────────
 // Views: 'summary' | 'detail' | 'map' | 'about'
 
 let _mapBooted = false;       // full map initialised lazily on first switch
+let _mapBootPromise = null;   // in-flight D3 + map shell init
 let _mapReturnTarget = null;  // reserved for map navigation context
 
 // ── URL hash routing ──────────────────────────────────────────────────────────
@@ -95,28 +200,35 @@ function _showMissingEntityToast(id) {
 function _applyHashRoute() {
   const view = _hashViewFromHash();
   _suppressHashSync = true;
-  try {
-    if (view === 'detail') {
-      const id = _entityIdFromHash();
-      const e = id ? State.getEntityById(id) : null;
-      if (e) {
-        switchView('detail', id);
+  void (async () => {
+    try {
+      if (view !== 'map' && !State.graph) {
+        await loadGraph();
+        await afterGraphLoaded();
+        if (!document.body.classList.contains('jem-ready')) finishBoot();
+      }
+
+      if (view === 'detail') {
+        const id = _entityIdFromHash();
+        const e = id ? State.getEntityById(id) : null;
+        if (e) {
+          switchView('detail', id);
+        } else {
+          if (id) _showMissingEntityToast(id);
+          history.replaceState(null, '', `${location.pathname}${location.search}`);
+          switchView('summary');
+        }
+      } else if (view === 'map') {
+        switchView('map');
+      } else if (view === 'about') {
+        switchView('about');
       } else {
-        if (id) _showMissingEntityToast(id);
-        // Clear the bad hash so refresh doesn't re-toast.
-        history.replaceState(null, '', `${location.pathname}${location.search}`);
         switchView('summary');
       }
-    } else if (view === 'map') {
-      switchView('map');
-    } else if (view === 'about') {
-      switchView('about');
-    } else {
-      switchView('summary');
+    } finally {
+      _suppressHashSync = false;
     }
-  } finally {
-    _suppressHashSync = false;
-  }
+  })();
 }
 
 function switchView(view, entityId = null) {
@@ -155,21 +267,23 @@ function switchView(view, entityId = null) {
   const qualEl      = document.getElementById('quality-legend');
   const govtEl      = document.getElementById('govt-level-legend');
   const mobileNav   = document.getElementById('mobile-workspace-tabs');
+  const mapStage    = document.getElementById('map-load-stage');
   const aboutBtn    = document.getElementById('btn-about');
+  const mapChromeReady = view === 'map' && _mapBooted;
 
   if (summaryEl)   summaryEl.classList.toggle('hidden', view !== 'summary');
   if (detailEl)    detailEl.classList.toggle('hidden', view !== 'detail');
   if (aboutEl)     aboutEl.classList.toggle('hidden', view !== 'about');
-  if (workspaceEl) workspaceEl.classList.toggle('hidden', view !== 'map');
-  if (timelineEl)  timelineEl.classList.toggle('hidden', view !== 'map');
-  if (statusEl)    statusEl.classList.toggle('hidden', view !== 'map');
-  if (qualEl)      qualEl.classList.toggle('hidden', view !== 'map');
-  if (govtEl)      govtEl.classList.toggle('hidden', view !== 'map');
-  if (mobileNav)   mobileNav.classList.toggle('hidden', view !== 'map');
+  if (workspaceEl) workspaceEl.classList.toggle('hidden', view !== 'map' || !_mapBooted);
+  if (mapStage)    mapStage.classList.toggle('hidden', view !== 'map' || _mapBooted);
+  if (timelineEl)  timelineEl.classList.toggle('hidden', !mapChromeReady);
+  if (statusEl)    statusEl.classList.toggle('hidden', !mapChromeReady);
+  if (qualEl)      qualEl.classList.toggle('hidden', !mapChromeReady);
+  if (govtEl)      govtEl.classList.toggle('hidden', !mapChromeReady);
+  if (mobileNav)   mobileNav.classList.toggle('hidden', !mapChromeReady);
   if (aboutBtn)    aboutBtn.classList.toggle('active', view === 'about');
 
-  // Mode switcher and search only make sense in map context
-  document.getElementById('mode-switcher')?.classList.toggle('hidden', view !== 'map');
+  document.getElementById('mode-switcher')?.classList.toggle('hidden', view !== 'map' || !_mapBooted);
 
   if (view === 'summary') {
     // Nothing to re-init; summaryView is rendered once after graph load
@@ -184,18 +298,27 @@ function switchView(view, entityId = null) {
     document.body.dataset.prevDetailEntity = entityId;
     syncChromeTop();
   } else if (view === 'map') {
-    ensureMapBooted();
-    if (entityId) {
-      const e = State.getEntityById(entityId);
-      if (e) {
-        selectAndOpenEntity(e);
-        expandPathToEntity(entityId);
-      }
+    if (!State.graph) {
+      setMapLoadPane(true, false);
+    } else {
+      approveMapLoad();
+      setMapLoadPane(false, true);
     }
-    // Defer render until after the workspace element is visible in the DOM
-    requestAnimationFrame(() => {
-      render();
-      requestAnimationFrame(() => fitFocusToView({ animate: false }));
+    void ensureMapBooted().then(() => {
+      if (entityId) {
+        const e = State.getEntityById(entityId);
+        if (e) {
+          selectAndOpenEntity(e);
+          expandPathToEntity(entityId);
+        }
+      }
+      requestAnimationFrame(() => {
+        render();
+        requestAnimationFrame(() => fitFocusToView({ animate: false }));
+      });
+    }).catch((err) => {
+      console.error('JEM map boot error:', err);
+      showMapBootError(err);
     });
   }
 
@@ -213,6 +336,7 @@ function wireNavigationEvents() {
   });
 
   State.subscribe('navigateToMap', (id) => {
+    approveMapLoad();
     switchView('map', id);
   });
 
@@ -394,10 +518,34 @@ function populateKpiCards(metrics) {
 }
 
 function ensureMapBooted() {
+  if (_mapBooted) return _mapBootPromise || Promise.resolve();
+  if (!_mapBootPromise) {
+    _mapBootPromise = (async () => {
+      await _mapLoadPromise;
+
+      if (!State.graph) {
+        setMapLoadPane(false, true);
+        await loadGraph();
+        await afterGraphLoaded();
+      } else if (!_appDataBooted) {
+        await afterGraphLoaded();
+      }
+
+      await bootMapWorkspace();
+      revealMapChrome();
+    })().catch((err) => {
+      _mapBootPromise = null;
+      throw err;
+    });
+  }
+  return _mapBootPromise;
+}
+
+async function bootMapWorkspace() {
   if (_mapBooted) return;
-  _mapBooted = true;
 
   mountMapShell();
+  await loadD3();
 
   initViewStatus();
   initFocusCanvas();
@@ -413,7 +561,6 @@ function ensureMapBooted() {
 
   const graph = State.graph;
   if (graph) {
-    State.emit('graphLoaded', graph);
     populateKpiCards(graph.impact_metrics || {});
     expandPathToEntity(State.focusEntityId);
     ['supreme_court_india', 'president_india'].forEach((id) => {
@@ -422,6 +569,8 @@ function ensureMapBooted() {
     State.setZoomLevel(2);
     render();
   }
+
+  _mapBooted = true;
 }
 
 function finishBoot() {
@@ -448,32 +597,19 @@ function showBootError(err) {
 async function boot() {
   initChromeTopSync();
   initToolbarAuth(document.getElementById('toolbar-auth'));
+  initAboutPage();
+  initMapGate();
+  initDistrictLatticeHotkeys();
+  wireNavigationEvents();
+
+  const coldMap = _hashViewFromHash() === 'map';
+
   try {
-    // 1. Load data
-    const response = await fetch(GRAPH_URL);
-    if (!response.ok) throw new Error(`Failed to load graph.json: ${response.status}`);
-    const graph = await response.json();
-    State.graph = graph;
-    const cw = graph.meta?.canvas_width;
-    const ch = graph.meta?.canvas_height;
-    if (cw && ch) {
-      document.documentElement.style.setProperty('--jem-canvas-width', `${cw}px`);
-      document.documentElement.style.setProperty('--jem-canvas-height', `${ch}px`);
+    if (!coldMap) {
+      await loadGraph();
+      await afterGraphLoaded();
     }
-    State.initExplorerDefaults();
-    State.initFocusDefaults();
-    primeGapStats(graph);
 
-    initSearch(graph);
-    initAboutPage();
-    initDistrictLatticeHotkeys();
-
-    wireNavigationEvents();
-    initCommandPalette();
-    patchSearchForDetailView();
-
-    initSummaryView();
-    renderAboutView();
     finishBoot();
 
     if (location.hash) {
@@ -484,7 +620,6 @@ async function boot() {
 
     window.addEventListener('popstate', _applyHashRoute);
     window.addEventListener('hashchange', _applyHashRoute);
-
   } catch (err) {
     console.error('JEM boot error:', err);
     showBootError(err);
@@ -493,6 +628,8 @@ async function boot() {
 
 // When in summary/detail view, search results navigate to detail instead of map
 function patchSearchForDetailView() {
+  if (_searchPatchWired) return;
+  _searchPatchWired = true;
   const results = document.getElementById('search-results');
   if (!results) return;
 
@@ -799,7 +936,7 @@ function initMobileWorkspaceTabs() {
 
 // ── Search ────────────────────────────────────────────────────────────────────
 
-function initSearch(graph) {
+async function initSearch(graph) {
   const input = document.getElementById('search-input');
   const results = document.getElementById('search-results');
   const panel = document.getElementById('insight-panel');
@@ -807,12 +944,11 @@ function initSearch(graph) {
 
   const pickEntity = (id) => {
     window.__jemSmartSearch?.collapseSearchUI?.();
-    const entity = State.getEntityById(id);
-    if (!entity) return;
-    selectAndOpenEntity(entity);
-    expandPathToEntity(id);
+    if (!State.getEntityById(id)) return;
     switchView('detail', id);
   };
+
+  const Fuse = await loadFuse();
 
   const wireSearch = (g) => {
     const fuse = new Fuse(g.entities, {

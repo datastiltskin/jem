@@ -107,4 +107,4 @@ When a **category is complete:** set status **done** in `ENTITY_BUILD_ROADMAP.md
 
 ---
 
-*Regenerate Word export: `pandoc jem/docs/KNOWLEDGE_TRANSFER.md -o jem/docs/JEM_Knowledge_Transfer.docx`*
+

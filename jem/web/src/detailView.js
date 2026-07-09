@@ -2,6 +2,7 @@
 // Independence risk hero + score breakdown + neighborhood graph + gaps + case volume.
 
 import { State } from './state.js';
+import { loadD3 } from './loadD3.js';
 import { getProfileSections } from './panel.js';
 import { balanceProfileColumns } from './profileLayout.js';
 import { commentsHTML, wireComments } from './comments.js';
@@ -381,12 +382,17 @@ function openFullscreenGraph(entityId, lenses) {
 
   requestAnimationFrame(() => {
     const body = overlay.querySelector('#nb-fs-body');
-    if (body) renderNeighborhoodGraph(body, entityId, lenses);
+    if (body) void renderNeighborhoodGraph(body, entityId, lenses);
   });
 }
 
-function renderNeighborhoodGraph(container, entityId, lenses) {
-  if (!window.d3) { container.innerHTML = '<p class="nb-empty">D3 not loaded.</p>'; return; }
+async function renderNeighborhoodGraph(container, entityId, lenses) {
+  try {
+    await loadD3();
+  } catch {
+    container.innerHTML = '<p class="nb-empty">Could not load graph library.</p>';
+    return;
+  }
   const d3 = window.d3;
   container.innerHTML = '';
 
@@ -1414,7 +1420,7 @@ export function renderDetailView(entityId, fromEntityId = null) {
 
   // ── Initial neighborhood render ─────────────────────────────────────────────
   requestAnimationFrame(() => {
-    _redrawNeighborhood(container);
+    void _redrawNeighborhood(container);
   });
 
   // ── Auto-scroll to export action when arrived via "↓ Report" from summary ──
@@ -1437,14 +1443,15 @@ function _redrawNeighborhood(container) {
   const wrap = container.querySelector('#nb-graph-wrap');
   if (!wrap) return;
   _miniGraphWrap = wrap;
-  renderNeighborhoodGraph(wrap, _currentEntityId, _nbLenses);
-  // Expand button lives inside the graph wrap (overlaid), added after render clears it
-  const expandBtn = document.createElement('button');
-  expandBtn.className = 'nb-expand-btn';
-  expandBtn.title = 'Fullscreen';
-  expandBtn.textContent = '⤢';
-  expandBtn.onclick = () => openFullscreenGraph(_currentEntityId, _nbLenses);
-  wrap.appendChild(expandBtn);
+  return renderNeighborhoodGraph(wrap, _currentEntityId, _nbLenses).then(() => {
+    // Expand button lives inside the graph wrap (overlaid), added after render clears it
+    const expandBtn = document.createElement('button');
+    expandBtn.className = 'nb-expand-btn';
+    expandBtn.title = 'Fullscreen';
+    expandBtn.textContent = '⤢';
+    expandBtn.onclick = () => openFullscreenGraph(_currentEntityId, _nbLenses);
+    wrap.appendChild(expandBtn);
+  });
 }
 
 export function clearDetailView() {

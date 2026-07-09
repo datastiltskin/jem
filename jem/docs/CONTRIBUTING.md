@@ -10,11 +10,18 @@
 
 **GitHub:** Use the [data correction](https://github.com/datastiltskin/jem/issues/new?template=data_correction.yml) issue template or open a PR (checklist auto-applied).
 
-Governance: [`.github/GOVERNANCE.md`](../../.github/GOVERNANCE.md) · Team: [`TEAM.md`](TEAM.md)
+Governance: [`.github/GOVERNANCE.md`](../../.github/GOVERNANCE.md)
 
 **Using AI (Claude / Cursor):** [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md) + phased `TASK`s in [`ENTITY_BUILD_ROADMAP.md`](ENTITY_BUILD_ROADMAP.md). Submit via **GitHub issues only**. Proposed new entities OK; **relationships are maintainer-only**.
 
 ---
+
+## Structural vs institutional accuracy
+
+CI validates schema and reference integrity (L0–L3), not whether every institution
+exists in law. See [`RCA_AI_HALLUCINATION_TRICHY_BENCH.md`](RCA_AI_HALLUCINATION_TRICHY_BENCH.md)
+and [`DATA_QUALITY_GATES.md`](DATA_QUALITY_GATES.md). New `HighCourtBench` or tribunal
+bench entities require a bench-specific primary source before merge.
 
 ## Principles
 

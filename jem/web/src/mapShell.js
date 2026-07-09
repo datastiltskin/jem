@@ -147,6 +147,11 @@ const MAP_SHELL_HTML = `
           <g id="focus-layer-nodes"></g>
         </g>
       </svg>
+      <div id="loading-overlay">
+        <img src="public/assets/jem-mark.svg" class="loading-logo jem-mark" alt="" width="40" height="40" decoding="async">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Preparing map…</div>
+      </div>
     </div>
 
     <div id="neighborhood-panel" class="hidden" role="dialog" aria-modal="false" aria-labelledby="neighborhood-title">

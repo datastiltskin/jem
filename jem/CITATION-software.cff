@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use the JEM map viewer or pipeline, cite this software record."
+type: software
+title: "Judiciary Entity Map (India): interactive viewer and build pipeline"
+version: 1.0.0
+date-released: 2026-07-07
+license: MIT
+authors:
+  - family-names: Sornaraja
+    given-names: Divya
+  - family-names: Prayas
+    given-names: Prajna
+  - family-names: Khetarpal
+    given-names: Agriya
+repository-code: "https://github.com/datastiltskin/jem"
+url: "https://friedso.com/apps/jem/"
+abstract: >-
+  Static web map (vanilla JS + D3) and Python pipeline (validate, derive, build)
+  for the Judiciary Entity Map (India) structural dataset. MIT licence.
+keywords:
+  - India
+  - judiciary
+  - data visualization
+  - knowledge graph
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21234226"
+  - type: url
+    value: "https://github.com/datastiltskin/jem/releases/tag/v1.0.0"
+related-resources:
+  - type: dataset
+    title: "JEM structural entity graph v1.0.0 (CC0)"
+    doi: "10.5281/zenodo.21233298"
+    repository: "https://github.com/datastiltskin/jem"
+preferred-citation:
+  type: software
+  title: "Judiciary Entity Map (India): interactive viewer and build pipeline v1.0.0"
+  authors:
+    - family-names: Sornaraja
+      given-names: Divya
+  version: 1.0.0
+  year: 2026
+  doi: "10.5281/zenodo.21234226"

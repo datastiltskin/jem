@@ -6,8 +6,8 @@
   <title>Judiciary Entity Map (India) - JEM</title>
   <link rel="icon" href="public/assets/jem-favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="public/assets/jem-app-icon.svg">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles-core.css">
+<link rel="stylesheet" href="styles/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style id="jem-boot-critical">
@@ -100,10 +100,22 @@
 <div id="detail-view" class="detail-view hidden" aria-label="Entity detail"></div>
 <div id="about-view" class="about-view hidden" aria-label="About JEM"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<div id="map-load-stage" class="map-load-stage hidden" aria-live="polite">
+  <div id="map-load-gate" class="map-load-gate hidden">
+    <img src="public/assets/jem-mark.svg" class="map-load-gate-mark jem-mark" alt="" width="48" height="48" decoding="async">
+    <h2 class="map-load-gate-title">Interactive map</h2>
+    <p class="map-load-gate-copy">Loads ~6&nbsp;MB of graph data and initializes the canvas workspace.</p>
+    <button type="button" id="btn-load-map" class="map-load-gate-btn">Load interactive map</button>
+    <button type="button" id="btn-map-gate-back" class="btn-ghost map-load-gate-back">Back to overview</button>
+  </div>
+  <div id="map-load-spinner" class="map-load-spinner-pane hidden">
+    <div class="loading-spinner"></div>
+    <p class="loading-text">Preparing map…</p>
+  </div>
+</div>
+
 <script src="public/api-config.js"></script>
-<script type="module" src="src/main.js?v=20260629c"></script>
+<script type="module" src="src/main.js?v=20260630c"></script>
 
 </body>
 </html>

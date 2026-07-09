@@ -17,6 +17,8 @@ python3 scripts/validate.py --strict
 # 3. After editing
 python3 scripts/validate.py --strict
 python3 scripts/validate_graph_refs.py
+pytest tests/test_institutions.py -v   # config ↔ bench ↔ routing (L4 partial)
+python3 scripts/audit_graph_semantics.py
 python3 scripts/derive.py
 python3 scripts/build.py          # ⚠ see overwrite warning below
 python3 scripts/derive.py --clog-report   # optional spot-check
@@ -61,13 +63,13 @@ python3 -c "import json; m=json.load(open('build/graph.staging.json'))['meta']; 
 cp build/graph.staging.json ../graph.json
 ```
 
-**Restore after accidental clobber:** [`V1_DATA_RESTORE.md`](V1_DATA_RESTORE.md)
+**Restore after accidental clobber:** recover `graph.json` from git or rebuild from a clean YAML tree.
 
 ---
 
 ## Deploy / release (v1.0.0)
 
-Production serves branch **`friedso_v1`**, not `main`. See [`V1_RELEASE_RUNBOOK.md`](V1_RELEASE_RUNBOOK.md) — preflight, rsync, smoke tests, git tag.
+Production serves branch **`friedso_v1`**, not `main`. Preflight locally, ship `graph.json` plus `jem/web/`, then run smoke tests before tagging.
 
 ```bash
 git checkout friedso_v1 && git pull --ff-only origin friedso_v1

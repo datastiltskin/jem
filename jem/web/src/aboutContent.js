@@ -130,7 +130,7 @@ export function aboutPageHTML(ctx = {}) {
         <li><strong>Database</strong> — <code>scripts/build_db.py</code> loads <code>graph.json</code> into SQLite (<code>data/jem.db</code>) for the REST API, MCP tools, and search</li>
       </ol>
       <p>Every field that affects a score requires a <strong>primary source</strong> (Constitution, statute, judgment, GoI report). Auto-fetched records stay in staging until a maintainer approves them via the expert portal. Community corrections go through signed-in proposals and maintainer review — nothing moves to published status without an audit log entry.</p>
-      <p>Maintainer documentation: <a href="${GITHUB}/blob/main/jem/docs/KNOWLEDGE_TRANSFER.md" target="_blank" rel="noopener noreferrer">Knowledge transfer guide</a> · <a href="${GITHUB}/blob/main/jem/docs/ENTITY_BUILD_ROADMAP.md" target="_blank" rel="noopener noreferrer">Entity build roadmap</a> · <a href="${GITHUB}/blob/main/jem/docs/MCP_SETUP.md" target="_blank" rel="noopener noreferrer">API &amp; MCP setup</a></p>
+      <p>Project docs: <a href="${GITHUB}/blob/main/jem/docs/ENTITY_BUILD_ROADMAP.md" target="_blank" rel="noopener noreferrer">Entity build roadmap</a> · <a href="${GITHUB}/blob/main/jem/docs/MCP_SETUP.md" target="_blank" rel="noopener noreferrer">API &amp; MCP setup</a> · <a href="${GITHUB}/blob/main/jem/docs/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing</a></p>
     </section>
 
     <section class="about-section">
@@ -194,7 +194,7 @@ export function aboutPageHTML(ctx = {}) {
       <h2>MCP for researchers &amp; AI agents</h2>
       <p>JEM exposes four <strong>MCP HTTP tools</strong> on the same server as the REST API: <code>search_entities</code>, <code>get_entity</code>, <code>get_relationships</code>, and <code>get_structural_gaps</code>. They read the same SQLite database as the map and return structured JSON with <code>data_quality</code> flags and source URLs.</p>
       <p><strong>When is MCP useful?</strong> If you use Cursor, Claude, or another agent to research Indian judicial structure, MCP (or REST) lets the agent query live data instead of uploading a stale <code>graph.json</code> snapshot. It is <em>not</em> needed for browsing the map — use toolbar search for that. Tools refuse legal advice, case outcomes, and judge-name requests.</p>
-      <p><strong>How to use it:</strong> run <code>uvicorn api.main:app</code> locally (see <a href="${GITHUB}/blob/main/jem/docs/MCP_SETUP.md" target="_blank" rel="noopener noreferrer">MCP setup guide</a>), then point your agent at <code>/mcp/tools</code> or REST <code>/api/v1/</code>. Always <strong>search first</strong> (<code>search_entities</code> or <code>GET /entities?q=…</code>) to discover entity ids before calling <code>get_entity</code>. Native stdio MCP for Cursor <code>mcp.json</code> is discussed in <a href="${GITHUB}/blob/main/jem/docs/MCP_STDIO.md" target="_blank" rel="noopener noreferrer">MCP_STDIO.md</a> — not yet shipped; HTTP works today.</p>
+      <p><strong>How to use it:</strong> run <code>uvicorn api.main:app</code> locally (see <a href="${GITHUB}/blob/main/jem/docs/MCP_SETUP.md" target="_blank" rel="noopener noreferrer">MCP setup guide</a>), then point your agent at <code>/mcp/tools</code> or REST <code>/api/v1/</code>. Always <strong>search first</strong> (<code>search_entities</code> or <code>GET /entities?q=…</code>) to discover entity ids before calling <code>get_entity</code>. HTTP tools and REST are the supported integration paths today.</p>
     </section>
 
     <section class="about-section">
@@ -210,7 +210,7 @@ export function aboutPageHTML(ctx = {}) {
       <ul class="about-maintainers">
         ${MAINTAINERS.map(maintainerLine).join('\n        ')}
       </ul>
-      <p>Contributors welcome — researchers for sourcing and validation, engineers for schema and tooling. Full team listing: <a href="${GITHUB}/blob/main/jem/docs/TEAM.md" target="_blank" rel="noopener noreferrer">TEAM.md</a>.</p>
+      <p>Contributors welcome — researchers for sourcing and validation, engineers for schema and tooling.</p>
     </section>
 
     <section class="about-section">

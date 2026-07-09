@@ -89,7 +89,9 @@ function wireSection(section) {
       if (authEl) {
         if (authProviders?.linkedin) {
           const href = linkedinLoginHref(apiBase, window.location.href);
-          authEl.innerHTML = linkedinButtonHtml(href, { className: 'dv-comment-signin jem-linkedin-signin' });
+          authEl.innerHTML = href
+            ? linkedinButtonHtml(href, { className: 'dv-comment-signin jem-linkedin-signin' })
+            : 'Sign-in not configured on API';
         } else {
           authEl.textContent = 'Sign-in not configured on API';
         }

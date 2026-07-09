@@ -39,9 +39,16 @@ export function apiFetch(base, path, options = {}) {
 
 export function linkedinLoginHref(apiBase, returnTo = window.location.href) {
   if (!apiBase) return null;
-  const url = new URL(`${apiBase.replace(/\/$/, '')}/auth/linkedin/login`);
-  url.searchParams.set('next', returnTo);
-  return url.href;
+  try {
+    const url = new URL(
+      `${apiBase.replace(/\/$/, '')}/auth/linkedin/login`,
+      window.location.href
+    );
+    url.searchParams.set('next', returnTo);
+    return url.href;
+  } catch {
+    return null;
+  }
 }
 
 export function linkedinButtonHtml(href, { className = 'jem-linkedin-signin', compact = false } = {}) {
@@ -93,5 +100,10 @@ export async function initToolbarAuth(container) {
   }
 
   const href = linkedinLoginHref(apiBase);
+  if (!href) {
+    container.innerHTML = '';
+    container.hidden = true;
+    return;
+  }
   container.innerHTML = linkedinButtonHtml(href, { compact: true });
 }

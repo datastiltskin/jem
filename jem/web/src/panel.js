@@ -15,6 +15,7 @@ export function openDetailPanel(entity) {
   const nameEl = document.getElementById('detail-entity-name');
   const typeEl = document.getElementById('detail-entity-type');
   const body = document.getElementById('detail-panel-body');
+  if (!panel || !nameEl || !typeEl || !body) return;
 
   if (entity._jemSyntheticAggregate) {
     closeNeighborhoodPanel();
