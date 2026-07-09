@@ -23,15 +23,14 @@ keywords:
   - data visualization
   - knowledge graph
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21234226"
   - type: url
     value: "https://github.com/datastiltskin/jem/releases/tag/v1.0.0"
-  # After Zenodo publish, add:
-  # - type: doi
-  #   value: "10.5281/zenodo.YYYYYYY"
 related-resources:
   - type: dataset
     title: "JEM structural entity graph v1.0.0 (CC0)"
-    # doi: "10.5281/zenodo.XXXXXXX"
+    doi: "10.5281/zenodo.21233298"
     repository: "https://github.com/datastiltskin/jem"
 preferred-citation:
   type: software
@@ -41,4 +40,4 @@ preferred-citation:
       given-names: Divya
   version: 1.0.0
   year: 2026
-  # doi: "10.5281/zenodo.YYYYYYY"
+  doi: "10.5281/zenodo.21234226"

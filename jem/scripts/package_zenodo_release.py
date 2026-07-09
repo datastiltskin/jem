@@ -163,10 +163,16 @@ def count_orphans(graph: dict) -> int:
 
 
 def count_high_severe_ir(graph: dict) -> int:
+    script_dir = Path(__file__).parent
+    if str(script_dir) not in sys.path:
+        sys.path.insert(0, str(script_dir))
+    from derive import is_scores_excluded
+
     return sum(
         1
         for e in graph.get("entities", [])
         if e.get("derived", {}).get("independence_risk_level") in ("high", "severe")
+        and not is_scores_excluded(e)
     )
 
 

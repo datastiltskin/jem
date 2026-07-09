@@ -22,6 +22,11 @@ from pathlib import Path
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
 
+_SCRIPT_DIR = Path(__file__).parent
+if str(_SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPT_DIR))
+from derive import is_scores_excluded
+
 
 def resolve_release_version(cli_version: Optional[str] = None) -> str:
     """Resolve semver string for graph.json meta.version.
@@ -315,8 +320,15 @@ TIMELINE_EVENTS = [
 def compute_impact_metrics(entities: List[Dict], scores: Dict[str, Dict]) -> Dict:
     # Exclude placeholder nodes that exist only to render relationship endpoints.
     real_entities = [e for e in entities if not e.get("_placeholder")]
-    high_ir = sum(1 for eid, s in scores.items()
-                  if s.get('independence_risk_level') in ('high', 'severe'))
+    entity_by_id = {e.get("id"): e for e in real_entities if e.get("id")}
+    eligible_ids = {
+        eid for eid, ent in entity_by_id.items() if not is_scores_excluded(ent)
+    }
+    high_ir = sum(
+        1 for eid, s in scores.items()
+        if eid in eligible_ids
+        and s.get('independence_risk_level') in ('high', 'severe')
+    )
 
     # Appointer == funder == removal authority
     appointer_funder_same = 0

@@ -12,6 +12,10 @@
 
 # Local deploy snapshots (not source of truth)
 _deploy_bundle/
+build/
+
+# Local git worktrees metadata
+.worktrees/
 
 # Personal / draft papers — not for public repo
 jem/docs/PAPER_*.md
