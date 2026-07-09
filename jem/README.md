@@ -11,10 +11,11 @@ Maps institutional relationships — appointment chains, funding flows,
 oversight mechanisms, complaint pathways — not case outcomes.
 
 **Canonical demo (attribution):** https://friedso.com/apps/jem/  
-**Release:** `v1.0.0` (Jun 2026) — 1,103 entities · summary/detail UI refresh  
-**Knowledge transfer (maintainers):** [`docs/KNOWLEDGE_TRANSFER.md`](docs/KNOWLEDGE_TRANSFER.md) · [`docs/JEM_Knowledge_Transfer.docx`](docs/JEM_Knowledge_Transfer.docx)  
+**GitHub:** https://github.com/datastiltskin/jem  
+**Release:** `v1.0.0` (Jun 2026) — 1,145 entities, 1,810 relationships · summary/detail UI refresh  
 **AI data entry (copy-paste):** [`docs/AI_DATA_ENTRY_PROMPT.md`](docs/AI_DATA_ENTRY_PROMPT.md) · **Build roadmap (1,500+):** [`docs/ENTITY_BUILD_ROADMAP.md`](docs/ENTITY_BUILD_ROADMAP.md)  
-**MCP / API setup:** [`docs/MCP_SETUP.md`](docs/MCP_SETUP.md)
+**MCP / API setup:** [`docs/MCP_SETUP.md`](docs/MCP_SETUP.md)  
+**Maintainers:** [@dso6060](https://github.com/dso6060) · co-maintainers [@Prajna1999](https://github.com/Prajna1999) and [@agriyakhetarpal](https://github.com/agriyakhetarpal)
 
 ---
 
@@ -52,14 +53,14 @@ python scripts/build.py
 # 4b. Safe staging build (does NOT overwrite repo-root graph.json)
 ./scripts/build_safe.sh
 
-# 5. Local preview or deploy (see docs/V1_RELEASE_RUNBOOK.md — generic static host)
+# 5. Local preview or deploy (ship `graph.json` as `web/public/graph.json` on your static host)
 # cd web && python3 -m http.server 8080
 ```
 
 The frontend requires no build step. It is vanilla HTML + JS + CSS.
 All CDN dependencies load from jsdelivr/cdnjs.
 
-**v1 release (deploy/smoke/tag):** [docs/V1_RELEASE_RUNBOOK.md](docs/V1_RELEASE_RUNBOOK.md) · **Session workflow:** [docs/SESSION_WORKFLOW.md](docs/SESSION_WORKFLOW.md) · **Restore data:** [docs/V1_DATA_RESTORE.md](docs/V1_DATA_RESTORE.md) · **Checklist:** [../MASTER_CHECKLIST.md](../MASTER_CHECKLIST.md)
+**Session workflow:** [docs/SESSION_WORKFLOW.md](docs/SESSION_WORKFLOW.md) · **Checklist:** [../MASTER_CHECKLIST.md](../MASTER_CHECKLIST.md)
 
 ---
 
@@ -146,7 +147,7 @@ Do not set `data_quality: verified` unless you have a direct link to a primary G
 
 ## Status
 
-**v1.0.0** (Jun 2026): **1,103** structural entities, **1,858** relationships in `graph.json`. Target: ~1,500 structural entities.
+**v1.0.0** (Jun 2026): **1,145** structural entities, **1,810** relationships in `graph.json`. Target: ~1,500 structural entities.
 
 Priority data entry order:
 1. All 25 High Courts
