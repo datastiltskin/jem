@@ -10,7 +10,7 @@
 
 **GitHub:** Use the [data correction](https://github.com/datastiltskin/jem/issues/new?template=data_correction.yml) issue template or open a PR (checklist auto-applied).
 
-Governance: [`.github/GOVERNANCE.md`](../../.github/GOVERNANCE.md) · Team: [`TEAM.md`](TEAM.md)
+Governance: [`.github/GOVERNANCE.md`](../../.github/GOVERNANCE.md)
 
 **Using AI (Claude / Cursor):** [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md) + phased `TASK`s in [`ENTITY_BUILD_ROADMAP.md`](ENTITY_BUILD_ROADMAP.md). Submit via **GitHub issues only**. Proposed new entities OK; **relationships are maintainer-only**.
 

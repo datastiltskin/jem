@@ -16,7 +16,6 @@ JEM maps *how* courts, tribunals, regulators, and oversight bodies are built —
 → **GitHub:** https://github.com/datastiltskin/jem  
 → **Release:** `v1.0.0` (Jul 2026) — **1,145 entities**, **1,835 relationships**, **0 orphan nodes** (C24/C25 wired Jul 2026) · audit passes 1–4 + QA sprint (Jun 2026)  
 → **Maintainers:** [@dso6060](https://github.com/dso6060) · co-maintainers [@Prajna1999](https://github.com/Prajna1999) (UI) and [@agriyakhetarpal](https://github.com/agriyakhetarpal) (public repo) — contact via [GitHub Issues](https://github.com/datastiltskin/jem/issues)  
-→ **Maintainer guide:** [`jem/docs/KNOWLEDGE_TRANSFER.md`](jem/docs/KNOWLEDGE_TRANSFER.md) · [`jem/docs/JEM_Knowledge_Transfer.docx`](jem/docs/JEM_Knowledge_Transfer.docx)  
 → **AI data-entry prompt:** [`jem/docs/AI_DATA_ENTRY_PROMPT.md`](jem/docs/AI_DATA_ENTRY_PROMPT.md) · **Entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
 
 ### Disclaimer
@@ -86,7 +85,7 @@ Judiciary Entity Map (India) (JEM) presents structural information about institu
 
 ## Entity build progress
 
-**1,145 / ~1,500** structural entities in repo (**v1.0.0**, Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md) · acceptance rubric: [`jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md`](jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md).
+**1,145 / ~1,500** structural entities in repo (**v1.0.0**, Jun 2026). Full phased prompts and maintainer workflow: [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
 
 | Status | Meaning |
 |--------|---------|
@@ -374,7 +373,7 @@ cd ..
    - **`jem/web/`** (HTML, CSS, JS) → your app directory.
 
 3. **Examples** (set your own paths; not stored in this repo):
-   - **rsync/SSH:** `export JEM_REMOTE='user@your-host:~/path/to/apps/jem'` then rsync `graph.json` and `jem/web/` (see [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md)).
+   - **rsync/SSH:** `export JEM_REMOTE='user@your-host:~/path/to/apps/jem'` then rsync `graph.json` and `jem/web/` to your host.
    - **Local preview:** `cd jem/web && python3 -m http.server 8080` (ensure `public/graph.json` resolves).
    - **Static hosts:** upload `jem/web/` plus `graph.json` as `public/graph.json` (Netlify, S3, GitHub Pages, nginx, etc.).
 
@@ -402,7 +401,7 @@ GitHub: https://github.com/datastiltskin/jem — Actions validates PRs; **does n
 
 See [jem/docs/CONTRIBUTING.md](jem/docs/CONTRIBUTING.md). **v1.2+:** contributors may submit **proposed entity YAML** via GitHub issues; maintainers merge after `validate.py`. **Relationships** remain maintainer-only.
 
-GitHub scaffolding (issue/PR templates, CODEOWNERS, governance): [`.github/`](.github/) · publish steps: [`.github/PUBLISH_CHECKLIST.md`](.github/PUBLISH_CHECKLIST.md) · team placeholders: [`jem/docs/TEAM.md`](jem/docs/TEAM.md).
+GitHub scaffolding (issue/PR templates, CODEOWNERS, governance): [`.github/`](.github/) · publish steps: [`.github/PUBLISH_CHECKLIST.md`](.github/PUBLISH_CHECKLIST.md).
 
 Every field that affects a score or gap marker needs a primary source. `data_quality: unverified` renders with a dashed border — always better to be honest about what is and is not verified.
 

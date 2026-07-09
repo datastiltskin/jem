@@ -192,7 +192,7 @@ JEM’s MCP layer is **HTTP-mounted on FastAPI**, not a standalone stdio MCP pro
 
 1. **HTTP via agent** — Option B (no extra config).
 2. **Custom MCP bridge** — wrap `/mcp/tools/*` in a small stdio proxy.
-3. **Native stdio (future)** — see [`MCP_STDIO.md`](MCP_STDIO.md) for requirements and friedso VPS notes. Stdio runs on your machine; the VPS hosts HTTP/REST if exposed publicly.
+3. **Native stdio (future)** — not shipped in this repo. If needed later, it should run as a local process on your machine while the VPS continues to host HTTP/REST.
 
 ### Option D — Static `graph.json`
 

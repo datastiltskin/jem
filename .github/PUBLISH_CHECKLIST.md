@@ -15,7 +15,7 @@ Repository: **https://github.com/datastiltskin/jem** (public)
 ## 2. Replace placeholders
 
 - [x] `REPO_NAME` → `jem` in issue templates, SUPPORT, CONTRIBUTING, roadmap, AI prompt (was `jem_prototype`)
-- [x] Co-maintainers `@Prajna1999` and `@agriyakhetarpal` in `CODEOWNERS` and `TEAM.md`
+- [x] Co-maintainers `@Prajna1999` and `@agriyakhetarpal` in `CODEOWNERS`
 
 ## 3. Repository settings
 

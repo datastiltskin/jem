@@ -39,13 +39,13 @@
 
 **Prior (Jun 12 — Phase 1 batch):** M-T1 ITAT×25; M-T2–M-T6; C15 UP/WB/RJ; C10/C11. **599 → 668** entities.
 
-**Prior (May 20):** Central tribunal + regulator + ministry batch; IIAC rename; governance graph Phase 6. Operator docs: [`V1_DATA_RESTORE.md`](jem/docs/V1_DATA_RESTORE.md) · [`V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) · [`ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
+**Prior (May 20):** Central tribunal + regulator + ministry batch; IIAC rename; governance graph Phase 6. Operator docs: [`jem/docs/SESSION_WORKFLOW.md`](jem/docs/SESSION_WORKFLOW.md) · [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md).
 
 ---
 
 ## PROGRESS & STATUS (Jun 15 2026)
 
-**Restore procedure:** [`jem/docs/V1_DATA_RESTORE.md`](jem/docs/V1_DATA_RESTORE.md) · **v1 release:** [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) · **v2 schema:** [`jem/docs/V2_DATA_MODEL.md`](jem/docs/V2_DATA_MODEL.md) · **entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
+**Session workflow:** [`jem/docs/SESSION_WORKFLOW.md`](jem/docs/SESSION_WORKFLOW.md) · **v2 schema:** [`jem/docs/V2_DATA_MODEL.md`](jem/docs/V2_DATA_MODEL.md) · **entity roadmap:** [`jem/docs/ENTITY_BUILD_ROADMAP.md`](jem/docs/ENTITY_BUILD_ROADMAP.md)
 
 ### Done (verified this audit)
 
@@ -56,7 +56,7 @@
 - [x] **v2 partial (data + UI):** HC bench entities, `judge_strength` blocks, district lattice collapse, IIAC (ex-NDIAC), state SCDRC/NHRC, CVC consolidation.
 - [x] **Toolchain:** `validate.py`, `derive.py`, `build.py`, `generate_v1_states_bundle.py`, `merge_njdg_snapshot.py`, `bootstrap_tn_district_lattice.py`.
 - [x] **CI scaffold:** `.github/workflows/validate.yml`.
-- [x] **Docs:** `DATA_MODEL.md`, `CONTRIBUTING.md`, `NJDG_MERGE_PLAN.md`, `V2_DATA_MODEL.md`, `V1_DATA_RESTORE.md`, `V1_RELEASE_RUNBOOK.md`, `SESSION_WORKFLOW.md`.
+- [x] **Docs:** `DATA_MODEL.md`, `CONTRIBUTING.md`, `NJDG_MERGE_PLAN.md`, `V2_DATA_MODEL.md`, `SESSION_WORKFLOW.md`.
 - [x] **Doc cleanup (May 20):** GANTT schedule doc removed; patch-extract bundles deleted from workspace.
 - [x] **Governance graph (May 20):** Central officeholders + appointment committees; NHRC/CVC/CBI consultation edges; minister vs ministry distinction; `validate_graph_refs.py` in pipeline.
 - [x] **Governance score exclusions:** `derive.py` + [`jem/docs/DATA_MODEL.md`](jem/docs/DATA_MODEL.md) — PM/ministers/ministries excluded from IR/DP; `AppointmentBody` committees still scored.
@@ -118,7 +118,7 @@
 
 ### v1.0.0 release (operator — tagged Jun 2026; production deploy pending)
 
-**Runbook:** [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) · **Preflight:** `./jem/scripts/deploy_prep.sh`
+**Deploy workflow:** ship `graph.json` plus `jem/web/` after `./jem/scripts/deploy_prep.sh` passes
 
 - [ ] **1. Deploy** — rsync `graph.json` + `jem/web/` (see runbook §1; symlink caveat)
 - [ ] **2. Live smoke tests** — runbook §2 checklist on production URL
@@ -284,9 +284,9 @@ It contains everything. Structure (this repository):
 
 ### 1.2 Deploy v1 to production → use release runbook
 
-**Prepared:** [`jem/docs/V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) §1–2 · `./jem/scripts/deploy_prep.sh`
+**Prepared:** `./jem/scripts/deploy_prep.sh`
 
-- [ ] Complete runbook §1 (deploy) and §2 (smoke tests) — checkboxes tracked there and in §3.4 below
+- [ ] Complete deploy + smoke tests — checkboxes tracked here and in §3.4 below
 
 ---
 
@@ -460,8 +460,8 @@ Shortcut: `cd jem && ./scripts/safe_pipeline.sh` (does not run bundle generator)
 - [x] Run full build: `python3 jem/scripts/build.py` — **1,103 entities**, **~5.63 MB** `graph.json` (Jun 15)
 - [x] State packs — all 35 state/UT folders in repo and graph (Jun 15)
 - [x] NJDG snapshot merge applied (139 entities) — Part 3.5
-- [ ] **§1 Deploy** — [`V1_RELEASE_RUNBOOK.md`](jem/docs/V1_RELEASE_RUNBOOK.md) + `deploy_prep.sh`
-- [ ] **§2 Smoke tests** — same runbook (production URL)
+- [ ] **§1 Deploy** — `deploy_prep.sh` + ship `graph.json` and `jem/web/`
+- [ ] **§2 Smoke tests** — production URL, `graph.json` load, search, map interactions
 - [x] **§3 Tag** — `git tag -a v1.0.0` (Jun 16 2026 on `main`); `git push` / remote → v2 (Part 4.3)
 
 ---
@@ -595,7 +595,7 @@ print(f'TN districts with pending_cases: {with_p}/{len(dist)}')
 - [ ] Canvas performance: open devtools, confirm <16ms render at current entity count
 - [ ] Sankey displays correctly
 - [ ] Journey mode breadcrumb works for District → HC → SC path
-- [ ] Deploy per runbook (`JEM_REMOTE` on your static host — see `V1_RELEASE_RUNBOOK.md`)
+- [ ] Deploy with `JEM_REMOTE` on your static host after local preflight
 - [ ] Tag: `git tag v2.0.0 && git push --tags`
 
 ### 4.3 GitHub & CI (moved from v1 Part 1.3)

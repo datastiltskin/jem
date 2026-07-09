@@ -1,6 +1,6 @@
 # JEM — governance (v0.9)
 
-Lightweight rules for maintainers and future reviewers. Full context: [`jem/docs/KNOWLEDGE_TRANSFER.md`](../jem/docs/KNOWLEDGE_TRANSFER.md).
+Lightweight rules for maintainers and future reviewers.
 
 ## Roles
 
@@ -12,7 +12,6 @@ Lightweight rules for maintainers and future reviewers. Full context: [`jem/docs
 | **Domain / legal reviewer** | *TBD* | Advisory review; does not merge unless granted write access |
 | **Think-tank / institution liaison** | *TBD* | Batch review, methodology feedback; contact via Expert Review issue template |
 
-Update [`jem/docs/TEAM.md`](../jem/docs/TEAM.md) when names and affiliations are confirmed.
 
 ## Contribution scope (v0.9)
 
@@ -66,6 +65,6 @@ Widening scope (new states, gap-registry entities) requires an explicit maintain
 
 - Changes reach `friedso_v1` via **pull request** (no direct pushes).
 - Only [@dso6060](https://github.com/dso6060) can **merge** PRs into `friedso_v1` (ruleset bypass on pull requests).
-- Co-maintainers work on `main`; founder promotes to `friedso_v1` after `./jem/scripts/deploy_friedso_production.sh` + smoke tests ([`V1_RELEASE_RUNBOOK.md`](../jem/docs/V1_RELEASE_RUNBOOK.md)).
+- Co-maintainers work on `main`; founder promotes to `friedso_v1` after `./jem/scripts/deploy_friedso_production.sh` and smoke tests.
 
 Personal repos cannot use classic “restrict push to user” branch protection; the ruleset above enforces the same intent.

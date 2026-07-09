@@ -137,7 +137,7 @@ See [`DATA_QUALITY_GATES.md`](DATA_QUALITY_GATES.md) for current status.
 
 - `jem/scripts/hc_benches_config.py` — bench ground truth for generators
 - `jem/.claude/prompts/verification_v1.md` — Path B verifier rules
-- `jem/docs/PHASE2_ACCEPTANCE_RUBRIC.md` — structural release gates
+- `jem/docs/ENTITY_BUILD_ROADMAP.md` — structural release planning and category tracking
 - `MASTER_CHECKLIST.md` — v1.1 structural integrity items
 - Blog: [When the graph is green but wrong](https://friedso.com/blog/jem-when-the-graph-is-green-but-wrong/)
 
