@@ -1,0 +1,32 @@
+# sources.yaml
+defaults:
+  timeout_s: 30
+  min_bytes: 512               # anything smaller is almost certainly an error page
+  max_retries: 4
+  backoff_base_s: 2.0
+  user_agent: "JEM-scraper/1.0 (+https://friedso.com/apps/jem; contact@friedso.com)"
+  tls: strict                  # strict | downgrade
+  backend: static              # static | rendered
+
+hosts:
+  www.indiacode.nic.in:
+    tls: strict
+    must_contain: ["India Code"]     # soft-404 guard
+  egazette.gov.in:
+    tls: downgrade                    # ancient cert chain
+    tls_reason: "incomplete chain, verified fingerprint 2026-08"
+    tls_fingerprint_sha256: "AB:CD:..."   # pinned; mismatch = hard fail
+    accept_content_types: ["application/pdf", "text/html"]
+  main.sci.gov.in:
+    must_contain: ["Supreme Court"]
+  doj.gov.in:
+    rate_limit_rps: 0.5               # be polite / avoid WAF
+    must_contain: ["Department of Justice"]
+  njdg.ecourts.gov.in:
+    backend: rendered                 # JS-rendered dashboard
+    warmup_url: "https://njdg.ecourts.gov.in/njdgnew/"
+    wait_for_selector: "table.tableData"
+    must_contain: ["National Judicial Data Grid"]
+  services.ecourts.gov.in:
+    backend: rendered
+    needs_session: true
