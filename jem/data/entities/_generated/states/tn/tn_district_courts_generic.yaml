@@ -30,7 +30,7 @@ data_quality_notes: 'State-wide NJDG aggregate for the collapsed district lattic
   '
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: National Judicial Data Grid (NJDG)

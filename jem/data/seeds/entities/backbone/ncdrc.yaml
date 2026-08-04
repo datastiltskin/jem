@@ -59,11 +59,11 @@ data_quality_notes: >
 
 sources:
   - label: "Consumer Protection Act 2019 — India Code"
-    url: https://india-code.nic.in/acts-detail/MjMxMzM=
+    url: https://indiacode.nic.in/acts-detail/MjMxMzM=
     type: CentralAct
     accessed_date: '2026-05-18'
   - label: "Consumer Protection Act 1986 — India Code (origin statute)"
-    url: https://india-code.nic.in/acts-detail/NzQ3
+    url: https://indiacode.nic.in/acts-detail/NzQ3
     type: CentralAct
     accessed_date: '2026-05-18'
   - label: "Ministry of Consumer Affairs — NCDRC"

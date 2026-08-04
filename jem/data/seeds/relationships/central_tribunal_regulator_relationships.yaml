@@ -21,7 +21,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Companies Act 2013, s.410"
-        url: https://india-code.nic.in/handle/123456789/2197
+        url: https://indiacode.nic.in/handle/123456789/2197
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -41,7 +41,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Competition Act 2002, s.53A (as amended by Finance Act 2017)"
-        url: https://india-code.nic.in/handle/123456789/2115
+        url: https://indiacode.nic.in/handle/123456789/2115
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -61,7 +61,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "TRAI Act 1997, s.14 (as amended 2000)"
-        url: https://india-code.nic.in/handle/123456789/1907
+        url: https://indiacode.nic.in/handle/123456789/1907
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -78,7 +78,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "SEBI Act 1992, s.15Z"
-        url: https://india-code.nic.in/handle/123456789/2080
+        url: https://indiacode.nic.in/handle/123456789/2080
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -97,7 +97,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "IRDAI Act 1999, s.18A (as amended)"
-        url: https://india-code.nic.in/handle/123456789/2039
+        url: https://indiacode.nic.in/handle/123456789/2039
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -114,7 +114,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "PFRDA Act 2013, s.36"
-        url: https://india-code.nic.in/handle/123456789/2126
+        url: https://indiacode.nic.in/handle/123456789/2126
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -135,7 +135,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "AFT Act 2007, s.30"
-        url: https://india-code.nic.in/handle/123456789/2093
+        url: https://indiacode.nic.in/handle/123456789/2093
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -152,7 +152,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "RDDBFI Act 1993, s.18"
-        url: https://india-code.nic.in/handle/123456789/1573
+        url: https://indiacode.nic.in/handle/123456789/1573
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -171,7 +171,7 @@ relationships:
     notes: ministry_corporate_affairs entity id assumed present in graph; flag if absent.
     sources:
       - label: "Companies Act 2013, s.412(4)"
-        url: https://india-code.nic.in/handle/123456789/2197
+        url: https://indiacode.nic.in/handle/123456789/2197
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -188,7 +188,7 @@ relationships:
     notes: ministry_communications entity id assumed present in graph; flag if absent.
     sources:
       - label: "TRAI Act 1997, s.15"
-        url: https://india-code.nic.in/handle/123456789/1907
+        url: https://indiacode.nic.in/handle/123456789/1907
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -205,7 +205,7 @@ relationships:
     notes: ministry_defence entity id assumed present in graph; flag if absent.
     sources:
       - label: "AFT Act 2007, s.22"
-        url: https://india-code.nic.in/handle/123456789/2093
+        url: https://indiacode.nic.in/handle/123456789/2093
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -222,7 +222,7 @@ relationships:
     notes: ministry_of_finance entity id assumed present in graph.
     sources:
       - label: "RDDBFI Act 1993, s.6"
-        url: https://india-code.nic.in/handle/123456789/1573
+        url: https://indiacode.nic.in/handle/123456789/1573
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -238,7 +238,7 @@ relationships:
     data_quality: partial
     sources:
       - label: "RDDBFI Act 1993, s.10"
-        url: https://india-code.nic.in/handle/123456789/1573
+        url: https://indiacode.nic.in/handle/123456789/1573
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -255,7 +255,7 @@ relationships:
     notes: ministry_railways entity id assumed present in graph; flag if absent.
     sources:
       - label: "Railway Claims Tribunal Act 1987, s.3"
-        url: https://india-code.nic.in/handle/123456789/1877
+        url: https://indiacode.nic.in/handle/123456789/1877
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -272,7 +272,7 @@ relationships:
     notes: TRAI also receives fees; ministry_communications entity id assumed present in graph.
     sources:
       - label: "TRAI Act 1997, s.14A"
-        url: https://india-code.nic.in/handle/123456789/1907
+        url: https://indiacode.nic.in/handle/123456789/1907
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -288,7 +288,7 @@ relationships:
     data_quality: partial
     sources:
       - label: "SEBI Act 1992, s.13"
-        url: https://india-code.nic.in/handle/123456789/2080
+        url: https://indiacode.nic.in/handle/123456789/2080
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -304,7 +304,7 @@ relationships:
     data_quality: partial
     sources:
       - label: "Competition Act 2002, s.10"
-        url: https://india-code.nic.in/handle/123456789/2115
+        url: https://indiacode.nic.in/handle/123456789/2115
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -320,7 +320,7 @@ relationships:
     data_quality: partial
     sources:
       - label: "IRDAI Act 1999, s.16"
-        url: https://india-code.nic.in/handle/123456789/2039
+        url: https://indiacode.nic.in/handle/123456789/2039
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -336,6 +336,6 @@ relationships:
     data_quality: partial
     sources:
       - label: "PFRDA Act 2013, s.16"
-        url: https://india-code.nic.in/handle/123456789/2126
+        url: https://indiacode.nic.in/handle/123456789/2126
         type: CentralAct
         accessed_date: "2025-01-15"

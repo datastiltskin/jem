@@ -19,7 +19,7 @@ relationships:
     sources:
       - &rera_act
         label: Real Estate (Regulation and Development) Act 2016 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-07-07'
 
@@ -74,7 +74,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Electricity Act 2003 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-07-07'
 
@@ -93,7 +93,7 @@ relationships:
     sources:
       - &constitution
         label: Constitution of India — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: Constitution
         accessed_date: '2026-07-07'
 
@@ -149,7 +149,7 @@ relationships:
     sources:
       - &crpc
         label: Code of Criminal Procedure 1973 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-07-07'
 
@@ -191,7 +191,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Family Courts Act 1984 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-07-07'
 
@@ -249,7 +249,7 @@ relationships:
     sources:
       - &advocates_act
         label: Advocates Act 1961 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-07-07'
 
@@ -319,7 +319,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Code of Civil Procedure 1908 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-07-07'
 
@@ -335,7 +335,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Code of Civil Procedure 1908 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-07-07'
 
@@ -364,6 +364,6 @@ relationships:
     data_quality: partial
     sources:
       - label: Indian Evidence Act 1872 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-07-07'

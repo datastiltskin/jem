@@ -26,7 +26,7 @@ Read these files first:
 ## Rules
 
 1. **No invented relationship types** — use only enum values from relationship_schema.yaml
-2. **Primary sources** — every edge needs `sources[]` with india-code.nic.in or Constitution URL
+2. **Primary sources** — every edge needs `sources[]` with indiacode.nic.in or Constitution URL
 3. **data_quality: partial** for all edges (role-layer scaffolding)
 4. RERA duplicates: use `statutory_ref` category; notes must say duplicate scaffold → canonical id
 5. Role archetypes: link each role to the **most appropriate single institutional anchor** already in the graph (e.g. `chief_justice_india`, `supreme_court_india`, `collegium_hc_appointment`, `tn_district_courts_generic` as national exemplar for district judges, `mh_bar_council` or state bar council for advocates — pick one consistent anchor per role type, document in notes)

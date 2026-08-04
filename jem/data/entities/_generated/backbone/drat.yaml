@@ -57,7 +57,7 @@ data_quality_notes: Aggregate entity for constellation view. Bench-level entitie
   snapshot case_volume merged v1.2 judge_strength stub attached
 sources:
 - label: RDDBFI Act 1993, s.8–18 — DRAT provisions
-  url: https://india-code.nic.in/handle/123456789/1573
+  url: https://indiacode.nic.in/handle/123456789/1573
   type: CentralAct
   accessed_date: '2025-01-15'
 - label: DFS / Ministry of Finance — DRAT overview

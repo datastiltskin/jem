@@ -88,7 +88,7 @@ data_quality_notes: 'Permanent bench at Shimla; parent hc_punjab_haryana. Popula
   issue tagging co-maintainer Prajna with sources from official HC sites. v1.2 judge_strength stub attached'
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: Supreme Court of India

@@ -43,7 +43,7 @@ data_quality_notes: >-
   state/UT public servants without a local Lokayukta remain a coverage gap.
 sources:
   - label: Lokpal and Lokayuktas Act, 2013 — India Code
-    url: https://india-code.nic.in/handle/123456789/2335
+    url: https://indiacode.nic.in/handle/123456789/2335
     type: CentralAct
     accessed_date: '2026-06-17'
   - label: Puducherry Government portal

@@ -47,7 +47,7 @@ data_quality_notes: >-
   ministry_responsible ministry_law_justice. NJDG snapshot case_volume merged
 sources:
 - label: Legal Services Authorities Act 1987 — India Code
-  url: https://india-code.nic.in/acts-detail/NzI2
+  url: https://indiacode.nic.in/acts-detail/NzI2
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: NALSA — Official Website

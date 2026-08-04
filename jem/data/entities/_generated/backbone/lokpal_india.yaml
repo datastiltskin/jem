@@ -69,7 +69,7 @@ data_quality_notes: >-
   Speaker, LoP, eminent jurist).
 sources:
   - label: Lokpal and Lokayuktas Act, 2013 — India Code
-    url: https://india-code.nic.in/handle/123456789/2335
+    url: https://indiacode.nic.in/handle/123456789/2335
     type: CentralAct
     accessed_date: '2026-06-17'
   - label: Justice A.M. Khanwilkar sworn in as Lokpal Chairperson — The Hindu

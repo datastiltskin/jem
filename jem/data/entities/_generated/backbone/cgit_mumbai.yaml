@@ -78,7 +78,7 @@ data_quality_notes: >-
 
 sources:
   - label: Industrial Disputes Act 1947 — s.7A
-    url: https://india-code.nic.in/DownloadFile?FileName=A1947-14.pdf
+    url: https://indiacode.nic.in/DownloadFile?FileName=A1947-14.pdf
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: MoLE — CGIT portal

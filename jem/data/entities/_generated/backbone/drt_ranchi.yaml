@@ -56,7 +56,7 @@ data_quality_notes: 'G.S.R. 113(E) dated 26 February 2002 establishes DRT Ranchi
   supervision confirmed across jabalpuradvocate.com and TaxTMI. v1.2 judge_strength stub attached'
 sources:
 - label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
-  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  url: https://indiacode.nic.in/CodeofActs13/19930951.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: 'DRT Ranchi — GSR 113(E) 26.2.2002; jurisdiction: Jharkhand'

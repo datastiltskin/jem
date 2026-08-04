@@ -89,7 +89,7 @@ data_quality_notes: Permanent bench at Lucknow; parent hc_allahabad. Populate ju
   and case_volume from HC website / DoJ / NJDG.
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: Supreme Court of India

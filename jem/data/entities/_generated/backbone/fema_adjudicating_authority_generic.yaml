@@ -50,7 +50,7 @@ data_quality_notes: >-
   to ATFE — same tribunal, distinct statutory gateway.
 sources:
   - label: FEMA 1999 — ss.16–18 (India Code)
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: CentralAct
     accessed_date: '2026-06-26'
   - label: Enforcement Directorate — official website

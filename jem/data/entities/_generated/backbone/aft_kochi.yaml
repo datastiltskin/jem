@@ -58,7 +58,7 @@ data_quality: partial
 data_quality_notes: 'Per aft.gov.in/jurisdiction: Kerala, Karnataka, Lakshadweep. v1.2 judge_strength stub attached'
 sources:
 - label: Armed Forces Tribunal Act 2007
-  url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+  url: https://www.indiacode.nic.in/CodeofActs/2007/2007_55.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: AFT official website

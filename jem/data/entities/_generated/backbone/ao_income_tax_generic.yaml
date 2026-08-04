@@ -87,7 +87,7 @@ data_quality_notes: >-
   No judge_strength or case_volume fields applicable — volume statistics are reported at CBDT/department level, not per AO unit.
 sources:
 - label: Income Tax Act 1961 s.2(7A) and s.120–124 — definition and jurisdiction of AO
-  url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+  url: https://www.indiacode.nic.in/CodeofActs/1961/1961_43.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Income Tax India — official portal

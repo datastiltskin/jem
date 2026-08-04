@@ -62,7 +62,7 @@ data_quality_notes: 'G.S.R. 945(E) dated 29 December 2000. District jurisdiction
   stub attached'
 sources:
 - label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
-  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  url: https://indiacode.nic.in/CodeofActs13/19930951.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: 'DRT Nagpur — GSR 945(E) 29.12.2000; jurisdiction: Vidarbha districts of Maharashtra

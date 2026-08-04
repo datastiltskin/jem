@@ -81,7 +81,7 @@ data_quality_notes: >-
 
 sources:
   - label: "Railway Claims Tribunal Act 1987 (Act 54 of 1987)"
-    url: https://india-code.nic.in/handle/123456789/1877
+    url: https://indiacode.nic.in/handle/123456789/1877
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "RCT official website"

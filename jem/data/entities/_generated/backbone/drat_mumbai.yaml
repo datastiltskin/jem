@@ -45,7 +45,7 @@ data_quality_notes: Bench-level DRAT entity (C04). Supervises DRT Mumbai, DRT Pu
   attached
 sources:
 - label: RDDBFI Act 1993, s.8–18 — DRAT provisions
-  url: https://india-code.nic.in/handle/123456789/1573
+  url: https://indiacode.nic.in/handle/123456789/1573
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: MoF e-tribunals — DRAT/DRT composition listing

@@ -32,7 +32,7 @@ You are helping with Judiciary Entity Map (India) — JEM, an open CC0 structura
 • Map STRUCTURE only: appointment chains, funding, oversight, appellate paths, complaint mechanisms, operational status, case-volume fields when sourced — NOT case outcomes, NOT individual judge names, NOT editorial opinions.
 • Entity IDs: permanent snake_case (e.g. hc_madras, mh_district_court_pune). Never rename an existing id.
 • data_quality: use partial unless every changed fact has a primary GoI source URL; never set verified without official sources; never set derived.scores_validated (maintainers only).
-• Primary sources (in order): india-code.nic.in, egazette.gov.in, main.sci.gov.in, official ministry/HC sites, doj.gov.in, NJDG/e-Courts URLs, PIB, law commission. Avoid Wikipedia and news-only citations.
+• Primary sources (in order): indiacode.nic.in, egazette.gov.in, main.sci.gov.in, official ministry/HC sites, doj.gov.in, NJDG/e-Courts URLs, PIB, law commission. Avoid Wikipedia and news-only citations.
 • Schema: read jem/data/schema/entity_schema.yaml and jem/data/schema/relationship_schema.yaml before writing YAML.
 • Templates: copy the closest existing file under jem/data/entities/ (same type/cluster/state). Match field names and nesting exactly.
 • Paths: new state entities usually go under jem/data/entities/_generated/states/{state_code}/. Relationships: MAINTAINER-ONLY — do not output relationship YAML unless ROLE is co-maintainer and TASK explicitly says to wire edges.

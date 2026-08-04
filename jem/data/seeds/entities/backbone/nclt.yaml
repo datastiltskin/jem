@@ -60,10 +60,10 @@ sources:
     type: GoIWebsite
     accessed_date: '2026-05-18'
   - label: "Insolvency and Bankruptcy Code 2016 — India Code"
-    url: https://india-code.nic.in/acts-detail/MjMxMDk=
+    url: https://indiacode.nic.in/acts-detail/MjMxMDk=
     type: CentralAct
     accessed_date: '2026-05-18'
   - label: "Tribunals Reforms Act 2021 — India Code"
-    url: https://india-code.nic.in/acts-detail/MjY5MzQ=
+    url: https://indiacode.nic.in/acts-detail/MjY5MzQ=
     type: CentralAct
     accessed_date: '2026-05-18'

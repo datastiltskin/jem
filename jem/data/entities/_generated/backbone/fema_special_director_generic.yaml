@@ -46,7 +46,7 @@ data_quality_notes: >-
   separate appeal provision.
 sources:
   - label: FEMA 1999 — ss.18, 37 (India Code)
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: CentralAct
     accessed_date: '2026-06-26'
   - label: Enforcement Directorate — official website

@@ -14,7 +14,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Constitution of India — Article 76
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: Constitution
         accessed_date: '2026-06-17'
 
@@ -30,7 +30,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Constitution of India — Article 76
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: Constitution
         accessed_date: '2026-06-17'
 
@@ -46,7 +46,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Constitution of India — Article 76(2)
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: Constitution
         accessed_date: '2026-06-17'
 
@@ -62,7 +62,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Law Officers (Conditions of Service) Rules, 1987
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: GoIWebsite
         accessed_date: '2026-06-17'
 
@@ -78,7 +78,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Law Officers (Conditions of Service) Rules, 1987
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: GoIWebsite
         accessed_date: '2026-06-17'
 
@@ -93,7 +93,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Law Officers (Conditions of Service) Rules, 1987
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: GoIWebsite
         accessed_date: '2026-06-17'
 
@@ -109,7 +109,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Lokpal and Lokayuktas Act 2013 — s.4
-        url: https://india-code.nic.in/handle/123456789/2335
+        url: https://indiacode.nic.in/handle/123456789/2335
         type: CentralAct
         accessed_date: '2026-06-17'
 
@@ -125,7 +125,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Lokpal and Lokayuktas Act 2013 — s.4
-        url: https://india-code.nic.in/handle/123456789/2335
+        url: https://indiacode.nic.in/handle/123456789/2335
         type: CentralAct
         accessed_date: '2026-06-17'
 
@@ -143,7 +143,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Lokpal and Lokayuktas Act 2013
-        url: https://india-code.nic.in/handle/123456789/2335
+        url: https://indiacode.nic.in/handle/123456789/2335
         type: CentralAct
         accessed_date: '2026-06-17'
 
@@ -161,6 +161,6 @@ relationships:
     data_quality: verified
     sources:
       - label: Gram Nyayalayas Act 2008 — India Code
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-06-17'

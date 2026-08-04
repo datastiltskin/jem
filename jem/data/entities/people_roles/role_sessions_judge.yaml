@@ -17,6 +17,6 @@ data_quality_notes: Presides over Sessions Court; appointment via state judicial
   Numerics (judge_strength, case_volume) not applicable to role archetypes.
 sources:
 - label: Code of Criminal Procedure 1973, Section 9
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: CentralAct
   accessed_date: '2026-06-24'

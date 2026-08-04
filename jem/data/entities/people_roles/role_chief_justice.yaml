@@ -18,6 +18,6 @@ data_quality_notes: Generic CJI role for litigant-journey mapping. Officeholder 
   not applicable to role archetypes.
 sources:
 - label: Constitution of India
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: Constitution
   accessed_date: '2026-06-24'

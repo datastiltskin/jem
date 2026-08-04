@@ -78,11 +78,11 @@ data_quality_notes: >
 
 sources:
   - label: Patents Act 1970
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A197039
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A197039
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: Trade Marks Act 1999
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A199947
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A199947
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: IP India official website

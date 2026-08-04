@@ -70,11 +70,11 @@ sources:
   type: GoIWebsite
   accessed_date: '2026-06-17'
 - label: RDDBFI Act 1993, s.3 — establishment of Tribunals
-  url: https://india-code.nic.in/handle/123456789/1573
+  url: https://indiacode.nic.in/handle/123456789/1573
   type: CentralAct
   accessed_date: '2025-01-15'
 - label: SARFAESI Act 2002, s.17 — jurisdiction
-  url: https://india-code.nic.in/handle/123456789/2058
+  url: https://indiacode.nic.in/handle/123456789/2058
   type: CentralAct
   accessed_date: '2025-01-15'
 - label: DFS / Ministry of Finance — DRT overview

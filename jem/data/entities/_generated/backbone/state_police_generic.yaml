@@ -40,6 +40,6 @@ data_quality_notes: Generic placeholder for state police forces under respective
   "active litigation 2024–25" removed — no primary case citation verified in Pass 4 audit.
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-06-12'

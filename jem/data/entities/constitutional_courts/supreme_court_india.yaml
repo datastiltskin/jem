@@ -88,7 +88,7 @@ data_quality: verified
 data_quality_notes: NJDG snapshot case_volume merged
 sources:
 - label: Constitution of India — Articles 124-147
-  url: https://india-code.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf
+  url: https://indiacode.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf
   type: Constitution
   accessed_date: '2025-04-01'
 - label: Supreme Court of India — Official Website

@@ -80,7 +80,7 @@ data_quality_notes: >
 
 sources:
   - label: Press Council Act 1978
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A197858
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A197858
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: Press Council of India official website
@@ -88,6 +88,6 @@ sources:
     type: GoIWebsite
     accessed_date: '2026-06-11'
   - label: Press and Registration of Periodicals Act 2023
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A202344
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A202344
     type: CentralAct
     accessed_date: '2026-06-11'

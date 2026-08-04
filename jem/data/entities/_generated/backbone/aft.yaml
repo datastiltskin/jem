@@ -127,7 +127,7 @@ data_quality: partial
 data_quality_notes: 'Entity created from statutory sources. Bench lattice: 11 locations (Principal Bench New Delhi + 10 regional benches) but 15 sitting courts total — Delhi, Chandigarh, and Lucknow each have 3 courts; other regional benches have 1 court each (PIB 2009; aftdelhi.nic.in). README shorthand AFT×11 = 11 location entities, not 15 courts. Note: AFT appeals go directly to the Supreme Court (AFT Act 2007, s.30) — NOT to High Courts. Member vacancy is bench-specific; no verified aggregate vacancy percentage — do not cite a single %. NJDG snapshot case_volume merged v1.2 judge_strength stub attached'
 sources:
 - label: Armed Forces Tribunal Act 2007 (Act 55 of 2007)
-  url: https://india-code.nic.in/handle/123456789/2093
+  url: https://indiacode.nic.in/handle/123456789/2093
   type: CentralAct
   accessed_date: '2025-01-15'
 - label: AFT official website — bench structure (11 locations, 15 courts)

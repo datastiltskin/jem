@@ -96,7 +96,7 @@ data_quality_notes: >
   list should be verified against latest state notifications.
 sources:
 - label: Delhi Special Police Establishment Act 1946
-  url: https://india-code.nic.in/DocsPdfData/1946/194643.pdf
+  url: https://indiacode.nic.in/DocsPdfData/1946/194643.pdf
   type: CentralAct
   accessed_date: '2025-04-01'
 - label: Vineet Narain v Union of India (1997) 6 SCC 767

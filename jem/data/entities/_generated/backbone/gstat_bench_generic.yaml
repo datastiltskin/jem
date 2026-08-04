@@ -93,7 +93,7 @@ data_quality_notes: 'Generic scaffold only. GSTAT Principal Bench operational si
   stub attached'
 sources:
 - label: CGST Act 2017 s.109 — India Code
-  url: https://www.india-code.nic.in/CodeofActs/2017/2017_12.pdf
+  url: https://www.indiacode.nic.in/CodeofActs/2017/2017_12.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: CBIC — GSTAT information

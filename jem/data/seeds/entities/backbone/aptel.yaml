@@ -52,7 +52,7 @@ data_quality_notes: >
 
 sources:
   - label: "Electricity Act 2003 — India Code"
-    url: https://india-code.nic.in/acts-detail/MTQ3MA==
+    url: https://indiacode.nic.in/acts-detail/MTQ3MA==
     type: CentralAct
     accessed_date: '2026-05-18'
   - label: "Ministry of Power — Attached & Subordinate Offices"

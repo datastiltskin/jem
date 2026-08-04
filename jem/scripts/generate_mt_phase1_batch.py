@@ -12,7 +12,7 @@ ENT = ROOT / "data" / "entities" / "_generated"
 REL = ROOT / "data" / "relationships"
 SRC = {
     "label": "India Code — Constitution & Acts",
-    "url": "https://india-code.nic.in/",
+    "url": "https://indiacode.nic.in/",
     "type": "GoIWebsite",
     "accessed_date": "2026-06-12",
 }
@@ -127,7 +127,7 @@ def itat_bench_doc(eid: str, city: str, states: list, uts: list) -> dict:
         "sources": [
             {
                 "label": "Income Tax Act 1961 s.252–260A",
-                "url": "https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf",
+                "url": "https://www.indiacode.nic.in/CodeofActs/1961/1961_43.pdf",
                 "type": "CentralAct",
                 "accessed_date": "2026-06-12",
             },

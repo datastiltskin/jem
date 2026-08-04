@@ -81,7 +81,7 @@ data_quality_notes: >-
 
 sources:
   - label: "IRDAI Act 1999 (Act 41 of 1999)"
-    url: https://india-code.nic.in/handle/123456789/2039
+    url: https://indiacode.nic.in/handle/123456789/2039
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "IRDAI official website"

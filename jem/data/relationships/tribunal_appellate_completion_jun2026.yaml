@@ -24,7 +24,7 @@ relationships:
     sources:
       - &india_code
         label: India Code — Constitution & Acts
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: GoIWebsite
         accessed_date: '2026-06-26'
 
@@ -64,7 +64,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Electricity Act 2003 — s.125 (India Code)
-        url: https://india-code.nic.in/acts-detail/MTQ3MA==
+        url: https://indiacode.nic.in/acts-detail/MTQ3MA==
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -87,7 +87,7 @@ relationships:
     data_quality: partial
     sources:
       - label: EPF Act 1952 — ss.7A–7D (India Code)
-        url: https://india-code.nic.in/DownloadFile?FileName=A1952-19.pdf
+        url: https://indiacode.nic.in/DownloadFile?FileName=A1952-19.pdf
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -104,7 +104,7 @@ relationships:
     data_quality: partial
     sources:
       - label: EPF Act 1952 — s.7I (India Code)
-        url: https://india-code.nic.in/DownloadFile?FileName=A1952-19.pdf
+        url: https://indiacode.nic.in/DownloadFile?FileName=A1952-19.pdf
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -128,7 +128,7 @@ relationships:
     data_quality: partial
     sources:
       - label: NGT Act 2010 — s.16 (India Code)
-        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        url: https://indiacode.nic.in/acts-detail/MjA2OTU=
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -144,7 +144,7 @@ relationships:
     data_quality: verified
     sources:
       - label: NGT Act 2010 — s.22 (India Code)
-        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        url: https://indiacode.nic.in/acts-detail/MjA2OTU=
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -165,7 +165,7 @@ relationships:
     data_quality: verified
     sources:
       - label: Railway Claims Tribunal Act 1987 — s.22 (India Code)
-        url: https://india-code.nic.in/handle/123456789/1877
+        url: https://indiacode.nic.in/handle/123456789/1877
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -188,7 +188,7 @@ relationships:
     data_quality: verified
     sources:
       - label: SEBI Act 1992 — s.15Z (India Code)
-        url: https://india-code.nic.in/handle/123456789/2080
+        url: https://indiacode.nic.in/handle/123456789/2080
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -212,7 +212,7 @@ relationships:
     data_quality: partial
     sources:
       - label: CGST Act 2017 — s.112 (India Code)
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -235,7 +235,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 — s.130 (India Code)
-        url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -254,7 +254,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Income Tax Act 1961 — s.260A (India Code)
-        url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+        url: https://www.indiacode.nic.in/CodeofActs/1961/1961_43.pdf
         type: CentralAct
         accessed_date: '2026-06-26'
 
