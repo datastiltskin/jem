@@ -11,7 +11,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_slsa_lok
@@ -25,7 +25,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_fund_rera
@@ -39,7 +39,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_fund_serc
@@ -53,7 +53,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_serc_aptel
@@ -67,7 +67,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_dist_principal_hc
@@ -81,7 +81,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_super_principal
@@ -95,7 +95,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_district_courts_generic_hc
@@ -109,7 +109,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_super_district_courts_generic
@@ -123,7 +123,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_sja_train
@@ -137,7 +137,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_guwahati_hc
@@ -151,7 +151,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_super_guwahati
@@ -165,7 +165,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_jorhat_hc
@@ -179,7 +179,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_super_jorhat
@@ -193,7 +193,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_silchar_hc
@@ -207,7 +207,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_super_silchar
@@ -221,7 +221,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_dibrugarh_hc
@@ -235,7 +235,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_super_dibrugarh
@@ -249,7 +249,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_nagaon_hc
@@ -263,7 +263,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_super_nagaon
@@ -277,7 +277,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_tezpur_hc
@@ -291,7 +291,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_super_tezpur
@@ -305,7 +305,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_cdrc_guwahati_scdrc
@@ -319,7 +319,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_cdrc_dibrugarh_scdrc
@@ -333,7 +333,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_cdrc_jorhat_scdrc
@@ -347,7 +347,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_cdrc_silchar_scdrc
@@ -361,7 +361,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_gov_appoints_advocate_general
@@ -375,7 +375,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 165
@@ -390,7 +390,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Advocates Act 1961
@@ -405,7 +405,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_as_special_courts_appealable_hc_gauhati
@@ -419,7 +419,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: as_hc_gauhati_supervise_as_special_courts
@@ -433,7 +433,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235

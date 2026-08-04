@@ -20,7 +20,7 @@ relationships:
   sources:
   - &adr001
     label: "New Delhi International Arbitration Centre Act 2019 — India Code"
-    url: https://india-code.nic.in/acts-detail/MjMyMDM=
+    url: https://indiacode.nic.in/acts-detail/MjMyMDM=
     type: CentralAct
     accessed_date: '2026-05-18'
 
@@ -38,7 +38,7 @@ relationships:
   sources:
   - &adr002
     label: "Legal Services Authorities Act 1987 — India Code"
-    url: https://india-code.nic.in/acts-detail/NzI2
+    url: https://indiacode.nic.in/acts-detail/NzI2
     type: CentralAct
     accessed_date: '2026-05-18'
 
@@ -58,7 +58,7 @@ relationships:
   sources:
   - &adr003
     label: "Arbitration and Conciliation Act 1996 — India Code"
-    url: https://india-code.nic.in/acts-detail/MTA4NDE=
+    url: https://indiacode.nic.in/acts-detail/MTA4NDE=
     type: CentralAct
     accessed_date: '2026-05-18'
 

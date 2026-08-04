@@ -52,7 +52,7 @@ data_quality_notes: Generic scaffold distinct from CAT (central). Trend since L.
   judge_strength stub attached
 sources:
 - label: Administrative Tribunals Act 1985 — India Code
-  url: https://www.india-code.nic.in/CodeofActs/1985/1985_13.pdf
+  url: https://www.indiacode.nic.in/CodeofActs/1985/1985_13.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 judge_strength:

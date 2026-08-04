@@ -86,7 +86,7 @@ data_quality_notes: 'Permanent bench at Dharwad; parent hc_karnataka. Populate j
   issue with TSV row (entity_id, roster_as_of, appointed, source_url). v1.2 judge_strength stub attached'
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: Supreme Court of India

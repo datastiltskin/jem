@@ -21,7 +21,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A — CGIT established by Central Govt'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
       - label: 'CGIT official portal — Ministry of Labour and Employment'
@@ -43,7 +43,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
       - label: 'CGIT official portal — Ministry of Labour and Employment'
@@ -65,7 +65,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
       - label: 'CGIT official portal — Ministry of Labour and Employment'
@@ -88,7 +88,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A — CGIT established by Central Govt'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
       - label: 'CGIT official portal — Ministry of Labour and Employment'
@@ -110,7 +110,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
       - label: 'CGIT official portal — Ministry of Labour and Employment'
@@ -132,7 +132,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
       - label: 'CGIT official portal — Ministry of Labour and Employment'
@@ -156,7 +156,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -174,7 +174,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -192,7 +192,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -211,7 +211,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -229,7 +229,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -247,7 +247,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'Industrial Disputes Act 1947, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19470014.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19470014.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -273,7 +273,7 @@ relationships:
       or has been wound down; entity should be marked Abolished if dissolved.
     sources:
       - label: 'Employees Provident Funds and Miscellaneous Provisions Act 1952, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19520019.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19520019.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
       - label: 'CGIT official portal — Ministry of Labour and Employment'
@@ -295,7 +295,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'EPF & MP Act 1952, s. 7A'
-        url: https://india-code.nic.in/CodeofActs13/19520019.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19520019.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -315,7 +315,7 @@ relationships:
     data_quality: partial
     sources:
       - label: 'EPF & MP Act 1952 — EPFO statutory basis'
-        url: https://india-code.nic.in/CodeofActs13/19520019.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19520019.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -337,6 +337,6 @@ relationships:
       administrative/operational funding relationship only.
     sources:
       - label: 'EPF & MP Act 1952'
-        url: https://india-code.nic.in/CodeofActs13/19520019.pdf
+        url: https://indiacode.nic.in/CodeofActs13/19520019.pdf
         type: CentralAct
         accessed_date: '2026-06-12'

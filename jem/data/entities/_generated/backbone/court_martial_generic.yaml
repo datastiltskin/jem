@@ -71,19 +71,19 @@ data_quality_notes: 'Generic stub covering GCM, SGCM, DCM, SCM convened under al
   an ad-hoc body, not a permanent court with sanctioned judicial posts. v1.2 judge_strength stub attached'
 sources:
 - label: Army Act 1950
-  url: https://india-code.nic.in/CodeSection.aspx?actcode=A195046
+  url: https://indiacode.nic.in/CodeSection.aspx?actcode=A195046
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Navy Act 1957
-  url: https://india-code.nic.in/CodeSection.aspx?actcode=A195728
+  url: https://indiacode.nic.in/CodeSection.aspx?actcode=A195728
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Air Force Act 1950
-  url: https://india-code.nic.in/CodeSection.aspx?actcode=A195045
+  url: https://indiacode.nic.in/CodeSection.aspx?actcode=A195045
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Armed Forces Tribunal Act 2007
-  url: https://india-code.nic.in/CodeSection.aspx?actcode=A200753
+  url: https://indiacode.nic.in/CodeSection.aspx?actcode=A200753
   type: CentralAct
   accessed_date: '2026-06-11'
 judge_strength:

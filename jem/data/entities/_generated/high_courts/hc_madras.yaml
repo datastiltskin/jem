@@ -97,7 +97,7 @@ judge_strength:
     Pmt 56 Addl 19 sanctioned; Pmt 51 Addl 3 working; Pmt 5 Addl 16 vacancies
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: Supreme Court of India

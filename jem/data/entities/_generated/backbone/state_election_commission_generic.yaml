@@ -94,14 +94,14 @@ data_quality_notes: >
 
 sources:
   - label: Constitution of India — Article 243K
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A194700
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A194700
     type: Constitution
     accessed_date: '2026-06-11'
   - label: Constitution of India — Article 243ZA
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A194700
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A194700
     type: Constitution
     accessed_date: '2026-06-11'
   - label: Constitution (73rd Amendment) Act 1992
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A199213
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A199213
     type: Constitution
     accessed_date: '2026-06-11'

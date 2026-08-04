@@ -93,7 +93,7 @@ data_quality_notes: Generic node representing state-level VAT/commercial-tax app
   judge_strength stub attached
 sources:
 - label: India — State VAT Acts (collected at India Code)
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: CBIC — GST Act ss.109–110 and GSTAT status (background context)

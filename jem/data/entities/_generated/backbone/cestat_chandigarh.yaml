@@ -65,11 +65,11 @@ data_quality_notes: 'Per CESTAT Registrar Notification 02/2015: CH, PB, HR, HP, 
   stub attached'
 sources:
 - label: Customs Act 1962 s.129
-  url: https://www.india-code.nic.in/CodeofActs/1962/1962_52.pdf
+  url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Tribunal Reforms Act 2021
-  url: https://www.india-code.nic.in/CodeofActs/2021/2021_33.pdf
+  url: https://www.indiacode.nic.in/CodeofActs/2021/2021_33.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: CESTAT official website

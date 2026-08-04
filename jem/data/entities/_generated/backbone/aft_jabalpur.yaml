@@ -58,7 +58,7 @@ data_quality_notes: 'Regional bench per aft.gov.in/jurisdiction: MP, CG. Judge s
   stub attached'
 sources:
 - label: Armed Forces Tribunal Act 2007
-  url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+  url: https://www.indiacode.nic.in/CodeofActs/2007/2007_55.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: AFT official website — bench territorial jurisdiction

@@ -24,7 +24,7 @@ data_quality_notes: Siliguri CDRC jurisdiction may overlap Darjeeling/Jalpaiguri
   v1.2 judge_strength stub attached
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-06-15'
 judge_strength:

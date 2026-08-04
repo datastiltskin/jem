@@ -81,11 +81,11 @@ data_quality_notes: >-
 
 sources:
   - label: "Competition Act 2002 (Act 12 of 2003)"
-    url: https://india-code.nic.in/handle/123456789/2115
+    url: https://indiacode.nic.in/handle/123456789/2115
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "Competition (Amendment) Act 2023"
-    url: https://india-code.nic.in/handle/123456789/20241
+    url: https://indiacode.nic.in/handle/123456789/20241
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "CCI official website"

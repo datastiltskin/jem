@@ -11,7 +11,7 @@ relationships:
   sources:
   - &id001
     label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-05-13'
 - id: mh_cdrc_ncdrc
@@ -225,7 +225,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 165
@@ -240,7 +240,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Advocates Act 1961
@@ -255,7 +255,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Consumer Protection Act 2019
@@ -270,7 +270,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Consumer Protection Act 2019
@@ -285,7 +285,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Consumer Protection Act 2019
@@ -300,7 +300,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Consumer Protection Act 2019
@@ -315,7 +315,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_ahmednagar
@@ -329,7 +329,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -344,7 +344,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_akola
@@ -358,7 +358,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -373,7 +373,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_beed
@@ -387,7 +387,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -402,7 +402,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_bhandara
@@ -416,7 +416,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -431,7 +431,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_buldhana
@@ -445,7 +445,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -460,7 +460,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_chandrapur
@@ -474,7 +474,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -489,7 +489,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_dhule
@@ -503,7 +503,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -518,7 +518,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_gadchiroli
@@ -532,7 +532,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -547,7 +547,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_gondia
@@ -561,7 +561,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -576,7 +576,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_hingoli
@@ -590,7 +590,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -605,7 +605,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_jalgaon
@@ -619,7 +619,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -634,7 +634,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_jalna
@@ -648,7 +648,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -663,7 +663,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_kolhapur
@@ -677,7 +677,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -692,7 +692,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_latur
@@ -706,7 +706,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -721,7 +721,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_mumbai_suburban
@@ -735,7 +735,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -750,7 +750,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_nandurbar
@@ -764,7 +764,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -779,7 +779,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_osmanabad
@@ -793,7 +793,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -808,7 +808,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_palghar
@@ -822,7 +822,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -837,7 +837,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_parbhani
@@ -851,7 +851,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -866,7 +866,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_raigad
@@ -880,7 +880,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -895,7 +895,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_ratnagiri
@@ -909,7 +909,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -924,7 +924,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_sangli
@@ -938,7 +938,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -953,7 +953,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_satara
@@ -967,7 +967,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -982,7 +982,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_sindhudurg
@@ -996,7 +996,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -1011,7 +1011,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_thane
@@ -1025,7 +1025,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -1040,7 +1040,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_wardha
@@ -1054,7 +1054,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -1069,7 +1069,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_washim
@@ -1083,7 +1083,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -1098,7 +1098,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_court_yavatmal
@@ -1112,7 +1112,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -1127,7 +1127,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_district_courts_generic
@@ -1141,7 +1141,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -1156,7 +1156,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_mh_special_courts_appealable_hc_bombay
@@ -1170,7 +1170,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: mh_hc_bombay_supervise_mh_special_courts
@@ -1184,7 +1184,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235

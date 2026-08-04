@@ -45,7 +45,7 @@ body:
     id: source_url
     attributes:
       label: Primary source URL
-      description: Official GoI, india-code, gazette, judgment, DoJ, NJDG, or ministry site
+      description: Official GoI, indiacode, gazette, judgment, DoJ, NJDG, or ministry site
     validations:
       required: true
 

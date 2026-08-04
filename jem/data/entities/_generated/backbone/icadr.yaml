@@ -79,7 +79,7 @@ data_quality_notes: >
 
 sources:
   - label: Arbitration and Conciliation Act 1996
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A199626
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A199626
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: ICADR official website

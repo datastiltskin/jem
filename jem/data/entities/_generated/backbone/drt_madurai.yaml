@@ -59,7 +59,7 @@ data_quality_notes: 'G.S.R. 15(E) dated 9 January 2007. District jurisdiction pe
   confirmed by official website. v1.2 judge_strength stub attached'
 sources:
 - label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
-  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  url: https://indiacode.nic.in/CodeofActs13/19930951.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: 'S.O. 4717(E) dated 4 October 2022 — official jurisdiction table; Madurai address and district list confirmed

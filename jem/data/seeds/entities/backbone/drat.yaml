@@ -77,7 +77,7 @@ data_quality_notes: >-
 
 sources:
   - label: "RDDBFI Act 1993, s.8–18 — DRAT provisions"
-    url: https://india-code.nic.in/handle/123456789/1573
+    url: https://indiacode.nic.in/handle/123456789/1573
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "DFS / Ministry of Finance — DRAT overview"

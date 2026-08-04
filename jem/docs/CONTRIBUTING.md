@@ -25,7 +25,7 @@ bench entities require a bench-specific primary source before merge.
 
 ## Principles
 
-1. **Primary sources only.** Every `data_quality: verified` field requires a direct link to an official GoI source: india-code.nic.in, official gazette notification, Supreme Court judgment on main.sci.gov.in, or official ministry website.
+1. **Primary sources only.** Every `data_quality: verified` field requires a direct link to an official GoI source: indiacode.nic.in, official gazette notification, Supreme Court judgment on main.sci.gov.in, or official ministry website.
 
 2. **No editorial judgment on outcomes.** This map captures structural facts. Whether an entity *uses* its discretionary power well is not in scope. We record that it *has* discretionary power.
 
@@ -84,8 +84,8 @@ Never set `verified` without a working primary source URL.
 
 In descending order of preference:
 
-1. Constitution of India text — india-code.nic.in
-2. Central Act text — india-code.nic.in
+1. Constitution of India text — indiacode.nic.in
+2. Central Act text — indiacode.nic.in
 3. Official Gazette notification — egazette.gov.in
 4. Supreme Court judgment — main.sci.gov.in
 5. High Court judgment — respective HC website

@@ -82,11 +82,11 @@ data_quality_notes: >-
 
 sources:
   - label: "Companies Act 2013, s.410–413 (NCLAT provisions)"
-    url: https://india-code.nic.in/handle/123456789/2197
+    url: https://indiacode.nic.in/handle/123456789/2197
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "IBC 2016, s.61 — appeals from NCLT orders"
-    url: https://india-code.nic.in/handle/123456789/11348
+    url: https://indiacode.nic.in/handle/123456789/11348
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "NCLAT official website"

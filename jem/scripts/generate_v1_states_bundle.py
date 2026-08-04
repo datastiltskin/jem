@@ -30,7 +30,7 @@ SEEDS_REL = ROOT / "data" / "seeds" / "relationships"
 
 SRC = {
     "label": "India Code — Constitution & Acts",
-    "url": "https://india-code.nic.in/",
+    "url": "https://indiacode.nic.in/",
     "type": "GoIWebsite",
     "accessed_date": "2026-05-13",
 }
@@ -750,13 +750,13 @@ def madras_bench_of_rel(bench_id: str, parent_hc: str) -> dict:
         "sources": [
             {
                 "label": "India Code — Constitution & Acts",
-                "url": "https://india-code.nic.in/",
+                "url": "https://indiacode.nic.in/",
                 "type": "GoIWebsite",
                 "accessed_date": "2026-05-13",
             },
             {
                 "label": "Constitution of India, Article 214",
-                "url": "https://india-code.nic.in/",
+                "url": "https://indiacode.nic.in/",
                 "type": "Constitution",
                 "accessed_date": "2026-05-18",
             },
@@ -833,19 +833,19 @@ def rel(rel_id: str, src: str, tgt: str, rtype: str, cat: str, notes: str) -> di
 
 ADR_SRC_NDIAC_ACT = {
     "label": "New Delhi International Arbitration Centre Act 2019 — India Code",
-    "url": "https://india-code.nic.in/acts-detail/MjMyMDM=",
+    "url": "https://indiacode.nic.in/acts-detail/MjMyMDM=",
     "type": "CentralAct",
     "accessed_date": "2026-05-18",
 }
 ADR_SRC_LSA_ACT = {
     "label": "Legal Services Authorities Act 1987 — India Code",
-    "url": "https://india-code.nic.in/acts-detail/NzI2",
+    "url": "https://indiacode.nic.in/acts-detail/NzI2",
     "type": "CentralAct",
     "accessed_date": "2026-05-18",
 }
 ADR_SRC_AC_ACT = {
     "label": "Arbitration and Conciliation Act 1996 — India Code",
-    "url": "https://india-code.nic.in/acts-detail/MTA4NDE=",
+    "url": "https://indiacode.nic.in/acts-detail/MTA4NDE=",
     "type": "CentralAct",
     "accessed_date": "2026-05-18",
 }

@@ -291,7 +291,7 @@ def district_template(
         "sources": [
             {
                 "label": "India Code — Constitution & Acts",
-                "url": "https://india-code.nic.in/",
+                "url": "https://indiacode.nic.in/",
                 "type": "GoIWebsite",
                 "accessed_date": str(date.today()),
             },
@@ -350,7 +350,7 @@ def _append_unique_relationships(rel_path: Path, new_rels: List[dict]) -> int:
 
 def bootstrap_hc_relationships() -> Tuple[int, int]:
     """AppealableTo HC + AdministrativeSupervision for each new district court."""
-    anchor = {"label": "India Code — Constitution & Acts", "url": "https://india-code.nic.in/", "type": "GoIWebsite", "accessed_date": "2026-05-14"}
+    anchor = {"label": "India Code — Constitution & Acts", "url": "https://indiacode.nic.in/", "type": "GoIWebsite", "accessed_date": "2026-05-14"}
     mh_path = DATA_DIR / "relationships" / "mh_relationships.yaml"
     ka_path = DATA_DIR / "relationships" / "ka_relationships.yaml"
     mh_rels = []

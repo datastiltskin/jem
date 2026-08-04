@@ -12,7 +12,7 @@ relationships:
   sources:
   - &id001
     label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-12'
 - id: up_slsa_lok
@@ -51,7 +51,7 @@ relationships:
   data_quality: partial
   sources:
   - label: RERA Act 2016 — ss.43, 58 (India Code)
-    url: https://india-code.nic.in/acts-detail/MjE2MTc=
+    url: https://indiacode.nic.in/acts-detail/MjE2MTc=
     type: CentralAct
     accessed_date: '2026-06-26'
 - id: up_dist_principal_hc
@@ -362,7 +362,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 165
@@ -377,7 +377,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Advocates Act 1961
@@ -392,7 +392,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: up_up_special_courts_appealable_hc_allahabad
@@ -406,7 +406,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: up_hc_allahabad_supervise_up_special_courts
@@ -420,7 +420,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235

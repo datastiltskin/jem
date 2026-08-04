@@ -50,7 +50,7 @@ sources:
   type: GoIWebsite
   accessed_date: '2026-06-17'
 - label: Income Tax Act 1961 s.252–260A
-  url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+  url: https://www.indiacode.nic.in/CodeofActs/1961/1961_43.pdf
   type: CentralAct
   accessed_date: '2026-06-17'
 judge_strength:

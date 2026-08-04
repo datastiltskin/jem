@@ -11,7 +11,7 @@ relationships:
   sources:
   - &id001
     label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-05-13'
 - id: ka_cdrc_ncdrc
@@ -145,7 +145,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 165
@@ -160,7 +160,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Consumer Protection Act 2019
@@ -175,7 +175,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Consumer Protection Act 2019
@@ -190,7 +190,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Consumer Protection Act 2019
@@ -205,7 +205,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Consumer Protection Act 2019
@@ -220,7 +220,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_bagalkot
@@ -234,7 +234,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -249,7 +249,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_ballari
@@ -263,7 +263,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -278,7 +278,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_bengaluru_rural
@@ -292,7 +292,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -307,7 +307,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_bidar
@@ -321,7 +321,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -336,7 +336,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_chamarajanagar
@@ -350,7 +350,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -365,7 +365,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_chikkaballapur
@@ -379,7 +379,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -394,7 +394,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_chikkamagaluru
@@ -408,7 +408,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -423,7 +423,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_chitradurga
@@ -437,7 +437,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -452,7 +452,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_davangere
@@ -466,7 +466,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -481,7 +481,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_gadag
@@ -495,7 +495,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -510,7 +510,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_hassan
@@ -524,7 +524,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -539,7 +539,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_haveri
@@ -553,7 +553,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -568,7 +568,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_kalaburagi
@@ -582,7 +582,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -597,7 +597,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_kodagu
@@ -611,7 +611,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -626,7 +626,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_kolar
@@ -640,7 +640,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -655,7 +655,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_mandya
@@ -669,7 +669,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -684,7 +684,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_mangaluru
@@ -698,7 +698,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -713,7 +713,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_raichur
@@ -727,7 +727,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -742,7 +742,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_ramanagara
@@ -756,7 +756,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -771,7 +771,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_shivamogga
@@ -785,7 +785,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -800,7 +800,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_tumkuru
@@ -814,7 +814,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -829,7 +829,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_udupi
@@ -843,7 +843,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -858,7 +858,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_uttara_kannada
@@ -872,7 +872,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -887,7 +887,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_vijayapura
@@ -901,7 +901,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -916,7 +916,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_court_yadgir
@@ -930,7 +930,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -945,7 +945,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_district_courts_generic
@@ -959,7 +959,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -974,7 +974,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_ka_special_courts_appealable_hc_karnataka
@@ -988,7 +988,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: ka_hc_karnataka_supervise_ka_special_courts
@@ -1002,7 +1002,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235

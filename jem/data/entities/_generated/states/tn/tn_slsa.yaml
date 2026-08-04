@@ -55,7 +55,7 @@ sources:
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: Legal Services Authorities Act 1987 — India Code
-  url: https://india-code.nic.in/acts-detail/NzI2
+  url: https://indiacode.nic.in/acts-detail/NzI2
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: National Judicial Data Grid (NJDG)

@@ -83,11 +83,11 @@ sources:
     type: GoIWebsite
     accessed_date: '2026-06-11'
   - label: Insurance Act 1938 § 114A
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A193804
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A193804
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: Insurance Laws (Amendment) Act 2015
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A201504
+    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A201504
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: Council for Insurance Ombudsmen — FAQs (Rs 50 lakh cap; binding awards)

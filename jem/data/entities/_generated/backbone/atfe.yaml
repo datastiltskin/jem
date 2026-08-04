@@ -42,7 +42,7 @@ data_quality_notes: Quasi-judicial appellate body under FEMA (MoF/Department of 
   ED investigating FEMA/PMLA offences. Principal seat New Delhi. v1.2 judge_strength stub attached
 sources:
 - label: FEMA 1999 — India Code
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: CentralAct
   accessed_date: '2026-06-17'
 - label: Enforcement Directorate — parent Department of Revenue, MoF
