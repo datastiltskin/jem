@@ -6,11 +6,11 @@ Repository: **https://github.com/datastiltskin/jem** (public)
 
 - [x] Create public repo `jem` under `@datastiltskin` (renamed from `jem_prototype`)
 - [x] Push `main` with `.github/` scaffolding
-- [x] Description: *Open structural map of India's judicial ecosystem — institutional capacity, relationships, and systemic gaps.*
+- [x] Description: *Open structural map of India's judicial ecosystem: institutional capacity, relationships, and systemic gaps.*
 - [x] Topics: `india`, `judiciary`, `open-data`, `legal-tech`
 - [x] Homepage: https://friedso.com/apps/jem/
-- [x] Maintainer contacts: [@dso6060](https://github.com/dso6060), [@Prajna1999](https://github.com/Prajna1999), [@agriyakhetarpal](https://github.com/agriyakhetarpal) (GitHub Issues / security advisories only — no public email)
-- [ ] Licence: MIT (code) — note in README that `jem/data/` is CC0
+- [x] Maintainer contacts: [@dso6060](https://github.com/dso6060), [@Prajna1999](https://github.com/Prajna1999), [@agriyakhetarpal](https://github.com/agriyakhetarpal) (GitHub Issues and security advisories only, no public email)
+- [ ] Licence: MIT for code, with a note in the README that `jem/data/` is CC0
 
 ## 2. Replace placeholders
 
@@ -22,8 +22,8 @@ Repository: **https://github.com/datastiltskin/jem** (public)
 - [ ] **Settings → General → Features:** enable **Issues** and **Discussions**
 - [ ] **Discussions → Categories:** ensure `Q&A` and `Disputes` (or map templates to existing categories)
 - [ ] **Settings → Branches → `main`:** require PR, require status checks (`Validate JEM Data`), require CODEOWNERS review
-- [x] **Branch `friedso_v1`:** production deploy line for friedso.com; ruleset `friedso_v1 production deploy` (PR required; merge bypass @dso6060 only)
-- [x] Invite co-maintainers **@Prajna1999** and **@agriyakhetarpal** as collaborators (admin); `CODEOWNERS` updated
+- [x] **Branch `friedso_v1`:** production deploy line for friedso.com, under ruleset `friedso_v1 production deploy` (PR required, merge bypass for @dso6060 only)
+- [x] Invite co-maintainers @Prajna1999 and @agriyakhetarpal as admin collaborators, and update `CODEOWNERS`
 
 ## 4. Labels (create if not auto-created)
 
@@ -39,7 +39,7 @@ Repository: **https://github.com/datastiltskin/jem** (public)
 
 ## 5. Verify CI
 
-- [ ] Open a test PR touching `jem/data/` — workflow `Validate JEM Data` passes
+- [ ] Open a test PR touching `jem/data/` and confirm the `Validate JEM Data` workflow passes
 - [ ] Confirm `validate_graph_refs.py` runs in CI
 
 ## 6. Announce

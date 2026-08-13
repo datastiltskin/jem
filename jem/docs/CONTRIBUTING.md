@@ -12,13 +12,13 @@
 
 Governance: [`.github/GOVERNANCE.md`](../../.github/GOVERNANCE.md)
 
-**Using AI (Claude / Cursor):** [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md) + phased `TASK`s in [`ENTITY_BUILD_ROADMAP.md`](ENTITY_BUILD_ROADMAP.md). Submit via **GitHub issues only**. Proposed new entities OK; **relationships are maintainer-only**.
+**Using AI (Claude / Cursor):** [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md) plus the phased `TASK`s in [`ENTITY_BUILD_ROADMAP.md`](ENTITY_BUILD_ROADMAP.md). Submit via GitHub issues only. Proposed new entities are fine. Relationships are maintainer-only.
 
 ---
 
 ## Structural vs institutional accuracy
 
-CI validates schema and reference integrity (L0–L3), not whether every institution
+CI validates schema and reference integrity (L0 to L3), not whether every institution
 exists in law. See [`RCA_AI_HALLUCINATION_TRICHY_BENCH.md`](RCA_AI_HALLUCINATION_TRICHY_BENCH.md)
 and [`DATA_QUALITY_GATES.md`](DATA_QUALITY_GATES.md). New `HighCourtBench` or tribunal
 bench entities require a bench-specific primary source before merge.
@@ -31,7 +31,7 @@ bench entities require a bench-specific primary source before merge.
 
 3. **Contested facts get the `contested` quality flag**, not a resolution. Both positions must be cited.
 
-4. **IDs are permanent.** Once an entity has an `id` and relationships reference it, the id cannot change. Choose carefully — snake_case, no hyphens.
+4. **IDs are permanent.** Once an entity has an `id` and relationships reference it, the id cannot change. Choose carefully: snake_case, no hyphens.
 
 ---
 
@@ -45,8 +45,8 @@ bench entities require a bench-specific primary source before merge.
    - `id`, `name`, `type`, `cluster`
    - `level_of_government`
    - `created_year`, `operational_status`
-   - `data_quality` — start with `partial` unless you have a primary source
-   - `sources` — at least one entry required for `verified`
+   - `data_quality`: start with `partial` unless you have a primary source
+   - `sources`: at least one entry is required for `verified`
 
 4. Validate locally:
    ```bash
@@ -65,7 +65,7 @@ bench entities require a bench-specific primary source before merge.
 | `complete` | All fields populated, secondary source acceptable |
 | `partial` | Some fields missing, or source is secondary/inferred |
 | `unverified` | Community-submitted, not yet reviewed |
-| `contested` | A factual dispute exists — cite both positions |
+| `contested` | A factual dispute exists, so cite both positions |
 
 Never set `verified` without a working primary source URL.
 
@@ -73,10 +73,10 @@ Never set `verified` without a working primary source URL.
 
 ## Correcting an existing entity
 
-1. Check the `sources` field — is the claim actually sourced?
+1. Check the `sources` field. Is the claim actually sourced?
 2. If the source is wrong or outdated, update the URL and `accessed_date`.
 3. If the fact itself is wrong, correct the field and update `data_quality` if needed.
-4. If there's active dispute (e.g., Lokpal jurisdiction over HC judges), set `data_quality: contested` and add both source URLs.
+4. If there is an active dispute, such as Lokpal jurisdiction over HC judges, set `data_quality: contested` and add both source URLs.
 
 ---
 
@@ -84,13 +84,13 @@ Never set `verified` without a working primary source URL.
 
 In descending order of preference:
 
-1. Constitution of India text — indiacode.nic.in
-2. Central Act text — indiacode.nic.in
-3. Official Gazette notification — egazette.gov.in
-4. Supreme Court judgment — main.sci.gov.in
-5. High Court judgment — respective HC website
+1. Constitution of India text, indiacode.nic.in
+2. Central Act text, indiacode.nic.in
+3. Official Gazette notification, egazette.gov.in
+4. Supreme Court judgment, main.sci.gov.in
+5. High Court judgment, on the respective HC website
 6. Official Government of India website (doj.gov.in, mha.gov.in, etc.)
-7. PIB press release — pib.gov.in
+7. PIB press release, pib.gov.in
 8. Parliamentary standing committee report
 9. Law Commission report
 
@@ -106,9 +106,9 @@ Relationships live in `data/relationships/` organised by category:
 
 Each relationship requires:
 - `id` (format: `rel_{source}_{type}_{target}`)
-- `source` and `target` — must be valid entity ids
-- `relationship_type` — from the controlled vocabulary in relationship_schema.yaml
-- `relationship_category` — determines arc colour in the renderer
+- `source` and `target`, which must be valid entity ids
+- `relationship_type`, from the controlled vocabulary in relationship_schema.yaml
+- `relationship_category`, which determines arc colour in the renderer
 - `data_quality` and `sources`
 
 ---
