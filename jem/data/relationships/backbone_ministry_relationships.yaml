@@ -24,7 +24,7 @@ relationships:
     data_quality: partial
     sources:
       - label: "Ministry of Power — Attached & Subordinate Offices (APTEL listed)"
-        url: https://powermin.gov.in/en/content/attached-subordinate-offices
+        url: https://www.powermin.gov.in/ministry/our-organisation?page=1
         type: GoIWebsite
         accessed_date: '2026-05-18'
 
@@ -42,7 +42,7 @@ relationships:
     data_quality: partial
     sources:
       - label: "Ministry of Consumer Affairs — NCDRC (official page)"
-        url: https://consumeraffairs.nic.in/ncdrc
+        url: https://ncdrc.nic.in/
         type: GoIWebsite
         accessed_date: '2026-05-18'
 

@@ -78,7 +78,7 @@ data_quality_notes: >-
 
 sources:
   - label: "TRAI Act 1997, s.14 — establishment and jurisdiction of TDSAT"
-    url: https://indiacode.nic.in/handle/123456789/1907
+    url: https://www.indiacode.nic.in/bitstream/123456789/1929/1/a199724.pdf
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "TDSAT official website"

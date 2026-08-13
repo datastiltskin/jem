@@ -62,11 +62,11 @@ unverified_fields:
 
 sources:
   - label: 'Central Board of Revenue Act 1963'
-    url: https://indiacode.nic.in/CodeofActs13/19630054.pdf
+    url: https://www.indiacode.nic.in/bitstream/123456789/1500/2/A1963-54.pdf
     type: CentralAct
     accessed_date: '2026-06-12'
   - label: 'Income Tax Act 1961, s. 119 (CBDT instructions power)'
-    url: https://indiacode.nic.in/CodeofActs13/19610043.pdf
+    url: https://www.incometaxindia.gov.in/income-tax-act
     type: CentralAct
     accessed_date: '2026-06-12'
   - label: >

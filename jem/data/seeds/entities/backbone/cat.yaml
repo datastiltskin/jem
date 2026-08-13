@@ -52,11 +52,11 @@ data_quality_notes: >
 
 sources:
   - label: "Administrative Tribunals Act 1985 — India Code"
-    url: https://indiacode.nic.in/acts-detail/NzAx
+    url: https://www.indiacode.nic.in/bitstream/123456789/1832/1/AA1985__13admin.pdf
     type: CentralAct
     accessed_date: '2026-05-18'
   - label: "Tribunals Reforms Act 2021 — India Code"
-    url: https://indiacode.nic.in/acts-detail/MjY5MzQ=
+    url: https://www.indiacode.nic.in/bitstream/123456789/16901/1/A2021-33.pdf
     type: CentralAct
     accessed_date: '2026-05-18'
   - label: "DoPT — Central Administrative Tribunal"

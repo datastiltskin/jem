@@ -49,7 +49,7 @@ data_quality_notes: >
 
 sources:
   - label: "Legal Services Authorities Act 1987 — India Code"
-    url: https://indiacode.nic.in/acts-detail/NzI2
+    url: https://www.indiacode.nic.in/bitstream/123456789/19023/1/legal_service_authorities_act%2C_1987.pdf
     type: CentralAct
     accessed_date: '2026-05-18'
   - label: "NALSA — Lok Adalat"

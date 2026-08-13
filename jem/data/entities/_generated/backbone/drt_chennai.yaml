@@ -74,7 +74,7 @@ unverified_fields:
     '
 sources:
 - label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
-  url: https://indiacode.nic.in/CodeofActs13/19930951.pdf
+  url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: DRT official portal — Ministry of Finance, DFS
@@ -82,7 +82,7 @@ sources:
   type: GoIWebsite
   accessed_date: '2026-06-11'
 - label: SARFAESI Act 2002, s. 17 (DRT appellate channel)
-  url: https://indiacode.nic.in/CodeofActs13/20020541.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/2006/1/A2002-54.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 judge_strength:

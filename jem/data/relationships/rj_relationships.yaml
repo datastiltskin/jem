@@ -52,7 +52,7 @@ relationships:
   data_quality: partial
   sources:
   - label: RERA Act 2016 — ss.43, 58 (India Code)
-    url: https://indiacode.nic.in/acts-detail/MjE2MTc=
+    url: https://www.indiacode.nic.in/bitstream/123456789/15131/1/the_real_estate_%28regulation_and_development%29_act%2C_2016.pdf
     type: CentralAct
     accessed_date: '2026-06-26'
 - id: rj_dist_principal_hc

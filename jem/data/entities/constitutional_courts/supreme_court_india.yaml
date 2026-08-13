@@ -88,11 +88,11 @@ data_quality: verified
 data_quality_notes: NJDG snapshot case_volume merged
 sources:
 - label: Constitution of India — Articles 124-147
-  url: https://indiacode.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf
   type: Constitution
   accessed_date: '2025-04-01'
 - label: Supreme Court of India — Official Website
-  url: https://main.sci.gov.in/
+  url: https://www.sci.gov.in/
   type: GoIWebsite
   accessed_date: '2025-04-01'
 - label: eCourts Phase III — NJDG-SC launch
@@ -121,7 +121,7 @@ case_volume:
   disposed_last_year: 68000
   avg_disposal_days: 547
   institution_rate_trend: rising
-  source_url: https://main.sci.gov.in/case-status
+  source_url: https://www.sci.gov.in/case-status-case-no/
   source_type: AnnualReport
   disposal_rate: 0.8293
   clog_severity: high

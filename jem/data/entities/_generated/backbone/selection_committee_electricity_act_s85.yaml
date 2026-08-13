@@ -24,6 +24,6 @@ data_quality_notes: >
 
 sources:
   - label: Electricity Act 2003 — Ministry of Power
-    url: https://powermin.gov.in/en/content/electricity-act-2003
+    url: https://www.indiacode.nic.in/bitstream/123456789/2058/1/a200336.pdf
     type: CentralAct
     accessed_date: "2026-05-19"

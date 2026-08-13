@@ -71,7 +71,7 @@ data_quality_notes: 'CG HC SUPERVISORY ROLE RESOLVED (drt_b4). Chhattisgarh High
   Standard post-bifurcation arrangement for central tribunals straddling reorganised states. v1.2 judge_strength stub attached'
 sources:
 - label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
-  url: https://indiacode.nic.in/CodeofActs13/19930951.pdf
+  url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: 'DRT Jabalpur — GSR 181(E) 7.4.1998; jurisdiction: MP and Chhattisgarh'

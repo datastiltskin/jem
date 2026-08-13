@@ -29,11 +29,11 @@ relationships:
     data_quality: verified
     sources:
       - label: "Constitution Article 124(2)"
-        url: "https://indiacode.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf"
+        url: "https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf"
         type: Constitution
         accessed_date: "2025-04-01"
       - label: "Supreme Court Advocates-on-Record v Union of India (1993) 4 SCC 441"
-        url: "https://main.sci.gov.in/"
+        url: "https://www.sci.gov.in/"
         type: SCJudgment
         accessed_date: "2025-04-01"
 
@@ -53,7 +53,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Constitution Article 124(2)"
-        url: "https://indiacode.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf"
+        url: "https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf"
         type: Constitution
         accessed_date: "2025-04-01"
 
@@ -84,7 +84,7 @@ relationships:
         type: CentralAct
         accessed_date: "2025-04-01"
       - label: "Supreme Court Advocates-on-Record v Union of India (2015) 5 SCC 1"
-        url: "https://main.sci.gov.in/"
+        url: "https://www.sci.gov.in/"
         type: SCJudgment
         accessed_date: "2025-04-01"
 
@@ -107,7 +107,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Constitution Article 217(1)"
-        url: "https://indiacode.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf"
+        url: "https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf"
         type: Constitution
         accessed_date: "2025-04-01"
 
@@ -128,7 +128,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Constitution Article 217(1)"
-        url: "https://indiacode.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf"
+        url: "https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf"
         type: Constitution
         accessed_date: "2025-04-01"
 
@@ -150,7 +150,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Constitution Article 233"
-        url: "https://indiacode.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf"
+        url: "https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf"
         type: Constitution
         accessed_date: "2025-04-01"
 
@@ -168,7 +168,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "K. Ashok Reddy v Government of India (1994) 5 SCC 765"
-        url: "https://main.sci.gov.in/"
+        url: "https://www.sci.gov.in/"
         type: SCJudgment
         accessed_date: "2025-04-01"
 
@@ -189,7 +189,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Constitution Article 234"
-        url: "https://indiacode.nic.in/DocsPdfData/1949/1949100000_Unamended.pdf"
+        url: "https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf"
         type: Constitution
         accessed_date: "2025-04-01"
 
@@ -208,7 +208,7 @@ relationships:
     data_quality: partial
     sources:
       - label: PHRA 1993 s.4
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -224,7 +224,7 @@ relationships:
     data_quality: partial
     sources:
       - label: PHRA 1993
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -240,7 +240,7 @@ relationships:
     data_quality: partial
     sources:
       - label: PHRA 1993 s.4
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -256,7 +256,7 @@ relationships:
     data_quality: partial
     sources:
       - label: PHRA 1993 s.4
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -275,7 +275,7 @@ relationships:
     data_quality: partial
     sources:
       - label: PHRA 1993 s.4
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -291,7 +291,7 @@ relationships:
     data_quality: partial
     sources:
       - label: PHRA 1993 s.4
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -307,7 +307,7 @@ relationships:
     data_quality: partial
     sources:
       - label: PHRA 1993 s.4
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -323,7 +323,7 @@ relationships:
     data_quality: partial
     sources:
       - label: PHRA 1993 s.4
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -456,7 +456,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Vineet Narain v Union of India (1997) 6 SCC 767
-        url: https://main.sci.gov.in/
+        url: https://www.sci.gov.in/
         type: SCJudgment
         accessed_date: "2026-05-19"
 
@@ -529,7 +529,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Electricity Act 2003 s.85
-        url: https://powermin.gov.in/en/content/electricity-act-2003
+        url: https://www.indiacode.nic.in/bitstream/123456789/2058/1/a200336.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -545,7 +545,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Electricity Act 2003 s.85
-        url: https://powermin.gov.in/en/content/electricity-act-2003
+        url: https://www.indiacode.nic.in/bitstream/123456789/2058/1/a200336.pdf
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -561,7 +561,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Consumer Protection Act 2019 s.54
-        url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+        url: https://consumeraffairs.gov.in/pages/consumer-protection-acts
         type: CentralAct
         accessed_date: "2026-05-19"
 
@@ -577,6 +577,6 @@ relationships:
     data_quality: partial
     sources:
       - label: Consumer Protection Act 2019
-        url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+        url: https://consumeraffairs.gov.in/pages/consumer-protection-acts
         type: CentralAct
         accessed_date: "2026-05-19"

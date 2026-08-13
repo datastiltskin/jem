@@ -66,7 +66,7 @@ data_quality_notes: 'DISTRICT TABLE UPGRADED from partial to sourced. Authoritat
   Allahabad HC in Saurabh Gupta v. Union of India). v1.2 judge_strength stub attached'
 sources:
 - label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
-  url: https://indiacode.nic.in/CodeofActs13/19930951.pdf
+  url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: 'S.O. 454(E) dated 15 February 2017 — full district table for DRT Lucknow confirmed; address confirmed: 600/1, University

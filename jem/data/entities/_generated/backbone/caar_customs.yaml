@@ -68,11 +68,11 @@ data_quality_notes: 'Independence concern: same as aar_income_tax — Finance Ac
   rulings issued and pendency figures not publicly available in structured form. v1.2 judge_strength stub attached'
 sources:
 - label: Finance Act 2021 — s.94 inserting ss.28EA–28EI in Customs Act 1962
-  url: https://indiacode.nic.in/DownloadFile?FileName=A2021-13.pdf
+  url: https://indiankanoon.org/doc/91453702/
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: CBIC Notification 77/2021-Cus — CAAR constitution at Mumbai and Delhi
-  url: https://www.cbic.gov.in/resources//htdocs-cbec/customs/cs-circulars/cs-circulars-2021/Notfn-77-2021-Cus.pdf
+  url: https://info.eepcindia.org/files/210927110147.pdf
   type: GazetteNotification
   accessed_date: '2026-06-11'
 judge_strength:

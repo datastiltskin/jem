@@ -71,7 +71,7 @@ data_quality_notes: >
 
 sources:
   - label: Airports Economic Regulatory Authority of India Act 2008
-    url: https://indiacode.nic.in/CodeSection.aspx?actcode=A200817
+    url: https://www.indiacode.nic.in/bitstream/123456789/2090/1/A2008-27.pdf
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: AERA official website

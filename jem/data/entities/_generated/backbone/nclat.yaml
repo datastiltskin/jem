@@ -66,7 +66,7 @@ data_quality_notes: Entity created from public statutory sources. Judge strength
   merged v1.2 judge_strength stub attached
 sources:
 - label: Companies Act 2013, s.410–413 (NCLAT provisions)
-  url: https://indiacode.nic.in/handle/123456789/2197
+  url: https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf
   type: CentralAct
   accessed_date: '2025-01-15'
 - label: IBC 2016, s.61 — appeals from NCLT orders

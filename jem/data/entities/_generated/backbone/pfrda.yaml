@@ -80,7 +80,7 @@ data_quality_notes: >-
 
 sources:
   - label: "PFRDA Act 2013 (Act 23 of 2013)"
-    url: https://indiacode.nic.in/handle/123456789/2126
+    url: https://www.indiacode.nic.in/bitstream/123456789/2117/1/A2013-23.pdf
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "PFRDA official website"

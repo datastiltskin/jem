@@ -51,11 +51,11 @@ sources:
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: TNSLSA Constitution — tnlegalservices.tn.gov.in
-  url: https://tnlegalservices.tn.gov.in/state_authority_const.htm
+  url: https://cdnbbsr.s3waas.gov.in/s30013bcbcc8a03817c639a9e89c4ad3b7/uploads/2025/09/202509261451974628.pdf
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: Legal Services Authorities Act 1987 — India Code
-  url: https://indiacode.nic.in/acts-detail/NzI2
+  url: https://www.indiacode.nic.in/bitstream/123456789/19023/1/legal_service_authorities_act%2C_1987.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: National Judicial Data Grid (NJDG)

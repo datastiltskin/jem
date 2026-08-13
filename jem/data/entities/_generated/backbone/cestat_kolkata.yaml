@@ -75,11 +75,11 @@ data_quality_notes: 'Territorial jurisdiction per cestat.gov.in bench listing co
   stub attached'
 sources:
 - label: Customs Act 1962 s.129
-  url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Tribunal Reforms Act 2021
-  url: https://www.indiacode.nic.in/CodeofActs/2021/2021_33.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/16901/1/A2021-33.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: CESTAT official website

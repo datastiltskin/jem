@@ -96,15 +96,15 @@ data_quality_notes: >
   list should be verified against latest state notifications.
 sources:
 - label: Delhi Special Police Establishment Act 1946
-  url: https://indiacode.nic.in/DocsPdfData/1946/194643.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/2258/1/A1946-25.pdf
   type: CentralAct
   accessed_date: '2025-04-01'
 - label: Vineet Narain v Union of India (1997) 6 SCC 767
-  url: https://main.sci.gov.in/
+  url: https://www.sci.gov.in/
   type: SCJudgment
   accessed_date: '2025-04-01'
 - label: Prakash Singh v Union of India — police reform directives
-  url: https://main.sci.gov.in/
+  url: https://www.sci.gov.in/
   type: SCJudgment
   accessed_date: '2025-04-01'
 - label: CBI — About (DoPT administration)

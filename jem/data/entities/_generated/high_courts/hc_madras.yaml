@@ -101,7 +101,7 @@ sources:
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: Supreme Court of India
-  url: https://main.sci.gov.in/
+  url: https://www.sci.gov.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: DoJ — Judicial Vacancy Reports (quarterly)
@@ -109,7 +109,7 @@ sources:
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: NJDG — High Court Judge Strength Panel
-  url: https://njdg.ecourts.gov.in/hcnjdg/
+  url: https://njdg.ecourts.gov.in/hcnjdg_v2
   type: NJDG
   accessed_date: '2026-05-18'
 - label: National Judicial Data Grid (NJDG)

@@ -87,7 +87,7 @@ data_quality_notes: >-
 
 sources:
   - label: EPF and Miscellaneous Provisions Act 1952 — ss.5A–7B (as amended)
-    url: https://indiacode.nic.in/DownloadFile?FileName=A1952-19.pdf
+    url: https://www.indiacode.nic.in/bitstream/123456789/12828/1/the_employees_provident_funds_and_miscellaneous_provisions_act%2C_1952_no_19_of_1952_date_04.03.1952_.pdf
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: EPFO — official website
