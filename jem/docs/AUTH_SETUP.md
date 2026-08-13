@@ -1,21 +1,21 @@
-# JEM — LinkedIn sign-in setup
+# JEM LinkedIn sign-in setup
 
-JEM uses **Sign In with LinkedIn using OpenID Connect** for researcher accounts (correction proposals, upvotes, admin queue). Dev mock login remains available when `JEM_AUTH_MODE=dev`.
+JEM uses Sign In with LinkedIn using OpenID Connect for researcher accounts, which cover correction proposals, upvotes, and the admin queue. The dev mock login stays available when `JEM_AUTH_MODE=dev`.
 
 ---
 
 ## 1. Create a LinkedIn app
 
-1. Open [LinkedIn Developer Portal](https://www.linkedin.com/developers/apps) → **Create app**.
-2. Fill in app name, LinkedIn Page, and logo (required by LinkedIn).
-3. Go to **Products** → request **Sign In with LinkedIn using OpenID Connect** (approval is usually immediate for dev apps).
+1. Open the [LinkedIn Developer Portal](https://www.linkedin.com/developers/apps) and choose **Create app**.
+2. Fill in the app name, LinkedIn Page, and logo (LinkedIn requires all three).
+3. Go to **Products** and request **Sign In with LinkedIn using OpenID Connect**. Approval is usually immediate for dev apps.
 4. Go to **Auth** → **Authorized redirect URLs for your app** and add:
 
    ```
    http://127.0.0.1:8001/api/v1/auth/linkedin/callback
    ```
 
-   For production, add your HTTPS URL with the same path, e.g.:
+   For production, add your HTTPS URL with the same path, such as:
 
    ```
    https://friedso.com/api/jem/v1/auth/linkedin/callback
@@ -42,7 +42,7 @@ Edit `jem/.env`:
 | `LINKEDIN_CLIENT_ID` | From LinkedIn Auth tab |
 | `LINKEDIN_CLIENT_SECRET` | From LinkedIn Auth tab |
 | `JEM_SESSION_SECRET` | Random string (cookie signing) |
-| `JEM_MAINTAINER_OAUTH_SUBS` | Optional — LinkedIn `sub` IDs that get `maintainer` on first login |
+| `JEM_MAINTAINER_OAUTH_SUBS` | Optional. LinkedIn `sub` IDs that get `maintainer` on first login. |
 
 The API loads `.env` automatically on startup (`python-dotenv` in `api/main.py`).
 
@@ -74,7 +74,7 @@ Expected when configured:
 }
 ```
 
-Open `http://127.0.0.1:8001/api/v1/auth/linkedin/login` — you should be redirected to LinkedIn (not a 503 JSON error).
+Open `http://127.0.0.1:8001/api/v1/auth/linkedin/login`. You should be redirected to LinkedIn, not to a 503 JSON error.
 
 After login, the callback sets a session cookie and redirects to `/admin/`.
 
@@ -94,7 +94,7 @@ Serve the map separately:
 cd jem/web && python3 -m http.server 8080
 ```
 
-The **Sign in with LinkedIn** link on correction proposals uses that API base.
+The "Sign in with LinkedIn" link on correction proposals uses that API base.
 
 ---
 
@@ -117,10 +117,10 @@ Use the `jem_session` cookie for subsequent requests.
 
 | Symptom | Fix |
 |---------|-----|
-| `LinkedIn OAuth not configured` | Set both `LINKEDIN_CLIENT_ID` and `LINKEDIN_CLIENT_SECRET` in `.env`; restart uvicorn |
-| `redirect_uri doesn't match` | LinkedIn redirect URL must exactly match `{JEM_BASE_URL}/api/v1/auth/linkedin/callback` |
-| `Invalid OAuth state` | State is in-memory; restart clears it — start login again from `/auth/linkedin/login` |
-| Login works but map shows sign-in | Ensure `JEM_API_BASE` matches API port; check browser cookies / CORS |
-| Need maintainer on admin | Set your LinkedIn `sub` in `JEM_MAINTAINER_OAUTH_SUBS` before first login, or promote via admin UI |
+| `LinkedIn OAuth not configured` | Set both `LINKEDIN_CLIENT_ID` and `LINKEDIN_CLIENT_SECRET` in `.env`, then restart uvicorn |
+| `redirect_uri doesn't match` | The LinkedIn redirect URL must exactly match `{JEM_BASE_URL}/api/v1/auth/linkedin/callback` |
+| `Invalid OAuth state` | State is held in memory and a restart clears it. Start the login again from `/auth/linkedin/login`. |
+| Login works but the map still shows sign-in | Check that `JEM_API_BASE` matches the API port, then check browser cookies and CORS |
+| Need maintainer on admin | Set your LinkedIn `sub` in `JEM_MAINTAINER_OAUTH_SUBS` before first login, or promote via the admin UI |
 
 To find your LinkedIn `sub` after first login: query `users` in `jem.db` or call `GET /api/v1/auth/me` while signed in.

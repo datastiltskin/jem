@@ -4,15 +4,14 @@
   <img src="web/public/assets/jem-lockup.png" alt="JEM" width="320">
 </p>
 
-**Open structural map of India's judicial ecosystem — institutional capacity, relationships, and systemic gaps.**
+An open structural map of India's judicial ecosystem: institutional capacity, relationships, and systemic gaps.
 
-An open, honest structural study of the Indian judicial ecosystem.
-Maps institutional relationships — appointment chains, funding flows,
-oversight mechanisms, complaint pathways — not case outcomes.
+It maps institutional relationships, meaning appointment chains, funding flows,
+oversight mechanisms, and complaint pathways. It does not map case outcomes.
 
 **Canonical demo (attribution):** https://friedso.com/apps/jem/  
 **GitHub:** https://github.com/datastiltskin/jem  
-**Release:** `v1.0.0` (Jun 2026) — 1,145 entities, 1,810 relationships · summary/detail UI refresh  
+**Release:** `v1.0.0` (Jun 2026), 1,145 entities, 1,810 relationships, summary/detail UI refresh  
 **AI data entry (copy-paste):** [`docs/AI_DATA_ENTRY_PROMPT.md`](docs/AI_DATA_ENTRY_PROMPT.md) · **Build roadmap (1,500+):** [`docs/ENTITY_BUILD_ROADMAP.md`](docs/ENTITY_BUILD_ROADMAP.md)  
 **MCP / API setup:** [`docs/MCP_SETUP.md`](docs/MCP_SETUP.md)  
 **Maintainers:** [@dso6060](https://github.com/dso6060) · co-maintainers [@Prajna1999](https://github.com/Prajna1999) and [@agriyakhetarpal](https://github.com/agriyakhetarpal)
@@ -31,7 +30,7 @@ JEM maps:
 - How digital infrastructure is governed (e-Committee vs DoJ vs NIC)
 - Where bodies have been legislated but never constituted
 
-**Independence Risk** and **Discretionary Power** scores are algorithmically derived from structural data attributes. They are structural indicators, not judgments on conduct. All scores are labelled "Pending community review" until validated.
+Independence Risk and Discretionary Power scores are derived algorithmically from structural data attributes. They are structural indicators, not judgments on conduct. All scores are labelled "Pending community review" until validated.
 
 ---
 
@@ -57,7 +56,7 @@ python scripts/build.py
 # cd web && python3 -m http.server 8080
 ```
 
-The frontend requires no build step. It is vanilla HTML + JS + CSS.
+The frontend needs no build step. It is vanilla HTML, JS, and CSS.
 All CDN dependencies load from jsdelivr/cdnjs.
 
 **Session workflow:** [docs/SESSION_WORKFLOW.md](docs/SESSION_WORKFLOW.md) · **Checklist:** [../MASTER_CHECKLIST.md](../MASTER_CHECKLIST.md)
@@ -95,14 +94,14 @@ docs/
 
 .github/
   workflows/
-    validate.yml   Runs on every PR — validate + derive, no deploy
+    validate.yml   Runs on every PR: validate + derive, no deploy
 ```
 
 ---
 
 ## Visualisation
 
-The map uses **semantic zoom** — four levels of detail:
+The map uses semantic zoom, at four levels of detail:
 
 | Level | What you see | How to reach it |
 |---|---|---|
@@ -111,10 +110,10 @@ The map uses **semantic zoom** — four levels of detail:
 | L2 Sub-entity | Sub-entities, edge labels | Scroll in further |
 | L3 Detail | Full entity card, sources, score breakdown | Click any entity |
 
-The **time scroller** (1950 → present) is persistent across all levels.
-Dragging it fades in/out entities based on `created_year` and `abolished_year`.
+The time scroller (1950 to present) is persistent across all levels.
+Dragging it fades entities in and out based on `created_year` and `abolished_year`.
 
-**Font = data quality:**
+Font signals data quality:
 - Black bold = `verified` (primary source confirmed)
 - Black normal = `complete`
 - Grey italic = `partial` (some fields missing)
@@ -130,9 +129,9 @@ Dragging it fades in/out entities based on `created_year` and `abolished_year`.
 See `docs/CONTRIBUTING.md`. Short version:
 
 1. Copy the closest existing YAML from `data/entities/`
-2. Fill all fields — at minimum: `id`, `name`, `type`, `cluster`, `level_of_government`, `created_year`, `operational_status`, `data_quality`, `sources`
+2. Fill all fields. At minimum: `id`, `name`, `type`, `cluster`, `level_of_government`, `created_year`, `operational_status`, `data_quality`, `sources`
 3. Run `python scripts/validate.py --entity path/to/your/file.yaml`
-4. Open a PR — GitHub Actions validates automatically
+4. Open a PR. GitHub Actions validates automatically.
 
 Do not set `data_quality: verified` unless you have a direct link to a primary Government of India source.
 
@@ -140,14 +139,14 @@ Do not set `data_quality: verified` unless you have a direct link to a primary G
 
 ## Licences
 
-- `data/` — **CC0** (Public Domain). No attribution required.
-- `scripts/` and `web/` — **MIT**.
+- `data/` is **CC0** (Public Domain). No attribution required.
+- `scripts/` and `web/` are **MIT**.
 
 ---
 
 ## Status
 
-**v1.0.0** (Jun 2026): **1,145** structural entities, **1,810** relationships in `graph.json`. Target: ~1,500 structural entities.
+v1.0.0 (Jun 2026): 1,145 structural entities and 1,810 relationships in `graph.json`. Target: ~1,500 structural entities.
 
 Priority data entry order:
 1. All 25 High Courts

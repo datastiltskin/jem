@@ -1,4 +1,4 @@
-# JEM — governance (v0.9)
+# JEM governance (v0.9)
 
 Lightweight rules for maintainers and future reviewers.
 
@@ -28,10 +28,10 @@ Widening scope (new states, gap-registry entities) requires an explicit maintain
 
 ## Review & merge
 
-1. **CI must pass** — `validate.py --strict`, `derive.py`, `validate_graph_refs.py` on PRs touching data/scripts.
-2. **CODEOWNERS approval** — at least one listed owner (both maintainers when co-maintainer is added).
-3. **`verified` and `scores_validated`** — only maintainers after primary-source check and `derive.py --explain <id>`.
-4. **Contested facts** — prefer [Dispute escalation](DISCUSSION_TEMPLATE/dispute-escalation.yml) → issue with both sources → `data_quality: contested`; no silent “winner picks” in PR comments.
+1. **CI must pass.** `validate.py --strict`, `derive.py`, and `validate_graph_refs.py` run on PRs touching data or scripts.
+2. **CODEOWNERS approval.** At least one listed owner, or both maintainers once a co-maintainer is added.
+3. **`verified` and `scores_validated`.** Maintainers only, after a primary-source check and `derive.py --explain <id>`.
+4. **Contested facts.** Prefer [Dispute escalation](DISCUSSION_TEMPLATE/dispute-escalation.yml), then an issue citing both sources, then `data_quality: contested`. No silent "winner picks" in PR comments.
 
 ## Escalation
 
@@ -39,8 +39,8 @@ Widening scope (new states, gap-registry entities) requires an explicit maintain
 |------|---------|
 | 1 | GitHub **Discussion** (category: Disputes) or contested-fact issue |
 | 2 | Maintainer internal sync (founder + co-maintainer) |
-| 3 | Optional: **Expert review** issue — tag `expert-review` when legal/think-tank reviewer is onboarded |
-| 4 | YAML updated with `contested` or agreed correction + sources |
+| 3 | Optional: an Expert review issue, tagged `expert-review`, once a legal or think-tank reviewer is onboarded |
+| 4 | YAML updated with `contested` or an agreed correction, plus sources |
 
 ## Repository settings (checklist when repo is created)
 
@@ -52,19 +52,19 @@ Widening scope (new states, gap-registry entities) requires an explicit maintain
 
 ## Deploy
 
-**Canonical demo (attribution):** https://friedso.com/apps/jem/ — production deploy **founder only** unless delegated. Mirrors may host `jem/web/` + `graph.json` with courtesy credit to that URL.
+**Canonical demo (attribution):** https://friedso.com/apps/jem/. Production deploy is founder only unless delegated. Mirrors may host `jem/web/` plus `graph.json` with courtesy credit to that URL.
 
 ### Branches
 
 | Branch | Purpose |
 |--------|---------|
-| `main` | Active development (data + UI); may move ahead of production |
-| `friedso_v1` | **Production line** for friedso.com — deploy only from here |
+| `main` | Active development (data and UI). May move ahead of production. |
+| `friedso_v1` | Production line for friedso.com. Deploy only from here. |
 
-**Rules (GitHub ruleset `friedso_v1 production deploy`):**
+Rules (GitHub ruleset `friedso_v1 production deploy`):
 
-- Changes reach `friedso_v1` via **pull request** (no direct pushes).
-- Only [@dso6060](https://github.com/dso6060) can **merge** PRs into `friedso_v1` (ruleset bypass on pull requests).
-- Co-maintainers work on `main`; founder promotes to `friedso_v1` after `./jem/scripts/deploy_friedso_production.sh` and smoke tests.
+- Changes reach `friedso_v1` via pull request. No direct pushes.
+- Only [@dso6060](https://github.com/dso6060) can merge PRs into `friedso_v1`, via the ruleset bypass on pull requests.
+- Co-maintainers work on `main`. The founder promotes to `friedso_v1` after `./jem/scripts/deploy_friedso_production.sh` and smoke tests.
 
-Personal repos cannot use classic “restrict push to user” branch protection; the ruleset above enforces the same intent.
+Personal repos cannot use the classic "restrict push to user" branch protection. The ruleset above enforces the same intent.
