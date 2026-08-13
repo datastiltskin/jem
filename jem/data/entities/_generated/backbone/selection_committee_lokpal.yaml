@@ -26,7 +26,7 @@ data_quality_notes: Governance node — statutory selection committee; not an ad
 
 sources:
   - label: Lokpal and Lokayuktas Act 2013 — s.4
-    url: https://india-code.nic.in/handle/123456789/2335
+    url: https://indiacode.nic.in/handle/123456789/2335
     type: CentralAct
     accessed_date: '2026-06-17'
   - label: Lokpal official website

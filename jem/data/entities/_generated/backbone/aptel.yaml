@@ -40,11 +40,11 @@ data_quality_notes: "created_year 2005 (operational constitution); Electricity A
   \ data in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
 sources:
 - label: Electricity Act 2003 — India Code
-  url: https://india-code.nic.in/acts-detail/MTQ3MA==
+  url: https://www.indiacode.nic.in/bitstream/123456789/2058/1/a200336.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: Ministry of Power — Attached & Subordinate Offices
-  url: https://powermin.gov.in/en/content/attached-subordinate-offices
+  url: https://www.powermin.gov.in/ministry/our-organisation?page=1
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: National Judicial Data Grid (NJDG)

@@ -136,7 +136,7 @@ unverified_fields:
     '
 sources:
 - label: CGST Act 2017 — ss.109–110 (as amended by Finance Act 2023)
-  url: https://india-code.nic.in/DownloadFile?FileName=A2017-12.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/15689/1/A2017-12.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: MoF Notification S.O. 3568(E) — GSTAT constituted, 1 Sep 2023
@@ -155,7 +155,7 @@ sources:
   type: SCJudgment
   accessed_date: '2026-06-12'
 - label: Finance Act 2023 (No. 8 of 2023) — substituted CGST Act ss.109–110A
-  url: https://india-code.nic.in/CodeofActs13/20230008.pdf
+  url: https://indiankanoon.org/doc/39393385/
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: GSTAT Procedure Rules 2025 — G.S.R. 256(E), 24 April 2025

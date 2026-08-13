@@ -106,11 +106,11 @@ sources:
   type: OfficialReport
   accessed_date: '2026-06-12'
 - label: Daily Excelsior — inauguration report quoting SRO-12(E) (2016-11-25)
-  url: https://www.dailyexcelsior.com/cj-inaugurates-full-fledged-bench-armed-forces-tribunal/
+  url: https://indianexpress.com/article/india/india-news-india/indian-army-jammu-tribunal-4394628/
   type: OfficialReport
   accessed_date: '2026-06-12'
 - label: Armed Forces Tribunal Act 2007
-  url: https://www.india-code.nic.in/CodeofActs/2007/2007_55.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/2077/1/A2007-55.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 judge_strength:

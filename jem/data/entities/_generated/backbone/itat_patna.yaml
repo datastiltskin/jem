@@ -44,7 +44,7 @@ data_quality_notes: ITAT Patna bench. Appeal on substantial question of law to H
   CBDT/ITAT bench allocation — verify at itat.gov.in. v1.2 judge_strength stub attached
 sources:
 - label: Income Tax Act 1961 s.252–260A
-  url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+  url: https://www.incometaxindia.gov.in/income-tax-act
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: ITAT official website

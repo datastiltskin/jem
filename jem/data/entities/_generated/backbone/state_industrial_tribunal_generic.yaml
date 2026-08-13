@@ -86,7 +86,7 @@ data_quality_notes: 'Generic node for State Industrial Tribunals (state sphere) 
   and presiding-officer strength — state labour department notifications / MoLE Labour Bureau.'
 sources:
 - label: Industrial Disputes Act 1947 — ss.7A, 9, 17A (as amended)
-  url: https://india-code.nic.in/DownloadFile?FileName=A1947-14.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: MoLE — Labour Bureau statistics

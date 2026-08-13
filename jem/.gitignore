@@ -38,6 +38,11 @@ Thumbs.db
 .claude/outputs/
 .claude/build_log.md
 
+# Maintainer-only local helper scripts
+scripts/build_friedso_deploy_bundle.sh
+scripts/deploy_jem_api.sh
+scripts/publish_github.sh
+
 # SQLite (production DB — never commit)
 data/jem.db
 data/jem.db-shm

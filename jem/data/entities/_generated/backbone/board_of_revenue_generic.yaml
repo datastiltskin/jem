@@ -92,8 +92,10 @@ data_quality_notes: >-
   no universal entity_id mapped in graph yet. v1.2 judge_strength stub attached. NEEDS_SOURCE — per-state operational status
   and member strength from state Board of Revenue Acts or revenue department annual reports.
 sources:
-- label: Rajasthan Board of Revenue Act 1949
-  url: https://india-code.nic.in/DownloadFile?FileName=A1949-21Rajasthan.pdf
+# The 1949 Board of Revenue Act is not on India Code; the 1956 Land
+# Revenue Act that replaced it is the closest available primary source.
+- label: Rajasthan Land Revenue Act 1956 (replaced the Board of Revenue Act 1949)
+  url: https://upload.indiacode.nic.in/showfile?actid=AC_RJ_83_1139_00015_00015_1599134852481&type=actfile&filename=updated_rajasthan_land_revenue_act,_1956.pdf
   type: StateAct
   accessed_date: '2026-06-11'
 - label: UP Board of Revenue — official website

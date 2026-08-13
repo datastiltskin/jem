@@ -1,8 +1,8 @@
-# JEM — MCP & API setup
+# JEM MCP and API setup
 
-**Audience:** researchers and developers who want JEM data inside Cursor, Claude, Gemini, or custom agents — or who need programmatic access.
+**Audience:** researchers and developers who want JEM data inside Cursor, Claude, Gemini, or custom agents, or who need programmatic access.
 
-**Non-technical users:** use the **map search** at [friedso.com/apps/jem/](https://friedso.com/apps/jem/) or the hosted REST search API (when deployed). You do not need MCP configuration.
+**Non-technical users:** use the map search at [friedso.com/apps/jem/](https://friedso.com/apps/jem/), or the hosted REST search API once it is deployed. You do not need MCP configuration.
 
 ---
 
@@ -55,11 +55,11 @@ Copy `jem/.env.example` to `jem/.env`:
 | Variable | Required for | Default |
 |----------|--------------|---------|
 | `JEM_DB_PATH` | All API/MCP lookups | `data/jem.db` |
-| `ANTHROPIC_API_KEY` | Fetcher/verifier agents only (maintainer batch jobs) | — |
-| `LINKEDIN_CLIENT_ID` / `LINKEDIN_CLIENT_SECRET` | LinkedIn sign-in | — |
+| `ANTHROPIC_API_KEY` | Fetcher/verifier agents only (maintainer batch jobs) | none |
+| `LINKEDIN_CLIENT_ID` / `LINKEDIN_CLIENT_SECRET` | LinkedIn sign-in | none |
 | `JEM_BASE_URL` | OAuth redirect base (must match uvicorn host/port) | `http://127.0.0.1:8001` |
 
-Entity lookup via REST and MCP HTTP works **without** an Anthropic key. LinkedIn sign-in: see [`AUTH_SETUP.md`](AUTH_SETUP.md).
+Entity lookup via REST and MCP HTTP works without an Anthropic key. For LinkedIn sign-in, see [`AUTH_SETUP.md`](AUTH_SETUP.md).
 
 ### Run the server
 
@@ -71,13 +71,13 @@ python3 -m uvicorn api.main:app --reload --port 8000
 | Endpoint | Purpose |
 |----------|---------|
 | http://localhost:8000/api/v1/health | Entity count + status |
-| http://localhost:8000/docs | OpenAPI (Swagger) — try search endpoints here |
+| http://localhost:8000/docs | OpenAPI (Swagger). Try the search endpoints here. |
 
 ---
 
 ## Discovering entity ids
 
-JEM uses **stable snake_case slugs** (`supreme_court_india`, `nclt`, `gstat`) — not display names. There is no “list all ids” endpoint; **search first**:
+JEM uses stable snake_case slugs (`supreme_court_india`, `nclt`, `gstat`) rather than display names. There is no "list all ids" endpoint, so search first:
 
 ```bash
 # 1. Search by name or abbreviation
@@ -88,11 +88,11 @@ curl -s http://localhost:8000/api/v1/entities/nclt | jq .
 curl -s 'http://localhost:8000/api/v1/relationships?entity_id=nclt' | jq .
 ```
 
-**MCP equivalent:** call `search_entities` with `{"q": "NCLT"}`, then `get_entity` / `get_relationships` with the `id` from results.
+MCP equivalent: call `search_entities` with `{"q": "NCLT"}`, then `get_entity` or `get_relationships` with the `id` from the results.
 
-**Browse without ids:** `GET /api/v1/clusters/summary` returns per-cluster counts and average structural health.
+To browse without ids, `GET /api/v1/clusters/summary` returns per-cluster counts and average structural health.
 
-**OpenAPI:** `http://localhost:8000/docs` documents the search-first workflow on entity and relationship parameters.
+OpenAPI at `http://localhost:8000/docs` documents the search-first workflow on entity and relationship parameters.
 
 ---
 
@@ -167,15 +167,15 @@ Tool handlers refuse queries that request legal advice, case outcomes, or judge 
 
 ## Using JEM in Cursor, Claude, Gemini, or any LLM
 
-### Option A — Repo context (no server)
+### Option A: repo context (no server)
 
-For **data entry** or YAML edits, open the JEM repo and use [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md) with `ROLE: contributor` or `co-maintainer`. The agent reads entity YAML directly.
+For data entry or YAML edits, open the JEM repo and use [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md) with `ROLE: contributor` or `co-maintainer`. The agent reads entity YAML directly.
 
-### Option B — REST / MCP HTTP (live queries, your LLM tokens)
+### Option B: REST / MCP HTTP (live queries, your LLM tokens)
 
 1. Run the FastAPI server locally (see above).
 2. Point your LLM client at `http://localhost:8000/api/v1/` or `/mcp/tools/*`.
-3. Use **your** subscription or API key in the client — JEM serves data only.
+3. Use your own subscription or API key in the client. JEM serves data only.
 
 Example Cursor instruction:
 
@@ -184,19 +184,19 @@ With JEM API at http://localhost:8000, search entities for NCLT and summarize
 appointment relationships. Always report data_quality and unverified_fields.
 ```
 
-### Option C — MCP server config (advanced)
+### Option C: MCP server config (advanced)
 
-JEM’s MCP layer is **HTTP-mounted on FastAPI**, not a standalone stdio MCP process. Native MCP config (`mcp.json`) expects stdio or SSE from a dedicated server binary.
+JEM's MCP layer is HTTP-mounted on FastAPI, not a standalone stdio MCP process. Native MCP config (`mcp.json`) expects stdio or SSE from a dedicated server binary.
 
-**Practical approaches:**
+Practical approaches:
 
-1. **HTTP via agent** — Option B (no extra config).
-2. **Custom MCP bridge** — wrap `/mcp/tools/*` in a small stdio proxy.
-3. **Native stdio (future)** — see [`MCP_STDIO.md`](MCP_STDIO.md) for requirements and friedso VPS notes. Stdio runs on your machine; the VPS hosts HTTP/REST if exposed publicly.
+1. HTTP via agent, which is Option B and needs no extra config.
+2. A custom MCP bridge, wrapping `/mcp/tools/*` in a small stdio proxy.
+3. Native stdio, which is not shipped in this repo. If it is needed later, it should run as a local process on your machine while the VPS continues to host HTTP/REST.
 
-### Option D — Static `graph.json`
+### Option D: static `graph.json`
 
-Upload or symlink `graph.json` into a Claude Project, ChatGPT, or NotebookLM session for offline snapshot queries (stale until you refresh the file).
+Upload or symlink `graph.json` into a Claude Project, ChatGPT, or NotebookLM session for offline snapshot queries. It stays stale until you refresh the file.
 
 ---
 
@@ -248,7 +248,7 @@ Subsequent API-only updates (code + `jem.db` from current `graph.json`):
 ./jem/scripts/deploy_friedso_api.sh --both
 ```
 
-**Production URLs** (nginx proxies to uvicorn on port 8002):
+Production URLs (nginx proxies to uvicorn on port 8002):
 
 | Surface | URL |
 |---------|-----|
@@ -262,10 +262,10 @@ Subsequent API-only updates (code + `jem.db` from current `graph.json`):
 Server env: `/etc/friedso/jem-prod.env` (templates in `jem/config/jem-api.*.env.example`).  
 Infra snippets: `friedso/infra/ops/nginx/jem-api-proxy-prod.conf`, `friedso/infra/ops/systemd/friedso-jem-prod.service`.
 
-- **Static map** (friedso.com) ships `graph.json` + `jem/web/` — map auto-detects `/api/jem/v1` when the API is deployed.
-- **Researcher stack** needs: `jem.db` built from the same `graph.json` revision you ship, and `uvicorn` behind nginx.
-- Rebuild DB after data releases: `python scripts/build_db.py --force`
-- Rate-limit public REST/MCP if exposed. See [`.github/SECURITY.md`](../../.github/SECURITY.md).
+- The static map (friedso.com) ships `graph.json` plus `jem/web/`. The map auto-detects `/api/jem/v1` when the API is deployed.
+- The researcher stack needs `jem.db` built from the same `graph.json` revision you ship, plus `uvicorn` behind nginx.
+- Rebuild the DB after data releases: `python scripts/build_db.py --force`
+- Rate-limit public REST/MCP if you expose it. See [`.github/SECURITY.md`](../../.github/SECURITY.md).
 
 ---
 
@@ -280,6 +280,6 @@ pytest tests/test_mcp.py tests/test_api.py -v
 
 ## Related docs
 
-- **Data pipeline:** [`SESSION_WORKFLOW.md`](SESSION_WORKFLOW.md)
-- **Schema / DB:** `jem/.claude/decisions/schema_lock.md` · `jem/config/schema.sql`
-- **AI data entry (YAML):** [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md)
+- Data pipeline: [`SESSION_WORKFLOW.md`](SESSION_WORKFLOW.md)
+- Schema and DB: `jem/.claude/decisions/schema_lock.md` · `jem/config/schema.sql`
+- AI data entry (YAML): [`AI_DATA_ENTRY_PROMPT.md`](AI_DATA_ENTRY_PROMPT.md)

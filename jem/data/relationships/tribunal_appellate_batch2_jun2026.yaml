@@ -14,11 +14,10 @@ relationships:
     year_established: 2016
     data_quality: verified
     sources:
-      - &india_code
-        label: India Code — Constitution & Acts
-        url: https://india-code.nic.in/acts-detail/MTM3ODA=
+      - label: Insolvency and Bankruptcy Code 2016
+        url: https://www.indiacode.nic.in/bitstream/123456789/15479/1/the_insolvency_and_bankruptcy_code%2C_2016.pdf
         type: CentralAct
-        accessed_date: '2026-06-26'
+        accessed_date: '2026-08-13'
 
   - id: rel_state_it_generic_writ_hc
     source: state_industrial_tribunal_generic
@@ -32,7 +31,10 @@ relationships:
     year_established: 1947
     data_quality: partial
     sources:
-      - *india_code
+      - label: Industrial Disputes Act 1947
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
+        type: CentralAct
+        accessed_date: '2026-08-13'
 
   - id: rel_state_labour_court_generic_writ_hc
     source: state_labour_court_generic
@@ -46,7 +48,10 @@ relationships:
     year_established: 1947
     data_quality: partial
     sources:
-      - *india_code
+      - label: Industrial Disputes Act 1947
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
+        type: CentralAct
+        accessed_date: '2026-08-13'
 
   - id: rel_mhrb_generic_to_hc
     source: state_mental_health_review_board_generic
@@ -60,7 +65,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Mental Healthcare Act 2017 — s.82 (India Code)
-        url: https://india-code.nic.in/acts-detail/MjE0NTE=
+        url: https://www.indiacode.nic.in/bitstream/123456789/2249/1/A2017-10.pdf
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -76,7 +81,10 @@ relationships:
     year_established: 1993
     data_quality: partial
     sources:
-      - *india_code
+      - label: Constitution of India
+        url: https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf
+        type: CentralAct
+        accessed_date: '2026-08-13'
 
   # ══════════════════════════════════════════════════════════════════
   # GST — Commissioner (Appeals) → GSTAT upstream
@@ -101,7 +109,7 @@ relationships:
     data_quality: partial
     sources:
       - label: CGST Act 2017 — ss.107, 112 (India Code)
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -126,7 +134,7 @@ relationships:
     data_quality: partial
     sources:
       - label: FEMA 1999 — ss.18, 37 (India Code)
-        url: https://india-code.nic.in/
+        url: https://indiacode.nic.in/
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -148,7 +156,7 @@ relationships:
     data_quality: partial
     sources:
       - label: NGT Act 2010 — s.16 (India Code)
-        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        url: https://www.indiacode.nic.in/bitstream/123456789/2025/1/A201019.pdf
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -166,7 +174,7 @@ relationships:
     data_quality: partial
     sources:
       - label: NGT Act 2010 — s.16 (India Code)
-        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        url: https://www.indiacode.nic.in/bitstream/123456789/2025/1/A201019.pdf
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -184,7 +192,7 @@ relationships:
     data_quality: partial
     sources:
       - label: NGT Act 2010 — s.16 (India Code)
-        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        url: https://www.indiacode.nic.in/bitstream/123456789/2025/1/A201019.pdf
         type: CentralAct
         accessed_date: '2026-06-26'
 
@@ -202,6 +210,6 @@ relationships:
     data_quality: partial
     sources:
       - label: NGT Act 2010 — s.16 (India Code)
-        url: https://india-code.nic.in/acts-detail/MjA2OTU=
+        url: https://www.indiacode.nic.in/bitstream/123456789/2025/1/A201019.pdf
         type: CentralAct
         accessed_date: '2026-06-26'

@@ -52,7 +52,7 @@ data_quality_notes: Most regulatory appeals go to APTEL (aptel entity), not a se
   judge_strength stub attached
 sources:
 - label: Electricity Act 2003 ss.42, 111 — India Code
-  url: https://www.india-code.nic.in/CodeofActs/2003/2003_36.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/2058/1/a200336.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 judge_strength:

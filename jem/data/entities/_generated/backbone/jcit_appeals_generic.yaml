@@ -74,7 +74,7 @@ data_quality_notes: >
 
 sources:
   - label: Finance Act 2023 — Income-tax Act amendments
-    url: https://www.india-code.nic.in/CodeofActs/2023/2023_08.pdf
+    url: https://indiankanoon.org/doc/39393385/
     type: CentralAct
     accessed_date: '2026-06-12'
   - label: Income Tax India — official portal

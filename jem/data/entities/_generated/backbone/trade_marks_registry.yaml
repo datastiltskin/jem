@@ -72,10 +72,10 @@ data_quality_notes: >
 
 sources:
   - label: Trade Marks Act 1999
-    url: https://india-code.nic.in/CodeSection.aspx?actcode=A199947
+    url: https://www.indiacode.nic.in/bitstream/123456789/15427/1/the_trade_marks_act%2C_1999.pdf
     type: CentralAct
     accessed_date: '2026-06-11'
   - label: Trade Marks Rules 2017
-    url: https://ipindia.gov.in/trade-marks.htm
+    url: https://ipindia.gov.in/tm-rules-2017
     type: GoIWebsite
     accessed_date: '2026-06-11'

@@ -11,11 +11,11 @@ data_quality: partial
 data_quality_notes: Stub; collegium composition per constitutional practice.
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: Supreme Court of India
-  url: https://main.sci.gov.in/
+  url: https://www.sci.gov.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: National Judicial Data Grid (NJDG)

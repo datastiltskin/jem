@@ -17,6 +17,6 @@ data_quality_notes: Senior court administration; not a judicial officer for appe
   purposes. Numerics (judge_strength, case_volume) not applicable to role archetypes.
 sources:
 - label: High Courts Act / state court rules (varies by HC)
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: CentralAct
   accessed_date: '2026-06-24'

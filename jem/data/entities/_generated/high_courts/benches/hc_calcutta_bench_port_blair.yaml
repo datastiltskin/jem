@@ -87,11 +87,11 @@ data_quality_notes: 'Permanent bench at Port Blair; parent hc_calcutta. Populate
   Submit via GitHub issue with TSV row (entity_id, roster_as_of, appointed, source_url). v1.2 judge_strength stub attached'
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: Supreme Court of India
-  url: https://main.sci.gov.in/
+  url: https://www.sci.gov.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 parent_hc: hc_calcutta

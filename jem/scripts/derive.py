@@ -26,6 +26,10 @@ GOVERNANCE_EXCLUDED_MESSAGE = (
     "Scores excluded: governance officeholder or administrative body"
 )
 
+STRUCTURAL_ONLY_EXCLUDED_MESSAGE = (
+    "Scores excluded: role archetype or generic scaffold (not a scorable body)"
+)
+
 OFFICEHOLDER_IDS = frozenset({
     "president_india",
     "chief_justice_india",
@@ -38,6 +42,16 @@ OFFICEHOLDER_IDS = frozenset({
 })
 
 OFFICEHOLDER_ID_SUFFIXES = ("_lieutenant_governor", "_advocate_general")
+
+
+def is_structural_only_entity(entity: Dict[str, Any]) -> bool:
+    """Role archetypes and generic scaffolds are graph anchors, not scorable bodies."""
+    entity_id = entity.get("id", "") or ""
+    if entity.get("cluster") == "people_roles" or entity.get("role_layer"):
+        return True
+    if entity_id.endswith("_generic"):
+        return True
+    return False
 
 
 def is_governance_scores_excluded(entity: Dict[str, Any]) -> bool:
@@ -63,7 +77,13 @@ def is_governance_scores_excluded(entity: Dict[str, Any]) -> bool:
     return False
 
 
-def excluded_score_result() -> Tuple[int, Dict[str, int]]:
+def is_scores_excluded(entity: Dict[str, Any]) -> bool:
+    return is_governance_scores_excluded(entity) or is_structural_only_entity(entity)
+
+
+def excluded_score_result(entity: Dict[str, Any]) -> Tuple[int, Dict[str, int]]:
+    if is_structural_only_entity(entity):
+        return 0, {STRUCTURAL_ONLY_EXCLUDED_MESSAGE: 0}
     return 0, {GOVERNANCE_EXCLUDED_MESSAGE: 0}
 
 
@@ -81,8 +101,8 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
     Returns (total_score, breakdown_dict).
     Each key in breakdown_dict is a human-readable reason → point value.
     """
-    if is_governance_scores_excluded(entity):
-        return excluded_score_result()
+    if is_scores_excluded(entity):
+        return excluded_score_result(entity)
 
     score = 0
     breakdown = {}
@@ -253,8 +273,13 @@ def compute_structural_health(
     ir_score: int,
     dp_score: int,
 ) -> Tuple[Optional[float], Optional[str], Dict[str, Any]]:
-    if is_governance_scores_excluded(entity):
-        return None, None, {GOVERNANCE_EXCLUDED_MESSAGE: 0}
+    if is_scores_excluded(entity):
+        msg = (
+            STRUCTURAL_ONLY_EXCLUDED_MESSAGE
+            if is_structural_only_entity(entity)
+            else GOVERNANCE_EXCLUDED_MESSAGE
+        )
+        return None, None, {msg: 0}
 
     op_status = entity.get('operational_status', '')
 
@@ -353,8 +378,8 @@ EXTRA_DISCRETION_ENTITIES = {
 }
 
 def compute_discretionary_power(entity: Dict[str, Any]) -> Tuple[int, Dict[str, int]]:
-    if is_governance_scores_excluded(entity):
-        return excluded_score_result()
+    if is_scores_excluded(entity):
+        return excluded_score_result(entity)
 
     score = 0
     breakdown = {}

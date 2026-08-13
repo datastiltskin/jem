@@ -1,12 +1,12 @@
-# Schema Lock — Session 0 Ground Truth
+# Schema lock: Session 0 ground truth
 
 **Locked:** 2026-06-24  
-**Source schemas:** `entity_schema.yaml` v1.3.0 (repo root, canonical), `jem/data/schema/relationship_schema.yaml` v0.1.0  
+**Source schemas:** `entity_schema.yaml` v1.3.0 (repo root, canonical) and `jem/data/schema/relationship_schema.yaml` v0.1.0  
 **Migration source:** `graph.json`
 
 ---
 
-## 1. Fields Missing for Temporal Vacancy Tracking
+## 1. Fields missing for temporal vacancy tracking
 
 | YAML / graph field | Gap | SQLite resolution |
 |--------------------|-----|-----------------|
@@ -17,34 +17,34 @@
 | No `event_type` enum in entity schema | Needed for staging pipeline | `vacancy_events.event_type` |
 | No `position` field on entity | Officeholder role at event time | `vacancy_events.position` |
 
-## 2. Fields Missing for Statutory Basis Layer
+## 2. Fields missing for the statutory basis layer
 
 | Gap | SQLite resolution |
 |-----|-------------------|
-| `constitutional_basis` / `statutory_basis` are flat strings | `statutory_basis_records` normalized table |
+| `constitutional_basis` and `statutory_basis` are flat strings | `statutory_basis_records` normalized table |
 | `amendment_history` list not queryable | JSON in `entity_json` + optional `statutory_basis_records` |
 | Relationship `statutory_basis` absent in rel schema | `relationships.statutory_basis` TEXT column |
 | No citation URL per basis | `statutory_basis_records.source_url` |
 
-## 3. Fields Missing for Jurisdictional Scope
+## 3. Fields missing for jurisdictional scope
 
 | Gap | SQLite resolution |
 |-----|-------------------|
 | `jurisdiction_scope` nested object | `jurisdictional_scope` normalized table |
-| `states_covered` / `uts_covered` not filterable | `jurisdictional_scope.states_covered_json`, `uts_covered_json` |
+| `states_covered` and `uts_covered` not filterable | `jurisdictional_scope.states_covered_json`, `uts_covered_json` |
 | `jurisdiction_types` list | `jurisdictional_scope.jurisdiction_types_json` |
 | `level_of_government` on entity | `entities.level_of_government` column |
 
-## 4. Naming Inconsistencies
+## 4. Naming inconsistencies
 
 | Location | Issue | Lock decision |
 |----------|-------|---------------|
-| `jem/data/schema/entity_schema.yaml` v0.1.0 vs root v1.3.0 | Duplicate, divergent | Root `entity_schema.yaml` is canonical |
-| graph `relationship_category` vs schema `relationship_type` | Both exist | Store both; `relationship_type` is enum value |
+| `jem/data/schema/entity_schema.yaml` v0.1.0 vs root v1.3.0 | Duplicate and divergent | Root `entity_schema.yaml` is canonical |
+| graph `relationship_category` vs schema `relationship_type` | Both exist | Store both. `relationship_type` is the enum value. |
 | YAML `data_quality_notes` vs graph | Present in graph | `entities.data_quality_notes` |
 | `derived` object in graph | Auto-computed scores | JSON in `entities.entity_json` key `derived` |
 
-## 5. graph.json Migration Problems
+## 5. graph.json migration problems
 
 | Issue | Mitigation |
 |-------|------------|
@@ -54,7 +54,7 @@
 | Some relationship endpoints may reference missing entities | `validate_db.py` FK check; build logs warnings |
 | `_detail` internal field | Store in `entity_json`, not indexed |
 
-## 6. SQLite Table Definitions
+## 6. SQLite table definitions
 
 ### schema_version
 
@@ -224,9 +224,9 @@
 | idx_staging_status | staging_records(status) |
 | idx_vacancy_events_entity | vacancy_events(entity_id) |
 
-## 8. Schema Version
+## 8. Schema version
 
-Current locked version: **2**
+Current locked version: 2
 
 ### v2 additions (community corrections + auth)
 
@@ -280,7 +280,7 @@ Current locked version: **2**
 | created_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
 | PRIMARY KEY | (user_id, proposal_id) | |
 
-#### mcp_tokens (Phase 2 — expert MCP bearer tokens)
+#### mcp_tokens (Phase 2, expert MCP bearer tokens)
 
 | Column | Type | Constraints |
 |--------|------|-------------|
@@ -292,7 +292,7 @@ Current locked version: **2**
 | revoked_at | TEXT | |
 | created_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
 
-#### insight_requests (v3 — smart-search telemetry)
+#### insight_requests (v3, smart-search telemetry)
 
 | Column | Type | Constraints |
 |--------|------|-------------|
@@ -304,4 +304,4 @@ Current locked version: **2**
 | first_requested_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
 | last_requested_at | TEXT | NOT NULL DEFAULT (datetime('now')) |
 
-Cap: retain at most **1000** distinct `insight_id` rows; prune oldest by `last_requested_at` on insert.
+Cap: retain at most 1000 distinct `insight_id` rows. Prune the oldest by `last_requested_at` on insert.

@@ -1,16 +1,16 @@
-# JEM v2.0 — Data model additions
+# JEM v2.0 data model additions
 
 License: CC0
 
-This document records schema and UI fields introduced for **v2.0** that were not in the original v1 checklist (Canvas renderer, NJDG live fetch, major litigants, etc.).
+This document records the schema and UI fields introduced for v2.0 that were not in the original v1 checklist, such as the Canvas renderer, NJDG live fetch, and major litigants.
 
 ## 1. High Court permanent benches
 
 ### Entity type: `HighCourtBench`
 
-Permanent benches of a High Court (e.g. Madurai Bench of Madras HC) are **not** district courts and **not** the consolidated `hc_*` node alone.
+Permanent benches of a High Court, such as the Madurai Bench of Madras HC, are neither district courts nor the consolidated `hc_*` node alone.
 
-**Map rendering:** `HighCourtBench` nodes use a **crescent** shape (not a full circle) so they are visually distinct from principal `hc_*` circles and district courts. See `jem/web/src/nodeShapes.js`.
+Map rendering: `HighCourtBench` nodes use a crescent shape rather than a full circle, so they stay visually distinct from principal `hc_*` circles and from district courts. See `jem/web/src/nodeShapes.js`.
 
 | Field | Purpose |
 |--------|---------|
@@ -21,13 +21,13 @@ Permanent benches of a High Court (e.g. Madurai Bench of Madras HC) are **not** 
 
 ### Relationship: `BenchOf`
 
-- **Source:** bench entity  
-- **Target:** parent `hc_*`  
-- **Category:** `statutory_ref`
+- Source: the bench entity  
+- Target: the parent `hc_*`  
+- Category: `statutory_ref`
 
 ### District routing
 
-Where a state pack lists explicit districts, appellate and supervision edges may target a **bench** instead of the parent HC when configured in `jem/scripts/hc_benches_config.py` (TN Madurai bench, MH Nagpur/Aurangabad, KA Dharwad, etc.). Principal-seat districts continue to use `hc_*` directly.
+Where a state pack lists explicit districts, appellate and supervision edges may target a bench instead of the parent HC, when that is configured in `jem/scripts/hc_benches_config.py`. Examples include the TN Madurai bench, MH Nagpur and Aurangabad, and KA Dharwad. Principal-seat districts continue to use `hc_*` directly.
 
 ### Generator
 
@@ -45,26 +45,26 @@ Bench YAML is written under `jem/data/entities/_generated/high_courts/benches/`.
 
 ### Block: `judge_strength`
 
-Required on all **court** and **court-like** entities in v2.0 data passes.
+Required on all court and court-like entities in v2.0 data passes.
 
 | Field | Meaning |
 |--------|---------|
-| `allotted` | Sanctioned posts (DoJ / NJDG “sanctioned strength”) |
+| `allotted` | Sanctioned posts (DoJ / NJDG "sanctioned strength") |
 | `appointed` | Working judges actually in post |
 | `vacancy_count` | Optional; may be derived as `allotted − appointed` |
 | `data_as_of` | ISO date of snapshot |
 | `source_type` | `DoJ_Report`, `NJDG_Snapshot`, `HC_Report`, etc. |
 | `source_url` | Primary URL |
 
-**Legacy:** `case_volume.sanctioned_strength` / `working_strength` remain valid; the detail panel prefers `judge_strength` and falls back to `case_volume` for display.
+Legacy note: `case_volume.sanctioned_strength` and `working_strength` remain valid. The detail panel prefers `judge_strength` and falls back to `case_volume` for display.
 
 ### UI
 
-The Level 3 detail panel always shows a **Judge strength** section for court-like types, with “Not yet recorded” when values are null.
+The Level 3 detail panel always shows a Judge strength section for court-like types, with "Not yet recorded" when values are null.
 
 ### Validation
 
-`JudgeStrengthModel` in `jem/scripts/validate.py`; optional fields may be null in partial data.
+`JudgeStrengthModel` in `jem/scripts/validate.py`. Optional fields may be null in partial data.
 
 ---
 

@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         JEM does not resolve disputes by opinion. Maintainers will set `data_quality: contested` and cite **both** positions.
-        Consider opening a [Dispute discussion](https://github.com/dso6060/jem/discussions) first.
+        Consider opening a [Dispute discussion](https://github.com/datastiltskin/jem/discussions) first.
 
   - type: input
     id: entity_id

@@ -24,6 +24,6 @@ data_quality_notes: >
 
 sources:
   - label: Consumer Protection Act 2019
-    url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+    url: https://consumeraffairs.gov.in/pages/consumer-protection-acts
     type: CentralAct
     accessed_date: "2026-05-19"

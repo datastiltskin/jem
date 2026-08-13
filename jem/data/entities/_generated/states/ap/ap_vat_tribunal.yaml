@@ -24,7 +24,7 @@ data_quality_notes: Post-GST legacy docket where applicable; HC writ/appeal wire
   judge_strength stub attached
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-06-15'
 judge_strength:

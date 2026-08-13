@@ -16,10 +16,43 @@ import sys
 import os
 import json
 import argparse
+import subprocess
 import yaml
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
+
+_SCRIPT_DIR = Path(__file__).parent
+if str(_SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPT_DIR))
+from derive import is_scores_excluded
+
+
+def resolve_release_version(cli_version: Optional[str] = None) -> str:
+    """Resolve semver string for graph.json meta.version.
+
+    Priority: --version CLI > RELEASE_VERSION env > exact git tag > 'dev'.
+    Strips a leading 'v' so tags like v1.0.0 become 1.0.0 in meta.
+    """
+    if cli_version:
+        return cli_version.lstrip("v")
+
+    env_version = os.environ.get("RELEASE_VERSION")
+    if env_version:
+        return env_version.lstrip("v")
+
+    try:
+        tag = subprocess.check_output(
+            ["git", "describe", "--tags", "--exact-match"],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+        if tag:
+            return tag.lstrip("v")
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
+
+    return os.environ.get("JEM_DEV_VERSION", "dev")
 
 # ── Layout Engine ─────────────────────────────────────────────────────────────
 # Level 0: fixed 4×4 cluster grid (see CLUSTER_GRID).
@@ -287,8 +320,15 @@ TIMELINE_EVENTS = [
 def compute_impact_metrics(entities: List[Dict], scores: Dict[str, Dict]) -> Dict:
     # Exclude placeholder nodes that exist only to render relationship endpoints.
     real_entities = [e for e in entities if not e.get("_placeholder")]
-    high_ir = sum(1 for eid, s in scores.items()
-                  if s.get('independence_risk_level') in ('high', 'severe'))
+    entity_by_id = {e.get("id"): e for e in real_entities if e.get("id")}
+    eligible_ids = {
+        eid for eid, ent in entity_by_id.items() if not is_scores_excluded(ent)
+    }
+    high_ir = sum(
+        1 for eid, s in scores.items()
+        if eid in eligible_ids
+        and s.get('independence_risk_level') in ('high', 'severe')
+    )
 
     # Appointer == funder == removal authority
     appointer_funder_same = 0
@@ -386,7 +426,12 @@ def add_placeholder_entities_for_relationships(entities: List[Dict], relationshi
 
 # ── Main Build ────────────────────────────────────────────────────────────────
 
-def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False):
+def build_graph_json(
+    data_dir: Path,
+    output_path: Path,
+    no_derive: bool = False,
+    release_version: Optional[str] = None,
+):
     print("\nJEM Build")
     print(f"{'='*50}")
 
@@ -649,10 +694,11 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
     print("\nStep 11: Building browse index...")
     browse_index = compute_browse_index(frontend_entities)
 
-    print("\nStep 12: Assembling final graph.json...")
+    version = resolve_release_version(release_version)
+    print(f"\nStep 12: Assembling final graph.json (release {version})...")
     graph = {
         "meta": {
-            "version": "1.0.0",
+            "version": version,
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "entity_count": len(frontend_entities),
             "relationship_count": len(frontend_relationships),
@@ -721,6 +767,8 @@ if __name__ == "__main__":
                         help="Output path for graph.json (default: <repo>/graph.json)")
     parser.add_argument("--no-derive", action="store_true",
                         help="Skip re-running derive.py (use existing scores)")
+    parser.add_argument("--version", type=str, default=None,
+                        help="Release version for meta.version (default: git tag or RELEASE_VERSION)")
     args = parser.parse_args()
 
     script_dir = Path(__file__).parent
@@ -732,4 +780,9 @@ if __name__ == "__main__":
         # Repo root: …/<repository>/graph.json when this script lives in …/<repository>/jem/scripts/
         output_path = script_dir.parent.parent / "graph.json"
 
-    build_graph_json(data_dir, output_path, no_derive=args.no_derive)
+    build_graph_json(
+        data_dir,
+        output_path,
+        no_derive=args.no_derive,
+        release_version=args.version,
+    )

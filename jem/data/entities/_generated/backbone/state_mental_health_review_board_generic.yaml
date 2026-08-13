@@ -49,7 +49,7 @@ data_quality_notes: 'Generic scaffold. Board composition per s.73: district judg
   district boards. Appeal from MHRB order lies to High Court under s.83. v1.2 judge_strength stub attached'
 sources:
 - label: Mental Healthcare Act 2017 s.73 — India Code
-  url: https://www.india-code.nic.in/CodeofActs/2017/2017_10.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/2249/1/A2017-10.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 judge_strength:

@@ -11,7 +11,7 @@
 
 ## Primary sources
 
-<!-- Link every factual change to india-code, gazette, DoJ, NJDG URL, judgment, or official ministry page -->
+<!-- Link every factual change to indiacode, gazette, DoJ, NJDG URL, judgment, or official ministry page -->
 
 | Field changed | Source URL | Accessed date |
 |---------------|------------|---------------|

@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **For designated reviewers only** once onboarded in [`jem/docs/TEAM.md`](../../jem/docs/TEAM.md).
+        **For designated reviewers only** once onboarded by the maintainers.
         Maintainers triage all submissions. This does not constitute legal advice or official endorsement.
 
   - type: input
@@ -72,5 +72,5 @@ body:
     attributes:
       label: Attribution (optional)
       options:
-        - label: OK to list organisation in TEAM.md as reviewer (no endorsement implied)
+        - label: OK to list organisation publicly as reviewer (no endorsement implied)
         - label: Anonymous review preferred

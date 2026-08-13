@@ -16,7 +16,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Employees' State Insurance Act 1948 — India Code
-        url: https://india-code.nic.in/handle/123456789/1581
+        url: https://indiacode.nic.in/handle/123456789/1581
         type: CentralAct
         accessed_date: '2026-06-15'
 
@@ -34,7 +34,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Industrial Disputes Act 1947 s.7 — India Code
-        url: https://india-code.nic.in/handle/123456789/1344
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
         type: CentralAct
         accessed_date: '2026-06-15'
 
@@ -52,6 +52,6 @@ relationships:
     data_quality: partial
     sources:
       - label: Industrial Disputes Act 1947 s.7A — India Code
-        url: https://india-code.nic.in/handle/123456789/1344
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
         type: CentralAct
         accessed_date: '2026-06-15'

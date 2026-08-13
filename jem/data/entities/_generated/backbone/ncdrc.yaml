@@ -50,7 +50,7 @@ structural_gap:
       Prior Critical clog label (0.78 disposal rate, Dec 2024 snapshot) superseded.
       DoCA reported 122% monthly disposal rate for July 2025. Full pending-case
       inventory needs fresh NJDG/e-Jagriti export before reassessing backlog severity.
-    gap_source: Department of Consumer Affairs statement, Aug 2025; consumeraffairs.nic.in
+    gap_source: Department of Consumer Affairs statement, Aug 2025; consumeraffairs.gov.in
     gap_since_year: 2024
     gap_status: Partial_Addressed
     gap_resolution_note: >-
@@ -59,19 +59,19 @@ structural_gap:
       indicators only.
 sources:
 - label: Consumer Protection Act 2019 — India Code
-  url: https://india-code.nic.in/acts-detail/MjMxMzM=
+  url: https://www.indiacode.nic.in/bitstream/123456789/15256/1/eng201935.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: Consumer Protection Act 1986 — India Code (origin statute)
-  url: https://india-code.nic.in/acts-detail/NzQ3
+  url: https://fsd.delhi.gov.in/sites/default/files/2022-09/3.the_consumer_protection_act_1986_rules_1987_18c.p.act.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: Ministry of Consumer Affairs — NCDRC
-  url: https://consumeraffairs.nic.in/ncdrc
+  url: https://ncdrc.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: DoCA — NCDRC 122% monthly disposal, July 2025 (e-Jagriti)
-  url: https://consumeraffairs.nic.in/
+  url: https://consumeraffairs.gov.in/
   type: GoIWebsite
   accessed_date: '2026-06-17'
 - label: PTI/DoCA statement on July 2025 consumer forum disposal rates
@@ -84,7 +84,7 @@ case_volume:
   filed_last_year: null
   disposed_last_year: null
   avg_disposal_days: null
-  source_url: https://consumeraffairs.nic.in/
+  source_url: https://consumeraffairs.gov.in/
   source_type: AnnualReport
   disposal_rate: 1.22
   clog_severity: low

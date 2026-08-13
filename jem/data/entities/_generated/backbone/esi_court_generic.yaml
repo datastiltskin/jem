@@ -69,7 +69,7 @@ data_quality_notes: 'Generic node for approximately 150 ESI Courts designated un
   no single central entity_id applicable). v1.2 judge_strength stub attached'
 sources:
 - label: Employees' State Insurance Act 1948 — ss.74–82
-  url: https://india-code.nic.in/DownloadFile?FileName=A1948-34.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/20349/1/a1948-34.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: ESIC — official website

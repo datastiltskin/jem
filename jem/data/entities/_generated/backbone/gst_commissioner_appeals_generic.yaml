@@ -56,7 +56,7 @@ data_quality_notes: >-
   s.112 (substantial question of law).
 sources:
   - label: CGST Act 2017 — ss.107–108, 112 (India Code)
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: CentralAct
     accessed_date: '2026-06-26'
   - label: CBIC — official portal

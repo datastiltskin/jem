@@ -90,11 +90,11 @@ data_quality: partial
 data_quality_notes: Pending NJDG-backed pendency and judge_strength fields per bench. NJDG snapshot case_volume merged complaint_mechanism populated from SC In-House Procedure 1999 and SC Stay Order Feb 2025 (suo moto). criminal_prosecution.requires_sanction_from set to governor_state per Veeraswami (1991) for HC judges. lokpal_jurisdiction No per operative Feb 2025 stay; revisit if SC decides finally. audit.conduct_oversight_body set to in_house_procedure_sc (same procedure governs HC judges).
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: Supreme Court of India
-  url: https://main.sci.gov.in/
+  url: https://www.sci.gov.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: National Judicial Data Grid (NJDG)

@@ -1,13 +1,13 @@
 # Security policy
 
-JEM is an open structural map (YAML → `graph.json` → web UI) with an optional researcher infrastructure layer (FastAPI, MCP tools, SQLite). There are no user accounts and no secrets in the public dataset.
+JEM is an open structural map (YAML → `graph.json` → web UI) with an optional researcher infrastructure layer of FastAPI, MCP tools, and SQLite. There are no user accounts and no secrets in the public dataset.
 
 **Do not commit:** `jem/data/jem.db`, `jem/.env`, API keys (`ANTHROPIC_API_KEY`), or ephemeral `.claude/outputs/`. Use `jem/.env.example` as a template.
 
 ## Reporting
 
-- **Data integrity / malicious PRs:** [GitHub security advisory](https://github.com/dso6060/jem/security/advisories/new) (private report to maintainers).
-- **Production hosting:** [@dso6060](https://github.com/dso6060) via GitHub — not handled by co-maintainer by default.
+- **Data integrity / malicious PRs:** [GitHub security advisory](https://github.com/datastiltskin/jem/security/advisories/new) (private report to maintainers).
+- **Production hosting:** [@dso6060](https://github.com/dso6060) via GitHub. Co-maintainers do not handle this by default.
 
 ## Scope
 
