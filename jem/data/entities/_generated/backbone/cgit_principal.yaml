@@ -62,7 +62,7 @@ data_quality_notes: 'Aggregate node for CGIT bench lattice. Regional benches: cg
   judge_strength not populated per bench. v1.2 judge_strength stub attached'
 sources:
 - label: Industrial Disputes Act 1947 s.7A — India Code
-  url: https://www.indiacode.nic.in/CodeofActs/1947/1947_14.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: Ministry of Labour and Employment — CGIT

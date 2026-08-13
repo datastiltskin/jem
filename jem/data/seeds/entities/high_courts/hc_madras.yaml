@@ -71,7 +71,7 @@ judge_strength:
   # MAINTAINER: populate from DoJ quarterly vacancy report:
   #   https://doj.gov.in/report-and-committees/judicial-vacancy-reports
   #   Row "Madras" gives allotted (sanctioned) + appointed (working).
-  # Cross-check: https://njdg.ecourts.gov.in/hcnjdg/ → Madras HC
+  # Cross-check: https://njdg.ecourts.gov.in/hcnjdg_v2 → Madras HC
   # NOTE: allotted covers entire HC including all permanent benches.
   # Bench-specific appointed counts in bench YAMLs (subset of this total).
   data_as_of: null
@@ -98,7 +98,7 @@ sources:
     type: GoIWebsite
     accessed_date: '2026-05-13'
   - label: "Supreme Court of India"
-    url: https://main.sci.gov.in/
+    url: https://www.sci.gov.in/
     type: GoIWebsite
     accessed_date: '2026-05-13'
   - label: "DoJ — Judicial Vacancy Reports (quarterly)"
@@ -106,6 +106,6 @@ sources:
     type: GoIWebsite
     accessed_date: '2026-05-18'
   - label: "NJDG — High Court Judge Strength Panel"
-    url: https://njdg.ecourts.gov.in/hcnjdg/
+    url: https://njdg.ecourts.gov.in/hcnjdg_v2
     type: NJDG
     accessed_date: '2026-05-18'

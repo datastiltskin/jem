@@ -21,7 +21,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Companies Act 2013, s.410"
-        url: https://indiacode.nic.in/handle/123456789/2197
+        url: https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -61,7 +61,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "TRAI Act 1997, s.14 (as amended 2000)"
-        url: https://indiacode.nic.in/handle/123456789/1907
+        url: https://www.indiacode.nic.in/bitstream/123456789/1929/1/a199724.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -114,7 +114,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "PFRDA Act 2013, s.36"
-        url: https://indiacode.nic.in/handle/123456789/2126
+        url: https://www.indiacode.nic.in/bitstream/123456789/2117/1/A2013-23.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -152,7 +152,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "RDDBFI Act 1993, s.18"
-        url: https://indiacode.nic.in/handle/123456789/1573
+        url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -171,7 +171,7 @@ relationships:
     notes: ministry_corporate_affairs entity id assumed present in graph; flag if absent.
     sources:
       - label: "Companies Act 2013, s.412(4)"
-        url: https://indiacode.nic.in/handle/123456789/2197
+        url: https://www.indiacode.nic.in/bitstream/123456789/2114/5/A2013-18.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -188,7 +188,7 @@ relationships:
     notes: ministry_communications entity id assumed present in graph; flag if absent.
     sources:
       - label: "TRAI Act 1997, s.15"
-        url: https://indiacode.nic.in/handle/123456789/1907
+        url: https://www.indiacode.nic.in/bitstream/123456789/1929/1/a199724.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -222,7 +222,7 @@ relationships:
     notes: ministry_of_finance entity id assumed present in graph.
     sources:
       - label: "RDDBFI Act 1993, s.6"
-        url: https://indiacode.nic.in/handle/123456789/1573
+        url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -238,7 +238,7 @@ relationships:
     data_quality: partial
     sources:
       - label: "RDDBFI Act 1993, s.10"
-        url: https://indiacode.nic.in/handle/123456789/1573
+        url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -255,7 +255,7 @@ relationships:
     notes: ministry_railways entity id assumed present in graph; flag if absent.
     sources:
       - label: "Railway Claims Tribunal Act 1987, s.3"
-        url: https://indiacode.nic.in/handle/123456789/1877
+        url: https://www.indiacode.nic.in/bitstream/123456789/1771/1/AA1987___54railway.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -272,7 +272,7 @@ relationships:
     notes: TRAI also receives fees; ministry_communications entity id assumed present in graph.
     sources:
       - label: "TRAI Act 1997, s.14A"
-        url: https://indiacode.nic.in/handle/123456789/1907
+        url: https://www.indiacode.nic.in/bitstream/123456789/1929/1/a199724.pdf
         type: CentralAct
         accessed_date: "2025-01-15"
 
@@ -336,6 +336,6 @@ relationships:
     data_quality: partial
     sources:
       - label: "PFRDA Act 2013, s.16"
-        url: https://indiacode.nic.in/handle/123456789/2126
+        url: https://www.indiacode.nic.in/bitstream/123456789/2117/1/A2013-23.pdf
         type: CentralAct
         accessed_date: "2025-01-15"

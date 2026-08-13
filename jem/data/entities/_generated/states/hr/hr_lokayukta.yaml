@@ -22,7 +22,7 @@ complaint_mechanism:
 data_quality: partial
 sources:
 - label: Haryana Lokayukta portal
-  url: https://www.haryana.gov.in/lokayukta
+  url: https://hrlokayukta.gov.in/en
   type: GoIWebsite
   accessed_date: '2026-06-15'
 - label: India Code — Constitution & Acts

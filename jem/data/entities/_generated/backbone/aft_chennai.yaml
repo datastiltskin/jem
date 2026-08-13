@@ -60,7 +60,7 @@ data_quality_notes: 'Territorial jurisdiction per aft.gov.in; southern states an
   v1.2 judge_strength stub attached'
 sources:
 - label: Armed Forces Tribunal Act 2007
-  url: https://www.indiacode.nic.in/CodeofActs/2007/2007_55.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/2077/1/A2007-55.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: AFT official website

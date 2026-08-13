@@ -17,7 +17,7 @@ relationships:
     data_quality: partial
     sources:
       - label: RDDBFI Act 1993 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1993/1993_51.pdf
+        url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -33,7 +33,7 @@ relationships:
     data_quality: partial
     sources:
       - label: RDDBFI Act 1993 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1993/1993_51.pdf
+        url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -49,7 +49,7 @@ relationships:
     data_quality: partial
     sources:
       - label: RDDBFI Act 1993 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1993/1993_51.pdf
+        url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -65,7 +65,7 @@ relationships:
     data_quality: partial
     sources:
       - label: RDDBFI Act 1993 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1993/1993_51.pdf
+        url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -81,7 +81,7 @@ relationships:
     data_quality: partial
     sources:
       - label: RDDBFI Act 1993 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1993/1993_51.pdf
+        url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -104,7 +104,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Income Tax Act 1961 s.253 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1961/1961_43.pdf
+        url: https://www.incometaxindia.gov.in/income-tax-act
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -122,7 +122,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Income Tax Act 1961 s.144C — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1961/1961_43.pdf
+        url: https://www.incometaxindia.gov.in/income-tax-act
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -142,7 +142,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Income Tax Act 1961 s.245W — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1961/1961_43.pdf
+        url: https://www.incometaxindia.gov.in/income-tax-act
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -158,7 +158,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.28F — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -178,7 +178,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Industrial Disputes Act 1947 s.7A — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1947/1947_14.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -194,7 +194,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Industrial Disputes Act 1947 s.7A — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1947/1947_14.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -210,7 +210,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Industrial Disputes Act 1947 s.7A — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1947/1947_14.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -226,7 +226,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Industrial Disputes Act 1947 s.7A — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1947/1947_14.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -242,7 +242,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Industrial Disputes Act 1947 s.7A — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1947/1947_14.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -258,7 +258,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Industrial Disputes Act 1947 s.7A — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1947/1947_14.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/20352/1/the_industrial_disputes_act.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -279,7 +279,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -295,7 +295,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -311,7 +311,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -327,7 +327,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -343,7 +343,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -359,7 +359,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -375,7 +375,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -394,7 +394,7 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'
 
@@ -411,6 +411,6 @@ relationships:
     data_quality: partial
     sources:
       - label: Customs Act 1962 s.130 — India Code
-        url: https://www.indiacode.nic.in/CodeofActs/1962/1962_52.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
         type: CentralAct
         accessed_date: '2026-06-12'

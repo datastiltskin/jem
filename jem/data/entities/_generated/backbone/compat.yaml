@@ -49,11 +49,11 @@ data_quality_notes: 'COMPAT was operational from 15 May 2009 (date Chairperson a
   stub attached'
 sources:
 - label: Competition Act 2002 (§§ 53A–53U, as amended)
-  url: https://indiacode.nic.in/CodeSection.aspx?actcode=A200312
+  url: https://www.indiacode.nic.in/bitstream/123456789/2010/7/A2003-12.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Finance Act 2017 (§ 172 — COMPAT abolition provisions)
-  url: https://indiacode.nic.in/CodeSection.aspx?actcode=A201707
+  url: https://haryanaindustries.com/act/Central%20Acts/Finance%20Act,%202017.pdf
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Competition Commission of India — history page
