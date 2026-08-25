@@ -3,6 +3,10 @@
 this wires the interfaces so the flow is runnable end to end as they land.
 
     python3 scripts/run_pipeline.py <run_id> <url> [<url> ...]
+
+NOTE: the ACTIVE scraper is scripts/llm_scrape.py — one Claude call (server-side
+web_fetch/web_search) replaces stages 1-5, with pipeline/stage6_gate as the backstop.
+This deterministic multi-stage flow is superseded and its middle stages remain stubs.
 """
 from __future__ import annotations
 import sys, argparse

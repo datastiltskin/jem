@@ -1,0 +1,26 @@
+id: hc_madras
+name: Madras High Court
+type: HighCourtBench
+cluster: constitutional_courts
+level_of_government: State
+created_year: 1861
+operational_status: Active
+data_quality: verified
+judge_strength:
+  allotted: 75
+  appointed: 52
+  vacancy_count: 23
+  source_type: DoJ_Report
+  source_url: https://www.doj.gov.in/static/uploads/2026/05/c0f593db7c35d425c94883b9a4afb139.pdf
+  data_as_of: '2026-05-01'
+sources:
+- label: 'DoJ: Sanctioned/working strength & vacancies of Judges, SC and High Courts
+    (as on 01.05.2026)'
+  url: https://www.doj.gov.in/static/uploads/2026/05/c0f593db7c35d425c94883b9a4afb139.pdf
+  type: OfficialReport
+  accessed_date: '2026-08-05'
+- label: 'Supreme Court of India — History: Evolution of Judiciary (India High Courts
+    Act 1861 creating High Courts)'
+  url: https://main.sci.gov.in/pdf/Museum/m2.pdf
+  type: OfficialReport
+  accessed_date: '2026-08-05'

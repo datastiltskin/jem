@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Weekly full-roster scrape+verify sweep. Load with:
+       launchctl load jem/scripts/com.jem.batch-scrape.plist
+     Linux/VPS crontab equivalent (Sundays 02:00):
+       0 2 * * 0 /Users/prajna/Desktop/personal/projects/software/jem_prototype/jem/scripts/run_batch_scrape.sh >> /Users/prajna/Desktop/personal/projects/software/jem_prototype/jem/.claude/outputs/batch_cron.log 2>&1
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jem.batch-scrape</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/prajna/Desktop/personal/projects/software/jem_prototype/jem/scripts/run_batch_scrape.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key>
+    <integer>0</integer>
+    <key>Hour</key>
+    <integer>2</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/prajna/Desktop/personal/projects/software/jem_prototype/jem/.claude/outputs/batch_cron.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/prajna/Desktop/personal/projects/software/jem_prototype/jem/.claude/outputs/batch_cron.log</string>
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
