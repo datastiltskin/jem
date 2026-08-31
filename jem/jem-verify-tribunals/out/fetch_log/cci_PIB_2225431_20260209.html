@@ -1,0 +1,999 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Press Release Page | Press Information Bureau
+</title><link href="css/style.css" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="alternate stylesheet" href="css/change.css" media="screen" title="change" /><link rel="alternate stylesheet" href="css/green.css" media="screen" title="green" /><link rel="alternate stylesheet" href="css/yellow.css" media="screen" title="yellow" /><link rel="stylesheet" type="text/css" href="css/prtint.css" media="print" /><link rel="stylesheet" href="css/style3.1.css" type="text/css" />
+
+
+      <script src="js/jquery.min.js" type="text/javascript"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" /><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+
+      <script type="text/javascript">
+            $(document).ready(function () {
+                  function getParameterByName(name) {
+                        var url = window.location.href;
+                        name = name.replace(/[\[\]]/g, '\\$&');
+                        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                              results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                  }
+                  // Get the IDs from the current page's URL
+                  let prid = parseInt(getParameterByName('PRID'), 10);
+
+                  if (!isNaN(prid) && prid > 0) {
+                        $.ajax({
+                              type: "POST",
+                              url: "AjaxMethod.aspx/UpdatePRHitCount",
+                              async: false,
+                              data: JSON.stringify({ 'PermId': prid }),
+                              contentType: "application/json; charset=utf-8",
+                              dataType: "json",
+                              success: function (response) {
+                                    console.log(response);
+                              },
+                              error: function (error) {
+                                    console.log("Error in AJAX request", error);
+                              }
+                        });
+                  } else {
+                        console.log("Invalid parameters:", prid);
+                  }
+
+            });
+      </script>
+      <style type="text/css">
+            .table-responsive {
+                  width: 100%;
+                  overflow-x: auto;
+            }
+
+            .banner {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  background-color: #000;
+                  color: #fff;
+                  padding: 20px;
+            }
+
+            full-width {
+                  width: 100%;
+            }
+
+            .logo-left, .logo-center, .countdown {
+                  display: flex;
+                  align-items: center;
+            }
+
+                  .logo-left img, .logo-center img {
+                        height: 70px;
+                  }
+
+            .countdown {
+                  text-align: center;
+                  background-color: #444;
+                  border-radius: 10px;
+                  padding: 10px;
+                  border: 2px solid grey;
+            }
+
+            .firstnumber {
+                  color: #000000;
+                  position: absolute;
+                  top: 50px;
+                  right: 90px;
+                  font-size: 30px;
+            }
+
+            .secondnumber {
+                  position: absolute;
+                  color: #000000;
+                  right: 45px;
+                  top: 50px;
+                  font-size: 30px;
+            }
+
+            .countdown .days {
+                  font-size: 35px;
+                  color: gold;
+            }
+
+            .countdown p {
+                  margin: 0;
+            }
+
+            .countdown .text {
+                  font-size: 16px;
+            }
+
+            a {
+                  word-break: break-all;
+            }
+
+            iframe, img {
+                  max-width: 100%;
+            }
+
+            @media(max-width:1199px) {
+                  .firstnumber {
+                        top: 40px;
+                        right: 72px;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 35px;
+                        top: 40px;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:990px) {
+                  .firstnumber {
+                        top: 25px;
+                        right: 54px;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 25px;
+                        top: 25px;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:768px) {
+                  .countdown, .days {
+                        font-size: 12px !important;
+                  }
+
+
+                  .firstnumber {
+                        top: 25%;
+                        right: 8%;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 4.5%;
+                        top: 25%;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:475px) {
+                  .countdown, .days {
+                        font-size: 10px !important;
+                        top: 20%;
+                  }
+
+                  .bannerimgdiv {
+                        padding: 0 !important;
+                  }
+
+                  .bannerimg {
+                        width: 108% !important;
+                  }
+            }
+      </style>
+      <script type="text/javascript">
+            $(function () {
+                  $("[id*=printPDF]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+            $(function () {
+                  $("[id*=printPDFEvent]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+      </script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112591026-1"></script>
+      <script>
+
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() { dataLayer.push(arguments); }
+
+            gtag('js', new Date());
+
+
+
+            gtag('config', 'UA-112591026-1');
+
+      </script>
+
+<meta property="og:title" content="CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&amp;A) filings in 2025" /><meta property="og:url" content="www.pib.gov.in/Pressreleaseshare.aspx?PRID=2225431" /><meta property="og:description" content="The Ministry of Corporate Affairs has taken the following steps with regards to the Competition Law " /><meta property="og:image" content="https:/pib.gov.in/images/indian-emblem.png" />
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="C4E7H-KSCMC-422L4-W3EM5-U36MF",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"C4E7H-KSCMC-422L4-W3EM5-U36MF";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="nllzbbaxhx3ys2uvqgca-f-06c725eb5-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1825201","ak.ai":parseInt("1215205",10),"ak.ol":"0","ak.cr":26,"ak.ipv":4,"ak.proto":"h2","ak.rid":"150a6d99","ak.r":39601,"ak.a2":n,"ak.m":"dscb","ak.n":"ff","ak.cport":16533,"ak.gh":"23.61.247.206","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1788182916","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==QNpxXH2V/+QuBMtgv/twCQ85yaASbgMSlfoM3uPotaAuii5faSXLbZetcSu+l7M2baaejyFn9ikM0EQxLJqcv+LwHg3LYEhtO8T9GZeVrtrEtC/VZw9uQ0uGCrDl+r9Hi5Z1Q5/bAMH13ONyc1pFUiFeNRh/dL0D3JtjgVEzN7igb6Zmdp2BsWQa+L+PtwwGLzUxI2pP+oyCyzdHDRMNN98FfMktjr9sqbaxtagNPjMI2ogvazDYNYVB+TMYm7tSQVFLAghznCXeLwc3abTjvUu5iBFPUNHas/ZDXIpkOuvsUBTt4LCX2nTj9ou00ototShQGNTovw+GdAOuhx2o6wlKL6QF1QScBBQqwa7D2I7LBchV+J64v1k7o6veJZX74pY5GBe67ste1ONERa056d9LNrmZfbC2ihyVGp+HjC0=","ak.pv":"9","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+      <form method="post" action="./PressReleasePage.aspx?PRID=2225431&amp;reg=48&amp;lang=2" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="sc_HiddenField" id="sc_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=b94hX14NMWluUQ9a73g0LYFvtKhY52TK8cbDkYB_F2GuPre4tdh-ebiiI4xuhXnRu6Q5dQjaQA4oN3PEeL0GrtKEyEY1&amp;t=638942408819057530" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=YwOa_0w_u3oCLFqmIIOf-XEz4GWZ1DuyQIpxIA4LVkywj39sZSps12NbK5wNl5XN9JF3m7d-ey7BFDgj6i0380qRQ5IMWCL54sYNVU1IjMmiOWpp0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=_shmykYI80CxCNR43Ii1nLy9PBGhuSe6SPp3CEYu0wDEuLqDAuIcsXVNhTIgQn0iyiwPorMflXuK31FftDX9GnB0m366MCEoOmY-eKQ3YAO9xRL0gIigzgRbtbVOgSQkJbJpFg2&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/PressReleasePage.aspx?_TSM_HiddenField_=sc_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.7.123%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a5a4df314-b4a2-4da2-a207-9284f1b1e96c%3ade1feab2%3af2c8e708%3a720a52bf%3af9cec9bc%3a589eaa30%3aa67c2700%3aab09e3fe%3a87104b7c%3a8613aea7%3a3202a5a2%3abe6fb298" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="59B53027" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="gFiYpdzj4ToSOsmq/MhRNUyNC96OZ6dwbWc38bachLpURGsYt15SU2r2mRTR3BsFZhD+1puCBxjKqnclmycA57/z/JHwP6iFh0EPYp5PWyMRprdxEg6PS3nHnEjSSSId51xgI+Uqh3cQ0zeDRHRIfB2tb2r57awyWqINoZZB+GIcXjpP4IGe2v5ZH3PNSQR9e2xUxNlVzHkl+FxHzIo/zjY+7YLUtG4/0T9UL0YoWs1oep2Pu52EuVxjGNLV23x0ALnPSKf6vICjWgqWTv+HhdOLi9Q53mog/uYaNLUSQTJeDCRl" />
+</div>
+                              
+            <div id="templateCss"></div>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sc', 'form1', ['tupdate12','update12'], [], [], 90, '');
+//]]>
+</script>
+
+            <input type="hidden" name="hfGridHtml" id="hfGridHtml" />
+            <div class="container" style='margin-bottom: 50px;'>
+                  <div id="accessories">
+
+                        
+                        <div class="pull-right" style="display: flex">
+                              <div id="voll"></div>
+                              <div id="vollDT"></div>
+                              
+                              
+<div class="print-icons">
+<input type="image" name="Print1$print" id="Print1_print" aria-label="Print" src="images/printer_icon.png" alt="print page button" style="padding: 5px 10px 5px 10px;" />
+</div>
+                        </div>
+                  </div>
+                  <input type="hidden" name="hydpermid" id="hydpermid" value="2225431" />
+                  
+
+
+
+                  <div class="innner-page-main-about-us-content-right-part">
+
+                        <div id="MinistryName" class="MinistryNameSubhead text-center">
+                              Ministry of Corporate Affairs
+                        </div>
+                        
+                        <div id="lg_g"><div class='log_oo'>  <img src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2021/aug/ph202183101.png' alt='azadi ka amrit mahotsav' /> </div></div>
+
+
+
+
+
+                        <div class="text-center event-heading-background">
+                              
+                              <h2 id="Titleh2">
+                                    CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&A) filings in 2025
+                              </h2>
+                              <h3 id="Subtitleh3">
+                                    <span id="ltrSubtitle"></span>
+                              </h3>
+                        </div>
+
+                        <div id="PrDateTime" class="ReleaseDateSubHeaddateTime text-center pt20">
+                              Posted On:
+                09 FEB 2026 4:16PM by PIB Delhi
+                        </div>
+                        
+                        <div class='pt20'>
+                        </div>
+                        <input type="hidden" name="hydphotoUrl" id="hydphotoUrl" />
+                        
+                        <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Ministry of Corporate Affairs has taken the following steps with regards to the Competition Law reforms and amendments in the country.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">During the calendar year 2025, the Competition Commission of India (&lsquo;CCI&rsquo;) registered 54 matters relating to anti-competitive practices/ antitrust and received 149 merger (M&amp;A) filings. The Commission passed final orders in 38 antitrust cases and disposed of 146 merger notices.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">To operationalize recent competition law reforms, the Government of India notified various Rules and Regulations under the Competition (Amendment) Act, 2023 which was passed on 11.04.2023. For penalty determination, the Competition (Amendment) Act, 2023 provided for calculation of penalty based on the global turnover of the person or enterprise. </span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Competition Commission of India has notified the CCI (Determination of Monetary Penalty) Guidelines, 2024, which lay down a detailed methodology for determination of penalty.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">To improve the efficiency, transparency and timeliness of proceedings before the Commission, Competition (Amendment) Act, 2023 introduced forward looking reforms to reduce the time limit for approval of combinations (M&amp;As), from 210 days to 150 days and also introduced settlement and commitment framework in the interests of faster resolution of competition cases.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Further, the Green Channel route incorporated under the Act facilitates expedited approval of combinations through deemed approval upon filing of notice with the CCI, thereby enabling faster resolution of competition cases.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Market Study on AI and Competition was undertaken to understand key AI system and markets/ecosystems including stakeholders, essential inputs/resources, value chains, market structures and competition parameters; examine emerging competition issues; assess AI applications, opportunities, risks and ramification; understand regulatory/ legal frameworks in India and other major jurisdictions; and ascertain the Commission&rsquo;s enforcement and advocacy priorities.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Study identified key competition concerns including concentration in the AI value chain due to high upfront costs and access to data and talent; ecosystem lock-in and switching costs, risks of algorithmic collusion through AI-driven pricing algorithms and automated business decisions; self-preferencing across the AI tech stack and AI-enabled price discrimination through use of consumer data.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">To promote a competitive AI ecosystem in India and protect consumer welfare, the findings include self-audit of AI systems for competition compliance by businesses; improved transparency and reducing of information asymmetry; focused advocacy and capacity building by CCI; continuation of Government policy initiatives; and inter-regulatory coordination and international cooperation.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">This information was given by the Minister of State in the Ministry of Corporate Affairs; and the Minister of State in the Ministry of Road, Transport and Highways, Shri Harsh Malhotra in a written reply to a question in Lok Sabha today.</span></span></p>
+
+<p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *****</span></span></p>
+
+<p style="text-align:justify"><strong><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">NB/ONP</span></span></strong></p>
+
+
+                        
+                        <div id="reel_pic">
+                        </div>
+
+
+
+                        
+                        <br />
+                        <span id="ReleaseId">(Release ID: 2225431)</span>
+                        <span id="lblViews">Visitor Counter : 1691</span>
+                        <div>
+                              
+                        </div>
+                        
+
+                        <span id="lblRefPhoto"></span>
+
+                        <div class="BackgroundRelease">
+                              
+                        </div>
+                        <div>
+                              
+                        </div>
+                        <div class="ReleaseLang">Read this release in: 
+                        
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2225483' target="_blank">
+                                          हिन्दी </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2225595' target="_blank">
+                                          Urdu </a>
+                              
+                        </div>
+
+                        <div class="RelTag">
+                              <ul>
+                                    
+                              </ul>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div id="RelLink" class="RelLink">
+                              <ul>
+                                    
+                                    
+                              </ul>
+                        </div>
+                        <center>
+                              
+                        </center>
+                  </div>
+
+                  <div id="update12">
+	
+                              
+                              <input type="hidden" name="Hidden" id="Hidden" />
+                              <div id="P_CategoryManagement" class="ModalWindow" style="border-width:0px;height:60%;width:60%;overflow:auto;display: none">
+		
+                                    <div>
+                                          <input type="image" name="btnClose" id="btnClose" src="images/close_flat_icon.png" />
+                                    </div>
+                                    <div id="description">
+                                    </div>
+                                    <div class="text-center">
+                                          <h2>
+                                                
+                                                <br>
+                                                
+                                          </h2>
+                                    </div>
+                                    <br />
+                                    <div class="clear">
+                                    </div>
+                                    
+                              
+	</div>
+                        
+</div>
+            </div>
+            
+            <div id="PdfDiv" style="display: none;">
+                  <table width="100%">
+                        <tr>
+                              <td style="font-weight: 200; text-align: center">
+                                    Ministry of Corporate Affairs
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                                          CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&A) filings in 2025
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                                          
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="text-align: center; font-size: 14px;">
+                                          Posted On:
+                        09 FEB 2026 4:16PM by PIB Delhi
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: left; font-size: 16px;">
+                                          <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Ministry of Corporate Affairs has taken the following steps with regards to the Competition Law reforms and amendments in the country.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">During the calendar year 2025, the Competition Commission of India (&lsquo;CCI&rsquo;) registered 54 matters relating to anti-competitive practices/ antitrust and received 149 merger (M&amp;A) filings. The Commission passed final orders in 38 antitrust cases and disposed of 146 merger notices.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">To operationalize recent competition law reforms, the Government of India notified various Rules and Regulations under the Competition (Amendment) Act, 2023 which was passed on 11.04.2023. For penalty determination, the Competition (Amendment) Act, 2023 provided for calculation of penalty based on the global turnover of the person or enterprise. </span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Competition Commission of India has notified the CCI (Determination of Monetary Penalty) Guidelines, 2024, which lay down a detailed methodology for determination of penalty.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">To improve the efficiency, transparency and timeliness of proceedings before the Commission, Competition (Amendment) Act, 2023 introduced forward looking reforms to reduce the time limit for approval of combinations (M&amp;As), from 210 days to 150 days and also introduced settlement and commitment framework in the interests of faster resolution of competition cases.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Further, the Green Channel route incorporated under the Act facilitates expedited approval of combinations through deemed approval upon filing of notice with the CCI, thereby enabling faster resolution of competition cases.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Market Study on AI and Competition was undertaken to understand key AI system and markets/ecosystems including stakeholders, essential inputs/resources, value chains, market structures and competition parameters; examine emerging competition issues; assess AI applications, opportunities, risks and ramification; understand regulatory/ legal frameworks in India and other major jurisdictions; and ascertain the Commission&rsquo;s enforcement and advocacy priorities.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Study identified key competition concerns including concentration in the AI value chain due to high upfront costs and access to data and talent; ecosystem lock-in and switching costs, risks of algorithmic collusion through AI-driven pricing algorithms and automated business decisions; self-preferencing across the AI tech stack and AI-enabled price discrimination through use of consumer data.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">To promote a competitive AI ecosystem in India and protect consumer welfare, the findings include self-audit of AI systems for competition compliance by businesses; improved transparency and reducing of information asymmetry; focused advocacy and capacity building by CCI; continuation of Government policy initiatives; and inter-regulatory coordination and international cooperation.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">This information was given by the Minister of State in the Ministry of Corporate Affairs; and the Minister of State in the Ministry of Road, Transport and Highways, Shri Harsh Malhotra in a written reply to a question in Lok Sabha today.</span></span></p>
+
+<p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *****</span></span></p>
+
+<p style="text-align:justify"><strong><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">NB/ONP</span></span></strong></p>
+
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 100; text-align: left; font-size: 16px;">
+                                          (Release ID: 2225431)
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td style="font-weight: 200; text-align: center; font-size: 24px;"></td>
+                        </tr>
+                  </table>
+            </div>
+            <div class="clearfix">
+            </div>
+
+            
+
+            <div class="section1">
+                  <div id="frst_t">
+                        <div id="arr_rm"><div class='sticky-social_mb'><ul class='social_mb'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431' target='_blank'><li class='fb_b'   ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/facebook.jpg' alt='Share on facebook'  width='40' /></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431&text=CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&A) filings in 2025' target='_blank'><li class='twitter_r'  ><img  src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2023/aug/ph2023818240601.jpg' alt='Share on twitter' width='40' /> </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431' target='_blank'><li class='whatsapp_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/whatsapp1.png' alt='Share on whatsapp' width='40' /></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&A) filings in 2025&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/email1.png' alt='Share on email'  width='40' /></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431&title=CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&A) filings in 2025&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/linkedin.png' alt='Share on linkedin' width='40' /></li></a></ul></div></div>
+                  </div>
+                  <div id="second_t">
+                        <div id="sndr_rm"><div class='sticky-social'><ul class='social'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431' target='_blank'><li class='fb_b'   ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/facebook.jpg' alt='Share on facebook'  width='35' /></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431&text=CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&A) filings in 2025' target='_blank'><li class='twitter_r'  ><img  src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2023/aug/ph2023818240601.jpg' alt='Share on twitter' width='35' /> </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431' target='_blank'><li class='whatsapp_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/whatsapp1.png' alt='Share on whatsapp' width='35' /></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&A) filings in 2025&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/email1.png' alt='Share on email'  width='35' /></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2225431&title=CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&A) filings in 2025&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/linkedin.png' alt='Share on linkedin' width='35' /></li></a></ul></div></div>
+                  </div>
+            </div>
+            <input type="hidden" name="ltrTitlee" id="ltrTitlee" value="CCI registered 54 cases of anti-competitive practices/ antitrust, received 149 merger (M&amp;A) filings in 2025" />
+            <input type="hidden" name="ltrSubtitlee" id="ltrSubtitlee" />
+            <input type="hidden" name="ltrDescriptionn" id="ltrDescriptionn" value="&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>The Ministry of Corporate Affairs has taken the following steps with regards to the Competition Law reforms and amendments in the country.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>During the calendar year 2025, the Competition Commission of India (&amp;lsquo;CCI&amp;rsquo;) registered 54 matters relating to anti-competitive practices/ antitrust and received 149 merger (M&amp;amp;A) filings. The Commission passed final orders in 38 antitrust cases and disposed of 146 merger notices.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>To operationalize recent competition law reforms, the Government of India notified various Rules and Regulations under the Competition (Amendment) Act, 2023 which was passed on 11.04.2023. For penalty determination, the Competition (Amendment) Act, 2023 provided for calculation of penalty based on the global turnover of the person or enterprise. &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>The Competition Commission of India has notified the CCI (Determination of Monetary Penalty) Guidelines, 2024, which lay down a detailed methodology for determination of penalty.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>To improve the efficiency, transparency and timeliness of proceedings before the Commission, Competition (Amendment) Act, 2023 introduced forward looking reforms to reduce the time limit for approval of combinations (M&amp;amp;As), from 210 days to 150 days and also introduced settlement and commitment framework in the interests of faster resolution of competition cases.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Further, the Green Channel route incorporated under the Act facilitates expedited approval of combinations through deemed approval upon filing of notice with the CCI, thereby enabling faster resolution of competition cases.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>The Market Study on AI and Competition was undertaken to understand key AI system and markets/ecosystems including stakeholders, essential inputs/resources, value chains, market structures and competition parameters; examine emerging competition issues; assess AI applications, opportunities, risks and ramification; understand regulatory/ legal frameworks in India and other major jurisdictions; and ascertain the Commission&amp;rsquo;s enforcement and advocacy priorities.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>The Study identified key competition concerns including concentration in the AI value chain due to high upfront costs and access to data and talent; ecosystem lock-in and switching costs, risks of algorithmic collusion through AI-driven pricing algorithms and automated business decisions; self-preferencing across the AI tech stack and AI-enabled price discrimination through use of consumer data.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>To promote a competitive AI ecosystem in India and protect consumer welfare, the findings include self-audit of AI systems for competition compliance by businesses; improved transparency and reducing of information asymmetry; focused advocacy and capacity building by CCI; continuation of Government policy initiatives; and inter-regulatory coordination and international cooperation.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>This information was given by the Minister of State in the Ministry of Corporate Affairs; and the Minister of State in the Ministry of Road, Transport and Highways, Shri Harsh Malhotra in a written reply to a question in Lok Sabha today.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; *****&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;strong>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>NB/ONP&lt;/span>&lt;/span>&lt;/strong>&lt;/p>
+" />
+            <script type="text/javascript">
+                  var mPlayer = document.getElementById("background_music");
+                  var mPlayAction = document.getElementById("playbutton");
+
+                  var isPlaying = false;
+
+                  function playAudio() {
+                        mPlayer.play();
+                        isPlaying = true;
+                        document.getElementById('stopA').style.display = "block";
+                        document.getElementById('playA').style.display = "none";
+                  }
+
+                  function pauseAudio() {
+                        mPlayer.pause();
+                        isPlaying = false;
+                        document.getElementById('playA').style.display = "block";
+                        document.getElementById('stopA').style.display = "none";
+                  }
+                  //function HandleAudio() {
+                  //    if (isPlaying == true) {
+                  //        //Playing already Pause it
+                  //        pauseAudio();
+                  //    } else {
+                  //        //Play the music
+                  //        playAudio();
+                  //    }
+                  //}
+            </script>
+            <script type="text/javascript">
+                  var synth = window.speechSynthesis;
+
+            
+                  function CleanHtml(html) {
+
+                        html = html.replace(/<script[\s\S]*?<\/script>/gi, '');
+
+                        return html;
+                  }
+                  function stripHtml(html) {
+                        let tmp = document.createElement("DIV");
+                        tmp.innerHTML = CleanHtml(html);
+                        return tmp.textContent || tmp.innerText || "";
+                  }
+            </script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        //for responsive tables
+                        $("table").each(function () {
+                              if (!$(this).closest(".table-responsive").length) {
+                                    $(this).wrap("<div class='table-responsive'></div>");
+                              }
+                        });
+
+                        var width = $(window).width();
+                        if (width < 768) {
+
+                              // Extra Small Device
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                              // Small Device
+
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Medium Device
+
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Large Device
+
+                        }
+                  });
+            </script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        var width = $(window).width();
+                        if (width < 768) {
+
+                              // Extra Small Device
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                              // Small Device
+
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Medium Device
+
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Large Device
+
+                        }
+                  });
+            </script>
+            
+            <style type="text/css">
+                  @media print {
+                        .sticky-social, .sticky-social_mb, .pull-right, #printPDF {
+                              display: none !important;
+                        }
+                  }
+
+                  .f_vl {
+                        padding-right: 30px;
+                        font-size: 17px;
+                        cursor: pointer;
+                  }
+
+                  .log_oo {
+                        // width: 20%;
+                        display: flex;
+                        justify-content: space-between;
+                  }
+
+                        .log_oo img {
+                              width: 150px;
+                              /*width: 100%;
+                    height: auto;*/
+                        }
+
+                  .sticky-social_mb {
+                        position: fixed;
+                        bottom: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                        width: 100%;
+                  }
+
+                  .social_mb {
+                        list-style: none;
+                        display: flex;
+                        width: 100%;
+                        margin-bottom: -8px;
+                  }
+
+                        .social_mb a {
+                              padding: 8px 0px;
+                              font-size: 30px;
+                              transition: all 0.8s ease-in-out;
+                              width: 20% !important;
+                              text-align: center;
+                        }
+            </style>
+            <style type="text/css">
+                  .section1 {
+                        position: relative;
+                        padding: 10px 0px;
+                        width: 100%;
+                  }
+
+
+
+                  .sticky-social {
+                        position: fixed;
+                        top: 20px;
+                        left: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                  }
+
+                  .social {
+                        list-style: none;
+                  }
+
+                        .social a li {
+                              padding: 8px 12px;
+                              font-size: 25px;
+                              transition: all 0.8s ease-in-out;
+                        }
+
+                              .social a li:hover {
+                                    margin-right: -30px;
+                                    box-shadow: 2px 5px 10px grey;
+                              }
+
+                                    .social a li:hover .fa {
+                                          margin-left: 20px;
+                                    }
+
+                  .fb_b {
+                        /* background-color: rgb(59, 89, 152);*/
+                        background-color: rgba(65,103,178,255);
+                  }
+
+                  .twitter_r {
+                        /* background-color: rgb(29, 161, 242);*/
+                        background-color: #000000;
+                  }
+
+                  .whatsapp_r {
+                        /* background-color: rgb(77, 194, 71);*/
+                        background-color: rgba(13,191,67,255);
+                  }
+
+                  .fa-envelope_r {
+                        /* background-color: rgb(219, 68, 55);*/
+                        background-color: #e2123d;
+                  }
+
+                  .fa-linkedin_r {
+                        background-color: rgb(0, 119, 181);
+                  }
+            </style>
+            <style type="text/css">
+                  @media only screen and (max-device-width: 767px) {
+                        p span img {
+                              max-width: 90% !important;
+                              height: auto !important;
+                        }
+
+                        p img {
+                              max-width: 90% !important;
+                              height: auto !important;
+                        }
+
+                        h2 {
+                              font-size: 20px !important;
+                              font-weight: 600 !important;
+                        }
+
+                        h3 {
+                              font-size: 18px !important;
+                              font-weight: 600 !important;
+                        }
+                  }
+            </style>
+            <style type="text/css">
+                  /* === Film Roll Badge Styling(IFFI2025 countdown) === */
+                  .film-roll-badge {
+                        position: absolute;
+                        top:82%;
+                        right: 20px;
+                        width: 230px;
+                        height: 70px;
+                        background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 18px, #6e2b8b 18px, #6e2b8b 36px );
+                        border-top: 8px solid #9a2375;
+                        border-bottom: 8px solid #9a2375;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                        animation: moveFilm 8s linear infinite;
+                        z-index: 10;
+                  }
+
+                        /* film sprocket holes */
+                        .film-roll-badge::before,
+                        .film-roll-badge::after {
+                              content: "";
+                              position: absolute;
+                              width: 100%;
+                              height: 10px;
+                              background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 10px, #fff 10px, #fff 20px );
+                              left: 0;
+                              z-index: 2;
+                        }
+
+                        .film-roll-badge::before {
+                              top: -4px;
+                        }
+
+                        .film-roll-badge::after {
+                              bottom: -4px;
+                        }
+
+                  .film-roll-inner {
+                        position: relative;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        animation: flicker 2s infinite ease-in-out;
+                  }
+
+                  .countdown-text {
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        color: #fff;
+                        text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 10px #000;
+                        white-space: nowrap;
+                  }
+
+                  /* === Animations === */
+                  @keyframes moveFilm {
+                        0% {
+                              background-position: 0 0;
+                        }
+
+                        100% {
+                              background-position: 120px 0;
+                        }
+                  }
+
+                  @keyframes flicker {
+                        0%, 100% {
+                              opacity: 1;
+                        }
+
+                        50% {
+                              opacity: 0.9;
+                        }
+
+                        25% {
+                              opacity: 0.95;
+                        }
+
+                        75% {
+                              opacity: 0.85;
+                        }
+                  }
+
+                  /* === Responsive Adjustments === */
+                  @media (max-width: 1500px) {
+                        .film-roll-badge {
+                              top: 68%;
+                              right: 18px;
+                              /* width: 220px; */
+                              height: 65px;
+                              font-size: 0.85rem;
+                        }
+
+                        .press-section {
+                              margin-top: 35px;
+                        }
+                  }
+
+                  @media (max-width: 992px) {
+                        .film-roll-badge {
+                              top: 52%;
+                              right: 10px;
+                               width: 200px; 
+                              height: 60px;
+                        }
+                  }
+
+                  @media (max-width: 768px) {
+                        .film-roll-badge {
+                              top: 56%;
+                              right: 10px;
+                               width: 124px; 
+                              height: 55px;
+                        }
+
+                        .countdown-text {
+                              font-size: 0.9rem;
+                        }
+                  }
+
+                  @media (max-width: 576px) {
+                        .film-roll-badge {
+                              top: 59%;
+                              right: 5px;
+                              /* width: 160px; */
+                              height: 50px;
+                        }
+
+                        .countdown-text {
+                              font-size: 0.85rem;
+                        }
+                  }
+            </style>
+          <script type="text/javascript">
+                const festivalStart = new Date("2025-11-20T00:00:00").getTime();
+                const festivalEnd = new Date("2025-11-28T23:59:59").getTime();
+
+                const countdownElement = document.getElementById("countdown");
+
+                const interval = setInterval(() => {
+                      const now = new Date().getTime();
+
+                      // BEFORE FESTIVAL — show days + hours left
+                      if (now < festivalStart) {
+                            const diff = festivalStart - now;
+                            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                            countdownElement.innerHTML = `
+              ${days} Day${days !== 1 ? 's' : ''} 
+              ${hours} Hour${hours !== 1 ? 's' : ''} to go
+          `;
+
+                      }
+
+                      // DURING FESTIVAL — show 56th IFFI - Day X
+                      else if (now >= festivalStart && now <= festivalEnd) {
+                            const dayNumber = Math.floor((now - festivalStart) / (1000 * 60 * 60 * 24)) + 1;
+                            countdownElement.innerHTML = `56th IFFI - Day ${dayNumber}`;
+                      }
+
+                      // AFTER FESTIVAL — new message
+                      else {
+                            countdownElement.innerHTML = `✨ IFFI closes but never ends…`;
+
+                            // Width change logic
+                            const elements = document.querySelectorAll('.film-roll-badge');
+                            elements.forEach(el => el.style.width = "350px");
+
+                            clearInterval(interval);
+                      }
+
+                }, 1000);
+          </script>
+ <script type="text/javascript">
+
+               const miffStart = new Date("2026-06-15T00:00:00").getTime();
+               const miffEnd = new Date("2026-06-15T23:59:59").getTime();
+
+               const miffElement = document.getElementById("miff");
+
+               if (miffElement) {
+
+                   const miffInterval = setInterval(() => {
+
+                       const now = new Date().getTime();
+
+                       // Before MIFF
+                       if (now < miffStart) {
+
+                           const diff = miffStart - now;
+                           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                           const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+        
+
+                   /*  miffElement.innerHTML = `${days} Day${days !== 1 ? 's' : ''} ${hours} Hour${hours !== 1 ? 's' : ''} to MIFF`;*/
+                           miffElement.innerHTML = `${days} Day${days === 1 ? '' : 's'} to MIFF ...`;
+
+
+                     }
+
+                       // During MIFF
+                       else if (now >= miffStart && now <= miffEnd) {
+
+                           const dayNumber =
+                               Math.floor((now - miffStart) / (1000 * 60 * 60 * 24)) + 1;
+
+                           miffElement.innerHTML = `19th MIFF - Day ${dayNumber}`;
+                       }
+
+                       // After MIFF
+                       else {
+
+                           miffElement.innerHTML = `✨ MIFF concludes, cinema lives on...`;
+
+                           document.querySelectorAll('.film-roll-badge')
+                               .forEach(el => el.style.width = "350px");
+
+                           clearInterval(miffInterval);
+                       }
+
+                   }, 1000);
+               }
+
+</script>
+
+      
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("sc_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"P_CategoryManagement","dynamicServicePath":"/PressReleasePage.aspx","id":"mpe"}, null, null, $get("Hidden"));
+});
+//]]>
+</script>
+<input type="hidden" name="__ncforminfo" value="fN7YbVs-o3AXoVzxbhXDO11Dj__bfTygX6s9tgI0ecX9EBVWjLUsiz9-DXqTPZ-ZXbVU7Yo91VmOqXT5jUMmjN8_8KEtfcEaZkIAAhgVxn-GLTzWnkJP0A=="/></form>
+</body>
+</html>
+
