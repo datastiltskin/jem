@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -362,6 +363,69 @@ def check_8_suggested_not_applied(entities, relationships, rep: Report):
                         "a suggested entity/edge pending confirmation", None, SEV_INFO)
 
 
+def check_10_published_totals_match(repo_root: Path, data_dir: Path, rep: Report):
+    """Prose drifts; artifacts do not. Catch published totals that no longer
+    match the derived counts.
+
+    Documentation is the one place a hand-typed number can still hide after the
+    counting reform, and it is exactly where the previous wrong total lived. Any
+    figure quoted in the docs must be reproducible from entity_counts.yaml.
+    """
+    counts_path = data_dir / "derived" / "entity_counts.yaml"
+    if not counts_path.exists():
+        return
+    counts = (yaml.safe_load(counts_path.read_text()) or {}).get("entity_counts", {})
+    countable = counts.get("total_countable")
+    files = counts.get("total_entity_files")
+    generics = counts.get("generics_excluded")
+    if countable is None:
+        return
+
+    def _fmt(n):
+        return f"{n:,}"
+
+    # Any of these numbers appearing in the docs must be the current one.
+    expected = {
+        "countable total": (countable, {_fmt(countable), str(countable)}),
+        "entity file total": (files, {_fmt(files), str(files)}),
+        "generics excluded": (generics, {_fmt(generics), str(generics)}),
+    }
+
+    docs = [repo_root.parent / "README.md", repo_root / "docs" / "ENTITY_BUILD_ROADMAP.md"]
+
+    # A number in the corpus-total magnitude band that is not a current figure
+    # is either stale or needs rewording. Exclusions keep the signal usable:
+    # a bare year is not a count, and a figure marked "~" or "+" is explicitly
+    # an estimate or a threshold rather than a claim about the corpus.
+    # Python lookbehind must be fixed width, so the approximation word is
+    # captured as an optional prefix group and tested afterwards.
+    band = re.compile(
+        r"(roughly |about |around |approx\.? |approximately |target |reaching |over |up to )?"
+        r"(?<![\d,.~])(1,\d{3}|1\d{3})(?![\d,.+])", re.IGNORECASE)
+    years = {str(y) for y in range(1900, 2101)}
+
+    current = {v for _, (_, vs) in expected.items() for v in vs}
+    current |= {_fmt(counts.get("buckets", {}).get(n, {}).get(f, -1))
+                for n in ("institution", "personnel")
+                for f in ("judicial", "quasi_judicial", "support_apparatus")}
+    # Relationship totals are derived in build.py, not here, but are legitimate.
+    allowed = current | {"1,797", "1797", "1,800", "1800"}
+
+    for doc in docs:
+        if not doc.exists():
+            continue
+        seen = set()
+        for prefix, match in band.findall(doc.read_text(encoding="utf-8")):
+            if prefix or match in allowed or match.replace(",", "") in years:
+                continue
+            if match in seen:
+                continue
+            seen.add(match)
+            rep.add("10", doc.name, "published total", match,
+                    f"a current derived figure (countable {_fmt(countable)}, "
+                    f"files {_fmt(files)})", None, SEV_MED)
+
+
 def check_9_prompt_provenance(repo_root: Path, rep: Report):
     registry_path = repo_root / "ledger" / "prompt_registry.yaml"
     if not registry_path.exists():
@@ -412,6 +476,7 @@ CHECK_TITLES = {
     "7": "report-publication negatives",
     "8": "suggested-not-applied (gaps)",
     "9": "prompt provenance",
+    "10": "published totals match derived",
 }
 
 
@@ -460,6 +525,7 @@ def main():
     check_7_report_publication_negatives(entities, rep)
     check_8_suggested_not_applied(entities, relationships, rep)
     check_9_prompt_provenance(repo_root, rep)
+    check_10_published_totals_match(repo_root, data_dir, rep)
 
     grouped = rep.by_check()
     print(f"\n{'='*78}")

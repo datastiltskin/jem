@@ -1,0 +1,66 @@
+id: tn_commercial_court_chennai_additional
+name: Additional Commercial Court, Chennai
+aliases:
+- XXIII Additional City Civil Court, Chennai
+type: CommercialCourt
+cluster: subordinate_courts
+level_of_government: State
+jurisdiction_scope:
+  states_covered:
+  - TN
+  uts_covered: []
+  is_all_india: false
+  jurisdiction_types:
+  - commercial_disputes
+created_year: 2024
+operational_status: Active
+statutory_basis:
+- instrument_id: commercial_courts_act_2015
+  provision: s.3(1)
+  status: in_force
+  source: https://stationeryprinting.tn.gov.in/gazette/2024/1_II_2_2024.pdf
+- instrument_id: commercial_courts_amendment_2018
+  status: in_force
+  source: https://stationeryprinting.tn.gov.in/gazette/2024/1_II_2_2024.pdf
+parent_hc: hc_madras
+pecuniary_jurisdiction:
+  specified_value_min: 300000
+  specified_value_max: 10000000
+  currency: INR
+  basis:
+    instrument_id: commercial_courts_act_2015
+    provision: s.2(1)(i)
+  notes: Notification No. II(2)/HO/10/2024 specifies 'pecuniary jurisdiction of not less than Rupees Three
+    Lakh and not more than Rupees One Crore'. The Rs.3 lakh figure is the Specified Value floor introduced
+    by the Commercial Courts (Amendment) Act 2018; it is quoted here from the TN notification, which states
+    the band verbatim.
+data_quality: partial
+data_quality_notes: 'Constituted by designation of the XXIII Additional City Civil Court, Chennai as the
+  Additional Commercial Court, Chennai at District Judge level, with the entire territorial limits of
+  the Judicial District of Chennai as its local limits, by Notification No. II(2)/HO/10/2024 under the
+  first proviso to s.3(1), Commercial Courts Act 2015. Second commercial court in the Chennai judicial
+  district alongside tn_commercial_court_chennai. Structural-first entry: no case_volume, no judge_strength.'
+unverified_fields:
+- field: statutory_basis
+  note: 'No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment)
+    Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after
+    the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft
+    404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves,
+    not read from the Act.'
+- field: appellate_forum
+  note: Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications,
+    not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md.
+- field: created_year
+  note: Set to 2024, the year of gazette publication (3 January 2024). The underlying G.O. Ms. No. 604,
+    Home (Courts.II) is dated 30 November 2023, so 2023 is also defensible. Maintainer decision.
+- field: operational_status
+  note: The companion notification takes effect 'with effect from the date on which the Additional Judge,
+    Additional Commercial Court, Chennai, assumes charge'. No gazette posting of that Judge was located
+    this run, so Active is not independently confirmed.
+sources:
+- label: 'TN Government Gazette No. 1, Part II-Sec. 2, 3 January 2024, pp. 4-5 — Notifications No. II(2)/HO/10/2024
+    and II(2)/HO/11/2024 (G.O. Ms. No. 604, Home (Courts.II), 30 November 2023): Additional Commercial
+    Court, Chennai; renaming of the Chennai court as Principal Commercial Court'
+  url: https://stationeryprinting.tn.gov.in/gazette/2024/1_II_2_2024.pdf
+  type: GazetteNotification
+  accessed_date: '2026-09-01'

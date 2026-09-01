@@ -1,6 +1,6 @@
 # JEM entity build roadmap (~1,500 target)
 
-**Current corpus:** 1,081 countable entities across 1,145 files, the difference being 64 generic rollups (v1.0.0, Jun 2026) · **Target:** ~1,500 structural entities  
+**Current corpus:** 1,087 countable entities across 1,151 files, the difference being 64 generic rollups (v1.0.0, Jun 2026) · **Target:** ~1,500 structural entities  
 Counts are derived, not hand-maintained — see `data/derived/entity_counts.yaml` and the Counting section of the root README.  
 **Tracker:** this file is the source of truth. [`README.md`](../../README.md#entity-build-progress) mirrors the status table for GitHub.
 
@@ -57,7 +57,7 @@ Counts are derived, not hand-maintained — see `data/derived/entity_counts.yaml
 | C25 | People / roles layer (judges, advocates, parties) | ~20 | partial | pending | 3 | Optional |
 | C26 | Relationship wiring and orphan cleanup (~139 orphans) | n/a | done | done | 1 to 3 | Maintainer only |
 | C27 | Data-quality upgrade (sources, partial to complete) | 668 | ongoing | updated | all | Contributor |
-| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 1103 | partial (746 stubs) | partial | 2 | Maintainer + NJDG |
+| C28 | Numerics (`judge_strength`, NJDG `case_volume`) | 1151 | partial (746 stubs) | partial | 2 | Maintainer + NJDG |
 
 *Last roadmap review: 2026-06-15 (Wave 4 and 5 state packs: NE/CG/GA/HP/JH/UK plus UTs, ~1,100 entities)*
 

@@ -1,0 +1,97 @@
+id: cjm_nilgiris
+name: Chief Judicial Magistrate Court, The Nilgiris at Udhagamandalam
+aliases:
+- Court of Chief Judicial Magistrate, The Nilgiris at Uthagamandalam
+- Chief Judicial Magistrate, The Nilgiris District at Udhagamandalam
+type: SubordinateCriminalCourt
+cluster: subordinate_courts
+level_of_government: State
+parent_hc: hc_madras
+jurisdiction_scope:
+  states_covered:
+  - TN
+  is_all_india: false
+  jurisdiction_types:
+  - Criminal
+created_year: 2024
+operational_status: Active
+statutory_basis:
+- instrument_id: bnss_2023
+  provision: ss.21-23
+  status: in_force
+  effective_from: '2024-07-01'
+- instrument_id: crpc_1973
+  provision: ss.6-29
+  status: superseded
+  repealed_on: '2024-07-01'
+funding:
+  primary_source: State_Consolidated_Fund
+data_quality: complete
+data_quality_notes: >-
+  ESTABLISHMENT. Established by Home Department notification No. II(2)/HO/141/2024
+  [G.O. Ms. No. 130, Home (Courts-III), 9th February 2024], published in the Tamil
+  Nadu Government Gazette No. 10, Part II-Section 2, 6 March 2024, at p.72. The
+  gazette heading reads "Constitution of a Seperate Chief Judicial Magistrate Court
+  at Udhagamandalam in the Nilgiris District under the code of Code of Criminal
+  Procedure"; the operative text reads "In exercise of the powers conferred by
+  sub-section (1) of Section 11 of Code of Criminal Procedure, 1973 (Central Act 2
+  of 1974), the Governor of Tamil Nadu, after consultation with the High Court,
+  Madras hereby establishes a Court of Judicaial [sic] Magistrate at Udhagamandalam
+  in the Nilgiris District." created_year 2024 is taken from the gazette publication
+  date (2024-03-06); the underlying G.O. is dated 2024-02-09.
+
+  CJM CHARACTER — CORROBORATED BY TWO FURTHER PRIMARIES. (i) Judicial notification
+  No. VI(1)/514/2023 (Roc. No. 25374/2020/G/Judn), TNGG No. 33, Part VI-Section 1,
+  16 August 2023, pp.326-329, issued by the District Court-cum-Chief Judicial
+  Magistrate, Udhagamandalam under CrPC s.14(1), names "Chief Judicial Magistrate,
+  The Nilgiris District at Udhagamandalam (Proposed Court)" and allots it, inter
+  alia, "All cases relating to the offences which are triable by the Chief Judicial
+  Magistrate alone", with effect from the date the CJM assumes charge. (ii)
+  Notification No. II(2)/HO/656/2026 [G.O. Ms. No. 238, Home (Transport-IV), 24 July
+  2026], TNGG No. 34, Part II-Section 2, 26 August 2026, amends the MACT
+  notification to replace "Court of District Judge-cum-Chief Judicial Magistrate,
+  The Nilgris at Uthagamandalam" with "Court of District judge, The Nilgiris at
+  Uthagamandalam" and to insert a separate entry "(aa) Court of Chief Judicial
+  Magistrate, The Nilgiris at Uthagamandalam" with presiding officer "Chief Judicial
+  Magistrate, The Nilgiris at Uthagamandalam". operational_status Active rests on
+  that 2026 instrument, which treats the court as constituted and presided over.
+
+  SENTENCING CEILING (criminal quantum; not pecuniary). BNSS 2023 s.23(1), verbatim:
+  "The Court of a Chief Judicial Magistrate may pass any sentence authorised by law
+  except a sentence of death or of imprisonment for life or of imprisonment for a
+  term exceeding seven years." Sourced from the enacted Act text (Gazette of India
+  Extraordinary Part II-Section 1 No. 54, 25 December 2023, Act No. 46 of 2023) at
+  the MHA-hosted URL below, p.10 of the PDF.
+
+  NOT SOURCED / DELIBERATELY ABSENT. Transliteration in TN primaries varies
+  ("Udhagamandalam" / "Uthagamandalam"; "Nilgiris" / "Nilgris"). The exact date on
+  which the Chief Judicial Magistrate assumed charge was not found in any document
+  opened for this run. No case_volume or judge_strength (structural-first track). A
+  structured criminal-jurisdiction block keyed to offence gravity is deferred to the
+  detail phase.
+sources:
+- label: >-
+    TN Government Gazette No. 10, Part II-Sec.2, 6 Mar 2024, p.72 — Home Dept
+    notification No. II(2)/HO/141/2024 establishing the court at Udhagamandalam
+  url: https://www.stationeryprinting.tn.gov.in/gazette/2024/10_II_2_2024.pdf
+  type: GazetteNotification
+  accessed_date: '2026-09-01'
+- label: >-
+    TN Government Gazette No. 33, Part VI-Sec.1, 16 Aug 2023, pp.326-329 — judicial
+    notification No. VI(1)/514/2023 naming the CJM Court, The Nilgiris (Proposed)
+  url: https://www.stationeryprinting.tn.gov.in/gazette/2023/33_VI_1_2023.pdf
+  type: GazetteNotification
+  accessed_date: '2026-09-01'
+- label: >-
+    TN Government Gazette No. 34, Part II-Sec.2, 26 Aug 2026 — notification No.
+    II(2)/HO/656/2026 inserting "Court of Chief Judicial Magistrate, The Nilgiris at
+    Uthagamandalam" as a distinct court with its own presiding officer
+  url: https://www.stationeryprinting.tn.gov.in/gazette/2026/34_II_2_2026.pdf
+  type: GazetteNotification
+  accessed_date: '2026-09-01'
+- label: >-
+    Bharatiya Nagarik Suraksha Sanhita, 2023 (Act No. 46 of 2023), enacted text as
+    published in the Gazette of India Extraordinary — s.23(1) CJM sentencing ceiling
+  url: https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf
+  type: CentralAct
+  accessed_date: '2026-09-01'

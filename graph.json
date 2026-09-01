@@ -1,13 +1,13 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-09-01T00:27:12.236090+00:00",
-    "entity_count": 1145,
+    "generated_at": "2026-09-01T00:48:04.523702+00:00",
+    "entity_count": 1151,
     "entity_counts": {
       "generated_by": "scripts/derive.py :: compute_entity_counts",
       "buckets": {
         "institution": {
-          "judicial": 397,
+          "judicial": 403,
           "quasi_judicial": 436,
           "support_apparatus": 226
         },
@@ -18,8 +18,8 @@
         }
       },
       "judicial_personnel": 8,
-      "judicial_institutions": 397,
-      "total_countable": 1081,
+      "judicial_institutions": 403,
+      "total_countable": 1087,
       "generics_excluded": 64,
       "generic_ids": [
         "air_act_appellate_authority_generic",
@@ -87,7 +87,7 @@
         "water_act_appellate_authority_generic",
         "wb_district_courts_generic"
       ],
-      "total_entity_files": 1145,
+      "total_entity_files": 1151,
       "unclassified": [],
       "by_type": {
         "ADRBody": 37,
@@ -95,6 +95,7 @@
         "ArbitralInstitution": 4,
         "CentralTribunal": 103,
         "CityCivilCourt": 2,
+        "CommercialCourt": 5,
         "ConstitutionalCourt": 27,
         "ConsumerCommission": 178,
         "CourtAdminRole": 2,
@@ -116,10 +117,11 @@
         "StateTribunal": 20,
         "StatutoryBodyNotConstituted": 8,
         "SubordinateCivilCourt": 339,
+        "SubordinateCriminalCourt": 1,
         "TrainingBody": 36
       }
     },
-    "relationship_count": 1800,
+    "relationship_count": 1806,
     "canvas_width": 1800,
     "canvas_height": 1200,
     "year_range": [
@@ -128,11 +130,11 @@
     ]
   },
   "impact_metrics": {
-    "high_independence_risk_count": 152,
+    "high_independence_risk_count": 158,
     "appointer_equals_funder_removal_count": 1,
     "no_public_appointment_criteria_count": 73,
     "not_constituted_count": 9,
-    "no_external_complaint_mechanism_count": 1139
+    "no_external_complaint_mechanism_count": 1145
   },
   "timeline_events": [
     {
@@ -404,8 +406,8 @@
       "id": "subordinate_courts",
       "name": "Subordinate Courts",
       "color": "#2c5282",
-      "entity_count": 393,
-      "avg_independence_risk": 1.1,
+      "entity_count": 399,
+      "avg_independence_risk": 1.2,
       "not_constituted_count": 0,
       "position": {
         "x": 28,
@@ -47831,7 +47833,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 64,
+        "x": 63,
         "y": 732
       }
     },
@@ -48036,7 +48038,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 65,
+        "x": 64,
         "y": 768
       }
     },
@@ -51809,7 +51811,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 79,
+        "x": 78,
         "y": 732
       }
     },
@@ -51924,7 +51926,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 80,
+        "x": 79,
         "y": 768
       }
     },
@@ -52039,7 +52041,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 81,
+        "x": 80,
         "y": 732
       }
     },
@@ -52147,7 +52149,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 82,
+        "x": 81,
         "y": 768
       }
     },
@@ -52458,7 +52460,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 83,
+        "x": 82,
         "y": 732
       }
     },
@@ -53400,7 +53402,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 84,
+        "x": 83,
         "y": 768
       }
     },
@@ -55559,7 +55561,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 93,
+        "x": 92,
         "y": 768
       }
     },
@@ -55674,7 +55676,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 94,
+        "x": 93,
         "y": 732
       }
     },
@@ -55789,7 +55791,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 95,
+        "x": 94,
         "y": 768
       }
     },
@@ -55904,7 +55906,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 96,
+        "x": 95,
         "y": 732
       }
     },
@@ -56019,7 +56021,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 97,
+        "x": 96,
         "y": 768
       }
     },
@@ -56134,7 +56136,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 98,
+        "x": 97,
         "y": 732
       }
     },
@@ -56249,7 +56251,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 99,
+        "x": 98,
         "y": 768
       }
     },
@@ -56364,7 +56366,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 100,
+        "x": 99,
         "y": 732
       }
     },
@@ -56472,7 +56474,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 101,
+        "x": 100,
         "y": 768
       }
     },
@@ -56776,7 +56778,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 102,
+        "x": 101,
         "y": 732
       }
     },
@@ -57824,7 +57826,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 103,
+        "x": 102,
         "y": 768
       }
     },
@@ -58399,7 +58401,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 107,
+        "x": 106,
         "y": 732
       }
     },
@@ -58514,7 +58516,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 108,
+        "x": 107,
         "y": 768
       }
     },
@@ -58622,7 +58624,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 109,
+        "x": 108,
         "y": 732
       }
     },
@@ -58926,7 +58928,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 110,
+        "x": 109,
         "y": 768
       }
     },
@@ -59868,7 +59870,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 111,
+        "x": 110,
         "y": 732
       }
     },
@@ -59983,7 +59985,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 112,
+        "x": 111,
         "y": 768
       }
     },
@@ -60091,7 +60093,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 113,
+        "x": 112,
         "y": 732
       }
     },
@@ -60296,7 +60298,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 114,
+        "x": 113,
         "y": 768
       }
     },
@@ -61517,7 +61519,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 115,
+        "x": 114,
         "y": 732
       }
     },
@@ -61648,7 +61650,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 116,
+        "x": 115,
         "y": 768
       }
     },
@@ -61779,7 +61781,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 117,
+        "x": 116,
         "y": 732
       }
     },
@@ -61910,7 +61912,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 118,
+        "x": 117,
         "y": 768
       }
     },
@@ -62041,7 +62043,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 119,
+        "x": 118,
         "y": 732
       }
     },
@@ -62172,7 +62174,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 120,
+        "x": 119,
         "y": 768
       }
     },
@@ -62292,7 +62294,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 121,
+        "x": 120,
         "y": 732
       }
     },
@@ -63793,7 +63795,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 122,
+        "x": 121,
         "y": 732
       }
     },
@@ -63908,7 +63910,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 123,
+        "x": 122,
         "y": 768
       }
     },
@@ -64023,7 +64025,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 124,
+        "x": 123,
         "y": 732
       }
     },
@@ -64138,7 +64140,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 125,
+        "x": 124,
         "y": 768
       }
     },
@@ -64253,7 +64255,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 126,
+        "x": 125,
         "y": 732
       }
     },
@@ -64368,7 +64370,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 127,
+        "x": 126,
         "y": 768
       }
     },
@@ -64483,7 +64485,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 128,
+        "x": 127,
         "y": 732
       }
     },
@@ -64591,7 +64593,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 129,
+        "x": 128,
         "y": 768
       }
     },
@@ -64895,7 +64897,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 130,
+        "x": 129,
         "y": 732
       }
     },
@@ -65837,7 +65839,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 131,
+        "x": 130,
         "y": 768
       }
     },
@@ -65952,7 +65954,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 132,
+        "x": 131,
         "y": 732
       }
     },
@@ -66067,7 +66069,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 133,
+        "x": 132,
         "y": 768
       }
     },
@@ -66182,7 +66184,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 134,
+        "x": 133,
         "y": 732
       }
     },
@@ -66297,7 +66299,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 135,
+        "x": 134,
         "y": 768
       }
     },
@@ -66412,7 +66414,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 136,
+        "x": 135,
         "y": 732
       }
     },
@@ -66527,7 +66529,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 137,
+        "x": 135,
         "y": 768
       }
     },
@@ -66642,7 +66644,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 138,
+        "x": 136,
         "y": 732
       }
     },
@@ -66757,7 +66759,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 139,
+        "x": 137,
         "y": 768
       }
     },
@@ -66865,7 +66867,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 140,
+        "x": 138,
         "y": 732
       }
     },
@@ -67169,7 +67171,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 140,
+        "x": 139,
         "y": 768
       }
     },
@@ -68217,7 +68219,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 141,
+        "x": 140,
         "y": 732
       }
     },
@@ -68332,7 +68334,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 142,
+        "x": 141,
         "y": 768
       }
     },
@@ -68447,7 +68449,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 143,
+        "x": 142,
         "y": 732
       }
     },
@@ -68562,7 +68564,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 144,
+        "x": 143,
         "y": 768
       }
     },
@@ -68677,7 +68679,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 145,
+        "x": 144,
         "y": 732
       }
     },
@@ -68792,7 +68794,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 146,
+        "x": 145,
         "y": 768
       }
     },
@@ -68907,7 +68909,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 147,
+        "x": 146,
         "y": 732
       }
     },
@@ -69015,7 +69017,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 148,
+        "x": 147,
         "y": 768
       }
     },
@@ -69425,7 +69427,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 149,
+        "x": 148,
         "y": 732
       }
     },
@@ -70367,7 +70369,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 150,
+        "x": 149,
         "y": 768
       }
     },
@@ -70482,7 +70484,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 151,
+        "x": 150,
         "y": 732
       }
     },
@@ -70597,7 +70599,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 152,
+        "x": 150,
         "y": 768
       }
     },
@@ -70712,7 +70714,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 153,
+        "x": 151,
         "y": 732
       }
     },
@@ -70827,7 +70829,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 154,
+        "x": 152,
         "y": 768
       }
     },
@@ -70942,7 +70944,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 155,
+        "x": 153,
         "y": 732
       }
     },
@@ -71057,7 +71059,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 156,
+        "x": 154,
         "y": 768
       }
     },
@@ -71172,7 +71174,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 157,
+        "x": 155,
         "y": 732
       }
     },
@@ -71287,7 +71289,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 158,
+        "x": 156,
         "y": 768
       }
     },
@@ -71395,7 +71397,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 159,
+        "x": 157,
         "y": 732
       }
     },
@@ -71699,7 +71701,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 159,
+        "x": 158,
         "y": 768
       }
     },
@@ -72641,7 +72643,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 160,
+        "x": 159,
         "y": 732
       }
     },
@@ -72756,7 +72758,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 161,
+        "x": 160,
         "y": 768
       }
     },
@@ -72871,7 +72873,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 162,
+        "x": 161,
         "y": 732
       }
     },
@@ -72986,7 +72988,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 163,
+        "x": 162,
         "y": 768
       }
     },
@@ -73101,7 +73103,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 164,
+        "x": 163,
         "y": 732
       }
     },
@@ -73216,7 +73218,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 165,
+        "x": 164,
         "y": 768
       }
     },
@@ -73331,7 +73333,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 166,
+        "x": 164,
         "y": 732
       }
     },
@@ -73439,7 +73441,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 167,
+        "x": 165,
         "y": 768
       }
     },
@@ -73743,7 +73745,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 168,
+        "x": 166,
         "y": 732
       }
     },
@@ -74685,7 +74687,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 169,
+        "x": 167,
         "y": 768
       }
     },
@@ -74800,7 +74802,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 170,
+        "x": 168,
         "y": 732
       }
     },
@@ -74915,7 +74917,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 171,
+        "x": 169,
         "y": 768
       }
     },
@@ -75030,7 +75032,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 172,
+        "x": 170,
         "y": 732
       }
     },
@@ -75145,7 +75147,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 173,
+        "x": 171,
         "y": 768
       }
     },
@@ -75260,7 +75262,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 174,
+        "x": 172,
         "y": 732
       }
     },
@@ -75368,7 +75370,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 175,
+        "x": 173,
         "y": 768
       }
     },
@@ -75785,7 +75787,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 176,
+        "x": 174,
         "y": 732
       }
     },
@@ -76127,7 +76129,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 177,
+        "x": 175,
         "y": 768
       }
     },
@@ -76788,7 +76790,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 178,
+        "x": 176,
         "y": 732
       }
     },
@@ -76903,7 +76905,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 178,
+        "x": 177,
         "y": 768
       }
     },
@@ -77034,7 +77036,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 179,
+        "x": 178,
         "y": 732
       }
     },
@@ -77165,7 +77167,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 180,
+        "x": 178,
         "y": 768
       }
     },
@@ -77296,7 +77298,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 181,
+        "x": 179,
         "y": 732
       }
     },
@@ -77422,7 +77424,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 182,
+        "x": 180,
         "y": 768
       }
     },
@@ -77548,7 +77550,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 183,
+        "x": 181,
         "y": 732
       }
     },
@@ -77674,7 +77676,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 184,
+        "x": 182,
         "y": 768
       }
     },
@@ -77800,7 +77802,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 185,
+        "x": 183,
         "y": 732
       }
     },
@@ -77926,7 +77928,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 186,
+        "x": 184,
         "y": 768
       }
     },
@@ -78052,7 +78054,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 187,
+        "x": 185,
         "y": 732
       }
     },
@@ -78183,7 +78185,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 188,
+        "x": 186,
         "y": 768
       }
     },
@@ -78309,7 +78311,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 189,
+        "x": 187,
         "y": 732
       }
     },
@@ -78435,7 +78437,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 190,
+        "x": 188,
         "y": 768
       }
     },
@@ -78561,7 +78563,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 191,
+        "x": 189,
         "y": 732
       }
     },
@@ -78692,7 +78694,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 192,
+        "x": 190,
         "y": 768
       }
     },
@@ -78818,7 +78820,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 193,
+        "x": 191,
         "y": 732
       }
     },
@@ -78944,7 +78946,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 194,
+        "x": 192,
         "y": 768
       }
     },
@@ -79070,7 +79072,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 195,
+        "x": 193,
         "y": 732
       }
     },
@@ -79201,7 +79203,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 196,
+        "x": 193,
         "y": 768
       }
     },
@@ -79332,7 +79334,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 196,
+        "x": 194,
         "y": 732
       }
     },
@@ -79458,7 +79460,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 197,
+        "x": 195,
         "y": 768
       }
     },
@@ -79584,7 +79586,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 198,
+        "x": 196,
         "y": 732
       }
     },
@@ -79699,7 +79701,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 199,
+        "x": 197,
         "y": 768
       }
     },
@@ -79814,7 +79816,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 200,
+        "x": 198,
         "y": 732
       }
     },
@@ -79940,7 +79942,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 201,
+        "x": 199,
         "y": 768
       }
     },
@@ -80066,7 +80068,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 202,
+        "x": 200,
         "y": 732
       }
     },
@@ -80192,7 +80194,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 203,
+        "x": 201,
         "y": 768
       }
     },
@@ -80318,7 +80320,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 204,
+        "x": 202,
         "y": 732
       }
     },
@@ -80438,7 +80440,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 205,
+        "x": 203,
         "y": 768
       }
     },
@@ -81004,7 +81006,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 206,
+        "x": 204,
         "y": 732
       }
     },
@@ -81995,7 +81997,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 207,
+        "x": 205,
         "y": 768
       }
     },
@@ -82110,7 +82112,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 208,
+        "x": 206,
         "y": 732
       }
     },
@@ -82225,7 +82227,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 209,
+        "x": 207,
         "y": 768
       }
     },
@@ -82340,7 +82342,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 210,
+        "x": 207,
         "y": 732
       }
     },
@@ -82455,7 +82457,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 211,
+        "x": 208,
         "y": 768
       }
     },
@@ -82570,7 +82572,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 212,
+        "x": 209,
         "y": 732
       }
     },
@@ -82685,7 +82687,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 213,
+        "x": 210,
         "y": 768
       }
     },
@@ -82800,7 +82802,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 214,
+        "x": 211,
         "y": 732
       }
     },
@@ -82915,7 +82917,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 215,
+        "x": 212,
         "y": 768
       }
     },
@@ -83023,7 +83025,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 215,
+        "x": 213,
         "y": 732
       }
     },
@@ -83433,7 +83435,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 216,
+        "x": 214,
         "y": 768
       }
     },
@@ -84481,7 +84483,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 217,
+        "x": 215,
         "y": 732
       }
     },
@@ -84596,7 +84598,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 218,
+        "x": 216,
         "y": 768
       }
     },
@@ -84711,7 +84713,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 219,
+        "x": 217,
         "y": 732
       }
     },
@@ -84819,7 +84821,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 220,
+        "x": 218,
         "y": 768
       }
     },
@@ -85024,7 +85026,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 221,
+        "x": 219,
         "y": 732
       }
     },
@@ -85966,7 +85968,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 222,
+        "x": 220,
         "y": 768
       }
     },
@@ -86081,7 +86083,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 223,
+        "x": 221,
         "y": 732
       }
     },
@@ -86189,7 +86191,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 224,
+        "x": 221,
         "y": 768
       }
     },
@@ -86394,7 +86396,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 225,
+        "x": 222,
         "y": 732
       }
     },
@@ -86737,7 +86739,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 226,
+        "x": 223,
         "y": 768
       }
     },
@@ -87668,7 +87670,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 227,
+        "x": 224,
         "y": 732
       }
     },
@@ -87794,7 +87796,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 228,
+        "x": 225,
         "y": 768
       }
     },
@@ -87925,7 +87927,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 229,
+        "x": 226,
         "y": 732
       }
     },
@@ -88056,7 +88058,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 230,
+        "x": 227,
         "y": 768
       }
     },
@@ -88182,7 +88184,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 231,
+        "x": 228,
         "y": 732
       }
     },
@@ -88308,7 +88310,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 232,
+        "x": 229,
         "y": 768
       }
     },
@@ -88434,7 +88436,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 233,
+        "x": 230,
         "y": 732
       }
     },
@@ -88560,7 +88562,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 234,
+        "x": 231,
         "y": 768
       }
     },
@@ -88686,7 +88688,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 234,
+        "x": 232,
         "y": 732
       }
     },
@@ -88812,7 +88814,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 235,
+        "x": 233,
         "y": 768
       }
     },
@@ -88938,7 +88940,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 236,
+        "x": 234,
         "y": 732
       }
     },
@@ -89064,7 +89066,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 237,
+        "x": 235,
         "y": 768
       }
     },
@@ -89190,7 +89192,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 238,
+        "x": 236,
         "y": 732
       }
     },
@@ -89316,7 +89318,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 239,
+        "x": 236,
         "y": 768
       }
     },
@@ -89447,7 +89449,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 240,
+        "x": 237,
         "y": 732
       }
     },
@@ -89573,7 +89575,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 241,
+        "x": 238,
         "y": 768
       }
     },
@@ -89704,7 +89706,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 242,
+        "x": 239,
         "y": 732
       }
     },
@@ -89830,7 +89832,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 243,
+        "x": 240,
         "y": 768
       }
     },
@@ -89961,7 +89963,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 244,
+        "x": 241,
         "y": 732
       }
     },
@@ -90076,7 +90078,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 245,
+        "x": 242,
         "y": 768
       }
     },
@@ -90202,7 +90204,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
+        "x": 243,
         "y": 732
       }
     },
@@ -90333,7 +90335,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 247,
+        "x": 244,
         "y": 768
       }
     },
@@ -90459,7 +90461,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 248,
+        "x": 245,
         "y": 732
       }
     },
@@ -90585,7 +90587,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 249,
+        "x": 246,
         "y": 768
       }
     },
@@ -90711,7 +90713,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 250,
+        "x": 247,
         "y": 732
       }
     },
@@ -90842,7 +90844,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 251,
+        "x": 248,
         "y": 768
       }
     },
@@ -90968,7 +90970,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 252,
+        "x": 249,
         "y": 732
       }
     },
@@ -91094,7 +91096,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 252,
+        "x": 250,
         "y": 768
       }
     },
@@ -91220,7 +91222,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 253,
+        "x": 250,
         "y": 732
       }
     },
@@ -91346,7 +91348,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 254,
+        "x": 251,
         "y": 768
       }
     },
@@ -91472,7 +91474,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 255,
+        "x": 252,
         "y": 732
       }
     },
@@ -91603,7 +91605,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 256,
+        "x": 253,
         "y": 768
       }
     },
@@ -91734,7 +91736,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 257,
+        "x": 254,
         "y": 732
       }
     },
@@ -91860,7 +91862,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 258,
+        "x": 255,
         "y": 768
       }
     },
@@ -91986,7 +91988,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 259,
+        "x": 256,
         "y": 732
       }
     },
@@ -92112,7 +92114,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 260,
+        "x": 257,
         "y": 768
       }
     },
@@ -92233,7 +92235,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 261,
+        "x": 258,
         "y": 732
       }
     },
@@ -93011,7 +93013,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 262,
+        "x": 259,
         "y": 768
       }
     },
@@ -93864,7 +93866,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 263,
+        "x": 260,
         "y": 732
       }
     },
@@ -93979,7 +93981,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 264,
+        "x": 261,
         "y": 768
       }
     },
@@ -94094,7 +94096,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 265,
+        "x": 262,
         "y": 732
       }
     },
@@ -94209,7 +94211,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 266,
+        "x": 263,
         "y": 768
       }
     },
@@ -94324,7 +94326,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 267,
+        "x": 264,
         "y": 732
       }
     },
@@ -94439,7 +94441,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 268,
+        "x": 265,
         "y": 768
       }
     },
@@ -94547,7 +94549,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 269,
+        "x": 265,
         "y": 732
       }
     },
@@ -94858,7 +94860,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 270,
+        "x": 266,
         "y": 768
       }
     },
@@ -95800,7 +95802,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 271,
+        "x": 267,
         "y": 732
       }
     },
@@ -95915,7 +95917,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 271,
+        "x": 268,
         "y": 768
       }
     },
@@ -96030,7 +96032,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 272,
+        "x": 269,
         "y": 732
       }
     },
@@ -96145,7 +96147,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 273,
+        "x": 270,
         "y": 768
       }
     },
@@ -96260,7 +96262,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 274,
+        "x": 271,
         "y": 732
       }
     },
@@ -96375,7 +96377,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 275,
+        "x": 272,
         "y": 768
       }
     },
@@ -96483,7 +96485,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 276,
+        "x": 273,
         "y": 732
       }
     },
@@ -96787,7 +96789,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 277,
+        "x": 274,
         "y": 768
       }
     },
@@ -97729,7 +97731,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 278,
+        "x": 275,
         "y": 732
       }
     },
@@ -97844,7 +97846,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 279,
+        "x": 276,
         "y": 768
       }
     },
@@ -97959,7 +97961,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 280,
+        "x": 277,
         "y": 732
       }
     },
@@ -98074,7 +98076,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 281,
+        "x": 278,
         "y": 768
       }
     },
@@ -98189,7 +98191,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 282,
+        "x": 279,
         "y": 732
       }
     },
@@ -98304,7 +98306,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 283,
+        "x": 279,
         "y": 768
       }
     },
@@ -98419,7 +98421,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 284,
+        "x": 280,
         "y": 732
       }
     },
@@ -98534,7 +98536,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 285,
+        "x": 281,
         "y": 768
       }
     },
@@ -98649,7 +98651,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 286,
+        "x": 282,
         "y": 732
       }
     },
@@ -98764,7 +98766,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 287,
+        "x": 283,
         "y": 768
       }
     },
@@ -98872,7 +98874,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 288,
+        "x": 284,
         "y": 732
       }
     },
@@ -99176,7 +99178,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 289,
+        "x": 285,
         "y": 768
       }
     },
@@ -100224,7 +100226,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 290,
+        "x": 286,
         "y": 732
       }
     },
@@ -100339,7 +100341,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 290,
+        "x": 287,
         "y": 768
       }
     },
@@ -100454,7 +100456,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 291,
+        "x": 288,
         "y": 732
       }
     },
@@ -100569,7 +100571,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 292,
+        "x": 289,
         "y": 768
       }
     },
@@ -100684,7 +100686,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 293,
+        "x": 290,
         "y": 732
       }
     },
@@ -100799,7 +100801,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 294,
+        "x": 291,
         "y": 768
       }
     },
@@ -100907,7 +100909,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 295,
+        "x": 292,
         "y": 732
       }
     },
@@ -101218,7 +101220,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 296,
+        "x": 293,
         "y": 768
       }
     },
@@ -102160,7 +102162,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 297,
+        "x": 293,
         "y": 732
       }
     },
@@ -102275,7 +102277,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 298,
+        "x": 294,
         "y": 768
       }
     },
@@ -102390,7 +102392,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 299,
+        "x": 295,
         "y": 732
       }
     },
@@ -102505,7 +102507,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 300,
+        "x": 296,
         "y": 768
       }
     },
@@ -102620,7 +102622,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 301,
+        "x": 297,
         "y": 732
       }
     },
@@ -102735,7 +102737,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 302,
+        "x": 298,
         "y": 768
       }
     },
@@ -102843,7 +102845,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 303,
+        "x": 299,
         "y": 732
       }
     },
@@ -103154,7 +103156,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 304,
+        "x": 300,
         "y": 768
       }
     },
@@ -104096,7 +104098,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 305,
+        "x": 301,
         "y": 732
       }
     },
@@ -104211,7 +104213,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 306,
+        "x": 302,
         "y": 768
       }
     },
@@ -104326,7 +104328,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 307,
+        "x": 303,
         "y": 732
       }
     },
@@ -104441,7 +104443,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 308,
+        "x": 304,
         "y": 768
       }
     },
@@ -104556,7 +104558,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 308,
+        "x": 305,
         "y": 732
       }
     },
@@ -104671,7 +104673,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 309,
+        "x": 306,
         "y": 768
       }
     },
@@ -104786,7 +104788,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 310,
+        "x": 307,
         "y": 732
       }
     },
@@ -104901,7 +104903,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 311,
+        "x": 308,
         "y": 768
       }
     },
@@ -105016,7 +105018,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 312,
+        "x": 308,
         "y": 732
       }
     },
@@ -105124,7 +105126,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 313,
+        "x": 309,
         "y": 768
       }
     },
@@ -105534,7 +105536,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 314,
+        "x": 310,
         "y": 732
       }
     },
@@ -106582,7 +106584,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 315,
+        "x": 311,
         "y": 768
       }
     },
@@ -106697,7 +106699,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 316,
+        "x": 312,
         "y": 732
       }
     },
@@ -106812,7 +106814,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 317,
+        "x": 313,
         "y": 768
       }
     },
@@ -106927,7 +106929,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 318,
+        "x": 314,
         "y": 732
       }
     },
@@ -107042,7 +107044,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 319,
+        "x": 315,
         "y": 768
       }
     },
@@ -107157,7 +107159,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 320,
+        "x": 316,
         "y": 732
       }
     },
@@ -107272,7 +107274,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 321,
+        "x": 317,
         "y": 768
       }
     },
@@ -107387,7 +107389,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 322,
+        "x": 318,
         "y": 732
       }
     },
@@ -107502,7 +107504,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 323,
+        "x": 319,
         "y": 768
       }
     },
@@ -107610,7 +107612,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 324,
+        "x": 320,
         "y": 732
       }
     },
@@ -107914,7 +107916,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 325,
+        "x": 321,
         "y": 768
       }
     },
@@ -109082,7 +109084,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 326,
+        "x": 322,
         "y": 732
       }
     },
@@ -109197,7 +109199,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 327,
+        "x": 322,
         "y": 768
       }
     },
@@ -109312,7 +109314,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 327,
+        "x": 323,
         "y": 732
       }
     },
@@ -109427,7 +109429,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 328,
+        "x": 324,
         "y": 768
       }
     },
@@ -109554,7 +109556,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 329,
+        "x": 325,
         "y": 732
       }
     },
@@ -110087,7 +110089,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 330,
+        "x": 326,
         "y": 768
       }
     },
@@ -110818,7 +110820,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 331,
+        "x": 327,
         "y": 732
       }
     },
@@ -110933,7 +110935,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 332,
+        "x": 328,
         "y": 768
       }
     },
@@ -111048,7 +111050,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 333,
+        "x": 329,
         "y": 732
       }
     },
@@ -111163,7 +111165,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 334,
+        "x": 330,
         "y": 768
       }
     },
@@ -111278,7 +111280,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 335,
+        "x": 331,
         "y": 732
       }
     },
@@ -111393,7 +111395,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 336,
+        "x": 332,
         "y": 768
       }
     },
@@ -111508,7 +111510,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 337,
+        "x": 333,
         "y": 732
       }
     },
@@ -111616,7 +111618,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 338,
+        "x": 334,
         "y": 768
       }
     },
@@ -112019,7 +112021,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 339,
+        "x": 335,
         "y": 732
       }
     },
@@ -112961,7 +112963,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 340,
+        "x": 336,
         "y": 768
       }
     },
@@ -113076,7 +113078,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 341,
+        "x": 336,
         "y": 732
       }
     },
@@ -113191,7 +113193,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 342,
+        "x": 337,
         "y": 768
       }
     },
@@ -113306,7 +113308,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 343,
+        "x": 338,
         "y": 732
       }
     },
@@ -113421,7 +113423,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 344,
+        "x": 339,
         "y": 768
       }
     },
@@ -113529,7 +113531,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 345,
+        "x": 340,
         "y": 732
       }
     },
@@ -113840,7 +113842,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 346,
+        "x": 341,
         "y": 768
       }
     },
@@ -114053,6 +114055,907 @@
       "position": {
         "x": 388,
         "y": 480
+      }
+    },
+    {
+      "id": "tn_commercial_court_chengalpattu",
+      "name": "Commercial Court (District Judge), Kancheepuram at Chengalpattu",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "commercial_disputes"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "CommercialCourt",
+      "cluster": "subordinate_courts",
+      "level_of_government": "State",
+      "created_year": 2021,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": [
+        {
+          "instrument_id": "commercial_courts_act_2015",
+          "provision": "s.3(1)",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf"
+        },
+        {
+          "instrument_id": "commercial_courts_amendment_2018",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf"
+        }
+      ],
+      "data_quality": "partial",
+      "data_quality_notes": "One of three dedicated Commercial Courts at the District Judge level constituted at Kancheepuram at Chengalpattu by Notification No. II(2)/HO/887/2021 under s.3(1), Commercial Courts Act 2015, after consultation with the High Court, Madras. The same notification batch designates this court as the Commercial Appellate Court for its district (Notification No. II(2)/HO/888/2021, s.3A), so no separate tn_commercial_appellate_court_* entity is emitted — the appellate forum is this same court. A predecessor commercial court existed here from 2016 under the class-wide designation in Notification No. II(2)/HO/417/2016, superseded in 2021. Structural-first entry: no case_volume, no judge_strength.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [
+        {
+          "field": "statutory_basis",
+          "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+        },
+        {
+          "field": "appellate_forum",
+          "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+        },
+        {
+          "field": "operational_status",
+          "note": "No post-notification gazette evidence that a Judge has assumed charge was located this run, and Notification No. II(2)/HO/887/2021 takes effect only 'with effect from the dates on which the Judges assume charge'. Active is therefore NOT independently confirmed for this court."
+        },
+        {
+          "field": "id",
+          "note": "Notification No. II(2)/HO/887/2021 names the seat as 'Kancheepuram at Chengalpattu'. Whether the judicial district is Kancheepuram (with the court sitting at Chengalpattu) or Chengalpattu is not resolved by the notification. The id uses the seat; maintainer decision."
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CommercialCourt": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 2,
+        "independence_risk_breakdown": {
+          "Audit reports not public": 1,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No external financial audit": 1,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": null,
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "TN Government Gazette No. 51, Part II-Sec. 2, 22 December 2021, pp. 512-513 — Notifications No. II(2)/HO/886-892/2021 (G.O. Ms. No. 555, Home (Courts-II), 6 December 2021) under ss.3(1) and 3A, Commercial Courts Act 2015",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 28, Part II-Sec. 2, 13 July 2016, p. 402 — Notification No. II(2)/HO/417/2016 (G.O. Ms. No. 500, Home (Courts-II), 28 June 2016): one Commercial Court in each Judicial District except Chennai",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2016/28-II-2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": null,
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "statutory_basis",
+            "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+          },
+          {
+            "field": "appellate_forum",
+            "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+          },
+          {
+            "field": "operational_status",
+            "note": "No post-notification gazette evidence that a Judge has assumed charge was located this run, and Notification No. II(2)/HO/887/2021 takes effect only 'with effect from the dates on which the Judges assume charge'. Active is therefore NOT independently confirmed for this court."
+          },
+          {
+            "field": "id",
+            "note": "Notification No. II(2)/HO/887/2021 names the seat as 'Kancheepuram at Chengalpattu'. Whether the judicial district is Kancheepuram (with the court sitting at Chengalpattu) or Chengalpattu is not resolved by the notification. The id uses the seat; maintainer decision."
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "commercial_disputes"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": "hc_madras"
+      },
+      "position": {
+        "x": 342,
+        "y": 732
+      }
+    },
+    {
+      "id": "tn_commercial_court_chennai",
+      "name": "Principal Commercial Court, Chennai",
+      "aliases": [
+        "Commercial Court at Chennai",
+        "Commercial Court, Egmore, Chennai"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "commercial_disputes"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "CommercialCourt",
+      "cluster": "subordinate_courts",
+      "level_of_government": "State",
+      "created_year": 2019,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": [
+        {
+          "instrument_id": "commercial_courts_act_2015",
+          "provision": "s.3(1)",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2019/40_II_2.pdf"
+        },
+        {
+          "instrument_id": "commercial_courts_amendment_2018",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2019/40_II_2.pdf"
+        }
+      ],
+      "data_quality": "partial",
+      "data_quality_notes": "Constituted at District Judge level for the entire Judicial District of Chennai by Notification No. II(2)/HO/892/2021 under the first proviso to s.3(1), Commercial Courts Act 2015, in supersession of Notification No. II(2)/HO/786/2019, which had designated the Court of the Principal Judge, City Civil Court, Chennai as the Commercial Court. Renamed 'Principal Commercial Court' by Notification No. II(2)/HO/11/2024. Structural-first entry: no case_volume, no judge_strength.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [
+        {
+          "field": "statutory_basis",
+          "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+        },
+        {
+          "field": "appellate_forum",
+          "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+        },
+        {
+          "field": "created_year",
+          "note": "Set to 2019, the year Chennai first had a Commercial Court notified (II(2)/HO/786/2019). The 2021 notification supersedes rather than amends the 2019 one and shifts the court from the Principal Judge, City Civil Court to the District Judge level, so whether this is one continuous institution or a fresh constitution is not resolved by the notification text. If the maintainer reads it as a fresh constitution, created_year is 2021."
+        },
+        {
+          "field": "operational_status",
+          "note": "Active is inferred from Notification No. II(2)/HO/11/2024, which amends the constituting notification and presupposes the court exists. No gazette posting of a Judge to this specific court was located this run."
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CommercialCourt": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 2,
+        "independence_risk_breakdown": {
+          "Audit reports not public": 1,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No external financial audit": 1,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": null,
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "TN Government Gazette No. 40, Part II-Sec. 2, 2 October 2019, pp. 796-797 — Notification No. II(2)/HO/786/2019 (G.O. Ms. No. 480, Home (Courts-II), 10 September 2019): Principal Judge, City Civil Court, Chennai designated as Commercial Court",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2019/40_II_2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 51, Part II-Sec. 2, 22 December 2021, pp. 512-513 — Notifications No. II(2)/HO/886-892/2021 (G.O. Ms. No. 555, Home (Courts-II), 6 December 2021) under ss.3(1) and 3A, Commercial Courts Act 2015",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 1, Part II-Sec. 2, 3 January 2024, pp. 4-5 — Notifications No. II(2)/HO/10/2024 and II(2)/HO/11/2024 (G.O. Ms. No. 604, Home (Courts.II), 30 November 2023): Additional Commercial Court, Chennai; renaming of the Chennai court as Principal Commercial Court",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2024/1_II_2_2024.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": null,
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "statutory_basis",
+            "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+          },
+          {
+            "field": "appellate_forum",
+            "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+          },
+          {
+            "field": "created_year",
+            "note": "Set to 2019, the year Chennai first had a Commercial Court notified (II(2)/HO/786/2019). The 2021 notification supersedes rather than amends the 2019 one and shifts the court from the Principal Judge, City Civil Court to the District Judge level, so whether this is one continuous institution or a fresh constitution is not resolved by the notification text. If the maintainer reads it as a fresh constitution, created_year is 2021."
+          },
+          {
+            "field": "operational_status",
+            "note": "Active is inferred from Notification No. II(2)/HO/11/2024, which amends the constituting notification and presupposes the court exists. No gazette posting of a Judge to this specific court was located this run."
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "commercial_disputes"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": "hc_madras"
+      },
+      "position": {
+        "x": 343,
+        "y": 768
+      }
+    },
+    {
+      "id": "tn_commercial_court_chennai_additional",
+      "name": "Additional Commercial Court, Chennai",
+      "aliases": [
+        "XXIII Additional City Civil Court, Chennai"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "commercial_disputes"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "CommercialCourt",
+      "cluster": "subordinate_courts",
+      "level_of_government": "State",
+      "created_year": 2024,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": [
+        {
+          "instrument_id": "commercial_courts_act_2015",
+          "provision": "s.3(1)",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2024/1_II_2_2024.pdf"
+        },
+        {
+          "instrument_id": "commercial_courts_amendment_2018",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2024/1_II_2_2024.pdf"
+        }
+      ],
+      "data_quality": "partial",
+      "data_quality_notes": "Constituted by designation of the XXIII Additional City Civil Court, Chennai as the Additional Commercial Court, Chennai at District Judge level, with the entire territorial limits of the Judicial District of Chennai as its local limits, by Notification No. II(2)/HO/10/2024 under the first proviso to s.3(1), Commercial Courts Act 2015. Second commercial court in the Chennai judicial district alongside tn_commercial_court_chennai. Structural-first entry: no case_volume, no judge_strength.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [
+        {
+          "field": "statutory_basis",
+          "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+        },
+        {
+          "field": "appellate_forum",
+          "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+        },
+        {
+          "field": "created_year",
+          "note": "Set to 2024, the year of gazette publication (3 January 2024). The underlying G.O. Ms. No. 604, Home (Courts.II) is dated 30 November 2023, so 2023 is also defensible. Maintainer decision."
+        },
+        {
+          "field": "operational_status",
+          "note": "The companion notification takes effect 'with effect from the date on which the Additional Judge, Additional Commercial Court, Chennai, assumes charge'. No gazette posting of that Judge was located this run, so Active is not independently confirmed."
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CommercialCourt": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 2,
+        "independence_risk_breakdown": {
+          "Audit reports not public": 1,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No external financial audit": 1,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": null,
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "TN Government Gazette No. 1, Part II-Sec. 2, 3 January 2024, pp. 4-5 — Notifications No. II(2)/HO/10/2024 and II(2)/HO/11/2024 (G.O. Ms. No. 604, Home (Courts.II), 30 November 2023): Additional Commercial Court, Chennai; renaming of the Chennai court as Principal Commercial Court",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2024/1_II_2_2024.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": null,
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "statutory_basis",
+            "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+          },
+          {
+            "field": "appellate_forum",
+            "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+          },
+          {
+            "field": "created_year",
+            "note": "Set to 2024, the year of gazette publication (3 January 2024). The underlying G.O. Ms. No. 604, Home (Courts.II) is dated 30 November 2023, so 2023 is also defensible. Maintainer decision."
+          },
+          {
+            "field": "operational_status",
+            "note": "The companion notification takes effect 'with effect from the date on which the Additional Judge, Additional Commercial Court, Chennai, assumes charge'. No gazette posting of that Judge was located this run, so Active is not independently confirmed."
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "commercial_disputes"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": "hc_madras"
+      },
+      "position": {
+        "x": 344,
+        "y": 732
+      }
+    },
+    {
+      "id": "tn_commercial_court_coimbatore",
+      "name": "Commercial Court (District Judge), Coimbatore",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "commercial_disputes"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "CommercialCourt",
+      "cluster": "subordinate_courts",
+      "level_of_government": "State",
+      "created_year": 2021,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": [
+        {
+          "instrument_id": "commercial_courts_act_2015",
+          "provision": "s.3(1)",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf"
+        },
+        {
+          "instrument_id": "commercial_courts_amendment_2018",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf"
+        }
+      ],
+      "data_quality": "partial",
+      "data_quality_notes": "One of three dedicated Commercial Courts at the District Judge level constituted at Coimbatore by Notification No. II(2)/HO/887/2021 under s.3(1), Commercial Courts Act 2015, after consultation with the High Court, Madras. The same notification batch designates this court as the Commercial Appellate Court for its district (Notification No. II(2)/HO/888/2021, s.3A), so no separate tn_commercial_appellate_court_* entity is emitted — the appellate forum is this same court. A predecessor commercial court existed here from 2016 under the class-wide designation in Notification No. II(2)/HO/417/2016, superseded in 2021. Structural-first entry: no case_volume, no judge_strength.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [
+        {
+          "field": "statutory_basis",
+          "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+        },
+        {
+          "field": "appellate_forum",
+          "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+        },
+        {
+          "field": "operational_status",
+          "note": "Active is confirmed by Notification No. II(2)/HO/654/2026, which posts a Judge on transfer to the 'Commercial Court (District Judge), Coimbatore'."
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CommercialCourt": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 2,
+        "independence_risk_breakdown": {
+          "Audit reports not public": 1,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No external financial audit": 1,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": null,
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "TN Government Gazette No. 51, Part II-Sec. 2, 22 December 2021, pp. 512-513 — Notifications No. II(2)/HO/886-892/2021 (G.O. Ms. No. 555, Home (Courts-II), 6 December 2021) under ss.3(1) and 3A, Commercial Courts Act 2015",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 34, Part II-Sec. 2, 26 August 2026 — Notification No. II(2)/HO/654/2026 (G.O. (Rt) No. 807, Home (Courts-II), 11 August 2026): posting of a Judge to the Commercial Court (District Judge), Coimbatore",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2026/34_II_2_2026.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 28, Part II-Sec. 2, 13 July 2016, p. 402 — Notification No. II(2)/HO/417/2016 (G.O. Ms. No. 500, Home (Courts-II), 28 June 2016): one Commercial Court in each Judicial District except Chennai",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2016/28-II-2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": null,
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "statutory_basis",
+            "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+          },
+          {
+            "field": "appellate_forum",
+            "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+          },
+          {
+            "field": "operational_status",
+            "note": "Active is confirmed by Notification No. II(2)/HO/654/2026, which posts a Judge on transfer to the 'Commercial Court (District Judge), Coimbatore'."
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "commercial_disputes"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": "hc_madras"
+      },
+      "position": {
+        "x": 345,
+        "y": 768
+      }
+    },
+    {
+      "id": "tn_commercial_court_salem",
+      "name": "Commercial Court (District Judge), Salem",
+      "aliases": [],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "uts_covered": [],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "commercial_disputes"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "CommercialCourt",
+      "cluster": "subordinate_courts",
+      "level_of_government": "State",
+      "created_year": 2021,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": [
+        {
+          "instrument_id": "commercial_courts_act_2015",
+          "provision": "s.3(1)",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf"
+        },
+        {
+          "instrument_id": "commercial_courts_amendment_2018",
+          "status": "in_force",
+          "source": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf"
+        }
+      ],
+      "data_quality": "partial",
+      "data_quality_notes": "One of three dedicated Commercial Courts at the District Judge level constituted at Salem by Notification No. II(2)/HO/887/2021 under s.3(1), Commercial Courts Act 2015, after consultation with the High Court, Madras. The same notification batch designates this court as the Commercial Appellate Court for its district (Notification No. II(2)/HO/888/2021, s.3A), so no separate tn_commercial_appellate_court_* entity is emitted — the appellate forum is this same court. A predecessor commercial court existed here from 2016 under the class-wide designation in Notification No. II(2)/HO/417/2016, superseded in 2021. Structural-first entry: no case_volume, no judge_strength.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [
+        {
+          "field": "statutory_basis",
+          "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+        },
+        {
+          "field": "appellate_forum",
+          "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+        },
+        {
+          "field": "operational_status",
+          "note": "Active is confirmed by the TN Gazette of 17 August 2022, which posts a Judge on transfer as 'Judge, Commercial Court (District Judge) at Salem'."
+        }
+      ],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type CommercialCourt": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 2,
+        "independence_risk_breakdown": {
+          "Audit reports not public": 1,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No external financial audit": 1,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": null,
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "TN Government Gazette No. 51, Part II-Sec. 2, 22 December 2021, pp. 512-513 — Notifications No. II(2)/HO/886-892/2021 (G.O. Ms. No. 555, Home (Courts-II), 6 December 2021) under ss.3(1) and 3A, Commercial Courts Act 2015",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2021/51_II_2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 33, Part II-Sec. 2, 17 August 2022, p. 914 — posting of a Judge to the Commercial Court (District Judge) at Salem",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2022/33_II_2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 28, Part II-Sec. 2, 13 July 2016, p. 402 — Notification No. II(2)/HO/417/2016 (G.O. Ms. No. 500, Home (Courts-II), 28 June 2016): one Commercial Court in each Judicial District except Chennai",
+          "url": "https://stationeryprinting.tn.gov.in/gazette/2016/28-II-2.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": null,
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [
+          {
+            "field": "statutory_basis",
+            "note": "No live, openable primary text of the Commercial Courts Act 2015 or the Commercial Courts (Amendment) Act 2018 was reachable this run: every indiacode.nic.in/bitstream/*.pdf path returns HTTP 404 after the August 2026 migration, and indiacode.gov.in serves an identical 200 SPA shell for every path (soft 404). Section numbers below are quoted as they appear inside the TN gazette notifications themselves, not read from the Act."
+          },
+          {
+            "field": "appellate_forum",
+            "note": "Appeal route is asserted from the structure of the Commercial Courts Act as recited in the notifications, not from an opened copy of s.13. Surfaced as a suggested edge only; see /tmp/track_c/suggested_edges.md."
+          },
+          {
+            "field": "operational_status",
+            "note": "Active is confirmed by the TN Gazette of 17 August 2022, which posts a Judge on transfer as 'Judge, Commercial Court (District Judge) at Salem'."
+          }
+        ],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "uts_covered": [],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "commercial_disputes"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": "hc_madras"
+      },
+      "position": {
+        "x": 346,
+        "y": 732
+      }
+    },
+    {
+      "id": "cjm_nilgiris",
+      "name": "Chief Judicial Magistrate Court, The Nilgiris at Udhagamandalam",
+      "aliases": [
+        "Court of Chief Judicial Magistrate, The Nilgiris at Uthagamandalam",
+        "Chief Judicial Magistrate, The Nilgiris District at Udhagamandalam"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "TN"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "Criminal"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": null,
+      "type": "SubordinateCriminalCourt",
+      "cluster": "subordinate_courts",
+      "level_of_government": "State",
+      "created_year": 2024,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": [
+        {
+          "instrument_id": "bnss_2023",
+          "provision": "ss.21-23",
+          "status": "in_force",
+          "effective_from": "2024-07-01"
+        },
+        {
+          "instrument_id": "crpc_1973",
+          "provision": "ss.6-29",
+          "status": "superseded",
+          "repealed_on": "2024-07-01"
+        }
+      ],
+      "data_quality": "complete",
+      "data_quality_notes": "ESTABLISHMENT. Established by Home Department notification No. II(2)/HO/141/2024 [G.O. Ms. No. 130, Home (Courts-III), 9th February 2024], published in the Tamil Nadu Government Gazette No. 10, Part II-Section 2, 6 March 2024, at p.72. The gazette heading reads \"Constitution of a Seperate Chief Judicial Magistrate Court at Udhagamandalam in the Nilgiris District under the code of Code of Criminal Procedure\"; the operative text reads \"In exercise of the powers conferred by sub-section (1) of Section 11 of Code of Criminal Procedure, 1973 (Central Act 2 of 1974), the Governor of Tamil Nadu, after consultation with the High Court, Madras hereby establishes a Court of Judicaial [sic] Magistrate at Udhagamandalam in the Nilgiris District.\" created_year 2024 is taken from the gazette publication date (2024-03-06); the underlying G.O. is dated 2024-02-09.\nCJM CHARACTER — CORROBORATED BY TWO FURTHER PRIMARIES. (i) Judicial notification No. VI(1)/514/2023 (Roc. No. 25374/2020/G/Judn), TNGG No. 33, Part VI-Section 1, 16 August 2023, pp.326-329, issued by the District Court-cum-Chief Judicial Magistrate, Udhagamandalam under CrPC s.14(1), names \"Chief Judicial Magistrate, The Nilgiris District at Udhagamandalam (Proposed Court)\" and allots it, inter alia, \"All cases relating to the offences which are triable by the Chief Judicial Magistrate alone\", with effect from the date the CJM assumes charge. (ii) Notification No. II(2)/HO/656/2026 [G.O. Ms. No. 238, Home (Transport-IV), 24 July 2026], TNGG No. 34, Part II-Section 2, 26 August 2026, amends the MACT notification to replace \"Court of District Judge-cum-Chief Judicial Magistrate, The Nilgris at Uthagamandalam\" with \"Court of District judge, The Nilgiris at Uthagamandalam\" and to insert a separate entry \"(aa) Court of Chief Judicial Magistrate, The Nilgiris at Uthagamandalam\" with presiding officer \"Chief Judicial Magistrate, The Nilgiris at Uthagamandalam\". operational_status Active rests on that 2026 instrument, which treats the court as constituted and presided over.\nSENTENCING CEILING (criminal quantum; not pecuniary). BNSS 2023 s.23(1), verbatim: \"The Court of a Chief Judicial Magistrate may pass any sentence authorised by law except a sentence of death or of imprisonment for life or of imprisonment for a term exceeding seven years.\" Sourced from the enacted Act text (Gazette of India Extraordinary Part II-Section 1 No. 54, 25 December 2023, Act No. 46 of 2023) at the MHA-hosted URL below, p.10 of the PDF.\nNOT SOURCED / DELIBERATELY ABSENT. Transliteration in TN primaries varies (\"Udhagamandalam\" / \"Uthagamandalam\"; \"Nilgiris\" / \"Nilgris\"). The exact date on which the Chief Judicial Magistrate assumed charge was not found in any document opened for this run. No case_volume or judge_strength (structural-first track). A structured criminal-jurisdiction block keyed to offence gravity is deferred to the detail phase.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type SubordinateCriminalCourt": 3,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 4,
+        "independence_risk_breakdown": {
+          "Audit reports not public": 1,
+          "Lokpal has no jurisdiction": 1,
+          "No bias complaint mechanism exists": 2,
+          "No external financial audit": 1,
+          "No independent conduct oversight body": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": null,
+      "audit_report_public": null,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": null,
+      "reappointment_possible": null,
+      "sources": [
+        {
+          "label": "TN Government Gazette No. 10, Part II-Sec.2, 6 Mar 2024, p.72 — Home Dept notification No. II(2)/HO/141/2024 establishing the court at Udhagamandalam",
+          "url": "https://www.stationeryprinting.tn.gov.in/gazette/2024/10_II_2_2024.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 33, Part VI-Sec.1, 16 Aug 2023, pp.326-329 — judicial notification No. VI(1)/514/2023 naming the CJM Court, The Nilgiris (Proposed)",
+          "url": "https://www.stationeryprinting.tn.gov.in/gazette/2023/33_VI_1_2023.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "TN Government Gazette No. 34, Part II-Sec.2, 26 Aug 2026 — notification No. II(2)/HO/656/2026 inserting \"Court of Chief Judicial Magistrate, The Nilgiris at Uthagamandalam\" as a distinct court with its own presiding officer",
+          "url": "https://www.stationeryprinting.tn.gov.in/gazette/2026/34_II_2_2026.pdf",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-01"
+        },
+        {
+          "label": "Bharatiya Nagarik Suraksha Sanhita, 2023 (Act No. 46 of 2023), enacted text as published in the Gazette of India Extraordinary — s.23(1) CJM sentencing ceiling",
+          "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-01"
+        }
+      ],
+      "_detail": {
+        "appointment": null,
+        "funding": {
+          "primary_source": "State_Consolidated_Fund"
+        },
+        "audit": null,
+        "complaint_mechanism": null,
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "TN"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "Criminal"
+          ]
+        },
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": "hc_madras"
+      },
+      "position": {
+        "x": 347,
+        "y": 768
       }
     },
     {
@@ -114491,7 +115394,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 346,
+        "x": 348,
         "y": 732
       }
     },
@@ -114606,7 +115509,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 347,
+        "x": 349,
         "y": 768
       }
     },
@@ -114733,7 +115636,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 348,
+        "x": 350,
         "y": 732
       }
     },
@@ -114848,7 +115751,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 349,
+        "x": 351,
         "y": 768
       }
     },
@@ -114963,7 +115866,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 350,
+        "x": 351,
         "y": 732
       }
     },
@@ -115078,7 +115981,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 351,
+        "x": 352,
         "y": 768
       }
     },
@@ -115193,7 +116096,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 352,
+        "x": 353,
         "y": 732
       }
     },
@@ -115308,7 +116211,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 353,
+        "x": 354,
         "y": 768
       }
     },
@@ -115423,7 +116326,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 354,
+        "x": 355,
         "y": 732
       }
     },
@@ -115538,7 +116441,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 355,
+        "x": 356,
         "y": 768
       }
     },
@@ -115653,7 +116556,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 356,
+        "x": 357,
         "y": 732
       }
     },
@@ -115768,7 +116671,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 357,
+        "x": 358,
         "y": 768
       }
     },
@@ -115883,7 +116786,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 358,
+        "x": 359,
         "y": 732
       }
     },
@@ -115998,7 +116901,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 359,
+        "x": 360,
         "y": 768
       }
     },
@@ -116113,7 +117016,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 360,
+        "x": 361,
         "y": 732
       }
     },
@@ -116228,7 +117131,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 361,
+        "x": 362,
         "y": 768
       }
     },
@@ -116343,7 +117246,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 362,
+        "x": 363,
         "y": 732
       }
     },
@@ -116458,7 +117361,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 363,
+        "x": 364,
         "y": 768
       }
     },
@@ -116573,7 +117476,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 364,
+        "x": 365,
         "y": 732
       }
     },
@@ -116803,7 +117706,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 365,
+        "x": 366,
         "y": 732
       }
     },
@@ -116918,7 +117821,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 366,
+        "x": 367,
         "y": 768
       }
     },
@@ -117033,7 +117936,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 367,
+        "x": 368,
         "y": 732
       }
     },
@@ -117148,7 +118051,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 368,
+        "x": 369,
         "y": 768
       }
     },
@@ -117263,7 +118166,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 369,
+        "x": 370,
         "y": 732
       }
     },
@@ -117378,7 +118281,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 370,
+        "x": 371,
         "y": 768
       }
     },
@@ -117493,7 +118396,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 371,
+        "x": 372,
         "y": 732
       }
     },
@@ -117608,7 +118511,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 372,
+        "x": 373,
         "y": 768
       }
     },
@@ -117723,7 +118626,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 373,
+        "x": 374,
         "y": 732
       }
     },
@@ -117838,7 +118741,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 374,
+        "x": 375,
         "y": 768
       }
     },
@@ -117953,7 +118856,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 375,
+        "x": 376,
         "y": 732
       }
     },
@@ -118068,7 +118971,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 376,
+        "x": 377,
         "y": 768
       }
     },
@@ -118183,7 +119086,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 377,
+        "x": 378,
         "y": 732
       }
     },
@@ -118298,7 +119201,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 378,
+        "x": 379,
         "y": 768
       }
     },
@@ -118413,7 +119316,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 379,
+        "x": 380,
         "y": 732
       }
     },
@@ -119596,7 +120499,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 383,
+        "x": 384,
         "y": 768
       }
     },
@@ -120672,7 +121575,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 384,
+        "x": 385,
         "y": 732
       }
     },
@@ -120787,7 +121690,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 385,
+        "x": 386,
         "y": 768
       }
     },
@@ -120902,7 +121805,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 386,
+        "x": 387,
         "y": 732
       }
     },
@@ -121017,7 +121920,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 387,
+        "x": 388,
         "y": 768
       }
     },
@@ -121132,7 +122035,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 388,
+        "x": 389,
         "y": 732
       }
     },
@@ -121247,7 +122150,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 389,
+        "x": 390,
         "y": 768
       }
     },
@@ -121355,7 +122258,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 390,
+        "x": 391,
         "y": 732
       }
     },
@@ -121659,7 +122562,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 391,
+        "x": 392,
         "y": 768
       }
     },
@@ -122601,7 +123504,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 392,
+        "x": 393,
         "y": 732
       }
     },
@@ -122716,7 +123619,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 393,
+        "x": 394,
         "y": 768
       }
     },
@@ -125087,7 +125990,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 402,
+        "x": 403,
         "y": 768
       }
     },
@@ -125202,7 +126105,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 403,
+        "x": 404,
         "y": 732
       }
     },
@@ -125317,7 +126220,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 404,
+        "x": 405,
         "y": 768
       }
     },
@@ -125432,7 +126335,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 405,
+        "x": 406,
         "y": 732
       }
     },
@@ -125547,7 +126450,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 406,
+        "x": 407,
         "y": 768
       }
     },
@@ -125662,7 +126565,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 407,
+        "x": 408,
         "y": 732
       }
     },
@@ -129504,7 +130407,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 421,
+        "x": 422,
         "y": 768
       }
     },
@@ -129619,7 +130522,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 422,
+        "x": 423,
         "y": 732
       }
     },
@@ -177137,6 +178040,96 @@
       "contested_note": null,
       "notes": "Edge inferred at build time from entity id / state code; not present in relationships YAML",
       "sources": []
+    },
+    {
+      "id": "inferred_appellate_tn_commercial_court_chengalpattu",
+      "source": "tn_commercial_court_chengalpattu",
+      "target": "hc_madras",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "inferred",
+      "contested_note": null,
+      "notes": "Edge inferred at build time from entity id / state code; not present in relationships YAML",
+      "sources": []
+    },
+    {
+      "id": "inferred_appellate_tn_commercial_court_chennai",
+      "source": "tn_commercial_court_chennai",
+      "target": "hc_madras",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "inferred",
+      "contested_note": null,
+      "notes": "Edge inferred at build time from entity id / state code; not present in relationships YAML",
+      "sources": []
+    },
+    {
+      "id": "inferred_appellate_tn_commercial_court_chennai_additional",
+      "source": "tn_commercial_court_chennai_additional",
+      "target": "hc_madras",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "inferred",
+      "contested_note": null,
+      "notes": "Edge inferred at build time from entity id / state code; not present in relationships YAML",
+      "sources": []
+    },
+    {
+      "id": "inferred_appellate_tn_commercial_court_coimbatore",
+      "source": "tn_commercial_court_coimbatore",
+      "target": "hc_madras",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "inferred",
+      "contested_note": null,
+      "notes": "Edge inferred at build time from entity id / state code; not present in relationships YAML",
+      "sources": []
+    },
+    {
+      "id": "inferred_appellate_tn_commercial_court_salem",
+      "source": "tn_commercial_court_salem",
+      "target": "hc_madras",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "inferred",
+      "contested_note": null,
+      "notes": "Edge inferred at build time from entity id / state code; not present in relationships YAML",
+      "sources": []
+    },
+    {
+      "id": "inferred_appellate_cjm_nilgiris",
+      "source": "cjm_nilgiris",
+      "target": "hc_madras",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "year_established": null,
+      "year_abolished": null,
+      "data_quality": "inferred",
+      "contested_note": null,
+      "notes": "Edge inferred at build time from entity id / state code; not present in relationships YAML",
+      "sources": []
     }
   ],
   "browse_index": {
@@ -177871,6 +178864,7 @@
         "ch_special_courts",
         "city_civil_court_bangalore",
         "city_civil_court_mumbai",
+        "cjm_nilgiris",
         "district_courts",
         "dl_district_court_dwarka",
         "dl_district_court_karkardooma",
@@ -178117,6 +179111,11 @@
         "sk_district_courts_generic",
         "sk_special_courts",
         "subordinate_civil_courts",
+        "tn_commercial_court_chengalpattu",
+        "tn_commercial_court_chennai",
+        "tn_commercial_court_chennai_additional",
+        "tn_commercial_court_coimbatore",
+        "tn_commercial_court_salem",
         "tn_district_court_ariyalur",
         "tn_district_court_chengalpattu",
         "tn_district_court_chennai",
@@ -179472,6 +180471,16 @@
       "CityCivilCourt": [
         "city_civil_court_bangalore",
         "city_civil_court_mumbai"
+      ],
+      "CommercialCourt": [
+        "tn_commercial_court_chengalpattu",
+        "tn_commercial_court_chennai",
+        "tn_commercial_court_chennai_additional",
+        "tn_commercial_court_coimbatore",
+        "tn_commercial_court_salem"
+      ],
+      "SubordinateCriminalCourt": [
+        "cjm_nilgiris"
       ],
       "MediationBody": [
         "mediation_council_india"
@@ -181068,6 +182077,16 @@
         "sk_district_court_namchi",
         "sk_district_court_principal",
         "sk_district_courts_generic"
+      ],
+      "{'states_covered': ['TN'], 'uts_covered': [], 'is_all_india': False, 'jurisdiction_types': ['commercial_disputes']}": [
+        "tn_commercial_court_chengalpattu",
+        "tn_commercial_court_chennai",
+        "tn_commercial_court_chennai_additional",
+        "tn_commercial_court_coimbatore",
+        "tn_commercial_court_salem"
+      ],
+      "{'states_covered': ['TN'], 'is_all_india': False, 'jurisdiction_types': ['Criminal']}": [
+        "cjm_nilgiris"
       ],
       "{'states_covered': ['TN'], 'is_all_india': False}": [
         "tn_advocate_general",
