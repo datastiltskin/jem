@@ -1,11 +1,31 @@
-# data/legal_instruments/ — seed registry (single source of truth for transition dates)
+# data/legal_instruments/ — registry (single source of truth for transition dates)
 #
 # Each instrument defined + verified ONCE, referenced by id from entities/edges.
-# Transition dates below are well-established; the source URLs still need the
-# same liveness + primary-source (india-code) check as any cell — hence
-# data_quality: partial until each URL is confirmed to contain the instrument.
+# Transition dates below are well-established; a row only reaches
+# data_quality: verified once its URL has passed the liveness pre-gate AND the
+# document at that URL has been confirmed to contain the instrument.
 #
-# One file per instrument is fine too; this seed is a single list for convenience.
+# One file per instrument is fine too; this registry is a single list for convenience.
+#
+# ── India Code status, checked 2026-09-01 ────────────────────────────────────
+# The India Code portal migrated from indiacode.nic.in to indiacode.gov.in in
+# August 2026. Consequences for every row seeded against the old domain:
+#
+#   1. Deep links on indiacode.nic.in now 404. All 12 seeded URLs failed the
+#      liveness pre-gate (scripts/harness/liveness.py --instruments), as do 45
+#      of the 60 india-code citations elsewhere in the corpus.
+#   2. The replacement portal is a single-page app that returns a byte-identical
+#      200 HTML shell for EVERY path, including nonsense ones. A 200 from it is
+#      not evidence, so indiacode.gov.in URLs cannot currently serve as
+#      machine-verifiable citations at all. The liveness gate rejects them as
+#      soft_404_catch_all_shell rather than passing them on status alone.
+#
+# The three post-2023 criminal codes below are therefore cited to the MHA-hosted
+# enacted texts, which are live, are Gazette-of-India publications, and were
+# confirmed to contain the correct Act titles and numbers. The remaining rows
+# stay data_quality: partial: their transition dates are sound, but their URLs
+# are currently dead and no verified replacement has been located. Re-point them
+# as live primaries are found; do not upgrade a row on a dead link.
 
 instruments:
 
@@ -37,9 +57,12 @@ instruments:
     enacted: '2023-12-25'
     commenced: '2024-07-01'
     replaces: [crpc_1973]
-    data_quality: partial
+    data_quality: verified
     sources:
-      - { label: "BNSS 2023", url: "https://www.indiacode.nic.in/handle/123456789/20099", type: CentralAct }
+      # Enacted text as published in the Gazette of India (Act 46 of 2023), hosted by MHA.
+      # Liveness-passed and content-verified 2026-09-01: the PDF contains
+      # "THE BHARATIYA NAGARIK SURAKSHA SANHITA, 2023" and "NO. 46 OF 2023".
+      - { label: "BNSS 2023 (Act 46 of 2023) — enacted text, MHA", url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf", type: CentralAct, accessed_date: '2026-09-01' }
 
   - id: ipc_1860
     title: The Indian Penal Code, 1860
@@ -59,9 +82,11 @@ instruments:
     enacted: '2023-12-25'
     commenced: '2024-07-01'
     replaces: [ipc_1860]
-    data_quality: partial
+    data_quality: verified
     sources:
-      - { label: "BNS 2023", url: "https://www.indiacode.nic.in/handle/123456789/20062", type: CentralAct }
+      # Liveness-passed and content-verified 2026-09-01: contains
+      # "THE BHARATIYA NYAYA SANHITA, 2023" and "NO. 45 OF 2023".
+      - { label: "BNS 2023 (Act 45 of 2023) — enacted text, MHA", url: "https://www.mha.gov.in/sites/default/files/2024-04/250883_english_01042024.pdf", type: CentralAct, accessed_date: '2026-09-01' }
 
   - id: evidence_act_1872
     title: The Indian Evidence Act, 1872
@@ -80,9 +105,11 @@ instruments:
     enacted: '2023-12-25'
     commenced: '2024-07-01'
     replaces: [evidence_act_1872]
-    data_quality: partial
+    data_quality: verified
     sources:
-      - { label: "BSA 2023", url: "https://www.indiacode.nic.in/handle/123456789/20063", type: CentralAct }
+      # Liveness-passed and content-verified 2026-09-01: contains
+      # "THE BHARATIYA SAKSHYA ADHINIYAM, 2023" and "NO. 47 OF 2023".
+      - { label: "BSA 2023 (Act 47 of 2023) — enacted text, MHA", url: "https://www.mha.gov.in/sites/default/files/2024-04/250882_english_01042024_0.pdf", type: CentralAct, accessed_date: '2026-09-01' }
 
   # ── Commercial courts ────────────────────────────────────────────────────
   - id: commercial_courts_act_2015
