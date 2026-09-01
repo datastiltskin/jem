@@ -584,6 +584,8 @@ def build_graph_json(
                 "structural_variations": e.get("structural_variations", []),
                 "unverified_fields": e.get("unverified_fields", []),
                 "jurisdiction_scope": e.get("jurisdiction_scope"),
+                "pecuniary_jurisdiction": e.get("pecuniary_jurisdiction"),
+                "report_publication": e.get("report_publication"),
                 "case_volume": e.get("case_volume"),
                 "judge_strength": e.get("judge_strength"),
                 "parent_hc": e.get("parent_hc"),

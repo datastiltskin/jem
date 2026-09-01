@@ -81,3 +81,19 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
+report_publication:
+  publishes_reports: 'no'
+  statutorily_required: unknown
+  data_as_of: '2026-09-01'
+  source_type: GoIWebsite
+  source_url: https://nclat.nic.in/self-appraisal-reports
+  notes: No annual/case-activity report found after checking (1) nclat.nic.in — the only recurring institutional
+    documents are "Self Appraisal Report[s] ... Transparency Audit" (2023-24, 2024-25 editions, ~60-70KB
+    each — RTI s.4(1)(b) compliance checklists, not case-volume/activity reports) and "Detailed Demands
+    For Grants" (budgetary estimates, not performance reporting); (2) Ministry of Corporate Affairs —
+    MCA's own consolidated Annual Report covers the Ministry, not a standalone NCLAT report; (3) Lok Sabha
+    Starred Question No. 293 (07.08.2026 reply, sansad.in) supplies pendency/disposal figures for NCLAT
+    but as a parliamentary answer, not a report NCLAT itself publishes; an RTI-based review (taxguru.in,
+    Sep 2025) independently found NCLT/NCLAT pendency data "not maintained in certified form." Companies
+    Act 2013 (incl. Tribunals Reforms Act 2021 overlay via s.417A) has no annual-report-to-Parliament
+    clause for NCLAT — statutorily_required left unknown, not no.

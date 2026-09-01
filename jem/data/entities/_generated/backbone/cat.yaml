@@ -72,3 +72,17 @@ judge_strength:
   source_type: Tribunal_Report
   source_url: https://cgat.gov.in/
   notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+report_publication:
+  publishes_reports: 'no'
+  statutorily_required: unknown
+  data_as_of: '2026-09-01'
+  source_type: GoIWebsite
+  source_url: https://cgat.gov.in/
+  notes: No annual report found after checking (1) cgat.gov.in — homepage has no publications/annual-report
+    section, only news/photo/event widgets; (2) cis.cgat.gov.in (CAT's Case Information System) — provides
+    live case-status lookup only, not a periodic published report; (3) DoPT (parent department) — dopt.gov.in
+    is a known-unreachable host on this network per track instructions, so its archive could not be checked
+    directly; Dept. of Financial Services' own FY2025-26 annual report (financialservices.gov.in) references
+    tracking CAT court cases via the LIMBS portal but does not constitute a CAT-published report. Administrative
+    Tribunals Act 1985 has no annual-report/lay-before-Parliament clause — statutorily_required left unknown,
+    not no.
