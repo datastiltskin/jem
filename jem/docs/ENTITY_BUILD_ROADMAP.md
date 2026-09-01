@@ -1,6 +1,7 @@
 # JEM entity build roadmap (~1,500 target)
 
-**Current corpus:** 1,145 entities (v1.0.0, Jun 2026) · **Target:** ~1,500 structural entities  
+**Current corpus:** 1,081 countable entities across 1,145 files, the difference being 64 generic rollups (v1.0.0, Jun 2026) · **Target:** ~1,500 structural entities  
+Counts are derived, not hand-maintained — see `data/derived/entity_counts.yaml` and the Counting section of the root README.  
 **Tracker:** this file is the source of truth. [`README.md`](../../README.md#entity-build-progress) mirrors the status table for GitHub.
 
 ## Status legend
