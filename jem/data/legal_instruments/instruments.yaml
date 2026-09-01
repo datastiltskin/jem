@@ -120,6 +120,12 @@ instruments:
     amended_by: [commercial_courts_amendment_2018]
     data_quality: partial
     sources:
+      # CONTESTED HANDLE — do not re-point this URL without checking which Act
+      # it lands on. Track C reported the correct India Code handle as 2156
+      # rather than the 2181 seeded here. Both 404 today, so neither claim can
+      # be settled against the primary and the seeded value is left untouched.
+      # The trap is that whoever repairs the domain may silently land on the
+      # wrong Act; confirm the title in the document before trusting either.
       - { label: "Commercial Courts Act 2015", url: "https://www.indiacode.nic.in/handle/123456789/2181", type: CentralAct }
 
   - id: commercial_courts_amendment_2018
