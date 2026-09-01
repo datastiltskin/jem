@@ -1,0 +1,121 @@
+# ledger/prompt_registry.yaml — the INPUT ledger (mirror of the output run-ledger)
+#
+# A prompt is a versioned config that generates data, so it carries the same
+# provenance discipline as leaf data. Store this IN GITHUB: git history IS the
+# changelog. friedso may serve a build-derived JSON view for the UI, but the
+# source of truth stays here in the repo.
+#
+# Self-improvement loop:
+#   output ledger + consensus/expert finding on quality
+#     → log revision_trigger  → bump version  → old row status: superseded
+#     → registry changelog (this file's git history)
+#
+# The agent NEVER edits its own prompt mid-run (that forks prompt_version
+# silently). Only this deliberate, versioned loop changes a prompt.
+
+prompts:
+
+  - prompt_id: verify-trib
+    version: v1
+    track: verification
+    purpose: >
+      Independent verifier — checks stored case_volume + NJDG source stamps for
+      the contaminated 44 against primary sources; emits CSV + meta.json.
+    path: ledger/prompts/verifier_prompt.md
+    status: active
+    created: '2026-08-20'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []          # populate as Prajna/Agriya runs land
+
+  - prompt_id: rater-card-agriya-codex
+    version: v1
+    track: verification
+    purpose: Per-rater harness/context card for Agriya (Codex CLI + API).
+    path: ledger/prompts/agriya_codex_card.md
+    status: active
+    created: '2026-08-20'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
+
+  - prompt_id: rater-card-prajna-deepseek
+    version: v1
+    track: verification
+    purpose: Per-rater harness/context card for Prajna (DeepSeek API + script).
+    path: ledger/prompts/prajna_deepseek_card.md
+    status: active
+    created: '2026-08-20'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
+
+  - prompt_id: consensus-harness
+    version: v1
+    track: infrastructure
+    purpose: >
+      The intra-run consensus pipeline (liveness → researcher → verifier →
+      gated critic → reconcile → ledger). Cited by all generation tracks.
+    path: ledger/prompts/02_CONSENSUS_HARNESS_SPEC.md
+    status: active
+    created: '2026-08-31'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
+
+  - prompt_id: cursor-C-commercial
+    version: v1
+    track: generation
+    purpose: TN Commercial Courts (CommercialCourt), structural-first + suggested edges.
+    path: ledger/prompts/03_CURSOR_C_commercial_courts.md
+    status: active
+    created: '2026-08-31'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
+
+  - prompt_id: cursor-K-criminal
+    version: v1
+    track: generation
+    purpose: TN judicial criminal magistracy on BNSS (CrPC retained), suggested edges.
+    path: ledger/prompts/04_CURSOR_K_criminal_magistracy.md
+    status: active
+    created: '2026-08-31'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
+
+  - prompt_id: cursor-N-classification
+    version: v1
+    track: refactor
+    purpose: Two-axis classification + generic-exclusion counts + independent recount.
+    path: ledger/prompts/05_CURSOR_N_classification_counting.md
+    status: active
+    created: '2026-08-31'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
+
+  - prompt_id: report-publication
+    version: v1
+    track: meta-provenance
+    purpose: Does a body that should publish reports actually do so; feeds ACS.
+    path: ledger/prompts/06_CURSOR_report_publication.md
+    status: active
+    created: '2026-08-31'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
+
+  - prompt_id: public-inspection
+    version: v1
+    track: audit
+    purpose: >
+      Read-only invariant audit anyone can run; doubles as the critic rung on
+      other models. Emits a violations report, edits nothing.
+    path: ledger/prompts/08_public_inspection_prompt.md
+    status: active
+    created: '2026-08-31'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
