@@ -4,6 +4,7 @@ name_hindi: राज्य निर्वाचन आयोग (सामा�
 abbreviation: SEC
 
 type: RegulatoryBodyQJ
+is_generic_rollup: true
 cluster: regulatory_bodies
 level_of_government: State
 

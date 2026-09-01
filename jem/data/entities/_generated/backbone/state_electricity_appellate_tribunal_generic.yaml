@@ -5,6 +5,7 @@ aliases:
 - State Electricity Ombudsman
 - SERC consumer grievance mechanism
 type: StateTribunal
+is_generic_rollup: true
 cluster: regulatory_bodies
 level_of_government: State
 created_year: 2003

@@ -6,6 +6,7 @@ aliases:
   - Special Director under FEMA
   - Director of Enforcement (adjudicatory capacity under s.37)
 type: RegulatoryBodyQJ
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: Central
 jurisdiction_scope:

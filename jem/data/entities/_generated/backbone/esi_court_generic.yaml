@@ -6,6 +6,7 @@ aliases:
 - ESI Court
 - ESIC Court
 type: SpecialCourt
+is_generic_rollup: true
 cluster: subordinate_courts
 level_of_government: Shared_CentralState
 created_year: 1948
