@@ -2,6 +2,10 @@
 """
 JEM public inspection — read-only invariant audit.
 
+Named public_inspection rather than inspect: a module called inspect.py inside a
+directory that lands on sys.path shadows the standard library's inspect for every
+later import, which silently breaks any dependency that relies on it.
+
 The executable half of ledger/prompts/08_public_inspection_prompt.md. It edits
 nothing and writes nowhere: it reads a JEM snapshot and emits a violations
 report. Internally this is the critic rung; published, it is the community
@@ -24,9 +28,9 @@ Checks (numbered as in the prompt):
   9  prompt provenance           — ledger runs cite a registered prompt
 
 Usage:
-    python3 scripts/harness/inspect.py                 # offline structural checks
-    python3 scripts/harness/inspect.py --liveness      # also HTTP-check source URLs
-    python3 scripts/harness/inspect.py --json out.json
+    python3 scripts/harness/public_inspection.py                 # offline structural checks
+    python3 scripts/harness/public_inspection.py --liveness      # also HTTP-check source URLs
+    python3 scripts/harness/public_inspection.py --json out.json
 """
 
 from __future__ import annotations

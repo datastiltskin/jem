@@ -162,7 +162,7 @@ Category C28 is structurally started but numerically incomplete in v1.0.0. The t
 | `judge_strength` (allotted / appointed) | 750 | 44 | 36 | Stubs attached, bulk fill blocked on DoJ / HC rosters |
 | `case_volume` / pending caseload | 157 | 85 | 2 | Rollup merge from prior NJDG snapshot only |
 
-The fourth column is the one that matters, and it is the reason the numerics are not treated as trustworthy. A figure "with a real number" only means an integer is stored; it says nothing about whether that integer can be traced. Of the 85 stored `case_volume` figures, 83 cite a bare homepage rather than a document containing the value, which is not a citation — it is a gesture at a website. Run `python3 scripts/harness/inspect.py` for the itemised list. Treat every unsourced figure as provisional until a research pass replaces it or removes it.
+The fourth column is the one that matters, and it is the reason the numerics are not treated as trustworthy. A figure "with a real number" only means an integer is stored; it says nothing about whether that integer can be traced. Of the 85 stored `case_volume` figures, 83 cite a bare homepage rather than a document containing the value, which is not a citation — it is a gesture at a website. Run `python3 scripts/harness/public_inspection.py` for the itemised list. Treat every unsourced figure as provisional until a research pass replaces it or removes it.
 
 Scripts: [`populate_v12_numerics.py`](jem/scripts/populate_v12_numerics.py) (idempotent stubs) · [`merge_njdg_snapshot.py`](jem/scripts/merge_njdg_snapshot.py) (external snapshot) · plan: [`NJDG_MERGE_PLAN.md`](jem/docs/NJDG_MERGE_PLAN.md).
 

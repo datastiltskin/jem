@@ -72,7 +72,8 @@ prompts:
     created: '2026-08-31'
     superseded_by: null
     revision_trigger: null
-    linked_run_ids: []
+    linked_run_ids:
+      - cursor-C-commercial__claude__dso__20260901T004100Z
 
   - prompt_id: cursor-K-criminal
     version: v1
@@ -83,7 +84,8 @@ prompts:
     created: '2026-08-31'
     superseded_by: null
     revision_trigger: null
-    linked_run_ids: []
+    linked_run_ids:
+      - cursor-K-criminal__claude__dso__20260901T003800Z
 
   - prompt_id: cursor-N-classification
     version: v1
@@ -94,7 +96,8 @@ prompts:
     created: '2026-08-31'
     superseded_by: null
     revision_trigger: null
-    linked_run_ids: []
+    linked_run_ids:
+      - cursor-N-recount__20260901T002914Z
 
   - prompt_id: report-publication
     version: v1
@@ -118,4 +121,122 @@ prompts:
     created: '2026-08-31'
     superseded_by: null
     revision_trigger: null
+    linked_run_ids:
+      - public_inspection__20260901T003059Z
+
+  # ── Dispatch prompts ──────────────────────────────────────────────────────
+  # A dispatch prompt is a governing track prompt plus the run-specific context
+  # an agent cannot discover for itself: hosts already proven unreachable, where
+  # staging output goes, and what counts as success. It is a different artifact
+  # with different content, so it is registered separately and a run cites the
+  # prompt that actually governed it, not the one it was derived from.
+
+  - prompt_id: dispatch-cursor-C-commercial
+    version: v1
+    track: generation
+    derived_from: cursor-C-commercial-v1
+    purpose: >
+      Track C as dispatched: governing prompt plus the tested TN source map, the
+      liveness-gate invocation, staging paths, and an explicit statement that a
+      documented empty result is a successful run.
+    path: ledger/prompts/dispatch/C_track_dispatch_v1.md
+    model: claude-opus-5
+    status: active
+    created: '2026-09-01'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids:
+      - cursor-C-commercial__claude__dso__20260901T004100Z
+
+  - prompt_id: dispatch-cursor-K-criminal
+    version: v1
+    track: generation
+    derived_from: cursor-K-criminal-v1
+    purpose: >
+      Track K as dispatched. Same shape as the C dispatch, scoped to the judicial
+      criminal magistracy below District & Sessions level.
+    path: ledger/prompts/dispatch/K_track_dispatch_v1.md
+    model: claude-opus-5
+    status: active
+    created: '2026-09-01'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids:
+      - cursor-K-criminal__claude__dso__20260901T003800Z
+
+  - prompt_id: dispatch-cursor-N-recount
+    version: v1
+    track: verification
+    derived_from: cursor-N-classification-v1
+    purpose: >
+      The independent recount verifier. Carries the independence rules that make
+      it a check rather than a mirror: do not read or import derive.py, and do
+      not open the counts artifact until your own numbers are recorded.
+    path: ledger/prompts/dispatch/N_recount_dispatch_v1.md
+    model: gpt-5.6-sol-high        # deliberately a different base-model family
+    status: active
+    created: '2026-09-01'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids:
+      - cursor-N-recount__20260901T002914Z
+
+  - prompt_id: dispatch-report-publication
+    version: v1
+    track: meta-provenance
+    derived_from: report-publication-v1
+    purpose: >
+      Report-publication as dispatched, scoped to 12 named bodies with reachable
+      sites rather than the governing prompt's 44. See revision_trigger.
+    path: ledger/prompts/dispatch/report_publication_dispatch_v1.md
+    model: claude-sonnet-5-thinking-high
+    status: active
+    created: '2026-09-01'
+    superseded_by: null
+    revision_trigger: >
+      Scope reduced from 44 to 12. "The 44" is not reproducible from the repo -
+      the nearest principled definition (tribunal/regulator/ADR/consumer/arbitral
+      entities carrying a case_volume block) yields 51, and the actual roster
+      lives in the earlier verification round's uncommitted artifacts. Restore
+      the full scope once that roster is committed.
+    linked_run_ids:
+      - track_report_publication.csv
+
+  - prompt_id: dispatch-packet-locator
+    version: v1
+    track: infrastructure
+    purpose: >
+      Agent 0 — establish whether the orchestrator packet already exists in the
+      repo, on a branch, or as a zip on disk. A negative finding is the correct
+      outcome and is what stopped a fabricated run from the screenshot.
+    path: ledger/prompts/dispatch/packet_locator_dispatch_v1.md
+    model: claude-opus-5
+    status: active
+    created: '2026-08-31'
+    superseded_by: null
+    revision_trigger: null
     linked_run_ids: []
+
+  # ── Orchestration ─────────────────────────────────────────────────────────
+
+  - prompt_id: orchestration-run-2026-09-01
+    version: v1
+    track: infrastructure
+    purpose: >
+      The run record for the 2026-09-01 packet execution: agent roster, firing
+      order, permission grants, per-agent workflows and handovers.
+    path: ledger/ORCHESTRATION_RUN.md
+    dashboard: ledger/dashboard/index.html
+    diagrams:
+      - ledger/diagrams/orchestration.png
+      - ledger/diagrams/orchestration.gif
+    status: active
+    created: '2026-09-01'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids:
+      - cursor-C-commercial__claude__dso__20260901T004100Z
+      - cursor-K-criminal__claude__dso__20260901T003800Z
+      - cursor-N-recount__20260901T002914Z
+      - public_inspection__20260901T003059Z
+      - liveness__instruments__20260901T001502Z
