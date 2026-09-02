@@ -26,6 +26,13 @@ _SCRIPT_DIR = Path(__file__).parent
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 from derive import is_scores_excluded
+from classification import classify_entity, TYPE_CLASSIFICATION
+
+
+def _classifiable(entity: Dict[str, Any]) -> bool:
+    """Guard so an unmapped type degrades the UI badge rather than the build.
+    validate.py is the gate that makes this condition impossible in CI."""
+    return bool(entity.get("classification_override")) or entity.get("type") in TYPE_CLASSIFICATION
 
 
 def resolve_release_version(cli_version: Optional[str] = None) -> str:
@@ -279,6 +286,19 @@ def load_derived_scores(data_dir: Path) -> Dict[str, Dict]:
     data = load_yaml_file(scores_path)
     if data and isinstance(data, dict):
         return data.get('derived_scores', {})
+    return {}
+
+
+def load_entity_counts(data_dir: Path) -> Dict:
+    """Load the derived two-axis counts. Never recount here — a second
+    implementation of counting is a second answer waiting to disagree."""
+    counts_path = data_dir / "derived" / "entity_counts.yaml"
+    if not counts_path.exists():
+        print("  INFO: No entity_counts.yaml found. Run scripts/derive.py first.")
+        return {}
+    data = load_yaml_file(counts_path)
+    if data and isinstance(data, dict):
+        return data.get('entity_counts', {})
     return {}
 
 
@@ -537,6 +557,9 @@ def build_graph_json(
             "data_quality_notes": e.get("data_quality_notes"),
             "role_layer": e.get("role_layer"),
             "role_type": e.get("role_type"),
+            "nature": (classify_entity(e)[0] if _classifiable(e) else None),
+            "function": (classify_entity(e)[1] if _classifiable(e) else None),
+            "is_generic_rollup": bool(e.get("is_generic_rollup", False)),
             "unverified_fields": e.get("unverified_fields", []),
             "derived": e.get("derived", {}),
             "funding_source": (e.get("funding") or {}).get("primary_source"),
@@ -561,6 +584,8 @@ def build_graph_json(
                 "structural_variations": e.get("structural_variations", []),
                 "unverified_fields": e.get("unverified_fields", []),
                 "jurisdiction_scope": e.get("jurisdiction_scope"),
+                "pecuniary_jurisdiction": e.get("pecuniary_jurisdiction"),
+                "report_publication": e.get("report_publication"),
                 "case_volume": e.get("case_volume"),
                 "judge_strength": e.get("judge_strength"),
                 "parent_hc": e.get("parent_hc"),
@@ -695,12 +720,18 @@ def build_graph_json(
     browse_index = compute_browse_index(frontend_entities)
 
     version = resolve_release_version(release_version)
+    entity_counts = load_entity_counts(data_dir)
     print(f"\nStep 12: Assembling final graph.json (release {version})...")
     graph = {
         "meta": {
             "version": version,
             "generated_at": datetime.now(timezone.utc).isoformat(),
+            # entity_count is every node the graph renders, generic rollups
+            # included. entity_counts.total_countable is the corpus size for
+            # reporting, which excludes them. Different questions, both true —
+            # they are named apart so neither gets quoted as the other.
             "entity_count": len(frontend_entities),
+            "entity_counts": entity_counts,
             "relationship_count": len(frontend_relationships),
             "canvas_width": CANVAS_WIDTH,
             "canvas_height": CANVAS_HEIGHT,

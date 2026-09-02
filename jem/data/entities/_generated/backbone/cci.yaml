@@ -82,3 +82,25 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: 'yes'
+  statutorily_required_source: https://www.cci.gov.in/public/images/combinationlegalframeworkact/en/the-competition-act-20021733120802.pdf
+  report_type: annual_report
+  last_published: '2024-12-20'
+  last_published_url: https://www.cci.gov.in/public/images/annualreport/en/annual-report-2023-241734695318.pdf
+  expected_cadence: annual
+  data_as_of: '2024-03-31'
+  source_type: AnnualReport
+  source_url: https://www.cci.gov.in/public/images/annualreport/en/annual-report-2023-241734695318.pdf
+  notes: 'Competition Act 2002 s.53(2)-(3) requires CCI to prepare an annual report once a year and forward
+    it to the Central Government (within 180 days of FY close per CCI (Form and Time of Preparation of
+    Annual Report) Rules 2008), to be laid before each House of Parliament. CCI complies: "Annual Report
+    2023-24" hosted on cci.gov.in, verified live. last_published is approximate — the PDF filename''s
+    embedded Unix timestamp (1734695318) resolves to 2024-12-20, which matches contemporaneous reporting
+    (The Hindu BusinessLine, published 23 Dec 2024, describing the report as tabled in Lok Sabha "this
+    past week") rather than a date read directly off the document''s own text; flagged as approximate
+    rather than exact. NOTE: the live cci.gov.in/annual-report repository page itself is a JS-rendered
+    empty table shell at fetch time — the working PDF link was recovered via search, not by browsing the
+    repository page, and the repository page URL alone would not have passed the liveness gate''s soft-404/homepage
+    checks for a document claim.'

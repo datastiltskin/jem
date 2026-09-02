@@ -3,6 +3,7 @@ name: State Transport Appellate Tribunal — Generic
 name_hindi: राज्य परिवहन अपीलीय अधिकरण — सामान्य
 abbreviation: STAT
 type: StateTribunal
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: State
 created_year: 1988

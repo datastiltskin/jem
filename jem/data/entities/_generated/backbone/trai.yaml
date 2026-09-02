@@ -72,3 +72,26 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: unknown
+  report_type: annual_report
+  last_published: '2026-01-06'
+  last_published_url: https://trai.gov.in/sites/default/files/2026-01/Annual_Report_06012026.pdf
+  expected_cadence: annual
+  data_as_of: '2025-03-31'
+  source_type: AnnualReport
+  source_url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2211766
+  notes: 'TRAI Act 1997 s.24(2)-(3) requires TRAI to prepare an annual report once every year and forward
+    it to the Central Government, to be laid before each House of Parliament (form/timeline under TRAI
+    (Annual Report and Returns) Rules 1999). TRAI complies with an unusually complete public archive:
+    trai.gov.in/about-us/annual-reports lists every edition back to 2005-06. The FY2024-25 edition was
+    laid on the Table of the Lok Sabha on 17 Dec 2025 and the Rajya Sabha on 18 Dec 2025, and released
+    publicly on 6 Jan 2026 — dates read directly off PIB Press Release PRID=2211766 (a primary GoI source,
+    verified live), which is a stronger citation than the statutory-duty mirror (lawgist.in, used only
+    because indiacode.nic.in deep links and indiacode.gov.in''s SPA migration are excluded as non-machine-verifiable
+    per track instructions; indiankanoon.org returned HTTP 403 to automated fetches during this run).
+    The direct PDF (Annual_Report_06012026.pdf) independently passes liveness. [maintainer downgrade]
+    statutorily_required was recorded as ''yes'' on https://lawgist.in/telecom-regulatory-authority-of-india-act/24,
+    a private reproduction of the Act rather than a primary provision. A secondary buys confidence, never
+    the fact, so the duty is ''unknown'' until the section is read from an official text.'

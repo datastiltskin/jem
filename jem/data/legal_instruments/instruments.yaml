@@ -1,0 +1,167 @@
+# data/legal_instruments/ — registry (single source of truth for transition dates)
+#
+# Each instrument defined + verified ONCE, referenced by id from entities/edges.
+# Transition dates below are well-established; a row only reaches
+# data_quality: verified once its URL has passed the liveness pre-gate AND the
+# document at that URL has been confirmed to contain the instrument.
+#
+# One file per instrument is fine too; this registry is a single list for convenience.
+#
+# ── India Code status, checked 2026-09-01 ────────────────────────────────────
+# The India Code portal migrated from indiacode.nic.in to indiacode.gov.in in
+# August 2026. Consequences for every row seeded against the old domain:
+#
+#   1. Deep links on indiacode.nic.in now 404. All 12 seeded URLs failed the
+#      liveness pre-gate (scripts/harness/liveness.py --instruments), as do 45
+#      of the 60 india-code citations elsewhere in the corpus.
+#   2. The replacement portal is a single-page app that returns a byte-identical
+#      200 HTML shell for EVERY path, including nonsense ones. A 200 from it is
+#      not evidence, so indiacode.gov.in URLs cannot currently serve as
+#      machine-verifiable citations at all. The liveness gate rejects them as
+#      soft_404_catch_all_shell rather than passing them on status alone.
+#
+# The three post-2023 criminal codes below are therefore cited to the MHA-hosted
+# enacted texts, which are live, are Gazette-of-India publications, and were
+# confirmed to contain the correct Act titles and numbers. The remaining rows
+# stay data_quality: partial: their transition dates are sound, but their URLs
+# are currently dead and no verified replacement has been located. Re-point them
+# as live primaries are found; do not upgrade a row on a dead link.
+
+instruments:
+
+  - id: constitution_of_india
+    title: The Constitution of India
+    instrument_type: Constitution
+    commenced: '1950-01-26'
+    data_quality: partial
+    sources:
+      - { label: "Constitution of India", url: "https://www.indiacode.nic.in/handle/123456789/15240", type: Constitution }
+
+  # ── Criminal transition (effective 1 July 2024) ──────────────────────────
+  - id: crpc_1973
+    title: The Code of Criminal Procedure, 1973
+    short_title: CrPC
+    instrument_type: CentralAct
+    enacted: '1974-01-25'
+    commenced: '1974-04-01'
+    repealed_on: '2024-07-01'
+    repealed_by: bnss_2023
+    data_quality: partial
+    sources:
+      - { label: "CrPC 1973", url: "https://www.indiacode.nic.in/handle/123456789/16225", type: CentralAct }
+
+  - id: bnss_2023
+    title: The Bharatiya Nagarik Suraksha Sanhita, 2023
+    short_title: BNSS
+    instrument_type: CentralAct
+    enacted: '2023-12-25'
+    commenced: '2024-07-01'
+    replaces: [crpc_1973]
+    data_quality: verified
+    sources:
+      # Enacted text as published in the Gazette of India (Act 46 of 2023), hosted by MHA.
+      # Liveness-passed and content-verified 2026-09-01: the PDF contains
+      # "THE BHARATIYA NAGARIK SURAKSHA SANHITA, 2023" and "NO. 46 OF 2023".
+      - { label: "BNSS 2023 (Act 46 of 2023) — enacted text, MHA", url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf", type: CentralAct, accessed_date: '2026-09-01' }
+
+  - id: ipc_1860
+    title: The Indian Penal Code, 1860
+    short_title: IPC
+    instrument_type: CentralAct
+    commenced: '1862-01-01'
+    repealed_on: '2024-07-01'
+    repealed_by: bns_2023
+    data_quality: partial
+    sources:
+      - { label: "IPC 1860", url: "https://www.indiacode.nic.in/handle/123456789/2263", type: CentralAct }
+
+  - id: bns_2023
+    title: The Bharatiya Nyaya Sanhita, 2023
+    short_title: BNS
+    instrument_type: CentralAct
+    enacted: '2023-12-25'
+    commenced: '2024-07-01'
+    replaces: [ipc_1860]
+    data_quality: verified
+    sources:
+      # Liveness-passed and content-verified 2026-09-01: contains
+      # "THE BHARATIYA NYAYA SANHITA, 2023" and "NO. 45 OF 2023".
+      - { label: "BNS 2023 (Act 45 of 2023) — enacted text, MHA", url: "https://www.mha.gov.in/sites/default/files/2024-04/250883_english_01042024.pdf", type: CentralAct, accessed_date: '2026-09-01' }
+
+  - id: evidence_act_1872
+    title: The Indian Evidence Act, 1872
+    instrument_type: CentralAct
+    commenced: '1872-09-01'
+    repealed_on: '2024-07-01'
+    repealed_by: bsa_2023
+    data_quality: partial
+    sources:
+      - { label: "Indian Evidence Act 1872", url: "https://www.indiacode.nic.in/handle/123456789/2188", type: CentralAct }
+
+  - id: bsa_2023
+    title: The Bharatiya Sakshya Adhiniyam, 2023
+    short_title: BSA
+    instrument_type: CentralAct
+    enacted: '2023-12-25'
+    commenced: '2024-07-01'
+    replaces: [evidence_act_1872]
+    data_quality: verified
+    sources:
+      # Liveness-passed and content-verified 2026-09-01: contains
+      # "THE BHARATIYA SAKSHYA ADHINIYAM, 2023" and "NO. 47 OF 2023".
+      - { label: "BSA 2023 (Act 47 of 2023) — enacted text, MHA", url: "https://www.mha.gov.in/sites/default/files/2024-04/250882_english_01042024_0.pdf", type: CentralAct, accessed_date: '2026-09-01' }
+
+  # ── Commercial courts ────────────────────────────────────────────────────
+  - id: commercial_courts_act_2015
+    title: The Commercial Courts Act, 2015
+    instrument_type: CentralAct
+    enacted: '2016-01-01'
+    commenced: '2015-10-23'         # ordinance date; Act 4 of 2016
+    amended_by: [commercial_courts_amendment_2018]
+    data_quality: partial
+    sources:
+      # CONTESTED HANDLE — do not re-point this URL without checking which Act
+      # it lands on. Track C reported the correct India Code handle as 2156
+      # rather than the 2181 seeded here. Both 404 today, so neither claim can
+      # be settled against the primary and the seeded value is left untouched.
+      # The trap is that whoever repairs the domain may silently land on the
+      # wrong Act; confirm the title in the document before trusting either.
+      - { label: "Commercial Courts Act 2015", url: "https://www.indiacode.nic.in/handle/123456789/2181", type: CentralAct }
+
+  - id: commercial_courts_amendment_2018
+    title: The Commercial Courts (Amendment) Act, 2018
+    instrument_type: CentralAct
+    commenced: '2018-05-03'         # Specified Value floor cut to ₹3 lakh
+    data_quality: partial
+    sources:
+      - { label: "Commercial Courts (Amendment) Act 2018", url: "https://www.indiacode.nic.in/handle/123456789/9962", type: CentralAct }
+
+  # ── Financial-sector regulators / SAT appellate chain ────────────────────
+  - id: sebi_act_1992
+    title: The Securities and Exchange Board of India Act, 1992
+    instrument_type: CentralAct
+    commenced: '1992-01-30'
+    data_quality: partial
+    sources:
+      - { label: "SEBI Act 1992 (s.15K constitutes SAT)", url: "https://www.indiacode.nic.in/handle/123456789/1934", type: CentralAct }
+
+  - id: pfrda_act_2013
+    title: The Pension Fund Regulatory and Development Authority Act, 2013
+    instrument_type: CentralAct
+    commenced: '2014-02-01'
+    data_quality: partial
+    sources:
+      - { label: "PFRDA Act 2013", url: "https://www.indiacode.nic.in/handle/123456789/2064", type: CentralAct }
+
+  - id: ifsca_act_2019
+    title: The International Financial Services Centres Authority Act, 2019
+    short_title: IFSCA Act
+    instrument_type: CentralAct
+    enacted: '2019-12-19'
+    commenced: '2020-04-27'
+    data_quality: partial
+    sources:
+      - { label: "IFSCA Act 2019 (Act 50 of 2019)", url: "https://www.indiacode.nic.in/bitstream/123456789/14009/1/A2019_____50.pdf", type: CentralAct }
+    # NOTE: whether appeals from IFSCA lie DIRECTLY to SAT is UNCONFIRMED from a
+    # clean primary provision. The verify pipeline must locate the exact section
+    # before ifsca AppealableTo sat is promoted. See gap-discovery in the harness.

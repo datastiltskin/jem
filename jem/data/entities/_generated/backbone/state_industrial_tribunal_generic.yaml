@@ -6,6 +6,7 @@ aliases:
 - State Industrial Tribunal
 - Industrial Tribunal (State)
 type: StateTribunal
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: State
 created_year: 1947

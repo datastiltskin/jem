@@ -1,0 +1,2752 @@
+{
+  "summary": {
+    "1": 136,
+    "2": 75,
+    "3": 90,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 3
+  },
+  "total": 304,
+  "violations": [
+    {
+      "check_id": "1",
+      "entity_or_edge": "aft",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://aftdelhi.nic.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://aftdelhi.nic.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "cat",
+      "field": "case_volume.source_url",
+      "observed": "missing",
+      "expected": "a source URL containing the value",
+      "evidence_url": null,
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "cci",
+      "field": "case_volume.source_url",
+      "observed": "missing",
+      "expected": "a source URL containing the value",
+      "evidence_url": null,
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "cestat",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://cestat.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://cestat.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "cgit_delhi",
+      "field": "judge_strength.source_url",
+      "observed": "bare homepage: https://cgit.labour.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://cgit.labour.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "cgit_kolkata",
+      "field": "judge_strength.source_url",
+      "observed": "bare homepage: https://cgit.labour.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://cgit.labour.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "cgit_mumbai",
+      "field": "judge_strength.source_url",
+      "observed": "bare homepage: https://cgit.labour.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://cgit.labour.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "drt",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://drt.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://drt.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "epfat",
+      "field": "judge_strength.source_url",
+      "observed": "bare homepage: https://epfat.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://epfat.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "gstat",
+      "field": "judge_strength.source_url",
+      "observed": "bare homepage: https://efiling.gstat.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://efiling.gstat.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "gstat_bench_generic",
+      "field": "judge_strength.source_url",
+      "observed": "bare homepage: https://efiling.gstat.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://efiling.gstat.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "itat",
+      "field": "case_volume.source_url",
+      "observed": "missing",
+      "expected": "a source URL containing the value",
+      "evidence_url": null,
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "lok_adalat_generic",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://nalsa.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://nalsa.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "nclat",
+      "field": "case_volume.source_url",
+      "observed": "missing",
+      "expected": "a source URL containing the value",
+      "evidence_url": null,
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "nclt",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://nclt.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://nclt.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "nhrc",
+      "field": "judge_strength.source_url",
+      "observed": "bare homepage: https://nhrc.nic.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://nhrc.nic.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "sat",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://satweb.sat.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://satweb.sat.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "sat",
+      "field": "judge_strength.source_url",
+      "observed": "bare homepage: https://satweb.sat.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://satweb.sat.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_allahabad",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_andhra_pradesh",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_bombay",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_calcutta",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_chhattisgarh",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_delhi",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_gauhati",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_gujarat",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_himachal_pradesh",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_jammu_kashmir_ladakh",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_jharkhand",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_karnataka",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_kerala",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_madhya_pradesh",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_madras",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_manipur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_meghalaya",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_orissa",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_patna",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_punjab_haryana",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_rajasthan",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_sikkim",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_telangana",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_tripura",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "hc_uttarakhand",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "derc",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://derc.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://derc.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_district_court_dwarka",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_district_court_karkardooma",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_district_court_patiala_house",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_district_court_rohini",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_district_court_saket",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_district_court_tis_hazari",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_district_courts_generic",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_special_courts",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "dl_state_cdrc",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "city_civil_court_bangalore",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_cdrc_bengaluru",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_bagalkot",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_belagavi",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_bengaluru_rural",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_bengaluru_urban",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_bidar",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_chamarajanagar",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_chikkaballapur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_chikkamagaluru",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_chitradurga",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_davangere",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_dharwad",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_gadag",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_hassan",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_haveri",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_kalaburagi",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_kodagu",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_kolar",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_mandya",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_mangaluru",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_mysuru",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_raichur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_ramanagara",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_udupi",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_uttara_kannada",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_vijayapura",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_court_yadgir",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_district_courts_generic",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_rera",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://rera.karnataka.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://rera.karnataka.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_special_courts",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "ka_state_cdrc",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "kerc",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://kerc.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://kerc.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "city_civil_court_mumbai",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "merc",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://merc.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://merc.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_cdrc_mumbai",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_cdrc_nagpur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_cdrc_pune",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_ahmednagar",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_akola",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_amravati",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_aurangabad",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_beed",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_bhandara",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_buldhana",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_chandrapur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_dhule",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_gadchiroli",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_gondia",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_hingoli",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_jalgaon",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_jalna",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_kolhapur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_latur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_mumbai_city",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_mumbai_suburban",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_nagpur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_nandurbar",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_nashik",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_osmanabad",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_palghar",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_parbhani",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_pune",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_raigad",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_ratnagiri",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_sangli",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_satara",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_sindhudurg",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_solapur",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_thane",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_wardha",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_washim",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_court_yavatmal",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_district_courts_generic",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_rera",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://maharera.maharashtra.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://maharera.maharashtra.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_special_courts",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "mh_state_cdrc",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "py_district_courts",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "tn_cdrc_chennai",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "tn_district_court_chennai",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "tn_district_courts_generic",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://njdg.ecourts.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "tn_state_cdrc",
+      "field": "case_volume.source_url",
+      "observed": "bare homepage: https://consumerhelpline.gov.in/",
+      "expected": "a document URL containing the value",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "high"
+    },
+    {
+      "check_id": "1",
+      "entity_or_edge": "tnerc",
+      "field": "case_volume.source_url",
+      "observed": "missing",
+      "expected": "a source URL containing the value",
+      "evidence_url": null,
+      "severity": "high"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "aptel",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "cag_india",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "cat",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "cci",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "cestat",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "chief_justice_india",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "collegium_sc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type AppointmentBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "department_of_justice",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "diac",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ArbitralInstitution",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "drat",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "drt",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "e_committee_sc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ecourts_services_generic",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "iiac",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ArbitralInstitution",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "irdai",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "itat",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "lok_adalat_generic",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ADRBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mcia",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ArbitralInstitution",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ministry_consumer_affairs",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ministry_corporate_affairs",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ministry_defence",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ministry_environment",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ministry_law_justice",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ministry_of_finance",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ministry_personnel_dopt",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "nalsa",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ADRBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "nclat",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "nclt",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ngt",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "nic_india",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "njdg_generic",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "president_india",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "sat",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "sebi",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tdsat",
+      "field": "sources[].type",
+      "observed": "NJDG source on type CentralTribunal",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "trai",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "derc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "dl_advocate_general",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ProsecutionBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "dl_lieutenant_governor",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "dl_rera",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "dl_sja",
+      "field": "sources[].type",
+      "observed": "NJDG source on type TrainingBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "dl_slsa",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ADRBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "dl_state_cdrc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ka_advocate_general",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ProsecutionBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ka_cdrc_bengaluru",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ka_rera",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ka_sja",
+      "field": "sources[].type",
+      "observed": "NJDG source on type TrainingBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ka_slsa",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ADRBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ka_state_cdrc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "kerc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "merc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_advocate_general",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ProsecutionBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_bar_council",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ProfessionalBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_cdrc_mumbai",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_cdrc_nagpur",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_cdrc_pune",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_rera",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_sja",
+      "field": "sources[].type",
+      "observed": "NJDG source on type TrainingBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_slsa",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ADRBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "mh_state_cdrc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "py_advocate_general",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ProsecutionBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "py_cdrc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "py_lieutenant_governor",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ExecutiveBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "py_slsa",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ADRBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tn_advocate_general",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ProsecutionBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tn_bar_council",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ProfessionalBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tn_cdrc_chennai",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tn_rera",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tn_sja",
+      "field": "sources[].type",
+      "observed": "NJDG source on type TrainingBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tn_slsa",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ADRBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tn_state_cdrc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type ConsumerCommission",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "tnerc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type RegulatoryBodyQJ",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "arbitration_council_india",
+      "field": "sources[].type",
+      "observed": "NJDG source on type StatutoryBodyNotConstituted",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "ecommittee_sc",
+      "field": "sources[].type",
+      "observed": "NJDG source on type DigitalInfraBody",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "2",
+      "entity_or_edge": "cbi",
+      "field": "sources[].type",
+      "observed": "NJDG source on type InvestigativeAgency",
+      "expected": "a source eligible for this body type",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "aft",
+      "field": "case_volume.pending_cases",
+      "observed": 48000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://aftdelhi.nic.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "cat",
+      "field": "case_volume.pending_cases",
+      "observed": 42000,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "cat",
+      "field": "case_volume.pending_cases",
+      "observed": 42000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "cat",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.65,
+      "expected": "not an echo of disposed/filed (11700/18000)",
+      "evidence_url": "",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "cestat",
+      "field": "case_volume.pending_cases",
+      "observed": 120000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://cestat.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "drt",
+      "field": "case_volume.pending_cases",
+      "observed": 195000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://drt.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "nclat",
+      "field": "case_volume.pending_cases",
+      "observed": 4200,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "nclt",
+      "field": "case_volume.pending_cases",
+      "observed": 45000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://nclt.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "sat",
+      "field": "case_volume.pending_cases",
+      "observed": 420,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "https://satweb.sat.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "sat",
+      "field": "case_volume.avg_disposal_days",
+      "observed": 365,
+      "expected": "a measured average, not exactly one year",
+      "evidence_url": "https://satweb.sat.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_allahabad",
+      "field": "case_volume.pending_cases",
+      "observed": 1100000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_andhra_pradesh",
+      "field": "case_volume.pending_cases",
+      "observed": 175000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_bombay",
+      "field": "case_volume.pending_cases",
+      "observed": 480000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_calcutta",
+      "field": "case_volume.pending_cases",
+      "observed": 520000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_chhattisgarh",
+      "field": "case_volume.pending_cases",
+      "observed": 92000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_delhi",
+      "field": "case_volume.pending_cases",
+      "observed": 960000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_gauhati",
+      "field": "case_volume.filed_last_year",
+      "observed": 42000,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_gauhati",
+      "field": "case_volume.pending_cases",
+      "observed": 135000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_gujarat",
+      "field": "case_volume.pending_cases",
+      "observed": 230000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_himachal_pradesh",
+      "field": "case_volume.pending_cases",
+      "observed": 55000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_jammu_kashmir_ladakh",
+      "field": "case_volume.pending_cases",
+      "observed": 42000,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_jammu_kashmir_ladakh",
+      "field": "case_volume.pending_cases",
+      "observed": 42000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_jharkhand",
+      "field": "case_volume.pending_cases",
+      "observed": 78000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_karnataka",
+      "field": "case_volume.pending_cases",
+      "observed": 340000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_karnataka",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.93,
+      "expected": "not an echo of disposed/filed (93000/100000)",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_kerala",
+      "field": "case_volume.pending_cases",
+      "observed": 180000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_madhya_pradesh",
+      "field": "case_volume.pending_cases",
+      "observed": 260000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_madras",
+      "field": "case_volume.pending_cases",
+      "observed": 570000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_manipur",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.875,
+      "expected": "not an echo of disposed/filed (2800/3200)",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_orissa",
+      "field": "case_volume.pending_cases",
+      "observed": 185000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_patna",
+      "field": "case_volume.pending_cases",
+      "observed": 280000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_punjab_haryana",
+      "field": "case_volume.pending_cases",
+      "observed": 420000,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_punjab_haryana",
+      "field": "case_volume.pending_cases",
+      "observed": 420000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_rajasthan",
+      "field": "case_volume.pending_cases",
+      "observed": 310000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_telangana",
+      "field": "case_volume.pending_cases",
+      "observed": 190000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_tripura",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.875,
+      "expected": "not an echo of disposed/filed (2100/2400)",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "hc_uttarakhand",
+      "field": "case_volume.pending_cases",
+      "observed": 62000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_court_dwarka",
+      "field": "case_volume.pending_cases",
+      "observed": 190000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_court_karkardooma",
+      "field": "case_volume.pending_cases",
+      "observed": 220000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_court_patiala_house",
+      "field": "case_volume.disposed_last_year",
+      "observed": 42000,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_court_patiala_house",
+      "field": "case_volume.pending_cases",
+      "observed": 180000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_court_patiala_house",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.875,
+      "expected": "not an echo of disposed/filed (42000/48000)",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_court_rohini",
+      "field": "case_volume.pending_cases",
+      "observed": 250000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_court_saket",
+      "field": "case_volume.pending_cases",
+      "observed": 280000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_court_tis_hazari",
+      "field": "case_volume.pending_cases",
+      "observed": 600000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_district_courts_generic",
+      "field": "case_volume.pending_cases",
+      "observed": 280000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_special_courts",
+      "field": "case_volume.pending_cases",
+      "observed": 65000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "dl_state_cdrc",
+      "field": "case_volume.pending_cases",
+      "observed": 24000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "city_civil_court_bangalore",
+      "field": "case_volume.pending_cases",
+      "observed": 500000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "city_civil_court_bangalore",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.9,
+      "expected": "not an echo of disposed/filed (108000/120000)",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_cdrc_bengaluru",
+      "field": "case_volume.pending_cases",
+      "observed": 14000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_court_belagavi",
+      "field": "case_volume.pending_cases",
+      "observed": 110000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_court_bengaluru_rural",
+      "field": "case_volume.pending_cases",
+      "observed": 95000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_court_bengaluru_urban",
+      "field": "case_volume.pending_cases",
+      "observed": 450000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_court_dharwad",
+      "field": "case_volume.pending_cases",
+      "observed": 80000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_court_kalaburagi",
+      "field": "case_volume.pending_cases",
+      "observed": 85000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_court_kalaburagi",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.875,
+      "expected": "not an echo of disposed/filed (21000/24000)",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_court_mangaluru",
+      "field": "case_volume.pending_cases",
+      "observed": 60000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_court_mysuru",
+      "field": "case_volume.pending_cases",
+      "observed": 125000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_district_courts_generic",
+      "field": "case_volume.pending_cases",
+      "observed": 1800000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_rera",
+      "field": "case_volume.pending_cases",
+      "observed": 18000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://rera.karnataka.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_special_courts",
+      "field": "case_volume.pending_cases",
+      "observed": 35000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "ka_state_cdrc",
+      "field": "case_volume.pending_cases",
+      "observed": 20000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "city_civil_court_mumbai",
+      "field": "case_volume.pending_cases",
+      "observed": 900000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_cdrc_mumbai",
+      "field": "case_volume.pending_cases",
+      "observed": 22000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_cdrc_pune",
+      "field": "case_volume.pending_cases",
+      "observed": 14000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_amravati",
+      "field": "case_volume.pending_cases",
+      "observed": 50000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_amravati",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.875,
+      "expected": "not an echo of disposed/filed (14000/16000)",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_aurangabad",
+      "field": "case_volume.pending_cases",
+      "observed": 95000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_kolhapur",
+      "field": "case_volume.pending_cases",
+      "observed": 70000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_mumbai_city",
+      "field": "case_volume.pending_cases",
+      "observed": 280000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_nagpur",
+      "field": "case_volume.pending_cases",
+      "observed": 110000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_nashik",
+      "field": "case_volume.pending_cases",
+      "observed": 125000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_pune",
+      "field": "case_volume.pending_cases",
+      "observed": 190000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_solapur",
+      "field": "case_volume.pending_cases",
+      "observed": 75000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_court_thane",
+      "field": "case_volume.pending_cases",
+      "observed": 210000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_district_courts_generic",
+      "field": "case_volume.pending_cases",
+      "observed": 3600000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_rera",
+      "field": "case_volume.pending_cases",
+      "observed": 42000,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "https://maharera.maharashtra.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_rera",
+      "field": "case_volume.avg_disposal_days",
+      "observed": 365,
+      "expected": "a measured average, not exactly one year",
+      "evidence_url": "https://maharera.maharashtra.gov.in/",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_rera",
+      "field": "case_volume.pending_cases",
+      "observed": 42000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://maharera.maharashtra.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_special_courts",
+      "field": "case_volume.pending_cases",
+      "observed": 48000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "mh_state_cdrc",
+      "field": "case_volume.pending_cases",
+      "observed": 32000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "py_district_courts",
+      "field": "case_volume.pending_cases",
+      "observed": 38000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "tn_cdrc_chennai",
+      "field": "case_volume.pending_cases",
+      "observed": 18000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "tn_district_court_chennai",
+      "field": "case_volume.pending_cases",
+      "observed": 280000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "tn_district_courts_generic",
+      "field": "case_volume.pending_cases",
+      "observed": 3200000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://njdg.ecourts.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "tn_state_cdrc",
+      "field": "case_volume.pending_cases",
+      "observed": 28000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://consumerhelpline.gov.in/",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "tnerc",
+      "field": "case_volume.disposed_last_year",
+      "observed": 420,
+      "expected": "a sourced integer, not a 42-ladder value",
+      "evidence_url": "",
+      "severity": "medium"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "tnerc",
+      "field": "case_volume.disposal_rate",
+      "observed": 0.875,
+      "expected": "not an echo of disposed/filed (420/480)",
+      "evidence_url": "",
+      "severity": "low"
+    },
+    {
+      "check_id": "3",
+      "entity_or_edge": "supreme_court_india",
+      "field": "case_volume.pending_cases",
+      "observed": 80000,
+      "expected": "an exact figure, not a round thousand",
+      "evidence_url": "https://www.sci.gov.in/case-status-case-no/",
+      "severity": "low"
+    },
+    {
+      "check_id": "9",
+      "entity_or_edge": "verify-trib",
+      "field": "path",
+      "observed": "ledger/prompts/verifier_prompt.md not present",
+      "expected": "a committed prompt artifact",
+      "evidence_url": null,
+      "severity": "medium"
+    },
+    {
+      "check_id": "9",
+      "entity_or_edge": "rater-card-agriya-codex",
+      "field": "path",
+      "observed": "ledger/prompts/agriya_codex_card.md not present",
+      "expected": "a committed prompt artifact",
+      "evidence_url": null,
+      "severity": "medium"
+    },
+    {
+      "check_id": "9",
+      "entity_or_edge": "rater-card-prajna-deepseek",
+      "field": "path",
+      "observed": "ledger/prompts/prajna_deepseek_card.md not present",
+      "expected": "a committed prompt artifact",
+      "evidence_url": null,
+      "severity": "medium"
+    }
+  ]
+}

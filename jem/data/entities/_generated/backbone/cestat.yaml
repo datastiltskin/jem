@@ -84,3 +84,19 @@ judge_strength:
   source_type: Tribunal_Report
   source_url: https://cestat.gov.in/
   notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+report_publication:
+  publishes_reports: 'no'
+  statutorily_required: unknown
+  data_as_of: '2026-09-01'
+  source_type: GoIWebsite
+  source_url: https://cestat.gov.in
+  notes: No annual report or consolidated activity report found after checking (1) cestat.gov.in — no
+    "Annual Report" or "Publications" page exists; the site's /openfile/ index only surfaces internal
+    monthly bench-wise pendency/disposal circulars (e.g. cestat.gov.in/openfile/2/8259, dated Aug 2024)
+    and consolidated monthly expenditure statements to Dept. of Revenue — these are administrative memos
+    incidentally web-indexed, not a public-facing report; (2) CBIC / Department of Revenue, Ministry of
+    Finance — no CESTAT-specific annual report found on taxinformation.cbic.gov.in; (3) CAG audit reports
+    — CAG Report No. 33 of 2025 audits Dept. of Revenue's Duty Drawback Scheme, not a CESTAT institutional
+    report. Statutory basis (Customs Act 1962 ss.129/129A-129C; Central Excise Act 1944 s.35B) establishes
+    CESTAT and its procedure but contains no annual-report/ lay-before-Parliament clause analogous to
+    SEBI Act s.18 or TRAI Act s.24 — so statutorily_required is left unknown, not no.

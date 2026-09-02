@@ -48,3 +48,6 @@ data/jem.db
 data/jem.db-shm
 data/jem.db-wal
 data/digests/
+
+# Harness bytecode
+scripts/harness/__pycache__/

@@ -3,6 +3,7 @@ name: State Mental Health Review Board — Generic
 name_hindi: राज्य मानसिक स्वास्थ्य समीक्षा बोर्ड — सामान्य
 abbreviation: MHRB
 type: StateTribunal
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: State
 created_year: 2017
