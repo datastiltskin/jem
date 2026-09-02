@@ -11,6 +11,7 @@ An open structural map of India's judicial ecosystem: institutional capacity, re
 JEM maps *how* courts, tribunals, regulators, and oversight bodies are built. That means appointment chains, funding flows, independence risk, structural gaps, case volume and clogging. It does not map *what* they decide. The aim is structural literacy: a dashboard view of institutional carrying capacity, for administrators, litigants, journalists, ministry officials, and anyone else who needs one.
 
 - Canonical demo (attribution): https://friedso.com/apps/jem/
+- Community orchestration dashboard (GitHub Pages, after a maintainer enables it): https://datastiltskin.github.io/jem/ — how to enable: [`jem/docs/GITHUB_PAGES.md`](jem/docs/GITHUB_PAGES.md). Preview from a clone: open [`docs/index.html`](docs/index.html).
 - Data licence: CC0 (public domain)
 - Code licence: MIT
 - GitHub: https://github.com/datastiltskin/jem
@@ -396,7 +397,8 @@ cd ..
 3. Examples (set your own paths, these are not stored in this repo):
    - rsync/SSH: `export JEM_REMOTE='user@your-host:~/path/to/apps/jem'`, then rsync `graph.json` and `jem/web/` to your host.
    - Local preview: `cd jem/web && python3 -m http.server 8080` (make sure `public/graph.json` resolves).
-   - Static hosts: upload `jem/web/` plus `graph.json` as `public/graph.json` (Netlify, S3, GitHub Pages, nginx, and so on).
+   - Static hosts for the **map**: upload `jem/web/` plus `graph.json` as `public/graph.json` (Netlify, S3, nginx, and so on).
+   - GitHub Pages is reserved for the **orchestration dashboard** (`docs/`), not the map. See [`jem/docs/GITHUB_PAGES.md`](jem/docs/GITHUB_PAGES.md).
 
 Production deploy is maintainer-only from branch `friedso_v1`. See [`.github/GOVERNANCE.md`](.github/GOVERNANCE.md). Public workflow: [`jem/docs/SESSION_WORKFLOW.md`](jem/docs/SESSION_WORKFLOW.md) · [`deploy_friedso_production.sh`](jem/scripts/deploy_friedso_production.sh) · [`deploy_prep.sh`](jem/scripts/deploy_prep.sh).
 

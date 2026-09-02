@@ -8,9 +8,24 @@ Timings are UTC on 2026-09-01. Where a time comes from a file mtime or a git
 commit it is exact; where it comes from an agent's self-reported ledger field it
 is marked, because agents turn out to be unreliable clocks (see §6).
 
-Dashboard (tables + animated swimlane): `ledger/dashboard/index.html`.
-Diagram: `ledger/diagrams/orchestration.png` (static) and
-`ledger/diagrams/orchestration.gif` (animated, one frame per wave).
+Dashboard (tables + animated swimlane + letter legend): `ledger/dashboard/index.html`.
+GitHub Pages snapshot (repo website, after enablement): repo-root `docs/` — see `jem/docs/GITHUB_PAGES.md`.
+Diagram: `ledger/diagrams/orchestration.png` (still),
+`orchestration.gif` (animated, shared palette), and `orchestration.mp4` (shareable video).
+
+### Letter codes
+
+| Letter | Means |
+|---|---|
+| **S** | Schema foundation (serial gate) |
+| **C** | Tamil Nadu commercial courts (generation) |
+| **K** | Tamil Nadu criminal magistracy (generation). Packet letter, not an acronym. |
+| **N** | Classification + counting (runs last; independent recount) |
+| **W1–W6** | Waves of this run, not agents |
+| **∥** | Parallel (C and K, disjoint file scopes) |
+| **TN** | Tamil Nadu |
+| **BNSS** | Bharatiya Nagarik Suraksha Sanhita, 2023 |
+
 
 ---
 
