@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:06:01 GMT
+Server: 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), microphone=(), camera=()
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Language: en
+X-Frame-Options: SAMEORIGIN
+Link: </bench-wise-institution-disposal-and-pendency-cases-ngt-principal-bench-and-all-zonal-benches>; rel="canonical",</node/7888>; rel="shortlink"
+Expires: 0
+Cache-Control: no-store,no-cache,must-revalidate
+Pragma: no-cache
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https: https://maps.gstatic.com https://maps.googleapis.com https://*.google.com https://*.gstatic.com; font-src 'self' data: https:; connect-src 'self' https: https://maps.googleapis.com; media-src 'self' https:; object-src 'none'; base-uri 'self'; frame-src 'self' https://www.google.com https://maps.google.com https://www.google.com/maps https://maps.googleapis.com; frame-ancestors 'self';
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+

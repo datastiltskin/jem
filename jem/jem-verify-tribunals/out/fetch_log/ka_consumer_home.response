@@ -1,0 +1,3500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ಕರ್ನಾಟಕ ರಾಜ್ಯ ಗ್ರಾಹಕರ ವ್ಯಾಜ್ಯಗಳ ಪರಿಹಾರ ಆಯೋಗ - Index</title>
+
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/rti_datatables/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/bootstrap.css">
+	   <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/knfont.css">
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/owl_custom.css">
+   <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/style.css?1788668057=">
+<link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/responsive.css?1788668057=">
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/navbar.css">
+
+  <link rel="stylesheet" type="text/css" href="https://kscdrc.karnataka.gov.in/assets/front/owl/owl.carousel.min.css">
+    <link href="assets/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/png" sizes="42x42" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="https://kscdrc.karnataka.gov.in/assets/front/tabswipe/css/swipe.css">
+  <link rel="stylesheet" type="text/css" href="https://kscdrc.karnataka.gov.in/assets/front/tabswipe/css/swipe_bundle.css">
+  <link rel="stylesheet" type="text/css" href="https://kscdrc.karnataka.gov.in/assets/front/tabswipe/css/tabswipe_style.css?1788668057=">
+    <!-- Custom CSS -->
+ <style>
+    .owl-policy-res-down .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    display: flex;
+}        :root {
+            --primary2-color: #b33771;
+            --secondary2-color: #82589f;
+
+              --primary-color: linear-gradient(90deg, var(--primary2-color) 9%, var(--secondary2-color) 120%);
+        }
+    
+  
+</style>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/rti_datatables/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/jquery_min.js"></script>
+    <script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/itbt/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/custom.js"></script>
+
+    <!-- Base URL and Language Variables -->
+    <script type="text/javascript">
+        var base_url = "https://kscdrc.karnataka.gov.in/";
+        var lang_name = "kn";
+    </script>
+
+</head>
+
+<body class="dark-mode-area"  translate="no">
+<div id="main">
+    <div class="top-header">
+        <div class="topHeaderInner">
+
+            <div class="topHeadingLinks">
+
+                <a href="https://kscdrc.karnataka.gov.in/back/index" target="blank" class="login-btn">
+                    <div class="topHeadingLinkSingle">
+                        <div class="topHeadingLinkIcon">
+                            <img src="https://kscdrc.karnataka.gov.in/assets/front/itbt/images/header-profile.png" class="topHeadingLinkIco" alt="login">
+                        </div>
+                        <div class="topHeadingLinkLable">
+                            <p class="topHeadingLinkLableTxt">login</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://kscdrc.karnataka.gov.in/en" class="no-dec login-button">
+                    <div class="topHeadingLinkSingle">
+                    
+                        <div class="topHeadingLinkLable">
+                            <p class="topHeadingLinkLableTxt">English </p>
+                        </div>
+                    </div>
+                </a>
+
+                  <a  data-bs-toggle="modal" data-bs-target="#screen_reader_kn" ><div class="topHeadingLinkSingle visually-challenged">
+                    <div class="topHeadingLinkIcon">
+                        <img src="https://kscdrc.karnataka.gov.in/assets/front/itbt/images/visually-challenged.png" class="topHeadingLinkIco" alt="visually challenged">
+                    </div>
+                    <div class="topHeadingLinkLable">
+                        <p class="topHeadingLinkLableTxt">visually challenged</p>
+                    </div>
+                </div></a>
+
+            </div>
+
+
+            <div class="subHeaderActions" style="display:flex;">
+
+
+       
+
+
+
+
+
+    
+<form id="searchForm" method="GET" class="">
+  <div class="search-box" id="searchBox">
+    <input type="text" name="search" id="searchInput" class="search-txt" placeholder="Search...">
+    <button type="submit" class="search-btn" id="searchBtn">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</form>
+
+
+
+<script>
+  const searchBox = document.getElementById('searchBox');
+  const searchBtn = document.getElementById('searchBtn');
+  const searchInput = document.getElementById('searchInput');
+  const searchForm = document.getElementById('searchForm');
+
+  searchBtn.addEventListener('click', function (e) {
+    // If not active, activate it and focus
+    if (!searchBox.classList.contains('active')) {
+      e.preventDefault(); // Stop submit
+      searchBox.classList.add('active');
+      searchInput.focus();
+    } else if (searchInput.value.trim() === '') {
+      e.preventDefault(); // Don't submit if empty
+      searchInput.focus();
+    }
+    // Else allow normal form submission
+  });
+
+  // Custom form submission logic
+  searchForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const value = searchInput.value.trim();
+    if (value !== '') {
+      window.location.href = 'https://kscdrc.karnataka.gov.in/search/' + encodeURIComponent(value)+"/kn";
+    }
+  });
+
+  // Close search box on click outside
+  document.addEventListener('click', function (e) {
+    if (!searchBox.contains(e.target)) {
+      searchBox.classList.remove('active');
+    }
+  });
+</script>
+                <div class="subHeaderSwitchTheme">
+
+             
+<input type="checkbox" id="toggle">
+<label for="toggle">
+    <i class="fa-solid fa-sun sun"></i>
+    <i class="fa-solid fa-moon moon"></i>
+</label>
+<div class="background"></div>
+                </div>
+              <div class="subHeaderFontSize">
+        <div class="subHeaderFontSizeAction rightBorder" id="fontDecrease">
+            <i class="fa fa-minus subHeaderFontSizeActionIco"></i>
+        </div>
+        <div class="subHeaderFontSizeLable">
+            <p class="subHeaderFontSizeLableTxt">a</p>
+        </div>
+        <div class="subHeaderFontSizeAction leftBorder" id="fontIncrease">
+            <i class="fa fa-plus subHeaderFontSizeActionIco"></i>
+        </div>
+        <div class="subHeaderFontSizeAction" id="fontReset">
+            <i class="fa fa-refresh subHeaderFontSizeActionIco"></i>
+        </div>
+    </div>
+            </div>
+
+        </div>
+    </div>
+
+
+	
+	
+	
+	<section class="header">
+    <div class="row dflex1 cmap_container">
+
+        <!-- Left: CM (Chief Minister) – always rendered, hidden via visibility when flag is set -->
+        <div class="col-md-3 col-6 col-lg-3 flex-left leftHeadSec order1"
+             >
+            <img src="https://planning.karnataka.gov.in/frontend/opt1/images/cm_logo/chief_minister_of_karrnataka_kn.png?1788668057" 
+                 alt="ಕರ್ನಾಟಕ ರಾಜ್ಯ ಗ್ರಾಹಕರ ವ್ಯಾಜ್ಯಗಳ ಪರಿಹಾರ ಆಯೋಗ" 
+                 class="cm_karnataka_photo">
+        </div>
+
+        <!-- Middle: Department logo, name, subtitle, dept_photo -->
+        <div class="col-md-6 col-12 col-lg-6 flex-mid dflex midHeadSec">
+            <div class="dflex web_logo_set">
+                <img src="https://kscdrc.karnataka.gov.in/uploads/kar_main_logo_1757151125.png" 
+                     class="headerLogoImg plice_sm_logo" 
+                     alt="ಕರ್ನಾಟಕ ರಾಜ್ಯ ಗ್ರಾಹಕರ ವ್ಯಾಜ್ಯಗಳ ಪರಿಹಾರ ಆಯೋಗ">
+                <div class="dept_text_contaoiners">
+                    <p class="web_name">
+                        ಕರ್ನಾಟಕ ರಾಜ್ಯ ಗ್ರಾಹಕರ ವ್ಯಾಜ್ಯಗಳ ಪರಿಹಾರ ಆಯೋಗ                    </p>
+                    <p class="web_subtitle">
+                        ಕರ್ನಾಟಕ ಸರ್ಕಾರ                    </p>
+                </div>
+                <img src="https://kscdrc.karnataka.gov.in/uploads" 
+                     class="dept_photo" style="width: auto;height: 80px;"
+                     alt="">
+            </div>
+        </div>
+
+        <!-- Right: Minister – always rendered, hidden via visibility when flag is set -->
+        <div class="col-md-3 col-6 col-lg-3 flex-right rightHeadSec order3"
+             >
+            <div class="dflex web_logo_set justify-content-end">
+                <img src="" 
+                     class="dept_mini_logo " style="width: auto;height: 65px;border-radius: 100%;margin-top: 8px;padding-right: 8px;" 
+                     alt="">
+                <div class="dept_text_contaoiners">
+                                        <p class="web_name"></p>
+                    <p class="web_subtitle"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <nav class="navbar navbar-expand-lg shadow navbar-sec">
+        <div class="container">
+            <button class="navbar-toggler collapsed"  onclick="openNav()">
+                     <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="opennav"><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class='navbar-nav mr-auto mb-2 mb-lg-0 menu deskmenu'><li class='nav-item level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/kn'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/5/history/en'><i class=''></i> ಇತಿಹಾಸ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/7/act-&-rules/kn'><i class=''></i> ಕಾಯ್ದೆ ಮತ್ತು ನಿಯಮಗಳು</a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/2/about-us-/kn' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ನಮ್ಮ ಬಗ್ಗೆ</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/16/details-of-the-officers-at-karnataka-state-consumer-disputes-redressal-commission-and-district-consumer-disputes-redressal-commission--------/kn'><i class=''></i> ರಾಜ್ಯ ಆಯೋಗ ಮತ್ತು ಜಿಲ್ಲಾ ಆಯೋಗದ ಅಧಿಕಾರಿಗಳ ವಿವರ</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='#.' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ಗ್ರಾಹಕ ಪ್ರಕರಣದ ವಿವರಗಳು</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/72/new-case-submission/kn'><i class=''></i> ಹೊಸ ಪ್ರಕರಣ ದಾಖಲಿಸಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/cause-list'><i class=''></i> ನ್ಯಾಯಾಲಯ/ಪೀಠವು ವಿಚಾರಣೆ ನಡೆಸುವ ಪ್ರಕರಣಗಳ ಪಟ್ಟಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/case-history-case-status'><i class=''></i> ನಿಮ್ಮ ಕೇಸ್ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/judgement'><i class=''></i> ಪ್ರಕರಣದ ತೀರ್ಪು</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/19/statistics/kn'><i class=''></i> ಅಂಕಿಅಂಶಗಳು</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/66/consumer-justice-flow-chart/kn'><i class=''></i> ಗ್ರಾಹಕ ನ್ಯಾಯದ ಫ್ಲೋ ಚಾರ್ಟ್</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='1' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ಮಾಹಿತಿ ಹಕ್ಕು</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://rtionline.karnataka.gov.in/index.php?lan=E'><i class=''></i> ಆನ್‌ಲೈನ್  ಮಾಹಿತಿ ಹಕ್ಕು</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/20/rti/en'><i class=''></i>  ಮಾಹಿತಿ 4(1) (ಎ) ಆರ್‌ಟಿಐ 4(1) (ಬಿ) ಅಡಿಯಲ್ಲಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/Public%20information_1787550654.pdf'><i class=''></i> ಸಾರ್ವಜನಿಕ ಮಾಹಿತಿ ಅಧಿಕಾರಿ ಮತ್ತು ಮೇಲ್ಮನವಿ ಪ್ರಾಧಿಕಾರ</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/78/-transfer-cases-list-/kn' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ವರ್ಗಾವಣೆಯಾದ ಪ್ರಕರಣಗಳ ಪಟ್ಟಿ</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/78/new-number-assigned-to-the-appeals-filed--before-the-kscdrc-bangalore-and-transferred--to-permanent-circuit-bench-belagavi./kn'><i class=''></i> ಬೆಳಗಾವಿ ಪೀಠದಲ್ಲಿ ಪ್ರಕರಣಗಳನ್ನು ಕ್ಯೆಗೆತ್ತಿಕೊಂಡು ನಡೆಸುವ ಸಲುವಾಗಿ ರಾಜ್ಯ ಆಯೋಗ ಬೆಂಗಳೂರು, ಇಲ್ಲಿಂದ ಬೆಳಗಾವಿ ಪೀಠಕ್ಕೆ ವರ್ಗಾಯಿಸಿರುವ ಮೇಲ್ಮನವಿ ಪ್ರಕಾರಣಗಳ ಪಟ್ಟಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/76/new-number-assigned-to-the-appeals-filed--before-the-permanent-circuit-bench-belagavi./kn'><i class=''></i> ಬೆಳಗಾವಿಯ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಮುಂದೆ ಸಲ್ಲಿಸಲಾದ ಮೇಲ್ಮನವಿಗಳಿಗೆ ಹೊಸ ಸಂಖ್ಯೆಯನ್ನು ನಿಯೋಜಿಸಲಾದ ಬಗ್ಗೆ.</a></li></ul></li> 
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="opennav"><i class="fa fa-bars"></i></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+<style>
+#searchForm{display: flex;}
+.opennav .fa-bars{background: #0000004d;
+    padding: 11px 12px;
+    vertical-align: sub;
+    float: right;
+    text-align: right;
+    position: absolute;
+    right: 8px;
+    top: 11px;
+    border-radius: 100px;
+    font-size: 20px;
+    height: 40px;}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #001937;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 3px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.2s !important;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    line-height: 1;
+    padding: 12px 14px 1px 14px;
+    /* margin-left: 50px; */
+    background: #0ad2d87a;
+    /* border-radius: 50px; */
+    text-align: center;
+    /* margin: auto; */
+    display: table;
+    /* width: 20px; */
+    /* height: 22px; */
+    color: aliceblue;
+}
+
+#main {
+  transition: margin-left .2s;
+
+}
+ .opennav{
+    font-size: 30px;
+    cursor: pointer;
+
+    display: flex ;
+   }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+  display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+    .sidenav a {
+        font-size: 16px !important;
+        line-height: initial !important;
+    }
+  
+}
+</style>
+
+
+<div id="vardha" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="accordian" class="scms-acc">
+      <ul class='navbar-nav mr-auto mb-2 mb-lg-0 menu extramenudesk'><li class='nav-item level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/kn'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/5/history/en'><i class=''></i> ಇತಿಹಾಸ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/7/act-&-rules/kn'><i class=''></i> ಕಾಯ್ದೆ ಮತ್ತು ನಿಯಮಗಳು</a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/2/about-us-/kn' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ನಮ್ಮ ಬಗ್ಗೆ</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/16/details-of-the-officers-at-karnataka-state-consumer-disputes-redressal-commission-and-district-consumer-disputes-redressal-commission--------/kn'><i class=''></i> ರಾಜ್ಯ ಆಯೋಗ ಮತ್ತು ಜಿಲ್ಲಾ ಆಯೋಗದ ಅಧಿಕಾರಿಗಳ ವಿವರ</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='#.' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ಗ್ರಾಹಕ ಪ್ರಕರಣದ ವಿವರಗಳು</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/72/new-case-submission/kn'><i class=''></i> ಹೊಸ ಪ್ರಕರಣ ದಾಖಲಿಸಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/cause-list'><i class=''></i> ನ್ಯಾಯಾಲಯ/ಪೀಠವು ವಿಚಾರಣೆ ನಡೆಸುವ ಪ್ರಕರಣಗಳ ಪಟ್ಟಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/case-history-case-status'><i class=''></i> ನಿಮ್ಮ ಕೇಸ್ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/judgement'><i class=''></i> ಪ್ರಕರಣದ ತೀರ್ಪು</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/19/statistics/kn'><i class=''></i> ಅಂಕಿಅಂಶಗಳು</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/66/consumer-justice-flow-chart/kn'><i class=''></i> ಗ್ರಾಹಕ ನ್ಯಾಯದ ಫ್ಲೋ ಚಾರ್ಟ್</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='1' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ಮಾಹಿತಿ ಹಕ್ಕು</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://rtionline.karnataka.gov.in/index.php?lan=E'><i class=''></i> ಆನ್‌ಲೈನ್  ಮಾಹಿತಿ ಹಕ್ಕು</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/20/rti/en'><i class=''></i>  ಮಾಹಿತಿ 4(1) (ಎ) ಆರ್‌ಟಿಐ 4(1) (ಬಿ) ಅಡಿಯಲ್ಲಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/Public%20information_1787550654.pdf'><i class=''></i> ಸಾರ್ವಜನಿಕ ಮಾಹಿತಿ ಅಧಿಕಾರಿ ಮತ್ತು ಮೇಲ್ಮನವಿ ಪ್ರಾಧಿಕಾರ</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/78/-transfer-cases-list-/kn' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ವರ್ಗಾವಣೆಯಾದ ಪ್ರಕರಣಗಳ ಪಟ್ಟಿ</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/78/new-number-assigned-to-the-appeals-filed--before-the-kscdrc-bangalore-and-transferred--to-permanent-circuit-bench-belagavi./kn'><i class=''></i> ಬೆಳಗಾವಿ ಪೀಠದಲ್ಲಿ ಪ್ರಕರಣಗಳನ್ನು ಕ್ಯೆಗೆತ್ತಿಕೊಂಡು ನಡೆಸುವ ಸಲುವಾಗಿ ರಾಜ್ಯ ಆಯೋಗ ಬೆಂಗಳೂರು, ಇಲ್ಲಿಂದ ಬೆಳಗಾವಿ ಪೀಠಕ್ಕೆ ವರ್ಗಾಯಿಸಿರುವ ಮೇಲ್ಮನವಿ ಪ್ರಕಾರಣಗಳ ಪಟ್ಟಿ</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/76/new-number-assigned-to-the-appeals-filed--before-the-permanent-circuit-bench-belagavi./kn'><i class=''></i> ಬೆಳಗಾವಿಯ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಮುಂದೆ ಸಲ್ಲಿಸಲಾದ ಮೇಲ್ಮನವಿಗಳಿಗೆ ಹೊಸ ಸಂಖ್ಯೆಯನ್ನು ನಿಯೋಜಿಸಲಾದ ಬಗ್ಗೆ.</a></li></ul></li> 
+    </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeNav()"></div>
+
+<script type="text/javascript">
+
+function openNav() {
+  document.getElementById("vardha").style.width = "250px";
+
+}
+
+function closeNav() {
+  document.getElementById("vardha").style.width = "0";
+
+}
+ 
+</script>
+
+
+<div class="feedback-btn">
+  <a href="https://kscdrc.karnataka.gov.in/feedback/kn">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+    <span>ಅಭಿಪ್ರಾಯ</span>
+  </a>
+</div>
+
+
+
+
+    <script>
+    // Function to set theme colors
+    function setTheme(color1, color2) {
+        // Set the CSS variables for --primary-color and --secondary-color
+        document.documentElement.style.setProperty('--primary-color', color1);
+        document.documentElement.style.setProperty('--secondary-color', color2);
+
+        // Save the selected colors in cookies
+        document.cookie = "theme1=" + color1 + "; path=/; max-age=15"; // 30 days expiry
+        document.cookie = "theme2=" + color2 + "; path=/; max-age=15"; 
+    }
+
+    // Function to get the value of a cookie
+    function getCookie(name) {
+        let cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i].trim();
+            if (cookie.startsWith(name + '=')) {
+                return cookie.substring(name.length + 1);
+            }
+        }
+        return null;
+    }
+
+    // Apply the theme colors on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const theme1 = getCookie('theme1');
+        const theme2 = getCookie('theme2');
+        if (theme1 && theme2) {
+            document.documentElement.style.setProperty('--primary-color', theme1);
+            document.documentElement.style.setProperty('--secondary-color', theme2);
+        }
+    });
+</script><div style="display:none;"><!------------------------------------------------------  Sticky Button ------------------------------------------------------->
+<div class="icon-bar"  style="display: none;">
+   <p class="icon-bar_p"> <a  href="https://kscdrc.karnataka.gov.in/events" class="icon-bar_a">Events</a> </p> 
+</div>
+
+<div class="row">
+<div class="col-md-8 no-pad homeslide"> 
+
+ <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    
+  </ol>  
+
+
+
+
+
+    <div class="carousel-inner">
+            <div class="item carousel-item active">
+        <img src="https://kscdrc.karnataka.gov.in/uploads"/>
+		        <div class="carousel-caption">
+          ಪೋಟೋ		</div>
+		    </div> 
+  
+  
+
+ </div>
+  
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+<div class="col-md-4 no-pad"> 
+
+</div>
+</div>
+
+
+
+
+
+  </div>
+
+
+
+
+<style>
+/* Hide the buttons by default */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+#playPauseButton{position: absolute;
+    right: 8px;
+    bottom: 4px;
+    background: #00000087;
+    color: #fff;
+    line-height: 0;
+    width: 35px;
+    height: 35px;}
+/* Show buttons on hover */
+.slider:hover .carousel-control-prev,
+.slider:hover .carousel-control-next {
+    opacity: 1;
+}
+
+/* Animate buttons from the sides on hover */
+.slider:hover .carousel-control-prev {
+    transform: translate(-20px, -50%);
+}
+.carousel-item {
+    transition: transform 0.6s ease-in-out !important;
+}
+
+.slider:hover .carousel-control-next {
+    transform: translate(20px, -50%);
+}
+
+/* Button styles */
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 45px;position:absolute;
+    color: #fff;
+}
+.carousel-control-prev i{left:50px;}
+.carousel-control-next i{right:50px;}
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+                           
+              
+                               
+<section class="slider">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12 left-slider nopad">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="5" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="6" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="7" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="8" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="9" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="10" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="11" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="12" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="13" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="14" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="15" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="16" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="17" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="18" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="19" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="20" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="21" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="22" class=""></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="23" class=""></button>
+                                            </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                                                <div class="   carousel-item active">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1705596791.png" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Circular</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1706788202.png" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>2024 LOGO</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1747300758.png" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Gandhi Bharath</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1708413521.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>News</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1710565319.jpg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Consumer Rights</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1718955442.jpg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>News</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1707290188.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Consumer Protection Image</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1706164339.jpg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>LOGO1</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1710565270.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>LokAdalath</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1740049234.png" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>News</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1740046920.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>News</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1710565420.png" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Consumer Protection</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1710565490.jpg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Resolution</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1710565381.jpg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Compensation_page-0001</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1705560849.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Consumer Court Case1</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1705599149.jpg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Showroom Fraud</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1710565515.png" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Resolution3</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1705598813.png" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Beskom Engineer Punish</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1705597511.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Quality Comaplint</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="#.">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1756793718.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Slides</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Slides/02-09-2025.jpeg">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1756793835.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Slide</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Slide.jpeg">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1756794807.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Slide</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Slides/02-09.jpeg">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1756795993.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Slide</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Slides/02-09-202555.jpeg">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                                <div class="   carousel-item ">
+                            <img src="https://kscdrc.karnataka.gov.in/uploads/storage/slids/1756796140.jpeg" alt="Slider Image" class="d-block itbt_hmslide" style="width:100%">
+                            
+                            <!-- Check if both fields are empty or contain only # -->
+                                                        <div class="car-layer">
+                                <div class="homepageSliderHeading">
+                                    <p>Slides</p>
+                                </div>
+                                <div class="homepageSliderDesc">
+                                    <p class="white-text"></p>
+                                </div>
+                                <div class="homePagesliderVideo">
+                                    <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/2025.jpeg">
+                                        <button>ಮತ್ತಷ್ಟು ಓದಿ </button>
+                                    </a>
+                                    <a href="">
+                                        <button>ಸಂಪರ್ಕಿಸಿ</button>
+                                    </a>
+                                </div>
+                            </div>
+                                                    </div>
+                                            </div>
+
+                    <!-- Play/Pause Button -->
+                    <button id="playPauseButton" class="carousel-control-playpause btn btn-default">
+                        <i class="fas fa-pause"></i> <!-- Initial icon: pause -->
+                    </button>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+var carouselElement = document.getElementById('demo');
+var carousel = new bootstrap.Carousel(carouselElement, {
+    interval: 7500, // Carousel interval
+
+    ride: 'carousel'    // Do not pause on hover
+});
+console.log(new bootstrap.Carousel(document.getElementById('demo')));
+var playPauseButton = document.getElementById('playPauseButton');
+var isPlaying = true; // Start with autoplay enabled
+
+playPauseButton.addEventListener('click', function() {
+    if (isPlaying) {
+        carousel.pause(); // Pause the carousel
+        playPauseButton.innerHTML = '<i class="fa fa-play"></i>'; // Change icon to play
+    } else {
+        carousel.cycle(); // Resume the carousel
+        playPauseButton.innerHTML = '<i class="fa fa-pause"></i>'; // Change icon to pause
+    }
+    isPlaying = !isPlaying; // Toggle the state
+});
+
+</script>
+
+
+
+
+
+<style type="text/css">
+
+.news-container {
+width: 100%;
+    overflow: hidden;
+    border: 1px solid #000;
+    position: relative;
+    padding: 0px;
+    margin: 0;
+}
+.news_count_front span {
+    width: 27px;
+    height: 20px;
+    display: block;
+    padding-top: 2px;
+
+    z-index: 9999;
+}
+.news_label,.news_label:hover{    position: absolute;
+    left: 0;
+    z-index: 1;background: #f33636 ;}
+
+.news-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%; /* Adjust to contain all news items */
+}
+.news-item a{display: flex;}
+.news-item {
+min-width: 100%;
+    padding: 2px;
+    background: #ffffff;
+    border-right: 2px solid #ddd;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.news button {
+    padding: 8px 15px;
+    margin-left: 0px;
+    border: none;
+    background-color: #464646;
+    color: white;
+    cursor: pointer;    padding-top: 14px;z-index:1;
+}
+#pause{width: 42px;}
+
+.news button:hover {
+    background-color: #515253;
+}
+</style>
+<style>
+            .news_count_front{padding: 6px 4px !important;}
+            .news-item a{margin-left:11% ;}
+          </style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 news-container news">
+            <button id="view_news_btn" class="pull-left news_label" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <i class="fa fa-newspaper-o"></i>                 ಸುದ್ದಿ ಮತ್ತು ಘಟನೆಗಳು                 
+            </button>
+            <div class="news-wrapper">
+                                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/11-06-2025.jpeg">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 1</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    One year ago                                </span>
+                            </div>
+                                <span class="pcontent"> KSCDRC Channel- Please scan the QR code and join the chennel.  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/notification7-2-2025001.pdf">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 2</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    2 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಅಧಿಸೂಚನೆ - ಬೆಳಗಾವಿಯಲ್ಲಿನ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ರಚನೆ - ವಿಡಿಯೋ ಸಂವಾದದ ಮೂಲಕ ಕಲಾಪ ಜರುಗಿಸುವ ಬಗ್ಗೆ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/notification4-02-2025001.pdf">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 3</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    2 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಅಧಿಸೂಚನೆ - 
+ಬೆಳಗಾವಿಯಲ್ಲಿ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಉದ್ಘಾಟನೆ ಮತ್ತು ಕಾರ್ಯಾರಂಭದ ಬಗ್ಗೆ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/KalburgiBench.PDF">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 4</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    2 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಅಧಿಸೂಚನೆ - ಕಲಬುರಗಿಯಲ್ಲಿನ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ರಚನೆ - ವಿಡಿಯೋ ಸಂವಾದದ  ಮೂಲಕ ಕಲಾಪ ಜರುಗಿಸುವ ಬಗ್ಗೆ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/AppealfilesenttoKalburgi.pdf">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 5</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    2 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ರಾಜ್ಯ ಆಯೋಗದ ಕಲಬುರ್ಗಿ ಪೀಠದಲ್ಲಿ ಪ್ರಕರಣಗಳನ್ನು ಕ್ಯೆಗೆತ್ತಿಕೊಂಡು ನಡೆಸುವ ಸಲುವಾಗಿ ರಾಜ್ಯ ಆಯೋಗ, ಬೆಂಗಳೂರು, ಇಲ್ಲಿಂದ ಕಲಬುರ್ಗಿ ಪೀಠಕ್ಕೆ ವರ್ಗಾಯಿಸಿರುವ ಮೇಲ್ಮನವಿ ಪ್ರಕಾರಣಗಳ ಪಟ್ಟಿ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Notification/NotificationInaugurationandcommencementofStateCommission'spermanentCircuitBenchatKalburgi.pdf">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 6</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    2 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಅಧಿಸೂಚನೆ - ಕಲ್ಬುರ್ಗಿಯಲ್ಲಿ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಉದ್ಘಾಟನೆ ಮತ್ತು ಕಾರ್ಯಾರಂಭದ ಬಗ್ಗೆ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Notification/Notification 13122023.pdf">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 7</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    3 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಮೇಲ್ಮನವಿ ಶಾಸನಬದ್ಧ ಠೇವಣಿಗಾಗಿ ಅಧಿಸೂಚನೆ-ಪಾವತಿ ಅಧಿಸೂಚನೆ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=5958414">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 8</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    3 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಮೇಲ್ಮನವಿಯಲ್ಲಿ ಶಾಸನಬದ್ಧ ಠೇವಣಿ ಇಡಲು(10 ಲಕ್ಷದವರೆಗೆ ಮಾತ್ರ) ಈ ಎಸ್ ಬಿ ಐ ಲಿಂಕ್ ಅನ್ನು ಉಪಯೋಗಿಸಿ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/OnlineFiling.jpg">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 9</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    3 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ರಾಜ್ಯ ಗ್ರಾಹಕರ ಆಯೋಗದಲ್ಲಿ ಆನ್‌ಲೈನ್ ಫೈಲಿಂಗ್ ಮಾಡುವುದು ಕಡ್ಡಾಯ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://www.youtube.com/live/Re2JnFKCQIg?feature=share">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 10</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    3 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಗ್ರಾಹಕರ ಆಯೋಗಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ ಚಂದನ ಟಿವಿ ಕಾರ್ಯಕ್ರಮದ ಯೂಟ್ಯೂಬ್ ಲಿಂಕ್  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://edaakhil.nic.in/edaakhil/">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 11</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    4 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಆನ್ಲೈನ್ ಫೈಲಿಂಗ್ ಮಾಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್  ಮಾಡಿ  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/web host 04082022.pdf">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 12</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    4 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಕೇಂದ್ರ ಗ್ರಾಹಕ ಸಂರಕ್ಷಣಾ ಪ್ರಾಧಿಕಾರವು ಬಿಡುಗಡೆ ಮಾಡಿರುವ ಮಾರ್ಗಸೂಚಿಗಳು  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/51/consumer-help-line-1800-425-9339/kn">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 13</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    5 years ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಗ್ರಾಹಕರ ಸಹಾಯವಾಣಿ 1800-425-9339  </span>
+                            </a>
+                        </div>
+                                            <div class="news-item col-md-12">
+                            <a href="https://kscdrc.karnataka.gov.in/uploads/Notification002_1760094892.pdf">
+                                <div class="dflex lncombo">
+                                <span class="news_count_front "><span> 14</span></span> 
+                                  <!-- Display New label -->
+                               
+                                <span class="news_count">
+                                    11 months ago                                </span>
+                            </div>
+                                <span class="pcontent"> ಅಧಿಸೂಚನೆ - ಪ್ರಧಾನ ಪೀಠದ ಮತ್ತು ಹೆಚ್ಚುವರಿ ಪೀಠದ ಕಲಾಪ ಜರುಗುವ ಕುರಿತು.  </span>
+                            </a>
+                        </div>
+                                                </div>
+
+            <div class="controls">
+                <button id="view_news" data-bs-toggle="modal" data-bs-target="#newsModal">
+                    <i class="fa fa-eye" aria-hidden="true"></i> ಮತ್ತಷ್ಟು ಓದಿ                </button>
+                <button id="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                <button id="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal with static backdrop -->
+<div class="modal" id="newsModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="newsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newsModalLabel">ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                                                             <p>
+                            <strong>
+                                <span class="news_count_pop "> 1:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/11-06-2025.jpeg" class="plain_a"> KSCDRC Channel- Please scan the QR code and join the chennel.  </a>
+                            <span class="news_count">
+                                One year ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 2:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/notification7-2-2025001.pdf" class="plain_a"> ಅಧಿಸೂಚನೆ - ಬೆಳಗಾವಿಯಲ್ಲಿನ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ರಚನೆ - ವಿಡಿಯೋ ಸಂವಾದದ ಮೂಲಕ ಕಲಾಪ ಜರುಗಿಸುವ ಬಗ್ಗೆ  </a>
+                            <span class="news_count">
+                                2 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 3:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/notification4-02-2025001.pdf" class="plain_a"> ಅಧಿಸೂಚನೆ - 
+ಬೆಳಗಾವಿಯಲ್ಲಿ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಉದ್ಘಾಟನೆ ಮತ್ತು ಕಾರ್ಯಾರಂಭದ ಬಗ್ಗೆ  </a>
+                            <span class="news_count">
+                                2 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 4:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/KalburgiBench.PDF" class="plain_a"> ಅಧಿಸೂಚನೆ - ಕಲಬುರಗಿಯಲ್ಲಿನ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ರಚನೆ - ವಿಡಿಯೋ ಸಂವಾದದ  ಮೂಲಕ ಕಲಾಪ ಜರುಗಿಸುವ ಬಗ್ಗೆ  </a>
+                            <span class="news_count">
+                                2 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 5:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/AppealfilesenttoKalburgi.pdf" class="plain_a"> ರಾಜ್ಯ ಆಯೋಗದ ಕಲಬುರ್ಗಿ ಪೀಠದಲ್ಲಿ ಪ್ರಕರಣಗಳನ್ನು ಕ್ಯೆಗೆತ್ತಿಕೊಂಡು ನಡೆಸುವ ಸಲುವಾಗಿ ರಾಜ್ಯ ಆಯೋಗ, ಬೆಂಗಳೂರು, ಇಲ್ಲಿಂದ ಕಲಬುರ್ಗಿ ಪೀಠಕ್ಕೆ ವರ್ಗಾಯಿಸಿರುವ ಮೇಲ್ಮನವಿ ಪ್ರಕಾರಣಗಳ ಪಟ್ಟಿ  </a>
+                            <span class="news_count">
+                                2 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 6:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Notification/NotificationInaugurationandcommencementofStateCommission'spermanentCircuitBenchatKalburgi.pdf" class="plain_a"> ಅಧಿಸೂಚನೆ - ಕಲ್ಬುರ್ಗಿಯಲ್ಲಿ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಉದ್ಘಾಟನೆ ಮತ್ತು ಕಾರ್ಯಾರಂಭದ ಬಗ್ಗೆ  </a>
+                            <span class="news_count">
+                                2 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 7:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Notification/Notification 13122023.pdf" class="plain_a"> ಮೇಲ್ಮನವಿ ಶಾಸನಬದ್ಧ ಠೇವಣಿಗಾಗಿ ಅಧಿಸೂಚನೆ-ಪಾವತಿ ಅಧಿಸೂಚನೆ  </a>
+                            <span class="news_count">
+                                3 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 8:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=5958414" class="plain_a"> ಮೇಲ್ಮನವಿಯಲ್ಲಿ ಶಾಸನಬದ್ಧ ಠೇವಣಿ ಇಡಲು(10 ಲಕ್ಷದವರೆಗೆ ಮಾತ್ರ) ಈ ಎಸ್ ಬಿ ಐ ಲಿಂಕ್ ಅನ್ನು ಉಪಯೋಗಿಸಿ  </a>
+                            <span class="news_count">
+                                3 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 9:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/OnlineFiling.jpg" class="plain_a"> ರಾಜ್ಯ ಗ್ರಾಹಕರ ಆಯೋಗದಲ್ಲಿ ಆನ್‌ಲೈನ್ ಫೈಲಿಂಗ್ ಮಾಡುವುದು ಕಡ್ಡಾಯ  </a>
+                            <span class="news_count">
+                                3 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 10:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://www.youtube.com/live/Re2JnFKCQIg?feature=share" class="plain_a"> ಗ್ರಾಹಕರ ಆಯೋಗಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ ಚಂದನ ಟಿವಿ ಕಾರ್ಯಕ್ರಮದ ಯೂಟ್ಯೂಬ್ ಲಿಂಕ್  </a>
+                            <span class="news_count">
+                                3 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 11:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://edaakhil.nic.in/edaakhil/" class="plain_a"> ಆನ್ಲೈನ್ ಫೈಲಿಂಗ್ ಮಾಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್  ಮಾಡಿ  </a>
+                            <span class="news_count">
+                                4 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 12:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/web host 04082022.pdf" class="plain_a"> ಕೇಂದ್ರ ಗ್ರಾಹಕ ಸಂರಕ್ಷಣಾ ಪ್ರಾಧಿಕಾರವು ಬಿಡುಗಡೆ ಮಾಡಿರುವ ಮಾರ್ಗಸೂಚಿಗಳು  </a>
+                            <span class="news_count">
+                                4 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 13:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/51/consumer-help-line-1800-425-9339/kn" class="plain_a"> ಗ್ರಾಹಕರ ಸಹಾಯವಾಣಿ 1800-425-9339  </a>
+                            <span class="news_count">
+                                5 years ago                            </span>
+                        </p>
+                                            <p>
+                            <strong>
+                                <span class="news_count_pop "> 14:</span> 
+                                 <!-- Display New label -->
+                            </strong>
+                                        <a href="https://kscdrc.karnataka.gov.in/uploads/Notification002_1760094892.pdf" class="plain_a"> ಅಧಿಸೂಚನೆ - ಪ್ರಧಾನ ಪೀಠದ ಮತ್ತು ಹೆಚ್ಚುವರಿ ಪೀಠದ ಕಲಾಪ ಜರುಗುವ ಕುರಿತು.  </a>
+                            <span class="news_count">
+                                11 months ago                            </span>
+                        </p>
+                                                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add the CSS for blinking effect -->
+<style>
+@keyframes blink {
+    0% { 
+       color: #000000;
+       background-color: #dadada;
+    }
+    40% { 
+         color: #000000;
+         background-color: #dadada;
+    }
+    50% { 
+        color: white; 
+        background-color: red; 
+    }
+    60% { 
+        color: white; 
+        background-color: red; 
+    }
+    100% { 
+         color: #000000;
+         background-color: #dadada;
+    }
+}
+
+.blinking {
+    animation: blink 1s infinite; /* Adjusted to 1s for a smooth transition */
+}
+
+#view_news:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-color);
+    filter: brightness(0.7);
+    z-index: -1;
+}
+.new {
+ font-weight: normal;
+    margin-left: 5px;
+    position: absolute;
+    left: 3.7%;
+    top: -3px;
+    padding: 0px 6px;
+    border-radius: 8px;
+    font-size: 11px;
+    padding-top: 4px;
+}
+.new2{    font-weight: normal;
+    margin-left: 5px;
+    left: 7%;
+    top: -7px;
+    z-index: 9;
+    padding: 2px 7px;
+    border-radius: 9px;
+    font-size: 14px;
+    padding-top: 4px;
+    height: 23px;
+    margin-top: 4px;}
+</style>
+
+
+<script>
+ $(document).ready(function() {
+    const newsWrapper = $('.news-wrapper');
+    const newsItems = $('.news-item');
+    const newsCount = newsItems.length;
+    let currentIndex = 0;
+    let interval;
+    let isPaused = false;
+
+    // Function to move to a specific index
+    function goToNews(index) {
+        const offset = -index * 100; // 100% width of each news item
+        newsWrapper.css('transform', `translateX(${offset}%)`);
+        currentIndex = index;
+    }
+
+    // Move to the next news
+    function nextNews() {
+        if (currentIndex < newsCount - 1) {
+            goToNews(currentIndex + 1);
+        } else {
+            goToNews(0); // Loop back to the first news item
+        }
+    }
+
+    // Move to the previous news
+    function prevNews() {
+        if (currentIndex > 0) {
+            goToNews(currentIndex - 1);
+        } else {
+            goToNews(newsCount - 1); // Loop back to the last news item
+        }
+    }
+
+    // Auto-scroll function
+    function startAutoScroll() {
+        interval = setInterval(function() {
+            nextNews();
+        }, 5000); // Scroll every 5 seconds
+    }
+
+    // Stop auto-scroll
+    function stopAutoScroll() {
+        clearInterval(interval);
+    }
+
+    // Restart auto-scroll after manual action with full 5-second delay
+    function resetAutoScroll() {
+        stopAutoScroll();  // Stop the current interval
+        startAutoScroll(); // Restart with a fresh interval
+    }
+
+    // Initial auto-scroll
+    startAutoScroll();
+
+    // Button controls
+    $('#next').click(function() {
+        stopAutoScroll();  // Stop to avoid conflicts
+        nextNews();        // Manually move to the next news
+        resetAutoScroll(); // Restart the auto-scroll timer
+    });
+
+    $('#prev').click(function() {
+        stopAutoScroll();  // Stop to avoid conflicts
+        prevNews();        // Manually move to the previous news
+        resetAutoScroll(); // Restart the auto-scroll timer
+    }); 
+
+    // Pause and resume scrolling, and change the icon
+    $('#pause').click(function() {
+        if (isPaused) {
+            startAutoScroll();
+            $(this).html('<i class="fa fa-pause" aria-hidden="true"></i>'); // Change to pause icon
+        } else {
+            stopAutoScroll();
+            $(this).html('<i class="fa fa-play" aria-hidden="true"></i>'); // Change to play icon
+        }
+        isPaused = !isPaused; // Toggle the pause state
+    });
+
+    // Pause auto-scroll on hover
+    $('.news-container').mouseenter(function() {
+        stopAutoScroll();
+    });
+
+    // Resume auto-scroll when mouse leaves the news container (only if not paused)
+    $('.news-container').mouseleave(function() {
+        if (!isPaused) {
+            resetAutoScroll(); // Ensure the timer is reset when leaving
+        }
+    });
+});
+
+</script>
+
+
+
+
+<div class="show">
+
+
+
+
+
+   
+
+
+
+<section class="kiadba_bg ">
+    <div class=" container intro_container">
+    <div class="row">
+                   <div class="owl-carousel owl-theme owl-one owl-loaded owl-drag  owl-intro-slide">
+  <div class="owl-stage-outer">
+    <div class="owl-stage">
+          
+             </div>
+    </div>  <button id="playStopButton_kiadb" class="pause"><span>Pause</span></button>
+
+</div>
+               </div> 
+
+                   
+ 
+          </div>
+
+</section>
+
+
+
+
+
+
+
+
+     <style type="text/css">
+       
+
+
+#playStopButton_kiadb {
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    background-color: #505050;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;right: -28px;bottom: 14%; 
+}
+
+#playStopButton_kiadb.play {
+    background-color: #28a745; /* Green for play */
+}
+
+#playStopButton_kiadb.stop {
+    background-color: #dc3545; /* Red for stop */
+}
+
+#playStopButton_kiadb:hover {
+    opacity: 0.9;
+}
+
+     </style></div>
+<div class="show">
+
+
+   
+       <section class="about">
+         <div class="container about-div">
+             <div class="col-lg-12">
+                <div class="row about-div-inner">
+        <div class="col-sm-3 col-md-3">
+            <img src="https://kscdrc.karnataka.gov.in/uploads/K%20H%20muniyappa_1760096641.png" alt="" class="img-responsive img-round float-in-end aboutImage2">
+            <div class="min_add">
+            <p class="Min_name">ಕೆ ಹೆಚ್ ಮುನಿಯಪ್ಪ</p>
+            <p class="Min_des">ಆಹಾರ, ನಾಗರಿಕ ಸರಬರಾಜು ಮತ್ತು ಗ್ರಾಹಕ ವ್ಯವಹಾರಗಳ ಸಚಿವರು</p>
+            </div>
+        </div>
+        
+
+
+
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="aboutITBTCenterSection">
+                            <div class="line"></div>
+                            <p class="aboutITBTTitle"></p>
+                            <p class="aboutDesc">INTRODUCTION</p>
+                            <p class="aboutDesc2">ಬೆಂಗಳೂರಿನಲ್ಲಿ ಕರ್ನಾಟಕ ರಾಜ್ಯ ಗ್ರಾಹಕ ವಿವಾದ ಪರಿಹಾರ ಆಯೋಗವು ಪ್ರಧಾನ ಮತ್ತು ಹೆಚ್ಚುವರಿ ಪೀಠ ಮತ್ತು ಎಲ್ಲಾ ಜಿಲ್ಲಾ ಕೇಂದ್ರಗಳಲ್ಲಿ 33 ಜಿಲ್ಲಾ ಆಯೋಗಗಳನ್ನು (ಬೆಂಗಳೂರಿನಲ್ಲಿ 5 ಜಿಲ್ಲಾ ಆಯೋಗಗಳು ಅಂದರೆ, ಪ್ರಧಾನ + 4 ಹೆಚ್ಚುವರಿ) ಹೊಂದಿದ್ದು, ಗ್ರಾಹಕ ರಕ್ಷಣಾ ಕಾಯ್ದೆ 2019 ರ ಅಧ್ಯಾಯ IV (ಹಳೆಯ ಗ್ರಾಹಕ ರಕ್ಷಣಾ ಕಾಯ್ದೆ, 1986 ರ ಅಧ್ಯಾಯ III) ಅಡಿಯಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆ. ಬೆಂಗಳೂರಿನಲ್ಲಿ ಕಚೇರಿಯನ್ನು 1989 ರಲ್ಲಿ ಸ್ಥಾಪಿಸಲಾಯಿತು ಮತ್ತು ನಂತರ ಜಿಲ್ಲಾ ಆಯೋಗಗಳನ್ನು ಸ್ಥಾಪಿಸಲಾಯಿತು. ರಾಜ್ಯ ಆಯೋಗ ಮತ್ತು ಜಿಲ್ಲಾ ಆಯೋಗಗಳ ಮುಖ್ಯ ಉದ್ದೇಶ ಮತ್ತು ಕರ್ತವ್ಯವೆಂದರೆ ಗ್ರಾಹಕರ ಕುಂದುಕೊರತೆಗಳನ್ನು ನಿಗದಿತ ಅವಧಿಯೊಳಗೆ ಮತ್ತು ಸಾರಾಂಶ ಕಾರ್ಯವಿಧಾನವನ್ನು ಅನುಸರಿಸುವ ಮೂಲಕ ಉಚಿತವಾಗಿ ಪರಿಹರಿಸುವುದು.                            </p>
+                         
+                            <a href="https://kscdrc.karnataka.gov.in/71/about-kscdrc/kn" class="no-dec"><div class="aboutUsButton"><button>ನಮ್ಮ ಬಗ್ಗೆ ಹೆಚ್ಚು ತಿಳಿಯಿರಿ </button></div></a>
+                        </div>    
+                    </div>
+
+
+
+                      <div class="col-sm-3 col-md-3">
+        <img src="https://kscdrc.karnataka.gov.in/uploads/WhatsApp%20Image%202025-10-15%20at%202_1760590765.jpeg" class="aboutImage2" alt="">
+         <div class="min_add">
+        <p class="Min_name">ಗೌರವಾನ್ವಿತ ನ್ಯಾಯಮೂರ್ತಿ ಶ್ರೀ. ಟಿ.ಜಿ. ಶಿವಶಂಕರೇಗೌಡ</p>
+        <p class="Min_des">ಅಧ್ಯಕ್ಷರು ಕೆ ಎಸ್‌ ಸಿ ಡಿ ಆರ್‌ ಸಿ </p>
+        </div>
+    </div>
+
+    
+                </div>
+             </div>
+
+
+         </div>   
+     
+
+       </section>
+</div>
+<div class=" infobox_container">
+
+<div class="row">
+<div class="col-md-6 col-sm-12 col-lg-6 col-sx-12 info_box show">
+
+
+
+<div class="  no-mar documents shadow-box infobox_4" >	
+	<div class="news-head">
+		<div class="text-center black-title">
+			<h3 class="docs_ghead"><i class="fa fa-files-o"> </i> ಪರಿಚಯ		<p class="box_subheader"></p>
+		</h3>
+		</div>
+	</div>	
+<!-- <a href="" class="ribbon-sm">Read All News</a> -->
+<div id="accordian" class="scms-acc infobox_2">
+		<ul class='navbar-nav mr-auto mb-2 mb-lg-0 dept_docssam'><li class='nav-item level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/kn'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/21/about-department/kn' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> ಇಲಾಖೆಯ ಬಗ್ಗೆ</a><ul class='dropdown-menu shadow sub-mnusam sub-mnu-0sam'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/24/former-honourable-presidents/kn'><i class=''></i> ಮಾಜಿ ಗೌರವಾನ್ವಿತ ನ್ಯಾಯಾಧೀಶರು</a></li></ul></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/OR.pdf'><i class=''></i> ಆಡಳಿತಾತ್ಮಕ ವ್ಯವ್ಯಸ್ಥೆ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/22/judge-profile/kn'><i class=''></i> ನ್ಯಾಯಾಧೀಶರ ಪರಿಚಯ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/23/admin-section/kn'><i class=''></i> ನಿರ್ವಾಹಕ ವಿಭಾಗ</a></li></div>
+</div>
+
+
+
+
+</div>
+<div class="col-md-6 col-sm-12 col-lg-6 col-sx-12 info_box show">
+
+
+
+<div class="  no-mar documents shadow-box infobox_4" >	
+	<div class="news-head">
+		<div class="text-center black-title">
+			<h3 class="docs_ghead"><i class="fa fa-files-o"> </i> ಸರ್ಕ್ಯುಲರ್‌ಗಳು ಮತ್ತು ಡೌನ್‌ಲೋಡ್‌ಗಳು		<p class="box_subheader"></p>
+		</h3>
+		</div>
+	</div>	
+<!-- <a href="" class="ribbon-sm">Read All News</a> -->
+<div id="accordian" class="scms-acc infobox_2">
+		<ul class='navbar-nav mr-auto mb-2 mb-lg-0 dept_docssam'><li class='nav-item level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/kn'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/act 2019.pdf'><i class=''></i> ನಾಗರೀಕ ಕೈಪಿಡಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/CP_CDRC_AmendmentRules2022.pdf'><i class=''></i> ಶುಲ್ಕದ  ವಿವರಗಳು</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/Dist%20Comm%20Vacancy%20List_1787636724.pdf'><i class=''></i> ರಾಜ್ಯ ಮತ್ತು ಜಿಲ್ಲಾ ಆಯೋಗಗಳ ಅಧ್ಯಕ್ಷರು ಮತ್ತು ಸದಸ್ಯರ ಪಟ್ಟಿ</a></li></div>
+</div>
+
+
+
+
+</div>
+</div>
+
+<div class="row" >
+<div class="col-md-6 col-sm-12 col-lg-6 col-sx-12 info_box show" >
+
+
+
+<div class="  no-mar documents shadow-box infobox_4" >	
+	<div class="news-head">
+		<div class="text-center black-title">
+			<h3 class="docs_ghead"><i class="fa fa-files-o"> </i> ಆನ್ಲೈನ್ ಸೇವೆಗಳು		<p class="box_subheader"></p>
+		</h3>
+		</div>
+	</div>	
+<!-- <a href="" class="ribbon-sm">Read All News</a> -->
+<div id="accordian" class="scms-acc infobox_2">
+		<ul class='navbar-nav mr-auto mb-2 mb-lg-0 dept_docssam'><li class='nav-item level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/kn'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item  level_0'><a class='nav-link' href='https://onlinesbi.sbi.bank.in/sbicollect/icollecthome.htm?corpID=5958414'><i class=''></i> ಮೇಲ್ಮನವಿಯಲ್ಲಿ ಶಾಸನಬದ್ಧ ಠೇವಣಿ ಇಡಲು(10 ಲಕ್ಷದವರೆಗೆ ಮಾತ್ರ) ಈ ಎಸ್ ಬಿ ಐ ಲಿಂಕ್ ಅನ್ನು ಉಪಯೋಗಿಸಿ ಬೆಂಗಳೂರು ಪೀಠದಲ್ಲಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://onlinesbi.sbi.bank.in/sbicollect/icollecthome.htm?saralID=-912244086'><i class=''></i> ಮೇಲ್ಮನವಿಯಲ್ಲಿ ಶಾಸನಬದ್ಧ ಠೇವಣಿ ಇಡಲು(10 ಲಕ್ಷದವರೆಗೆ ಮಾತ್ರ) ಈ ಎಸ್ ಬಿ ಐ ಲಿಂಕ್ ಅನ್ನು ಉಪಯೋಗಿಸಿ -  ಕಲಬುರ್ಗಿ ಪೀಠದಲ್ಲಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://onlinesbi.sbi.bank.in/sbicollect/icollecthome.htm?saralID=-911231182'><i class=''></i> ಮೇಲ್ಮನವಿಯಲ್ಲಿ ಶಾಸನಬದ್ಧ ಠೇವಣಿ ಇಡಲು(10 ಲಕ್ಷದವರೆಗೆ ಮಾತ್ರ) ಈ ಎಸ್ ಬಿ ಐ ಲಿಂಕ್ ಅನ್ನು ಉಪಯೋಗಿಸಿ -  ಬೆಳಗಾವಿ ಪೀಠದಲ್ಲಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://e-jagriti.gov.in/'><i class=''></i> ಆನ್ಲೈನ್ ಫೈಲಿಂಗ್ ಮಾಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/Notification 25082022.pdf'><i class=''></i> ಅಧಿಸೂಚನೆ-ಮಧ್ಯಸ್ಥಿಕೆಗಾರರ ಆಯ್ಕೆ ಕುರಿತು</a></li></div>
+</div>
+
+
+
+
+</div>
+<div class="col-md-6 col-sm-12 col-lg-6 col-sx-12 info_box show">
+
+
+
+<div class="  no-mar documents shadow-box infobox_4" >	
+	<div class="news-head">
+		<div class="text-center black-title">
+			<h3 class="docs_ghead"><i class="fa fa-files-o"> </i> ಇತ್ತೀಚಿನ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ		<p class="box_subheader"></p>
+		</h3>
+		</div>
+	</div>	
+<!-- <a href="" class="ribbon-sm">Read All News</a> -->
+<div id="accordian" class="scms-acc infobox_2">
+		<ul class='navbar-nav mr-auto mb-2 mb-lg-0 dept_docssam'><li class='nav-item level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/kn'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/Principal%20Bench%20Sitting%2021%2008%202026_1787289121.pdf'><i class=''></i> ದಿನಾಂಕ 21-08-2026 ಅವಧಿಯಲ್ಲಿನ ರಾಜ್ಯ ಆಯೋಗದ ಪ್ರಧಾನ ಪೀಠದ ಕಲಾಪ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/Addl%20%20Bench%20Sitting_1787289350.pdf'><i class=''></i> ದಿನಾಂಕ 24-08-2026 ರಿಂದ  25-08-2026  ರವರೆಗೆ ಅವಧಿಯಲ್ಲಿನ ರಾಜ್ಯ ಆಯೋಗದ ಹೆಚ್ಚುವರಿ ಪೀಠದ ಕಲಾಪ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/Notification-16062025.PDF'><i class=''></i> ಪ್ರತಿ ಮಂಗಳವಾರ ರಾಜ್ಯ ಆಯೋಗದ ಕಲಬುರಗಿ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಸಭೆಯ ವ್ಯವಸ್ಥೆ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://ncdrc-india.webex.com/ncdrc-india/j.php?MTID=m3afe2dac3108fb9c5a66eb4a038620df'><i class=''></i> ವಿಸಿ ಲಿಂಕ್- ಕಲ್ಬುರ್ಗಿಯ  ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/47/vc-link--belagavi-circuit-bench/kn'><i class=''></i> ವಿಸಿ ಲಿಂಕ್- ಬೆಳಗಾವಿ  ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/49/seniority-list/kn'><i class=''></i> ಜೇಷ್ಠತಾ ಪಟ್ಟಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/Application 2020/Notification 10122020.pdf'><i class=''></i> ಅಧಿಸೂಚನೆ-ದೂರುಗಳ ಹೆಚ್ಚುವರಿ ಪ್ರತಿ ನಾಶಗೊಳಿಸುವ ಕುರಿತು</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/KalburgiBench.PDF'><i class=''></i> ಅಧಿಸೂಚನೆ - ಕಲಬುರಗಿಯಲ್ಲಿನ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ರಚನೆ - ವಿಡಿಯೋ ಸಂವಾದದ  ಮೂಲಕ ಕಲಾಪ ಜರುಗಿಸುವ ಬಗ್ಗೆ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/BIS 20012022-3-5.pdf'><i class=''></i> ಬಿಐಎಸ್ ಗುಣಮಟ್ಟದ ಸರಕುಗಳನ್ನು ಖರೀದಿಸುವ ಬಗ್ಗೆ ಗ್ರಾಹಕರಿಗೆ ಅರಿವು ಮೂಡಿಸುವ ಕುರಿತು</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/NCDRC order on deposit of 50 pc in appeal.pdf'><i class=''></i> ಮೇಲ್ಮನವಿಗಳಲ್ಲಿ ಜಮೆ ಮಾಡಬೇಕಾಗಿರುವ ಠೇವಣಿ ಮೊತ್ತದ ಬಗ್ಗೆ ರಾಷ್ಟ್ರೀಯ ಆಯೋಗದ ಆದೇಶ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/67/guidelines-issued-by-ccpa/kn'><i class=''></i> ಕೇಂದ್ರ ಗ್ರಾಹಕ ಸಂರಕ್ಷಣಾ ಪ್ರಾಧಿಕಾರವು ಬಿಡುಗಡೆ ಮಾಡಿರುವ ಮಾರ್ಗಸೂಚಿಗಳು</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/AppealfilesenttoKalburgi.pdf'><i class=''></i> ರಾಜ್ಯ ಆಯೋಗದ ಕಲಬುರ್ಗಿ ಪೀಠದಲ್ಲಿ ಪ್ರಕರಣಗಳನ್ನು ಕ್ಯೆಗೆತ್ತಿಕೊಂಡು ನಡೆಸುವ ಸಲುವಾಗಿ ರಾಜ್ಯ ಆಯೋಗ  ಬೆಂಗಳೂರು  ಇಲ್ಲಿಂದ ಕಲಬುರ್ಗಿ ಪೀಠಕ್ಕೆ ವರ್ಗಾಯಿಸಿರುವ ಮೇಲ್ಮನವಿ ಪ್ರಕಾರಣಗಳ ಪಟ್ಟಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/New%20number%20assigned%20to%20the%20Appeals%20filed%20before%20KSCDRC%20and%20transfered%20to%20Permanent%20Circuit%20Bench,%20Belagavi_1763200016.pdf'><i class=''></i> ರಾಜ್ಯ ಆಯೋಗದ ಬೆಳಗಾವಿ ಪೀಠದಲ್ಲಿ ಪ್ರಕರಣಗಳನ್ನು ಕ್ಯೆಗೆತ್ತಿಕೊಂಡು ನಡೆಸುವ ಸಲುವಾಗಿ ರಾಜ್ಯ ಆಯೋಗ, ಬೆಂಗಳೂರು, ಇಲ್ಲಿಂದ ಬೆಳಗಾವಿ ಪೀಠಕ್ಕೆ ವರ್ಗಾಯಿಸಿರುವ ಮೇಲ್ಮನವಿ ಪ್ರಕಾರಣಗಳ ಪಟ್ಟಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/notification4-02-2025001.pdf'><i class=''></i> ಅಧಿಸೂಚನೆ -  ಬೆಳಗಾವಿಯಲ್ಲಿ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಉದ್ಘಾಟನೆ ಮತ್ತು ಕಾರ್ಯಾರಂಭದ ಬಗ್ಗೆ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/New%20number%20assigned%20to%20the%20Appeals%20filed%20before%20the%20Permanent%20%20Circuit%20Bench,%20Belagavi_1763201423.pdf'><i class=''></i> ಬೆಳಗಾವಿಯ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಮುಂದೆ ಸಲ್ಲಿಸಲಾದ ಮೇಲ್ಮನವಿಗಳಿಗೆ ಹೊಸ ಸಂಖ್ಯೆಯನ್ನು ನಿಯೋಜಿಸಲಾದ ಬಗ್ಗೆ.</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/notification7-2-2025001.pdf'><i class=''></i> ಅಧಿಸೂಚನೆ - ಬೆಳಗಾವಿಯಲ್ಲಿನ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ರಚನೆ - ವಿಡಿಯೋ ಸಂವಾದದ ಮೂಲಕ ಕಲಾಪ ಜರುಗಿಸುವ ಬಗ್ಗೆ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/007 Final Transfer of cases-Belagavi Bench-Webhost (1).pdf'><i class=''></i> ರಾಜ್ಯ ಆಯೋಗದ ಬೆಳಗಾವಿ  ಪೀಠದಲ್ಲಿ ಪ್ರಕರಣಗಳನ್ನು ಕ್ಯೆಗೆತ್ತಿಕೊಂಡು ನಡೆಸುವ ಸಲುವಾಗಿ ರಾಜ್ಯ ಆಯೋಗ ಬೆಂಗಳೂರು ಇಲ್ಲಿಂದ ಬೆಳಗಾವಿ  ಪೀಠಕ್ಕೆ ವರ್ಗಾಯಿಸಿರುವ ಮೇಲ್ಮನವಿ ಪ್ರಕಾರಣಗಳ ಪಟ್ಟಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/Notification/NotificationInaugurationandcommencementofStateCommission'spermanentCircuitBenchatKalburgi.pdf'><i class=''></i> ಅಧಿಸೂಚನೆ - ಕಲ್ಬುರ್ಗಿಯಲ್ಲಿ ರಾಜ್ಯ ಆಯೋಗದ ಖಾಯಂ ಸಂಚಾರಿ ಪೀಠದ ಉದ್ಘಾಟನೆ ಮತ್ತು ಕಾರ್ಯಾರಂಭದ ಬಗ್ಗೆ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/Notification/Notification 13122023.pdf'><i class=''></i> ಮೇಲ್ಮನವಿ ಶಾಸನಬದ್ಧ ಠೇವಣಿಗಾಗಿ ಅಧಿಸೂಚನೆ-ಪಾವತಿ ಅಧಿಸೂಚನೆ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/73/constitution-of-the-internal-complaints-redressal-committee/kn'><i class=''></i> ಆಂತರಿಕ ದೂರು ನಿವಾರಣಾ ಸಮಿತಿ</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/storage/pdf-files/Fee 28122022.pdf'><i class=''></i> ಅಧಿಸೂಚನೆ-ಪರಿಷ್ಕೃತ ಫಿರ್ಯಾದು ಶುಲ್ಕ</a></li></div>
+</div>
+
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+<div class="hide">     <section class="ourVertcals-container">
+    <div class="container outVerticals-div">
+        <div class="ourVerticalsDesc">
+            <p class="head_verticle_main"></p>
+        </div>
+        <div class="ourVerticalsTitleDiv">
+            <p class="head_verticle"> </p>
+        </div>
+        <div class="col-lg-12 col-sm-6">
+            <div class="row">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag owl-verticles Dept_veticles owl-lazy">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.head_verticle_main {
+    color: #073d8d !important;
+    margin-top: 20px !important;
+}
+.head_verticle {
+    color: black !important;
+    margin-bottom: 20px !important;
+}
+</style>
+</div>
+
+<div class="hide">
+<section class="ourVertcals-container ourcards-container  latestNewsContainertab">
+    <div class="container outVerticals-div">
+        <div class="ourVerticalsDesc">
+            <p class="white-text"></p>
+        </div>
+        <div class="ourVerticalsTitleDiv">
+            <p></p>
+        </div>
+        <div class="col-lg-12 col-sm-6">
+            <div class="row">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag owl-verticles owl-lazy">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="playStopButton" class="play"><span> Play <span></button>
+</section>
+
+
+
+<style>
+
+#playStopButton{right:4%;bottom:10px;position: absolute;}
+.head_verticle_main {
+    color: #073d8d !important;
+    margin-top: 20px !important;
+}
+.head_verticle {
+    color: black !important;
+    margin-bottom: 20px !important;
+}
+
+.ourcards-container {
+    position: relative;
+    background: url('assets/front/cards_placeholder/vidansoudha.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.ourcards-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color); /* Dark overlay */
+    z-index: -1;
+}
+</style>
+</div>
+
+
+
+
+
+
+<!-- Achievements Container -->
+<section class="latestNewsContainergallery">
+    <div class="container ourPhotoGallery-Div">
+        <div class="ourPhotogalleryTitleParent">
+            <div class="line3"></div>
+             <div class="ourPhotoGallerySectionTitle"><p>ಗ್ಯಾಲರಿ</p></div>
+        </div>
+
+        <div class="card p-3 shadow trans-bg" style="width: 100%;">
+            <nav>
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-gallery-tab" data-bs-toggle="tab" data-bs-target="#nav-gallery" type="button" role="tab" aria-controls="nav-gallery" aria-selected="true"> ಚಿತ್ರಗಳು</button>
+                    <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">ವೀಡಿಯೋಗಳು</button>
+                    <button class="nav-link" id="nav-podcast-tab" data-bs-toggle="tab" data-bs-target="#nav-podcast" type="button" role="tab" aria-controls="nav-podcast" aria-selected="false">ಧ್ವನಿ ಪ್ರಸಾರ</button>
+                  <button onclick="window.location.href='https://kscdrc.karnataka.gov.in/gallery/kn';" class="btn btn-info btn-sm pull-right theme-btn">
+    ಎಲ್ಲವನ್ನು ವೀಕ್ಷಿಸಿ</button>
+                </div>
+            </nav>
+
+            <div class="tab-content p-3 border trans-bg" id="nav-tabContent">
+                <!-- Images Tab -->
+                <div class="tab-pane fade active show" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
+                    <div class="ourPhotoGallerySectionH1"></div>
+                    <div class="row gallery-div">
+                        <div class="row">                                    <div class="col-md-4 gallery-thumb">
+                                        <a href="https://kscdrc.karnataka.gov.in/4/_gallery_/kn">
+                                            <img width="100%" class="g-img" src="https://kscdrc.karnataka.gov.in/uploads/storage/gallery/%E0%B2%B8%E0%B3%8D%E0%B2%B5%E0%B2%BE%E0%B2%A4%E0%B2%82%E0%B2%A4%E0%B3%8D%E0%B2%B0%E0%B3%8D%E0%B2%AF%20%E0%B2%A6%E0%B2%BF%E0%B2%A8/aug%2015%202021.jpg">
+                                            <span class="bg-images"></span>
+                                            <h3>ಸ್ವಾತಂತ್ರ್ಯ ದಿನ</h3>
+                                        </a>
+                                    </div>
+                                                                        <div class="col-md-4 gallery-thumb">
+                                        <a href="https://kscdrc.karnataka.gov.in/3/_gallery_/kn">
+                                            <img width="100%" class="g-img" src="https://kscdrc.karnataka.gov.in/uploads/storage/gallery/%E0%B2%86%E0%B2%A8%E0%B3%8D%E2%80%8C%E0%B2%B2%E0%B3%88%E0%B2%A8%E0%B3%8D%20%E0%B2%AB%E0%B3%88%E0%B2%B2%E0%B2%BF%E0%B2%82%E0%B2%97%E0%B3%8D/IMG-20210219-WA0012.jpg">
+                                            <span class="bg-images"></span>
+                                            <h3>ಆನ್‌ಲೈನ್ ಫೈಲಿಂಗ್</h3>
+                                        </a>
+                                    </div>
+                                                                        <div class="col-md-4 gallery-thumb">
+                                        <a href="https://kscdrc.karnataka.gov.in/1/_gallery_/kn">
+                                            <img width="100%" class="g-img" src="https://kscdrc.karnataka.gov.in/uploads/storage/gallery/Building/building4.jpg">
+                                            <span class="bg-images"></span>
+                                            <h3>Building</h3>
+                                        </a>
+                                    </div>
+                                    </div>                    </div>
+                </div>
+
+                <!-- Videos Tab -->
+                <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
+                    <div class="row gallery-div">
+                        <div class="row"></div>                    </div>
+                </div>
+
+                <!-- Podcast Tab -->
+                <div class="tab-pane fade" id="nav-podcast" role="tabpanel" aria-labelledby="nav-podcast-tab">
+                    <div class="row gallery-div">
+                        <div class="row"></div>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style type="text/css">
+    .owl-announcements .owl-next{right: 0 !important;}
+        .owl-announcements .owl-prev{left: 0 !important;}
+        .box-image{width: 75%;
+    height: 400px;}
+</style>
+
+
+
+
+    
+
+
+
+
+
+
+
+<div class="social-icons">
+    </div>
+
+<style>
+.news-marquee-bar {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 15px;
+    gap: 15px;
+}
+.news-marquee-playpause {
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+.news-marquee-playpause:hover {
+    background: rgba(255,255,255,0.3);
+}
+.news-marquee-track {
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
+}
+.news-marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    color: #fff;
+    font-size: 15px;
+    animation: newsMarqueeScroll 18s linear infinite;
+}
+.news-marquee-content a {
+    color: #38bdf8;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Hover pauses temporarily; the button's .is-paused class pauses persistently */
+.news-marquee-bar:hover .news-marquee-content,
+.news-marquee-content.is-paused {
+    animation-play-state: paused;
+}
+@keyframes newsMarqueeScroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-100%); }
+}
+</style>
+
+<!--
+    No placeholder div needed. The script below finds YOUR existing
+    carousel (id="demo") wherever it sits in the page, and appends the
+    marquee bar immediately after it — on every page/site that includes
+    this file.
+-->
+<script>
+(function() {
+    'use strict';
+
+    const afterSelector = '#demo';   // your existing image carousel's id
+    const marqueeText   = "ರಾಜ್ಯದಾದ್ಯಂತ ಪ್ರಜಾಸೇವೆ ಅಭಿಯಾನ ಸಭೆಗಳನ್ನು ಆಯೋಜಿಸುವ ಕುರಿತು ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಹೊರಡಿಸಲಾಗಿದೆ. ವೀಕ್ಷಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್‌ ಮಾಡಿ";
+    const pdfLink       = "https:\/\/webportal.karnataka.gov.in\/uploads\/circular_prajaseva_28_08_26.pdf";
+    const bgColor       = "#1e293b";
+    const clickPhrase   = 'ಇಲ್ಲಿ ಕ್ಲಿಕ್\u200c ಮಾಡಿ';
+
+    function buildMarqueeHTML() {
+        const linkedText = marqueeText.replace(
+            clickPhrase,
+            `<a href="${pdfLink}" target="_blank">${clickPhrase}</a>`
+        );
+        return `
+            <div class="news-marquee-bar" style="background:${bgColor};">
+                <div class="news-marquee-track">
+                    <div class="news-marquee-content" id="newsMarqueeContent">
+                        ↗️ ${linkedText}
+                    </div>
+                </div>
+                <button class="news-marquee-playpause" id="newsMarqueePlayPause" aria-label="Pause marquee">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+        `;
+    }
+
+    function initPlayPause() {
+        const btn = document.getElementById('newsMarqueePlayPause');
+        const content = document.getElementById('newsMarqueeContent');
+        if (!btn || !content) return;
+
+        btn.addEventListener('click', function() {
+            const nowPaused = content.classList.toggle('is-paused');
+            this.querySelector('i').className = nowPaused ? 'fas fa-play' : 'fas fa-pause';
+            this.setAttribute('aria-label', nowPaused ? 'Play marquee' : 'Pause marquee');
+        });
+    }
+
+    function appendMarquee() {
+        const targetEl = document.querySelector(afterSelector);
+        if (!targetEl) {
+            console.warn(`Target element "${afterSelector}" not found. Marquee not added.`);
+            return;
+        }
+        targetEl.insertAdjacentHTML('afterend', buildMarqueeHTML());
+        initPlayPause();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', appendMarquee);
+    } else {
+        appendMarquee();
+    }
+})();
+</script>
+  <style>
+
+    .sbox { transition: 0.2s; border-radius: 1.2rem; padding: 0.6rem 0.3rem; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.02); border: 1px solid #f0f2f5;text-align:center;width:auto; }
+.card-grid{    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;}
+    .sbox img { height: 62px; object-fit: contain; margin-bottom: 6px; }
+    .sbox p { font-size: 0.8rem; font-weight: 500; margin: 0; color: #1e2a3a; line-height: 1.3; }
+    .modal-header { border-bottom: 2px solid #0d6efd; background: #fafcff; border-radius: 24px 24px 0 0; }
+    .modal-title { font-weight: 700; color: #0d6efd; }
+    .modal-body .row { row-gap: 1.2rem; }
+    .owl-links .item1 { 
+      background: white; 
+      border-radius: 24px; 
+      padding: 14px 6px; 
+      text-align: center; 
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04); 
+      transition: all 0.2s; 
+      cursor: pointer;
+      margin: 10px 6px;
+      font-weight: 500;
+      color: #1e293b;
+      border: 1px solid rgba(0,0,0,0.02);
+      font-size: 0.85rem;display: block;
+    }
+    .owl-links .item1:hover { background: #e9f0ff; border-color: #0d6efd40; box-shadow: 0 8px 20px rgba(13,110,253,0.08); }
+    .owl-links .item1 img { height: 52px; object-fit: contain; display: block; margin: 0 auto 8px; }
+    #container_owl { padding: 1rem 0.5rem; }
+    .modal-content { border-radius: 28px; border: none; box-shadow: 0 24px 60px rgba(0,0,0,0.08); overflow: hidden; }
+    .modal-footer { border-top: none; padding-top: 0; }
+    .card-grid .col-md-3 { display: flex; align-items: stretch; }
+    .sbox a { text-decoration: none; display: block; width: 100%; height: 100%; padding: 0.3rem 0.1rem; }
+    .sbox a p { color: #0b2b4a; }
+    .modal-dialog { max-width: 880px; }
+    @media (max-width: 576px) { .sbox img { height: 44px; } .owl-links .item1 img { height: 38px; } }
+    .lazy-load { transition: opacity 0.2s; }
+    .modal-header .btn-close { filter: none; }
+    .sbox#modal_icons { background: #ffffff; }
+    .sbox#modal_icons:nth-child(odd) { background: #f8faff; }
+  </style>
+
+
+<div class="container py-4">
+  <!-- ===== OWL CAROUSEL (Kannada) ===== -->
+  <div id="container_owl" class="mb-4">
+    <div class="owl-carousel owl-theme owl-links">
+      <a href="https://karnataka.gov.in/gokdirectory/kn" target="_blank" class="item1">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/CONTACT-DIRECTORY.png" alt="ಸಂಪರ್ಕ ಕೈಪಿಡಿ" loading="lazy">
+        ಸರ್ಕಾರದ ಸಂಪರ್ಕ ಕೈಪಿಡಿ
+      </a>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal1">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/IMPORTENT-WEBSITES.png" alt="ಮಹತ್ವದ ಜಾಲತಾಣ" loading="lazy">
+        ಮಹತ್ವದ ಜಾಲತಾಣಗಳು
+      </div>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal2">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/ceg11.png" alt="ಇ-ಆಡಳಿತ" loading="lazy">
+        ಇ ಆಡಳಿತ ಜಾಲತಾಣ
+      </div>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal3">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/E-SERVICES.png" alt="ಇ-ಸೇವೆ" loading="lazy">
+        ಇ-ಸೇವೆಗಳು
+      </div>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal4">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/STATISTICS-WEBSITES.png" alt="ಅಂಕಿಅಂಶ" loading="lazy">
+        ಸಾಮಾನ್ಯ ಅಂಕಿ ಅಂಶ
+      </div>
+      <a href="https://apps.karnataka.gov.in" target="_blank" class="item1">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/MOBILE-APPS.png" alt="ಆ್ಯಪ್" loading="lazy">
+        ಸರ್ಕಾರದ ಆ್ಯಪ್ ಗಳು
+      </a>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal6">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/CENTREL-GOVT-WEBSITES.png" alt="ಕೇಂದ್ರ" loading="lazy">
+        ಕೇಂದ್ರ ಸರ್ಕಾರದ ಜಾಲತಾಣಗಳು
+      </div>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal7">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/TECHNICLE-WEBSITES.png" alt="ತಾಂತ್ರಿಕ" loading="lazy">
+        ತಾಂತ್ರಿಕ ಜಾಲತಾಣಗಳು
+      </div>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal8">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/KANNADA-WEBSITES.png" alt="ಕನ್ನಡ" loading="lazy">
+        ಕನ್ನಡ ಸಂಬಂಧಿ ಜಾಲತಾಣಗಳು
+      </div>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal9">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/COMMISSIONS.png" alt="ಆಯೋಗ" loading="lazy">
+        ಆಯೋಗಗಳು
+      </div>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal10">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/LAW-COURT.png" alt="ನ್ಯಾಯಾಲಯ" loading="lazy">
+        ನ್ಯಾಯಾಲಯಗಳು
+      </div>
+      <div class="item1" data-bs-toggle="modal" data-bs-target="#myModal11">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/DOWNLOADS.png" alt="ಡೌನ್‌ಲೋಡ್" loading="lazy">
+        ಡೌನ್‌ಲೋಡ್‌ಗಳು
+      </div>
+      <a href="https://www.kstdc.co/" target="_blank" class="item1">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/TOURIST-WEBSITE.png" alt="ಪ್ರವಾಸಿ" loading="lazy">
+        ಪ್ರವಾಸಿ ಜಾಲತಾಣಗಳು
+      </a>
+      <a href="https://ceg.karnataka.gov.in/frontend/opt1/pdfs/HOLIDAYSLIST2023.pdf" target="_blank" class="item1">
+        <img src="https://ceg.karnataka.gov.in/frontend/opt1/images/GOVERNMENT-HOLLIDAY.png" alt="ರಜೆ" loading="lazy">
+        ಸಾರ್ವತ್ರಿಕ ರಜೆಗಳು
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!--  MODALS (Kannada) – data-bs-* , nice cards, lazy images      -->
+<!-- ============================================================ -->
+
+<!-- 1. Important Websites -->
+<div class="modal fade" id="myModal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-star-fill me-2"></i>ಮಹತ್ವದ ಜಾಲತಾಣಗಳು</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row card-grid">
+            <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://rajbhavan.karnataka.gov.in/kn" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/important_websites/karnataka_rajbhavan.png" loading="lazy" alt="ರಾಜ್ಯಪಾಲರು"><p>ರಾಜ್ಯಪಾಲರ ಕಚೇರಿ</p></a></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://cm.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/important_websites/vidan_souda.png" loading="lazy" alt="ಮುಖ್ಯಮಂತ್ರಿ"><p>ಮುಖ್ಯಮಂತ್ರಿ ಕಚೇರಿ</p></a></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://www.kla.kar.nic.in/assembly/assembly.htm" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/important_websites/vidan_sabhe.png" loading="lazy" alt="ವಿಧಾನಸಭೆ"><p>ವಿಧಾನಸಭೆ</p></a></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://www.kla.kar.nic.in/council/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/important_websites/vidan_parishat.png" loading="lazy" alt="ವಿಧಾನ ಪರಿಷತ್ತು"><p>ವಿಧಾನ ಪರಿಷತ್ತು</p></a></div>
+            <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://www.csogok.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/important_websites/vidan_souda.png" loading="lazy" alt="ಮುಖ್ಯ ಕಾರ್ಯದರ್ಶಿ"><p>ಮುಖ್ಯ ಕಾರ್ಯದರ್ಶಿ</p></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. e-Governance -->
+<div class="modal fade" id="myModal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-hdd-network me-2"></i>ಇ-ಆಡಳಿತ</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <div class="container-fluid"><div class="row card-grid">
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ceg.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/ceg11.png" loading="lazy" alt="CEG"><p>ಸಿ.ಇ.ಜಿ</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://webportal.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/webportal%20logo.png" loading="lazy" alt="ವೆಬ್ ಪೋರ್ಟಲ್"><p>ವೆಬ್ ಪೋರ್ಟಲ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ceg.karnataka.gov.in/aadhaar/public/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/adhaar.png" loading="lazy" alt="ಆಧಾರ್"><p>ಆಧಾರ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://karnataka.data.gov.in" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/icons/kodi.jpg" loading="lazy" alt="ಮುಕ್ತ ದತ್ತಾಂಶ"><p>ಮುಕ್ತ ದತ್ತಾಂಶ</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://digilocker.gov.in" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/icons/digi.jpg" loading="lazy" alt="ಡಿಜಿಲಾಕರ್"><p>ಡಿಜಿಲಾಕರ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://mahitikanaja.karnataka.gov.in/Department" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/eservices/kar.png" loading="lazy" alt="ಮಾಹಿತಿ ಕಣಜ"><p>ಮಾಹಿತಿ ಕಣಜ</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://nad.gov.in/Department" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1//images/icons/nad.png" loading="lazy" alt="NAD"><p>ನ್ಯಾಷನಲ್ ಅಕಾಡೆಮಿಕ್ ರೆಪೊಸಿಟರಿ</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ipgrs.karnataka.gov.in" target="_blank"><img src="https://egovernance.karnataka.gov.in/frontend/opt1/images/Janaspandana-logo.png" loading="lazy" alt="ಜನಸ್ಫಂದನ" style="margin-top:6px;"><p>ಜನಸ್ಫಂದನ</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ssp.karnataka.gov.in" target="_blank"><img src="https://egovernance.karnataka.gov.in/frontend/opt1/images/kar_logo.png" loading="lazy" alt="ವಿದ್ಯಾರ್ಥಿವೇತನ" style="margin-top:6px;"><p>ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಶ</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://eofficecitizen.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/eoffice.png" loading="lazy" alt="ಇ-ಆಫೀಸ್"><p>ಇ-ಆಫೀಸ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://eproc.karnataka.gov.in/eprocportal/pages/index.jsp?language=kn" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/esangraha.png" loading="lazy" alt="ಇ-ಪ್ರೊಕ್ಯೂರ್ಮೆಂಟ್"><p>ಇ-ಪ್ರೊಕ್ಯೂರ್ಮೆಂಟ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://hrms.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/hrms.png" loading="lazy" alt="HRMS"><p>ಎಚ್‌ಆರ್‌ಎಂಎಸ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ceg.karnataka.gov.in/krdh/public/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/krdh.png" loading="lazy" alt="KRDH"><p>ಕೆ.ಆರ್.ಡಿ.ಎಚ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://karunadu.karnataka.gov.in/KSWAN/pages/home.aspx" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/kswan.png" loading="lazy" alt="KSWAN"><p>ಕೆ.ಎಸ್.ವಾನ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://dpar.karnataka.gov.in" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/krdh.png" loading="lazy" alt="DPAR"><p>ಡಿ.ಪಿ.ಎ.ಆರ್</p></a></div>
+          <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ceg.karnataka.gov.in/ksdc/public/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/ceg/sdc.png" loading="lazy" alt="KSDC"><p>ಕೆ.ಎಸ್.ಡಿ.ಸಿ</p></a></div>
+        </div></div>
+      </div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. e-Services -->
+<div class="modal fade" id="myModal3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-laptop me-2"></i>ಇ-ಸೇವೆಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://www.sakala.kar.nic.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/eservices/sakala.png" loading="lazy" alt="ಸಕಾಲ"><p>ಸಕಾಲ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://sevasindhu.karnataka.gov.in/Sevasindhu/Kannada?ReturnUrl=%2F" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/eservices/kar.png" loading="lazy" alt="ಸೇವಾ ಸಿಂಧು"><p>ಸೇವಾ ಸಿಂಧು</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://erajyapatra.karnataka.gov.in/(S(trrt4chio0tzmuy54rnz01x3))/default.aspx?AcceptsCookies=yes" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/eservices/kar.png" loading="lazy" alt="ಇ-ಗೆಜೆಟ್"><p>ಇ-ಗೆಜೆಟ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://espandana.karnataka.gov.in" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/eservices/espandana.png" loading="lazy" alt="ಇ-ಸ್ಪಂದನಾ"><p>ಇ-ಸ್ಪಂದನಾ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://rtionline.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/eservices/kar.png" loading="lazy" alt="ಆನ್‌ಲೈನ್ ಆರ್‌ಟಿಐ"><p>ಆನ್‌ಲೈನ್ ಆರ್‌ಟಿಐ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://mahitikanaja.karnataka.gov.in/Department" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/eservices/kar.png" loading="lazy" alt="ಮಾಹಿತಿ ಕಣಜ"><p>ಮಾಹಿತಿ ಕಣಜ</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. Statistics -->
+<div class="modal fade" id="myModal4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-bar-chart-fill me-2"></i>ಅಂಕಿಅಂಶಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://esamiksha.gov.in/Karnataka/" target="_blank"><p>ಇ-ಪ್ರಗತಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://etaal.gov.in/etaal2/auth/default.aspx" target="_blank"><p>ಇ-ತಾಲ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://karnataka.data.gov.in" target="_blank"><p>ಡೇಟಾ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://gazetteer.karnataka.gov.in/" target="_blank"><p>ಕರ್ನಾಟಕ ಗೆಜೆಟ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://stgpratibimba.karnataka.gov.in/cmdbstg1/public/" target="_blank"><p>ಸಿಎಂ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. Govt Apps (myModal5) – added from original -->
+<div class="modal fade" id="myModal5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-phone me-2"></i>ಸರ್ಕಾರಿ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://play.google.com/store/apps/details?id=com.mybmtc" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/govt_apps/bmtc.png" loading="lazy" alt="BMTC"><p>ಬಿಎಂಟಿಸಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://play.google.com/store/apps/details?id=beco.bhkar.jn" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/govt_apps/bhoomi.png" loading="lazy" alt="ಭೂಮಿ"><p>ಭೂಮಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://play.google.com/store/apps/details?id=com.india.eservices.ka" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/govt_apps/all_ayoga.png" loading="lazy" alt="ಇ-ಸೆವಾಯ್"><p>ಇ-ಸೆವಾಯ್ ಕರ್ನಾಟಕ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://play.google.com/store/apps/details?id=com.ksrsac.sslr" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/govt_apps/all_ayoga.png" loading="lazy" alt="ಡಿಶ್ಯಾಂಕ್"><p>ಡಿಶ್ಯಾಂಕ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://play.google.com/store/apps/details?id=com.ksrtc.awatar.new" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/govt_apps/ksrtc.png" loading="lazy" alt="KSRTC"><p>ಕೆ.ಎಸ್.ಆರ್.ಟಿ.ಸಿ.</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://play.google.com/store/apps/details?id=app.kgp.hyperbound" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/govt_apps/gram_panchayat.png" loading="lazy" alt="ಗ್ರಾಮ ಪಂಚಾಯಿತಿ"><p>ಗ್ರಾಮ ಪಂಚಾಯಿತಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://play.google.com/store/apps/details?id=com.capulustech.ksppqrs" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/govt_apps/karnataka_police.png" loading="lazy" alt="ಪೊಲೀಸ್"><p>ಕರ್ನಾಟಕ ರಾಜ್ಯ ಪೊಲೀಸ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://apps.karnataka.gov.in/" target="_blank"><p>ಎಲ್ಲಾ ವೀಕ್ಷಿಸಿ...</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 6. Central Govt -->
+<div class="modal fade" id="myModal6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-building me-2"></i>ಕೇಂದ್ರ ಸರ್ಕಾರದ ವೆಬ್‌ಸೈಟ್‌ಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://loksabha.nic.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/central_govt_websites/parliment_samsattu.png" loading="lazy" alt="ಸಂಸತ್ತು"><p>ಸಂಸತ್ತು</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://presidentofindia.nic.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/central_govt_websites/presidents_office.png" loading="lazy" alt="ರಾಷ್ಟ್ರಪತಿ"><p>ರಾಷ್ಟ್ರಪತಿ ಕಚೇರಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://www.pmindia.gov.in/en/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/central_govt_websites/prime_ministers.png" loading="lazy" alt="ಪ್ರಧಾನ ಮಂತ್ರಿ"><p>ಪ್ರಧಾನ ಮಂತ್ರಿಗಳ ಕಚೇರಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://portal2.passportindia.gov.in/AppOnlineProject/welcomeLink" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/central_govt_websites/passport_seva.png" loading="lazy" alt="ಪಾಸ್ಪೋರ್ಟ್"><p>ಪಾಸ್ಪೋರ್ಟ್ ಸೇವಾ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://uidai.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/central_govt_websites/adhaar.png" loading="lazy" alt="ಆಧಾರ್"><p>ಆಧಾರ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://karunadu.karnataka.gov.in/karnatakabhavan/pages/home.aspx" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/central_govt_websites/karnataka_bhavan.png" loading="lazy" alt="ಕರ್ನಾಟಕ ಭವನ"><p>ಕರ್ನಾಟಕ ಭವನ</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 7. Technical -->
+<div class="modal fade" id="myModal7" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-code-square me-2"></i>ತಾಂತ್ರಿಕ ವೆಬ್‌ಸೈಟ್‌ಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://www.cdac.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/technical_websites/cdac.png" loading="lazy" alt="CDAC"><p>ಸಿ.ಡಿ.ಎ.ಸಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://www.nic.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/technical_websites/nic.png" loading="lazy" alt="NIC"><p>ಎನ್ಐಸಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="http://www.stqc.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/technical_websites/stqc.png" loading="lazy" alt="STQC"><p>ಎಸ್.ಟಿ.ಕ್ಯೂ.ಸಿ</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 8. Kannada Websites -->
+<div class="modal fade" id="myModal8" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-translate me-2"></i>ಕನ್ನಡ ವೆಬ್‌ಸೈಟ್‌ಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kannadasiri.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/kannada_websites/kannada_culure_dept.png" loading="lazy" alt="ಕನ್ನಡ ಮತ್ತು ಸಂಸ್ಕೃತಿ"><p>ಕನ್ನಡ ಮತ್ತು ಸಂಸ್ಕೃತಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kannadasahithyaparishattu.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/kannada_websites/kannada_sahitya_parishat.png" loading="lazy" alt="ಸಾಹಿತ್ಯ ಪರಿಷತ್"><p>ಕನ್ನಡ ಸಾಹಿತ್ಯ ಪರಿಷತ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kanaja.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/kannada_websites/kanaja.png" loading="lazy" alt="ಕಣಜ"><p>ಕಣಜ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kannadapraadhikaara.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/kannada_websites/kannada_abhiruddi_pradikar.png" loading="lazy" alt="ಅಭಿವೃದ್ಧಿ ಪ್ರಾಧಿಕಾರ"><p>ಕನ್ನಡ ಅಭಿವೃದ್ಧಿ ಪ್ರಾಧಿಕಾರ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ekannada.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/e-kanada-logo.png" loading="lazy" alt="ಇ-ಕನ್ನಡ" style="height:48px;"><p>ಇ-ಕನ್ನಡ</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 9. Commissions -->
+<div class="modal fade" id="myModal9" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-person-badge me-2"></i>ಆಯೋಗಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kshrc.karnataka.gov.in" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/commissions_websites/human_rights_kar.png" loading="lazy" alt="ಮಾನವ ಹಕ್ಕು"><p>ಮಾನವ ಹಕ್ಕು ಆಯೋಗ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kerc.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/commissions_websites/all_ayoga.png" loading="lazy" alt="ವಿದ್ಯುತ್ ಆಯೋಗ"><p>ವಿದ್ಯುತ್ ಆಯೋಗ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://karunadu.karnataka.gov.in/jnanaayoga/Pages/home.aspx" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/commissions_websites/all_ayoga.png" loading="lazy" alt="ಜ್ಞಾನ ಆಯೋಗ"><p>ಜ್ಞಾನ ಆಯೋಗ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ceo.karnataka.gov.in" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/commissions_websites/all_ayoga.png" loading="lazy" alt="ಚುನಾವಣಾ ಆಯೋಗ"><p>ಚುನಾವಣಾ ಆಯೋಗ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kslsa.kar.nic.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/commissions_websites/all_ayoga.png" loading="lazy" alt="ಕಾನೂನು ಪ್ರಾಧಿಕಾರ"><p>ಕರ್ನಾಟಕ ಕಾನೂನು ಪ್ರಾಧಿಕಾರ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kscpcr.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/commissions_websites/all_ayoga.png" loading="lazy" alt="ಮಕ್ಕಳ ಹಕ್ಕುಗಳ ಆಯೋಗ"><p>ಮಕ್ಕಳ ಹಕ್ಕುಗಳ ಆಯೋಗ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://www.kscw.kar.nic.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/commissions_websites/all_ayoga.png" loading="lazy" alt="ಮಹಿಳಾ ಆಯೋಗ"><p>ಮಹಿಳಾ ಆಯೋಗ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://kscdrc.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/commissions_websites/all_ayoga.png" loading="lazy" alt="ಗ್ರಾಹಕ ವಿವಾದ"><p>ಗ್ರಾಹಕ ವಿವಾದಗಳ ಪರಿಹಾರ ಆಯೋಗ</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 10. Law Courts -->
+<div class="modal fade" id="myModal10" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-scale me-2"></i>ಕಾನೂನು ನ್ಯಾಯಾಲಯಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://main.sci.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/law_websites/supreeem_court.png" loading="lazy" alt="ಸರ್ವೋಚ್ಚ ನ್ಯಾಯಾಲಯ"><p>ಸರ್ವೋಚ್ಚ ನ್ಯಾಯಾಲಯ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://karnatakajudiciary.kar.nic.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/law_websites/high_1_court.png" loading="lazy" alt="ಹೈಕೋರ್ಟ್"><p>ಹೈಕೋರ್ಟ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://districts.ecourts.gov.in/karnataka" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/law_websites/district_courts.png" loading="lazy" alt="ಜಿಲ್ಲಾ ನ್ಯಾಯಾಲಯ"><p>ಜಿಲ್ಲಾ ನ್ಯಾಯಾಲಯಗಳು</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://cgat.gov.in/catlive/index.php" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/law_websites/cat.png" loading="lazy" alt="CAT"><p>ಕೇಂದ್ರ ಆಡಳಿತ ನ್ಯಾಯಮಂಡಳಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ksat.karnataka.gov.in/" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/law_websites/dpar.png" loading="lazy" alt="KSAT"><p>ಕರ್ನಾಟಕ ರಾಜ್ಯ ಆಡಳಿತ ನ್ಯಾಯಮಂಡಳಿ</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- 11. Downloads -->
+<div class="modal fade" id="myModal11" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"><i class="bi bi-cloud-arrow-down me-2"></i>ಡೌನ್‌ಲೋಡ್‌ಗಳು</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body"><div class="container-fluid"><div class="row card-grid">
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ceg.karnataka.gov.in/frontend/opt1/application_download/nudi_6.0_setup.exe" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/downloads_websites/nudi.png" loading="lazy" alt="ನುಡಿ"><p>ನುಡಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://www.cdac.in/index.aspx?id=ev_corp_gist_go_translate" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/downloads_websites/go_translate_cdac.png" loading="lazy" alt="GO Translate"><p>ಸಿಡಿಎಸಿ ಭಾಷಾಂತರಿಸಿ</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://ceg.karnataka.gov.in/frontend/opt1/application_download/setup_espeak.exe" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/downloads_websites/e_speak.png" loading="lazy" alt="ಇ-ಸ್ಪೀಕ್"><p>ಇ-ಸ್ಪೀಕ್</p></a></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 sbox" id="modal_icons"><a href="https://play.google.com/store/apps/details?id=com.voicenotes.kannada&hl=en" target="_blank"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/modal_icons/downloads_websites/kan_voice_notes.png" loading="lazy" alt="ಧ್ವನಿ ಟಿಪ್ಪಣಿಗಳು"><p>ಕನ್ನಡ ಧ್ವನಿ ಟಿಪ್ಪಣಿಗಳು</p></a></div>
+      </div></div></div>
+      <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">ಮುಚ್ಚಿ</button></div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      responsive: { 0: { items: 2 }, 576: { items: 3 }, 768: { items: 4 }, 992: { items: 6 } }
+    });
+  });
+</script>
+
+<style>
+.mongologo{position:absolute;width:auto;height:26px;right:0;}
+</style>
+<img class='mongologo' src='https://kscdrc.karnataka.gov.in/mongo.png'>
+<div class="modal fade" id="screen_reader_kn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ಸ್ಕ್ರೀನ್ ರೀಡರ್ ಪ್ರವೇಶ</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="overflow-x: auto;">
+        <p>ಈ ವೆಬ್‌ಸೈಟ್ ವಿಶ್ವವ್ಯಾಪಿ ವೆಬ್ ಕಾಂಸಾರ್ಷಿಯಂ (W3C) ವೆಬ್ ಕಂಟೆಂಟ್ ಆಕ್ಸೆಸಿಬಿಲಿಟಿ ಮಾರ್ಗಸೂಚಿಗಳು (WCAG) 2.0 ಲೆವೆಲ್ AA- ಗೆ ಅನುಗುಣವಾಗಿದೆ. ಇದರಿಂದ ದೃಷ್ಟಿ ದೋಷವುಳ್ಳವರು ಸ್ಕ್ರೀನ್ ರೀಡರ್‌ಗಳಂತಹ ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನಗಳನ್ನು ಬಳಸಿ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಪ್ರವೇಶಿಸಬಹುದು. ಜಾವ್ಸ್, ಎನ್‌ವಿಡಿಎ, ಎಸ್‌ಎಎಫ್‌ಎ, ಸೂಪರ್‌ನೋವಾ ಮತ್ತು ವಿಂಡೋ-ಐಸ್‌ಗಳಂತಹ ವಿಭಿನ್ನ ಸ್ಕ್ರೀನ್ ರೀಡರ್‌ಗಳೊಂದಿಗೆ ವೆಬ್‌ಸೈಟ್‌ನ ಮಾಹಿತಿ ಪ್ರವೇಶಿಸಬಹುದಾಗಿದೆ.</p>
+        <p>ತಳೆಯಿರುವ ಪಟ್ಟಿಯಲ್ಲಿ ವಿಭಿನ್ನ ಸ್ಕ್ರೀನ್ ರೀಡರ್‌ಗಳ ಮಾಹಿತಿಯನ್ನು ನೀಡಲಾಗಿದೆ:</p>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sl.No</th>
+              <th>ಸ್ಕ್ರೀನ್ ರೀಡರ್</th>
+              <th>ವೆಬ್‌ಸೈಟ್</th>
+              <th>ಉಚಿತ / ವಾಣಿಜ್ಯ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ನಾನ್ ವಿಸಲು ಡೆಸ್ಕ್‌ಟಾಪ್ ಆಕ್ಸೆಸ್ (NVDA)</td>
+              <td><a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a> (ಹೊಸ ಕಿಟಕಿಯಲ್ಲಿ ತೆರೆಯುವ ಬಾಹ್ಯ ವೆಬ್‌ಸೈಟ್)</td>
+              <td>ಉಚಿತ</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ಜಾವ್ಸ್</td>
+              <td><a href="https://www.freedomscientific.com/products/software/jaws/" target="_blank">http://www.freedomscientific.com</a> (ಹೊಸ ಕಿಟಕಿಯಲ್ಲಿ ತೆರೆಯುವ ಬಾಹ್ಯ ವೆಬ್‌ಸೈಟ್)</td>
+              <td>ವಾಣಿಜ್ಯ</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>ವಿಂಡೋ-ಐಸ್</td>
+              <td><a href="http://www.gwmicro.com/" target="_blank">http://www.gwmicro.com</a> (ಹೊಸ ಕಿಟಕಿಯಲ್ಲಿ ತೆರೆಯುವ ಬಾಹ್ಯ ವೆಬ್‌ಸೈಟ್)</td>
+              <td>ವಾಣಿಜ್ಯ</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ಸಿಸ್ಟಮ್ ಆಕ್ಸೆಸ್ ಟು ಗೋ</td>
+              <td><a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a> (ಹೊಸ ಕಿಟಕಿಯಲ್ಲಿ ತೆರೆಯುವ ಬಾಹ್ಯ ವೆಬ್‌ಸೈಟ್)</td>
+              <td>ಉಚಿತ</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ವೆಬ್‌ಎನ್ಯವೇರ್</td>
+              <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a> (ಹೊಸ ಕಿಟಕಿಯಲ್ಲಿ ತೆರೆಯುವ ಬಾಹ್ಯ ವೆಬ್‌ಸೈಟ್)</td>
+              <td>ಉಚಿತ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- Single Modal - 2nd Forest & Farm Herbal Expo 2026 -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+       <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background: #949494; color: #fff; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 40px; line-height: inherit; float: right; margin-top: -10px; margin-right: -10px; cursor: pointer;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+           <div style="padding: 15px; background: #f5f5f5; margin-top: 10px; border-radius: 5px;">
+          <h3 style="color: #2d6a4f;">🌿 2ನೇ ಅರಣ್ಯ ಮತ್ತು ಕೃಷಿ ಔಷಧೀಯ ಪ್ರದರ್ಶನ – 2026</h3>
+          <p style="font-size: 16px; margin: 5px 0;">
+            <strong>📅 ದಿನಾಂಕ:</strong> 18<sup>ನೇ</sup> - 20<sup>ನೇ</sup> ಸೆಪ್ಟೆಂಬರ್ 2026<br>
+            <strong>📍 ಸ್ಥಳ:</strong> ಕರ್ನಾಟಕ ಚಿತ್ರಕಲಾ ಪರಿಷತ್, ಕುಮಾರಕೃಪಾ ರಸ್ತೆ, ಬೆಂಗಳೂರು
+          </p>
+          <p style="font-size: 14px; color: #555;">
+            ಆಯೋಜಕರು: ಕರ್ನಾಟಕ ರಾಜ್ಯ ಔಷಧೀಯ ಸಸ್ಯ ಪ್ರಾಧಿಕಾರ & ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ
+          </p>
+          
+          <!-- Read More Button - Opens PDF in new tab -->
+          <a href="https://webportal.karnataka.gov.in/assets/front/popups/herbal_expo_2026_letters_kn.pdf" 
+             target="_blank" 
+             class="btn btn-success" 
+             style="margin-top: 10px; padding: 10px 30px; font-size: 16px; border-radius: 5px; text-decoration: none; display: inline-block; background-color: #2d6a4f; color: #fff; border: none;">
+            📄 ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ
+          </a>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <img src="https://webportal.karnataka.gov.in/assets/front/popups/kampa_kn_270826.jpg" class="img-fluid imgkampa" alt="2nd Forest & Farm Herbal Expo 2026">
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  var path = window.location.pathname.replace(/^\/|\/$/g, '');
+  var segments = path === '' ? [] : path.split('/');
+
+  // Show only on homepage
+  if (segments.length <= 1) {
+          $('#eventModal').modal('show');
+      setTimeout(function() {
+        $('#eventModal').modal('hide');
+      }, 20000); // Auto-close after 20 seconds
+      }
+});
+</script>
+<style>
+  .search-box {
+  position: relative;
+  height: 25px;
+  background: #2f3640;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.acts_table td, .acts_table p, .acts_table a {
+    background: #350dff;
+    color: white !important;
+}
+.search-box.active {
+  width: 240px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+.cm_karnataka_photo{height: 120px !important;}
+.dpal-gserach-btn{color: white;padding: 6px;}
+
+.search-btn {
+  color: #fff;
+  transition: 0.4s;
+  z-index: 1;background: transparent;border:0px;
+
+  margin-left: -10px;margin-top: 6px;
+}
+
+.search-box.active .search-btn {
+  color: #2f3640;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #2f3640;
+  font-size: 16px;
+  width: 0;
+  transition: 0.4s;
+  /*margin-left: 10px;*/
+  z-index: 0;
+}
+
+.search-box.active .search-txt {
+  width: 100%;
+}
+    /* First Modal Styles */
+    .kswdc_modal-body p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img{width: 100%;}
+    .kswdc_dflex{display: flex;}
+    
+    /* Second Modal Styles */
+    .kswdc_modal-body2 p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img2 {width: 100%;}
+    .kswdc_dflex2 {display: flex;}
+</style>
+
+
+  <!-- <div class="modal fade" id="eventModalkswdc" tabindex="-1" role="dialog" aria-labelledby="eventModalkswdcLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center kswdc_modal-body">
+          <div class="row kswdc_dflex">
+            <div class="col-12">
+              <img src="https://atimysore.karnataka.gov.in/uploads/banner_popup.jpeg" class="img-fluid kswdc_pop_img" alt="Image 1">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+<script>
+    $(document).ready(function(){
+      var path = window.location.pathname.replace(/^\/|\/$/g, '');
+      var segments = path === '' ? [] : path.split('/');
+
+      if (segments.length <= 1) {
+        // Show first modal if active
+                  $('#eventModalkswdc').modal('show');
+          setTimeout(function() {
+            $('#eventModalkswdc').modal('hide');
+          }, 20000);
+        
+        // Show second modal if active (with delay to avoid conflict)
+              }
+    });
+</script>
+
+
+<link href="" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="">
+
+<script src=""></script>
+
+<style type="text/css">
+.mysqlspan{background:#e38f00;padding:0px 4px; color:#00537f;}
+.version_block{display:flex;}
+.mongologo{display:none !important;}
+  .modal{background: #0e0e0ebf;}
+  .footer{width:100% !important;}
+      .modal-body{color: black;}
+    .foot-bottom{   display: flex;
+    background: #333434;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;}
+    .vhide{visibility: hidden;}
+    .lineDiv2,.lineDiv1{background-color: goldenrod !important;}
+        i.fa.fa-angle-right {
+    padding-right: 8px;
+}
+
+.footerSectionDetails a{color: white !important;}
+
+.footer_container li,.footer_container a{cursor: pointer;}
+  .modal-title{width: -webkit-fill-available}
+  .cls-btn{padding: 8px 10px 0px 10px;}
+</style>
+<section class="footer_container">
+    <div class="container footerSection_Div">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p>ಹಕ್ಕುತ್ಯಾಗ</p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP"><p>
+                       ಈ ಪುಟವು ಸರ್ಕಾರಿ ಸಚಿವಾಲಯ/ ಇಲಾಖೆ/ ಸಂಸ್ಥೆಗಳಿಗೂ ಲಿಂಕುಗಳನ್ನು ಕಲ್ಪಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ಗಮನಿಸಿ.  ಈ ವೆಬ್ ಸೈಟುಗಳ ವಿಷಯಗಳು ಆಯಾ ಸಂಸ್ಥೆಗಳ ಸ್ವತ್ತೇ ಆಗಿದ್ದು, ಯಾವುದೇ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಅಥವಾ ಸಲಹೆಗಾಗಿ ಅವರನ್ನೇ ಸಂಪರ್ಕಿಸುವುದು
+                    </p>
+                </div>
+            </div>
+          </div>
+          
+           <div class="col-lg-4">
+
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p>ಜಾಲತಾಣ ನೀತಿಗಳು ಮತ್ತು ಮಾರ್ಗಸೂಚಿಗಳು</p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP1">
+                    <div>
+                         <ul class="list-unstyled">
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal3"><i class="fa fa-angle-right" aria-hidden="true"></i>ಹಕ್ಕುಸ್ವಾಮ್ಯ ನೀತಿ</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal4"><i class="fa fa-angle-right" aria-hidden="true"></i>ಬಾಹ್ಯಜಾಲತಾಣ ಸಂಪರ್ಕ ನೀತಿ</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal5"><i class="fa fa-angle-right" aria-hidden="true"></i>ಭದ್ರತಾ ನೀತಿ</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal6"><i class="fa fa-angle-right" aria-hidden="true"></i>ಕರಾರುಗಳು ಮತ್ತು ಷರತ್ತುಗಳು</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal7"><i class="fa fa-angle-right" aria-hidden="true"></i>ಗೌಪ್ಯತಾ ನೀತಿ</li>
+
+      </ul> 
+                    </div>
+                </div>
+            </div>
+
+           </div>
+
+
+           <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle "><p>ಪ್ರವೇಶ ಕೊಂಡಿಗಳು </p></div>
+                <div class="lineDiv "> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div><br>
+                <div class="footerSectionP"><p>
+                     <ul class="list-unstyled">
+                          <li><a href="https://kscdrc.karnataka.gov.in/sitemap/kn"><i class="fa fa-angle-right" aria-hidden="true"></i>ಜಾಲನಕ್ಷೆ </a></li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal8"><i class="fa fa-angle-right" aria-hidden="true"></i>ಸಹಾಯ</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal9"><i class="fa fa-angle-right" aria-hidden="true"></i>ಪರದೆ ವಾಚಕ</li>
+      <li><a href="https://ceg.karnataka.gov.in/guidelines/kn" ><i class="fa fa-angle-right" aria-hidden="true"></i>ಮಾರ್ಗಸೂಚಿಗಳು</a></li>
+    </ul>
+                    </p>
+                </div>
+            </div>
+           </div>
+
+
+
+        </div>
+
+
+
+        <div class="lastUpdate">
+            <div><p>ಇತ್ತೀಚಿನ ನವೀಕರಣ: </p></div>
+            <div><p>ಸಂದರ್ಶಕರು: </p></div>
+            <div class="version_block"><p>ಆವೃತ್ತಿ: CeG/KRN 4.0 <span class='mongospan'>MGO-DB</span></p></div>
+        </div>
+
+
+        <div class="contentOwner">
+            <p>  ವಿಷಯದ ಮಾಲೀಕತ್ವ ಮತ್ತು ನಿರ್ವಹಣೆ : ಕರ್ನಾಟಕ ರಾಜ್ಯ ಗ್ರಾಹಕರ ವ್ಯಾಜ್ಯಗಳ ಪರಿಹಾರ ಆಯೋಗ, ಕರ್ನಾಟಕ ಸರ್ಕಾರ</p>
+            <p>ವಿನ್ಯಾಸ, ಅಭಿವೃದ್ಧಿ ಮತ್ತು ಪ್ರಕಟಣೆ  : ಇ-ಆಡಳಿತ ಕೇಂದ್ರ , ಕರ್ನಾಟಕ ಸರ್ಕಾರ © 2026, ಎಲ್ಲಾ ಹಕ್ಕುಗಳೂ ಕಾಯ್ದಿರಿಸಿವೆ.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="footer ">
+
+
+
+<ul class="list-inline foot-bottom">
+      <li>
+       <a href="https://www.meity.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/Meity_logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://digitalindia.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/digital-india-logo.png" class="footer_image"></a>
+      </li> 
+      <li>
+       <a href="https://data.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/data-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.india.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/india-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.pmindia.gov.in/en/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/pm-india-logo.png" class="footer_image"></a>
+      </li>
+
+      <li class="footer4_divider"></li>
+      <li></li>
+     <li>
+       <a href="https://guidelines.india.gov.in/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/GIGW.jpeg" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.w3.org/TR/WCAG22/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/WCAG.jpeg" class="footer_image"></a>
+      </li> 
+      <li>
+      <a href="https://www.https.in/government-solutions"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/SSLcertificate.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://www.w3schools.com/html/default.asp"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/w3c.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://kannadapraadhikaara.karnataka.gov.in"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/kp_kn.jpeg" class="footer_image"></a>
+      </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="modal fade" id="fmyModal3" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಕೃತಿಸ್ವಾಮ್ಯ ನೀತಿ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+         
+        <h6>ಕೃತಿಸ್ವಾಮ್ಯ ನೀತಿ (ಪ್ರಕಟಿತ ಮಾಹಿತಿಯು ಯಾವುದೇ ಶುಲ್ಕವಿಲ್ಲದೆ ಲಭ್ಯವಿದ್ದರೆ)</h6>
+
+           <p>1) ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಕಾಣಿಸಿಕೊಂಡಿರುವ ಮಾಹಿತಿಯನ್ನು ಯಾವುದೇ ಮಾಧ್ಯಮ ರೂಪದಲ್ಲಿ ಯಾವುದೇ ಶುಲ್ಕವಿಲ್ಲದೆ ನಮ್ಮಿಂದ (ಸಿಇಜಿ) ಪೂರ್ವ ಅನುಮತಿಯೊಂದಿಗೆ ಅಥವಾ ವೆಬ್‌ಸೈಟ್ ಹೊಂದಿರುವ ಸಂಬಂಧಿತ ಪ್ರಾಧಿಕಾರವನ್ನು ಇಮೇಲ್ ಮೂಲಕ ಮರು ಪ್ರಕಟಿಸಬಹುದು.</p>
+           <p>2)ಮಾಹಿತಿಯು ಲಭ್ಯವಿರುವುದರಿಂದ ಅದನ್ನು ಮರುಪ್ರಕಟಿಸಬಹುದು ಮತ್ತು ವಿಕೃತ ಅಥವಾ ದಾರಿತಪ್ಪಿಸುವ ರೀತಿಯಲ್ಲಿ ಬಳಸಬಾರದು</p>
+           <p>3)ಎಲ್ಲಿ ವಸ್ತುಗಳನ್ನು ಪ್ರಕಟಿಸಲಾಗುತ್ತಿದೆ ಅಥವಾ ಇತರರಿಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆಯೋ ಅಲ್ಲಿ ಮೂಲವನ್ನು ಪ್ರಮುಖವಾಗಿ ಅಂಗೀಕರಿಸಬೇಕು</p>
+           <p>4)ಆದಾಗ್ಯೂ, ಈ ವಸ್ತುವನ್ನು ಪುನರುತ್ಪಾದಿಸುವ ಅನುಮತಿಯು ಈ ಸೈಟ್‌ನಲ್ಲಿನ ಯಾವುದೇ ವಸ್ತುಗಳಿಗೆ ವಿಸ್ತರಿಸುವುದಿಲ್ಲ, ಇದನ್ನು ಮೂರನೇ ವ್ಯಕ್ತಿಯ ಹಕ್ಕುಸ್ವಾಮ್ಯ ಎಂದು ಸ್ಪಷ್ಟವಾಗಿ ಗುರುತಿಸಲಾಗಿದೆ</p>
+          
+        <h6>ಕೃತಿಸ್ವಾಮ್ಯ ನೀತಿ (ಪ್ರಕಟಿತ ಮಾಹಿತಿಯನ್ನು ಮರುಬಳಕೆ ಮಾಡಲು ಅವಕಾಶವಿದ್ದರೆ)</h6>
+        
+           <p>1)ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಪ್ರಕಟವಾದ ಮಾಹಿತಿಯು ಹಕ್ಕುಸ್ವಾಮ್ಯ ನೀತಿಯ ಅಡಿಯಲ್ಲಿ ಬರುತ್ತದೆ ಮತ್ತು ಅವುಗಳ ಮರುಪ್ರಕಟಕ್ಕಾಗಿ ಅಧಿಕೃತತೆಯನ್ನು ಪಡೆಯುವುದು ಪೂರ್ವ ಅವಶ್ಯಕವಾಗಿದೆ.</p>  
+
+           <p>2)ಅನುಮತಿ ಪಡೆಯಲು ಒಬ್ಬರು ……………… .. @ .........</p>
+
+         
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Hperlinking Policies -->
+  <div class="modal fade" id="fmyModal4" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಹೈಪರ್ಲಿಂಕಿಂಗ್ ನೀತಿ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+         <h6>(ಆಯಾ ಇಲಾಖೆಗೆ ತಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಹೈಪರ್ಲಿಂಕ್ ಮಾಡಲು ಯಾವುದೇ ಅನುಮತಿ ಅಗತ್ಯವಿಲ್ಲದಿದ್ದರೆ)</h6>
+
+           <p>1)ನಮ್ಮ ಸೈಟ್‌ನಲ್ಲಿ ಹೋಸ್ಟ್ ಮಾಡಲಾದ ಮಾಹಿತಿಯೊಂದಿಗೆ ನೇರವಾಗಿ ಲಿಂಕ್ ಮಾಡುವುದನ್ನು ನಾವು ಆಕ್ಷೇಪಿಸುವುದಿಲ್ಲ ಮತ್ತು ಅದಕ್ಕಾಗಿ ಯಾವುದೇ ಪೂರ್ವ ಅನುಮತಿ ಅಗತ್ಯವಿಲ್ಲ.</p>
+
+           <p>2)ನಮ್ಮ ಪುಟಗಳನ್ನು ಇತರ ಸೈಟ್‌ಗಳಲ್ಲಿ ಫ್ರೇಮ್‌ಗಳಲ್ಲಿ ಲೋಡ್ ಮಾಡಲು ನಾವು ಅನುಮತಿಸುವುದಿಲ್ಲ. ನಮ್ಮ ಇಲಾಖೆಯ ಪುಟಗಳು ಬಳಕೆದಾರರ ಹೊಸದಾಗಿ ತೆರೆದ ಬ್ರೌಸರ್ ವಿಂಡೋಗೆ ಲೋಡ್ ಆಗಬೇಕು.</p>
+
+        <h6>(ವೆಬ್‌ಸೈಟ್‌ಗೆ ಹೈಪರ್ಲಿಂಕ್ ಅನುಮತಿ ಅಗತ್ಯವಿದ್ದರೆ)</h6>
+        
+           <p>1)ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಯಾವುದೇ ಲಿಂಕ್ ಅಥವಾ ಅದರ ಫಾರ್ಮ್ ಅನ್ನು ಒದಗಿಸಲು, ಅನುಮತಿಯನ್ನು ಪಡೆಯುವುದು ಕಡ್ಡಾಯವಾಗಿದೆ.</p>  
+
+           <p>2)ಈ ಇಮೇಲ್‌ಗೆ ವಿನಂತಿಸುವ ಮೂಲಕ ಇ-ಆಡಳಿತಕ್ಕಾಗಿ ಕೇಂದ್ರದಿಂದ ಅನುಮತಿಯನ್ನು ಪಡೆಯಬಹುದು. spm.webportal@karnataka.gov.in</p>
+ 
+           <p>3)ಈ ಸರ್ಕಾರಿ ವೆಬ್‌ಸೈಟ್ ಟಿಪ್ಪಣಿಯನ್ನು ಬಿಡುವ ಮೊದಲು: ಈ ಸಂಪರ್ಕ ಬಟನ್ ಮತ್ತೊಂದು ವೆಬ್‌ಸೈಟ್‌ಗೆ ಕಾರಣವಾಗುತ್ತದೆ, ಅಂತಹ ಹೊಸ ತೆರೆದ ಸೈಟ್‌ನ ಕುರಿತು ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಪಡೆಯಲು, ಆ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ನೋಂದಾಯಿಸಲಾದ ಸಂಬಂಧಪಟ್ಟ ಸಂಪರ್ಕಗಳನ್ನು ಸಂಪರ್ಕಿಸಬೇಕು.</p>
+         
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+   
+
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Security Policies -->
+  <div class="modal fade" id="fmyModal5" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಭದ್ರತಾ ನೀತಿ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+           <p>
+              1) ಸೈಟ್ ಭದ್ರತಾ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮತ್ತು ಈ ಸೇವೆಯು ಎಲ್ಲಾ ಬಳಕೆದಾರರಿಗೆ ಲಭ್ಯವಾಗಿದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು, ಈ ಸರ್ಕಾರಿ ಕಂಪ್ಯೂಟರ್ ವ್ಯವಸ್ಥೆಯು ಮಾಹಿತಿಯನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಅಥವಾ ಬದಲಾಯಿಸಲು ಅಥವಾ ಹಾನಿಯನ್ನುಂಟುಮಾಡುವ ಅನಧಿಕೃತ ಪ್ರಯತ್ನಗಳನ್ನು ಗುರುತಿಸಲು ನೆಟ್‌ವರ್ಕ್ ದಟ್ಟಣೆಯನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲು ವಾಣಿಜ್ಯ ಸಾಫ್ಟ್‌ವೇರ್ ಪ್ರೋಗ್ರಾಂಗಳನ್ನು ಬಳಸಿಕೊಳ್ಳುತ್ತದೆ.
+           </p><br>
+
+          <p>2) ಅಧಿಕೃತ ಕಾನೂನು ಜಾರಿ ತನಿಖೆಗಳನ್ನು ಹೊರತುಪಡಿಸಿ, ವೈಯಕ್ತಿಕ ಬಳಕೆದಾರರನ್ನು ಅಥವಾ ಅವರ ಬಳಕೆಯ ಅಭ್ಯಾಸವನ್ನು ಗುರುತಿಸಲು ಬೇರೆ ಯಾವುದೇ ಪ್ರಯತ್ನಗಳನ್ನು ಮಾಡಲಾಗುವುದಿಲ್ಲ. ಕಚ್ಚಾ ಡೇಟಾ ಲಾಗ್‌ಗಳನ್ನು ಬೇರೆ ಯಾವುದೇ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಬಳಸಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ನಿಯಮಿತವಾಗಿ ಅಳಿಸಲು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ.
+          </p><br>
+
+          <p>3) ಈ ಸೇವೆಯಲ್ಲಿ ಮಾಹಿತಿಯನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಅಥವಾ ಮಾಹಿತಿಯನ್ನು ಬದಲಾಯಿಸಲು ಅನಧಿಕೃತ ಪ್ರಯತ್ನಗಳನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ ಮತ್ತು ಭಾರತೀಯ ಐಟಿ ಕಾಯ್ದೆ (2000) ಅಡಿಯಲ್ಲಿ ಶಿಕ್ಷಾರ್ಹವಾಗಬಹುದು.</p><br>
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+ <!-------------------------------------------------------------------->
+  <!-- Terms & Conditions -->
+  <div class="modal fade" id="fmyModal6" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ನಿಯಮ ಮತ್ತು ಶರತ್ತುಗಳು</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <p>1)ಈ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಇ-ಆಡಳಿತಕ್ಕಾಗಿ ಕೇಂದ್ರವು ವಿನ್ಯಾಸಗೊಳಿಸಿದೆ, ಅಭಿವೃದ್ಧಿಪಡಿಸಿದೆ ಮತ್ತು ನಿರ್ವಹಿಸುತ್ತದೆ.</p><br>
+
+          <p>2)ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿನ ವಿಷಯದ ನಿಖರತೆ ಮತ್ತು ಕರೆನ್ಸಿಯನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಎಲ್ಲಾ ಪ್ರಯತ್ನಗಳನ್ನು ಮಾಡಲಾಗಿದ್ದರೂ, ಅದನ್ನು ಕಾನೂನಿನ ಹೇಳಿಕೆಯಾಗಿ ನಿರ್ಣಯಿಸಬಾರದು ಅಥವಾ ಯಾವುದೇ ಕಾನೂನು ಉದ್ದೇಶಗಳಿಗಾಗಿ ಬಳಸಬಾರದು. ಯಾವುದೇ ಅಸ್ಪಷ್ಟತೆ ಅಥವಾ ಸಂದೇಹಗಳಿದ್ದಲ್ಲಿ, ಬಳಕೆದಾರರು ಇಲಾಖೆ (ಗಳು) ಮತ್ತು / ಅಥವಾ ಇತರ ಮೂಲ (ಗಳನ್ನು) ಯೊಂದಿಗೆ ಪರಿಶೀಲಿಸಲು / ಪರಿಶೀಲಿಸಲು ಮತ್ತು ಸೂಕ್ತ ವೃತ್ತಿಪರ ಸಲಹೆಯನ್ನು ಪಡೆಯಲು ಸೂಚಿಸಲಾಗುತ್ತದೆ.</p><br>
+
+          <p>3)ಯಾವುದೇ ಸಂದರ್ಭದಲ್ಲೂ ಈ ಇಲಾಖೆಯು ಯಾವುದೇ ಖರ್ಚು, ನಷ್ಟ ಅಥವಾ ಹಾನಿಗೆ, ಮಿತಿಯಿಲ್ಲದೆ, ಪರೋಕ್ಷ ಅಥವಾ ಪರಿಣಾಮಕಾರಿ ನಷ್ಟ ಅಥವಾ ಹಾನಿ, ಅಥವಾ ಯಾವುದೇ ಖರ್ಚು, ನಷ್ಟ ಅಥವಾ ಹಾನಿ, ಬಳಕೆಯಿಂದ ಉಂಟಾಗುವ, ಅಥವಾ ಬಳಕೆಯ ನಷ್ಟ, ದತ್ತಾಂಶದಿಂದ ಉಂಟಾಗುತ್ತದೆ. ಅಥವಾ ಈ ವೆಬ್‌ಸೈಟ್‌ನ ಬಳಕೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ</p><br>
+
+          <p>4)ಈ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳನ್ನು ನಿಯಂತ್ರಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅದಕ್ಕೆ ಅನುಗುಣವಾಗಿ ನಿರ್ಣಯಿಸಲಾಗುತ್ತದೆ
+          ಭಾರತೀಯ ಕಾನೂನುಗಳೊಂದಿಗೆ. ಈ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳ ಅಡಿಯಲ್ಲಿ ಉದ್ಭವಿಸುವ ಯಾವುದೇ ವಿವಾದ
+          ಭಾರತದ ನ್ಯಾಯಾಲಯಗಳ ವ್ಯಾಪ್ತಿಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ.</p><br>
+
+
+          <p>5)ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಪೋಸ್ಟ್ ಮಾಡಲಾದ ಮಾಹಿತಿಯು ಹೈಪರ್ಟೆಕ್ಸ್ಟ್ ಲಿಂಕ್‌ಗಳನ್ನು ಒಳಗೊಂಡಿರಬಹುದು ಅಥವಾ
+          ಸರ್ಕಾರೇತರ / ಖಾಸಗಿ ರಚಿಸಿದ ಮತ್ತು ನಿರ್ವಹಿಸುವ ಮಾಹಿತಿಯ ಪಾಯಿಂಟರ್‌ಗಳು
+          ಸಂಸ್ಥೆಗಳು. (ಇಲಾಖೆಯ ಹೆಸರು) ಈ ಲಿಂಕ್‌ಗಳು ಮತ್ತು ಪಾಯಿಂಟರ್‌ಗಳನ್ನು ಮಾತ್ರ ಒದಗಿಸುತ್ತಿದೆ
+          ನಿಮ್ಮ ಮಾಹಿತಿ ಮತ್ತು ಅನುಕೂಲಕ್ಕಾಗಿ. ನೀವು ಹೊರಗಿನ ಲಿಂಕ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ
+          ವೆಬ್‌ಸೈಟ್, ನೀವು ವೆಬ್‌ಸೈಟ್‌ನಿಂದ ಹೊರಬರುತ್ತಿದ್ದೀರಿ ಮತ್ತು ಒಳಪಟ್ಟಿರುತ್ತೀರಿ
+          ಹೊರಗಿನ ವೆಬ್‌ಸೈಟ್‌ನ ಮಾಲೀಕರು / ಪ್ರಾಯೋಜಕರ ಗೌಪ್ಯತೆ ಮತ್ತು ಭದ್ರತಾ ನೀತಿಗಳು.</p><br>
+
+
+          <p>6)ಅಂತಹ ಲಿಂಕ್ ಮಾಡಲಾದ ಪುಟಗಳ ಲಭ್ಯತೆಯನ್ನು ಸಂಬಂಧಪಟ್ಟ ಇಲಾಖೆ ಎಲ್ಲಾ ಸಮಯದಲ್ಲೂ ಖಾತರಿಪಡಿಸುವುದಿಲ್ಲ.</p><br>
+
+          <p>7)ಸಂಬಂಧಿತ ಇಲಾಖೆಯು, ಲಿಂಕ್ ಮಾಡಲಾದ ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿರುವ ಹಕ್ಕುಸ್ವಾಮ್ಯದ ವಸ್ತುಗಳ ಬಳಕೆಯನ್ನು ಅಧಿಕೃತಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಲಿಂಕ್ ಮಾಡಿದ ವೆಬ್‌ಸೈಟ್‌ನ ಮಾಲೀಕರಿಂದ ಅಂತಹ ಅಧಿಕಾರವನ್ನು ಕೋರಲು ಬಳಕೆದಾರರಿಗೆ ಸೂಚಿಸಲಾಗಿದೆ.</p><br>
+
+          <p>8)ಲಿಂಕ್ ಮಾಡಲಾದ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಭಾರತೀಯ ಸರ್ಕಾರಿ ವೆಬ್ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಅನುಸರಿಸುತ್ತವೆ ಎಂದು ಸಂಬಂಧಪಟ್ಟ ಇಲಾಖೆ ಖಾತರಿ ನೀಡುವುದಿಲ್ಲ</p>
+          <br>
+ 
+          <p>ಬಳಕೆದಾರರು ಮಾಹಿತಿಯನ್ನು ಭೇಟಿ ಮಾಡಿದರೆ ಮತ್ತು ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದರೆ ಅಥವಾ ಫೈಲ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದರೆ, ಈ ಕೆಳಗಿನ ಅಂಶಗಳು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಆಗಬಹುದು</p>
+          
+          <ul>
+            <li>- ನಿಮ್ಮ ಸೇವಾ ಡೊಮೇನ್, ಐಪಿ ಸಂಖ್ಯೆ, ಸಂದರ್ಶಕರು ನಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಹೇಗೆ ಪ್ರವೇಶಿಸಿದ್ದಾರೆ.</li>
+            <li>- ಬ್ರೌಸರ್‌ಗಳು ಮತ್ತು ಆಪರೇಟಿಂಗ್ ಸಿಸ್ಟಂಗಳು.</li> 
+            <li>- ಬಳಕೆದಾರರ ಭೇಟಿಗಳ ದಿನಾಂಕ ಮತ್ತು ಸಮಯ.</li> 
+            <li>- ಸಂದರ್ಶಕರು ಮಾಹಿತಿಯನ್ನು ಪ್ರವೇಶಿಸಿದ URL ಗಳು.</li>
+            <li>- ಬಳಕೆದಾರರು ಇತರ ವೆಬ್‌ಸೈಟ್‌ಗಳಿಂದ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿದ್ದರೆ, ಆ ವೆಬ್‌ಸೈಟ್‌ನ ವಿವರಗಳು</li>
+          </ul>
+ 
+
+         <h6>ಕುಕೀಸ್</h6>
+
+          <p> ನೀವು ಕೆಲವು ವೆಬ್‌ಸೈಟ್‌ಗಳಿಗೆ ಭೇಟಿ ನೀಡಿದಾಗ, ಅವರು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ / ಕುಕೀಸ್ ಎಂದು ಕರೆಯಲ್ಪಡುವ ಬ್ರೌಸಿಂಗ್ ಸಾಧನದಲ್ಲಿ ಸಣ್ಣ ಪ್ರಮಾಣದ ಸಾಫ್ಟ್‌ವೇರ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು. ಭವಿಷ್ಯದಲ್ಲಿ ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಗುರುತಿಸಲು ಕೆಲವು ಕುಕೀಗಳು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುತ್ತವೆ. ನಾವು ನಿರಂತರವಾದ ಕುಕೀಗಳನ್ನು ಅಥವಾ “ಪ್ರತಿ ಸೆಷನ್ ಕುಕೀಗಳನ್ನು” ಮಾತ್ರ ಬಳಸುತ್ತೇವೆ. ಈ ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ತಡೆರಹಿತ ಸಂಚರಣೆ ಒದಗಿಸುವಂತಹ ತಾಂತ್ರಿಕ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಪ್ರತಿ ಸೆಷನ್ ಕುಕೀಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತವೆ. ಈ ಕುಕೀಗಳು ಬಳಕೆದಾರರಲ್ಲಿ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ ಮತ್ತು ನೀವು ನಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಿಂದ ಹೊರಬಂದ ತಕ್ಷಣ ಅವುಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ. ಕುಕೀಸ್ ಡೇಟಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ರೆಕಾರ್ಡ್ ಮಾಡುವುದಿಲ್ಲ ಮತ್ತು ಅವುಗಳನ್ನು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ ಹಾರ್ಡ್ ಡ್ರೈವ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ. ಕುಕೀಗಳನ್ನು ಮೆಮೊರಿಯಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ ಮತ್ತು ಸಕ್ರಿಯ ಬ್ರೌಸರ್ ಅಧಿವೇಶನದಲ್ಲಿ ಮಾತ್ರ ಲಭ್ಯವಿದೆ. ಮತ್ತೆ, ನಿಮ್ಮ ಬ್ರೌಸರ್ ಅನ್ನು ಒಮ್ಮೆ ಮುಚ್ಚಿದ ನಂತರ, ಕುಕೀ ಕಣ್ಮರೆಯಾಗುತ್ತದೆ.
+          </p>
+
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Privacy Policies -->
+  <div class="modal fade" id="fmyModal7" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಗೌಪ್ಯತೆ ನೀತಿಗಳು</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <h6>ಗೌಪ್ಯತೆ ನೀತಿ: (ವೆಬ್‌ಸೈಟ್ ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸದಿದ್ದಾಗ)</h6>
+            <p>             ನೀವು ನಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿದಾಗ ಹೆಸರುಗಳು ಅಥವಾ ವಿಳಾಸಗಳಂತಹ ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ನಾವು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ. ಆ ಮಾಹಿತಿಯನ್ನು ನಮಗೆ ಒದಗಿಸಲು ನೀವು ಆರಿಸಿದರೆ, ಮಾಹಿತಿಗಾಗಿ ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಪೂರೈಸಲು ಮಾತ್ರ ಇದನ್ನು ಬಳಸಲಾಗುತ್ತದೆ
+            </p>
+
+          <h6>ಬಳಕೆದಾರ ಮಾಹಿತಿ: </h6>
+            <p>             ಬಳಕೆದಾರರು ವೆಬ್‌ಸೈಟ್‌ಗಳಿಗೆ ಭೇಟಿ ನೀಡಿದಾಗ ನಾವು ತಾಂತ್ರಿಕ ಬಳಕೆದಾರರ ವಿವರಗಳನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ ಮತ್ತು ಬ್ರೌಸರ್ ಪ್ರಕಾರ, ಸರ್ವರ್ ಮತ್ತು ಡೊಮೇನ್, ದಿನಾಂಕ ಮತ್ತು ಸಮಯ, ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ ದಾಖಲೆಗಳ ವಿವರಗಳನ್ನು ದಾಖಲಿಸಲಾಗಿದೆ, ಈ ಮಾಹಿತಿಯನ್ನು ಸೈಟ್ ಅನ್ನು ಹೆಚ್ಚು ಮಾಡಲು ನಮಗೆ ಸಹಾಯ ಮಾಡಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ ನಿಮಗೆ ಉಪಯುಕ್ತವಾಗಿದೆ. ಈ ಡೇಟಾದೊಂದಿಗೆ, ನಮ್ಮ ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡುವವರ ಸಂಖ್ಯೆ ಮತ್ತು ನಮ್ಮ ಸಂದರ್ಶಕರು ಬಳಸುವ ತಂತ್ರಜ್ಞಾನದ ಬಗೆಗೆ ನಾವು ಕಲಿಯುತ್ತೇವೆ. ವ್ಯಕ್ತಿಗಳು ಮತ್ತು ಅವರ ಭೇಟಿಗಳ ಮಾಹಿತಿಯನ್ನು ನಾವು ಎಂದಿಗೂ ಟ್ರ್ಯಾಕ್ ಮಾಡುವುದಿಲ್ಲ ಅಥವಾ ದಾಖಲಿಸುವುದಿಲ್ಲ. (ನ್ಯಾಯಾಲಯವು ವಾರಂಟ್ ಮೂಲಕ ನಿರ್ದೇಶಿಸಿದಾಗ ಹೊರತುಪಡಿಸಿ)
+            </p>
+
+          <h6>ಕುಕೀಸ್:</h6>
+            <p>
+              ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಸಂದರ್ಶಕರು ಮಾಹಿತಿಯನ್ನು ಪಡೆದಾಗ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಸಾಫ್ಟ್‌ವೇರ್ ಅನ್ನು ಒದಗಿಸುತ್ತವೆ ಮತ್ತು ಅವುಗಳನ್ನು ಕುಕೀಸ್ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಅಂತಹ ಯಾವುದೇ ಕುಕೀಗಳನ್ನು ಬಳಸಲಾಗುವುದಿಲ್ಲ.
+            </p> 
+
+          <h6>ಇಮೇಲ್ ನಿರ್ವಹಣೆ: </h6>
+            <p>ಬಳಕೆದಾರರು ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ಆ ಕ್ಷಣಕ್ಕೆ ಮಾತ್ರ ಕಳುಹಿಸಿದಾಗ ಇಮೇಲ್‌ಗಳನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅವರಿಗೆ ಮಾಹಿತಿಯನ್ನು ನೀಡಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ. ಇವುಗಳನ್ನು ಯಾವುದೇ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಅಥವಾ ಸಂಪರ್ಕ ಪಟ್ಟಿಯಲ್ಲಿ ಸೇರಿಸಲು ಬಳಸಲಾಗುವುದಿಲ್ಲ. ಬಳಕೆದಾರರಿಗೆ ತಿಳಿಸದೆ, ಅದನ್ನು ಬಹಿರಂಗಪಡಿಸಲಾಗುವುದಿಲ್ಲ.
+            </p> 
+            
+          <h6>ವೈಯಕ್ತಿಕ ವಿವರಗಳ ಸಂಗ್ರಹ: </h6>
+            <p>ಬಳಕೆದಾರರು ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಕೇಳಿದರೆ ಅಥವಾ ಒದಗಿಸಿದರೆ, ಅದರ ಬಳಕೆಯ ವಿವರಗಳನ್ನು ಉಲ್ಲೇಖಿಸಲಾಗುತ್ತದೆ. ವಿವರಗಳ ಬಗ್ಗೆ ನಿಮಗೆ ತೃಪ್ತಿ ಇಲ್ಲದಿದ್ದರೆ ಅಥವಾ ಅನುಮಾನವಿದ್ದರೆ ಅಥವಾ ಅದರ ಬಗ್ಗೆ ಅಭಿಪ್ರಾಯವನ್ನು ನೀಡಲು ಬಯಸಿದರೆ, ನಿಯೋಜಿತ ವೆಬ್‌ಮಾಸ್ಟರ್‌ಗಳನ್ನು ‘ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ’ ವಿಭಾಗದ ಅಡಿಯಲ್ಲಿ ಸಂಪರ್ಕಿಸುವುದು ನಿಮಗೆ ಅಗತ್ಯವಾಗಿರುತ್ತದೆ
+
+           
+            ಗಮನಿಸಿ: ‘ವೈಯಕ್ತಿಕ ವಿವರಗಳು’ ಅಡಿಯಲ್ಲಿ ಪಡೆದ ಖಾಸಗಿ ಮಾಹಿತಿಯ ತುಣುಕುಗಳನ್ನು ಸುಲಭವಾಗಿ ಗುರುತಿಸಲು ಗುರುತು ಅಥವಾ ಅಂಶಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ.
+ 
+            </p> 
+            
+          <h6>ಕುಕೀಸ್: </h6>
+            <p>ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಸಂದರ್ಶಕರು ಮಾಹಿತಿಯನ್ನು ಪಡೆದಾಗ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಸಾಫ್ಟ್‌ವೇರ್ ಅನ್ನು ಒದಗಿಸುತ್ತವೆ ಮತ್ತು ಅವುಗಳನ್ನು ಕುಕೀಸ್ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಅಂತಹ ಯಾವುದೇ ಕುಕೀಗಳನ್ನು ಬಳಸಲಾಗುವುದಿಲ್ಲ. 
+            </p>     
+
+            <h6>ಬಳಕೆದಾರರು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿದರೆ.</h6>
+             <p>
+               1.ನಿಮಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುವುದನ್ನು ಹೊರತುಪಡಿಸಿ ಬೇರೆ ಯಾವುದೇ ಉದ್ದೇಶಕ್ಕಾಗಿ ನಾವು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ (ಉದಾಹರಣೆಗೆ, ನಿಮ್ಮ ಪ್ರಶ್ನೆಗಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು ಅಥವಾ ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಚಂದಾದಾರಿಕೆಗಳನ್ನು ಒದಗಿಸಲು). ಇ-ಮೇಲ್ ವಿಳಾಸ ಅಥವಾ ಅಂಚೆ ವಿಳಾಸದೊಂದಿಗೆ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುವ ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡುವುದು ಮತ್ತು ಅದನ್ನು ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ನಮಗೆ ಸಲ್ಲಿಸುವುದು ಮುಂತಾದ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ನಮಗೆ ಒದಗಿಸಲು ನೀವು ಆರಿಸಿದರೆ-ನಿಮ್ಮ ಸಂದೇಶಕ್ಕೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು ಮತ್ತು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನಾವು ಆ ಮಾಹಿತಿಯನ್ನು ಬಳಸುತ್ತೇವೆ ನೀವು ವಿನಂತಿಸಿದ ಮಾಹಿತಿ. ನಿಮ್ಮ ಪ್ರಶ್ನೆಯು ಆ ಏಜೆನ್ಸಿಗೆ ಸಂಬಂಧಪಟ್ಟಿದ್ದರೆ ಅಥವಾ ಕಾನೂನಿನ ಪ್ರಕಾರ ಅಗತ್ಯವಿದ್ದರೆ ಮಾತ್ರ ನೀವು ನಮಗೆ ನೀಡುವ ಮಾಹಿತಿಯನ್ನು ನಾವು ಬೇರೆ ಸರ್ಕಾರಿ ಏಜೆನ್ಸಿಯೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳುತ್ತೇವೆ.
+            </p>
+            <p>
+              2. ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ಎಂದಿಗೂ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ ಅಥವಾ ವಾಣಿಜ್ಯ ಮಾರುಕಟ್ಟೆಗಾಗಿ ವೈಯಕ್ತಿಕ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ರಚಿಸುವುದಿಲ್ಲ. ಯಾವುದೇ ಒಳಬರುವ ಪ್ರಶ್ನೆಗಳು ಅಥವಾ ಕಾಮೆಂಟ್‌ಗಳಿಗೆ ಸ್ಥಳೀಯ ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ನೀವು ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಒದಗಿಸಬೇಕಾದರೂ, ನೀವು ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಬೇಡಿ ಎಂದು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ.
+
+            </p>
+
+          
+           <h6>ವೆಬ್‌ಸೈಟ್ ಭದ್ರತೆ</h6>
+             <p>
+              1)ಎಲ್ಲರಿಗೂ ಮಾಹಿತಿಯನ್ನು ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡಲು, ಅನಧಿಕೃತ ಬಳಕೆದಾರರ ಪ್ರವೇಶವನ್ನು ತಡೆಯಲು, ಮಾಹಿತಿಗೆ ಹಾನಿಯಾಗದಂತೆ ಅಥವಾ ವಿರೂಪಗೊಳಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಲು ಮತ್ತು ವೆಬ್‌ಸೈಟ್‌ನ ಸುರಕ್ಷತೆಯನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಳ್ಳಲು, ಬಳಕೆದಾರರ ದಟ್ಟಣೆಯನ್ನು ನಿರ್ವಹಿಸಲು, ವಾಣಿಜ್ಯ ಸಾಫ್ಟ್‌ವೇರ್ ಪ್ರೋಗ್ರಾಮ್‌ಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. 
+             </p>
+
+             <p>
+               2)ಅಧಿಕೃತ ಕಾನೂನು ಸಂಸ್ಥೆಗಳನ್ನು ಹೊರತುಪಡಿಸಿ, ಸಂದರ್ಶಕ ಅಥವಾ ಬಳಕೆದಾರರನ್ನು ವೈಯಕ್ತಿಕವಾಗಿ ಗುರುತಿಸಲು ಯಾವುದೇ ಪ್ರಯತ್ನಗಳು ನಡೆಯುವುದಿಲ್ಲ.
+             </p>
+             
+             <p>3)ಸಂದರ್ಶಕರ ಮಾಹಿತಿಯು ನಿಯಮಿತ ಅಳಿಸುವಿಕೆಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ</p>
+             <p>4)ಅನಧಿಕೃತ ಬಳಕೆದಾರರು ಲಭ್ಯವಿರುವ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸುವುದಿಲ್ಲ ಅಥವಾ ಬದಲಾಯಿಸಬಾರದು ಅದು ಕಾನೂನು ಪರಿಣಾಮಗಳನ್ನು ಉಂಟುಮಾಡಬಹುದು ಮತ್ತು ಐಟಿ ಆಕ್ಟ್ (2000) ಅಡಿಯಲ್ಲಿ ದಂಡಕ್ಕೆ ಒಳಗಾಗಬಹುದು..</p>
+ 
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Help -->
+  <div class="modal fade" id="fmyModal8" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಸಹಾಯ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <h6 style="text-decoration: underline;">ಮಾಹಿತಿ ಹುಡುಕಾಟ:</h6>
+
+           <p> 
+            ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಮಾಹಿತಿಯನ್ನು ಪ್ರವೇಶಿಸಲು ಬಳಕೆದಾರರಿಗೆ ಸಹಾಯ ಮಾಡಲು, “ಇಲ್ಲಿ ಹುಡುಕಿ” ಆಯ್ಕೆಯನ್ನು ಒದಗಿಸಲಾಗಿದೆ. ಇಲ್ಲಿ, ಕನ್ನಡವನ್ನು ಟೈಪ್ ಮಾಡುವ ಆಯ್ಕೆಯನ್ನು ಲಭ್ಯಗೊಳಿಸಲಾಗಿದೆ. ಹುಡುಕುವಾಗ, ಯೂನಿಕೋಡ್ ಫಾಂಟ್ ಬಳಕೆ ಕಡ್ಡಾಯವಾಗಿದೆ. ಇಂಗ್ಲಿಷ್ನಲ್ಲಿ ಹುಡುಕುವ ಆಯ್ಕೆಯನ್ನು ಸಹ ಒದಗಿಸಲಾಗಿದೆ.
+            </p>
+
+          <h6 style="text-decoration: underline;">ಇಂಟರ್ನೆಟ್ ಪ್ರವೇಶ</h6> 
+
+            <p>
+              ಇಂಟರ್ನೆಟ್ ನಿಧಾನವಾಗಿದ್ದರೆ ಅಥವಾ ಲಭ್ಯವಿಲ್ಲದಿದ್ದರೆ, ವೆಬ್‌ಸೈಟ್ ವಿನ್ಯಾಸದಲ್ಲಿ ಮಾರ್ಪಾಡು ಇರಬಹುದು ಅಥವಾ ಕೆಲವು ಉಪಪುಟಗಳು ತೆರೆಯದಿರಬಹುದು.
+            </p>
+
+          </p><br>
+
+          <div class="scroll-table1"><div class="guide-text"><i class="fa fa-long-arrow-right"></i></div><div class="scroll-table"><table id="tablehelp" class="border" border="1"> <caption>Help of Various File formats :</caption> <tbody> <tr> <th>Document Type</th> <th>Download</th> </tr> <tr class="even"> <td>PDF content</td> <td> <img src="https://labour.gov.in/sites/default/files/pdf.png" alt="image"><a href="https://get.adobe.com/reader/" target="_BLANK" title="External site that opens in a new window"> Adobe Acrobat Reader</a> (External website that opens in a new window) </td> </tr> <tr class="odd"> <td>Word files</td> <td><img src="https://labour.gov.in/sites/default/files/Word.png" alt="image">  <a href="https://www.microsoft.com/downloads/en/details.aspx?familyid=3657CE88-7CFA-457A-9AEC-F4F827F20CAC&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Word Viewer (in any version till 2003)</a> - External website that opens in a new window<br> <a href="https://www.microsoft.com/downloads/en/details.aspx?FamilyID=c8378bf4-996c-4369-b347-73edbd03aaf0&amp;displaylang=EN" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Word (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Excel files</td> <td> <img src="https://labour.gov.in/sites/default/files/Excel.png" alt="image">  <a href="https://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D3727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Excel Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="https://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Excel (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="odd"> <td>PowerPoint presentations</td> <td><img src="https://labour.gov.in/sites/default/files/powerpoint.png" alt="image">  <a href="https://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D5727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> PowerPoint Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="https://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for PowerPoint (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Flash content</td> <td> <img src="https://labour.gov.in/sites/default/files/Flash.png" alt="image"> <a href="https://get.adobe.com/flashplayer/" target="_BLANK" title="External site that opens in a new window">Adobe Flash Player </a>(External website that opens in a new window) </td> </tr> <tr class="odd"><td>Audio Files</td> <td> <img src="https://labour.gov.in/sites/default/files/red.png" alt="image"> <a href="https://windows.microsoft.com/en-US/windows/downloads/windows-media-player" target="_BLANK" title="External site that opens in a new window">Windows Media Player </a>(External website that opens in a new window) </td> </tr> </tbody> </table></div></div>
+
+
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Screen Reader Access -->
+  <div class="modal fade" id="fmyModal9" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಸ್ಕ್ರೀನ್ ರೀಡರ್ ಪ್ರವೇಶ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="nicetext">        
+            <div class="innerpage">
+             <div id="skipCont" class="wrapper">
+       
+             <div class="row">                 
+              <div class="col-md-12 col-sm-9 col-xs-12">
+                <h1 class="heading" tabindex="0"></h1>
+                <div class="region region-content">
+                <div id="block-system-main" class="block block-system">
+
+    
+                <div class="content">
+                 <div class="panel-display panel-1col clearfix">
+                 <div class="panel-panel panel-col">
+                   <div>
+                    <div class="panel-pane pane-views pane-page">
+  
+                     <div class="pane-content">
+                       <div class="view view-page view-id-page view-display-id-block view-dom-id-9f59a9bf8ad69ecc93f01660ca78bb00">
+        
+                       <div class="view-content">
+                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+                         <div class="views-field views-field-body">        
+                          <div class="field-content">
+                            
+                              <p>  ಈ ಜಾಲತಾಣವು “ಜಗತ್ತಿನಾದ್ಯಂತ ಜಾಲ(World Wide Web Consortium -W3C)” ಮತ್ತು ವೆಬ್ ಕಂಟೆಂಟ್ ಅಕ್ಸೆಸಿಬಿಲಿಟಿ ಗೈಡ್ಲೈನ್ (WCAG) ಹಂತ 2.0 ಒಕ್ಕೂಟದಲ್ಲಿ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತದೆ. ದೃಷ್ಟಿದೌರ್ಬಲ್ಯ ಹೊಂದಿದವರು JAWS, NVDA, SAFA, Supernova and Window-Eyes ನಂತಹ ಮುಂತಾದ ಪರದೆ ವಾಚಕ ತಂತ್ರಾಂಶಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಜಾಲತಾಣದ ಮಾಹಿತಿಯನ್ನು ಧ್ವನಿ ರೂಪದಲ್ಲಿ ಪಡೆದುಕೊಳ್ಳಬಹು.
+                              ಈ ಕೆಳಗೆ ಸೂಚಿಸಲಾದ ಪಟ್ಟಿಯಲ್ಲಿ ಪರದೆ ವಾಚಕ ತಂತ್ರಾಂಶಗಳನ್ನು ಹಸರಿಸಲಾಗಿದೆ.</p>
+                              <br><br>
+                              <p>
+                              ಕೆಳಗಿನ ಟೇಬಲ್ ವಿವಿಧ ಸ್ಕ್ರೀನ್ ರೀಡರ್ಗಳ ಬಗ್ಗೆ ಮಾಹಿತಿಯನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ:</p>
+
+                            <div class="guide-text">
+                              <i class="fa fa-long-arrow-right"></i>
+                            </div>
+
+                            <div class="scroll-table1">  
+                              <table class="srtable" summary="Screen Reader">
+                                <tbody>
+                                  <tr>
+                                    <th>Sl. No.</th>
+                                    <th>Screen Reader</th>
+                                    <th>Website</th>
+                                    <th>Free/ Commercial</th>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Non Visual Desktop Access (NVDA)</td>
+                                    <td><a href="https://www.nvda-project.org/" target="_blank">https://www.nvda-project.org/</a><br> (External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>2</td>
+                                    <td>JAWS</td>
+                                    <td><a href="https://www.freedomscientific.com/products/software/jaws/" target="_blank">https://www.freedomscientific.com</a> <br>(External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Window-Eyes</td>
+                                    <td><a href="https://www.gwmicro.com/Window-Eyes/" target="_blank">https://www.gwmicro.com</a><br> (External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>4</td>
+                                    <td>System Access To Go</td>
+                                    <td><a href="https://www.satogo.com/" target="_blank">https://www.satogo.com/</a><br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>5</td>
+                                    <td>WebAnywhere</td>
+                                    <td><a href="https://webinsight.cs.washington.edu/" target="_blank">https://webinsight.cs.washington.edu/</a> <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+								  
+								  
+								  
+								    <tr>
+                                    <td>6</td>
+                                    <td>atoall</td>
+                                    <td><a title="This Will Make You Easy For Growth, Use Accessibility Tool" target="_blank" rel="noopener" href="https://atoall.com/all.asp"> <img height="64" width="64" alt="This Will Make You Easy For Growth, Use Accessibility Tool" src="https://atoall.com/all/512-accessibility-square.svg"></a>
+ <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>  
+                        </div>  
+                      </div>
+                    </div>
+  
+                </div>  
+               </div>
+  
+              </div>
+              </div>
+              </div>
+             </div>
+             </div>
+             </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/owl/owl.carousel.js"></script>
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/acc_search.js"></script>  
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/custom.js"></script>   
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/aos.js"></script>  
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/map/main.js"></script> 
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/rti_datatables/dataTables.jqueryui.min.js"></script> 
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/rti_datatables/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/tabswipe/js/swipebundle.js"></script>   
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/custom_fancybox.js"></script>  
+
+<script>
+      
+   $('[data-fancybox="gallery"]').fancybox({
+  buttons: [
+    "slideShow",
+    "thumbs",
+    "zoom",
+    "fullScreen",
+    "share",
+    "close"
+  ],
+  loop: false,
+  protect: true
+});
+</script> 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.getElementById('toggle');
+    const darkModeAreas = document.querySelectorAll('.dark-mode-area');
+
+    // Define the dark mode CSS for specific classes and elements
+    const darkModeCSS = `
+        .dark-mode-area.dark-mode h1,
+        .dark-mode-area.dark-mode header,
+        .dark-mode-area.dark-mode body,
+        .dark-mode-area.dark-mode div,
+        .dark-mode-area.dark-mode span,
+        .dark-mode-area.dark-mode h6,
+        .dark-mode-area.dark-mode li,
+        .dark-mode-area.dark-mode p,
+        .dark-mode-area.dark-mode .header,
+        .dark-mode-area.dark-mode .navbar-sec,
+        .dark-mode-area.dark-mode button,
+        .dark-mode-area.dark-mode section,
+        .dark-mode-area.dark-mode extramenudesk,
+        .dark-mode-area.dark-mode dropdown-menu,
+        .dark-mode-area.dark-mode dropdown,
+        .dark-mode-area.dark-mode nav-item,
+        .dark-mode-area.dark-mode nav-link,
+        .dark-mode-area.dark-mode .dropdown-menu.show,
+        .dark-mode-area.dark-mode .dropdown-menu a,
+        .dark-mode-area.dark-mode .closebtn,
+        .dark-mode-area.dark-mode .btn,
+        .dark-mode-area.dark-mode td,
+         .dark-mode-area.dark-mode th,
+         .dark-mode-area.dark-mode table,
+            .dark-mode-area.dark-mode .extramenudesk li a,
+         .dark-mode-area.dark-mode thead,
+        .dark-mode-area.dark-mode .subHeaderFontSize,
+            .dark-mode-area.dark-mode .nav-item.dropdown:hover > .dropdown-menu,
+        body.dark-mode-area.dark-mode {
+            background-color: #121212 !important;
+            color: #ffffff  !important;
+            background-image: none !important;
+        }
+        .dark-mode-area.dark-mode button {
+            border-color: #ffffff  !important;
+            background-color: #333333  !important;
+        }
+        .dark-mode-area.dark-mode .background {
+            background-color: #333333  !important;
+        }
+        .dark-mode-area.dark-mode .carousel-indicators {
+            display: none !important;
+        }
+    `;
+
+    // Create a style element
+    const styleElement = document.createElement('style');
+    styleElement.type = 'text/css';
+    styleElement.appendChild(document.createTextNode(darkModeCSS));
+    document.head.appendChild(styleElement);
+
+    // Load saved mode from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        darkModeAreas.forEach(area => area.classList.add('dark-mode'));
+        toggle.checked = true;
+    }
+
+    toggle.addEventListener('change', function() {
+        if (this.checked) {
+            darkModeAreas.forEach(area => area.classList.add('dark-mode'));
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            darkModeAreas.forEach(area => area.classList.remove('dark-mode'));
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+});
+</script>
+
+     <script>
+        const minFontSize = 16;
+        const maxFontSize = 19;
+        const normalFontSize = 18; // Set this to your normal font size
+
+        const decreaseButton = document.getElementById('fontDecrease');
+        const increaseButton = document.getElementById('fontIncrease');
+        const resetButton = document.getElementById('fontReset');
+        const targetElements = document.querySelectorAll('p, h1, h2, a, li');
+
+        let currentFontSize = parseInt(window.getComputedStyle(targetElements[0]).fontSize, 10);
+
+        function updateFontSize(size) {
+            if (size >= minFontSize && size <= maxFontSize) {
+                targetElements.forEach(el => {
+                    el.style.fontSize = `${size}px`;
+                });
+                currentFontSize = size;
+            }
+        }
+
+        decreaseButton.addEventListener('click', () => {
+            updateFontSize(currentFontSize - 1);
+        });
+
+        increaseButton.addEventListener('click', () => {
+            updateFontSize(currentFontSize + 1);
+        });
+
+        resetButton.addEventListener('click', () => {
+            // Reload the page to reset font sizes to default
+            location.reload();
+        });
+
+$(document).ready(function() {
+
+
+    // Optional: If you want to ensure .hamburger doesn't get the active class
+    $('.hamburger').on('click', function(event) {
+       $(this).removeClass('active');
+    });
+});
+
+    </script>
+  
+  
+</body>
+</html>

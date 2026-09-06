@@ -1,0 +1,27 @@
+HTTP/1.1 302 Found
+Location: https://www.legalaffairs.gov.in/annual-report
+Connection: Keep-Alive
+Content-Length: 0
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none';
+permissions-policy: geolocation=(self)
+referrer-policy: no-referrer-when-downgrade
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+etag: "bqug8fuin52c9"
+x-akamai-transformed: 9 1019 0 pmb=mRUM,1
+expires: Sun, 06 Sep 2026 04:11:52 GMT
+cache-control: max-age=0, no-cache, no-store
+pragma: no-cache
+date: Sun, 06 Sep 2026 04:11:52 GMT
+content-length: 7300
+server-timing: cdn-cache; desc=MISS
+server-timing: edge; dur=43
+server-timing: origin; dur=152
+alt-svc: h3=":443"; ma=93600
+strict-transport-security: max-age=15768000
+server-timing: ak_p; desc="1788667912445_389507660_2530002306_19508_8442_7_32_15";dur=1
+

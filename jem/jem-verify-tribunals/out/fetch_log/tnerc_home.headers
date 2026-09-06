@@ -1,0 +1,16 @@
+HTTP/2 200 
+cache-control: private
+content-type: text/html; charset=utf-8
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-security-policy: default-src 'self' https:; script-src 'self' https:; style-src 'self' https:; img-src 'self' data: https:; connect-src 'self' https: ws: wss:; frame-ancestors 'none'; upgrade-insecure-requests;
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+permissions-policy: camera=(), microphone=(), geolocation=()
+x-permitted-cross-domain-policies: none
+cross-origin-resource-policy: same-origin
+cross-origin-opener-policy: same-origin
+date: Sun, 06 Sep 2026 04:08:45 GMT
+content-length: 27047
+

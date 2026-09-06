@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:14:31 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding,Cookie
+Cache-Control: max-age=3, must-revalidate
+Expect-CT: enforce,max-age=2592000
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: img-src 'self' *.twimg.com *.twitter.com img.youtube.com *.s3waas.gov.in dae.gov.in secure.gravatar.com data: maps.gstatic.com maps.googleapis.com cbpssubscriber.mygov.in translation-plugin.bhashini.co.in testvani-hyd.nic.in vani-hyd.nic.in img.freepik.com app.ailifebot.com;connect-src 'self' *.s3waas.gov.in maps.googleapis.com www.google-analytics.com translation-plugin.bhashini.co.in www.instagram.com vani-hyd.nic.in testvani-hyd.nic.in feedback.digifootprint.gov.in branding-resources.s3.ap-south-1.amazonaws.com app.ailifebot.com app.engati.com bb.branding-element.com api.ipify.org;object-src 'none';media-src 'self' *.s3waas.gov.in data: 'unsafe-inline' 'unsafe-eval' blob:;child-src *;frame-src *;form-action *.s3waas.gov.in 'self';frame-ancestors 'self' *.s3waas.gov.in ;upgrade-insecure-requests;worker-src 'self' *.s3waas.gov.in
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: accelerometer=(),ambient-light-sensor=(),autoplay=(),battery=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),execution-while-not-rendered=(),execution-while-not-rendered=(),execution-while-out-of-viewport=(),fullscreen=(),gamepad=(),geolocation=(),magnetometer=(),gyroscope=(),magnetometer=(),layout-animations=(),legacy-image-formats=(self),microphone=(vani-hyd.nic.in testvani-hyd.nic.in self),midi=(),navigation-override=(),oversized-images=(self),payment=(),picture-in-picture=(),publickey-credentials-get=(),speaker-selection=(),sync-xhr=(self),unoptimized-images=(self),unsized-media=(self),usb=(),vibrate=(),vr=(),screen-wake-lock=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+

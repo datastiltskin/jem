@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:06:31 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: public
+Pragma: no-cache
+Link: <https://merc.gov.in/wp-json/>; rel="https://api.w.org/"
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN, SAMEORIGIN
+Upgrade: h2
+Connection: Upgrade
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+

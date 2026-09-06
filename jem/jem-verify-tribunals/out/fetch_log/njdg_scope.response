@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="National Judicial Data Grid | National Informatics Centre | India">
+    <meta name="lang" content="en">
+    <title>National Judicial Data Grid | National Informatics Centre | India</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://www.nic.gov.in/xmlrpc.php" />
+    <link rel="stylesheet" href="https://www.nic.gov.in/wp-content/themes/sdo-theme/css/print.css" type="text/css" media="print">
+    <link rel="stylesheet" href="https://www.nic.gov.in/wp-content/themes/sdo-theme/css/custom-template-style.css" type="text/css">
+    <meta name='robots' content='max-image-preview:large' />
+<meta name="description" content="Online Repository of Case Statistics" />
+<meta name="keywords" content="National Judicial Data Grid, National, Judicial, Data, Grid" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.nic.gov.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nic.gov.in%2Fproject%2Fnational-judicial-data-grid%2F&#038;lang=en" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.nic.gov.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nic.gov.in%2Fproject%2Fnational-judicial-data-grid%2F&#038;format=xml&#038;lang=en" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='bhashini-custom-css-css' href='https://www.nic.gov.in/wp-content/plugins/bhashini-translation/assets/css/bhashini-custom.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='extra-feature-css-css' href='https://www.nic.gov.in/wp-content/plugins/common_utility/css/extra.features.css?ver=1.1' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.nic.gov.in/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.6' media='all' />
+<link rel='stylesheet' id='parichay-login-css-css' href='https://www.nic.gov.in/wp-content/plugins/parichay-sso//css/login.css?ver=1.1' media='all' />
+<link rel='stylesheet' id='base-css-css' href='https://www.nic.gov.in/wp-content/themes/sdo-theme/css/base.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='jquery-ui-datepicker-css' href='https://www.nic.gov.in/wp-content/plugins/awaas-metaboxes/assets/css/jquery.ui.datepicker.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='sliderhelper-css-css' href='https://www.nic.gov.in/wp-content/themes/sdo-theme/css/addons/sliderhelper.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='owl-css-css' href='https://www.nic.gov.in/wp-content/themes/sdo-theme/css/owl-carousel.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='swiper-css-css' href='https://www.nic.gov.in/wp-content/themes/sdo-theme/css/swiper-bundle.min.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='main-css-css' href='https://www.nic.gov.in/wp-content/themes/sdo-theme/style.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://www.nic.gov.in/wp-content/plugins/awaas-accessibility/css/font-awesome.css?ver=7.1' media='all' />
+<script id="jquery-core-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/jquery.min.js?ver=3.6.4"></script>
+<script id="jquery-migrate-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="external-link-js" src="https://www.nic.gov.in/wp-content/plugins/awaas-accessibility/js/external.js?ver=7.1"></script>
+<script id="s3waas-accessibility-js-extra">
+var S3WaaSAccessibilityParams = {"blogInfoName":"National Informatics Centre","defaultLinkAriaLabel":"External site that opens in a new window","defaultLinkTitle":"External site that opens in a new window","flexNavPrevTitle":"Previous","flexNavPlayPauseTitle":"Play/Pause","flexNavNextTitle":"Next","ariaLabelDownload":"Download","excludeExternalLinks":"","noResultFound":"No results found.","found_results":"Found %d result(s).","searching":"searching","searchError":"An error occurred while searching. Please try again.","searchCriteria":"Please type at least 3 letters to search.","clickToExpand":"Click to expand","clickToCollapse":"Click to collapse","submenu":"submenu"};
+//# sourceURL=s3waas-accessibility-js-extra
+</script>
+<script id="s3waas-accessibility-js" src="https://www.nic.gov.in/wp-content/plugins/awaas-accessibility/js/accessibility.js?ver=7.1"></script>
+<script>jQuery(document).ready(function () {
+    jQuery('.search-container form, form.search-container').attr('action', window.location.origin + '/');
+});</script><link rel="https://api.w.org/" href="https://www.nic.gov.in/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.nic.gov.in/wp-json/wp/v2/project/4891" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.nic.gov.in/xmlrpc.php?rsd" />
+<link rel="canonical" href="https://www.nic.gov.in/project/national-judicial-data-grid/" />
+<link rel='shortlink' href='https://www.nic.gov.in/?p=4891' />
+    <noscript>
+        <style>
+            #topBar #accessibility ul li .goiSearch, #topBar1 #accessibility ul li .goiSearch{ visibility: visible;}
+            #topBar #accessibility ul li .socialIcons ul, #topBar1 #accessibility ul li .socialIcons ul { background: #fff !important;}
+            #topBar #accessibility ul li .goiSearch, #topBar1 #accessibility ul li .goiSearch{ right: 0; left: inherit;}
+            .nav li a:focus > ul { left: 0; opacity: 0.99;}
+            a:focus, button:focus, .carasoleflex-wrap .flexslider .slides > li a:focus, .flexslider .slides>li a:focus
+            { outline: 3px solid #ff8c00 !important;}
+            .flexslider .slides>li { display:block !important;}
+            .flexslider .slides img { width:auto !important;}
+            .nav li.active > a, .nav li > a:hover, .nav li > a:focus, .nav ul li a:hover,
+            .nav li:hover > a{ border-top:none; color:#ffffff;}
+            .nav li.active > a{ border:0;}
+            .nav ul{ opacity:1; left:0; position:static !important; width:auto; border:0;}
+            .nav li{ position:static !important; display:block; float:none; border:0 !important;}
+
+            .nav li > a { float: none;  display: block;  background-color: #ff9f08 !important;  color: #ffffff; margin: 0; padding: 0px 15px;
+                border-radius: 0; border-bottom: 1px solid #ffffff !important;   position: static !important;  border-top: 0;  font-size: 14px !important;}
+
+            .nav ul.sub-menu li > a{ background-color:#464141 !important; font-size:12px !important; padding:0 25px;}
+
+            .style-1 .menuWrapper, .style-2 .menuWrapper, .style-6 .menuWrapper, .style-5 .menuWrapper{ background:#e1e1e1 !important;}
+            .style-1 .nav li > a, .style-1 .nav li > a:hover{background-color: #875506 !important;}
+            .style-1 .nav ul.sub-menu li > a, .style-1 .nav ul.sub-menu li > a:hover{ background-color:#3e2908 !important;}
+
+            .style-2 .nav li > a, .style-2 .nav li > a:hover{background-color: #11372a !important;}
+            .style-2 .nav ul.sub-menu li > a, .style-2 .nav ul.sub-menu li > a:hover{ background-color:#677314 !important;}
+
+            .style-6 .nav li > a, .style-6 .nav li > a:hover{background-color: #f65a64 !important;}
+            .style-6 .nav ul.sub-menu li > a:hover{ background-color:#fff !important;}
+            .style-6 .nav ul.sub-menu li > a { background-color:transparent !important; }
+            .style-6 .menuWrapper .nav li ul li{ border-bottom:1px solid transparent !important;}
+            .style-6 .menuWrapper .nav li a{ border-radius:0 !important; color:#fff !important;}
+            .style-6 .menuWrapper .nav li a:hover{ color:#000 !important;}
+
+            .style-5 .nav li > a, .style-5 .nav li > a:hover{background-color: #fd9c29 !important; color:#ffffff !important;}
+            .style-5 .nav ul.sub-menu li > a, .style-5 .nav ul.sub-menu li > a:hover{ background-color:#464141 !important; color:#ffffff !important;}
+            .style-6 .menuWrapper .nav li ul li a {    margin: 0;    padding: 7px 15px;}
+
+            ul li .socialIcons{ visibility:visible !important;}
+
+        </style>
+    </noscript>
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<link rel="icon" href="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20240930812412574.png" sizes="32x32" />
+<link rel="icon" href="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20240930812412574.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20240930812412574.png" />
+<meta name="msapplication-TileImage" content="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20240930812412574.png" />
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>    <script src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/readmore.min.js"></script>
+    <script>
+        let ajaxurl = ajax_url = ajaxUrl = AJAX_URL = AJAXURL = "https://www.nic.gov.in/wp-admin/admin-ajax.php";
+    </script>
+    <style>
+        .sr-only {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;border: 0;}
+    </style>
+<link rel='stylesheet' id='footer-style-css' href='https://www.nic.gov.in/wp-content/plugins/awas-shortcode/assets/css/footer-logo-carousel.css?ver=7.1' media='all' />
+
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="PTFVV-L7KEP-SH5G5-WQY56-7WWK2",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"PTFVV-L7KEP-SH5G5-WQY56-7WWK2";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eqausaa4min5ujqacqhq4aaaabvjzzur-f-f465c8818-clienttons-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1804715","ak.ai":parseInt("1199628",10),"ak.ol":"0","ak.cr":8,"ak.ipv":6,"ak.proto":"h2","ak.rid":"1cb7f190","ak.r":38572,"ak.a2":n,"ak.m":"dscb","ak.n":"ff","ak.cport":58276,"ak.gh":"23.48.245.116","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1788667537","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==0/z1SjKxMad8jw7O9oKwtKdt/lP6Uup5cZitVs+Kmvr1AJLcBYwe1kW81v2Jb+5eizKxE6nRfinwUq2IJD9Z9gmKD23xnJVsWtvhIjkBXFxapqddUDGZiuf/0TiHXoN+/86nI1Vdph0xm6DYQFa7oXsk8THf7lTvaPS1QunCoxcBJVG/Dt3d/BS+aduaxXWyI2bCvjsLzipEptFzar/dcmgyAANwgk2VVPl+SjpbeR7uQN8LiVaOJSRIC+N67+YSzNL9KNgPTBRhFacTeeNaf3cTJa/f88GQZczEcCUbAope8qvKaFvwHJUJMfjkEW4OEFadRsxHOVCYbbSqwXankpKnczSbPGn8o67Y0HtNOLtK2Ct2CFo1EoSlBnb1ijDvmRgdyw1LArQtQIPPFZI0n3MvwtbE1FA1aFpf3l9QoOY=","ak.pv":"7","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body class="wp-singular project-template-default single single-project postid-4891 wp-theme-sdo-theme lang-en style-1 home-2 wpb-js-composer js-comp-ver-9.0.1 vc_responsive">
+<div aria-live="polite" aria-atomic="true" class="sr-only"><span id="sc-site-notification"></span></div>
+<header id="mainHeader">
+    <!--topBar start-->
+    <div id="topBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="push-right topbaright">
+                        <nav id="accessibility" role="presentation">
+    <ul id="accessibilityMenu" class="clearfix" aria-label="Topbar Links">
+        <li>
+            <a href="#SkipContent" class="skipContent d-grid" aria-label="Skip to main content" title="Skip to main content">
+                <span class="m-hide"></span>
+                <span> 
+                    <svg   viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.94987 5.93586C5.94987 6.09866 5.94987 6.16378 5.94987 6.19634C5.94987 6.13122 5.94987 5.9033 5.94987 5.93586Z" fill="#4729A3"/>
+                        <path d="M5.94987 20.5225C5.94987 20.5551 5.94987 20.6202 5.94987 20.783C5.94987 20.8156 5.94987 20.5876 5.94987 20.5225Z" fill="#4729A3"/>
+                        <path d="M39.5575 3.39622C39.4293 2.90783 39.205 2.48455 38.9167 2.1264C38.5002 1.57289 37.9556 1.14961 37.2828 0.889138C36.9944 0.7589 36.6741 0.693781 36.3537 0.661222C36.1615 0.628662 35.9372 0.628662 35.745 0.628662C34.4314 0.628662 32.8936 0.628662 31.1956 0.628662C31.0995 0.628662 31.0354 0.628662 30.9393 0.628662C23.5386 0.628662 13.5428 0.628662 7.80806 0.628662C5.50134 0.628662 3.83538 2.32176 3.83538 4.66604C3.83538 6.19634 3.83538 5.70795 3.83538 7.20568C3.83538 7.04289 3.83538 7.10801 3.83538 7.49872C3.83538 8.05223 4.12371 8.4755 4.60428 8.60574C5.30911 8.8011 5.91783 8.28015 5.91783 7.46616C5.91783 6.29402 5.91783 5.96842 5.91783 5.93586C5.91783 5.70795 5.91783 5.31723 5.91783 4.66604C5.91783 3.46134 6.6547 2.74503 7.80806 2.74503C12.3574 2.74503 19.5659 2.74503 26.0375 2.74503C26.0696 2.74503 26.1016 2.74503 26.1016 2.74503C29.3054 2.74503 32.5092 2.74503 35.6809 2.74503C36.5459 2.74503 37.1867 3.1683 37.443 3.85205C37.5391 4.07997 37.5711 4.30789 37.5711 4.60092C37.5711 4.63348 37.5711 4.63348 37.5711 4.66604C37.5711 7.33592 37.5711 10.0058 37.5711 12.6757C37.5711 15.3456 37.5711 19.3504 37.5711 22.0203C37.5711 22.0528 37.5711 22.0528 37.5711 22.0854C37.5711 22.3459 37.507 22.6063 37.443 22.8342C37.1546 23.518 36.5139 23.9413 35.6809 23.9413C32.4771 23.9413 29.2733 23.9413 26.1016 23.9413C26.0696 23.9413 26.0375 23.9413 26.0375 23.9413C19.5659 23.9413 12.3574 23.9413 7.80806 23.9413C6.62266 23.9413 5.91783 23.1924 5.91783 22.0203C5.91783 21.3691 5.91783 20.9784 5.91783 20.7504C5.91783 20.7179 5.91783 20.3923 5.91783 19.2201C5.91783 18.4062 5.30911 17.8852 4.60428 18.0806C4.12371 18.2108 3.83538 18.6341 3.83538 19.1876C3.83538 19.5783 3.83538 19.6109 3.83538 19.4806C3.83538 21.0109 3.83538 20.5225 3.83538 22.0203C3.83538 24.3645 5.50134 26.0576 7.80806 26.0576C13.5428 26.0576 23.5386 26.0576 30.9393 26.0576C31.0354 26.0576 31.0995 26.0576 31.1956 26.0576C32.8936 26.0576 34.4314 26.0576 35.745 26.0576C35.9372 26.0576 36.1615 26.0576 36.3537 26.0251C36.6741 25.9925 36.9944 25.8948 37.2828 25.7972C37.9235 25.5367 38.5002 25.1134 38.9167 24.5599C39.205 24.2018 39.4293 23.7459 39.5575 23.2901C39.6215 23.0947 39.6536 22.8994 39.7176 22.704C39.7176 16.9084 39.7176 9.81045 39.7176 4.01485C39.6856 3.81949 39.6215 3.62414 39.5575 3.39622Z" fill="#4729A3"/>
+                        <path d="M19.9504 14.2711C20.0785 14.3037 20.2067 14.3037 20.3348 14.3037C24.5958 14.3037 28.8248 14.3037 33.0858 14.3037C33.214 14.3037 33.3742 14.3037 33.5023 14.2711C33.9188 14.206 34.2072 13.9455 34.3353 13.5222C34.5275 12.8059 34.047 12.1873 33.2781 12.1873C31.0995 12.1873 28.8889 12.1873 26.7103 12.1873C25.9735 12.1873 25.2366 12.1873 24.4997 12.1873C23.026 12.1873 21.5522 12.1873 20.0785 12.1873C19.5018 12.1873 19.0853 12.6106 19.0533 13.1641C18.9892 13.7176 19.3737 14.1734 19.9504 14.2711Z" fill="#4729A3"/>
+                        <path d="M19.9504 8.60574C20.0785 8.6383 20.2067 8.6383 20.3348 8.6383C24.5958 8.6383 28.8248 8.6383 33.0858 8.6383C33.214 8.6383 33.3742 8.6383 33.5023 8.60574C33.9188 8.54062 34.2072 8.28015 34.3353 7.85687C34.5275 7.14056 34.047 6.52193 33.2781 6.52193C31.0995 6.52193 28.8889 6.52193 26.7103 6.52193C25.9735 6.52193 25.2366 6.52193 24.4997 6.52193C23.026 6.52193 21.5522 6.52193 20.0785 6.52193C19.5018 6.52193 19.0853 6.94521 19.0533 7.49872C18.9892 8.01967 19.3737 8.50806 19.9504 8.60574Z" fill="#4729A3"/>
+                        <path d="M20.1746 17.8201C20.0785 17.8201 19.9504 17.8201 19.8542 17.8526C19.3416 17.9829 18.9892 18.4713 19.0213 19.0248C19.0853 19.5457 19.5339 19.969 20.0785 19.969C21.36 19.969 22.6415 19.969 23.891 19.969C25.1405 19.969 26.3899 19.969 27.6074 19.969C28.3122 19.969 28.7607 19.5457 28.7607 18.8945C28.7607 18.2759 28.2802 17.8201 27.6074 17.8201C25.1405 17.8201 22.6415 17.8201 20.1746 17.8201Z" fill="#4729A3"/>
+                        <path d="M12.0691 14.8572C12.037 14.8897 12.005 14.9223 11.973 14.9548C11.9089 15.02 11.8448 15.0851 11.7807 15.1502C11.7487 15.1828 11.6846 15.2479 11.6526 15.2804C11.6205 15.313 11.5565 15.3781 11.5244 15.4107C11.4604 15.4758 11.3963 15.5409 11.3322 15.606C11.3002 15.6386 11.2681 15.6712 11.2361 15.7037L10.7876 16.1596C10.7555 16.1921 10.6915 16.2572 10.6594 16.2898L10.6274 16.3223C10.5313 16.42 10.4351 16.5177 10.339 16.6154C10.307 16.6479 10.307 16.6479 10.275 16.6805C10.2109 16.7456 10.1468 16.8107 10.0827 16.8759L10.0507 16.9084C9.98662 16.9735 9.89051 17.0712 9.85847 17.2015C9.73032 17.4945 9.76236 17.755 9.89051 18.0154C9.98662 18.1782 10.1148 18.3736 10.3711 18.4387C10.3711 18.4387 10.4031 18.4387 10.4351 18.4713C10.4672 18.4713 10.4672 18.5038 10.4992 18.5038V18.5364H10.8837L10.9157 18.5038C10.9157 18.5038 10.9478 18.5038 10.9478 18.4713C10.9478 18.4713 10.9478 18.4713 10.9798 18.4713C11.172 18.4062 11.3002 18.2759 11.4283 18.1457L11.4604 18.1131C11.7167 17.8526 11.973 17.5922 12.2293 17.3317C12.3895 17.1689 12.5496 17.0061 12.7098 16.8433C12.9982 16.5503 13.2865 16.2572 13.5748 15.9642L14.1195 15.4107C14.4078 15.1176 14.6641 14.8572 14.9525 14.5641C15.0806 14.4339 15.1767 14.2385 15.2088 14.0432C15.2088 14.0432 15.2088 14.0106 15.2408 14.0106V13.8153C15.2408 13.7827 15.2088 13.7827 15.2088 13.7501C15.2088 13.7176 15.2088 13.7176 15.2088 13.685C15.1767 13.6199 15.1767 13.5222 15.1127 13.4246C14.9204 13.1966 14.7282 13.0013 14.536 12.8059C14.4399 12.7082 14.3438 12.6431 14.2797 12.5454C14.2156 12.4803 14.1515 12.4152 14.0875 12.3501C13.7671 12.0571 13.4787 11.7315 13.1584 11.4384L13.0943 11.3733C12.8059 11.0803 12.5817 10.8523 12.3254 10.5919C12.2293 10.4942 12.1652 10.4291 12.0691 10.3314C11.973 10.2337 11.8768 10.136 11.8128 10.0384C11.6846 9.90812 11.5244 9.77789 11.3963 9.64765C11.2681 9.51741 11.1079 9.38717 10.8837 9.35461C10.7876 9.35461 10.7235 9.32205 10.6594 9.32205C10.4351 9.32205 10.2429 9.38717 10.0827 9.51741C9.89051 9.68021 9.76236 9.87556 9.73032 10.136C9.69828 10.4616 9.7944 10.7221 10.0507 10.9826C10.2429 11.1454 10.4031 11.3407 10.6594 11.6012C10.6915 11.6338 10.7555 11.6989 10.7876 11.7315C10.8516 11.7966 10.8837 11.8291 10.9478 11.8943C11.0439 11.9919 11.1079 12.0571 11.2041 12.1222C11.3002 12.2198 11.3642 12.285 11.4604 12.3826C11.5565 12.4803 11.6205 12.5454 11.7167 12.6431C11.7807 12.7082 11.8768 12.8059 11.9409 12.871C11.973 12.9036 12.037 12.9687 12.0691 13.0013H4.34798C3.96353 13.0013 3.64315 13.0013 3.35481 13.0013C3.06647 13.0013 2.77813 13.0013 2.52183 13.0013C2.0733 13.0013 1.62477 13.0013 0.951979 13.0013C0.695677 13.0013 0.50345 13.0664 0.343261 13.2292C0.0228841 13.4897 -0.0732291 13.8478 0.0549218 14.206C0.118997 14.4339 0.279186 14.5967 0.471412 14.7595C0.567526 14.8572 0.727714 14.8572 0.887903 14.8572C1.68885 14.8572 2.45775 14.8572 3.2587 14.8572H12.0691Z" fill="#4729A3"/>
+                    </svg>
+                </span>
+            </a>
+        </li>
+
+                    <li class="bhashiniLangDropdown" role="none">
+                <div class="bhashini-plugin-container"></div>
+            </li>
+            
+		
+        <li>
+            <button tabindex="0" title="Accessibility Links" aria-label="Accessibility Links" class="accessible-icon" data-toggle="dropdown"><span class="tcon">Accessibility Links</span>
+                <svg   viewBox="0 0 45 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M16.4994 0.814209C18.4722 0.814209 20.0863 2.3018 20.0863 4.11998C20.0863 5.93815 18.4722 7.42574 16.4994 7.42574C14.5266 7.42574 12.9125 5.93815 12.9125 4.11998C12.9125 2.3018 14.5266 0.814209 16.4994 0.814209ZM32.6404 12.3844H21.8798V33.8719H18.2929V23.9546H14.706V33.8719H11.1191V12.3844H0.358398V9.07863H32.6404V12.3844Z" fill="#4729A3"/>
+                </svg>
+            </button>
+            <div class="accessiblelinks textSizing" role="application">
+                <div class="heading5 text-center" role="heading" aria-level="2">Accessibility Tools</div>
+            <fieldset>
+                <legend>Color Contrast</legend>
+                <ul aria-label="Color Contrast controls">
+                    <li class="highContrast dark tog-con">
+                        <button tabindex="0" title="High Contrast" aria-label="High Contrast">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-288.46 531.54-340H620v-88.46L671.54-480 620-531.54V-620h-88.46L480-671.54 428.46-620H340v88.46L288.46-480 340-428.46V-340h88.46L480-288.46Zm0-81.54v-220q45.77 0 77.88 32.12Q590-525.77 590-480q0 45.77-32.12 77.88Q525.77-370 480-370ZM172.31-180Q142-180 121-201q-21-21-21-51.31v-455.38Q100-738 121-759q21-21 51.31-21h615.38Q818-780 839-759q21 21 21 51.31v455.38Q860-222 839-201q-21 21-51.31 21H172.31Zm0-60h615.38q4.62 0 8.46-3.85 3.85-3.84 3.85-8.46v-455.38q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H172.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v455.38q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85ZM160-240v-480 480Z"/></svg>
+                            <span>High Contrast</span>
+                        </button>
+                    </li>
+                    <li class="highContrast light link-selected">
+                        <button class="" tabindex="0" title="Normal Contrast - Selected" aria-label="Normal Contrast - Selected">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16.7885L13.2885 15.5H15.5V13.2885L16.7885 12L15.5 10.7115V8.5H13.2885L12 7.2115L10.7115 8.5H8.5V10.7115L7.2115 12L8.5 13.2885V15.5H10.7115L12 16.7885ZM4.30775 19.5C3.80258 19.5 3.375 19.325 3.025 18.975C2.675 18.625 2.5 18.1974 2.5 17.6923V6.30775C2.5 5.80258 2.675 5.375 3.025 5.025C3.375 4.675 3.80258 4.5 4.30775 4.5H19.6923C20.1974 4.5 20.625 4.675 20.975 5.025C21.325 5.375 21.5 5.80258 21.5 6.30775V17.6923C21.5 18.1974 21.325 18.625 20.975 18.975C20.625 19.325 20.1974 19.5 19.6923 19.5H4.30775ZM4.30775 18H19.6923C19.7693 18 19.8398 17.9679 19.9038 17.9038C19.9679 17.8398 20 17.7693 20 17.6923V6.30775C20 6.23075 19.9679 6.16025 19.9038 6.09625C19.8398 6.03208 19.7693 6 19.6923 6H4.30775C4.23075 6 4.16025 6.03208 4.09625 6.09625C4.03208 6.16025 4 6.23075 4 6.30775V17.6923C4 17.7693 4.03208 17.8398 4.09625 17.9038C4.16025 17.9679 4.23075 18 4.30775 18Z" />
+                                <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" fill="white"/>
+                            </svg>
+
+                            <span>Normal Contrast</span>
+                        </button>
+                    </li>
+                    <li class="highlight-links">
+                        <button id="highlightLinks" tabindex="0" title="Highlight Links" aria-label="Highlight Links">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M432.31-298.46H281.54q-75.34 0-128.44-53.1Q100-404.65 100-479.98q0-75.33 53.1-128.44 53.1-53.12 128.44-53.12h150.77v60H281.54q-50.39 0-85.96 35.58Q160-530.38 160-480q0 50.38 35.58 85.96 35.57 35.58 85.96 35.58h150.77v60ZM330-450v-60h300v60H330Zm197.69 151.54v-60h150.77q50.39 0 85.96-35.58Q800-429.62 800-480q0-50.38-35.58-85.96-35.57-35.58-85.96-35.58H527.69v-60h150.77q75.34 0 128.44 53.1Q860-555.35 860-480.02q0 75.33-53.1 128.44-53.1 53.12-128.44 53.12H527.69Z"/></svg>
+                            <span>Highlight Links</span>
+                        </button>
+                    </li>
+                    <li class="invert">
+                        <button id="invert" tabindex="0" title="Invert Color" aria-label="Invert Color">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100ZM510-161.85q121.31-11.53 205.65-101.42Q800-353.15 800-480t-83.96-216.35q-83.96-89.5-206.04-101.8v636.3Z"/></svg>
+                            <span>Invert</span>
+                        </button>
+                    </li>
+                    <li class="saturation">
+                        <button id="saturation" tabindex="0" title="Saturation" aria-label="Saturation">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-140q-124.92 0-212.46-86.35Q180-312.69 180-435.62q0-62.53 23.66-114.69 23.65-52.15 64.19-93.84L480-852.31l212.15 208.16q40.54 41.69 64.19 94.42Q780-497 780-435.62q0 122.93-87.54 209.27Q604.92-140 480-140Zm0-60v-568L310-600q-35 33-52.5 74.69T240-435.62q0 97 70 166.31T480-200Z"/></svg>
+                            <span>Saturation</span>
+                        </button>
+                    </li>
+                </ul>
+                </fieldset>
+                <fieldset>
+                <legend>Text Size</legend>
+                <ul aria-label="Font size controls">
+                    <li class="fontSizeEvent">
+                        <button data-selected-text="selected" data-event-type="increase" tabindex="0" data-label="Font Size Increase" title="Font Size Increase" aria-label="Font Size Increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m52.31-210 210.77-540h69.23l210.77 540h-72.16l-54.46-144.15H177.38L122.92-210H52.31Zm146.77-204h195.69l-95.2-252h-4.65l-95.84 252Zm528.61 84v-120h-120v-60h120v-120h60v120h120v60h-120v120h-60Z"/></svg>
+                            <span>Font Size Increase</span>
+                        </button>
+                    </li>
+                    <li class="fontSizeEvent" >
+                        <button data-selected-text="selected" data-event-type="decrease" tabindex="0" data-label="Font Size Decrease" title="Font Size Decrease" aria-label="Font Size Decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m52.31-210 210.77-540h69.23l210.77 540h-72.16l-54.46-144.15H177.38L122.92-210H52.31Zm146.77-204h195.69l-95.08-252h-4.77l-95.84 252Zm408.61-36v-60h300v60h-300Z"/></svg>
+                            <span>Font Size Decrease</span>
+                        </button>
+                    </li>
+                    <li class="fontSizeEvent">
+                        <button class="link-selected" data-selected-text="selected" data-event-type="normal" tabindex="0" data-label="Normal Font" title="Normal Font" aria-label="Normal Font">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 18.75L11.2692 5.25H13L18.2693 18.75H16.4653L15.1038 15.1463H9.12675L7.76525 18.75H6ZM9.66925 13.65H14.5615L12.1845 7.35H12.0653L9.66925 13.65Z"/>
+                            </svg>
+
+                            <span>Normal Font</span>
+                        </button>
+                    </li>
+                    <li class="" >
+                        <button id="addletterspacing" data-selected-text="selected" tabindex="0" data-label="Text Spacing" title="Text Spacing" aria-label="Text Spacing">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5852 5H8.15341C8.06903 5 8 5.06903 8 5.15341V7.60795C8 7.69233 8.06903 7.76136 8.15341 7.76136H9.22727C9.31165 7.76136 9.38068 7.69233 9.38068 7.60795V6.38068H11.6023V13.1193H9.83807C9.75369 13.1193 9.68466 13.1884 9.68466 13.2727V14.3466C9.68466 14.431 9.75369 14.5 9.83807 14.5H14.9006C14.9849 14.5 15.054 14.431 15.054 14.3466V13.2727C15.054 13.1884 14.9849 13.1193 14.9006 13.1193H13.1364V6.38068H15.358V7.60795C15.358 7.69233 15.427 7.76136 15.5114 7.76136H16.5852C16.6696 7.76136 16.7386 7.69233 16.7386 7.60795V5.15341C16.7386 5.06903 16.6696 5 16.5852 5Z"/>
+                                <path d="M16.1648 14.9953V16.2379H8.72444V14.9953C8.72444 14.8802 8.59021 14.815 8.50008 14.886L6.05321 16.819C6.03665 16.8317 6.02324 16.8482 6.01402 16.8669C6.0048 16.8857 6 16.9064 6 16.9273C6 16.9482 6.0048 16.9689 6.01402 16.9876C6.02324 17.0064 6.03665 17.0228 6.05321 17.0356L8.50008 18.9686C8.52055 18.9847 8.54515 18.9947 8.57105 18.9975C8.59695 19.0003 8.6231 18.9957 8.64652 18.9843C8.66994 18.9729 8.68966 18.9551 8.70345 18.933C8.71723 18.9109 8.7245 18.8853 8.72444 18.8593V17.6186H16.1648V18.8612C16.1648 18.9763 16.299 19.0415 16.3891 18.9705L18.8341 17.0376C18.9051 16.9819 18.9051 16.8746 18.8341 16.8209L16.3891 14.8879C16.3689 14.8717 16.3444 14.8615 16.3186 14.8585C16.2928 14.8556 16.2667 14.8599 16.2432 14.8712C16.2198 14.8824 16.2 14.9 16.1861 14.9219C16.1723 14.9439 16.1649 14.9693 16.1648 14.9953Z"/>
+                            </svg>
+
+                            <span>Text Spacing</span>
+                        </button>
+                    </li>
+                    <li class="" >
+                        <button id="addlineheight" data-selected-text="selected" tabindex="0" data-label="Line Height" title="Line Height" aria-label="Line Height">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5852 5H4.15341C4.06903 5 4 5.06903 4 5.15341V7.60795C4 7.69233 4.06903 7.76136 4.15341 7.76136H5.22727C5.31165 7.76136 5.38068 7.69233 5.38068 7.60795V6.38068H8.60227V17.1193H6.83807C6.75369 17.1193 6.68466 17.1884 6.68466 17.2727V18.3466C6.68466 18.431 6.75369 18.5 6.83807 18.5H11.9006C11.9849 18.5 12.054 18.431 12.054 18.3466V17.2727C12.054 17.1884 11.9849 17.1193 11.9006 17.1193H10.1364V6.38068H13.358V7.60795C13.358 7.69233 13.427 7.76136 13.5114 7.76136H14.5852C14.6696 7.76136 14.7386 7.69233 14.7386 7.60795V5.15341C14.7386 5.06903 14.6696 5 14.5852 5ZM19.8165 15.4702H18.5739V8.02983H19.8165C19.9315 8.02983 19.9967 7.8956 19.9258 7.80547L17.9928 5.35859C17.98 5.34204 17.9636 5.32863 17.9448 5.31941C17.9261 5.31018 17.9054 5.30539 17.8845 5.30539C17.8636 5.30539 17.8429 5.31018 17.8241 5.31941C17.8053 5.32863 17.7889 5.34204 17.7761 5.35859L15.8432 7.80547C15.8271 7.82594 15.8171 7.85054 15.8143 7.87644C15.8115 7.90234 15.8161 7.92849 15.8275 7.95191C15.8389 7.97532 15.8567 7.99505 15.8788 8.00883C15.9009 8.02262 15.9264 8.02989 15.9525 8.02983H17.1932V15.4702H15.9506C15.8355 15.4702 15.7703 15.6044 15.8413 15.6945L17.7742 18.1395C17.8298 18.2104 17.9372 18.2104 17.9909 18.1395L19.9239 15.6945C19.9401 15.6743 19.9503 15.6498 19.9533 15.624C19.9562 15.5982 19.9518 15.5721 19.9406 15.5486C19.9294 15.5252 19.9118 15.5054 19.8898 15.4915C19.8679 15.4776 19.8425 15.4702 19.8165 15.4702Z"/>
+                            </svg>
+
+                            <span>Line Height</span>
+                        </button>
+                    </li>
+                </ul>
+                </fieldset>
+                                <fieldset>
+                    <legend>Others</legend>
+                    <ul aria-label="Other accessibility links">
+                        <li class="hideimage">
+                            <button id="hideimage" tabindex="0" data-label="Hide Images" title="Hide Images" >
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m820-254-60-60v-433.69q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H314l-60-60h493.69Q778-820 799-799q21 21 21 51.31V-254ZM805.85-69.85 735.69-140H212.31Q182-140 161-161q-21-21-21-51.31v-523.38l-70.15-70.16L112-848l736 736-42.15 42.15ZM270-290l99.23-131.54 80 102.31L496.08-379 200-675.08v462.77q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h462.77l-90-90H270Zm267-247Zm-99.15 99.15Z"/></svg>
+                                <span>Hide Images</span>
+                            </button>
+                        </li>
+                        <li class="defaultcursor">
+                            <button id="big_cursor" tabindex="0" data-label="Big Cursor" title="Big Cursor" >
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M80-490v-60h120v60H80Zm129.08 224.31-42.16-43.39 84-84 43.39 42.16-85.23 85.23Zm41.84-381.23-84-84 42.16-43.39 85.23 85.23-43.39 42.16ZM699.23-190 515.38-373.85l-43.84 133.08-103.85-344.61 346.15 103.84L582-434.92l181.07 181.07L699.23-190ZM402.31-720v-120h60v120h-60Zm211.38 73.08-43.38-42.16 85.23-85.23 42.15 42.16-84 85.23Z"/></svg>
+                                <span>Big Cursor</span>
+                            </button>
+                        </li>
+                    </ul>
+                    </fieldset>
+                            </div>
+        </li>
+    </ul>
+</nav>
+        
+                         </div>
+                    <div class="push-left topbarleft">
+                        <div class="govBranding">
+    <span>
+        <img src="https://www.nic.gov.in/wp-content/themes/sdo-theme/images/flag.svg" alt="Indian Flag" aria-hidden="true">
+    </span>
+    <ul>
+            <li>
+            <a lang="en" href="https://www.meity.gov.in/">
+                Ministry of Electronics and Information Technology            </a>
+        </li>
+    </ul>
+</div>                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--topBar end-->
+    <!--header middle start-->
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <div class="logo">
+    <a href="http://www.nic.gov.in/" title="Go to home" class="site_logo" rel="home">
+                    <img class="emblem state-emb" id="logo" src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/10/20241009217618493.svg" alt="NIC (National Informatics Centre) logo" >
+        
+        <div class="logo_text">
+            <strong lang="hi">
+                            </strong>
+                            <span class="site_name_english"></span>
+                                </div>
+    </a>
+</div>                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <form role="search" method="get" class="search-container" action="https://www.nic.gov.in/" onsubmit="return search_validation()">
+                        <div class="input-group">
+                            <label for="s" class="visually-hidden">Search</label>
+                        <input type="text" value="" name="s" id="s" class="search-bar" placeholder="Search..." aria-label="Search">
+                            <button type="submit" class="btn search-icon" title="Search" aria-label="Search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">    
+                                        <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 19.585938 21.585938 C 20.137937 22.137937 21.033938 22.137938 21.585938 21.585938 C 22.137938 21.033938 22.137938 20.137938 21.585938 19.585938 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
+                                    </svg>
+                                        <span class="d-none" data-translation-id="translation-1728019621274-4">Search</span>
+                                </button>
+                       </div>
+                </form>
+                
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <div class="header-right hidden-xs push-right">
+                <a aria-label="Swach Bharat Abhiyan - External site that opens in a new window" href="https://swachhbharatmission.ddws.gov.in/" target= "_blank" title="Swach Bharat Abhiyan">
+            <img class="sw-logo" src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/12/20241206946318286.svg" alt="Swach Bharat Abhiyan">
+        </a>
+                <a aria-label="Digital India Power to Empower - External site that opens in a new window" href="https://www.digitalindia.gov.in/" target= "_blank" title="Digital India Power to Empower">
+            <img class="sw-logo" src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/12/202412061445137587.svg" alt="Digital India Power to Empower">
+        </a>
+    </div>                    <a class="menuToggle" href="javascript:void(0);" aria-label="Main Menu" role="button"> <span class="icon-menu" aria-hidden="true"></span> <span class="menu-text">Menu Toggle</span> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header middle end-->
+    <!--main menu start-->
+<div class="menuWrapper">
+    <div class="menuMoreText hide">More</div>
+    <div class="container">
+        <nav class="menu" aria-label="Primary"><ul id="menu-main-header-en" class="nav clearfix" aria-label="Main menu"><li id="menu-item-9329" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9329"><a href="/">Home</a></li>
+<li id="menu-item-4982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4982 has-sub"><a href="#about" aria-haspopup="true" aria-expanded="false">About Us<span class="indicator"></span></a>
+<ul aria-hidden="true"  class="sub-menu">
+	<li id="menu-item-5574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5574 has-sub-child"><a href="https://www.nic.gov.in/mandate/" tabindex="-1">Mandate</a></li>
+	<li id="menu-item-5182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5182 has-sub-child"><a href="https://www.nic.gov.in/minister/" tabindex="-1">Ministry</a></li>
+	<li id="menu-item-6307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6307 has-sub-child"><a href="https://www.nic.gov.in/director-general/" tabindex="-1">Director General</a></li>
+	<li id="menu-item-5135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5135 has-sub-child"><a href="https://www.nic.gov.in/organization-chart/" tabindex="-1">Organization Chart</a></li>
+	<li id="menu-item-4989" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4989 has-sub has-sub-child"><a href="#gruops-and-divisions" tabindex="-1" aria-haspopup="true" aria-expanded="false">Groups &amp; Divisions<span class="indicator"></span></a>
+	<ul aria-hidden="true"  class="sub-menu">
+		<li id="menu-item-11857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11857 has-sub-child"><a href="https://www.nic.gov.in/group-coordinator/" tabindex="-1">GC</a></li>
+		<li id="menu-item-5144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5144 has-sub-child"><a href="https://www.nic.gov.in/hog/" tabindex="-1">HOG</a></li>
+		<li id="menu-item-5143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5143 has-sub-child"><a href="https://www.nic.gov.in/hod/" tabindex="-1">HOD</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4992 has-sub-child"><a href="https://www.nic.gov.in/state-coordinators/" tabindex="-1">State Coordinators</a></li>
+	<li id="menu-item-5145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5145 has-sub-child"><a href="https://www.nic.gov.in/state-informatics-officers/" tabindex="-1">State Informatics Officers</a></li>
+	<li id="menu-item-5002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5002 has-sub has-sub-child"><a href="#our-offices" tabindex="-1" aria-haspopup="true" aria-expanded="false">Our Offices<span class="indicator"></span></a>
+	<ul aria-hidden="true"  class="sub-menu">
+		<li id="menu-item-4996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4996 has-sub-child"><a href="https://www.nic.gov.in/data-centres/" tabindex="-1">Data Centres</a></li>
+		<li id="menu-item-4997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4997 has-sub-child"><a href="https://www.nic.gov.in/focus-centres/" tabindex="-1">Focus Centres</a></li>
+		<li id="menu-item-4995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4995 has-sub-child"><a href="https://www.nic.gov.in/centres-of-excellence/" tabindex="-1">Centres of Excellence</a></li>
+		<li id="menu-item-4991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4991 has-sub-child"><a href="https://www.nic.gov.in/state-centres/" tabindex="-1">State Centres</a></li>
+		<li id="menu-item-4990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4990 has-sub-child"><a href="https://www.nic.gov.in/district-centres/" tabindex="-1">District Centres</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4994 has-sub-child"><a href="https://www.nic.gov.in/directory-search/" tabindex="-1">Directory Search</a></li>
+</ul>
+</li>
+<li id="menu-item-5005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5005 has-sub"><a href="#offerings" aria-haspopup="true" aria-expanded="false">Offerings<span class="indicator"></span></a>
+<ul aria-hidden="true"  class="sub-menu">
+	<li id="menu-item-4999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4999 has-sub-child"><a href="https://www.nic.gov.in/services/" tabindex="-1">Services</a></li>
+	<li id="menu-item-5007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5007 has-sub has-sub-child"><a href="#products" tabindex="-1" aria-haspopup="true" aria-expanded="false">Products &amp; Platforms<span class="indicator"></span></a>
+	<ul aria-hidden="true"  class="sub-menu">
+		<li id="menu-item-4998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4998 has-sub-child"><a href="https://www.nic.gov.in/products-platform-centre/" tabindex="-1">Centre</a></li>
+		<li id="menu-item-5493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5493 has-sub-child"><a href="https://www.nic.gov.in/products-platform-from-state/" tabindex="-1">State</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5006" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5006 has-sub has-sub-child"><a href="#tender" tabindex="-1" aria-haspopup="true" aria-expanded="false">Tenders<span class="indicator"></span></a>
+	<ul aria-hidden="true"  class="sub-menu">
+		<li id="menu-item-17339" class="menu-item menu-item-type-taxonomy menu-item-object-notice-category menu-item-17339 has-sub-child"><a href="https://www.nic.gov.in/notice-category/tenders/" tabindex="-1">GEM</a></li>
+		<li id="menu-item-14055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14055 has-sub-child"><a href="https://eprocure.gov.in/cppp/searchbydept/National%20Informatics%20Centre" tabindex="-1">CPPP</a></li>
+		<li id="menu-item-17340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17340 has-sub-child"><a href="https://www.nic.gov.in/om-for-debarment/" tabindex="-1">OM for Debarment</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5001 has-sub-child"><a href="https://recruitment.nic.in/" tabindex="-1">Recruitment</a></li>
+</ul>
+</li>
+<li id="menu-item-5013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5013 has-sub"><a href="#media" aria-haspopup="true" aria-expanded="false">Media<span class="indicator"></span></a>
+<ul aria-hidden="true"  class="sub-menu">
+	<li id="menu-item-7421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7421 has-sub-child"><a href="https://www.nic.gov.in/blogs/" tabindex="-1">Blog</a></li>
+	<li id="menu-item-11701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11701 has-sub-child"><a href="https://www.nic.gov.in/awards/" tabindex="-1">Awards</a></li>
+	<li id="menu-item-5003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5003 has-sub-child"><a href="https://informatics.nic.in/" tabindex="-1">Informatics</a></li>
+	<li id="menu-item-5851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5851 has-sub-child"><a href="https://www.nic.gov.in/brochure/" tabindex="-1">Brochures</a></li>
+	<li id="menu-item-5850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5850 has-sub-child"><a href="https://www.nic.gov.in/testimonial/" tabindex="-1">Testimonials</a></li>
+	<li id="menu-item-12320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12320 has-sub-child"><a href="https://www.nic.gov.in/newsletters/" tabindex="-1">Newsletter</a></li>
+	<li id="menu-item-5000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5000 has-sub-child"><a href="https://digitaljourney.nic.in/nic-timeline" tabindex="-1">Timeline</a></li>
+</ul>
+</li>
+<li id="menu-item-5010" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5010 has-sub"><a href="#documents" aria-haspopup="true" aria-expanded="false">Documents<span class="indicator"></span></a>
+<ul aria-hidden="true"  class="sub-menu">
+	<li id="menu-item-5573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5573 has-sub-child"><a href="https://www.nic.gov.in/ebook/" tabindex="-1">eBook</a></li>
+</ul>
+</li>
+<li id="menu-item-5020" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5020 has-sub"><a href="#connect" aria-haspopup="true" aria-expanded="false">Connect<span class="indicator"></span></a>
+<ul aria-hidden="true"  class="sub-menu">
+	<li id="menu-item-5133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5133 has-sub-child"><a href="https://www.nic.gov.in/rti/" tabindex="-1">Right to Information Act, 2005</a></li>
+	<li id="menu-item-6117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6117 has-sub-child"><a href="https://www.nic.gov.in/contact-us/" tabindex="-1">Contact Us</a></li>
+	<li id="menu-item-6162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6162 has-sub-child"><a href="https://www.nic.gov.in/web-information-manager/" tabindex="-1">Web Information Manager</a></li>
+	<li id="menu-item-6161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6161 has-sub-child"><a href="https://www.nic.gov.in/chief-information-security-officer/" tabindex="-1">Chief Information Security Officer</a></li>
+	<li id="menu-item-10340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10340 has-sub-child"><a href="https://www.nic.gov.in/nic-alumni-connect/" tabindex="-1">NIC-Alumni Connect</a></li>
+	<li id="menu-item-17929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17929 has-sub-child"><a href="https://www.nic.gov.in/directory-search/" tabindex="-1">Directory Search</a></li>
+</ul>
+</li>
+</ul></nav>    </div>
+</div>
+<!--main menu end-->
+<div id="overflowMenu">
+    <div class="ofMenu">
+        <ul></ul>
+    </div>
+    <a href="#" title="Close" class="closeMenu"><span class="icon-close" aria-hidden="true"></span> Close</a>
+</div>
+
+</header>
+<main id="SkipContent">
+   
+
+    <section class="section-row">
+        <div class="container">
+            <div class="page-head">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="breadcrumb" class="push-left" role="navigation" aria-label="breadcrumb">
+                <ol class="breadcrumbs"><li><a href="https://www.nic.gov.in/"  class="home"><span>Home</span></a></li>  <li class="current">National Judicial Data Grid</li></ol><!-- .breadcrumbs -->            </div>
+        </div>
+        
+    </div>
+</div>
+                        
+            <!-- <div class="page-head">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <div id="breadcrumb" class="push-left" role="navigation" aria-label="breadcrumb">
+                                                        <ol class="breadcrumbs">
+                                <li><a href="" class="home"><span></span></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li>
+                                                                            <a href=""></a>
+                                    <?php// } else if ($result_taxonomy == 'State') { ?>
+                                            <a href=""></a>
+                                                                    </li>
+                                <li class="current" aria-current="page"></li>
+                            </ol>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+                </div>
+            </div> -->
+            <div id="row-content">
+                <div class="event-details pub">
+                    <div class="row">
+                        <div class="col-xs-12"><h1>National Judicial Data Grid</h1></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-blog-p">
+<p><strong>Online Repository of Case Statistics</strong></p>
+<div class="row">
+<div class="col-md-8 mr-top10 pd-top10">
+<p class="text-justify">National Judicial Data Grid (NJDG), a ﬂagship project implemented under the aegis of the e-Committee Supreme Court of India, is a system for monitoring pendency and disposal of the cases in High Courts and Subordinate Courts. NJDG provides a comprehensive database of orders, judgements, and case details of District and Subordinate Courts and High Courts. The statistics of pendency at National, State, District and at Individual Court level is available to anyone visiting the National Judicial Data Grid portal.</p>
+<p class="text-justify">It also serves as a decision support system to the management authorities like Supreme Courts and respective High Courts, to monitor pendency on varied attributes for effective decision-making.</p>
+</div>
+<div class="col-md-4 mr-top10 pd-top10">
+<img decoding="async" src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/11/20241105768007532.png" alt="Online Repository of Case Statistics" class="wp-image-31066" title="Image of Online Repository of Case Statistics">
+</div>
+</div>
+<h2 class="border1 box-style1 border-top0 border-right0 accent-border-color  pd-bottom10 mr-top15">Features</h2>
+<div class="excellence-list">
+<ul>
+<li>NJDG provides the consolidated figures of pendency of cases in Judiciary </li>
+<li>Statistical data is automatically updated daily </li>
+<li>Pending Civil and Criminal Cases segregated into varied categories</li>
+<li>Information pertaining to Institution and Disposal of cases is shown</li>
+<li>Statistical figures are provided in drill-down manner</li>
+<li>Serves as National Judicial Data Warehouse</li>
+<li>Developed using elastic search technology</li>
+</ul>
+</div>
+<h2 class="border1 box-style1 border-top0 border-right0 accent-border-color  pd-bottom10 mr-top15">Benefits</h2>
+<div class="clear">
+<p> <img decoding="async" class="alignright" alt="NJDG Transparency and Accountability" title="Image of NJDG Transparency and Accountability" src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/11/202411051339624313.png"></p>
+<div class="excellence-list">
+<ul>
+<li>Works as a monitoring tool to identify, manage &#038; reduce pendency of cases </li>
+<li>Helps to provide timely inputs for making policy decisions to reduce delays in disposal of cases </li>
+<li>Facilitates better monitoring of court performance and thus, serves as an efficient resource management tool</li>
+</ul>
+</div>
+</div>
+<p>NJDG has brought huge transparency and accountability in the system by displaying complete pendency and disposal of cases across the country in public domain. NJDG has been instrumental for judicial planning, monitoring and remote administration by High Court judges, District Judges, and High Court Registry. Timely inputs from NJDG are assisting the authorities in framing policies and making decisions towards judicial governance.</p>
+<p><strong>NJDG is acknowledged as innovation under the Ease of Doing Business initiative of the Government of India.</strong></p>
+<p>For more details, kindly visit:<a href="https://njdg.ecourts.gov.in" target="_blank" class="text-highlight underline" rel="noopener noreferrer">https://njdg.ecourts.gov.in</a></p>
+</p></div>
+                                                    </div>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </section>
+    <div class="separator50 "></div>
+</main>
+<div class="footer-carousel-wrapper">
+    <div class="container">
+        <div class="row">
+                    <section id="footerScrollbarWrapper" class="footerlogocarousel withbg withborder" aria-label="Other Important Links">
+            <div class="footerlogocarousel-outer item-count-8" data-flexcontrol='{"animation":"slide","animationLoop":"true","itemWidth":150,"maxItems":6,"minItems":2,"itemMargin":5,"move":1,"controlNav":false,"pauseText":"Pause","playText":"Play","slideshow":true,"directionNav":true,"pausePlay":true}'>
+                <div class="footerScrollbar flexslider">
+                    <ul class="slides" aria-label="Important Sites">
+                                                    <li>
+                                                                    <a href="https://www.digitalindia.gov.in/"
+                                        target="_blank"                                        aria-label="Digital India, External site that opens in a new window">
+                                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/202410071237026647.svg" alt="Digital India"/>                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="https://email.gov.in/"
+                                        target="_blank"                                        aria-label="Gov mail, External site that opens in a new window">
+                                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20241007439580567.svg" alt="Gov mail"/>                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="https://www.meity.gov.in/"
+                                        target="_blank"                                        aria-label="Ministry of Electronic and Information Technology, External site that opens in a new window">
+                                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20241023484739963.svg" alt="Ministry of Electronic and Information Technology"/>                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="https://www.mygov.in/"
+                                        target="_blank"                                        aria-label="myGov, External site that opens in a new window">
+                                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20241007288926483.svg" alt="myGov"/>                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="https://nkn.gov.in/en/"
+                                        target="_blank"                                        aria-label="National Knowledge Network, External site that opens in a new window">
+                                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/202410071778427802.svg" alt="National Knowledge Network"/>                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="https://serviceonline.gov.in/"
+                                        target="_blank"                                        aria-label="ServicePlus, External site that opens in a new window">
+                                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/202410071058783241.svg" alt="ServicePlus"/>                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="https://www.india.gov.in/"
+                                        target="_blank"                                        aria-label="National Portal of India, External site that opens in a new window">
+                                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20241009722649360.svg" alt="National Portal of India"/>                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="https://jeevanpramaan.gov.in/"
+                                        target="_blank"                                        aria-label="Jeevan Pramaan, External site that opens in a new window">
+                                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/09/20241007750332776.svg" alt="Jeevan Pramaan"/>                                    </a>
+                                                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </section>
+        <script>
+     jQuery(document).ready(function($){
+        $(".footerScrollbar").each(function () {
+            if($(this).find('.flex-viewport').length == 0){
+                $(this).flexslider($(this).parent().data('flexcontrol'));
+            }
+
+        })
+        $('.footerScrollbar.flexslider > .flex-direction-nav a.flex-prev').attr({'aria-label': 'Previous Important Sites slide','role': 'button'});
+            $('.footerScrollbar.flexslider > .flex-direction-nav a.flex-next').attr({ 'aria-label': 'Next Important Sites slide', 'role': 'button' });
+            $('.footerScrollbar.flexslider > .flex-pauseplay a').attr({'aria-label': 'Pause Important Sites slide','role': 'button'});
+
+            $(".footerScrollbar.flexslider > .flex-pauseplay a").on("click", function () {
+            const $playPauseBtn = $(this);
+            setTimeout(function () {
+                if ($playPauseBtn.hasClass("flex-pause")) {
+                    $playPauseBtn.attr("aria-label", "Pause Important Sites slide");
+                } else if ($playPauseBtn.hasClass("flex-play")) {
+                    $playPauseBtn.attr("aria-label", "Play Important Sites slide");
+                }
+                }, 0);
+            });
+    });
+    </script>
+            </div>
+    </div>
+</div>
+ <!--footer start-->
+ <footer class="mainFooter">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-12">
+                    <div class="footer-links px-2">
+                        <h2 class="heading4 text-white mb-3">Useful Links</h2>
+                        <div class="footer-en"><ul id="menu-footer-en" class="footer-en-list links"><li id="menu-item-7352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7352"><a href="https://www.nic.gov.in/about-this-website/">About This Website</a></li>
+<li id="menu-item-7358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7358"><a href="https://www.nic.gov.in/terms-of-use/">Terms of use</a></li>
+<li id="menu-item-7360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7360"><a href="https://www.nic.gov.in/website-policies/">Website Policies</a></li>
+<li id="menu-item-7357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7357"><a href="https://www.nic.gov.in/site-map/">Site Map</a></li>
+<li id="menu-item-7356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7356"><a href="https://www.nic.gov.in/help/">Help</a></li>
+<li id="menu-item-7354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7354"><a href="https://www.nic.gov.in/contact-us/">Contact Us</a></li>
+<li id="menu-item-7355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7355"><a href="https://www.nic.gov.in/feedback/">Feedback</a></li>
+<li id="menu-item-7359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7359"><a href="https://www.nic.gov.in/web-information-manager/">Web Information Manager</a></li>
+<li id="menu-item-7353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7353"><a href="https://www.nic.gov.in/chief-information-security-officer/">Chief Information Security Officer</a></li>
+<li id="menu-item-7361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7361"><a href="https://recruitment.nic.in/">Recruitment</a></li>
+<li id="menu-item-14840" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14840"><a href="https://www.nic.gov.in/nic-web-accessibility-certificate-and-statement/">Accessibility Statement</a></li>
+</ul></div>                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="mid-footer px-2">
+                        <p class="mb-3 text-white">Content Owned and Maintained by National Informatics Centre, Ministry of Electronics & IT (MeitY) | Government of India</p>
+                        <p class="mb-3 text-white">Website is Designed, Developed and Hosted by National Informatics Centre, Ministry of Electronics & IT (MeitY) | Government of India</p>
+
+                                                        <p class="light-grey">
+                                Last Updated:
+                                <span><strong>May 27, 2026</strong></span>
+                            </p>
+                                                </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="social-section px-2">
+                        <div class="row">
+                            <div class="social-inner col-xl-6 col-lg-12 col">
+                               <div class="footerSocial-wrap">
+
+                                <a class="swaas-logo" href="https://s3waas.gov.in/" aria-label= "S3WaaS website - External site that opens in a new window" title="Secure, Scalable and Sugamya Website as a Service" >
+                                    <img src="https://www.nic.gov.in/wp-content/themes/sdo-theme/images/s3waas.svg" class="footer-swaas" alt="Secure, Scalable and Sugamya Website as a Service">
+                                </a>
+
+                                <div>
+                                    <h2 class="heading4 text-white mt-3 mb-3">Follow Us</h2>
+                                        <ul class="d-flex">
+                                          <li> 
+                                                <a href="https://x.com/NICMeity" aria-label="X - External site that opens in a new window">
+                                                    <svg class="x" width="24" height="24" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.0126202 20.9959C0.509014 20.4249 1.00541 19.8498 1.50601 19.2788C3.6893 16.7976 5.8768 14.3164 8.0601 11.8352C8.10637 11.7818 8.14844 11.7284 8.19892 11.6668C5.46875 7.79298 2.74279 3.91919 0 0.01665C0.0799279 0.012542 0.130409 0.00432617 0.180889 0.00432617C2.14543 0.00432617 4.11418 0.00432617 6.07873 0.000218232C6.21755 0.000218232 6.28906 0.0495135 6.36058 0.15632C8.08534 2.61287 9.8101 5.06531 11.5391 7.51775C11.5811 7.57936 11.6274 7.63688 11.6863 7.71493C12.0439 7.30824 12.3888 6.91799 12.7338 6.52773C14.5889 4.42036 16.4483 2.31299 18.2993 0.201507C18.4297 0.0495135 18.5643 -0.00388971 18.762 0.000218232C19.271 0.012542 19.7758 0.00432617 20.3353 0.00432617C17.7061 2.98669 15.1106 5.93619 12.5108 8.8898C12.5571 8.95552 12.5907 9.01303 12.6328 9.07055C15.384 12.9813 18.1352 16.8921 20.8864 20.8069C20.9285 20.8685 20.9621 20.9343 21 21C18.9135 21 16.8311 21 14.7446 21C14.7194 20.9589 14.6983 20.9178 14.6689 20.8768C12.8221 18.2477 10.9712 15.6227 9.1244 12.9936C9.09495 12.9525 9.05709 12.9115 9.01502 12.8622C8.95192 12.9361 8.89303 12.9936 8.83834 13.0552C7.34495 14.7477 5.85577 16.4402 4.36659 18.1327C3.52945 19.0857 2.69231 20.0429 1.85517 20.9959C1.24099 20.9959 0.626803 20.9959 0.0126202 20.9959ZM2.52404 1.36405C2.57873 1.44621 2.60817 1.49962 2.64183 1.54891C6.93269 7.5465 11.2278 13.5441 15.5186 19.5458C15.5944 19.6526 15.6701 19.6978 15.8089 19.6978C16.625 19.6896 17.4453 19.6937 18.2656 19.6937C18.3245 19.6937 18.3792 19.6855 18.4633 19.6772C18.396 19.5828 18.3498 19.517 18.3035 19.4513C15.1569 15.0517 12.006 10.6562 8.85938 6.25661C7.73197 4.68327 6.60877 3.10993 5.48137 1.5407C5.42668 1.46675 5.32993 1.37638 5.25 1.37227C4.35817 1.35995 3.46214 1.36405 2.52404 1.36405Z" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.facebook.com/NICIndia" aria-label="Facebook - External site that opens in a new window">
+                                                    <svg class="facebook" width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.29325 21.9974H13.2228V14.1285H16.7633L17.1523 10.2186H13.2228V8.24396C13.2228 7.98342 13.3263 7.73354 13.5105 7.54931C13.6948 7.36508 13.9446 7.26158 14.2052 7.26158H17.1523V3.33203H14.2052C12.9025 3.33203 11.6531 3.84954 10.7319 4.7707C9.81076 5.69187 9.29325 6.94124 9.29325 8.24396V10.2186H7.32848L6.93945 14.1285H9.29325V21.9974Z" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.youtube.com/nationalinformaticscentre" aria-label="You tube - External site that opens in a new window">
+                                                   <svg class="youtube" width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.7004 15.6127L15.799 12.6655L10.7004 9.71836V15.6127ZM22.0568 7.9206C22.1845 8.38232 22.2729 9.00122 22.3319 9.78713C22.4006 10.573 22.4301 11.2509 22.4301 11.8403L22.489 12.6655C22.489 14.8169 22.3319 16.3986 22.0568 17.4104C21.8112 18.2946 21.2414 18.8644 20.3573 19.11C19.8955 19.2377 19.0507 19.3261 17.7539 19.385C16.4768 19.4538 15.3078 19.4833 14.2272 19.4833L12.6652 19.5422C8.54897 19.5422 5.98494 19.385 4.97309 19.11C4.08894 18.8644 3.51916 18.2946 3.27356 17.4104C3.14585 16.9487 3.05743 16.3298 2.99849 15.5439C2.92972 14.758 2.90025 14.0802 2.90025 13.4907L2.84131 12.6655C2.84131 10.5141 2.99849 8.93245 3.27356 7.9206C3.51916 7.03645 4.08894 6.46666 4.97309 6.22107C5.43481 6.09336 6.27966 6.00494 7.57641 5.946C8.85351 5.87723 10.0226 5.84776 11.1032 5.84776L12.6652 5.78882C16.7814 5.78882 19.3454 5.946 20.3573 6.22107C21.2414 6.46666 21.8112 7.03645 22.0568 7.9206Z" />
+                                                    </svg> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/nicmeity/" aria-label="Instagram - External site that opens in a new window">
+                                                    <svg class="instagram" width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.7286 2.8418H15.9806C19.1243 2.8418 21.6785 5.396 21.6785 8.53964V16.7917C21.6785 18.3028 21.0782 19.7521 20.0096 20.8207C18.9411 21.8892 17.4918 22.4895 15.9806 22.4895H7.7286C4.58497 22.4895 2.03076 19.9353 2.03076 16.7917V8.53964C2.03076 7.02848 2.63107 5.57921 3.69962 4.51066C4.76817 3.4421 6.21744 2.8418 7.7286 2.8418ZM7.53212 4.80657C6.59416 4.80657 5.69462 5.17917 5.03138 5.84241C4.36814 6.50565 3.99553 7.4052 3.99553 8.34316V16.9882C3.99553 18.9431 5.57718 20.5247 7.53212 20.5247H16.1771C17.1151 20.5247 18.0146 20.1521 18.6779 19.4889C19.3411 18.8257 19.7137 17.9261 19.7137 16.9882V8.34316C19.7137 6.38821 18.1321 4.80657 16.1771 4.80657H7.53212ZM17.0122 6.28015C17.3378 6.28015 17.6502 6.40953 17.8805 6.63982C18.1108 6.87011 18.2401 7.18245 18.2401 7.50813C18.2401 7.83381 18.1108 8.14616 17.8805 8.37645C17.6502 8.60674 17.3378 8.73611 17.0122 8.73611C16.6865 8.73611 16.3741 8.60674 16.1438 8.37645C15.9135 8.14616 15.7842 7.83381 15.7842 7.50813C15.7842 7.18245 15.9135 6.87011 16.1438 6.63982C16.3741 6.40953 16.6865 6.28015 17.0122 6.28015ZM11.8546 7.75373C13.1573 7.75373 14.4067 8.27123 15.3279 9.1924C16.2491 10.1136 16.7666 11.3629 16.7666 12.6657C16.7666 13.9684 16.2491 15.2178 15.3279 16.1389C14.4067 17.0601 13.1573 17.5776 11.8546 17.5776C10.5519 17.5776 9.30253 17.0601 8.38136 16.1389C7.4602 15.2178 6.94269 13.9684 6.94269 12.6657C6.94269 11.3629 7.4602 10.1136 8.38136 9.1924C9.30253 8.27123 10.5519 7.75373 11.8546 7.75373ZM11.8546 9.7185C11.073 9.7185 10.3234 10.029 9.77067 10.5817C9.21797 11.1344 8.90747 11.884 8.90747 12.6657C8.90747 13.4473 9.21797 14.1969 9.77067 14.7496C10.3234 15.3023 11.073 15.6128 11.8546 15.6128C12.6363 15.6128 13.3859 15.3023 13.9386 14.7496C14.4913 14.1969 14.8018 13.4473 14.8018 12.6657C14.8018 11.884 14.4913 11.1344 13.9386 10.5817C13.3859 10.029 12.6363 9.7185 11.8546 9.7185Z" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li> 
+                                                <a href="https://www.linkedin.com/company/nicmeity/" aria-label="linkedin - External site that opens in a new window">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                                        <path fill-rule="nonzero" d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
+                                                    </g>
+                                                </svg>
+                                                </a>
+                                            </li>
+                                            <li> 
+                                                <a href="https://www.threads.net/@nicmeity" aria-label="Threads - External site that opens in a new window">
+                                                    <svg aria-label="Threads" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path class="x19hqcy" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"></path></svg>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="accent-secondary-color accent-border-color" id="gototop-btn" title="Go to top"><span class="hide">Go to top</span></button> -->
+        <button class="progress-wrap"  aria-label="Back to top">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </button>
+    </footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/sdo-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDKEX936ZY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('set', 'cookie_flags', 'SameSite=Lax;Secure');
+            gtag('config', 'G-XDKEX936ZY');
+        </script>
+                    <div id="voice-fullscreen-overlay" style="display: none;" role="alertdialog" aria-modal="true">
+            <div class="voice-overlay-inner">
+                <span class="fa fa-microphone voice-icon" aria-hidden="true"></span>
+                <p class="voice-message" aria-live="assertive" tabindex="0"></p>
+            </div>
+            <button class="fa fa-times voice-close" aria-label="Close voice search"></button>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var script = document.createElement('script');
+                    script.src = "https://translation-plugin.bhashini.co.in/v3/website_translation_utility.js";
+                    script.setAttribute("is-redirection", "true");
+                    script.crossOrigin = "anonymous";
+
+                                        script.setAttribute("initial_preferred_language", "hi");
+                                        
+
+                    script.onerror = function () {
+                        console.warn("Bhashini script failed to load.");
+                    };
+
+                    document.body.appendChild(script);
+                });
+            </script>
+                <script>
+        // jQuery(document).ready(function($){
+        //     jQuery('body').find('a.flex-pause').attr('href',"javascript:void(0)");
+        //     $('.flex-direction-nav a.flex-prev').attr({'title' : 'Previous','aria-label':'Previous'});
+        //     $('.flex-pauseplay a.flex-pause').attr({'title' : 'Play/Pause','aria-label':'Play/Pause'});
+        //     $('.flex-direction-nav a.flex-next').attr({'title' : 'Next','aria-label':'Next'});
+        // });
+         jQuery(document).ready(function($){
+            setTimeout(function() {
+                jQuery('ul.flex-direction-nav').attr('role', 'presentation');
+            }, 500);
+            jQuery('body').find('a.flex-pause').attr('href',"javascript:void(0)");
+            $('.home-slider.flexslider .flex-direction-nav a.flex-prev').attr({'aria-label':'Previous slide','role':'button'});
+            $('.home-slider.flexslider .flex-pauseplay a.flex-pause').attr({'aria-label':'Pause button' ,'role':'button'});
+            $('.home-slider.flexslider .flex-direction-nav a.flex-next').attr({'aria-label':'Next slide' ,'role':'button'});
+             $(".home-slider.flexslider .flex-pauseplay a").on("click", function () {
+                    const $playPauseBtn = $(this);
+                    setTimeout(function () {
+                    if ($playPauseBtn.hasClass("flex-pause")) {
+                        $playPauseBtn.attr("aria-label", "Pause button");
+                    } else if ($playPauseBtn.hasClass("flex-play")) {
+                        $playPauseBtn.attr("aria-label", "Play button");
+                    }
+                    }, 0);
+                });
+             });
+    </script>
+    <!--Department Instance-->        <script>
+            jQuery(document).ready(function ($) {
+                $.post({
+                    url: ajaxurl,
+                    method: 'POST',
+                    dataType: 'JSON',
+                    data: {
+                        time: new Date().getTime(),
+                        lang: 'en',
+                        action: 's3waas_pll_lang_cookie'
+                    },
+                    success: function (responseResults) {}
+                })
+            })
+        </script>
+        <script id="jquery-common-js-js-extra">
+var AwaasData = {"ajaxUrl":"https://www.nic.gov.in/wp-admin/admin-ajax.php","isUserLoggedIn":""};
+//# sourceURL=jquery-common-js-js-extra
+</script>
+<script id="jquery-common-js-js" src="https://www.nic.gov.in/wp-content/plugins/common_utility/js/common.js?ver=1.1"></script>
+<script id="pll_cookie_script-js-after">
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=en; expires=" + expirationDate.toUTCString() + "; path=/; domain=www.nic.gov.in; secure; SameSite=Lax";
+			}());
+
+//# sourceURL=pll_cookie_script-js-after
+</script>
+<script id="bhashini-tts-js-extra">
+var bhashiniAjax = {"ajaxurl":"https://www.nic.gov.in/wp-admin/admin-ajax.php","postId":"4891","currentLanguage":"en","availableLanguages":["en","hi"],"defaultLanguage":"en","tts_page_reading":"tts_content_only","bhashini_tts_enabled":"0","bhashini_asr_enabled":"","listening_text":"Listening","speak_now_text":"Speak now","no_mic_detected":"No microphone detected. Please connect a mic or use a device that supports speech input.","server_error_text":"Error: Voice recognition failed due to a server issue.","client_error":"Error: Please check your microphone and audio levels."};
+//# sourceURL=bhashini-tts-js-extra
+</script>
+<script id="bhashini-tts-js" src="https://www.nic.gov.in/wp-content/plugins/bhashini-translation/assets/js/bhashini-tts.js?ver=1.0.1788439852"></script>
+<script id="jquery-ui-core-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/core.min.js?ver=3.6.4"></script>
+<script id="jquery-ui-datepicker-js" src="https://www.nic.gov.in/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-datepicker-js-after">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+//# sourceURL=jquery-ui-datepicker-js-after
+</script>
+<script id="jquery-flexslider-js-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/jquery.flexslider.js?ver=1.1"></script>
+<script id="jseasyResponsiveTabs-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/easyResponsiveTabs.js?ver=1.1"></script>
+<script id="jqueryfancyboxjs-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/jquery.fancybox.js?ver=1.1"></script>
+<script id="styleswitcherjs-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/style.switcher.js?ver=1.1"></script>
+<script id="menujs-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/menu.js?ver=1.1"></script>
+<script id="tablejs-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/table.min.js?ver=1.1"></script>
+<script id="custom-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/custom.js?ver=1.1"></script>
+<script id="extrajs-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/extra.js?ver=1.1"></script>
+<script id="owljs-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/owl-carousel.js?ver=1.1"></script>
+<script id="swiperjs-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/swiper.js?ver=1.1"></script>
+<script id="accessibility-js" src="https://www.nic.gov.in/wp-content/themes/sdo-theme/js/accessibility.js?ver=1.1.1"></script>
+<script></script></body>
+</html>
+<!-- Dynamic page generated in 0.399 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2026-09-03 12:50:52 -->
+
+<!-- super cache -->

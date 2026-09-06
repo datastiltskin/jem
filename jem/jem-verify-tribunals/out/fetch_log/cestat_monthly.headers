@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+server: nginx
+content-type: application/pdf
+transfer-encoding: chunked
+expires: Thu, 19 Nov 1981 08:52:00 GMT
+cache-control: no-store, no-cache, must-revalidate
+pragma: no-cache
+cache-control: no-store, max-age=0, no-cache
+date: Sun, 06 Sep 2026 04:09:33 GMT
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'self' cis.cestat.gov.in https://niccicms.raj.nic.in; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com https://niccicms.raj.nic.in; style-src 'self' 'unsafe-inline' https://niccicms.raj.nic.in https://maxcdn.bootstrapcdn.com; font-src 'self' https://maxcdn.bootstrapcdn.com; frame-src 'self' 'unsafe-inline' https://www.google.com https://niccicms.raj.nic.in;
+referrer-policy: origin
+

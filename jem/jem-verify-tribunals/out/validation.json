@@ -1,0 +1,128 @@
+{
+  "artifact_checks_passed": true,
+  "checks": [
+    {
+      "check": "exact CSV header and no surplus columns",
+      "passed": true
+    },
+    {
+      "check": "140 rows and 44 entities",
+      "passed": true
+    },
+    {
+      "check": "every input key occurs exactly once",
+      "passed": true
+    },
+    {
+      "check": "input columns and order preserved",
+      "passed": true
+    },
+    {
+      "check": "shared prompt byte identity",
+      "passed": true
+    },
+    {
+      "check": "full claims byte identity",
+      "passed": true
+    },
+    {
+      "check": "valid verdict vocabulary",
+      "passed": true
+    },
+    {
+      "check": "verdict counts agree with metadata",
+      "passed": true
+    },
+    {
+      "check": "numeric missing evidence never becomes a replacement",
+      "passed": true
+    },
+    {
+      "check": "all recorded HTTP body hashes and sizes match",
+      "passed": true
+    },
+    {
+      "check": "numeric replacements have fetched primary, date, section and excerpt",
+      "passed": true
+    },
+    {
+      "check": "ka_state_cdrc replacement integer occurs in primary extraction",
+      "passed": true
+    },
+    {
+      "check": "ka_state_cdrc boundary assumption disclosed",
+      "passed": true
+    },
+    {
+      "check": "cestat replacement integer occurs in primary extraction",
+      "passed": true
+    },
+    {
+      "check": "cestat boundary assumption disclosed",
+      "passed": true
+    },
+    {
+      "check": "all 43 present NJDG stamps invalidated",
+      "passed": true
+    },
+    {
+      "check": "absent AFT stamp is not falsely marked valid",
+      "passed": true
+    },
+    {
+      "check": "SAT components sum to narrative disposal",
+      "passed": true
+    },
+    {
+      "check": "SAT opening plus filed less disposed equals closing",
+      "passed": true
+    },
+    {
+      "check": "SAT anchor numbers occur in archived primary",
+      "passed": true
+    },
+    {
+      "check": "arithmetic mismatch is surfaced",
+      "passed": true
+    },
+    {
+      "check": "all 18 rates independently recomputed",
+      "passed": true
+    },
+    {
+      "check": "NGT is the sole stored arithmetic mismatch",
+      "passed": true
+    },
+    {
+      "check": "all required metadata keys present",
+      "passed": true
+    },
+    {
+      "check": "unknown calibration fields have explicit explanations",
+      "passed": true
+    },
+    {
+      "check": "study deviations cannot be mistaken for eligible calibration",
+      "passed": true
+    },
+    {
+      "check": "one result CSV and one matching meta JSON",
+      "passed": true
+    }
+  ],
+  "calibration_requirements_passed": false,
+  "calibration_failures": [
+    "Exact model version unavailable",
+    "Actual temperature uncontrolled and unknown",
+    "Usage and cost unmeasured",
+    "Repo-hosted context",
+    "Peer summary exposed"
+  ],
+  "human_review_required": [
+    "Confirm the opening-balance convention for the two numeric REFUTEs",
+    "Resolve undefined annual intervals and unit scopes before applying candidate figures"
+  ],
+  "local_prompt_read_only": true,
+  "prompt_permissions_note": "Git preserves executable bits, not read-only permissions. SHA-256 is the portable integrity check. The export script reapplies chmod 0444.",
+  "recorded_http_bodies_checked": 42
+}

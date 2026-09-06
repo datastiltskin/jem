@@ -1,0 +1,25 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:11:05 GMT
+Server: Apache
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: same-origin
+Feature-Policy: fullscreen 'none'; microphone 'none'
+Last-Modified: Wed, 30 Oct 2024 11:37:10 GMT
+ETag: "1a1862-625b01f4f8c1b"
+Accept-Ranges: bytes
+Content-Length: 1710178
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-FRAME-OPTIONS: SAMEORIGIN
+X-Firefox-Spdy: h2
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Access-Control-Allow-Methods: GET, POST, HEAD
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: accept, content-type, X-Requested-With, X-Prototype-Version, X-CSRF-Token, authorization
+Content-Type: application/pdf
+

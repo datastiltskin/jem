@@ -1,0 +1,156 @@
+{
+  "purpose": "Publication hygiene after verification. No case-count evidence is changed.",
+  "created_at_utc": "2026-09-06T04:39:01.614808+00:00",
+  "actions": [
+    {
+      "path": "fetch_log/cat_ar.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 1,
+      "original_sha256": "0eeef281cb398d38873555353659ebb6a2ca2539d12770ff36aeb8045a4fa892",
+      "original_bytes": 831,
+      "published_sha256": "37a387d607df4796beda882529c99347f160bebe8e19666ea97c444f19564279",
+      "published_bytes": 644,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/cestat_monthly.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 4,
+      "original_sha256": "69939e20b9c12f70cb4948bd5a240f109efd5ea20d233a79f82647af6ce4b99a",
+      "original_bytes": 1375,
+      "published_sha256": "85a0cfc4ee01e3173e08f5580f202c0a38286b5fd9b692eb8f3db624bc355e6e",
+      "published_bytes": 906,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/cestat_notices.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 4,
+      "original_sha256": "c7d2c20f445ea694348a1527a225e7d22e02a189613a175c6390745b5bc2efad",
+      "original_bytes": 1384,
+      "published_sha256": "ef848c3c23dbf771047975df6c6ad1e4a74dd5a0dd6e2097a397effcd431ee1d",
+      "published_bytes": 915,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/itat_pib.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 2,
+      "original_sha256": "0bda61df77f42d576fdb03a89eee5606177be5255a49baa43d76e0e7cea60993",
+      "original_bytes": 6004,
+      "published_sha256": "698d106be6c37511a5d6b6507c8bff4facea2f4e0e1a69c4c4e19258b11317e6",
+      "published_bytes": 5812,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/ka_consumer_home.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 1,
+      "original_sha256": "19c96515b610b258e57924c9f63a5d58c63d78031add160bdba0a4d74b25083d",
+      "original_bytes": 1145,
+      "published_sha256": "00b122e40e96fdeccef88d67a5118627666cfbbcef05fc97f1a2a84606722b96",
+      "published_bytes": 1062,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/ka_consumer_index.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 1,
+      "original_sha256": "2a3abbbd6c018b9d2bf8b06a08c5ffb76b922c90de98eb6a06378715915e5a4c",
+      "original_bytes": 1145,
+      "published_sha256": "93ceed2efc3f6692bcca7e284d9bb451d734a005a363cd1c1ecce7412f7038ea",
+      "published_bytes": 1062,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/ka_rera_home.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 1,
+      "original_sha256": "1b4d4c78f09d3cea877b2e3d892f1050d88d86a3231f2203b00b0b465f724f80",
+      "original_bytes": 364,
+      "published_sha256": "d759547c66d46b9dd485800abfe7320f6c538c288a92a7d0fa111053957ad2b9",
+      "published_bytes": 227,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/kerc_home.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 1,
+      "original_sha256": "2651fe64d953c1f585983e09bf7bd0bce92473305d33365d99f62f96684ce6b4",
+      "original_bytes": 1017,
+      "published_sha256": "421201aa97ad0449badc4109192cfd40e27e5f4638e23cbed7b0a9fb846bc27c",
+      "published_bytes": 950,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/kerc_reports.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 1,
+      "original_sha256": "f7b93f22df422dd5571c8525642cd452f36a31edabb17143432f502212acbaa9",
+      "original_bytes": 1017,
+      "published_sha256": "4db804167bbf7c2313ba30f85b3f1b2cefe0337ed029bef3b2d6a551398ceda7",
+      "published_bytes": 950,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/lok_adalat_pib.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 2,
+      "original_sha256": "c65456e394006e445cb54a4a14c5b6e56f6f65569669c3317f66bbfbe12a680a",
+      "original_bytes": 5985,
+      "published_sha256": "ce65a172b6a8bdd73d8f8618a4a42da7a272b0c665137d951d217f4bcc459b5e",
+      "published_bytes": 5793,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/merc_index.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 1,
+      "original_sha256": "ed8bf9d38c0ff00d9bc5115c0e030789e026d4fb8ad311cb730e4f5e339b337c",
+      "original_bytes": 791,
+      "published_sha256": "84b2786fd3ae00df8e82f1b2d9594b5f086e39294e7301fc5206ee24b90c6adf",
+      "published_bytes": 701,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/mh_rera_index.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 1,
+      "original_sha256": "b1e92aec2d1be08e569f4e08607e9747d424ffe1a96b82a9b00fcd1a7fea3a10",
+      "original_bytes": 3711,
+      "published_sha256": "fcdd7913de24065cb7e2c0d434119346e2a1ba9c26b04ffc3fa6cbfdef17d450",
+      "published_bytes": 3488,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/ngt_dashboard.headers",
+      "action": "remove_set_cookie_response_headers",
+      "removed_headers_n": 2,
+      "original_sha256": "5495a11a61aab5872d3aa90c4b1c7f664f6aec5f369f7173a1b9adf07efdd238",
+      "original_bytes": 1580,
+      "published_sha256": "f47ed3f50cd9cf2128bf6140a79777d18369c56d3265355ed6594cf07a149402",
+      "published_bytes": 1307,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    },
+    {
+      "path": "fetch_log/cestat_notices.response",
+      "action": "redact_csrf_markup_values",
+      "redacted_values_n": 3,
+      "original_sha256": "2df7b5023daeb23bc36a89faa22eb55fbd2854fa60e8606b5c656916e1aa88c4",
+      "original_bytes": 1656192,
+      "published_sha256": "151b52e9bd462dbe48cd034521e4d323bb0e5b240aa2222d6d108a0ee5e8c590",
+      "published_bytes": 1656174,
+      "sanitized_at_utc": "2026-09-06T04:39:01.614808+00:00"
+    }
+  ],
+  "notes": [
+    "Session cookies came from anonymous public HTTP responses, not authenticated accounts.",
+    "Original hashes identify downloaded bytes, but no unsanitized copies are retained here.",
+    "Manifest sha256 and bytes describe published bodies. original_download preserves download identity.",
+    "Header publication hashes are recorded here because the fetch manifest originally hashed bodies only.",
+    "This helper is idempotent. It does not perform a new verification run."
+  ],
+  "removed_set_cookie_headers_n": 22,
+  "redacted_csrf_values_n": 3,
+  "changed_files_n": 14
+}

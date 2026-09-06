@@ -1,0 +1,574 @@
+
+<httpRuntime enableHeaderChecking="true"/>
+
+
+
+<script type="text/javascript">
+
+
+
+</script>
+
+ 
+
+    
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="cache-control" content="max-age=0">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<meta http-equiv="pragma" content="no-cache">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<meta name='robots' content='noindex'>
+
+
+<title>Tamilnadu Electricity Regulatory Commission</title>
+<link rel="shortcut icon" href="https://tnerc.tn.gov.in/images/logo.ico" type="image/x-icon">
+<!--css-start-->
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.css" rel="stylesheet" type="text/css">
+<script src="js/bootstrap.min.js" type="text/javascript" ></script>
+
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<!--animation-css-end-->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-3.7.1.min.js"></script> 
+
+ <!--carousal will work---->
+
+<style>
+    #menu-container {
+        position: absolute;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .carousel-indicators {
+        bottom: 0px !important;
+    }
+
+    .auto-style1 {
+        background: url('images/header_bg.jpg') repeat-x;
+        padding: 0 0;
+        margin: 0;
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+    .auto-style2 {
+        width: 18%;
+    }
+
+    .auto-style3 {
+        font-size: small;
+        color: #000066;
+    }
+
+    .auto-style4 {
+        color: #003366;
+    }
+
+    .auto-style5 {
+        height: 595px;
+    }
+</style>
+
+
+    <script type="text/javascript">
+        //increase decrease font size
+        $(document).ready(function () {
+            $(".increaseFont,.decreaseFont").click(function () {
+
+                var type = $(this).val();
+                var curFontSize = $('.data').css('font-size');
+                if (type == 'increase') {
+                    $('.data').css('font-size', parseInt(curFontSize) + 1);
+
+                } else {
+                    $('.data').css('font-size', parseInt(curFontSize) - 1);
+                }
+                // alert($('.data').css('font-size'));
+            });
+        });
+   </script>
+ 
+<body background-color: #E6E6FA;>
+    <div class="data">
+
+    <form name="form1" method="post" action="./" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODgxMjk0ODQwDxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAgIED2QWCgIlDxYCHgRUZXh0BesKPGxpIGFsaWduPSdqdXN0aWZ5Jz4gIDxhIGhyZWY9Jy4vT3JkZXJzL2ZpbGVzL09tYm9yZGVyLTI3IG9mIDIwMjYwMzA5MjAyNjE1NTUucGRmJyB0YXJnZXQ9J19ibGFuayc+Mjcgb2YgMjAyNi0gQXBwZWFsIGFnYWluc3QgYWNjb3VudCBjbG9zdXJlIG9mIGRpc2Nvbm5lY3RlZCBzZXJ2aWNlcyBhbmQgcmVmdW5kIG9mIHNlY3VyaXR5IGRlcG9zaXRzIChFbmdsaXNoKTwvYT48YnI+PGxpIGFsaWduPSdqdXN0aWZ5Jz4gIDxhIGhyZWY9Jy4vT3JkZXJzL2ZpbGVzL09tYm9yZGVyLTI4IG9mIDIwMjYzMTA4MjAyNjE1MTMucGRmJyB0YXJnZXQ9J19ibGFuayc+Mjggb2YgMjAyNi0gQXBwZWFsIGFnYWluc3QgdGhlIGRlbWFuZCByYWlzZWQgaW4gVGVtcG9yYXJ5IFN1cHBseSBzZXJ2aWNlIGNvbm5lY3Rpb24sIFNlZWtpbmcgY2xvc3VyZSBvZiB0aGUgYWNjb3VudCBhbmQgcmVmdW5kIHRoZSBhdmFpbGFibGUgZGVwb3NpdCAoRW5nbGlzaCk8L2E+PGJyPjxsaSBhbGlnbj0nanVzdGlmeSc+ICA8YSBocmVmPScuL09yZGVycy9maWxlcy9PbWJvcmRlci0yNiBvZiAyMDI2MjQwODIwMjYxNzE2LnBkZicgdGFyZ2V0PSdfYmxhbmsnPjI2IG9mIDIwMjYtIEFwcGVhbCBhZ2FpbnN0IEF1ZGl0IHNob3J0ZmFsbCBmb3IgZGVmZWN0aXZlIG1ldGVyIGluIExUQ1QgU2VydmljZSAoRW5nbGlzaCk8L2E+PGJyPjxsaSBhbGlnbj0nanVzdGlmeSc+ICA8YSBocmVmPScuL09yZGVycy9maWxlcy9PbWJvcmRlci01OCBvZiAyMDI2MjAwODIwMjYxNjU4LnBkZicgdGFyZ2V0PSdfYmxhbmsnPjU4IG9mIDIwMjYtIFJlZnVuZCBvZiBTZWN1cml0eSBkZXBvc2l0IG9uIGNsb3N1cmUgb2YgdGVtcG9yYXJ5IHN1cHBseSAoV2l0aGRyYXduKSBFbmdsaXNoPC9hPjxicj48bGkgYWxpZ249J2p1c3RpZnknPiAgPGEgaHJlZj0nLi9PcmRlcnMvZmlsZXMvT21ib3JkZXItMjkgb2YgMjAyNjE4MDgyMDI2MTYzNS5wZGYnIHRhcmdldD0nX2JsYW5rJz4yOSBvZiAyMDI2LSBBcHBlYWwgcmVnYXJkaW5nIHNoaWZ0aW5nIG9mIHNlcnZpY2UgbGluZSBvZiBMVCBTQyAxNTEtMDEwLTUzMCBhbmQgb2JqZWN0aW9uIHRvIHNoaWZ0aW5nIG9mIG1ldGVyIG9mIExUU0MgMTUxLTAwMi0xNCAoV2l0aGRyYXduKSBFbmdsaXNoPC9hPjxicj48bGkgYWxpZ249J2p1c3RpZnknPiAgPGEgaHJlZj0nLi9PcmRlcnMvZmlsZXMvT21ib3JkZXItMjQgb2YgMjAyNjE3MDgyMDI2MTcxNC5wZGYnIHRhcmdldD0nX2JsYW5rJz4yNCBvZiAyMDI2LSBBcHBlYWwgdG8gcmVwbGFjZSBvciByZWxvY2F0ZSB0aGUgb2lsIGZpbGxlZCBEaXN0cmlidXRpb24gVHJhbnNmb3JtZXIgbG9jYXRlZCB3aXRoaW4gdGhlIEFwcGVsbGFudCBhcGFydG1lbnQgYXQgTGljZW5zZWUgY29zdCAoRW5nbGlzaCk8L2E+PGJyPjwvbGk+IGQCKQ8WAh8BBYkDPGxpIGFsaWduPSdqdXN0aWZ5Jz48YSBocmVmPScuL0NpcmN1bGFyL2ZpbGVzLzIyMDQyMDI2LTIyMDQyMDI2MTczMC5wZGYnIHRhcmdldD0nX2JsYW5rJz5NYW5kYXRvcnkgcmVxdWlyZW1lbnQgb2Ygc29mdCBjb3BpZXMgKGluIHdvcmQgJiBwZGYpIGZvciBmaWxpbmcgb2YgcGV0aXRpb25zIC8gY291bnRlciBhZmZpZGF2aXRzIC8gb3RoZXIgZG9jdW1lbnRzLiA8L2E+PC9saT48bGkgYWxpZ249J2p1c3RpZnknPjxhIGhyZWY9Jy4vQ2lyY3VsYXIvZmlsZXMvMDIwNjIwMjYtMDIwNjIwMjYxMDQ0LnBkZicgdGFyZ2V0PSdfYmxhbmsnPlRORVJDIC0gQ291cnQgc2l0dGluZy9oZWFyaW5nIHdpbGwgbm90IGJlIGNvbmR1Y3RlZCB3aXRoIGVmZmVjdCBmcm9tIDAyLjA2LjIwMjYgPC9hPjwvbGk+ZAIrDxYCHwEFhQQ8bGkgYWxpZ249J2p1c3RpZnknPiAgPGEgaHJlZj0nLi9SZWd1bGF0aW9uL2ZpbGVzL1JlZy0yNjA1MjAyNjE5MzNFbmcucGRmJyB0YXJnZXQ9J19ibGFuayc+U0xEQy0yNi0xIFRORVJDIChTdGF0ZSBMb2FkIERpc3BhdGNoIENlbnRyZSBGdW5jdGlvbnMgYW5kIEFjY291bnRhYmlsaXR5KSBSZWd1bGF0aW9ucywgMjAyNjwvYT48bGkgYWxpZ249J2p1c3RpZnknPiAgPGEgaHJlZj0nLi9SZWd1bGF0aW9uL2ZpbGVzL1JlZy0yMjA2MjAyNjE3NTJFbmcucGRmJyB0YXJnZXQ9J19ibGFuayc+R0MgMDEvMjAyNiBUYW1pbCBOYWR1IEVsZWN0cmljaXR5IEdyaWQgQ29kZSwgMjAyNjwvYT48bGkgYWxpZ249J2p1c3RpZnknPiAgPGEgaHJlZj0nLi9SZWd1bGF0aW9uL2ZpbGVzL1JlZy0yMDA5MjAyNTExMDNFbmcucGRmJyB0YXJnZXQ9J19ibGFuayc+R0VPQS0yNS0xIFRORVJDIChUZXJtcyBhbmQgQ29uZGl0aW9ucyBmb3IgR3JlZW4gRW5lcmd5IE9wZW4gQWNjZXNzKSBSZWd1bGF0aW9ucywgMjAyNS48L2E+PC9saT4gZAItDxYCHwEFkQM8bGkgYWxpZ249J2p1c3RpZnknPjxhIGhyZWY9Jy4vQ2lyY3VsYXIvZmlsZXMvMjIwNDIwMjYtMjIwNDIwMjYxNzMwLnBkZicgdGFyZ2V0PSdfYmxhbmsnPk1hbmRhdG9yeSByZXF1aXJlbWVudCBvZiBzb2Z0IGNvcGllcyAoaW4gd29yZCAmIHBkZikgZm9yIGZpbGluZyBvZiBwZXRpdGlvbnMgLyBjb3VudGVyIGFmZmlkYXZpdHMgLyBvdGhlciBkb2N1bWVudHMuIDxwPjwvYT48L2xpPiA8bGkgYWxpZ249J2p1c3RpZnknPjxhIGhyZWY9Jy4vQ2lyY3VsYXIvZmlsZXMvMDIwNjIwMjYtMDIwNjIwMjYxMDQ0LnBkZicgdGFyZ2V0PSdfYmxhbmsnPlRORVJDIC0gQ291cnQgc2l0dGluZy9oZWFyaW5nIHdpbGwgbm90IGJlIGNvbmR1Y3RlZCB3aXRoIGVmZmVjdCBmcm9tIDAyLjA2LjIwMjYgPHA+PC9hPjwvbGk+IGQCMg8WAh8BBYsBIDxiPiAgICA8L2I+IFRORVJDLDR0aCBGbG9vciAsIFNJRENPIENvcnBvcmF0ZSBPZmZpY2UgQnVpbGRpbmcuDQpHdWluZHksIENoZW5uYWktNjAwIDAzMixQaG9uZSA6MDQ0IDI5NTM1ODA2LDI5NTM1ODE2ICwgIGVtYWlsOnRuZXJjQG5pYy5pbmRkNOHfDms5bdkTBLmYyxf7psxwIfGZ/5UVymjHj35LJP8=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAkW4e7j70J5YTlcpTV02CM1JSHwsnIMP5D0F8LtdjtghHeqZJZkNmXShb9WcDHVfrnfvGqt5/tXQofvxceq/KbGx5Xcxzo3bSpS0dF7ba0ml++yT+CXx0Gp2BPuTtAITS4nbNLbmzsFlHo1F4C2HzUoYd2rO0i9OQES/pjzLQguWvIJLeLO/B6/wWGMhnGk47t5kYnSNhJTDmRBiYKHvx1F+rvGByS2q82yAxObuLKcow==" />
+    <div  >
+
+<!--Top-header-start-->
+
+  
+ 
+</div>
+
+        <div align="right" >
+             <!------ Font increase and decrease ------------>
+
+   			  <!-- <button type="button" value="increase" class="increaseFont">  Blue </button>
+            		<button type="button" value="increase" class="increaseFont">  Red </button>
+            		<button type="button" value="increase" class="increaseFont">  Green </button>-->
+
+              <button type="button" value="increase" class="increaseFont"> A+  </button>
+                  <button type="button" value="decrease" class="decreaseFont">  A- </button>   
+            <!------ End of Font increase and decrease ------------>
+<!--
+             <div class="col-lg-1 top">
+
+                                <div id="style-switcher">
+                                    <button class="style-switcher-toggle" aria-label="color options"><i class="ico fa fa-tint"></i></button>
+                                    <div class="style-switcher-content">
+                                        <ul class="skin-list">
+                                            <li>
+                                                <button class="skin-1 m-active" aria-label="blue" data-skin="red"></button>
+                                            </li>
+                                            <li>
+                                                <button class="skin-2" aria-label="red" data-skin="blue"></button>
+                                            </li>
+                                            <li>
+                                                <button class="skin-3" aria-label="green" data-skin="green"></button>
+                                            </li>
+                                            <li>
+                                                <button class="skin-4" aria-label="black" data-skin="orange"></button>
+                                            </li>
+                                            <li>
+                                                <button class="skin-5" aria-label="grey" data-skin="bluegrey"></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+-->
+         </div>
+
+
+
+<div class="auto-style1">
+    <!--<div class="container">-->
+        <img src="images\logo.png" alt="tnerc-logo" class="img-responsive" style="display: inline;"></img> 
+    <!--</div>-->
+</div>
+    
+       
+<!--navigation-start-->
+<div class="wrap-navi">
+  
+ <div class="container">
+       
+<div class="navbar navbar-default" role="navigation">
+     
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  
+
+   
+
+ <div  >
+     
+   <ul class="nav navbar-nav">
+       
+           <li class="active"><a href="index.aspx">Home</a></li>
+           <li>
+               <a href="profile.aspx">About Us</a>
+               <ul class="dropdown-menu">
+                   <li><a href="profile.aspx">Profile of the Commission</a></li>
+                   
+                    <li class="divider"></li>
+                    <li><a href="viewHistory.aspx">History</a></li>
+               </ul>
+           </li>
+           <li>
+               <a href="ViewDR.aspx">Regulations</a>
+               <ul class="dropdown-menu">
+                   <li><a href="ViewDR.aspx" >Draft Regulations</a></li>
+                   <li class="divider"></li>
+                   <li><a href="Regulation.aspx">Final Regulations</a></li>
+                   <li class="divider"></li>
+               </ul>
+           </li>
+           <li>
+ 
+               <a href="CaseOrders.aspx">Case Orders</a>
+            
+              
+               
+           </li>
+           <li>
+              
+
+               <a href="ViewHearing.aspx">Hearing Schedule</a>
+
+           </li>
+         
+           <li>
+               <a href="TariffOrders.aspx">Tariff Orders</a>
+           </li>
+           
+           <li>
+               <a href="OtherOrders.aspx">Other Orders</a>
+               
+           </li> 
+            <li>
+                
+
+               <a href="">Ombudsman</a>
+               <ul class="dropdown-menu">
+                   <li><a href="profileOMB.aspx">Profile of Ombudsman</a></li>
+                   <li class="divider"></li>
+                   <li>
+                        
+                       <a href="CaseOrdersOMB.aspx" > Orders/Judgment </a>
+
+
+                   </li>
+                   <li class="divider"></li>
+                   <li><a href="viewHearingOMB.aspx"> Hearing Schedule</a></li>
+                    
+                   <li class="divider"></li>
+                    <li><a href="Appealproc.htm">Appeal Procedure</a></li>
+                  
+                    
+               </ul>
+           </li>
+             
+
+
+         <li>
+             
+               <a href="" >Adj.Officer </a>
+               <ul class="dropdown-menu">
+                  
+                   <li>
+                       
+                       <a href="AdjOrders.aspx" > Case Orders </a>
+
+                   </li>
+                   <li class="divider"></li>
+                    <li>
+                        
+                        <a href="ViewHearingAdj.aspx"> Hearing Schedule</a>
+
+                    </li>
+                   <li class="divider"></li>
+                    <li><a href="DailyOrdersAdj.aspx">Daily Orders</a></li>
+               </ul>
+           </li>
+
+
+       </ul>
+           
+ </div>
+   
+
+</div>
+</div>
+ </div>  
+    
+   
+<!--Top-header-end-->
+      
+<section>
+     
+<div class="wrap-md">
+<div class="container coc-mid">
+<div class="row">
+    
+   
+
+<!--<marquee style="color:#153487"><strong> <sup>th</sup> April, 2020 </strong>
+<a href=" " target="_blank"><strong>  (Beta Version) w.e.f. 1st October, 2019. The module will facilitate the power exchanges, trading licensees, and POSOCO to submit their Monthly/Weekly data online. </strong></a>-->
+<div class="col-md-2 col-sm-12 nid_t" id="phgalery">
+	<!--<h4 style="color:#153487;">Photographs</h4>-->
+    <div class="row">
+    	<!--<div class="col-md-12 pn" style="margin-bottom:5px;">
+         <a href="#"><img src="images/iamr_1.jpg" alt="img" class="img-responsive"></a>
+        </div>-->
+    </div>
+    
+   
+<div class="modi">
+     
+    <br><br>
+
+        <a id="lbnpwd" class="btn btn-default botm2" xmlns:asp="#unknown" href="javascript:__doPostBack(&#39;lbnpwd&#39;,&#39;&#39;)">  &nbsp;&nbsp;&nbsp;Consumer Tariff  &nbsp;&nbsp;&nbsp;</a>
+        <a class="btn btn-default botm2" href="DailyOrders.aspx" title="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Daily Orders&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </a><br>
+        <a id="lbPR" class="btn btn-default botm2" xmlns:asp="#unknown" href="javascript:__doPostBack(&#39;lbPR&#39;,&#39;&#39;)"> &nbsp;&nbsp;&nbsp;&nbsp;Press Release&nbsp; &nbsp;&nbsp;&nbsp; </a>
+        
+          <a id="Linkbutton1" class="btn btn-default botm2" xmlns:asp="#unknown" href="javascript:__doPostBack(&#39;Linkbutton1&#39;,&#39;&#39;)"> Directions to TNEB</a>
+        <a class="btn btn-default botm2" href="ViewLabs.aspx"  >Approved Testing Labs</a><br>
+          <a class="btn btn-default botm2" href="../PressRelease/files/PR-231120211154Eng.pdf"  >TNERC-Bank Account</a><br>
+        
+        <a class="btn btn-default botm2" href="RTI.aspx">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RTI&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+        
+        <a id="Linkbutton2" class="btn btn-default botm2" xmlns:asp="#unknown" href="javascript:__doPostBack(&#39;Linkbutton2&#39;,&#39;&#39;)"> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Public Notice&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </a>
+        
+
+        <a id="Linkbutton3" class="btn btn-default botm2" xmlns:asp="#unknown" href="javascript:__doPostBack(&#39;Linkbutton3&#39;,&#39;&#39;)"> &nbsp; &nbsp; &nbsp;Concept Paper&nbsp; &nbsp; &nbsp; </a>
+        
+
+        <a class="btn btn-default botm2" href="otherOrders.aspx"  >&nbsp; &nbsp; &nbsp;Other Orders &nbsp; &nbsp; &nbsp;</a><br>
+        <a class="btn btn-default botm2" href="ViewSAC.aspx"  >&nbsp; &nbsp; &nbsp;SAC Members &nbsp; &nbsp; &nbsp;</a><br>
+        
+        <a id="Linkbutton4" class="btn btn-default botm2" xmlns:asp="#unknown" href="javascript:__doPostBack(&#39;Linkbutton4&#39;,&#39;&#39;)"> &nbsp; &nbsp; &nbsp;&nbsp; Recruitment&nbsp;  &nbsp; &nbsp; &nbsp;</a>
+        
+        
+         <a id="Linkbutton5" class="btn btn-default botm2" xmlns:asp="#unknown" href="javascript:__doPostBack(&#39;Linkbutton5&#39;,&#39;&#39;)"> &nbsp; &nbsp;Consumer Corner&nbsp; &nbsp;</a>
+        
+
+        <a class="btn btn-default botm2" href="OtherOrder.aspx"  >&nbsp; &nbsp; ACT,Go & Policies   </a><br>
+      <a class="btn btn-default botm2" href="ViewCircular.aspx"  > &nbsp; &nbsp;&nbsp; Circular/News &nbsp;&nbsp;&nbsp;</a><br>
+        <a class="btn btn-default botm2" href="ViewAR.aspx"  >&nbsp; &nbsp;&nbsp;  Annual Report &nbsp; &nbsp; &nbsp; </a><br>
+        <a class="btn btn-default botm2" href="ViewCase.aspx"  >  &nbsp;&nbsp; &nbsp;Petition Status &nbsp; &nbsp;&nbsp; </a><br>
+        <a class="btn btn-default botm2" href="ViewCaseSum.aspx"  > &nbsp;Petition Summary&nbsp; </a><br>
+        
+        <a class="btn btn-default botm2" href ="ViewWebsiteLink.aspx"   >&nbsp;&nbsp;&nbsp;Other Websites &nbsp;&nbsp;&nbsp;</a><br>
+       
+        
+
+        <a id="Linkbutton6" class="btn btn-default botm2" xmlns:asp="#unknown" href="javascript:__doPostBack(&#39;Linkbutton6&#39;,&#39;&#39;)"> &nbsp; &nbsp;Best Practices &nbsp; &nbsp;</a>
+            
+         <a class="btn btn-default botm2" href="Contactus.aspx"   >&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Contact Us &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</a><br>
+        <a class="btn btn-default botm2" href="screenreader.htm"   >Screen Reader Access</a><br>
+        
+   
+    </a><br>
+</div>
+  
+ 
+</div>
+     
+
+<div class="col-md-10 col-sm-12 pn">
+     
+    <div class="col-md-9 col-sm-12 nid_ine" style="padding-top:20px;">
+
+	    <div class="row">
+
+
+
+
+             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+               <li data-target="#myCarousel" data-slide-to="3"></li>
+               <li data-target="#myCarousel" data-slide-to="4"></li>
+ 		       <li data-target="#myCarousel" data-slide-to="5"></li>
+             
+
+           </ol>
+		  
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images\08.jpg" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">Solar</div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <img src="images\03.jpg" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+	 
+	 <div class="item">
+              <img src="images\04.jpg" alt="Fourth slide">
+              <div class="container">
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>	
+
+	  <div class="item">
+              <img src="images\05.jpg" alt="Fifth slide">
+              <div class="container">
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>	
+
+               <div class="item">
+              <img src="images\06.jpg" alt="Sixth slide">
+              <div class="container">
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>	
+
+	
+          </div> 
+
+                  
+    
+         <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
+        </div><!-- /.carousel  !-->
+
+
+
+        </div>
+
+
+         <div class="row draft"> 
+    	    <div class="col-md-12 pn">
+        	    <h2>Recent Orders</h2>
+                <ul>
+                        <li align='justify'>  <a href='./Orders/files/Omborder-27 of 2026030920261555.pdf' target='_blank'>27 of 2026- Appeal against account closure of disconnected services and refund of security deposits (English)</a><br><li align='justify'>  <a href='./Orders/files/Omborder-28 of 2026310820261513.pdf' target='_blank'>28 of 2026- Appeal against the demand raised in Temporary Supply service connection, Seeking closure of the account and refund the available deposit (English)</a><br><li align='justify'>  <a href='./Orders/files/Omborder-26 of 2026240820261716.pdf' target='_blank'>26 of 2026- Appeal against Audit shortfall for defective meter in LTCT Service (English)</a><br><li align='justify'>  <a href='./Orders/files/Omborder-58 of 2026200820261658.pdf' target='_blank'>58 of 2026- Refund of Security deposit on closure of temporary supply (Withdrawn) English</a><br><li align='justify'>  <a href='./Orders/files/Omborder-29 of 2026180820261635.pdf' target='_blank'>29 of 2026- Appeal regarding shifting of service line of LT SC 151-010-530 and objection to shifting of meter of LTSC 151-002-14 (Withdrawn) English</a><br><li align='justify'>  <a href='./Orders/files/Omborder-24 of 2026170820261714.pdf' target='_blank'>24 of 2026- Appeal to replace or relocate the oil filled Distribution Transformer located within the Appellant apartment at Licensee cost (English)</a><br></li> 
+                    
+                  
+			    </ul>
+            </div>
+        </div>
+        <div class="row draft"> 
+    	    <div class="col-md-12 pn">
+        	    <h2>Draft Regulation /Concept Paper/Court Hearing</h2>
+                <ul>
+                        <li align='justify'><a href='./Circular/files/22042026-220420261730.pdf' target='_blank'>Mandatory requirement of soft copies (in word & pdf) for filing of petitions / counter affidavits / other documents. </a></li><li align='justify'><a href='./Circular/files/02062026-020620261044.pdf' target='_blank'>TNERC - Court sitting/hearing will not be conducted with effect from 02.06.2026 </a></li>
+                   
+			    </ul>
+            </div>
+        </div>
+    
+	     <div class="row draft"> 
+    	    <div class="col-md-12 pn">
+        	    <h2>Latest Regulations</h2>
+                <ul>
+                        <li align='justify'>  <a href='./Regulation/files/Reg-260520261933Eng.pdf' target='_blank'>SLDC-26-1 TNERC (State Load Dispatch Centre Functions and Accountability) Regulations, 2026</a><li align='justify'>  <a href='./Regulation/files/Reg-220620261752Eng.pdf' target='_blank'>GC 01/2026 Tamil Nadu Electricity Grid Code, 2026</a><li align='justify'>  <a href='./Regulation/files/Reg-200920251103Eng.pdf' target='_blank'>GEOA-25-1 TNERC (Terms and Conditions for Green Energy Open Access) Regulations, 2025.</a></li> 
+                   
+			    </ul>
+            </div>
+        </div>
+
+
+     <div class="row draft"> 
+    	    <div class="col-md-12 pn">
+                
+                        <BR />
+                        <h2>Thirukural</h2>
+                        <table align="center" cellpadding="5" cellspacing="5" class="draft">
+                         <tr>
+                         <td class="auto-style2"> <img src="Images/Thirukural.JPG" /></td>
+                         <td width="50%" class="auto-style3"><p align="justify" class="auto-style4"> Like balance weighs just after balancing, unbiased to sides is the hallmark of the wise. </p></td>
+                            </tr>
+                        </table>
+                        <br />
+                        
+                    
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="col-md-3 col-sm-12" style="padding-right:0; padding-top:20px;">
+	    <div class="col-md-12 pn news">
+    		 <a href=""><img src="images\news.png" alt="news"></a>  <a href="index1.aspx">[தமிழ்]</a>
+            <div class="clearfix"> </div>
+            <div class="mar_b">
+
+                <marquee scrollamount="2" scrolldelay="20" behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start()" ;="" class="auto-style5">
+                <ul>
+                        <strong>
+                            <li align='justify'><a href='./Circular/files/22042026-220420261730.pdf' target='_blank'>Mandatory requirement of soft copies (in word & pdf) for filing of petitions / counter affidavits / other documents. <p></a></li> <li align='justify'><a href='./Circular/files/02062026-020620261044.pdf' target='_blank'>TNERC - Court sitting/hearing will not be conducted with effect from 02.06.2026 <p></a></li> 	            		    
+        	             </strong>
+               </ul></marquee>
+           </div>
+            
+          
+           <div class="col-md-12 pn news">  </div>
+            
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+</section>
+     
+    
+<!--navigation-start-->
+<div class="wrap-navi">
+<div class="container">
+<div class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+ 
+ 
+ <div  >
+        <ul class="nav navbar-nav">
+     <li> <a href="" > <b>    </b> TNERC,4th Floor , SIDCO Corporate Office Building.
+Guindy, Chennai-600 032,Phone :044 29535806,29535816 ,  email:tnerc@nic.in </a></li> 
+  
+    </ul>
+ </div><!--/.nav-collapse -->
+     
+</div>
+</div>
+
+    </div>
+<footer>
+
+	<div class="foo_b">
+	<div class="container">
+            
+            <br />
+        Disclaimer: While every care has been taken to 
+        ensure the accuracy of information furnished in this website, TNERC does 
+        not accept any responsibility or liability for any damage or loss to any
+         person for the result of any action taken on the basis of this 
+        information. However, TNERC shall be obliged if errors/omissions are 
+        brought to its notice for carrying out corrections in the next update.pdate.</div>
+	<div class="container" align="center"><b>Best Viewed in Chrome. Best Resolution to view 1280*768 px</b></div>
+	</div>
+</footer>
+ 
+<script type="text/javascript" src="css/header_footer.js"></script>
+
+
+
+ <script src="css/js-media.js"></script><script src="css/jquery-3.js"></script><script src="css/bootstrap_002.js"></script><script src="css/jquery_002.js"></script><script src="css/jquery.js"></script><script src="css/bootstrap.js"></script>
+    
+<!--js-end-->
+
+    </form>
+
+    </div>
+  
+</body><!--navigation-start--> 

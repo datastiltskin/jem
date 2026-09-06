@@ -1,0 +1,2674 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<html lang="kn" translate="no" class="notranslate">
+
+<head>
+<meta name="google-site-verification" content="xPj3x9LtOkfce6ZFLqQ8b2tMa-qjhgtkvVoI26VsZQI" />
+<link rel="shortcut icon" href="/resources/images/reralogo.ico">
+<title>ಕರ್ನಾಟಕ ರೇರಾ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="x-content-type-options" content="nosniff">
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+<!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+<meta http-equiv="X-XSS-Protection" content="1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- <meta name="robots" content="noindex" /> -->
+<meta name="google" content="notranslate">
+<!-- <meta http-equiv="refresh" content="300"> -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	
+<link rel="stylesheet" href="/resources/css/style2.css">
+
+<link href="/resources/css/font-awesome.min.css" rel="stylesheet"/>
+
+<script src="/resources/js/bootstrap.min.js"></script>
+<script src="/resources/js/bootsnav.js"></script>
+<script src="/resources/js/jquery.bootstrap.newsbox.js"></script>
+<script src="/resources/js/jquery.flexslider.js"></script>
+<script src="/resources/js/tickerme.js"></script>
+<script src="/resources/js/swithcer.js"></script>
+<script src="/resources/js/datatables.js" type="text/javascript"></script>
+<script src="/resources/js/jQuery.print.js"></script>
+
+<script src="/resources/js/common.js"></script> 
+
+<script src="/resources/js/jquery.ticker.js?xzx=099"></script>
+<script src="/resources/js/site.js"></script>
+<script src="/resources/js/commdropdown.js"></script> 
+<script src="/resources/js/tripleencoding.js"></script>  
+<script src="/resources/js/validation.js"></script>  
+<script src="/resources/js/raphael-min.js"></script> 
+<script src="/resources/js/morris.min.js"></script>  
+<script type="text/javascript" language="javascript" src="/resources/js/jquery.dataTables.js"></script>
+<script src="/resources/js/DatePicker/jquery.datepick.js"></script>
+<link href="/resources/js/DatePicker/flora.datepick.css" rel="stylesheet"/>
+
+<script>
+function disableBackButton() {
+window.history.forward();
+}
+
+if(top!=self){
+    top.location.replace(document.location);
+    document.location='';
+}
+
+_ctxpath='/';
+
+
+if (!navigator.onLine) { 
+	document.body.innerHTML = 'Loading...'; 
+	window.location = 'ErrorPage.html'; 
+} 
+	 
+jQuery(document).ready(function(){
+		  jQuery(function() {
+		        jQuery(this).bind("contextmenu", function(event) {
+		            event.preventDefault();
+		            alert('Due to security reason, Right click is not allowed!!')
+		        });
+		    });
+		  /* eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();',17,17,'||i|function|debugger|20|length|if|try|constructor|||else|catch||5000|setTimeout'.split('|'),0,{})) */
+});
+
+window.oncontextmenu = function () {
+	    return false;
+}
+
+$(document).keydown(function (event) {
+	    if (event.keyCode == 123) {
+	    	alert('Due to security reason, This function has been disabled!!')
+	        return false;
+	    }
+	    else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74) || (event.ctrlKey && event.keyCode == 85) || (event.ctrlKey && event.shiftKey && event.keyCode == 85) || (event.ctrlKey && event.shiftKey && event.keyCode == 67)
+	    		|| (event.metaKey && event.altKey && event.keyCode == 73) || (event.metaKey && event.altKey && event.keyCode == 74) || (event.metaKey && event.altKey && event.keyCode == 85) || (event.metaKey && event.altKey && event.keyCode == 67)) {
+	    	alert('Due to security reason, This function has been disabled!!')
+	    	return false;
+	    }
+});
+	
+$(window).on('load', function() {
+	$("#loader").fadeOut("slow");;
+});
+
+</script>
+
+<style>
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+#loader {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    //background: url(/resources/images/reralogo.png) center;
+    z-index:9999;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loader::after {
+    content:'';
+    display:block;
+    position:absolute;
+    border: 12px solid #f3f3f3;
+    left:48%;top:40%;
+    width:100px;height:100px;
+    border-style:solid;
+    border-color:#3948B1;
+    border-top-color:transparent;
+    
+    //background: url(/resources/images/reralogo.png) center; 
+    border-width: 12px;
+    border-radius:50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+</style>
+
+</head>
+
+<body style="width: 100%;height: 100%;top:0px !important;" onload="disableBackButton()" >
+		<!--loader-->
+		<div id="loader"></div>
+		
+		<header id="header">
+			
+
+
+
+
+
+
+
+<p style="float: left;background: #3948B1;color:white;margin-bottom: 0;padding-right: 10px;padding-left: 10px;font-weight: bold;border: #aecbd9 1px solid;" class="officialclass">ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರದ ಅಧಿಕೃತ ಜಾಲತಾಣ</p>
+
+
+	
+     	
+     		<a style="float: right;background: #3948B1;color:white;padding-right: 10px;font-weight: bold;border-bottom: #aecbd9 1px solid;" href="/changeLanguage?language=en">&nbsp;English &nbsp;</a>
+     	
+     	
+    
+
+
+    	
+
+  <nav style="background-color: #3948b1 !important"
+    class="target navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
+    <div class="container">
+
+    </div>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+      <ul class="navbar-nav">
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="/home" style="color: #aecbd9; font-weight: bold;">ಮುಖಪುಟ</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;"> ರೇರ ವಿವರಗಳು</a>
+          <ul class="dropdown-menu">
+			
+            <li><a class="dropdown-item2" href="/aboutUs">ರೇರ ವಿವರಗಳು</a></li>
+            <li><a class="dropdown-item2" href="/orgStructurePage">ಸಂಸ್ಥೆಯ ಫಲಕ</a></li>
+            <li><a class="dropdown-item2" href="/mediaGallery">ರೇರ ಚಿತ್ರಗಳು</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;">ಕೆ-ಆರ್‌ಇಎಟಿ</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item2" href="/aboutKREAT">ಕೆ-ಆರ್‌ಇಎಟಿ ವಿವರಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/objectiveKREAT">ಉದ್ದೇಶಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/organisationChartKREAT">ಸಂಸ್ಥೆಯ ಫಲಕ</a></li>
+			<li><a class="dropdown-item2" href="/filingAppeal">ಮೇಲ್ಮನವಿಯನ್ನು ಸಲ್ಲಿಸು</a></li>
+			<li><a class="dropdown-item2" href="/enforcementOfTribunal">ನ್ಯಾಯ ಮಂಡಳಿಯ ಜಾರಿ</a></li>
+			<li><a class="dropdown-item2" href="/regulationsKREAT">ನಿಯಮಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/workingHoursKREAT">ಕೆಲಸದ ಸಮಯ</a></li>
+			<li><a class="dropdown-item2" href="/contactKREAT">ಸಂಪರ್ಕಿಸಿ</a></li>
+			<li><a class="dropdown-item2" href="/tribunalDailyCauseList">ದೈನಂದಿನ ಕಾರಣ ಪಟ್ಟಿ</a></li>
+			<li><a class="dropdown-item2" href="/viewHearingList">ದೈನಂದಿನ ಆದೇಶಗಳು</a></li>			
+			<li><a class="dropdown-item2" href="/tribunalDisposedList">ತೀರ್ಪುಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/notificationsKREAT">ಸಾರ್ವಜನಿಕ ಪ್ರಕಟಣೆ</a></li>
+			<li><a class="dropdown-item2" href="/resources/notifications/KREAT_Notification3.pdf" target="_blank">ಕೆ-ಆರ್‌ಇಎಟಿ ಶುಲ್ಕ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;">ನೋಂದಣಿ</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item2" href="/initProjectRegistration">ಯೋಜನೆಯ ನೋಂದಣಿ</a></li>
+			<li><a class="dropdown-item2" href="/initAgentRegistration">ಏಜೆಂಟ್ ನೋಂದಣಿ</a></li> 
+			<li><a class="dropdown-item2" href="/complaintHome">ದೂರು ನೋಂದಣಿ</a></li>
+			<li><a class="dropdown-item2" href="/applyForExtensionPage">ಯೋಜನೆಯ ವಿಸ್ತರಣೆಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ</a></li>
+			<li><a class="dropdown-item2" href="/changeRequestPage">ಬದಲಾವಣೆ ವಿನಂತಿಗಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ</a></li>
+			<li><a class="dropdown-item2" href="/changeRequestAgentPage">Apply for Agent Change Request</a></li>
+			<li><a class="dropdown-item2" href="/postRegLoginPage">ಪೋಸ್ಟ್ ನೋಂದಣಿ ಮತ್ತು ತ್ರೈಮಾಸಿಕ ನವೀಕರಣ</a></li>
+			<li><a class="dropdown-item2" href="/reratransfer/applyForTransferofRights">ಹಕ್ಕುಗಳ ವರ್ಗಾವಣೆ</a></li>
+			
+			<li><a class="dropdown-item2" href="/applyForModificationPage">ಯೋಜನೆಯ ಮಾರ್ಪಾಡುಗಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ</a></li>
+			<li><a class="dropdown-item2" href="/applyForCompletionPage">ಯೋಜನೆ ಪೂರ್ಣಗೊಳಿಸುವಿಕೆಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ</a></li>
+			<li><a class="dropdown-item2" href="/applyForAgentRenewal">ಏಜೆಂಟ್ ನವೀಕರಣಕ್ಕಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ</a></li>
+			<li><a class="dropdown-item2" href="/applyForAnnualReport">ವಾರ್ಷಿಕ ಲೆಕ್ಕಪರಿಶೋಧನೆ ವರದಿಯನ್ನು ಸಲ್ಲಿಸಿ</a></li>
+			
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;">ಸೇವೆಗಳು</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item2" href="/viewAllProjects">ಯೋಜನೆಯ ಸ್ಥಿತಿ</a></li>
+			<li><a class="dropdown-item2" href="/viewAllAgents">ಏಜೆಂಟ್ ಸ್ಥಿತಿ</a></li>
+			<li><a class="dropdown-item2" href="/viewAllComplaints">ದೂರು ಸ್ಥಿತಿ</a></li>
+			<li><a class="dropdown-item2" href="/viewAllComplaintDetails">Complaints Under Process</a></li>
+			<li><a class="dropdown-item2" href="/viewAllJudgements">Search Orders</a></li>
+			<li><a class="dropdown-item2" href="/viewAllInterimOrders">ಮಧ್ಯಂತರ ಆದೇಶಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/viewAllProjectOrders">ಪ್ರಾಧಿಕಾರದ ಆದೇಶಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/viewAllAOorders">Orders of Adjudicating Officer</a></li>
+			<li><a class="dropdown-item2" href="/viewAllLokAdalatComplaints">ಲೋಕ ಅದಾಲತ್ ಆದೇಶಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/viewRenewalProjects">ಯೋಜನೆಯ ವಿಸ್ತರಣೆ ಸ್ಥಿತಿ</a><li>
+			
+			<li><a class="dropdown-item2" href="/pendingPaymentPage">ಆನ್‌ಲೈನ್ ಪಾವತಿ ಸ್ಥಿತಿ</a></li>
+			
+			<li><a class="dropdown-item2" href="/applyForCertifiedCopy">ದೃಢೀಕೃತ ಪ್ರತಿಯನ್ನು ಪಡೆಯಲು ಮನವಿ</a></li>
+			<li><a class="dropdown-item2" href="/viewRevenueRecoveryList">ಭೂಕಂದಾಯ ವಸೂಲಾತಿ ಪ್ರಮಾಣ ಪತ್ರ ಪಟ್ಟಿ</a></li>
+			<li><a class="dropdown-item2" href="/rtiPage">ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯ್ದೆ</a></li>
+			<li><a class="dropdown-item2" href="/projectDailyCauseList">ಯೋಜನೆಯ ದೈನಂದಿನ ಕಾರಣ ಪಟ್ಟಿ</a></li>
+	   		<li><a class="dropdown-item2" href="/agentDailyCauseList">ಏಜೆಂಟ್ ದೈನಂದಿನ ಕಾರಣ ಪಟ್ಟಿ</a></li>
+	   		
+	   		
+	   		
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;">ದೂರುಗಳು</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item2" href="/dailyCauseList">ದೈನಂದಿನ ಕಾರಣ ಪಟ್ಟಿ ( ನ್ಯಾಯ ನಿರ್ಣಯಾಧಿಕಾರಿ )</a></li>
+            <li><a class="dropdown-item2" href="/audjudicatingDailyOrderList">ದೈನಂದಿನ ಆದೇಶಗಳು ( ನ್ಯಾಯ ನಿರ್ಣಯಾಧಿಕಾರಿ )</a></li>
+            <li><a class="dropdown-item2" href="/authorityCauseList">ದೈನಂದಿನ ಕಾರಣ ಪಟ್ಟಿ ( ಪ್ರಾಧಿಕಾರ )</a></li>
+            <li><a class="dropdown-item2" href="/authorityDailyOrderList">ದೈನಂದಿನ ಆದೇಶಗಳು ( ಪ್ರಾಧಿಕಾರ )</a></li>
+			<li><a class="dropdown-item2" href="/promoterComplaintReport">ಪ್ರವರ್ತಕವಾರು ದೂರುಗಳ ವರದಿ</a></li>
+			<li><a class="dropdown-item2" href="/projectComplaintReport">ಯೋಜನವಾರು ದೂರುಗಳ ವರದಿ</a></li>
+			<li><a class="dropdown-item2" href="/complaintRealizationList">ಫಿರ್ಯಾದುಗಳಲ್ಲಿ ವಸೂಲಾದ ಪ್ರಕರಣ ಪಟ್ಟಿ</a></li>
+          </ul>
+        </li>
+
+         <li class="nav-item"> <a class="nav-link" href="/helpdeskLoginPage" style="color: #aecbd9; font-weight: bold;">ಸಹಾಯವಾಣಿ</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;">ನೋಂದಾಯಿಸದ ಯೋಜನೆಗಳು</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item2" href="/unregProjectList">ತನಿಖೆಯ ಅಡಿಯಲ್ಲಿ ಯೋಜನೆಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/reportRegForm">ನೋಂದಾಯಿಸದ ಯೋಜನೆಗಳನ್ನು ವರದಿ ಮಾಡಿ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;">ಪ್ರಕಟಣೆ </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item2" href="/circularPage">ಸುತ್ತೋಲೆಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/notificationPage">ಸಾರ್ವಜನಿಕ ಪ್ರಕಟಣೆ</a></li>
+			<li><a class="dropdown-item2" href="/tenderPage">ಟೆಂಡರ್ ಪ್ರಕಟಣೆ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;">ಸಹಾಯ </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item2" href="/downloadPage">ಡೌನ್ಲೋಡ್ಗಳು</a></li>
+			
+			<li><a class="dropdown-item2" href="/resources/staticpage/FAQ.pdf" target="_blank">ರೇರಾ ಕಾಯ್ದೆಯ ಪುನರಾವೃತ ಪ್ರಶ್ನೆಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/resources/staticpage/KARNATKA_FAQs.pdf" target="_blank">ರೇರಾ ನಿಯಮಗಳ ಪುನರಾವೃತ ಪ್ರಶ್ನೆಗಳು</a></li>
+			<li><a class="dropdown-item2" href="/resources/downloads/RERA_FAQ.pdf" target="_blank">ಪುನರಾವೃತ ಪ್ರಶ್ನೆಗಳು</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="/contactUsPage" style="color: #aecbd9; font-weight: bold;">ಸಂಪರ್ಕಿಸಿ</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"
+            style="color: #aecbd9; font-weight: bold;">ಲಾಗ್ ಇನ್</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item2" href="/authorityLoginPage">ಅಧಿಕಾರಿಗಳ ಲಾಗಿನ್</a></li>
+            
+            <li><a class="dropdown-item2" href="/rerauser/loginPage">ಟೆಂಪ್ ಲಾಗಿನ್</a></li>
+            <li><a class="dropdown-item2" href="/publicDomainLoginPage">ಸಾರ್ವಜನಿಕರ ಲಾಗಿನ್</a></li>
+            <li><a class="dropdown-item2" href="/complaintHome">ದೂರು ಲಾಗಿನ್</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div> <!-- navbar-collapse.// -->
+  </nav>
+<div class="target">
+    
+<div class="container">
+
+
+
+
+
+
+
+<div class="row" style="flex-wrap: nowrap;margin: auto">
+<div class="col-md-3" style="background: linear-gradient(to right, #3948B1 0%, #AECBD9 100%, #AECBD9 100%) repeat scroll 0 0;">
+<img src="/resources/images/GOK.png" title="ಕರ್ನಾಟಕ ಸರ್ಕಾರ" style="float: left;" height="70px">
+<img src="/resources/images/cm2026.jpeg" alt="Hon'ble Chief Minister" title="ಮಾನ್ಯ ಮುಖ್ಯಮಂತ್ರಿಗಳು" style="border-radius: 200%;float: left;margin-right: 5px;" height="70" width="70"/>
+<span style="font-weight: bold;float: left;text-align: left;margin-top: 3%;color: white;font-size: 12px!important;" class="aboutRera">ಶ್ರೀ ಡಿ.ಕೆ. ಶಿವಕುಮಾರ್<br><small>ಮಾನ್ಯ ಮುಖ್ಯಮಂತ್ರಿಗಳು</small></span>
+</div>
+<div class="col-md-6 top-center-title1"  style="flex:auto;">
+       ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರ <br>ಕರ್ನಾಟಕ ಸರ್ಕಾರ
+</div>
+<div class="col-md-3" style="background: linear-gradient(to left, #3948B1 0%, #AECBD9 100%, #AECBD9 100%) repeat scroll 0 0;margin-left: auto;">
+<img src="/resources/images/logos.png" title="ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರ" alt="" height="70px" style="float: right;">
+<img src="/resources/images/hm2023.jpg" alt="Hon'ble Housing Minister" title="ಮಾನ್ಯ ವಸತಿ ಸಚಿವರು" style="border-radius: 200%;float: right;margin-left: 5px;" height="70" width="70"/>
+<span class="aboutRera" style="font-weight: bold;float:right;text-align: right;margin-top: 3%;color:white;">ಶ್ರೀ ಬಿ.ಝಡ್. ಜಮೀರ್<br>ಅಹಮದ್ ಖಾನ್<br><small>ಮಾನ್ಯ ವಸತಿ ಸಚಿವರು</small></span>
+</div>
+</div> 
+</div>
+<div class="backgroundimage">
+<div class="container">
+
+<div class="row" style="flex-wrap: nowrap;margin: auto;">
+<div class="col-md-2"></div>
+<div class="col-md-2">
+<p id="blink"><a style="font-weight: bolder; color:#ea3333; font-size: 17px !important; text-align: center;" target="_blank" href="/viewDefaultProjects">DEFAULT PROJECT LIST</a></p>
+</div>
+<div class="col-md-4 top-center-title1"  style="flex:auto;"></div>
+<div class="col-md-2">
+<p id="blink2"><a style="font-weight: bolder; color:#39b151; font-size: 17px !important; text-align: center;" target="_blank" href="/viewAllProjects">KNOW PROJECT STATUS</a></p>
+</div>
+<div class="col-md-2"></div>
+</div>
+
+<marquee style="font-size: 20px; font-weight: bolder; color:#3948B1;" onmouseover="this.stop();" onmouseout="this.start();">
+
+
+
+
+
+     				
+     					
+     				
+     				
+     			
+
+							
+							
+							<a target="_href" href='/reraDocument?DOC=L8gGCS5U%2FLa4wdrxjte4pg%3D%3D'><font style="color:#3948B1; font-size: 20px;">Extension of registration of real estate projects due to ‘Force Majeure’ under the provisions of Real Estate (Regulation and Development Act), 2016 as per the Advisory issued by Ministry of Housing and Urban Affairs (Housing Division)</font></a>
+							
+							
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+
+     				
+     					
+     				
+     				
+     			
+
+							
+							
+							<a target="_href" href='/reraDocument?DOC=2zuiu1XO%2BYHotJ7zUy%2F3Ww%3D%3D'><font style="color:#3948B1; font-size: 20px;">Imposing penalty for delay in submission/ non-submission of Quarterly Updates for financial year 2026-27</font></a>
+							
+							
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+
+     				
+     					
+     				
+     				
+     			
+
+							
+							
+							<a target="_href" href='/reraDocument?DOC=PD4A0Ub6MrmThAI3rQsELg%3D%3D'><font style="color:#3948B1; font-size: 20px;">Submission of Annual Audit Report of the financial year 2025-26 as per section 4(2)(l)(D) of the RERA Act, 2016</font></a>
+							
+							
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+  
+  </marquee>
+<div class="row" style="margin-left: 2%;flex-wrap: nowrap;margin: auto">
+    <div class="col-lg-7 aboutRera">
+<br>
+                            <h1>ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರದ ಬಗ್ಗೆ</h1>
+                            <div class="border">
+                                <div class="orange"></div>
+                                <div class="black"></div>
+                            </div>
+                            <div style="border-left: 6px solid #3948b1;padding-left: 2%;">
+                            <p style="text-align: justify;">ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರದ ಅಧಿಕೃತ ಜಾಲತಾಣಕ್ಕೆ ಸುಸ್ವಾಗತ. ರಿಯಲ್ ಎಸ್ಟೇಟ್ ಉದ್ಯಮದ ಎಲ್ಲಾ ಹೂಡಿಕೆದಾರರ ಅನುಕೂಲಕ್ಕಾಗಿ ಈ ಜಾಲತಾಣವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲಾಗಿದೆ, ವಿಶೇಷವಾಗಿ ಸಾಮಾನ್ಯ ಜನರು ಮತ್ತು ಗ್ರಾಹಕರಿಗಾಗಿ. ಈ ಜಾಲತಾಣವನ್ನು ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ಧಿ) ಕಾಯ್ದೆ, 2016 ರ ಕಲಂ 4(3) ಅಡಿಯಲ್ಲಿ ಅಭಿವೃದ್ಧಿಪಡಿಸಲಾಗಿದೆ.</p>
+<p class="aboutRera2" style="text-align: justify;">ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ವಸತಿ ಇಲಾಖೆ, ಕರ್ನಾಟಕ ರಾಜ್ಯದಲ್ಲಿ ಕಾಯ್ದೆಯ ಅನುಷ್ಠಾನಕ್ಕೆ ನೋಡೆಲ್ ಇಲಾಖೆಯಾಗಿದೆ. ಈ ಕಾಯ್ಧೆಯು 1ನೇ ಮೇ 2017 ರಿಂದ ಜಾರಿಗೆ ಬಂದಿದ್ದು, ನಿಯಮಗಳನ್ನು ಕರ್ನಾಟಕ ಸರ್ಕಾರವು 10ನೇ ಜುಲೈ 2017 ರಂದು ಅಧಿಕೃತವಾಗಿ ಪ್ರಕಟಿಸಿದೆ.</p>
+</div>
+                        </div>
+                        <div class="col-lg-2">
+                        <div class="col-services2">
+        <div style="text-align: center;">
+        <a class="anchorclass" href="/initProjectRegistration">
+          <img src="https://img.icons8.com/plasticine/64/000000/client-company.png" />
+           <p>ಯೋಜನೆ<br>ನೋಂದಣಿ</p>
+           <p>ನೋಂದಣಿಗೆ ಅನ್ವಯಿಸಲಾದ ಯೋಜನೆಗಳು<br>10460</p>
+        </a>
+        </div>
+        </div>
+                        </div>
+                        <div class="col-lg-2">
+                        <div class="col-services2">
+        <div style="text-align: center;">
+        <a class="anchorclass" href="/initAgentRegistration">
+          <img src="https://img.icons8.com/color/64/000000/real-estate-agent.png" />
+          <p>ಏಜೆಂಟ್<br>ನೋಂದಣಿ</p>
+          <p>ನೋಂದಣಿಗೆ ಅನ್ವಯಿಸಲಾದ ಏಜೆಂಟ್ ಗಳು<br>8380</p>
+          </a>
+        </div>
+      </div>
+                        </div>
+                        </div>
+                        
+                        <div class="row" style="margin-left: 2%;flex-wrap: nowrap;margin: auto">
+    <div class="col-lg-7 aboutRera">
+
+                            <h1>ರೇರಾ ಕಾಯ್ದೆಯ ಬಗ್ಗೆ</h1>
+                            <div class="border">
+                                <div class="orange"></div>
+                                <div class="black"></div>
+                            </div>
+
+                            <p style="border-left: 6px solid #3948b1;padding-left: 2%;text-align: justify;">ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ಧಿ) ಕಾಯ್ದೆ, 2016 ಅನ್ನು ಭಾರತ ಸರ್ಕಾರ ಅಂಗೀಕರಿಸಿದ ಹೆಗ್ಗುರುತು ಶಾಸನಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ. ಭಾರತದಲ್ಲಿ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ಕ್ಷೇತ್ರವನ್ನು ಸುಧಾರಿಸುವುದು ಪಾರದರ್ಶಕತೆ, ನಾಗರೀಕ ಕೇಂದ್ರಿತತೆ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ಆರ್ಥಿಕ ಶಿಸ್ತನ್ನು ಉತ್ತೇಜಿಸುವುದು ಇದರ ಉದ್ದೇಶ. ಇದು ಭಾರತದ ವಿಶಾಲ ಮತ್ತು ಬೆಳೆಯುತ್ತಿರುವ ಆರ್ಥಿಕತೆಗೆ ಅನುಕೂಲಕರವಾಗಿರುತ್ತದೆ, ಏಕೆಂದರೆ ಭವಿಷ್ಯದಲ್ಲಿ ಅನೇಕ ಜನರು ರಿಯಲ್ ಎಸ್ಟೇಟ್ ಕ್ಷೇತ್ರದಲ್ಲಿ ಹೂಡಿಕೆ ಮಾಡುತ್ತಾರೆ.<br><br> </p>
+                        
+                        <a class="notification-readmore2" href="/aboutUs" target="_blank">ಮತ್ತಷ್ಟು ಓದಿ</a>
+                        </div>
+                        <!-- <div class="col-lg-1"></div> -->
+                        <div class="col-lg-2">
+                        <div class="col-services2">
+        <div style="text-align: center;">
+        <a class="anchorclass" href="/complaintHome">
+          <img src="https://img.icons8.com/color/64/000000/complaints.png" />
+          <p>ದೂರು<br>ನೋಂದಣಿ</p>
+          <p>ನೋಂದಾಯಿಸಲಾಗಿದೆ<br>13692</p>
+        </a>
+        </div>
+      </div>
+                        </div>
+                        <div class="col-lg-2">
+                        <div class="col-services2">
+        <div style="text-align: center;">
+        <a class="anchorclass" href="/applyForExtensionPage">
+          <img src="https://img.icons8.com/color/64/000000/story-time.png" />
+          <p>ಯೋಜನೆಯ ವಿಸ್ತರಣೆ<br>ನೋಂದಣಿ</p>
+          <p>ಅನುಮೋದಿಸಲಾಗಿದೆ<br>977</p>
+        </a>
+        </div>
+      </div>
+                        </div>
+                        
+                        </div>
+           </div>             
+
+    
+
+    <div class="rows">
+
+      <div class="notification-width" style="box-sizing: content-box !important;">
+        <div class="notification-header title-size-bold font">ಖರೀದಿದಾರರಿಗಾಗಿ</div>
+        <div class="panel panel-primary  text-size notification-items   font">
+          <div class="panel-body">
+            <ul class="news bs-news-1" style="overflow-y: hidden; height: 150px;">
+            
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=QuKqpiitJsqAcPp6DqDGig%3D%3D'>1. Model Form of Allotment Letter</a>
+					
+     				
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=CSgn7Cv94KrE289WKICh7g%3D%3D'>2. ಪುನರಾವೃತ ಪ್ರಶ್ನೆಗಳು</a>
+					
+     				
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     			<a href="/resources/staticpage/Real_Estate_Act.pdf" class="services-click" target="_blank">3. ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ಧಿ) ಅಧಿನಿಯಮ, 2016
+     			</a>
+     				
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     			<a href="/resources/staticpage/FinalRERA_Rules-2017_kannada.pdf" class="services-click" target="_blank">4. ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ಧಿ) ನಿಯಮಗಳು, 2017
+     			</a>
+     				
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/viewAllProjects" class="services-click">5. ನಿಮ್ಮ ಯೋಜನೆಯ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/viewAllAgents" class="services-click">6. ನಿಮ್ಮ ಏಜೆಂಟ್ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/viewAllComplaints" class="services-click">7. ದೂರು ಸ್ಥಿತಿ ಪರಿಶೀಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/pendingPaymentPage" class="services-click">8. ಪಾವತಿ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/conciliationLogin" class="services-click">9. ದೂರು ನೊಂದಣಿಗಾಗಿ ಇಲ್ಲಿ ಒತ್ತಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/conciliationLogin" class="services-click">10. ಮಧ್ಯಸ್ಥಿಕೆ ನೊಂದಣಿಗಾಗಿ ಇಲ್ಲಿ ಒತ್ತಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/applyForCertifiedCopy" class="services-click">11. ದೃಢೀಕೃತ ಪ್ರತಿಯನ್ನು ಪಡೆಯಲು ಮನವಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/viewAllJudgements" class="services-click">12. ತೀರ್ಪು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/viewRevenueRecoveryList" class="services-click">13. ಭೂಕಂದಾಯ ವಸೂಲಾತಿ ಪ್ರಮಾಣ ಪತ್ರಗಳ ವೀಕ್ಷಣೆ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/complaintRealizationList" class="services-click">14. ಫಿರ್ಯಾದುಗಳಲ್ಲಿ ವಸೂಲಾದ ಪ್ರಕರಣ ಪಟ್ಟಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/helpdeskLoginPage" class="services-click">15. ಸಂದೇಹಗಳು : ಸಹಾಯವಾಣಿ
+     			</a>	
+     				
+     			
+     			</li>
+     			
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/forward-arrow.png"/> -->
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/rightsanddutiesallottee" class="services-click">16. ಹಂಚಿಕೆದಾರರ ಹಕ್ಕು ಮತ್ತು ಕರ್ತವ್ಯಗಳು
+     			</a>	
+     				
+     			
+     			</li>
+     			
+     		  
+            </ul>
+          </div>
+          <a class="notification-readmore" href="/quicklinksallottee" target="_blank">ಮತ್ತಷ್ಟು ಓದಿ</a>
+        </div>
+      </div>
+
+      <div class="notification-width" style="box-sizing: content-box !important;">
+        <div class="notification-header title-size-bold font">ಪ್ರವರ್ತಕರಿಗಾಗಿ ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು</div>
+        <div class="panel panel-primary  text-size notification-items   font">
+          <div class="panel-body">
+            <ul class="news bs-news-1" style="overflow-y: hidden; height: 150px;">
+            
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=vjb3BOmkCz2pohy6VAHkOQ%3D%3D'>1. Punjab National Bank directions to open RERA designated account</a>
+					
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=%2FAhNm2BhoyT%2F%2BrFOHVtuVw%3D%3D'>2. Karnataka Bank directions to open RERA designated account</a>
+					
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=hqDRO%2By5s8Xui3VNjOnnHQ%3D%3D'>3. SBI and Canara Bank directions to open RERA designated account</a>
+					
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=lW3FUIc6kuiMxyUvsz4VRw%3D%3D'>4. Model Form of Allotment Letter</a>
+					
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=a34RhzKZWcP7dscMcax8aw%3D%3D'>5. Regarding providing Basic Infrastructure facilities to the Labours and their Children at the construction site</a>
+					
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=IUJMEUGAI5sWc2UxJcUodw%3D%3D'>6. Preventive measures to contain the spread of Noval Coronavirus (CoVID-19)</a>
+					
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+						<a target="_href" href='/reraDocument?DOC=P9AjVaWEbvRASzvQY6J7EA%3D%3D'>7. ಪುನರಾವೃತ ಪ್ರಶ್ನೆಗಳು</a>
+					
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     			<a href="/resources/staticpage/Real_Estate_Act.pdf" class="services-click" target="_blank">8. ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ಧಿ) ಅಧಿನಿಯಮ, 2016
+     			</a>
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     			<a href="/resources/staticpage/FinalRERA_Rules-2017_kannada.pdf" class="services-click" target="_blank">9. ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ಧಿ) ನಿಯಮಗಳು, 2017
+     			</a>
+     				
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/initProjectRegistration" class="services-click">10. ಯೋಜನೆಯ ನೋಂದಣಿಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/applyForExtensionPage" class="services-click">11. ಯೋಜನೆಯ ವಿಸ್ತರಣೆಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/reratransfer/applyForTransferofRights" class="services-click">12. ಹಕ್ಕುಗಳ ವರ್ಗಾವಣೆಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/applyForModificationPage" class="services-click">13. ಯೋಜನೆಯ ಮಾರ್ಪಾಡುಗಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/changeRequestPage" class="services-click">14. ಬದಲಾವಣೆ ವಿನಂತಿಗಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/applyForCompletionPage" class="services-click">15. ಯೋಜನೆ ಪೂರ್ಣಗೊಳಿಸುವಿಕೆಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/downloadPage" class="services-click">16. ಪ್ರಮಾಣ ಪತ್ರಗಳ ಮಾದರಿಗಳು
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/conciliationLogin" class="services-click">17. ಮಧ್ಯಸ್ಥಿಕೆ ನೊಂದಣಿಗಾಗಿ ಇಲ್ಲಿ ಒತ್ತಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/helpdeskLoginPage" class="services-click">18. ಸಂದೇಹಗಳು : ಸಹಾಯವಾಣಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/applyForCertifiedCopy" class="services-click">19. ದೃಢೀಕೃತ ಪ್ರತಿಯನ್ನು ಪಡೆಯಲು ಮನವಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/viewAllComplaints" class="services-click">20. ದೂರು ಸ್ಥಿತಿ ಪರಿಶೀಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/viewAllProjects" class="services-click">21. ನಿಮ್ಮ ಯೋಜನೆಯ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/pendingPaymentPage" class="services-click">22. ಪಾವತಿ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/viewAllJudgements" class="services-click">23. ತೀರ್ಪು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ
+     			</a>	
+     				
+     			
+     			</li>
+     		
+				
+     				
+     					
+     					
+     				
+     				
+     			
+     			<li class="notification">
+     			
+     				
+     				
+     				
+     			<a href="/rightsanddutiespromoter" class="services-click">24. ಪ್ರವರ್ತಕರ ಹಕ್ಕು ಮತ್ತು ಕರ್ತವ್ಯಗಳು
+     			</a>	
+     				
+     			
+     			</li>
+     		
+              
+            </ul>
+          </div>
+          <a class="notification-readmore" href="/quicklinkspromoter" target="_blank">ಮತ್ತಷ್ಟು ಓದಿ</a>
+        </div>
+      </div>
+
+      <div class="notification-width" style="box-sizing: content-box !important;">
+        <div class="notification-header title-size-bold font">ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು</div>
+        <div class="panel panel-primary  text-size notification-items   font">
+          <div class="panel-body">
+          <ul class="news bs-news-1" style="overflow-y: hidden; height: 150px;">
+            
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=IU%2BDzOtOiEch%2FpxVM2471A%3D%3D'>1. Extension of registration of real estate projects due to ‘Force Majeure’ under the provisions of Real Estate (Regulation and Development Act), 2016 as per the Advisory issued by Ministry of Housing and Urban Affairs (Housing Division) &nbsp;<b><font style="vertical-align:super;font-size:8px;color:red;">ಹೊಸದು</font></b></a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=U3p%2BTArM6QVanrCS%2F9WCNQ%3D%3D'>2. Regarding procedure to be followed in case of recovery of monetary and non-monetary reliefs in terms of orders passed on complaints filed under Section 31 of the RERA Act, 2016 &nbsp;<b><font style="vertical-align:super;font-size:8px;color:red;">ಹೊಸದು</font></b></a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=51qJAPc8chGXIgIuw3uWuw%3D%3D'>3. Imposing penalty for delay in submission/ non-submission of Quarterly Updates for financial year 2026-27 &nbsp;<b><font style="vertical-align:super;font-size:8px;color:red;">ಹೊಸದು</font></b></a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=trzaykgcDNeB05XGd5oQGw%3D%3D'>4. Submission of Quarterly Progress Reports (QPRs) for the financial year 2026-27 in Compliance with the Real Estate (Regulation and Development) Act, 2016-Reg &nbsp;<b><font style="vertical-align:super;font-size:8px;color:red;">ಹೊಸದು</font></b></a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=oYMPjW9c7wSaqBBn%2Flg2Yw%3D%3D'>5. Submission of Annual Audit Report of the financial year 2025-26 as per section 4(2)(l)(D) of the RERA Act, 2016 &nbsp;<b><font style="vertical-align:super;font-size:8px;color:red;">ಹೊಸದು</font></b></a></li>
+					
+					
+				
+             
+             </ul>
+          </div>
+          <a class="notification-readmore" href="/latestnews" target="_blank">ಮತ್ತಷ್ಟು ಓದಿ</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rows">
+
+      <div class="notification-width" style="box-sizing: content-box !important;">
+        <div class="notification-header title-size-bold font">ಸುತ್ತೋಲೆಗಳು</div>
+        <div class="panel panel-primary  text-size notification-items   font">
+          <div class="panel-body">
+            <ul class="news bs-news-1" style="overflow-y: hidden; height: 150px;">
+            
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=MJNv%2F%2FIxCikkmcIrmLbh3w%3D%3D'>1. Corrigendum to the Circular on Imposition of Penalty for Non-Submission and Delay in Submission of Quarterly Progress Reports for the Financial Year 2025-26</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=IWwJKkSGsh0PdQ7eDiUFqg%3D%3D'>2. Imposing penalty for Non-Submission and Delay in Submission of Quarterly Progress Reports for the financial Years from the financial year 2017-18 till completion of Quarter-4 of the financial year 2024-25</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=yVt1nArMM1owRddDayxAZg%3D%3D'>3. Imposing penalty for Non-Submission and Delay in Submission of Annual Audit Report for the Financial Year 2023-24</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=Wwj%2Bsq4EO2jSmWLPlDkQzw%3D%3D'>4. Imposing penalty for Non-Submission and Delay in Submission of Annual Audit Report for the Financial Year 2022-23</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=VfTQkfNdMQ9RzIQn%2BpzqWw%3D%3D'>5. Imposing penalty for Non-Submission and Delay in Submission of Quarterly Progress Reports for the Financial Year 2025-26</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=MYvoSgkMsDooMFS%2FhWn7rg%3D%3D'>6. Imposing penalty for Non-Submission and Delay in Submission of Annual Audit Report for the Financial Year 2024-25</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=%2F4Q1b265j%2FXMK6Po9eJVfg%3D%3D'>7. Final Extension of time for submission of Annual Audit Report of the financial year 2024-25 as per section 4(2)(l)(D) of the RERA Act, 2016</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=5PnIl74DEyqWjdY2AM%2FeGw%3D%3D'>8. Extension of time for submission of Annual Audit Report of the financial year 2024-25 as per section 4(2)(l)(D) of the RERA Act, 2016</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=a3X5hKu4cczOjTxcULAlpg%3D%3D'>9.  Submission of Annual Audit Report for the financial year 2024-25 as per section 4(2)(l)(D) of the RERA Act, 2016</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=Hp0Owd%2FxjJtROB%2B%2FV4EJuw%3D%3D'>10. Extension of Time for Submission of Annual Audit Report for the financial year 2023-24 as per Section 4(2)(l)(D) of the RERA Act, 2016</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=QPIKQw4xO%2FExglklBxMLiQ%3D%3D'>11. Circular regarding submission of Quarterly updates for the project extended under Section 7</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=%2BOUz3t0lMvSWJncss4S0vg%3D%3D'>12. Final Extension of Time for Submission of Annual Audit report as per Section 4(2)(l)(D) of the RERA Act, 2016 for the financial year ending 31st March 2023 </a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=FQZU3AlKamOzbIypOI83VQ%3D%3D'>13. Submission of Annual Audit report as per Section 4(2)(l)(D) of the RERA Act, 2016 for the financial year ending 31st March 2023</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=bn%2B9rcHKDq1aZ03Aw99%2Big%3D%3D'>14. Fee for further Extension under Sec 7 of RERA Act 2016</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=e5ax6YfWD43i8OsU%2Fx0ZDA%3D%3D'>15. Extension of Time for Submission of Annual Audit report as per Section 4(2)(l)(D) of the RERA Act, 2016.</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=s5xz54dYBUE1XB6nm5TzWA%3D%3D'>16. Submission of Annual Audit report as per Section 4(2)(l)(D) of the RERA Act, 2016.</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=ppNpWjFE9Rn1EWKWIJNv7w%3D%3D'>17. Lets celebrate Azadi Ka Amrit Mahotsav by unfurling Tiranga at Home from 11-17 August 2022</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=C7UKka5pBxGidSCbE4duvw%3D%3D'>18. Circular on Registration of Real Estate Agents</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=oCiuL6aMfDNZa4gPBcHf9g%3D%3D'>19. ಪ್ರಾಧಿಕಾರದ ನ್ಯಾಯಾಲಯದ ವಿಚಾರಣೆಗೆ ಹಾಜರಾಗುವ ವಕೀಲರು ಹಾಗೂ ಸಾರ್ವಜನಿಕರು ಧರಿಸಬೇಕಾದ ಉಡುಗೆಯ ಮಾನದಂಡಗಳು</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=4EB8TdUEPb0fzSe7YzV%2Bqg%3D%3D'>20. ಪ್ರಾಧಿಕಾರಕ್ಕೆ ಆಗಮಿಸುವ ಸಾರ್ವಜನಿಕರು ತಮ್ಮ ಕುಂದುಕೊರತೆಗಳ ಕುರಿತು ಯಾರನ್ನು ಭೇಟಿಯಾಗಬೇಕೆಂಬ ಬಗ್ಗೆ ಸೂಚನೆ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=wJa8fu0hz0%2FmUO00KNvx1A%3D%3D'>21. ಹಣ ಹಿಂದಿರುಗಿಸುವಿಕೆ/ಬಡ್ಡಿ ಪಾವತಿ, ದಂಡ ಅಥವಾ ಪರಿಹಾರ ವಿಧಿಸಿ ಪ್ರಾಧಿಕಾರ ಹಾಗೂ ನ್ಯಾಯ ನಿರ್ಣಯಾಧಿಕಾರಿ ಹೊರಡಿಸಲಾದ ಆದೇಶ ಜಾರಿಗೊಳಿಸುವ ತೀರ್ಪು ಆದೇಶಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಪ್ರಮಾಣಿತ ಕಾರ್ಯಚರಣೆ ವಿಧಾನಗಳು (ಎಸ್.ಓ.ಪಿ)</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=Dp%2F090BZlT85eapRUQQnwQ%3D%3D'>22. ತ್ರೈಮಾಸಿಕ ಹಾಗೂ ವಾರ್ಷಿಕ ಲೆಕ್ಕ ಪರಿಶೋಧನಾ ತಃಖ್ತೆ ಸಲ್ಲಿಕೆಯ ವಿಳಂಬಕ್ಕಾಗಿ ವಿಧಿಸಲಾದ ವಿಳಂಬ ಶುಲ್ಕ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=H%2BS4xmSZKK%2B9cecDq6wjaw%3D%3D'>23. ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ದಿ) ಕಾಯ್ದೆ, 2016 ರ ಕಲಂ 31 ರಡಿ ಪಾವತಿ ಶುಲ್ಕ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=RmAYAMErSaQOgYENilI2Ew%3D%3D'>24. ರೇರಾ ಬ್ಯಾಂಕ್ ಖಾತೆ ನಿರ್ದೇಶನಗಳು, 2020</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=rs0ZgNuq7QllPWZnqM9h5w%3D%3D'>25. ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ದಿ) ಕಾಯ್ದೆ, 2016 ಕಲಂ 14 ರನ್ವಯ ನೋಂದಾಯಿಸಲಾದ ಯೋಜನೆಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಪರಿಷ್ಕøತ ಯೋಜನಾ ಮಂಜೂರಾತಿಗಳು ಹಾಗೂ ನಕ್ಷೆ ವಿನ್ಯಾಸಗಳನ್ನು ಅಳವಡಿಸಲು ಅನುಸರಿಸಬೇಕಾದ ಕಾರ್ಯವಿಧಾನ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=IM5P4c6kqO2K9ahEQcvAuw%3D%3D'>26. ಯೋಜನಾ ವಿಸ್ತರಣೆ ಹಾಗೂ ಫಿರ್ಯಾದುಗಳ ವಿಚಾರಣೆಗೆ ಸಂಬಂಧಿಸಿದ ಪರಿಷ್ಕøತ ಸುತ್ತೋಲೆ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=nbHboHdOzsUUksQRs9UF%2Fw%3D%3D'>27. ಯೋಜನಾ ವಿಸ್ತರಣೆ ಹಾಗೂ ಫಿರ್ಯಾದುಗಳ ವಿಚಾರಣೆಗೆ ಸಂಬಂಧಿಸಿದ ಸುತ್ತೋಲೆ</a></li>
+					
+					
+				
+             
+            </ul>
+          </div>
+          <a class="notification-readmore" href="/circularPage" target="_blank">ಮತ್ತಷ್ಟು ಓದಿ</a>
+        </div>
+      </div>
+
+      <div class="notification-width" style="box-sizing: content-box !important;">
+        <div class="notification-header title-size-bold font">ಸೂಚನಾ ಫಲಕ</div>
+        <div class="panel panel-primary  text-size notification-items   font">
+          <div class="panel-body">
+          <ul class="news bs-news-1" style="overflow-y: hidden; height: 150px;">
+            
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=ElwToto7Xfzez6cByKwVpw%3D%3D'>1. Applications are invited for the post of one Technical/Administrative Member in the Karnataka Real Estate Appellate Tribunal</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=WRqNfnYa%2Bup6Dz3rnIRS6Q%3D%3D'>2. Notification Regarding National Lok-Adalat 13.12.2025</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=ldtgCMoXoASourDXyCv%2Flw%3D%3D'>3. Applications are invited from eligible candidates to fill up the vacant post of one Member in the Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=vrs5oGgKEd1vd61eTPdDyA%3D%3D'>4. Applications are invited from eligible candidates for the post of Legal Advisor in the Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=HN1J8eqjG212jpdwMoxTEQ%3D%3D'>5. List of Promoters Pending for Recovery as Arrears of Land Revenue who are not complied the Orders of K-RERA as on 30-06-2025</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=yNtAoXxR1SrFNA0HDeWhHw%3D%3D'>6. List of Promoters Pending for Recovery as Arrears of Land Revenue who are not complied the Orders of K-RERA as on 31-12-2024</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=LW6Zwz1OXDGr4ejOwHWRJw%3D%3D'>7. Applications are invited from eligible candidates for the post of Legal Advisor in the Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=A%2FiEVoYcbZHRXfRMJPqqzQ%3D%3D'>8. List of Promoters Pending for Recovery as Arrears of Land Revenue who are not complied the Orders of K-RERA as on 31-08-2024</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=x0DeuJABhGne31ZQqtBbhQ%3D%3D'>9. Applications are invited from eligible candidates for the post of Adjudicating Officer in the in the Karnataka Real Estate Regulatory Authority </a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=rOec8tCnDn3Njp0IpgMdMw%3D%3D'>10. Applications are invited for the post of Chairperson in the Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=JHdpvlsPOJ794MugvxOJtA%3D%3D'>11. Applications are invited for the post of One Judicial Member in the Karnataka Real Estate Appellate Tribunal</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=1NvVsDWNLz3FLK37QoCajA%3D%3D'>12. ರಾಷ್ಟ್ರೀಯ ಲೋಕ-ಅದಾಲತ್ ಕುರಿತು ಅಧಿಸೂಚನೆ 13.07.2024</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=rAfSSQtzmm%2B2N0iYmL5q4w%3D%3D'>13. List of Promoters Pending for Recovery as Arrears of Land Revenue who are not complied the Orders of K-RERA as on 31-01-2024</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=AZWnC7p1O2S28QRvxxo4SA%3D%3D'>14. Applications are invited from eligible candidates for various sanctioned posts in the Karnataka Real Estate Regulatory Authority, Bengaluru.</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=7cN1beVSUF787%2FwJAQJ3EQ%3D%3D'>15. Applications are invited from eligible candidates for the post of Standing Counsel in Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=vpmonIEQeKgyfQZWCCxjWg%3D%3D'>16. Applications are invited from eligible candidates for the post of Legal Advisor in the Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=9BOJUIk1U96fOfXd2mMBpw%3D%3D'>17. Amendment Notification - Applications are invited for the vacant post of Member in the Karnataka Real Estate Appellate Tribunal </a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=L252cLs%2FWwc9qnoTk1AXXw%3D%3D'>18. ರಾಷ್ಟ್ರೀಯ ಲೋಕ-ಅದಾಲತ್ ಕುರಿತು ಅಧಿಸೂಚನೆ 09.12.2023</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=GEvvSW2nlgpBQLH4hfx1lA%3D%3D'>19. Applications are invited for the vacant post of Member in the Karnataka Real Estate Appellate Tribunal</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=uuVtL5Bmj0w1j%2FRACPNhZg%3D%3D'>20. Regarding cancellation of Notification issued for the post of Legal Adviser to RERA Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=ITEpu35LyYYeRAURsy3muQ%3D%3D'>21. ರಾಷ್ಟ್ರೀಯ ಲೋಕ-ಅದಾಲತ್ ಕುರಿತು ಅಧಿಸೂಚನೆ 08.09.2023</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=tpWZ%2FIOXx5opZZru3xX9wA%3D%3D'>22. Mandatory deposit of money into the RERA project designated bank account borrowed by the promoter by mortgage of the project land and utilisation for the same project development purposes.</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=M1e3GS5FUcU9rD5yCuyjqA%3D%3D'>23. Applications  are invited from eligible candidates for Empanelment of Advocates/Law firms to represent the Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=l%2BWLHFpg0AuUNULZIuGWdw%3D%3D'>24.  Applications are invited from eligible candidates for the post of Legal Advisor in the Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=QHDir4OeIbBvUMYbRXzisw%3D%3D'>25. Applications are invited from eligible candidates for the post of Legal Advisor in Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=%2BLPSABFuY5oPVKN%2BqqrbJA%3D%3D'>26. Applications are invited from eligible candidates for the post of Standing Counsel in Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=oYRl5yjV9b%2ByI1DklhZZ0w%3D%3D'>27. Applications are invited from eligible candidates for various posts in Karnataka Real Estate Regulatory Authority, Bengaluru.</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=mmfr2MG9bhn8rGyG3SpLPA%3D%3D'>28. ರಾಷ್ಟ್ರೀಯ ಲೋಕ-ಅದಾಲತ್ ಕುರಿತು ಅಧಿಸೂಚನೆ 11.02.2023</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=R702w4MA1Q80dG9c5tOcYw%3D%3D'>29. Publication of Guide for using National Building Code of India 2016 and Pamphlets for Homeowners and Home Buyers</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=3BZfojXjXoiTaV%2Bz%2BZ3uEQ%3D%3D'>30. Model Form of Allotment Letter</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=%2BplFnmyoSM%2F468iK9eNb0g%3D%3D'>31. ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರಧಲ್ಲಿ ಸಾರ್ವಜನಿಕ ಕುಂದುಕೊರತೆ ನಿರ್ವಹಣಾಧಿಕಾರಿ ನೇಮಿಸುವ ಬಗ್ಗೆ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=gTPWOY59JIG2qX3P6WeRQw%3D%3D'>32. Inviting Applications for Empanelment of Legal Counsel(s) to represent the Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=Yi%2BETM%2F1NxgpyO%2FHf8J%2FmQ%3D%3D'>33. Inviting Applications from eligible persons for appointment to the post of Member of Karnataka Real Estate Regulatory Authority</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=nfI8YU%2FP4Qkd4UXc9coOsQ%3D%3D'>34. ರಾಷ್ಟ್ರೀಯ ಲೋಕ-ಅದಾಲತ್ ಕುರಿತು ಅಧಿಸೂಚನೆ 12.11.2022</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=U5lFx7jgVQSpnScuStwvjA%3D%3D'>35. ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರದ ಆದೇಶವನ್ನು ಪಾಲಿಸದಿರುವುದರಿಂದ ಭೂಕಂದಾಯ ಬಾಕಿ ವಸೂಲಾತಿ ಕೋರಿ ಕ್ರಮವಹಿಸಲಾಗಿರುವ ಪ್ರವರ್ತಕರುಗಳ ಪಟ್ಟಿ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=Yjr7GAENw09l9J96rx8q3w%3D%3D'>36. ರಾಷ್ಟ್ರೀಯ ಲೋಕ-ಅದಾಲತ್ ಕುರಿತು ಅಧಿಸೂಚನೆ 12.07.2022</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=7FnBHBaPn7%2FxFDhgcpaFEg%3D%3D'>37. ಪ್ರಾಧಿಕಾರದಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಪೀಠಗಳನ್ನು ರಚಿಸಿದ ಆದೇಶ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=zwk2gt39FJD3r%2BmLmARdAw%3D%3D'>38. ರಾಷ್ಟ್ರೀಯ ಲೋಕ-ಅದಾಲತ್ ಕುರಿತು ಅಧಿಸೂಚನೆ 12.03.2022</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=aiZvusCGpARny60p7Wb%2FEA%3D%3D'>39. Notification On Extension of Project</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=JV4j0k9YqQ%2F32460GjnKsA%3D%3D'>40. ಜಿಲ್ಲಾಧಿಕಾರಿಗಳು, ಬೆಂಗಳೂರು ಇವರಿಗೆ, ರೇರಾ ಪ್ರಾಧಿಕಾದ ಆದೇಶದಂತೆ ದಂಡ / ಪರಿಹಾರದ ಮೊತ್ತವನ್ನು ಕಂದಾಯ ಬಾಕಿ ಎಂದು ವಸೂಲಿಯಾಗಿರುವ ಬಗ್ಗೆ ಮಾಹಿತಿ ಒದಗಿಸುವ ಕುರಿತು ದಿನಾಂಕ: 15/12/2020 ರಂದು ಪ್ರಾಧಿಕಾರದಿಂದ ಬರೆದ ಪತ್ರ.</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=%2B9AhpnycHolmmiD0E2jIAQ%3D%3D'>41. ಸರ್ಕಾರದ ಕಾರ್ಯದರ್ಶಿಗಳು, ವಸತಿ ಇಲಾಖೆ, ಇವರಿಗೆ ರೇರಾ ಪ್ರಾಧಿಕಾರದ ಆದೇಶದಂತೆ ದಂಡ / ಪರಿಹಾರದ ಮೊತ್ತದ ಶೀಘ್ರ ವಸೂಲಾತಿ ಬಗ್ಗೆ ಕ್ರಮ ವಹಿಸಲು ಸಂಬಂಧಪಟ್ಟ ಇಲಾಖೆಗಳಿಗೆ ಸೂಕ್ತ ನಿರ್ದೇಶನ ನೀಡುವ ಕುರಿತು ದಿನಾಂಕ 30/12/1010 ರಂದು ಪ್ರಾಧಿಕಾರದಿಂದ ಬರೆದ ಪತ್ರ.</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=9gGNmDH3TtLIea4OfU93Hw%3D%3D'>42. ಸರ್ಕಾರದ ಮುಖ್ಯ ಕಾರ್ಯದರ್ಶಿಗಳ ಆಪ್ತ ಕಾರ್ಯದರ್ಶಿಗಳಿಗೆ, ರೇರಾ ಪ್ರಾಧಿಕಾರದ ದೇಶದಂತೆ ದಂಡ / ಪರಿಹಾರದ ಮೊತ್ತದ ಶೀಘ್ರ ವಸೂಲಾತಿ ಬಗ್ಗೆ ಕ್ರಮ ವಹಿಸಲು ಸಂಬಂಧಪಟ್ಟ ಇಲಾಖೆಗಳಿಗೆ ಸೂಕ್ತ ನಿರ್ದೇಶನ ನೀಡುವ ಕುರಿತು ದಿನಾಂಕ 30/12/2020 ರಂದು ಪ್ರಾಧಿಕಾರದಿಂದ ಬರೆದ ಪತ್ರ.</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=oTn5KVu1WHVthSv2O2dAGw%3D%3D'>43. ಕೋವಿಡ್-19 ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಪ್ರಾಧಿಕಾರದ ನೋಂದಾಯಿತ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ಯೋಜನೆಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸುವ ಅವಧಿಯನ್ನು “Force Majeure” ಅಡಿ ಇನ್ನೂ ಮೂರು ತಿಂಗಳ ಅವಧಿಗೆ ಮುಂದುವರೆಸಿ ಆದೇಶಿಸುವ ಕುರಿತು</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=4vxY9uImTPGMYMPwL%2BMxiA%3D%3D'>44. ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ಧಿ) ಕಾಯ್ದೆ, 2016ರ ಕಲಂ 81ರಡಿ ನೋಂದಾಯಿತವಲ್ಲದ ಯೋಜನೆಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಬಾಕಿಯಿರುವ ದೂರುಗಳಲ್ಲಿ ವಿಚಾರಣೆ ನಡೆಸಲು ರೇರಾ ಕಾರ್ಯದರ್ಶಿಯವರಿಗೆ ಅಧಿಕಾರ ಪ್ರತ್ಯಾಯೋಜಿಸುವ ಕುರಿತು</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=8IisqoXILEEeafQot9w4iQ%3D%3D'>45. ಕೆಲಸದ ಸ್ಥಳದಲ್ಲಿ ಮಹಿಳೆಯರ ಮೇಲೆ ನಡೆಯುವ ಲೈಂಗಿಕ ಕಿರುಕುಳ ತಡೆಯಲು ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರದಲ್ಲಿ ಆಂತರಿಕ ದೂರು ನಿರ್ವಹಣಾ ಸಮತಿಯನ್ನು ರಚಿಸುವ ಕುರಿತು</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=BpPDPqIeqWLnFqrb1lLvkA%3D%3D'>46. ರೇರಾ ಪ್ರಾಧಿಕಾರಕ್ಕೆ ಡಿಸೆಂಬರ್ 30 ರೊಳಗೆ ತ್ರೈಮಾಸಿಕ ವರದಿ ಸಲ್ಲಿಸಲು ಸೂಚನೆ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=IEqIGvDQk0XIl9EJbM4baQ%3D%3D'>47. ಭೂಕಂದಾಯ ಬಾಕಿ ವಸೂಲಾತಿ ಕೋರಿ  ಸರ್ಕಾರದ ಪ್ರಧಾನ ಕಾರ್ಯದರ್ಶಿ, ಕಂದಾಯ ಇಲಾಖೆ, ಬೆಂಗಳೂರು ಇವರಿಗೆ ಪ್ರಾಧಿಕಾರದಿಂದ ಬರೆಯಲಾದ ಪತ್ರ</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=B3t430iN1iWKOisy7QNEig%3D%3D'>48. ಭೂಕಂದಾಯ ಬಾಕಿ ವಸೂಲಾತಿಗಾಗಿ ಕೋರಿ ಪ್ರಾದೇಶಿಕ ಆಯುಕ್ತರು, ಬೆಂಗಳೂರು ವಿಭಾಗ, ಮೈಸೂರು ವಿಭಾಗ, ಬೆಳಗಾವಿ ವಿಭಾಗಗಳಿಗೆ ಪ್ರಾಧಿಕಾರದಿಂದ ಬರೆಯಲಾಗಿರುವ ಪತ್ರಗಳು</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=NvTOZ3AYf0FEsh0HzIMszA%3D%3D'>49. ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ಮೇಲ್ಮನವಿ ನ್ಯಾಯಾಧೀಕರಣ ವಿನಿಯಮಗಳು, 2019</a></li>
+					
+					
+				
+             
+				
+     				
+     					
+     				
+     				
+     			
+     			
+					
+						<li class="notification"><a target="_href" href='/reraDocument?DOC=ibf3YlQD1L2R0uTQzijgfQ%3D%3D'>50. ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ (ನಿಯಂತ್ರಣ ಮತ್ತು ಅಭಿವೃದ್ದಿ) (ಮಾರಾಟ ಕರಾರು ಒಪ್ಪಂದ) ನಿಯಮಗಳು, 2020</a></li>
+					
+					
+				
+             
+             </ul>
+          </div>
+          <a class="notification-readmore" href="/notificationPage" target="_blank">ಮತ್ತಷ್ಟು ಓದಿ</a>
+        </div>
+      </div>
+      
+      <div class="notification-width" style="box-sizing: content-box !important;">
+        <div class="notification-header title-size-bold font">ಪ್ರಕರಣಗಳ ವಹಿ ( 06-09-2026 )</div>
+        <div class="panel panel-primary  text-size notification-items   font">
+          <div class="panel-body">
+          <ul class="news bs-news-1" style="overflow-y: hidden; height: 150px;">
+          
+           		<li class="notification"><a href="/dailyCauseList" target="_blank">1. ನ್ಯಾಯ ನಿರ್ಣಯಾಧಿಕಾರಿ</a></li>
+           		<li class="notification"><a href="/authorityCauseList" target="_blank">2. ಪ್ರಾಧಿಕಾರ ( ದೂರುಗಳು )</a></li>
+           		<li class="notification"><a href="/projectDailyCauseList" target="_blank">3. ಪ್ರಾಧಿಕಾರ ( ಯೋಜನೆಗಳು )</a></li>
+           		<li class="notification"><a href="/tribunalDailyCauseList" target="_blank">4. ಮೇಲ್ಮನವಿ ಪ್ರಾಧಿಕಾರ</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+	
+<!-- <div class="popup-onload" id="popup" style="display: block;">
+    <div class="cnt223">
+        <a href="https://amritmahotsav.nic.in" target="_blank"><img src="resources/images/har-ghar-tiranga.jpeg" width="100%"></a>
+        <a href="https://rera.karnataka.gov.in/reraDocument?DOC=2327466" target="_blank">Circular on Azadi Ka Amrit Mahotsav by unfurling Tiranga at Home from 11-17 August 2022</a>
+        <div style="display: flex; justify-content: flex-end">
+            <button style="cursor:pointer;" class="close btn-style" id="close">
+                Close
+            </button>
+        </div>
+    </div>
+</div> -->
+
+  </div>
+</div>
+	<a class="btn2 zoom-lang" onclick="topFunction('target')" id="topbutton"
+    style="background-color: #3948B1;border: 1px solid #252525;color:white;border-radius: 100px;position: fixed;width: 30px;height: 30px;"><i
+      class="fa fa-angle-up fa-lg"></i></a>
+   <a class="btn2 zoom"
+    style="background-color: #3948B1;border: 1px solid #252525;color:white;border-radius: 100px;position: fixed;width: 30px;height: 30px;"><i
+      class="fas fa-search-plus"></i></a>
+    <a class="btn2 zoom-init"
+    style="background-color: #3948B1;border: 1px solid #252525;color:white;border-radius: 100px;position: fixed;width: 30px;height: 30px;"><i
+      class="fas fa-recycle"></i></a>
+  	<a class="btn2 zoom-out"
+    style="background-color: #3948B1;border: 1px solid #252525;color:white;border-radius: 100px;position: fixed;width: 30px;height: 30px;"><i
+      class="fas fa-search-minus"></i></a>
+  <!-- <a class="btn zoom-lang" onclick="toogledarkmode()"
+    style="background-color: #AECBD9;border: 1px solid #252525;border-radius: 100px;position: fixed;width: 30px;height: 30px;"><i
+      class="fas fa-adjust"></i></a> -->
+<style>
+.prev, .next {
+	padding: 5px 10px;
+	margin: 5px 10px;
+	background-color: #3948B1;
+	float: right;
+	color: #AECBD9;
+	border-radius: 10px;
+}
+
+.prev, .next : hover {
+	color: white;
+}
+
+#popup {
+    position: fixed;
+    margin:0 auto;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cnt223 {
+    min-width: 400px;
+    width: 800px;
+    min-height: 150px;
+    margin: -30vh 30vh;
+    background: #ffffff;
+    position: relative;
+    z-index: 103;
+    padding: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #888888;
+}
+</style> 
+ <script>
+//Get the button
+ var mybutton = document.getElementById("topbutton");
+ mybutton.style.display = "none";
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+ }
+ function topFunction(id){
+	 document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+ }
+ 
+ var zoom = 1;
+
+ $('.zoom').on('click', function () {
+	 if(zoom<1.3)
+   zoom += 0.1;
+   $('.target').css('zoom', zoom);
+ });
+ $('.zoom-init').on('click', function () {
+   zoom = 1;
+   $('.target').css('zoom', zoom);
+ });
+ $('.zoom-out').on('click', function () {
+	 if(zoom>0.8)
+   zoom -= 0.1;
+   $('.target').css('zoom', zoom);
+ });
+ 
+    $(function () {
+      $('#ticker').tickerme({
+        duration: 12000,
+        fade_speed: 500,
+      });
+    });
+    (function ($, undefined) {
+      // Carousel           
+      $('#bannerSlider').flexslider({
+        animation: "fade",
+        animationLoop: true,
+        prevText: "",
+        nextText: "",
+        pauseOnHover: true,
+        directionNav: true,
+        controlNav: true,
+        pausePlay: true,
+        start: function (slider) {
+          $('body').removeClass('loading');
+          if (slider.pagingCount === 1) slider.addClass('flex-centered');
+        }
+      });
+    })(jQuery);
+    (function ($, undefined) {
+      $('#windowGallery').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        minItems: 2,
+        maxItems: 3
+      });
+    })(jQuery);
+    $(function () {
+      $(".bs-news-1").bootstrapNews({
+        newsPerPage: 3,
+        autoplay: false,
+        pauseOnHover: true,
+        direction: 'up',
+        newsTickerInterval: 4000,
+        onToDo: function () {
+          //console.log(this);
+        }
+      });
+
+      $(".bs-news-2").bootstrapNews({
+        newsPerPage: 4,
+        autoplay: true,
+        pauseOnHover: true,
+        navigation: false,
+        direction: 'down',
+        newsTickerInterval: 2500,
+        onToDo: function () {
+          //console.log(this);
+        }
+      });
+    });
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+    
+    $("#close").on("click", function (e) {
+        $("#popup").hide();
+    });
+  </script>
+  <script type="text/javascript">
+        let blink =
+            document.getElementById('blink');
+
+        setInterval(function () {
+            blink.style.opacity =
+                (blink.style.opacity == 0 ? 1 : 0);
+        }, 500); 
+        
+        let blink2 =
+            document.getElementById('blink2');
+
+        setInterval(function () {
+            blink2.style.opacity =
+                (blink2.style.opacity == 0 ? 1 : 0);
+        }, 500); 
+    </script>
+     <style>
+        #blink {
+            font-weight: bold;
+        }
+        
+        #blink2 {
+            font-weight: bold;
+        }
+    </style>
+		</header>
+	
+		<section id="sidemenu">
+			
+		</section>
+			
+		<section id="site-content">
+			
+
+
+
+
+		</section>
+ 		
+ 		<footer id="bfooter">
+			
+
+
+  
+<div class="footer rows footertarget">
+
+    <div class="column-address" style="box-sizing: content-box !important;">
+      <p class="title-size-bold2">ಸಂಪರ್ಕಿಸಿ</p>
+      <ul>
+        <li style="padding-bottom: 10px;"><a style="font-size: 14px;">ವಿಳಾಸ : <br>
+            ಕರ್ನಾಟಕ ರಿಯಲ್ ಎಸ್ಟೇಟ್ ನಿಯಂತ್ರಣ ಪ್ರಾಧಿಕಾರ, 2 ನೇ ಮಹಡಿ, ಸಿಲ್ವರ್ ಜುಬ್ಲಿ ಬ್ಲಾಕ್, ಯೂನಿಟಿ ಬಿಲ್ಡಿಂಗ್, ಸಿಎಸ್ಐ ಕಾಂಪೌಂಡ್, 3 ನೇ ಕ್ರಾಸ್, ಮಿಷನ್ ರಸ್ತೆ, ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ - 560027</a></li>
+        <li>ದೂರವಾಣಿ ಸಂಖ್ಯೆ : <br><i class="fa fa-phone"></i> <a class="footer-items" href="tel:080-22249798">080-22249798,22249799</a><br><i class="fa fa-phone"></i> <a class="footer-items" href="tel:080-41624455">080-41624455,41692244</a></li>
+        <li>ಇ-ಮೇಲ್ : <i class="fa fa fa-envelope-o"></i> <a class="footer-items" href="mailto:krera-chairman@karnataka.gov.in">krera-chairman@karnataka.gov.in</a></li>
+        
+       <!--  <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.0308789036421!2d77.58732482921417!3d12.963947306350814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzUwLjIiTiA3N8KwMzUnMTYuMyJF!5e0!3m2!1sen!2sin!4v1513990730377" width="100%" height="86" frameborder="0" style="border:0" allowfullscreen></iframe></li> -->
+      </ul>
+    </div>
+
+    <div class="column" style="box-sizing: content-box !important;">
+      <p class="title-size-bold2">ಕರಾರುಗಳು ಮತ್ತು ಷರತ್ತುಗಳು</p>
+      <ul>
+      	<li><a class="footer-items" href="/termsandconditions" target="_blank">ಕರಾರುಗಳು ಮತ್ತು ಷರತ್ತುಗಳು</a></li>
+        <li><a class="footer-items" href="/hyperlinkpolicy" target="_blank">ಬಾಹ್ಯಜಾಲತಾಣ ಸಂಪರ್ಕ ನೀತಿ</a></li>
+        <li><a class="footer-items" href="/privacypolicy" target="_blank">ಖಾಸಗಿತನ ನೀತಿ</a></li>
+        <li><a class="footer-items" href="/copyrightpolicy" target="_blank">ಹಕ್ಕುಸ್ವಾಮ್ಯ ನೀತಿ</a></li>
+      </ul>
+    </div>
+
+    <div class="column" style="box-sizing: content-box !important;">
+      <p class="title-size-bold2">ಮಹತ್ವದ ಜಾಲತಾಣಗಳು</p>
+      <ul>
+      	<li><a class="footer-items" href="https://www.india.gov.in" target="_blank">ಭಾರತ ಸರ್ಕಾರ</a></li>
+      	<li><a class="footer-items" href="https://karnataka.gov.in" target="_blank">ಕರ್ನಾಟಕ ಸರ್ಕಾರ</a></li>
+        <li><a class="footer-items" href="https://housing.karnataka.gov.in" target="_blank">ಕರ್ನಾಟಕ ವಸತಿ ಇಲಾಖೆ</a></li>
+        <li><a class="footer-items" href="https://ksdb.karnataka.gov.in/" target="_blank">ಕರ್ನಾಟಕ ಕೊಳಗೇರಿ ಅಭಿವೃದ್ಧಿ ಮಂಡಳಿ</a></li>
+        <li><a class="footer-items" href="https://ashraya.karnataka.gov.in" target="_blank">ರಾಜೀವ್ ಗಾಂಧಿ ವಸತಿ ನಿಗಮ ನಿಯಮಿತ</a></li>
+        <li><a class="footer-items" href="https://k2.karnataka.gov.in" target="_blank">ಖಜಾನೆ-2</a></li>
+        <li><a class="footer-items" href="https://mahitikanaja.karnataka.gov.in/Rera/GetProjectDetails?ServiceId=5501&Type=WEBAPI&DepartmentId=3160" target="_blank">ಮಾಹಿತಿ ಕಣಜ</a></li>
+      </ul>
+    </div>
+
+    <div class="column" style="box-sizing: content-box !important;">
+      <p class="title-size-bold2">ಸಂದರ್ಶಕರು</p>
+      <ul>
+        <li><a class="footer-items">ಒಟ್ಟು ಸಂದರ್ಶಕರು : 61438248</a></li>
+        <li><a class="footer-items">ಇಂದಿನ ಎಣಿಕೆ : 0006218</a></li>
+        
+      </ul>
+    </div>
+
+  </div>
+  
+  <div class="disclaimer  target">
+
+    <div>
+      <p class="disclaimer-size" style="text-align: center;">
+        ಹಕ್ಕುತ್ಯಾಗ : ಈ ಪುಟವು ಸರ್ಕಾರಿ ಸಚಿವಾಲಯ/ ಇಲಾಖೆ/ ಸಂಸ್ಥೆಗಳಿಗೂ ಲಿಂಕುಗಳನ್ನು ಕಲ್ಪಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ಗಮನಿಸಿ. ಈ ವೆಬ್ ಸೈಟುಗಳ ವಿಷಯಗಳು ಆಯಾ ಸಂಸ್ಥೆಗಳ ಸ್ವತ್ತೇ ಆಗಿದ್ದು, ಯಾವುದೇ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಅಥವಾ ಸಲಹೆಗಾಗಿ ಅವರನ್ನೇ ಸಂಪರ್ಕಿಸುವುದು</p>
+      <p class="disclaimer-size" style="text-align: center;">ವಿನ್ಯಾಸ ಮತ್ತು ಅಭಿವೃದ್ಧಿ : ರೇರಾ ಕರ್ನಾಟಕ © 2020, ಎಲ್ಲಾ ಹಕ್ಕುಗಳೂ ಕಾಯ್ದಿರಿಸಿವೆ</p>
+    </div>
+
+  </div>
+		</footer>
+		
+</body>
+
+</html>

@@ -1,0 +1,4626 @@
+
+[PDF page 1]
+ 
+ 
+ 
+  
+      
+ 
+ 
+ 
+      
+ 
+
+
+[PDF page 2]
+2 
+ 
+KARNATAKA ELECTRICITY REGULATORY COMMISSION 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TWENTY-FIFTH 
+ANNUAL REPORT 
+ 
+ 
+2023-24 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+No16 C-1, Miller Tank Bed Area, Vasanthanagar, 
+Bengaluru-52 
+Phone: 080-22268677/78/79 Fax: 0808-22268667  
+E-mail: kerc-ka@nic.in  
+Website: https://kerc.karnataka.gov.in 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+[PDF page 3]
+3 
+ 
+C O N T E N T S 
+ 
+SL.NO. PARTICULARS PAGE No. 
+1 Foreword 04 
+2 Introduction 06 
+3 The Commission & its functions 08 
+4 The Commission’s Office & Functions of the Secretary 11 
+5 Administration 12 
+6 Budget and actual expenditure of the Commission 12 
+7 Implementation of the RTI Act 13 
+8 Use of Kannada in the Commission’s Administration 13 
+9 Power Sector- An Overview 15 
+10 Important events during the year 38 
+11 Advisory Committee of the Commission 57 
+12 Commission’s Adjudication Activities 61 
+13 Consumer Grievances Redressal 71 
+14 Programme for FY25……..Year Ahead 75 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 4]
+4 
+ 
+KARNATAKA ELECTRICITY REGULATORY COMMISSION 
+ 
+Sri. P. Ravi Kumar I.A.S (Retd.) 
+CHAIRMAN 
+ 
+ 
+No16 C-1, Miller Tank Bed Area, 
+Vasanthanagar,                
+Bengaluru-52 
+ 
+ 
+FOREWORD 
+ 
+I am delighted to present the twenty -fifth annual report of the Karnataka Electricity Regulatory 
+Commission for the year 2023-2024, prepared in accordance with Section 105 of the Electricity Act, 
+2003. 
+This year signifies the twenty -fifth anniversary of regulatory oversight in Karnataka. The Commission 
+has dedicated itself to fostering an efficient, economical, and competitive power sector, ensuring 
+a balance between the interests of all stakeholde rs and protecting the legitimate rights of 
+consumers in the state. 
+The report includes a summary of the Commission’s annual budget and a ctual expenditure for the 
+year 2023-24. It also details the activities of the Commission during the year 2023-2024 and plans for 
+the upcoming FY25. 
+In this report, we have made a sincere effort to highlight the Commission’s work in fulfilling its duties 
+under the Electricity Act, 2003. 
+The Commission has issued Tariff Orders for the Transmission licensee KPTCL and five Dist ribution 
+licensees: BESCOM, MESCOM, CESC, HESCOM, and GESCOM. It also includes one Rural Electric Co-
+operative Society (HRECS) and two Special Economic Zones (SEZs), namely MSEZ and AEQUS SEZ, 
+for the financial year 2023-24. During this financial year, the Annual Performance Review of all these 
+entities was also conducted. Tariff Orders were issued for the Annual Performance Review for FY22 
+and FY23, the Annual Revenue Requirement for FY24 and FY25, and the revision of Retail Supply Tariff 
+for FY24 and FY25 for ESCOMs and other Distribution Licensees  on 12th May, 2023 and 28 th February 
+2024 respectively. 
+Additionally, during the financial year, the Commission notified the  Regulations and resolved 
+petitions arising from disputes among licensees and generators , as well as between licensees and 
+open access consumers. 
+I would like to take this opportunity to reassure all stakeholders of the Commission’s continued efforts 
+to make the sector competitive, financially viable, consumer-friendly, and safe as envisioned in the 
+Electricity Act, 2003. The Members of the Commission have been cooperative in discharging the 
+functions of the Commission. The Officers, Consultants, and members of the Staff have also provided 
+valuable assistance. I would also like to acknowledge the valuable advice received from Members 
+of the Advisory Committee, Licensees, and Stakeholders. 
+ 
+Sri. P. Ravi Kumar I.A.S (Retd.) 
+                                                                                                       CHAIRMAN 
+
+[PDF page 5]
+5 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Brief History of  
+ 
+Karnataka Electricity Regulatory Commission 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 6]
+6 
+ 
+2.    INTRODUCTION 
+ 
+The Karnataka Electricity Regulatory Commission (KERC) was established in 1999 as per 
+the provisions of the Karnataka Electricity Reform Act, 1999 and began functioning 
+from 15th November, 1999. Consequent to the enactment of the Electricity Act, 2003 
+on 10th June, 2003, the KERC continued to function under the provisions of this Act. 
+As per Section 105(1) of the Electricity Act, 2003, the KERC is required to prepare an 
+Annual Report, giving a summary of its activities during the previous year and the 
+copies of the Report are to be forwarded to the State Government. Further, as per 
+Section 105(2) of the Electricity Act, 2003, the copies of Annual Reports shall be laid 
+before the State Legislature.   
+ 
+This is the Twenty -Fifth Annual Report of the Commission, which includes summary of 
+the activities of the Commissio n during the financial y ear 2023-24 and the proposed 
+program for the financial year ahead i.e. 202 4-25. It also contains the Bu dget for the 
+financial year 2024-25 and the actual expenditure for the financial year 2023-24.  
+ 
+During the financial year 202 3-24, the Commission  has completed the proceedings 
+relating to disposal of Tariff petition s and has issued the Tariff Orders on the An nual 
+Performance Review for FY22 & FY23 and the ARR for FY24 to FY25 and Revision of 
+Retail Supply Tariff for FY24 and FY25 on 12th May, 2023 and 28th February, 2024 
+respectively.  The revised tariff is effective for the electricity consumed from the first 
+meter reading date falling on or after 01.04.2023 and 01.04.2024 as per the Tariff Orders 
+dated12th May, 2023 and 28th February, 2024 respectively. 
+ 
+The Commission has issued Regulations, Amendments to the Regulations, Generic Tariff 
+Orders for Solar, Wind, Waste to Energy, Mini Hydel, Co -generation, Bio- Mass power 
+projects, discussed in the subsequent chapters. 
+ 
+The Commission has disposed of 140 Petitions arising out of disputes among licensees 
+and generators as well as licensees and open access consumers during the year. The 
+Summary of the Commission’s activities is discussed in the subsequent chapters.  
+ 
+ 
+ 
+
+[PDF page 7]
+7 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Functions of the Commission 
+ 
+                               …As per the Electricity Act, 2003 
+
+[PDF page 8]
+8 
+ 
+3.  THE COMMISSION & ITS FUNCTIONS: 
+ 
+3.1 THE COMMISSION 
+The Commission consists of three members, including the Chairman,                                      
+Shri P. Ravi Kumar, IAS (Retd.). Shri H.K. Jagadeesh joined as a Member on                        
+04th March,2024, and Shri Jawaid Akthar, IAS (Retd.), joined on                                                   
+13th March, 2024. The previous members, Sri H.M. Manjunatha and Sri M.D. Ravi, 
+retired from the Commission on 29 th December 2023, and 12 th March, 2024, 
+respectively. 
+ 
+3.2 FUNCTIONS OF THE COMMISSION  
+ 
+(1) As per Section 86 of the Electricity Act, 2003, the State Electricity 
+Regulatory Commissions are required to discharge the following functions:   
+(a) Determine the tariff for generation, supply, transmission and 
+wheeling of electricity, wholesale, bulk or retail, as the case 
+may be, within the State;   
+(b) Regulate electricity purchase and procurement process of 
+distribution licensees including the price at which electricity shall be 
+procured from the generating companies or licensees or from other 
+sources through agreements for purchase of power for distrib ution 
+and supply within the State;  
+(c)  Facilitate intra-state transmission and wheeling of electricity;  
+(d) Issue licences to persons seeking to act as transmission licensees, 
+distribution licensees and electricity traders with respect to their 
+operations within the State;  
+(e) Promote cogeneration and generation of electricity from 
+renewable sources of energy by providing suitable measures for 
+connectivity with the grid and sale of electricity to any person, and 
+also specify, for purchase of electricity from su ch sources, a 
+percentage of the total consumption of electricity in the area of a 
+distribution licensee;  
+
+[PDF page 9]
+9 
+ 
+(f) Adjudicate upon the disputes between the licensees, and 
+generating companies and to refer any dispute for arbitration;  
+(g) Levy fee for the purposes of the Electricity Act;  
+(h) Specify State Grid Code consistent with the Grid Code specified 
+under clause (h) of sub-section (1) of section 79;  
+(i) Specify or enforce standards with respect to quality, continuity and 
+reliability of service by licensees;  
+(j) Fix the trad ing margin in the intra -State trading of electricity, if 
+considered necessary; and  
+(k) Discharge such other functions as may be assigned to it under this 
+Act.  
+(2) The State Commission is also required to advise the State Government on 
+all or any of the following matters, namely: -  
+ 
+(i) promotion of competition, efficiency and economy in activities of 
+the electricity industry;  
+(ii) promotion of investment in electricity industry;  
+(iii) reorganization and restructuring of electricity industry in the State;  
+(iv) matters concerning generation, transmission, distribution and 
+trading of electricity or any other matter referred to the State 
+Commission by the State Government.  
+The State Commission is required to ensure transparency while exercising its 
+powers and discharging its functions.  
+In discharge of its functions, the Commission is being guided by the National 
+Electricity Policy, National Electricity Plan and Tariff Policy published under 
+Section 3 of the Electricity Act, 2003.  
+ 
+ 
+ 
+
+[PDF page 10]
+10 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Functions of Secretary  
+ 
+& 
+ 
+Activities of the Office of the Commission  
+
+[PDF page 11]
+11 
+ 
+4. THE COMMISSION’s OFFICE & FUNCTIONS OF THE SECRETARY: 
+ 
+4.1 THE COMMISSION’s OFFICE  
+The Chairman of the Commission is its Chief Executive as per Section 84 of the 
+Electricity Act, 2003.  The Commission is supported by Secretariat, headed by the 
+Secretary. 
+ 
+Besides, the Commission’s Office has senior level officers on contract, serving as 
+Director (Tariff), Director (Technical), Consultant (Tariff), Consultant (Tech) and 
+Consultant (Legal). Further, there are Deputy Directors both on its rolls and on 
+deputation, with requisite expertise in specific areas of Transmission, Distribution, 
+Tariff, etc., to assist the Commission. 
+ 
+The details of the Officers and members of Staff working in the Commission are 
+mentioned in this report. The Organizational Chart of the Commission is annexed 
+as Annexure – I. 
+ 
+4.2 FUNCTIONS OF THE SECRETARY: 
+The functions of the Secretary are as follows:  
+ 
+(a) To supervise and guide the functioning of all the Officers and Staff of the 
+Commission;  
+ 
+(b) To prepare or ensure preparation of  brief notes and summaries of all 
+pleadings presented by various parties in each case before the Commission 
+in discharge of its functions; 
+ 
+(c) To assist the Commission in the proceedings relating to the powers 
+exercisable by the Commission;  
+ 
+(d) To ensure execution of the Orders passed by the Commission; 
+ 
+(e) To collect from the State Government or other offices, companies or firms 
+or any other party as may be directed by the Commission, such information 
+as may be considered useful for the purpose of efficient discharge of the 
+functions of the Commission under the Act and place the said information 
+before the Commission; and  
+ 
+(f) To keep in his custody, the seal and records of the Commission.  
+ 
+ 
+
+[PDF page 12]
+12 
+ 
+5. ADMINISTRATION: 
+ 
+The office comprises permanent employees, officers/officials on deputation, and on 
+contract. The total sanctioned strength is 66, and as of the end of the financial year 
+2023-24, the working strength of the Commission's staff is also 66. 
+The break-up is as follows: 
+  
+a) Permanent Employees 17 
+b) Officers/Staff on deputation 8 
+c) Employees on Contract basis 15 
+d) Consultants on Contract basis 3 
+e) Outsourced Employees  23 
+Total 66 
+ 
+ 
+6. BUDGET & ACTUAL EXPENDITURE OF THE COMMISSION: 
+The following table shows the details of Budget estimates and actual expenditure for 
+the FY 2023-24: 
+                            Income                                                                             Rs in Lakhs 
+Major Income  Heads Budget 
+estimate 
+Actual 
+Income 
+Variation in 
+Budget 
+Estimates 
+Annual Licence Fee, Petition Fees 
+& Miscellaneous 512.89 1404.46 891.57 
+Tariff Filing  Charges  1200.00 1423.45  223.45 
+Interest on Deposits 335.39      335.39           - 
+Total 2048.28 3163.30      1115.02 
+ 
+                     Expenditure                                                                  Rs.in Lakhs 
+Major Expenditure 
+ Heads 
+Budget 
+estimate 
+  Actual 
+Expenses 
+Variation in 
+Budget Estimates 
+Establishment Expenses 1132.00 975.00 157.00 
+Office Expenses 374.59 315.00       59.59 
+Total 1506.59 1290.00  216.59 
+ 
+During the financial year 2023-24, the Commission did not request for grants from the 
+State Government. Instead, it was able to meet its expenses using the annual licence 
+fees, tariff application fees, and other fees collected during the financial year. 
+ 
+     The Budget estimate for the financial year 2024-25 is as follows: 
+SL No         Particulars     Rs in Lakhs 
+1 Estimated Revenue Receipts 
+for 2024-25 
+     2500.00 
+2 Estimated Revenue 
+Expenditure for 2024-25 
+     1781.94 
+3 Surplus        719.94 
+
+[PDF page 13]
+13 
+ 
+For the financial year 2024-25, the Commission has not requested for any grants from 
+the State Govt, in view of the estimated surplus fund available with the Commission. 
+ 
+7.     IMPLEMENTATION OF THE RTI ACT: 
+ 
+Compliance of the RTI Act: 
+ 
+The status of applications and appeals received and disposed of during 2023-24 
+under the RTI Act, 2005, is as follows: 
+ 
+No. of 
+applications 
+pending as on 
+01.04.2022 
+No. of 
+applications 
+received 
+No. of 
+applications 
+disposed of 
+No. of 
+applications 
+pending as 
+on 31.03.2024 
+Fee 
+collected in 
+Rs. 
+ 
+No. of 
+appeals 
+received 
+No. of appeals 
+disposed of during 
+the year 
+00 53 53 -nil- 776 0 0 
+ 
+Public Information Officer: 
+ 
+The designated Public Information Officer and his address is as under: 
+ 
+                              Deputy Director (Admin)/ Public Information Officer, 
+No.16 C-1, Miller Tank Bed Area, Vasanthanagar, 
+Bengaluru-52 
+Phone :080-22268677/78/79 Fax:080-22268667  
+E-mail: kerc-ka@nic.in website:www.karunadu.karnataka.gov.in/kerc 
+ 
+ 
+The designated First Appellate Authority and the address is as under: 
+ 
+ 
+Secretary, 
+No.16 C-1, Miller Tank Bed Area, Vasanthnagar, 
+Bengaluru-52 
+Phone :080-22268677/78/79 Fax:080-22268667  
+E-mail:kerc-ka@nic.in website:www.karunadu.karnataka.gov.in/kerc 
+ 
+ 
+ 
+ 
+8. USE OF KANNADA IN THE COMMISSION’s ADMINISTRATION: 
+ 
+Kannada is being used as a medium of communication. The Annual Report is being 
+published both in Kannada and English languages. 
+ 
+All Regulations and Notices of public interest are being issued in Kannada language. 
+The Commission is making conscious and sustained efforts for implementation of 
+Kannada as the official language. 
+
+[PDF page 14]
+14 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Status of Generation, Transmission 
+& 
+Distribution  
+ 
+Overview for 2023-24 
+
+[PDF page 15]
+15 
+ 
+9.0  POWER SECTOR – AN OVERVIEW 
+ 
+9.1 Status of Power Generation in the State: 
+ 
+The installed capacity of power generati on in Karnataka as on 31.03.202 4 including 
+the share of the State in the central projects is indicated below: - 
+ 
+INSTALLED CAPACITY OF POWER GENERATION IN KARNATAKA AS ON 31.03.2024 
+(Figures in MW) 
+Source Hydel Thermal 
+RE 
+/Other 
+Sources 
+Total 
+State(KPCL) and other 
+Hydel 3798 5020  8818 
+Private Generating 
+Companies –UPCL  1200  1200 
+Cogeneration, Captive, 
+Biomass, Solar   & Wind   17690.55 17690.55 
+CGS  5282.82  5282.82 
+State Total 3798 11502.82 17690.55 32991.37 
+Installed capacity in % 11.51 34.87 53.62 100 
+ 
+ 
+Source: KPTCL 
+ 
+INSTALLED CAPACITY OF POWER GENERATION IN KARNATAKA AS ON 31.03.2024 
+ 
+  
+ 
+ 
+ 
+ 
+3798
+11502.82
+17690.55
+State Total
+Hydel Thermal RE Sources
+
+[PDF page 16]
+16 
+ 
+9.2   GREEN POWER IN KARNATAKA: 
+ 
+Following is the potential, commissioned and envisaged addition of green power 
+capacity upto March, 2024, in the State:  
+ 
+POTENTIAL OF GREEN POWER IN KARNATAKA 
+                                         Figures in MW 
+ 
+RE Sources Allotted Capacity in MW Commissioned Capacity in 
+MW 
+Balance Allotted Cap in MW to 
+be Commissioned 
+  InSTS ISTS Total InSTS ISTS Total InSTS ISTS Total 
+Wind  7567.46 11678.37 19245.83 5256.99 126.00 5382.99 2310.47 11552.37 13862.84 
+Small Hydro 1178.18 0.00 1178.18 907.46 0.00 907.46 270.72 0.00 270.72 
+Solar(Including 
+Rooftop and 
+others) 
+11975.07 3262.00 15237.07 8590.81 200.00 8790.81 3384.26 3062.00 6446.26 
+Solar-Wind Hybrid 651.30 916.40 1567.70 5.00 0.00 5.00 646.30 916.40 1562.70 
+Co-gen 2212.65 0.00 2212.65 1731.16 0.00 1731.16 481.49 0.00 481.49 
+Bio Mass 395.13 0.00 395.13 139.03 0.00 139.03 256.10 0.00 256.10 
+MSW 59.00 0.00 59.00 0.00 0.00 0.00 59.00 0.00 59.00 
+Grand Total 24038.79 15856.77 39895.56 16630.45 326.00 16956.45 7408.34 15530.77 22939.11 
+ 
+ 
+Note: RE capacity excluding Captive 
+ 
+Source: KREDL Website  
+ 
+ 
+ 
+9.3 TRANSMISSION SYSTEM IN THE STATE: 
+ 
+The transmission of electricity in the State is undertaken by Karnataka Power 
+Transmission Corporation Limited [KPTCL] being the State Transmission Utility [STU]. 
+ 
+An overview of the Transmission syst em in the State as on 31.03.202 4 is shown 
+below: 
+ 
+ 
+ 
+ 
+ 
+                  (Source: KPTCL Website) 
+                 * 33kV system is maintained by ESCOMs 
+ 
+ 
+Voltage Level  
+in kV No. of Stations Transmission Line in 
+Ckt. Km 
+400 09 3935.453 
+220 133 13259.173 
+110 517 12868.462 
+66 725 12928.391 
+TOTAL 1384 42991.479 
+
+[PDF page 17]
+17 
+ 
+During FY24, the KPTCL has handled the highest peak load of 17220 MW on 
+12.03.2024 and the highest energy consumption of 329.53MU was recorded on 
+the same day. 
+ 
+9.4 DISTRIBUTION SYSTEM IN THE STATE: 
+ 
+The Distribution of Electricity, including retail supply, in the State is being 
+undertaken by the five Distribution Companies (ESCOMs). Further, one Rural 
+Electricity Co -operative Society and two Special Economic Zones are also 
+operating as the Distribution Licensees. 
+ 
+1. The BESCOM Distribution area comprises of the districts of Bengaluru 
+Urban, Bengaluru Rural, Chikkaballapura, Chitradurga, Davanagere, 
+Kolar, Ramanagara and Tumakuru Districts. 
+ 
+2. The MESCOM Distribution area comprises of Dakshina Kannada, Udupi, 
+Shivamogga and Chikkamagaluru Districts. 
+ 
+3. The CESC Distribution area comprises of Mysuru, Hasana, Mandya, 
+Chamarajanagara and Kodagu Districts. 
+ 
+ 
+4. The HESCOM Distribution area comprises of Bagalakote, Belagavi, 
+Vijayapura, Dharwad, Gadag, Haveri and Uttara Kannada. 
+ 
+5. The GESCOM Distribution area comprises of Ballary, Bidar, Kalaburagi, 
+Hospete, Koppala, Raichur and Yadgir Districts. 
+ 
+6. The HRECS Distribution area comprises of Hukeri Taluk of Belagavi District. 
+ 
+7. The MSEZ operates in its exclusive area under Dakshina Kannada District. 
+ 
+ 
+8. The AEQUS SEZ operates in its exclusive area under Belagavi District.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 18]
+18 
+ 
+THE BIRD’S EYE VIEW OF THE DISTRIBUTION SYSTEM IN THE STATE AS ON 31.03.2024: 
+ 
+Sl. 
+No. Particulars  BESCOM 
+ 
+MESCOM 
+ 
+ 
+CESC 
+ 
+ 
+HESCOM 
+ 
+GESCOM HRECS TOTAL 
+1 Area  Sq. km 41092 24049 27773 54513 43861 991 192279 
+2 Districts Nos 8 4 5 7 7 - 31 
+3 Taluks Nos 48 32 34 69 50 1 234 
+4 Population  In lakhs 
+(2011) 207 62 82 166 112 4 633 
+5 Consumers In lakhs 144 27 39 54 37 1 302 
+6 Energy 
+Consumption In MUs 36163 6895 8666 15614 9618 436 77392 
+7 Zone Nos 4 2 2 2 2 1 13 
+8 DTCs Nos 497991 106431 179768 302536 127762 3221 1217709 
+9 Assets Rs. Rs. in 
+Crores 39155 3577 7612 16283 4663 149 71439 
+10 HT lines  In Ckt. KMs 147459 50499 71453 103200 76229 1754 450594 
+11 LT lines  In Ckt. KMs 197190 94052 96406 152753 95915 4867 641183 
+12 Employees strength:  
+A Sanctioned Nos 24754 9250 10460 16907 10209 330 71910 
+B Working  Nos 14114 5256 6469 10462 7354 328 43983 
+13 Revenue Demand  Rs. in 
+Crores 33045 6056 7641 14110 8720 351 69923 
+ 
+ 
+9.4.1  SOURCE-WISE GENERATION: 
+ 
+ 
+ 
+The source-wise generation to meet the demand of the ESCOMs in the State 
+during the FY24 is indicated below: 
+ 
+SOURCE Energy* in MU 
+KPCL Hydel 12203.73 
+KPCL Thermal 32111.86 
+Central Generating Stations 30691.09 
+Major IPPs  7482.78 
+RE sources 19929.29 
+Others (TBHES, Jurala.) 207.28 
+Total 102626.04 
+        * Provisional data as furnished by PCKL 
+ 
+ 
+ 
+ 
+
+[PDF page 19]
+19 
+ 
+9.4.2 
+ ENERGY CONSUMPTION IN THE STATE FROM FY18 TO FY23:
+ 
+ 
+The category-wise sales made by the ESCOMs and the Hukeri RECS in the State 
+are as follows: 
+ 
+Category  Consumer 
+Category  
+FY18 FY 19 FY 20 FY21 FY22  
+FY23 
+No .of 
+Installati
+ons 
+Energy 
+Sold in 
+MU 
+No .of 
+Installati
+ons 
+Energy 
+Sold in MU 
+No .of 
+Installati
+ons 
+Energy 
+Sold in 
+MU 
+No .of 
+Installatio
+ns 
+Energy 
+Sold in 
+MU 
+No .of 
+Installatio
+ns 
+Energy 
+Sold in 
+MU 
+No .of 
+Installations 
+Energy 
+Sold in 
+MU 
+LT-1 Bhagya Jyothi 2900526 845.44 2883665 885.66 2748490 760.11 2733042 769.05 2863612 930.58 
+ 
+2782027 
+ 
+884.52 
+LT-2 
+Domestic 
+AEH & Pvt. 
+Educational 
+Institutions 
+15062506 11559.21 15723452 11937.54 16772910 12785.51 17375075 13008.32 17788769 13028.70 
+ 
+18319918 
+ 
+13811.47 
+LT-3 Commercial 2103886 3430.38 2197484 3542.77 2303728 3808.91 2393890 3103.57 2494905 3401.08 
+ 
+2561179 
+ 
+4101.95 
+LT-4a 
+Irrigation 
+Pump sets-
+upto 10 HP 
+2612924 19696.01
+9 2920572  21962.85 3061999 20795.87 3133468 20699.95 3222775 20915.89 
+ 
+3342537 
+ 
+20813.10 
+LT-4(b) & 
+(c) 
+Irrigation 
+Pump sets-
+More than 10 
+HP & 
+Horticulture 
+17841 55.57 19147 62.86 20604 56.57 21540 58.44 23058 57.98 
+ 
+23994 
+ 
+55.14 
+LT-5 LT Industries 450217 1954.15 465619 2023.24 483942 2007.96 500873 1806.07 522622 2026.53 
+ 
+509110 
+ 
+2223.98 
+LT-6(a) Water Supply 179627 1712.24 192023 2235.54 205390 2459.19 215628 2388.83 
+ 221353 2561.91 
+ 
+220822 
+ 
+2750.48 
+LT-6(b) & 
+(c) 
+Street 
+Lights/EV 141212 1023.38 147018 1089.70 155889 1107.82 164862 1036.32 177502 1140.75 
+ 
+188789 
+ 
+1247.36 
+LT-7 
+Temporary 
+Power 
+&Adverting 
+Hoardings 
+770045 240.02 871532 225.91 1002829 299.08 1120060 274.47 1249523 320.07 
+ 
+1215260 
+ 
+366.33 
+LT- Total 24238784 40516.40 25420512 43966.06 
+ 
+26755781 
+ 
+44081.02 27658438 43145.02 28564119 44383.49 
+ 
+29163636 
+ 
+46254.33 
+HT-1 HT- Water 
+Supply 949 1539.51 1023 1651.43 1102 1719.49 1173 1831.53 1218 1923.57 
+ 
+1252 
+ 
+1980.52 
+HT-2a HT- Industries 11503 7709.02 12258 8207.27 13050 7700.39 13646 6499.18 14201 7911.40 
+ 
+14516 
+ 
+9319.59 
+HT-2b HT 
+Commercial 8398 3068.12 9185 2984.08 10135 2890.95 10576 1853.34 10976 2082.03 
+ 
+11744 
+ 
+2791.66 
+ 
+HT-2c 
+HT- 
+Educational 
+Institutions / 
+Hospitals 
+1675 596.788 1841 621.46 2016 633.87 2160 460.95 2338 557.84 
+ 
+2512 
+ 
+683.9 
+ 
+ 
+HT-3(a) & 
+(b) 
+HT Irrigation 
+& LI Schemes 793 464.715 839 629.49 937 612.54 976 722.63 1046 868.65 
+ 
+1033 
+ 
+649.77 
+HT-4 Residential 
+Apartments 348 118.65 384 123.44 565 134.93 637 135.60 674 
+ 
+142.61 
+ 
+ 
+740 
+ 
+156.53 
+HT-5 Temporary 
+Power  1069 128.8 1304 130.15 1557 133.42 1861 135.98 2186 157.22 
+ 
+2425 
+ 
+248.78 
+HT-6 
+Irrigation & 
+agricultural 
+farms 
+- - - - - - - - - - 
+ 
+70 
+ 
+3.71 
+HT- Total 24734 13625.61 26834 14347.32 29362 13825.59 31029 11639.22 32639 13643.32 
+ 
+34292 
+ 
+15834.46 
+Total 2426351
+9 
+54142.0
+1 
+2544734
+6 58313.38 26785143 57906.61 27689467 54784.24 28596758 58026.81 
+ 
+29197928 
+ 
+62088.79 
+
+[PDF page 20]
+20 
+ 
+9.5   TRANSMISSION AND DISTRIBUTION LOSSES: 
+ 
+ 
+The Karnataka Power Transmission Corporation Ltd., is the State Transmission utility 
+vested with the function of transmitting power from the generating stations to the 
+interface points with the ESCOMs. The transmission loss is due to the loss of energy 
+for technical reasons incurred in the transmission system.  In order to contain these 
+losses, the KPTCL is augmenting existing stations / lines besides adding new                 
+stations / lines in the transmission system.  The KPTCL had reported transmission 
+loss of 2.977% for the FY24.  
+          Figures in percentage 
+Particulars FY19 FY20 FY21  FY22 FY23 FY24 
+As approved by 
+KERC 
+3.27 3.10 3.039 2.978 2.864 2.764 
+As reported by 
+KPTCL 
+3.161* 3.129 3.025 2.978 2.977 2.977 
+ 
+* Transmission losses excluding southern region losses.   
+ 
+The ESCOMs enter into power purchase agreements with generators and the 
+same is accounted as power purchase quantum in million units, at the 
+generation bus of the generating stations. This energy is transmitted through the 
+transmission system of the KPTCL to the interface points with the ESCOMs. The 
+difference of the energy at generation bus and energy at the interface points 
+with ESCOMs is reckoned as t ransmission loss. The ESCOMs distribute the energy 
+through their distribution network to cater to the needs of different category of 
+consumers in their areas of operation. The difference of energy recorded at the 
+interface points and the sum of the energy recorded at the consumer level is 
+reckoned as distribution loss. The losses in the distribution system are due to 
+technical and commercial reasons like errors in meters, meter reading, billing, 
+theft / pilferage of electricity, etc. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 21]
+21 
+ 
+9.5.1  THE APPROVED AND ACTUAL DISTRIBUTION LOSSES IN THE ESCOMS FOR THE 
+FY23 ARE AS FOLLOWS: 
+                             Figures in percentage 
+Name of the 
+ESCOM 
+Approved 
+Distribution losses 
+for FY23 
+Actual Distribution 
+losses for FY23 
+BESCOM 10.50 9.71 
+MESCOM 9.10 8.51 
+CESC 10.70 10.22 
+HESCOM 12.75 16.14 
+GESCOM 10.50 10.49 
+Hukeri RECS 13.75 14.19 
+ 
+9.5.2 THE ACTUAL DISTRIBUTION LOSSES OF THE ESCOMS AND HUKERI RECS IN 
+THE PAST YEARS ARE AS FOLLOWS: 
+                           Figures in percentage 
+Name of the 
+ESCOM 
+FY19          FY20            FY21 FY22 FY23 
+BESCOM 12.54 11.99 11.63 11.33 9.71 
+MESCOM 10.52 10.07 9.86 9.02 8.51 
+CESC 12.04 11.12 12.75 11.32 10.22 
+HESCOM 14.62 14.10 13.25 14.15 16.14 
+GESCOM 14.41 11.22 11.72 11.02 10.49 
+Hukeri RECS 19.10 14.83 14.47 14.33 14.19 
+ 
+9.5.3  THE OVERALL TRANSMISSION AND DISTRIBUTION LOSSES FOR THE STATE ARE 
+AS FOLLOWS: 
+             Figures in percentage 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9.6 THE RPO COMPLIANCE OF THE ESCOMs FOR THE FY23: 
+ 
+Renewable Energy Purchase Obligation (RPO) 
+ 
+The Commission, as mandated under Section 86(1)(e) of the Electricity Act, 2003, 
+has specified through Regulations, the percentage of energy to be sourced from 
+renewable sources by the obligated entiti es namely the distribution licensees, 
+captive consumers and open access consumers. The RPO specified by the 
+Commission for FY23, is indicated below:  
+FY19 FY20 FY21 FY22 FY23 
+16.40 15.05 16.30 15.55 15.34 
+
+[PDF page 22]
+22 
+ 
+Obligated Entity % RPO specified 
+BESCOM 23.75 
+MESCOM 25.00 
+CESC 22.50 
+HESCOM 22.50 
+GESCOM 20.50 
+HRECS 22.50 
+AEQUS 22.50 
+MSEZL 25.00 
+Open Access consumers with contract demand 
+exceeding 5 MW sourcing power from other than 
+renewable sources of energy. 
+BESCOM: 23.75 
+MESCOM: 25.00 
+CESC: 22.50 
+HESCOM:22.50  
+GESCOM:20.50 
+HRECS: 22.50 
+AEQUS: 22.50 
+MSEZL: 25.00 
+Grid connected Captive consumers with total 
+Installed capacity exceeding 5 MW and 
+generating electricity from sources other than 
+renewables sources. 
+BESCOM: 23.75 
+MESCOM: 25.00 
+CESC: 22.50 
+HESCOM:22.50  
+GESCOM:20.50 
+HRECS: 22.50 
+AEQUS: 22.50 
+MSEZL: 25.00 
+ 
+ 
+ 
+The following table indicates the status of RPO Compliance by the ESCOMs for FY23: 
+ 
+ 
+ESCOM Total Energy 
+Purchased 
+excluding 
+Hydro 
+-MU 
+% RPO 
+Target 
+RPO 
+Target 
+MU 
+Total RE 
+purchased 
+from all 
+sources 
+-MU- i.e. 
+RPO met 
+%  
+RPO 
+met 
+BESCOM 31310.630 23.75 7436.275 8349.49 26.67 
+MESCOM 4060.720 25.00 1015.180 1478.22 36.40 
+CESC 5298.877 22.50 1192.247 1676.03 31.63 
+HESCOM incl. 
+HRECS 
+11374.860 22.50 2559.344 4339.84 38.15 
+GESCOM 8143.004 20.50 1669.316 2837.98 34.85 
+Total 60188.091 23.05 13872.362 18681.56 31.04 
+ 
+ 
+ 
+9.7 CROSS SUBSIDY SURCHARGE (CSS) FOR FY24 AND FY25: 
+ 
+a) Cross Subsidy Surcharge for FY24: 
+The Commission has determined the CSS applicable for FY23 -24 in the 
+Tariff Order 2023 by adopting the methodology specified in the Tariff Policy 
+2016, which is indicated below: 
+ 
+ 
+
+[PDF page 23]
+23 
+ 
+(a) Applicable to EHT & HT categories: 
+ 
+Paise/unit 
+Particulars  66 kV & 
+above 
+HT level – 
+11kV/33kV 
+HT-1 Water Supply & Sewerage 70 13 
+HT-2a Industries  205 205 
+HT-2b Commercial  280 280 
+HT-2 (c) (i)  186 186 
+HT-2 (c) (ii)  229 229 
+HT-3  0 0 
+HT-4 Residential Apartments / Colonies 191 191 
+HT-5 Temporary supply  331 331 
+HT-6 Irrigation & Agricultural Farms 0 0 
+ 
+(b) Applicable to LT categories:  
+ 
+Paise/unit 
+LT-1 subsidized 76 
+LT-1 Non-subsidized 0 
+LT-2a 131 
+LT-2b  220 
+LT-3 240 
+LT4a 0 
+LT 4b 83 
+LT 4c 211 
+LT-5 227 
+LT-6 WS 0 
+LT 6 SL 24 
+LT-6 EV charging 0 
+LT7 510 
+ 
+b) Cross Subsidy Surcharge for FY25: 
+The Commission has determined the CSS applicable for FY24 -25 in the Tariff  
+Order 2024 by adopting the methodology specified in the Tariff Policy 2016, 
+which is indicated below: 
+ 
+(a) Applicable to EHT & HT categories: 
+ 
+Paise/unit 
+Particulars  66 kV & 
+above 
+HT level – 
+11kV/33kV 
+HT-1 Water Supply & Sewerage 0 0 
+HT-2a Industries  55 55 
+HT-2b Commercial  246 246 
+HT-2 (c) (i)  0 0 
+HT-2 (c) (ii)  121 121 
+HT-3  0 0 
+HT-4 Residential Apartments / Colonies 37 37 
+HT-5 Temporary supply  305 305 
+HT-6 Horticultural Nurseries / Forms 230 230 
+HT-7 Gov. Lift irrigation 0 0 
+
+[PDF page 24]
+24 
+ 
+(b) Applicable to LT categories:  
+ 
+Paise/unit 
+LT-1  48 
+LT-2 120 
+LT-3a 209 
+LT-3b 510 
+LT4a 0 
+LT 4b 0 
+LT 4c 231 
+LT-5 71 
+LT-6 WS 0 
+LT 6 SL 0 
+LT-6 EV charging 0 
+LT7 448 
+ 
+ 
+9.8 ADDITIONAL SURCHARGE FOR FY24 AND FY25: 
+ 
+a) Additional Surcharge for FY24 
+ 
+The Commission in its Tariff Order-2023 had determined a common additional 
+surcharge of 148 paise per unit for FY24, applicable to all ESCOMs and no 
+concession was extended to renewable sources.  
+  
+Some of the stakeholders challenged the above order in the  Hon’ble High 
+Court of Karnataka in WP No. 10401/2023 and other connected petitions. The 
+Court passed orders and the relevant portion of the Order dated 19.06.2023 
+of the Hon’ble High Court is reproduced below:  
+ 
+“5. In view of the aforesaid facts and circ umstances and the material on 
+record, which indicates that the impugned order has been passed in violative 
+of principles of natural justice coupled with the aforesaid memo filed on behalf 
+of the KERC, without expressing any opinion on the merits/demerits of the rival 
+contentions, I deem it just and appropriate to set aside the impugned order 
+and remit the matter back to the KERC insofar as it relates to levying of 
+additional surcharge of Rs. 1.48 per unit applicable to all open access 
+transactions for recon sideration afresh in accordance with law after 
+providing/furnishing the data submitted by the PCKL to the petitioner and 
+others and also provide them an opportunity and hearing in this regard. 6. It is 
+
+[PDF page 25]
+25 
+ 
+also relevant to state that on 30.05.2023 while staying the impugned order, this 
+Court directed the petitioners to continue to pay surcharge at the rate of 35 
+paise per unit and the said interim order remains in force even till today. Under 
+these circumstances, though the 2nd respondent – BESCOM has raised bi lls 
+applying the rates as per the impugned order, in view of the present order, 
+whereby the impugned order is set aside, I further direct the petitioners to 
+continue to pay the additional surcharge at the rate of 35 paise till the 1st 
+respondent-KERC passe s appropriate orders in accordance with law. It is 
+needless to state that the said payment by the petitioner at 35 paise per unit 
+would be without prejudice to the rights and contentions of both sides and all 
+rival contentions on all aspects of the matter are kept open and no opinion is 
+expressed on the same.” 
+In compliance of the above order, the Commission passed order on 
+17.11.2023, re -determining the ASC of 140 paise/unit and allowed 50% 
+concession in ASC for all OA consumers who procure electricity fro m 
+renewable sources and decided to levy Additional Surcharge of 70paise/unit 
+for such OA consumers. 
+ 
+b) Additional Surcharge for FY25: 
+ 
+The Commission in its Tariff Order-2024 has determined a common additional 
+surcharge of 137 paise per unit for FY25, applicable to all ESCOMs and for 
+renewable sources, the ASC has been fixed at 60% of the above ASC which 
+works out to 82 paise / unit. The ASC has been determined as under: 
+ 
+Total Fixed cost as per Tariff Order 2024: Rs.33177.20 Crores. 
+Fixed cost recovered through Demand Charges: Rs.23342.82 Crores. 
+Balance fixed cost embedded in energy charges: Rs.9834.38 Crores. 
+Total energy sales by ESCOMs to its consumers: 71807.14MUs. 
+FC / unit embedded in energy charges = 9834.38X10/71807.14= Rs.1.37/- 
+ 
+ 
+9.9 RETAIL SUPPLY TARIFF FOR FY24 AND FY25: 
+The Commission has issued two Tariff Orders in the financial year FY24 dated 12th 
+May 2023 and 28 th February 2024.  In the Tariff Order dated 12 th May 2023, 
+
+[PDF page 26]
+26 
+ 
+Annual Performance Review for FY22 and revised Annual Revenue 
+Requirement and Retail Supply Tariff for FY24 has been determined. 
+ 
+Further, in the Tariff Order dated 28 th February 2024, the Commission has 
+undertaken the Annual Performance Rev iew for FY23 and determined the 
+revised Annual Revenue Requirement and Retail Supply Tariff for FY25. 
+ 
+The Commission in order to encourage the usage of surplus energy, has 
+continued the ‘Special Incentive Scheme’ and ‘Discounted Energy Rate 
+Scheme’ for HT -2(a), HT-2(b), HT-2(c) categories for FY24 and FY25.  However, 
+the Commission decides to withdraw the approved Special Incentive Scheme 
+from the financial year 2025 -26 onwards with option for the consumers to opt 
+for DERS scheme. 
+ 
+The Commission, in the Tariff Order dated 12 th May 2023, has continued the 
+rebate of 50 paise per unit in the energy charges for FY24, in respect of Micro 
+and Small Scale Industries classified under LT -5(a) and LT -5(b) tariff schedule.  
+However, the same has been withdrawn in the Tariff Order dated 28th February 
+2024 as the Commission has reduced the energy  charges in respect of LT -5 
+(industrial) category. 
+ 
+As per the Commission’s Tariff Order dated 12 th May 2023, the approved Retail 
+Supply Tariff for FY24 for each of the consumer categories are as hereunder; 
+ 
+High lights of Tariff Order 2023 dated 12th May 2023 (Applicable for FY24): 
+ Non-Telescopic tariff for LT-2 (a)-Domestic category introduced. 
+ Urban and Rural categories merged into single category. 
+ New directive to link the Aadhaar card numbers with RR numbers of IP sets to 
+regulate payment of subsidy by the Government is issued. 
+ DERS scheme to HT -2a, HT-2b and HT-2c consumers continued.  In addition to 
+this, DERS scheme has been extended to LT industrial and LT commercial 
+consumers also. 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 27]
+27 
+ 
+TARIFF SCHEDULE FOR FY24 
+LOW TENSION SUPPLY 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY24 
+1. LT-1 BJ/KJ 
+Fully Subsidized by GOK Free 
+Monthly Minimum per installation (Rs.) 100 
+CTD (Commission Determined Tariff) 
+(paise/kWh) 
+BESCOM:           962 
+MESCOM:          861 
+CESC:                 859 
+HESCOM:           869 
+GESCOM:          875 
+2. LT-2(a) Domestic 
+Fixed Charges on sanctioned load (Rs./ kW /month): 
+Per KW upto 50 KW 110 
+For every additional KW 50 KW & above 210 
+   
+Energy Charges (paise / kWh):  
+0 to 100 units 475 
+0 to all units (if the total consumption 
+exceeds 100 units) 
+700 
+3. LT-2b 
+Private 
+Hospitals & 
+Educational 
+Institutions, 
+etc. 
+   
+Fixed Charges on sanctioned load (Rs./ KW /month): 
+Per KW upto 50 KW 180 
+For every additional KW 50 KW & above 250 
+   
+Energy Charges (Paise / kWh): 775 
+      
+   
+ 
+ 
+LOW TENSION SUPPLY 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY24 
+4. LT-3(a) Commercial 
+Fixed Charges on sanctioned load (Rs./ KW /month): 
+Per KW upto 50 KW 200 
+For every additional KW 50 KW & above 300 
+  
+Energy Charges (Paise / kWh): 850 
+Demand Based Tariff (Optional) 
+Fixed Charges on sanctioned load (Rs. / KW /month): 
+Per KW upto 50 KW 220 
+For every additional KW 50 KW & above 320 
+  
+Energy Charges (Paise / kWh): 850 
+      
+5. LT-3(b) 
+Applicable 
+to Hoardings 
+and 
+Advertiseme
+nt boards, 
+etc. 
+Fixed Charges on sanctioned load (Rs. / KW /month): 
+Less than 67 HP only 200 
+  
+Energy Charges (Paise / kWh): 1050 
+6. LT-4(a) IP Sets 10HP 
+& below 
+Fixed Charges & Energy Charges Nil 
+CTD (Commission Determined Tariff) 
+(paise/kWh) 
+BESCOM:            476 
+MESCOM:          667 
+CESC:                 692 
+HESCOM:          734 
+GESCOM:          722 
+      
+7. LT-4(b) IP Sets 
+above 10HP 
+Fixed Charges on (Rs./ HP / month) 135 
+Energy Charges (paise / per kWh) 410 
+
+[PDF page 28]
+28 
+ 
+      
+8. LT-4(c) 
+Nurseries / 
+Coffee / Tea 
+plantations 
+Fixed Charges (Rs./ HP / month) 135 
+Energy Charges (paise / per kWh) 425 
+      
+9. LT-5 Industrial 
+Fixed Charges on sanctioned load (Rs./HP/month): 
+Below 100 HP 140 
+100 HP and above 250 
+Energy Charges (paise / kWh):  
+0 to 500 units 610 
+Above 500 units 710 
+   
+Demand Based Tariff (Optional) 
+Fixed Charges on billing demand (Rs./KW/month): 
+Below 100 HP 190 
+100 HP and above 300 
+Energy Charges (paise / kWh):  
+0 to 500 units 610 
+Above 500 units 710 
+ 
+ 
+10. 
+LT-6(a) Water 
+Supply 
+Fixed Charges on sanctioned load  (Rs./ HP / month) 
+Upto 67 HP 175 
+For every additional HP above 67 HP 275 
+Energy Charges (paise / per kWh) 550 
+      
+11. LT-6(b) Public 
+Lighting 
+Fixed Charges (Rs./ KW / month) 175 
+Energy Charges (paise / kWh)   
+Energy Charges 700 
+Energy Charges for LED / Induc. Lighting 600 
+      
+12. LT-6(c) 
+EV 
+Charging & 
+Battery 
+swapping 
+stations 
+Fixed Charges on sanctioned load (Rs./ HP / month) 
+LT: Upto 50 KW 70 
+LT: For every additional KW above 50 KW 170 
+HT: Demand charges (Rs./KVA/month) 200 
+Energy Charges (paise / per kWh) 450 
+    
+LOW TENSION SUPPLY 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY24 
+13. LT-7 
+Temporary 
+Power 
+Supply 
+Fixed Charges (Rs./ HP / month) 200 
+Energy Charges (paise / per kWh) 1150 
+ 
+HIGH TENSION SUPPLY 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY24 
+14. HT-1 Water Supply Demand Charges (Rs./ KVA / month) 350 
+Energy Charges (paise / per kWh) 600 
+      
+15. HT-2a Industrial Demand Charges (Rs./ KVA / month) 350 
+Energy Charges (paise / per kWh) 740 
+      
+ HT-2a BMRCL Demand Charges (Rs./ KVA / month) 300 
+Energy Charges (paise / per kWh) 525 
+      
+ HT-2a Railway 
+Traction 
+Demand Charges (Rs./ KVA / month) 350 
+Energy Charges (paise / per kWh) 700 
+      
+ HT-2a Demand Charges (Rs./ KVA / month) 350 
+
+[PDF page 29]
+29 
+ 
+Effluent 
+Treat. plants 
+Energy Charges (paise / per kWh) 700 
+16. HT-2b Commercial Demand Charges (Rs./ KVA / month) 375 
+Energy Charges (paise / per kWh) 925 
+      
+17. HT-2c(i) 
+Govt. 
+Hospital & 
+Educational 
+Institutions 
+Demand Charges (Rs./ KVA / month) 300 
+Energy Charges (paise / per kWh) 750 
+      
+18. HT-2c(ii) 
+Private 
+Hospital & 
+Educational 
+Institutions 
+Demand Charges (Rs./ KVA / month) 350 
+Energy Charges (paise / per kWh) 850 
+      
+19. HT-3 
+All Lift 
+Irrigation 
+Schemes 
+Fixed Charges (Rs./ KVA / month) 150 
+Energy Charges (paise / per kWh) 350 
+ 
+ 
+20. 
+HT-4 Residential 
+Apartments 
+Demand Charges (Rs./ KVA / month) 300 
+Energy Charges (paise / per kWh) 725 
+      
+21. HT-5 Temporary 
+Power Supply 
+Fixed Charges (Rs./ HP / month) 400 
+Energy Charges (paise / per kWh) 1150 
+      
+ HT-5 
+Bangalore 
+International 
+Exhibition 
+Centre 
+Fixed Charges Nil 
+Energy Charges (paise / per kWh) 1300 
+22. HT-6 Irrigation and 
+Agr. Farms 
+Fixed Charges (Rs./ HP / month) 150 
+Energy Charges (paise / per kWh) 550  
+NOTE: In respect of HT installations (wherever applicable), the demand charges shall be levied at 85% 
+of the contract demand (billing demand) . 
+ 
+ 
+MANGALORE SPECIAL ECONOMIC ZONE 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY24 
+1. HT INDUSTRIAL Demand Charges (Rs./ KVA / month) 300 
+Energy Charges (paise / per kWh) 690 
+       
+2. HT Construction/
+Temporary 
+Demand Charges (Rs./ KVA / month) 325 
+Energy Charges (paise / per kWh) 1100 
+      
+3. LT INDUSTRIAL Fixed Charges (Rs./ KVA / month) 225 
+Energy Charges (paise / per kWh) 650 
+      
+4. LT Construction/
+Temporary 
+Fixed Charges (Rs./ KVA / month) 300 
+Energy Charges (paise / per kWh) 1100 
+      
+ 
+AEQUS SPECIAL ECONOMIC ZONE 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY24 
+1. HT 
+INDUSTRIAL /  
+COMMON 
+FACILITIES 
+Demand Charges (Rs./ KVA / month) 285 
+Energy Charges (paise / per kWh) 700 
+      
+2. HT Construction Demand Charges (Rs./ KVA / month) 300 
+
+[PDF page 30]
+30 
+ 
+Energy Charges (paise / per kWh) 1100 
+      
+3. LT COMMON 
+FACILITIES 
+Fixed Charges (Rs./ KVA / month) 250 
+Energy Charges (paise / per kWh) 700 
+      
+TOD Tariff 
+Time of Day From July to November 
+(monsoon period) 
+From December to June) 
+06.00 Hrs to 10.00 Hrs 0 0 
+10.00 Hrs to 18.00 Hrs 0 0 
+18.00 Hrs to 22.00 hrs 0 (+)100 Paise 
+22.00 Hrs to 06.00 Hrs 0 (-)100 Paise 
+NOTE: 
+1. Mandatory ToD in respect of HT -2a, HT-2b and HT -2c categories when the contract demand is 
+500 KVA & above. 
+2. Optional ToD in respect of HT -2a, HT-2b and HT-2c categories when the contract demand is less 
+than 500 KVA. 
+3. Optional ToD in respect of HT-1and LT-5 categories. 
+ 
+As per the Commission’s Tariff Order dated 28 th February 2024, the approved Retail 
+Supply Tariff for FY25 for each of the consumer categories are as hereunder; 
+ 
+High lights of Tariff Order 2024 dated 28TH February 2024 (Applicable for FY25) 
+ Single rate of energy charges for the usage of energy to all the category of 
+consumers introduced. 
+ Time of Day (ToD) introduced for morning peak 6.00 a.m. to 9.00 a.m. in addition 
+to the existing evening peak between 6.00 p.m. to 10.00 p.m. introduced. 
+ Directive for setting up of a portal to maintain the details of PPAs executed and 
+approved by the competent authorities to monitor the terms and conditions of 
+the PPAs and also to regulate payment of power purchase bills online issued. 
+ Directive for settling up of required system to allow for Optional Prepaid 
+metering from 01.06.2024 issued. 
+TARIFF SCHEDULE FOR FY25 
+LOW TENSION SUPPLY 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY25 
+2. LT-1 Domestic 
+Fixed Charges on sanctioned load (Rs./ kW /month): 
+Per KW upto 50 KW 120 
+For every additional KW 50 KW & above 210 
+   
+Energy Charges (Paise / kWh): 590 
+3. LT-2 
+Private 
+Hospitals & 
+Educational 
+   
+Fixed Charges on sanctioned load (Rs./ KW /month): 
+Per KW upto 50 KW 180 
+
+[PDF page 31]
+31 
+ 
+Institutions, 
+etc. 
+For every additional KW 50 KW & above 250 
+   
+Energy Charges (Paise / kWh): 725 
+      
+4. LT-3(a) Commercial 
+Fixed Charges on sanctioned load (Rs./ KW /month): 
+Per KW upto 50 KW 210 
+For every additional KW 50 KW & above 300 
+  
+Energy Charges (Paise / kWh): 800 
+Demand Based Tariff (Optional) 
+Fixed Charges on sanctioned load (Rs. / KW /month): 
+Per KW upto 50 KW 220 
+For every additional KW 50 KW & above 320 
+  
+Energy Charges (Paise / kWh): 800 
+      
+5. LT-3(b) 
+Applicable 
+to Hoardings 
+and 
+Advertiseme
+nt boards, 
+etc. 
+Fixed Charges on sanctioned load (Rs. / KW /month): 
+Less than 67 HP only 200 
+  
+Energy Charges (Paise / kWh): 1050 
+    
+ 
+LOW TENSION SUPPLY 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY25 
+6. LT-4(a) IP Sets 10HP 
+& below 
+Fixed Charges & Energy Charges Nil 
+CTD (Commission Determined Tariff) 
+(paise/kWh) 
+BESCOM:       565 
+MESCOM:       690 
+CESC:               740 
+HESCOM:          740 
+GESCOM:          745 
+      
+7. LT-4(b) IP Sets 
+above 10HP 
+Fixed Charges on (Rs./ HP / month) 135 
+Energy Charges (paise / per kWh) 410 
+      
+8. LT-4(c) 
+Nurseries / 
+Coffee / Tea 
+plantations 
+Fixed Charges (Rs./ HP / month) 135 
+Energy Charges (paise / per kWh) 425 
+      
+9. LT-5 Industrial 
+Fixed Charges on sanctioned load (Rs./HP/month): 
+Below 100 HP 140 
+100 HP and above 250 
+Energy Charges (paise / per kWh) 610 
+   
+Demand Based Tariff (Optional) 
+Fixed Charges on billing demand (Rs./KW/month): 
+Below 100 HP 190 
+100 HP and above 300 
+Energy Charges (paise / per kWh) 610 
+10. LT-6(a) Water 
+Supply 
+Fixed Charges on sanctioned load  (Rs./ HP / month) 
+Upto 67 HP 180 
+For every additional HP above 67 HP 275 
+Energy Charges (paise / per kWh) 550 
+      
+11. LT-6(b) Public 
+Lighting 
+Fixed Charges (Rs./ KW / month) 180 
+Energy Charges (paise / kWh)   
+
+[PDF page 32]
+32 
+ 
+Energy Charges 700 
+Energy Charges for LED / Induc. Lighting 600 
+      
+12. LT-6(c) 
+EV 
+Charging & 
+Battery 
+swapping 
+stations 
+Fixed Charges on sanctioned load (Rs./ HP / month) 
+LT: Upto 50 KW 70 
+LT: For every additional KW above 50 KW 170 
+HT: Demand charges (Rs./KVA/month) 200 
+Energy Charges (paise / per kWh) 450 
+13. LT-7 
+Temporary 
+Power 
+Supply 
+Fixed Charges (Rs./ HP / month) 200 
+Energy Charges (paise / per kWh) 1150 
+ 
+HIGH TENSION SUPPLY 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY25 
+14. HT-1 Water Supply Demand Charges (Rs./ KVA / month) 340 
+Energy Charges (paise / per kWh) 625 
+      
+15. HT-2a Industrial Demand Charges (Rs./ KVA / month) 340 
+Energy Charges (paise / per kWh) 690 
+      
+ HT-2a BMRCL Demand Charges (Rs./ KVA / month) 300 
+Energy Charges (paise / per kWh) 525 
+      
+ HT-2a Railway 
+Traction 
+Demand Charges (Rs./ KVA / month) 340 
+Energy Charges (paise / per kWh) 650 
+      
+ 
+HIGH TENSION SUPPLY 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY25 
+ HT-2a Effluent 
+Treat. plants 
+Demand Charges (Rs./ KVA / month) 340 
+Energy Charges (paise / per kWh) 650 
+16. HT-2b Commercial Demand Charges (Rs./ KVA / month) 365 
+Energy Charges (paise / per kWh) 800 
+      
+17. HT-2c(i) 
+Govt. 
+Hospital & 
+Educational 
+Institutions 
+Demand Charges (Rs./ KVA / month) 290 
+Energy Charges (paise / per kWh) 710 
+      
+18. HT-2c(ii) 
+Private 
+Hospital & 
+Educational 
+Institutions 
+Demand Charges (Rs./ KVA / month) 340 
+Energy Charges (paise / per kWh) 810 
+      
+19. HT-3 
+Irrigation 
+Schemes 
+(other than 
+Govt.) 
+Fixed Charges (Rs./ KVA / month) 150 
+Energy Charges (paise / per kWh) 150 
+20. HT-4 Residential 
+Apartments 
+Demand Charges (Rs./ KVA / month) 290 
+Energy Charges (paise / per kWh) 725 
+      
+21. HT-5 Temporary 
+Power Supply 
+Fixed Charges (Rs./ HP / month) 400 
+Energy Charges (paise / per kWh) 1150 
+      
+
+[PDF page 33]
+33 
+ 
+ HT-5 
+Bangalore 
+International 
+Exhibition 
+Centre 
+Fixed Charges Nil 
+Energy Charges (paise / per kWh) 1300 
+22. HT-6 Irrigation and 
+Agr. Farms 
+Fixed Charges (Rs./ HP / month) 150 
+Energy Charges (paise / per kWh) 550 
+22. HT-7 
+Govt. Lift 
+Irrigation 
+Schemes  
+Fixed Charges (Rs./ HP / month) 150 
+Energy Charges (paise / per kWh) 475 
+NOTE: In respect of HT installations (wherever applicable), the demand charges shall be levied at 90% 
+of the contract demand (billing demand) . 
+ 
+MANGALORE SPECIAL ECONOMIC ZONE 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY25 
+1. HT INDUSTRIAL Demand Charges (Rs./ KVA / month) 325 
+Energy Charges (paise / per kWh) 690 
+       
+2. HT Construction/
+Temporary 
+Demand Charges (Rs./ KVA / month) 350 
+Energy Charges (paise / per kWh) 1100 
+      
+3. LT INDUSTRIAL Fixed Charges (Rs./ KVA / month) 225 
+Energy Charges (paise / per kWh) 610 
+      
+4. LT Construction/
+Temporary 
+Fixed Charges (Rs./ KVA / month) 300 
+Energy Charges (paise / per kWh) 1100 
+      
+ 
+ 
+AEQUS SPECIAL ECONOMIC ZONE 
+S.No. Tariff 
+Category 
+Category  
+Description 
+Particulars For FY25 
+1. HT 
+INDUSTRIAL /  
+COMMON 
+FACILITIES 
+Demand Charges (Rs./ KVA / month) 340 
+Energy Charges (paise / per kWh) 690 
+      
+2. HT Construction Demand Charges (Rs./ KVA / month) 340 
+Energy Charges (paise / per kWh) 1100 
+      
+3. LT COMMON 
+FACILITIES 
+Fixed Charges (Rs./ KVA / month) 275 
+Energy Charges (paise / per kWh) 700 
+      
+ 
+TOD Tariff 
+Time of Day From July to November 
+(monsoon period) 
+From December to June) 
+06.00 Hrs to 09.00 Hrs 0 (+)100 Paise 
+09.00 Hrs to 18.00 Hrs 0 0 
+18.00 Hrs to 22.00 hrs 0 (+)100 Paise 
+22.00 Hrs to 06.00 Hrs 0 (-)100 Paise 
+NOTE: 
+1. Mandatory ToD in respect of HT -2a, HT-2b and HT -2c categories when the contract demand is 
+500 KVA & above. 
+2. Optional ToD in respect of HT-2a, HT-2b and HT-2c categories when the contract demand is less 
+than 500 KVA. 
+3. Optional ToD in respect of HT-1and LT-5 categories. 
+
+[PDF page 34]
+34 
+ 
+9.10 TRANSMISSION TARIFF FOR FY24 AND FY25: 
+Transmission Tariff for FY24: 
+The transmission charges for the use of tran smission system as per the 
+Commission’s Order dated 12th May, 2023 is Rs.1,63,031/- per MW per month for 
+all the ESCOMs and for all long -term open access consumers excluding RE 
+based generators who generate and supply electricity within the State and are 
+not availing the REC benefits for FY24 (effective from 01.04.2023). 
+ 
+Approved Transmission Charges payable by ESCOMs for FY24 as per MYT 
+Order dated 12th May 2023. 
+Particulars Capacity 
+Allocation 
+In MW 
+Transmission 
+Charges 
+per Annum 
+for FY23 
+(Rs.in Crores) 
+Transmission 
+Charges 
+per Month 
+for FY23 
+(Rs.in Crores) 
+BESCOM 14644 2864.91 238.74 
+MESCOM 2170 424.53 35.38 
+CESC 3147 615.67 51.30 
+HESCOM 5450 1066.22 88.85 
+GESCOM 3090 604.52 50.38 
+TOTAL 28501 5575.85 464.65 
+ 
+Transmission Tariff for FY25: 
+The transmission charges for the  use of transmission system as per the 
+Commission’s Order dated 28th February, 2024 is Rs.1,63,760/- per MW per month 
+for all the ESCOMs and for all long -term open access consumers excluding RE 
+based generators who generate and supply electricity within the State and are 
+not availing the REC benefits for FY25 (effective from 01.04.2024). 
+ 
+Approved Transmission Charges payable by ESCOMs for FY24 as per MYT Order 
+dated 12th May 2023. 
+Particulars Capacity 
+Allocation 
+In MW 
+Transmission 
+Charges 
+per Annum 
+for FY23 
+(Rs.in Crores) 
+Transmission 
+Charges 
+per Month 
+for FY23 
+(Rs.in Crores) 
+BESCOM 15963 3136.92 261.41 
+MESCOM 2225 437.24 36.44 
+CESC 3102 609.58 50.80 
+HESCOM 6517 1280.67 106.72 
+GESCOM 3480 683.86 56.99 
+TOTAL 31287 6148.26 512.36 
+ 
+
+[PDF page 35]
+35 
+ 
+9.11 TRANSMISSION CHARGES FOR SHORT -TERM OPEN ACCESS (STOA) 
+CONSUMERS FOR FY24 and FY25: 
+For FY24: 
+The Commission’s approved transmission charges and SLDC charges for short 
+term open access consumers for FY24: 
+ 
+Duration of Open Access 
+Transmission 
+Charges 
+(Rs./MW) 
+SLDC Charges 
+(Rs./MW/day) 
+More than 12 hours and  
+upto 24 hours in a day in one block. 1339.98 
+26.67 More than 6 hours and  
+upto 12 hours in a day in one block. 669.99 
+Upto 6 hours in a day in one block. 334.99 
+ 
+For FY25: 
+The Commission’s approved transmission charges and SLDC charges for short 
+term open access consumers for FY25: 
+ 
+Duration of Open Access 
+Transmission 
+Charges 
+(Rs./MW) 
+SLDC Charges 
+(Rs./MW/day) 
+More than 12 hours and  
+upto 24 hours in a day in one block. 1345.97 
+34.68 More than 6 hours and  
+upto 12 hours in a day in one block. 672.99 
+Upto 6 hours in a day in one block. 336.50 
+ 
+ 
+     9.12 (a)   SPECIAL INCENTIVE SCHEME: 
+ 
+The Commission notes that, during the Public hearing the consumer 
+organizations have pleaded for continuation of Special Incentive Scheme, 
+since it is helpful to the industries. Thereafter ESCOMs have also concurred with 
+views of the stakeholders. Considering the request of the consumers and 
+concurrence of ESCOMs, the Co mmission has decided to continue the SIS on 
+the existing terms and conditions. The scheme would remain in force until further 
+orders. 
+ 
+ 
+ 
+
+[PDF page 36]
+36 
+ 
+9.12 (b)     DISCOUNTED ENERGY RATE SCHEME: 
+The Commission keeping in view the surplus po wer situation in the State and  
+as requested by the ESCOMs, to encourage increase in sales to HT consumers, 
+has continued the “Discounted Energy Rate Scheme as per the existing terms 
+and conditions at Rs.5 per unit as against Rs. 6 per unit approved earlier until 
+further Order, for the HT categories for FY24 in the Tariff Order dated 12.05.2023. 
+ 
+9.13          WITHDRAWAL OF SOLAR REBATE: 
+The Commission by considering the submission made by the ESCOMs and its 
+financials along with the plight of other consumers in the State decides to 
+withdraw the existing rebate of 50 paise per unit, for use of solar water heaters 
+under tariff schedule LT2(a). 
+ 
+9.14         WITHDRAWAL OF INCENTIVE EXTENDED TO ECS CONSUMERS: 
+The Commission, by considering the request of ESCOMs and keeping in view 
+the availability of various other options for online payment to the consumers, 
+decides to withdraw the incentive extended to ECS consumers. However, the 
+consumers may continue to make payment through ECS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 37]
+37 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Activities of the Commission  
+ 
+During  
+ 
+FY24 
+
+[PDF page 38]
+38 
+ 
+10.1 THE FOLLOWING ARE THE IMPORTANT EVENTS IN THE COMMISSION’S 
+FUNCTIONING DURING FY24: 
+ 
+1) Processing of Tariff applications of KPTCL, ESCOMs, Hukeri REC S, MSEZ, 
+AEQUS, SEZ for the FY24/FY25 were completed. 
+ 
+2) One State Advisory Committee was held during the year. 
+ 
+3) Thirteen internal Meetings of the Commission were held to discuss and to 
+decide on various issues pertaining to the Power sector and administration 
+of the Commission’s Office. 
+ 
+4) During the year 91 Petitions were filed for adjudication of disputes and 140 
+cases were finally disposed of during the year. 
+5) One Energy Audit Review Meeting of each ESCOM has been conducted 
+during the year.  
+6) 29 Numbers of PPAs/SPPA were approved. 
+7) During the year, orders on four quarterly claims of Fuel Cost Adjustment 
+charges of all ESCOMs issued.  
+8) The Commission has issued 10 Regulations/Amendments in the year  
+(a) KERC Recruitment and Conditions of Service First Amendment 
+Regulations 2023. 
+(b) Karnataka Electricity Regulatory Commission (Pre -paid Smart 
+Metering) Regulations, 2024. 
+(c) KERC (Terms & Conditions for Open Access) (Fifth Amendment), 
+Regulations,2023. 
+(d) Revised Draft KERC (Verification of Captive Status of Generating 
+Plants/Consumers in the State of Karnataka) Regulations, 2024. 
+(e) Draft KERC (Implementation of Peer to Peer Solar Energy 
+Transaction through blockchain based platform) Regulations, 2024 
+(f) Draft Karnataka Electricity Regulatory Commission (Terms and 
+Conditions for Green Energy Open Access) (First Amendment) 
+Regulations, 2023 
+(g) Draft KERC (Verification of Captive Status of 
+Generating Plants/Consumers in the State of Karnataka) 
+Regulations, 2023 
+
+[PDF page 39]
+39 
+ 
+(h) Draft Karnataka Electricity Regulatory Commission (Multi Year 
+Transmission, Distribution and Retail Supply Tariff) Regulation 2023 
+(i) Draft Karnataka Electricity Regulatory Commission (Pre-paid Smart 
+Metering), Regulations 2023 
+(j) Draft KERC (Terms and Conditions for Open Access) (Fifth 
+Amendment) Regulations 2023 
+9) The Commission has issued the following 8 Orders in the year: 
+ 
+(a) Tariff applicable to Solar rooftop photovoltaic plant under subsidy 
+schemes. 
+(b) Suo Motu Order dated 04.03.2024 in the matter of tariff to be allowed for 
+the next 10 years starting from 21st year in respect of Mini -Hydro, Wind, 
+Bagasse based Cogeneration a nd Biomass based power plants (both 
+Water Cooled and Air Cooled), which have successfully completed or 
+are completing initial term of 20 years as per the PPA terms and 
+conditions. 
+(c) Extension of Control period for the Generic Tariff Order dated 23.01.2023 
+in respect of Waste to Energy plants to be Commissioned in the State of 
+Karnataka 
+(d) In the Matter of Wheeling Charges and Banking Facility for Renewable 
+Power Projects. 
+(e) Implementation of Automatic Meter Reading (AMR) facilities. 
+(f) In the matter of implementation of Automatic meter reading facilities. 
+(g) Determination of Tariff and norms in respect of Solar Power Projects 
+(including Solar Rooftop Photovoltaic Projects) for FY24.  
+(h) Truing up of APPC for 2023-24 and notifying provisional APPC for the 2024-
+25 for the purpose of Renewable Energy Certificate (REC): 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 40]
+40 
+ 
+10.2  THE FOLLOWING ARE THE ACTIVITIES OF THE COMMISSION DURING THE 
+YEAR, IN PURSUANCE OF ITS FUNCTIONS SPECIFIED UNDER SECTION 86 OF 
+THE ELECTRICITY ACT, 2003: 
+ 
+Section of EA 
+2003 
+Functions specified Activities during the year  
+86(1)(a) Determine tariff for generation, 
+transmission, supply and wheeling of 
+electricity. 
+Completed proceedings on Tariff petitions of KPTCL for 
+transmission charges, and of Distribution licensees for 
+retail supply and wheeling charges for FY24. 
+ 
+Generic Tariff Orders in respect of solar power plants, Co-
+generation, Bio-Mass, Mini hydel, Waste to Energy and 
+wind issued. 
+86(1)(b) Regulate electricity purchase and 
+procurement process of distribution 
+licensee  
+29 numbers of PPAs (including supplemental PPAs) 
+approved by the Commission. 
+86(1)(c) Facilitate intra state transmission and 
+wheeling of electricity 
+Transmission and Wheeling  charges determined in 
+respective Tariff Orders. 
+86(1)(d) Issue of licence KPTCL, ESCOMs and Hukeri RECS are existing licensees. 
+MSEZ and AEQUS SEZ are deemed licensees. 
+ 
+ 
+ 
+86(1)(e) Promotion of co -generation and 
+renewable sources of energy 
+Renewable Purchase Obligation has been specified for 
+all the ESCOMs / captive and open access consumers.   
+Renewable Energy Certificate (REC) mechanism 
+already introduced. 
+Renewable Purchase Obligation (RPO)compliance 
+monitored. 
+86(1)(f) Adjudicate upon disputes  The Commission has disposed of 140 Petitions during the 
+year. 
+86(1)(g) Levy of fee  Fee levied and collected as per the provisions of the 
+Regulations. 
+86(1)(i) Enforce standards The quality, continuity and reliability of services by the 
+licensees reviewed regularly.  
+86(1)(j) Fixing trading margin No intra-state trader exists in the State. 
+86(1)(k) Discharge such other functions Undertaken such functions whenever, required. 
+86(2) Advise the State Government Advisory on specific issues communicated to the State 
+Government 
+86(3) Ensure transparency Public hearings and written comments / suggestions 
+invited from stakeholders in all tariff determination and 
+other proceedings.  
+86(4) Guided by National Electricity Policy 
+and Plan and Tariff Policy. 
+The Commission has taken note of the provisions of NEP 
+and Tariff Policy in discharge of its functions. 
+10.3  TARIFF ORDER OF THE KPTCL FOR FY24 AND FY25: 
+Tariff Order dated 12th May, 2023 for FY24 (effective from 01.04.2023): 
+The revised Annual Revenue Requirement (ARR) as per the Annual 
+Performance Review for FY22 was approved by the Commission and a surplus 
+
+[PDF page 41]
+41 
+ 
+of Rs.34.90 Crores was carried forward to the approved ARR of FY24 as detailed 
+below: 
+ 
+Particulars FY24 
+(Rs.in Crores) 
+Approved Annual Revenue Requirement for FY25 5415.75 
+Deficit of FY23 carried forward as per Annual 
+Performance Review. 34.90 
+Additional Employee cost on account of pay revision. 195.00 
+Approved Aggregate Annual Revenue Requirement for 
+FY24 5575.85 
+ 
+Tariff Order dated 28th February, 2024 for FY25 (effective from 01.04.2024): 
+The revised Annual Revenue Requirement (ARR) as per the Annual 
+Performance Review for FY23 was approved by the Commission and a deficit 
+of Rs.129.01 Crores was carried forward to the approved ARR of FY25 as detailed 
+below: 
+ 
+Particulars FY25 
+(Rs.in Crores) 
+Approved Annual Revenue Requirement for FY25 5803.79 
+Deficit of FY23 carried forward as per Annual 
+Performance Review. 129.01 
+Additional Employee cost on account of pay revision. 215.46 
+Approved Aggregate Annual Revenue Requirement for 
+FY24 6148.26 
+ 
+10.4     TARIFF ORDERS OF THE ESCOMs FOR FY24 AND FY25: 
+Tariff Order dated 12th May, 2023 for FY24 (effective from 01.04.2023): 
+The ARR sought by the ESCOMs and approved by the Commission for FY24 are 
+as follows: 
+ESCOMs FY24 (Rs.in Crores) 
+As filed As Approved 
+BESCOM 30614.10 28872.87 
+MESCOM 5214.40 4771.44 
+CESC 6622.48 6148.33 
+HESCOM 12100.00 10889.60 
+GESCOM 7938.95 7427.70 
+Hukeri RECS 310.20 256.12 
+Mangalore SEZ 57.34 70.14 
+AEQUS SEZ 24.83 25.98 
+
+[PDF page 42]
+42 
+ 
+  
+Based on the above ARR, the Commission has allowed an average increase in 
+retail supply tariff of 70 paise per unit for all ESCOMs to bridge the gap in 
+revenue of Rs.4457.12 Crores for FY24 (inclusive of carried forward deficit of 
+Rs.1720.11 Crores as per the APR for FY22). 
+ 
+Tariff Order dated 28th February, 2024 for FY25 (effective from 01.04.2024): 
+The ARR sought by the ESCOMs and approved by the Commission for FY25 are 
+as follows: 
+ 
+ESCOMs FY25 (Rs.in Crores) 
+As filed As Approved 
+BESCOM 34897.16 33583.48 
+MESCOM 5281.94 5095.78 
+CESC 7379.89 7173.30 
+HESCOM 12243.70 11335.60 
+GESCOM 9672.06 7756.39 
+Hukeri RECS 393.80 340.40 
+Mangalore SEZ 62.21 66.95 
+AEQUS SEZ 25.18 27.15 
+  
+Based on the above ARR, the Commission has rationalized the tariff by adjusting 
+the surplus revenue of Rs.290.76 Crores for FY25 (inclusive of carried forward 
+surplus of Rs.565.39 Crores as per the APR for FY23). 
+ 
+10.5   REGULATIONS / ORDERS ISSUED BY THE COMMISSION: 
+During the year the following Regulations / Amendments to the Regulations/Draft 
+Regulations were issued. 
+(a) KERC Recruitment and Conditions of Service First Amendment Regulations 
+2023: 
+The First Amendment to Karnataka Electricity Reg ulatory Commission 
+(Recruitment and Conditions of Service) (First Amendment) Regulations, 2023 
+was notified on 11th January, 2024. 
+ 
+Keeping in view the changes in cadre and service Rules in the State 
+Government and Other State Government and also recruitme nt and 
+conditions of service Regulations issued by several other Regulatory 
+
+[PDF page 43]
+43 
+ 
+Commissions, the Commission with the approval of GoK vide letter No. 
+Energy 567 EEB 2022 dated 20.09.2023 had  processed amendment to the 
+extant Regulations and published the draft amended Regulations on 
+08.12.2023 inviting objections/suggestions/views from the persons likely to be 
+affected. 
+ 
+After considering the objections/suggestions/views  received by the 
+Commission in exercise of the power conferred by subsect ion (2) and (3) of 
+section 91 of the Electricity Act 2003  read with sub -section (3) and (5 ) of 
+section 8 of the Karnataka Electricity Reform Act 1999 and all other power s 
+enabling it in this behalf had notified the amendment to KERC (Recruitment 
+and condit ions of Service) Regulations, 2023 was published in the official 
+gazette of Karnataka on 11.01.2024. 
+ 
+(b) Karnataka Electricity Regulatory Commission (Pre -paid Smart Metering) 
+Regulations, 2024. 
+The Prepaid Smart Metering, Regulations, 2024 in the State of Karnataka were 
+notified in the Karnataka Gazette on 06.03.2024. 
+The Commission notes that, currently only in respect of temporary installations 
+the Commission has ordered installation of prepaid meters and in respect of 
+installations in Government buildings, installing prepaid meters is made 
+optional, at the instance of the consumers. For all the other installations the 
+Commission had not specified any Regulations. With the advent of 
+technology and introduction of smart meters (with inbuilt facility for remote  
+disconnection and reconnection) the electricity consumers may opt to avail 
+power supply to their installations through pre-paid smart meters. Hence, the 
+Commission in exercise of the powers conferred by sub-section (5) of Section 
+47, Section 86 and Section 181 of the Electricity Act 2003 (Central Act 36 of 
+2003) and all powers enabling it in that behalf, has notified the  Karnataka 
+Electricity Regulatory Commission (Pre -paid Smart Metering) Regulations, 
+2024 for such of the consumers who desire to get them installed. 
+ 
+
+[PDF page 44]
+44 
+ 
+(c) KERC (Terms & Conditions for Open Access) (Fifth Amendment), 
+Regulations,2023: 
+The above Regulations is notified keeping in view the orders of the 
+Commission dated 09.03.2023 and the notification of Green Energy Open 
+Access Regulations. The Regulation is notified in the Karnataka Official 
+Gazette on 16.10.2023, after following the due procedure. The amendments 
+have been made to the following Regulations: 
+ 
+a. Regulation-3(2) pertaining to Short-Term OA.  
+b. Regulation-6(1) pertaining to classification of OA customers. 
+c. Regulation-7(1) pertaining to Priority for allowing OA. 
+d. Regulation-9 pertaining to Procedure for grant of OA 
+e. Regulation- 9-A pertaining to Procedure  for applying for Day ahead 
+transactions. 
+f. Regulation-10(2) pertaining to relinquishment or transfer of rights and 
+obligations. 
+g. Regulation-11 (v) pertaining to transmission / wheeling charges for 
+dedicated transmission / distribution system. 
+h. Regulation-11 (viii) pertaining to charges for backup supply. 
+i. Regulation-11 (xiv) pertaining to meter reading charges and 
+transaction charges. 
+j. Regulation-13 (1) pertaining to information to be hosted by SLDC. 
+k. Regulation-14 (2) pertaining to grievance redressal. 
+l. Regulation-15 (1) pertaining to meters. 
+m. Regulation-15 (4) pertaining to meter sealing. 
+n. Regulation-16 pertaining to energy losses. 
+o. Regulation-20 (1) pertaining to data communication. 
+p. Regulation-20 (5) new Regulation pertaining to interpretation. 
+ 
+(d) Draft KERC (Implementation of Peer to Peer Solar Energy Transaction through 
+blockchain based platform) Regulations, 2024: 
+1. In terms of KERC (Implementation of Solar Rooftop Photovoltaic)                      
+Regulations, 2016 and the Orders of the Commission issued in this regard, 
+
+[PDF page 45]
+45 
+ 
+the Commission has recognized the SRTPV projects under self-investment 
+by the Consumers and has allowed Net or Gross metering arrangement 
+for injection of energy to the ESCOM’s grid, at the Commission determined 
+tariff payable to the prosumers. 
+2. In order to accelerate the capacity addition in SR TPV, the Commission, 
+vide its Order dated 9 th December, 2019 has decided to recognize third 
+party investment in SRTPV projects on consumers’ rooftops, under various 
+business models, allowing sale of energy under net/ gross metering at 
+Commission determined tariff by executing power purchase agreements.  
+3. The abov e SRTPV arrangements recognize only the sale of energy 
+between consumers and the distribution utility. However, of late a new 
+concept of sale of energy between consumers to consumers has 
+emerged. The sale of surplus power by the consumer/ prosumer to another 
+consumer at an agreed tariff is known as Peer to Peer (P2P) solar energy 
+transactions, through Block  Chain based platform, which is gaining 
+popularity. The concept is seen as a promising innovation in the energy 
+sector for Decentralization, Renewable Energy Integration, Efficiency and 
+Flexibility, Empowering Prosumers, Cost Savings, Grid Resilience, 
+Environmental Impact, Innovation in Technology, Community 
+Engagement and Regulatory Evolution. The P2P concept would help in 
+recovery of investment much fast er as compared with the existing 
+arrangements. 
+4. The objective of framing the Regulations is to promote rooftop solar, 
+efficient utilization of   existing assets and to implement innovative 
+technologies by facilitating transactions of rooftop solar energy th rough 
+blockchain based P2P platform besides ensuring reasonable returns on 
+the investments. 
+5. The P2P solar transactions offer various benefits, the success of which 
+depends on regulatory support, technological advancements, and 
+widespread adoption within co mmunities. As the energy sector evolves, 
+P2P transactions are likely to play a significant role in shaping the future of 
+sustainable energy systems. 
+
+[PDF page 46]
+46 
+ 
+6. Therefore, in exercise of the powers conferred under clause (e) of 
+subsection (1) of Section 86 read with S ection 181 of the Electricity Act, 
+2003 and all other provisions enabling it in this behalf, the Commission has 
+notified the Draft Karnataka Electricity Regulatory Commission 
+(Implementation of Peer to Peer Solar Energy Transaction through block 
+chain base d platform) Regulations, 2024  on 17.01.2024 in the State 
+Gazette. 
+ 
+(e) Draft Karnataka Electricity Regulatory Commission (Terms and Conditions for 
+Green Energy Open Access) (First Amendment) Regulations, 2023: 
+The Commission, in exercise of the powers conferred under Section 86(1)(e), 
+read with Sections 181, 39(2)(d), 40(c), 42(2, 3), 86(1)(c) of the Electricity Act, 
+2003 and all other  powers enabling in this behalf, had published draft 
+Regulations in the State Gazette on 13.12.2023, namely the Karnataka 
+Electricity Regulatory Commission (Terms and Conditions for Green Energy 
+Open Access) (First Amendment) Regulations, 2023. 
+ 
+These Regulations were issued to amend the Proviso 11(v) (Provided further 
+that the additional surcharge shall not be applicable for Green Energy 
+Open Access consumers, if full Fixed charges of the licensee are recovered 
+through retail supply tariff and such full fixed charges are paid by the Open 
+Access consumers) of the GEOA Regulations 2022. 
+  
+(f) Revised Draft KERC (Verification of Captive Status  of 
+Generating Plants/Consumers in the State of Karnataka) Regulations, 2023: 
+To bring in regulatory control and to protect the interest of all the 
+stakeholders, the Commission, keeping in view Rule 3 of the Electricity Rules, 
+2005 (as amended from time to  time), read with various sections of the 
+Electricity Act, 2003 and the model Regulations drafted by Forum of 
+Regulators on verification of status of generating plants and captive users, 
+in exercise of the powers vested under Section 42 of the Electricity Act, 2003, 
+had published the “Draft KERC (Verification of Captive Status of Generating 
+Plants/Consumers in the State of Karnataka) Regulations, 2023 in the Official 
+Gazette on 06.10.2023. Objections/suggestions/views on the proposed 
+
+[PDF page 47]
+47 
+ 
+draft were invited from the stakeholders and interested persons vide paper 
+notification dated 12.10.2023. In the meanwhile, the Hon’ble Supreme 
+Court of India, passed an Order dated 09.10.2023, in Civil Appeal Nos. 8527-
+8529 of 2009 (and related matters) in M/s. Dakshin Gujarat Vij Company 
+Limited versus M/s. Gayatri Shakti Paper and Board Limited and another, 
+wherein it has made a few observations. Thus, based on the observations 
+made by the Hon’ble Supreme Court of India in its Order dated 09.10.2023 
+and the decisions taken therein, the Commission issued a revised draft KERC 
+(Verification of captive status of generating plant/consumers in the State of 
+Karnataka) Regulations, 2024 in the Official Gazette on 22.03.2024 and 
+thereby revoking the earlier draft. Objections/suggestions /views on the 
+proposed draft were invited from the stakeholders and interested persons 
+vide paper notification dated 18.04.2024. The public hearing for the same 
+was held on 30.04.2024.  The issuance of final notification is under process. 
+ 
+(g) Draft Karnataka Electricity Regulatory Commission (Multi Year Transmission, 
+Distribution and Retail Supply Tariff) Regulations 2023: 
+The Commission has notified the above draft Regulations on 22.09.2023.  
+Objectives of these Regulations are; 
+ 
+(i) To facilitate determination of tariff for all the years of the Control period at 
+the beginning of the Control period itself.  This will ensure tar iff certainty to 
+the consumers as they are able to know the financial implications on 
+account of electricity charges before hand for their future planning. 
+ 
+(ii) To consolidate the existing “Tariff Regulations” and “Terms and Conditions 
+for Determination of Tariff for Transmission and Distribution and Retail Sale of 
+Electricity Regulations” into comprehensive Regulations so as to have one 
+Regulations for determination of tariff relating to Transmission, Distribution 
+and Retail Supply Business. 
+ 
+(iii) Public hearing has been conducted on 25.10.2023. 
+ 
+ 
+
+[PDF page 48]
+48 
+ 
+(h) Draft Karnataka Electricity Regulatory Commission (Pre -paid Smart 
+Metering), Regulations 2023: 
+ 
+The draft Prepaid Smart Metering, Regulations, 2023 in the State of 
+Karnataka were notified in the Karnataka Gazette on 16.08.2023. 
+ 
+The Commission notes that, currently only in respect of temporary 
+installations the Commission has ordered installation of prepaid meters and 
+in respect of installations in Government buildings, installing prepaid meters 
+is made optional, at the instance of the consumers. For all the other 
+installations the Commission had not specified any Regulations. With the 
+advent of technology and introduction of smart meters (with inbuilt facility 
+for remote disconnection and reconnection) the electricity consumers may 
+opt to avail power supply to their installations through pre -paid smart 
+meters. Hence, the Commission in exercise of the powers conferred by sub-
+section (5) of Section 47, Section 86 and Section 181 of the Electricity Act 
+2003 (Central Act 36 of 2003) and all powers enabling it in that behalf, has 
+notified the “Draft Karnataka Electricity Regulatory Commissio n (Pre-paid 
+Smart Metering) Regulations, 2023” inviting 
+comments/views/suggestions/objections from the stakeholders, general 
+public and interested persons. 
+ 
+ The stakeholders, general public and interested persons were requested to 
+file their comments/views/suggestions/objections, if any, on the proposed 
+“Draft Karnataka Electricity Regulatory Commission (Pre -paid Smart 
+Metering) Regulations, 2023” within 30days from the date of its publications 
+in the official gazette.  
+ 
+ 
+(i) Draft KERC (Terms and Conditions for Open Access) (Fifth Amendment) 
+Regulations 2023. 
+The Commission as required under sub-section (3) of Section 181 of the Act, 
+notified the draft of the above amendments in the gazette on 08.05.2023, 
+inviting objections / views / suggestions from stakeholders and interested 
+persons. The Commission also held a public hearing in the matter on 
+
+[PDF page 49]
+49 
+ 
+06.07.2023, duly publishing the notices in In dian Express, Deccan Herald, 
+Vijayavani and Prajavani on 18.06.2023. The Commission after considering 
+the objections / views / suggestions of the stakeholders and interested 
+persons, finalized the above regulations. 
+ 
+10.6   DURING THE YEAR THE FOLLOWING ORDERS WERE ISSUED: 
+ 
+a) Tariff applicable to Solar rooftop photovoltaic plant under subsidy schemes. 
+The Commission, in its Generic Tariff Order dated 01.06.2023 has determined 
+the tariff and norms in respect of Solar Rooftop Photovoltaic Projects with and 
+without subsidy payable by the Distribution Licensees for the purchase of 
+energy by executing the Power Purchase Agreement. The Commission notes 
+that the Government of India has issued the order dated 16.03.2024 in respect 
+of PM -Surya Ghar Muft Bijli Yojana for installation of rooftop solar plants in 
+households with financial assistance. The tariff to be paid to Such SRTPV plants 
+is required to be determined by the Commission. In this regard, the 
+Commission has already issued a discussion paper for determination of tariff. 
+Hence, the tariff as determined by the Commission in its Order dated: 
+01.06.2023 is  not applicable to the SRTPV installations covered under the 
+above scheme. 
+b) Suo Motu Order dated 04.03.2024 was issued in the matter of tariff to be allowed 
+for the next 10 years starting from 21st year in respect of Mini -Hydro, Wind, 
+Bagasse based Cogeneration and Biomass based power plants (both Water 
+Cooled and Air Cooled), which have successfully completed or are completing 
+initial term of 20 years as per the PPA terms and conditions. 
+ 
+c) Extension of Control period for the Generic Tariff Order dated 23.01.2023 in 
+respect of Waste to Energy plants to be Commissioned in the State of Karnataka: 
+The validity of the Commission’s order dated 23.01.2023, in respect of Waste to 
+Energy Plants in the State of Karnataka was extended for a further period of one 
+year from 01.04.2023 to 31.03.2024 vide Order dated 13.02.2024. 
+ 
+
+[PDF page 50]
+50 
+ 
+d) In the Matter of Wheeling Charges and Banking Facility for Renewable Power 
+Projects. 
+KERC has passed Order on 07.08.2023 as follows: 
+“ORDER 
+a) For the Non -REC based projects that have applied for WBA during the 
+period 01.04.2018 upto the date of applicability of GEOA Regulations ie. 
+for the applications filed before the Nodal Agency be fore13.01.2023 in 
+case of STOA and before 02.01.2023 in case of LTOA, the interim order 
+dated 07.09.2021 is continued, till the matter is disposed of by the Division 
+Bench of the Hon'ble High Court.  
+b) For the Non -REC based projects that have applied for WBA  during the 
+period 01.04.2018 upto the date of applicability of GEOA Regulations i.e. 
+for the applications filed before the Nodal Agency before13.01.2023 in 
+case of STOA and before 02.01.2023 in case of LTOA, the annual banking 
+facility and banking charges of 2% of injected energy Is continued, subject 
+to final decision of the Case pending before the Hon'ble Supreme Court of 
+India. 
+All other charges as per the applicable KERC Regulations, orders and terms 
+of WBA shall be applicable.” 
+e) Implementation of Automatic Meter Reading (AMR) facilities: 
+a. Order dated 03.07.2023: All the LT domestic solar rooftop projects are 
+excluded from the ambit of Order dated 28.03.2023 and all the consumers 
+(including LT) opting for Open Access under the KERC (Terms and 
+Conditions for Green Energy Open Access) Regulations, 2022, shall install 
+AMR compatible meters having facility for data communication for the 
+purpose of energy accounting. 
+ 
+b. Order dated 31.07.2023: Time for installation of AMR meters including 
+communicating facilities to all OA/HT/EHT consumers, generator – 
+transmission interface points (Bulk Meters) and generators extended up to 
+30th of September 2023. Wh erever, AMR compatible meters are already 
+installed, the bills for such transactions should be automated without 
+
+[PDF page 51]
+51 
+ 
+waiting for extended date and manual intervention for reading the data 
+shall be completely stopped in such cases.  
+ 
+f) Determination of Tariff and norms in respect of Solar Power Projects (including 
+Solar Rooftop Photovoltaic Projects) for FY24. 
+The Commission vide its Order dat ed 01.06.2023 has determined the generic 
+tariff for FY24, for grid connected megawatt scale solar power projects at 
+Rs.3.66 only per unit; for grid connected Solar Rooftop Photovoltaic projects of 
+2000kW and below at Rs.3.74 only per unit and for grid connected Solar Rooftop 
+Photovoltaic projects of 10kW and below at Rs.4.50 only per unit (without 
+capital subsidy) and at Rs.2.97 only per unit (with capital subsidy); 
+a) The summary of the parameters for determining the Tariff is as under: 
+a. MW scale Solar Power Projects (Ground mounted): 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(b)kW scale SRTPV projects (1kW to 2000kW and 1kW to 10kW): 
+Parameters for Kilowatt scale 
+Cost/kW- in Rs. 1kW to 10 kW –                     
+Rs. 50,000 per kW  
+1kW to 2000 kW-              
+Rs.40,000 per kW  
+Useful life of the plant in years 25 25 
+Debt: Equity  Ratio 70:30 70:30 
+Debt- in Rs.  35,000 28,000 
+Interest Rate on Debt-% 10.70 10.70 
+Debt Repayment in Yrs. 13 13 
+CUF in % 19 19 
+Equity- in Rs. 15,000 12,000 
+ROE-% 14 14 
+Auxiliary consumption 0.00% 0.00% 
+O & M expenses in Rs. /kW 708 708 
+O & M Escalation p.a. (%) 5.72 5.72 
+WC interest (one month’s 
+receivables) in % 
+11.50 11.50 
+Depreciation in % 5.38 5.38 
+Parameters for Megawatt scale solar projects  
+Cost/MW- Rs. Lakhs 400 
+Useful life of the plant in years 25 
+Debt: Equity Ratio 70:30 
+Debt-Rs. Lakhs 280 
+Interest Rate on Debt-% 10.70 
+Debt Repayment in Yrs. 13 
+CUF 19% 
+Equity- Rs. lakhs 120 
+ROE-% 14 
+Auxiliary consumption 0.25% 
+O & M expenses in Rs. Lakhs/MW 5.32 
+O & M Escalation p.a. (%) 5.72 
+WC interest (two months’ receivables)  11.50 
+Depreciation in % 5.744 
+
+[PDF page 52]
+52 
+ 
+g) Truing up of APPC for 2023-24 and notifying provisional APPC for the 2024-25 for 
+the purpose of Renewable Energy Certificate (REC): 
+The Commission passed orders on 25.03.2024, truing up the APPC for the year 
+2023-24 and notifying the provisional APPC for the year 2024-25 for the purpose 
+of Renewable Energy Certificate (REC). The trued up APPC for FY24 based on 
+audited accounts of ESCOMs has been determined at Rs.4.93 per unit.  
+ 
+In the above order, the Commission, has also determined the APPC for FY25 at 
+Rs.4.93 per unit, as an interim measure, which is subject to truing up and has 
+directed the ESCOMs to bill the RE generators selling t o them under REC 
+mechanism at lower of Rs.4.93/unit or 75% of the Generic tariff determined for 
+FY25, for the respective RE source by the Commission, which is subject to truing 
+up of APPC for FY25. 
+ 
+10.7  THE RENEWABLE ENERGY (RE) POWER PURCHASE AGREEMENTS (PPAS) 
+APPROVED UPTO MARCH, 2024 BY THE COMMISSION: 
+ 
+The cumulative status of ESCOM -wise abstract of PPAs approved by the 
+Commission is as follows: 
+ 
+The cumulative status of ESCOM -wise abstract of SPPAs approved by the 
+Commission is as follows: 
+ 
+The cumulative status of ESCOM wise abstract of PPAs approved by the Commission is as follows: 
+  BESCOM MESCOM CESC HESCOM GESCOM Total 
+Particulars  
+No 
+of 
+PPAs 
+Capacity 
+MW 
+No 
+of 
+PPAs 
+Capacity 
+MW 
+No 
+of 
+PPAS 
+Capacity 
+MW 
+No 
+of 
+PPAs 
+Capacity 
+MW 
+No 
+of 
+PPAs 
+Capacity 
+MW 
+No 
+of 
+PPAs 
+Capacity 
+MW 
+SRTPV 8 7.3 0 0 0 0 0 0 0 0 8 7.3 
+Waste to 
+Energy  2 26 0 0 0 0 0 0 0 0 2 26 
+Total 10 33.3 0 0 0 0 0 0 0 0 10 33.3 
+The cumulative status of ESCOM wise abstract of SPPAs approved by the Commission is as follows: 
+  BESCOM MESCOM CESC HESCOM GESCOM Total 
+Particulars  
+No of 
+SPPAS 
+Capacity 
+MW 
+No of 
+SPPAS 
+Capacity 
+MW 
+No of 
+SPPAS 
+Capacity 
+MW 
+No of 
+SPPAS 
+Capacity 
+MW 
+No of 
+SPPAS 
+Capacity 
+MW 
+No of 
+SPPAS 
+Capacity 
+MW 
+Solar 5 46 0 0 0 0 5 150 3 103 13 299 
+Wind 2 1.8 0 0 0 0 0 0 0 0 2 1.8 
+Biomass 0 0 0 0 0 0 0 0 0 0 0 0 
+Co-Gen 0 0 0 0 0 0 0 0 0 0 0 0 
+Mini-
+Hydel 0 0 1 0.325 0 0 0 0 3 13.4 4 13.725 
+Total 7 47.8 1 0.325 0 0 5 150 6 116.4 19 314.525 
+
+[PDF page 53]
+53 
+ 
+10.8 REVIEW O F DISALLOWANCE TOWARDS IMPRUDENT WORKS / 
+CONDITIONALLY PRUDENT WORKS PERTAINING TO PREVIOUS YEARS ’ 
+PRUDENCE CHECK:  
+The Commission has been conducting the Prudence Check of the Capital 
+Expenditure of the Transmission and Distribution Licensees once in two years, as per 
+its earlier Guidelines. Accordingly, the Commission had entrusted the work of 
+conducting prudence chec k of capital expenditure for FY21 and FY22 to 
+Consultants during FY23, as a part of exercise for Annual Performance Review of 
+KPTCL, ESCOMs and HRECS. 
+ 
+After analyzing the replies on the findings of the Consultant on the imprudent works 
+and justifications furnished by the licensees, the Commission has been disallowing 
+the amount of interest and depreciation on the works which were found to be not 
+meeting the norms of Prudence, in the revised ARR during the Annual Performance 
+Review of the respective years, wherever necessary. 
+ 
+ 
+10.9  TRANSMISSION SYSTEM AVAILABILITY (TSA): 
+KPTCL has submitted the Transmission System Availability (TSA) for FY23. During the 
+Annual Performance Review (APR) of the transmission licensee, the Commission, 
+after duly validating the submissions made by the KPTCL, has considered the TSA 
+at 98.687% for factoring it in the computations for allowing the incentives towards 
+achieving the TSA above the target levels. KPTCL was also directed to ensure 
+that no RE generation is affected by transmission system constraints. 
+ 
+ 
+ 
+ 
+ 
+ 10.10  MEETINGS OF THE COMMISSION: 
+ 
+The Commission has held 9 meetings to discuss various issues on the power sector 
+during the year. The following are some of the important subjects discussed in the 
+Commission’s meetings.   
+ 
+1. Wheeling Charges and Banking Facility from FY 18 onwards. 
+2. Approval of APR for FY 22 and Revised ARR for FY24 and Revision of Retail Supply 
+Tariff for FY24 and Revision of Transmission Tariff for FY24. 
+3. Approval of APR for FY22 and Revised ARR for FY24 and Revision of Retail Supply 
+Tariff / Tra nsmission Tariff  for FY24 for FY 24 in respect of KPTCL  / BESCOM / 
+MESCOM/CESC/HESCOM/GESCOM/HRECS/MSEZ/AEQUS. 
+
+[PDF page 54]
+54 
+ 
+4. Energy Storage RPO. 
+5. Payment of HRA to Hon’ble Chairman and Hon’ble Members at the rate of 30% 
+of Salary in the revised pay scale for the period from 01.01.2016 to  30.06.2017 
+(18 Months). 
+6. Payment of late payment surcharge to UPCL to be allowed to claim in APR 
+filling for FY23. 
+7. AG’s Comments on the excess payment of HRA to the retired Chairman and 
+two Members for the period between 01.01.2016 to 30.06.2017. 
+8. Approval of Annual Accounts for FY23. 
+9. Determination of 21 st year tariff in respect of Wind Mini -Hydel, Co-generation 
+and Biomass based power plants in respect of PPAs already approved by the 
+Commission which are received in the Commission upto 10.06.2024 and whose 
+initial tariff doesn’t fall in line with any of the generic tariff orders issued by the 
+Commission from time to time. 
+10. Payment of other allowance: - Providing furnishings to the residence of 
+Chairman and Members of the Commission 
+11. Order of the Banking Ombudsman, RBI with reference to fixed deposit interest 
+in SBI. 
+12. Determination of 21st year fixed tariff in respect of Bagasse based Co -
+generation and Biomass based power plants in respect of PAAs completing 
+initial terms of 20 years 
+13. Request for waiver of transmission charges for 0.5 MW wind power projects. 
+14. Request for Amendment / reconsideration in the matter of “Charges to be paid by 
+new consumers to be added to existing WBA (Signed before the issuance of KERC 
+GEOA Regulations) for project achieving COD  between 1st April, 2013 and 31st 
+March,2018. 
+15. Clarification regarding applicability of wheeling charges for power procured under 
+open access from RE Sources for application filed before the implementation of 
+GEOA Regulations. 
+16. Request for Clarification regarding Change in power usage status for HT 
+Consumers from non - captive to captive mode for wheeling and Banking 
+agreement signed before the implementation of GEOA Regulations. 
+
+[PDF page 55]
+55 
+ 
+17. Approval of APR for FY 23 and Revised ARR for FY25 and Revision of Retail Supply 
+Tariff for FY25 and Revision of Transmission Tariff for FY25. 
+18. Approval of APR for FY23 and Revised ARR for FY25 and Revision of Retail Supply 
+Tariff / Transmission Tariff for FY25 in respect of  KPTCL / BESCOM / MESCOM / 
+CESC/HESCOM/GESCOM/HRECS/MSEZ/AEQUS. 
+19. Disposal of Old Files. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 56]
+56 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Advisory Committee  
+ 
+Activities during the year 
+ 
+FY24 
+
+[PDF page 57]
+57 
+ 
+11. ADVISORY COMMITTEE OF THE COMMISSION: 
+ 
+In accordance with Section 34 of the Karnataka Electricity Reform Act, 1999 and 
+Section 87 of  the Electricity Act, 2003, a State Level Advisory Committee has been 
+constituted by the Commission to advise on: 
+(i) Policy matters; 
+(ii) Matters relating to quality, continuity and extent of services provided by the 
+     Licensees; 
+(iii) Compliance by the Licensees with the conditions and requirement of their 
+     Licence; 
+(iv) Protection of consumers’ interest; and 
+(v) Electricity supply and overall Standards of Performance by utilities; 
+       During the year, two meetings of the Advisory Committee were held. 
+a. The proceedings of the 68 th Advisory Committee Meeting held on 30.01.2024 
+reiterated as under:  
+Summary of the Meeting on Power Supply and Safety Measures: 
+1. Hydro Generation Shortfall: 
+Shortfall Details: PCKL reported a hydro generation shortfall of approximately 
+3500 MU for FY24, with 1600 MU already accounted for. To conserve hydro 
+generation, 17 MU energy is being purchased under Section 11, which will only 
+be available until the second week of February 2024. 
+Future Challenges: Meeting demand in March and April 2024 will be difficult 
+with available energy sources. KPCL thermal units need to operate at a higher 
+Plant Load Factor (PLF) of 80-85%. 
+2. Energy Procurement and Coal Supply: 
+Procurement Challenges: PCKL’s attempts to procure energy through DEEP 
+portal tenders resulted in high bids (Rs. 8/unit for RTC power and Rs. 13/unit for 
+peak power), with insufficient availability in the market. 
+Coal Supply: Currently, coal availability for KPCL stations is not an issue, but 
+there are concerns about potential constraints d uring the summer due to the 
+upcoming general election. Efforts are ongoing to ensure continuous coal 
+supply. 
+ 
+
+[PDF page 58]
+58 
+ 
+3. Ensuring Continuous Power Supply: 
+Priority During Elections: Continuous power supply needs to be ensured, 
+particularly to industries, urban areas, and during exams for students. 
+Load Shedding: In case of severe shortages, power supply to agricultural pump 
+sets may be limited to 5 hours in a staggered manner. 
+4. Capacity Addition and Renewable Energy (RE) PPAs: 
+Future Demand:  Demand is expected to  double in the next seven years, 
+requiring an addition of 1000 MW capacity annually, preferably from firm RE 
+sources. 
+RE PPA Renewals: Steps are being taken to renew expiring RE PPAs and retain 
+them to meet Renewable Purchase Obligation (RPO) targets. 
+5. Transmission System Constraints: 
+Upgrades and Issues:  Transmission system upgrades are underway, but 
+evacuation problems due to Right of Way (RoW) issues persist. The policy for 
+compensating landowners might be adopted to ease RoW issues. 
+6. Maintenance and New Projects: 
+Maintenance: Ensuring maintenance of KPCL stations to minimize outages, 
+especially before elections. 
+New Projects: Exploring options for new thermal power plants near coastal 
+regions based on imported coal and potential run-of-river generating stations. 
+7. Installation of ABT Meters: 
+Progress: Installation of ABT meters and EMS systems is progressing, with 
+completion expected by March 2024. 
+8. Pumped Storage Projects: 
+Conversion Cost: The conversion cost for pumped storage projects is estimated 
+at Rs. 3.50-4.00 per unit. 
+9. Safety Audit and Accident Prevention: 
+Safety Audits: Safety audits are being conducted, with discrepancies being 
+rectified regularly. Safety awareness programs are also being implemented. 
+Accident Reduction Measures: Safety equipment is being provided to field staff, 
+with training and surprise inspections to ensure compliance with safety 
+guidelines. 
+ 
+
+[PDF page 59]
+59 
+ 
+10. Addressing Illegal Connections and Load Shedding: 
+Illegal Connections: Efforts to regularize illegal pump sets and re-conductor old 
+lines to reduce accidents and improve safety. 
+Unscheduled Load Shedding: Addressing unscheduled load shedding in rural 
+areas and ensuring continuous power supply to IP sets. 
+11. Collaboration and Regulations: 
+Stakeholder Collaboration: FKC CI expressed interest in collaborating on 
+technical safety audits. Concerns about non -implementation of regulations 
+were raised. 
+Unauthorized Buildings: Addressing unauthorized buildings flouting electrical 
+safety norms and issues related to RR numbers for mixed-load buildings. 
+The Commission emphasized the need for proactive measures to ensure continuous 
+power supply, enhance safety, and address future demand challenges. 
+b. The proceedings of the 69 th Advisory Committee Meeting held on 23.02.2024 
+reiterated as under:  
+Summary and Analysis of ESCOMs' Presentations on FY23 and FY25: 
+The ESCOMs (Electricity Supply Companies) have provided detailed submissions 
+regarding the financial performance for FY23 and the Annual Revenue Requirement 
+(ARR) projections for FY25. The focus was on the expenditure incurred, revenue 
+earned, reasons for any deficit or surplus, and the proposed tariff adjustments 
+necessary to bridge the gaps. Key points include power purchase costs, cross -
+subsidization, and various consumer category impacts. 
+ BESCOM (Bangalore Electricity Supply Company) 
+a) Revenue Gap: - FY23: Rs.1059.75 Crores- FY25: Rs.1738.68 Crores 
+b) Key Reasons for Deficit: Increase in average power purchase cost for FY25 to 
+Rs.7.16/unit (vs. Rs.6.158/unit approved by KERC). 
+c) Rise in interest and finance charges by Rs.611.58 Crores. 
+d) Projected Revenue and Sales for FY25: Rs.33158.47 Crores from 35,491.03 MU 
+sales. 
+e) Proposed Tariff Hike: Rs.0.49/unit for FY25. 
+f) Observations: Increase in HT industrial and commercial sales, with significa nt 
+Open Access (OA) sales. 
+
+[PDF page 60]
+60 
+ 
+g) Special Incentive Scheme: Request to revise base consumption period and 
+increase per unit charges under DERS scheme. 
+ HESCOM (Hubli Electricity Supply Company) 
+a) Revenue Gap: - FY23: Rs.468.05 Crores - FY25: Rs.741.75 Crores (including FY23 
+deficit) 
+b) Key Reasons for Deficit:  - Increased power purchase costs and pay revision. 
+c) Projected ARR and Revenue for FY25: Rs.12244.20 Crores ARR and Rs.11502.45 
+Crores revenue. 
+d) Proposed Tariff Hike: Rs.0.57/unit across all consumer categories. 
+CESC (Chamundeshwari Electricity Supply Corporation) 
+a) Revenue Gap:   - FY23: Rs.52.21 Crores - FY25: Rs.439.55 Crores 
+b) Projected ARR and Revenue for FY25 : Rs.7379.89 Crores ARR and Rs.6940.34 
+Crores revenue. 
+c) Proposed Tariff Hike: Rs.0.50/unit across all consumer categories. 
+ MESCOM (Mangalore Electricity Supply Company) 
+a) Surplus:  - FY23: Rs.183.37 Crores- Deficit:  - FY25: Rs.351.96 Crores 
+b) Key Factors: Increase in HT sales by 200.59 MU. 
+c) Projected ARR and Revenue for FY25 : Rs.5281.94 Crores ARR and Rs.4929.98 
+Crores revenue. 
+d) Proposed Tariff Hike: Rs.0.59/unit across all consumer categories. 
+GESCOM (Gulbarga Electricity Supply Company) 
+a) Revenue Gap: - FY23: Rs.385.44 Crores- FY25: Rs.1593.26 Crores (including FY23 
+deficit) 
+b) Key Factors: Increased demand and power purchase costs. 
+c) Projected ARR and Revenue for FY25: Rs.9287.48 Crores ARR and Rs.8079.66 
+Crores revenue. 
+d) Proposed Tariff Hike: Rs.1.63/unit for FY25. 
+e) Observations: Increase in energy sales and open access consumption. 
+Common Requests and Issues 
+a) Cross-Subsidization: ESCOMs emphasized the need for cross -subsidizing 
+categories (commercial and industrial) to support subsidized consumers (water 
+supply, IP sets). 
+
+[PDF page 61]
+61 
+ 
+b) Tariff Adjustments: The Commission suggested reducing cross-subsidy levels and 
+aligning tariffs closer to the average cost of supply. 
+c) Special Incentive Schemes: Adjustments to schemes like DERS were proposed 
+to better incentivize energy efficiency and manage costs. 
+Stakeholder Submissions 
+a) KASSIA: Suggested the inclusion of regular meetings with  OA consumers, 
+emphasizing that depreciation should not be passed on as a cash loss to 
+consumers. 
+b) Licensed Electrical Contractors' Association : Proposed incentives for early bill 
+payments and pointed out the lack of software implementation for prompt 
+payment incentives. 
+c) -Other Submissions : Various stakeholders highlighted issues such as 
+discrepancies in transmission losses, need for better energy audits, proper tariff 
+categorization, and transparency in financial audits and reports. 
+ Commission's Observations 
+a) Tariff Hikes: The Commission stated that tariff increase cannot be justified solely 
+on monsoon failures and suggested that domestic tariffs should not be higher 
+than in other states. 
+b) Cross-Subsidy Levels : The Commission advised that cross -subsidies shou ld be 
+reduced gradually to reflect the actual cost of supply. 
+ 
+12. COMMISSION’S ADJUDICATION ACTIVITIES:  
+ 
+ 
+The Commission generally holds hearings on Tuesdays and Wednesdays of every 
+week to hear the Original Petitions/ Review Petitions and Complaints filed before 
+the Commission on the issues concerning generation, transmission and 
+distribution and supply of electricity and it also hears petitions seeking 
+adjudication of disputes between the licensees and generators (Power Purchase 
+Agreements, wheeling and Ba nking Agreements etc.). The Commission also 
+conducted public hearing s as a part of consultative process while framing/ 
+amending the Regulations and also in the determination of tariff. 
+Details of activities carried out during 2023-24: 
+1.  Implementation of E-Filing System: As promised in the 24th Annual Report, the 
+e-filing of petitions was initiated in August 2023 through online. This system allows 
+
+[PDF page 62]
+62 
+ 
+advocates and litigants/parties to file petitions online, saving significant time 
+and effort. 
+2.  Access to Case In formation: With the e -filing process, advocates and 
+litigants/parties can easily access information such as daily orders, final orders, 
+and case status at their fingertips. 
+3.  Digital Communication: As part of the e-filing initiative, notices, pleadings, and 
+other communications are sent via email to the respective parties and 
+advocates. 
+4. Real-Time Notifications: Immediately after uploading a petition through the e -
+filing system, parties and advocates receive SMS alerts regarding registration, 
+hearing dates, and other updates. 
+5.  Historical Data Upload: Following the direction of the Commission and guided 
+by the Secretary, details of disposed petitions from 2002 to August 2023 were 
+uploaded to the e-filing portal in October 2023. This allows the public to easily 
+access case status. 
+ 
+6. Monthly Data on Pending Petitions : The Commission’s website now provides 
+month-wise data on pending petitions, including stages of each petition. This 
+data includes the number of new cases, disposed cases, and the opening and 
+closing balances of petitions each month. 
+ 
+ 
+12.1  THE ABSTRACT O F PETITIONS FILED BEFORE THE COMMISSION DURING THE 
+YEAR AND THEIR DISPOSAL, AS ON 31.03.2024, IS INDICATED BELOW:       
+ 
+ 
+Abstract 
+No. of Cases pending as on 01.04.2023 129 
+No. of Cases filed during the year along with remand cases 091 
+No. of Cases disposed off during the year (New Petitions, Remand & Re-filed 
+cases) 
+140 
+No. of RPO Cases / Miscellaneous/ Orders on (IA) disposed during the year - 
+No. of Cases Interim Order during the year 003 
+Cases pending at the end of year (31.03.2024) 080 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 63]
+63 
+ 
+12.2  THE DETAILS OF PETITIONS, COMPLAINTS, REVIEW PETITIONS AND OTHERS 
+DISPOSED OF DURING THE PERIOD FROM 1ST APRIL, 2023 TO 31ST MARCH, 
+2024 ARE AS FOLLOW: 
+Disposal List 2023-24 
+Details of Petitions Disposed of by the Commission in FY 2023-24. 
+Sl. 
+No. 
+Case No. Date of 
+filing 
+Parties Subject Date of 
+Disposal 
+1 OP 10/22 31.03.2022 Avaada Solar Energy Pvt. Ltd., Vs 
+KREDL & Others Safeguard Duty 13.04.2023 
+2 Complaint 
+19/22 25.07.2022 Azure Power Earth Pvt. Ltd., Vs 
+BESCOM & Another 
+Non-Compliance Order dt. 
+29.03.2022 in OP No. 107/18 
+18.04.2023 
+3 Complaint 
+30/22 04.11.2022 
+Tata Power Renewable Energy Ltd., 
+Vs BESCOM 
+Non-Compliance of order dt. 
+in 12.04.2022 in OP No. 
+21/2019 
+18.04.2023 
+4 Complaint 
+31/22 04.11.2022 
+Tata Power Renewable Energy Ltd., 
+Vs BESCOM 
+Non-Compliance of order dt. 
+in 12.04.2022 in OP No. 
+38/2020 
+18.04.2023 
+5 Complaint 
+32/22 04.11.2022 
+Tata Power Renewable Energy Ltd., 
+Vs BESCOM 
+Non-Compliance of order dt. 
+in 12.04.2022 in OP No. 
+39/2020 
+18.04.2023 
+6 Complaint 
+26/22 29.09.2022 Adyah Solar Energy Pvt. Ltd.,Vs 
+HESCOM 
+Non-Compliance Order dt. 
+15.06.2021 in OP No. 08/19 
+19.04.2023 
+7 OP 13/19 25.01.19 G.Rajanna Vs BESCOM SRTPV System 02.05.2023 
+8 OP 30/2021 01.06.2021 Hemavathy Power & Light Pvt. Ltd., 
+Vs KPTCL 
+Declaration 02.05.2023 
+9 OP 14/22 04.05.2022 Tadas Wind Energy Pvt. Ltd., Vs 
+HESCOM 
+Declaration of Letter dt. 
+14.03.2022 is Contrary to MoA 
+02.05.2023 
+10 OP 35/2021 18.06.2021 M/s. Brics Renewable Energy Pvt. 
+Ltd., Vs BESCOM 
+Payments 02.05.2023 
+11 OP 36/2021 18.06.2021 M/s. Aavanti Solar Energy Pvt. Ltd., 
+Vs BESCOM 
+Payments 02.05.2023 
+12 OP 47/20 13.10.2020 M/s. Avanthi Solar Energy Pvt. Ltd., 
+Vs GESCOM 
+Impact of GST 02.05.2023 
+13 OP 48/20 13.10.2020 M/s. Avanthi Renewable Energy Pvt. 
+Ltd., Vs BESCOM 
+Impact of GST 02.05.2023 
+14 OP 49/20 13.10.2020 M/s. Mayfair Renewable Energy (I) 
+Pvt. Ltd., Vs BESCOM 
+Impact of GST 02.05.2023 
+15 OP 10/2021 11.02.2021 M/s. Brics Renewable Energy Pvt. 
+Ltd., Vs BESCOM  
+Impact of GST 02.05.2023 
+16 OP 07/22 23.02.2022 KPTCL Vs NIL Payment 23.05.2023 
+17 Complaint 
+No. 20/22 01.09.2022 Aurad Solar Pvt. Ltd., Vs GESCOM & 
+Another 
+Non-Compliance Order dt. 
+20.01.2022 in OP 16/2018 
+24.05.2023 
+18 Complaint 
+22/22 06.10.2022 Renew Wind Energy (MP Three) Pvt. 
+Ltd. Vs. BESCOM & others 
+Non-Compliance Order dt. 
+11.02.2022 in OP No. 43/18 
+21.06.2023 
+19 Complaint 
+23/22 06.10.2022 Renew Wind Energy (Rajasthan 
+Four) Pvt. Ltd. Vs. BESCOM & others 
+Non-Compliance Order dt. 
+11.02.2022 in OP No. 44/18 
+21.06.2023 
+20 OP 17/23 02.06.2023 Ms Tadas Wind Energy Private 
+Limited Vs SLDC & Another 
+Directions for Registration of 
+National Open Access 
+21.06.2023 
+21 OP 26/22 16.08.2022 KPCL Vs PCKL & Others Modification of PPA 21.06.2023 
+22 Complaint 
+03/23 
+29.03.2023 Renew Solar Power Pvt. Ltd., Vs 
+GESCOM 
+Non-Compliance of order dt. 
+20.05.2022 in OP No. 14/2020 
+27.06.2023 
+
+[PDF page 64]
+64 
+ 
+23 Complaint 
+35/22 30.11.2022 
+MESCOM Vs M/s. Greenko Bagalkot 
+Solar Pvt. Ltd., 
+Non-Compliance Order dt. 
+14.09.2022 in OP No. 51/20 
+28.06.2023 
+/ 
+26.03.2024 
+24 OP 19/22 21.06.2022 Manchukonda Agrotech Pvt. Ltd., 
+Vs GESCOM 
+Comply with Article 5.3 & 5.4 
+of the PPA 
+05.07.2023 
+25 Complaint 
+01/23 
+11.01.2023 Venkateshwara Power Projects Ltd., 
+Vs HESCOM & Another 
+Non-Compliance Order dt. 
+17.05.2022 in OP No. 08/2020 
+05.07.2023 
+26 Complaint 
+02/23 
+03.03.2023 Shri Hiranyakeshi Sahakari Sakkare 
+karkhane Niyamit Vs BESCOM & 
+Others 
+Non-Compliance of order dt. 
+11.04.2017 in OP No. 54/2016 
+& 85/2016 
+05.07.2023 
+27 Complaint 
+No. 07/22 
+26.04.2022 Eswari Green Energy LLP Vs 
+HESCOM & Others 
+Non-Compliance of Order dt. 
+12.11.20 & 31.11.20 Hon’ble 
+ATE & KERC 
+05.07.2023 
+28 Complaint 
+No. 08/22 
+26.04.2022 The Ipmetus Associates LLP Vs 
+HESCOM & Others 
+Non-Compliance of Order dt. 
+12.11.20 & 31.11.20 Hon’ble 
+ATE & KERC 
+05.07.2023 
+29 Complaint 
+No. 10/22 
+09.05.2022 M/s. Ahil Apparel Exports Pvt. Ltd., 
+Vs HESCOM & Others 
+Non-Compliance of Order dt. 
+12.11.20 & 31.11.20 Hon’ble 
+ATE & KERC 
+05.07.2023 
+30 Complaint 
+No. 11/22 
+09.05.2022 M/s. Laurel Apparels Vs HESCOM & 
+Others 
+Non-Compliance of Order dt. 
+12.11.20 & 31.11.20 Hon’ble 
+ATE & KERC 
+05.07.2023 
+31 Complaint 
+No. 16/22 
+01.06.2022 M/s. Sakthi Masala Pvt. Ltd., Vs 
+HESCOM & Others 
+Non-Compliance of Order dt. 
+12.11.20 & 31.11.20 Hon’ble 
+ATE & KERC 
+05.07.2023 
+32 Complaint 
+05/23 
+24.05.2023 Azure Power Pvt. Ltd., Vs HESCOM Non-Compliance of order dt. 
+04.01.2023 in OP No. 40/2021 
+12.07.2023/ 
+27.03.2024 
+33 Complaint 
+21/22 26.09.2022 Giriraj Enterprises Vs HESCOM Non-Compliance Order dt. 
+12.11.2021 in OP No. 05/2021 
+12.07.2023 
+34 OP 37/2021 01.07.2021 Soham Phalguni Renewable Energy 
+Pvt. Ltd., Vs KPTCL & Another 
+Payment 14.07.2021 
+35 OP 42/22 24.11.2022 M/s. Murudeshwar Power 
+Corporation Pvt. Ltd., Vs HESCOM 
+Payment 14.07.2023 
+36 RP 03/23  03.03.2023 HESCOM Vs Manali Sugar Ltd., & 
+Another 
+To declare Respondent No. 1 
+not entitled to late payment 
+surcharge 
+14.07.2023 
+37 OP 33/22 22.09.2022 M/s. Vistaara Power Kurtakoti Pvt. 
+Ltd., Vs HESCOM 
+Payment 25.07.2023 
+38 Complaint 
+04/23 
+22.05.2023 Koppal Solar Power Projects Pvt. 
+Ltd., Vs GESCOM 
+ 26.07.2023 
+39 RP 10/23 23.06.2023 CESC Vs Sourashakthi Energy Pvt. 
+Ltd.,  
+Review of order dt. in 
+21.03.2023 in OP No.196/2017 
+26.07.2023 
+40 RP 11/23 23.06.2023 CESC Vs Avid Green Energy Pvt. 
+Ltd., 
+Review of order dt. in 
+21.03.2023 in OP No.196/2017 
+26.07.2023 
+41 OP 21/2021 01.04.2021 Acciona Energy Pvt. Ltd., & Others 
+Vs SLDC & Others 
+DSM Charges 26.07.2023 
+42 RP 27/22 07.12.2022 Sri Indira Power Energy Ltd., Vs 
+GESCOM 
+Review of order dt. in 
+06.09.2022 in OP No.51/2021 
+26.07.2023 
+43 RP 12/23 27.06.202 Graphite India Ltd. Vs KPTCL & 
+Others 
+Review of order dt. in 
+12.04.2023 in OP No.14/2021 
+26.07.2023 
+44 OP 26/19 02.04.19 ReNew Wind Energy (AP) Pvt. Ltd., 
+Vs HESCOM & Others 
+Captive Status 01.08.2023 
+45 RP 05/2021 24.08.2021 BESCOM Vs ACME Kudligi Solar 
+Energy Pvt. Ltd., 
+Review of order dt. in 
+11.06.2021 in OP No.37/20 
+01.08.2023 
+
+[PDF page 65]
+65 
+ 
+46 RP 05/23 02.06.2023 M/s. Aavanti Solar Energy Pvt. Ltd., 
+Vs GESCOM 
+Review of order dt. in 
+02.04.2023 in OP No.47/2020 
+01.08.2023 
+47 RP 06/23 02.06.2023 M/s. Aavanti Renewable Energy 
+Pvt. Ltd., Vs BESCOM 
+Review of order dt. in 
+02.04.2023 in OP No.48/2020 
+01.08.2023 
+48 RP 07/23 02.06.2023 M/s. Mayfair Renewable (R) Energy 
+Pvt. Ltd., Vs HESCOM 
+Review of order dt. in 
+02.04.2023 in OP No.49/2020 
+01.08.2023 
+49 RP 08/23 02.06.2023 Brics Renewable Energy Pvt. Ltd., Vs 
+BESCOM 
+Review of order dt. in 
+02.04.2023 in OP No.10/2021 
+01.08.2023 
+50 OP 40/22 23.11.2022 M/s. Indowind Energy Ltd., Vs 
+BESCOM and Others 
+WBA 01.08.2023 
+51 OP 33/2021 18.06.2021 M/s. Mayfair Rnewable Energy Pvt. 
+Ltd., Vs HESCOM 
+Payments 22.08.2023 
+52 OP 18/22 20.06.2022 Sri. Chamundeshwari Sugar Ltd., 
+(Unit-II) Vs CESC 
+Payment 22.08.2023 
+53 RP 01/22 19.04.2022 BESCOM Vs L Lakshmipathy Review of Order dt. 
+20.01.2022 in OP 19/20 
+22.08.2023 
+54 RP 3/18 14.3.18 KPCL vs BESCOM & others Review of order in OP 35/14 22.08.2023 
+55 RP 28/22 20.12.2022 Smt. A. Jayamma Vs The State of 
+Karnataka & Others 
+Review of order dt. in 
+20.06.2022 in OP No.16/2022 
+22.08.2023 
+56 RP 09/23 09.06.202 Cardolite Speciality Chemicals 
+India LLP Vs Mangalore SEZ 
+Review of Order dt. 
+12.05.2023 (Tariff) 
+22.08.2023 
+57 OP 06/23 25.02.2023 VRL Logistics Ltd., Vs HESCOM Interest on delayed payment 22.08.2023 
+58 OP 29/22 10.08.2022 M/s. Sonu Handicrafts Vs KPTCL WBA 05.09.2023 
+59 Complaint 
+11/23 
+26.07.2023 Indian Cane Power Ltd., Vs 
+GESCOM and Others 
+To comply the tariff order dt. 
+11.04.2017 issued in OP No. 59 
+& 85/2016 
+05.09.2023 
+60 OP 24/22 18.07.2022 /s. Avanthi Renewable Energy Pvt. 
+Ltd., Vs BESCOM 
+Letter of Credit 06.09.2023 
+61 OP 45/22 16.12.2022 M/s. Avanti Solar Energy Pvt. Ltd., Vs 
+GESCOM 
+Letter of Credit 06.09.2023 
+62 OP 46/22 16.12.2022 M/s. Mayfair Renewable Energy (I) 
+Pvt. Ltd., Vs HESCOM 
+Letter of Credit 06.09.2023 
+63 OP 29/19 15.04.19 / 
+17.05.19 
+M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs BESCOM 
+Impact of GST 12.09.2023 
+64 OP 30/19 15.04.19 / 
+17.05.19 
+M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs BESCOM 
+Impact of GST 12.09.2023 
+65 OP 31/19 15.04.19 / 
+17.05.19 
+M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs CESC 
+Impact of GST 12.09.2023 
+66 OP 32/19 15.04.19 / 
+17.05.19 
+M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs CESC 
+Impact of GST 12.09.2023 
+67 OP 33/19 15.04.19 / 
+17.05.19 
+M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs CESC 
+Impact of GST 12.09.2023 
+68 OP 34/19 15.04.19 / 
+17.05.19 
+M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs GESCOM 
+Impact of GST 12.09.2023 
+69 OP 35/19 17.05.19 M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs GESCOM 
+Impact of GST 12.09.2023 
+70 OP 36/19 17.05.19 M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs GESCOM 
+Impact of GST 12.09.2023 
+71 OP 37/19 15.04.19 / 
+17.05.19 
+M/s.Clean Solar Power (Tumkur) Pvt. 
+Ltd., Vs MESCOM 
+Impact of GST 12.09.2023 
+72 OP 117/18 13.12.18 K.N.Bijapura Solar Energy Private 
+Limited vs BESCOM  
+GST 12.09.2023 
+73 OP 1/19 08.01.19 K.N.Muddebihal Solar Energy Pvt. 
+Ltd. Vs HESCOM 
+Impact on GST 12.09.2023 
+
+[PDF page 66]
+66 
+ 
+74 OP 4/19 18.01.19 K.N.Indi Vijayapura Solar Energy Pvt. 
+Ltd., Vs BESCOM 
+Impact on GST 12.09.2023 
+75 OP 5/19 18.01.19 K.N.Sindagi Solar Energy Pvt. Ltd., Vs 
+GESCOM 
+Impact on GST 12.09.2023 
+76 Complaint 
+1/18 
+25.06.18 Sri C.Jayanna vs BESCOM & 
+another 
+Non-compliance of order of 
+Ombudsman /CGRF 
+12.09.2023 
+77 OP 07/23 02.03.2023 Khayati Steel Industries Ltd., Vs 
+CESC 
+To declare the Petitioner 
+Captive users 
+12.09.2023 
+78 OP 12/23 11.04.2023/
+18.04.2023 
+M/s. Jodhani Papers Pvt. Ltd., Vs 
+BESCOM 
+Declare the order dt. 
+08.03.2022 is applicable to the 
+Petitioner & Payment 
+27.09.2023 
+79 OP 35/22 03.11.2022 M/s. Chennamangathihalli Solar 
+Power LLP & Another Vs BESCOM 
+Payment of Interest on LD 27.09.2023 
+80 OP 17/22 16.06.2022 Sri. H.V. Thimmaiah Vs The State of 
+Karnataka & Others 
+Execution of SPPA & Extension 
+of Time 
+27.09.2023 
+81 OP 09/23 08.03.2023 M/s. Bright & Packing Pvt. Ltd., Vs 
+KPTCL & Others 
+WBA & Refund of 
+Compensation amount 
+19.12.2023 
+82 OP 47/22 23.12.2022 Rai Bahadur Seth Shreeram 
+Narasingdas Pvt. Ltd., Vs KPTCL & 
+Others 
+WBA 19.12.2023 
+83 OP 48/22 23.12.2022 MESCOM Vs Sri Maruti Gen (India) 
+Pvt. Ltd., 
+Recovery of Additional cost 
+paid to Respondent for supply 
+of energy beyond 4MW 
+19.12.2023 
+84 OP 37/22 07.11.2022 M/s. SVE Casting Pvt. Ltd., Vs 
+GESCOM & Others 
+WBA 19.12.2023 
+85 OP 41/22 23.11.2022 M/s. Indowind Energy Ltd., Vs 
+GESCOM and Others 
+WBA 19.12.2023 
+86 OP 27/22 05.08.2022 M/s. Maris Hotels and Theatres Pvt. 
+Ltd., Vs SLDC and Others 
+Permission to utilize the power 19.12.2023 
+87 OP 28/22 05.08.2022 M/s. Maris Spinners Ltd., Vs SLDC 
+and Others 
+Permission to utilize the power 19.12.2023 
+88 OP 02/23 19.01.2023 Orange Country Resorts & Hotels 
+Ltd., Vs HESCOM & Others 
+Refund of lapsed units 
+generated / excess tariff 
+collected 
+19.12.2023 
+89 OP 05/23 07.02.2023 Four EF Renewables Pvt. Ltd., Vs 
+BESCOM & Others 
+Refund of excess payment 19.12.2023 
+90 OP 04/23 31.01.2023 Radiance Renewables Pvt. Ltd., Vs 
+BESCOM & Another 
+Approval of installation of 
+interface meters & to permit 
+double circuit dedicated 
+transmission line 
+19.12.2023 
+91 OP 10/18 05.03.18 K.V.Ravindra Reddy vs BESCOM & 
+others 
+SRTPV 19.12.2023 
+92 OP 11/18 05.03.18 Sri Bupal Reddy vs BESCOM & others SRTPV 19.12.2023 
+93 OP 16/23 18.05.2023 Cambria Solar Pvt. Ltd., Vs BESCOM Payment 19.12.2023 
+94 OP 25/22 19.07.2022 Wind World Wind Farms (Karnataka) 
+Ltd., Vs BESCOM 
+Payment for energy supplied 19.12.2023 
+95 OP 36/22 04.11.2022 M/s. Chirasthaayee Saurya Ltd., 
+HESCOM 
+Late payment Surcharge 19.12.2023 
+96 OP 43/22 25.11.2022 M/s. ES Sun Power Pvt. Ltd., & 
+Another Vs BESCOM 
+Late Payment Surcharge 19.12.2023 
+97 OP 44/22 25.11.2022 M/s. ES Solar Power Pvt. Ltd., & 
+Another Vs BESCOM 
+Late Payment Surcharge 19.12.2023 
+98 OP 01/23 11.01.2023 BESCOM Vs NIL  28.12.2023 
+99 OP 06/22 15.02.2022 M/s. Clean Power (Gulbarga) Pvt. 
+Ltd., Vs KPTCL & Another 
+Payment for Generation Loss 28.12.2023 
+
+[PDF page 67]
+67 
+ 
+100 OP 19/23 24.08.2023 M/s. RBRK Investments Ltd., Vs KPTCL To quash the letter dt. 
+15.07.2023 issued by the 
+Respdt. 
+28.12.2023 
+101 OP 56/20 07.11.2020 KPCL (RTPS Unit-1 to 7) Vs BESCOM 
+& Others 
+O and M Expenses 28.12.2023 
+102 OP 57/20 07.11.2020 KPCL (Hydel Station) Vs BESCOM & 
+Others 
+O and M Expenses 28.12.2023 
+103 OP 58/20 07.11.2020 KPCL (BTPS Unit-1) Vs BESCOM & 
+Others 
+O and M Expenses 28.12.2023 
+104 OP 59/20 07.11.2020 KPCL (RTPS Unit-8) Vs BESCOM & 
+Others 
+O and M Expenses 28.12.2023 
+105 OP 60/20 07.11.2020 KPCL (BTPS Unit-2) Vs BESCOM & 
+Others 
+O and M Expenses 28.12.2023 
+106 RP 17/23 31.10.2023 KPTCL & Others Vs Clean Max 
+Power Projects Pvt. Ltd., 
+Review of the order dt. 
+07.03.2023 in OP No. 04/2022 
+10.01.2024 
+107 OP 43/20 15.09.2020 M/s. EGNI Generation Pvt. Ltd., Vs 
+BESCOM 
+Payment 10.01.2024 
+108 OP 08/2021 03.02.2021 Jindal Aluminum Vs BESCOM Cross Subsidy Surcharge  31.01.2024 
+109 Complaint 
+06/23 
+03.07.2023 Gloalexotium Renewable Solutions 
+Pvt. Ltd., Vs GESCOM & Another 
+To comply the order dt. 
+21.03.203 in OP No. 133/2017 
+31.01.2024 
+110 OP 26/23 23.11.2023 Four EF Renewables Pvt. Ltd., Vs 
+BESCOM 
+Transmission and distribution 
+loss and to quash the demand 
+letter dt. 23.08.2023. 
+19.03.2024 
+111 OP 24/23 23.10.2023 M/s. Atria Solar Power (Ryapte) Pvt. 
+Ltd., Vs KPTCL & Another  
+To declare one time common 
+infrastructure charges is null 
+and vide 
+26.03.2024 
+112 OP 25/23 23.10.2023 M/s. Atria Power Corporation Pvt. 
+Ltd.,Vs KPTCL & Another 
+To declare one time common 
+infrastructure charges is null 
+and vide 
+26.03.2024 
+113 OP 06/24 27.03.2024 Basappa alias Chandrappa & 
+Others Vs Deputy Commissioner 
+Viayapura District & Others 
+To set aside the order passed 
+by the Deputy Commissioner 
+Vijayapura District. 
+27.03.2024 
+ 
+ 
+ 
+Remand matters-20 
+114 OP 120/18 28.12.18 Clean Wind Power (Manvi) Pvt Ltd vs 
+CESC & others 
+CSS/Captive status 11.10.2021 
+/02.05.2023 
+115 OP 62/17 25.04.17 Raygen Power Pvt Ltd Vs CESC Solar PPA 12.7.18 / 
+27.06.2023 
+116 OP 132/17 05.07.17 Tanivi Solar Pvt Ltd Vs CESC Extension of Time  28.6.18 / 
+26.07.2023 
+117 OP 226/17 06.12.17 N.Narayana Swamy vs 
+BESCOM & others 
+SRTPV 10.12.19 / 
+26.07.2023 
+118 OP 228/17 12.12.17 Jigajinagi Japtap Solar Energy Pvt. Ltd 
+(1) vs HESCOM & others 
+Extension of time 22.11.18 / 
+19.12.2023 
+119 OP 229/17 12.12.17 Jigajinagi Japtap Solar Energy Pvt. Ltd 
+(2) vs HESCOM & others 
+Extension of time 22.11.18 / 
+19.12.2023 
+120 OP 35/18 21.03.18 K.K.Rao Green Energy Pvt. Ltd vs 
+KREDL & others 
+Extension of time 26.12.19 / 
+19.12.2023 
+121 OP 51/18 21.05.18 Parampujya Solar Energy Pvt. Ltd vs 
+GESCOM & another 
+GST 11.02.2022/ 
+28.12.2023 
+122 OP 57/18 12.0 6.18 Adani Green Energy (UP) Ltd 
+(Maaluru) vs MESCOM 
+GST 11.02.2022/ 
+28.12.2023 
+123 OP 58/18 12.06.18 Adani Green Energy (UP) Ltd 
+(T.Narasipura) vs CESC 
+GST 11.02.2022/ 
+28.12.2023 
+
+[PDF page 68]
+68 
+ 
+124 OP  59/18 12.06.18 Adani Green Energy (UP) Ltd. 
+(Holenarasipur) vs BESCOM 
+GST 03.01.2022/ 
+28.12.2023 
+125 OP 60/18 12.06.18 Adani Green Energy (UP) Ltd 
+(Periyapattana) vs GESCOM 
+GST 11.02.2022/ 
+28.12.2023 
+126 OP 61/18 12.06.18 Adani Green Energy (UP) Ltd 
+(Jewargi) Vs GESCOM 
+GST 11.02.2022/ 
+28.12.2023 
+127 OP 110 /18 13.12.  18 Adani Green Energy(UP) Ltd (K R Pet) 
+vs BESCOM 
+GST 03.01.2022/ 
+28.12.2023 
+128 OP 111 /18 13.12.18 Adani Green Energy UP Ltd (Byadagi) 
+vs HESCOM 
+GST 11.02.2022/ 
+28.12.2023 
+129 OP 112 /18 13.12.18 Adani Green Energy UP Ltd (Gubbi) vs 
+BESCOM 
+GST 03.01.2022/ 
+28.12.2023 
+130 OP 113 /18 13.12.18 Adani Green Energy UP Ltd 
+(Channapattana) vs HESCOM 
+GST 11.02.2022/ 
+28.12.2023 
+131 OP 114 /18 13.12.18 Adani Green Energy UP Ltd (Magadi) 
+vs CESC 
+GST 11.02.2022/ 
+28.12.2023 
+132 OP 115/18 13.12.18 Adani Green Energy UP Ltd (Tipaturu)) 
+vs BESCOM 
+GST 03.01.2022/ 
+28.12.2023 
+133 OP 116/18 13.12.18 Adani Green Energy UP Ltd 
+(Ramanagar) vs BESCOM 
+GST 03.01.2022/ 
+28.12.2023 
+ 
+ 
+Other Orders-07 
+Sl. 
+No. 
+Case No. Parties Subject Date of 
+Disposal 
+1 OP 14/2021 M/s. Graphite India Ltd., Vs KPTCL Wheeling & Banking 
+Agreement 
+12.04.2022 / 
+23.05.2023 
+2 OP 26/2021 Helene Power Pvt. Ltd., Vs BESCOM & 
+Another 
+Appointment of Arbitrator / in 
+alternative to adjudicate the 
+disputes between parties as 
+per PPA 
+31.01.2023 
+/23.05.2023 
+3 Complaint 34/22 Tata Power Renewable Energy Ltd., Vs 
+HESCOM 
+Non-Compliance of order dt. in 
+12.04.2022 in OP No. 41/2020 
+04.01.2023/ 
+26.07.2023 
+4 N/206/2019 
+(On Remand) 
+HPCL Vs CESC Tariff Order dt. 14.05.2018 22.08.2023 
+5 N/304/2017 
+(On Remand) 
+BESCOM & Others Vs Star Metalics 
+Power Pvt. Ltd., & Others 
+Under Section 11 of the 
+Electricity Act, 2003 
+06.09.2023 
+6 N/68/2023 
+in WP No. 10401/2023 
+and other connected 
+petitions 
+Soham Renewable Energy India Private 
+Limited and Another Vs. Karnataka 
+Electricity Regulatory Commission & 
+others and Other connected petitions 
+Additional Surcharge 17.11.2023 
+7 OP 20/19 Solitaire Powertech Pvt. Ltd., Vs KPTCL & 
+Another 
+Compensation for Generation 
+Loss 
+14.09.2021 / 
+14.09.2022 / 
+19.12.2023 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 69]
+69 
+ 
+Interim Orders-03 
+Sl. 
+No. 
+Case No. Parties Subject Date of 
+Interim Order  
+1 OP 11/23 M/s. Vijayalakshmi Hydro Power Pvt. Ltd., Vs 
+CESC and Others 
+Captive Status 19.04.2023 
+2 OP 24/23 M/s. Atria Solar Power (Ryapte) Pvt. Ltd., Vs 
+KPTCL & Another  
+To declare one time 
+common infrastructure 
+charges is null and vide 
+09.01.2024 
+3 OP 25/23 M/s. Atria Power Corporation Pvt. Ltd.,Vs 
+KPTCL & Another 
+To declare one time 
+common infrastructure 
+charges is null and vide 
+09.01.2024 
+ 
+  
+
+[PDF page 70]
+70 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Electricity Ombudsman 
+ 
+& 
+ 
+Consumer Grievance Redressal Forum  
+
+[PDF page 71]
+71 
+ 
+13.   CONSUMER GRIEVANCES REDRESSAL: 
+ 
+(1) Activities of the Ombudsman: 
+As per the provisions under Section 42(6) of the Electricity Act 2003, Ombudsman 
+has been appointed by the Commission.  The Ombudsman provides suitable 
+redressal to the grievances of the consumers which are not redressed at the level 
+of the District Consumer Grievances Redressal Forum (CGRF). 
+ 
+ During the financial year 2023 -24, 60 Petitions were registered and 28 Petitions 
+brought forward from the previous year, totaling to 88 cases.  Of these, the 
+Electricity Ombudsman conducted hearing and disposed of 43 petitions during 
+the year, leaving a balance of 45 cases. 
+ 
+The details of 43 petitions disposed of during the year 2023-24 are detailed below:  
+ 
+SL. 
+No Case No. Complainant/Appellant Respondent Case Ordered 
+date Remarks 
+1 OMB/B/G-479/2022 Sri Pramod R Kamath 
+AEE (Ele), O&M Subdivision-N3, 
+BESCOM Limited, Basaveshwarnagar, 
+Bengaluru. 
+30.05.2023 Dismissed 
+2 OMB/G/G-494/2022 Sri. Veerakumar Reddy AEE (Ele), O & M Rural Subdivision, 
+GESCOM, Raichur. 19.04.2023 Dismissed 
+3 OMB/G/G-495/2022 Smt. Shashikala AEE (Ele), O & M Rural Subdivision, 
+GESCOM, Raichur. 19.04.2023 Dismissed 
+4 OMB/G/G-496/2022 Sri. Vinod Kumar AEE (Ele), O & M Rural Subdivision, 
+GESCOM, Raichur. 19.04.2023 Dismissed 
+5 OMB/G/G-497/2022 Sri. Shankar Gouda AEE (Ele), O & M Rural Subdivision, 
+GESCOM, Raichur. 19.04.2023 Dismissed 
+6 OMB/G/G-498/2022 Sri. Narasimha Reddy AEE (Ele), O & M Rural Subdivision, 
+GESCOM, Raichur. 19.04.2023 Dismissed 
+7 OMB/G/G-499/2022 Smt. B. Radha AEE (Ele), O & M CitySubdivision-1, 
+GESCOM, Raichur. 08.08.2023 Case remanded back to 
+CGRF for fresh disposal 
+8 OMB/G/G-500/2022 Smt. B. Radha AEE (Ele), O & M City Subdivision-1, 
+GESCOM, Raichur. 08.08.2023 Case remanded back to 
+CGRF for fresh disposal 
+9 OMB/H/G-502/2022 Dr. Susheela V Kerudi AEE (Ele), O & M Subdivision-1, 
+HESCOM, Ranebennur, Haveri. 15.06.2023 Dismissed 
+10 OMB/M/G-505/2022 Sri. R. Ramaiah AEE (Ele), O & M City Subdivision, 
+MESCOM, Bhadravathi 27.09.2023 Allowed 
+11 OMB/M/G-507/2022 Sri. H. Nagaraj AEE (Ele), O & M Subdivision, MESCOM, 
+N.R. Pura . 20.07.2023 Settled 
+12 OMB/H/G-509/2022 Sri. Channabasappa 
+Veerabhadrappa Yankachi 
+AEE (Ele), O & M Subdivision, HESCOM, 
+Guledagudda. 21.04.2023 Partly Allowed 
+13 OMB/H/G-511/2022 Sri. Manjunath G Baddi AEE (Ele), O & M City Subdivision-4, 
+HESCOM, Navanagar, Hubballi. 23.05.2023 Partly Allowed 
+14 OMB/M/G-513/2022 Sri. T. Parameshwara 
+Mayya 
+AEE (Ele), Kadaba Subdivision, Kadaba, 
+Puttur Taluk, Dakshina Kannada-
+574221. 
+09.10.2023 Dismissed as barred by 
+Limitation 
+15 OMB/H/G-514/2022 Sri. S.B. Hosmani 
+AEE (Ele), O & M City Subdivision-2, 
+HESCOM, Behind New English School, 
+Hubballi. 
+09.06.2023 Dismissed 
+16 OMB/H/G-515/2022 Sri. Manjunath A Bachudi 
+AEE (Ele), O & M City Subdivision-3, 
+HESCOM, Industrial Estate, Gokul road, 
+Hubballi. 
+28.06.2023 Dismissed 
+
+[PDF page 72]
+72 
+ 
+17 OMB/H/G-516/2022 Sri. Sharashchandra M 
+Shetty 
+AEE (Ele), O & M City Subdivision-2, 
+HESCOM, Behind New English School, 
+Hubballi. 
+28.12.2023 Allowed 
+18 OMB/H/G-517/2022 M/s Shivashakthi 
+Properties 
+AEE (Ele), O & M City Subdivision-2, 
+HESCOM, Behind New English School, 
+Hubballi. 
+16.06.2023 Allowed 
+19 OMB/G/G-518/2023 Smt. Sarvamangala (RR No. 
+57963) 
+AEE (Ele), O & M City Subdivision-1, 
+GESCOM, Raichur. 20.09.2023 Dismissed with cost 
+20 OMB/G/G-519/2023 Smt. Sarvamangala (RR No. 
+62620) 
+AEE (Ele), O & M City Subdivision-1, 
+GESCOM, Raichur. 20.09.2023 Dismissed 
+21 OMB/G/G-520/2023 Sri. Sandeep Jain AEE (Ele), O & M City Subdivision-2, 
+GESCOM, Raichur. 21.04.2023 Allowed 
+22 OMB/C/G-521/2023 Smt. Ponnamma 
+Murugesh 
+AEE (Ele), O & M Subdivision, CESC, 
+Gonikoppalu. 10.10.2023 Partly Allowed 
+23 OMB/C/G-522/2023 Sri. Sanjay Srikantiah  AEE (Ele), O & M Nanjanagudu 
+Subdivision-1, CESC, Nanjanagudu. 21.07.2023 Allowed 
+24 OMB/G/G-523/2023 M/s Jawarilal & Company CGRF, O & M Circle, Raichur. 27.07.2023 
+ 
+Closed 
+ 
+25 OMB/H/G-525/2023    M/s Shree Rajendra 
+Cotton Industries 
+Assistant Executive Engineer (Ele), O & 
+M Sub-division, HESCOM, Laxmeshwar. 22.03.2024 Dismissed 
+26 OMB/B/G-526/2023    Sri. D. Hemanth Kumar CGRF, West circle office, BESCOM, 
+Basaveshwaranagar, Bangalore-560079. 19.06.2023 Closed as per request of 
+the Complainant 
+27 OMB/H/G-527/2023    Vaijesh R Uchila Assistant Executive Engineer (Ele), O & 
+M Sub-division-1, HESCOM, Dharwad. 23.01.2024 Dismissed 
+28 OMB/C/G-529/2023    Sri. M.M. Hussain  AEE (Ele), O & M Sub-division, CESC, 
+Madekeri. 12.03.2024 Settled 
+29 OMB/M/G-530/2023    Sri. K. Nagaraj AEE (Ele), MESCOM, City Subdivision, 
+Bhadravathi. 14.02.2024 Dismissed 
+30 OMB/B/G-531/2023    Rail Wheel Factory AEE (Ele), C-7 Sub-division, BESCOM, 
+Yalahanka, Bengaluru-560064. 03.08.2023 Closed as per request of 
+the Complainant 
+31 OMB/B/G-532/2023    Bank of Maharashtra AEE (Ele), O & M Subdivision, BESCOM, 
+Harihara. 03.08.2023 Dismissed 
+32 OMB/B/G-533/2023    N. Devaraj AEE (Ele), O & M Subdivision, BESCOM, 
+Avalahalli. 20.02.2024 
+Remanded back to the 
+AEE (Ele) for fresh 
+disposal 
+33 OMB/B/G-534/2023    LUCAS The Chairperson, CGRF, O & M Circle, 
+BESCOM, Kolar. 16.11.2023 Closed as per request of 
+the Complainant 
+34 OMB/H/G-536/2023    Sri. Ajithanatha Neminatha 
+Vandakundari 
+Assistant Executive Engineer (Ele), O & 
+M Rural Sub-division, Navanagar, 
+HESCOM, Bagalkot. 
+16.02.2024 Allowed 
+35 OMB/B/G-538/2023    Sri. Rama Reddy AEE (Ele), S-7 Sb-division, Banashankari 
+2nd Stage, Bengaluru-560070. 12.01.2024 Partly Allowed 
+36 OMB/G/G-539/2023    M/s Texcom Steels Limited Assistant Executive Engineer (Ele), O & 
+M Rural Sub-division, GESCOM, Raichur. 01.03.2024 Dismissed 
+37 OMB/C/G-540/2023    Smt. C.H. Sarasu Assistant Executive Engineer (Ele), O & 
+M Sub-division, CESC, Virajpet. 28.02.2024 Settled 
+38 OMB/G/G-542/2023    Sri. Abudul Hannan 
+Assistant Executive Engineer (Ele), L.T. 
+Rating City Sub-division, GESCOM, 
+Hospete. 
+11.03.2024 Settled 
+39 OMB/B/G-561/2023    Chethan B Assistant Executive Engineer (Ele), O & 
+M City Sub-division-1, GESCOM, Ballari. 20.02.2024 Dismissed as not 
+maintainable 
+40 OMB/B/G-564/2023    Raheja Park Owners 
+Welfare Association (Regd) 
+Assistant Executive Engineer (Ele), N-3 
+Sub-division, BESCOM, o. 46/1, KHB 
+Colony, 1st Stage, Siddaiahpuranic road, 
+Basaveshwaranagar, Bengaluru-560079. 
+28.12.2023 Settled 
+41 OMB/B/G-569/2023    Smt. Shashikala Sampath 
+Assistant Executive Engineer (Ele), C-1, 
+Sub-division, BESCOM, beside Jindal 
+Hospital, Rajajinagar, Bengaluru. 
+08.01.2024 Settled 
+42 File No. 26/2023 Sri. V.X. Joseph Assistant Executive Engineer (Ele), O & 
+M Circle, CESC, Virajpet, Kodagu. 10.10.2023 Settled 
+43 File No. 33/2023 Sri. Ramalingappa AEE (Ele), O & M Sub-division, BESCOM, 
+Jagaluru, Davanagere. 22.01.2024 Settled 
+ 
+
+[PDF page 73]
+73 
+ 
+The grievances taken up with the Ombudsman mainly relate to wrong reading 
+of meter, delay in refund of deposits, delay in disposal of application regarding 
+power connection, Back Billing Charges etc., 
+ 
+During the financial year 2023 -24, the Electricity Ombudsm an has conducted 
+Review Meetings of CGRFs and Consumer grievances redressal meetings as 
+detailed below for the benefit of ESCOM officers/officials and consumers. 
+ 
+ESCOMS Conducted workshops & Review meetings 
+of CGRFs by Ombudsman 
+CGRF meeting made by 
+Ombudsman with ESCOMS 
+BESCOM 08.09.2023 (One Day Workshop – Training 
+Program held at KPTCL Accounts Officers 
+Association, Belli Habba Bhavana, 
+Bengaluru) 
+ 
+- 
+HESCOM 20.10.2023 (One Day Workshop – Training 
+Program held at Conference Hall, KPTCL 
+Works & Maintenance Division, Hubballi) 
+ 
+21.10.2023 at Office of the 
+CGRF, Bagalkot 
+CESC 04.12.2023 (One Day Workshop – Training 
+Program held at Surya Rao Auditorium, 
+KEBEA Training Centre, Kadakola, Mysuru) 
+ 
+- 
+MESCOM 18.12.2023 (One Day Workshop – Training 
+Program held at MESCOM Bhavana, 
+Mangaluru) 
+ 
+- 
+ 
+ 
+(2) REVIEW OF THE WORKING OF CONSUMER GRIEVANCES REDRESSAL FORUMS 
+(CGRFs): 
+ 
+Consumer Grievances Redressal Forums have been established by the 
+Distribution Licensees in every Revenue District of their jurisdiction.  The CGRF is 
+chaired by an officer of the Licensee not below the rank of a Superintending 
+Engineer and one Member bein g officer of the Licensee not below the rank of 
+Executive Engineer.  The KERC has nominated one Member to each CGRF from 
+among the persons who have experience or knowledge of electricity 
+sector/consumer affairs from various fields.  
+ 
+ 
+ 
+ 
+
+[PDF page 74]
+74 
+ 
+The details mentioned below are CGRF members for each Revenue Districts of 
+ESCOMs: - 
+ 
+ 
+ESCOM 
+ 
+ 
+No. of 
+Revenue 
+Districts 
+No. of 
+members in 
+CGRF 
+BESCOM 8 15 
+MESCOM 4 8 
+HESCOM 7 12 
+GESCOM 7 14 
+CESC 5 10 
+TOTAL 31 59 
+ 
+ 
+The creation of CGRFs in each revenue district has helped consumers to get their 
+grievances redressed expeditiously at District level itself, which saves them 
+considerable time and cost. 
+ 
+During the financial year 2023-24, the ESCOM wise status of grievances redressed 
+is as follows:  
+ 
+Name of 
+ESCOM 
+Opening 
+balance 
+Filed during 
+the year 
+Disposed 
+during the 
+year 
+Balance at the 
+end of the year 
+BESCOM 66 20 58 28 
+MESCOM 1 10 9 2 
+CESC 2 9 10 1 
+HESCOM 4 16 13 7 
+GESCOM 8 207 203 12 
+Total 81 262 293 50 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 75]
+75 
+ 
+          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Programme for FY25 
+       
+                                                              …………Year Ahead 
+
+[PDF page 76]
+76 
+ 
+ 
+14. PROGRAMME FOR THE YEAR AHEAD: 
+ 
+The following activities are planned for the FY25: 
+1. Determination of Generic Tariff for Mini -hydel, bagasse based                                 
+co-generation (ceiling tariff for fixed cost for the purpose of bidding) and 
+bio-mass based power projects.  
+2. GNA Regulations for the State. 
+3. Notification of the APPC for the FY26. 
+4. Amendments to the Conditions of Supply of Electricity of the Distribution 
+Licensees in the State of Karnataka (CoS) 
+5. The commission will initiate proceedings to amend appropriately the 
+various  Clauses of CoS, as may be necessary considering the request 
+made by the consumers and the licensees. 
+6. Amendments to the KERC (Recovery of Expenditure for supply of 
+Electricity),  Regulations. 
+7.  The Commission will initiate proceedings to amend appropriately various 
+ Clauses of these Regulations considering the requests received from 
+ consumers and the licensees. 
+8. Review of performance of the KPTCL and ESCOMs. 
+9. Prudence check of capex for FY23 and FY24: 
+10. Amendments to KEGC and KEDC Regulations for the State. 
+11. MYT Regulations for the State. 
+12. KERC (Terms and Conditions for Determination of Generation Tariff) 
+Regulations for the State. 
+13. All Draft Regulations for the State will be reviewed. 
+14. Generic Tariff Orders for Solar, Wind, Bio -mass, Co-gen and Mini -hydel, 
+waste to energy etc., 
+15. Determination of Tariff and approval of PPA relating to 
+thermal/Gas/Hydel etc.  
+16. The Annual Perf ormance Review (APR) for the FY24 and the 
+determination of revised ARR for the FY26 for the transmission and 
+
+[PDF page 77]
+77 
+ 
+distribution licensees in the State and Revision of the Retail Supply Tariff of 
+the Distribution Licensees for the next control period 2026-2029.  
+17. Paperless Hearings and E -Library: The Commission plans to implement 
+paperless hearings and establish an e -library. This will help advocates 
+avoid the need to carry large files during hearings. 
+18.  Online Copies of Orders: The Commission intends to issue onlin e copies 
+of daily orders and final orders. This will enable advocates and parties to 
+easily access these documents from their location. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PDF page 78]
+78 
+ 
+ 
+ 
+ 
+ 
+ 
+ANNEXURE-1 
+ 
+ 
+ORGANISATION CHART OF KERC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+  
+COMMISSION 
+CHAIRMAN 
+                 MEMBER - I 
+                             MEMBER - II 
+SECRETARY 
+ 
+DY. DIRECTOR 
+(Administration) 
+DY. DIRECTOR 
+(PRO) 
+ 
+CONSUMER 
+ADVOCATE 
+ 
+SENIOR 
+FINANCIAL 
+ANALYST 
+DY. DIRECTOR 
+(LEGAL) 
+DIRECTOR 
+      (Tariff) 
+DIRECTOR 
+(Technical) 
+ACCOUNTS  
+OFFICER &  
+Asst.  Accts. Officer 
+ 
+MANAGER 
+ 
+ASST. 
+SECRETARY 
+DY. DIRECTOR 
+(TARIFF) JOINT DIRECTOR 
+(Technical.) 
+DY. DIRECTOR 
+(Gen) 
+DY. DIRECTOR 
+(Trans.) 
+ 
+DY. DIRECTOR 
+(Distribution) 
+OMBUDSMAN 
+ 
+DY. DIRECTOR  
+(DF) 
+
+[PDF page 79]
+79 
+ 
+ANNEXURE – II 
+ 
+List of members of State Advisory Committee, KERC as on 31.03.2024 
+ 
+  
+Ex-officio Members 
+ 
+1. Chairman, Karnataka Electricity Regulatory Commission, 
+2. Member, Karnataka Electricity Regulatory Commission, 
+3. Member, Karnataka Electricity Regulatory Commission, 
+4. The Secretary to Government of Karnataka, Dept. of Food & Civil Supplies & Consumer         
+Affairs, M.S. Building, Bengaluru – 560 001 Ph:22259024 
+ 
+Other Members 
+1. The Managing Director 
+Karnataka Power Transmission Corporation. 
+Ltd., Cauvery Bhavan, Kempe Gowda Road,  
+Bengaluru -560 009 
+Ph : 080-22214342/22244556 
+2. The Managing Director 
+Karnataka Power Corporation Ltd. 
+Shakti Bhavan, Race Course Road, 
+Bengaluru – 560 001 
+Ph: 080 –22255606 /22204153 
+3. The President 
+KASSIA, No.2/106, 17th Cross 
+ Magadi Chord Road, Vijayanagar, 
+Bengaluru – 560 040. 
+Ph: 28362178(O), 23493353 ( R), 9845031122 
+E-mail ID: presidentkassia@gmail.com 
+4. Sri P S Jagannath Gupta 
+94, 17th B main, V Block, Koramangala 
+Bengaluru- 560 095 
+5. The Managing Director 
+HESCOM, P B Road, Navanagar, 
+Hubballi – 580 025 
+Ph: 0836-2322771; 9448277614 
+6. The Managing Director, 
+Karnataka Renewable Energy 
+Development Ltd. (KREDL), #6/13/1, 10th 
+Block, Marilingappa Extension, 
+Naagarabhaavi, Bengaluru, Karnataka 
+560072 Ph:080- 080 2228 2220  
+7. The Managing Director 
+GESCOM, Station Road 
+Kalaburagi -585 101 
+08472-256581; 9449597444 
+8. The Managing Director  
+BESCOM, Corporate Office 
+K.R.Circle, Bengaluru – 560 001 
+Ph: 22354929 
+9. The Additional Director (HRD) 
+Department of Agriculture 
+Commissionerate, Seshadri Road 
+Bengaluru – 560 001  
+Mob: 99864 93443 
+10. Sri. M C Rangarajan 
+744, 9th Cross, 
+BEL Layout 4th block, 
+Vidyaranyapura, 
+Bangalore 560097 
+9448909313 
+11 The Chairman, 
+Confederation of Indian Industry 
+Karnataka State Branch  
+1086, 12th Main HAL 2nd Stage, Indiranagar, 
+Bengaluru – 560 008  
+Ph. 080-42889595 
+12 The Chief Civil Engineer 
+Karnataka State Road Transport 
+Corporation “Transport House”, Central 
+Office, K.H. Road Shanthinagar, 
+Bengaluru – 560 027 
+080-2222 1321 / 2222 1325 
+13 The Managing Director 
+CESC, No.29, Vijayanagara 2nd stage 
+Hinkal, Mysuru-570 017 
+Ph: 0821-2417104/110 
+14 The Managing Director 
+MESCOM, MESCOM Bhavana, 
+Kavoor Cross Road,  
+Bejai, Mangaluru –575 004 
+  
+  
+
+[PDF page 80]
+80 
+ 
+15 Sri.P.K.Pujari 
+Flat C-2, Tower-6, New Motibagh Complex, 
+(Near Leela Palace Hotel), New Motibagh, 
+New Delhi – 110 023. 
+Mob No: 99710 05362 
+E-mail Id: pk_pujari@yahoo.com 
+16 Smt. Rajeshwari V Patil 
+President, Negilayogi Krushi Abhimanigala 
+Sangha(R), Handiganur Post 
+Haveri District – 581 213. 
+Mob: 94481 16866, 90353 00659 
+17 The President 
+Federation of Karnataka Chambers of 
+Commerce and Industry, Federation House, 
+Kempegowda Road, Bengaluru – 560 009. 
+080-2226 2355 / 56, 4082 8300 
+E-mail ID: president@fkcci.in  
+18 The Secretary 
+Karnataka State Licensed Electrical Contractors 
+Association (R), Dharawad District Committee, 
+“Gowri Krupa”, Patil Building, Tabeebaland Circle, 
+(Opp. to HESCOM Office), Hubballi – 580 020. 
+Mob No: 99001 97904 
+E-mail ID: kslecahubli@gmail.com 
+ 
+ 
+Invitees 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Additional Chief Secretary to Government,  
+Department of Energy,  
+Vikasa Soudha, 
+Bengaluru – 560 001 
+Ph: 22252373   
+The Managing Director 
+Power Company of Karnataka Ltd 
+Cauvery Bhavan, Kempe Gowda Road,  
+Bengaluru -560 009 
+ 
+The Chief Engineer, 
+ Karnataka State Load Despatch Centre, 
+ KPTCL, Race Course Road,  
+ Bengaluru-560 009. 
+Ph. 9448471411; 22267034  
+The Director Technical, 
+Karnataka Power Transmission Corporation Ltd. 
+Cauvery Bhavan, Kempe Gowda Road, 
+Bengaluru -560 009 
+Ph: 22229496 

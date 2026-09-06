@@ -1,0 +1,7 @@
+/_vendor/
+/.swift-cache/
+/__pycache__/
+*.pyc
+
+# Preserve the OCR audit logs despite the parent Python project's log rule.
+!/fetch_log/*.log

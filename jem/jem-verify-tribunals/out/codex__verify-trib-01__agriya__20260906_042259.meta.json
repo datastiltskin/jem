@@ -1,0 +1,112 @@
+{
+  "record_scope": "original_verification_run_before_relocation_and_publication",
+  "rater": "agriya",
+  "model": "codex",
+  "model_version": null,
+  "context": "repo-hosted Codex session + supplied files + live web + user email + peer summary in RUN_SETUP",
+  "web_search": true,
+  "temperature": null,
+  "prompt_version": "verify-trib-v1",
+  "batch_id": "verify-trib-01",
+  "timestamp_utc": "2026-09-06T04:22:59.725758+00:00",
+  "entities_n": 44,
+  "rows_n": 140,
+  "tokens_in": null,
+  "tokens_out": null,
+  "cost_estimate": null,
+  "model_family_exposed": "GPT-6",
+  "harness": "existing Codex agent session",
+  "installed_codex_cli_version": "0.153.0",
+  "cli_used_for_model_inference": false,
+  "requested_temperature": 0.2,
+  "calibration_eligible": false,
+  "metadata_complete_for_calibration": false,
+  "run_status": "review_and_pipeline_sample_with_protocol_deviations",
+  "unknown_fields": {
+    "model_version": "Exact serving model identifier/snapshot is not exposed by this session.",
+    "temperature": "Sampling temperature cannot be set or observed in the existing session.",
+    "tokens_in": "No authoritative inference usage counter available.",
+    "tokens_out": "No authoritative inference usage counter available.",
+    "cost_estimate": "Actual session cost unavailable. No separate paid model API requests were made. Zero would not be a measured cost."
+  },
+  "repo_indexing": "unknown automatic indexing, none explicitly invoked",
+  "canonical_repo_contents_read": false,
+  "peer_summary_exposed": true,
+  "peer_result_csv_or_meta_or_fetch_logs_read": false,
+  "protocol_deviations": [
+    "The supplied workspace is a JEM checkout. No canonical dataset was read or changed, but an isolated context arm cannot be certified.",
+    "Only the card and a 17-row sample were attached locally. Shared prompt and full 140-row claims were retrieved with gh from the linked verifier/deepseek branch.",
+    "The downloaded RUN_SETUP unexpectedly contains Prajna's detailed summary. It was read before recognizing the blinding problem. The email also contained aggregate findings and the expected SAT anchor.",
+    "This is the existing agent session, not a fresh model invocation with the card prepended and controlled temperature. Prompt bytes were preserved, but prompt-only inference is not claimed.",
+    "Research was batched across sources. Export appends and fsyncs one entity at a time, but the research itself did not follow a strictly one-entity inference loop.",
+    "The 2-5M-token and one-day effort estimates were not measured or enforced. Research is a bounded search pass, not proof that missing figures are unpublished.",
+    "SAT anchor was source-checked but cannot be called independently blinded. Different-period primary values are kept in notes instead of overwriting historical claims.",
+    "Two pending replacements use an explicitly disclosed start-of-day/month boundary convention.",
+    "NA on AFT means there is no supplied NJDG stamp to invalidate, not that AFT caseload is inapplicable.",
+    "Primary HTTP response bodies, PDF text/OCR and 15 search-result batches are archived. Early web preflight and product-documentation tool interactions were not exhaustively archived."
+  ],
+  "input_provenance": {
+    "repository": "datastiltskin/jem",
+    "ref": "verifier/deepseek",
+    "prompt_path": "jem/jem-verify-tribunals/inputs/verifier_prompt.md",
+    "claims_path": "jem/jem-verify-tribunals/inputs/claims_to_verify.csv",
+    "setup_path": "jem/jem-verify-tribunals/RUN_SETUP.md",
+    "local_sample_used_as_claims": false,
+    "sha256": {
+      "RUN_SETUP.md": "8d7fa914b6b6710cf5dd17c43fe268d1d754dca74d675328758405d8529c0a66",
+      "agriya_codex_card.md": "097b3801832dd582d4d8381168bcc20d5526f3129962bc3224e3e079ab32a785",
+      "claims_to_verify.csv": "43f3f75b86e9435ff5d046342c62b295c0f540938eba983fb9cb8c1299614d93",
+      "verifier_prompt.md": "81136dad77f0e2381729244a3e565bb00444427c8a851c2b47bddaa5ea0ce21d"
+    }
+  },
+  "verdict_counts": {
+    "REFUTE": 45,
+    "UNSOURCED": 94,
+    "NA": 1,
+    "CONFIRM": 0
+  },
+  "numeric_rows_n": 96,
+  "numeric_refutes_n": 2,
+  "numeric_verified_entities_n": 2,
+  "njdg_invalid_n": 43,
+  "sat_anchor_check": {
+    "status": "PASS_SOURCE_AND_ARITHMETIC",
+    "period": "FY2025-26",
+    "as_of": "2026-03-31",
+    "opening": 960,
+    "filed": 429,
+    "disposal_components": [
+      135,
+      28,
+      47,
+      88,
+      25
+    ],
+    "disposed": 323,
+    "pending": 1066,
+    "disposal_rate_4dp": "0.7529",
+    "source_label": "sat_recheck",
+    "independently_blinded": false,
+    "note": "Re-fetched and read the primary table, then recomputed. Expected answer and peer summary had already been exposed. Not a matched-period replacement for the input snapshot."
+  },
+  "artifacts": {
+    "csv": "codex__verify-trib-01__agriya__20260906_042259.csv",
+    "evidence": "evidence.json",
+    "summary": "SUMMARY.md",
+    "validation": "validation.json",
+    "fetch_manifest": "fetch_log/manifest.jsonl"
+  },
+  "writes_confined_to": "out/",
+  "committed": false,
+  "pushed": false,
+  "pr_created": false,
+  "regeneration_performed": false,
+  "recommended_use": "Schema/pipeline exercise and human source review only. Exclude from blinded model-agreement calibration.",
+  "handoff": {
+    "repository_path": "jem/jem-verify-tribunals/out",
+    "branch": "verifier/codex",
+    "verification_decisions_changed_for_publication": false,
+    "publication_sanitization_report": "publication_sanitization.json",
+    "note": "Run-time committed/pushed flags describe the original local verification. The user subsequently authorized relocation, commit and publication. Source HTTP session cookies and CSRF values are removed from the publication archive, with original download hashes retained."
+  }
+}

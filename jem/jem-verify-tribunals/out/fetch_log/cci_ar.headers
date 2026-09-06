@@ -1,0 +1,17 @@
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: cci.gov.in
+alt-svc: h3=":443"; ma=2592000
+content-security-policy: default-src 'none';connect-src 'self' cci.gov.in; img-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; media-src 'self' https://cci.gov.in; frame-src 'self' https://www.google.com
+content-type: application/pdf
+date: Sun, 06 Sep 2026 04:07:27 GMT
+etag: "270f000-645aa65e29216"
+feature-policy: geolocation 'self'; camera 'none'; microphone 'none'; fullscreen 'self'
+last-modified: Thu, 11 Dec 2025 10:13:36 GMT
+referrer-policy: same-origin
+strict-transport-security: max-age=63072000; includeSubDomains
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+content-length: 40955904
+
