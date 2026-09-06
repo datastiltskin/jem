@@ -1,0 +1,24 @@
+HTTP/1.1 302 Found
+Location: https://www.legalaffairs.gov.in/sites/default/files/AnnualReport_hi_2023-24.pdf
+Connection: Keep-Alive
+Content-Length: 0
+
+HTTP/2 404 
+content-type: text/html; charset=utf-8
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none';
+permissions-policy: geolocation=(self)
+referrer-policy: no-referrer-when-downgrade
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+etag: "18axfrkvb3e2jh"
+content-length: 3293
+cache-control: private, no-cache, no-store, must-revalidate
+date: Sun, 06 Sep 2026 04:12:46 GMT
+server-timing: cdn-cache; desc=MISS
+server-timing: edge; dur=67
+server-timing: origin; dur=57
+alt-svc: h3=":443"; ma=93600
+strict-transport-security: max-age=15768000
+server-timing: ak_p; desc="1788667966371_389507655_3322898529_12385_9528_8_34_15";dur=1
+

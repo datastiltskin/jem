@@ -1,0 +1,27 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:14:16 GMT
+Server: Apache
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: frame-ancestors 'self' https://*.karnataka.gov.in;
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: same-origin
+Feature-Policy: fullscreen 'none'; microphone 'none'
+Permissions-Policy: fullscreen=()
+Last-Modified: Tue, 05 Nov 2024 11:47:12 GMT
+ETag: "1cabb1-62628f64a0969"
+Accept-Ranges: bytes
+Content-Length: 1878961
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-FRAME-OPTIONS: SAMEORIGIN
+X-Firefox-Spdy: h2
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Access-Control-Allow-Methods: GET, POST, HEAD
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: accept, content-type, X-Requested-With, X-Prototype-Version, X-CSRF-Token, authorization
+Content-Type: application/pdf
+

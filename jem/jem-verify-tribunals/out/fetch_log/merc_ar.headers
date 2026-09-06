@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:07:11 GMT
+Server: Apache
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN, SAMEORIGIN
+Cache-Control: public
+Upgrade: h2
+Connection: Upgrade
+Accept-Ranges: bytes
+Content-Length: 18172657
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Expires: Thu, 1 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Type: application/pdf
+

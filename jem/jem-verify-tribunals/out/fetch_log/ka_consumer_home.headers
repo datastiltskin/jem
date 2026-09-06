@@ -1,0 +1,27 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:14:17 GMT
+Server:  
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Cache-control: no-store, max-age=0, no-cache
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: frame-ancestors 'self' https://*.karnataka.gov.in;
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: same-origin
+Feature-Policy: fullscreen 'none'; microphone 'none'
+Permissions-Policy: fullscreen=()
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-FRAME-OPTIONS: SAMEORIGIN
+X-Firefox-Spdy: h2
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Access-Control-Allow-Methods: GET, POST, HEAD
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: accept, content-type, X-Requested-With, X-Prototype-Version, X-CSRF-Token, authorization
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+

@@ -1,0 +1,1736 @@
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script type="text/javascript">
+	var base_url = "https://kerc.karnataka.gov.in/"; 
+	var lang_name = "en"; 
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Karnataka Electricity Regulatory Commission - Annual-report</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+	<link rel="icon" href="https://kerc.karnataka.gov.in/assets/front/images/kar_main_logo.png" type="image/png" sizes="42x42"/>
+	<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/jquery_min.js"></script>
+	<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/bootstrap.min.3.3.1.js"></script>    
+	<script src='https://kerc.karnataka.gov.in/assets/front/js/fontawsome.js'></script>
+	<link href="https://kerc.karnataka.gov.in/assets/front/css/google_fonts.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/w3.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/owl/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/aos.css">
+ <link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/fancybox.css">
+
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/mystyle.css?1788667801=">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/mymobile.css?1788667801=">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/mysmallmobile.css?1788667801=">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/tabswipe/css/swipe_bundle.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/tabswipe/css/tabswipe_style.css">
+
+<script>
+$(document).ready(function() {
+  $(".gallery a").fancybox();
+});
+</script>
+	<style>
+	.carousel-caption{display:none;}
+.blink a{font-weight:bold;}		:root{
+		  --color-primary:#40407a;
+		}
+		
+
+
+  .knfont1{font-family: notokan !important;}
+	</style>
+
+  <style type="text/css">
+     #slideshow 
+    {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      padding: 0px;
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+      border: 0px solid red;
+    }
+
+    #slideshow > div 
+    {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 10px;
+      bottom: 10px;
+      width: 100%;
+      border: 0px solid blue;
+      height: 300px;
+    }
+
+    .slider_image
+    {
+      width: 100%;
+      height: 300px;
+      border: 0px solid green;
+    }
+
+    .sticky 
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+ 
+
+
+  </style>
+
+</head>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></button>
+<body id="content">
+
+<!---------------------------------------------------- Header1 ------------------------------------------->
+<div id="header1_div">
+<div class=" header1_div_container">	
+ <div class="row"   style="width: 100%;margin: 0px;">
+
+   <div class="col-sm-6 col-xs-6 header1_col1">
+     <ul class="list-inline" id="ul_left">
+       <li class="hidden-xs hidden-sm"><a href="https://kerc.karnataka.gov.in/back/index"  target="_blank">LOGIN</a></li>  
+       <li class="lang"><a href="https://kerc.karnataka.gov.in/37/annual-report/kn">Kannada</a></li>  
+               <li class="hidden-xs hidden-sm"><a href="https://karnataka.gov.in/english" target="_blank">Official Website of GoK </a></li>  
+ <li class="hidden-xs hidden-sm"><a href="https://covid19.karnataka.gov.in/english" target="_blank"> Corona Related Information   </a></li>  
+     </ul> 
+   </div>
+
+   <div class="col-sm-6 col-xs-6 header1_col2">
+     <ul class="list-inline" id="ul_right">
+         
+     <!--    <li class="low_vision" title="Kannada Version"  id="kn_version">
+          <a href="#" style="font-weight: 600;"> ಕ </a>
+        </li>  -->
+        
+
+      <li  data-toggle="modal" data-target="#myModalf9"><i class="fa fa-eye screenacess"></i></li>
+
+        <li class="a_normal  btn btn-primary" >
+          <a title="Normal View" class="A_white" href="">A</a>
+        </li>
+
+        <li class="a_black btn btn-primary" style="background-color: #000;">
+          <a onclick="Black()"  title="For Visually Disabled click here" style="color: #fff810;" class="A_black" href="#">A</a>
+        </li>
+ 
+       
+      <div class="textcontrols">
+      <button role="button" id="decreasetext" <span>A-</span>
+      </button>
+      <button role="button" id="resettext">
+        <span>A</span>
+      </button>
+      <button role="button" id="increasetext">
+        <span>A+</span>
+      </button>
+    </div>
+
+        <li class="low_vision" title="Kannada Fonts Download" data-toggle="modal" data-target="#myModal_fonts" style="background-color: white;border: 1px solid #08367e;display: none;"><i class="fa fa-file-archive-o" id="vision_icon"></i></li>
+
+     </ul> 
+   </div>
+
+  </div> 
+</div>  
+</div>  
+
+
+
+
+<!----- Modal pop-up ----->
+
+  <!--------- Modal-Up ----------->
+
+    <!-- Modal -->
+      <div class="modal " id="myModal_screen" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+              <h4 class="modal-title">Screen Reader Access </h4>
+            </div>
+
+            <div class="modal-body" style="overflow-x: auto;">
+              <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+              <p>Following table lists the information about different screen readers:</p>
+
+              <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sl.No</th>
+                  <th>Screen Reader</th>
+                  <th>Website</th>
+                  <th>Free/ Commercial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Non Visual Desktop Access (NVDA)</td>
+                  <td><a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>JAWS</td>
+                  <td><a href="https://www.freedomscientific.com/products/software/jaws/" target="_blank">http://www.freedomscientific.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Window-Eyes</td>
+                  <td><a href="http://www.gwmicro.com/" target="_blank">http://www.gwmicro.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>System Access To Go</td>
+                  <td><a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>WebAnywhere</td>
+                  <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+
+           
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+    <!--------- Kannada Font Download ----------->
+
+    <!-- Modal -->
+      <div class="modal fade" id="myModal_font" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">ಉಚಿತ ಕನ್ನಡ ಯುನಿಕೋಡ್‌ ಫಾಂಟ್‌ಗಳು </h4>
+            </div>
+
+            <div class="modal-body" style="overflow-x: auto;">
+              
+
+              <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sl.No</th>
+                  <th>File Name</th>
+                  <th>Size</th>
+                  <th>Download</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Kedage Kannada Fonts</td>
+                  <td>145.2 KB</td>
+                  <td><a href="zip/kedage_kannada_fonts.zip"><i class="fa fa-download"></i></a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mallige Kannada Fonts</td>
+                  <td>514 KB</td>
+                  <td><a href="zip/mallige_kannada_fonts.zip"><i class="fa fa-download" ></i></a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Lohit Kannada Fonts</td>
+                  <td>514 KB</td>
+                  <td><a href="zip/Lohit_kannada_fonts.zip"><i class="fa fa-download" ></i></a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Murty Kannada Fonts</td>
+                  <td>514 KB</td>
+                  <td><a href="zip/Murty_Kannada_fonts.zip"><i class="fa fa-download" ></i></a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>SakalBharati Kannada Fonts</td>
+                  <td>514 KB</td>
+                  <td><a href="zip/SakalBharati_kannada_fonts.zip"><i class="fa fa-download" ></i></a></td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+<!---------------------------------------------------- Header2 ------------------------------------------->
+<div class="header2_div container-fluid">
+  <div class=" header2_div_container">
+    <div class="row header2_div_row">
+   
+   
+    
+   
+   
+      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" >
+
+   <a href="https://kerc.karnataka.gov.in">
+        <div class="media mymedia ">
+      <div class="media-left logo-10">
+           <a >
+                <img src="https://kerc.karnataka.gov.in/uploads/dept_logo1686911438.jpg" class="gok_logo pull-left">
+
+			</a>
+       <div class="dept_name">
+                      <h4 class="media-heading media_title knfont1">ಕರ್ನಾಟಕ ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿಯಂತ್ರಣ ಆಯೋಗ</h4>
+       <h4 class="media-heading media_title">Karnataka Electricity Regulatory Commission</h4>
+
+	   <a href="https://karnataka.gov.in" target="_blank">
+
+		</a>
+      </div>
+      </div>
+      <div class="media-body mymedia1">
+
+      </div>
+    </div>
+  </a>  
+     </div>
+
+      <div class="col-md-6 col-lg-6 col-sm-8 col-xs-8" >
+     <a href="https://cm.karnataka.gov.in/" class="pull-right"> <img class="ci-cm-photo hidden-sm hidden-xs" src="https://planning.karnataka.gov.in/frontend/opt1/images/cm_logo/chief_minister_of_karrnataka_en.png"></a>
+   
+     </div>
+
+    
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!---------------------------------------------------- Header3 ------------------------------------------->
+<div class="mynavbar" id="myHeader">
+ <div class=" mynavbar_container">
+<div class="over-menu"></div>
+    <div id="wrap">
+      <header class="header" id="header-sroll">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="desk-menu">
+                <div class="logo">
+                  <h1 class="logo-adn">
+                    <!-- <a title="Davidson Silva - Desenvolvedor front-end em BH" href="https://www.davidsonsilva.com.br"> -->
+                      <!-- Davidson <span>Silva</span> -->
+                    </a>
+                  </h1>
+                </div>
+                <nav class="box-menu">
+                  <div class="menu-container ">
+                         <div class="hidden-md hidden-lg">    <a href="https://cm.karnataka.gov.in/" target="_blank"><img class="ci-cm-photo " src="https://planning.karnataka.gov.in/frontend/opt1/images/cm_logo/chief_minister_of_karrnataka_en.png"></a></div>
+                    <div class="menu-header-container ">
+                          
+     <li class=" level_0 staic-home"> <a href="https://kerc.karnataka.gov.in/en"  title="Opens in a new window"><i class="fa fa-home" aria-hidden="true"></i> </a></li>
+						<ul id='cd-primary-nav' class='menu main-m'><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> Guidelines</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/142/current-guidelines/en'>
+					<i class=''></i> Current Guidelines</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/uploads/media_to_upload1713960791.pdf'>
+					<i class=''></i> Draft Guidelines</a></li></ul></li><li class='blink level_0'>
+					<a href='https://kerc.karnataka.gov.in/147/annual-performance-review-2025/en'>
+					<i class=''></i> APR Tariff Filing for FY25</a></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> Regulations </a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/27/regulations/en'>
+					<i class=''></i> Current Regulations </a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/28/draft-regulations/en'>
+					<i class=''></i> Draft Regulations</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/29/repealed-regulations/en'>
+					<i class=''></i> Repealed Regulations</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/48/discussion-papers/en'>
+					<i class=''></i> Discussion Paper</a></li></ul></li><li class=' level_0'>
+					<a href='https://sevasindhuservices.karnataka.gov.in'>
+					<i class=''></i> Data Formats</a></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> Reports</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> Petitions Status </a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/138/active-petitions-/en'>
+					<i class=''></i> Active Petitions </a></li><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/139/sine-die-petitions/en'>
+					<i class=''></i> Sine die Petitions</a></li><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/145/disposed-petition-year-wise/en'>
+					<i class=''></i> Petitions Disposed Year Wise</a></li></ul></li><li class='menu-item menu-item-has-children  level_1'>
+					<a href='https://kerc.karnataka.gov.in/137/petitions-data-2024/en'>
+					<i class=''></i> Petitions Data </a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/137/petitions-data-2024/en'>
+					<i class=''></i> Petitions Data 2024</a></li><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/146/petition-data-2025/en'>
+					<i class=''></i> Petitions Data - 2025</a></li><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/148/petition-data-2026/en'>
+					<i class=''></i> Petitions Data - 2026</a></li></ul></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/37/annual-report/en'>
+					<i class=''></i> Annual Report</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/38/annual-accounts/en'>
+					<i class=''></i> Annual Accounts</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/storage/pdf-files/Manual%20for%20SafetyTechnical%20Audit.pdf'>
+					<i class=''></i>  Safety Technical Manual</a></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> Orders</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/96/tariff-order/en'>
+					<i class=''></i> Tariff Orders</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/41/fuel-cost-adjustment-charges-%28fac%29/en'>
+					<i class=''></i> Fuel Cost Adjustment Charges (FAC) Orders</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/73/generic-tariff-orders/en'>
+					<i class=''></i> Generic Tariff Orders</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/42/miscellaneous-orders/en'>
+					<i class=''></i> Miscellaneous Orders</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/70/court-orders/en'>
+					<i class=''></i> Court Orders</a></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> About Us</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/32/about-us/en'>
+					<i class=''></i> Mission</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/33/chairman-and-members/en'>
+					<i class=''></i> Chairman and Members</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/34/retired-chairman-members-and-secretaries/en'>
+					<i class=''></i> Retired Chairman, Members and Secretaries</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/35/officers/en'>
+					<i class=''></i> Officers</a></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> CAUSE LIST</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://efiling.karnataka.gov.in/efiling/public/currentcauselist'>
+					<i class=''></i> Current Cause List</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/79/court-hearing-notices/en'>
+					<i class=''></i> Court Hearing Notices</a></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> Important Links</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i>  Ministries Government Bodies</a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_1'>
+					<a href='https://kspdcl.karnataka.gov.in/'>
+					<i class=''></i> Karnataka Solar Power Development Corporation</a></li><li class=' level_1'>
+					<a href='https://cea.nic.in/'>
+					<i class=''></i> Central Electricity Authority                                             </a></li><li class=' level_1'>
+					<a href='http://www.seci.gov.in/content/'>
+					<i class=''></i> Solar Energy Corporation of India Ltd</a></li><li class=' level_1'>
+					<a href='https://coal.nic.in/'>
+					<i class=''></i> Ministry of Coal                                             </a></li><li class=' level_1'>
+					<a href='https://www.mnre.gov.in/'>
+					<i class=''></i> Ministry of MNRE                                             </a></li><li class=' level_1'>
+					<a href='https://powermin.nic.in/'>
+					<i class=''></i> Ministry of Power                                             </a></li><li class=' level_1'>
+					<a href='https://kredlinfo.in/'>
+					<i class=''></i> Karnataka Renewable Energy Development Ltd</a></li><li class=' level_1'>
+					<a href='https://www.finmin.nic.in/'>
+					<i class=''></i> Ministry Finance</a></li></ul></li><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> Legal Bodies</a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_2'>
+					<a href='https://aptel.gov.in/'>
+					<i class=''></i> Appellate Tribunal of Electricity</a></li><li class=' level_1'>
+					<a href='http://karnatakajudiciary.kar.nic.in/'>
+					<i class=''></i> High Court of Karnataka</a></li><li class=' level_1'>
+					<a href='https://main.sci.gov.in/'>
+					<i class=''></i> Supreme Court                                             </a></li></ul></li><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> International Organizations</a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_1'>
+					<a href='https://www.ofgem.gov.uk/'>
+					<i class=''></i> National Association of Regulatory Utility Commissioners</a></li><li class=' level_1'>
+					<a href='https://www.naruc.org/'>
+					<i class=''></i> National Association of Regulatory Utility Commissioners</a></li></ul></li><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> Links</a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_2'>
+					<a href='https://cercind.gov.in/'>
+					<i class=''></i> Central Electricity Regulatory Commission</a></li><li class=' level_2'>
+					<a href='https://cercind.gov.in/serc.html'>
+					<i class=''></i> State Electricity Regulatory Commission</a></li><li class=' level_2'>
+					<a href='https://www.karnataka.gov.in/Pages/home.aspx'>
+					<i class=''></i> Government of Karnataka                                             </a></li><li class=' level_2'>
+					<a href='https://igod.gov.in/'>
+					<i class=''></i> GOI Directory</a></li></ul></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> RTI ACT</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/rtistats/en'>
+					<i class=''></i> RTI Dashboard</a></li><li class=' level_1'>
+					<a href='https://rtionline.karnataka.gov.in/index.php?lan=E'>
+					<i class=''></i> ONLINE RTI</a></li></ul></li><li class='blink level_0'>
+					<a href='https://efiling.karnataka.gov.in/efiling'>
+					<i class=''></i> E-Filing</a></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> Contact Us</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/20/head-office/en'>
+					<i class=''></i> Head office</a></li><li class=' level_1'>
+					<a href='https://energy.karnataka.gov.in/page/Contact/Honorable+Energy+Minister/en'>
+					<i class=''></i> Secretariate                                            </a></li></ul></li></ul>					
+
+
+
+
+                    </div>
+                    <ul class="mob-links">
+                               <li class="hidden-md hidden-lg btn btn-back"><a href="https://karnataka.gov.in/english" target="_blank">Official Website of GoK </a></li>  
+ <li class="hidden-md hidden-lg btn btn-back"><a href="https://covid19.karnataka.gov.in/english" target="_blank"> Corona Related Information   </a></li>  
+                  </ul>
+                  </div>
+                  <div class="hamburger-menu">
+                    <div class="bar"></div>
+                  </div>
+                </nav>
+              
+                 <i class="fa fa-search ci-search"> </i>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </header>
+ </div>
+</div> 
+    </div>
+
+     <ul class="float-feed">
+  <li><a href="https://kerc.karnataka.gov.in/feedback/en"> Feedback</a></li>
+</ul>
+
+
+
+
+<!-------------------------------------------------------------------------------------------->
+
+
+
+
+
+<style></style><script></script>	 <div class="title-block" >
+	 	<a onclick="goBack()" class="back-btn"><i class="fa fa-arrow-left btn btn-back"><span class="hidden-sm hidden-xs">Back	</span></i></a>
+  <div class="title" >	 Annual Report		
+		
+	</div>
+<p class="bread pull-right"><a href="https://kerc.karnataka.gov.in/cms2/v1.3.0/public/">Home</a></p>
+   
+  </div> 
+
+
+		<div class="container ipage">
+		<div class="container">
+<div class="row">
+<div id="table-archive" class="col-md-offset-0 col-md-12">
+<table class="ms-rteTable-default" cellspacing="0">
+<tbody>
+<tr class="ms-rteTableHeaderRow-default">
+<th class="ms-rteTableHeaderFirstCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">26th Annual Report</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderOddCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2024-2025</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderLastCol-default" style="text-align: left;"><a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1765180969.pdf">Kannada</a> / <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1765180920.pdf">English</a></th>
+</tr>
+<tr class="ms-rteTableHeaderRow-default">
+<th class="ms-rteTableHeaderFirstCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">25th Annual Report</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderOddCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2023-2024</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderLastCol-default" style="text-align: left;"><a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1730288283.pdf">Kannada</a> / <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1730288230.pdf">English</a></th>
+</tr>
+<tr class="ms-rteTableHeaderRow-default">
+<th class="ms-rteTableHeaderFirstCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">24th Annual Report&nbsp;</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderOddCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2022-23</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderLastCol-default" style="text-align: left;"><a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1703753034.pdf">Kannada</a> / <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1703752841.pdf">English</a></th>
+</tr>
+<tr class="ms-rteTableHeaderRow-default">
+<th class="ms-rteTableHeaderFirstCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">23rd Annual Report</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderOddCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2021-2022</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderLastCol-default" style="text-align: left;"><a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1673585562.pdf">Kannada</a> / <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1673586083.pdf">English</a></th>
+</tr>
+<tr class="ms-rteTableHeaderRow-default">
+<th class="ms-rteTableHeaderFirstCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">22nd Annual Report&nbsp;</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderOddCol-default"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2020-2021&nbsp;</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderLastCol-default" style="text-align: left;"><a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1723026695.pdf">Kannada</a> /&nbsp;<a href="https://kerc.karnataka.gov.in/uploads/61881658479883.pdf">English</a></th>
+</tr>
+<tr class="ms-rteTableHeaderRow-default">
+<th class="ms-rteTableHeaderFirstCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">21th Annual Report</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2019-2020</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderLastCol-default" style="text-align: left;" colspan="1" rowspan="1"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/21st%20Annual%20Report%202019-20%20Kan.pdf">Kannada</a></span><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">/&nbsp;</span><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/21st%20Annual%20Report%202019-20-Eng.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">English</span></a></th>
+</tr>
+<tr class="ms-rteTableHeaderRow-default">
+<th class="ms-rteTableHeaderFirstCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">20th Annual Report</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2018-2019</span></span></strong></strong></th>
+<th class="ms-rteTableHeaderLastCol-default" style="text-align: left;" colspan="1" rowspan="1"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202018-19-KANNADA.pdf">Kannada</a></span><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">/&nbsp;</span><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202018-19-ENGLISH.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">English</span></a></th>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">19th Annual Report</span></span></strong></strong></th>
+<th class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2017-2018</span></span></strong></strong></th>
+<th class="ms-rteTableLastCol-default" style="text-align: left;" colspan="1" rowspan="1"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">&nbsp;</span><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5"><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202017-18%20KANNADA.pdf">Kannada</a>&nbsp;/&nbsp;</span><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202017-18%20ENGLISH.pdf"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">English</span></a></th>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">18th Annual Report</span></span></strong></strong></th>
+<th class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2016-2017<br /></span></span></strong></strong></th>
+<th class="ms-rteTableLastCol-default" style="text-align: left;" colspan="1" rowspan="1">&nbsp;<a href="https://karunadu.karnataka.gov.in/kerc/Reports/18th-KANNADA-ANNUAL-REPORT-FY17-18.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">Kannada /&nbsp;</span></a><a title="vidya" href="https://karunadu.karnataka.gov.in/kerc/Reports/18th-English-ANNUAL-REPORT-FY17-18.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">English</span></a></th>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">17th Annual Report</span></span></strong></strong></th>
+<th class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2015-2016<br /></span></span></strong></strong></th>
+<th class="ms-rteTableLastCol-default" style="text-align: left;" colspan="1" rowspan="1"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">&nbsp;&nbsp;</span><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202015-2016%20-%20KANNADA.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">Kannada /&nbsp;</span></a><a title="vidya" href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202015-2016%20-%20ENGLISH.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">English</span></a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/Organisational_Chart_17th.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">Organisational Chart</span></a><span class="ms-rteFontSize-3 ms-rteThemeForeColor-1-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></th>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">16th Annual Report</span></span></strong></strong></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2014-2015</span></span></strong></strong></td>
+<th class="ms-rteTableLastCol-default" style="text-align: left;" colspan="1" rowspan="1">
+<blockquote><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202014-2015%20-%20KANNADA.pdf" target="_blank" rel="noopener noreferrer">Kannada</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202014-2015%20-%20ENGLISH.pdf" target="_blank" rel="noopener noreferrer">English</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/Organisational_Chart-Annexure-2015-16-English.pdf" target="_blank" rel="noopener noreferrer">Organisational Chart</a></blockquote>
+</th>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">15th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2013-2014</span></span></strong></strong></td>
+<th class="ms-rteTableLastCol-default" colspan="1" rowspan="1">
+<blockquote>
+<div style="text-align: left;">&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202013-2014%20KANNADA.pdf" target="_blank" rel="noopener noreferrer">Kannada</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202013-2014%20ENGLISH.pdf" target="_blank" rel="noopener noreferrer">English</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/Organisational_Chart-Annexure-I-2013-14.pdf" target="_blank" rel="noopener noreferrer">Organisational Chart</a></div>
+</blockquote>
+</th>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">14th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2012-2013</span></span></strong></strong></td>
+<th class="ms-rteTableLastCol-default" colspan="1" rowspan="1">
+<blockquote>
+<div style="text-align: left;">&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202012-2013%20KANNADA.pdf" target="_blank" rel="noopener noreferrer">Kannada</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202012-2013%20ENGLISH.pdf" target="_blank" rel="noopener noreferrer">English</a></div>
+</blockquote>
+</th>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">13th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2011-2012</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1" rowspan="1">
+<blockquote>
+<div style="text-align: left;">&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202011-2012%20KANNADA.pdf" target="_blank" rel="noopener noreferrer">Kannada</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202011-2012%20ENGLISH.pdf" target="_blank" rel="noopener noreferrer">English</a></div>
+</blockquote>
+</td>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">12th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2010-2011</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" style="text-align: left;" colspan="1" rowspan="1"><span class="ms-rteThemeFontFace-1 ms-rteFontSize-3">&nbsp; &nbsp; &nbsp; <a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202010-2011%20ENGLISH.pdf" target="_blank" rel="noopener noreferrer">English</a></span></td>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">11th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2009-2010</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeFontFace-1 ms-rteFontSize-3">&nbsp; &nbsp; &nbsp;&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202009-2010.pdf" target="_blank" rel="noopener noreferrer">English</a></span></td>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">10th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2008-2009</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1">
+<blockquote>
+<div style="text-align: left;"><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202008-2009.pdf" target="_blank" rel="noopener noreferrer">English</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/Organisational_Chart.pdf" target="_blank" rel="noopener noreferrer">Organisational Chart</a></div>
+</blockquote>
+</td>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">9th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2007-2008</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1">
+<blockquote>
+<div><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202007-2008.pdf" target="_blank" rel="noopener noreferrer">English</a>&nbsp;/&nbsp;<a href="https://karunadu.karnataka.gov.in/kercold/Annual%20Report/Organisational_Chart_2008.pdf" target="_blank" rel="noopener noreferrer">Organisational Chart</a></div>
+</blockquote>
+</td>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">8th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2006-2007</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1">
+<blockquote>
+<div>:&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202006-2007.pdf" target="_blank" rel="noopener noreferrer">English</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/FINAL-Main_Report_06-07.pdf" target="_blank" rel="noopener noreferrer">Chapters</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/Organisational_Chart_06-07.pdf" target="_blank" rel="noopener noreferrer">Organisational Chart</a></div>
+</blockquote>
+</td>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">7th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2005-2006</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1">
+<blockquote>
+<div>:&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202005-2006.pdf" target="_blank" rel="noopener noreferrer">English</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/Annual_Report_2005-06_revised_06.06-chapters.pdf" target="_blank" rel="noopener noreferrer">Chapters</a>&nbsp;/&nbsp;<a href="https://karunadu.karnataka.gov.in/kercold/Annual%20Report/Organisational_Chart-Annexe-1.1FY06.pdf" target="_blank" rel="noopener noreferrer">Organisational Chart</a>&nbsp;/&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/Annexure%20-%20Annual%20Report%202005-06.rar">Annexures</a></div>
+</blockquote>
+</td>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">6th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2004-2005</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1">
+<blockquote>&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202004-2005.pdf" target="_blank" rel="noopener noreferrer">English</a></blockquote>
+</td>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">5th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2003-2004</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1" rowspan="1">
+<blockquote>:&nbsp;<a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202003-2004.pdf" target="_blank" rel="noopener noreferrer">English</a></blockquote>
+</td>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteThemeForeColor-2-0"><strong><strong class="ms-rteStyle-Normal"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">4th Annual Report</span></span></strong></strong></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2002-2003</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" dir="ltr" colspan="1" rowspan="1"><span class="ms-rteFontSize-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;</span><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202002-2003.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3">English</span></a></td>
+</tr>
+<tr class="ms-rteTableOddRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3"><strong><strong class="ms-rteStyle-Normal">3rd Annual Report</strong></strong></span></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2001-2002</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1" rowspan="1"><span class="ms-rteFontSize-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;</span><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202001-2002.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3">English</span></a></td>
+</tr>
+<tr class="ms-rteTableEvenRow-default">
+<th class="ms-rteTableFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3"><strong><strong class="ms-rteStyle-Normal">2nd Annual Report</strong></strong></span></span></th>
+<td class="ms-rteTableOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 2000-2001</span></span></strong></strong></td>
+<td class="ms-rteTableLastCol-default" colspan="1" rowspan="1"><span class="ms-rteFontSize-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;</span><span class="ms-rteFontSize-3"><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%202000-2001.pdf" target="_blank" rel="noopener noreferrer">English</a></span></td>
+</tr>
+<tr class="ms-rteTableFooterRow-default">
+<th class="ms-rteTableFooterFirstCol-default" colspan="1" rowspan="1"><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3"><strong><strong class="ms-rteStyle-Normal">1st Annual Report</strong></strong></span></span></th>
+<td class="ms-rteTableFooterOddCol-default" colspan="1" rowspan="1"><strong class="ms-rteStyle-Normal"><strong><span class="ms-rteFontSize-3"><span class="ms-rteThemeForeColor-2-0 ms-rteFontSize-3">FY 1999-2000</span></span></strong></strong></td>
+<td class="ms-rteTableFooterLastCol-default" colspan="1" rowspan="1"><span class="ms-rteFontSize-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;</span><a href="https://kerc.karnataka.gov.in/storage/pdf-files/Annual%20Reports/ANNUAL%20REPORT%201999-2000.pdf" target="_blank" rel="noopener noreferrer"><span class="ms-rteFontSize-3">English</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<p>&nbsp;</p>
+</div>
+</div>	</div>
+<div class="icon-bar2">
+
+ 
+
+</div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------- Footer1 -------------------------------------------->
+
+
+
+
+
+<!--------------------------------------------------- Footer2--------------------------------------->
+
+<footer> 
+<div class="container-fluid dept-owner">
+
+  CONTENT OWNED BY : <span class="footer2_span"> Karnataka Electricity Regulatory Commission, Government of Karnataka</span>
+
+</div>
+
+<!--------------------------------------------------- Footer3--------------------------------------->
+
+<div class="container-fluid footer3">
+
+   Designed, Developed & Hosted By : <span class="footer3_span"> CENTRE FOR e-GOVERNANCE, Government of Karnataka © 2026, All Rights Reserved.</span>
+
+</div>
+ </footer>
+
+
+
+
+
+
+<!-- Single Modal - 2nd Forest & Farm Herbal Expo 2026 -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background: #949494; color: #fff; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 40px; line-height: inherit; float: right; margin-top: -10px; margin-right: -10px; cursor: pointer;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+           <div style="padding: 15px; background: #f5f5f5; margin-top: 10px; border-radius: 5px;">
+          <h3 style="color: #2d6a4f;">🌿 2nd Forest & Farm Herbal Expo – 2026</h3>
+          <p style="font-size: 16px; margin: 5px 0;">
+            <strong>📅 Date:</strong> 18<sup>th</sup> - 20<sup>th</sup> September 2026<br>
+            <strong>📍 Venue:</strong> Karnataka Chitrakala Parishath, Kumara Krupa Road, Bengaluru
+          </p>
+          <p style="font-size: 14px; color: #555;">
+            Organized by: Karnataka State Medicinal Plants Authority & Karnataka Forest Department
+          </p>
+          
+          <!-- Read More Button - Opens PDF in new tab -->
+          <a href="https://webportal.karnataka.gov.in/assets/front/popups/herbal_expo_2026_letters_en.pdf" 
+             target="_blank" 
+             class="btn btn-success" 
+             style="margin-top: 10px; padding: 10px 30px; font-size: 16px; border-radius: 5px; text-decoration: none; display: inline-block; background-color: #2d6a4f; color: #fff; border: none;">
+            📄 Read More
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img src="https://webportal.karnataka.gov.in/assets/front/popups/kampa_en_270826.jpg" class="img-fluid imgkampa" alt="2nd Forest & Farm Herbal Expo 2026">
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  var path = window.location.pathname.replace(/^\/|\/$/g, '');
+  var segments = path === '' ? [] : path.split('/');
+
+  // Show only on homepage
+  if (segments.length <= 1) {
+          $('#eventModal').modal('show');
+      setTimeout(function() {
+        $('#eventModal').modal('hide');
+      }, 20000); // Auto-close after 20 seconds
+      }
+});
+</script>
+<style>
+
+.search-box {
+  position: relative;
+  height: 25px;
+  background: #2f3640;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.cm_karnataka_photo{height: 120px !important;}
+.acts_table td, .acts_table p, .acts_table a {
+    background: #350dff;
+    color: white !important;
+}
+.search-box.active {
+  width: 240px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.dpal-gserach-btn{color: white;padding: 6px;}
+
+.search-btn {
+  color: #fff;
+  transition: 0.4s;
+  z-index: 1;background: transparent;border:0px;
+
+  margin-left: -10px;margin-top: 6px;
+}
+
+.search-box.active .search-btn {
+  color: #2f3640;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #2f3640;
+  font-size: 16px;
+  width: 0;
+  transition: 0.4s;
+  /*margin-left: 10px;*/
+  z-index: 0;
+}
+
+.search-box.active .search-txt {
+  width: 100%;
+}
+    /* First Modal Styles */
+    .kswdc_modal-body p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img{width: 100%;}
+    .kswdc_dflex{display: flex;}
+    
+    /* Second Modal Styles */
+    .kswdc_modal-body2 p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img2 {width: 100%;}
+    .kswdc_dflex2 {display: flex;}
+</style>
+
+  <!-- <div class="modal fade" id="eventModalkswdc" tabindex="-1" role="dialog" aria-labelledby="eventModalkswdcLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center kswdc_modal-body">
+          <div class="row kswdc_dflex">
+            <div class="col-12">
+              <img src="https://atimysore.karnataka.gov.in/uploads/banner_popup.jpeg" class="img-fluid kswdc_pop_img" alt="Image 1">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+<script>
+    $(document).ready(function(){
+      var path = window.location.pathname.replace(/^\/|\/$/g, '');
+      var segments = path === '' ? [] : path.split('/');
+
+      if (segments.length <= 1) {
+        // Show first modal if active
+                  $('#eventModalkswdc').modal('show');
+          setTimeout(function() {
+            $('#eventModalkswdc').modal('hide');
+          }, 20000);
+        
+        // Show second modal if active (with delay to avoid conflict)
+              }
+    });
+</script>
+<style type="text/css">
+.mongologo{display:none !important;}
+td,th{color:black !important;}
+  .modal{background: #0e0e0ebf;}
+  .footer{width:100% !important;}
+      .modal-body{color: black;}
+    .foot-bottom{   display: flex;
+    background: #333434;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;}
+    .vhide{visibility: hidden;}
+    .lineDiv2,.lineDiv1{background-color: goldenrod !important;}
+        i.fa.fa-angle-right {
+    padding-right: 8px;
+}
+
+.footerSectionDetails a{color: white !important;}
+
+.footer_container li,.footer_container a{cursor: pointer;color:white;}
+  .modal-title{width: -webkit-fill-available}
+  .cls-btn{padding: 8px 10px 0px 10px;}
+</style>
+
+
+
+
+
+<section class="footer_container">
+    <div class="container footerSection_Div">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p>Disclaimer</p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP"><p>
+                       Please note that this page also provides links to the websites / web pages of Govt. Ministries/Departments/Organisations. <br>The content of these websites are owned by the respective organisations and they may be contacted for any further information or suggestion
+                    </p>
+                </div>
+            </div>
+          </div>
+          
+           <div class="col-lg-4">
+
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p> Website Policies and Guidelines </p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP1">
+                    <div>
+                         <ul class="list-unstyled">
+      <li data-bs-toggle="modal" data-bs-target="#myModalf3"><i class="fa fa-angle-right" aria-hidden="true"></i>Copyright Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf4"><i class="fa fa-angle-right" aria-hidden="true"></i>Hyperlinking Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf5"><i class="fa fa-angle-right" aria-hidden="true"></i>Security Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf6"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms & Conditions</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf7"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</li>
+
+      </ul> 
+                    </div>
+                </div>
+            </div>
+
+           </div>
+
+
+           <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle "><p>Accessibility Resources</p></div>
+                <div class="lineDiv "> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+					
+                </div><br>
+                <div class="footerSectionP"><p>
+                     <ul class="list-unstyled">
+                          <li><a href="https://kerc.karnataka.gov.in/sitemap/kn"><i class="fa fa-angle-right" aria-hidden="true"></i>Sitemap </a></li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf8"><i class="fa fa-angle-right" aria-hidden="true"></i>Help</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf9"><i class="fa fa-angle-right" aria-hidden="true"></i>Screen Reader Access</li>
+      <li><a href="https://ceg.karnataka.gov.in/guidelines/kn" ><i class="fa fa-angle-right" aria-hidden="true"></i>Guidelines</a></li>
+    </ul>
+                    </p>
+                </div>
+            </div>
+           </div>
+
+
+
+        </div>
+
+
+
+        <div class="lastUpdate">
+            <div><p>Last Updated: </p></div>
+            <div><p>Visitors Counter: </p></div>
+            <div><p>Version: CeG/KRN 4.0</p></div>
+        </div>
+
+
+        <div class="contentOwner">
+            <p>  Content Owned and maintained by: Karnataka Electricity Regulatory Commission, Government of Karnataka</p>
+            <p>Designed , Developed & Hosted by: Centre for e-governance - Webportal karnataka government © 2026, All Rights Reserved.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="footer ">
+
+
+
+<ul class="list-inline foot-bottom">
+      <li>
+       <a href="https://www.meity.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/Meity_logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://digitalindia.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/digital-india-logo.png" class="footer_image"></a>
+      </li> 
+      <li>
+       <a href="https://data.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/data-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.india.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/india-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.pmindia.gov.in/en/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/pm-india-logo.png" class="footer_image"></a>
+      </li>
+
+      <li class="footer4_divider"></li>
+      <li></li>
+     <li>
+       <a href="https://guidelines.india.gov.in/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/GIGW.jpeg" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.w3.org/TR/WCAG22/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/WCAG.jpeg" class="footer_image"></a>
+      </li> 
+      <li>
+      <a href="https://www.https.in/government-solutions"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/SSLcertificate.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://www.w3schools.com/html/default.asp"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/w3c.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://kannadapraadhikaara.karnataka.gov.in"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/kp_kn.jpeg" class="footer_image"></a>
+      </li>
+    </ul>
+</div>
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Copyright Policies -->
+  <div class="modal fade" id="myModalf3" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Copyright Policy</h4>
+		            <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+         
+         <p class="copy_header">Copyright policy (if the published information is available free of any charge)</p>
+
+           <p>1)Information featured on this website can be re-published in any media form free
+               of any charge only with prior permission from us(CeG) or concerned respective authority which is owning the website, through email.</p>
+           <p>2)Information can be republished as it is available and not to be used in a distorted or misleading manner.</p>
+           <p>3)Where the material is being published or suggested to others, the source must be prominently acknowledged </p>
+           <p>4)13. However, the permission to reproduce this material does not extend to any material on this site, which is explicitly identified as being the copyright of a third party</p>
+          
+        <p class="copy_header">Copyright policy (if there is a provision to reuse published information)</p>
+        
+           <p>1)The information published on the website comes under copyright policy and obtaining authorization for their republish is a pre-requisite.</p>  
+
+           <p>2)To get permission one can mail to ………………..@.........</p>
+
+         
+        </div>
+   
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Hperlinking Policies -->
+  <div class="modal fade" id="myModalf4" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Hyperlinking Policy</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+         <p class="copy_header">(in case the respective department doesn’t need any permission to hyperlink in their website) </p>
+
+           <p>1)We do not object to you linking directly to the information that is hosted on our site and no prior permission is required for the same.</p>
+
+           <p>2)we do not permit our pages to be loaded into frames on other sites. Our Department’s pages must load into a newly opened browser window of the user.</p>
+
+        <p class="copy_header">(in case of hyperlink permission is necessary for the website)</p>
+        
+           <p>1)to provide any link or its form on this website, it is compulsory to procure permission. </p>  
+
+           <p>2)permission can be obtained from the Centre for e-governance by requesting to this email. pd.webportal@karnataka.gov.in</p>
+ 
+           <p>3)Before leaving this government website note: this contact button will lead to another website, to get more information on such new opened site, one must contact the concerned contacts registered on that website.</p>
+         
+
+        </div>
+     
+      </div>
+      
+    </div>
+  </div>
+   
+
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Security Policies -->
+  <div class="modal fade" id="myModalf5" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Security Policy</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+           <p> 1) For site security purposes and to ensure that this service remains available to all users, this Government      computer system employs commercial software programs to monitor network traffic to identify unauthorized attempts to upload or change information, or otherwise cause damage.
+           </p><br>
+
+          <p>2)  Except for authorized law enforcement investigations, no other attempts are made to identify individual users or their usage habits. Raw data logs are used for no other purposes and are scheduled for regular deletion.
+          </p><br>
+
+          <p>3) Unauthorized attempts to upload information or change information on this service are strictly prohibited and may be punishable under the Indian IT Act (2000).</p><br>
+
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+ <!-------------------------------------------------------------------->
+  <!-- Terms & Conditions -->
+  <div class="modal fade" id="myModalf6" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Terms & Conditions</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <p>1)This website is designed, developed, and maintained by the center for e-governance.</p><br>
+
+          <p>2) Though all efforts have been made to ensure the accuracy and currency of the content on this website, the same should not be construed as a statement of law or used for any legal purposes. In case of any ambiguity or doubts, users are advised to verify/check with the Department(s) and/or other source(s) and to obtain appropriate professional advice.</p><br>
+
+          <p>3) ) Under no circumstances will this Department be liable for any expense, loss or damage including, without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use, of data, arising out of or in connection with the use of this website.</p><br>
+
+          <p>4) These terms and conditions shall be governed by and construed in accordance
+          with the Indian Laws. Any dispute arising under these terms and conditions
+          shall be subject to the jurisdiction of the courts of India.</p><br>
+
+
+          <p>5) The information posted on this website could include hypertext links or
+          pointers to information created and maintained by non-Government/private
+          organisations. (Name of Department) is providing these links and pointers solely
+          for your information and convenience. When you select a link to an outside
+          website, you are leaving the website and are subject to
+          the privacy and security policies of the owners/sponsors of the outside website.</p><br>
+
+
+          <p>6) The concerned department does not guarantee the availability of such linked pages at all times.</p><br>
+
+          <p>7)The concerned department, cannot authorize the use of copyrighted materials contained in linked websites. Users are advised to request such authorization from the owner of the linked website.</p><br>
+
+          <p>8)The concerned  department does not guarantee that linked websites comply with Indian Government Web Guidelines</p>
+          <br>
+ 
+          <p>If the user visits the information and collects information or downloads files, the following elements may automatically download,</p>
+          
+          <ul>
+            <li>- your service domain, IP number, how visitors accessed our website.</li>
+            <li>- browsers and operating systems.</li> 
+            <li>- date and time of users’ visits.</li> 
+            <li>- URLs from which visitors accessed information.</li>
+            <li>- if the user has visited the website from other websites, details of that website</li>
+          </ul>
+ 
+
+         <h6>Cookies</h6>
+
+          <p>
+            When you visit some websites, they may download small pieces of software on your computer/browsing device known as cookies. Some cookies collect personal information to recognize your computer in the future. We only use non-persistent cookies or “per-session cookies”. 28 Per-session cookies serve technical purposes, like providing seamless navigation through this website. These cookies do not collect personal information on users and they are deleted as soon as you leave our website. The cookies do not permanently record data and they are not stored on your computer’s hard drive. The cookies are stored in memory and are only available during an active browser session. Again, once you close your browser, the cookie disappears.
+          </p>
+
+
+        </div>
+   
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Privacy Policies -->
+  <div class="modal fade" id="myModalf7" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Privacy Policies</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="copy_header">privacy policy : (when the website doesn’t collect any personal information)</p>
+            <p>
+              We collect no personal information, like names or addresses, when you visit our website. If you choose to provide that information to us, it is only used to fulfill your request for information
+            </p>
+
+          <p class="copy_header">user information: </p>
+            <p>
+              we do collect technical user details when a user visits the websites and visitor information such as the type of browser, server, and domain, date and time, details of documents downloaded are recorded, This information is only used to help us make the site more useful for you. With this data, we learn about the number of visitors to our site and the types of technology our visitors use. We never track or record information about individuals and their visits. (except in the case when directed by the court through a warrant) 
+            </p>
+
+          <p class="copy_header">cookies: </p>
+            <p>
+              Web sites provide a piece of software when visitors receive information on a website and they are called Cookies. No such cookies are used on this website. 
+            </p> 
+
+          <p class="copy_header">Email management: </p>
+            <p>
+             emails are stored when a user sends any information only for that instant and is used only to give information to them. these are not to be used for any purposes or to include in the contact list. without intimating the user, it won’t be revealed.
+            </p> 
+            
+          <p class="copy_header">collection of personal details:  </p>
+            <p>
+              if the user asks or provides any personal information, the details of its usage are mentioned. if you are not satisfied or suspicious about the details are given or wish to provide an opinion about the same, its necessary for you to contact assigned webmasters under ‘contact us’ section 
+
+              note: private pieces of information received under ‘Personal details’ will only be used to collect identity or elements for easy identification. 
+ 
+            </p> 
+            
+          <p class="copy_header">cookies: </p>
+            <p>
+              Web sites provide a piece of software when visitors receive information on a website and they are called Cookies. No such cookies are used on this website. 
+            </p>     
+
+            <h6 style="font-weight: 600;">if the user provides personal information.</h6>
+             <p>
+               1. We do not collect personal information for any purpose other than to respond to you (for example, to respond to your questions or provide subscriptions you have chosen). If you choose to provide us with personal information like filling out a Contact Us form, with an e-mail address or postal address, and submitting it to us through the website-we use that information to respond to your message and to help you get the information you have requested. We only share the information you give us with another Government agency if your question relates to that agency, or as otherwise required by law. 
+            </p>
+            <p>
+              2. Our website never collects information or creates individual profiles for commercial marketing. While you must provide an email address for a localized response to any incoming questions or comments to us, we recommend that you do NOT include any other personal information.
+            </p>
+
+          
+           <h6 style="font-weight: 600;">website security </h6>
+             <p>
+              1)to make the information available to all, to prevent unauthorized user entry, to stop harming or distorting information and keeping the security of the website in mind, also to handle user traffic, commercial software programs are used. 
+             </p>
+
+             <p>
+               2)Except for official law institutions, no attempts are made to personally identify the visitor or user.
+             </p>
+             
+             <p>3)Visitor information is subject to regular deletion</p>
+             <p>4)unauthorized users shall not add or change information available which can have legal consequences and may be subjected to fine under IT act (2000).</p>
+ 
+        </div>
+  
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Help -->
+  <div class="modal fade" id="myModalf8" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Help</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <h6 style="text-decoration: underline;" class="copy_header">INFORMATION SEARCH:</h6>
+
+           <p> to help users access information within the website, a “search here” option is been provided. here, the option to type in Kannada is made available. while searching, usage of Unicode font is compulsory. option to search in English is also provided. </p>
+
+          <h6 style="text-decoration: underline;" class="copy_header">INTERNET ACCESSIBILITY</h6> 
+
+            <p>if the internet is slow or unavailable, there may be a modification in website design or some subpages may not open. </p>
+
+          </p><br>
+
+          <div class="scroll-table1  table table-striped table-bordered"><div class="guide-text"><i class="fa fa-long-arrow-right"></i></div><div class="scroll-table"><table id="tablehelp" class="border" border="1"> <caption>Help of Various File formats :</caption> <tbody> <tr> <th>Document Type</th> <th>Download</th> </tr> <tr class="even"> <td>PDF content</td> <td> <img src="https://labour.gov.in/sites/default/files/pdf.png" alt="image"><a href="http://get.adobe.com/reader/" target="_BLANK" title="External site that opens in a new window"> Adobe Acrobat Reader</a> (External website that opens in a new window) </td> </tr> <tr class="odd"> <td>Word files</td> <td><img src="https://labour.gov.in/sites/default/files/Word.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=3657CE88-7CFA-457A-9AEC-F4F827F20CAC&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Word Viewer (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c8378bf4-996c-4369-b347-73edbd03aaf0&amp;displaylang=EN" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Word (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Excel files</td> <td> <img src="https://labour.gov.in/sites/default/files/Excel.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D3727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Excel Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Excel (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="odd"> <td>PowerPoint presentations</td> <td><img src="https://labour.gov.in/sites/default/files/powerpoint.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D5727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> PowerPoint Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for PowerPoint (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Flash content</td> <td> <img src="https://labour.gov.in/sites/default/files/Flash.png" alt="image"> <a href="http://get.adobe.com/flashplayer/" target="_BLANK" title="External site that opens in a new window">Adobe Flash Player </a>(External website that opens in a new window) </td> </tr> <tr class="odd"><td>Audio Files</td> <td> <img src="https://labour.gov.in/sites/default/files/red.png" alt="image"> <a href="http://windows.microsoft.com/en-US/windows/downloads/windows-media-player" target="_BLANK" title="External site that opens in a new window">Windows Media Player </a>(External website that opens in a new window) </td> </tr> </tbody> </table></div></div>
+
+
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Screen Reader Access -->
+  <div class="modal fade" id="myModalf9" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Screen Reader Access</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="nicetext">        
+            <div class="innerpage">
+             <div id="skipCont" class="wrapper">
+       
+             <div class="row">                 
+              <div class="col-md-12 col-sm-9 col-xs-12">
+                <h1 class="heading" tabindex="0"></h1>
+                <div class="region region-content">
+                <div id="block-system-main" class="block block-system">
+
+    
+                <div class="content">
+                 <div class="panel-display panel-1col clearfix">
+                 <div class="panel-panel panel-col">
+                   <div>
+                    <div class="panel-pane pane-views pane-page">
+  
+                     <div class="pane-content">
+                       <div class="view view-page view-id-page view-display-id-block view-dom-id-9f59a9bf8ad69ecc93f01660ca78bb00">
+        
+                       <div class="view-content">
+                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+                         <div class="views-field views-field-body">        
+                          <div class="field-content">
+                            <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+                            <p>Following table lists the information about different screen readers:</p>
+
+                            <div class="guide-text">
+                              <i class="fa fa-long-arrow-right"></i>
+                            </div>
+
+                            <div class="scroll-table1">  
+                              <table class="srtable table table-striped table-bordered" summary="Screen Reader">
+                                <tbody>
+                                  <tr>
+                                    <th>Sl. No.</th>
+                                    <th>Screen Reader</th>
+                                    <th>Website</th>
+                                    <th>Free/ Commercial</th>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Non Visual Desktop Access (NVDA)</td>
+                                    <td><a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a><br> (External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>2</td>
+                                    <td>JAWS</td>
+                                    <td><a href="http://www.freedomscientific.com/products/software/jaws/" target="_blank">http://www.freedomscientific.com</a> <br>(External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Window-Eyes</td>
+                                    <td><a href="http://www.gwmicro.com/Window-Eyes/" target="_blank">http://www.gwmicro.com</a><br> (External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>4</td>
+                                    <td>System Access To Go</td>
+                                    <td><a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a><br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>5</td>
+                                    <td>WebAnywhere</td>
+                                    <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a> <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+								  
+								  
+								  
+								    <tr>
+                                    <td>6</td>
+                                    <td>atoall</td>
+                                    <td><a title="This Will Make You Easy For Growth, Use Accessibility Tool" target="_blank" rel="noopener" href="https://atoall.com/all.asp"> <img height="64" width="64" alt="This Will Make You Easy For Growth, Use Accessibility Tool" src="https://atoall.com/all/512-accessibility-square.svg"></a>
+ <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>  
+                        </div>  
+                      </div>
+                    </div>
+  
+                </div>  
+               </div>
+  
+              </div>
+              </div>
+              </div>
+             </div>
+             </div>
+             </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+<!--------------------------------------------------------- Script -------------------------------------------------->
+
+ <script src="https://kerc.karnataka.gov.in/assets/front/js/colorchange.js"></script>
+ 
+  <script type="text/javascript">
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() 
+    {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 5000);
+
+
+  </script>
+ <!---------------------------------------------------- side menu ---------------------------------->
+  <script>
+    function openNav() 
+    {
+		
+      document.getElementById("mySidenav").style.display = "block";
+    }
+
+    function closeNav() 
+    {
+      document.getElementById("mySidenav").style.display = "none";
+    }
+  </script>
+  
+  <!--- side menu bar ------>
+  <div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <div style="text-align: center;">
+     <!-- <img src="images1/dult_logo.jpg" alt="BMTC_LOGO"  style="width: 100px;height: 100px;border-radius: 50%;" /> -->
+   </div>
+   <a href="#" style="padding-top: 20px;">ABOUT DULT</a>
+   <a href="#">ORGANISATIONAL STRUCTURE</a>
+   <a href="#">PROJECTS</a>
+   <a href="#"></a>
+  </div>
+<!-------------------------------------------------- Auto Slider ---------------------------------->
+
+
+
+<script type="text/javascript">
+  $(function () {
+    $('#homeCarousel').carousel({
+        interval:3000,
+        pause: "false"
+    });
+    $('#playButton').click(function () {
+        $('#homeCarousel').carousel('cycle');
+    });
+    $('#pauseButton').click(function () {
+        $('#homeCarousel').carousel('pause');
+    });
+});
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+$(".tablinks").click(function(e){
+		var target = $(this).data("target");
+		openCity(e, target);
+	});
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<!---------------------------------------------------- Gallery ------------------------------------------>
+<!---- Tab1 ----->
+
+<script>
+var gallery_obj;
+var slideIndex = 0;
+$(".gallery_buttons").click(function(){
+	var slideIndex = 0;
+	gallery_obj = this;
+	showSlides(slideIndex, this);
+});
+
+function plusSlides(n, obj) {
+  showSlides(slideIndex += n, gallery_obj);
+}
+
+function currentSlide(n, obj) {
+  showSlides(slideIndex = n, gallery_obj);
+}
+
+function showSlides(n, obj) {
+  var i;
+  var slider_id = $(obj).data("target");
+  var slides =  $("#"+slider_id).find(".mySlides");
+  var dots = $("#"+slider_id).find(".demo");
+  var captionText = $("#"+slider_id).find(".caption");
+  if (n >= slides.length) { slideIndex = 0; }
+  else if (n < 0) {slideIndex = slides.length-1; }
+  else { slideIndex = n; }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex].style.display = "block";
+  dots[slideIndex].className += " active";
+  captionText.innerHTML = dots[slideIndex].alt;
+}
+$("#defaultOpen").click();
+</script>
+
+
+
+
+
+
+<!-------------------------------- Sticky Header -------------------------------->
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+  
+
+
+<!----------------------------------------------- Owl JS ------------------------------------------>
+
+    <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/owl/owl.carousel.js"></script>
+    <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/aos.js"></script>  
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/acc_search.js"></script>  
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/custom.js"></script>   
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/map/main.js"></script>   
+
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/tabswipe/js/custom.js"></script>   
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/tabswipe/js/swipebundle.js"></script>   
+    <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/custom_fancybox.js"></script>  
+        <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/facncybox.js"></script>  
+
+        
+<script>
+		</script>
+
+<script>
+$(document).ready(function() {
+  $(".gallery a").fancybox();
+});
+</script>
+
+</body>
+</html>

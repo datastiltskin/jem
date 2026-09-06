@@ -1,0 +1,1724 @@
+<script type="text/javascript">
+  var base_url = "https://kerc.karnataka.gov.in/"; 
+  var lang_name = "kn"; 
+</script>
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+<head>
+  <title>ಕರ್ನಾಟಕ ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿಯಂತ್ರಣ ಆಯೋಗ - Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/rti_datatables/jquery-1.12.3.min.js"></script> 
+  <link rel="stylesheet" href="https://kerc.karnataka.gov.in/assets/front/rti_datatables/dataTables.jqueryui.min.css">
+	<link rel="icon" href="https://kerc.karnataka.gov.in/assets/front/images/kar_main_logo.png" type="image/png" sizes="42x42"/>
+	<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/jquery_min.js"></script>
+	<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/bootstrap.min.3.3.1.js"></script>
+	<link rel="stylesheet" href="https://kerc.karnataka.gov.in/assets/front/css/knfont.css">
+
+	<script src='https://kerc.karnataka.gov.in/assets/front/js/fontawsome.js'></script>
+	<link href="https://kerc.karnataka.gov.in/assets/front/css/google_fonts.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/w3.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/owl/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/mystyle.css?1788667753=">
+    <link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/aos.css">
+     <link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/fancybox.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/mymobile.css?1788667753=">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/css/mysmallmobile.css?1788667753=">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/tabswipe/css/swipe.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/tabswipe/css/swipe_bundle.css">
+	<link rel="stylesheet" type="text/css" href="https://kerc.karnataka.gov.in/assets/front/tabswipe/css/tabswipe_style.css">
+
+
+	<style>
+		.carousel-caption{display:none;}
+.blink a{font-weight:bold;}		:root{
+		  --color-primary:#40407a;
+		}
+		
+
+
+.knfont1{font-family:notokan !important;}
+
+  .enfont1{font-family: opensans !important;}
+
+
+	</style>
+
+</head>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></button>
+<body id="content">
+
+<!---------------------------------------------------- Header1 ------------------------------------------->
+<div id="header1_div">
+<div class=" header1_div_container">  
+ <div class="row"   style="width: 100%;margin: 0px;">
+
+   <div class="col-sm-6 col-xs-6 header1_col1">
+     <ul class="list-inline" id="ul_left">
+       <li class="hidden-sm hidden-xs"><a href="https://kerc.karnataka.gov.in/back/index"  target="_blank">LOGIN</a></li>  
+       <li class="lang"><a href="https://kerc.karnataka.gov.in/en">English</a></li>  
+                  <li class="hidden-xs hidden-sm"><a href="https://karnataka.gov.in/" target="_blank">ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಅಧಿಕೃತ ಜಾಲತಾಣ </a></li>  
+ <li class="hidden-xs hidden-sm"><a href="https://covid19.karnataka.gov.in/" target="_blank"> ಕೊರೋನಾ ಬಗ್ಗೆ ಮಾಹಿತಿ  </a></li>  
+     </ul> 
+   </div>
+
+   <div class="col-sm-6 col-xs-6 header1_col2">
+     <ul class="list-inline" id="ul_right">
+         
+       <!--  <li class="low_vision" title="Kannada Version"  id="kn_version">
+          <a href="#" style="font-weight: 600;"> ಕ </a>
+        </li>  -->
+        
+
+             <li data-toggle="modal" data-target="#fmyModal9"><i class="fa fa-eye screenacess"></i></li>
+
+        <li class="a_normal  btn btn-primary" >
+          <a title="Normal View" class="A_white" href=""><span> A</span></a>
+        </li>
+
+        <li class="a_black  btn btn-primary" style="background-color: #000;">
+          <a onclick="Black()"  title="For Visually Disabled click here" style="color: #fff810;" class="A_black" href="#"><span> A </span></a>
+        </li>
+ 
+      <div class="textcontrols">
+      <button role="button" id="decreasetext" <span>A-</span>
+      </button>
+      <button role="button" id="resettext">
+        <span>A</span>
+      </button>
+      <button role="button" id="increasetext">
+        <span>A+</span>
+      </button>
+    </div>
+
+        <li class="low_vision" title="Kannada Fonts Download" data-toggle="modal" data-target="#myModal_fonts" style="background-color: white;border: 1px solid #08367e;display: none;"><i class="fa fa-file-archive-o" id="vision_icon"></i></li>
+
+     </ul> 
+   </div>
+
+  </div> 
+</div>  
+</div>  
+
+
+
+
+<!----- Modal pop-up ----->
+
+  <!--------- Modal-Up ----------->
+
+    <!-- Modal -->
+      <div class="modal " id="myModal_screen" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+              <h4 class="modal-title">Screen Reader Access </h4>
+            </div>
+
+            <div class="modal-body" style="overflow-x: auto;">
+              <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+              <p>Following table lists the information about different screen readers:</p>
+
+              <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sl.No</th>
+                  <th>Screen Reader</th>
+                  <th>Website</th>
+                  <th>Free/ Commercial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Non Visual Desktop Access (NVDA)</td>
+                  <td><a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>JAWS</td>
+                  <td><a href="https://www.freedomscientific.com/products/software/jaws/" target="_blank">http://www.freedomscientific.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Window-Eyes</td>
+                  <td><a href="http://www.gwmicro.com/" target="_blank">http://www.gwmicro.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>System Access To Go</td>
+                  <td><a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>WebAnywhere</td>
+                  <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+
+           
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+    <!--------- Kannada Font Download ----------->
+
+    <!-- Modal -->
+      <div class="modal fade" id="myModal_font" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">ಉಚಿತ ಕನ್ನಡ ಯುನಿಕೋಡ್‌ ಫಾಂಟ್‌ಗಳು </h4>
+            </div>
+
+            <div class="modal-body" style="overflow-x: auto;">
+              
+
+              <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sl.No</th>
+                  <th>File Name</th>
+                  <th>Size</th>
+                  <th>Download</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Kedage Kannada Fonts</td>
+                  <td>145.2 KB</td>
+                  <td><a href="zip/kedage_kannada_fonts.zip"><i class="fa fa-download"></i></a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mallige Kannada Fonts</td>
+                  <td>514 KB</td>
+                  <td><a href="zip/mallige_kannada_fonts.zip"><i class="fa fa-download" ></i></a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Lohit Kannada Fonts</td>
+                  <td>514 KB</td>
+                  <td><a href="zip/Lohit_kannada_fonts.zip"><i class="fa fa-download" ></i></a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Murty Kannada Fonts</td>
+                  <td>514 KB</td>
+                  <td><a href="zip/Murty_Kannada_fonts.zip"><i class="fa fa-download" ></i></a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>SakalBharati Kannada Fonts</td>
+                  <td>514 KB</td>
+                  <td><a href="zip/SakalBharati_kannada_fonts.zip"><i class="fa fa-download" ></i></a></td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+<div class="header2_div container-fluid">
+  <div class=" header2_div_container">
+    <div class="row header2_div_row">
+   
+     <!-- col1 -->
+ 
+   
+       <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" >
+
+   <a href="https://kerc.karnataka.gov.in">
+        <div class="media mymedia ">
+      <div class="media-left logo-10">
+		<a >
+               <img src="https://kerc.karnataka.gov.in/uploads/kn_dept_logo1686911438.jpg" class="gok_logo pull-left" >
+		</a>   
+       <div class="dept_name">
+                    <h4 class="media-heading media_title">ಕರ್ನಾಟಕ ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿಯಂತ್ರಣ ಆಯೋಗ</h4>
+       <h4 class="media-heading media_title enfont1">Karnataka Electricity Regulatory Commission</h4>
+	   <a href="https://karnataka.gov.in" target="_blank">
+    
+		</a>
+      </div>
+      </div>
+      <div class="media-body mymedia1">
+
+      </div>
+    </div>
+  </a>  
+     </div>
+
+         <div class="col-md-6 col-lg-6 col-sm-4 col-xs-4" >
+    <a href="https://cm.karnataka.gov.in/" class="pull-right"><img class="ci-cm-photo hidden-sm hidden-xs" src="https://planning.karnataka.gov.in/frontend/opt1/images/cm_logo/chief_minister_of_karrnataka_kn.png"></a>
+   
+     </div>
+
+    
+     <!-- col3 -->
+    
+
+    </div>
+  </div>
+</div>
+
+<!-- See more at: http://firdaus.grandexa.com/2013/09/twitter-bootstrap-3-multilevel-dropdown-menu/#sthash.h3DteUH5.dpuf -->
+
+
+<!---------------------------------------------------- Header3 ------------------------------------------->
+<div class="mynavbar" id="myHeader">
+ <div class=" mynavbar_container">
+<div class="over-menu"></div>
+    <div id="wrap">
+      <header class="header" id="header-sroll">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="desk-menu">
+                <div class="logo">
+                 
+                </div>
+                <nav class="box-menu">
+                  <div class="menu-container">
+                     <div class="hidden-md hidden-lg">    <a href="https://cm.karnataka.gov.in/" target="_blank"><img class="ci-cm-photo " src="https://planning.karnataka.gov.in/frontend/opt1/images/cm_logo/chief_minister_of_karrnataka_kn.png"></a></div>
+                    <div class="menu-header-container ">
+                              
+     <li class=" level_0 staic-home"> <a href="https://kerc.karnataka.gov.in/kn"  title="Opens in a new window"><i class="fa fa-home" aria-hidden="true"></i> <span class="hidden-lg hidden-md">Home  </span></a></li>
+                                
+						<ul id='cd-primary-nav' class='menu main-m'><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> Guidelines</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/142/current-guidelines/en'>
+					<i class=''></i> Current Guidelines</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/uploads/media_to_upload1713960791.pdf'>
+					<i class=''></i> Draft Guidelines</a></li></ul></li><li class='blink level_0'>
+					<a href='https://kerc.karnataka.gov.in/147/annual-performance-review-2025/kn'>
+					<i class=''></i> APR Tariff Filing for FY25</a></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> ವಿನಿಯಮಗಳು </a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/27/regulations/kn'>
+					<i class=''></i> ಚಾಲ್ತಿಯಲ್ಲಿರುವ ವಿನಿಯಮಗಳು </a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/28/draft-regulations/kn'>
+					<i class=''></i> ಕರಡು ವಿನಿಯಮಗಳು </a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/29/repealed-regulations/kn'>
+					<i class=''></i> ರದ್ದುಪಡಿಸಲಾದ ವಿನಿಯಮಗಳು </a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/48/discussion-papers/kn'>
+					<i class=''></i> ಚರ್ಚಾ ಪತ್ರಿಕೆ</a></li></ul></li><li class=' level_0'>
+					<a href='https://sevasindhuservices.karnataka.gov.in'>
+					<i class=''></i> Data Formats</a></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> ವರದಿಗಳು </a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> Petitions Status </a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/138/active-petitions-/en'>
+					<i class=''></i> Active Petitions </a></li><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/139/sine-die-petitions/kn'>
+					<i class=''></i> Sine die Petitions</a></li><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/145/disposed-petition-year-wise/en'>
+					<i class=''></i> Petitions Disposed Year Wise</a></li></ul></li><li class='menu-item menu-item-has-children  level_1'>
+					<a href='https://kerc.karnataka.gov.in/137/petitions-data-2024/en'>
+					<i class=''></i> Petitions Data</a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/137/petitions-data-2024/en'>
+					<i class=''></i> Petitions Data 2024</a></li><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/146/petition-data-2025/en'>
+					<i class=''></i> Petitions Data - 2025</a></li><li class=' level_2'>
+					<a href='https://kerc.karnataka.gov.in/148/petition-data-2026/en'>
+					<i class=''></i> Petition Data - 2026</a></li></ul></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/37/annual-report/kn'>
+					<i class=''></i> ವಾರ್ಷಿಕ ವರದಿಗಳು</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/38/annual-accounts/kn'>
+					<i class=''></i> ವಾರ್ಷಿಕ ಲೆಕ್ಕಪತ್ರ</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/storage/pdf-files/Manual%20for%20SafetyTechnical%20Audit.pdf'>
+					<i class=''></i>  ಸುರಕ್ಷತಾ ತಾಂತ್ರಿಕ ಕೈಪಿಡಿ</a></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> ಆದೇಶಗಳು</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/96/tariff-order/Kn'>
+					<i class=''></i>  ಸುಂಕದ ಆದೇಶಗಳು</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/41/fuel-cost-adjustment-charges-%28fac%29/kn'>
+					<i class=''></i>  ಇಂಧನ ವೆಚ್ಚ ಹೊಂದಾಣಿಕೆ ಶುಲ್ಕದ ಆದೇಶಗಳು</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/73/generic-tariff-orders/kn'>
+					<i class=''></i>  ಸಾಮಾನ್ಯ ಆದೇಶಗಳು</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/42/miscellaneous-orders/kn'>
+					<i class=''></i>  ಇತರೆ ಆದೇಶಗಳು</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/70/court-orders/kn'>
+					<i class=''></i>  ನ್ಯಾಯಾಲಯದ ಆದೇಶಗಳು</a></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> ನಮ್ಮ ಬಗ್ಗೆ </a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/32/about-us/kn'>
+					<i class=''></i> ದ್ಯೇಯ </a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/33/chairman-and-members/kn'>
+					<i class=''></i> ಅಧ್ಯಕ್ಷರು ಮತ್ತು ಸದಸ್ಯರು</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/34/retired-chairman-members-and-secretaries/kn'>
+					<i class=''></i> ನಿವೃತ್ತ ಅಧ್ಯಕ್ಷರು, ಸದಸ್ಯರು ಮತ್ತು ಕಾರ್ಯದರ್ಶಿಗಳು</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/35/officers/kn'>
+					<i class=''></i> ಅಧಿಕಾರಿಗಳು</a></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> ದಾವೆಗಳ ಯಾದಿ</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://efiling.karnataka.gov.in/efiling/public/currentcauselist'>
+					<i class=''></i> Current Cause List</a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/79/court-hearing-notices/kn'>
+					<i class=''></i>  ನ್ಯಾಯಾಲಯದ ವಿಚಾರಣೆಯ ಸೂಚನೆಗಳು</a></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> ಪ್ರಮುಖ ಲಿಂಕ್‌ಗಳು</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> ಸಚಿವಾಲಯಗಳು ಸರ್ಕಾರಿ ಸಂಸ್ಥೆಗಳು</a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_1'>
+					<a href='https://kspdcl.karnataka.gov.in/'>
+					<i class=''></i> ಕರ್ನಾಟಕ ಸೌರ ವಿದ್ಯುತ್ ಅಭಿವೃದ್ಧಿ ನಿಗಮ</a></li><li class=' level_1'>
+					<a href='https://cea.nic.in/'>
+					<i class=''></i> ಕೇಂದ್ರ ವಿದ್ಯುತ್ ಪ್ರಾಧಿಕಾರ ವಿದ್ಯುತ್ ಸಚಿವಾಲಯ</a></li><li class=' level_1'>
+					<a href='http://www.seci.gov.in/content/'>
+					<i class=''></i> ಸೋಲಾರ್ ಎನರ್ಜಿ ಕಾರ್ಪೊರೇಷನ್ ಆಫ್ ಇಂಡಿಯಾ ಲಿಮಿಟೆಡ್</a></li><li class=' level_1'>
+					<a href='https://coal.nic.in/'>
+					<i class=''></i> ಕಲ್ಲಿದ್ದಲು ಸಚಿವಾಲಯ</a></li><li class=' level_1'>
+					<a href='https://www.mnre.gov.in/'>
+					<i class=''></i> ಸಚಿವಾಲಯ ಎಂಎನ್‌ಆರ್‌ಇ</a></li><li class=' level_1'>
+					<a href='https://powermin.nic.in/'>
+					<i class=''></i> ವಿದ್ಯುತ್ ಸಚಿವಾಲಯ                                                 </a></li><li class=' level_1'>
+					<a href='https://kredlinfo.in/'>
+					<i class=''></i> ಕರ್ನಾಟಕ ನವೀಕರಿಸಬಹುದಾದ ಇಂಧನ ಅಭಿವೃದ್ಧಿ ಲಿಮಿಟೆಡ್</a></li><li class=' level_1'>
+					<a href='https://www.finmin.nic.in/'>
+					<i class=''></i> ಹಣಕಾಸು ಸಚಿವಾಲಯ</a></li></ul></li><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> ಕಾನೂನು ಸಂಸ್ಥೆಗಳು </a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_2'>
+					<a href='https://aptel.gov.in/'>
+					<i class=''></i> ವಿದ್ಯುತ್ ಮೇಲ್ಮನವಿ ನ್ಯಾಯಾಧಿಕರಣ</a></li><li class=' level_1'>
+					<a href='http://karnatakajudiciary.kar.nic.in/'>
+					<i class=''></i> ಕರ್ನಾಟಕದ ಹೈಕೋರ್ಟ್</a></li><li class=' level_1'>
+					<a href='https://main.sci.gov.in/'>
+					<i class=''></i> ಸರ್ವೋಚ್ಚ ನ್ಯಾಯಾಲಯ</a></li></ul></li><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> ಅಂತರರಾಷ್ಟ್ರೀಯ ಸಂಸ್ಥೆಗಳು</a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_1'>
+					<a href='https://www.ofgem.gov.uk/'>
+					<i class=''></i> ಅನಿಲ ಮತ್ತು ವಿದ್ಯುತ್ ಮಾರುಕಟ್ಟೆಗಳ ಕಚೇರಿ</a></li><li class=' level_1'>
+					<a href='https://www.naruc.org/'>
+					<i class=''></i> ನ್ಯಾಷನಲ್ ಅಸೋಸಿಯೇಶನ್ ಆಫ್ ರೆಗ್ಯುಲೇಟರಿ ಯುಟಿಲಿಟಿ ಕಮಿಷನರ್ಸ್</a></li></ul></li><li class='menu-item menu-item-has-children  level_1'>
+					<a href='#.'>
+					<i class=''></i> Links</a><ul id='cd-primary-nav' class='sub-menu sub-menu-1'><li class=' level_2'>
+					<a href='https://cercind.gov.in/'>
+					<i class=''></i> ಕೇಂದ್ರ ವಿದ್ಯುತ್ ನಿಯಂತ್ರಣ ಆಯೋಗಗಳು</a></li><li class=' level_2'>
+					<a href='https://cercind.gov.in/serc.html'>
+					<i class=''></i> ರಾಜ್ಯ ವಿದ್ಯುತ್ ನಿಯಂತ್ರಣ ಆಯೋಗಗಳು</a></li><li class=' level_2'>
+					<a href='https://www.karnataka.gov.in/Pages/home.aspx'>
+					<i class=''></i> ಕರ್ನಾಟಕ ಸರ್ಕಾರ ಕೇಂದ್ರ ವಿದ್ಯುತ್ ನಿಯಂತ್ರಣ ಆಯೋಗ</a></li><li class=' level_2'>
+					<a href='https://igod.gov.in/'>
+					<i class=''></i> GOI ಡೈರೆಕ್ಟರಿ</a></li></ul></li></ul></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> ಮಾಹಿತಿ ಹಕ್ಕು</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/rtistats/kn'>
+					<i class=''></i> ಮಾಹಿತಿಹಕ್ಕು ಡ್ಯಾಶಬೋರ್ಡ </a></li><li class=' level_1'>
+					<a href='https://rtionline.karnataka.gov.in/index.php?lan=M'>
+					<i class=''></i> ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು                                                 </a></li></ul></li><li class='blink level_0'>
+					<a href='https://efiling.karnataka.gov.in/efiling'>
+					<i class=''></i> ಇ-ಫೈಲಿಂಗ್</a></li><li class='menu-item menu-item-has-children  level_0'>
+					<a href='#.'>
+					<i class=''></i> ಸಂಪರ್ಕಿಸಿ</a><ul id='cd-primary-nav' class='sub-menu sub-menu-0'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/20/head-office/kn'>
+					<i class=''></i> ಕೇಂದ್ರ ಕಛೇರಿ</a></li><li class=' level_1'>
+					<a href='https://energy.karnataka.gov.in/page/Contact/Honorable+Energy+Minister/kn'>
+					<i class=''></i> ಸಚಿವಾಲಯ</a></li></ul></li></ul>
+            <!-- <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button"><span class="hamburger-menu-button-open">Menu</span></button> -->
+
+
+
+
+				<!-- 	<nav id="ham-navigation" class="ham-menu testm ">
+					 
+					</nav> -->
+
+
+
+
+
+
+</div> 
+
+
+              
+                    <ul class="mob-links">
+                               <li class="hidden-md hidden-lg btn btn-back"><a href="https://karnataka.gov.in/english" target="_blank">Official Website of GoK </a></li>  
+ <li class="hidden-md hidden-lg btn btn-back"><a href="https://covid19.karnataka.gov.in/english" target="_blank"> Corona Related Information   </a></li>  
+                  </ul>
+                  </div>
+                  <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <i class="fa fa-home">  </i>
+                    
+                  </div>
+                </nav>
+       
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+ </div>
+</div> 
+    </div>
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+     <ul class="float-feed">
+  <li><a href="https://kerc.karnataka.gov.in/feedback/kn"> ಅಭಿಪ್ರಾಯ </a></li>
+</ul><style>
+.btn-primary{color:white !important;font-size:18px;}
+.btn-primary a{color:white !important;}
+</style>
+
+<!------------------------------------------------------  Sticky Button ------------------------------------------------------->
+<div class="icon-bar"  style="display: none;">
+   <p class="icon-bar_p"> <a  href="https://kerc.karnataka.gov.in/events" class="icon-bar_a">Events</a> </p> 
+</div>
+
+
+ <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4500">
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+    
+  </ol>  
+
+
+
+
+
+    <div class="carousel-inner">
+        		
+
+    <div class="item carousel-item active">
+        <img src="https://kerc.karnataka.gov.in/uploads/media_to_upload1655289639.jpg"/>
+		        <div class="carousel-caption">
+          TESTSETSE		</div>
+		    </div> 
+		
+
+    <div class="item carousel-item ">
+        <img src="https://kerc.karnataka.gov.in/uploads/media_to_upload1655289629.jpg"/>
+		        <div class="carousel-caption">
+          TEST		</div>
+		    </div> 
+		
+
+    <div class="item carousel-item ">
+        <img src="https://kerc.karnataka.gov.in/uploads/media_to_upload1640171843.jpg"/>
+		        <div class="carousel-caption">
+          Mysore Palace		</div>
+		    </div> 
+  
+  
+
+
+
+ </div>
+  
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+
+
+
+<div class="container">   
+<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-pad">     </div>
+</div>
+
+<section>   
+<div class="container-fluid infopad"> 
+<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 no-pad">   <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-mar documents shadow-box" >	
+	<div class="news-head">
+		<div class="text-center black-title">
+			<h3 class="ghead">ಮುಖ್ಯ ಮಾಹಿತಿಗಳು </h3>
+		</div>
+	</div>	
+<!-- <a href="" class="ribbon-sm">Read All News</a> -->
+<div id="accordian" class="scms-acc">
+		<ul id='cd-primary-nav' class='dept_docssam'><li class=' level_0'>
+					<a href='https://kerc.karnataka.gov.in/308/_gallery_/kn'>
+					<i class=''></i> RTI Details</a></li><li class=' level_0'>
+					<a href='https://kerc.karnataka.gov.in/301/_gallery_/kn'>
+					<i class=''></i> ಸುತ್ತೋಲೆಗಳು  ಮತ್ತು ಟೆಂಡರ್ಸ್ </a></li><li class=' level_0'>
+					<a href='https://kerc.karnataka.gov.in/76/public-hearing-notice/kn'>
+					<i class=''></i> ಸಾರ್ವಜನಿಕ ವಿಚಾರಣೆಯ ಸೂಚನೆ</a></li><li class='menu-item menu-item-has-childrensam  level_0'>
+					<a href='#.'>
+					<i class=''></i> ವಿದ್ಯುಚ್ಛಕ್ತಿ ಲೋಕಪಾಲರು</a><ul id='cd-primary-nav' class='sub-menusam sub-menu-0sam'><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/50/regulations/kn'>
+					<i class=''></i> ವಿದ್ಯಚ್ಚಕ್ತಿ ಲೋಕಪಾಲರ ನಿಯಮಗಳು </a></li><li class=' level_1'>
+					<a href='https://kerc.karnataka.gov.in/49/ombudsman-orders/kn'>
+					<i class=''></i> ವಿದ್ಯುಚ್ಛಕ್ತಿ ಲೋಕಪಾಲರ ಆದೇಶಗಳು</a></li></ul></li><li class=' level_0'>
+					<a href='https://kerc.karnataka.gov.in/36/advisory-committee/kn'>
+					<i class=''></i> ಸಲಹಾ ಸಮಿತಿ</a></li><li class=' level_0'>
+					<a href='https://kerc.karnataka.gov.in/52/license/kn'>
+					<i class=''></i> ಸನ್ನದುದಾರ</a></li><li class=' level_0'>
+					<a href='https://kerc.karnataka.gov.in/39/reliability-index/kn'>
+					<i class=''></i> ವಿಶ್ವಾಸಾರ್ಹತೆ ಸೂಚ್ಯಂಕ</a></li><li class=' level_0'>
+					<a href='https://kerc.karnataka.gov.in/51/reform-efforts/kn'>
+					<i class=''></i> ಸುಧಾರಣಾ ಪ್ರಯತ್ನಗಳು </a></li></ul></div>
+</div>  </div>
+<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 no-pad">   
+
+
+	
+<div class="thirteen headpad">
+  <h1>ಆಯೋಗ
+  </h1>
+</div>
+
+
+
+<div class="owl-carousel owl-theme owl-one owl-loaded owl-drag  owl-hod">
+	<div class="owl-stage-outer">
+		<div class="owl-stage">
+					<div class="owl-item col-md-3">
+				<a href="#.">
+					<div class="item wi-hod">
+				
+						  <img src="https://kerc.karnataka.gov.in/uploads/media_to_upload1655291961.jpg" />
+			
+							
+			
+					  <h3><i class=""></i> ಶ್ರೀ. ಪಿ ರವಿ ಕುಮಾರ್ I.A.S (ನಿವೃತ್ತ)</h3>
+		<div class="designation">	
+					<p>ಅಧ್ಯಕ್ಷರು	</p>
+								 
+								  		</div>
+					
+					</div>
+				</a>
+			</div>
+					<div class="owl-item col-md-3">
+				<a href="#.">
+					<div class="item wi-hod">
+				
+						  <img src="https://kerc.karnataka.gov.in/uploads/media_to_upload1709804363.jpg" />
+			
+							
+			
+					  <h3><i class=""></i> ಶ್ರೀ. ಎಚ್.ಕೆ.ಜಗದೀಶ್</h3>
+		<div class="designation">	
+					<p>ಸದಸ್ಯರು	</p>
+								 
+								  		</div>
+					
+					</div>
+				</a>
+			</div>
+					<div class="owl-item col-md-3">
+				<a href="#.">
+					<div class="item wi-hod">
+				
+						  <img src="https://kerc.karnataka.gov.in/uploads/media_to_upload1710488908.jpg" />
+			
+							
+			
+					  <h3><i class=""></i> ಶ್ರೀ ಜಾವಿದ್‌ ಅಖ್ತರ್ I.A.S (ನಿವೃತ್ತ)</h3>
+		<div class="designation">	
+					<p>ಸದಸ್ಯರು	</p>
+								 
+								  		</div>
+					
+					</div>
+				</a>
+			</div>
+		        </div>
+    </div>
+
+</div>  
+  
+<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-mar documents shadow-box news-new-box nb1" >  
+  <div class="news-head" style="margin: 0px;">
+    <div class="text-center black-title">
+      <h3 class="ghead">  </h3>
+    </div>
+  </div>  
+<!-- <a href="" class="ribbon-sm">Read All News</a> -->
+<div id="" class="">
+  <div class="news-in" behavior="scroll" direction="left" style="height: 140px;overflow: auto;">
+              </div>
+                     <a href="https://kerc.karnataka.gov.in/events/kn" class="ribbon-sm-nws">ಮತ್ತಷ್ಟು ಓದಿ   </a>
+</div>
+</div>
+
+
+
+
+ 
+
+
+</div>
+<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 no-pad"> 
+    
+<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-mar documents shadow-box news-new-box" >  
+  <div class="news-head">
+    <div class="text-center black-title">
+      <h3 class="ghead">  ಇತ್ತೀಚಿನ ಸುದ್ದಿ</h3>
+    </div>
+  </div>  
+<!-- <a href="" class="ribbon-sm">Read All News</a> -->
+<div id="" class="">
+  <div class="news-in" behavior="scroll" direction="left">
+                        <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1788334872.pdf">Implementation of the Directive relating to Reduction in Demand Charges to HT Industrial Consumers in cases of Power Outages beyond the Specified Limits in a Month – Reg.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/48811787813645.pdf">ಕರಡು ಕವಿನಿಆ (ವಿದ್ಯುಚ್ಛಕ್ತಿ ಸರಬರಾಜು) ವಿನಿಯಮಗಳು (ಇಎಸ್ಆರ್), 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/33531787573519.pdf">ಮುಖ್ಯಾಂಶಗಳು: ಕರಡು ಕರ್ನಾಟಕ ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿಯಂತ್ರಣ ಆಯೋಗ (ವಿದ್ಯುಚ್ಛಕ್ತಿ ಸರಬರಾಜು) ವಿನಿಯಮಗಳು (ಇಎಸ್‌ಆರ್), 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/34211787573519.pdf">Highlights of the changes proposed in the Draft KERC (Electricity Supply Regulations) (ESR) 2026 compared to the existing Conditions of Supply of Electricity (CoS), Recovery of Expenditure (RoE) and other Regulations relating to supply of electricity.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/48561787653428.pdf">DSPV Generic tariff 25.08.2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1787642381.pdfhttps://kerc.karnataka.gov.in/uploads/media_to_upload1787642381.pdfhttps://kerc.karnataka.gov.in/uploads/media_to_upload1787642381.pdfhttps://kerc.karnataka.gov.in/uploads/media_to_upload1787642381.pdfhttps://kerc.karnataka.gov.in/uploads/media_to_upload1787642381.pdfhttps://kerc.karnataka.gov.in/uploads/media_to_upload1787642381.pdfhttps://kerc.karnataka.gov.in/uploads/media_to_upload1787642381.pdf">KERC DSPV Plants Regulations, 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/12121787573621.pdf">Draft Karnataka Electricity Regulatory Commission Electricity Supply Regulations,2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1786969012.pdf">Inviting Comments on Draft KERC Electricity Supply Regulations ESR, 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/92521786601976.pdf">Public Notice on Hampapura Power Transmission Limited petition for Transmission Licensee</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/59951786601976.pdf">Public Notice on Mekhali Power Transmission Limited petition for Transmission Licensee</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/423/_gallery_/en">Application for Grant of Transmission Licensee by Mekhali Power Transmission Limited</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/422/_gallery_/kn">Application for Grant of Transmission Licensee by Hampapur Power Transmission Limited</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/92921785748077.pdf">Public Hearing on Draft KERC Connectivity and General Network Access to the Intra State Transmission and State Distribution System Regulations 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1783685034.pdf">Order In the matter of Implementation of Automatic Meter Reading AMR facilities for Generators and Associated Measures</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/74101782984978.pdf">Public Notice on the matter of Determination of Tariff and norms in respect of Solar Power Projects (including Distributed Solar Photovoltaic (DSPV) plants with different metering mechanism) for the period from 1st July,2026 to 30.06.2029</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/20911782984978.pdf">Public Hearing on Draft Karnataka Electricity Distribution Code (KEDC) (First Amendment), 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1782904111.pdf">Suo-Motu Order dated 01.07.2026 in the matter of Deemed Approval of RE (Mini-Hydro & Wind) PPAs completing 20 years.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/38321782731667.pdf">Public hearing on Draft Karnataka Electricity Regulatory Commission (Grid Interactive Distributed Solar Photovoltaic (DSPV) Plants) Regulations, 2026.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1782302970.pdf">Order in the matter of allowing time for installation of standby Meters by all Open Access Generators</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1782209789.pdf">KERC (Forecasting, Scheduling, Deviation Settlement Mechanism and related matters for Sellers of Wind, Solar and WS-Hybrid Generation sources) Regulations, 2026.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1781762006.pdf">In the matter of removal of difficulties in implementing the provisions of Karnataka Electricity Regulatory Commission (Fee) Regulations, 2024 notified vide Notification No. KERC/N/48/2024/988/ dated 26th November 2024.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1781678712.pdf">Discussion paper in the matter of Determination of tariff and norms in respect of Solar Power Projects (including DSPV plants with different metering mechanism for the period from 01.07.2026 to 30.06.2029</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1781677470.pdf">Aadhaar e-KYC Authentication for Verification of Identity and Address of Applicants Availing Electricity Services from Distribution Licensees in the State of Karnataka.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1781582773.pdf">Inviting Comments / Suggestions on Draft Karnataka Electricity Distribution Code (KEDC) First Amendment ,2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1781582488.pdf">Inviting Comments / suggestions on Draft KERC (Connectivity and General Network Access to the Intra-State Transmission and State Distribution System) Regulations,2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1781238353.pdf">Draft Karnataka Electricity Regulatory Commission (Connectivity and General Network Access to the Intra-State Transmission and State Distribution System) Regulations, 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1781238895.pdf">Karnataka Electricity Distribution Code (KEDC), (First Amendment), 2026.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1780634497.pdf">Draft Karnataka Electricity Regulatory Commission (Grid Interactive Distributed Solar Photovoltaic (DSPV) Plants) Regulations 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1780307028.pdf">KERC Fees First Amendment Regulation 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1780307137.pdf">KERC (Procedure, Terms and Conditions for grant of Transmission License and other related matters in respect of intra-State Transmission Projects selected through Tariff-Based Competitive Bidding) Regulations 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1779349034.pdf">Order dated 21.05.2026 in respect of Allowing Fifteen (15) Clear Days’ Time to Consumers for Payment of Electricity Bills from the Actual Date of Issue of Bill by the Licensee</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/98691777549687.pdf">Tender Notice to Supply. Install, Configure and Commissioning of Hardware including II for Digital /E-Court Project</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1777548642.pdf">Order dated 30.04.2026 in respect of determination of Generic Ceiling Tariff for Wind Power Projects for the purpose of Bidding for the period FY 2026-27 to Fy 2028-29.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/95821776937124.pdf">Public Hearing on Draft KERC Procedure, Terms and Conditions for grant of Transmission License and other related matters in respect of intra-State Transmission Projects selected through TBCB Regulation 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/54591776773656.pdf">Public Hearing Notice on Discussion paper on the Determination of Generic Ceiling Tariff for Wind Power Project for the purpose of Bidding for the period FY2026-27 to FY 2028-29</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1775457398.pdf">Draft KERC (Procedure, Terms and Conditions for grant of Transmission License and other related matters in respect of intra-State Transmission Projects selected through Tariff-Based Competitive Bidding) Regulations, 2026.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1774956472.pdf">Order dated in the matter of Continuation of Discounted Energy Rate Scheme (DERS) for FY2026-27 and FY2027-28</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1774264642.pdf">DISCUSSION PAPER ON THE DETERMINATION OF GENERIC CEILING TARIFF FOR WIND POWER PROJECTS FOR THE PUPOSE OF BIDDING FOR THE PERIOD FY2026-27 TO FY2028-29</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1772778287.pdf">Linking of RR numbers to Aadhaar numbers to IP sets having sanctioned load of 10 HP and below.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1772439438.pdf">Karnataka Electricity Regulatory Commission (Roadmap for Reducing Cross Subsidy and Cross Subsidy Surcharge) Regulations, 2026</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/18281772541323.pdf">Order dated 03.03.2026 in respect of RP 08 of 2025 BESCOM and Others Vs NIL</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/94591767006357.pdf	">Corrigendum to Tariff Order 2025 of MSEZ APR for FY24 and Approval ARR for the Control Period for FY2025-26 to 2027-28 dated 27.03.2025</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1766121500.pdf">PUBLIC NOTICE in the matter of Draft KERC (Roadmap for Reducing Cross-Subsidy and Cross Subsidy Surcharge) Regulations, 2025: Objections from Stake Holders / Public Invited.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1765949572.pdf">Draft KERC (Forecasting, Scheduling, Deviation Settlement Mechanism and related matters for Sellers and Buyers of Wind, Solar and RE-Hybrid Generation sources) Regulations, 2025.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1760767578.pdf">Draft KERC (Framework for Demand Flexibility (DF) / Demand Side Management (DSM) Regulations,2025</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1758194967.pdf">Standard Operating Procedure for Hybrid Mode of Hearing with effect from 23.09.2025.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/72301756972492.pdf">Public hearing on Fixation of Norms and Determination of Tariff for procurement of Power from Rooftop Aero Turbine with Solar or without Solar for FY26</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1756972345.pdf">Affidavit is uploaded in view of the directions issued by the Hon'ble APTEL through an Order dated 29.08.2025 in OP No 01 of 2025</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/uploads/media_to_upload1756723774.pdf">Revision of Remuneration to Non-Official members of the Consumer Grievance Redressal Forums (CGRFs) established in the Jurisdiction of Distribution Licensees.</a></p>            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://kerc.karnataka.gov.in/393/_gallery_/en">Issue of Draft Wheeling and Banking Agreement Format for Open Access Projects under Draft KERC (Terms and Conditions for Open Access) Regulations,2025</a></p>  </div>
+                     <a href="https://kerc.karnataka.gov.in/events/kn" class="ribbon-sm-nws">ಮತ್ತಷ್ಟು ಓದಿ   </a>
+</div>
+</div>
+
+
+
+
+    </div>
+</div>  
+
+
+</section>
+
+
+
+
+
+      
+
+
+
+
+
+ 
+
+
+
+<div class="icon-bar2">
+
+ 
+
+</div>
+
+
+
+<!--------------------------------------------------- Footer2--------------------------------------->
+
+<footer> 
+<div class="container-fluid dept-owner">
+
+  ವಿಷಯದ ಮಾಲೀಕತ್ವ ಮತ್ತು ನಿರ್ವಹಣೆ : <span class="footer2_span"> ಕರ್ನಾಟಕ ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿಯಂತ್ರಣ ಆಯೋಗ, ಕರ್ನಾಟಕ ಸರ್ಕಾರ</span>
+
+</div>
+
+<!--------------------------------------------------- Footer3--------------------------------------->
+
+<div class="container-fluid footer3">
+
+  ವಿನ್ಯಾಸ, ಅಭಿವೃದ್ಧಿ ಮತ್ತು ಪ್ರಕಟಣೆ : : <span class="footer3_span"> ಇ-ಆಡಳಿತ ಕೇಂದ್ರ , ಕರ್ನಾಟಕ ಸರ್ಕಾರ © 2026, ಎಲ್ಲಾ ಹಕ್ಕುಗಳೂ ಕಾಯ್ದಿರಿಸಿವೆ.</span>
+
+</div>
+ </footer>
+
+
+<!-- Single Modal - 2nd Forest & Farm Herbal Expo 2026 -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+       <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background: #949494; color: #fff; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 40px; line-height: inherit; float: right; margin-top: -10px; margin-right: -10px; cursor: pointer;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+           <div style="padding: 15px; background: #f5f5f5; margin-top: 10px; border-radius: 5px;">
+          <h3 style="color: #2d6a4f;">🌿 2ನೇ ಅರಣ್ಯ ಮತ್ತು ಕೃಷಿ ಔಷಧೀಯ ಪ್ರದರ್ಶನ – 2026</h3>
+          <p style="font-size: 16px; margin: 5px 0;">
+            <strong>📅 ದಿನಾಂಕ:</strong> 18<sup>ನೇ</sup> - 20<sup>ನೇ</sup> ಸೆಪ್ಟೆಂಬರ್ 2026<br>
+            <strong>📍 ಸ್ಥಳ:</strong> ಕರ್ನಾಟಕ ಚಿತ್ರಕಲಾ ಪರಿಷತ್, ಕುಮಾರಕೃಪಾ ರಸ್ತೆ, ಬೆಂಗಳೂರು
+          </p>
+          <p style="font-size: 14px; color: #555;">
+            ಆಯೋಜಕರು: ಕರ್ನಾಟಕ ರಾಜ್ಯ ಔಷಧೀಯ ಸಸ್ಯ ಪ್ರಾಧಿಕಾರ & ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ
+          </p>
+          
+          <!-- Read More Button - Opens PDF in new tab -->
+          <a href="https://webportal.karnataka.gov.in/assets/front/popups/herbal_expo_2026_letters_kn.pdf" 
+             target="_blank" 
+             class="btn btn-success" 
+             style="margin-top: 10px; padding: 10px 30px; font-size: 16px; border-radius: 5px; text-decoration: none; display: inline-block; background-color: #2d6a4f; color: #fff; border: none;">
+            📄 ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ
+          </a>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <img src="https://webportal.karnataka.gov.in/assets/front/popups/kampa_kn_270826.jpg" class="img-fluid imgkampa" alt="2nd Forest & Farm Herbal Expo 2026">
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  var path = window.location.pathname.replace(/^\/|\/$/g, '');
+  var segments = path === '' ? [] : path.split('/');
+
+  // Show only on homepage
+  if (segments.length <= 1) {
+          $('#eventModal').modal('show');
+      setTimeout(function() {
+        $('#eventModal').modal('hide');
+      }, 20000); // Auto-close after 20 seconds
+      }
+});
+</script>
+<style>
+  .search-box {
+  position: relative;
+  height: 25px;
+  background: #2f3640;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.acts_table td, .acts_table p, .acts_table a {
+    background: #350dff;
+    color: white !important;
+}
+.search-box.active {
+  width: 240px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+.cm_karnataka_photo{height: 120px !important;}
+.dpal-gserach-btn{color: white;padding: 6px;}
+
+.search-btn {
+  color: #fff;
+  transition: 0.4s;
+  z-index: 1;background: transparent;border:0px;
+
+  margin-left: -10px;margin-top: 6px;
+}
+
+.search-box.active .search-btn {
+  color: #2f3640;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #2f3640;
+  font-size: 16px;
+  width: 0;
+  transition: 0.4s;
+  /*margin-left: 10px;*/
+  z-index: 0;
+}
+
+.search-box.active .search-txt {
+  width: 100%;
+}
+    /* First Modal Styles */
+    .kswdc_modal-body p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img{width: 100%;}
+    .kswdc_dflex{display: flex;}
+    
+    /* Second Modal Styles */
+    .kswdc_modal-body2 p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img2 {width: 100%;}
+    .kswdc_dflex2 {display: flex;}
+</style>
+
+
+  <!-- <div class="modal fade" id="eventModalkswdc" tabindex="-1" role="dialog" aria-labelledby="eventModalkswdcLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center kswdc_modal-body">
+          <div class="row kswdc_dflex">
+            <div class="col-12">
+              <img src="https://atimysore.karnataka.gov.in/uploads/banner_popup.jpeg" class="img-fluid kswdc_pop_img" alt="Image 1">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+<script>
+    $(document).ready(function(){
+      var path = window.location.pathname.replace(/^\/|\/$/g, '');
+      var segments = path === '' ? [] : path.split('/');
+
+      if (segments.length <= 1) {
+        // Show first modal if active
+                  $('#eventModalkswdc').modal('show');
+          setTimeout(function() {
+            $('#eventModalkswdc').modal('hide');
+          }, 20000);
+        
+        // Show second modal if active (with delay to avoid conflict)
+              }
+    });
+</script>
+
+
+<link href="" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="">
+
+<script src=""></script>
+
+<style type="text/css">
+.mysqlspan{background:#e38f00;padding:0px 4px; color:#00537f;}
+.version_block{display:flex;}
+.mongologo{display:none !important;}
+  .modal{background: #0e0e0ebf;}
+  .footer{width:100% !important;}
+      .modal-body{color: black;}
+    .foot-bottom{   display: flex;
+    background: #333434;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;}
+    .vhide{visibility: hidden;}
+    .lineDiv2,.lineDiv1{background-color: goldenrod !important;}
+        i.fa.fa-angle-right {
+    padding-right: 8px;
+}
+
+.footerSectionDetails a{color: white !important;}
+
+.footer_container li,.footer_container a{cursor: pointer;}
+  .modal-title{width: -webkit-fill-available}
+  .cls-btn{padding: 8px 10px 0px 10px;}
+</style>
+<section class="footer_container">
+    <div class="container footerSection_Div">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p>ಹಕ್ಕುತ್ಯಾಗ</p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP"><p>
+                       ಈ ಪುಟವು ಸರ್ಕಾರಿ ಸಚಿವಾಲಯ/ ಇಲಾಖೆ/ ಸಂಸ್ಥೆಗಳಿಗೂ ಲಿಂಕುಗಳನ್ನು ಕಲ್ಪಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ಗಮನಿಸಿ.  ಈ ವೆಬ್ ಸೈಟುಗಳ ವಿಷಯಗಳು ಆಯಾ ಸಂಸ್ಥೆಗಳ ಸ್ವತ್ತೇ ಆಗಿದ್ದು, ಯಾವುದೇ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಅಥವಾ ಸಲಹೆಗಾಗಿ ಅವರನ್ನೇ ಸಂಪರ್ಕಿಸುವುದು
+                    </p>
+                </div>
+            </div>
+          </div>
+          
+           <div class="col-lg-4">
+
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p>ಜಾಲತಾಣ ನೀತಿಗಳು ಮತ್ತು ಮಾರ್ಗಸೂಚಿಗಳು</p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP1">
+                    <div>
+                         <ul class="list-unstyled">
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal3"><i class="fa fa-angle-right" aria-hidden="true"></i>ಹಕ್ಕುಸ್ವಾಮ್ಯ ನೀತಿ</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal4"><i class="fa fa-angle-right" aria-hidden="true"></i>ಬಾಹ್ಯಜಾಲತಾಣ ಸಂಪರ್ಕ ನೀತಿ</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal5"><i class="fa fa-angle-right" aria-hidden="true"></i>ಭದ್ರತಾ ನೀತಿ</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal6"><i class="fa fa-angle-right" aria-hidden="true"></i>ಕರಾರುಗಳು ಮತ್ತು ಷರತ್ತುಗಳು</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal7"><i class="fa fa-angle-right" aria-hidden="true"></i>ಗೌಪ್ಯತಾ ನೀತಿ</li>
+
+      </ul> 
+                    </div>
+                </div>
+            </div>
+
+           </div>
+
+
+           <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle "><p>ಪ್ರವೇಶ ಕೊಂಡಿಗಳು </p></div>
+                <div class="lineDiv "> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div><br>
+                <div class="footerSectionP"><p>
+                     <ul class="list-unstyled">
+                          <li><a href="https://kerc.karnataka.gov.in/sitemap/kn"><i class="fa fa-angle-right" aria-hidden="true"></i>ಜಾಲನಕ್ಷೆ </a></li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal8"><i class="fa fa-angle-right" aria-hidden="true"></i>ಸಹಾಯ</li>
+      <li data-bs-toggle="modal" data-bs-target="#fmyModal9"><i class="fa fa-angle-right" aria-hidden="true"></i>ಪರದೆ ವಾಚಕ</li>
+      <li><a href="https://ceg.karnataka.gov.in/guidelines/kn" ><i class="fa fa-angle-right" aria-hidden="true"></i>ಮಾರ್ಗಸೂಚಿಗಳು</a></li>
+    </ul>
+                    </p>
+                </div>
+            </div>
+           </div>
+
+
+
+        </div>
+
+
+
+        <div class="lastUpdate">
+            <div><p>ಇತ್ತೀಚಿನ ನವೀಕರಣ: </p></div>
+            <div><p>ಸಂದರ್ಶಕರು: </p></div>
+            <div class="version_block"><p>ಆವೃತ್ತಿ: CeG/KRN 4.0 <span class='mysqlspan'>M-SQL</span></p></div>
+        </div>
+
+
+        <div class="contentOwner">
+            <p>  ವಿಷಯದ ಮಾಲೀಕತ್ವ ಮತ್ತು ನಿರ್ವಹಣೆ : ಕರ್ನಾಟಕ ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿಯಂತ್ರಣ ಆಯೋಗ, ಕರ್ನಾಟಕ ಸರ್ಕಾರ</p>
+            <p>ವಿನ್ಯಾಸ, ಅಭಿವೃದ್ಧಿ ಮತ್ತು ಪ್ರಕಟಣೆ  : ಇ-ಆಡಳಿತ ಕೇಂದ್ರ , ಕರ್ನಾಟಕ ಸರ್ಕಾರ © 2026, ಎಲ್ಲಾ ಹಕ್ಕುಗಳೂ ಕಾಯ್ದಿರಿಸಿವೆ.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="footer ">
+
+
+
+<ul class="list-inline foot-bottom">
+      <li>
+       <a href="https://www.meity.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/Meity_logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://digitalindia.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/digital-india-logo.png" class="footer_image"></a>
+      </li> 
+      <li>
+       <a href="https://data.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/data-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.india.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/india-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.pmindia.gov.in/en/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/pm-india-logo.png" class="footer_image"></a>
+      </li>
+
+      <li class="footer4_divider"></li>
+      <li></li>
+     <li>
+       <a href="https://guidelines.india.gov.in/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/GIGW.jpeg" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.w3.org/TR/WCAG22/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/WCAG.jpeg" class="footer_image"></a>
+      </li> 
+      <li>
+      <a href="https://www.https.in/government-solutions"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/SSLcertificate.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://www.w3schools.com/html/default.asp"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/w3c.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://kannadapraadhikaara.karnataka.gov.in"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/kp_kn.jpeg" class="footer_image"></a>
+      </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="modal fade" id="fmyModal3" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಕೃತಿಸ್ವಾಮ್ಯ ನೀತಿ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+         
+        <h6>ಕೃತಿಸ್ವಾಮ್ಯ ನೀತಿ (ಪ್ರಕಟಿತ ಮಾಹಿತಿಯು ಯಾವುದೇ ಶುಲ್ಕವಿಲ್ಲದೆ ಲಭ್ಯವಿದ್ದರೆ)</h6>
+
+           <p>1) ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಕಾಣಿಸಿಕೊಂಡಿರುವ ಮಾಹಿತಿಯನ್ನು ಯಾವುದೇ ಮಾಧ್ಯಮ ರೂಪದಲ್ಲಿ ಯಾವುದೇ ಶುಲ್ಕವಿಲ್ಲದೆ ನಮ್ಮಿಂದ (ಸಿಇಜಿ) ಪೂರ್ವ ಅನುಮತಿಯೊಂದಿಗೆ ಅಥವಾ ವೆಬ್‌ಸೈಟ್ ಹೊಂದಿರುವ ಸಂಬಂಧಿತ ಪ್ರಾಧಿಕಾರವನ್ನು ಇಮೇಲ್ ಮೂಲಕ ಮರು ಪ್ರಕಟಿಸಬಹುದು.</p>
+           <p>2)ಮಾಹಿತಿಯು ಲಭ್ಯವಿರುವುದರಿಂದ ಅದನ್ನು ಮರುಪ್ರಕಟಿಸಬಹುದು ಮತ್ತು ವಿಕೃತ ಅಥವಾ ದಾರಿತಪ್ಪಿಸುವ ರೀತಿಯಲ್ಲಿ ಬಳಸಬಾರದು</p>
+           <p>3)ಎಲ್ಲಿ ವಸ್ತುಗಳನ್ನು ಪ್ರಕಟಿಸಲಾಗುತ್ತಿದೆ ಅಥವಾ ಇತರರಿಗೆ ಸೂಚಿಸಲಾಗುತ್ತದೆಯೋ ಅಲ್ಲಿ ಮೂಲವನ್ನು ಪ್ರಮುಖವಾಗಿ ಅಂಗೀಕರಿಸಬೇಕು</p>
+           <p>4)ಆದಾಗ್ಯೂ, ಈ ವಸ್ತುವನ್ನು ಪುನರುತ್ಪಾದಿಸುವ ಅನುಮತಿಯು ಈ ಸೈಟ್‌ನಲ್ಲಿನ ಯಾವುದೇ ವಸ್ತುಗಳಿಗೆ ವಿಸ್ತರಿಸುವುದಿಲ್ಲ, ಇದನ್ನು ಮೂರನೇ ವ್ಯಕ್ತಿಯ ಹಕ್ಕುಸ್ವಾಮ್ಯ ಎಂದು ಸ್ಪಷ್ಟವಾಗಿ ಗುರುತಿಸಲಾಗಿದೆ</p>
+          
+        <h6>ಕೃತಿಸ್ವಾಮ್ಯ ನೀತಿ (ಪ್ರಕಟಿತ ಮಾಹಿತಿಯನ್ನು ಮರುಬಳಕೆ ಮಾಡಲು ಅವಕಾಶವಿದ್ದರೆ)</h6>
+        
+           <p>1)ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಪ್ರಕಟವಾದ ಮಾಹಿತಿಯು ಹಕ್ಕುಸ್ವಾಮ್ಯ ನೀತಿಯ ಅಡಿಯಲ್ಲಿ ಬರುತ್ತದೆ ಮತ್ತು ಅವುಗಳ ಮರುಪ್ರಕಟಕ್ಕಾಗಿ ಅಧಿಕೃತತೆಯನ್ನು ಪಡೆಯುವುದು ಪೂರ್ವ ಅವಶ್ಯಕವಾಗಿದೆ.</p>  
+
+           <p>2)ಅನುಮತಿ ಪಡೆಯಲು ಒಬ್ಬರು ……………… .. @ .........</p>
+
+         
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Hperlinking Policies -->
+  <div class="modal fade" id="fmyModal4" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಹೈಪರ್ಲಿಂಕಿಂಗ್ ನೀತಿ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+         <h6>(ಆಯಾ ಇಲಾಖೆಗೆ ತಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಹೈಪರ್ಲಿಂಕ್ ಮಾಡಲು ಯಾವುದೇ ಅನುಮತಿ ಅಗತ್ಯವಿಲ್ಲದಿದ್ದರೆ)</h6>
+
+           <p>1)ನಮ್ಮ ಸೈಟ್‌ನಲ್ಲಿ ಹೋಸ್ಟ್ ಮಾಡಲಾದ ಮಾಹಿತಿಯೊಂದಿಗೆ ನೇರವಾಗಿ ಲಿಂಕ್ ಮಾಡುವುದನ್ನು ನಾವು ಆಕ್ಷೇಪಿಸುವುದಿಲ್ಲ ಮತ್ತು ಅದಕ್ಕಾಗಿ ಯಾವುದೇ ಪೂರ್ವ ಅನುಮತಿ ಅಗತ್ಯವಿಲ್ಲ.</p>
+
+           <p>2)ನಮ್ಮ ಪುಟಗಳನ್ನು ಇತರ ಸೈಟ್‌ಗಳಲ್ಲಿ ಫ್ರೇಮ್‌ಗಳಲ್ಲಿ ಲೋಡ್ ಮಾಡಲು ನಾವು ಅನುಮತಿಸುವುದಿಲ್ಲ. ನಮ್ಮ ಇಲಾಖೆಯ ಪುಟಗಳು ಬಳಕೆದಾರರ ಹೊಸದಾಗಿ ತೆರೆದ ಬ್ರೌಸರ್ ವಿಂಡೋಗೆ ಲೋಡ್ ಆಗಬೇಕು.</p>
+
+        <h6>(ವೆಬ್‌ಸೈಟ್‌ಗೆ ಹೈಪರ್ಲಿಂಕ್ ಅನುಮತಿ ಅಗತ್ಯವಿದ್ದರೆ)</h6>
+        
+           <p>1)ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಯಾವುದೇ ಲಿಂಕ್ ಅಥವಾ ಅದರ ಫಾರ್ಮ್ ಅನ್ನು ಒದಗಿಸಲು, ಅನುಮತಿಯನ್ನು ಪಡೆಯುವುದು ಕಡ್ಡಾಯವಾಗಿದೆ.</p>  
+
+           <p>2)ಈ ಇಮೇಲ್‌ಗೆ ವಿನಂತಿಸುವ ಮೂಲಕ ಇ-ಆಡಳಿತಕ್ಕಾಗಿ ಕೇಂದ್ರದಿಂದ ಅನುಮತಿಯನ್ನು ಪಡೆಯಬಹುದು. spm.webportal@karnataka.gov.in</p>
+ 
+           <p>3)ಈ ಸರ್ಕಾರಿ ವೆಬ್‌ಸೈಟ್ ಟಿಪ್ಪಣಿಯನ್ನು ಬಿಡುವ ಮೊದಲು: ಈ ಸಂಪರ್ಕ ಬಟನ್ ಮತ್ತೊಂದು ವೆಬ್‌ಸೈಟ್‌ಗೆ ಕಾರಣವಾಗುತ್ತದೆ, ಅಂತಹ ಹೊಸ ತೆರೆದ ಸೈಟ್‌ನ ಕುರಿತು ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಪಡೆಯಲು, ಆ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ನೋಂದಾಯಿಸಲಾದ ಸಂಬಂಧಪಟ್ಟ ಸಂಪರ್ಕಗಳನ್ನು ಸಂಪರ್ಕಿಸಬೇಕು.</p>
+         
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+   
+
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Security Policies -->
+  <div class="modal fade" id="fmyModal5" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಭದ್ರತಾ ನೀತಿ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+           <p>
+              1) ಸೈಟ್ ಭದ್ರತಾ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮತ್ತು ಈ ಸೇವೆಯು ಎಲ್ಲಾ ಬಳಕೆದಾರರಿಗೆ ಲಭ್ಯವಾಗಿದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು, ಈ ಸರ್ಕಾರಿ ಕಂಪ್ಯೂಟರ್ ವ್ಯವಸ್ಥೆಯು ಮಾಹಿತಿಯನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಅಥವಾ ಬದಲಾಯಿಸಲು ಅಥವಾ ಹಾನಿಯನ್ನುಂಟುಮಾಡುವ ಅನಧಿಕೃತ ಪ್ರಯತ್ನಗಳನ್ನು ಗುರುತಿಸಲು ನೆಟ್‌ವರ್ಕ್ ದಟ್ಟಣೆಯನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲು ವಾಣಿಜ್ಯ ಸಾಫ್ಟ್‌ವೇರ್ ಪ್ರೋಗ್ರಾಂಗಳನ್ನು ಬಳಸಿಕೊಳ್ಳುತ್ತದೆ.
+           </p><br>
+
+          <p>2) ಅಧಿಕೃತ ಕಾನೂನು ಜಾರಿ ತನಿಖೆಗಳನ್ನು ಹೊರತುಪಡಿಸಿ, ವೈಯಕ್ತಿಕ ಬಳಕೆದಾರರನ್ನು ಅಥವಾ ಅವರ ಬಳಕೆಯ ಅಭ್ಯಾಸವನ್ನು ಗುರುತಿಸಲು ಬೇರೆ ಯಾವುದೇ ಪ್ರಯತ್ನಗಳನ್ನು ಮಾಡಲಾಗುವುದಿಲ್ಲ. ಕಚ್ಚಾ ಡೇಟಾ ಲಾಗ್‌ಗಳನ್ನು ಬೇರೆ ಯಾವುದೇ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಬಳಸಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ನಿಯಮಿತವಾಗಿ ಅಳಿಸಲು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ.
+          </p><br>
+
+          <p>3) ಈ ಸೇವೆಯಲ್ಲಿ ಮಾಹಿತಿಯನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಅಥವಾ ಮಾಹಿತಿಯನ್ನು ಬದಲಾಯಿಸಲು ಅನಧಿಕೃತ ಪ್ರಯತ್ನಗಳನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ ಮತ್ತು ಭಾರತೀಯ ಐಟಿ ಕಾಯ್ದೆ (2000) ಅಡಿಯಲ್ಲಿ ಶಿಕ್ಷಾರ್ಹವಾಗಬಹುದು.</p><br>
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+ <!-------------------------------------------------------------------->
+  <!-- Terms & Conditions -->
+  <div class="modal fade" id="fmyModal6" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ನಿಯಮ ಮತ್ತು ಶರತ್ತುಗಳು</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <p>1)ಈ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಇ-ಆಡಳಿತಕ್ಕಾಗಿ ಕೇಂದ್ರವು ವಿನ್ಯಾಸಗೊಳಿಸಿದೆ, ಅಭಿವೃದ್ಧಿಪಡಿಸಿದೆ ಮತ್ತು ನಿರ್ವಹಿಸುತ್ತದೆ.</p><br>
+
+          <p>2)ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿನ ವಿಷಯದ ನಿಖರತೆ ಮತ್ತು ಕರೆನ್ಸಿಯನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಎಲ್ಲಾ ಪ್ರಯತ್ನಗಳನ್ನು ಮಾಡಲಾಗಿದ್ದರೂ, ಅದನ್ನು ಕಾನೂನಿನ ಹೇಳಿಕೆಯಾಗಿ ನಿರ್ಣಯಿಸಬಾರದು ಅಥವಾ ಯಾವುದೇ ಕಾನೂನು ಉದ್ದೇಶಗಳಿಗಾಗಿ ಬಳಸಬಾರದು. ಯಾವುದೇ ಅಸ್ಪಷ್ಟತೆ ಅಥವಾ ಸಂದೇಹಗಳಿದ್ದಲ್ಲಿ, ಬಳಕೆದಾರರು ಇಲಾಖೆ (ಗಳು) ಮತ್ತು / ಅಥವಾ ಇತರ ಮೂಲ (ಗಳನ್ನು) ಯೊಂದಿಗೆ ಪರಿಶೀಲಿಸಲು / ಪರಿಶೀಲಿಸಲು ಮತ್ತು ಸೂಕ್ತ ವೃತ್ತಿಪರ ಸಲಹೆಯನ್ನು ಪಡೆಯಲು ಸೂಚಿಸಲಾಗುತ್ತದೆ.</p><br>
+
+          <p>3)ಯಾವುದೇ ಸಂದರ್ಭದಲ್ಲೂ ಈ ಇಲಾಖೆಯು ಯಾವುದೇ ಖರ್ಚು, ನಷ್ಟ ಅಥವಾ ಹಾನಿಗೆ, ಮಿತಿಯಿಲ್ಲದೆ, ಪರೋಕ್ಷ ಅಥವಾ ಪರಿಣಾಮಕಾರಿ ನಷ್ಟ ಅಥವಾ ಹಾನಿ, ಅಥವಾ ಯಾವುದೇ ಖರ್ಚು, ನಷ್ಟ ಅಥವಾ ಹಾನಿ, ಬಳಕೆಯಿಂದ ಉಂಟಾಗುವ, ಅಥವಾ ಬಳಕೆಯ ನಷ್ಟ, ದತ್ತಾಂಶದಿಂದ ಉಂಟಾಗುತ್ತದೆ. ಅಥವಾ ಈ ವೆಬ್‌ಸೈಟ್‌ನ ಬಳಕೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ</p><br>
+
+          <p>4)ಈ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳನ್ನು ನಿಯಂತ್ರಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅದಕ್ಕೆ ಅನುಗುಣವಾಗಿ ನಿರ್ಣಯಿಸಲಾಗುತ್ತದೆ
+          ಭಾರತೀಯ ಕಾನೂನುಗಳೊಂದಿಗೆ. ಈ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳ ಅಡಿಯಲ್ಲಿ ಉದ್ಭವಿಸುವ ಯಾವುದೇ ವಿವಾದ
+          ಭಾರತದ ನ್ಯಾಯಾಲಯಗಳ ವ್ಯಾಪ್ತಿಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ.</p><br>
+
+
+          <p>5)ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಪೋಸ್ಟ್ ಮಾಡಲಾದ ಮಾಹಿತಿಯು ಹೈಪರ್ಟೆಕ್ಸ್ಟ್ ಲಿಂಕ್‌ಗಳನ್ನು ಒಳಗೊಂಡಿರಬಹುದು ಅಥವಾ
+          ಸರ್ಕಾರೇತರ / ಖಾಸಗಿ ರಚಿಸಿದ ಮತ್ತು ನಿರ್ವಹಿಸುವ ಮಾಹಿತಿಯ ಪಾಯಿಂಟರ್‌ಗಳು
+          ಸಂಸ್ಥೆಗಳು. (ಇಲಾಖೆಯ ಹೆಸರು) ಈ ಲಿಂಕ್‌ಗಳು ಮತ್ತು ಪಾಯಿಂಟರ್‌ಗಳನ್ನು ಮಾತ್ರ ಒದಗಿಸುತ್ತಿದೆ
+          ನಿಮ್ಮ ಮಾಹಿತಿ ಮತ್ತು ಅನುಕೂಲಕ್ಕಾಗಿ. ನೀವು ಹೊರಗಿನ ಲಿಂಕ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿದಾಗ
+          ವೆಬ್‌ಸೈಟ್, ನೀವು ವೆಬ್‌ಸೈಟ್‌ನಿಂದ ಹೊರಬರುತ್ತಿದ್ದೀರಿ ಮತ್ತು ಒಳಪಟ್ಟಿರುತ್ತೀರಿ
+          ಹೊರಗಿನ ವೆಬ್‌ಸೈಟ್‌ನ ಮಾಲೀಕರು / ಪ್ರಾಯೋಜಕರ ಗೌಪ್ಯತೆ ಮತ್ತು ಭದ್ರತಾ ನೀತಿಗಳು.</p><br>
+
+
+          <p>6)ಅಂತಹ ಲಿಂಕ್ ಮಾಡಲಾದ ಪುಟಗಳ ಲಭ್ಯತೆಯನ್ನು ಸಂಬಂಧಪಟ್ಟ ಇಲಾಖೆ ಎಲ್ಲಾ ಸಮಯದಲ್ಲೂ ಖಾತರಿಪಡಿಸುವುದಿಲ್ಲ.</p><br>
+
+          <p>7)ಸಂಬಂಧಿತ ಇಲಾಖೆಯು, ಲಿಂಕ್ ಮಾಡಲಾದ ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿರುವ ಹಕ್ಕುಸ್ವಾಮ್ಯದ ವಸ್ತುಗಳ ಬಳಕೆಯನ್ನು ಅಧಿಕೃತಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಲಿಂಕ್ ಮಾಡಿದ ವೆಬ್‌ಸೈಟ್‌ನ ಮಾಲೀಕರಿಂದ ಅಂತಹ ಅಧಿಕಾರವನ್ನು ಕೋರಲು ಬಳಕೆದಾರರಿಗೆ ಸೂಚಿಸಲಾಗಿದೆ.</p><br>
+
+          <p>8)ಲಿಂಕ್ ಮಾಡಲಾದ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಭಾರತೀಯ ಸರ್ಕಾರಿ ವೆಬ್ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಅನುಸರಿಸುತ್ತವೆ ಎಂದು ಸಂಬಂಧಪಟ್ಟ ಇಲಾಖೆ ಖಾತರಿ ನೀಡುವುದಿಲ್ಲ</p>
+          <br>
+ 
+          <p>ಬಳಕೆದಾರರು ಮಾಹಿತಿಯನ್ನು ಭೇಟಿ ಮಾಡಿದರೆ ಮತ್ತು ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದರೆ ಅಥವಾ ಫೈಲ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದರೆ, ಈ ಕೆಳಗಿನ ಅಂಶಗಳು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಆಗಬಹುದು</p>
+          
+          <ul>
+            <li>- ನಿಮ್ಮ ಸೇವಾ ಡೊಮೇನ್, ಐಪಿ ಸಂಖ್ಯೆ, ಸಂದರ್ಶಕರು ನಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಹೇಗೆ ಪ್ರವೇಶಿಸಿದ್ದಾರೆ.</li>
+            <li>- ಬ್ರೌಸರ್‌ಗಳು ಮತ್ತು ಆಪರೇಟಿಂಗ್ ಸಿಸ್ಟಂಗಳು.</li> 
+            <li>- ಬಳಕೆದಾರರ ಭೇಟಿಗಳ ದಿನಾಂಕ ಮತ್ತು ಸಮಯ.</li> 
+            <li>- ಸಂದರ್ಶಕರು ಮಾಹಿತಿಯನ್ನು ಪ್ರವೇಶಿಸಿದ URL ಗಳು.</li>
+            <li>- ಬಳಕೆದಾರರು ಇತರ ವೆಬ್‌ಸೈಟ್‌ಗಳಿಂದ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿದ್ದರೆ, ಆ ವೆಬ್‌ಸೈಟ್‌ನ ವಿವರಗಳು</li>
+          </ul>
+ 
+
+         <h6>ಕುಕೀಸ್</h6>
+
+          <p> ನೀವು ಕೆಲವು ವೆಬ್‌ಸೈಟ್‌ಗಳಿಗೆ ಭೇಟಿ ನೀಡಿದಾಗ, ಅವರು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ / ಕುಕೀಸ್ ಎಂದು ಕರೆಯಲ್ಪಡುವ ಬ್ರೌಸಿಂಗ್ ಸಾಧನದಲ್ಲಿ ಸಣ್ಣ ಪ್ರಮಾಣದ ಸಾಫ್ಟ್‌ವೇರ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು. ಭವಿಷ್ಯದಲ್ಲಿ ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಗುರುತಿಸಲು ಕೆಲವು ಕುಕೀಗಳು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುತ್ತವೆ. ನಾವು ನಿರಂತರವಾದ ಕುಕೀಗಳನ್ನು ಅಥವಾ “ಪ್ರತಿ ಸೆಷನ್ ಕುಕೀಗಳನ್ನು” ಮಾತ್ರ ಬಳಸುತ್ತೇವೆ. ಈ ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ತಡೆರಹಿತ ಸಂಚರಣೆ ಒದಗಿಸುವಂತಹ ತಾಂತ್ರಿಕ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಪ್ರತಿ ಸೆಷನ್ ಕುಕೀಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತವೆ. ಈ ಕುಕೀಗಳು ಬಳಕೆದಾರರಲ್ಲಿ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ ಮತ್ತು ನೀವು ನಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಿಂದ ಹೊರಬಂದ ತಕ್ಷಣ ಅವುಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ. ಕುಕೀಸ್ ಡೇಟಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ರೆಕಾರ್ಡ್ ಮಾಡುವುದಿಲ್ಲ ಮತ್ತು ಅವುಗಳನ್ನು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನ ಹಾರ್ಡ್ ಡ್ರೈವ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ. ಕುಕೀಗಳನ್ನು ಮೆಮೊರಿಯಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ ಮತ್ತು ಸಕ್ರಿಯ ಬ್ರೌಸರ್ ಅಧಿವೇಶನದಲ್ಲಿ ಮಾತ್ರ ಲಭ್ಯವಿದೆ. ಮತ್ತೆ, ನಿಮ್ಮ ಬ್ರೌಸರ್ ಅನ್ನು ಒಮ್ಮೆ ಮುಚ್ಚಿದ ನಂತರ, ಕುಕೀ ಕಣ್ಮರೆಯಾಗುತ್ತದೆ.
+          </p>
+
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Privacy Policies -->
+  <div class="modal fade" id="fmyModal7" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಗೌಪ್ಯತೆ ನೀತಿಗಳು</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <h6>ಗೌಪ್ಯತೆ ನೀತಿ: (ವೆಬ್‌ಸೈಟ್ ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸದಿದ್ದಾಗ)</h6>
+            <p>             ನೀವು ನಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿದಾಗ ಹೆಸರುಗಳು ಅಥವಾ ವಿಳಾಸಗಳಂತಹ ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ನಾವು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ. ಆ ಮಾಹಿತಿಯನ್ನು ನಮಗೆ ಒದಗಿಸಲು ನೀವು ಆರಿಸಿದರೆ, ಮಾಹಿತಿಗಾಗಿ ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಪೂರೈಸಲು ಮಾತ್ರ ಇದನ್ನು ಬಳಸಲಾಗುತ್ತದೆ
+            </p>
+
+          <h6>ಬಳಕೆದಾರ ಮಾಹಿತಿ: </h6>
+            <p>             ಬಳಕೆದಾರರು ವೆಬ್‌ಸೈಟ್‌ಗಳಿಗೆ ಭೇಟಿ ನೀಡಿದಾಗ ನಾವು ತಾಂತ್ರಿಕ ಬಳಕೆದಾರರ ವಿವರಗಳನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ ಮತ್ತು ಬ್ರೌಸರ್ ಪ್ರಕಾರ, ಸರ್ವರ್ ಮತ್ತು ಡೊಮೇನ್, ದಿನಾಂಕ ಮತ್ತು ಸಮಯ, ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ ದಾಖಲೆಗಳ ವಿವರಗಳನ್ನು ದಾಖಲಿಸಲಾಗಿದೆ, ಈ ಮಾಹಿತಿಯನ್ನು ಸೈಟ್ ಅನ್ನು ಹೆಚ್ಚು ಮಾಡಲು ನಮಗೆ ಸಹಾಯ ಮಾಡಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ ನಿಮಗೆ ಉಪಯುಕ್ತವಾಗಿದೆ. ಈ ಡೇಟಾದೊಂದಿಗೆ, ನಮ್ಮ ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡುವವರ ಸಂಖ್ಯೆ ಮತ್ತು ನಮ್ಮ ಸಂದರ್ಶಕರು ಬಳಸುವ ತಂತ್ರಜ್ಞಾನದ ಬಗೆಗೆ ನಾವು ಕಲಿಯುತ್ತೇವೆ. ವ್ಯಕ್ತಿಗಳು ಮತ್ತು ಅವರ ಭೇಟಿಗಳ ಮಾಹಿತಿಯನ್ನು ನಾವು ಎಂದಿಗೂ ಟ್ರ್ಯಾಕ್ ಮಾಡುವುದಿಲ್ಲ ಅಥವಾ ದಾಖಲಿಸುವುದಿಲ್ಲ. (ನ್ಯಾಯಾಲಯವು ವಾರಂಟ್ ಮೂಲಕ ನಿರ್ದೇಶಿಸಿದಾಗ ಹೊರತುಪಡಿಸಿ)
+            </p>
+
+          <h6>ಕುಕೀಸ್:</h6>
+            <p>
+              ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಸಂದರ್ಶಕರು ಮಾಹಿತಿಯನ್ನು ಪಡೆದಾಗ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಸಾಫ್ಟ್‌ವೇರ್ ಅನ್ನು ಒದಗಿಸುತ್ತವೆ ಮತ್ತು ಅವುಗಳನ್ನು ಕುಕೀಸ್ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಅಂತಹ ಯಾವುದೇ ಕುಕೀಗಳನ್ನು ಬಳಸಲಾಗುವುದಿಲ್ಲ.
+            </p> 
+
+          <h6>ಇಮೇಲ್ ನಿರ್ವಹಣೆ: </h6>
+            <p>ಬಳಕೆದಾರರು ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ಆ ಕ್ಷಣಕ್ಕೆ ಮಾತ್ರ ಕಳುಹಿಸಿದಾಗ ಇಮೇಲ್‌ಗಳನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅವರಿಗೆ ಮಾಹಿತಿಯನ್ನು ನೀಡಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ. ಇವುಗಳನ್ನು ಯಾವುದೇ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಅಥವಾ ಸಂಪರ್ಕ ಪಟ್ಟಿಯಲ್ಲಿ ಸೇರಿಸಲು ಬಳಸಲಾಗುವುದಿಲ್ಲ. ಬಳಕೆದಾರರಿಗೆ ತಿಳಿಸದೆ, ಅದನ್ನು ಬಹಿರಂಗಪಡಿಸಲಾಗುವುದಿಲ್ಲ.
+            </p> 
+            
+          <h6>ವೈಯಕ್ತಿಕ ವಿವರಗಳ ಸಂಗ್ರಹ: </h6>
+            <p>ಬಳಕೆದಾರರು ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಕೇಳಿದರೆ ಅಥವಾ ಒದಗಿಸಿದರೆ, ಅದರ ಬಳಕೆಯ ವಿವರಗಳನ್ನು ಉಲ್ಲೇಖಿಸಲಾಗುತ್ತದೆ. ವಿವರಗಳ ಬಗ್ಗೆ ನಿಮಗೆ ತೃಪ್ತಿ ಇಲ್ಲದಿದ್ದರೆ ಅಥವಾ ಅನುಮಾನವಿದ್ದರೆ ಅಥವಾ ಅದರ ಬಗ್ಗೆ ಅಭಿಪ್ರಾಯವನ್ನು ನೀಡಲು ಬಯಸಿದರೆ, ನಿಯೋಜಿತ ವೆಬ್‌ಮಾಸ್ಟರ್‌ಗಳನ್ನು ‘ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ’ ವಿಭಾಗದ ಅಡಿಯಲ್ಲಿ ಸಂಪರ್ಕಿಸುವುದು ನಿಮಗೆ ಅಗತ್ಯವಾಗಿರುತ್ತದೆ
+
+           
+            ಗಮನಿಸಿ: ‘ವೈಯಕ್ತಿಕ ವಿವರಗಳು’ ಅಡಿಯಲ್ಲಿ ಪಡೆದ ಖಾಸಗಿ ಮಾಹಿತಿಯ ತುಣುಕುಗಳನ್ನು ಸುಲಭವಾಗಿ ಗುರುತಿಸಲು ಗುರುತು ಅಥವಾ ಅಂಶಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ.
+ 
+            </p> 
+            
+          <h6>ಕುಕೀಸ್: </h6>
+            <p>ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಸಂದರ್ಶಕರು ಮಾಹಿತಿಯನ್ನು ಪಡೆದಾಗ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಸಾಫ್ಟ್‌ವೇರ್ ಅನ್ನು ಒದಗಿಸುತ್ತವೆ ಮತ್ತು ಅವುಗಳನ್ನು ಕುಕೀಸ್ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಈ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಅಂತಹ ಯಾವುದೇ ಕುಕೀಗಳನ್ನು ಬಳಸಲಾಗುವುದಿಲ್ಲ. 
+            </p>     
+
+            <h6>ಬಳಕೆದಾರರು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿದರೆ.</h6>
+             <p>
+               1.ನಿಮಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುವುದನ್ನು ಹೊರತುಪಡಿಸಿ ಬೇರೆ ಯಾವುದೇ ಉದ್ದೇಶಕ್ಕಾಗಿ ನಾವು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ (ಉದಾಹರಣೆಗೆ, ನಿಮ್ಮ ಪ್ರಶ್ನೆಗಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು ಅಥವಾ ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಚಂದಾದಾರಿಕೆಗಳನ್ನು ಒದಗಿಸಲು). ಇ-ಮೇಲ್ ವಿಳಾಸ ಅಥವಾ ಅಂಚೆ ವಿಳಾಸದೊಂದಿಗೆ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುವ ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡುವುದು ಮತ್ತು ಅದನ್ನು ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ನಮಗೆ ಸಲ್ಲಿಸುವುದು ಮುಂತಾದ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ನಮಗೆ ಒದಗಿಸಲು ನೀವು ಆರಿಸಿದರೆ-ನಿಮ್ಮ ಸಂದೇಶಕ್ಕೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು ಮತ್ತು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನಾವು ಆ ಮಾಹಿತಿಯನ್ನು ಬಳಸುತ್ತೇವೆ ನೀವು ವಿನಂತಿಸಿದ ಮಾಹಿತಿ. ನಿಮ್ಮ ಪ್ರಶ್ನೆಯು ಆ ಏಜೆನ್ಸಿಗೆ ಸಂಬಂಧಪಟ್ಟಿದ್ದರೆ ಅಥವಾ ಕಾನೂನಿನ ಪ್ರಕಾರ ಅಗತ್ಯವಿದ್ದರೆ ಮಾತ್ರ ನೀವು ನಮಗೆ ನೀಡುವ ಮಾಹಿತಿಯನ್ನು ನಾವು ಬೇರೆ ಸರ್ಕಾರಿ ಏಜೆನ್ಸಿಯೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳುತ್ತೇವೆ.
+            </p>
+            <p>
+              2. ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ಎಂದಿಗೂ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ ಅಥವಾ ವಾಣಿಜ್ಯ ಮಾರುಕಟ್ಟೆಗಾಗಿ ವೈಯಕ್ತಿಕ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ರಚಿಸುವುದಿಲ್ಲ. ಯಾವುದೇ ಒಳಬರುವ ಪ್ರಶ್ನೆಗಳು ಅಥವಾ ಕಾಮೆಂಟ್‌ಗಳಿಗೆ ಸ್ಥಳೀಯ ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ನೀವು ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಒದಗಿಸಬೇಕಾದರೂ, ನೀವು ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಬೇಡಿ ಎಂದು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ.
+
+            </p>
+
+          
+           <h6>ವೆಬ್‌ಸೈಟ್ ಭದ್ರತೆ</h6>
+             <p>
+              1)ಎಲ್ಲರಿಗೂ ಮಾಹಿತಿಯನ್ನು ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡಲು, ಅನಧಿಕೃತ ಬಳಕೆದಾರರ ಪ್ರವೇಶವನ್ನು ತಡೆಯಲು, ಮಾಹಿತಿಗೆ ಹಾನಿಯಾಗದಂತೆ ಅಥವಾ ವಿರೂಪಗೊಳಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಲು ಮತ್ತು ವೆಬ್‌ಸೈಟ್‌ನ ಸುರಕ್ಷತೆಯನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಳ್ಳಲು, ಬಳಕೆದಾರರ ದಟ್ಟಣೆಯನ್ನು ನಿರ್ವಹಿಸಲು, ವಾಣಿಜ್ಯ ಸಾಫ್ಟ್‌ವೇರ್ ಪ್ರೋಗ್ರಾಮ್‌ಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. 
+             </p>
+
+             <p>
+               2)ಅಧಿಕೃತ ಕಾನೂನು ಸಂಸ್ಥೆಗಳನ್ನು ಹೊರತುಪಡಿಸಿ, ಸಂದರ್ಶಕ ಅಥವಾ ಬಳಕೆದಾರರನ್ನು ವೈಯಕ್ತಿಕವಾಗಿ ಗುರುತಿಸಲು ಯಾವುದೇ ಪ್ರಯತ್ನಗಳು ನಡೆಯುವುದಿಲ್ಲ.
+             </p>
+             
+             <p>3)ಸಂದರ್ಶಕರ ಮಾಹಿತಿಯು ನಿಯಮಿತ ಅಳಿಸುವಿಕೆಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ</p>
+             <p>4)ಅನಧಿಕೃತ ಬಳಕೆದಾರರು ಲಭ್ಯವಿರುವ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸುವುದಿಲ್ಲ ಅಥವಾ ಬದಲಾಯಿಸಬಾರದು ಅದು ಕಾನೂನು ಪರಿಣಾಮಗಳನ್ನು ಉಂಟುಮಾಡಬಹುದು ಮತ್ತು ಐಟಿ ಆಕ್ಟ್ (2000) ಅಡಿಯಲ್ಲಿ ದಂಡಕ್ಕೆ ಒಳಗಾಗಬಹುದು..</p>
+ 
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Help -->
+  <div class="modal fade" id="fmyModal8" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಸಹಾಯ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <h6 style="text-decoration: underline;">ಮಾಹಿತಿ ಹುಡುಕಾಟ:</h6>
+
+           <p> 
+            ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಮಾಹಿತಿಯನ್ನು ಪ್ರವೇಶಿಸಲು ಬಳಕೆದಾರರಿಗೆ ಸಹಾಯ ಮಾಡಲು, “ಇಲ್ಲಿ ಹುಡುಕಿ” ಆಯ್ಕೆಯನ್ನು ಒದಗಿಸಲಾಗಿದೆ. ಇಲ್ಲಿ, ಕನ್ನಡವನ್ನು ಟೈಪ್ ಮಾಡುವ ಆಯ್ಕೆಯನ್ನು ಲಭ್ಯಗೊಳಿಸಲಾಗಿದೆ. ಹುಡುಕುವಾಗ, ಯೂನಿಕೋಡ್ ಫಾಂಟ್ ಬಳಕೆ ಕಡ್ಡಾಯವಾಗಿದೆ. ಇಂಗ್ಲಿಷ್ನಲ್ಲಿ ಹುಡುಕುವ ಆಯ್ಕೆಯನ್ನು ಸಹ ಒದಗಿಸಲಾಗಿದೆ.
+            </p>
+
+          <h6 style="text-decoration: underline;">ಇಂಟರ್ನೆಟ್ ಪ್ರವೇಶ</h6> 
+
+            <p>
+              ಇಂಟರ್ನೆಟ್ ನಿಧಾನವಾಗಿದ್ದರೆ ಅಥವಾ ಲಭ್ಯವಿಲ್ಲದಿದ್ದರೆ, ವೆಬ್‌ಸೈಟ್ ವಿನ್ಯಾಸದಲ್ಲಿ ಮಾರ್ಪಾಡು ಇರಬಹುದು ಅಥವಾ ಕೆಲವು ಉಪಪುಟಗಳು ತೆರೆಯದಿರಬಹುದು.
+            </p>
+
+          </p><br>
+
+          <div class="scroll-table1"><div class="guide-text"><i class="fa fa-long-arrow-right"></i></div><div class="scroll-table"><table id="tablehelp" class="border" border="1"> <caption>Help of Various File formats :</caption> <tbody> <tr> <th>Document Type</th> <th>Download</th> </tr> <tr class="even"> <td>PDF content</td> <td> <img src="https://labour.gov.in/sites/default/files/pdf.png" alt="image"><a href="https://get.adobe.com/reader/" target="_BLANK" title="External site that opens in a new window"> Adobe Acrobat Reader</a> (External website that opens in a new window) </td> </tr> <tr class="odd"> <td>Word files</td> <td><img src="https://labour.gov.in/sites/default/files/Word.png" alt="image">  <a href="https://www.microsoft.com/downloads/en/details.aspx?familyid=3657CE88-7CFA-457A-9AEC-F4F827F20CAC&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Word Viewer (in any version till 2003)</a> - External website that opens in a new window<br> <a href="https://www.microsoft.com/downloads/en/details.aspx?FamilyID=c8378bf4-996c-4369-b347-73edbd03aaf0&amp;displaylang=EN" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Word (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Excel files</td> <td> <img src="https://labour.gov.in/sites/default/files/Excel.png" alt="image">  <a href="https://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D3727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Excel Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="https://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Excel (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="odd"> <td>PowerPoint presentations</td> <td><img src="https://labour.gov.in/sites/default/files/powerpoint.png" alt="image">  <a href="https://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D5727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> PowerPoint Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="https://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for PowerPoint (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Flash content</td> <td> <img src="https://labour.gov.in/sites/default/files/Flash.png" alt="image"> <a href="https://get.adobe.com/flashplayer/" target="_BLANK" title="External site that opens in a new window">Adobe Flash Player </a>(External website that opens in a new window) </td> </tr> <tr class="odd"><td>Audio Files</td> <td> <img src="https://labour.gov.in/sites/default/files/red.png" alt="image"> <a href="https://windows.microsoft.com/en-US/windows/downloads/windows-media-player" target="_BLANK" title="External site that opens in a new window">Windows Media Player </a>(External website that opens in a new window) </td> </tr> </tbody> </table></div></div>
+
+
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Screen Reader Access -->
+  <div class="modal fade" id="fmyModal9" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">ಸ್ಕ್ರೀನ್ ರೀಡರ್ ಪ್ರವೇಶ</h4>
+          <button type="button" class="btn btn-danger pull-right cls-btn btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="nicetext">        
+            <div class="innerpage">
+             <div id="skipCont" class="wrapper">
+       
+             <div class="row">                 
+              <div class="col-md-12 col-sm-9 col-xs-12">
+                <h1 class="heading" tabindex="0"></h1>
+                <div class="region region-content">
+                <div id="block-system-main" class="block block-system">
+
+    
+                <div class="content">
+                 <div class="panel-display panel-1col clearfix">
+                 <div class="panel-panel panel-col">
+                   <div>
+                    <div class="panel-pane pane-views pane-page">
+  
+                     <div class="pane-content">
+                       <div class="view view-page view-id-page view-display-id-block view-dom-id-9f59a9bf8ad69ecc93f01660ca78bb00">
+        
+                       <div class="view-content">
+                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+                         <div class="views-field views-field-body">        
+                          <div class="field-content">
+                            
+                              <p>  ಈ ಜಾಲತಾಣವು “ಜಗತ್ತಿನಾದ್ಯಂತ ಜಾಲ(World Wide Web Consortium -W3C)” ಮತ್ತು ವೆಬ್ ಕಂಟೆಂಟ್ ಅಕ್ಸೆಸಿಬಿಲಿಟಿ ಗೈಡ್ಲೈನ್ (WCAG) ಹಂತ 2.0 ಒಕ್ಕೂಟದಲ್ಲಿ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತದೆ. ದೃಷ್ಟಿದೌರ್ಬಲ್ಯ ಹೊಂದಿದವರು JAWS, NVDA, SAFA, Supernova and Window-Eyes ನಂತಹ ಮುಂತಾದ ಪರದೆ ವಾಚಕ ತಂತ್ರಾಂಶಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಜಾಲತಾಣದ ಮಾಹಿತಿಯನ್ನು ಧ್ವನಿ ರೂಪದಲ್ಲಿ ಪಡೆದುಕೊಳ್ಳಬಹು.
+                              ಈ ಕೆಳಗೆ ಸೂಚಿಸಲಾದ ಪಟ್ಟಿಯಲ್ಲಿ ಪರದೆ ವಾಚಕ ತಂತ್ರಾಂಶಗಳನ್ನು ಹಸರಿಸಲಾಗಿದೆ.</p>
+                              <br><br>
+                              <p>
+                              ಕೆಳಗಿನ ಟೇಬಲ್ ವಿವಿಧ ಸ್ಕ್ರೀನ್ ರೀಡರ್ಗಳ ಬಗ್ಗೆ ಮಾಹಿತಿಯನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ:</p>
+
+                            <div class="guide-text">
+                              <i class="fa fa-long-arrow-right"></i>
+                            </div>
+
+                            <div class="scroll-table1">  
+                              <table class="srtable" summary="Screen Reader">
+                                <tbody>
+                                  <tr>
+                                    <th>Sl. No.</th>
+                                    <th>Screen Reader</th>
+                                    <th>Website</th>
+                                    <th>Free/ Commercial</th>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Non Visual Desktop Access (NVDA)</td>
+                                    <td><a href="https://www.nvda-project.org/" target="_blank">https://www.nvda-project.org/</a><br> (External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>2</td>
+                                    <td>JAWS</td>
+                                    <td><a href="https://www.freedomscientific.com/products/software/jaws/" target="_blank">https://www.freedomscientific.com</a> <br>(External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Window-Eyes</td>
+                                    <td><a href="https://www.gwmicro.com/Window-Eyes/" target="_blank">https://www.gwmicro.com</a><br> (External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>4</td>
+                                    <td>System Access To Go</td>
+                                    <td><a href="https://www.satogo.com/" target="_blank">https://www.satogo.com/</a><br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>5</td>
+                                    <td>WebAnywhere</td>
+                                    <td><a href="https://webinsight.cs.washington.edu/" target="_blank">https://webinsight.cs.washington.edu/</a> <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+								  
+								  
+								  
+								    <tr>
+                                    <td>6</td>
+                                    <td>atoall</td>
+                                    <td><a title="This Will Make You Easy For Growth, Use Accessibility Tool" target="_blank" rel="noopener" href="https://atoall.com/all.asp"> <img height="64" width="64" alt="This Will Make You Easy For Growth, Use Accessibility Tool" src="https://atoall.com/all/512-accessibility-square.svg"></a>
+ <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>  
+                        </div>  
+                      </div>
+                    </div>
+  
+                </div>  
+               </div>
+  
+              </div>
+              </div>
+              </div>
+             </div>
+             </div>
+             </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+<!--------------------------------------------------------- Script -------------------------------------------------->
+
+ <script src="https://kerc.karnataka.gov.in/assets/front/js/colorchange.js"></script>
+ 
+  <script type="text/javascript">
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() 
+    {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 5000);
+
+
+  </script>
+ <!---------------------------------------------------- side menu ---------------------------------->
+  <script>
+    function openNav() 
+    {
+		
+      document.getElementById("mySidenav").style.display = "block";
+    }
+
+    function closeNav() 
+    {
+      document.getElementById("mySidenav").style.display = "none";
+    }
+  </script>
+  
+  <!--- side menu bar ------>
+  <div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <div style="text-align: center;">
+     <!-- <img src="images1/dult_logo.jpg" alt="BMTC_LOGO"  style="width: 100px;height: 100px;border-radius: 50%;" /> -->
+   </div>
+   <a href="#" style="padding-top: 20px;">ABOUT DULT</a>
+   <a href="#">ORGANISATIONAL STRUCTURE</a>
+   <a href="#">PROJECTS</a>
+   <a href="#"></a>
+  </div>
+<!-------------------------------------------------- Auto Slider ---------------------------------->
+<script type="text/javascript">
+  $(function () {
+    $('#homeCarousel').carousel({
+        interval:3000,
+        pause: "false"
+    });
+    $('#playButton').click(function () {
+        $('#homeCarousel').carousel('cycle');
+    });
+    $('#pauseButton').click(function () {
+        $('#homeCarousel').carousel('pause');
+    });
+});
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+$(".tablinks").click(function(e){
+		var target = $(this).data("target");
+		openCity(e, target);
+	});
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<!---------------------------------------------------- Gallery ------------------------------------------>
+<!---- Tab1 ----->
+
+<script>
+var gallery_obj;
+var slideIndex = 0;
+$(".gallery_buttons").click(function(){
+	var slideIndex = 0;
+	gallery_obj = this;
+	showSlides(slideIndex, this);
+});
+
+function plusSlides(n, obj) {
+  showSlides(slideIndex += n, gallery_obj);
+}
+
+function currentSlide(n, obj) {
+  showSlides(slideIndex = n, gallery_obj);
+}
+
+function showSlides(n, obj) {
+  var i;
+  var slider_id = $(obj).data("target");
+  var slides =  $("#"+slider_id).find(".mySlides");
+  var dots = $("#"+slider_id).find(".demo");
+  var captionText = $("#"+slider_id).find(".caption");
+  if (n >= slides.length) { slideIndex = 0; }
+  else if (n < 0) {slideIndex = slides.length-1; }
+  else { slideIndex = n; }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex].style.display = "block";
+  dots[slideIndex].className += " active";
+  captionText.innerHTML = dots[slideIndex].alt;
+}
+$("#defaultOpen").click();
+</script>
+
+
+
+
+
+<!-------------------------------- Sticky Header -------------------------------->
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<!----------------------------------------------- Owl JS ------------------------------------------>
+
+    <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/owl/owl.carousel.js"></script>
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/acc_search.js"></script>  
+  <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/custom.js"></script>   
+    <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/aos.js"></script>  
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/map/main.js"></script> 
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/rti_datatables/dataTables.jqueryui.min.js"></script> 
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/rti_datatables/jquery.dataTables.min.js"></script> 
+
+
+
+
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/tabswipe/js/custom.js"></script>   
+<script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/tabswipe/js/swipebundle.js"></script>   
+    <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/custom_fancybox.js"></script>  
+        <script type="text/javascript" src="https://kerc.karnataka.gov.in/assets/front/js/facncybox.js"></script>  
+
+<script>
+		</script> 
+</body>
+</html>
