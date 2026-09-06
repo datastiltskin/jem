@@ -1,0 +1,1206 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Press Release Page | Press Information Bureau
+</title><link href="css/style.css" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="alternate stylesheet" href="css/change.css" media="screen" title="change" /><link rel="alternate stylesheet" href="css/green.css" media="screen" title="green" /><link rel="alternate stylesheet" href="css/yellow.css" media="screen" title="yellow" /><link rel="stylesheet" type="text/css" href="css/prtint.css" media="print" /><link rel="stylesheet" href="css/style3.1.css" type="text/css" />
+
+
+      <script src="js/jquery.min.js" type="text/javascript"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" /><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+
+      <script type="text/javascript">
+            $(document).ready(function () {
+                  function getParameterByName(name) {
+                        var url = window.location.href;
+                        name = name.replace(/[\[\]]/g, '\\$&');
+                        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                              results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                  }
+                  // Get the IDs from the current page's URL
+                  let prid = parseInt(getParameterByName('PRID'), 10);
+
+                  if (!isNaN(prid) && prid > 0) {
+                        $.ajax({
+                              type: "POST",
+                              url: "AjaxMethod.aspx/UpdatePRHitCount",
+                              async: false,
+                              data: JSON.stringify({ 'PermId': prid }),
+                              contentType: "application/json; charset=utf-8",
+                              dataType: "json",
+                              success: function (response) {
+                                    console.log(response);
+                              },
+                              error: function (error) {
+                                    console.log("Error in AJAX request", error);
+                              }
+                        });
+                  } else {
+                        console.log("Invalid parameters:", prid);
+                  }
+
+            });
+      </script>
+      <style type="text/css">
+            .table-responsive {
+                  width: 100%;
+                  overflow-x: auto;
+            }
+
+            .banner {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  background-color: #000;
+                  color: #fff;
+                  padding: 20px;
+            }
+
+            full-width {
+                  width: 100%;
+            }
+
+            .logo-left, .logo-center, .countdown {
+                  display: flex;
+                  align-items: center;
+            }
+
+                  .logo-left img, .logo-center img {
+                        height: 70px;
+                  }
+
+            .countdown {
+                  text-align: center;
+                  background-color: #444;
+                  border-radius: 10px;
+                  padding: 10px;
+                  border: 2px solid grey;
+            }
+
+            .firstnumber {
+                  color: #000000;
+                  position: absolute;
+                  top: 50px;
+                  right: 90px;
+                  font-size: 30px;
+            }
+
+            .secondnumber {
+                  position: absolute;
+                  color: #000000;
+                  right: 45px;
+                  top: 50px;
+                  font-size: 30px;
+            }
+
+            .countdown .days {
+                  font-size: 35px;
+                  color: gold;
+            }
+
+            .countdown p {
+                  margin: 0;
+            }
+
+            .countdown .text {
+                  font-size: 16px;
+            }
+
+            a {
+                  word-break: break-all;
+            }
+
+            iframe, img {
+                  max-width: 100%;
+            }
+
+            @media(max-width:1199px) {
+                  .firstnumber {
+                        top: 40px;
+                        right: 72px;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 35px;
+                        top: 40px;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:990px) {
+                  .firstnumber {
+                        top: 25px;
+                        right: 54px;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 25px;
+                        top: 25px;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:768px) {
+                  .countdown, .days {
+                        font-size: 12px !important;
+                  }
+
+
+                  .firstnumber {
+                        top: 25%;
+                        right: 8%;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 4.5%;
+                        top: 25%;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:475px) {
+                  .countdown, .days {
+                        font-size: 10px !important;
+                        top: 20%;
+                  }
+
+                  .bannerimgdiv {
+                        padding: 0 !important;
+                  }
+
+                  .bannerimg {
+                        width: 108% !important;
+                  }
+            }
+      </style>
+      <script type="text/javascript">
+            $(function () {
+                  $("[id*=printPDF]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+            $(function () {
+                  $("[id*=printPDFEvent]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+      </script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112591026-1"></script>
+      <script>
+
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() { dataLayer.push(arguments); }
+
+            gtag('js', new Date());
+
+
+
+            gtag('config', 'UA-112591026-1');
+
+      </script>
+
+<meta property="og:title" content="PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL" /><meta property="og:url" content="www.pib.gov.in/Pressreleaseshare.aspx?PRID=2244915" /><meta property="og:description" content="Central Administrative Tribunal adjudicates grievances and disputes arising out of the conditions of" /><meta property="og:image" content="https:/pib.gov.in/images/indian-emblem.png" />
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="C4E7H-KSCMC-422L4-W3EM5-U36MF",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"C4E7H-KSCMC-422L4-W3EM5-U36MF";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="nllzbbaxhx3ys2uvp74q-f-928984151-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1825201","ak.ai":parseInt("1215205",10),"ak.ol":"0","ak.cr":23,"ak.ipv":4,"ak.proto":"h2","ak.rid":"a2cd2cf","ak.r":39601,"ak.a2":n,"ak.m":"dscb","ak.n":"ff","ak.cport":29625,"ak.gh":"23.61.247.133","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1788182521","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==YXa44HJ1eoxYCIGXenhqwUzt1G8jzBZ1ny4OVfKV0StniOK05AJjLIHlnh8GdPCipo6xu8ycw8Rfpbk+vGBsOqrEAZEeq1+noVoWvBBQ92t7NsAjiyha4Vvb5JAXkE1yg4oA2c5PpMy47v9P8+sZ1z+Wzpn9ErW0Y7j5omnJSy40JY9uhePgUxx51NPzU39RdEFcC0p9dx2TnNSyE7Ln8PyDYleX0c1Bnf2psatFz6Et0s5IbJmGCd6Lw1dHsEXRAkBrarjbhDr5m8Vkcd8x7ySxhDN+OlIOUiOcpNVrcqKz7lGFia3NumtCd9+C4/N1iIo4YpyFCBxjStWh+KZJK5eENxctugxqGOXX3K7d+gM4wZOOWksR7Z2m3DUnt+6Q5+PTV8bDtL9kvms4RJSJM4VnbjdQ7KAvGJhWVv66Lhw=","ak.pv":"9","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+      <form method="post" action="./PressReleasePage.aspx?PRID=2244915&amp;reg=48&amp;lang=2" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="sc_HiddenField" id="sc_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=b94hX14NMWluUQ9a73g0LYFvtKhY52TK8cbDkYB_F2GuPre4tdh-ebiiI4xuhXnRu6Q5dQjaQA4oN3PEeL0GrtKEyEY1&amp;t=638942408819057530" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=YwOa_0w_u3oCLFqmIIOf-XEz4GWZ1DuyQIpxIA4LVkywj39sZSps12NbK5wNl5XN9JF3m7d-ey7BFDgj6i0380qRQ5IMWCL54sYNVU1IjMmiOWpp0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=_shmykYI80CxCNR43Ii1nLy9PBGhuSe6SPp3CEYu0wDEuLqDAuIcsXVNhTIgQn0iyiwPorMflXuK31FftDX9GnB0m366MCEoOmY-eKQ3YAO9xRL0gIigzgRbtbVOgSQkJbJpFg2&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/PressReleasePage.aspx?_TSM_HiddenField_=sc_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.7.123%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a5a4df314-b4a2-4da2-a207-9284f1b1e96c%3ade1feab2%3af2c8e708%3a720a52bf%3af9cec9bc%3a589eaa30%3aa67c2700%3aab09e3fe%3a87104b7c%3a8613aea7%3a3202a5a2%3abe6fb298" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="59B53027" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="2onqUIZXNv35Bx0WvjFt+d5W91zzQLK04Shfdp8ngRkx7DMVFTirDCWLU5vQXHDfyIf4GrdLSL2J1V9IXn5BvUcqIvZq/MfuWh88CgIlD+sXuyVBw9SR8R1NeqNkVZrQE6PON+7ytZOybLvLglJ7UZLXUlgvWkG7vPFcmfBmcXn/jwcyADWcjeQJIwvo4TXJ8NPIfWeCGY8q4gxXa9oGnr5aXfl2aQhrczUdOrhacSvQcFi+DOTqRNu90QWP9Ww+JhO0HhRoBq0GIf61JFpGF4mDH+ISNT3AOmFmrk7dy38Q5oVi" />
+</div>
+                              
+            <div id="templateCss"></div>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sc', 'form1', ['tupdate12','update12'], [], [], 90, '');
+//]]>
+</script>
+
+            <input type="hidden" name="hfGridHtml" id="hfGridHtml" />
+            <div class="container" style='margin-bottom: 50px;'>
+                  <div id="accessories">
+
+                        
+                        <div class="pull-right" style="display: flex">
+                              <div id="voll"></div>
+                              <div id="vollDT"></div>
+                              
+                              
+<div class="print-icons">
+<input type="image" name="Print1$print" id="Print1_print" aria-label="Print" src="images/printer_icon.png" alt="print page button" style="padding: 5px 10px 5px 10px;" />
+</div>
+                        </div>
+                  </div>
+                  <input type="hidden" name="hydpermid" id="hydpermid" value="2244915" />
+                  
+
+
+
+                  <div class="innner-page-main-about-us-content-right-part">
+
+                        <div id="MinistryName" class="MinistryNameSubhead text-center">
+                              Ministry of Personnel, Public Grievances & Pensions
+                        </div>
+                        
+                        <div id="lg_g"><div class='log_oo'>  <img src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2021/aug/ph202183101.png' alt='azadi ka amrit mahotsav' /> </div></div>
+
+
+
+
+
+                        <div class="text-center event-heading-background">
+                              
+                              <h2 id="Titleh2">
+                                    PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL
+                              </h2>
+                              <h3 id="Subtitleh3">
+                                    <span id="ltrSubtitle"></span>
+                              </h3>
+                        </div>
+
+                        <div id="PrDateTime" class="ReleaseDateSubHeaddateTime text-center pt20">
+                              Posted On:
+                25 MAR 2026 1:32PM by PIB Delhi
+                        </div>
+                        
+                        <div class='pt20'>
+                        </div>
+                        <input type="hidden" name="hydphotoUrl" id="hydphotoUrl" />
+                        
+                        <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Central Administrative Tribunal adjudicates grievances and disputes arising out of the conditions of service of an employee appointed to the public services and posts in connection with the affairs of the Union and the States. The grievances include cases relating to pay, promotion, career progression, pension and other similar matters. <span style="color:#333333">Since its inception in the year 1985, the Central Administrative Tribunal (CAT) has received </span>9,88,738 <span style="color:#333333">cases for adjudication, out of which </span>9,19,157 <span style="color:#333333">cases have been disposed upto 31.01.2026, </span>leaving 69,581 cases under adjudication presently. The number of cases instituted, disposed and pending, year-wise, since the inception of the Tribunal are available in the Annual Report of DoP&amp;T, which can be accessed through the link <a href="url:https://dopt.gov.in/sites/default/files/AR2024-25English.pdf" target="_blank">url:https://dopt.gov.in/sites/default/files/AR2024-25English.pdf</a>.</span></span></p>
+
+<p style="margin-right:5.05pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">During the last 3 years i.e., from the year 2023 to 2025, the details of the cases instituted in all the benches of the Tribunal and disposals made year-wise are given below: -</span></span></p>
+
+<p style="margin-right:5.05pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Table: Details of cases instituted and disposed in CAT</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+	<tbody>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-left:0cm; margin-right:6.65pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Year</strong></span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; margin-right:0.25pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Cases instituted</strong></span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; margin-right:0.6pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Cases disposed</strong></span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; margin-right:0.4pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Disposal rate (%)</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-left:0cm; margin-right:7.2pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2023</span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">25,742</span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">31,672</span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">123</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-right:7.2pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2024</span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">32,998</span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">35,460</span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">108</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-right:7.2pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2025</span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">31,899</span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">34,318</span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">108</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-right:5.65pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Total</strong></span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; margin-right:0.15pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>90,639</strong></span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; margin-right:0.25pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>1,01,450</strong></span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; margin-right:0.15pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>112</strong></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="margin-left:0cm; margin-right:5.25pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The above records of disposal indicate a consistently high rate of disposal in all the benches of the Tribunal. To ensure expeditious disposal of all cases, the Tribunal has rolled out the cloud based Advance Case Information System (ACIS) comprising several new initiatives, such as Mobile App, SMS facility, online payment, hybrid video conference-based hearing, e- courts setup, scanning &amp; digitization of all records and e-filing of cases. </span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">This information was given by Union Minister of State (Independent Charge) for Science &amp; Technology and Earth Sciences, and Minister of State in the Prime Minister&rsquo;s Office, Personnel, Public Grievances and Pensions, Atomic Energy and Space, Dr. Jitendra Singh, in a written reply in the Lok Sabha on Wednesday.</span></span></p>
+
+<p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>***** </strong></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>NKR/AK/AV</strong></span></span></p>
+
+
+                        
+                        <div id="reel_pic">
+                        </div>
+
+
+
+                        
+                        <br />
+                        <span id="ReleaseId">(Release ID: 2244915)</span>
+                        <span id="lblViews">Visitor Counter : 701</span>
+                        <div>
+                              
+                        </div>
+                        
+
+                        <span id="lblRefPhoto"></span>
+
+                        <div class="BackgroundRelease">
+                              
+                        </div>
+                        <div>
+                              
+                        </div>
+                        <div class="ReleaseLang">Read this release in: 
+                        
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2245888' target="_blank">
+                                          Urdu </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2244976' target="_blank">
+                                          हिन्दी </a>
+                              
+                        </div>
+
+                        <div class="RelTag">
+                              <ul>
+                                    
+                              </ul>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div id="RelLink" class="RelLink">
+                              <ul>
+                                    
+                                    
+                              </ul>
+                        </div>
+                        <center>
+                              
+                        </center>
+                  </div>
+
+                  <div id="update12">
+	
+                              
+                              <input type="hidden" name="Hidden" id="Hidden" />
+                              <div id="P_CategoryManagement" class="ModalWindow" style="border-width:0px;height:60%;width:60%;overflow:auto;display: none">
+		
+                                    <div>
+                                          <input type="image" name="btnClose" id="btnClose" src="images/close_flat_icon.png" />
+                                    </div>
+                                    <div id="description">
+                                    </div>
+                                    <div class="text-center">
+                                          <h2>
+                                                
+                                                <br>
+                                                
+                                          </h2>
+                                    </div>
+                                    <br />
+                                    <div class="clear">
+                                    </div>
+                                    
+                              
+	</div>
+                        
+</div>
+            </div>
+            
+            <div id="PdfDiv" style="display: none;">
+                  <table width="100%">
+                        <tr>
+                              <td style="font-weight: 200; text-align: center">
+                                    Ministry of Personnel, Public Grievances & Pensions
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                                          PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                                          
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="text-align: center; font-size: 14px;">
+                                          Posted On:
+                        25 MAR 2026 1:32PM by PIB Delhi
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: left; font-size: 16px;">
+                                          <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Central Administrative Tribunal adjudicates grievances and disputes arising out of the conditions of service of an employee appointed to the public services and posts in connection with the affairs of the Union and the States. The grievances include cases relating to pay, promotion, career progression, pension and other similar matters. <span style="color:#333333">Since its inception in the year 1985, the Central Administrative Tribunal (CAT) has received </span>9,88,738 <span style="color:#333333">cases for adjudication, out of which </span>9,19,157 <span style="color:#333333">cases have been disposed upto 31.01.2026, </span>leaving 69,581 cases under adjudication presently. The number of cases instituted, disposed and pending, year-wise, since the inception of the Tribunal are available in the Annual Report of DoP&amp;T, which can be accessed through the link <a href="url:https://dopt.gov.in/sites/default/files/AR2024-25English.pdf" target="_blank">url:https://dopt.gov.in/sites/default/files/AR2024-25English.pdf</a>.</span></span></p>
+
+<p style="margin-right:5.05pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">During the last 3 years i.e., from the year 2023 to 2025, the details of the cases instituted in all the benches of the Tribunal and disposals made year-wise are given below: -</span></span></p>
+
+<p style="margin-right:5.05pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Table: Details of cases instituted and disposed in CAT</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+	<tbody>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-left:0cm; margin-right:6.65pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Year</strong></span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; margin-right:0.25pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Cases instituted</strong></span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; margin-right:0.6pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Cases disposed</strong></span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; margin-right:0.4pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Disposal rate (%)</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-left:0cm; margin-right:7.2pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2023</span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">25,742</span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">31,672</span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">123</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-right:7.2pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2024</span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">32,998</span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">35,460</span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">108</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-right:7.2pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2025</span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">31,899</span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">34,318</span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">108</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50.75pt">
+			<p style="margin-right:5.65pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Total</strong></span></span></p>
+			</td>
+			<td style="width:105.85pt">
+			<p style="margin-left:13.05pt; margin-right:0.15pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>90,639</strong></span></span></p>
+			</td>
+			<td style="width:105.65pt">
+			<p style="margin-left:13pt; margin-right:0.25pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>1,01,450</strong></span></span></p>
+			</td>
+			<td style="width:135.35pt">
+			<p style="margin-left:13.15pt; margin-right:0.15pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>112</strong></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="margin-left:0cm; margin-right:5.25pt; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The above records of disposal indicate a consistently high rate of disposal in all the benches of the Tribunal. To ensure expeditious disposal of all cases, the Tribunal has rolled out the cloud based Advance Case Information System (ACIS) comprising several new initiatives, such as Mobile App, SMS facility, online payment, hybrid video conference-based hearing, e- courts setup, scanning &amp; digitization of all records and e-filing of cases. </span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">This information was given by Union Minister of State (Independent Charge) for Science &amp; Technology and Earth Sciences, and Minister of State in the Prime Minister&rsquo;s Office, Personnel, Public Grievances and Pensions, Atomic Energy and Space, Dr. Jitendra Singh, in a written reply in the Lok Sabha on Wednesday.</span></span></p>
+
+<p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>***** </strong></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>NKR/AK/AV</strong></span></span></p>
+
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 100; text-align: left; font-size: 16px;">
+                                          (Release ID: 2244915)
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td style="font-weight: 200; text-align: center; font-size: 24px;"></td>
+                        </tr>
+                  </table>
+            </div>
+            <div class="clearfix">
+            </div>
+
+            
+
+            <div class="section1">
+                  <div id="frst_t">
+                        <div id="arr_rm"><div class='sticky-social_mb'><ul class='social_mb'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915' target='_blank'><li class='fb_b'   ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/facebook.jpg' alt='Share on facebook'  width='40' /></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915&text=PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL' target='_blank'><li class='twitter_r'  ><img  src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2023/aug/ph2023818240601.jpg' alt='Share on twitter' width='40' /> </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915' target='_blank'><li class='whatsapp_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/whatsapp1.png' alt='Share on whatsapp' width='40' /></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/email1.png' alt='Share on email'  width='40' /></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915&title=PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/linkedin.png' alt='Share on linkedin' width='40' /></li></a></ul></div></div>
+                  </div>
+                  <div id="second_t">
+                        <div id="sndr_rm"><div class='sticky-social'><ul class='social'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915' target='_blank'><li class='fb_b'   ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/facebook.jpg' alt='Share on facebook'  width='35' /></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915&text=PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL' target='_blank'><li class='twitter_r'  ><img  src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2023/aug/ph2023818240601.jpg' alt='Share on twitter' width='35' /> </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915' target='_blank'><li class='whatsapp_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/whatsapp1.png' alt='Share on whatsapp' width='35' /></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/email1.png' alt='Share on email'  width='35' /></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2244915&title=PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/linkedin.png' alt='Share on linkedin' width='35' /></li></a></ul></div></div>
+                  </div>
+            </div>
+            <input type="hidden" name="ltrTitlee" id="ltrTitlee" value="PARLIAMENT QUESTION: PENDING CASES UNDER CENTRAL ADMINISTRATIVE TRIBUNAL" />
+            <input type="hidden" name="ltrSubtitlee" id="ltrSubtitlee" />
+            <input type="hidden" name="ltrDescriptionn" id="ltrDescriptionn" value="&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Central Administrative Tribunal adjudicates grievances and disputes arising out of the conditions of service of an employee appointed to the public services and posts in connection with the affairs of the Union and the States. The grievances include cases relating to pay, promotion, career progression, pension and other similar matters. &lt;span style=&quot;color:#333333&quot;>Since its inception in the year 1985, the Central Administrative Tribunal (CAT) has received &lt;/span>9,88,738 &lt;span style=&quot;color:#333333&quot;>cases for adjudication, out of which &lt;/span>9,19,157 &lt;span style=&quot;color:#333333&quot;>cases have been disposed upto 31.01.2026, &lt;/span>leaving 69,581 cases under adjudication presently. The number of cases instituted, disposed and pending, year-wise, since the inception of the Tribunal are available in the Annual Report of DoP&amp;amp;T, which can be accessed through the link &lt;a href=&quot;url:https://dopt.gov.in/sites/default/files/AR2024-25English.pdf&quot; target=&quot;_blank&quot;>url:https://dopt.gov.in/sites/default/files/AR2024-25English.pdf&lt;/a>.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-right:5.05pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>During the last 3 years i.e., from the year 2023 to 2025, the details of the cases instituted in all the benches of the Tribunal and disposals made year-wise are given below: -&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-right:5.05pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Table: Details of cases instituted and disposed in CAT&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;table border=&quot;1&quot; bordercolor=&quot;#ccc&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; class=&quot;Table&quot; style=&quot;border-collapse:collapse&quot;>
+	&lt;tbody>
+		&lt;tr>
+			&lt;td style=&quot;width:50.75pt&quot;>
+			&lt;p style=&quot;margin-left:0cm; margin-right:6.65pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Year&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.85pt&quot;>
+			&lt;p style=&quot;margin-left:13.05pt; margin-right:0.25pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Cases instituted&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.65pt&quot;>
+			&lt;p style=&quot;margin-left:13pt; margin-right:0.6pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Cases disposed&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:135.35pt&quot;>
+			&lt;p style=&quot;margin-left:13.15pt; margin-right:0.4pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Disposal rate (%)&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:50.75pt&quot;>
+			&lt;p style=&quot;margin-left:0cm; margin-right:7.2pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2023&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.85pt&quot;>
+			&lt;p style=&quot;margin-left:13.05pt; margin-right:0cm; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>25,742&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.65pt&quot;>
+			&lt;p style=&quot;margin-left:13pt; margin-right:0cm; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>31,672&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:135.35pt&quot;>
+			&lt;p style=&quot;margin-left:13.15pt; margin-right:0cm; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>123&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:50.75pt&quot;>
+			&lt;p style=&quot;margin-right:7.2pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2024&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.85pt&quot;>
+			&lt;p style=&quot;margin-left:13.05pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>32,998&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.65pt&quot;>
+			&lt;p style=&quot;margin-left:13pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>35,460&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:135.35pt&quot;>
+			&lt;p style=&quot;margin-left:13.15pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>108&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:50.75pt&quot;>
+			&lt;p style=&quot;margin-right:7.2pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>2025&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.85pt&quot;>
+			&lt;p style=&quot;margin-left:13.05pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>31,899&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.65pt&quot;>
+			&lt;p style=&quot;margin-left:13pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>34,318&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:135.35pt&quot;>
+			&lt;p style=&quot;margin-left:13.15pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>108&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:50.75pt&quot;>
+			&lt;p style=&quot;margin-right:5.65pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Total&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.85pt&quot;>
+			&lt;p style=&quot;margin-left:13.05pt; margin-right:0.15pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>90,639&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:105.65pt&quot;>
+			&lt;p style=&quot;margin-left:13pt; margin-right:0.25pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>1,01,450&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:135.35pt&quot;>
+			&lt;p style=&quot;margin-left:13.15pt; margin-right:0.15pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>112&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+	&lt;/tbody>
+&lt;/table>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;margin-left:0cm; margin-right:5.25pt; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>The above records of disposal indicate a consistently high rate of disposal in all the benches of the Tribunal. To ensure expeditious disposal of all cases, the Tribunal has rolled out the cloud based Advance Case Information System (ACIS) comprising several new initiatives, such as Mobile App, SMS facility, online payment, hybrid video conference-based hearing, e- courts setup, scanning &amp;amp; digitization of all records and e-filing of cases. &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>This information was given by Union Minister of State (Independent Charge) for Science &amp;amp; Technology and Earth Sciences, and Minister of State in the Prime Minister&amp;rsquo;s Office, Personnel, Public Grievances and Pensions, Atomic Energy and Space, Dr. Jitendra Singh, in a written reply in the Lok Sabha on Wednesday.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>***** &lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>NKR/AK/AV&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+" />
+            <script type="text/javascript">
+                  var mPlayer = document.getElementById("background_music");
+                  var mPlayAction = document.getElementById("playbutton");
+
+                  var isPlaying = false;
+
+                  function playAudio() {
+                        mPlayer.play();
+                        isPlaying = true;
+                        document.getElementById('stopA').style.display = "block";
+                        document.getElementById('playA').style.display = "none";
+                  }
+
+                  function pauseAudio() {
+                        mPlayer.pause();
+                        isPlaying = false;
+                        document.getElementById('playA').style.display = "block";
+                        document.getElementById('stopA').style.display = "none";
+                  }
+                  //function HandleAudio() {
+                  //    if (isPlaying == true) {
+                  //        //Playing already Pause it
+                  //        pauseAudio();
+                  //    } else {
+                  //        //Play the music
+                  //        playAudio();
+                  //    }
+                  //}
+            </script>
+            <script type="text/javascript">
+                  var synth = window.speechSynthesis;
+
+            
+                  function CleanHtml(html) {
+
+                        html = html.replace(/<script[\s\S]*?<\/script>/gi, '');
+
+                        return html;
+                  }
+                  function stripHtml(html) {
+                        let tmp = document.createElement("DIV");
+                        tmp.innerHTML = CleanHtml(html);
+                        return tmp.textContent || tmp.innerText || "";
+                  }
+            </script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        //for responsive tables
+                        $("table").each(function () {
+                              if (!$(this).closest(".table-responsive").length) {
+                                    $(this).wrap("<div class='table-responsive'></div>");
+                              }
+                        });
+
+                        var width = $(window).width();
+                        if (width < 768) {
+
+                              // Extra Small Device
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                              // Small Device
+
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Medium Device
+
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Large Device
+
+                        }
+                  });
+            </script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        var width = $(window).width();
+                        if (width < 768) {
+
+                              // Extra Small Device
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                              // Small Device
+
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Medium Device
+
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Large Device
+
+                        }
+                  });
+            </script>
+            
+            <style type="text/css">
+                  @media print {
+                        .sticky-social, .sticky-social_mb, .pull-right, #printPDF {
+                              display: none !important;
+                        }
+                  }
+
+                  .f_vl {
+                        padding-right: 30px;
+                        font-size: 17px;
+                        cursor: pointer;
+                  }
+
+                  .log_oo {
+                        // width: 20%;
+                        display: flex;
+                        justify-content: space-between;
+                  }
+
+                        .log_oo img {
+                              width: 150px;
+                              /*width: 100%;
+                    height: auto;*/
+                        }
+
+                  .sticky-social_mb {
+                        position: fixed;
+                        bottom: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                        width: 100%;
+                  }
+
+                  .social_mb {
+                        list-style: none;
+                        display: flex;
+                        width: 100%;
+                        margin-bottom: -8px;
+                  }
+
+                        .social_mb a {
+                              padding: 8px 0px;
+                              font-size: 30px;
+                              transition: all 0.8s ease-in-out;
+                              width: 20% !important;
+                              text-align: center;
+                        }
+            </style>
+            <style type="text/css">
+                  .section1 {
+                        position: relative;
+                        padding: 10px 0px;
+                        width: 100%;
+                  }
+
+
+
+                  .sticky-social {
+                        position: fixed;
+                        top: 20px;
+                        left: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                  }
+
+                  .social {
+                        list-style: none;
+                  }
+
+                        .social a li {
+                              padding: 8px 12px;
+                              font-size: 25px;
+                              transition: all 0.8s ease-in-out;
+                        }
+
+                              .social a li:hover {
+                                    margin-right: -30px;
+                                    box-shadow: 2px 5px 10px grey;
+                              }
+
+                                    .social a li:hover .fa {
+                                          margin-left: 20px;
+                                    }
+
+                  .fb_b {
+                        /* background-color: rgb(59, 89, 152);*/
+                        background-color: rgba(65,103,178,255);
+                  }
+
+                  .twitter_r {
+                        /* background-color: rgb(29, 161, 242);*/
+                        background-color: #000000;
+                  }
+
+                  .whatsapp_r {
+                        /* background-color: rgb(77, 194, 71);*/
+                        background-color: rgba(13,191,67,255);
+                  }
+
+                  .fa-envelope_r {
+                        /* background-color: rgb(219, 68, 55);*/
+                        background-color: #e2123d;
+                  }
+
+                  .fa-linkedin_r {
+                        background-color: rgb(0, 119, 181);
+                  }
+            </style>
+            <style type="text/css">
+                  @media only screen and (max-device-width: 767px) {
+                        p span img {
+                              max-width: 90% !important;
+                              height: auto !important;
+                        }
+
+                        p img {
+                              max-width: 90% !important;
+                              height: auto !important;
+                        }
+
+                        h2 {
+                              font-size: 20px !important;
+                              font-weight: 600 !important;
+                        }
+
+                        h3 {
+                              font-size: 18px !important;
+                              font-weight: 600 !important;
+                        }
+                  }
+            </style>
+            <style type="text/css">
+                  /* === Film Roll Badge Styling(IFFI2025 countdown) === */
+                  .film-roll-badge {
+                        position: absolute;
+                        top:82%;
+                        right: 20px;
+                        width: 230px;
+                        height: 70px;
+                        background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 18px, #6e2b8b 18px, #6e2b8b 36px );
+                        border-top: 8px solid #9a2375;
+                        border-bottom: 8px solid #9a2375;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                        animation: moveFilm 8s linear infinite;
+                        z-index: 10;
+                  }
+
+                        /* film sprocket holes */
+                        .film-roll-badge::before,
+                        .film-roll-badge::after {
+                              content: "";
+                              position: absolute;
+                              width: 100%;
+                              height: 10px;
+                              background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 10px, #fff 10px, #fff 20px );
+                              left: 0;
+                              z-index: 2;
+                        }
+
+                        .film-roll-badge::before {
+                              top: -4px;
+                        }
+
+                        .film-roll-badge::after {
+                              bottom: -4px;
+                        }
+
+                  .film-roll-inner {
+                        position: relative;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        animation: flicker 2s infinite ease-in-out;
+                  }
+
+                  .countdown-text {
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        color: #fff;
+                        text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 10px #000;
+                        white-space: nowrap;
+                  }
+
+                  /* === Animations === */
+                  @keyframes moveFilm {
+                        0% {
+                              background-position: 0 0;
+                        }
+
+                        100% {
+                              background-position: 120px 0;
+                        }
+                  }
+
+                  @keyframes flicker {
+                        0%, 100% {
+                              opacity: 1;
+                        }
+
+                        50% {
+                              opacity: 0.9;
+                        }
+
+                        25% {
+                              opacity: 0.95;
+                        }
+
+                        75% {
+                              opacity: 0.85;
+                        }
+                  }
+
+                  /* === Responsive Adjustments === */
+                  @media (max-width: 1500px) {
+                        .film-roll-badge {
+                              top: 68%;
+                              right: 18px;
+                              /* width: 220px; */
+                              height: 65px;
+                              font-size: 0.85rem;
+                        }
+
+                        .press-section {
+                              margin-top: 35px;
+                        }
+                  }
+
+                  @media (max-width: 992px) {
+                        .film-roll-badge {
+                              top: 52%;
+                              right: 10px;
+                               width: 200px; 
+                              height: 60px;
+                        }
+                  }
+
+                  @media (max-width: 768px) {
+                        .film-roll-badge {
+                              top: 56%;
+                              right: 10px;
+                               width: 124px; 
+                              height: 55px;
+                        }
+
+                        .countdown-text {
+                              font-size: 0.9rem;
+                        }
+                  }
+
+                  @media (max-width: 576px) {
+                        .film-roll-badge {
+                              top: 59%;
+                              right: 5px;
+                              /* width: 160px; */
+                              height: 50px;
+                        }
+
+                        .countdown-text {
+                              font-size: 0.85rem;
+                        }
+                  }
+            </style>
+          <script type="text/javascript">
+                const festivalStart = new Date("2025-11-20T00:00:00").getTime();
+                const festivalEnd = new Date("2025-11-28T23:59:59").getTime();
+
+                const countdownElement = document.getElementById("countdown");
+
+                const interval = setInterval(() => {
+                      const now = new Date().getTime();
+
+                      // BEFORE FESTIVAL — show days + hours left
+                      if (now < festivalStart) {
+                            const diff = festivalStart - now;
+                            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                            countdownElement.innerHTML = `
+              ${days} Day${days !== 1 ? 's' : ''} 
+              ${hours} Hour${hours !== 1 ? 's' : ''} to go
+          `;
+
+                      }
+
+                      // DURING FESTIVAL — show 56th IFFI - Day X
+                      else if (now >= festivalStart && now <= festivalEnd) {
+                            const dayNumber = Math.floor((now - festivalStart) / (1000 * 60 * 60 * 24)) + 1;
+                            countdownElement.innerHTML = `56th IFFI - Day ${dayNumber}`;
+                      }
+
+                      // AFTER FESTIVAL — new message
+                      else {
+                            countdownElement.innerHTML = `✨ IFFI closes but never ends…`;
+
+                            // Width change logic
+                            const elements = document.querySelectorAll('.film-roll-badge');
+                            elements.forEach(el => el.style.width = "350px");
+
+                            clearInterval(interval);
+                      }
+
+                }, 1000);
+          </script>
+ <script type="text/javascript">
+
+               const miffStart = new Date("2026-06-15T00:00:00").getTime();
+               const miffEnd = new Date("2026-06-15T23:59:59").getTime();
+
+               const miffElement = document.getElementById("miff");
+
+               if (miffElement) {
+
+                   const miffInterval = setInterval(() => {
+
+                       const now = new Date().getTime();
+
+                       // Before MIFF
+                       if (now < miffStart) {
+
+                           const diff = miffStart - now;
+                           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                           const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+        
+
+                   /*  miffElement.innerHTML = `${days} Day${days !== 1 ? 's' : ''} ${hours} Hour${hours !== 1 ? 's' : ''} to MIFF`;*/
+                           miffElement.innerHTML = `${days} Day${days === 1 ? '' : 's'} to MIFF ...`;
+
+
+                     }
+
+                       // During MIFF
+                       else if (now >= miffStart && now <= miffEnd) {
+
+                           const dayNumber =
+                               Math.floor((now - miffStart) / (1000 * 60 * 60 * 24)) + 1;
+
+                           miffElement.innerHTML = `19th MIFF - Day ${dayNumber}`;
+                       }
+
+                       // After MIFF
+                       else {
+
+                           miffElement.innerHTML = `✨ MIFF concludes, cinema lives on...`;
+
+                           document.querySelectorAll('.film-roll-badge')
+                               .forEach(el => el.style.width = "350px");
+
+                           clearInterval(miffInterval);
+                       }
+
+                   }, 1000);
+               }
+
+</script>
+
+      
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("sc_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"P_CategoryManagement","dynamicServicePath":"/PressReleasePage.aspx","id":"mpe"}, null, null, $get("Hidden"));
+});
+//]]>
+</script>
+<input type="hidden" name="__ncforminfo" value="R4t09nSFhSqL24R_lzxn1AF9ywvMcMart4hvRPanwRPS9McC6u5Lv-yLMgjqcH4Pgb6kMgC3xdw4jZ8kCDCPOOwi9D4nFSvo4HTg1C_OD5Z8i9L0U5kohg=="/></form>
+</body>
+</html>
+
