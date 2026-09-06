@@ -26,7 +26,9 @@ prompts:
     created: '2026-08-20'
     superseded_by: null
     revision_trigger: null
-    linked_run_ids: []          # populate as Prajna/Agriya runs land
+    linked_run_ids:
+      - deepseek__verify-trib-01__prajna__20260831_131656
+      - codex__verify-trib-01__agriya__20260906_042259
 
   - prompt_id: rater-card-agriya-codex
     version: v1
@@ -36,8 +38,12 @@ prompts:
     status: active
     created: '2026-08-20'
     superseded_by: null
-    revision_trigger: null
-    linked_run_ids: []
+    revision_trigger: >
+      2026-09-06 Agriya email: run is for pipeline exercise, not blinded
+      calibration (peer summary exposed; model/settings metadata unavailable).
+      See ledger/comments/agriya_20260906_handoff.md.
+    linked_run_ids:
+      - codex__verify-trib-01__agriya__20260906_042259
 
   - prompt_id: rater-card-prajna-deepseek
     version: v1
@@ -48,7 +54,22 @@ prompts:
     created: '2026-08-20'
     superseded_by: null
     revision_trigger: null
-    linked_run_ids: []
+    linked_run_ids:
+      - deepseek__verify-trib-01__prajna__20260831_131656
+
+  - prompt_id: inter-model-consensus
+    version: v1
+    track: verification
+    purpose: >
+      Deterministic join of independent rater CSVs (agreement × diversity).
+      Writes ledger/runs/inter-model__*.jsonl. Never promotes this sample.
+    path: scripts/harness/inter_model.py
+    status: active
+    created: '2026-09-06'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids:
+      - inter-model__verify-trib-01__dso__20260906T122024Z
 
   - prompt_id: consensus-harness
     version: v1
