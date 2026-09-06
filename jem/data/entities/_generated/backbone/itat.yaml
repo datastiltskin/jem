@@ -81,3 +81,18 @@ judge_strength:
   source_type: Tribunal_Report
   source_url: https://itat.gov.in/
   notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+report_publication:
+  publishes_reports: 'no'
+  statutorily_required: unknown
+  data_as_of: '2026-09-01'
+  source_type: GoIWebsite
+  source_url: https://itat.gov.in/page/rti_orders_circulars
+  notes: No annual/case-activity report found after checking (1) itat.gov.in — the RTI Orders & Circulars
+    page lists only a one-off "Self Appraisal Report ... for the year (2022-23)" (an RTI-transparency
+    compliance document, dated 18-Mar-2024, not a recurring annual report) plus a page of retired-member
+    speeches/essays, no "Annual Report" section; (2) Income Tax Department / CBDT — pending-appeal statistics
+    before ITAT are published by the Department itself (e.g. incometaxindia.gov.in time-series data, and
+    a Lok Sabha annexure on income-tax-dispute pendency) as part of Dept-level reporting, not an ITAT-authored
+    report; (3) Dept. of Justice quarterly vacancy/pendency data covers ITAT numbers but is a DoJ product,
+    not published by ITAT. Income Tax Act 1961 s.252 (constituting ITAT) carries no annual-report-to-Parliament
+    clause — statutorily_required left unknown, not no.

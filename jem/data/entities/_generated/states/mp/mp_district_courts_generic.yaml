@@ -2,6 +2,7 @@
 id: mp_district_courts_generic
 name: District Courts — MP (remaining districts)
 type: SubordinateCivilCourt
+is_generic_rollup: true
 cluster: subordinate_courts
 level_of_government: State
 jurisdiction_scope:

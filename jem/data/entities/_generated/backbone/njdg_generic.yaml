@@ -1,6 +1,7 @@
 id: njdg_generic
 name: National Judicial Data Grid (Generic)
 type: ExecutiveBody
+is_generic_rollup: true
 cluster: digital_infrastructure
 level_of_government: Central
 jurisdiction_scope:

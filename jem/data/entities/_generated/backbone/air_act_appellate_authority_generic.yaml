@@ -4,6 +4,7 @@ abbreviation: Air Act AA
 aliases:
   - Appellate Authority under Air (Prevention and Control of Pollution) Act 1981
 type: RegulatoryBodyQJ
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: Central
 jurisdiction_scope:

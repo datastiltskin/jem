@@ -87,3 +87,21 @@ sources:
     url: https://www.pfrda.org.in
     type: GoIWebsite
     accessed_date: "2025-01-15"
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: 'yes'
+  statutorily_required_source: https://pfrda.org.in/documents/33652/103065/PFRDA+Act+-+2013.pdf
+  report_type: annual_report
+  last_published: '2025-12-18'
+  last_published_url: https://pfrda.org.in/documents/33652/146225/Annual%2BReport%2B2024-25%2BEnglish.pdf
+  expected_cadence: annual
+  data_as_of: '2025-03-31'
+  source_type: AnnualReport
+  source_url: https://pfrda.org.in/research-publications/annual-reports
+  notes: PFRDA Act 2013 s.46(2)-(3) requires PFRDA to submit an annual report to the Central Government
+    within 9 months of FY close, laid before each House of Parliament, per the PFRDA (Reports, Returns
+    and Statements) Rules 2015 (rr.7-9). PFRDA complies with a full public archive back to 2018-19 at
+    pfrda.org.in/research-publications/annual-reports. last_published (2025-12-18) is read directly from
+    that listing page's own "Issue Date" field for the 2024-25 (English) edition; both the listing page
+    and the direct PDF verified live. Statutory-duty citation uses PFRDA's own hosted copy of the Act
+    (pfrda.org.in) rather than a third-party mirror.

@@ -8,7 +8,8 @@ Repository: **https://github.com/datastiltskin/jem** (public)
 - [x] Push `main` with `.github/` scaffolding
 - [x] Description: *Open structural map of India's judicial ecosystem: institutional capacity, relationships, and systemic gaps.*
 - [x] Topics: `india`, `judiciary`, `open-data`, `legal-tech`
-- [x] Homepage: https://friedso.com/apps/jem/
+- [x] Homepage: https://friedso.com/apps/jem/ (canonical **map**)
+- [ ] After merging the dashboard: **Settings → Pages → Source: GitHub Actions**, then set About → Website to `https://datastiltskin.github.io/jem/` (community **orchestration** page). See `jem/docs/GITHUB_PAGES.md`.
 - [x] Maintainer contacts: [@dso6060](https://github.com/dso6060), [@Prajna1999](https://github.com/Prajna1999), [@agriyakhetarpal](https://github.com/agriyakhetarpal) (GitHub Issues and security advisories only, no public email)
 - [ ] Licence: MIT for code, with a note in the README that `jem/data/` is CC0
 

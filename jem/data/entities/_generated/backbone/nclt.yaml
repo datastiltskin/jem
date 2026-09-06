@@ -75,3 +75,21 @@ judge_strength:
   source_type: Tribunal_Report
   source_url: https://nclt.gov.in/
   notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: unknown
+  report_type: annual_report
+  last_published_url: https://nclt.gov.in/sites/default/files/2026-02/AR%2024-25%20web_file.pdf
+  expected_cadence: annual
+  data_as_of: '2025-03-31'
+  source_type: AnnualReport
+  source_url: https://nclt.gov.in/sites/default/files/2026-02/AR%2024-25%20web_file.pdf
+  notes: 'NCLT publishes its own Annual Report on nclt.gov.in — verified live: "Annual Report 2024-25"
+    (covering FY 2024-25, includes "From the Desk of the Hon''ble President" and a performance overview)
+    and the prior "Annual Report 2023-2024" (nclt.gov.in/sites/default/files/2026-02/AR23-24%20web_file.pdf,
+    also live). Both are hosted under a /2026-02/ upload path, suggesting a Feb 2026 site refresh/re-upload
+    of both editions rather than two closely-timed separate publications — the document text itself does
+    not carry an explicit publication/signing date, so last_published is left null rather than guessed;
+    data_as_of instead records the FY-2024-25 reporting period end. Companies Act 2013 Ch. XXVII (NCLT/NCLAT
+    provisions, ss.408-434) and IBC 2016 s.60 contain no annual-report-to-Parliament clause of the kind
+    regulators have (cf. SEBI Act s.18) — statutorily_required left unknown, not no.'

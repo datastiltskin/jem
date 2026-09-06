@@ -8,6 +8,7 @@ aliases:
 - District Court Martial
 - Summary General Court Martial
 type: SpecialCourt
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: Central
 jurisdiction_scope:
