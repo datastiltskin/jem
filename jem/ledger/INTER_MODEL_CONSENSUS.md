@@ -5,7 +5,8 @@ Rung 2 of the ladder in `prompts/02_CONSENSUS_HARNESS_SPEC.md`. This branch
 together: Cursor intra-run harness, Prajna scrape scaffolding, Prajna
 DeepSeek table, Agriya Codex table.
 
-Not `main`. Nothing here writes canonical YAML.
+Not `main`. The inter-model join does not write canon. The 2026-09-08 apply
+pass writes unambiguous cells only, after printing the decision-gate.
 
 ## Run
 
@@ -20,7 +21,17 @@ python3 scripts/harness/reconcile.py --replay
 # inter-model join of the two verify-trib-01 tables
 python3 scripts/harness/inter_model.py --dry-run   # summary only
 python3 scripts/harness/inter_model.py             # write ledger + CSV
+
+# gated apply (prints the decision-gate BEFORE any YAML write)
+python3 scripts/harness/apply_consensus.py --gate-only
+python3 scripts/harness/apply_consensus.py --apply
+python3 scripts/derive.py
+python3 scripts/harness/expert_packets.py
+python3 scripts/build.py --output build/graph.staging.json
 ```
+
+Static dashboard: serve `ledger/` and open `dashboard/consensus.html`
+(JSON at `ledger/derived/consensus_dashboard.json`).
 
 The second command writes:
 

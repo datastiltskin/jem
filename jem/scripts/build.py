@@ -302,6 +302,17 @@ def load_entity_counts(data_dir: Path) -> Dict:
     return {}
 
 
+def load_value_history(data_dir: Path) -> Dict:
+    """Derived projection. friedso keys on (entity_id, field_path)."""
+    path = data_dir / "derived" / "value_history.yaml"
+    if not path.exists():
+        return {}
+    data = load_yaml_file(path)
+    if data and isinstance(data, dict):
+        return data.get("value_history", {})
+    return {}
+
+
 # ── Timeline Events ───────────────────────────────────────────────────────────
 
 TIMELINE_EVENTS = [
@@ -482,6 +493,8 @@ def build_graph_json(
     print("\nStep 4: Loading derived scores...")
     scores = load_derived_scores(data_dir)
     print(f"  Loaded scores for {len(scores)} entities")
+    value_history = load_value_history(data_dir)
+    print(f"  Loaded value_history for {len(value_history)} entities")
 
     print("\nStep 5: Merging scores into entities...")
     entity_lookup = {}
@@ -562,6 +575,7 @@ def build_graph_json(
             "is_generic_rollup": bool(e.get("is_generic_rollup", False)),
             "unverified_fields": e.get("unverified_fields", []),
             "derived": e.get("derived", {}),
+            "value_history": value_history.get(e.get("id"), {}),
             "funding_source": (e.get("funding") or {}).get("primary_source"),
             "funding_ministry": (e.get("funding") or {}).get("ministry_responsible"),
             "audited_by": (e.get("audit") or {}).get("audited_by"),

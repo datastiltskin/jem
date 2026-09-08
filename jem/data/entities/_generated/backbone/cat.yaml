@@ -35,9 +35,15 @@ audit:
   audit_type: CAG_Statutory
   audit_report_public: true
 data_quality: partial
-data_quality_notes: "Appointment block verified against AT Act 1985 and TRA 2021. Pre-2021 tenure was 5 years or age 65/62\
-  \ — TRA 2021 now governs. ministry_responsible 'ministry_personnel_dopt' assumed — verify in graph. case_volume and judge_strength\
-  \ null — CAT Annual Report or DoJ data in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
+data_quality_notes: "Appointment block verified against AT Act 1985 and TRA 2021. Pre-2021\
+  \ tenure was 5 years or age 65/62 — TRA 2021 now governs. ministry_responsible 'ministry_personnel_dopt'\
+  \ assumed — verify in graph. case_volume and judge_strength null — CAT Annual Report or\
+  \ DoJ data in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached\
+  \ | verify-trib-01: disposal_rate nulled (contamination); replacement held for expert review.\
+  \ | verify-trib-01: disposed_last_year nulled (contamination); replacement held for expert\
+  \ review. | verify-trib-01: filed_last_year nulled (contamination); replacement held for\
+  \ expert review. | verify-trib-01: NJDG source stamp stripped (non-eCourts body). | verify-trib-01:\
+  \ pending_cases nulled (contamination); replacement held for expert review."
 sources:
 - label: Administrative Tribunals Act 1985 — India Code
   url: https://www.indiacode.nic.in/bitstream/123456789/1832/1/AA1985__13admin.pdf
@@ -51,19 +57,15 @@ sources:
   url: https://dopt.gov.in/cat
   type: GoIWebsite
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   data_as_of: '2024-12-01'
   source_type: AnnualReport
   source_url: ''
-  pending_cases: 42000
-  filed_last_year: 18000
-  disposed_last_year: 11700
+  pending_cases: null
+  filed_last_year: null
+  disposed_last_year: null
   avg_disposal_days: 912
-  disposal_rate: 0.65
+  disposal_rate: null
   clog_severity: critical
 judge_strength:
   data_as_of: null
@@ -79,10 +81,23 @@ report_publication:
   source_type: GoIWebsite
   source_url: https://cgat.gov.in/
   notes: No annual report found after checking (1) cgat.gov.in — homepage has no publications/annual-report
-    section, only news/photo/event widgets; (2) cis.cgat.gov.in (CAT's Case Information System) — provides
-    live case-status lookup only, not a periodic published report; (3) DoPT (parent department) — dopt.gov.in
-    is a known-unreachable host on this network per track instructions, so its archive could not be checked
-    directly; Dept. of Financial Services' own FY2025-26 annual report (financialservices.gov.in) references
-    tracking CAT court cases via the LIMBS portal but does not constitute a CAT-published report. Administrative
-    Tribunals Act 1985 has no annual-report/lay-before-Parliament clause — statutorily_required left unknown,
+    section, only news/photo/event widgets; (2) cis.cgat.gov.in (CAT's Case Information System)
+    — provides live case-status lookup only, not a periodic published report; (3) DoPT (parent
+    department) — dopt.gov.in is a known-unreachable host on this network per track instructions,
+    so its archive could not be checked directly; Dept. of Financial Services' own FY2025-26
+    annual report (financialservices.gov.in) references tracking CAT court cases via the LIMBS
+    portal but does not constitute a CAT-published report. Administrative Tribunals Act 1985
+    has no annual-report/lay-before-Parliament clause — statutorily_required left unknown,
     not no.
+unverified_fields:
+- field: case_volume.disposal_rate
+  note: Stored figure withdrawn as unsourced contamination; replacement is single-rater and
+    sits in suggested/.
+- field: case_volume.disposed_last_year
+  note: Stored figure withdrawn as unsourced contamination; replacement is single-rater and
+    sits in suggested/.
+- field: case_volume.filed_last_year
+  note: Stored figure withdrawn as unsourced contamination; replacement is single-rater and
+    sits in suggested/.
+- field: case_volume.pending_cases
+  note: 'Figure withdrawn: no surviving primary after NJDG strip.'

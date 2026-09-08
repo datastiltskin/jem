@@ -42,10 +42,12 @@ case_volume:
   disposal_rate: 0.8684
   clog_severity: high
 data_quality: partial
-data_quality_notes: "DERC constituted November 2001 under the Delhi Electricity Reform Act 2000; continued under Electricity\
-  \ Act 2003 s.82. level_of_government is UT — Delhi is NCT with a legislature. AppealableTo aptel per Electricity Act 2003\
-  \ s.111 — in dl_relationships.yaml (id: dl_derc_aptel). case_volume from NJDG snapshot; verify against DERC annual reports\
-  \ at derc.gov.in.\n NJDG snapshot case_volume merged"
+data_quality_notes: "DERC constituted November 2001 under the Delhi Electricity Reform Act\
+  \ 2000; continued under Electricity Act 2003 s.82. level_of_government is UT — Delhi is\
+  \ NCT with a legislature. AppealableTo aptel per Electricity Act 2003 s.111 — in dl_relationships.yaml\
+  \ (id: dl_derc_aptel). case_volume from NJDG snapshot; verify against DERC annual reports\
+  \ at derc.gov.in.\n NJDG snapshot case_volume merged | verify-trib-01: NJDG source stamp\
+  \ stripped (non-eCourts body)."
 sources:
 - label: DERC Official Website
   url: https://derc.gov.in/
@@ -59,7 +61,3 @@ sources:
   url: https://www.indiacode.nic.in/bitstream/123456789/13620/1/dera2000.pdf
   type: StateAct
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'

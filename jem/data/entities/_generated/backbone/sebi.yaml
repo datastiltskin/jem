@@ -18,9 +18,9 @@ jurisdiction_scope:
 created_year: 1992
 operational_status: Active
 constitutional_basis: null
-statutory_basis: Securities and Exchange Board of India Act 1992 (Act 15 of 1992), s.3 (establishment), s.11 (functions),
-  s.15 (quasi-judicial orders). Originally constituted as a non-statutory body in 1988; given statutory status by SEBI Act
-  1992.
+statutory_basis: Securities and Exchange Board of India Act 1992 (Act 15 of 1992), s.3 (establishment),
+  s.11 (functions), s.15 (quasi-judicial orders). Originally constituted as a non-statutory
+  body in 1988; given statutory status by SEBI Act 1992.
 appointment:
   nominates: ministry_of_finance
   recommends: null
@@ -43,10 +43,11 @@ audit:
   conduct_oversight_body: ministry_of_finance
 complaint_mechanism:
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: SEBI is a statutory regulator; its members are not covered by Lokpal Act 2013 Schedule I exclusions
-    in the same way as courts, but the regulatory body is supervised by MoF.
-  removal_mechanism: Removal by Central Government on grounds of misbehaviour or incapacity after inquiry (SEBI Act 1992,
-    s.6)
+  lokpal_jurisdiction_note: SEBI is a statutory regulator; its members are not covered by
+    Lokpal Act 2013 Schedule I exclusions in the same way as courts, but the regulatory body
+    is supervised by MoF.
+  removal_mechanism: Removal by Central Government on grounds of misbehaviour or incapacity
+    after inquiry (SEBI Act 1992, s.6)
 case_volume:
   clog_severity: unknown
 judge_strength:
@@ -57,9 +58,11 @@ judge_strength:
   source_url: null
   notes: Regulatory body; Member strength determined by SEBI Act schedule.
 data_quality: partial
-data_quality_notes: SEBI primarily funds itself via fees and levies (Statutory_Fund) under SEBI Act 1992, s.14; MoF oversight
-  retained for member appointments and appeals. Appeals from SEBI orders go to SAT (Securities Appellate Tribunal — existing
-  entity in graph). Relationship edge recorded in relationships file. NJDG snapshot case_volume merged
+data_quality_notes: 'SEBI primarily funds itself via fees and levies (Statutory_Fund) under
+  SEBI Act 1992, s.14; MoF oversight retained for member appointments and appeals. Appeals
+  from SEBI orders go to SAT (Securities Appellate Tribunal — existing entity in graph). Relationship
+  edge recorded in relationships file. NJDG snapshot case_volume merged | verify-trib-01:
+  NJDG source stamp stripped (non-eCourts body).'
 sources:
 - label: SEBI Act 1992 (Act 15 of 1992)
   url: https://indiacode.nic.in/handle/123456789/2080
@@ -69,10 +72,6 @@ sources:
   url: https://www.sebi.gov.in
   type: GoIWebsite
   accessed_date: '2025-01-15'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 report_publication:
   publishes_reports: 'yes'
   statutorily_required: 'yes'
@@ -84,10 +83,11 @@ report_publication:
   data_as_of: '2025-03-31'
   source_type: AnnualReport
   source_url: https://www.sebi.gov.in/reports-and-statistics/publications/aug-2025/annual-report-2024-25_96014.html
-  notes: 'SEBI Act 1992 s.18(2)-(3) requires SEBI to submit an annual report to the Central Government
-    within 90 days of FY end, to be laid before each House of Parliament; form prescribed by SEBI (Annual
-    Report) Rules 1994/2021. SEBI complies: "Annual Report 2024-25" published on sebi.gov.in, dated Aug
-    12, 2025 (per the publication page''s own date stamp), covering FY 2024-25 (to 31 Mar 2025); contemporaneous
-    press coverage (Indian Express, 13 Aug 2025) confirms the report''s release and content (penalties,
-    DTR dues, Chairman''s statement). Both the landing page and the underlying PDF (extracted from the
-    page''s embedded iframe src) pass liveness.'
+  notes: 'SEBI Act 1992 s.18(2)-(3) requires SEBI to submit an annual report to the Central
+    Government within 90 days of FY end, to be laid before each House of Parliament; form
+    prescribed by SEBI (Annual Report) Rules 1994/2021. SEBI complies: "Annual Report 2024-25"
+    published on sebi.gov.in, dated Aug 12, 2025 (per the publication page''s own date stamp),
+    covering FY 2024-25 (to 31 Mar 2025); contemporaneous press coverage (Indian Express,
+    13 Aug 2025) confirms the report''s release and content (penalties, DTR dues, Chairman''s
+    statement). Both the landing page and the underlying PDF (extracted from the page''s embedded
+    iframe src) pass liveness.'

@@ -15,9 +15,10 @@ jurisdiction_scope:
 created_year: 1993
 operational_status: Active
 constitutional_basis: null
-statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act), s.8–18 — hears appeals
-  from DRT orders. Five DRAT benches: Allahabad, Chennai, Delhi, Kolkata, Mumbai. Aggregate entity; bench-level nodes drat_allahabad,
-  drat_chennai, drat_delhi, drat_kolkata, drat_mumbai added C04 2026-06.'
+statutory_basis: 'Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI
+  Act), s.8–18 — hears appeals from DRT orders. Five DRAT benches: Allahabad, Chennai, Delhi,
+  Kolkata, Mumbai. Aggregate entity; bench-level nodes drat_allahabad, drat_chennai, drat_delhi,
+  drat_kolkata, drat_mumbai added C04 2026-06.'
 appointment:
   nominates: ministry_of_finance
   recommends: null
@@ -41,7 +42,8 @@ audit:
 complaint_mechanism:
   lokpal_jurisdiction: 'No'
   lokpal_jurisdiction_note: Judicial officers; Lokpal Act 2013 excludes.
-  removal_mechanism: Removal by Central Government on proved misbehaviour after inquiry (RDDBFI Act 1993, s.11B)
+  removal_mechanism: Removal by Central Government on proved misbehaviour after inquiry (RDDBFI
+    Act 1993, s.11B)
 case_volume:
   clog_severity: unknown
 judge_strength:
@@ -52,9 +54,10 @@ judge_strength:
   source_url: https://dfs.gov.in/financial-institutions/drat
   notes: 4 DRAT benches; one Chairperson each. Exact figures not verified.
 data_quality: partial
-data_quality_notes: Aggregate entity for constellation view. Bench-level entities drat_allahabad, drat_chennai, drat_delhi,
-  drat_kolkata, drat_mumbai hold location-specific appellate jurisdiction. Case volume and strength data left partial. NJDG
-  snapshot case_volume merged v1.2 judge_strength stub attached
+data_quality_notes: 'Aggregate entity for constellation view. Bench-level entities drat_allahabad,
+  drat_chennai, drat_delhi, drat_kolkata, drat_mumbai hold location-specific appellate jurisdiction.
+  Case volume and strength data left partial. NJDG snapshot case_volume merged v1.2 judge_strength
+  stub attached | verify-trib-01: NJDG source stamp stripped (non-eCourts body).'
 sources:
 - label: RDDBFI Act 1993, s.8–18 — DRAT provisions
   url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
@@ -64,7 +67,3 @@ sources:
   url: https://dfs.gov.in/financial-institutions/drat
   type: GoIWebsite
   accessed_date: '2025-01-15'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
