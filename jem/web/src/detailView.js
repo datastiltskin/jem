@@ -6,6 +6,7 @@ import { loadD3 } from './loadD3.js';
 import { getProfileSections } from './panel.js';
 import { balanceProfileColumns } from './profileLayout.js';
 import { commentsHTML, wireComments } from './comments.js';
+import { mountConsensusNotes } from './consensusNotes.js';
 
 const SECTION_TAB_MAP = {
   lifecycle:   'setup',
@@ -313,12 +314,16 @@ function renderCaseVolume(cv) {
 
   // Detail rows (previously buried under the Profile widget).
   const rows = [];
-  const row = (lbl, val) => val == null || val === '' ? '' : `<div class="detail-row"><span class="lbl">${lbl}</span><span>${val}</span></div>`;
-  if (cv.pending_cases != null) rows.push(row('Pending cases', String(cv.pending_cases).replace(/\B(?=(\d{3})+(?!\d))/g, ',')));
-  if (cv.filed_last_year != null) rows.push(row('Filed (last year)', String(cv.filed_last_year)));
-  if (cv.disposed_last_year != null) rows.push(row('Disposed (last year)', String(cv.disposed_last_year)));
-  if (cv.disposal_rate != null) rows.push(row('Disposal rate', String(cv.disposal_rate)));
-  if (cv.avg_disposal_days != null) rows.push(row('Avg disposal days', String(cv.avg_disposal_days)));
+  const row = (lbl, val, field) => {
+    if (val == null || val === '') return '';
+    const attr = field ? ` data-cv-field="${field}"` : '';
+    return `<div class="detail-row"${attr}><span class="lbl">${lbl}</span><span>${val}</span></div>`;
+  };
+  if (cv.pending_cases != null) rows.push(row('Pending cases', String(cv.pending_cases).replace(/\B(?=(\d{3})+(?!\d))/g, ','), 'pending_cases'));
+  if (cv.filed_last_year != null) rows.push(row('Filed (last year)', String(cv.filed_last_year), 'filed_last_year'));
+  if (cv.disposed_last_year != null) rows.push(row('Disposed (last year)', String(cv.disposed_last_year), 'disposed_last_year'));
+  if (cv.disposal_rate != null) rows.push(row('Disposal rate', String(cv.disposal_rate), 'disposal_rate'));
+  if (cv.avg_disposal_days != null) rows.push(row('Avg disposal days', String(cv.avg_disposal_days), 'avg_disposal_days'));
   if (cv.sanctioned_strength != null) rows.push(row('Sanctioned strength', String(cv.sanctioned_strength)));
   if (cv.working_strength != null) rows.push(row('Working strength', String(cv.working_strength)));
   if (cv.clog_severity) rows.push(row('Clog severity', cv.clog_severity));
@@ -1281,6 +1286,7 @@ export function renderDetailView(entityId, fromEntityId = null) {
   `;
 
   wireComments(container);
+  mountConsensusNotes(container, entity.id);
 
   // Any .detail-connection-row inside a themed widget should navigate.
   container.querySelector('.dv-layout')?.addEventListener('click', ev => {

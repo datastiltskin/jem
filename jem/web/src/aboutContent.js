@@ -1,6 +1,7 @@
 // About page body — single source for the full About view.
 
 import { JEM_HOME_INTRO, JEM_HOME_STATUS } from './siteCopy.js';
+import { LETI_DISCORD } from './consensusNotes.js';
 import { State } from './state.js';
 import { logoWordmarkHTML } from './brand.js';
 
@@ -141,6 +142,8 @@ export function aboutPageHTML(ctx = {}) {
           <ul>
             <li><a href="#/">Overview dashboard</a> — stats, spotlight, hierarchy</li>
             <li><a href="#/about">About</a> — this page</li>
+            <li><a href="#/engineering">Engineering</a> — how JEM collects, verifies, and updates data</li>
+            <li><a href="#/prompts">Prompt registry</a> — versioned generation and verification prompts</li>
             <li>Toolbar <strong>search</strong> — entity lookup and curated structural insights</li>
             <li>Entity <strong>profile</strong> — scores, neighborhood graph, sources, corrections</li>
             <li><a href="#/map">Interactive map</a> — full graph workspace (Structure / Risk / Gaps modes)</li>
@@ -170,7 +173,7 @@ export function aboutPageHTML(ctx = {}) {
             <li><a href="${ISSUES}/new?template=contested_fact.yml" target="_blank" rel="noopener noreferrer">Contested fact</a> — two cited positions</li>
             <li><a href="${ISSUES}/new?template=expert_review.yml" target="_blank" rel="noopener noreferrer">Expert review</a> — domain reviewer workflow</li>
             <li><a href="${ISSUES}/new" target="_blank" rel="noopener noreferrer">Feature request / general issue</a></li>
-            <li>In-app <strong>Propose correction</strong> on any entity profile (sign-in required when API auth is configured)</li>
+            <li><a href="${LETI_DISCORD}" target="_blank" rel="noopener noreferrer">LETI on Discord</a> — discussion (no in-app comments)</li>
           </ul>
         </div>
       </div>
@@ -203,6 +206,7 @@ export function aboutPageHTML(ctx = {}) {
         <li><strong>Coverage gap</strong> — ${entityCount} of ~1,500 entities mapped; state district lattices and some quasi-judicial bodies remain incomplete per the <a href="${GITHUB}/blob/main/jem/docs/ENTITY_BUILD_ROADMAP.md" target="_blank" rel="noopener noreferrer">roadmap</a></li>
         <li><strong>Score validation</strong> — independence risk and discretionary power weights are algorithmic; marked ⚐ pending community review until expert sign-off</li>
         <li><strong>NJDG merge</strong> — district-level case volume is partial; many entities await annual-report or NJDG snapshots</li>
+        <li><strong>Consensus pipeline</strong> — verify-trib-01 is a pipeline exercise. See <a href="#/engineering">Engineering</a>. Expand a field on <a href="#/entity/sat">SAT</a> for A|B. SAT only until confirmed JEM-wide.</li>
         <li><strong>QA sprint</strong> — full operational audit of all 1,500 targets is ongoing</li>
         <li><strong>Auth</strong> — LinkedIn sign-in for corrections in production; dev mock login locally (see <a href="${GITHUB}/blob/main/jem/docs/AUTH_SETUP.md" target="_blank" rel="noopener noreferrer">AUTH_SETUP</a>)</li>
       </ul>
