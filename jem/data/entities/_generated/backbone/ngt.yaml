@@ -124,3 +124,23 @@ judge_strength:
   notes: >-
     6 judicial + 7 expert members (Aug 2025). Statutory minimum 10 per category
     (NGT Act s.4); track separately — do not use combined 20-post framing.
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: unknown
+  report_type: statistics
+  last_published_url: https://www.greentribunal.gov.in/bench-wise-institution-disposal-and-pendency-cases-ngt-principal-bench-and-all-zonal-benches
+  expected_cadence: irregular
+  data_as_of: '2026-04-30'
+  source_type: GoIWebsite
+  source_url: https://www.greentribunal.gov.in/bench-wise-institution-disposal-and-pendency-cases-ngt-principal-bench-and-all-zonal-benches
+  notes: NGT does not publish a narrative "annual report," but does publish a live, periodically-updated
+    bench-wise institution/disposal/pendency statistics page (verified live; data as of 30 Apr 2026 at
+    time of research) — this is the actual case_volume citation already used elsewhere in the entity's
+    own YAML. Update cadence is irregular/rolling rather than a fixed calendar period, so expected_cadence
+    is recorded as "irregular" rather than guessed as annual. Separately, NGT also publishes an annual/biannual
+    "e-Journal" (Volume covering 2024, then Vol. I and Vol. II for 2025) compiling landmark judgments
+    — a judgment digest, not an activity/statistics report, so it is noted but not used as the primary
+    citation here. A one-off "Bird's Eye View of NGT Performance" note (July 2018-July 2023, via PIB)
+    is a similar non-recurring performance summary. NGT Act 2010 contains no annual-report- to-Parliament
+    clause (checked full text, faolex.fao.org/aktiwari.com mirrors) — statutorily_required left unknown,
+    not no.

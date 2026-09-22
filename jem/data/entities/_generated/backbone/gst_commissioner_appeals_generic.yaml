@@ -7,6 +7,7 @@ aliases:
   - Appellate Authority under CGST Act
   - GST Appellate Authority
 type: ExecutiveBody
+is_generic_rollup: true
 cluster: executive_interface
 level_of_government: Central
 created_year: 2017

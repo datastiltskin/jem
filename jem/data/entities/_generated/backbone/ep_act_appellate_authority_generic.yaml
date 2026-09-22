@@ -4,6 +4,7 @@ abbreviation: EPA AA
 aliases:
   - Appellate Authority under EPA 1986
 type: RegulatoryBodyQJ
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: Central
 jurisdiction_scope:

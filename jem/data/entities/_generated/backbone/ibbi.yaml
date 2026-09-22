@@ -52,3 +52,25 @@ sources:
   accessed_date: '2026-06-17'
 case_volume:
   clog_severity: unknown
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: unknown
+  report_type: annual_report
+  last_published_url: https://ibbi.gov.in/uploads/publication/df25773d8b9c63e69b0e880a84ba8cf0.pdf
+  expected_cadence: annual
+  data_as_of: '2025-03-31'
+  source_type: AnnualReport
+  source_url: https://ibbi.gov.in/uploads/publication/df25773d8b9c63e69b0e880a84ba8cf0.pdf
+  notes: 'IBC 2016 s.229 requires IBBI to prepare an annual report and submit it to the Central Government,
+    laid before each House of Parliament; IBBI (Annual Report) Rules 2018 (as amended 2020) set a 90-day
+    submission window and a 31 Dec deadline for MCA to place the report + audited accounts before Parliament.
+    IBBI complies: "Annual Report 2024-25" PDF verified live on ibbi.gov.in, with prior editions (2023-24,
+    2022-23, 2020-21, 2019-20, 2018-19) also found and live, giving an unbroken public run. last_published
+    intentionally left null — could not confirm the report''s exact tabling/release date within the N<=3
+    budget for this fact (IBBI''s Annual Day publications, e.g. "Breaking New Ground..." released 1 Oct
+    2025, are a DIFFERENT, non-statutory anniversary publication and must not be conflated with the s.229
+    Annual Report); data_as_of instead records the FY2024-25 period end that the report itself covers.
+    Citation uses lawgist.in for the statute text for the same indiacode.nic.in/ indiankanoon.org access
+    reasons noted under trai. [maintainer downgrade] statutorily_required was recorded as ''yes'' on https://lawgist.in/insolvency-and-bankruptcy-code/229,
+    a private reproduction of the Act rather than a primary provision. A secondary buys confidence, never
+    the fact, so the duty is ''unknown'' until the section is read from an official text.'

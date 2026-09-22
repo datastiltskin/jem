@@ -1,0 +1,62 @@
+# Publish the orchestration dashboard as the repository website.
+# Product map stays at friedso.com; this site is the community run-tracker.
+#
+# One-time maintainer step (required before the first deploy succeeds):
+#   Settings → Pages → Source: GitHub Actions
+# Then the Website field in the repo About panel can point at
+#   https://datastiltskin.github.io/jem/
+#
+# Full notes: jem/docs/GITHUB_PAGES.md
+
+name: GitHub Pages — orchestration dashboard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "jem/ledger/dashboard/**"
+      - "jem/ledger/diagrams/**"
+      - "jem/scripts/harness/publish_dashboard.py"
+      - "jem/scripts/harness/render_orchestration.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Guard — docs/ is a self-contained Pages tree
+        run: |
+          test -f docs/index.html
+          test -f docs/.nojekyll
+          test -f docs/diagrams/orchestration.gif
+          grep -q 'src="diagrams/orchestration.gif"' docs/index.html
+          ! grep -q '../diagrams/' docs/index.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

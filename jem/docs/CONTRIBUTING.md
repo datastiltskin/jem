@@ -8,7 +8,7 @@
 | `data_quality` / `data_quality_notes` with citations | Schema or `derive.py` formula changes |
 | Request `contested` with two primary sources | `derived.scores_validated: true` |
 
-**GitHub:** Use the [data correction](https://github.com/datastiltskin/jem/issues/new?template=data_correction.yml) issue template or open a PR (checklist auto-applied).
+**GitHub:** Use the [data correction](https://github.com/datastiltskin/jem/issues/new?template=data_correction.yml) issue template or open a PR (checklist auto-applied). Packet-run status for contributors: the [orchestration dashboard](../../docs/index.html) (GitHub Pages once enabled — [`GITHUB_PAGES.md`](GITHUB_PAGES.md)).
 
 Governance: [`.github/GOVERNANCE.md`](../../.github/GOVERNANCE.md)
 

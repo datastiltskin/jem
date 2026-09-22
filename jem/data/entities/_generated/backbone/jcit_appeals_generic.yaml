@@ -8,6 +8,7 @@ aliases:
   - Additional CIT(A) — small appeals cadre
 
 type: ExecutiveBody
+is_generic_rollup: true
 cluster: executive_interface
 level_of_government: Central
 

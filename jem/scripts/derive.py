@@ -21,6 +21,9 @@ import yaml
 from pathlib import Path
 from typing import Dict, Any, Optional, Tuple
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from classification import classify_entity, is_countable  # noqa: E402
+
 
 GOVERNANCE_EXCLUDED_MESSAGE = (
     "Scores excluded: governance officeholder or administrative body"
@@ -485,6 +488,89 @@ def classify_ir(score: int) -> str:
         return "severe"
 
 
+def compute_entity_counts(data_dir: Path) -> Dict[str, Any]:
+    """Two-axis entity counts (N track).
+
+    Counts every entity by (nature, function), excluding `is_generic_rollup`
+    rollups. Legal-instrument registry rows live outside data/entities and are
+    reference data, not entities, so they are never counted here.
+
+    This artifact is the only sanctioned source of entity totals. Nothing
+    downstream — README, roadmap, UI badge — may carry a hand-typed number.
+    """
+    buckets: Dict[str, Dict[str, int]] = {
+        n: {f: 0 for f in ("judicial", "quasi_judicial", "support_apparatus")}
+        for n in ("institution", "personnel")
+    }
+    by_type: Dict[str, int] = {}
+    generics: list = []
+    unclassified: list = []
+    total_files = 0
+
+    for path in sorted((data_dir / "entities").rglob("*.yaml")):
+        if "schema" in str(path):
+            continue
+        entity = load_entity(path)
+        if not entity:
+            continue
+        total_files += 1
+
+        if not is_countable(entity):
+            generics.append(entity.get("id"))
+            continue
+
+        try:
+            nature, function = classify_entity(entity)
+        except ValueError as exc:
+            unclassified.append(f"{entity.get('id')}: {exc}")
+            continue
+
+        buckets[nature][function] += 1
+        by_type[entity.get("type")] = by_type.get(entity.get("type"), 0) + 1
+
+    total_countable = sum(v for row in buckets.values() for v in row.values())
+
+    return {
+        "generated_by": "scripts/derive.py :: compute_entity_counts",
+        "buckets": buckets,
+        # Derived intersections. "Judicial personnel" is computed, never stored.
+        "judicial_personnel": buckets["personnel"]["judicial"],
+        "judicial_institutions": buckets["institution"]["judicial"],
+        "total_countable": total_countable,
+        "generics_excluded": len(generics),
+        "generic_ids": sorted(generics),
+        "total_entity_files": total_files,
+        "unclassified": unclassified,
+        "by_type": dict(sorted(by_type.items())),
+    }
+
+
+def save_entity_counts(counts: Dict[str, Any], output_path: Path):
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        yaml.dump({'entity_counts': counts}, f, default_flow_style=False,
+                  allow_unicode=True, sort_keys=False)
+    print(f"  Saved entity counts to {output_path}")
+
+
+def print_entity_counts(counts: Dict[str, Any]):
+    b = counts["buckets"]
+    print(f"\n--- ENTITY COUNTS (two-axis, generics excluded) ---")
+    print(f"  {'':<12}{'judicial':>12}{'quasi_judicial':>16}{'support':>12}")
+    for nature in ("institution", "personnel"):
+        row = b[nature]
+        print(f"  {nature:<12}{row['judicial']:>12}{row['quasi_judicial']:>16}"
+              f"{row['support_apparatus']:>12}")
+    print(f"  {'-'*52}")
+    print(f"  total countable:   {counts['total_countable']}")
+    print(f"  generics excluded: {counts['generics_excluded']}")
+    print(f"  entity files:      {counts['total_entity_files']}")
+    if counts["unclassified"]:
+        print(f"  ✗ UNCLASSIFIED:    {len(counts['unclassified'])}")
+        for u in counts["unclassified"]:
+            print(f"      {u}")
+
+
 def save_derived_scores(results: Dict, output_path: Path):
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -563,6 +649,10 @@ if __name__ == "__main__":
         print(f"  {validated} {eid:45s} IR={ir:2d} ({level:8s}) DP={dp:2d}")
 
     save_derived_scores(results, output_path)
+
+    counts = compute_entity_counts(data_dir)
+    save_entity_counts(counts, data_dir / "derived" / "entity_counts.yaml")
+    print_entity_counts(counts)
 
     high_ir = [(eid, r) for eid, r in results.items() if r['independence_risk_level'] in ('high', 'severe')]
     not_constituted = [(eid, r) for eid, r in results.items() if r['independence_risk_score'] >= 3 and 'regulatory vacuum' in str(r.get('independence_risk_breakdown', {}))]

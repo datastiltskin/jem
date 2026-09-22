@@ -4,6 +4,7 @@ abbreviation: FCA AA
 aliases:
   - Appellate Authority under Forest Conservation Act 1980
 type: RegulatoryBodyQJ
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: Central
 jurisdiction_scope:

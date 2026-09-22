@@ -15,7 +15,7 @@ import sys
 import os
 import argparse
 from pathlib import Path
-from typing import Optional, List, Literal, Any
+from typing import Optional, List, Literal, Any, Union
 import yaml
 
 try:
@@ -23,6 +23,9 @@ try:
 except ImportError:
     print("ERROR: pydantic not installed. Run: pip install pydantic pyyaml")
     sys.exit(1)
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from classification import classify  # noqa: E402  (S5 — single source of truth)
 
 # ── Controlled Vocabularies ───────────────────────────────────────────────────
 
@@ -35,6 +38,7 @@ ENTITY_TYPES = [
     "SecurityBody", "FinancingBody", "LegislativeBody", "ExecutiveBody",
     "LegalOfficer", "ProfessionalBody", "StatutoryBodyNotConstituted", "ProposedBody",
     "JudicialOfficerRole", "CourtAdminRole", "LegalProfessionalRole", "ProsecutionRole", "PartyRole",
+    "CommercialCourt",
 ]
 
 CLUSTERS = [
@@ -65,6 +69,23 @@ SOURCE_TYPES = [
     "HCJudgment", "GazetteNotification", "GoIWebsite", "OfficialReport",
     "NJDG", "AnnualReport",
 ]
+
+# ── S — schema foundation vocabularies ────────────────────────────────────────
+
+LEGAL_BASIS_STATUS = ["in_force", "superseded", "amended", "not_yet_in_force"]
+
+INSTRUMENT_TYPES = [
+    "Constitution", "CentralAct", "StateAct", "Ordinance",
+    "GazetteNotification", "Rules", "Regulation", "SchemeGuidelines",
+]
+
+YESNO_UNKNOWN = ["yes", "no", "unknown"]
+
+PUBLISHES_VALUES = ["yes", "no", "not_required", "unknown"]
+
+NATURE_VALUES = ["institution", "personnel"]
+
+FUNCTION_VALUES = ["judicial", "quasi_judicial", "support_apparatus"]
 
 RELATIONSHIP_TYPES = [
     "Nominates", "Recommends", "ConsultedOn_Appointment", "ConsultedOn_Removal", "FormallyAppoints", "CanRemove",
@@ -106,6 +127,136 @@ class Source(BaseModel):
     def validate_url(cls, v):
         if not v.startswith("http"):
             raise ValueError(f"URL must start with http/https: '{v}'")
+        return v
+
+
+# ── S4 — Legal-basis reference (reusable, referenced by instrument_id) ────────
+
+class LegalBasisRef(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    instrument_id: str                    # → data/legal_instruments registry
+    provision: Optional[str] = None       # e.g. "ss.21-23", "Art.323B"
+    status: Optional[str] = None          # LEGAL_BASIS_STATUS
+    effective_from: Optional[str] = None
+    repealed_on: Optional[str] = None
+    source: Optional[str] = None
+
+    @field_validator("status")
+    @classmethod
+    def _status(cls, v):
+        if v and v not in LEGAL_BASIS_STATUS:
+            raise ValueError(f"Invalid legal-basis status '{v}'. One of: {LEGAL_BASIS_STATUS}")
+        return v
+
+
+# String OR one ref OR a list of refs. Existing string values stay valid.
+LegalBasisField = Optional[Union[str, LegalBasisRef, List[LegalBasisRef]]]
+
+
+# ── S4 — Legal-instrument registry row (data/legal_instruments/*.yaml) ────────
+
+class LegalInstrumentModel(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    id: str
+    title: str
+    short_title: Optional[str] = None
+    instrument_type: str
+    enacted: Optional[str] = None
+    commenced: Optional[str] = None       # effective/commencement date
+    repealed_on: Optional[str] = None
+    repealed_by: Optional[str] = None     # instrument_id
+    replaces: Optional[List[str]] = []    # instrument_ids
+    amended_by: Optional[List[str]] = []
+    data_quality: str
+    sources: List[Source]
+
+    @field_validator("instrument_type")
+    @classmethod
+    def _itype(cls, v):
+        if v not in INSTRUMENT_TYPES:
+            raise ValueError(f"Invalid instrument_type '{v}'. One of: {INSTRUMENT_TYPES}")
+        return v
+
+    @field_validator("data_quality")
+    @classmethod
+    def _dq(cls, v):
+        if v not in DATA_QUALITY_VALUES:
+            raise ValueError(f"Invalid data_quality '{v}'. One of: {DATA_QUALITY_VALUES}")
+        return v
+
+    @model_validator(mode="after")
+    def _id_format(self):
+        if " " in self.id or "-" in self.id:
+            raise ValueError(f"instrument id must be snake_case: '{self.id}'")
+        return self
+
+
+# ── S2 — Pecuniary jurisdiction block ─────────────────────────────────────────
+
+class PecuniaryJurisdiction(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    specified_value_min: Optional[float] = None
+    specified_value_max: Optional[float] = None
+    currency: Optional[str] = "INR"
+    is_unlimited: Optional[bool] = None
+    basis: LegalBasisField = None
+    notes: Optional[str] = None
+
+
+# ── S3 — Report-publication block ─────────────────────────────────────────────
+
+class ReportPublicationModel(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    publishes_reports: Optional[str] = None        # PUBLISHES_VALUES
+    statutorily_required: Optional[str] = None     # YESNO_UNKNOWN
+    statutorily_required_source: Optional[str] = None
+    report_type: Optional[str] = None
+    last_published: Optional[str] = None
+    last_published_url: Optional[str] = None
+    expected_cadence: Optional[str] = None
+    data_as_of: Optional[str] = None
+    source_type: Optional[str] = None
+    source_url: Optional[str] = None
+    notes: Optional[str] = None
+
+    @field_validator("publishes_reports")
+    @classmethod
+    def _pub(cls, v):
+        if v and v not in PUBLISHES_VALUES:
+            raise ValueError(f"Invalid publishes_reports '{v}'. One of: {PUBLISHES_VALUES}")
+        return v
+
+    @field_validator("statutorily_required")
+    @classmethod
+    def _req(cls, v):
+        if v and v not in YESNO_UNKNOWN:
+            raise ValueError(f"Invalid statutorily_required '{v}'. One of: {YESNO_UNKNOWN}")
+        return v
+
+
+# ── S5 — Classification override (ambiguous types only; normally derived) ─────
+
+class ClassificationOverride(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    nature: str
+    function: str
+
+    @field_validator("nature")
+    @classmethod
+    def _n(cls, v):
+        if v not in NATURE_VALUES:
+            raise ValueError(f"Invalid nature '{v}'. One of: {NATURE_VALUES}")
+        return v
+
+    @field_validator("function")
+    @classmethod
+    def _f(cls, v):
+        if v not in FUNCTION_VALUES:
+            raise ValueError(f"Invalid function '{v}'. One of: {FUNCTION_VALUES}")
         return v
 
 
@@ -294,9 +445,14 @@ class EntityModel(BaseModel):
     abolished_year: Optional[int] = None
     operational_status: str
 
-    constitutional_basis: Optional[str] = None
-    statutory_basis: Optional[str] = None
+    constitutional_basis: LegalBasisField = None
+    statutory_basis: LegalBasisField = None
     parent_hc: Optional[str] = None
+
+    pecuniary_jurisdiction: Optional[PecuniaryJurisdiction] = None   # S2
+    report_publication: Optional[ReportPublicationModel] = None      # S3
+    classification_override: Optional[ClassificationOverride] = None  # S5
+    is_generic_rollup: Optional[bool] = False                        # S5
 
     appointment: Optional[AppointmentModel] = None
     funding: Optional[FundingModel] = None
@@ -364,6 +520,13 @@ class EntityModel(BaseModel):
             raise ValueError(f"id must be snake_case with underscores only: '{self.id}'")
         return self
 
+    @model_validator(mode='after')
+    def check_classifiable(self):
+        """S5 — every type must map to (nature, function) unless overridden."""
+        if self.classification_override is None:
+            classify(self.type)
+        return self
+
 
 class RelationshipModel(BaseModel):
     id: str
@@ -373,8 +536,8 @@ class RelationshipModel(BaseModel):
     relationship_category: str
     is_binding: Optional[bool] = None
     is_constitutional: Optional[bool] = None
-    constitutional_basis: Optional[str] = None
-    statutory_basis: Optional[str] = None
+    constitutional_basis: LegalBasisField = None   # S6
+    statutory_basis: LegalBasisField = None        # S6
     year_established: Optional[int] = None
     year_abolished: Optional[int] = None
     notes: Optional[str] = None
@@ -458,8 +621,61 @@ def validate_relationship_file(path: Path, strict: bool = False) -> List[str]:
     return errors
 
 
+def validate_legal_instrument_file(path: Path, strict: bool = False) -> List[str]:
+    """Validate a legal-instrument registry file (S4).
+
+    Accepts either a top-level `instruments:` list or a single instrument dict.
+    """
+    errors = []
+    try:
+        data = load_yaml(path)
+        if isinstance(data, dict) and "instruments" in data:
+            rows = data.get("instruments") or []
+        elif isinstance(data, dict):
+            rows = [data]
+        else:
+            errors.append(f"  [{path.name}] Expected a mapping or an 'instruments:' list")
+            return errors
+
+        if not rows:
+            errors.append(f"  [{path.name}] No instruments found — check 'instruments:' key")
+            return errors
+
+        for i, row in enumerate(rows):
+            try:
+                LegalInstrumentModel(**row)
+            except ValidationError as e:
+                for err in e.errors():
+                    loc = " → ".join(str(x) for x in err['loc'])
+                    errors.append(
+                        f"  [{path.name}] instrument[{i}] ({row.get('id','?')}) {loc}: {err['msg']}"
+                    )
+    except Exception as e:
+        errors.append(f"  [{path.name}] YAML parse error: {e}")
+
+    if strict and not errors:
+        try:
+            data = load_yaml(path)
+            rows = data.get("instruments", [data]) if isinstance(data, dict) else []
+            for row in rows:
+                for src in row.get('sources', []):
+                    if 'placeholder' in src.get('url', '').lower():
+                        errors.append(f"  [{path.name}] Placeholder URL found: {src['url']}")
+        except Exception:
+            pass
+
+    return errors
+
+
 def collect_entity_files(data_dir: Path) -> List[Path]:
     return list((data_dir / "entities").rglob("*.yaml"))
+
+
+def collect_legal_instrument_files(data_dir: Path) -> List[Path]:
+    inst_dir = data_dir / "legal_instruments"
+    if not inst_dir.exists():
+        return []
+    return [f for f in inst_dir.rglob("*.yaml") if f.is_file()]
 
 
 def collect_relationship_files(data_dir: Path) -> List[Path]:
@@ -477,6 +693,8 @@ def run_validation(data_dir: Path, strict: bool = False, single_file: Optional[P
         # Guess type from path
         if "relationship" in str(single_file):
             errs = validate_relationship_file(single_file, strict)
+        elif "legal_instruments" in str(single_file):
+            errs = validate_legal_instrument_file(single_file, strict)
         else:
             errs = validate_entity_file(single_file, strict)
         all_errors.extend(errs)
@@ -484,6 +702,7 @@ def run_validation(data_dir: Path, strict: bool = False, single_file: Optional[P
     else:
         entity_files = collect_entity_files(data_dir)
         rel_files = collect_relationship_files(data_dir)
+        instrument_files = collect_legal_instrument_files(data_dir)
 
         print(f"\nValidating {len(entity_files)} entity files...")
         for f in sorted(entity_files):
@@ -499,6 +718,13 @@ def run_validation(data_dir: Path, strict: bool = False, single_file: Optional[P
             errs = validate_relationship_file(f, strict)
             all_errors.extend(errs)
             files_checked += 1
+
+        if instrument_files:
+            print(f"Validating {len(instrument_files)} legal-instrument files...")
+            for f in sorted(instrument_files):
+                errs = validate_legal_instrument_file(f, strict)
+                all_errors.extend(errs)
+                files_checked += 1
 
     print(f"\n{'='*60}")
     print(f"JEM Validation Report")

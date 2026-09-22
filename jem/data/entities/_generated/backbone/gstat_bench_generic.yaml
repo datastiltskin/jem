@@ -6,6 +6,7 @@ aliases:
 - GST Appellate Tribunal Bench
 - GSTAT State Bench
 type: CentralTribunal
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: Central
 created_year: 2023

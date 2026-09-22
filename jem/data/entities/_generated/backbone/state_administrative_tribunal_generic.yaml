@@ -3,6 +3,7 @@ name: State Administrative Tribunal — Generic (Non-CAT)
 name_hindi: राज्य प्रशासनिक अधिकरण — सामान्य
 abbreviation: State AT
 type: StateTribunal
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: State
 created_year: 1985

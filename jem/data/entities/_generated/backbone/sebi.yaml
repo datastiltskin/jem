@@ -73,3 +73,21 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: 'yes'
+  statutorily_required_source: https://www.sebi.gov.in/acts/act15ac.html
+  report_type: annual_report
+  last_published: '2025-08-12'
+  last_published_url: https://www.sebi.gov.in/sebi_data/attachdocs/aug-2025/1754995497778.pdf
+  expected_cadence: annual
+  data_as_of: '2025-03-31'
+  source_type: AnnualReport
+  source_url: https://www.sebi.gov.in/reports-and-statistics/publications/aug-2025/annual-report-2024-25_96014.html
+  notes: 'SEBI Act 1992 s.18(2)-(3) requires SEBI to submit an annual report to the Central Government
+    within 90 days of FY end, to be laid before each House of Parliament; form prescribed by SEBI (Annual
+    Report) Rules 1994/2021. SEBI complies: "Annual Report 2024-25" published on sebi.gov.in, dated Aug
+    12, 2025 (per the publication page''s own date stamp), covering FY 2024-25 (to 31 Mar 2025); contemporaneous
+    press coverage (Indian Express, 13 Aug 2025) confirms the report''s release and content (penalties,
+    DTR dues, Chairman''s statement). Both the landing page and the underlying PDF (extracted from the
+    page''s embedded iframe src) pass liveness.'

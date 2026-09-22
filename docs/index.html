@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JEM orchestration dashboard — 2026-09-01</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #5c5852;
+      --rule: #d8d4cc;
+      --paper: #faf8f5;
+      --card: #fff;
+      --orch: #2c5f7c;
+      --gen: #8b5a2b;
+      --verify: #6a4c93;
+      --meta: #1b7a5a;
+      --gate: #b03a2e;
+      --locate: #4a5568;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink);
+      font: 15px/1.5 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+    header {
+      padding: 2.2rem 1.5rem 1.4rem;
+      border-bottom: 1px solid var(--rule);
+      max-width: 1180px; margin: 0 auto;
+    }
+    header h1 { font-size: 1.55rem; margin: 0 0 .35rem; letter-spacing: -.02em; }
+    header p { margin: 0; color: var(--muted); max-width: 48rem; }
+    nav {
+      max-width: 1180px; margin: 0 auto; padding: .7rem 1.5rem;
+      display: flex; gap: 1.1rem; flex-wrap: wrap;
+      border-bottom: 1px solid var(--rule); font-size: .88rem;
+    }
+    nav a { color: var(--orch); }
+    main { max-width: 1180px; margin: 0 auto; padding: 1.4rem 1.5rem 4rem; }
+    h2 { font-size: 1.15rem; margin: 2.1rem 0 .7rem; }
+    h3 { font-size: 1rem; margin: 1.2rem 0 .4rem; }
+    .lede { color: var(--muted); margin: 0 0 1rem; }
+    table { width: 100%; border-collapse: collapse; background: var(--card);
+      font-size: .86rem; }
+    th, td { text-align: left; vertical-align: top; padding: .55rem .6rem;
+      border-bottom: 1px solid var(--rule); }
+    th { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em;
+      color: var(--muted); font-weight: 600; background: #f3efe8; }
+    tr:last-child td { border-bottom: 0; }
+    .tag { display: inline-block; font-size: .68rem; letter-spacing: .04em;
+      text-transform: uppercase; font-weight: 700; padding: .12rem .4rem;
+      border-radius: 3px; color: #fff; }
+    .t-orch { background: var(--orch); }
+    .t-gen { background: var(--gen); }
+    .t-verify { background: var(--verify); }
+    .t-meta { background: var(--meta); }
+    .t-locate { background: var(--locate); }
+    .t-gate { background: var(--gate); }
+    .ok { color: var(--meta); font-weight: 600; }
+    .deny { color: var(--gate); }
+    .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: .78rem; }
+    .note { font-size: .86rem; color: var(--muted); }
+    .swim { background: var(--card); border: 1px solid var(--rule);
+      padding: 1rem 1rem .6rem; overflow-x: auto; }
+    .lanes { min-width: 920px; }
+    .lane { display: grid; grid-template-columns: 160px repeat(6, 1fr);
+      gap: 6px; align-items: stretch; margin-bottom: 8px; }
+    .lane-label { font-size: .78rem; padding-top: .35rem; }
+    .lane-label strong { display: block; }
+    .lane-label span { color: var(--muted); font-size: .7rem; }
+    .cell { min-height: 42px; border-radius: 6px; background: #efeae2;
+      position: relative; }
+    .cell.on { color: #fff; display: flex; align-items: center;
+      justify-content: center; text-align: center; font-size: .68rem;
+      font-weight: 700; letter-spacing: .02em; padding: .25rem .3rem;
+      animation: fill-in .45s ease both; }
+    .cell.orch { background: var(--orch); }
+    .cell.gen { background: var(--gen); }
+    .cell.verify { background: var(--verify); }
+    .cell.meta { background: var(--meta); }
+    .cell.locate { background: var(--locate); }
+    .wave-head { display: grid; grid-template-columns: 160px repeat(6, 1fr);
+      gap: 6px; margin-bottom: 8px; }
+    .wave-head div { font-size: .68rem; text-transform: uppercase;
+      letter-spacing: .05em; color: var(--muted); text-align: center; }
+    .para { border: 1px dashed var(--gen); border-radius: 8px; padding: 6px;
+      margin: 4px 0 10px; }
+    .para-cap { font-size: .7rem; color: var(--gen); font-weight: 700;
+      letter-spacing: .04em; text-transform: uppercase; margin: 0 0 4px 164px; }
+    @keyframes fill-in { from { opacity: 0; transform: scaleX(.6); }
+      to { opacity: 1; transform: scaleX(1); } }
+    .w1 { animation-delay: .1s; } .w2 { animation-delay: .7s; }
+    .w3 { animation-delay: 1.3s; } .w4 { animation-delay: 1.9s; }
+    .w5 { animation-delay: 2.5s; } .w6 { animation-delay: 3.1s; }
+    details { background: var(--card); border: 1px solid var(--rule);
+      padding: .7rem 1rem; margin: 0 0 .5rem; }
+    details summary { cursor: pointer; font-weight: 600; }
+    ol.flow { margin: .4rem 0 0; padding-left: 1.2rem; }
+    ol.flow li { margin: .2rem 0; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 800px) { .grid-2 { grid-template-columns: 1fr; } }
+    figure { margin: 1rem 0; }
+    figure img, figure video { max-width: 100%; height: auto; border: 1px solid var(--rule);
+      background: #fff; display: block; }
+    figcaption { font-size: .8rem; color: var(--muted); margin-top: .35rem; }
+    footer { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem 2.5rem;
+      color: var(--muted); font-size: .82rem; }
+    abbr { text-decoration: none; border-bottom: 1px dotted var(--muted);
+      cursor: help; }
+    .legend { background: var(--card); border: 1px solid var(--rule);
+      padding: 1rem 1.1rem .85rem; margin: 0 0 1.4rem; }
+    .legend h2 { margin: 0 0 .35rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: .55rem 0 1rem; }
+    .chip { display: inline-flex; align-items: center; gap: .4rem;
+      border: 1px solid var(--rule); background: #f3efe8; border-radius: 4px;
+      padding: .18rem .5rem; font-size: .8rem; }
+    .chip b { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: .78rem; }
+    .chip .swatch { width: .7rem; height: .7rem; border-radius: 2px;
+      display: inline-block; }
+    .legend table { font-size: .82rem; }
+    .share { background: var(--card); border: 1px solid var(--rule);
+      padding: .85rem 1rem; margin: .8rem 0 1.2rem; }
+    .share a.dl { display: inline-block; margin: .25rem .5rem .25rem 0;
+      padding: .28rem .6rem; background: var(--orch); color: #fff;
+      text-decoration: none; border-radius: 4px; font-size: .8rem;
+      white-space: nowrap; }
+    .share a.dl.alt { background: var(--gen); }
+    .callout { background: #f3efe8; border-left: 3px solid var(--orch);
+      padding: .7rem 1rem; margin: 1rem 0; font-size: .9rem; }
+    .banner { font-size: .82rem; color: var(--muted); margin: .45rem 0 0; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>JEM orchestration dashboard</h1>
+  <p>Run of the data-integrity packet on 1 September 2026. Six agents, three model families.
+    Source of truth: <span class="mono">ledger/ORCHESTRATION_RUN.md</span>.
+    Prompts: <span class="mono">ledger/prompt_registry.yaml</span>.</p>
+  <p class="banner">This page is the community run-tracker — the GitHub repository’s clickable site.
+    The interactive map of India’s courts lives at
+    <a href="https://friedso.com/apps/jem/">friedso.com/apps/jem</a>.</p>
+</header>
+<nav>
+  <a href="#legend">Legend</a>
+  <a href="#roster">Roster</a>
+  <a href="#sequence">Sequence</a>
+  <a href="#share">Share the diagram</a>
+  <a href="#permissions">Permissions</a>
+  <a href="#workflows">Workflows</a>
+  <a href="#handovers">Handovers</a>
+  <a href="#prompts">Prompts</a>
+  <a href="#pages">GitHub Pages</a>
+  <a href="diagrams/orchestration.gif">Animated GIF</a>
+</nav>
+<main>
+
+<h2 id="legend">Legend — every letter on this page</h2>
+<p class="lede">The packet names its tracks with single letters. They are not secret codes.
+  Hover any <abbr title="abbreviation">chip</abbr> or table cell. The same legend is printed
+  on the GIF itself, so a downloaded frame is still readable off-site.</p>
+
+<div class="legend" aria-label="Glossary of packet letters, waves, and project abbreviations">
+  <h3>Packet tracks (the letters in the apply-order diagram)</h3>
+  <div class="chips">
+    <span class="chip" title="Schema foundation — must land first"><b>S</b> schema foundation</span>
+    <span class="chip" title="Tamil Nadu commercial courts, generation track"><b>C</b> commercial courts (TN)</span>
+    <span class="chip" title="Tamil Nadu criminal magistracy; K is the packet’s letter, not an acronym"><b>K</b> criminal magistracy (TN)</span>
+    <span class="chip" title="Classification and counting of the enlarged corpus"><b>N</b> classification + counting</span>
+    <span class="chip" title="Does the body publish the reports the statute requires?"><b>report</b> report-publication</span>
+    <span class="chip" title="Two tracks running at the same time on disjoint files"><b>∥</b> parallel</span>
+  </div>
+  <table>
+    <thead><tr><th>Letter</th><th>Means</th><th>Why that letter</th><th>What it produced this run</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>S</b></td>
+        <td>Schema foundation. Adds types and fields, then
+          <span class="mono">validate.py --strict</span> must stay at 0 errors on the
+          <em>untouched</em> corpus before anything else runs.</td>
+        <td>Packet file <span class="mono">01_SCHEMA_SPEC.md</span>. Serial gate.</td>
+        <td>CommercialCourt type, pecuniary_jurisdiction, report_publication, legal-instrument refs, two-axis classification.</td>
+      </tr>
+      <tr>
+        <td><b>C</b></td>
+        <td>Generation track: Tamil Nadu <strong>c</strong>ommercial courts that have actually been notified. Emits entity YAML and a suggested-edge table. Never auto-applies relationships.</td>
+        <td>Packet prompt <span class="mono">03_CURSOR_C_commercial_courts.md</span>.</td>
+        <td>5 entities, 15 suggested edges, 13/13 claims confirmed in gazette PDFs.</td>
+      </tr>
+      <tr>
+        <td><b>K</b></td>
+        <td>Generation track: Tamil Nadu <strong>c</strong>riminal magistracy below District &amp; Sessions (Chief Judicial Magistrate and below). Same rules as C: named courts only, notification in hand.</td>
+        <td>Packet letter, not an acronym. Prompt <span class="mono">04_CURSOR_K_criminal_magistracy.md</span>.</td>
+        <td>1 entity (<span class="mono">cjm_nilgiris</span>), 4 documented refusals, live BNSS primary located.</td>
+      </tr>
+      <tr>
+        <td><b>N</b></td>
+        <td>Classification and <strong>n</strong>umbering: flag generic rollups, write
+          <span class="mono">entity_counts.yaml</span>, then an independent recount on a different model family must match.</td>
+        <td>Packet prompt <span class="mono">05_CURSOR_N_classification_counting.md</span>. Runs last because it counts the corpus C and K just enlarged.</td>
+        <td>1087 countable + 64 generics = 1151 files. Recount <span class="ok">PASS</span>.</td>
+      </tr>
+      <tr>
+        <td><b>report</b></td>
+        <td>Meta-provenance: for named tribunals/regulators, does the statute require a public report, and is one actually published?</td>
+        <td>Packet prompt <span class="mono">06_CURSOR_report_publication.md</span>. Independent of C/K; overlapping in time.</td>
+        <td>12 bodies, 14/14 cited URLs live. Two duty claims downgraded to <span class="mono">unknown</span>.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Waves (W1–W6) — columns of the swimlane</h3>
+  <p class="note">A wave is a moment in the run, not an agent. Several agents can be live in one wave.</p>
+  <table>
+    <thead><tr><th>Wave</th><th>Name</th><th>What happens</th></tr></thead>
+    <tbody>
+      <tr><td><b>W1</b></td><td>Apply S</td><td>Schema lands. Gate: 0 validator errors on the untouched corpus.</td></tr>
+      <tr><td><b>W2</b></td><td>Liveness</td><td>URL gate on the legal-instrument registry. Discovers the India Code migration (soft-404 SPA shell).</td></tr>
+      <tr><td><b>W3</b></td><td>Dispatch C ∥ K</td><td>Commercial and criminal generation fire together because their file scopes do not overlap.</td></tr>
+      <tr><td><b>W4</b></td><td>N + recount</td><td>Counts artifact is committed; a different model family recomputes the six buckets.</td></tr>
+      <tr><td><b>W5</b></td><td>Verify + promote</td><td>Orchestrator re-downloads each cited PDF and only then copies staging YAML into canon.</td></tr>
+      <tr><td><b>W6</b></td><td>Merge + PR</td><td>Report blocks merged (with two corrections). PR opened, CI green.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Agent-role colours</h3>
+  <div class="chips">
+    <span class="chip"><span class="swatch t-locate" style="background:var(--locate)"></span><b>locate</b> packet locator (agent 0)</span>
+    <span class="chip"><span class="swatch" style="background:var(--orch)"></span><b>orch</b> orchestrator (parent)</span>
+    <span class="chip"><span class="swatch" style="background:var(--gen)"></span><b>gen</b> generation (tracks C and K)</span>
+    <span class="chip"><span class="swatch" style="background:var(--verify)"></span><b>verify</b> independent recount (other model family)</span>
+    <span class="chip"><span class="swatch" style="background:var(--meta)"></span><b>meta</b> report-publication</span>
+    <span class="chip"><span class="swatch" style="background:var(--gate)"></span><b>gate</b> a check that can refuse</span>
+  </div>
+
+  <h3>Places, statutes, institutions, and JEM jargon on this page</h3>
+  <table>
+    <thead><tr><th>Token</th><th>Means</th></tr></thead>
+    <tbody>
+      <tr><td><b>TN</b></td><td>Tamil Nadu. This packet’s lattice generation is TN-only, named courts only, structural fields only.</td></tr>
+      <tr><td><b>CJM</b></td><td>Chief Judicial Magistrate. <span class="mono">cjm_nilgiris</span> is the Nilgiris CJM court node.</td></tr>
+      <tr><td><b>BNSS</b></td><td>Bharatiya Nagarik Suraksha Sanhita, 2023 — India’s current criminal-procedure code (successor to the CrPC).</td></tr>
+      <tr><td><b>BNS</b></td><td>Bharatiya Nyaya Sanhita, 2023 — the penal code. A live MHA PDF of BNS was fetched and <em>refused</em> because it is the wrong Act.</td></tr>
+      <tr><td><b>BSA</b></td><td>Bharatiya Sakshya Adhiniyam, 2023 — the evidence Act. In the legal-instrument registry; not a generation track this run.</td></tr>
+      <tr><td><b>CrPC</b></td><td>Code of Criminal Procedure, 1973. Superseded predecessor of BNSS; kept as historical legal basis where sourced.</td></tr>
+      <tr><td><b>MHA</b></td><td>Ministry of Home Affairs. Hosts the verified BNSS/BNS/BSA English PDFs.</td></tr>
+      <tr><td><b>GoI</b></td><td>Government of India. A “GoI primary” is a statute, gazette, judgment, or official report — the only source class that can verify a scored field.</td></tr>
+      <tr><td><b>SAT</b></td><td>Securities Appellate Tribunal. Mentioned as a suggested (not applied) appeal edge from IFSCA.</td></tr>
+      <tr><td><b>IFSCA</b></td><td>International Financial Services Centres Authority. Seeded as a gap, not asserted into the graph this run.</td></tr>
+      <tr><td><b>TRAI</b></td><td>Telecom Regulatory Authority of India. Report-publication row; statutory-duty claim downgraded to <span class="mono">unknown</span>.</td></tr>
+      <tr><td><b>IBBI</b></td><td>Insolvency and Bankruptcy Board of India. Same downgrade as TRAI (private reproduction was not accepted as the duty source).</td></tr>
+      <tr><td><b>PIB / CAG</b></td><td>Press Information Bureau / Comptroller and Auditor General. Escalation hosts when a body’s own site has no report.</td></tr>
+      <tr><td><b>SPA</b></td><td>Single-page application. <span class="mono">indiacode.gov.in</span> returns a byte-identical 200 HTML shell for every path — a <em>soft-404</em>, not a document.</td></tr>
+      <tr><td><b>canon</b></td><td>Committed YAML under <span class="mono">jem/data/</span> that the map is built from. Staging files are not canon.</td></tr>
+      <tr><td><b>ledger</b></td><td>Append-only run record under <span class="mono">jem/ledger/</span>. Captures what agents found, including refusals. Not the map.</td></tr>
+      <tr><td><b>the 44</b></td><td>The packet’s “contaminated 44” tribunal/regulator set. Not reproducible from the repo (nearest definition yields 51). Report-publication was scoped to 12 named bodies instead.</td></tr>
+      <tr><td><b>generic / rollup</b></td><td>A scaffold node with <span class="mono">is_generic_rollup: true</span> (id ending <span class="mono">_generic</span>). Counted as a file, never as an entity.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="roster">1 · Agent roster</h2>
+<p class="lede">Who ran, on which model, who fired them, what they were asked to do, and what they returned.</p>
+<table>
+  <thead>
+    <tr>
+      <th>#</th><th>Agent</th><th>Model</th><th>Fired by / mode</th>
+      <th>Assigned</th><th>Completed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td><span class="tag t-locate">locate</span> Packet locator<br><span class="mono">bc-c7cba901</span></td>
+      <td>Claude Opus 5<br><span class="note">explore, blocking</span></td>
+      <td>User, turn 1<br>serial — must finish before anything else</td>
+      <td>Find <span class="mono">agent_orchestrator_JEM.zip</span> / <span class="mono">00_PACKET_INDEX.md</span> in the repo or filesystem</td>
+      <td>Established the packet did not exist. Negative finding; stopped a fabricated run.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><span class="tag t-orch">orch</span> Orchestrator<br><span class="note">this cloud agent</span></td>
+      <td>Claude Opus 5<br><span class="note">parent, write access</span></td>
+      <td>User, turn 2 (files arrived)<br>lives across every wave</td>
+      <td>Apply S, run N, build the harness, review and promote, commit, open the PR</td>
+      <td>S schema + gate; N counts; 4 harness modules; 35 new tests; README reconciliation; 12 commits; <a href="https://github.com/datastiltskin/jem/pull/31">PR #31</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><span class="tag t-gen">gen</span> Track K<br><span class="mono">bc-0a2bab58</span></td>
+      <td>Claude Opus 5<br><span class="note">inherited</span></td>
+      <td>Orchestrator, after S green<br><strong>background, parallel with 3</strong></td>
+      <td>TN criminal magistracy below District &amp; Sessions; entity YAML + suggested edges only</td>
+      <td>1 entity (<span class="mono">cjm_nilgiris</span>); 2 suggested edges; 4 documented refusals; live BNSS primary located</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><span class="tag t-gen">gen</span> Track C<br><span class="mono">bc-ce92556e</span></td>
+      <td>Claude Opus 5<br><span class="note">inherited</span></td>
+      <td>Orchestrator, after S green<br><strong>background, parallel with 2</strong></td>
+      <td>TN commercial courts; only notified courts; no auto-applied edges</td>
+      <td>5 entities; 15 suggested edges; 13/13 claims verified; the by-class finding</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><span class="tag t-verify">verify</span> N recount<br><span class="mono">bc-5b97a96a</span></td>
+      <td><strong>GPT-5.6 Sol</strong><br><span class="note">different family on purpose</span></td>
+      <td>Orchestrator, after counts artifact committed<br>background, overlapping C/K</td>
+      <td>Independently recompute the six buckets; do not import <span class="mono">derive.py</span></td>
+      <td class="ok">PASS — exact match on all six buckets and four invariants</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><span class="tag t-meta">meta</span> Report-publication<br><span class="mono">bc-6944b0b0</span></td>
+      <td>Claude Sonnet 5<br><span class="note">thinking-high</span></td>
+      <td>Orchestrator, after host-reachability probe<br>background, overlapping C/K return</td>
+      <td><span class="mono">report_publication</span> on 12 named bodies (scoped down from the unreproducible “44”)</td>
+      <td>12/12 complete; 14/14 cited URLs live; regulators publish / tribunals don’t</td>
+    </tr>
+  </tbody>
+</table>
+<p class="note">Agent 4 is on a different model family because the harness scores confidence as agreement × diversity. A second Opus 5 recount would have added a second opinion worth roughly zero.</p>
+
+<h2 id="sequence">2 · Firing sequence</h2>
+<p class="lede">What forced the order: S is serial because everything else validates against it. C ∥ K is safe because their file scopes are disjoint. N counts the corpus they enlarge, so it cannot finish first. The recount cannot fire before the artifact exists. Report-publication is independent of generation and only waited on a reachability probe.</p>
+
+<div class="swim" aria-label="Animated swimlane of the six waves">
+  <div class="lanes">
+    <div class="wave-head">
+      <div></div>
+      <div><abbr title="Wave 1: apply schema foundation. Gate: 0 validator errors on the untouched corpus.">W1</abbr> · Apply <abbr title="Schema foundation">S</abbr></div>
+      <div><abbr title="Wave 2: URL liveness gate. Discovers the India Code soft-404 shell.">W2</abbr> · Liveness</div>
+      <div><abbr title="Wave 3: dispatch commercial courts and criminal magistracy in parallel.">W3</abbr> · Dispatch <abbr title="Track C: Tamil Nadu commercial courts">C</abbr> ∥ <abbr title="Track K: Tamil Nadu criminal magistracy">K</abbr></div>
+      <div><abbr title="Wave 4: classification/counting artifact plus independent recount.">W4</abbr> · <abbr title="Track N: classification and counting">N</abbr> + recount</div>
+      <div><abbr title="Wave 5: re-download each cited PDF, then promote staging YAML into canon.">W5</abbr> · Verify + promote</div>
+      <div><abbr title="Wave 6: merge report blocks and open the pull request.">W6</abbr> · Merge + PR</div>
+    </div>
+    <div class="lane">
+      <div class="lane-label"><strong>Orchestrator</strong><span>Opus 5 · parent</span></div>
+      <div class="cell on orch w1">schema + gate = 0</div>
+      <div class="cell on orch w2">liveness gate<br>0/12 pass</div>
+      <div class="cell on orch w3">N refactor<br>dispatch C∥K</div>
+      <div class="cell on orch w4">counts artifact<br>fire recount</div>
+      <div class="cell on orch w5">PDF verifier<br>promote 6</div>
+      <div class="cell on orch w6">merge 12<br>PR #31</div>
+    </div>
+    <p class="para-cap">parallel — disjoint scopes</p>
+    <div class="para">
+      <div class="lane">
+        <div class="lane-label"><strong>Track K</strong><span>Opus 5 inherited</span></div>
+        <div class="cell"></div><div class="cell"></div>
+        <div class="cell on gen w3">gazette hunt<br>BNSS primary</div>
+        <div class="cell on gen w4">staging YAML<br>+ ledger</div>
+        <div class="cell on gen w5">handover → orch</div>
+        <div class="cell"></div>
+      </div>
+      <div class="lane">
+        <div class="lane-label"><strong>Track C</strong><span>Opus 5 inherited</span></div>
+        <div class="cell"></div><div class="cell"></div>
+        <div class="cell on gen w3">gazette hunt<br>by-class finding</div>
+        <div class="cell on gen w4">5 entities<br>13/13 confirm</div>
+        <div class="cell on gen w5">handover → orch</div>
+        <div class="cell"></div>
+      </div>
+    </div>
+    <div class="lane">
+      <div class="lane-label"><strong>Recount</strong><span>GPT-5.6 Sol</span></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell on verify w4">independent tally<br>PASS</div>
+      <div class="cell"></div><div class="cell"></div>
+    </div>
+    <div class="lane">
+      <div class="lane-label"><strong>Report-pub</strong><span>Sonnet 5</span></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell on meta w4">12 bodies<br>search trail</div>
+      <div class="cell on meta w5">CSV + blocks</div>
+      <div class="cell on meta w6">handover → orch</div>
+    </div>
+  </div>
+</div>
+
+<figure>
+  <img src="diagrams/orchestration.gif" alt="Animated six-wave orchestration diagram. Legend on the image: S schema, C commercial courts (Tamil Nadu), K criminal magistracy (Tamil Nadu), N classification and counting, W1 to W6 are waves, parallel mark means two tracks at once.">
+  <figcaption>One frame per wave. Letter codes are printed on the GIF. Source: <span class="mono">scripts/harness/render_orchestration.py</span>, driven by the same wave list as this page.</figcaption>
+</figure>
+
+<div class="share" id="share">
+  <h2 style="margin-top:0">How to share this diagram</h2>
+  <p class="lede">Copy-paste from a browser or from GitHub’s file preview does <strong>not</strong> keep the animation. The clipboard stores a single still bitmap (usually PNG). GitHub’s blob page often serves a canvas snapshot of frame 1, which is why a “downloaded GIF” can look empty.</p>
+  <p>
+    <a class="dl" href="diagrams/orchestration.gif" download="jem-orchestration.gif">Download GIF</a>
+    <a class="dl alt" href="diagrams/orchestration.mp4" download="jem-orchestration.mp4">Download MP4 (best for chat apps)</a>
+    <a class="dl alt" href="diagrams/orchestration.png" download="jem-orchestration.png">Download still PNG</a>
+  </p>
+  <ul class="note">
+    <li><strong>Slack, WhatsApp, iMessage, Google Docs, email:</strong> attach the <span class="mono">.mp4</span>. Those apps flatten GIFs on paste.</li>
+    <li><strong>GitHub issue / README / this dashboard:</strong> hotlink the raw file or the Pages URL, do not paste from the preview. Raw path:
+      <span class="mono">jem/ledger/diagrams/orchestration.gif</span> or, once Pages is on,
+      <span class="mono">https://datastiltskin.github.io/jem/diagrams/orchestration.gif</span>.</li>
+    <li><strong>Right-click → Save image</strong> only works if the <code>&lt;img&gt;</code> src is the GIF itself (as on this page). Saving from github.com’s <em>blob</em> viewer saves a preview, not the file. Use the Download buttons above, or
+      <span class="mono">raw.githubusercontent.com/datastiltskin/jem/&lt;branch&gt;/jem/ledger/diagrams/orchestration.gif</span>.</li>
+  </ul>
+</div>
+
+<h2 id="permissions">3 · Permissions</h2>
+<p class="lede">Every subagent was <span class="mono">generalPurpose</span>, which grants the full tool set. The restrictions below were <strong>instruction-level, not sandbox-enforced</strong>. None of them wrote to canon — verified by a clean <span class="mono">git status</span> after each return — but that is compliance, not containment.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Capability</th>
+      <th>0 locator</th>
+      <th>1 orch</th>
+      <th>2 Track K</th>
+      <th>3 Track C</th>
+      <th>4 Recount</th>
+      <th>5 Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Read repo</td><td class="ok">yes</td><td class="ok">yes</td><td class="ok">yes</td><td class="ok">yes</td><td class="ok">yes, except <span class="mono">derive.py</span></td><td class="ok">yes</td></tr>
+    <tr><td>Write <span class="mono">jem/data/</span></td><td class="deny">denied</td><td class="ok">yes</td><td class="deny">denied</td><td class="deny">denied</td><td class="deny">denied</td><td class="deny">denied</td></tr>
+    <tr><td>Write staging <span class="mono">/tmp/track_*</span></td><td>—</td><td class="ok">yes</td><td class="ok">yes</td><td class="ok">yes</td><td>—</td><td class="ok">yes</td></tr>
+    <tr><td>Write <span class="mono">ledger/runs/</span></td><td>—</td><td class="ok">yes</td><td>via orch</td><td>via orch</td><td class="ok">direct</td><td>via orch</td></tr>
+    <tr><td><span class="mono">validate.py --entity</span></td><td>—</td><td class="ok">yes</td><td class="ok">yes</td><td class="ok">yes</td><td class="deny">no</td><td class="ok">yes</td></tr>
+    <tr><td><span class="mono">derive.py</span> / <span class="mono">build.py</span></td><td>—</td><td class="ok">yes</td><td class="deny">denied</td><td class="deny">denied</td><td class="deny">denied</td><td class="deny">denied</td></tr>
+    <tr><td><span class="mono">git add/commit/push</span></td><td class="deny">denied</td><td class="ok">yes</td><td class="deny">denied</td><td class="deny">denied</td><td class="deny">denied</td><td class="deny">denied</td></tr>
+    <tr><td>Network (search + fetch)</td><td>—</td><td class="ok">yes</td><td class="ok">yes</td><td class="ok">yes</td><td>not needed</td><td class="ok">yes</td></tr>
+    <tr><td>Apply relationships</td><td>—</td><td>suggest only</td><td class="deny">suggest only</td><td class="deny">suggest only</td><td>—</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<h2 id="workflows">4 · How each agent actually worked</h2>
+<p class="lede">Reconstructed from the <span class="mono">attempts</span> arrays in the run ledgers, not from the agents’ summaries.</p>
+
+<details open>
+  <summary>Agent 0 — packet locator</summary>
+  <ol class="flow">
+    <li>Filename globs: <span class="mono">*PACKET*</span>, <span class="mono">*orchestrator*</span>, <span class="mono">classification.py</span></li>
+    <li>Content search for “consensus harness”, “SAT anchor”, “Prajna/Agriya”</li>
+    <li>Git history across all branches</li>
+    <li>Filesystem-wide <span class="mono">.zip</span> search</li>
+  </ol>
+  <p>Four independent strategies, all negative — which is what made the conclusion safe to act on. <strong>Handover:</strong> back to the user with “not present, please resend” rather than reconstructing the packet from the screenshot.</p>
+</details>
+
+<details open>
+  <summary>Agent 1 — orchestrator</summary>
+  <ol class="flow">
+    <li>Read all 12 packet files before writing anything</li>
+    <li>Two pre-gates that changed the plan: corpus uses 5 types the classification map lacks; most primary-source domains do not resolve</li>
+    <li>Apply S → <span class="mono">validate.py --strict</span> = 0 on the untouched corpus</li>
+    <li>Build the liveness gate → run it on the registry → 0/12 pass → discover the India Code migration → harden against soft-404 SPA shells</li>
+    <li>N refactor (flag 64 generics, write <span class="mono">entity_counts.yaml</span>)</li>
+    <li>Dispatch C ∥ K, then the recount, then report-publication</li>
+    <li>Verifier rung on staged output (download PDF, extract text, confirm the notification number)</li>
+    <li>Promote 6 entities; merge 12 report blocks (with two corrections); open PR #31</li>
+  </ol>
+</details>
+
+<details open>
+  <summary>Agent 2 — Track K (criminal magistracy)</summary>
+  <ol class="flow">
+    <li>Registry URL <span class="mono">indiacode.nic.in/handle/…/20099</span> — FAIL 404</li>
+    <li>Migrated host <span class="mono">indiacode.gov.in</span> — FAIL <span class="mono">soft_404_catch_all_shell</span></li>
+    <li>Two guessed bitstream deep links — FAIL 404</li>
+    <li>Guessed MHA filename <span class="mono">250883_…pdf</span> — PASS liveness, <strong>REFUTED on content</strong> (it is the penal code, not BNSS)</li>
+    <li>PRS 297-page PDF — PASS liveness, <strong>REFUTED on content</strong> (it is the Bill, not the enacted Act)</li>
+    <li>WebSearch “Act No. 46 of 2023 official gazette” — HIT → MHA <span class="mono">250884_2</span></li>
+    <li>curl + pypdf on the VM, read the gazette header — CONFIRMED, 249pp, Act 46 of 2023</li>
+    <li>Court discovery: POST <span class="mono">search_gazette.php</span> for “Judicial Magistrate” (122 issues, mostly noise) → narrow to “Chief Judicial Magistrate” (24 issues) → open three candidate gazettes → read operative text</li>
+  </ol>
+  <p>Attempts 4 and 5 are the run’s best argument for keeping the verifier rung separate from liveness: both URLs are live PDFs on credible hosts, and both are the wrong document. <strong>Handover:</strong> staging files plus a report naming the four things it refused and why.</p>
+</details>
+
+<details open>
+  <summary>Agent 3 — Track C (commercial courts)</summary>
+  <ol class="flow">
+    <li>POST <span class="mono">search_gazette.php</span> “Commercial Court” — 5 issues</li>
+    <li>Variant queries (“Commercial Courts Act”, etc.) — +1 issue, no new constituting notification</li>
+    <li><span class="mono">gazette_list_details.php?id=&lt;b64&gt;&amp;date=&lt;b64&gt;</span> reached the 2019 and 2016 issues, which are <em>not</em> in the keyword index — found only by following supersession references inside the 2021 text</li>
+    <li>Per notification: liveness gate → curl → pypdf extract → read operative text</li>
+    <li>Verifier: independent re-fetch, literal string check, 13/13 CONFIRM</li>
+  </ol>
+  <p>Step 3 is why this track succeeded where a search-only approach would have stopped at 2021. <strong>Handover:</strong> 5 entities, a 15-row suggested-edge table, and four decision gates (two of them generalise beyond Tamil Nadu).</p>
+</details>
+
+<details>
+  <summary>Agent 4 — independent recount</summary>
+  <ol class="flow">
+    <li>Walk <span class="mono">data/entities/**/*.yaml</span> with its own Python, skipping schema paths</li>
+    <li>Extract <span class="mono">TYPE_CLASSIFICATION</span> from <span class="mono">classification.py</span> via <span class="mono">ast</span> — never import the module</li>
+    <li>Tally the six buckets + generics, record the numbers</li>
+    <li><em>Then</em> open <span class="mono">entity_counts.yaml</span> and compare</li>
+    <li>Four extra invariants: arithmetic, unmapped types, generic flag/id consistency, duplicate ids</li>
+  </ol>
+  <p><strong>Handover:</strong> one JSONL record written directly to <span class="mono">ledger/runs/</span>, verdict PASS.</p>
+</details>
+
+<details>
+  <summary>Agent 5 — report-publication</summary>
+  <ol class="flow">
+    <li>Locate the entity YAML → read the official site from its sources</li>
+    <li>Search the body’s publications page</li>
+    <li>Escalate to parent ministry archive</li>
+    <li>Escalate to PIB / CAG / Lok Sabha references (N≤3)</li>
+    <li>Liveness-gate the candidate document; record the trail either way</li>
+    <li>For the statutory duty, go to the constituting Act’s reporting section</li>
+  </ol>
+  <p>When <span class="mono">indiankanoon.org</span> returned 403 it substituted self-hosted regulator copies and <strong>disclosed the substitution</strong>. <strong>Handover:</strong> CSV + ready-to-merge blocks + ledger. The orchestrator applied two corrections on merge (see below).</p>
+</details>
+
+<h2 id="handovers">5 · Handovers</h2>
+<p class="lede">Nothing crossed from an agent into canon untouched. Each handover was a filter.</p>
+<table>
+  <thead>
+    <tr><th>Boundary</th><th>What the orchestrator did before accepting</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2, 3 → 1<br><span class="note">C and K staging</span></td>
+      <td>Re-ran liveness on all 10 cited URLs (10/10 pass), then downloaded each PDF, extracted text, and confirmed the constituting notification number and quoted values were literally present (6/6). Only then promoted.</td>
+    </tr>
+    <tr>
+      <td>4 → 1<br><span class="note">recount PASS</span></td>
+      <td>Read the ledger record and independently checked the arithmetic rather than trusting the PASS string.</td>
+    </tr>
+    <tr>
+      <td>5 → 1<br><span class="note">report blocks</span></td>
+      <td>Liveness-checked all 14 cited URLs, then corrected two entries: <span class="mono">trai</span> and <span class="mono">ibbi</span> had <span class="mono">statutorily_required: yes</span> resting on lawgist.in (a private reproduction), so both were downgraded to <span class="mono">unknown</span> with the reason recorded. Also normalised YAML 1.1’s boolean <span class="mono">false</span> back to the string <span class="mono">"no"</span>.</td>
+    </tr>
+    <tr>
+      <td>1 → repo</td>
+      <td>Suggested edges were <strong>not</strong> applied. They sit in <span class="mono">ledger/suggested/</span> because relationships are maintainer-reviewed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="prompts">6 · Prompt registry</h2>
+<p class="lede">A prompt is versioned config. The governing packet prompts lived in the registry before the run. The dispatch prompts — governing prompt plus the run-specific context an agent cannot discover for itself — were registered after the fact. Invariant 5 says they should have been registered first; they are now, and the next run registers before dispatching.</p>
+<table>
+  <thead>
+    <tr><th>prompt_id</th><th>Kind</th><th>Governed</th><th>Path</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="mono">cursor-C-commercial-v1</td><td>governing</td><td>Track C</td><td class="mono">ledger/prompts/03_CURSOR_C_commercial_courts.md</td></tr>
+    <tr><td class="mono">dispatch-cursor-C-commercial-v1</td><td>dispatch</td><td>Track C as actually sent</td><td class="mono">ledger/prompts/dispatch/C_track_dispatch_v1.md</td></tr>
+    <tr><td class="mono">cursor-K-criminal-v1</td><td>governing</td><td>Track K</td><td class="mono">ledger/prompts/04_CURSOR_K_criminal_magistracy.md</td></tr>
+    <tr><td class="mono">dispatch-cursor-K-criminal-v1</td><td>dispatch</td><td>Track K as actually sent</td><td class="mono">ledger/prompts/dispatch/K_track_dispatch_v1.md</td></tr>
+    <tr><td class="mono">cursor-N-classification-v1</td><td>governing</td><td>N refactor + recount</td><td class="mono">ledger/prompts/05_CURSOR_N_classification_counting.md</td></tr>
+    <tr><td class="mono">dispatch-cursor-N-recount-v1</td><td>dispatch</td><td>recount independence rules</td><td class="mono">ledger/prompts/dispatch/N_recount_dispatch_v1.md</td></tr>
+    <tr><td class="mono">report-publication-v1</td><td>governing</td><td>report track</td><td class="mono">ledger/prompts/06_CURSOR_report_publication.md</td></tr>
+    <tr><td class="mono">dispatch-report-publication-v1</td><td>dispatch</td><td>scoped to 12 named bodies</td><td class="mono">ledger/prompts/dispatch/report_publication_dispatch_v1.md</td></tr>
+    <tr><td class="mono">dispatch-packet-locator-v1</td><td>dispatch</td><td>Agent 0</td><td class="mono">ledger/prompts/dispatch/packet_locator_dispatch_v1.md</td></tr>
+    <tr><td class="mono">consensus-harness-v1</td><td>infra</td><td>all generation tracks</td><td class="mono">ledger/prompts/02_CONSENSUS_HARNESS_SPEC.md</td></tr>
+    <tr><td class="mono">public-inspection-v1</td><td>audit</td><td>critic / community verifier</td><td class="mono">ledger/prompts/08_public_inspection_prompt.md</td></tr>
+    <tr><td class="mono">orchestration-run-2026-09-01-v1</td><td>run record</td><td>this dashboard</td><td class="mono">ledger/ORCHESTRATION_RUN.md</td></tr>
+  </tbody>
+</table>
+
+<h2 id="pages">7 · GitHub Pages — the repository’s clickable page</h2>
+<p class="lede">The map at friedso.com is the product. This dashboard is what the GitHub repo itself should open when someone clicks the website link — a page the community can keep in a browser tab while a packet run is in flight.</p>
+<div class="callout">
+  After a maintainer enables Pages (one-time):
+  <a href="https://datastiltskin.github.io/jem/">https://datastiltskin.github.io/jem/</a>.
+  Until then the URL 404s; open <span class="mono">docs/index.html</span> from a clone, or this file in the repo.
+  Full steps: <span class="mono">jem/docs/GITHUB_PAGES.md</span>.
+</div>
+<ol class="flow">
+  <li><strong>Source of truth</strong> stays here, in <span class="mono">jem/ledger/dashboard/</span>, next to the run record. <span class="mono">docs/</span> at the repo root is a generated snapshot with asset paths rewritten for a site root.</li>
+  <li><strong>Do not put <span class="mono">jem/web/</span> on the same Pages site.</strong> That tree is the D3 map (plus a 6&nbsp;MB <span class="mono">graph.json</span>) and already has a host. Two products, two URLs.</li>
+  <li><strong>Enable once:</strong> Settings → Pages → Source: GitHub Actions. Workflow
+    <span class="mono">.github/workflows/pages.yml</span> deploys <span class="mono">docs/</span> on every push to <span class="mono">main</span> that touches the dashboard or diagrams.</li>
+  <li><strong>Make it the clickable page:</strong> repo About → Website →
+    <span class="mono">https://datastiltskin.github.io/jem/</span>. The README still leads with friedso.com as the map.</li>
+  <li><strong>Fallback</strong> if Actions Pages is unavailable: Settings → Pages → Deploy from a branch → <span class="mono">main</span> / <span class="mono">/docs</span>. Same URL.</li>
+</ol>
+
+</main>
+<footer>
+  Edits nothing in the map. This page is a run record, not data.
+  Replay: <span class="mono">cd jem && python3 scripts/harness/public_inspection.py</span>
+  · diagram: <span class="mono">python3 scripts/harness/render_orchestration.py</span>
+  · publish Pages snapshot: <span class="mono">python3 scripts/harness/publish_dashboard.py</span>
+</footer>
+</body>
+</html>

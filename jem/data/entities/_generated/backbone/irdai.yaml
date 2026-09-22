@@ -71,3 +71,26 @@ sources:
   url: https://njdg.ecourts.gov.in/
   type: NJDG
   accessed_date: '2024-12-01'
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: 'yes'
+  statutorily_required_source: https://irdai.gov.in/documents/37343/366193/IRDA+Act+as+amended+by+Insurance+Laws%28Amendment%29+Act+2015.pdf/12f18de3-80a7-e448-31ea-b991eeff56a0?download=true&t=1665118643377&version=1.1
+  report_type: annual_report
+  last_published: '2025-12-30'
+  last_published_url: https://irdai.gov.in/documents/37343/366637/%E0%A4%86%E0%A4%88%E0%A4%86%E0%A4%B0%E0%A4%A1%E0%A5%80%E0%A4%8F%E0%A4%86%E0%A4%88+%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BF%E0%A4%95+%E0%A4%B0%E0%A4%BF%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F+_+IRDAI+Annual+Report+2024-25.pdf/06f02832-66a3-6308-a16f-f46a6640fc93?version=2.0&t=1767598639163&download=true
+  expected_cadence: annual
+  data_as_of: '2025-03-31'
+  source_type: AnnualReport
+  source_url: https://irdai.gov.in/documents/37343/366637/%E0%A4%86%E0%A4%88%E0%A4%86%E0%A4%B0%E0%A4%A1%E0%A5%80%E0%A4%8F%E0%A4%86%E0%A4%88+%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BF%E0%A4%95+%E0%A4%B0%E0%A4%BF%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F+_+IRDAI+Annual+Report+2024-25.pdf/06f02832-66a3-6308-a16f-f46a6640fc93?version=2.0&t=1767598639163&download=true
+  notes: IRDAI Act 1999 s.20(2)-(3) requires IRDAI to submit an annual report to the Central Government
+    within 9 months of FY close, laid before each House of Parliament (form under IRDA (Annual Report
+    - Furnishing of Return, Statements and Other Particulars) Rules 2000). IRDAI complies and has an unbroken
+    run of published annual reports back to at least 2018-19; the "IRDAI Annual Report 2024-25" direct
+    PDF link was recovered from irdai.gov.in's own annual-reports listing page (Liferay document-detail
+    links do not resolve via simple fetch, so the direct /documents/... URL had to be extracted from page
+    markup). last_published (2025-12-30) is taken from the portal's own "Issue Date" column for that report
+    (cross-listed on intranet.irdai.gov.in and policyholder.gov.in), which differs slightly from the PDF
+    file's embedded upload timestamp (resolves to 2026-01-05) — both are within days of each other and
+    consistent with a Dec 2025 tabling followed by a Jan 2026 file re-upload; the portal Issue Date is
+    used as the more report-specific field. Prior edition (Annual Report 2023-24, dated 23-12-2024 on
+    the same portal) also verified live as a fallback citation.
