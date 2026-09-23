@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:05:37 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://www.derc.gov.in
+Access-Control-Allow-Credentials: true
+Content-Security-Policy: default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'self';
+Permissions-Policy: geolocation=(), microphone=(), camera=(), fullscreen=(self), payment=(), usb=(), autoplay=(), accelerometer=(), gyroscope=(), magnetometer=(), clipboard-read=(), clipboard-write=()
+Last-Modified: Fri, 05 Jul 2024 11:12:26 GMT
+Accept-Ranges: bytes
+Content-Length: 26455075
+Cache-Control: max-age=1209600
+Expires: Sun, 20 Sep 2026 04:05:37 GMT
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Firefox-Spdy: h2
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Access-Control-Allow-Methods: GET, POST
+Access-Control-Allow-Headers: accept, content-type, X-Requested-With, X-Prototype-Version, X-CSRF-Token, authorization
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/pdf
+

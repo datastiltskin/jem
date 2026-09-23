@@ -17,9 +17,10 @@ jurisdiction_scope:
   - Original
 created_year: 2009
 operational_status: Active
-statutory_basis: Delhi High Court Administrative Charter (Centre inaugurated 25 Nov 2009 by CJI K.G. Balakrishnan); Delhi
-  International Arbitration Centre (Internal Management) Rules, 2012 (effective 01 Nov 2012, updated 01 Jul 2018). Not constituted
-  by statute — HC-annexed administrative body. Formerly known as Delhi High Court Arbitration Centre (DAC).
+statutory_basis: Delhi High Court Administrative Charter (Centre inaugurated 25 Nov 2009 by
+  CJI K.G. Balakrishnan); Delhi International Arbitration Centre (Internal Management) Rules,
+  2012 (effective 01 Nov 2012, updated 01 Jul 2018). Not constituted by statute — HC-annexed
+  administrative body. Formerly known as Delhi High Court Arbitration Centre (DAC).
 appointment:
   nominates: null
   formally_appoints: null
@@ -41,15 +42,17 @@ audit:
   audit_report_public: false
 complaint_mechanism:
   lokpal_jurisdiction: Not_Applicable
-  removal_mechanism: 'Arbitrator challenge under DIAC Rules 2023. Award challenge under A&C Act 1996 s.34 in Delhi High Court.
+  removal_mechanism: 'Arbitrator challenge under DIAC Rules 2023. Award challenge under A&C
+    Act 1996 s.34 in Delhi High Court.
 
     '
-data_quality: verified
-data_quality_notes: >-
-  Inaugurated 25 Nov 2009 by CJI K.G. Balakrishnan; established under Delhi HC administrative charter by
-  then CJ Ajit Prakash Shah (CJ May 2008 – Feb 2010). First ever HC-annexed institutional arbitration centre — distinct
-  from IIAC (statutory body of national importance under MoLJ). 2024 caseload — 10,015 cases; 15,359 hearings (up from
-  1,959 hearings in 2020). AwardChallengedIn → hc_delhi in adr_arbitration_relationships.yaml. NJDG snapshot case_volume merged
+data_quality: partial
+data_quality_notes: 'Inaugurated 25 Nov 2009 by CJI K.G. Balakrishnan; established under Delhi
+  HC administrative charter by then CJ Ajit Prakash Shah (CJ May 2008 – Feb 2010). First ever
+  HC-annexed institutional arbitration centre — distinct from IIAC (statutory body of national
+  importance under MoLJ). 2024 caseload — 10,015 cases; 15,359 hearings (up from 1,959 hearings
+  in 2020). AwardChallengedIn → hc_delhi in adr_arbitration_relationships.yaml. NJDG snapshot
+  case_volume merged | verify-trib-01: NJDG source stamp stripped (non-eCourts body).'
 sources:
 - label: DIAC About Page (inauguration date and founding CJ)
   url: https://dhcdiac.nic.in/about-diac/
@@ -67,9 +70,5 @@ sources:
   url: https://www.legal500.com/
   type: OfficialReport
   accessed_date: '2026-06-17'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   clog_severity: unknown

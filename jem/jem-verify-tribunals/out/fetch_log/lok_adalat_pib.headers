@@ -1,0 +1,49 @@
+HTTP/2 302 
+content-type: text/html; charset=utf-8
+etag: XXXXXXXX
+location: /PressReleasePage.aspx?PRID=2040672&reg=48&lang=2
+cross-origin-opener-policy: same-origin-allow-popups
+cross-origin-resource-policy: cross-origin
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+referrer-policy: no-referrer-when-downgrade
+strict-transport-security: max-age=31536000; includeSubDomains
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), unload=(*), autoplay=(*), fullscreen=(*)
+content-security-policy: default-src 'self' https://pib.gov.in https://static.pib.gov.in https://*.google-analytics.com https://*.analytics.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.facebook.net https://*.twitter.com https://*.instagram.com https://*.youtube.com https://*.ytimg.com https://*.google.com https://c.go-mpulse.net https://*.akamaihd.net https://static.pib.gov.in; script-src-elem 'self' 'unsafe-inline' https://*.facebook.net https://*.twitter.com https://*.youtube.com https://*.google.com https://*.googletagmanager.com https://c.go-mpulse.net https://*.akamaihd.net https://static.pib.gov.in *; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://pib.gov.in https://static.pib.gov.in https://cdnjs.cloudflare.com translation-plugin.bhashini.co.in; style-src-elem 'self' translation-plugin.bhashini.co.in 'unsafe-inline' https://fonts.googleapis.com https://*.twitter.com https://*.facebook.com https://pib.gov.in https://static.pib.gov.in https://cdnjs.cloudflare.com; img-src * data: blob:; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com https://static.pib.gov.in; frame-src 'self' https://static.pib.gov.in https://*.facebook.com https://*.instagram.com https://*.youtube.com https://*.youtube-nocookie.com https://*.twitter.com https://*.kooapp.com https://*.google.com https://pib.gov.in https://*.fbcdn.net; connect-src 'self' https://cdnjs.cloudflare.com https://*.akstat.io https://*.facebook.com https://*.instagram.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com https://*.doubleclick.net https://*.googletagmanager.com https://*.fbcdn.net https://c.go-mpulse.net https://*.akamaihd.net translation-plugin.bhashini.co.in https://static.pib.gov.in; media-src 'self' https://*.youtube.com https://*.fbcdn.net https://static.pib.gov.in; form-action 'self';
+content-length: 174
+expires: Sun, 06 Sep 2026 04:08:44 GMT
+cache-control: max-age=0, no-cache, no-store
+pragma: no-cache
+date: Sun, 06 Sep 2026 04:08:44 GMT
+server-timing: cdn-cache; desc=MISS
+server-timing: edge; dur=30
+server-timing: origin; dur=21
+alt-svc: h3=":443"; ma=93600
+x-nic--cache-status: Miss from child, Miss from parent
+x-nic-grn: 0.5ff53017.1788667724.4e4bb72
+server-timing: ak_p; desc="1788667724166_389084511_82099058_5143_5733_8_12_15";dur=1
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+etag: XXXXXXXX
+cross-origin-opener-policy: same-origin-allow-popups
+cross-origin-resource-policy: cross-origin
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+referrer-policy: no-referrer-when-downgrade
+strict-transport-security: max-age=31536000; includeSubDomains
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), unload=(*), autoplay=(*), fullscreen=(*)
+content-security-policy: default-src 'self' https://pib.gov.in https://static.pib.gov.in https://*.google-analytics.com https://*.analytics.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.facebook.net https://*.twitter.com https://*.instagram.com https://*.youtube.com https://*.ytimg.com https://*.google.com https://c.go-mpulse.net https://*.akamaihd.net https://static.pib.gov.in; script-src-elem 'self' 'unsafe-inline' https://*.facebook.net https://*.twitter.com https://*.youtube.com https://*.google.com https://*.googletagmanager.com https://c.go-mpulse.net https://*.akamaihd.net https://static.pib.gov.in *; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://pib.gov.in https://static.pib.gov.in https://cdnjs.cloudflare.com translation-plugin.bhashini.co.in; style-src-elem 'self' translation-plugin.bhashini.co.in 'unsafe-inline' https://fonts.googleapis.com https://*.twitter.com https://*.facebook.com https://pib.gov.in https://static.pib.gov.in https://cdnjs.cloudflare.com; img-src * data: blob:; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com https://static.pib.gov.in; frame-src 'self' https://static.pib.gov.in https://*.facebook.com https://*.instagram.com https://*.youtube.com https://*.youtube-nocookie.com https://*.twitter.com https://*.kooapp.com https://*.google.com https://pib.gov.in https://*.fbcdn.net; connect-src 'self' https://cdnjs.cloudflare.com https://*.akstat.io https://*.facebook.com https://*.instagram.com https://*.google-analytics.com https://*.analytics.google.com https://*.google.com https://*.doubleclick.net https://*.googletagmanager.com https://*.fbcdn.net https://c.go-mpulse.net https://*.akamaihd.net translation-plugin.bhashini.co.in https://static.pib.gov.in; media-src 'self' https://*.youtube.com https://*.fbcdn.net https://static.pib.gov.in; form-action 'self';
+x-akamai-transformed: 9 - 0 pmb=mRUM,1
+expires: Sun, 06 Sep 2026 04:08:44 GMT
+cache-control: max-age=0, no-cache, no-store
+pragma: no-cache
+date: Sun, 06 Sep 2026 04:08:44 GMT
+server-timing: cdn-cache; desc=MISS
+server-timing: edge; dur=22
+server-timing: origin; dur=395
+alt-svc: h3=":443"; ma=93600
+x-nic--cache-status: Miss from child, Miss from parent
+x-nic-grn: 0.5ff53017.1788667724.4e4bb7b
+server-timing: ak_p; desc="1788667724246_389084511_82099067_41734_5607_8_0_15";dur=1
+

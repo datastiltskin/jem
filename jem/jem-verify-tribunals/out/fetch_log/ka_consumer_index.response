@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karnataka State Consumer Disputes Redressal Commission - Statistics</title>
+
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/rti_datatables/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/css/font-awesome.min.css">
+	   
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/bootstrap.css">
+	   <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/enfont.css">
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/owl_custom.css">
+<link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/style.css?1788668072=">
+<link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/responsive.css?1788668072=">
+
+    <link rel="stylesheet" href="https://kscdrc.karnataka.gov.in/assets/front/itbt/navbar.css">
+   
+  <link rel="stylesheet" type="text/css" href="https://kscdrc.karnataka.gov.in/assets/front/owl/owl.carousel.min.css">
+    <link href="assets/font-awesome.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="https://kscdrc.karnataka.gov.in/assets/front/tabswipe/css/swipe.css">
+  <link rel="stylesheet" type="text/css" href="https://kscdrc.karnataka.gov.in/assets/front/tabswipe/css/swipe_bundle.css">
+  <link rel="stylesheet" type="text/css" href="https://kscdrc.karnataka.gov.in/assets/front/tabswipe/css/tabswipe_style.css?1788668072=">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/png" sizes="42x42" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!-- Custom CSS -->
+<style>
+    .owl-policy-res-down .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    display: flex;
+}        :root {
+            --primary2-color: #b33771;
+            --secondary2-color: #82589f;
+
+              --primary-color: linear-gradient(90deg, var(--primary2-color) 9%, var(--secondary2-color) 120%);
+        }
+    
+  
+</style>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/rti_datatables/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/jquery_min.js"></script>
+    <script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/itbt/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/custom.js"></script>
+
+    <!-- Base URL and Language Variables -->
+    <script type="text/javascript">
+        var base_url = "https://kscdrc.karnataka.gov.in/";
+        var lang_name = "en";
+    </script>
+
+</head>
+
+<body class="dark-mode-area">
+
+    <div class="top-header">
+        <div class="topHeaderInner">
+
+            <div class="topHeadingLinks">
+
+                <a href="https://kscdrc.karnataka.gov.in/back/index" target="blank" class="login-btn">
+                    <div class="topHeadingLinkSingle">
+                        <div class="topHeadingLinkIcon">
+                            <img src="https://kscdrc.karnataka.gov.in/assets/front/itbt/images/header-profile.png" class="topHeadingLinkIco" alt="login">
+                        </div>
+                        <div class="topHeadingLinkLable">
+                            <p class="topHeadingLinkLableTxt">login</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://kscdrc.karnataka.gov.in/19/statistics/kn" class="no-dec login-button">
+                    <div class="topHeadingLinkSingle">
+                  
+                        <div class="topHeadingLinkLable">
+                            <p class="topHeadingLinkLableTxt"> ಕನ್ನಡ </p>
+                        </div>
+                    </div>
+                </a>
+
+                    <a  data-bs-toggle="modal" data-bs-target="#screen_reader_en" ><div class="topHeadingLinkSingle visually-challenged">
+                    <div class="topHeadingLinkIcon">
+                        <img src="https://kscdrc.karnataka.gov.in/assets/front/itbt/images/visually-challenged.png" class="topHeadingLinkIco" alt="visually challenged">
+                    </div>
+                    <div class="topHeadingLinkLable">
+                        <p class="topHeadingLinkLableTxt">visually challenged</p>
+                    </div>
+                </div></a>
+
+            </div>
+
+
+
+
+<style>
+    
+    .gsc-control-cse{padding: 0px !important;}
+</style>
+
+
+
+
+
+
+            <div class="subHeaderActions" style="display:flex;">
+
+
+   
+  <div>
+
+  </div>
+
+
+
+
+<form id="searchForm_en" method="GET" class="">
+  <div class="search-box" id="searchBox">
+    <input type="text" name="search" id="searchInput_en" class="search-txt" placeholder="Search...">
+    <button type="submit" class="search-btn" id="searchBtn">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</form>
+
+
+
+
+
+<script>
+  const searchBox = document.getElementById('searchBox');
+  const searchBtn = document.getElementById('searchBtn');
+  const searchInput = document.getElementById('searchInput_en');
+  const searchForm_en = document.getElementById('searchForm_en');
+
+  searchBtn.addEventListener('click', function (e) {
+    // If not active, activate it and focus
+    if (!searchBox.classList.contains('active')) {
+      e.preventDefault(); // Stop submit
+      searchBox.classList.add('active');
+      searchInput.focus();
+    } else if (searchInput.value.trim() === '') {
+      e.preventDefault(); // Don't submit if empty
+      searchInput.focus();
+    }
+    // Else allow normal form submission
+  });
+
+  // Custom form submission logic
+  searchForm_en.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const value = searchInput.value.trim();
+    if (value !== '') {
+		var url = 'https://kscdrc.karnataka.gov.in/search/' + encodeURIComponent(value)+"/en";
+	//	alert(url);
+     window.location.href = url;
+    }
+  });
+
+  // Close search box on click outside
+  document.addEventListener('click', function (e) {
+    if (!searchBox.contains(e.target)) {
+      searchBox.classList.remove('active');
+    }
+  });
+</script>
+
+
+
+
+
+             
+
+
+                <div class="subHeaderSwitchTheme">
+
+
+
+<input type="checkbox" id="toggle">
+<label for="toggle">
+    <i class="fa-solid fa-sun sun"></i>
+    <i class="fa-solid fa-moon moon"></i>
+</label>
+<div class="background"></div>
+                </div>
+                  <div class="subHeaderFontSize">
+        <div class="subHeaderFontSizeAction rightBorder" id="fontDecrease">
+            <i class="fa fa-minus subHeaderFontSizeActionIco"></i>
+        </div>
+        <div class="subHeaderFontSizeLable">
+            <p class="subHeaderFontSizeLableTxt">a</p>
+        </div>
+        <div class="subHeaderFontSizeAction leftBorder" id="fontIncrease">
+            <i class="fa fa-plus subHeaderFontSizeActionIco"></i>
+        </div>
+        <div class="subHeaderFontSizeAction" id="fontReset">
+            <i class="fa fa-refresh subHeaderFontSizeActionIco"></i>
+        </div>
+    </div>
+            </div>
+
+        </div>
+    </div>
+
+  
+<section class="header">
+    <div class="row dflex1 cmap_container">
+
+        <!-- Left: CM (Chief Minister) – always rendered, hidden via visibility when flag is set -->
+        <div class="col-md-3 col-6 col-lg-3 flex-left leftHeadSec order1"
+             >
+            <img src="https://planning.karnataka.gov.in/frontend/opt1/images/cm_logo/chief_minister_of_karrnataka_en.png?1788668072" 
+                 alt="ಕರ್ನಾಟಕ ರಾಜ್ಯ ಗ್ರಾಹಕರ ವ್ಯಾಜ್ಯಗಳ ಪರಿಹಾರ ಆಯೋಗ" 
+                 class="cm_karnataka_photo">
+        </div>
+
+        <!-- Middle: Department logo, name, subtitle, dept_photo -->
+        <div class="col-md-6 col-12 col-lg-6 flex-mid dflex midHeadSec">
+            <div class="dflex web_logo_set">
+                <img src="https://kscdrc.karnataka.gov.in/uploads/kar_main_logo_1757151125.png" 
+                     class="headerLogoImg plice_sm_logo" 
+                     alt="Karnataka State Consumer Disputes Redressal Commission">
+                <div class="dept_text_contaoiners">
+                    <p class="web_name">
+                        Karnataka State Consumer Disputes Redressal Commission                    </p>
+                    <p class="web_subtitle">
+                        Government of Karnataka                    </p>
+                </div>
+                <img src="https://kscdrc.karnataka.gov.in/uploads" 
+                     class="dept_photo" style="width: auto;height: 80px;"
+                     alt="">
+            </div>
+        </div>
+
+        <!-- Right: Minister – always rendered, hidden via visibility when flag is set -->
+        <div class="col-md-3 col-6 col-lg-3 flex-right rightHeadSec order3"
+             >
+            <div class="dflex web_logo_set justify-content-end">
+                <img src="" 
+                     class="dept_mini_logo " style="width: auto;height: 65px;border-radius: 100%;margin-top: 8px;padding-right: 8px;"
+                     alt="">
+                <div class="dept_text_contaoiners">
+                                        <p class="web_name"></p>
+                    <p class="web_subtitle"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <nav class="navbar navbar-expand-lg shadow navbar-sec">
+        <div class="container">
+            <button class="navbar-toggler collapsed"  onclick="openNav()">
+                     <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="opennav"><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class='navbar-nav mr-auto mb-2 mb-lg-0 menu deskmenu'><li class='nav-item level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/en'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/5/history/en'><i class=''></i> History</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/7/act-&-rules/en'><i class=''></i> Act & Rules</a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/2/about-us-/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> about us </a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/16/details-of-the-officers-at-karnataka-state-consumer-disputes-redressal-commission-and-district-consumer-disputes-redressal-commission--------/en'><i class=''></i> Details of the officers at Karnataka State Consumer Disputes Redressal Commission and District Consumer Disputes Redressal Commission</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='#.' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> Consumer Case Details</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/72/new-case-submission/en'><i class=''></i> File New Case</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/cause-list'><i class=''></i> List of Cases hearing by the Court/Bench or Cause List</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/case-history-case-status'><i class=''></i> Check your Case Status</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/judgement'><i class=''></i> Case Judgement</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/19/statistics/kn'><i class=''></i> Statistics</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/66/consumer-justice-flow-chart/en'><i class=''></i> Consumer Justice Flow Chart</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='1' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> RTI ACT</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://rtionline.karnataka.gov.in/index.php?lan=E'><i class=''></i> RTI Application Online</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/20/rti/en'><i class=''></i> Information u/s  4(1) (a) RTI 4(1) (b) </a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/Public%20information_1787550654.pdf'><i class=''></i> Public Information Officer & Appellate Authority</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/78/-transfer-cases-list-/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i>  Transfer cases list </a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/78/new-number-assigned-to-the-appeals-filed--before-the-kscdrc-bangalore-and-transferred--to-permanent-circuit-bench-belagavi./kn'><i class=''></i> New number assigned to the appeals filed  before the KSCDRC Bangalore and transferred  to Permanent Circuit Bench Belagavi.</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/76/new-number-assigned-to-the-appeals-filed--before-the-permanent-circuit-bench-belagavi./kn'><i class=''></i> New number assigned to the appeals filed  before the Permanent Circuit Bench Belagavi.</a></li></ul></li> 
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="opennav"><i class="fa fa-bars"></i></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+<style>
+#searchForm{display: flex;}
+.opennav .fa-bars{background: #0000004d;
+    padding: 11px 12px;
+    vertical-align: sub;
+    float: right;
+    text-align: right;
+    position: absolute;
+    right: 8px;
+    top: 11px;
+    border-radius: 100px;
+    font-size: 20px;
+    height: 40px;}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #001937;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 3px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.2s !important;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    line-height: 1;
+    padding: 12px 14px 1px 14px;
+    /* margin-left: 50px; */
+    background: #0ad2d87a;
+    /* border-radius: 50px; */
+    text-align: center;
+    /* margin: auto; */
+    display: table;
+    /* width: 20px; */
+    /* height: 22px; */
+    color: aliceblue;
+}
+
+#main {
+  transition: margin-left .2s;
+
+}
+ .opennav{
+    font-size: 30px;
+    cursor: pointer;
+
+    display: flex ;
+   }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+  display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+    .sidenav a {
+        font-size: 16px !important;
+        line-height: initial !important;
+    }
+  
+}
+.gsc-search-button{padding:10px;}
+
+table.gsc-search-box td.gsc-input {
+    padding-right: 12px;
+    padding: 0px;
+}
+</style>
+
+
+
+
+
+<div id="vardha" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="accordian" class="scms-acc">
+      <ul class='navbar-nav mr-auto mb-2 mb-lg-0 menu extramenudesk'><li class='nav-item level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/en'><i class='fa fa-home fs-35'></i></a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/5/history/en'><i class=''></i> History</a></li><li class='nav-item  level_0'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/7/act-&-rules/en'><i class=''></i> Act & Rules</a></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/2/about-us-/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> about us </a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/16/details-of-the-officers-at-karnataka-state-consumer-disputes-redressal-commission-and-district-consumer-disputes-redressal-commission--------/en'><i class=''></i> Details of the officers at Karnataka State Consumer Disputes Redressal Commission and District Consumer Disputes Redressal Commission</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='#.' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> Consumer Case Details</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/72/new-case-submission/en'><i class=''></i> File New Case</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/cause-list'><i class=''></i> List of Cases hearing by the Court/Bench or Cause List</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/case-history-case-status'><i class=''></i> Check your Case Status</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://e-jagriti.gov.in/judgement'><i class=''></i> Case Judgement</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/19/statistics/kn'><i class=''></i> Statistics</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/66/consumer-justice-flow-chart/en'><i class=''></i> Consumer Justice Flow Chart</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='1' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i> RTI ACT</a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://rtionline.karnataka.gov.in/index.php?lan=E'><i class=''></i> RTI Application Online</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/20/rti/en'><i class=''></i> Information u/s  4(1) (a) RTI 4(1) (b) </a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/uploads/Public%20information_1787550654.pdf'><i class=''></i> Public Information Officer & Appellate Authority</a></li></ul></li><li class='nav-item dropdown  level_0'><a class='nav-link dropdown-toggle' href='https://kscdrc.karnataka.gov.in/78/-transfer-cases-list-/en' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'><i class=''></i>  Transfer cases list </a><ul class='dropdown-menu shadow sub-mnu sub-mnu-0'><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/78/new-number-assigned-to-the-appeals-filed--before-the-kscdrc-bangalore-and-transferred--to-permanent-circuit-bench-belagavi./kn'><i class=''></i> New number assigned to the appeals filed  before the KSCDRC Bangalore and transferred  to Permanent Circuit Bench Belagavi.</a></li><li class='nav-item  level_1'><a class='nav-link' href='https://kscdrc.karnataka.gov.in/76/new-number-assigned-to-the-appeals-filed--before-the-permanent-circuit-bench-belagavi./kn'><i class=''></i> New number assigned to the appeals filed  before the Permanent Circuit Bench Belagavi.</a></li></ul></li> 
+    </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeNav()"></div>
+
+<script type="text/javascript">
+$('a[data-bs-toggle="dropdown"]').removeAttr('href');
+function openNav() {
+  document.getElementById("vardha").style.width = "250px";
+
+}
+
+function closeNav() {
+  document.getElementById("vardha").style.width = "0";
+
+}
+ 
+</script>
+
+
+<div class="feedback-btn">
+  <a href="https://kscdrc.karnataka.gov.in/feedback/en">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+    <span>Feedback</span>
+  </a>
+</div>
+
+
+
+    <script>
+    // Function to set theme colors
+    function setTheme(color1, color2) {
+        // Set the CSS variables for --primary-color and --secondary-color
+        document.documentElement.style.setProperty('--primary-color', color1);
+        document.documentElement.style.setProperty('--secondary-color', color2);
+
+        // Save the selected colors in cookies
+        document.cookie = "theme1=" + color1 + "; path=/; max-age=15"; // 30 days expiry
+        document.cookie = "theme2=" + color2 + "; path=/; max-age=15"; 
+    }
+
+    // Function to get the value of a cookie
+    function getCookie(name) {
+        let cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i].trim();
+            if (cookie.startsWith(name + '=')) {
+                return cookie.substring(name.length + 1);
+            }
+        }
+        return null;
+    }
+
+    // Apply the theme colors on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const theme1 = getCookie('theme1');
+        const theme2 = getCookie('theme2');
+        if (theme1 && theme2) {
+            document.documentElement.style.setProperty('--primary-color', theme1);
+            document.documentElement.style.setProperty('--secondary-color', theme2);
+        }
+    });
+</script>
+
+
+
+
+
+<style></style><script></script>	
+	 <div class="title-block"  style="background:#f5f5f5;" >
+	 	<a onclick="goBack()" class="back-btn"><i class="fa fa-arrow-left btn btn-back"><span class="hidden-sm hidden-xs">Back	</span></i></a>
+  <div class="title" >	 Statistics		
+		
+	</div>
+
+   
+  </div> 
+
+
+		<div class="container ipage">
+		<div style="width: 951; height: 599;" align="center"><center>
+<div style="width: 951; height: 599;" align="center"><center>
+<p align="center">&nbsp;</p>
+<br />
+<table border="1" width="75%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><img src="https://kscdrc.karnataka.gov.in/storage/pdf-files/new.jpg" alt="" width="22" height="9" />July-2026</span></strong></td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; July-2026" href="https://kscdrc.karnataka.gov.in/uploads/monthly%20report_1787808068.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; July-2026</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><strong><span style="color: #000080; font-family: Verdana; font-size: small;">June-2026</span></strong></td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; June-2026" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20%20June-2026_1785228672.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; June-2026</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><strong><span style="color: #000080; font-family: Verdana; font-size: small;">May-2026</span></strong></td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; May-2026" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20%20May%20-2026_1781952901.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; May-2026</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><strong><span style="color: #000080; font-family: Verdana; font-size: small;">April-2026</span></strong></td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; April-2026" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20%20April%20-2026_1781951221.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; April-2026</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><strong><span style="color: #000080; font-family: Verdana; font-size: small;">March-2026</span></strong></td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; March-2026" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20%20March-2026_1779086213.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; March-2026</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><strong><span style="color: #000080; font-family: Verdana; font-size: small;">February-2026</span></strong></td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; February-2026" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20%20Jan-2026_1771409258.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; February-2026</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><strong><span style="color: #000080; font-family: Verdana; font-size: small;">January-2026</span></strong></td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; January-2026" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20Jan%20-2026_1779085155.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; January-2026</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; December -2025" href="https://kscdrc.karnataka.gov.in/uploads/ilovepdf_merged_1769169510.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; December-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">November-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; November-2025" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20%20Navember%20-2025_compressed_1766042922.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; November-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; October-2025" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20%20October-2025_1764317468.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; October-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">September-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; September-2025" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20Sep-2025_1762432134.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp;&nbsp;September-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; July-2025" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofJuly-2025.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; August-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; July-2025" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofJuly-2025.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; July-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; June-2025" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofJune2025.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; June-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; May-2025" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/StatisticsfortheMonthofMay-2025.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; May-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April&nbsp; -2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; August-2025" href="https://kscdrc.karnataka.gov.in/uploads/Statistics%20for%20the%20Month%20of%20Aug-2025_1762431511.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; August-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March -2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; March -2025" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofMarch-2025.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; March -2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">&nbsp;February-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp;&nbsp;February-2025" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/03-04-2025.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; February-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2025</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp;January-2025" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofJanuary-2025.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; January-2025</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December -2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of&nbsp; Decemebr-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofDecember-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; Decemebr-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">&nbsp; November -2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the month of November-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofNovember-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; November-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the month of October -2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofOctober-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; &nbsp;October-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">&nbsp;September-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the month of September-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofSeptember-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of&nbsp; September-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of July-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofAug-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of July-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofJuly-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of June-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofJune-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of May-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/STATISTICALREPORTMAY.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of April-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticalReport-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of March-2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/STATISTICALREPORTMARCH-2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">February-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the month of January 2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofFebruary-2024.pdf">Statistics for the Month of February-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2024</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the month of January 2024" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticalReportJan2024.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2024</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of December-2023" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofDecember-2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of December-202</a>3</span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">November-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of November-2023" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/Statistics for the Month of November-2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of November-202</a>3</span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a title="Statistics for the Month of October-2023" href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics/StatisticsfortheMonthofOctober-2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of October-202</a>3</span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">September-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/StatementforthemonthofSeptember2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of September-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />August-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/StatisticsforthemonthofAugust-2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />July-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/July2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />June-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/RTIJune2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />May-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/RTIMay2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />April-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/StatsApril2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />March-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/StatisticsforthemonthofMarch2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />February-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/StatementofFebruary2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of February-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />January-2023</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics for the Month of January 2023.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2023</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />December-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics for the Month of December 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of December-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />November-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics for the Month of November 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of November-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />October-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Statistics for the Month of October 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of October-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6"><img style="margin: 5px; color: #b364c9; line-height: 22.4px; font-size: 14.66px;" />September-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Stats September 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of September-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/Stats August 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/July 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/June 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/May 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/April 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/March 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">February-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/February 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of February-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2022</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/January 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2022</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/December 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of December-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">November-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/November 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of November-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/October 2022.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of October-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">September-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/September 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of September-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/August 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/July 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/June 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/May 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/April 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/March 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">February-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/February 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of February-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2021</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/January 2021.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2021</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/December 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of December-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">November-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/November 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of November-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/October 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of October-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">September-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/September 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of September-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/August 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/July 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/June 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/May 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/April 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/March 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">February-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/February 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of February-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2020</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/January 2020.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2020</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/December 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of December-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">November-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/November 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of November-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/October 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of October-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">September-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/September 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of September-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/August 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/July 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/June 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/May 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/April 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/March 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">February-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/February 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of February-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2019</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/January 2019.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2019</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/December 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of December-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">November-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/November 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of November-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/October 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of October-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">September-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/September 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of September-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/August 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/July 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/June 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/May 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/April 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/March 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">February-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/February 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of February-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2018</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/January 2018.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2018</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/December 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of December-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">November-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/November 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of November-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/October 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of October-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">September-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/September 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of September-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/August 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/July 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/June 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/May 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/April 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/March 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">February-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/February 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of February-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2017</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/January 2017.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2017</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">December-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/December 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of December-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">November-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/November 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of November-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">October-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/October 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of October-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">September-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/September 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of September-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">August-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/August 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of August-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">July-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/July 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of July-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">June-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/June 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of June-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">May-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/May 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of May-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">April-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/April 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of April-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">March-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/March 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of March-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">February-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/February 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of February-2016</a></span></strong></td>
+</tr>
+<tr>
+<td style="width: 29.3218%;" align="right" bgcolor="#CEF3D6">January-2016</td>
+<td style="width: 69.6782%;" bgcolor="#D6EF39"><strong><span style="color: #000080; font-family: Verdana; font-size: small;"><a href="https://kscdrc.karnataka.gov.in/storage/pdf-files/January 2016.pdf" target="_blank" rel="noopener noreferrer">Statistics for the Month of January-2016</a></span></strong></td>
+</tr>
+</tbody>
+</table>
+<br />
+<p>&nbsp;</p>
+</center></div>
+<p>&nbsp;</p>
+</center></div>	</div>
+<div class="modal fade" id="screen_reader_en" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+           
+              <h4 class="modal-title">Screen Reader Access </h4>
+            </div>
+
+            <div class="modal-body" style="overflow-x: auto;">
+              <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+              <p>Following table lists the information about different screen readers:</p>
+
+              <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sl.No</th>
+                  <th>Screen Reader</th>
+                  <th>Website</th>
+                  <th>Free/ Commercial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Non Visual Desktop Access (NVDA)</td>
+                  <td><a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>JAWS</td>
+                  <td><a href="https://www.freedomscientific.com/products/software/jaws/" target="_blank">http://www.freedomscientific.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Window-Eyes</td>
+                  <td><a href="http://www.gwmicro.com/" target="_blank">http://www.gwmicro.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>System Access To Go</td>
+                  <td><a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>WebAnywhere</td>
+                  <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+  <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+      </div>
+           
+          </div>
+          
+        </div>
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+<!-- Single Modal - 2nd Forest & Farm Herbal Expo 2026 -->
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background: #949494; color: #fff; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 40px; line-height: inherit; float: right; margin-top: -10px; margin-right: -10px; cursor: pointer;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+           <div style="padding: 15px; background: #f5f5f5; margin-top: 10px; border-radius: 5px;">
+          <h3 style="color: #2d6a4f;">🌿 2nd Forest & Farm Herbal Expo – 2026</h3>
+          <p style="font-size: 16px; margin: 5px 0;">
+            <strong>📅 Date:</strong> 18<sup>th</sup> - 20<sup>th</sup> September 2026<br>
+            <strong>📍 Venue:</strong> Karnataka Chitrakala Parishath, Kumara Krupa Road, Bengaluru
+          </p>
+          <p style="font-size: 14px; color: #555;">
+            Organized by: Karnataka State Medicinal Plants Authority & Karnataka Forest Department
+          </p>
+          
+          <!-- Read More Button - Opens PDF in new tab -->
+          <a href="https://webportal.karnataka.gov.in/assets/front/popups/herbal_expo_2026_letters_en.pdf" 
+             target="_blank" 
+             class="btn btn-success" 
+             style="margin-top: 10px; padding: 10px 30px; font-size: 16px; border-radius: 5px; text-decoration: none; display: inline-block; background-color: #2d6a4f; color: #fff; border: none;">
+            📄 Read More
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img src="https://webportal.karnataka.gov.in/assets/front/popups/kampa_en_270826.jpg" class="img-fluid imgkampa" alt="2nd Forest & Farm Herbal Expo 2026">
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  var path = window.location.pathname.replace(/^\/|\/$/g, '');
+  var segments = path === '' ? [] : path.split('/');
+
+  // Show only on homepage
+  if (segments.length <= 1) {
+          $('#eventModal').modal('show');
+      setTimeout(function() {
+        $('#eventModal').modal('hide');
+      }, 20000); // Auto-close after 20 seconds
+      }
+});
+</script>
+
+<style>
+
+.search-box {
+  position: relative;
+  height: 25px;
+  background: #2f3640;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.cm_karnataka_photo{height: 120px !important;}
+.acts_table td, .acts_table p, .acts_table a {
+    background: #350dff;
+    color: white !important;
+}
+.search-box.active {
+  width: 240px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.dpal-gserach-btn{color: white;padding: 6px;}
+
+.search-btn {
+  color: #fff;
+  transition: 0.4s;
+  z-index: 1;background: transparent;border:0px;
+
+  margin-left: -10px;margin-top: 6px;
+}
+
+.search-box.active .search-btn {
+  color: #2f3640;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #2f3640;
+  font-size: 16px;
+  width: 0;
+  transition: 0.4s;
+  /*margin-left: 10px;*/
+  z-index: 0;
+}
+
+.search-box.active .search-txt {
+  width: 100%;
+}
+    /* First Modal Styles */
+    .kswdc_modal-body p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img{width: 100%;}
+    .kswdc_dflex{display: flex;}
+    
+    /* Second Modal Styles */
+    .kswdc_modal-body2 p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .kswdc_pop_img2 {width: 100%;}
+    .kswdc_dflex2 {display: flex;}
+</style>
+
+  <!-- <div class="modal fade" id="eventModalkswdc" tabindex="-1" role="dialog" aria-labelledby="eventModalkswdcLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center kswdc_modal-body">
+          <div class="row kswdc_dflex">
+            <div class="col-12">
+              <img src="https://atimysore.karnataka.gov.in/uploads/banner_popup.jpeg" class="img-fluid kswdc_pop_img" alt="Image 1">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+<script>
+    $(document).ready(function(){
+      var path = window.location.pathname.replace(/^\/|\/$/g, '');
+      var segments = path === '' ? [] : path.split('/');
+
+      if (segments.length <= 1) {
+        // Show first modal if active
+                  $('#eventModalkswdc').modal('show');
+          setTimeout(function() {
+            $('#eventModalkswdc').modal('hide');
+          }, 20000);
+        
+        // Show second modal if active (with delay to avoid conflict)
+              }
+    });
+</script>
+<style type="text/css">
+.mongologo{display:none !important;}
+td,th{color:black !important;}
+  .modal{background: #0e0e0ebf;}
+  .footer{width:100% !important;}
+      .modal-body{color: black;}
+    .foot-bottom{   display: flex;
+    background: #333434;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;}
+    .vhide{visibility: hidden;}
+    .lineDiv2,.lineDiv1{background-color: goldenrod !important;}
+        i.fa.fa-angle-right {
+    padding-right: 8px;
+}
+
+.footerSectionDetails a{color: white !important;}
+
+.footer_container li,.footer_container a{cursor: pointer;color:white;}
+  .modal-title{width: -webkit-fill-available}
+  .cls-btn{padding: 8px 10px 0px 10px;}
+</style>
+
+
+
+
+
+<section class="footer_container">
+    <div class="container footerSection_Div">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p>Disclaimer</p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP"><p>
+                       Please note that this page also provides links to the websites / web pages of Govt. Ministries/Departments/Organisations. <br>The content of these websites are owned by the respective organisations and they may be contacted for any further information or suggestion
+                    </p>
+                </div>
+            </div>
+          </div>
+          
+           <div class="col-lg-4">
+
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle"><p> Website Policies and Guidelines </p></div>
+                <div class="lineDiv"> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+                </div>
+                <div class="footerSectionP1">
+                    <div>
+                         <ul class="list-unstyled">
+      <li data-bs-toggle="modal" data-bs-target="#myModalf3"><i class="fa fa-angle-right" aria-hidden="true"></i>Copyright Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf4"><i class="fa fa-angle-right" aria-hidden="true"></i>Hyperlinking Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf5"><i class="fa fa-angle-right" aria-hidden="true"></i>Security Policy</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf6"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms & Conditions</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf7"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</li>
+
+      </ul> 
+                    </div>
+                </div>
+            </div>
+
+           </div>
+
+
+           <div class="col-lg-4">
+            <div class="footerSectionDetails">
+                <div class="footerSectionTitle "><p>Accessibility Resources</p></div>
+                <div class="lineDiv "> 
+                    <div class="lineDiv1"></div>
+                    <div class="lineDiv2"></div>
+					
+                </div><br>
+                <div class="footerSectionP"><p>
+                     <ul class="list-unstyled">
+                          <li><a href="https://kscdrc.karnataka.gov.in/sitemap/kn"><i class="fa fa-angle-right" aria-hidden="true"></i>Sitemap </a></li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf8"><i class="fa fa-angle-right" aria-hidden="true"></i>Help</li>
+      <li data-bs-toggle="modal" data-bs-target="#myModalf9"><i class="fa fa-angle-right" aria-hidden="true"></i>Screen Reader Access</li>
+      <li><a href="https://ceg.karnataka.gov.in/guidelines/kn" ><i class="fa fa-angle-right" aria-hidden="true"></i>Guidelines</a></li>
+    </ul>
+                    </p>
+                </div>
+            </div>
+           </div>
+
+
+
+        </div>
+
+
+
+        <div class="lastUpdate">
+            <div><p>Last Updated: </p></div>
+            <div><p>Visitors Counter: </p></div>
+            <div><p>Version: CeG/KRN 4.0</p></div>
+        </div>
+
+
+        <div class="contentOwner">
+            <p>  Content Owned and maintained by: Karnataka State Consumer Disputes Redressal Commission, Government of Karnataka</p>
+            <p>Designed , Developed & Hosted by: Centre for e-governance - Webportal karnataka government © 2026, All Rights Reserved.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="footer ">
+
+
+
+<ul class="list-inline foot-bottom">
+      <li>
+       <a href="https://www.meity.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/Meity_logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://digitalindia.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/digital-india-logo.png" class="footer_image"></a>
+      </li> 
+      <li>
+       <a href="https://data.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/data-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.india.gov.in/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/india-gov-logo.png" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.pmindia.gov.in/en/" target="_blank" class="md-opjjpmhoiojifppkkcdabiobhakljdgm_doc"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/cm_logo/pm-india-logo.png" class="footer_image"></a>
+      </li>
+
+      <li class="footer4_divider"></li>
+      <li></li>
+     <li>
+       <a href="https://guidelines.india.gov.in/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/GIGW.jpeg" class="footer_image"></a>
+      </li>
+      <li>
+       <a href="https://www.w3.org/TR/WCAG22/"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/WCAG.jpeg" class="footer_image"></a>
+      </li> 
+      <li>
+      <a href="https://www.https.in/government-solutions"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/SSLcertificate.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://www.w3schools.com/html/default.asp"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/w3c.png" class="footer_image"></a>
+      </li>
+      <li>
+      <a href="https://kannadapraadhikaara.karnataka.gov.in"><img src="https://ceg.karnataka.gov.in/frontend/opt1/images/kp_kn.jpeg" class="footer_image"></a>
+      </li>
+    </ul>
+</div>
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Copyright Policies -->
+  <div class="modal fade" id="myModalf3" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Copyright Policy</h4>
+		            <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+         
+         <p class="copy_header">Copyright policy (if the published information is available free of any charge)</p>
+
+           <p>1)Information featured on this website can be re-published in any media form free
+               of any charge only with prior permission from us(CeG) or concerned respective authority which is owning the website, through email.</p>
+           <p>2)Information can be republished as it is available and not to be used in a distorted or misleading manner.</p>
+           <p>3)Where the material is being published or suggested to others, the source must be prominently acknowledged </p>
+           <p>4)13. However, the permission to reproduce this material does not extend to any material on this site, which is explicitly identified as being the copyright of a third party</p>
+          
+        <p class="copy_header">Copyright policy (if there is a provision to reuse published information)</p>
+        
+           <p>1)The information published on the website comes under copyright policy and obtaining authorization for their republish is a pre-requisite.</p>  
+
+           <p>2)To get permission one can mail to ………………..@.........</p>
+
+         
+        </div>
+   
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Hperlinking Policies -->
+  <div class="modal fade" id="myModalf4" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Hyperlinking Policy</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+         <p class="copy_header">(in case the respective department doesn’t need any permission to hyperlink in their website) </p>
+
+           <p>1)We do not object to you linking directly to the information that is hosted on our site and no prior permission is required for the same.</p>
+
+           <p>2)we do not permit our pages to be loaded into frames on other sites. Our Department’s pages must load into a newly opened browser window of the user.</p>
+
+        <p class="copy_header">(in case of hyperlink permission is necessary for the website)</p>
+        
+           <p>1)to provide any link or its form on this website, it is compulsory to procure permission. </p>  
+
+           <p>2)permission can be obtained from the Centre for e-governance by requesting to this email. pd.webportal@karnataka.gov.in</p>
+ 
+           <p>3)Before leaving this government website note: this contact button will lead to another website, to get more information on such new opened site, one must contact the concerned contacts registered on that website.</p>
+         
+
+        </div>
+     
+      </div>
+      
+    </div>
+  </div>
+   
+
+
+
+  <!-------------------------------------------------------------------->
+  <!-- Security Policies -->
+  <div class="modal fade" id="myModalf5" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Security Policy</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+           <p> 1) For site security purposes and to ensure that this service remains available to all users, this Government      computer system employs commercial software programs to monitor network traffic to identify unauthorized attempts to upload or change information, or otherwise cause damage.
+           </p><br>
+
+          <p>2)  Except for authorized law enforcement investigations, no other attempts are made to identify individual users or their usage habits. Raw data logs are used for no other purposes and are scheduled for regular deletion.
+          </p><br>
+
+          <p>3) Unauthorized attempts to upload information or change information on this service are strictly prohibited and may be punishable under the Indian IT Act (2000).</p><br>
+
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+ <!-------------------------------------------------------------------->
+  <!-- Terms & Conditions -->
+  <div class="modal fade" id="myModalf6" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Terms & Conditions</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <p>1)This website is designed, developed, and maintained by the center for e-governance.</p><br>
+
+          <p>2) Though all efforts have been made to ensure the accuracy and currency of the content on this website, the same should not be construed as a statement of law or used for any legal purposes. In case of any ambiguity or doubts, users are advised to verify/check with the Department(s) and/or other source(s) and to obtain appropriate professional advice.</p><br>
+
+          <p>3) ) Under no circumstances will this Department be liable for any expense, loss or damage including, without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use, of data, arising out of or in connection with the use of this website.</p><br>
+
+          <p>4) These terms and conditions shall be governed by and construed in accordance
+          with the Indian Laws. Any dispute arising under these terms and conditions
+          shall be subject to the jurisdiction of the courts of India.</p><br>
+
+
+          <p>5) The information posted on this website could include hypertext links or
+          pointers to information created and maintained by non-Government/private
+          organisations. (Name of Department) is providing these links and pointers solely
+          for your information and convenience. When you select a link to an outside
+          website, you are leaving the website and are subject to
+          the privacy and security policies of the owners/sponsors of the outside website.</p><br>
+
+
+          <p>6) The concerned department does not guarantee the availability of such linked pages at all times.</p><br>
+
+          <p>7)The concerned department, cannot authorize the use of copyrighted materials contained in linked websites. Users are advised to request such authorization from the owner of the linked website.</p><br>
+
+          <p>8)The concerned  department does not guarantee that linked websites comply with Indian Government Web Guidelines</p>
+          <br>
+ 
+          <p>If the user visits the information and collects information or downloads files, the following elements may automatically download,</p>
+          
+          <ul>
+            <li>- your service domain, IP number, how visitors accessed our website.</li>
+            <li>- browsers and operating systems.</li> 
+            <li>- date and time of users’ visits.</li> 
+            <li>- URLs from which visitors accessed information.</li>
+            <li>- if the user has visited the website from other websites, details of that website</li>
+          </ul>
+ 
+
+         <h6>Cookies</h6>
+
+          <p>
+            When you visit some websites, they may download small pieces of software on your computer/browsing device known as cookies. Some cookies collect personal information to recognize your computer in the future. We only use non-persistent cookies or “per-session cookies”. 28 Per-session cookies serve technical purposes, like providing seamless navigation through this website. These cookies do not collect personal information on users and they are deleted as soon as you leave our website. The cookies do not permanently record data and they are not stored on your computer’s hard drive. The cookies are stored in memory and are only available during an active browser session. Again, once you close your browser, the cookie disappears.
+          </p>
+
+
+        </div>
+   
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Privacy Policies -->
+  <div class="modal fade" id="myModalf7" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Privacy Policies</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <p class="copy_header">privacy policy : (when the website doesn’t collect any personal information)</p>
+            <p>
+              We collect no personal information, like names or addresses, when you visit our website. If you choose to provide that information to us, it is only used to fulfill your request for information
+            </p>
+
+          <p class="copy_header">user information: </p>
+            <p>
+              we do collect technical user details when a user visits the websites and visitor information such as the type of browser, server, and domain, date and time, details of documents downloaded are recorded, This information is only used to help us make the site more useful for you. With this data, we learn about the number of visitors to our site and the types of technology our visitors use. We never track or record information about individuals and their visits. (except in the case when directed by the court through a warrant) 
+            </p>
+
+          <p class="copy_header">cookies: </p>
+            <p>
+              Web sites provide a piece of software when visitors receive information on a website and they are called Cookies. No such cookies are used on this website. 
+            </p> 
+
+          <p class="copy_header">Email management: </p>
+            <p>
+             emails are stored when a user sends any information only for that instant and is used only to give information to them. these are not to be used for any purposes or to include in the contact list. without intimating the user, it won’t be revealed.
+            </p> 
+            
+          <p class="copy_header">collection of personal details:  </p>
+            <p>
+              if the user asks or provides any personal information, the details of its usage are mentioned. if you are not satisfied or suspicious about the details are given or wish to provide an opinion about the same, its necessary for you to contact assigned webmasters under ‘contact us’ section 
+
+              note: private pieces of information received under ‘Personal details’ will only be used to collect identity or elements for easy identification. 
+ 
+            </p> 
+            
+          <p class="copy_header">cookies: </p>
+            <p>
+              Web sites provide a piece of software when visitors receive information on a website and they are called Cookies. No such cookies are used on this website. 
+            </p>     
+
+            <h6 style="font-weight: 600;">if the user provides personal information.</h6>
+             <p>
+               1. We do not collect personal information for any purpose other than to respond to you (for example, to respond to your questions or provide subscriptions you have chosen). If you choose to provide us with personal information like filling out a Contact Us form, with an e-mail address or postal address, and submitting it to us through the website-we use that information to respond to your message and to help you get the information you have requested. We only share the information you give us with another Government agency if your question relates to that agency, or as otherwise required by law. 
+            </p>
+            <p>
+              2. Our website never collects information or creates individual profiles for commercial marketing. While you must provide an email address for a localized response to any incoming questions or comments to us, we recommend that you do NOT include any other personal information.
+            </p>
+
+          
+           <h6 style="font-weight: 600;">website security </h6>
+             <p>
+              1)to make the information available to all, to prevent unauthorized user entry, to stop harming or distorting information and keeping the security of the website in mind, also to handle user traffic, commercial software programs are used. 
+             </p>
+
+             <p>
+               2)Except for official law institutions, no attempts are made to personally identify the visitor or user.
+             </p>
+             
+             <p>3)Visitor information is subject to regular deletion</p>
+             <p>4)unauthorized users shall not add or change information available which can have legal consequences and may be subjected to fine under IT act (2000).</p>
+ 
+        </div>
+  
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Help -->
+  <div class="modal fade" id="myModalf8" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Help</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <h6 style="text-decoration: underline;" class="copy_header">INFORMATION SEARCH:</h6>
+
+           <p> to help users access information within the website, a “search here” option is been provided. here, the option to type in Kannada is made available. while searching, usage of Unicode font is compulsory. option to search in English is also provided. </p>
+
+          <h6 style="text-decoration: underline;" class="copy_header">INTERNET ACCESSIBILITY</h6> 
+
+            <p>if the internet is slow or unavailable, there may be a modification in website design or some subpages may not open. </p>
+
+          </p><br>
+
+          <div class="scroll-table1  table table-striped table-bordered"><div class="guide-text"><i class="fa fa-long-arrow-right"></i></div><div class="scroll-table"><table id="tablehelp" class="border" border="1"> <caption>Help of Various File formats :</caption> <tbody> <tr> <th>Document Type</th> <th>Download</th> </tr> <tr class="even"> <td>PDF content</td> <td> <img src="https://labour.gov.in/sites/default/files/pdf.png" alt="image"><a href="http://get.adobe.com/reader/" target="_BLANK" title="External site that opens in a new window"> Adobe Acrobat Reader</a> (External website that opens in a new window) </td> </tr> <tr class="odd"> <td>Word files</td> <td><img src="https://labour.gov.in/sites/default/files/Word.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=3657CE88-7CFA-457A-9AEC-F4F827F20CAC&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Word Viewer (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c8378bf4-996c-4369-b347-73edbd03aaf0&amp;displaylang=EN" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Word (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Excel files</td> <td> <img src="https://labour.gov.in/sites/default/files/Excel.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D3727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> Excel Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for Excel (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="odd"> <td>PowerPoint presentations</td> <td><img src="https://labour.gov.in/sites/default/files/powerpoint.png" alt="image">  <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyId=428D5727-43AB-4F24-90B7-A94784AF71A4&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window"> PowerPoint Viewer 2003 (in any version till 2003)</a> - External website that opens in a new window<br> <a href="http://www.microsoft.com/downloads/en/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466&amp;displaylang=en" target="_BLANK" title="External site that opens in a new window">Microsoft Office Compatibility Pack for PowerPoint (for 2007 version)</a> - External website that opens in a new window </td> </tr> <tr class="even"> <td>Flash content</td> <td> <img src="https://labour.gov.in/sites/default/files/Flash.png" alt="image"> <a href="http://get.adobe.com/flashplayer/" target="_BLANK" title="External site that opens in a new window">Adobe Flash Player </a>(External website that opens in a new window) </td> </tr> <tr class="odd"><td>Audio Files</td> <td> <img src="https://labour.gov.in/sites/default/files/red.png" alt="image"> <a href="http://windows.microsoft.com/en-US/windows/downloads/windows-media-player" target="_BLANK" title="External site that opens in a new window">Windows Media Player </a>(External website that opens in a new window) </td> </tr> </tbody> </table></div></div>
+
+
+
+        </div>
+      
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------->
+  <!-- Screen Reader Access -->
+  <div class="modal fade" id="myModalf9" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Screen Reader Access</h4>
+		    <button type="button" class="btn btn-danger pull-right" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="nicetext">        
+            <div class="innerpage">
+             <div id="skipCont" class="wrapper">
+       
+             <div class="row">                 
+              <div class="col-md-12 col-sm-9 col-xs-12">
+                <h1 class="heading" tabindex="0"></h1>
+                <div class="region region-content">
+                <div id="block-system-main" class="block block-system">
+
+    
+                <div class="content">
+                 <div class="panel-display panel-1col clearfix">
+                 <div class="panel-panel panel-col">
+                   <div>
+                    <div class="panel-pane pane-views pane-page">
+  
+                     <div class="pane-content">
+                       <div class="view view-page view-id-page view-display-id-block view-dom-id-9f59a9bf8ad69ecc93f01660ca78bb00">
+        
+                       <div class="view-content">
+                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+                         <div class="views-field views-field-body">        
+                          <div class="field-content">
+                            <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+                            <p>Following table lists the information about different screen readers:</p>
+
+                            <div class="guide-text">
+                              <i class="fa fa-long-arrow-right"></i>
+                            </div>
+
+                            <div class="scroll-table1">  
+                              <table class="srtable table table-striped table-bordered" summary="Screen Reader">
+                                <tbody>
+                                  <tr>
+                                    <th>Sl. No.</th>
+                                    <th>Screen Reader</th>
+                                    <th>Website</th>
+                                    <th>Free/ Commercial</th>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Non Visual Desktop Access (NVDA)</td>
+                                    <td><a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a><br> (External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>2</td>
+                                    <td>JAWS</td>
+                                    <td><a href="http://www.freedomscientific.com/products/software/jaws/" target="_blank">http://www.freedomscientific.com</a> <br>(External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Window-Eyes</td>
+                                    <td><a href="http://www.gwmicro.com/Window-Eyes/" target="_blank">http://www.gwmicro.com</a><br> (External website that opens in a new window)</td>
+                                    <td>Commercial</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>4</td>
+                                    <td>System Access To Go</td>
+                                    <td><a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a><br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>5</td>
+                                    <td>WebAnywhere</td>
+                                    <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a> <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+								  
+								  
+								  
+								    <tr>
+                                    <td>6</td>
+                                    <td>atoall</td>
+                                    <td><a title="This Will Make You Easy For Growth, Use Accessibility Tool" target="_blank" rel="noopener" href="https://atoall.com/all.asp"> <img height="64" width="64" alt="This Will Make You Easy For Growth, Use Accessibility Tool" src="https://atoall.com/all/512-accessibility-square.svg"></a>
+ <br>(External website that opens in a new window)</td>
+                                    <td>Free</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>  
+                        </div>  
+                      </div>
+                    </div>
+  
+                </div>  
+               </div>
+  
+              </div>
+              </div>
+              </div>
+             </div>
+             </div>
+             </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/owl/owl.carousel.js"></script>
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/acc_search.js"></script>  
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/custom.js"></script>   
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/aos.js"></script>  
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/map/main.js"></script> 
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/rti_datatables/dataTables.jqueryui.min.js"></script> 
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/rti_datatables/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/tabswipe/js/swipebundle.js"></script>   
+<script type="text/javascript" src="https://kscdrc.karnataka.gov.in/assets/front/js/custom_fancybox.js"></script>  
+
+<script>
+      
+   $('[data-fancybox="gallery"]').fancybox({
+  buttons: [
+    "slideShow",
+    "thumbs",
+    "zoom",
+    "fullScreen",
+    "share",
+    "close"
+  ],
+  loop: false,
+  protect: true
+});
+</script> 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.getElementById('toggle');
+    const darkModeAreas = document.querySelectorAll('.dark-mode-area');
+
+    // Define the dark mode CSS for specific classes and elements
+    const darkModeCSS = `
+        .dark-mode-area.dark-mode h1,
+        .dark-mode-area.dark-mode header,
+        .dark-mode-area.dark-mode body,
+        .dark-mode-area.dark-mode div,
+        .dark-mode-area.dark-mode span,
+        .dark-mode-area.dark-mode h6,
+        .dark-mode-area.dark-mode li,
+        .dark-mode-area.dark-mode p,
+        .dark-mode-area.dark-mode .header,
+        .dark-mode-area.dark-mode .navbar-sec,
+        .dark-mode-area.dark-mode button,
+        .dark-mode-area.dark-mode section,
+        .dark-mode-area.dark-mode extramenudesk,
+        .dark-mode-area.dark-mode dropdown-menu,
+        .dark-mode-area.dark-mode dropdown,
+        .dark-mode-area.dark-mode nav-item,
+        .dark-mode-area.dark-mode nav-link,
+        .dark-mode-area.dark-mode .dropdown-menu.show,
+        .dark-mode-area.dark-mode .dropdown-menu a,
+        .dark-mode-area.dark-mode .closebtn,
+        .dark-mode-area.dark-mode .btn,
+        .dark-mode-area.dark-mode td,
+         .dark-mode-area.dark-mode th,
+         .dark-mode-area.dark-mode table,
+            .dark-mode-area.dark-mode .extramenudesk li a,
+         .dark-mode-area.dark-mode thead,
+        .dark-mode-area.dark-mode .subHeaderFontSize,
+            .dark-mode-area.dark-mode .nav-item.dropdown:hover > .dropdown-menu,
+        body.dark-mode-area.dark-mode {
+            background-color: #121212 !important;
+            color: #ffffff  !important;
+            background-image: none !important;
+        }
+        .dark-mode-area.dark-mode button {
+            border-color: #ffffff  !important;
+            background-color: #333333  !important;
+        }
+        .dark-mode-area.dark-mode .background {
+            background-color: #333333  !important;
+        }
+        .dark-mode-area.dark-mode .carousel-indicators {
+            display: none !important;
+        }
+    `;
+
+    // Create a style element
+    const styleElement = document.createElement('style');
+    styleElement.type = 'text/css';
+    styleElement.appendChild(document.createTextNode(darkModeCSS));
+    document.head.appendChild(styleElement);
+
+    // Load saved mode from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        darkModeAreas.forEach(area => area.classList.add('dark-mode'));
+        toggle.checked = true;
+    }
+
+    toggle.addEventListener('change', function() {
+        if (this.checked) {
+            darkModeAreas.forEach(area => area.classList.add('dark-mode'));
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            darkModeAreas.forEach(area => area.classList.remove('dark-mode'));
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+});
+</script>
+
+     <script>
+        const minFontSize = 16;
+        const maxFontSize = 19;
+        const normalFontSize = 18; // Set this to your normal font size
+
+        const decreaseButton = document.getElementById('fontDecrease');
+        const increaseButton = document.getElementById('fontIncrease');
+        const resetButton = document.getElementById('fontReset');
+        const targetElements = document.querySelectorAll('p, h1, h2, a, li');
+
+        let currentFontSize = parseInt(window.getComputedStyle(targetElements[0]).fontSize, 10);
+
+        function updateFontSize(size) {
+            if (size >= minFontSize && size <= maxFontSize) {
+                targetElements.forEach(el => {
+                    el.style.fontSize = `${size}px`;
+                });
+                currentFontSize = size;
+            }
+        }
+
+        decreaseButton.addEventListener('click', () => {
+            updateFontSize(currentFontSize - 1);
+        });
+
+        increaseButton.addEventListener('click', () => {
+            updateFontSize(currentFontSize + 1);
+        });
+
+        resetButton.addEventListener('click', () => {
+            // Reload the page to reset font sizes to default
+            location.reload();
+        });
+
+$(document).ready(function() {
+
+
+    // Optional: If you want to ensure .hamburger doesn't get the active class
+    $('.hamburger').on('click', function(event) {
+       $(this).removeClass('active');
+    });
+});
+
+    </script>
+	
+	
+</body>
+</html>
+

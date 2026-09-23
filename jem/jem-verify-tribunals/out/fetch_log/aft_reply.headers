@@ -1,0 +1,26 @@
+HTTP/1.1 200 
+Date: Sun, 06 Sep 2026 04:07:08 GMT
+Content-Type: application/pdf
+Content-Length: 306031
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Disposition: inline; filename="/annex/270/AU4152_7qPrJE.pdf"
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block [2]
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Security-Policy: script-src 'self'
+Content-security-policy: script-src 'self'
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Referrer-Policy: strict-origin-when-cross-origin
+Access-Control-Allow-Credentials: false
+Access-Control-Max-Age: 86400
+Access-Control-Expose-Headers: Accept-Language
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-site
+

@@ -1,0 +1,141 @@
+entity_id,field,outcome,expert_queue,promotes_to_canon,calibration_eligible,model_diversity,prajna_verdict,prajna_value,agriya_verdict,agriya_value,stored_value,reason
+aft,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,1095,both raters found no matching-period primary
+aft,disposal_rate,disagree_period,True,False,False,2,REFUTE,0.8126,UNSOURCED,,0.8211,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+aft,disposed_last_year,disagree_period,True,False,False,2,REFUTE,7993,UNSOURCED,,7800,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+aft,filed_last_year,disagree_period,True,False,False,2,REFUTE,9837,UNSOURCED,,9500,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+aft,njdg_source_stamp,disagree_verdict,True,False,False,2,UNSOURCED,,NA,,absent,verdicts differ: prajna=UNSOURCED agriya=NA
+aft,pending_cases,disagree_period,True,False,False,2,REFUTE,1844,UNSOURCED,,48000,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+aptel,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+cat,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,912,both raters found no matching-period primary
+cat,disposal_rate,disagree_period,True,False,False,2,REFUTE,1.0746,UNSOURCED,,0.65,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+cat,disposed_last_year,disagree_period,True,False,False,2,REFUTE,35460,UNSOURCED,,11700,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+cat,filed_last_year,disagree_period,True,False,False,2,REFUTE,32998,UNSOURCED,,18000,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+cat,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+cat,pending_cases,disagree_period,True,False,False,2,REFUTE,69581,UNSOURCED,,42000,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+cci,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,547,both raters found no matching-period primary
+cci,disposal_rate,disagree_period,True,False,False,2,REFUTE,0.9064,UNSOURCED,,0.8534,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+cci,disposed_last_year,disagree_period,True,False,False,2,REFUTE,184,UNSOURCED,,495,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+cci,filed_last_year,disagree_period,True,False,False,2,REFUTE,203,UNSOURCED,,580,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+cci,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+cci,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,890,both raters found no matching-period primary
+cestat,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,730,both raters found no matching-period primary
+cestat,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.8182,both raters found no matching-period primary
+cestat,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,18000,both raters found no matching-period primary
+cestat,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,22000,both raters found no matching-period primary
+cestat,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+cestat,pending_cases,disagree_verdict,True,False,False,2,UNSOURCED,,REFUTE,72179,120000,verdicts differ: prajna=UNSOURCED agriya=REFUTE
+derc,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,730,both raters found no matching-period primary
+derc,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.8684,both raters found no matching-period primary
+derc,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,330,both raters found no matching-period primary
+derc,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,380,both raters found no matching-period primary
+derc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+derc,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,980,both raters found no matching-period primary
+diac,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+dl_rera,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+dl_slsa,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+dl_state_cdrc,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,730,both raters found no matching-period primary
+dl_state_cdrc,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.871,both raters found no matching-period primary
+dl_state_cdrc,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,5400,both raters found no matching-period primary
+dl_state_cdrc,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,6200,both raters found no matching-period primary
+dl_state_cdrc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+dl_state_cdrc,pending_cases,disagree_verdict,True,False,False,2,REFUTE,23970,UNSOURCED,,24000,verdicts differ: prajna=REFUTE agriya=UNSOURCED
+drat,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+drt,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+drt,pending_cases,disagree_period,True,False,False,2,REFUTE,178172,UNSOURCED,,195000,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+iiac,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+irdai,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+itat,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,1095,both raters found no matching-period primary
+itat,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.7091,both raters found no matching-period primary
+itat,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,39000,both raters found no matching-period primary
+itat,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,55000,both raters found no matching-period primary
+itat,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+ka_cdrc_bengaluru,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+ka_cdrc_bengaluru,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,14000,both raters found no matching-period primary
+ka_rera,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,547,both raters found no matching-period primary
+ka_rera,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.8267,both raters found no matching-period primary
+ka_rera,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,6200,both raters found no matching-period primary
+ka_rera,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,7500,both raters found no matching-period primary
+ka_rera,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+ka_rera,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,18000,both raters found no matching-period primary
+ka_slsa,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+ka_state_cdrc,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,547,both raters found no matching-period primary
+ka_state_cdrc,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.8793,both raters found no matching-period primary
+ka_state_cdrc,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,5100,both raters found no matching-period primary
+ka_state_cdrc,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,5800,both raters found no matching-period primary
+ka_state_cdrc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+ka_state_cdrc,pending_cases,disagree_value,True,False,False,2,REFUTE,19960,REFUTE,9947,20000,both refute but proposed replacements differ
+kerc,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,730,both raters found no matching-period primary
+kerc,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.8652,both raters found no matching-period primary
+kerc,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,398,both raters found no matching-period primary
+kerc,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,460,both raters found no matching-period primary
+kerc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+kerc,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,1100,both raters found no matching-period primary
+lok_adalat_generic,disposed_last_year,disagree_verdict,True,False,False,2,REFUTE,22383774,UNSOURCED,,15000000,verdicts differ: prajna=REFUTE agriya=UNSOURCED
+lok_adalat_generic,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+mcia,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+merc,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,730,both raters found no matching-period primary
+merc,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.871,both raters found no matching-period primary
+merc,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,540,both raters found no matching-period primary
+merc,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,620,both raters found no matching-period primary
+merc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+merc,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,1450,both raters found no matching-period primary
+mh_cdrc_mumbai,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+mh_cdrc_mumbai,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,22000,both raters found no matching-period primary
+mh_cdrc_nagpur,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+mh_cdrc_nagpur,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,9500,both raters found no matching-period primary
+mh_cdrc_pune,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+mh_cdrc_pune,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,14000,both raters found no matching-period primary
+mh_rera,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,365,both raters found no matching-period primary
+mh_rera,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.8571,both raters found no matching-period primary
+mh_rera,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,24000,both raters found no matching-period primary
+mh_rera,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,28000,both raters found no matching-period primary
+mh_rera,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+mh_rera,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,42000,both raters found no matching-period primary
+mh_slsa,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+mh_state_cdrc,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,730,both raters found no matching-period primary
+mh_state_cdrc,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.8471,both raters found no matching-period primary
+mh_state_cdrc,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,7200,both raters found no matching-period primary
+mh_state_cdrc,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,8500,both raters found no matching-period primary
+mh_state_cdrc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+mh_state_cdrc,pending_cases,disagree_period,True,False,False,2,REFUTE,85469,UNSOURCED,,32000,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+nalsa,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+nclat,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,547,both raters found no matching-period primary
+nclat,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.7857,both raters found no matching-period primary
+nclat,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,2200,both raters found no matching-period primary
+nclat,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,2800,both raters found no matching-period primary
+nclat,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+nclat,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,4200,both raters found no matching-period primary
+nclt,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,547,both raters found no matching-period primary
+nclt,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.7778,both raters found no matching-period primary
+nclt,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,14000,both raters found no matching-period primary
+nclt,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,18000,both raters found no matching-period primary
+nclt,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+nclt,pending_cases,disagree_period,True,False,False,2,REFUTE,20484,UNSOURCED,,45000,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+ngt,disposal_rate,disagree_period,True,False,False,2,REFUTE,0.739,UNSOURCED,,0.9813,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+ngt,disposed_last_year,disagree_period,True,False,False,2,REFUTE,3936,UNSOURCED,,1937,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+ngt,filed_last_year,disagree_period,True,False,False,2,REFUTE,5326,UNSOURCED,,1976,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+ngt,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+ngt,pending_cases,disagree_period,True,False,False,2,REFUTE,5890,UNSOURCED,,5698,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+py_cdrc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+py_slsa,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+sat,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,365,both raters found no matching-period primary
+sat,disposal_rate,disagree_period,True,False,False,2,REFUTE,0.7529,UNSOURCED,,0.9079,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+sat,disposed_last_year,disagree_period,True,False,False,2,REFUTE,323,UNSOURCED,,345,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+sat,filed_last_year,disagree_period,True,False,False,2,REFUTE,429,UNSOURCED,,380,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+sat,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+sat,pending_cases,disagree_period,True,False,False,2,REFUTE,1066,UNSOURCED,,420,one rater replaces from a later-period primary; the other keeps the stored snapshot as UNSOURCED (period_mismatch)
+sebi,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+tdsat,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+tn_cdrc_chennai,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+tn_cdrc_chennai,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,18000,both raters found no matching-period primary
+tn_rera,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+tn_slsa,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+tn_state_cdrc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+tn_state_cdrc,pending_cases,disagree_verdict,True,False,False,2,REFUTE,12445,UNSOURCED,,28000,verdicts differ: prajna=REFUTE agriya=UNSOURCED
+tnerc,avg_disposal_days,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,730,both raters found no matching-period primary
+tnerc,disposal_rate,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,0.875,both raters found no matching-period primary
+tnerc,disposed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,420,both raters found no matching-period primary
+tnerc,filed_last_year,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,480,both raters found no matching-period primary
+tnerc,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
+tnerc,pending_cases,agree_unsourced,False,False,False,2,UNSOURCED,,UNSOURCED,,1200,both raters found no matching-period primary
+trai,njdg_source_stamp,agree_refute_njdg,False,False,False,2,UNSOURCED,,REFUTE,absent,present,"both raters recommend stripping the NJDG source stamp (REFUTE, njdg_stamp_valid=FALSE, or explicit strip note)"
