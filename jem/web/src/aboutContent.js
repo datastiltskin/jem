@@ -208,7 +208,7 @@ export function aboutPageHTML(ctx = {}) {
         <li><strong>NJDG merge</strong> — district-level case volume is partial; many entities await annual-report or NJDG snapshots</li>
         <li><strong>Consensus pipeline</strong> — verify-trib-01 is a pipeline exercise. See <a href="#/engineering">Engineering</a>. Expand a field on <a href="#/entity/sat">SAT</a> for A|B. SAT only until confirmed JEM-wide.</li>
         <li><strong>QA sprint</strong> — full operational audit of all 1,500 targets is ongoing</li>
-        <li><strong>Auth</strong> — LinkedIn sign-in for corrections in production; dev mock login locally (see <a href="${GITHUB}/blob/main/jem/docs/AUTH_SETUP.md" target="_blank" rel="noopener noreferrer">AUTH_SETUP</a>)</li>
+        <li><strong>Discussion</strong> — on <a href="${LETI_DISCORD}" target="_blank" rel="noopener noreferrer">LETI (Discord)</a>. Sourced corrections go through <a href="${ISSUES}" target="_blank" rel="noopener noreferrer">GitHub issues</a>.</li>
       </ul>
       <p>Maintainers of the <a href="${GITHUB}" target="_blank" rel="noopener noreferrer">public repository</a>:</p>
       <ul class="about-maintainers">

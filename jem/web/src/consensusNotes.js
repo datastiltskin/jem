@@ -233,7 +233,8 @@ export function mountConsensusNotes(container, entityId) {
     const cells = cellsForEntity(dash, entityId);
     if (!cells.length) return;
     annotateCaseVolume(container, cells);
-    const host = container.querySelector('.dv-tab-activity .dv-comments')
+    const host = container.querySelector('[data-consensus-host]')
+      || container.querySelector('.dv-tab-activity .dv-comments')
       || container.querySelector('.dv-comments');
     if (!host) return;
     if (host.previousElementSibling?.classList.contains('dv-consensus-notes')) {
