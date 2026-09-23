@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:05:37 GMT
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Last-Modified: Fri, 26 Sep 2025 05:16:06 GMT
+Accept-Ranges: bytes
+Content-Length: 16879579
+Cache-Control: max-age=1209600
+Expires: Sun, 20 Sep 2026 04:05:37 GMT
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'unsafe-inline' 'self' *; script-src 'unsafe-inline' 'unsafe-eval' 'self' *; img-src 'unsafe-inline' 'self' *;
+Content-Type: application/pdf
+

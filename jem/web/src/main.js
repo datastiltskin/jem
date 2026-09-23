@@ -14,12 +14,16 @@ import { initSummaryView } from './summaryView.js';
 import { renderDetailView, clearDetailView } from './detailView.js';
 import { initSmartSearch, entityDisplayName } from './smartSearch.js';
 import { renderAboutPage } from './aboutContent.js';
+import { renderEngineeringView, renderConsensusView } from './engineeringView.js';
+import { renderPromptsView } from './promptsView.js';
 import { initToolbarAuth } from './auth.js';
 import { mountMapShell } from './mapShell.js';
 import { loadD3 } from './loadD3.js';
 import { loadFuse } from './loadFuse.js';
 
-const GRAPH_URL = './public/graph.json';
+const GRAPH_URL = new URLSearchParams(location.search).get('graph') === 'staging'
+  ? './public/graph.staging.json'
+  : './public/graph.json';
 
 /** Keep app chrome below site header + toolbar when search chips wrap to a second row. */
 function syncChromeTop() {
@@ -148,7 +152,7 @@ function initMapGate() {
 }
 
 // ── View Router ───────────────────────────────────────────────────────────────
-// Views: 'summary' | 'detail' | 'map' | 'about'
+// Views: 'summary' | 'detail' | 'map' | 'about' | 'engineering'
 
 let _mapBooted = false;       // full map initialised lazily on first switch
 let _mapBootPromise = null;   // in-flight D3 + map shell init
@@ -168,6 +172,9 @@ function _hashViewFromHash() {
   if (/^#\/entity\/.+/.test(location.hash)) return 'detail';
   if (location.hash === '#/map') return 'map';
   if (location.hash === '#/about') return 'about';
+  if (location.hash === '#/engineering') return 'engineering';
+  if (location.hash === '#/consensus') return 'consensus';
+  if (location.hash === '#/prompts') return 'prompts';
   return 'summary';
 }
 
@@ -179,6 +186,9 @@ function _syncHashForView(view, entityId) {
   if (view === 'detail' && entityId) target = `#/entity/${encodeURIComponent(entityId)}`;
   else if (view === 'map') target = '#/map';
   else if (view === 'about') target = '#/about';
+  else if (view === 'engineering') target = '#/engineering';
+  else if (view === 'consensus') target = '#/consensus';
+  else if (view === 'prompts') target = '#/prompts';
   // Empty hash for summary.
   if (location.hash === target) return;
   const url = target ? `${location.pathname}${location.search}${target}` : `${location.pathname}${location.search}`;
@@ -222,6 +232,12 @@ function _applyHashRoute() {
         switchView('map');
       } else if (view === 'about') {
         switchView('about');
+      } else if (view === 'engineering') {
+        switchView('engineering');
+      } else if (view === 'consensus') {
+        switchView('consensus');
+      } else if (view === 'prompts') {
+        switchView('prompts');
       } else {
         switchView('summary');
       }
@@ -261,6 +277,8 @@ function switchView(view, entityId = null) {
   const summaryEl   = document.getElementById('summary-view');
   const detailEl    = document.getElementById('detail-view');
   const aboutEl     = document.getElementById('about-view');
+  const engineeringEl = document.getElementById('engineering-view');
+  const promptsEl   = document.getElementById('prompts-view');
   const workspaceEl = document.getElementById('app-workspace');
   const timelineEl  = document.getElementById('timeline-container');
   const statusEl    = document.getElementById('map-status-bar');
@@ -274,6 +292,8 @@ function switchView(view, entityId = null) {
   if (summaryEl)   summaryEl.classList.toggle('hidden', view !== 'summary');
   if (detailEl)    detailEl.classList.toggle('hidden', view !== 'detail');
   if (aboutEl)     aboutEl.classList.toggle('hidden', view !== 'about');
+  if (engineeringEl) engineeringEl.classList.toggle('hidden', view !== 'engineering' && view !== 'consensus');
+  if (promptsEl)     promptsEl.classList.toggle('hidden', view !== 'prompts');
   if (workspaceEl) workspaceEl.classList.toggle('hidden', view !== 'map' || !_mapBooted);
   if (mapStage)    mapStage.classList.toggle('hidden', view !== 'map' || _mapBooted);
   if (timelineEl)  timelineEl.classList.toggle('hidden', !mapChromeReady);
@@ -290,6 +310,18 @@ function switchView(view, entityId = null) {
   } else if (view === 'about') {
     window.__jemSmartSearch?.collapseSearchUI?.({ clearInput: true });
     renderAboutView();
+    syncChromeTop();
+  } else if (view === 'engineering') {
+    window.__jemSmartSearch?.collapseSearchUI?.({ clearInput: true });
+    renderEngineeringPage();
+    syncChromeTop();
+  } else if (view === 'consensus') {
+    window.__jemSmartSearch?.collapseSearchUI?.({ clearInput: true });
+    renderConsensusPage();
+    syncChromeTop();
+  } else if (view === 'prompts') {
+    window.__jemSmartSearch?.collapseSearchUI?.({ clearInput: true });
+    renderPromptsPage();
     syncChromeTop();
   } else if (view === 'detail' && entityId) {
     window.__jemSmartSearch?.collapseSearchUI?.();
@@ -1022,6 +1054,18 @@ function initDistrictLatticeHotkeys() {
 
 function renderAboutView() {
   renderAboutPage();
+}
+
+function renderEngineeringPage() {
+  renderEngineeringView();
+}
+
+function renderConsensusPage() {
+  renderConsensusView();
+}
+
+function renderPromptsPage() {
+  renderPromptsView();
 }
 
 function initAboutPage() {

@@ -3,6 +3,7 @@ name: State Transport Appellate Tribunal — Generic
 name_hindi: राज्य परिवहन अपीलीय अधिकरण — सामान्य
 abbreviation: STAT
 type: StateTribunal
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: State
 created_year: 1988
@@ -49,7 +50,7 @@ data_quality_notes: Generic scaffold. Not all states maintain a separately const
   lies to HC. v1.2 judge_strength stub attached
 sources:
 - label: Motor Vehicles Act 1988 s.89 — India Code
-  url: https://www.india-code.nic.in/CodeofActs/1988/1988_59.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/9460/1/a1988-59.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 judge_strength:

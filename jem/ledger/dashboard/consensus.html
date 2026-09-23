@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JEM consensus dashboard — verify-trib-01</title>
+  <style>
+    :root {
+      --ink: #1a1a1a; --muted: #5c5852; --rule: #d8d4cc; --paper: #faf8f5;
+      --card: #fff; --orch: #2c5f7c; --gate: #b03a2e; --ok: #1b7a5a; --warn: #8b5a2b;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink);
+      font: 15px/1.5 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+    header { padding: 2rem 1.5rem 1.2rem; border-bottom: 1px solid var(--rule);
+      max-width: 1180px; margin: 0 auto; }
+    header h1 { font-size: 1.45rem; margin: 0 0 .4rem; }
+    .badge { display: inline-block; background: var(--gate); color: #fff;
+      font-size: .72rem; letter-spacing: .04em; text-transform: uppercase;
+      font-weight: 700; padding: .2rem .5rem; border-radius: 3px; }
+    .lede { color: var(--muted); max-width: 46rem; }
+    main { max-width: 1180px; margin: 0 auto; padding: 1.3rem 1.5rem 4rem; }
+    .funnel { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; }
+    .tile { background: var(--card); border: 1px solid var(--rule); padding: .7rem .8rem; }
+    .tile strong { display: block; font-size: 1.4rem; }
+    .tile span { color: var(--muted); font-size: .8rem; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); font-size: .82rem; }
+    th, td { text-align: left; vertical-align: top; padding: .45rem .5rem; border-bottom: 1px solid var(--rule); }
+    th { font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: #f3efe8; }
+    .mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .76rem; }
+    .ok { color: var(--ok); font-weight: 600; }
+    .deny { color: var(--gate); }
+    .warn { color: var(--warn); }
+    details { background: var(--card); border: 1px solid var(--rule); padding: .6rem .8rem; margin: .4rem 0; }
+    nav a { color: var(--orch); }
+    nav { max-width: 1180px; margin: 0 auto; padding: .6rem 1.5rem; border-bottom: 1px solid var(--rule); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="badge" id="badge">PIPELINE EXERCISE — not blinded calibration</p>
+    <h1>verify-trib-01 consensus</h1>
+    <p class="lede" id="caveat">Loading…</p>
+  </header>
+  <nav>
+    <a href="index.html">Orchestration run</a>
+    <a href="../derived/consensus_dashboard.json">JSON</a>
+  </nav>
+  <main>
+    <h2>Promotion funnel</h2>
+    <div class="funnel" id="funnel"></div>
+    <p class="lede" id="prompt-led"></p>
+    <h2>Cells</h2>
+    <p class="lede">Each card is one (entity, field). Calibration score is not shown this round (eligible = 0).</p>
+    <div id="cells"></div>
+  </main>
+  <script>
+    const src = new URL("../derived/consensus_dashboard.json", document.baseURI);
+    fetch(src).then(r => r.json()).then(draw).catch(err => {
+      document.getElementById("caveat").textContent = "Could not load consensus_dashboard.json — serve jem/ledger/ over HTTP.";
+      console.error(err);
+    });
+    function draw(d) {
+      document.getElementById("badge").textContent = d.round_badge || "PIPELINE EXERCISE";
+      document.getElementById("caveat").textContent = d.agriya_caveats || "";
+      const f = d.funnel || {};
+      const b = f.buckets || {};
+      const tiles = [
+        ["Total", f.total],
+        ["Gaps", b.gap],
+        ["NJDG strip", b.strip],
+        ["Period", b.period],
+        ["Verdict split", b.verdict_split],
+        ["Value split", b.value_split],
+        ["Auto-applied", f.auto_applied_to_canon],
+        ["Expert-pending", f.expert_pending],
+        ["Contamination dropped", f.dropped_as_contamination],
+      ];
+      document.getElementById("funnel").innerHTML = tiles.map(([k,v]) =>
+        `<div class="tile"><strong>${v ?? "—"}</strong><span>${k}</span></div>`
+      ).join("");
+      const pl = d.prompt_led || {};
+      document.getElementById("prompt-led").textContent =
+        "Prompt-led packet: " + Object.entries(pl).map(([k,v]) => k + "=" + v).join(" · ");
+      const root = document.getElementById("cells");
+      (d.cells || []).forEach(c => {
+        const cls = { "reached canon": "ok", "contamination-dropped": "deny",
+                      "pending-expert": "warn", "gap": "" }[c.canon_result] || "";
+        const hist = (c.value_history || []).map(h =>
+          `${h.recorded_at || ""} · ${h.value} · ${h.change_reason || ""} · ${h.data_as_of || ""}`
+        ).join(" | ");
+        const el = document.createElement("details");
+        el.innerHTML = `<summary><span class="mono">${c.entity_id}.${c.field}</span>
+          — Prajna ${c.prajna && c.prajna.verdict} / Agriya ${c.agriya && c.agriya.verdict}
+          → <span class="${cls}">${c.canon_result}</span>
+          ${c.shared_bias_risk === "high" ? " · shared-bias-risk" : ""}</summary>
+          <p>Reconcile: ${c.reconcile_outcome}. ${c.classification || ""}</p>
+          <p>This cell vs consensus: ${c.contributor_signals && c.contributor_signals.cell_vs_consensus}.
+             Model-family on this field-type: DeepSeek (Prajna), GPT (Agriya).</p>
+          <p class="mono">${hist || "no value_history yet"}</p>`;
+        root.appendChild(el);
+      });
+    }
+  </script>
+</body>
+</html>

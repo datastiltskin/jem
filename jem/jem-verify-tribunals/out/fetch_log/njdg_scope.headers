@@ -1,0 +1,22 @@
+HTTP/2 200 
+content-type: text/html; charset=UTF-8
+expect-ct: enforce,max-age=2592000
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+content-security-policy: img-src 'self' cbpssubscriber.mygov.in img.youtube.com *.s3waas.gov.in secure.gravatar.com data: www.nic.in informatics.nic.in personnel.nic.in xn--m1bet4hqd2b.xn--h2brj9c xn--m1bet4hqd2b.xn--h2brj9c translation-plugin.bhashini.co.in translation-plugin-stage.bhashini.co.in;connect-src 'self' *.s3waas.gov.in www.google-analytics.com translation-plugin.bhashini.co.in translation-plugin-stage.bhashini.co.in dhruva-api.bhashini.gov.in;object-src 'none' ;media-src 'self' *.s3waas.gov.in data:;child-src *;frame-src *;form-action *.s3waas.gov.in 'self';frame-ancestors 'self' *.s3waas.gov.in ;upgrade-insecure-requests;worker-src 'self' *.s3waas.gov.in data: blob:
+referrer-policy: strict-origin-when-cross-origin
+permissions-policy: accelerometer=(),ambient-light-sensor=(),autoplay=(),battery=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),execution-while-not-rendered=(),execution-while-not-rendered=(),execution-while-out-of-viewport=(),fullscreen=(),gamepad=(),geolocation=(),magnetometer=(),gyroscope=(),magnetometer=(),layout-animations=(),legacy-image-formats=(self),microphone=(),midi=(),navigation-override=(),oversized-images=(self),payment=(),picture-in-picture=(),publickey-credentials-get=(),speaker-selection=(),sync-xhr=(self),unoptimized-images=(self),unsized-media=(self),usb=(),vibrate=(),vr=(),screen-wake-lock=(),screen-wake-lock=(),web-share=(),xr-spatial-tracking=()
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-akamai-transformed: 9 24753 0 pmb=mRUM,1
+expires: Sun, 06 Sep 2026 04:05:37 GMT
+cache-control: max-age=0, no-cache, no-store
+pragma: no-cache
+date: Sun, 06 Sep 2026 04:05:37 GMT
+server-timing: cdn-cache; desc=REVALIDATE
+server-timing: edge; dur=26
+server-timing: origin; dur=62
+alt-svc: h3=":443"; ma=93600
+x-nic-grn: 0.74f53017.1788667537.1cb7f190
+server-timing: ak_p; desc="1788667536989_389084532_481816976_8784_6542_8_14_15";dur=1
+

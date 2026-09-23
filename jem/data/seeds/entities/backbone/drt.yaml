@@ -86,11 +86,11 @@ data_quality_notes: >-
 
 sources:
   - label: "RDDBFI Act 1993, s.3 — establishment of Tribunals"
-    url: https://india-code.nic.in/handle/123456789/1573
+    url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "SARFAESI Act 2002, s.17 — jurisdiction"
-    url: https://india-code.nic.in/handle/123456789/2058
+    url: https://indiacode.nic.in/handle/123456789/2058
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "DFS / Ministry of Finance — DRT overview"

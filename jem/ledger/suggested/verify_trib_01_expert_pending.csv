@@ -1,0 +1,25 @@
+entity_id,field,stored_value,prajna,agriya,status,reason
+aft,disposal_rate,0.8211,REFUTE:0.8126,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+aft,disposed_last_year,7800,REFUTE:7993,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+aft,filed_last_year,9500,REFUTE:9837,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+aft,njdg_source_stamp,absent,UNSOURCED:,NA:,expert-pending,expert-pending — rater split; no auto-write
+aft,pending_cases,48000,REFUTE:1844,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+cat,disposal_rate,0.65,REFUTE:1.0746,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+cat,disposed_last_year,11700,REFUTE:35460,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+cat,filed_last_year,18000,REFUTE:32998,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+cat,pending_cases,42000,REFUTE:69581,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+cci,disposal_rate,0.8534,REFUTE:0.9064,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+cci,disposed_last_year,495,REFUTE:184,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+cci,filed_last_year,580,REFUTE:203,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+cestat,pending_cases,120000,UNSOURCED:,REFUTE:72179,expert-pending,expert-pending — rater split; no auto-write
+dl_state_cdrc,pending_cases,24000,REFUTE:23970,UNSOURCED:,expert-pending,expert-pending — rater split; no auto-write
+drt,pending_cases,195000,REFUTE:178172,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+ka_state_cdrc,pending_cases,20000,REFUTE:19960,REFUTE:9947,expert-pending,expert-pending — rater split; no auto-write
+lok_adalat_generic,disposed_last_year,15000000,REFUTE:22383774,UNSOURCED:,expert-pending,expert-pending — rater split; no auto-write
+mh_state_cdrc,pending_cases,32000,REFUTE:85469,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+nclt,pending_cases,45000,REFUTE:20484,UNSOURCED:,expert-pending,single-rater replacement after contamination null
+ngt,disposal_rate,0.9813,REFUTE:0.739,UNSOURCED:,expert-pending,stored looks primary-sourced for its period — keep current; newer figure → suggested/ (superseded_newer_period if expert agrees)
+ngt,disposed_last_year,1937,REFUTE:3936,UNSOURCED:,expert-pending,stored looks primary-sourced for its period — keep current; newer figure → suggested/ (superseded_newer_period if expert agrees)
+ngt,filed_last_year,1976,REFUTE:5326,UNSOURCED:,expert-pending,stored looks primary-sourced for its period — keep current; newer figure → suggested/ (superseded_newer_period if expert agrees)
+ngt,pending_cases,5698,REFUTE:5890,UNSOURCED:,expert-pending,stored looks primary-sourced for its period — keep current; newer figure → suggested/ (superseded_newer_period if expert agrees)
+tn_state_cdrc,pending_cases,28000,REFUTE:12445,UNSOURCED:,expert-pending,expert-pending — rater split; no auto-write

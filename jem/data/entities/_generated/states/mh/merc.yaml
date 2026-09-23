@@ -14,7 +14,8 @@ jurisdiction_scope:
   - dispute_adjudication_electricity
 created_year: 1999
 operational_status: Active
-statutory_basis: Electricity Act 2003, s.82; Maharashtra Electricity Regulatory Commission Act 1999
+statutory_basis: Electricity Act 2003, s.82; Maharashtra Electricity Regulatory Commission
+  Act 1999
 appointment:
   formally_appoints: government_maharashtra
   recommends: selection_committee_electricity_act_s85
@@ -42,21 +43,19 @@ case_volume:
   disposal_rate: 0.871
   clog_severity: high
 data_quality: partial
-data_quality_notes: "MERC constituted August 1999 under Maharashtra Electricity Regulatory Commission Act 1999 (Maharashtra\
-  \ Act 29 of 1999); continued under Electricity Act 2003 s.82. ministry_responsible is null — Maharashtra Energy Department\
-  \ is the administrative department but carries no JEM entity ID. AppealableTo aptel per Electricity Act 2003 s.111 — in\
-  \ mh_relationships.yaml (id: mh_merc_aptel). judge_strength omitted — ERC members are technical/economic experts, not judges.\n\
-  \ NJDG snapshot case_volume merged"
+data_quality_notes: "MERC constituted August 1999 under Maharashtra Electricity Regulatory\
+  \ Commission Act 1999 (Maharashtra Act 29 of 1999); continued under Electricity Act 2003\
+  \ s.82. ministry_responsible is null — Maharashtra Energy Department is the administrative\
+  \ department but carries no JEM entity ID. AppealableTo aptel per Electricity Act 2003 s.111\
+  \ — in mh_relationships.yaml (id: mh_merc_aptel). judge_strength omitted — ERC members are\
+  \ technical/economic experts, not judges.\n NJDG snapshot case_volume merged | verify-trib-01:\
+  \ NJDG source stamp stripped (non-eCourts body)."
 sources:
 - label: MERC Official Website
-  url: https://www.mercindia.org.in/
+  url: https://merc.gov.in
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: Electricity Act 2003 — Ministry of Power
-  url: https://powermin.gov.in/en/content/electricity-act-2003
+  url: https://www.indiacode.nic.in/bitstream/123456789/2058/1/a200336.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'

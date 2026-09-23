@@ -42,19 +42,17 @@ case_volume:
   disposal_rate: 0.8652
   clog_severity: high
 data_quality: partial
-data_quality_notes: "KERC established under Karnataka Electricity Reform Act 1999; continued under Electricity Act 2003 s.82.\
-  \ AppealableTo aptel per Electricity Act 2003 s.111 — in ka_relationships.yaml (id: ka_kerc_aptel). case_volume from NJDG\
-  \ snapshot; verify against KERC annual reports at kerc.karnataka.gov.in.\n NJDG snapshot case_volume merged"
+data_quality_notes: "KERC established under Karnataka Electricity Reform Act 1999; continued\
+  \ under Electricity Act 2003 s.82. AppealableTo aptel per Electricity Act 2003 s.111 — in\
+  \ ka_relationships.yaml (id: ka_kerc_aptel). case_volume from NJDG snapshot; verify against\
+  \ KERC annual reports at kerc.karnataka.gov.in.\n NJDG snapshot case_volume merged | verify-trib-01:\
+  \ NJDG source stamp stripped (non-eCourts body)."
 sources:
 - label: KERC Official Website
   url: https://kerc.karnataka.gov.in/
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: Electricity Act 2003 — Ministry of Power
-  url: https://powermin.gov.in/en/content/electricity-act-2003
+  url: https://www.indiacode.nic.in/bitstream/123456789/2058/1/a200336.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'

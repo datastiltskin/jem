@@ -14,8 +14,9 @@ jurisdiction_scope:
   - Original
 created_year: 2019
 operational_status: Active
-statutory_basis: New Delhi International Arbitration Centre Act, 2019 (Act No. 17 of 2019), as amended by the New Delhi International
-  Arbitration Centre (Amendment) Act, 2022 (Act No. 23 of 2022); rename to IIAC effective 27 January 2023.
+statutory_basis: New Delhi International Arbitration Centre Act, 2019 (Act No. 17 of 2019),
+  as amended by the New Delhi International Arbitration Centre (Amendment) Act, 2022 (Act
+  No. 23 of 2022); rename to IIAC effective 27 January 2023.
 appointment:
   nominates: central_government
   formally_appoints: central_government
@@ -23,7 +24,8 @@ appointment:
   - supreme_court_india
   consultation_binding: false
   criteria_public: true
-  tenure: 3 years, renewable once — NDIAC Act 2019 s.4(5) (as amended 2022; institution renamed IIAC)
+  tenure: 3 years, renewable once — NDIAC Act 2019 s.4(5) (as amended 2022; institution renamed
+    IIAC)
   reappointment_possible: true
   removal_authority: central_government
   removal_requires_parliament: false
@@ -37,36 +39,32 @@ audit:
   audit_report_public: true
 complaint_mechanism:
   lokpal_jurisdiction: Not_Applicable
-  removal_mechanism: 'Arbitrator challenge under A&C Act 1996 s.13. Award challenge under A&C Act 1996 s.34 in Delhi High
-    Court.
+  removal_mechanism: 'Arbitrator challenge under A&C Act 1996 s.13. Award challenge under
+    A&C Act 1996 s.34 in Delhi High Court.
 
     '
-data_quality: verified
-data_quality_notes: >-
-  Renamed from NDIAC to IIAC by Amendment Act 2022, effective 27 Jan 2023
-  (indiaiac.org). Statutory body of national importance under MoLJ — distinct
-  from DIAC (Delhi HC-annexed, non-statutory). Former graph id 'ndiac' kept
-  as alias only. AwardChallengedIn → hc_delhi. NJDG snapshot case_volume merged
+data_quality: partial
+data_quality_notes: 'Renamed from NDIAC to IIAC by Amendment Act 2022, effective 27 Jan 2023
+  (indiaiac.org). Statutory body of national importance under MoLJ — distinct from DIAC (Delhi
+  HC-annexed, non-statutory). Former graph id ''ndiac'' kept as alias only. AwardChallengedIn
+  → hc_delhi. NJDG snapshot case_volume merged | verify-trib-01: NJDG source stamp stripped
+  (non-eCourts body).'
 sources:
 - label: IIAC — Official Website (indiaiac.org)
   url: https://indiaiac.org/
   type: GoIWebsite
   accessed_date: '2026-06-17'
 - label: NDIAC (Amendment) Act 2022 — rename to IIAC effective 27 Jan 2023
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: CentralAct
   accessed_date: '2026-06-17'
 - label: New Delhi International Arbitration Centre Act 2019 — India Code
-  url: https://india-code.nic.in/acts-detail/MjMyMDM=
+  url: https://www.indiacode.nic.in/bitstream/123456789/11413/1/A2019-17.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: IIAC Official Statutes Page
   url: https://indiaiac.org/arbitration/about_act
   type: GoIWebsite
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   clog_severity: unknown

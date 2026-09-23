@@ -1,0 +1,2939 @@
+
+[PDF page 1]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+139
+REGULATORY ACTION, SUPERVISION AND ENFORCEMENT
+SEBI’s primary objectives are preserving the market 
+integrity and ensuring investor protection. These 
+goals are realized through a unified regulatory 
+tripod comprising surveillance, supervision, and 
+enforcement. As the modern securities market 
+undergoes rapid transformation driven by the 
+convergence of technological innovation, an 
+expanding investor base, and complex financial 
+products, the risk landscape has been fundamentally 
+reshaped. To navigate these shifting outlines, 
+SEBI has pivoted toward a dynamic regulatory 
+architecture. This proactive stance ensures that the 
+legal and regulatory frameworks evolve in tandem 
+with financial innovation, effectively mitigating risks 
+at their inception rather than reacting post-facto.
+SEBI’s operational strategy for market stability 
+follows an integrated three-layer approach. First, 
+surveillance is acting as the market’s early-warning 
+system. SEBI’s mechanisms are designed to detect, 
+deter, and pre-empt activities that could compromise 
+market fairness. SEBI’s supervisory regime utilizes 
+both comprehensive and thematic inspections 
+framework to monitor MIIs and intermediaries. This 
+oversight ensures compliance with regulations, 
+and protection of investor interests. Finally, when 
+supervisory oversight identifies anomalies, SEBI 
+initiates investigations to uncover potential securities 
+law violations. The subsequent enforcement process 
+is calibrated and progressive, ranging from cautionary 
+advisories to market access restrictions. This chapter 
+details the various supervisory and enforcement 
+measures undertaken by SEBI during 2025-26.
+10.1 MANNER OF OVERSEEING MARKETS
+10.1.1 Surveillance 
+The role of surveillance has become increasingly 
+critical in ensuring the integrity and stability of 
+the securities market, particularly in light of the 
+substantial rise in trading activity in recent years. 
+Factors such as growing direct retail participation, 
+a marked shift towards derivatives segment, and 
+adoption of complex trading strategies by market 
+participants have further heightened the need for 
+enhanced oversight. Stock exchanges perform 
+real-time surveillance of market segments to flag 
+irregularities in trading activities. In addition, SEBI 
+has a robust in-house surveillance infrastructure 
+capable of monitoring activities across equity, equity 
+derivatives, and commodity derivatives segments. 
+This system is designed to detect market abuse, 
+including emerging and sophisticated manipulative 
+practices. The following section details major 
+surveillance measures taken by SEBI during 2025-26.
+A. Major Surveillance Measures 
+ i. Rationalisation of ESM: The Enhanced 
+Surveillance Measure (ESM) was launched 
+in 2023 by exchanges to prevent abnormal 
+price movements in micro-cap stocks 
+(market cap < ₹1,000 crore). To support the 
+ease of doing business, the ESM framework 
+was updated in July 2025 to rationalize the 
+criteria for shortlisting scrip for imposing 
+ESM, movement from ESM Stage 1 to ESM 
+Stage 2 and exit. 
+ ii. Extension of automated implementation of 
+Trading Window Closure: In accordance with 
+the PIT Regulations, trading restrictions 
+are applicable on Designated Persons 
+of listed companies and their immediate 
+relatives from the end of each quarter till 
+48 hours after the declaration of financial 
+results for the quarter. The mechanism for 
+CHAPTER 
+10
+
+[PDF page 2]
+Annual Report 2025-26
+140
+automatic trading window closure through 
+freezing of PAN at the security level was 
+already operationalized for Designated 
+Persons. Further, the automated trading 
+window closure has been extended to the 
+immediate relatives of Designated Persons 
+from April 2025.
+ iii. Outreach Initiatives on Insider Trading 
+Regulations: SEBI has undertaken a series 
+of engagements to promote voluntary 
+compliance and uphold market integrity 
+through direct stakeholder interactions. In 
+this regard, high-level sessions were held 
+with listed banks on September 03, 2025 
+and November 10, 2025, respectively at 
+SEBI’s Head Office and Northern Regional 
+Office (NRO), chaired by SEBI Chairman 
+and Whole Time Member respectively. 
+The dual responsibility of listed banks as 
+a listed entity and as a fiduciary under PIT 
+Regulations and the necessity of robust 
+internal controls to prevent insider trading 
+were emphasized during the sessions. 
+  Further, an interactive session with various 
+regulatory bodies was held on November 
+28, 2025 at NRO chaired by WTM. The 
+regulatory obligations of statutory bodies 
+along with importance of establishing 
+rigorous protocols for protecting 
+Unpublished Price Sensitive Information 
+were highlighted during the session. In 
+continuation, a session on Insider Trading 
+Regulations was held on January 30, 
+2026, for the employees of Petroleum and 
+Natural Gas Regulatory Board, sensitizing 
+on the handling of price sensitive 
+information and the need for maintaining 
+the highest standards of confidentiality in 
+compliance with SEBI (PIT) Regulations, 
+2015. These efforts reflect SEBI’s ongoing 
+commitment to fostering a transparent 
+financial ecosystem through education and 
+proactive engagement.
+B. Search and Seizure Operations: In furtherance 
+of its efforts to detect and address market 
+misconduct, SEBI, conducted various Search and 
+Seizure operations during 2025-26, covering 48 
+entities across 46 locations spanning 14 cities 
+throughout the country.
+C. Surveillance Index: The Surveillance index 
+score arrived on the basis of specified 
+parameters is intended to provide guidance 
+to the respective boards of the MIIs to act 
+as a performance benchmark to assess 
+effectiveness of the surveillance function of the 
+MIIs and to initiate measures for strengthening 
+of the same. The output of the assessment of 
+indices is envisaged to be supplementary to 
+the surveillance inspections of the MIIs. In this 
+regard, the evaluation of self-assessment, as 
+submitted by the stock exchanges (viz. BSE, 
+NSE and MSEI) and depositories (viz. CDSL and 
+NSDL), has been carried out by SEBI. 
+D. Surveillance Measures: To mitigate excessive 
+volatility and safeguard investor interests, stock 
+exchanges implement proactive surveillance 
+measures for scrips exhibiting unusual price-
+volume fluctuations or weak fundamentals. 
+During 2025-26, on the Main Board 1,852 scrips 
+were placed under Additional Surveillance 
+Measures (ASM), while 1,873 scrips transitioned 
+out of the framework. Simultaneously, on the 
+SME platform, 602 scrips were brought under 
+ASM oversight, whereas 599 scrips were 
+moved out, reflecting a dynamic and consistent 
+monitoring process across both market 
+segments (Table 10.1).
+10.1.2 Inspections 
+Section 11(2)(i) of SEBI Act, 1992 empowers SEBI to 
+undertake inspection of market intermediaries as 
+part of its regulatory and supervisory functions. 
+
+[PDF page 3]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+141
+These inspections are essential to ensure the 
+integrity/discipline of the financial markets and to 
+safeguard the interests of investors. Inspections of 
+regulated entities are carried out both independently 
+by SEBI and in collaboration with MIIs, with broader 
+goals of compliance verification, encouraging 
+ethical practices, preserving market integrity and 
+proactively identifying emerging risks. 
+A. Inspection of Market Infrastructure Institutions: 
+MIIs which include stock exchanges, clearing 
+corporations, and depositories are the 
+backbone of Indian securities market. Given 
+their systemic importance, SEBI’s inspection 
+framework for them is more rigorous than 
+for standard intermediaries. During 2025-26, 
+comprehensive offsite inspections of NSE, 
+MCX, MSEI, NCDEX, CDSL, NSDL, NCL, ICCL, 
+NCCL and ARCL were conducted by SEBI. The 
+objectives of such inspections were to assess 
+their compliance with the relevant regulations/
+guidelines, systemic risk management, 
+technological resilience to prevent technical 
+glitches or cyber-attacks and improve the 
+systems and procedures of the MIIs. Further, 
+SEBI also conducted Thematic - ISC inspection 
+of MCX and NCDEX during this year. During 2025-
+26, inspections of the surveillance functions of 
+NSE, BSE and MSEI, NSDL and CDSL have been 
+conducted in line with the prevailing practice. 
+These inspections were conducted with the 
+objective of improvement in the surveillance 
+systems and procedures of the stock exchanges 
+and depositories. In addition, SEBI carried out 
+inspection of three exchanges for listing related 
+issue. 
+B. Inspection of Securities Market Service 
+Providers: During 2025-26, SEBI enhanced its 
+supervisory capabilities by transitioning toward 
+a continuous and technology-led monitoring 
+framework. To streamline data sharing, 
+SEBI developed a cloud-based platform for 
+the secure exchange of inspection data and 
+alerts with brokers and DPs, facilitating faster 
+corrective actions. In addition, MIIs individually 
+or jointly conducted regular, mandatory 
+inspections of stock brokers/depository 
+Table 10.1: Surveillance Measures Across Exchanges
+Surveillance Measures Main Board SME Platform
+2024-25 2025-26 2024-25 2025-26
+Scrips Moved to ASM 2,185 1,852 555 602
+Scrips Moved out of ASM 2,294 1,873 558 599
+Scrips Moved to GSM 337 291 24 35
+Scrips Moved out of GSM 360 360 27 37
+Scrips Moved to Promoter Encumbrance 41 37 0 0
+Scrips Moved out of Promoter Encumbrance 40 33 0 0
+Scrips Moved to ASM Insolvency Resolution Proceedings  
+(IBC Inclusions)
+43 35 3 3
+Scrips Moved out of ASM Insolvency Resolution Proceedings  
+(IBC exclusions)
+33 40 4 4
+Scrips Moved to ESM 1,341 954 404 392
+Scrips Moved out of ESM 1,397 1,239 146 522
+Notes:  i. A scrip that has moved in and out multiple times during the year is counted as one move-in and one move-out. 
+ ii. A scrip may be part of multiple frameworks within the same year.
+Source: BSE and NSE
+
+[PDF page 4]
+Annual Report 2025-26
+142
+participants to ensure compliance with SEBI 
+regulations, financial integrity, and investor 
+protection. During 2025-26, SEBI and exchanges 
+conducted 179 inspections (162 thematic and 17 
+comprehensive) of 106 brokers. Independently, 
+exchanges completed 973 inspections of 822 
+brokers across various market segments. 
+Further, SEBI and depositories conducted 28 
+joint inspections of 23 depository participants, 
+while depositories executed 617 inspections 
+of 583 depository participants to safeguard 
+securities holding systems.
+ Beyond the brokerage ecosystem, SEBI 
+maintains direct oversight of intermediaries 
+who provide services in the securities market, 
+including merchant bankers, investment 
+advisers, research analysts, etc. SEBI conducts 
+inspections regularly to ensure compliance 
+with regulatory standards, keeping proper 
+books of account, managing risks effectively, 
+and handling client complaints appropriately. 
+The details of such inspections are given in  
+(Table 10.2).
+C. Inspection of Entities Associated with Fund 
+Management Activities: SEBI employs a risk-
+based supervision framework to monitor mutual 
+funds, portfolio managers, and Registrars 
+and Transfer Agents (RTAs). This prioritizes 
+oversight by evaluating risk factors such as 
+liquidity, credit risk, financial risk, market risk, 
+technological risk and operational risks and 
+impact metrics like AUM, etc. During 2025-
+26, SEBI initiated inspections of 23 portfolio 
+managers, 23 mutual funds, and two RTAs for 
+their mutual fund related activities. Further, 
+SEBI outlines thematic inspection to address 
+emerging concerns. During this year, 29 themes 
+for mutual funds and six themes for portfolio 
+managers were selected (Table 10.3). 
+ Furthermore, SEBI leverages advanced offsite 
+monitoring for mutual funds and portfolio 
+managers, by integrating multi-source data 
+from AMCs, RTAs, valuation agencies, index 
+providers, custodians and AMFI into an 
+algorithm-driven alert ecosystem. As of March 
+31, 2026, 217 alerts were deployed for mutual 
+funds, 17 alerts for specialised investment funds 
+Table 10.2: Inspections of Securities Market Service Providers
+Intermediary 2024-25 2025-26
+No. of Entities No. of Inspections
+Merchant Banker 51# 31 32
+Registrar to an Issue and Share Transfer Agent 56 17 25
+Investment Adviser 207 54 211
+Research Analyst 149 55 142
+KYC Registration Agency 3 1 1
+Credit Rating Agency 8 7 12
+Debenture Trustee 11 7 7
+ESG Ratings Provider 2 - -
+Designated Depository Participant 7 6 6
+Custodian* 7 6 6
+Online Bond Platform Provider 15 9 9
+Notes: i.  #Data on Merchant Banker includes 42 inspections pertaining to equity segment and 9 inspections pertaining to debt 
+segment. 
+ ii. *During custodian inspection, compliances by foreign venture capital investors was also checked.
+
+[PDF page 5]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+143
+and 90 alerts for portfolio managers, to ensure 
+compliance under the respective regulations.
+10.1.3 Investigation 
+SEBI derives its investigative powers from Section 
+11C of the SEBI Act, 1992. The process is structured 
+to ensure market integrity and protect investor 
+interests by identifying violations like insider 
+trading, market manipulation, or fraudulent trade 
+practices, and misstatement in financial statements 
+etc. SEBI initiates an investigation when there is 
+reasonable ground to believe that any transactions 
+in securities which are being dealt with in a manner 
+detrimental to investors or the securities market, 
+and any intermediary or any person associated with 
+the securities market has violated the provisions of 
+SEBI Act, 1992 and regulations framed thereunder 
+like PFUTP Regulations, PIT Regulations, etc. 
+Investigation is initiated based on reference received 
+from sources such as operational departments 
+of SEBI, exchange reports, government agencies, 
+media reports, complaints, etc.
+At the outset, SEBI appoints an Investigating Authority 
+(IA) for carrying out the investigation. The IA analyzes 
+the collected evidence which may include market data 
+(order and trade log, transaction statements, etc.), 
+exchange report, depository data, KYC documents 
+obtained from brokers, depository participants, 
+etc., bank records like account statements and KYC 
+details, information about the company including 
+financial results and shareholding pattern, major 
+corporate developments including events around 
+them, call data records obtained from telecom 
+service providers, information obtained from other 
+market intermediaries and alleged entities, etc. 
+Upon completion, the IA submits an investigation 
+report to the appointing authority for further action 
+as deemed fit. During 2025-26, SEBI had taken up 
+402 cases for investigations pertaining to various 
+violations of securities laws and 338 cases were 
+completed. The details of nature of investigations 
+are given below:
+A. Investigations Relating to Illegal Trade Practice, 
+etc.: During 2025-26, 224 cases pertaining to 
+insider trading, takeover, etc. were taken up for 
+investigation and 204 cases were completed 
+(Table 10.4).
+B. Investigations Relating to Fraudulent and Unfair 
+Trade Practices: During 2025-26, 121 cases 
+pertaining to Fraudulent and Unfair Trade 
+Table 10.4: Trends of Investigations
+Particulars Cases Taken up Cases Completed
+2024-25 2025-26 2024-25 2025-26
+Insider Trading 287 221 192 202
+Takeovers - 2 - 1
+Miscellaneous* 7 1 4 1
+Total 294 224 196 204
+Note: *Miscellaneous includes alleged violations of/related to - i) routing of funds, ii) FPI regulations, iii) Minimum public shareholding 
+etc. Since several investigation cases involve multiple allegations of violations, water-tight classification under specific category 
+becomes difficult. Therefore, cases have been classified on the basis of main charge/ violations.
+Table 10.3: Inspections of Entities Associated with 
+Fund Management Activities
+Intermediary/Institution 2024-25 2025-26
+Mutual Fund and its  
+respective RTA
+24 25
+Portfolio Manager 13 23
+Alternative Investment Fund 16 5
+Venture Capital Fund 2 Nil
+Real Estate Investment Trust 5 4
+Infrastructure Investment Trust 17 13
+
+[PDF page 6]
+Annual Report 2025-26
+144
+Practices were taken up for investigation and 
+94 cases were completed (Table 10.5).
+C. Investigations Relating to Financial Statements 
+Fraud: During 2025-26, 57 cases pertaining to 
+financial statement fraud were taken up for 
+investigation and 40 cases were completed 
+(Table 10.6).
+10.1.4 Enforcement Function 
+Effective enforcement is fundamental to cultivating 
+a culture of accountability and compliance within 
+the securities market. By ensuring that market 
+abuses are met with swift and decisive action, 
+SEBI’s enforcement framework serves as a 
+powerful deterrent against misconduct. To maintain 
+transparency and investor confidence, SEBI 
+emphasizes timely, consistent, and proportionate 
+intervention. SEBI adopts a dual-track enforcement 
+mechanism, utilizing both administrative/civil 
+proceedings and criminal prosecutions to address 
+contraventions at every level of misconduct.
+A. Enforcement Mechanisms: SEBI exercises its 
+enforcement powers upon identifying violations 
+of securities laws with an aim to safeguard 
+market integrity. SEBI’s enforcement approach 
+is anchored in a robust legal framework that 
+enables it to take calibrated actions against 
+violations of securities laws. Depending on 
+the nature and severity of the breach, SEBI 
+empowers various statutory tools under the 
+SEBI Act, 1992, to ensure accountability and 
+investor protection. This includes issuing 
+interim and final directions such as market 
+debarments, the impounding of illicit proceeds, 
+imposing penalty and cease-and-desist orders 
+to prevent immediate harm to investors. In 
+addition, SEBI may initiate enquiry proceedings 
+to suspend or cancel intermediary registrations, 
+undertake adjudication for monetary penalties, 
+or pursue criminal prosecution in Special 
+Courts for serious fraud. This multi-tiered 
+architecture ensures that every infraction 
+is met with a proportionate and effective 
+response, reinforcing overall market discipline 
+and investor confidence.
+B. Enforcement Actions Taken
+ i. Proceedings under Section 11/11(4)/11B/11D 
+of SEBI Act, 1992: During 2025-26, 51 cases 
+Table 10.5: Fraudulent and Unfair Trade Practices Cases
+Particulars Cases Taken-up Cases Completed
+2024-25 2025-26 2024-25 2025-26
+Price and Volume Manipulation cases 61 72 46 43
+Front Running 44 49 51 51
+Others# 1 - 8 -
+Total 106 121 105 94
+Note: #Others include cases related to issue of debt securities and minimum public shareholding.
+Table 10.6: Financial Statements Fraud Cases
+Particulars Cases Taken Up Cases Completed
+2024-25 2025-26 2024-25 2025-26
+Financial Statements Fraud 59 53 55 34
+Miscellaneous* 0 4 0 6
+Total 59 57 55 40
+Note: *Miscellaneous includes alleged violations of/ by - i) Listing Conditions ii) Statutory Auditor iii) Disclosure requirements.
+
+[PDF page 7]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+145
+were added under sections 11/11(4)/11B/11D, 
+while 62 cases were disposed of. At the end 
+of March 31, 2026, 158 cases were pending. 
+(Table 10.7). 
+ ii. Enquiry Proceedings: Under the 
+Intermediaries Regulations, 2008, enquiry 
+proceedings have two stages. The first 
+stage is before the Designated Authority 
+(DA) who is appointed to prepare a report 
+recommending one of the measures 
+stipulated in the regulations such as 
+suspension/ cancellation of certificate 
+of registration, issue of censure, etc. The 
+second stage is before the Designated 
+Member (DM) who, after considering the 
+recommendations made by the DA passes 
+appropriate orders. 
+  a. Proceedings by Designated Authority: 
+During 2025-26, enquiry was initiated 
+by Designated Authority in 12 cases and 
+reports were submitted in 24 cases. 
+Enquiry was pending in 20 cases at 
+the end of the year (Table 10.8).
+  b. Proceedings by Designated Member: 
+Upon submission of Enquiry reports, 
+the recommendations made by the DA 
+are placed before the DM for passing 
+of final orders under Regulation 27 
+of SEBI (Intermediaries) Regulations. 
+During 2025-26, 22 enquiry cases were 
+added while 42 were disposed of and 
+16 enquiry proceedings were pending 
+at the end of the period (Table 10.9).
+Table 10.7: Age-wise Analysis of Proceedings u/s 11 
+of the SEBI Act, 1992
+Particulars No. of cases
+2024-25 2025-26
+Cases pending at the beginning 
+of the period 
+145 169
+Cases added during the period 113 51
+Cases closed during the year 89 62
+Cases pending at the end of the 
+period
+169 158
+Break-up of pending cases at the end of the period
+Cases older than 2 years 37 54
+Cases older than 1 but less than 
+2 years
+50 63
+Cases less than 1 year 82 41
+Note: Cases closed indicate passing of final directions.
+Table 10.8: Age-wise Analysis of Proceedings by 
+Designated Authority
+Particulars 2024-25 2025-26
+Cases pending at the beginning 
+of the period 56 31
+Cases added during the period 25 12
+Enquiry Reports submitted 
+during the year 50* 24
+Cases pending at the end of the 
+period 31 20
+Break-up of pending cases at the end of the period
+Cases older than 2 years 1 5
+Cases older than 1 but less than 
+2 years 16 5
+Cases less than 1 year 14 10
+Note: *During 2024-25, in one enquiry matter, proceedings were 
+infructuous as the registration of the notice got cancelled; and 
+hence, the net disposal is 49.
+Table 10.9: Age-wise Analysis of Proceedings by 
+Designated Member
+Particulars 2024-25 2025-26
+Cases pending at the beginning 
+of the period 12 36
+Cases added during the period 51 22
+Cases closed during the year 27 42
+Cases pending at the end of the 
+period 36 16
+Break–up of pending cases at the end of the period
+Cases older than 2 years 8 10
+Cases older than 1 year but less 
+than 2 years 19 6
+Cases less than 1 year 9 0
+Note: During 2025-26, enquiry reports submitted to the DM by 
+DA were 24. However, DA has been appointed for 22 cases. 
+Cases closed indicate passing of final directions.
+
+[PDF page 8]
+Annual Report 2025-26
+146
+ iii. Adjudication Proceedings: Pursuant to 
+the investigation, if sufficient evidences 
+of violations are found, adjudication 
+proceedings are initiated. Under chapter 
+VIA of the SEBI Act, 1992, SEBI appoints an 
+Adjudicating Officer (AO) for conducting 
+enquiry and imposing monetary penalties 
+for contravention of any provision of the 
+SEBI Act, 1992 or any rules or regulations 
+made thereunder. During 2025-26, SEBI 
+initiated adjudication proceedings in 135 
+cases, while disposing of 319 cases. At 
+the end of March 31, 2026, 294 cases were 
+pending for action (Table 10.10).
+ iv. Prosecution Proceedings: SEBI is 
+empowered to initiate prosecution, if 
+any person contravenes or attempts to 
+contravene or abets the contravention of 
+provisions of securities law or of any rule 
+or regulations made thereunder. SEBI is 
+also empowered to initiate prosecution 
+proceedings in instances of non-payment 
+of penalty imposed by the adjudication 
+officer or the Board or if the person does 
+not comply with the directions or order 
+issued by the Board under relevant Acts or 
+with summons issued by the Investigating 
+Authority appointed by the Board. Apart 
+from the above, SEBI is also empowered 
+to initiate prosecution for violation of 
+certain provisions of the Companies Act, 
+2013. These proceedings are based on 
+complaints filed by SEBI and are tried by 
+the SEBI Special Courts/ Sessions Court/ 
+Designated Court. The offences under the 
+relevant securities laws are compoundable 
+by the Court. During 2025-26, SEBI initiated 
+65 prosecution cases, while the Courts 
+disposed of 64 cases. At the end of March 
+31, 2026, there were 1,049 prosecution cases 
+pending before various Courts (Table 10.11).
+10.2 REGULATORY ACTIONS
+10.2.1 Order Passed 
+SEBI has a structured enforcement framework that 
+ensures market integrity and investor protection. 
+SEBI initiates several types of regulatory actions 
+depending on the nature and severity of the violation. 
+The various type of regulatory actions initiated 
+during 2025-26 are given below.
+A. Proceedings under SEBI (Intermediaries) 
+Regulations, 2008: During 2025-26, SEBI 
+Table 10.10: Age-wise Analysis of Adjudication 
+Proceedings
+Particulars 2024-25 2025-26
+Cases pending at the beginning 
+of the period 1,236 478
+Cases added during the period 204 135
+Cases disposed of during the 
+year 962 319
+Cases pending at the end of the 
+period 478 294
+Break-up of pending cases at the end of the period
+Cases older than 2 years 315 181
+Cases older than 1 but less than 
+2 years 49 23
+Cases less than 1 year 114 90
+Table 10.11: Age-wise Analysis of Prosecution 
+Proceedings
+Particulars 2024-25 2025-26
+Cases pending at the beginning 
+of the period 1,106 1,048
+Cases added during the year 42 65
+Cases disposed of during the 
+period 100 64
+Cases pending at the end of the 
+period 1,048 1,049
+Break-up of pending cases at the end of the period
+Cases older than 2 years 967 946
+Cases older than 1 year but less 
+than 2 years 40 39
+Cases less than 1 year 41 64
+
+[PDF page 9]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+147
+passed 42 final orders against 44 entities while 
+in 2024-25, 27 orders were passed against 53 
+entities. 
+B. Proceeding under section 11/11(4)/11B/11D 
+of SEBI Act 1992: SEBI issued both interim/
+confirmatory and final direction under section 
+11 of SEBI Act, 1992. 
+ During 2025-26, SEBI issued 15 interim/
+confirmatory orders against 94 entities and 62 
+final orders against 437 entities. In these orders, 
+SEBI’s directions involved either restraining 
+entities from accessing the securities market, 
+freezing bank accounts or impounding proceeds 
+of a fraudulent transaction and forcing them to 
+give up “ill-gotten gains” made through illegal 
+activities.
+C. Proceeding in respect of CIS and DPI matters: No 
+order w.r.t CIS and DPI matter has been passed 
+during 2025-26 compared to one confirmatory 
+order passed in respect of CIS passed during 
+2024-25 (Table 10.14). 
+D. Other Regulatory Actions: In addition to major 
+regulatory actions, SEBI issues administrative 
+warnings, deficiency letters and advice letters 
+against registered/recognised intermediaries/
+institutions, pursuant to inspections and 
+investigations. The details of such regulatory 
+actions are given below:
+ i. Regulatory Action pursuant to Investigation: 
+During 2025-26, administrative warning 
+Table 10.12: Order Passed under SEBI (Intermediaries) 
+Regulations, 2008
+Year No. of  
+Orders Passed
+No. of  
+Entities
+2024-25 27 53
+2025-26 42 44
+Note: The order passed includes final directions.
+Table 10.13: Order in respect of Debarment/Disgorgement/Penalty
+Nature of Violation 2024-25 2025-26
+Interim/ 
+confirmatory
+No. of 
+Entities
+Final No. of 
+Entities
+Interim/ 
+confirmatory
+No. of 
+Entities
+Final No. of 
+Entities
+PFUTP Regulations 7 75 47 285 7 41 14 193
+PIT Regulations   6 28 2 13 2 8
+LODR Regulations 5 68 7 42 1 6 10 65
+IA/RA Regulations 2 11 0 0 1 3 9 16
+Others* 12 32 29 116 4 31 27 155
+Total 26 186 89 471 15 94 62 437
+Notes: i. There may be more than one violation against an entity; for the purpose of this table, the most relevant nature of violation 
+is considered.
+ ii. *Inter-alia includes entities who have availed settlement, proceedings disposed against entities without any further 
+direction, etc.
+Table 10.14: Order in respect of CIS and DPI matters
+Nature of 
+Violation
+2024-25 2025-26
+Interim/ 
+confirmatory
+No of 
+Entities
+final No of 
+Entities
+Interim/ 
+confirmatory
+No of 
+Entities
+final No of 
+Entities
+CIS 1* 8 - - Nil
+DPI Nil Nil
+Note: *Indicates confirmatory order in the matter of Growpital Platform dated April 26, 2024.
+
+[PDF page 10]
+Annual Report 2025-26
+148
+letters were issued to 357 entities 
+compared to 352 entities in 2024-25.
+ ii. Regulatory Action pursuant to Inspection/
+Supervision
+  a. Market Infrastructure Institutions: 
+Pursuant to the inspections and 
+offsite supervision undertaken during 
+the year, SEBI issued administrative 
+warning letters, deficiency letters, 
+and advisory letters against the MIIs 
+(Table 10.15).
+  b. Intermediaries associated with 
+Securities Market Service Providers: 
+Based on inspections, in-house alerts, 
+the regulatory actions taken/initiated 
+against various securities market 
+service providers are provided in 
+Table 10.16.
+  c. Intermediaries/Institutions Associated 
+with Fund Management Activities: 
+Supervisory process also includes 
+analysis of periodic filings made by 
+asset management companies viz. 
+compliance test reports and half 
+yearly trustee reports and filings made 
+by portfolio managers viz, corporate 
+governance report, certificate of 
+compliance with PMS regulations and 
+circulars and certificate of compliance 
+with performance reporting guidelines. 
+Regulatory actions taken against 
+various other entities associated 
+with fund management activities are 
+provided in Table 10.17.
+Table 10.15: Action Taken against MIIs and/or their 
+Associated Entities
+Type of Letters 2024-25 2025-26
+Administrative warning/ warning 27* 7
+Deficiency 44 13
+Advisory 118# 50
+Notes: i.  #One advisory letter issued in the context of 
+Alternative Fund Management.
+ ii. *Includes three administrative warnings with respect 
+to equity listed securities issued to stock exchanges.
+Table 10.16: Action taken against Securities Market Service Providers
+Intermediary Administrative 
+Warning
+Deficiency  
+Letter
+Advisory 
+Letter
+2024-25 2025-26 2024-25 2025-26 2024-25 2025-26
+Credit Rating Agency 6 10 4 7 12 16
+Custodian 8 2 0 0 0 4
+Debenture Trustee 28 1 29 11 62 14
+Depository Participant 5 7 3 0 4  0
+Designated Depository Participant 4 1 0 0 0 5
+Investment Adviser 36 33 4 12 3 7
+KRA  0 1  0 1  0  0
+Merchant Banker 85 19 6 2 15 7
+Online Bond Platform Provider 58 15 10 1 64 21
+Research Analyst 40 18 1 5 5 2
+Registrars to an issue and Share Transfer Agent 43 7 18 4  0 0 
+Stock Broker 132 78 22 14 17 2
+
+[PDF page 11]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+149
+10.2.2 Adjudication Proceedings
+During 2025-26, SEBI completed adjudication 
+proceedings against 640 entities, through 319 orders. 
+Out of these, no penalty was imposed against 123 
+entities and 46 entities opted for settlement. The 
+types of violations for which these entities were 
+penalized are given in Table 10.18. 
+In 2025-26, Adjudicating Officers levied penalties 
+totaling ₹35.5 crore, with the largest share ₹23.9 
+crore imposed against 233 entities for PFUTP 
+violations (Table 10.19).
+During 2025-26, 88 adjudication orders were 
+passed against registered intermediaries, of which 
+maximum pertained to brokers (41), followed by 
+Merchant Bankers (14), Investment Advisors (9), 
+and remaining against various other intermediaries/
+institutions (Table 10.20).
+10.2.3 Recovery Proceedings
+A. Recovery Cases: Section 28A of the SEBI Act, 
+1992 and the corresponding provisions of SCRA, 
+1956 and the Depositories Act, 1996 empower 
+SEBI to recover money from persons who fail 
+Table 10.17: Actions Taken against Entities Associated with Fund Management Activities
+Intermediary/Institution Administrative 
+Warning
+Deficiency  
+Letter
+Advisory  
+Letter
+2024-25 2025-26 2024-25 2025-26 2024-25 2025-26
+Alternative Investment Fund 44 14 262 428* 19 0 
+Foreign Portfolio Investor 956 68 0 15 0 103
+Foreign Venture Capital Investor 0 0 0 0 0 1
+Infrastructure Investment Trust 9 8 10 - 28 10
+Mutual Fund and its Respective RTA 66 59 43 44 36 35
+Portfolio Manager 128 49 134 95 101 79
+Real Estate Investment Trust 3 0 2 0 8 7
+Note: * Indicates deficiency cum advisory letters.
+Table 10.18: Nature of Adjudication Orders Passed
+Particulars No. of Entities
+2024-25 2025-26
+Nature of Violation
+PFUTP 239 233
+Disclosure under SAST and PIT 4 10
+Listing/ LODR 7 40
+Stock Broker Regulations/ 
+Circulars 44 35
+Non-compliance with SEBI order 19 5
+Insider Trading 15 12
+CIS Regulations, 1999 1 0
+Non-compliance with summon 2 13
+Others 195 123
+No Penalty /Settlement
+No Penalty/Not applicable 107 123
+Settlement 660* 46
+Total 1,293 640
+Note: * Indicates inclusive of illiquid stock option matters settled 
+under ISO Settlement Scheme, 2024.
+Table 10.19: Penalties Levied by Adjudicating Officers 
+in 2025-26
+Nature of Violation No. of Entities Amount  
+(in ₹ crore) 
+PFUTP 233 23.9
+Insider Trading 12 1.4
+Disclosure Violation 10 0.3
+Other Violations# 254 9.9
+Note: #includes Non-compliance, LODR, Stock Broker 
+Regulations, Listing Related violations, FPI Regulations, AIF 
+Regulations, Merchant Banking Regulations, CIS Regulations, 
+Investor Grievance Related violations, etc.
+
+[PDF page 12]
+Annual Report 2025-26
+150
+to pay the penalty imposed by an Adjudicating 
+Officer or fail to comply with any directions of 
+the Board for refund of money or fail to comply 
+with the direction of disgorgement order or fail 
+to pay any fees due to the Board. The details 
+of recovery proceedings for 2025-26 is given in 
+Table 10.21.
+ i. Active Recovery Cases: As on March 31, 
+2026, 8,099 Recovery Certificates (RCs) 
+have been generated, of which 3,394 RCs 
+are active. The category-wise details of 
+active RCs are given in Table 10.22.
+ ii. Non-Active Recovery Cases: Once all 
+recovery methods are exhausted, cases 
+with outstanding balances are categorized 
+as ‘non-active. For optimal utilisation of 
+allocated resources towards dues which 
+have better chances of recovery, dues 
+in respect of such non-active cases are 
+classified as Difficult to Recover (DTR). 
+Further, with respect to cases where 
+Committees have been appointed by 
+the Hon’ble Courts or where parallel 
+proceedings are pending, in order to avoid 
+duplication and for better efficiency, dues 
+in respect of such cases are also classified 
+under this category. This classification is 
+Table 10.20: Adjudication Orders against 
+Intermediaries/Institutions
+Intermediary 2024-25 2025-26
+Broker 58 41
+Depository Participant 1 0
+Merchant Banker 10 14
+Investment Adviser 12 9
+Registrars to Issue and Share 
+Transfer Agent 6 3
+Debenture Trustee 5 2
+Alternative Investment Fund 5 6
+Mutual Fund 4 1
+Portfolio Manager 2 0
+Designated Depository 
+Participant 4 1
+Research Analyst 4 9
+Credit Rating Agency 4 1
+Banker to an Issue 0 0
+KYC Registration Agency 1 0
+Venture Capital Fund 0 1
+Total 116 88
+Table 10.21: Details of Recovery Proceedings
+Description CIS and  
+DPI Cases
+Penalty/
+Disgorgement/ 
+Fee Cases
+Total
+2024-25 2025-26 2024-25 2025-26 2024-25 2025-26
+No. of Recovery Certificates / Notice of Demand 
+drawn by SEBI
+31 54 911 322 942 376
+Amount covered under Certificates (₹crore)* 84.8 159.2 1,758.5 1,918.0 1,843.3 2,077.2
+No. of Certificates Cancelled 2 7 90 44 92 51
+Amount Recovered (₹crore)** 320.0 170.2 184.0 170.6 504.0 340.8
+No. of Certificates where recovery is completed 2 6 384 318 386 324
+No. of Certificates pending at the end of 
+Financial Year
+524 565 3,811 3,771 4,335 4,336***
+Notes: i. *Amount covered under Certificates includes interest and cost till the date of issuance of Recovery Certificate.
+ ii. **Figures are subject to reconciliation with the banks. Further, recovery amount includes recovery from certificates 
+issued in previous years.
+ iii. ***Out of the 4,336 pending Recovery Certificates, 3,394 recovery certificates are active and 942 Recovery Certificates 
+have been categorized as Difficult to Recover.
+
+[PDF page 13]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+151
+in line with the policy approved by the 
+Board and such classification of dues is 
+purely an administrative act and does 
+not preclude the Recovery Officers from 
+recovering the amount as and when there 
+is a change in any of the parameters 
+for such classification. As on March 
+31, 2026, out of 942 DTR cases, 632 RCs 
+involving an amount of ₹2,161 crore have 
+been classified as Irrecoverable Cases 
+(Table 10.23).
+  Another 310 RCs involving an amount of 
+₹84,962.7 crore are subject matter of 
+Court appointed Committees, parallel 
+proceedings, stay/ moratorium by the 
+Courts / Tribunal, under Liquidation etc. 
+(Table 10.24). 
+Table 10.22: Category-wise Active Recovery Certificates
+Category No. of Active pending Recovery 
+Certificates 
+Amount due with respect to active 
+pending Recovery Certificates (₹ crore)
+2024-25 2025-26 2024-25 2025-26
+CIS/DPI 450 469  22,966.5  28,387.1 
+Disgorgement 138 171  2,451.4  3,024.5 
+Penalties 2,846 2,751  1,507.7  987.3 
+Fees 1 3  0.8  1.7 
+Total 3,435 3,394  26,926.3  32,400.6 
+Table 10.23: Break-up of Cases
+Parameter As on
+March 31, 2025
+As on
+March 31, 2026
+No. Amount
+(₹crore)
+No. Amount
+(₹crore)
+Defunct Company 430 1,970.4 390 2,061.7
+Untraceable 143 29.7 153* 51.6
+Defaulter is alive but has no attachable assets 94 66.3 78 47.4
+Death (no assets left behind) 11 0.4 11 0.3
+Total 678 2,066.8 632 2,161.0
+Note: *Out of the 153 certificates falling under untraceable parameter, 134 relate to individuals and 19 relate to companies amounting 
+to ₹26.10 crore and ₹25.47 crore, respectively.
+Table 10.24: Recovery Cases Pending at Courts or Tribunal and under Liquidation
+Parameter As on 
+March 31, 2025
+As on 
+March 31, 2026
+No. Amount
+(₹ crore)
+No. Amount
+(₹ crore)
+Pending before Court Appointed Committees 72 61,204 78 69,730.6
+Parallel Proceedings pending before State PID 
+Courts, NCLT, NCLAT and Supreme Court
+36 12,341.2 34 12,006
+Stay/Moratorium by Courts or Tribunals 94 2,176.1 179 2,981.5
+Under Liquidation 19 12.3 19 244.6
+Total 221 75,733.6 310 84,962.7
+
+[PDF page 14]
+Annual Report 2025-26
+152
+ iii. Cases sub-Judice before Various Forums: 
+There are a total 620 matters sub-judice 
+before various Courts, Tribunals and 
+other forums related to matters where 
+recovery certificates are drawn. Recovery 
+proceedings initiated under such recovery 
+certificates are subject to the final 
+decision of the Court or Tribunal or other 
+forum (Table 10.25).
+B. Special Enforcement Cell: The Special 
+Enforcement Cell was constituted by SEBI to 
+specifically implement the directions of the 
+Hon’ble Supreme Court to refund the amounts 
+collected from investors of Sahara India Real 
+Estate Corporation Ltd (SIRECL) and Sahara 
+Housing Investment Corporation Ltd (SHICL), 
+together termed as “Saharas”. The activities of 
+SEBI in this matter are monitored by Justice 
+(Retd.) B. N. Agarwal appointed by the Supreme 
+Court in this matter. As on date, SEBI has filed 
+23 Status Reports.
+ i. Recovery and Refund Status in Saharas 
+Matter: As on March 31, 2026, SEBI has 
+recovered approximately ₹16,379 crore 
+from ₹16,138 crore as on March 31 2025, 
+against the principal liability of ₹25,781 
+crore. There was no fresh refund made 
+during 2025-26. As of March 31, 2026, 
+the total fund balance, including accrued 
+interest in FDs across various nationalized 
+banks, stood at approximately ₹21,505 
+crore after remitting ₹5,000 crore to the 
+Central Registrar of Cooperative Societies 
+for disbursing to the investors in schemes 
+of Sahara Group of Co-operative Societies 
+(in compliance with the Hon’ble Supreme 
+Court Order dated September 12, 2025).
+ ii. Latest Developments: Saharas filed 
+application No. 232665/2025 before Hon’ble 
+Supreme Court and inter alia prayed for 
+approval of sale of the entire remaining 
+assets of Saharas outrightly in a single lot 
+basis to Adani Properties Private Limited. 
+On January 07, 2026, SEBI submitted its 
+response before the Hon’ble Supreme Court 
+emphasizing that any sale of the Sahara 
+properties should be done in a transparent 
+Table 10.25: No. of Cases sub-judice before Various Forums
+Court/Forum No. of Cases No. of Recovery 
+certificates
+Total amount as per 
+Recovery Certificate 
+(₹ crore)
+2024-25 2025-26 2024-25 2025-26 2024-25 2025-26
+Supreme Court* 54 68 49 75 53,717 60,738**
+High Court*** 84 85 67 77 58,808 68,323
+Securities Appellate Tribunal 329 404 377 478 15,425 3,131
+State PID Courts, NCLT/
+NCLAT, Civil Courts, 
+Consumer Forum, etc.
+72 63 36 39 64,123 66,014
+Total 539 620 529 669 1,92,073# 1,98,206#
+Notes: i. *Including the matter of PACL [Justice (Retd.) R. M. Lodha Committee], High Powered Sale Committee in the matter of Sai 
+Prasad Group of Companies etc. which have been appointed by the Hon’ble Supreme Court of India.
+ ii. ** This covers RC amount involved in the matter of PACL, however, details with respect to recovered amount etc. is 
+separately covered in the annual report in the relevant section.
+ iii. ***Including several cases where Justice S.P. Talukdar Committee has been appointed by the Hon’ble Calcutta High Court.
+ iv. #Data across multiple forums have been aggregated.
+
+[PDF page 15]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+153
+and fair manner including providing the 
+opportunities for participation in the sale 
+to other interested purchasers and subject 
+to the conditions mentioned by the Hon’ble 
+Supreme Court in its order dated July 11, 
+2016. Currently, the matter is pending 
+before the Hon’ble Supreme Court.
+ iii. Update in SICCL matter: SEBI issued 
+order dated October 31, 2018, directing 
+Sahara India Commercial Corporation 
+Limited (SICCL) and its directors to, jointly 
+and severally, refund the money to the 
+investors/bondholders along with interest 
+of 15 per cent per annum. SAT vide order 
+dated March 09, 2026 upheld the SEBI order 
+and dismissed the Appeal No. 250 and 251 
+of 2019 filed by SICCL and its Directors. 
+However, SAT allowed the appeal no. 252 
+of 2019 filed by Managers and Company 
+Secretary of SICCL.
+C. PACL Cell : As per the direction of the Hon’ble 
+Supreme Court, SEBI had constituted a 
+committee under the chairmanship of Justice 
+(Retd.) R.M. Lodha (hereinafter referred to as 
+the “Committee”) for the purpose of disposing of 
+the properties of PACL Ltd. and the distribution 
+of sale proceeds to the investors of PACL Ltd.
+ i. Status of Refunds in PACL Matter: The 
+refund process began in 2018, with a 
+subsequent online claim window opened 
+in 2019 for all the PACL Ltd investors. Due 
+to limited corpus available for disposal, 
+the Committee decided to pay the claims 
+of investors in a staggered manner. As on 
+March 31, 2026, the Committee has effected 
+refunds of ₹3,721 crore to 35,74,401 eligible 
+applicants (Table 10.26).
+ ii. Sale of Properties of PACL: The Committee, 
+in a report dated September 24, 2021 had 
+suggested two proposals/ options for 
+the sale of properties of PACL Ltd for the 
+consideration of the Hon’ble Supreme 
+Court, viz.
+		• 	 Proposal I - Proposal to sell 1000 
+properties of the highest book value; 
+and
+		• 	 Proposal II - Proposal for the sale 
+of all the properties in a cluster (all 
+properties in a district to be considered 
+as one unit)
+  The Hon’ble Supreme Court vide its order 
+dated August 8, 2024 in Civil Appeal 
+No. 13301/2015, has accepted the above 
+proposal II. Accordingly, the Committee 
+initiated the process for auction of 
+properties of PACL and it is ongoing. 
+As on March 31, 2026, the Committee 
+has auctioned properties spread across 
+27 districts, realizing a total amount of 
+₹3,620.7 crore. 
+10.2.4 Prosecution Proceedings
+During 2025-26, 65 prosecution cases were launched 
+against 176 persons/ entities, taking total prosecution 
+Table 10.26: Refund Status of PACL Investors
+Refund Process Type of Claim 
+Applications
+No. of Claim  
+Applications
+Amount Refunded  
+(₹ crore)
+First Refund Process (From January 
+02, 2018 till March 03, 2018)
+Having claim amount 
+upto ₹2,500
+1,89,103 eligible applicants with 
+claim amount upto ₹2,500
+18.2
+Second Refund Process (From 
+February 08, 2019 till July 31, 2019)*
+Having any outstanding 
+claim amount.
+33,85,298 eligible applications 
+with any outstanding claim 
+amount.
+3,702.5
+Total 35,74,401 eligible applications 3,720.7
+Note: *The refund status is as on March 31, 2026.
+
+[PDF page 16]
+Annual Report 2025-26
+154
+cases initiated to 2,143 (against 8,746 entities) as on 
+March 31, 2026 (Table 10.27). 
+Out of the total prosecution cases filed upto March 31, 
+2026, the share of Head Office/Western Region was 
+63.5 per cent and the corresponding pendency was 
+58.2 per cent. The region-wise data on prosecution 
+cases filed and pending are given in Table 10.29.
+SEBI initiates prosecutions for violation of provisions 
+of the SEBI Act, 1992; Depositories Act, 1996; SCRA, 
+1956; Companies Act, 1956/2013; and the Indian 
+Penal Code, 1860/ Bharatiya Nyaya Sanhita, 2023. 
+As on March 31, 2026, 2,143 prosecution cases have 
+been launched, of which 1,828 cases pertained to 
+violation of the provisions under the SEBI Act, 1992 
+(Table 10.30). 
+As on March 31, 2026, the Courts have disposed of 
+1,094 prosecution cases filed by SEBI, out of which 
+295 cases resulted in convictions and 405 cases 
+were compounded (Table 10.31).
+Table 10.27: Prosecutions Launched
+Year During the Year As at end of the Year
+No. of cases Against No. of  
+Persons/Entities 
+No. of cases Against No. of  
+Persons/Entities 
+2024-25 42 69 2,078 8,570
+2025-26 65 176 2,143 8,746
+Table 10.28: Nature of Violations in Prosecutions 
+Launched
+Nature of Violation No. of cases filed 
+2024-25 2025-26
+Non-payment of Penalty imposed 
+by Adjudication Officer/WTM
+30 51
+Violation of CIS Regulations, 1999 1 1
+Non-compliance with Directions 
+issued by the Board
+5 10
+Violation of PFUTP Regulations, 
+2003
+0 2
+SEBI Act r/w Indian Penal Code/ 
+Bharatiya Nyaya Sanhita, 2023
+1 0
+Non-compliance with Summons 
+Issued by the Investigating Officer
+3 1
+Violations under Companies Act, 
+1956/ 2013
+2 0
+Total 42 65
+Table 10.29: Region-wise Data on Prosecution Cases 
+Filed and Pending
+Region No. Cases  
+Filed upto
+No. of Cases 
+Pending upto
+2024-25 2025-26 2024-25 2025-26
+Head Office/
+Western Region
+1,306 1,360 615 611
+Northern Region 392 393 154 149
+Southern Region 126 126 91 91
+Eastern Region 254 264 188 198
+Total 2,078 2,143 1,048 1,049
+Table 10.30: Nature of Prosecution Cases filed
+Violation Alleged w.r.t. Number of Cases 
+launched upto 
+March 31, 
+2025
+March 31, 
+2026
+SEBI Act, 1992 1,763 1,828
+SEBI Act, 1992 & SCRA, 1956 100 100
+SEBI Act, 1992, SCRA & 
+Companies Act 1956/2013
+2 2
+SEBI Act, 1992 & Companies Act 
+1956/2013
+75 75
+SEBI Act, 1992 & Indian Penal 
+Code, 1860/(Bharatiya Nyaya 
+Sanhita, 2023)
+6 6
+Companies Act, 1956 87 87
+SCRA, 1956 7 7
+Depositories Act, 1996 29 29
+Indian Penal Code, 1860 9 9
+Total 2,078 2,143
+Note: The table incorporates all Prosecution Cases filed since 
+1992
+
+[PDF page 17]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+155
+10.2.5 Settlement and Compounding 
+I. Settlement: During 2025-26, SEBI received 439 
+applications for settlement and disposed of 170 
+applications by passing appropriate settlement 
+orders, while 199 applications were rejected, 
+withdrawn or returned. Settlement Orders 
+were passed for alleged violations of various 
+regulations, viz., SEBI (SAST) Regulations, 2011; 
+SEBI (PIT) Regulations, 2011; SEBI (PFUPT) 
+Regulations, 2003; SEBI (LODR), 2015; SEBI 
+(FPI) Regulations, 2019; SEBI (AIF) Regulations, 
+2012; SEBI (RTAs) Regulations, 1993; SEBI (MF) 
+Regulations, 1996.
+ SEBI collected ₹109.8 crore towards settlement 
+charges, of which ₹74.2 crore was received 
+towards summary settlement charges 
+(Table 10.32). In addition, ₹11.3 crore was 
+collected as disgorgement charges.
+ Additionally, SEBI had introduced the Venture 
+Capital Funds Settlement Scheme, 2025, in 
+terms of Regulation 26 of the SEBI (Settlement 
+Proceedings) Regulations, 2018, wherein a total 
+of 29 entities had availed the scheme and ₹2 
+crore has been received towards settlement 
+terms. The Settlement Scheme for association 
+with certain Algo platforms, 2025, was also 
+introduced and a total of 111 entities had availed 
+the scheme and ₹1.11 crore were received 
+towards settlement terms. The settlement 
+amounts received from the settlement schemes 
+were credited to the Consolidated Fund of India 
+(Table 10.33).
+Table 10.31: Number of Prosecution Cases decided 
+by the Courts
+Type of Decision As on March 
+31, 2025
+As on March 
+31, 2026
+Convictions 276 295
+Compounded 378 405
+Abated 61 66
+Dismissed/Discharged 173 174
+Withdrawn 109 110
+Acquitted 33 42
+Others 0 2
+Total 1,030 1,094
+Note: Includes all prosecution cases decided since 1992
+Table 10.33: Settlement Schemes
+Settlement Scheme Date of Settlement  
+order
+No. of entities who 
+availed the scheme
+Settlement Amount collected 
+for remittance to CFI (₹)
+Venture Capital Funds Settlement 
+Scheme, 2025
+March 9, 2026 29 1,99,50,000
+Settlement Scheme for association 
+with certain Algo Platforms, 2025
+March 17, 2026 111 1,11,00,000
+Table 10.32: Settlement Applications Filed with SEBI
+Particular 2024-25 2025-26
+Pending at the beginning of the 
+period
+282 429
+No. of settlement applications 
+received
+703 439
+No. of applications disposed of 
+by passing orders1
+284 170
+No. of applications rejected/
+withdrawn/returned
+272 199
+Pending at the end of the period 429 499
+Settlement Amount (₹ crore) 798.9 109.82
+Notes: i.  1The number of applications may include disposal of 
+applications filed during previous financial years.
+ ii. 2Out of total settlement amount of ₹109,81,89,058.45/-
+; ₹74,21,875/- was received towards summary 
+settlement charges. Additionally,  ₹11,28,67,974.30/- 
+was received towards disgorgement charges.
+
+[PDF page 18]
+Annual Report 2025-26
+156
+II. Compounding: During 2025-26, 46 compounding 
+applications were filed before the court. 
+35 applications were compounded and an 
+amount of ₹767.7 lakh was received towards 
+compounding charges. As on March 31, 2026, 
+there were 85 applications pending with Courts 
+for compounding (Table 10.34).
+10.3 LITIGATIONS
+A. Appeals in SAT: During 2025-26, the Bench 
+of the Hon’ble Securities Appellate Tribunal 
+(SAT) comprised of Justice P.S. Dinesh Kumar, 
+Presiding Officer; Dr. Dheeraj Bhatnagar, 
+Technical Member and Ms. Meera Swarup, 
+Technical Member. 429 new appeals were filed 
+in 2025-26 before the Hon’ble SAT, as compared 
+to 533 appeals filed in the preceding year, 
+reflecting a downward trend in the number of 
+appeals being filed before the Hon’ble SAT. The 
+Hon’ble SAT disposed of 323 appeals during 
+2025-26, of which 148 appeals pertained to 
+PFUTP & insider trading cases. At the end of 
+March 31, 2026, 1,066 appeals were pending 
+before the Hon’ble SAT.
+B. Litigations in Supreme Court: As on March 31, 
+2026, there were 539 cases pending before the 
+Supreme Court (excluding recovery related 
+litigations), compared to 520 pending in the 
+previous year (Table 10.36). During 2025-26, 73 
+cases were added and 54 cases disposed of.
+C. Litigations in High Courts: As on March 31, 
+2026, there were 884 litigation cases pending 
+before the High Courts (excluding prosecution 
+and recovery related litigations), compared to 
+886 litigation cases in the previous year. During 
+2025-26, 201 litigation cases have been filed 
+in High Court and 203 cases were disposed of 
+(Table 10.37).
+ As on March 31, 2026, 349 cases pertaining to 
+prosecution litigations were pending before 
+Table 10.34: Compounding Applications Filed by the 
+Accused in Criminal Courts
+Particular 2024-25 2025-26
+Pending applications at the 
+beginning of the period 65 107
+Number of applications filed 88 46
+Number of applications 
+compounded 36 35
+Number of applications rejected 10 33
+Pending at the end of the period 107 85
+Compounding charges received 
+by SEBI (₹lakh) 708.8 767.7
+Table 10.35: Status of Appeals before SAT
+Status of Appeals 2024-25 2025-26
+Appeals pending at the beginning 
+of the year 849 960
+Appeals filed during the year 533 429
+Appeals Dismissed 308 135
+Appeals Remanded 21 28
+Appeals Allowed 23 47
+SEBI orders upheld with 
+modifications 42 88
+Appeals withdrawn 28 25
+Appeals Pending at the end of the 
+year 960 1,066
+Table 10.36: Status of Litigation before Supreme Court
+Particulars 2024-25 2025-26
+Filed Disposed Pending Filed Disposed Pending
+Cases filed by SEBI 7 10 272 16 16 272
+Cases filed by Parties 74 70 248 57 38 267
+Total 81 80 520 73 54 539
+Note: Figures are inclusive of 15Z, non-15Z and prosecution related litigation and exclude recovery related litigations.
+
+[PDF page 19]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+157
+High Court compared to 313 litigations at the 
+end of previous year (Table 10.38).
+D. Litigations in Other Courts: As on March 31, 2026, 
+there were 449 litigation cases pending before 
+Other Forums (apart from Supreme Court, 
+High Court, SAT and prosecution cases filed by 
+SEBI) compared to 539 cases in the previous 
+year. During 2025-26, 117 litigation cases have 
+been filed and 207 cases have been disposed 
+(Table 10.39). 
+ Among the 449 pending litigations, 254 
+litigations are pending at Consumer forum, 
+followed by 110 litigations (at civil court), and 58 
+litigations (at NCLT).
+ Apart from the above, as on March 31, 2026, 
+there were 25 criminal cases filed by parties 
+which are pending before various subordinate 
+courts across the country, compared to eight 
+cases in the previous year. During 2025-26, 24 
+new cases were filed and seven cases were 
+disposed of (Table 10.41).
+E. Important Court Pronouncements
+ I. Supreme Court of India
+ i. Order dated October 7, 2025- Madhyam 
+Agrivet Industries Ltd. & Ors. vs. SEBI (C.A. 
+No. 7885/2024)
+  The Civil Appeal was preferred by Madhyam 
+Agrivet Industries Ltd. (appellant) 
+challenging the order dated 22.05.2024 
+passed by the Ld. SAT whereby the prayer 
+seeking various documents pertaining 
+to internal notings, inter-department 
+transfers etc. was rejected. 
+Table 10.37: Status of Litigation before High Courts
+Particulars 2024-25 2025-26
+Filed Disposed Pending Filed Disposed Pending
+Cases filed by SEBI 15 18 52 5 12 45
+Cases filed by Parties 166 170 834 196 191 839
+Total 181 188 886 201 203 884
+Note: Figures are exclusive of prosecution and recovery related litigations.
+Table 10.38: Status of Litigation before High Courts arising out of Prosecution
+Particulars 2024-25 2025-26
+Filed Disposed Pending Filed Disposed Pending
+Cases filed by SEBI 24 3 60 20 8 72
+Cases filed by Parties 47 24 253 72 48 277
+Total 71 27 313 92 56 349
+Table 10.39: Status of Litigation before Other Forums
+Particulars 2024-25 2025-26
+Filed Disposed Pending Filed Disposed Pending
+Cases filed by SEBI 12 12 18 8 7 19
+Cases filed by Parties 98 115 521 109 200 430
+Total 110 127 539 117 207 449
+Note: Figures are excluding prosecution and recovery litigations.
+
+[PDF page 20]
+Annual Report 2025-26
+158
+  The proceedings emanated from a Show 
+Cause Notice (SCN) dated 19.10.2023 issued 
+to the appellants for allegations inter alia 
+pertaining to irregularities of distribution 
+of sale proceeds to public shareholders 
+resulting out of sale of wholly owned 
+subsidiary and dairy product business and 
+irregularities in delisting of shares and 
+manipulation in the books of accounts. 
+  Pursuant to the SCN, the Appellants 
+sought inspection of certain documents 
+and thereafter additional documents 
+were allegedly sought. Respondent vide 
+email dated 31.01.2024 denied the seeking 
+Table 10.40: Fora-Wise status of Cases
+Forum Pending as on 
+March 31, 2025
+Filed Disposed Pending as on 
+March 31, 2026
+Civil Court 114 25 29 110
+Consumer Forum 333 34 113 254
+NCLT 63 37 42 58
+NCLAT 13 7 11 9
+Labour Commissioner/
+Labour Court
+8 2 3 7
+Commissioner of GST & CX/ Sales Tax 
+Appellate Tribunal
+0 0 0 0
+Commissioner of Income Tax 2 2 2 2
+Permanent Lok Adalat 2 1 1 2
+The Debt Recovery Tribunal 1 0 0 1
+Bar Council of India 1 0 0 1
+Other 2 9 6 5
+Total 539 117 207 449
+Note: Figures are excluding prosecution and recovery litigations.
+Table 10.41: Fora-wise status of Criminal Cases Filed by Parties
+Forum Pending as on 
+March 31, 2025
+Filed during 
+2025-26
+Disposed 
+during 2025-26
+Pending as on 
+March 31, 2026
+SEBI Special Court, Mumbai 0 3 3 0
+City Civil & Sessions Court, Mumbai 0 4 2 2
+West District & Sessions Court, Tis Hazari, Delhi 3 0 0 3
+New Delhi District & Sessions Court, Patiala 
+House, Delhi
+0 1 1 0
+South District & Sessions Court, Saket, Delhi 0 1 0 1
+Chief Judicial Magistrate/Judicial Magistrate, 
+Jalandhar, Punjab
+3 2 0 5
+Judicial Magistrate, Mansa, Punjab 0 1 0 1
+Judicial Magistrate, Gurugram, Haryana 0 9 0 9
+Judicial Magistrate, Karnal, Haryana 0 1 0 1
+Metropolitan Magistrate, Bandra, Mumbai 0 2 1 1
+Metropolitan Magistrate, Chandigarh 2 0 0 2
+Total 8 24 7 25
+
+[PDF page 21]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+159
+additional documents and asked the 
+Appellants to file its reply. The Appellant 
+then challenged the said email before SAT 
+and sought several documents including 
+the SCN issued to Independent Directors 
+and/ or other officials of the Appellant, 
+complete chain of communication between 
+Forensic Auditor and the Respondent, 
+documents pertaining to investigation from 
+October 2020, inter-department transfers, 
+communication between departments of 
+SEBI, etc.
+  The SAT allowed the inspection of SCNs 
+issued to Independent directors while 
+rejecting the prayer for other documents 
+as mentioned above. The SAT observed 
+that the internal and inter-departmental 
+notings are part of a process within SEBI 
+which culminate in the Investigation Report 
+and finally lead to the issuance of the 
+SCNs and also observed that providing the 
+Forensic Audit Report and the Investigation 
+Report to the Appellants redresses their 
+grievances.
+  Before the Hon’ble Supreme Court, the 
+Appellants argued that they are entitled to 
+such documents as all those documents 
+are relevant and inter-department transfer 
+of documents/ notings reflect the views of 
+various department and would influence 
+the decision of the competent authority in 
+determining the specific violations, etc. 
+  However, Hon’ble Court while dismissing 
+the Appeal observed that they are not 
+inclined to interfere with the order of SAT 
+and further observed that any documents 
+relied on by SEBI will be provided to the 
+appellants.
+ ii. Common order dated December 1, 2025– 
+Elara India Opportunities Fund Limited vs. 
+SEBI & Ors. (C.A. No. 14194 of 2025) along 
+with Vespera Fund Limited vs. SEBI (C.A 
+No. 14195 of 2025) 
+  The Appeal was preferred by Elara India 
+Opportunities Fund Ltd (Elara) and Vespera 
+Fund Ltd (Vespera) against SAT order 
+dated 15.10.2025 whereby SAT had upheld 
+SEBI letter dated 28.03.2025 rejecting 
+the application seeking exemption from 
+strict enforcement of certain provision 
+of the SEBI (FPI) Regulations, 2019 (FPI 
+Regulations).
+  Regulations 22(6) and 22(7) of the FPI 
+Regulations specifically require the FPIs 
+to disclose information or documents in 
+relation to the persons with any ownership, 
+economic interest or control in the FPI in 
+the manner specified by the Board. Further, 
+vide its Circular dated 24.08.2023, SEBI 
+mandated additional granular disclosures 
+viz. ownership by natural persons etc. for 
+the FPIs holding more than 50 per cent 
+of its Indian equity AUM in a single Indian 
+corporate group. The deadlines provided 
+under the circular were extended by 180 
+days, for liquidation of all holdings in 
+case of non-compliance of the relevant 
+disclosures. After expiry of this period, the 
+unsold securities of FPI was to be deemed 
+to be compulsorily written-off by the FPI 
+and FPI shall lose any beneficial interest in 
+the said securities. 
+  Elara had invested 82.13 per cent and 
+Vespera had invested 72.99 per cent of 
+assets in the Adani Group, which was more 
+than 50 per cent threshold in single Indian 
+corporate group. However, both the entities 
+failed to comply with the requirement 
+of making granular disclosures as per 
+the abovementioned circular. Therefore, 
+their registration as an FPI was rendered 
+invalid, were required to liquidate their 
+
+[PDF page 22]
+Annual Report 2025-26
+160
+securities and exit the Indian securities 
+market. Although the Appellants liquidated 
+their securities in terms of the circulars, 
+however, they retained certain warrants 
+purchased by them during 2023-24. 
+  On 04.02.2025, the Appellants filed its 
+application under regulation 43B of 
+the FPI regulations for exemption from 
+strict enforcement of FPI Regulations 
+and requested that they may be allowed 
+to exercise conversion of the warrants 
+subscribed by them, receive shares 
+so allotted in its demat accounts and 
+thereafter sell the shares. Vide SEBI letter 
+dated 29.03.2025, the application filed by 
+the appellants was rejected. 
+  The Appeals filed before Ld. SAT were 
+dismissed vide order dated 15.10.2025 
+wherein the Ld. SAT observed that the 
+August 2023 circular has been issued in 
+view of the concerns that entities with large 
+Indian equity portfolios could potentially 
+disrupt the orderly functioning of securities 
+markets by misusing the FPI route. It was 
+also observed that the Appellants took 
+a conscious decision to subscribe to the 
+warrants in the violation of August 2023 
+circular and the same is completely in 
+variance with their conduct of liquidating 
+their remaining securities. 
+  Pursuant thereto, Appeals were preferred 
+by Elara and Vespera before the Hon’ble 
+Supreme Court. The Hon’ble Court, vide 
+its order dated 01.12.2025 dismissed the 
+Appeals and upheld the SAT order dated 
+15.10.2025.
+ iii. Common order dated April 07, 2025 – SEBI 
+vs. Ram Kishori Gupta and anr. (Civil Appeal 
+no. 7941 of 2019) and other connected 
+appeals
+  An order dated February 20, 2008 
+was passed by SEBI against Vital 
+Communications Ltd (VCL) and its 
+promoters and directors in relation to 
+alleged misleading advertisements issued 
+by VCL with regard to buyback of its shares, 
+issue of bonus shares and preferential 
+issue of shares.
+  One Mrs. Ram Kishori Gupta and her 
+husband, Mr. Harishchandra Gupta 
+(Collectively referred to as “the Guptas”) 
+claimed compensation from SEBI for the 
+losses suffered by them in connection 
+with the shares of VCL, which was denied 
+by SEBI. Pursuant to an appeal filed by 
+the Guptas, the SAT while upholding the 
+aforesaid SEBI order against VCL and 
+others, directed SEBI to consider directing 
+VCL to refund the actual amount spent by 
+the Guptas on purchasing the shares in 
+question with appropriate interest and as 
+per law.
+  WTM SEBI vide order dated July 31, 2014 
+restrained 24 Noticees from accessing the 
+securities market and prohibited them from 
+dealing in securities. Vide report of SEBI 
+regarding non feasibility of quantification of 
+any ill-gotten gains by VCL, promoter group 
+of preferential allottees was informed to 
+the Guptas. 
+  Aggrieved by the aforesaid report of SEBI, 
+the Guptas filed appeal before the Ld. SAT 
+which was disposed of by the SAT vide 
+order dated August 27, 2015 directing WTM 
+SEBI to pass appropriate orders on merits, 
+after hearing the Guptas. 
+  WTM SEBI vide order dated September 28, 
+2018 directed VCL and its various directors/
+entities to jointly and severally disgorge 
+their unlawful gains of ₹4,55,91,232 along 
+with interest. 
+
+[PDF page 23]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+161
+  Appeals against the aforesaid order of 
+WTM SEBI was filed by the Guptas before 
+the Ld. SAT for denial of restitution by the 
+said order of WTM, and by VCL and others 
+against the direction of disgorgement. 
+Vide order dated August 02, 2019 the Ld. 
+SAT held that as violation by VCL had been 
+conclusively proved by the order dated 
+September 28, 2018, therefore SEBI was 
+directed to compensate the Guptas to the 
+extent of ₹18,25,041. 
+  Being aggrieved by the order dated August 
+02, 2019 SEBI filed an appeal before the 
+Hon’ble Supreme Court. The Guptas also 
+filed an appeal before the Hon’ble Supreme 
+Court.
+ On the appeals filed by VLC and others, the SAT 
+vide order dated December 20, 2021, held that: 
+	 •	 WTM SEBI’s order dated December 16, 
+2014 to its Investigation Department to 
+examine the feasibility of quantifying ill-
+gotten gains and to issue requisite notices 
+for disgorgement, was wholly without 
+jurisdiction. 
+	 •	 No fresh proceedings on the same cause 
+of action could have been initiated under 
+Sections 11 and 11B of the SEBI Act, 1992 
+after the order dated July 31, 2014 attained 
+finality. 
+	 •	 The order dated September 28, 2018 was, 
+therefore, held to be barred by the principle 
+of res judicata. 
+ Further, the Ld. SAT vide its order dated 
+December 20, 2021 also imposed cost of 
+₹2,00,000 to be paid by SEBI to each of the 
+appellants.
+ The said order of the Ld. SAT was challenged 
+by SEBI before the Hon’ble Supreme Court. The 
+Hon’ble Court vide its order dated April 07, 2025 
+while allowing the Civil Appeal filed by SEBI in 
+CA no. 7941 of 2019, inter alia, held that: 
+	 •	 The illegalities committed by VCL and the 
+other entities had financial implications 
+which may have warranted a direction for 
+disgorgement, but once the SEBI choose 
+not to issue such a direction in the first 
+instance and was satisfied with lesser 
+penalties in its order dated July 31, 2014, 
+the question of permitting SEBI, without 
+just cause, to revisit the said final order 
+and pass fresh directions does not arise. 
+Doing so would be violative of public policy 
+and the principle of res judicata. 
+ •	 The compensation claim of the Guptas 
+against SEBI was decided by the Ld. SAT’s 
+order dated April 30, 2013, which also 
+attained finality and it was not open to 
+them to reopen the same. 
+  Consequently, the Civil Appeal (Diary) 
+No. 42829 of 2019 filed by the Guptas was 
+dismissed by the Hon’ble Supreme Court. 
+Vide the same order, it was also held that 
+SEBI’s appeals against the impugned order 
+of the Ld. SAT is devoid of merit. However, 
+the direction of the Ld. SAT imposing cost 
+of ₹ 2,00,000/- on SEBI to be paid to VCL 
+and the other noticees each was set aside 
+and allowed the Civil Appeal Nos.1649-1652 
+of 2022 to that extent.
+ iv. Order dated December 02, 2025 in the 
+matter of Reliance Industries Ltd. & Ors. v. 
+SEBI (CA No. 9511/2025)
+  SEBI conducted an investigation in the 
+suspected insider trading activities in the 
+scrip of Reliance Industries Ltd. (“RIL”/ 
+“Company”). It was observed that news 
+about impending Jio-Facebook deal was 
+published in the Financial Times (FT), 
+London on March 24, 2020 post market 
+
+[PDF page 24]
+Annual Report 2025-26
+162
+hours and thereafter, the said news report 
+of FT was widely circulated in Indian 
+media on the same day and next day. Post 
+publication of the said news articles, the 
+scrip price of the Company went up by 
+almost 15 per cent on March 25, 2020. 
+  Pursuant to investigation, adjudication 
+proceedings were initiated against RIL 
+and its Compliance Officers (being Ms. 
+Savitri Parekh and Mr. K. Sethuraman, 
+Appellant Nos. 2 and 3 respectively). 
+Adjudicating Officer (AO), vide Order dt. 
+June 20, 2022, held that Appellants did not 
+comply with the provision of principles of 
+fair disclosure of UPSI (Unpublished Price 
+Sensitive Information) and did not issue any 
+clarification on the same, and therefore, 
+Appellants were liable for the violation 
+of provisions of Principle No. 4 under 
+Schedule A - Principles of Fair Disclosure 
+for purposes of code of practices and 
+procedures for Fair Disclosure of UPSI 
+read with Regulation 8(1) of SEBI (PIT) 
+Regulations, 2015 read with Regulation 
+30(11) of SEBI (LODR) Regulations, 2015. 
+Accordingly, AO imposed a penalty of 
+₹30,00,000 under Section 15HB of the SEBI 
+Act to be paid jointly and severally by the 
+Appellants.
+  In appeal by Appellants before the Ld. 
+Securities Appellate Tribunal (SAT), the Ld. 
+SAT while dismissing the appeal inter alia 
+held as under:
+  •	 All material information under 
+LODR may not be price sensitive 
+for the purpose of PIT Regulations. 
+Conversely, merely because the 
+material information is required to 
+be disclosed to the stock exchanges, 
+it cannot be held to be UPSI. What 
+is ‘price sensitive’ is essentially 
+‘material’, but the converse is not true. 
+  •	 The scope of LODR and PIT Regulations 
+while overlapping at some places, is 
+different. The standard of disclosure is 
+much higher in PIT Regulations and the 
+dispute in the instant matter cannot be 
+reduced to mere non-compliance of 
+Regulation 30(11) of LODR Regulations 
+and germane issued is to determine 
+whether appellants may be held to be 
+in violation of PIT Regulations or not. 
+  •	 Principle 1 of the PIT Regulations 
+requires the company to make prompt 
+disclosure as and when a credible and 
+concrete information comes into being 
+in order to make it generally available 
+whereas Principle 4 makes it obligatory 
+to make prompt disclosure, of a UPSI 
+which is disclosed selectively, to make 
+information generally available. It was 
+the responsibility of the company to 
+make prompt disclosure when it was 
+selectively disclosed in certain media 
+and in order to protect the interest 
+of its shareholder, the duty was 
+casted upon the company to make the 
+disclosure. 
+  •	 The appellants’ submission that the 
+information cannot be held concrete 
+or credible till a binding agreement 
+is signed and that accepting such 
+submission would defeat the purpose 
+of PIT Regulations cannot be accepted. 
+  •	 In respect of a materially price 
+sensitive matter in the nature of 
+significant cross-border investment in 
+a company such as RIL, the information 
+may be held as ‘generally available’ 
+only when company authenticates 
+it and not merely on the basis of a 
+newspaper leakage, not authenticated 
+by the company.
+
+[PDF page 25]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+163
+  Aggrieved by the same, the subject appeal 
+was filed before the Hon’ble Supreme Court. 
+When the matter was taken up for hearing 
+on December 02, 2025, the Appellants 
+made their submissions on applicability 
+of Regulations 30(10) & 30(11) of the LODR 
+Regulations in the instant matter and that 
+a company cannot be bound to clarify every 
+news article especially when the deal was 
+still being negotiated. Further, Appellant 
+submitted before the Hon’ble Court that 
+upon publication in the newspapers, the 
+information became generally available 
+information and that the same was also 
+observed by AO, SEBI. At this stage, Ld. SG, 
+appearing for SEBI, informed the Hon’ble 
+Court that subsequent to publication of the 
+news article on March 24, 2020, there was 
+an increase in the price of the scrip by 15 
+per cent. 
+  The Hon’ble Court, vide its order dated 
+December 02, 2025, dismissed the appeal 
+inter alia  observing that no case for 
+interference is made out on the conclusion 
+drawn by SEBI with respect to the violation 
+of the 2015 Regulations, whereby there is 
+a statutory duty of disclosing unpublished/ 
+selectively published price sensitive 
+information so as to make it generally 
+available and embargo against insider 
+trading, particularly in view of the fact that 
+post publication of news articles, the price 
+rise in the scrip was almost 15 per cent 
+(against the previous day closing price) 
+whereas post corporate announcement, 
+the price rise was around 10 per cent.
+ v. Order dated March 17, 2026 in the matter 
+of SEBI Vs Terrascope Ventures Ltd & Ors 
+[Civil Appeal Nos 5209-5211 of 2022]
+  The Appeal has been filed by SEBI against 
+the Common Order of the SAT dated June 
+6, 2022 (the “Impugned Order”) whereby 
+the SAT had quashed and set aside 3 
+different orders of the Adjudicating Officer 
+on the same date i.e. April 29, 2020 (the 
+“AO Orders”) against the Respondent No 
+1 Company Terrascope Ventures Ltd and 
+its two Directors – Respondent No. 2 Ms. 
+Geeta Manoharlal Saraf and Respondent 
+No. 3 Mr. Manoharlal Saraf.
+  Pursuant to an investigation by SEBI, it was 
+found that the proceeds raised through 
+the preferential issue by the Respondent 
+No 1 Company were not utilized as per 
+the disclosed objects of the preferential 
+issue and were instead utilized for other 
+purposes such as investment in shares 
+and providing loans and advances. In view 
+thereof, the AO had held that such an act 
+amounted to misleading the investors 
+and had imposed a penalty of ₹ 1 crore 
+against the Respondent No 1 Company 
+under Section 15HA of the SEBI Act, 1992 
+and Section 23E of the Securities Contracts 
+(Regulation) Act, 1956 (the “SCRA”) for 
+violation of Regulation 3 and 4 of the SEBI 
+(PFUTP) Regulations, 2003 and Section 
+21 of the SCRA read with clause 43 of the 
+Listing Agreement respectively while a 
+penalty of ₹ 25 lakh each was imposed 
+on Respondents No 2 and 3 under Section 
+15HA of the SEBI Act, 1992. 
+  The said order was challenged before 
+the Ld. SAT wherein it was argued by 
+the Respondent No. 1 Company and 
+Respondents No 2 and 3 herein that vide 
+a special resolution at a later date, the 
+variance in the utilization of the proceeds 
+of the issue were ratified. The Ld. SAT 
+concurred with this argument and set aside 
+the AO Orders which was challenged by the 
+Board before the Hon’ble Supreme Court.
+
+[PDF page 26]
+Annual Report 2025-26
+164
+  While noting the contentions of both the 
+parties after a detailed hearing, the order 
+was reserved on September 16, 2025 and 
+was pronounced on March 17, 2026. The 
+Hon’ble Court allowed the SEBI appeal and 
+set aside order of the Ld. SAT, inter alia, 
+with the following reasoning:
+		• 	 The object of the SEBI Act and 
+the Regulations are to pre-empt 
+manipulative trading and check all 
+kinds of impermissible conduct 
+resorted by parties, so that the 
+innocent investor is not misled. Any 
+practice which does not conform to 
+the fair and transparent principles of 
+trades in the stock market would be 
+captured under the rubric of unfair 
+trade practices in the securities 
+market.
+  •	 The ambit of fraud under PFUTP 
+Regulations is broader than the 
+normal meaning assigned to the term, 
+illustrated by its very definition under 
+the PFUTP Regulations which even 
+excludes the requirement of deceit. 
+The Bench held that the diversion 
+of funds by the Respondents for a 
+purpose different to the one set out at 
+the time of preferential issue misled 
+the investors and was a breach of 
+Regulation 3, 4(2)(f), 4(2)(k) and 4(2)
+(r) of the PFUTP Regulations. 
+  •	 Failure to furnish the details pertaining 
+to the variation in the utilization of 
+proceeds also attracted the penalty 
+under Section 23E of SCRA. 
+  •	 SEBI regulations such as the PFUTP 
+Regulations has public law dimensions 
+since it protects the rights of several 
+stakeholders and a liability which is 
+crystalized through the regulatory 
+provisions cannot be wiped off by a 
+private resolution, by contending that 
+the shareholders have condoned the 
+action. 
+  •	 An illegality or an ultra-vires act 
+cannot be ratified subsequently 
+through a shareholder resolution. 
+  •	 The provisions of the SEBI Act, 1992 
+provides for initiation of separate and 
+distinct proceedings for violation of 
+the provisions of the SEBI Act, 1992 
+and the regulations made thereunder.
+ II. High Court 
+ a. Common order dated December 01, 2025- 
+Hemant Kulshrestha vs. SEBI and others 
+[W.P. (L) no. 31373 of 2025] and connected 
+petition - High Court of Judicature at 
+Bombay 
+  These petitions were filed challenging the 
+IPO of WeWork India Private Ltd. (Company) 
+on the ground of misleading disclosures in 
+the Draft Red Herring Prospectus (DRHP) 
+of the Company pertaining to its brand 
+ownership and precarious financial position. 
+It was also alleged that certain criminal 
+proceedings against the promoters of the 
+company were not disclosed in the DRHP/
+RHP and that SEBI should apply the ‘fit and 
+proper’ criteria to the company which is 
+applicable to registered intermediaries. 
+While dismissing the writ petitions, the 
+Court observed that SEBI General Order 
+no. 1 of 2012 inter alia stipulates that SEBI 
+does not regulate on merit or approve the 
+documents of offer/issue of securities, 
+but only mandates true, fair and adequate 
+disclosures and that the role of SEBI is 
+limited to the supervision of functioning 
+of the Book Running Lead Manager whose 
+larger duty pertains to making adequate 
+
+[PDF page 27]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+165
+disclosures. It was further observed that 
+the Observation Letter issued by SEBI 
+shows that SEBI has applied its mind, and 
+the steps taken by it are satisfactory. The 
+connected petition filed by Mr. Vinay Bansal 
+was dismissed with costs of ₹1 lakh payable 
+to the Maharashtra State Legal Services 
+Authority. 
+ b. Order dated September 17, 2025- 
+Chandrakant C. Shah vs. SEBI & AMFI 
+(Public Interest Litigation No. 84 of 2024) - 
+Hon’ble High Court of Judicature at Bombay
+  A Public Interest Litigation (“PIL”) was 
+filed seeking directions to SEBI to revoke 
+the liberty granted to Association of 
+Mutual Funds in India (“AMFI”) for carrying 
+out investor education and awareness 
+initiatives/programs and discontinuing its 
+advertisement   campaigns   titled “Mutual   
+Funds   Sahi   Hai”, “Mutual   Funds   Mein   
+SIP   Sahi   Hai” and “Be   Patient   and   
+Stay Invested” alleging these campaigns 
+are reckless, misleading and create a false 
+impression of assured financial safety in 
+the minds of general public in mutual fund 
+investments and further that the campaign 
+neither educates the investors nor does 
+it disclose the risks inherent in the sale 
+and purchase of mutual funds. The Court 
+noted that it had dismissed an earlier 
+PIL No. 26 of 2025 on similar grounds 
+and that a subsequent Special Leave to 
+Appeal SLP No. 13341 of 2025 filed before 
+the Supreme Court was duly dismissed. 
+The Court held that easy access to justice 
+should not be misused as a license to file 
+and pursue misconceived petitions and 
+reiterated that only a person acting bona 
+fide and possessing sufficient interest in 
+the subject matter of a PIL has the locus 
+standi to approach the Court for redressal 
+of violations of fundamental rights or 
+genuine infractions of statutory provisions. 
+Since the writ petitioner did not meet 
+the requirements laid down in the said 
+judicial tests, the PIL was dismissed by the 
+High Court on September 17, 2025 as no 
+substantial public interest was found to be 
+involved therein.
+ c. Order dated 11.12.2025 in the matter of SEBI 
+vs Amit Jain (LPA 412/2018) and Amit Jain 
+vs. SEBI (LPA 550/2018) before Hon’ble 
+Delhi High Court.
+  The case involved cross appeals between 
+SEBI and Amit Jain against a Hon’ble 
+Delhi High Court’s Single Bench judgment 
+dated 09.07.2018. The Single Judge had 
+quashed SEBI’s SCN dated 14.11.2013 and 
+adjudication proceedings initiated against 
+Mr. Amit Jain while observing that SEBI 
+had not recorded an opinion under Rule 3 
+of the SEBI Adjudication Rules, 1995 before 
+appointing an Adjudicating Officer (AO).
+  The case originated from BSE’s 
+communication to SEBI regarding 
+suspicious trades in the scrip of Himalaya 
+Granites Ltd. shares. SEBI’s internal 
+committees examined the transactions 
+and recommended initiation of adjudication 
+proceedings for disclosure violations 
+under the PIT Regulations, 1992. Based on 
+these recommendations, SEBI appointed 
+an AO under Section 15-I of the SEBI Act 
+and the AO issued a SCN against Mr. Amit 
+Jain alleging violation of Regulations 13(3) 
+and 13(5) of the PIT Regulations, 1992. Mr. 
+Amit Jain submitted reply to the SCN and 
+appeared for hearing before the AO without 
+raising any objections regarding the 
+procedure followed for appointment of the 
+AO. Subsequently, the petitioner challenged 
+the notice before the Delhi High Court 
+through a writ petition, inter alia, on the 
+following grounds: 
+
+[PDF page 28]
+Annual Report 2025-26
+166
+		• 	 SEBI had not recorded an opinion 
+under Rule 3 of the SEBI Adjudication 
+Rules, 1995 before appointing an 
+Adjudicating Officer. 
+		• 	 The WTM SEBI was required to follow 
+the procedure for adjudication given 
+under the PIT Regulations, 1992 and 
+give a finding on violation of the said 
+regulations qua the petitioner before 
+appointing Adjudicating Officer in the 
+matter. 
+		• 	 After the WTM, SEBI finds that the 
+petitioner has violated PIT Regulations, 
+1992, the role of the Adjudicating 
+Officer would be limited to determining 
+the quantum of penalty. 
+  The Single Judge, Delhi High Court, inter 
+alia, held that: 
+		• 	 The formation of opinion by SEBI before 
+appointing the AO was mandatory, and 
+since it was absent, the proceedings 
+were invalid. 
+		• 	 The petitioner’s contention that the 
+WTM, SEBI should have given a finding 
+on violation of PIT Regulations, 1992 
+before appointment of adjudicating 
+officer is unmerited.
+  SEBI preferred an appeal against the Single 
+Judge order vide LPAD 412/2018, arguing 
+that appointment of the AO is only an 
+administrative step, not requiring a detailed 
+recorded opinion and that the scheme of 
+Rules 3, 4, and 5 of the Adjudication Rules 
+has been misunderstood. Amit Jain also 
+preferred an appeal (LPA 550/2018) against 
+the finding of Hon’ble Single Judge that 
+his contention that the WTM, SEBI should 
+have given a finding on violation of the PIT 
+Regulations, 1992 before appointment of 
+adjudicating officer is unmerited.
+  The Division Bench of Hon’ble Delhi High 
+Court analyzed the statutory framework 
+of Section 15A, Section 15-I, and the 
+Adjudication Rules. While allowing SEBI’s 
+appeal (LPA 412/2018) and dismissing 
+Amit Jain’s appeal (LPA 550/2018), the 
+Hon’ble Delhi High Court, inter alia, held 
+that: 
+  •	 the appointment of an Adjudicating 
+Officer is an administrative step and 
+merely initiates the inquiry process 
+and therefore, the Single Judge 
+misinterpreted the procedural scheme 
+of the Adjudication Rules. 
+  •	 no prior order under Regulation 14 of 
+the PIT Regulations is required before 
+initiating adjudication under Chapter 
+VI-A of the SEBI Act. 
+ d. Order dated September 01, 2025 in the 
+mater of SEBI vs CRB Capital Markets 
+Limited before Hon’ble Delhi High Court. 
+Co. PET. 379/2009.
+  As part of its mutual fund activities, CRB 
+Mutual Fund had launched a close-ended 
+scheme i.e. the “Arihant Mangal Growth 
+Scheme” in the year 1994. The Scheme was 
+opened for subscriptions between August 
+19, 1994 to September 20, 1994, during which 
+a sum of ₹229.28 crores was collected 
+from 19,324 individual investors and 72 
+non-individual investors, which sums to a 
+total of 19,396 investors. 
+  SEBI conducted inspection of the records of 
+CRB Mutual Funds in December 1994, which 
+revealed multiple violations of securities 
+laws and systemic deficiencies on the part 
+of CRB Capital Markets Ltd. (Settlor), CRB 
+Trustees (Trustee), CRB Asset Management 
+Company (AMC). A SCN dated December 12, 
+1995 was issued by SEBI which resulted in 
+
+[PDF page 29]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+167
+order dated April 24, 1996 prohibiting the 
+Respondents no. 1, 2 and 3 from lunching 
+new scheme until June 1997. 
+  In r 1997, the Reserve Bank of India filed 
+a winding up petition against CRB Capital 
+Markets Limited before Hon’ble Delhi High 
+Court being Co.Pet.191/1997. Thereafter, a 
+petition was filed by the Petitioner/ SEBI in 
+the year 1997 as Trust Petition No. 3 of 1997 
+before the Hon’ble Bombay High Court for: 
+		• 	 safeguarding the interest of investors 
+of Arihant Mangal Growth Scheme. 
+  •	 seeking to appoint any fit and proper 
+person/entity to take charge of all the 
+property and assets of Respondent No. 
+2, 3 and 4 i.e. i.e., CRB Trustees, CRB 
+Asset Management Company, and IIT 
+Corporate Services respectively and 
+the assets of the Mutual Funds and the 
+Arihant Mangal Growth scheme for 
+such period as the Court may deem fit 
+and proper. 
+  The Hon’ble Bombay High Court vide order 
+dated October 09, 1997 appointed Mr. M.L.T 
+Fernandes as a Provisional Administrator 
+(who had continued till his demise on 
+24.02.2012). Vide order dated May 29, 
+2013, Hon’ble Delhi High Court disposed 
+the Co.Pet. 379/2009 while setting up a 
+Special Committee for performing various 
+functions, including the function to wind up 
+the Arihant Mangal. 
+  The Special Committee was constituted 
+for a period of one year only from the date 
+of order dated May 29, 2013, however, the 
+tenure was extended from time to time and 
+had come to an end on 27.05.2023 as the 
+tenure was not extended by the Hon’ble 
+High Court. Several applications were 
+filed in the matter by SEBI pertaining to 
+the functioning of the Special Committee 
+including Co. Appl. No. 420/2022, 506/2024 
+and 403/2025 inter alia seeking (i) 
+Replacement of Special Committee with 
+the Special Cell to be constituted by SEBI 
+and denying further extension to the 
+Special Committee, (ii) forensic audit of all 
+the records of the Special Committee, and 
+(iii) recovering the disbursements made by 
+Special Committee to the CRB Group.
+  Vide judgement dated September 01, 2025, 
+Hon’ble Delhi High Court inter alia directed 
+SEBI to establish a Special Cell to replace 
+the Special Committee and take over all 
+the records of the Special Committee, 
+presently under the lock and key put by the 
+Local Commissioner appointed by Hon’ble 
+Delhi High Court. Further, in view of the 
+manner of distribution of funds adopted by 
+the Special Committee, Hon’ble Delhi High 
+Court permitted SEBI to conduct a Forensic 
+Audit of all the records, bank accounts, 
+documents etc., pertaining to the Arihant 
+Mangal Growth Scheme and the Special 
+Committee in accordance with law.
+ III. Securities Appellate Tribunal 
+ a. Order dated 16 January 2026 in Appeal 
+No. 838/2022- Bombay Dyeing and 
+Manufacturing Company Ltd and Anr. 
+vs SEBI and other connected 3 appeals 
+in the matter of Bombay Dyeing and 
+Manufacturing Company Ltd.
+  Pursuant to receipt of complaints, 
+investigation was initiated against Bombay 
+Dyeing and Manufacturing Company Ltd. 
+(BDMCL) for the period 2011-12 to 2018-19 
+wherein it was revealed that a scheme has 
+been devised by BDMCL to misrepresent its 
+financials, by recognizing inflated revenue 
+and booking inflated profits through sales of 
+flats to SCAL Services Ltd (SCAL) between 
+
+[PDF page 30]
+Annual Report 2025-26
+168
+2011-12 to 2017-18. BDMCL had entered into 
+11 MoUs with SCAL, a negative net worth 
+company, for the sale of 325 flats for an 
+aggregate consideration of approximately 
+₹3,033 crore and recognized revenue of 
+₹2,493 crore and profit of ₹1,302 crore in its 
+books from 2011–12 to 2017–18, even though, 
+the net amount received with respect to 
+said MoUs was merely 7.5 per cent of the 
+revenue recognized by BDMCL. It was also 
+revealed that prior to entering into the said 
+MoUs, BDMCL reduced its shareholding in 
+SCAL from 49 per cent to 19 per cent and not 
+categorized SCAL as its associate company 
+escaping consolidation of financial as 
+required under the Companies Act, 2013, 
+relevant Accounting Standards and SEBI 
+Regulations. Investigation also found 
+that BDMCL recognised bulk sales under 
+MoUs for booking inflated revenue and 
+profits, however SCAL had not recorded 
+any corresponding purchases in its books 
+except recording the difference between 
+sales and purchase price of flats at the 
+time of the final sale of flats. Furthermore, 
+several factors, including common 
+registered office, shared management, 
+financial dependence, and routing of 
+funds to SCAL through group entities, 
+suggested that SCAL was functioning as 
+an extended arm of BDMCL. Accordingly, 
+SCNs were issued to the BDMCL and other 
+noticees alleging violation of SEBI (PFUTP) 
+Regulations, 2003 and SEBI (LODR) 
+Regulations, 2015. Subsequently, WTM and 
+Adjudicating Officer, SEBI passed orders 
+concluding that a well-orchestrated device 
+was employed by BDMCL along with other 
+noticees for fraudulently misrepresenting 
+the financial statements by inflating the 
+revenues and profits during 2011-12 to 2017-
+18, of a listed company BDMCL to display it 
+as a consistent profit making enterprise at 
+a time when the financial statements would 
+in fact display a gloomy state of affairs 
+and further held that non genuine MoUs 
+with to SCAL have been entered into with 
+no real transfer of risk and reward. Upon 
+challenge, by a 2:1 majority, the appeals 
+were allowed to set aside the impugned 
+orders. 
+  The majority bench of SAT (technical 
+members of SAT) held that the MoUs 
+did transfer risks and rewards and 
+that the unregistered or inadequately 
+stamped nature of MoUs did not render 
+them invalid and further accepted the 
+differential accounting treatment adopted 
+by BDMCL for the sale of flats and SCAL 
+for the purchase of flats. The majority 
+judgement held that evidence on record 
+does not establish that the MOUs entered 
+into with SCAL for sale of flats were non-
+genuine transactions to inflate revenue/
+profits of BDMCL and held that successful 
+selling of some of these flats to ultimate 
+buyers by SCAL was sufficient proof of 
+genuineness of the MOUs. The fraudulent 
+intent in reducing shareholding was also 
+rejected by the majority judgement, noting 
+that the transaction predated the relevant 
+provisions of the Companies Act, 2013 and 
+held that the alleged misstatements did 
+not amount to fraudulent and unfair trade 
+practices in the securities market in the 
+absence of evidence of price manipulation, 
+investor exit or unlawful gains. The majority 
+bench of SAT further held that since there 
+was no fraudulent scheme, the appeal filed 
+by other appellants including the CFOs and 
+Audit Committee Members of BDMCL too 
+deserves to be allowed. 
+  The minority judgment authored by the 
+Hon’ble Presiding Officer, SAT, dissented 
+with the majority view and inter-alia held 
+
+[PDF page 31]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+169
+that it was a classic case of fraud in the 
+securities market as there was no real 
+sale of flats except on paper only and 
+that no genuine consideration had flown 
+between BDMCL and SCAL that could be 
+termed as profit. The minority judgement, 
+further viewed that the misuse of company 
+as a device to conceal their wrong doing 
+is largely writ on its face and that this 
+was a fit case to pierce the corporate veil 
+to know the real owners of SCAL. It was 
+also observed that had SCAL not been an 
+extended arm of BDMCL, neither SCAL 
+would have ventured to make an offer of 
+purchase nor would BDMCL have agreed to 
+make bulk sale of its flats worth several 
+hundred crores to a negative net worth 
+company. The SAT minority judgement 
+further observed that the artificial profits 
+lure gullible investors to invest in the 
+scrip and such market abuse cannot 
+be countenanced. Further, the minority 
+judgement affirmed SEBI’s jurisdiction 
+over unlisted company SCAL while holding 
+that it is no more res integra that a person 
+or entity involved in manipulation is liable 
+for action. Further w.r.t the appeal filed by 
+the CFOs and Audit Committee Members, 
+Independent Directors of BDMCL, SAT 
+minority judgement held that they were 
+holding high positions with high pay packets 
+and they cannot be heard to contend that 
+they are not responsible for the acts and 
+omissions.
+  The Hon’ble Presiding Officer while 
+dismissing the appeals also imposed cost 
+of ₹ 50 lakh and ₹ 10 lakh on the Appellants 
+in Appeal no. 838/2022 and 839/2022.
+ b. Order dated May 02, 2025 in Appeal No. 
+603 of 2022 Reliance Industries Ltd. & 
+Ors. vs SEBI in the matter of Reliance 
+Industries Ltd.
+  SEBI conducted an investigation into 
+suspected insider trading activities in 
+the scrip of Reliance Industries Ltd. (RIL) 
+for the period September 01, 2019 to May 
+07, 2020. The investigation revealed that 
+media reports concerning the proposed 
+investment by Facebook in Jio Platforms 
+Limited were published in the months of 
+March and April 2020, prior to the corporate 
+announcement made by RIL on April 22, 
+2020 about such investment. The first such 
+report was published by Financial Times, 
+London on March 24, 2020 after the market 
+hours which was widely circulated in 
+Indian media on the same day and the next 
+day. The scrip price of the RIL went up by 
+almost 15 per cent on March 25, 2020, post 
+publication of said news articles.
+  However, the Appellants failed to comply 
+with the principles of Fair Disclosure of 
+Unpublished Price Sensitive Information 
+(fair disclosure of UPSI) enumerated under 
+Schedule A of SEBI (PIT) Regulations, 2015 
+which mandate a company to promptly 
+disseminate any UPSI that gets disclosed 
+selectively, inadvertently or otherwise, so 
+that the information becomes generally 
+available and that, the Appellants failed to 
+provide necessary clarification to the stock 
+exchanges in respect of the news being 
+circulated, as required under Regulation 
+30(11) of SEBI (LODR) Regulations, 2015 
+which provides that a listed company to 
+suo motu  confirm or deny any reported 
+event or information to the stock 
+exchanges. Accordingly, adjudication 
+proceedings were initiated against the 
+entities where after, a penalty of Rs.30 lakh 
+was imposed jointly and severally upon the 
+Appellants under section 15HB of the SEBI 
+Act, 1992.
+  The SAT inter alia  held that when 
+information was circulated in the media 
+
+[PDF page 32]
+Annual Report 2025-26
+170
+from unknown sources, the Appellants 
+were under an obligation to make prompt 
+disclosures.  The contention of the 
+Appellants that only a binding agreement 
+can be considered as credible information, 
+thereby warranting its disclosure to the 
+stock exchanges, was rejected as untenable 
+as such an interpretation would defeat the 
+spirit of the SEBI (PIT) Regulations, 2015. 
+The SAT further observed that permitting 
+speculative information to circulate without 
+timely clarification adversely affects 
+the integrity of the securities market. 
+Accordingly, the SAT had dismissed the 
+appeal. 
+ c. Order dated July 16, 2025 in Appeal No. 333 
+of 2025 – Infrastructure Watchdog vs SEBI 
+in the matter of IPO of Smartworks Co-
+working Spaces Ltd.
+  Smartworks Co-working Space Ltd. 
+(Company) filed a DRHP with SEBI on August 
+14, 2024 and a RHP on July 04, 2025. In the 
+meanwhile, Infrastructure Watchdog  ( the 
+Appellant) filed various complaints with 
+SEBI alleging irregularities and statutory 
+non-compliance in the IPO process, 
+including non-disclosure of proceedings 
+before various authorities including 
+the proceedings before the Income Tax 
+Authority. It was further alleged that the 
+RHP dated July 04, 2025 issued by the 
+Company is in violation of the SEBI (ICDR) 
+Regulations, 2018, the SEBI Act, 1992 and 
+the Companies Act, 2013. Aggrieved by the 
+alleged inaction on the part of SEBI on the 
+complaints, the Appellant filed an appeal 
+before the SAT and inter alia prayed for a 
+direction to SEBI to initiate investigation 
+into the affairs of the company and its 
+promoters and to restrain the company 
+from proceeding with the IPO process. 
+  While opposing the maintainability of the 
+appeal, SEBI maintained that the issues 
+raised by the Appellant in the complaints 
+as well as by other complainants, had been 
+duly dealt with and appropriately disclosed, 
+which was disputed by the Appellants. On 
+issue as to whether SEBI had failed in its 
+statutory duty and whether interference 
+with the IPO process was warranted, the 
+SAT held that disclosure obligations under 
+the SEBI (ICDR) Regulations, 2018 arises 
+in respect of pending litigation, regulatory 
+actions, tax demands/notices, etc. The 
+Appellant had solely relied upon internal 
+reports of Income Tax Department to 
+allege irregularities in the company, the 
+findings whereof are indicative in nature 
+and admittedly no notice has been issued to 
+the company on the basis of such reports. 
+Therefore, till any notice is received, no 
+disclosure is required under the SEBI 
+(ICDR) Regulations, 2018. Nevertheless, the 
+complaint of the Appellant which refers to 
+such reports had been disclosed by way of 
+addendum. The SAT further observed that 
+the Appellant was not an investor and the 
+IPO had been oversubscribed by institutional 
+investors as well as retail investors. 
+Hence, the investors have made informed 
+decision to invest in the company and any 
+interference at that stage would adversely 
+affect investor interests. Therefore, the 
+SAT held that SEBI could not be said to 
+have failed in ensuring compliance with the 
+disclosure requirements. Accordingly, the 
+SAT had dismissed the appeal. 
+ IV. SEBI Special Court
+ a. Orders dated June 10, 2025 in SEBI SPL 
+Case No.172 of 2014- SEBI v. Rijuta Finvest 
+Private Ltd. and SEBI SPL Case No. 174 of 
+2014- SEBI v. Damyanti Finvest Private Ltd.
+
+[PDF page 33]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+171
+  Prosecution was launched by SEBI in two 
+separate complaints against Rijuta Finvest 
+Private Limited and its four Directors and 
+Damyanti Finvest Private Limited and its 
+four Directors (all Directors were common 
+in both the companies) under section 24(1) 
+r/w section 11(3) of the SEBI Act, 1992 for 
+failing to furnish the information/record 
+sought by Investigating Authority (IA).
+  During the trial, two of the directors of both 
+the companies (Accused No.4 and Accused 
+No.5) had died and hence the matter was 
+abated against them in both the complaints.
+  The Hon’ble SEBI Special Court vide its 
+orders dated 10.06.2025 in both complaints 
+held that evidence on record established 
+and proved beyond all reasonable doubt 
+that the tried accused persons being the 
+director of Accused Companies failed to 
+produce the necessary documents as per 
+the summons and thus committed the 
+offence punishable under Section 24(1) 
+read with 27 of the SEBI Act, 1992 and hence 
+proved guilty. The Hon’ble Court in both 
+the matters separately sentenced each 
+accused i.e. Accused No. 1, Accused No. 2 
+and Accused No. 3 to pay fine of ₹2 Lakh, 
+in default of payment of fine, Accused No. 2 
+and Accused No. 3 are directed to undergo 
+simple imprisonment for one month 
+each. The fine of Accused No. 1 Company 
+was directed to be paid by Accused No. 
+2 and Accused No. 3 and further simple 
+imprisonment of one month, in default of 
+payment of fine.
+ b. Order dated July 19, 2025 in SEBI SPL. Case 
+No. 352/2014 – SEBI v. M’Belle International 
+Pvt. Ltd. & Ors. 
+  Prosecution was launched by SEBI against 
+M’Belle International Pvt. Ltd. and its five 
+directors under Section 24(2) r/w Section 
+27 of the SEBI Act, 1992 for the offence 
+of non-payment of penalty of ₹ 1 crore 
+imposed by the Adjudicating Officer vide 
+order dated June 30, 2004.
+  During the course of the proceedings, the 
+Accused No. 1/ Company was struck off 
+from the Register of Companies. The case 
+against Accused No. 2 got abated. After 
+conclusion of trial and arguments, the 
+Hon’ble Court held that SEBI has proved 
+beyond reasonable doubt that Accused no. 
+3 and 4 are the directors of the accused 
+company and that they had failed to comply 
+with the adjudication order and therefore, 
+committed an offence under Section 24(2) 
+r/w Section 27 of the SEBI Act. The Hon’ble 
+Court observed that any claim of a violation 
+of principles of natural justice during the 
+adjudication proceedings or before the 
+passing of the adjudication order are 
+immaterial and as the Hon’ble SAT has been 
+constituted specifically for challenging 
+orders of SEBI, the instant forum is not the 
+appropriate one for dealing with or raising 
+the said contentions. 
+  Accordingly, the Hon’ble Court convicted 
+Accused Nos. 3 and 4 imposing a 
+punishment by the way of fine of ₹1 crore 
+on each of them, and also directed that 50 
+per cent of the fine amount is to be paid to 
+SEBI as compensation. The Accused No. 5 
+was not found guilty on the ground that she 
+had resigned from her directorship.
+ c. Order dated February 7, 2026 in SEBI SPL. 
+Case No. 244/2020 – SEBI v. Wada Arun 
+Asbestos Products Pvt. Ltd. & Ors.
+  Prosecution was launched by SEBI against 
+Wada Arun Asbestos Products Pvt. Ltd.  
+and its three directors under Section 
+24(1) r/w Section 27 of the SEBI Act, 1992 
+for non furnishing of information sought 
+
+[PDF page 34]
+Annual Report 2025-26
+172
+by investigating Authority vide summons 
+issued under Section 11(3) of SEBI Act.
+  After appreciating the evidence, the Hon’ble 
+Court held that Accused No. 1/ Company and 
+the accused Nos. 2 to 4 being its directors 
+failed to furnish the information as required 
+by the summons issued under Section 11(3) 
+of SEBI Act and have committed offence 
+punishable under Section 24(1) r/w Section 
+27 of SEBI Act. 
+  Accordingly, the accused persons were 
+convicted for offence punishable under 
+Section 24(1) r/w Section 27 of SEBI Act and 
+they were imposed a fine of ₹10 Lakh each. 
+Further, the directors were also sentenced 
+to undergo imprisonment till rising of the 
+Court.
+ d. Order dated March 7, 2026 in SEBI SPL. 
+Case No. 114/2015- SEBI v. Amit Shantilal 
+Mehta
+  Prosecution was launched by SEBI against 
+Amit Shantilal Mehta under Section 24(2) 
+of the SEBI Act, 1992 for non- payment of 
+penalty imposed by Adjudicating Officer 
+vide order dated 12.01.2011.
+  After appreciating the evidence, the Hon’ble 
+Court held that the adjudication order was 
+duly proved and that communications 
+were sent to the correct address through 
+registered post. Applying the presumption 
+of deemed service under Section 27 of 
+the General Clauses Act, the Court found 
+that the accused failed to rebut such 
+presumption.
+  Accordingly, the Hon’ble Court convicted 
+the accused and sentenced to undergo 
+simple imprisonment of two months along 
+with fine of ₹ 10 Lakh and further simple 
+imprisonment of six months, in default of 
+payment of fine.
+ e. Order dated January 12, 2026 in Ct. Case 
+No. 568/2013 – SEBI v. Araya Plantation and 
+Farm Developers Ltd. & Ors.
+  Prosecution was launched by SEBI against 
+Araya Plantation and Farm Developers 
+Ltd. and its directors under Section 24 (1) 
+r/w Section 27 of the SEBI Act, 1992 for 
+the violation of the provisions of Section 
+12 (1B) of the SEBI Act, 1992 and SEBI (CIS) 
+Regulations, 1999.
+  SEBI, vide its order dated 07.12.2000, had 
+directed the company to make repayment 
+of amount mobilized from the investors. 
+Since the Company had failed to make 
+an application for registration as a CIS 
+and also failed to make the repayments, 
+accordingly, the prosecution was launched. 
+  After appreciating the evidence, the Hon’ble 
+Court held that the company had mobilized 
+funds to the tune of ₹ 6.2 crore in violation of 
+the provisions of the CIS Regulations, 1999 
+and the co-accused, being the directors of 
+the company were liable for the violation 
+committed by the company under Section 
+27 of the SEBI Act, 1992.
+  Accordingly, the Hon’ble Court sentenced 
+Araya Plantation and Farm Developers Ltd 
+with a fine amount of ₹ 4.5 crore and two 
+of its directors were sentenced to undergo 
+simple imprisonment for a period of one 
+year and payment of fine amount of ₹ 50 
+lakh each, and further simple imprisonment 
+of three months, in default of payment of 
+fine.
+10.4 AMENDMENTS TO REGULATIONS
+The list of 51 amendments made to various 
+regulations during 2025-26 is given below. The 
+details of major amendments of regulations have 
+been given in respective chapters.
+
+[PDF page 35]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+173
+Sl. No. Date Title
+Amendment Regulations – 51
+1 April 2, 2025 SEBI (Infrastructure Investment Trusts) (Amendment) Regulations, 2025
+2 April 23, 2025 SEBI (Real Estate Investment Trusts) (Amendment) Regulations, 2025
+3 April 2, 2025 SEBI (Credit Rating Agencies) (Second Amendment) Regulations, 2025
+4 April 29, 2025 SEBI (Infrastructure Investment Trusts) (Second Amendment) Regulations, 2025
+5 April 30, 2025 SEBI (Depositories and Participants) (Second Amendment) Regulations, 2025
+6 May 1, 2025 SEBI (Listing Obligations and Disclosure Requirements) (Second Amendment) Regulations, 
+2025
+7 May 1, 2025 Securities Contracts (Regulation) (Stock Exchanges and Clearing Corporations) (Third 
+Amendment) Regulations, 2025
+8 May 1, 2025 SEBI (Listing Obligations and Disclosure Requirements) (Second Amendment) Regulations, 
+2025
+9 May 5, 2025 SEBI (Issue and Listing of Securitised Debt Instruments and Security Receipts) (Amendment) 
+Regulations, 2025
+10 May 23, 2025 SEBI (Alternative Investment Funds) (Amendment) Regulations, 2025
+11 July 15, 2025 SEBI (Certification of Associated Persons in the Securities Markets) (Amendment) Regulations, 
+2025
+12 Aug 6, 2025 SEBI (Research Analysts) (Amendment) Regulations, 2025
+13 Aug 7, 2025 SEBI (Investment Advisers) (Amendment) Regulations, 2025
+14 Aug 12, 2025 SEBI (Foreign Portfolio Investors) (Amendment) Regulations, 2025
+15 Sep 2, 2025 SEBI (Investor Protection and Education Fund) (Amendment) Regulations, 2025
+16 Sep 3, 2025 SEBI (Real Estate Investment Trusts) (Second Amendment) Regulations, 2025
+17 Sep 3,2025 SEBI (Infrastructure Investment Trusts) (Third Amendment) Regulations, 2025
+18 Sep 3, 2025 SEBI (Delisting of Equity Shares) (Amendment) Regulations, 2025
+19 Sep 3, 2025 SEBI (Portfolio Managers) (Amendment) Regulations, 2025
+20 Sep 8, 2025 SEBI (Employees’ Service) (Amendment) Regulations, 2025
+21 Sep 8, 2025 SEBI (Listing Obligations and Disclosure Requirements) (Third Amendment) Regulations, 2025
+22 Sep 8, 2025 SEBI (Share Based Employee Benefits and Sweat Equity) (Amendment) Regulations, 2025
+23 Sep 8, 2025 SEBI (Alternative Investment Funds) (Second Amendment) Regulations, 2025
+24 Sep 8, 2025 SEBI (Issue of Capital and Disclosure Requirements) (Second Amendment) Regulations, 2025
+25 Sep 23, 2025 SEBI (Custodian) (Amendment) Regulations, 2025
+26 Oct 27, 2025 SEBI (Debenture Trustees) (Amendment) Regulations, 2025
+27 Oct 27, 2025 SEBI (Listing Obligations and Disclosure Requirements) (Fourth Amendment) Regulations, 
+2025
+28 Oct 28, 2025 SEBI (Issue and Listing of Non-Convertible Securities) (Amendment) Regulations, 2025
+29 Nov 1, 2025 SEBI (Mutual Funds) (Second Amendment) Regulations, 2025
+30 Nov 1, 2025 SEBI (Issue of Capital and Disclosure Requirements) (Third Amendment) Regulations, 2025
+31 Nov 19, 2025 SEBI (Alternative Investment Funds) (Third Amendment) Regulations, 2025
+32 Nov 19, 2025 SEBI (Listing Obligations and Disclosure Requirements) (Fifth Amendment) Regulations, 2025
+
+[PDF page 36]
+Annual Report 2025-26
+174
+Sl. No. Date Title
+33 Nov 22, 2025 SEBI (Depositories and Participants) (Third Amendment) Regulations, 2025
+34 Nov 22, 2025 Securities Contracts (Regulation) (Stock Exchanges and Clearing Corporations) (Fourth 
+Amendment) Regulations, 2025
+35 Nov 25, 2025 SEBI (Research Analysts) (Second Amendment) Regulations, 2025
+36 Nov 25, 2025 SEBI (Investment Advisers) (Second Amendment) Regulations, 2025
+37 Dec 03, 2025 SEBI (Foreign Venture Capital Investors) (Amendment) Regulations, 2025
+38 Dec 03, 2025 SEBI (Foreign Portfolio Investors) (Second Amendment) Regulations, 2025
+39 Dec 04, 2025 SEBI (Share Based Employee Benefits and Sweat Equity) (Second Amendment) Regulations, 
+2025
+40 Dec 05, 2025 SEBI (Substitution of Registered Post with Speed Post) (Amendment) Regulations, 2025
+41 Dec 05, 2025 SEBI (Intermediaries ) (Third Amendment) Regulations, 2025
+42 Dec 05, 2025 SEBI (Substantial Acquisition of Shares and Takeovers) (Amendment) Regulations, 2025
+43 Dec 05, 2025 SEBI (Merchant Bankers) (Amendment) Regulations, 2025
+44 Dec 11, 2025 SEBI (Infrastructure Investment Trusts) (Fourth Amendment) Regulations, 2025
+45 Dec 11, 2025 SEBI (Real Estate Investment Trusts) (Third Amendment) Regulations, 2025
+46 Dec 16, 2025 SEBI (Listing Obligations and Disclosure Requirements) (Sixth Amendment) Regulations, 2025
+47 Dec 16, 2025 SEBI (Registrars to an Issue and Share Transfer Agents) Regulations, 2025
+48 Jan 15, 2026  SEBI (Credit Rating Agencies) (Amendment) Regulations, 2026
+49 Jan 21, 2026 SEBI (Issue and Listing of Non-Convertible Securities) (Amendment) Regulations, 2026
+50 Jan 22, 2026  SEBI (Listing Obligations and Disclosure Requirements) (Amendment) Regulations, 2026
+51 Mar 21, 2026 SEBI (Issue of Capital and Disclosure Requirements) (Amendment) Regulations, 2026
+
+[PDF page 37]
+Chapter 10  Regulatory Action, Supervision and Enforcement
+175
+10.5 NEW REGULATIONS (AIMS AND OBJECTIVES)
+The following list provides the new regulations 
+issued by SEBI during 2025-26, revamping the 
+existing regulations.
+10.6 PROGRESS OR IMPACT ASSESSMENT OF THE 
+NEW REGULATIONS/ RULES 
+ i. Introduction of faster Rights Issue 
+Framework: SEBI introduced the faster 
+New Regulation Aims and Objectives
+SEBI (Registrars to an Issue 
+and Share Transfer Agents), 
+Regulations, 2025 notified on 
+December 15, 2025
+A comprehensive overhaul of the RTA regulatory framework was undertaken and 
+new SEBI (Registrar to an Issue and Share Transfer Agent) Regulations, 2025 were 
+notified. Key features of the revised regulatory framework include the following:
+•	 Introduction of activity-based regulations for RTAs wherein it was specified 
+that services of RTAs only with respect to listed companies will come under 
+SEBI’s regulatory purview.
+•	 Doing away with categorization of RTAs; introduction of common definition for 
+RTAs in place of existing separate definition 
+•	 Net-worth requirement and revision in fee structure; Inclusion of securities 
+premium for computation of net-worth 
+•	 Introduction of institutional mechanism for RTAs
+These reforms aimed to align regulatory oversight with evolving market practices 
+while improving ease of compliance.
+SEBI (Stock Brokers Regulations), 
+2026 notified on January 07,2026
+SEBI (Stock Brokers) Regulations, 2026 (SB Regulations) were notified on January 
+07, 2026 to simplify and modernize the existing framework for stock brokers with 
+the objective to provide clarity, remove redundancies, align with contemporary 
+market environment and practices and to facilitate ease of compliance. These 
+regulations replaced the erstwhile SEBI (Stock Brokers) Regulations, 1992.
+Key changes include reorganizing the regulations into 11 chapters, deleting 
+unnecessary schedules and integrating relevant content into the main regulations, 
+and prescribing registration forms via circulars (in consultation with the Industry 
+Standard Forum). The SB Regulations streamline the regulatory framework by 
+consolidating duplicate provisions (e.g., underwriting, code of conduct), clarify 
+key definitions (e.g., clearing member, proprietary trading, designated director), 
+and introduce compliance-friendly measures such as enabling joint inspections, 
+allowing electronic maintenance of books, etc.
+SEBI (Mutual Funds), Regulations, 
+2026 notified on January 14,2026
+SEBI issued the Mutual Funds Regulations, 2026, replacing the 1996 Regulations, 
+and thereby comprehensively overhauling the mutual fund regulatory landscape. 
+The primary aims and objectives of these regulations are to modernize the 
+industry’s “foundational architecture” by prioritizing transparency, structural 
+simplicity, and investor protection. Through this regulations, SEBI seeks to enhance 
+readability and ease of compliance for AMCs and trustees. The core objective is the 
+unbundling of costs through the new Base Expense Ratio framework, ensuring 
+that investors have a clear view of management fees versus statutory levies. The 
+new regulations will help in strengthening investor protection, transparency, and 
+governance standards within the mutual fund ecosystem.
+
+[PDF page 38]
+Annual Report 2025-26
+176
+rights issue framework from April 2025 
+onwards. Resource mobilization through 
+rights issue more than doubled in 2025-26, 
+with 139 rights issues raising ₹46,168 crore, 
+up from ₹19,172 crore (across 142 issues) 
+in 2024-25.  This surge indicates that the 
+framework is successfully achieving its 
+objective of streamlining the process.
+ ii. Revamping the framework for Social Stock 
+Exchange: Pursuant to the reduction in the 
+minimum application size for donors to 
+₹1,000, retail participation has increased 
+manifold. Before the change, retail donors 
+contributed 3.6 per cent of the total funds 
+raised; after the reduction, their share 
+significantly increased to 14.7 per cent, 
+reflecting deepening retail engagement in 
+the social capital market.
+ iii. Introduction of the Accredited Investors 
+(AIs) Framework: The Accreditation 
+Framework was introduced in 2021 to 
+identify a class of sophisticated investors 
+who have the ability and willingness to 
+invest in relatively riskier investment 
+products and have minimal regulatory 
+oversight. Considering the fact that AIFs 
+are intended for sophisticated investors, 
+SEBI’s long term vision is to transition 
+from ‘minimum commitment threshold’ to 
+‘only accreditation status’ as a metric of 
+risk sophistication of an AIF investor. To 
+support this transition, the various policy 
+measures were introduced.
+		• 	 To provide flexibility to AIs to make co-
+investment in unlisted securities, SEBI 
+established a framework for AIFs to 
+make co-investment in September 
+2025. This allowed Category I & II AIFs to 
+offer AIs co-investment through a Co-
+investment scheme, as an additional 
+route apart from Co-investment PMS 
+route, which is available for all AIF 
+investors.
+  •	 To ensure that Angel Funds on-board 
+only investors with the necessary 
+risk appetite after proper verification, 
+SEBI introduced a revised regulatory 
+framework for Angel Funds in 
+September 2025. Angel Funds have 
+been mandated to on-board and 
+offer investment opportunities to 
+only AIs, certified under extant SEBI 
+accreditation framework. A glide 
+path of one year has been provided 
+to existing Angel Funds to transition 
+to AI only regime. On the strength of 
+the aforesaid mandate, substantial 
+flexibilities have been extended to 
+Angel Funds for investment in start-
+ups.
+  •	 As a regulatory measure to provide 
+fillip to accreditation, SEBI introduced 
+a separate category of AIF schemes 
+exclusive to AIs in December 2025, 
+providing regulatory flexibilities 
+along with the reduction in minimum 
+investment threshold for Large 
+Value funds from ₹70 crore to ₹25 
+crore. Further, to facilitate ease of 
+accreditation, SEBI simplified the 
+requirements for grant of accreditation 
+in January 2026.
+ The current accreditation numbers indicate 
+growing traction in accreditation. The number 
+of AIs increased from 649 in May 2025 to 2,773 
+as of April 30, 2026, constituting a 327 per cent 
+growth over the 11-month period. To sustain 
+this momentum, SEBI will continue to actively 
+engage with the AIF industry and accreditation 
+agencies to further streamline and facilitate the 
+accreditation process.

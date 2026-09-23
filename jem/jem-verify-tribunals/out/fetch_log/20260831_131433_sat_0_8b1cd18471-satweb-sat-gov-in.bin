@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Welcome to Securities Appellate Tribunal</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="https://satweb.sat.gov.in/assets/img/favicon.png" rel="icon">
+    <link href="https://satweb.sat.gov.in/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Main CSS File -->
+    <link href="https://satweb.sat.gov.in/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://satweb.sat.gov.in/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://satweb.sat.gov.in/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://satweb.sat.gov.in/assets/css/style.css" rel="stylesheet">
+    <link href="https://satweb.sat.gov.in/assets/css/css.css" rel="stylesheet">
+    <link href="https://satweb.sat.gov.in/assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="https://satweb.sat.gov.in/assets/css/mermaid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://satweb.sat.gov.in/assets/slick/slick.css"/>
+    <link rel="stylesheet" href="https://satweb.sat.gov.in/assets/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://satweb.sat.gov.in/assets/vendor/fontawesome/css/all.min.css"/>
+    
+    <script src="https://satweb.sat.gov.in/assets/js/jquery.js"></script>
+    <script src="https://satweb.sat.gov.in/assets/js/jquery-ui.js"></script>
+    <script src="https://satweb.sat.gov.in/assets/js/gridjs.umd.js"></script>
+    <script src="https://satweb.sat.gov.in/assets/js/main.js"></script>
+    <script src="https://satweb.sat.gov.in/assets/js/common.js"></script>
+    <script src="https://satweb.sat.gov.in/assets/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header" class="d-flex">
+       
+        <div class="container d-flex align-items-center mt-2">
+            <div class="logo me-auto">
+                <a href="https://satweb.sat.gov.in/"><img src="https://satweb.sat.gov.in/assets/img/sat-logo.png" alt="" class="img-fluid"></a>
+            </div> 
+            
+            <div class="right_logo">
+                <a href="https://www.youtube.com/live/EIBsi713AYw?si=NFIkrCUZl9byV67j" target="blank">
+                    <img src="https://satweb.sat.gov.in/assets/img/Inauguration.png">
+                </a>
+              
+                <img src="https://satweb.sat.gov.in/assets/img/swach-bharat.png">
+                <img src="https://satweb.sat.gov.in/assets/img/aazadi-ka-amrit-mohotsav.png">
+            </div>
+        </div> 
+        
+        <nav id="navbar" class="navbar" >
+            <div class="container">
+                <ul>
+                    <li><a class="nav-linak scrolltoa active" href="https://satweb.sat.gov.in/">Home</a></li>
+
+                    <li class="dropdown"><a href="#" class=""><span>Members</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="https://satweb.sat.gov.in/presiding-officers">Presiding Officers</a></li>
+                            <li><a href="https://satweb.sat.gov.in/members">Members</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#" class=""><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="https://satweb.sat.gov.in/our-jurisdiction">Jurisdiction</a></li>
+                            <li><a href="https://satweb.sat.gov.in/our-benchs">Benches</a></li>
+                            <li><a href="https://satweb.sat.gov.in/our-organogram">Organogram</a></li>
+                            <li><a href="https://satweb.sat.gov.in/court-calendar">Court Calendar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#" class=""><span>Acts</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="https://satweb.sat.gov.in/acts">Acts</a></li>
+                            <li><a href="https://satweb.sat.gov.in/rti-act-2005">RTI Act 2005</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link scrollto " href="https://satweb.sat.gov.in/rules">Rules</a></li>
+
+                    <li><a class="nav-link scrollto " href="https://satweb.sat.gov.in/causelist">Cause List</a></li>
+
+                    <li><a class="nav-link scrollto " href="https://satweb.sat.gov.in/case-status">Case Status</a></li>
+
+                    <li><a class="nav-link scrollto " href="https://satweb.sat.gov.in/orders">Order</a></li>
+
+                     <li> <a class="nav-link scrollto" href="https://efiling.sat.gov.in/" target="_blank">E-filing</a></li>
+
+                    <li class="blink-notice"><a class="nav-link scrollto" href="https://satweb.sat.gov.in/#notice"><i class="fas fa-bullhorn "></i> &nbsp;&nbsp; Notifications </a></li>
+                     <li><a class="nav-link scrollto" href="https://satweb.sat.gov.in/assets/uploads/pdffile/1998report.pdf" target="_blank">JUDGEMENTS AND GENDER</a>
+                     
+                    </li>
+
+                   
+
+                    <li><a class="nav-link scrollto " href="https://satweb.sat.gov.in/contact-us">Contact</a></li>
+                    
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </div>
+        </nav> 
+        <!-- .navbar -->
+    </header><!-- End Header --><!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div class="hero-container">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide 1 -->
+                                    <!-- <div class="carousel-item active" style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner1.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item active" style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner1.jpg');">
+                                               <!--     <a href="https://bharatinnovates.in/" target="_blank" class="carousel-link" style="display:block; width:100%; height:100%;"> -->
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                                    </a>
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner2.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner2.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner3.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner3.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner4.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner4.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner5.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner5.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner6.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner6.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner7.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/banner7.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-3.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-3.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-4.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-4.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-5.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-5.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-2.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-2.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                        <!-- <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-1.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content container">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item " style="background-image: url('https://satweb.sat.gov.in/assets/uploads/banners/slide-1.jpg');">
+                                                
+                            <div class="carousel-container">
+                                <div class="carousel-content container">
+                                    <!-- Yahan tum text ya button bhi rakh sakte ho -->
+                                </div>
+                            </div>
+                        
+                                            </div>
+
+
+                                </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- End Hero -->
+
+<!-- ======= Our Team Section ======= -->
+
+<section id="team" class="team">
+    <div class="container" data-aos="fade-up">
+        
+            <div class="row justify-content-center">
+                    <div class="col-md-3 member-img my-3">
+                        <span class="pointer">
+                            <img src="https://satweb.sat.gov.in/assets/uploads/member/jpsdinesh.jpg" class="img img-fluid">
+                            <p class="overlay view_member_details" data-id="21">View Details</p>
+                        </span>
+                        <h4 class="name-title">Justice P.S. Dinesh Kumar</h4>
+                        <p>Presiding Officer</p>
+                    </div>
+                    
+            </div>
+            <div class="row justify-content-center">
+                    <div class="col-md-3 member-img my-3">
+                        <span class="pointer">
+                            <img src="https://satweb.sat.gov.in/assets/uploads/member/j2.jpg" class="img img-fluid">
+                            <p class="overlay view_member_details" data-id="19">View Details</p>
+                        </span>
+                        <h4 class="name-title">Meera Swarup</h4>
+                        <p>Technical Member</p>
+                    </div>
+                    
+                    <div class="col-md-3 member-img my-3">
+                        <span class="pointer">
+                            <img src="https://satweb.sat.gov.in/assets/uploads/member/dr_dhrj_bhtngr.jpg" class="img img-fluid">
+                            <p class="overlay view_member_details" data-id="20">View Details</p>
+                        </span>
+                        <h4 class="name-title">Dr. Dheeraj Bhatnagar</h4>
+                        <p>Technical Member</p>
+                    </div>
+                    
+            </div>    </div>
+</section>
+
+
+<main id="main">
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="row no-gutters">
+                <div class="col-lg-8 d-flex flex-column about-content">
+                    <div class="section-title">
+                        <h2 class="heading">About Us</h2>
+                        <p>Securities Appellate Tribunal is a statutory body established under the provisions of Section 15K of the Securities and Exchange Board of India Act, 1992 to hear and dispose of appeals against orders passed by the Securities and Exchange Board of India or by an adjudicating officer under the Act; and to exercise jurisdiction, powers and authority conferred on the Tribunal by or under this Act or any other law for the time being in force.</p>
+                        <p>Consequent to Government Notification No.DL-33004/99 dated 27th May, 2014, SAT hears and disposes of appeals against orders passed by the Pension Fund Regulatory and Development Authority (PFRDA) under the PFRDA Act, 2013. </p>
+                        <p>Further, in terms of Government Notification No.DL-(N)/04/0007/2003-15 dated 23rd March, 2015, SAT hears and disposes of appeals against orders passed by the Insurance Regulatory Development Authority of India (IRDAI) under the Insurance Act, 1938, the General Insurance Business (Nationalization) Act, 1972 and the Insurance Regulatory and Development Authority Act, 1999 and the Rules and Regulations framed thereunder.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 about-content" id="notice">
+                    <div class="section-title">
+                        <h2 class="heading">Notice / Notifications</h2>
+                        <div class="">
+                            <ul class="list-group">
+                                
+                                        <li class="list-group-item new text-primary-theme bg-light">
+                                            <i class="fa-solid fa-bullhorn me-2"></i>
+                                            <a href="https://satweb.sat.gov.in/view-notice/f39e1d75ef5b6abba7681ff8563b002b216083a7a622269c4ee9e0bd8cd32624/27" class="link-primary-theme" target="blank">31-08-2026 - e-Filing portal of Securities Appellate Tribunal (SAT) w.e.f. 03rd August 2026</a> 
+                                            <span class="blink">LATEST</span>
+                                        </li>                                <li class="list-group-item text-end bg-light">
+                                    <a class="link-primary-theme" href="https://satweb.sat.gov.in/notices">View more <i class="fa-solid fa-arrow-right"></i></a>
+                                </li>
+                            </ul>
+                            <!-- <div class="viewall"><a class="btn btn-sm" href="">View All</a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+    <!-- ======= Counts Section ======= -->
+    <!--<section class="counts  section-bg py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up">
+                    <div class="count-box">
+                        <i class="bi bi-simple-smile" style="color: #20b38e;"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="167" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Total Registered Users</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="count-box">
+                        <i class="bi bi-document-folder" style="color: #c042ff;"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Total Advocate Registered</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="count-box">
+                        <i class="bi bi-live-support" style="color: #46d1ff;"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="9712" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Total e-Filed Appeals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- End Counts Section -->
+
+    <!-- ======= Footer Logos Section ======= -->
+    <section class="p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-logos">
+                        <div>
+                            <a href="https://www.india.gov.in/" target="_blank">
+                                <img src="https://satweb.sat.gov.in/assets/img/f1.png" class="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://igod.gov.in/" target="_blank">
+                                <img src="https://satweb.sat.gov.in/assets/img/f2.png" class="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://data.gov.in/" target="_blank">
+                                <img src="https://satweb.sat.gov.in/assets/img/f3.png" class="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.makeinindia.com/" target="_blank">
+                                <img src="https://satweb.sat.gov.in/assets/img/f4.png" class="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.mygov.in/" target="_blank">
+                                <img src="https://satweb.sat.gov.in/assets/img/f5.png" class="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Logos Section -->
+
+</main>
+<!-- End #main -->
+
+<script src="https://satweb.sat.gov.in/assets/js/page/index.js"></script>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 footer-info">
+                            <h3>Securities Appellate Tribunal</h3>
+                            <p><strong>Address:</strong> Mittal Court, "B" & "C" Wing,<br />
+								1st Floor, 224 Nariman Point,<br />
+								Mumbai - 400021, MAHARASHTRA<br>
+                                <strong>Phone:</strong> 22837062, 22837061, 22021520<br>
+                                <strong>Email:</strong> registrar-sat[at]nic[dot]in<br>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://efiling.sat.gov.in/" target="_blank">E-filing</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://satweb.sat.gov.in/presiding-officers">Presiding Officers</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://satweb.sat.gov.in/members">Members</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://satweb.sat.gov.in/terms-of-services">Terms of service</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://satweb.sat.gov.in/forms">Forms </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Case Information</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://satweb.sat.gov.in/case-status">Case Status</a></li>
+                                <!-- <li><i class="bx bx-chevron-right"></i> <a href="https://satweb.sat.gov.in/sat-judgment">SAT Judgment</a></li> -->
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://satweb.sat.gov.in/causelist">Causelist</a></li>
+                                <li><i class="bx bx-chevron-right"></i><a href="https://satweb.sat.gov.in/feedback">Feedback</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://satweb.sat.gov.in/vacancy-circular">Vacnacy Circular</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Externel Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a target="blank" href="https://www.india.gov.in/">Govt of India</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a target="blank" href="https://main.sci.gov.in/">Supreme Court of India</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a target="blank" href="https://lawmin.gov.in/">Ministry of Law and Justice</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright 2023. All Rights Reserved
+                </div>
+                <div class="credits"> 
+                    Designed & Developed by National Informatics Centre (NIC)
+                </div>
+            </div>
+        </footer>
+
+        <input type="hidden" id="security_token" value="3d499c548b4745b7403258db7d7cf32f2c2c62a2125b7be6ef3f9b508364f53f"> 
+        <!-- End Footer -->
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- JS Files -->
+       
+        <script src="https://satweb.sat.gov.in/assets/vendor/purecounter/purecounter_vanilla.js"></script> 
+        <script src="https://satweb.sat.gov.in/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://satweb.sat.gov.in/assets/vendor/glightbox/js/glightbox.min.js"></script> 
+        <script src="https://satweb.sat.gov.in/assets/vendor/swiper/swiper-bundle.min.js"></script> 
+        <!-- Main JS File -->
+        <script src="https://satweb.sat.gov.in/assets/js/main.js"></script>
+        <script src="https://satweb.sat.gov.in/assets/js/datepicker.js"></script>
+
+        <!-- Modal -->
+        <div class="modal fade head" id="myModel" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title"></h5>
+                        <button type="button" class="btn-close pointer text-white" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-circle-fill"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

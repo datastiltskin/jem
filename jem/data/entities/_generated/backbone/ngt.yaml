@@ -40,56 +40,57 @@ structural_gap:
   - gap_id: ngt_below_statutory_minimum
     gap_type: Appointment_Gap
     gap_severity: High
-    gap_description: >-
-      Below statutory minimum on both tracks (NGT Act s.4): 6 of 10–20 judicial
-      members; 7 of 10–20 expert members (Aug 2025, post-appointments). Both
-      categories remain under the per-category floor of 10.
+    gap_description: 'Below statutory minimum on both tracks (NGT Act s.4): 6 of 10–20 judicial
+      members; 7 of 10–20 expert members (Aug 2025, post-appointments). Both categories remain
+      under the per-category floor of 10.'
     gap_source: NGT Act 2010 s.4; Indian Express, 11 Aug 2025
     gap_since_year: 2010
     gap_status: Open
-    gap_resolution_note: >-
-      Restoration to NGT Act 2010 s.4 minima (10 judicial + 10 expert members)
-      requires Central Government appointments under ss.5–7. No statutory
-      completion date; monitor greentribunal.gov.in and Gazette appointment orders.
+    gap_resolution_note: Restoration to NGT Act 2010 s.4 minima (10 judicial + 10 expert members)
+      requires Central Government appointments under ss.5–7. No statutory completion date;
+      monitor greentribunal.gov.in and Gazette appointment orders.
     gap_spillover:
     - affected_body: ngt
       spillover_type: appellate_backlog
-      metric_note: >-
-        5,698 cases pending across Principal + four zonal benches as of
-        30 April 2026 (greentribunal.gov.in bench-wise statistics).
+      metric_note: 5,698 cases pending across Principal + four zonal benches as of 30 April
+        2026 (greentribunal.gov.in bench-wise statistics).
       source_url: https://www.greentribunal.gov.in/bench-wise-institution-disposal-and-pendency-cases-ngt-principal-bench-and-all-zonal-benches
       source_label: NGT — bench-wise pendency dashboard
       data_as_of: '2026-04-30'
       spillover_data_quality: verified
     - affected_body: supreme_court_india
       spillover_type: writ_load
-      metric_note: >-
-        NGT Bar Association (Western Zone) writ (Feb 2026): SC directed three
-        judicial members to continue past retirement as stopgap to prevent NGT
-        functioning solely with expert members (NGT Act s.4(4)).
+      metric_note: 'NGT Bar Association (Western Zone) writ (Feb 2026): SC directed three
+        judicial members to continue past retirement as stopgap to prevent NGT functioning
+        solely with expert members (NGT Act s.4(4)).'
       source_url: https://indiankanoon.org/doc/90601554/
       source_label: SC — NGT Bar Association (Western Zone) v. Union of India, 11 Feb 2026
       data_as_of: '2026-02-11'
       spillover_data_quality: verified
     - affected_body: high_courts_all
       spillover_type: appellate_backlog
-      metric_note: >-
-        Lok Sabha reply (15 Dec 2025): MoS EFCC reported 5,000+ NGT cases
-        pending; regional benches understaffed — Chennai/Pune/Bhopal/Kolkata
-        matters heard via video from Delhi principal bench.
+      metric_note: 'Lok Sabha reply (15 Dec 2025): MoS EFCC reported 5,000+ NGT cases pending;
+        regional benches understaffed — Chennai/Pune/Bhopal/Kolkata matters heard via video
+        from Delhi principal bench.'
       source_url: https://india.mongabay.com/short-article/2025/12/over-5000-cases-pending-in-indias-green-tribunal-shows-data/
       source_label: Mongabay — Parliament pendency data Dec 2025
       data_as_of: '2025-12-15'
       spillover_data_quality: partial
 data_quality: partial
-data_quality_notes: "NGT is EXCLUDED from Tribunals Reforms Act 2021 — appointment under NGT Act 2010 s.5-7 directly. 5 locations: Principal Bench New Delhi + 4 zonal (Eastern Kolkata, Western Pune/Mumbai, Central Bhopal, Southern Chennai). Western Zone formally designated Pune; bench has historically sat at Mumbai — NGT's own docs ambiguous. Member strength Aug 2025: 6 judicial + 7 expert (both below s.4 minimum of 10 each).\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
+data_quality_notes: "NGT is EXCLUDED from Tribunals Reforms Act 2021 — appointment under NGT\
+  \ Act 2010 s.5-7 directly. 5 locations: Principal Bench New Delhi + 4 zonal (Eastern Kolkata,\
+  \ Western Pune/Mumbai, Central Bhopal, Southern Chennai). Western Zone formally designated\
+  \ Pune; bench has historically sat at Mumbai — NGT's own docs ambiguous. Member strength\
+  \ Aug 2025: 6 judicial + 7 expert (both below s.4 minimum of 10 each).\n NJDG snapshot case_volume\
+  \ merged v1.2 judge_strength stub attached | verify-trib-01: NJDG source stamp stripped\
+  \ (non-eCourts body)."
 sources:
 - label: NGT — Zonal benches (greentribunal.gov.in)
   url: https://greentribunal.gov.in/
   type: GoIWebsite
   accessed_date: '2026-06-17'
 - label: National Green Tribunal Act 2010 — India Code
-  url: https://india-code.nic.in/acts-detail/MjA2OTU=
+  url: https://www.indiacode.nic.in/bitstream/123456789/2025/1/A201019.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: NGT Act 2010 s.4 — composition (10–20 judicial + 10–20 expert)
@@ -100,10 +101,6 @@ sources:
   url: https://indianexpress.com/article/cities/delhi/understaffed-ngt-gets-2-new-judicial-4-expert-members-strength-now-13-10187179/
   type: OfficialReport
   accessed_date: '2026-06-17'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   data_as_of: '2026-04-30'
   pending_cases: 5698
@@ -121,6 +118,26 @@ judge_strength:
   vacancy_count: null
   source_type: Tribunal_Report
   source_url: https://indianexpress.com/article/cities/delhi/understaffed-ngt-gets-2-new-judicial-4-expert-members-strength-now-13-10187179/
-  notes: >-
-    6 judicial + 7 expert members (Aug 2025). Statutory minimum 10 per category
-    (NGT Act s.4); track separately — do not use combined 20-post framing.
+  notes: 6 judicial + 7 expert members (Aug 2025). Statutory minimum 10 per category (NGT
+    Act s.4); track separately — do not use combined 20-post framing.
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: unknown
+  report_type: statistics
+  last_published_url: https://www.greentribunal.gov.in/bench-wise-institution-disposal-and-pendency-cases-ngt-principal-bench-and-all-zonal-benches
+  expected_cadence: irregular
+  data_as_of: '2026-04-30'
+  source_type: GoIWebsite
+  source_url: https://www.greentribunal.gov.in/bench-wise-institution-disposal-and-pendency-cases-ngt-principal-bench-and-all-zonal-benches
+  notes: NGT does not publish a narrative "annual report," but does publish a live, periodically-updated
+    bench-wise institution/disposal/pendency statistics page (verified live; data as of 30
+    Apr 2026 at time of research) — this is the actual case_volume citation already used elsewhere
+    in the entity's own YAML. Update cadence is irregular/rolling rather than a fixed calendar
+    period, so expected_cadence is recorded as "irregular" rather than guessed as annual.
+    Separately, NGT also publishes an annual/biannual "e-Journal" (Volume covering 2024, then
+    Vol. I and Vol. II for 2025) compiling landmark judgments — a judgment digest, not an
+    activity/statistics report, so it is noted but not used as the primary citation here.
+    A one-off "Bird's Eye View of NGT Performance" note (July 2018-July 2023, via PIB) is
+    a similar non-recurring performance summary. NGT Act 2010 contains no annual-report- to-Parliament
+    clause (checked full text, faolex.fao.org/aktiwari.com mirrors) — statutorily_required
+    left unknown, not no.

@@ -18,7 +18,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Consumer Protection Act 2019, s.51"
-        url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+        url: https://consumeraffairs.gov.in/pages/consumer-protection-acts
         type: CentralAct
         accessed_date: "2026-05-18"
 
@@ -35,7 +35,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Consumer Protection Act 2019, s.51"
-        url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+        url: https://consumeraffairs.gov.in/pages/consumer-protection-acts
         type: CentralAct
         accessed_date: "2026-05-18"
 
@@ -51,7 +51,7 @@ relationships:
     data_quality: verified
     sources:
       - label: "Consumer Protection Act 2019, s.51"
-        url: https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019
+        url: https://consumeraffairs.gov.in/pages/consumer-protection-acts
         type: CentralAct
         accessed_date: "2026-05-18"
 
@@ -77,6 +77,6 @@ relationships:
       Court-access / submissions pathway, not a standard appellate step.
     sources:
       - label: "Protection of Human Rights Act 1993, s.18"
-        url: https://nhrc.nic.in/sites/default/files/PHRA.pdf
+        url: https://www.indiacode.nic.in/bitstream/123456789/13233/1/the_protection_of_human_rights_act_1993.pdf
         type: CentralAct
         accessed_date: "2026-05-18"

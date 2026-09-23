@@ -21,9 +21,16 @@ import yaml
 from pathlib import Path
 from typing import Dict, Any, Optional, Tuple
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from classification import classify_entity, is_countable  # noqa: E402
+
 
 GOVERNANCE_EXCLUDED_MESSAGE = (
     "Scores excluded: governance officeholder or administrative body"
+)
+
+STRUCTURAL_ONLY_EXCLUDED_MESSAGE = (
+    "Scores excluded: role archetype or generic scaffold (not a scorable body)"
 )
 
 OFFICEHOLDER_IDS = frozenset({
@@ -38,6 +45,16 @@ OFFICEHOLDER_IDS = frozenset({
 })
 
 OFFICEHOLDER_ID_SUFFIXES = ("_lieutenant_governor", "_advocate_general")
+
+
+def is_structural_only_entity(entity: Dict[str, Any]) -> bool:
+    """Role archetypes and generic scaffolds are graph anchors, not scorable bodies."""
+    entity_id = entity.get("id", "") or ""
+    if entity.get("cluster") == "people_roles" or entity.get("role_layer"):
+        return True
+    if entity_id.endswith("_generic"):
+        return True
+    return False
 
 
 def is_governance_scores_excluded(entity: Dict[str, Any]) -> bool:
@@ -63,7 +80,13 @@ def is_governance_scores_excluded(entity: Dict[str, Any]) -> bool:
     return False
 
 
-def excluded_score_result() -> Tuple[int, Dict[str, int]]:
+def is_scores_excluded(entity: Dict[str, Any]) -> bool:
+    return is_governance_scores_excluded(entity) or is_structural_only_entity(entity)
+
+
+def excluded_score_result(entity: Dict[str, Any]) -> Tuple[int, Dict[str, int]]:
+    if is_structural_only_entity(entity):
+        return 0, {STRUCTURAL_ONLY_EXCLUDED_MESSAGE: 0}
     return 0, {GOVERNANCE_EXCLUDED_MESSAGE: 0}
 
 
@@ -81,8 +104,8 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
     Returns (total_score, breakdown_dict).
     Each key in breakdown_dict is a human-readable reason → point value.
     """
-    if is_governance_scores_excluded(entity):
-        return excluded_score_result()
+    if is_scores_excluded(entity):
+        return excluded_score_result(entity)
 
     score = 0
     breakdown = {}
@@ -253,8 +276,13 @@ def compute_structural_health(
     ir_score: int,
     dp_score: int,
 ) -> Tuple[Optional[float], Optional[str], Dict[str, Any]]:
-    if is_governance_scores_excluded(entity):
-        return None, None, {GOVERNANCE_EXCLUDED_MESSAGE: 0}
+    if is_scores_excluded(entity):
+        msg = (
+            STRUCTURAL_ONLY_EXCLUDED_MESSAGE
+            if is_structural_only_entity(entity)
+            else GOVERNANCE_EXCLUDED_MESSAGE
+        )
+        return None, None, {msg: 0}
 
     op_status = entity.get('operational_status', '')
 
@@ -353,8 +381,8 @@ EXTRA_DISCRETION_ENTITIES = {
 }
 
 def compute_discretionary_power(entity: Dict[str, Any]) -> Tuple[int, Dict[str, int]]:
-    if is_governance_scores_excluded(entity):
-        return excluded_score_result()
+    if is_scores_excluded(entity):
+        return excluded_score_result(entity)
 
     score = 0
     breakdown = {}
@@ -460,6 +488,89 @@ def classify_ir(score: int) -> str:
         return "severe"
 
 
+def compute_entity_counts(data_dir: Path) -> Dict[str, Any]:
+    """Two-axis entity counts (N track).
+
+    Counts every entity by (nature, function), excluding `is_generic_rollup`
+    rollups. Legal-instrument registry rows live outside data/entities and are
+    reference data, not entities, so they are never counted here.
+
+    This artifact is the only sanctioned source of entity totals. Nothing
+    downstream — README, roadmap, UI badge — may carry a hand-typed number.
+    """
+    buckets: Dict[str, Dict[str, int]] = {
+        n: {f: 0 for f in ("judicial", "quasi_judicial", "support_apparatus")}
+        for n in ("institution", "personnel")
+    }
+    by_type: Dict[str, int] = {}
+    generics: list = []
+    unclassified: list = []
+    total_files = 0
+
+    for path in sorted((data_dir / "entities").rglob("*.yaml")):
+        if "schema" in str(path):
+            continue
+        entity = load_entity(path)
+        if not entity:
+            continue
+        total_files += 1
+
+        if not is_countable(entity):
+            generics.append(entity.get("id"))
+            continue
+
+        try:
+            nature, function = classify_entity(entity)
+        except ValueError as exc:
+            unclassified.append(f"{entity.get('id')}: {exc}")
+            continue
+
+        buckets[nature][function] += 1
+        by_type[entity.get("type")] = by_type.get(entity.get("type"), 0) + 1
+
+    total_countable = sum(v for row in buckets.values() for v in row.values())
+
+    return {
+        "generated_by": "scripts/derive.py :: compute_entity_counts",
+        "buckets": buckets,
+        # Derived intersections. "Judicial personnel" is computed, never stored.
+        "judicial_personnel": buckets["personnel"]["judicial"],
+        "judicial_institutions": buckets["institution"]["judicial"],
+        "total_countable": total_countable,
+        "generics_excluded": len(generics),
+        "generic_ids": sorted(generics),
+        "total_entity_files": total_files,
+        "unclassified": unclassified,
+        "by_type": dict(sorted(by_type.items())),
+    }
+
+
+def save_entity_counts(counts: Dict[str, Any], output_path: Path):
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        yaml.dump({'entity_counts': counts}, f, default_flow_style=False,
+                  allow_unicode=True, sort_keys=False)
+    print(f"  Saved entity counts to {output_path}")
+
+
+def print_entity_counts(counts: Dict[str, Any]):
+    b = counts["buckets"]
+    print(f"\n--- ENTITY COUNTS (two-axis, generics excluded) ---")
+    print(f"  {'':<12}{'judicial':>12}{'quasi_judicial':>16}{'support':>12}")
+    for nature in ("institution", "personnel"):
+        row = b[nature]
+        print(f"  {nature:<12}{row['judicial']:>12}{row['quasi_judicial']:>16}"
+              f"{row['support_apparatus']:>12}")
+    print(f"  {'-'*52}")
+    print(f"  total countable:   {counts['total_countable']}")
+    print(f"  generics excluded: {counts['generics_excluded']}")
+    print(f"  entity files:      {counts['total_entity_files']}")
+    if counts["unclassified"]:
+        print(f"  ✗ UNCLASSIFIED:    {len(counts['unclassified'])}")
+        for u in counts["unclassified"]:
+            print(f"      {u}")
+
+
 def save_derived_scores(results: Dict, output_path: Path):
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -538,6 +649,26 @@ if __name__ == "__main__":
         print(f"  {validated} {eid:45s} IR={ir:2d} ({level:8s}) DP={dp:2d}")
 
     save_derived_scores(results, output_path)
+
+    counts = compute_entity_counts(data_dir)
+    save_entity_counts(counts, data_dir / "derived" / "entity_counts.yaml")
+    print_entity_counts(counts)
+
+    jem_root = script_dir.parent
+    try:
+        from harness.events import load_events, project_value_history
+        from harness.consensus_dashboard import emit_dashboard
+        history = project_value_history(load_events(jem_root / "ledger" / "events"))
+        vh_path = data_dir / "derived" / "value_history.yaml"
+        vh_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(vh_path, "w", encoding="utf-8") as fh:
+            yaml.dump({"value_history": history}, fh, default_flow_style=False,
+                      allow_unicode=True, sort_keys=False)
+        print(f"  Saved value_history ({sum(len(f) for f in history.values())} field-paths) to {vh_path}")
+        dash = emit_dashboard(jem_root)
+        print(f"  Saved consensus dashboard to {dash}")
+    except Exception as exc:
+        print(f"  INFO: value_history / dashboard skipped: {exc}")
 
     high_ir = [(eid, r) for eid, r in results.items() if r['independence_risk_level'] in ('high', 'severe')]
     not_constituted = [(eid, r) for eid, r in results.items() if r['independence_risk_score'] >= 3 and 'regulatory vacuum' in str(r.get('independence_risk_breakdown', {}))]

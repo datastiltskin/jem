@@ -1,0 +1,27 @@
+HTTP/1.1 200 OK
+Date: Sat, 05 Sep 2026 21:25:17 GMT
+Server: Apache/2.4.62 (Oracle Linux Server) OpenSSL/3.5.5
+X-Powered-By: PHP/8.1.34
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store, post-check=0, pre-check=0, private
+X-Drupal-Dynamic-Cache: HIT
+Link: <https://maharera.maharashtra.gov.in/>; rel="canonical", <https://maharera.maharashtra.gov.in/>; rel="shortlink"
+X-UA-Compatible: IE=edge
+Content-language: en
+X-Content-Type-Options: nosniff
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://maharera.maharashtra.gov.in/ https://www.maharera.maharashtra.gov.in/ https://www.youtube.com https://twitter.com https://www.google-analytics.com https://stats.g.doubleclick.net https://pbs.twimg.com https://platform.twitter.com https://syndication.twitter.com https://www.googletagmanager.com https://pbs.twimg.com https://platform.twitter.com https://img.youtube.com https://unpkg.com https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org http://a.tile.openstreetmap.org http://b.tile.openstreetmap.org http://c.tile.openstreetmap.org https://connect.facebook.net
+Access-Control-Allow-Credentials: false
+Access-Control-Max-Age: 86400
+Vary: Accept-Encoding
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self' 'unsafe-inline' https://www.youtube.com http://maharera.maharashtra.gov.in/ https://maharera.maharashtra.gov.in/ https://www.maharera.maharashtra.gov.in/ https://twitter.com https://www.google-analytics.com https://stats.g.doubleclick.net https://pbs.twimg.com https://platform.twitter.com https://syndication.twitter.com https://www.googletagmanager.com; connect-src 'self' https://unpkg.com https://www.google-analytics.com/; img-src 'self' 'unsafe-inline' data: https://www.youtube.com http://maharera.maharashtra.gov.in/ https://maharera.maharashtra.gov.in/ https://www.maharera.maharashtra.gov.in/ https://pbs.twimg.com https://platform.twitter.com https://syndication.twitter.com https://img.youtube.com https://unpkg.com https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org http://a.tile.openstreetmap.org http://b.tile.openstreetmap.org http://c.tile.openstreetmap.org ; style-src 'self' 'unsafe-inline' https://maharera.maharashtra.gov.in/ https://www.maharera.maharashtra.gov.in/ https://fonts.googleapis.com  https://platform.twitter.com https://unpkg.com ; font-src 'self' data: https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://maharera.maharashtra.gov.in/ https://www.maharera.maharashtra.gov.in/ https://connect.facebook.net https://platform.twitter.com https://www.google-analytics.com https://unpkg.com ; frame-src 'self' 'unsafe-inline' data: blob: https://www.youtube.com https://maharera.maharashtra.gov.in https://www.maharera.maharashtra.gov.in/ https://www.google.com https://platform.twitter.com; object-src 'self' data: https://www.youtube.com https://maharera.maharashtra.gov.in https://www.maharera.maharashtra.gov.in/ https://www.google.com https://platform.twitter.com;
+Pragma: no-cache
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Expires: Thu, 1 Jan 1970 00:00:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-XSS-Protection: 1; mode=block
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
