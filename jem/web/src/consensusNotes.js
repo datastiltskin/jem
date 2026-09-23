@@ -1,13 +1,7 @@
-// Consensus notes on entity profiles.
+// Plain-language checks on entity profiles.
 // SAMPLE GATE: only SAT until the maintainer confirms JEM-wide rollout.
-//
-// Multi-upload display (locked for this UI):
-//   • Current set is letters A | B | C | … — one letter per distinct contributor
-//     still in the join (generate or verify).
-//   • Same person, later file → that letter is replaced; older file stays in
-//     upload history with its timestamp (not a new letter).
-//   • Expand lists each current letter (verdict/value) and the upload history
-//     (file + time + credit or Anonymous).
+// Codes (verdicts, join outcomes) stay in the dashboard JSON. This module
+// never prints them.
 
 export const CONSENSUS_NOTES_JEM_WIDE = false;
 export const CONSENSUS_NOTE_SAMPLE_IDS = ['sat'];
@@ -16,13 +10,15 @@ export const LETI_DISCORD = 'https://discord.gg/TVGhWNwN3';
 
 const DASH_URL = './public/consensus_dashboard.json';
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
 const FIELD_LABEL = {
   pending_cases: 'Pending cases',
   filed_last_year: 'Filed (last year)',
   disposed_last_year: 'Disposed (last year)',
   disposal_rate: 'Disposal rate',
   avg_disposal_days: 'Avg disposal days',
-  njdg_source_stamp: 'NJDG source stamp',
+  njdg_source_stamp: 'National Judicial Data Grid listing',
 };
 
 let _dashPromise = null;
@@ -52,7 +48,7 @@ export function creditLabel(c) {
   return c.display_name;
 }
 
-/** Current join set. Prefer cell.contributions when the ledger emits it. */
+/** People who checked this field. Letters are not shown. */
 export function contributionsForCell(cell) {
   if (Array.isArray(cell.contributions) && cell.contributions.length) {
     return cell.contributions;
@@ -60,11 +56,8 @@ export function contributionsForCell(cell) {
   const out = [];
   if (cell.prajna) {
     out.push({
-      letter: 'A',
-      role: 'verify',
       display_name: 'Prajna Prayas',
       anonymous: false,
-      maintainer: true,
       file: 'deepseek__verify-trib-01__prajna__20260831_131656.csv',
       recorded_at: '2026-08-31T13:16:56',
       verdict: cell.prajna.verdict,
@@ -73,11 +66,8 @@ export function contributionsForCell(cell) {
   }
   if (cell.agriya) {
     out.push({
-      letter: 'B',
-      role: 'verify',
       display_name: 'Agriya Khetarpal',
       anonymous: false,
-      maintainer: true,
       file: 'codex__verify-trib-01__agriya__20260906_042259.csv',
       recorded_at: '2026-09-06T04:22:59',
       verdict: cell.agriya.verdict,
@@ -87,140 +77,172 @@ export function contributionsForCell(cell) {
   return out;
 }
 
-export function uploadHistoryForCell(cell) {
-  if (Array.isArray(cell.upload_history) && cell.upload_history.length) {
-    return cell.upload_history;
-  }
-  return contributionsForCell(cell);
-}
-
 function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, (c) => (
     { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
   ));
 }
 
-export function rowClass(cell) {
-  if (cell.canon_result === 'reached canon') return 'consensus-arrived';
-  if (cell.canon_result === 'contamination-dropped') return 'consensus-dropped';
-  if (cell.canon_result === 'pending-expert') return 'consensus-pending';
-  return 'consensus-gap';
+/** 2026-01-01 or 2026-01-01T13:16:56 → "1 Jan, 2026". */
+export function formatPlainDate(iso) {
+  const m = String(iso ?? '').match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return '';
+  const month = MONTHS[Number(m[2]) - 1];
+  if (!month) return '';
+  return `${Number(m[3])} ${month}, ${m[1]}`;
 }
 
-function letterChips(contribs) {
-  return contribs.map((c) => {
-    const title = `${c.letter} · independent check · ${creditLabel(c)}${c.maintainer ? ' (maintainer)' : ''}`;
-    return `<span class="cv-letter" title="${esc(title)}">${esc(c.letter)}</span>`;
-  }).join('<span class="cv-letter-sep" aria-hidden="true">|</span>');
+function formatFigure(value) {
+  if (value == null || value === '') return '';
+  const raw = String(value).trim();
+  if (raw.toLowerCase() === 'absent') return 'not listed';
+  const n = Number(raw);
+  if (!Number.isFinite(n)) return raw;
+  if (Math.abs(n) < 10 && !Number.isInteger(n)) return raw;
+  return new Intl.NumberFormat('en-IN').format(n);
 }
 
-function stripHTML(cell) {
-  const contribs = contributionsForCell(cell);
-  const hist = uploadHistoryForCell(cell);
-  const cols = contribs.map((c) => `
-    <div class="cv-ab-col">
-      <div class="cv-ab-letter">${esc(c.letter)}</div>
-      <div class="cv-ab-role">${esc(c.role || 'verify')}</div>
-      <div class="cv-ab-verdict">${esc(c.verdict || '—')}</div>
-      <div class="cv-ab-value">${esc(c.value == null || c.value === '' ? '—' : c.value)}</div>
-      <div class="cv-ab-credit">${esc(creditLabel(c))}${c.maintainer ? ' · maintainer' : ''}</div>
-    </div>`).join('');
-  const histRows = hist.map((h) => `
-    <tr>
-      <td>${esc(h.letter || '')}</td>
-      <td>${esc(h.role || '')}</td>
-      <td>${esc(creditLabel(h))}</td>
-      <td class="mono">${esc(h.file || '')}</td>
-      <td class="mono">${esc(h.recorded_at || '')}</td>
-    </tr>`).join('');
+function history(cell) {
+  return Array.isArray(cell.value_history) ? cell.value_history : [];
+}
+
+/** What the map shows now, from the newest promoted trail entry. */
+function currentEntry(cell) {
+  const hist = history(cell);
+  const promoted = hist.find((h) => (
+    h.change_reason === 'corrected_false'
+    || h.change_reason === 'source_corrected'
+    || h.change_reason === 'superseded_newer_period'
+    || h.change_reason === 'expert_confirmed'
+    || h.change_reason === 'expert_overridden'
+  ));
+  if (promoted && promoted.value != null && promoted.value !== '') return promoted;
+  const first = hist[0];
+  if (first && first.value != null && first.value !== '') return first;
+  return null;
+}
+
+/** JEM’s first published figure — the initial stored value, dated by data_as_of when we have it. */
+function jemOriginal(cell) {
+  const hist = history(cell);
+  const initial = [...hist].reverse().find((h) => h.change_reason === 'initial' && h.value != null && h.value !== '');
+  if (!initial) return null;
+  const dated = hist.find((h) => (
+    h.data_as_of && String(h.value) === String(initial.value)
+  ));
+  return {
+    value: initial.value,
+    asOf: (dated && dated.data_as_of) || initial.data_as_of || null,
+  };
+}
+
+function checkerSentence(person) {
+  const name = creditLabel(person);
+  const when = formatPlainDate(person.recorded_at);
+  const whenBit = when ? ` (${when})` : '';
+  const shown = formatFigure(person.value);
+  if (person.verdict === 'UNSOURCED' || !shown) {
+    return `${name} checked it and did not find a matching source${whenBit}.`;
+  }
+  if (person.verdict === 'CONFIRM') {
+    return `${name} checked it and agreed with ${shown}${whenBit}.`;
+  }
+  return `${name} checked it and read ${shown}${whenBit}.`;
+}
+
+function outcomeBits(cell) {
+  const bits = [];
+  if (cell.canon_result === 'reached canon') bits.push('The map was updated.');
+  else if (cell.canon_result === 'contamination-dropped') bits.push('The stored figure was removed as unreliable.');
+  else if (cell.canon_result === 'pending-expert') bits.push('Held for a reviewer.');
+  else bits.push('No source found — JEM’s figure is unchanged.');
+  if (cell.reconcile_outcome === 'disagree_period') {
+    bits.push('The old figure was for a different period.');
+  }
+  return bits.join(' ');
+}
+
+function fieldLabel(cell) {
+  return FIELD_LABEL[cell.field] || String(cell.field || '').replace(/_/g, ' ');
+}
+
+function listLine(cell) {
+  const label = fieldLabel(cell);
+  const cur = currentEntry(cell);
+  const orig = jemOriginal(cell);
+  const now = cur ? formatFigure(cur.value) : '';
+  if (cell.canon_result === 'reached canon' && now) {
+    const changed = orig && String(orig.value) !== String(cur.value);
+    const origBit = changed ? ` JEM first published ${formatFigure(orig.value)}.` : '';
+    return `${label} — the map now shows ${now}.${origBit}`;
+  }
+  if (cell.canon_result === 'contamination-dropped') {
+    return `${label} — the stored figure was removed as unreliable.`;
+  }
+  if (cell.canon_result === 'pending-expert') {
+    return `${label} — held for a reviewer.`;
+  }
+  return `${label} — no source found. JEM’s figure is unchanged.`;
+}
+
+function notesHTML(cells) {
+  const items = cells.map((c) => `<li>${esc(listLine(c))}</li>`).join('');
   return `
-    <div class="cv-ab-strip" data-consensus-strip>
-      <div class="cv-ab-grid">${cols}</div>
-      <p class="cv-ab-outcome">Join: ${esc(cell.reconcile_outcome || '—')}
-        · ${esc(cell.canon_result || '')}
-        ${cell.classification ? ` · ${esc(cell.classification)}` : ''}</p>
-      <details class="cv-ab-history">
-        <summary>Uploads that led here (${hist.length})</summary>
-        <table>
-          <thead><tr><th></th><th>Role</th><th>Credit</th><th>File</th><th>Time</th></tr></thead>
-          <tbody>${histRows}</tbody>
-        </table>
-      </details>
+    <details class="dv-check-notes">
+      <summary>How these figures were checked</summary>
+      <p class="dv-check-lede">JEM first published a figure. Later, people checked it against a source. This sample is SAT only. Discussion: <a href="${LETI_DISCORD}" target="_blank" rel="noopener noreferrer">LETI on Discord</a>.</p>
+      <ul class="dv-check-list">${items}</ul>
+    </details>`;
+}
+
+function expandHTML(cell) {
+  const orig = jemOriginal(cell);
+  const cur = currentEntry(cell);
+  const people = contributionsForCell(cell);
+  const origWhen = orig && orig.asOf ? ` (${formatPlainDate(orig.asOf)})` : '';
+  const origLine = orig
+    ? `<p>JEM first published <strong>${esc(formatFigure(orig.value))}</strong>${esc(origWhen)}.</p>`
+    : '';
+  const checks = people.map((p) => `<p>${esc(checkerSentence(p))}</p>`).join('');
+  let nowLine = '';
+  if (cur) {
+    const asOf = cur.data_as_of ? ` (year ending ${formatPlainDate(cur.data_as_of)})` : '';
+    nowLine = `<p>The map now shows <strong>${esc(formatFigure(cur.value))}</strong>${esc(asOf)}.</p>`;
+  }
+  const files = people.filter((p) => p.file).map((p) => {
+    const when = formatPlainDate(p.recorded_at);
+    return `<li>${esc(creditLabel(p))}${when ? ` — ${esc(when)}` : ''} <span class="cv-check-file">${esc(p.file)}</span></li>`;
+  }).join('');
+  const filesBlock = files
+    ? `<details class="cv-check-files"><summary>Files</summary><ul>${files}</ul></details>`
+    : '';
+  return `
+    <div class="cv-check-body">
+      ${origLine}
+      ${checks}
+      ${nowLine}
+      <p>${esc(outcomeBits(cell))}</p>
+      ${filesBlock}
     </div>`;
 }
 
-function commentText(cell) {
-  const label = FIELD_LABEL[cell.field] || cell.field;
-  const letters = contributionsForCell(cell).map((c) => c.letter).join('|') || '—';
-  const latest = (cell.value_history && cell.value_history[0]) || {};
-  if (cell.canon_result === 'reached canon') {
-    const shown = latest.value != null && latest.value !== '' ? latest.value : 'updated';
-    return `${label}: consensus arrived (${letters}). JEM now shows ${shown}.`;
-  }
-  if (cell.canon_result === 'contamination-dropped') {
-    return `${label}: stored figure dropped as contamination (${letters}). Held for expert review.`;
-  }
-  if (cell.canon_result === 'pending-expert') {
-    return `${label}: checks disagree or period mismatch (${letters}). Held for expert review.`;
-  }
-  return `${label}: unsourced gap (${letters}). JEM value unchanged.`;
-}
-
-function tocHTML(cells, dash) {
-  const arrived = cells.filter((c) => c.canon_result === 'reached canon').length;
-  const badge = esc(dash?.round_badge || 'PIPELINE EXERCISE');
-  const items = cells.map((c) => {
-    const cls = rowClass(c);
-    const letters = contributionsForCell(c).map((x) => x.letter).join('|');
-    return `
-      <li class="dv-comment ${cls}">
-        <div class="dv-comment-vote" aria-hidden="true">
-          <span class="dv-consensus-mark">${cls === 'consensus-arrived' ? '✓' : '·'}</span>
-        </div>
-        <div class="dv-comment-body">
-          <div class="dv-comment-meta">
-            <span class="dv-comment-author">${esc(FIELD_LABEL[c.field] || c.field)}</span>
-            <span class="dv-comment-time">· ${esc(letters)} · ${esc(c.canon_result)}</span>
-          </div>
-          <p class="dv-comment-text">${esc(commentText(c))}</p>
-        </div>
-      </li>`;
-  }).join('');
-  return `
-    <section class="dv-consensus-notes" aria-label="Consensus notes">
-      <header class="dv-comments-head">
-        <h2 class="dv-comments-title">Consensus</h2>
-        <span class="dv-comments-count">${arrived} arrived</span>
-        <span class="dv-consensus-badge">${badge}</span>
-      </header>
-      <p class="dv-consensus-lede">Read-only. Independent checks A|B (Prajna, Agriya — maintainers). SAT sample only. Discussion: <a href="${LETI_DISCORD}" target="_blank" rel="noopener noreferrer">LETI on Discord</a>.</p>
-      <ul class="dv-comment-list">${items}</ul>
-    </section>`;
-}
-
 function decorateFieldRow(el, cell) {
-  if (el.closest('.cv-consensus-field')) return;
+  if (el.closest('.cv-check-field')) return;
   const wrap = document.createElement('details');
-  wrap.className = `cv-consensus-field ${rowClass(cell)}`;
-  wrap.setAttribute('data-cv-field', el.getAttribute('data-cv-field') || '');
+  wrap.className = 'cv-check-field';
   const summary = document.createElement('summary');
-  summary.className = 'cv-consensus-summary';
-  const chips = document.createElement('span');
-  chips.className = 'cv-letters';
-  chips.innerHTML = letterChips(contributionsForCell(cell));
+  summary.className = 'cv-check-summary';
   el.parentNode.insertBefore(wrap, el);
   summary.appendChild(el);
-  summary.appendChild(chips);
   wrap.appendChild(summary);
-  wrap.insertAdjacentHTML('beforeend', stripHTML(cell));
+  wrap.insertAdjacentHTML('beforeend', expandHTML(cell));
 }
 
 function annotateCaseVolume(container, cells) {
   const byField = Object.fromEntries(cells.map((c) => [c.field, c]));
   container.querySelectorAll('.cv-rows > [data-cv-field]').forEach((el) => {
-    if (el.closest('.cv-consensus-field')) return;
-    const field = el.getAttribute('data-cv-field');
-    const cell = byField[field];
+    if (el.closest('.cv-check-field')) return;
+    const cell = byField[el.getAttribute('data-cv-field')];
     if (!cell) return;
     decorateFieldRow(el, cell);
   });
@@ -233,12 +255,9 @@ export function mountConsensusNotes(container, entityId) {
     const cells = cellsForEntity(dash, entityId);
     if (!cells.length) return;
     annotateCaseVolume(container, cells);
-    const host = container.querySelector('.dv-tab-activity .dv-comments')
-      || container.querySelector('.dv-comments');
+    const host = container.querySelector('[data-consensus-host]');
     if (!host) return;
-    if (host.previousElementSibling?.classList.contains('dv-consensus-notes')) {
-      host.previousElementSibling.remove();
-    }
-    host.insertAdjacentHTML('beforebegin', tocHTML(cells, dash));
+    host.querySelector('.dv-check-notes')?.remove();
+    host.insertAdjacentHTML('beforeend', notesHTML(cells));
   });
 }

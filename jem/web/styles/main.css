@@ -6482,64 +6482,28 @@ body[data-app-view="prompts"] #zoom-controls { display: none !important; }
   overflow-wrap: anywhere;
 }
 
-/* ── Consensus notes (sample: SAT) ───────────────────────────────────────── */
-.dv-consensus-notes {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid #e5e7eb;
+/* ── Figure checks (sample: SAT) ────────────────────────────────────────── */
+.dv-check-notes {
+  margin-top: 16px;
   max-width: 720px;
 }
-.dv-consensus-lede {
-  font-size: 12px;
-  color: #6b7280;
-  margin: 0 0 12px;
+.dv-check-notes > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
 }
-.dv-consensus-badge {
-  font-size: 10px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #b03a2e;
-  background: #fdecea;
-  padding: 2px 8px;
-  border-radius: 3px;
+.dv-check-lede {
+  font-size: 13px;
+  color: #4b5563;
+  margin: 8px 0;
 }
-.dv-consensus-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  background: #e8f5ee;
-  color: #1b7a5a;
-  font-weight: 700;
+.dv-check-list {
+  margin: 0 0 8px;
+  padding-left: 1.2em;
+  font-size: 14px;
+  line-height: 1.45;
 }
-.dv-comment.consensus-arrived,
-.detail-row.consensus-arrived {
-  background: #e8f5ee;
-  border-color: #b7ddc8;
-}
-.detail-row.consensus-arrived {
-  border-left: 3px solid #1b7a5a;
-  padding-left: 8px;
-  border-radius: 4px;
-}
-.dv-comment.consensus-pending,
-.detail-row.consensus-pending {
-  background: #f8f1e7;
-  border-color: #e6d3b3;
-}
-.dv-comment.consensus-dropped,
-.detail-row.consensus-dropped {
-  background: #fdecea;
-  border-color: #f0c4bf;
-}
-.dv-comment.consensus-gap,
-.detail-row.consensus-gap {
-  background: #f3f4f6;
-  border-color: #e5e7eb;
-}
+.dv-check-list li { margin: 4px 0; }
 
 .eng-kicker { font-size: 13px; margin: 0; padding: 8px 16px; }
 .eng-frame-wrap {
@@ -6598,60 +6562,19 @@ body[data-app-view="prompts"] #zoom-controls { display: none !important; }
   margin: 8px 0 24px;
 }
 
-.cv-consensus-field {
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  margin: 6px 0;
-  background: #fff;
+.cv-check-field {
+  margin: 2px 0;
 }
-.cv-consensus-field > summary {
-  list-style: none;
+.cv-check-field > summary {
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 4px 8px;
 }
-.cv-consensus-field > summary::-webkit-details-marker { display: none; }
-.cv-consensus-field .detail-row { flex: 1; border: 0; }
-.cv-letters { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
-.cv-letter {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  background: #e8eef3;
-  color: #2c5f7c;
-  font-size: 11px;
-  font-weight: 700;
+.cv-check-body {
+  padding: 4px 8px 10px 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1f2937;
 }
-.cv-letter-sep { color: #9ca3af; font-size: 11px; }
-.cv-ab-strip { padding: 8px 10px 12px; border-top: 1px solid #e5e7eb; }
-.cv-ab-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.cv-ab-col {
-  flex: 1 1 140px;
-  min-width: 120px;
-  background: #f8f6f2;
-  padding: 8px;
-  border-radius: 4px;
-}
-.cv-ab-letter { font-weight: 700; color: #2c5f7c; }
-.cv-ab-role, .cv-ab-credit { font-size: 11px; color: #6b7280; }
-.cv-ab-verdict { font-size: 13px; font-weight: 600; }
-.cv-ab-value { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; }
-.cv-ab-outcome { font-size: 12px; color: #4b5563; margin: 8px 0 4px; }
-.cv-ab-history { font-size: 12px; margin-top: 6px; }
-.cv-ab-history table { width: 100%; border-collapse: collapse; }
-.cv-ab-history th, .cv-ab-history td {
-  text-align: left; padding: 3px 4px; border-bottom: 1px solid #eee; vertical-align: top;
-}
-@media (max-width: 640px) {
-  .cv-ab-grid { flex-direction: column; }
-}
+.cv-check-body p { margin: 0 0 6px; }
+.cv-check-files { font-size: 12px; color: #6b7280; margin-top: 4px; }
+.cv-check-files ul { margin: 4px 0 0; padding-left: 1.1em; }
+.cv-check-file { font-family: ui-monospace, Menlo, Consolas, monospace; }
