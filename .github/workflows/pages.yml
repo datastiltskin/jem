@@ -42,8 +42,9 @@ jobs:
           test -f docs/index.html
           test -f docs/.nojekyll
           test -f docs/diagrams/orchestration.gif
-          grep -q 'src="diagrams/orchestration.gif"' docs/index.html
-          ! grep -q '../diagrams/' docs/index.html
+          # -F: literal match. Unescaped '.' also hits prose such as jem/ledger/diagrams/.
+          grep -qF 'src="diagrams/orchestration.gif"' docs/index.html
+          ! grep -qF '../diagrams/' docs/index.html
 
       - uses: actions/configure-pages@v5
 
