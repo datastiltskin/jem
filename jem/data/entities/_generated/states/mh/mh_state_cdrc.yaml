@@ -25,13 +25,9 @@ sources:
   url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   data_as_of: '2024-12-01'
-  pending_cases: 32000
+  pending_cases: null
   filed_last_year: 8500
   disposed_last_year: 7200
   avg_disposal_days: 730
@@ -39,12 +35,17 @@ case_volume:
   source_type: DoJ_Report
   disposal_rate: 0.8471
   clog_severity: high
-data_quality_notes: NJDG snapshot case_volume merged v1.2 judge_strength stub attached
+data_quality_notes: 'NJDG snapshot case_volume merged v1.2 judge_strength stub attached |
+  verify-trib-01: NJDG source stamp stripped (non-eCourts body). | verify-trib-01: pending_cases
+  nulled (contamination); replacement held for expert review.'
 judge_strength:
   data_as_of: null
   allotted: null
   appointed: null
   source_type: DoJ_Report
   source_url: https://doj.gov.in/
-  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ quarterly vacancy report or NJDG
-    bench strength.
+  notes: Allotted = sanctioned posts; appointed = working judges in post. Populate from DoJ
+    quarterly vacancy report or NJDG bench strength.
+unverified_fields:
+- field: case_volume.pending_cases
+  note: 'Figure withdrawn: no surviving primary after NJDG strip.'

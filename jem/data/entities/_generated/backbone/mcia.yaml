@@ -35,15 +35,17 @@ audit:
   audit_report_public: false
 complaint_mechanism:
   lokpal_jurisdiction: Not_Applicable
-  removal_mechanism: 'Arbitrator challenge under MCIA Rules 2016 Rule 14. Award challenge under A&C Act 1996 s.34 in Bombay
-    High Court (default seat Mumbai).
+  removal_mechanism: 'Arbitrator challenge under MCIA Rules 2016 Rule 14. Award challenge
+    under A&C Act 1996 s.34 in Bombay High Court (default seat Mumbai).
 
     '
-data_quality: verified
-data_quality_notes: Private (non-statutory) arbitration institution — distinct from IIAC (statutory body of national
-  importance). MCIA Arbitration Rules effective 15 Jun 2016; MCIA Rules 2025 issued. Centre officially inaugurated 8 Oct
-  2016. Incorporated as an independent not-for-profit organisation. AwardChallengedIn → hc_bombay in
-  adr_arbitration_relationships.yaml. NJDG snapshot case_volume merged
+data_quality: partial
+data_quality_notes: 'Private (non-statutory) arbitration institution — distinct from IIAC
+  (statutory body of national importance). MCIA Arbitration Rules effective 15 Jun 2016; MCIA
+  Rules 2025 issued. Centre officially inaugurated 8 Oct 2016. Incorporated as an independent
+  not-for-profit organisation. AwardChallengedIn → hc_bombay in adr_arbitration_relationships.yaml.
+  NJDG snapshot case_volume merged | verify-trib-01: NJDG source stamp stripped (non-eCourts
+  body).'
 sources:
 - label: MCIA About Us
   url: https://mcia.org.in/about.php
@@ -57,9 +59,5 @@ sources:
   url: https://www.indiacode.nic.in/bitstream/123456789/21922/1/the_arbitration_and_conciliation_act%2C_1996_act_no._26_of_1996.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   clog_severity: unknown

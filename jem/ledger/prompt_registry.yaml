@@ -26,7 +26,9 @@ prompts:
     created: '2026-08-20'
     superseded_by: null
     revision_trigger: null
-    linked_run_ids: []          # populate as Prajna/Agriya runs land
+    linked_run_ids:
+      - deepseek__verify-trib-01__prajna__20260831_131656
+      - codex__verify-trib-01__agriya__20260906_042259
 
   - prompt_id: rater-card-agriya-codex
     version: v1
@@ -36,8 +38,12 @@ prompts:
     status: active
     created: '2026-08-20'
     superseded_by: null
-    revision_trigger: null
-    linked_run_ids: []
+    revision_trigger: >
+      2026-09-06 Agriya email: run is for pipeline exercise, not blinded
+      calibration (peer summary exposed; model/settings metadata unavailable).
+      See ledger/comments/agriya_20260906_handoff.md.
+    linked_run_ids:
+      - codex__verify-trib-01__agriya__20260906_042259
 
   - prompt_id: rater-card-prajna-deepseek
     version: v1
@@ -46,6 +52,76 @@ prompts:
     path: ledger/prompts/prajna_deepseek_card.md
     status: active
     created: '2026-08-20'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids:
+      - deepseek__verify-trib-01__prajna__20260831_131656
+
+  - prompt_id: inter-model-consensus
+    version: v1
+    track: verification
+    purpose: >
+      Deterministic join of independent rater CSVs (agreement × diversity).
+      Writes ledger/runs/inter-model__*.jsonl. Never promotes this sample.
+    path: scripts/harness/inter_model.py
+    status: active
+    created: '2026-09-06'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids:
+      - inter-model__verify-trib-01__dso__20260906T122024Z
+
+  - prompt_id: apply-consensus-verify-trib-01
+    version: v1
+    track: verification
+    purpose: >
+      Maintainer apply of verify-trib-01: decision-gate, 140 ledger events,
+      unambiguous canon writes, value_history projection, consensus dashboard,
+      DAKSH/TrustBridge expert packets. Pipeline exercise — not blinded calibration.
+    path: ledger/prompts/dispatch/apply_consensus_verify_trib_01.md
+    status: active
+    created: '2026-09-08'
+    superseded_by: null
+    revision_trigger: >
+      Agriya 2026-09-06: not eligible for blinded calibration (peer summary
+      exposed; incomplete model/settings metadata). SAT FY25-26 both-re-derived
+      figures are the only numeric promotion this round.
+    linked_run_ids:
+      - verify-trib-01-apply-20260908
+
+  - prompt_id: consensus-dashboard
+    version: v1
+    track: infrastructure
+    purpose: Derived friedso-renderable consensus dashboard JSON + static HTML.
+    path: scripts/harness/consensus_dashboard.py
+    dashboard: ledger/dashboard/consensus.html
+    status: active
+    created: '2026-09-08'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids:
+      - verify-trib-01-apply-20260908
+
+  - prompt_id: expert-packet-daksh
+    version: v1
+    track: verification
+    purpose: Plain-language tribunal contested-cell workbook for DAKSH reviewers.
+    path: scripts/harness/expert_packets.py
+    status: active
+    created: '2026-09-08'
+    superseded_by: null
+    revision_trigger: null
+    linked_run_ids: []
+
+  - prompt_id: expert-packet-trustbridge
+    version: v1
+    track: verification
+    purpose: >
+      SEBI/CCI/TNERC/MERC/PNGRB/SAT/APTEL workbook plus IFSCA suggested-gap
+      row. Overlap with DAKSH is deliberate. Ingest org tag = trustbridge.
+    path: scripts/harness/expert_packets.py
+    status: active
+    created: '2026-09-08'
     superseded_by: null
     revision_trigger: null
     linked_run_ids: []

@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Date: Sun, 06 Sep 2026 04:04:17 GMT
+Content-Type: application/pdf
+Content-Length: 802100
+Connection: keep-alive
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Last-Modified: Wed, 05 Aug 2026 10:20:39 GMT
+Accept-Ranges: bytes
+Cache-Control: no-cache, no-store, must-revalidate
+Expires: Tue, 06 Oct 2026 04:04:17 GMT
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: no-referrer-when-downgrade
+Strict-Transport-Security: max-age=631138519; includeSubDomains
+Pragma: no-cache
+Vary: User-Agent
+

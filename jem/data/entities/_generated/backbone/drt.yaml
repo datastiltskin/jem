@@ -16,9 +16,11 @@ jurisdiction_scope:
 created_year: 1993
 operational_status: Active
 constitutional_basis: null
-statutory_basis: Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI Act), s.3–8; Securitisation and
-  Reconstruction of Financial Assets and Enforcement of Security Interest Act 2002 (SARFAESI Act), s.17 — borrower/guarantor
-  applications against secured creditors. Modelled as a single central entity; physically operates as 39 benches across India.
+statutory_basis: Recovery of Debts Due to Banks and Financial Institutions Act 1993 (RDDBFI
+  Act), s.3–8; Securitisation and Reconstruction of Financial Assets and Enforcement of Security
+  Interest Act 2002 (SARFAESI Act), s.17 — borrower/guarantor applications against secured
+  creditors. Modelled as a single central entity; physically operates as 39 benches across
+  India.
 appointment:
   nominates: ministry_of_finance
   recommends: null
@@ -41,13 +43,13 @@ audit:
   conduct_oversight_body: ministry_of_finance
 complaint_mechanism:
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: Presiding Officers treated as judicial officers; Lokpal Act 2013 excludes judicial officers per
-    Schedule exclusion.
-  removal_mechanism: Removal by Central Government on grounds of proved misbehaviour or incapacity after inquiry (RDDBFI Act
-    1993, s.7)
+  lokpal_jurisdiction_note: Presiding Officers treated as judicial officers; Lokpal Act 2013
+    excludes judicial officers per Schedule exclusion.
+  removal_mechanism: Removal by Central Government on grounds of proved misbehaviour or incapacity
+    after inquiry (RDDBFI Act 1993, s.7)
 case_volume:
   data_as_of: '2024-12-01'
-  pending_cases: 195000
+  pending_cases: null
   source_url: https://drt.gov.in/
   source_type: Tribunal_Report
   clog_severity: unknown
@@ -57,13 +59,16 @@ judge_strength:
   appointed: null
   source_type: DoJ_Report
   source_url: https://drt.gov.in/
-  notes: 39 benches operational across India as of public records; each bench has one Presiding Officer. Exact sanctioned
-    vs working strength not verified at authoring time.
+  notes: 39 benches operational across India as of public records; each bench has one Presiding
+    Officer. Exact sanctioned vs working strength not verified at authoring time.
 data_quality: partial
-data_quality_notes: Entity models the DRT system as a single central entity (39 DRTs, 5 DRATs per DFS); graph has 26 regional
-  DRT bench entities (incl. Jabalpur) — ~13 benches still missing per financialservices.gov.in/drt-drat (e.g. Amravati,
-  Bhopal, Indore, Jammu, Jodhpur, Ludhiana, Raipur, Sambalpur, Surat, Thiruvananthapuram, Varanasi). Known incomplete
-  lattice — self-disclosed. Ministry id ministry_of_finance. NJDG snapshot case_volume merged v1.2 judge_strength stub attached
+data_quality_notes: 'Entity models the DRT system as a single central entity (39 DRTs, 5 DRATs
+  per DFS); graph has 26 regional DRT bench entities (incl. Jabalpur) — ~13 benches still
+  missing per financialservices.gov.in/drt-drat (e.g. Amravati, Bhopal, Indore, Jammu, Jodhpur,
+  Ludhiana, Raipur, Sambalpur, Surat, Thiruvananthapuram, Varanasi). Known incomplete lattice
+  — self-disclosed. Ministry id ministry_of_finance. NJDG snapshot case_volume merged v1.2
+  judge_strength stub attached | verify-trib-01: NJDG source stamp stripped (non-eCourts body).
+  | verify-trib-01: pending_cases nulled (contamination); replacement held for expert review.'
 sources:
 - label: DFS — 39 DRTs and 5 DRATs
   url: https://financialservices.gov.in/drt-drat
@@ -81,7 +86,6 @@ sources:
   url: https://dfs.gov.in/financial-institutions/drt
   type: GoIWebsite
   accessed_date: '2025-01-15'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
+unverified_fields:
+- field: case_volume.pending_cases
+  note: 'Figure withdrawn: no surviving primary after NJDG strip.'

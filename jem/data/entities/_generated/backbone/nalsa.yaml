@@ -34,17 +34,17 @@ audit:
   audit_report_public: true
 complaint_mechanism:
   lokpal_jurisdiction: Not_Applicable
-  removal_mechanism: 'Executive Chairman removal follows SC judge administrative norms. No specific statutory removal mechanism
-    for NALSA leadership.
+  removal_mechanism: 'Executive Chairman removal follows SC judge administrative norms. No
+    specific statutory removal mechanism for NALSA leadership.
 
     '
 data_quality: partial
-data_quality_notes: >-
-  created_year 1995 (operational); LSA Act 1987 is statute date. SC-led governance — Patron-in-Chief
-  CJI (ex officio); Executive Chairman is senior-most SC judge designated by CJI (not executive
-  appointment). President issues formal notification only. IR scoring excludes executive +3 per QA
-  sprint Jun 2026. Designates → lok_adalat_generic in adr_arbitration_relationships.yaml.
-  ministry_responsible ministry_law_justice. NJDG snapshot case_volume merged
+data_quality_notes: 'created_year 1995 (operational); LSA Act 1987 is statute date. SC-led
+  governance — Patron-in-Chief CJI (ex officio); Executive Chairman is senior-most SC judge
+  designated by CJI (not executive appointment). President issues formal notification only.
+  IR scoring excludes executive +3 per QA sprint Jun 2026. Designates → lok_adalat_generic
+  in adr_arbitration_relationships.yaml. ministry_responsible ministry_law_justice. NJDG snapshot
+  case_volume merged | verify-trib-01: NJDG source stamp stripped (non-eCourts body).'
 sources:
 - label: Legal Services Authorities Act 1987 — India Code
   url: https://www.indiacode.nic.in/bitstream/123456789/19023/1/legal_service_authorities_act%2C_1987.pdf
@@ -54,9 +54,5 @@ sources:
   url: https://nalsa.gov.in
   type: GoIWebsite
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   clog_severity: unknown

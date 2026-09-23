@@ -16,8 +16,9 @@ jurisdiction_scope:
 created_year: 2000
 operational_status: Active
 constitutional_basis: null
-statutory_basis: Telecom Regulatory Authority of India Act 1997, s.14–18 (as amended by TRAI (Amendment) Act 2000); Broadcasting
-  disputes under same Act (s.14(a)(ii)); internet and other telecom services included via DoT policy directions.
+statutory_basis: Telecom Regulatory Authority of India Act 1997, s.14–18 (as amended by TRAI
+  (Amendment) Act 2000); Broadcasting disputes under same Act (s.14(a)(ii)); internet and
+  other telecom services included via DoT policy directions.
 appointment:
   nominates: ministry_communications
   recommends: null
@@ -41,7 +42,8 @@ audit:
 complaint_mechanism:
   lokpal_jurisdiction: 'No'
   lokpal_jurisdiction_note: Judicial members; Lokpal Act 2013 excludes judicial officers.
-  removal_mechanism: Central Government removal on grounds of misbehaviour after inquiry (TRAI Act 1997, s.17)
+  removal_mechanism: Central Government removal on grounds of misbehaviour after inquiry (TRAI
+    Act 1997, s.17)
 case_volume:
   clog_severity: unknown
 judge_strength:
@@ -52,9 +54,10 @@ judge_strength:
   source_url: https://tdsat.gov.in/
   notes: Strength set by Central Government; exact current figures not verified.
 data_quality: partial
-data_quality_notes: Entity created from statutory sources. ministry_communications entity id assumed present in graph — flag
-  if absent and use correct id. Case volume and judge strength left partial pending official data. NJDG snapshot case_volume
-  merged v1.2 judge_strength stub attached
+data_quality_notes: 'Entity created from statutory sources. ministry_communications entity
+  id assumed present in graph — flag if absent and use correct id. Case volume and judge strength
+  left partial pending official data. NJDG snapshot case_volume merged v1.2 judge_strength
+  stub attached | verify-trib-01: NJDG source stamp stripped (non-eCourts body).'
 sources:
 - label: TRAI Act 1997, s.14 — establishment and jurisdiction of TDSAT
   url: https://www.indiacode.nic.in/bitstream/123456789/1929/1/a199724.pdf
@@ -64,7 +67,3 @@ sources:
   url: https://tdsat.gov.in
   type: GoIWebsite
   accessed_date: '2025-01-15'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'

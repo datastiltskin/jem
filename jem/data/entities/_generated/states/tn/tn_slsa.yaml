@@ -16,9 +16,9 @@ jurisdiction_scope:
   - Special
 created_year: 1997
 operational_status: Active
-statutory_basis: Legal Services Authorities Act, 1987 (Central Act 39 of 1987), s.6; constituted via G.O.Ms.No. 1577 Home
-  (Cts.IV) dated 29.10.1997, effective 01.11.1997. Tamil Nadu State Legal Services Authority Rules, 1997 framed under s.28
-  of the Act.
+statutory_basis: Legal Services Authorities Act, 1987 (Central Act 39 of 1987), s.6; constituted
+  via G.O.Ms.No. 1577 Home (Cts.IV) dated 29.10.1997, effective 01.11.1997. Tamil Nadu State
+  Legal Services Authority Rules, 1997 framed under s.28 of the Act.
 appointment:
   nominates: hc_madras
   formally_appoints: hc_madras
@@ -40,11 +40,13 @@ audit:
   audit_report_public: true
 complaint_mechanism:
   lokpal_jurisdiction: Not_Applicable
-data_quality: verified
-data_quality_notes: Constituted by G.O.Ms.No. 1577 Home (Cts.IV) dt. 29.10.1997; operational from 01.11.1997. Absorbed staff
-  of erstwhile Tamil Nadu State Legal Aid and Advice Board (notified in TN Govt. Gazette 04.12.1976). Confirmed on official
-  TNSLSA/NALSA pages and corroborated by Madras HC judgment (Indian Kanoon doc/304712, 21 Nov 2006). ReportsTo → nalsa in
-  adr_arbitration_relationships.yaml. NJDG snapshot case_volume merged
+data_quality: partial
+data_quality_notes: 'Constituted by G.O.Ms.No. 1577 Home (Cts.IV) dt. 29.10.1997; operational
+  from 01.11.1997. Absorbed staff of erstwhile Tamil Nadu State Legal Aid and Advice Board
+  (notified in TN Govt. Gazette 04.12.1976). Confirmed on official TNSLSA/NALSA pages and
+  corroborated by Madras HC judgment (Indian Kanoon doc/304712, 21 Nov 2006). ReportsTo →
+  nalsa in adr_arbitration_relationships.yaml. NJDG snapshot case_volume merged | verify-trib-01:
+  NJDG source stamp stripped (non-eCourts body).'
 sources:
 - label: TNSLSA Introduction — NALSA portal
   url: https://tamilnadu.nalsa.gov.in/introduction/
@@ -58,9 +60,5 @@ sources:
   url: https://www.indiacode.nic.in/bitstream/123456789/19023/1/legal_service_authorities_act%2C_1987.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   clog_severity: unknown

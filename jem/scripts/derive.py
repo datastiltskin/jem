@@ -654,6 +654,22 @@ if __name__ == "__main__":
     save_entity_counts(counts, data_dir / "derived" / "entity_counts.yaml")
     print_entity_counts(counts)
 
+    jem_root = script_dir.parent
+    try:
+        from harness.events import load_events, project_value_history
+        from harness.consensus_dashboard import emit_dashboard
+        history = project_value_history(load_events(jem_root / "ledger" / "events"))
+        vh_path = data_dir / "derived" / "value_history.yaml"
+        vh_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(vh_path, "w", encoding="utf-8") as fh:
+            yaml.dump({"value_history": history}, fh, default_flow_style=False,
+                      allow_unicode=True, sort_keys=False)
+        print(f"  Saved value_history ({sum(len(f) for f in history.values())} field-paths) to {vh_path}")
+        dash = emit_dashboard(jem_root)
+        print(f"  Saved consensus dashboard to {dash}")
+    except Exception as exc:
+        print(f"  INFO: value_history / dashboard skipped: {exc}")
+
     high_ir = [(eid, r) for eid, r in results.items() if r['independence_risk_level'] in ('high', 'severe')]
     not_constituted = [(eid, r) for eid, r in results.items() if r['independence_risk_score'] >= 3 and 'regulatory vacuum' in str(r.get('independence_risk_breakdown', {}))]
 
