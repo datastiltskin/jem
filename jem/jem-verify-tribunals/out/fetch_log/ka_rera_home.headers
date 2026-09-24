@@ -1,0 +1,9 @@
+HTTP/1.1 200 
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+Content-Type: text/html;charset=UTF-8
+Content-Language: kn
+Date: Sun, 06 Sep 2026 04:07:38 GMT
+Content-Length: 95015
+

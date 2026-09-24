@@ -70,7 +70,7 @@ TN_DISTRICTS: List[Tuple[str, str]] = [
 
 SRC = {
     "label": "India Code — Constitution & Acts",
-    "url": "https://india-code.nic.in/",
+    "url": "https://indiacode.nic.in/",
     "type": "GoIWebsite",
     "accessed_date": str(date.today()),
 }

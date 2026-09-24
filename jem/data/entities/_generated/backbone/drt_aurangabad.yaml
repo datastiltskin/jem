@@ -61,7 +61,7 @@ data_quality_notes: 'G.S.R. 909(E) dated 7 December 2000. Address and jurisdicti
   still uses Aurangabad as of last sourcing; alias added. DRAT Mumbai confirmed. v1.2 judge_strength stub attached'
 sources:
 - label: RDDBFI Act 1993 (Recovery of Debts and Bankruptcy Act)
-  url: https://india-code.nic.in/CodeofActs13/19930951.pdf
+  url: https://www.indiacode.nic.in/indiacode/bitstream/123456789/1775/1/A1993-51.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: 'S.O. 4719(E) dated 4 October 2022 — official jurisdiction table Mumbai circuit; Aurangabad address and district

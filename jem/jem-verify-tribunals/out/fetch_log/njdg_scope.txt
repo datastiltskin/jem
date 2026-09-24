@@ -1,0 +1,109 @@
+National Judicial Data Grid | National Informatics Centre | India
+Accessibility Links
+Accessibility Tools
+Color Contrast
+High Contrast
+Normal Contrast
+Highlight Links
+Invert
+Saturation
+Text Size
+Font Size Increase
+Font Size Decrease
+Normal Font
+Text Spacing
+Line Height
+Others
+Hide Images
+Big Cursor
+Ministry of Electronics and Information Technology
+Search
+Search
+Menu Toggle
+More
+Home
+About Us
+Mandate
+Ministry
+Director General
+Organization Chart
+Groups & Divisions
+GC
+HOG
+HOD
+State Coordinators
+State Informatics Officers
+Our Offices
+Data Centres
+Focus Centres
+Centres of Excellence
+State Centres
+District Centres
+Directory Search
+Offerings
+Services
+Products & Platforms
+Centre
+State
+Tenders
+GEM
+CPPP
+OM for Debarment
+Recruitment
+Media
+Blog
+Awards
+Informatics
+Brochures
+Testimonials
+Newsletter
+Timeline
+Documents
+eBook
+Connect
+Right to Information Act, 2005
+Contact Us
+Web Information Manager
+Chief Information Security Officer
+NIC-Alumni Connect
+Directory Search
+Close
+Home
+National Judicial Data Grid
+National Judicial Data Grid
+Online Repository of Case Statistics
+National Judicial Data Grid (NJDG), a ﬂagship project implemented under the aegis of the e-Committee Supreme Court of India, is a system for monitoring pendency and disposal of the cases in High Courts and Subordinate Courts. NJDG provides a comprehensive database of orders, judgements, and case details of District and Subordinate Courts and High Courts. The statistics of pendency at National, State, District and at Individual Court level is available to anyone visiting the National Judicial Data Grid portal.
+It also serves as a decision support system to the management authorities like Supreme Courts and respective High Courts, to monitor pendency on varied attributes for effective decision-making.
+Features
+NJDG provides the consolidated figures of pendency of cases in Judiciary
+Statistical data is automatically updated daily
+Pending Civil and Criminal Cases segregated into varied categories
+Information pertaining to Institution and Disposal of cases is shown
+Statistical figures are provided in drill-down manner
+Serves as National Judicial Data Warehouse
+Developed using elastic search technology
+Benefits
+Works as a monitoring tool to identify, manage & reduce pendency of cases
+Helps to provide timely inputs for making policy decisions to reduce delays in disposal of cases
+Facilitates better monitoring of court performance and thus, serves as an efficient resource management tool
+NJDG has brought huge transparency and accountability in the system by displaying complete pendency and disposal of cases across the country in public domain. NJDG has been instrumental for judicial planning, monitoring and remote administration by High Court judges, District Judges, and High Court Registry. Timely inputs from NJDG are assisting the authorities in framing policies and making decisions towards judicial governance.
+NJDG is acknowledged as innovation under the Ease of Doing Business initiative of the Government of India.
+For more details, kindly visit:
+https://njdg.ecourts.gov.in
+Useful Links
+About This Website
+Terms of use
+Website Policies
+Site Map
+Help
+Contact Us
+Feedback
+Web Information Manager
+Chief Information Security Officer
+Recruitment
+Accessibility Statement
+Content Owned and Maintained by National Informatics Centre, Ministry of Electronics & IT (MeitY) | Government of India
+Website is Designed, Developed and Hosted by National Informatics Centre, Ministry of Electronics & IT (MeitY) | Government of India
+Last Updated:
+May 27, 2026
+Follow Us

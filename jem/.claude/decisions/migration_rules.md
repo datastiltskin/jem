@@ -1,10 +1,10 @@
-# Migration Rules — Session 0 Ground Truth
+# Migration rules: Session 0 ground truth
 
 **Locked:** 2026-06-24
 
 ---
 
-## 1. Naming Rules
+## 1. Naming rules
 
 - All table and column names: `snake_case`
 - Primary keys: `id` (TEXT for domain ids, INTEGER AUTOINCREMENT for internal)
@@ -12,7 +12,7 @@
 - JSON columns: suffix `_json` for serialized arrays/objects
 - Boolean flags in SQLite: INTEGER 0/1
 
-## 2. FK Strategy
+## 2. FK strategy
 
 | Relationship | ON DELETE |
 |--------------|-----------|
@@ -22,35 +22,35 @@
 | statutory_basis_records → entities | CASCADE |
 | relationships.source/target → entities | RESTRICT |
 | staging_records | No FK to entities (raw names pre-match) |
-| vacancy_events → entities | SET NULL (preserve event if entity removed) |
+| vacancy_events → entities | SET NULL, to preserve the event if the entity is removed |
 | data_conflicts → staging_records | RESTRICT |
 
-## 3. Staging vs Target
+## 3. Staging vs target
 
 | Table | Mutability |
 |-------|------------|
-| entities, relationships | Rebuilt from graph.json on `--force`; otherwise append-only for manual edits (Session 2+) |
+| entities, relationships | Rebuilt from graph.json on `--force`, otherwise append-only for manual edits (Session 2 onwards) |
 | entity_aliases, entity_sources, jurisdictional_scope | Rebuilt with parent entity on migration |
 | staging_records | Append by fetcher; status updated by verifier/portal |
 | vacancy_events | Append-only after promotion from staging |
 | audit_log | Append-only, never update or delete |
-| data_conflicts | Insert on conflict; `resolved` flag only mutable field |
+| data_conflicts | Insert on conflict. The `resolved` flag is the only mutable field. |
 
-## 4. JSON Blob Policy
+## 4. JSON blob policy
 
-**Scalar top-level graph fields** → dedicated columns on `entities` / `relationships`.
+Scalar top-level graph fields go to dedicated columns on `entities` and `relationships`.
 
-**Normalize:**
+Normalize:
 - `aliases` → `entity_aliases`
 - `sources` → `entity_sources`
 - `jurisdiction_scope` → `jurisdictional_scope`
 
-**Store in `entity_json`** (remaining top-level keys):
+Store in `entity_json`, for the remaining top-level keys:
 `derived`, `appointment`, `funding`, `case_volume`, `judge_strength`, `appellate_health`, `structural_exception`, `structural_gap`, `structural_circularity`, `amendment_history`, `funding_source`, `funding_ministry`, `audited_by`, `audit_report_public`, `complaint_external_exists`, `appointment_criteria_public`, `reappointment_possible`, `_detail`, and any future nested fields.
 
-**Store in `relationship_json`:** `sources` and any extra relationship keys not in scalar columns.
+Store in `relationship_json`: `sources` and any extra relationship keys not in scalar columns.
 
-## 5. graph.json Field Mapping — entities
+## 5. graph.json field mapping: entities
 
 | graph.json field | Destination |
 |------------------|-------------|
@@ -73,13 +73,13 @@
 | data_quality | entities.data_quality |
 | data_quality_notes | entities.data_quality_notes |
 | unverified_fields | entities.unverified_fields_json (JSON array) |
-| position (graph) | `entity_json.canvas_position` when dict; `entities.position` when string |
+| position (graph) | `entity_json.canvas_position` when a dict, `entities.position` when a string |
 | aliases | entity_aliases |
 | sources | entity_sources |
 | jurisdiction_scope | jurisdictional_scope |
 | all other keys | entity_json |
 
-## 6. graph.json Field Mapping — relationships
+## 6. graph.json field mapping: relationships
 
 | graph.json field | Destination |
 |------------------|-------------|
@@ -109,6 +109,6 @@
 
 Create all indexes listed in `schema_lock.md` section 7 during DDL apply.
 
-## 9. WAL Mode
+## 9. WAL mode
 
 Enable `PRAGMA journal_mode=WAL` and `PRAGMA foreign_keys=ON` on every connection.

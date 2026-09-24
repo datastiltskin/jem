@@ -17,6 +17,6 @@ data_quality_notes: Collegium-recommended; President appoints. No named individu
   in JEM. Numerics (judge_strength, case_volume) not applicable to role archetypes.
 sources:
 - label: Constitution of India
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: Constitution
   accessed_date: '2026-06-24'

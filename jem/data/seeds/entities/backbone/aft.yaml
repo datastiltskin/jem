@@ -86,7 +86,7 @@ data_quality_notes: >-
 
 sources:
   - label: "Armed Forces Tribunal Act 2007 (Act 55 of 2007)"
-    url: https://india-code.nic.in/handle/123456789/2093
+    url: https://indiacode.nic.in/handle/123456789/2093
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "AFT official website"

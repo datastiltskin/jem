@@ -17,6 +17,6 @@ data_quality_notes: Distinct appointment criteria from general district judiciar
   Numerics (judge_strength, case_volume) not applicable to role archetypes.
 sources:
 - label: Family Courts Act 1984, Section 4
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: CentralAct
   accessed_date: '2026-06-24'

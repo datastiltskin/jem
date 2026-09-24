@@ -2,6 +2,7 @@ id: state_labour_court_generic
 name: State Labour Court — Generic
 abbreviation: SLC
 type: StateTribunal
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: State
 created_year: 1947
@@ -24,7 +25,7 @@ data_quality_notes: Generic scaffold. IRC 2020 notified but not in force as of J
   judge_strength stub attached
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-06-12'
 judge_strength:

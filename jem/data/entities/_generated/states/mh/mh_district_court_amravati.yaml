@@ -26,7 +26,7 @@ data_quality: partial
 data_quality_notes: Pendency and judge_strength TBD from NJDG district dashboard. NJDG snapshot case_volume merged
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
 - label: National Judicial Data Grid (NJDG)

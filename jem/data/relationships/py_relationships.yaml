@@ -12,7 +12,7 @@ relationships:
   sources:
   - &id001
     label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: py_slsa_lok
@@ -52,7 +52,7 @@ relationships:
   data_quality: partial
   sources:
   - label: RERA Act 2016 — ss.43, 58 (India Code)
-    url: https://india-code.nic.in/acts-detail/MjE2MTc=
+    url: https://www.indiacode.nic.in/bitstream/123456789/15131/1/the_real_estate_%28regulation_and_development%29_act%2C_2016.pdf
     type: CentralAct
     accessed_date: '2026-06-26'
 - id: py_district_courts_hc
@@ -231,7 +231,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 165
@@ -246,7 +246,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Advocates Act 1961
@@ -261,7 +261,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: py_py_special_courts_appealable_hc_madras
@@ -275,7 +275,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: py_hc_madras_supervise_py_special_courts
@@ -289,7 +289,7 @@ relationships:
   data_quality: partial
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
   statutory_basis: Constitution of India, Article 235
@@ -305,7 +305,7 @@ relationships:
   statutory_basis: Electricity Act 2003
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'
 - id: py_serc_py_aptel
@@ -320,6 +320,6 @@ relationships:
   statutory_basis: Electricity Act 2003
   sources:
   - label: India Code — Constitution & Acts
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-15'

@@ -16,10 +16,51 @@ import sys
 import os
 import json
 import argparse
+import shutil
+import subprocess
 import yaml
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
+
+_SCRIPT_DIR = Path(__file__).parent
+if str(_SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPT_DIR))
+from derive import is_scores_excluded
+from classification import classify_entity, TYPE_CLASSIFICATION
+
+
+def _classifiable(entity: Dict[str, Any]) -> bool:
+    """Guard so an unmapped type degrades the UI badge rather than the build.
+    validate.py is the gate that makes this condition impossible in CI."""
+    return bool(entity.get("classification_override")) or entity.get("type") in TYPE_CLASSIFICATION
+
+
+def resolve_release_version(cli_version: Optional[str] = None) -> str:
+    """Resolve semver string for graph.json meta.version.
+
+    Priority: --version CLI > RELEASE_VERSION env > exact git tag > 'dev'.
+    Strips a leading 'v' so tags like v1.0.0 become 1.0.0 in meta.
+    """
+    if cli_version:
+        return cli_version.lstrip("v")
+
+    env_version = os.environ.get("RELEASE_VERSION")
+    if env_version:
+        return env_version.lstrip("v")
+
+    try:
+        tag = subprocess.check_output(
+            ["git", "describe", "--tags", "--exact-match"],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+        if tag:
+            return tag.lstrip("v")
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
+
+    return os.environ.get("JEM_DEV_VERSION", "dev")
 
 # ── Layout Engine ─────────────────────────────────────────────────────────────
 # Level 0: fixed 4×4 cluster grid (see CLUSTER_GRID).
@@ -249,6 +290,51 @@ def load_derived_scores(data_dir: Path) -> Dict[str, Dict]:
     return {}
 
 
+def load_entity_counts(data_dir: Path) -> Dict:
+    """Load the derived two-axis counts. Never recount here — a second
+    implementation of counting is a second answer waiting to disagree."""
+    counts_path = data_dir / "derived" / "entity_counts.yaml"
+    if not counts_path.exists():
+        print("  INFO: No entity_counts.yaml found. Run scripts/derive.py first.")
+        return {}
+    data = load_yaml_file(counts_path)
+    if data and isinstance(data, dict):
+        return data.get('entity_counts', {})
+    return {}
+
+
+def snapshot_previous_graph(output_path: Path) -> Optional[str]:
+    """Before overwriting repo-root graph.json, keep only the previous file.
+
+    Writes graph.previous.json, replacing the older previous copy.
+    Staging --output paths are not snapshotted.
+    """
+    repo_root = Path(__file__).resolve().parent.parent.parent
+    canonical = (repo_root / "graph.json").resolve()
+    try:
+        target = output_path.resolve()
+    except OSError:
+        return None
+    if target != canonical or not output_path.is_file():
+        return None
+    snap_name = "graph.previous.json"
+    snap = repo_root / snap_name
+    shutil.copy2(output_path, snap)
+    print(f"  Kept previous graph → {snap_name}")
+    return snap_name
+
+
+def load_value_history(data_dir: Path) -> Dict:
+    """Derived projection. friedso keys on (entity_id, field_path)."""
+    path = data_dir / "derived" / "value_history.yaml"
+    if not path.exists():
+        return {}
+    data = load_yaml_file(path)
+    if data and isinstance(data, dict):
+        return data.get("value_history", {})
+    return {}
+
+
 # ── Timeline Events ───────────────────────────────────────────────────────────
 
 TIMELINE_EVENTS = [
@@ -287,8 +373,15 @@ TIMELINE_EVENTS = [
 def compute_impact_metrics(entities: List[Dict], scores: Dict[str, Dict]) -> Dict:
     # Exclude placeholder nodes that exist only to render relationship endpoints.
     real_entities = [e for e in entities if not e.get("_placeholder")]
-    high_ir = sum(1 for eid, s in scores.items()
-                  if s.get('independence_risk_level') in ('high', 'severe'))
+    entity_by_id = {e.get("id"): e for e in real_entities if e.get("id")}
+    eligible_ids = {
+        eid for eid, ent in entity_by_id.items() if not is_scores_excluded(ent)
+    }
+    high_ir = sum(
+        1 for eid, s in scores.items()
+        if eid in eligible_ids
+        and s.get('independence_risk_level') in ('high', 'severe')
+    )
 
     # Appointer == funder == removal authority
     appointer_funder_same = 0
@@ -386,7 +479,12 @@ def add_placeholder_entities_for_relationships(entities: List[Dict], relationshi
 
 # ── Main Build ────────────────────────────────────────────────────────────────
 
-def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False):
+def build_graph_json(
+    data_dir: Path,
+    output_path: Path,
+    no_derive: bool = False,
+    release_version: Optional[str] = None,
+):
     print("\nJEM Build")
     print(f"{'='*50}")
 
@@ -417,6 +515,8 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
     print("\nStep 4: Loading derived scores...")
     scores = load_derived_scores(data_dir)
     print(f"  Loaded scores for {len(scores)} entities")
+    value_history = load_value_history(data_dir)
+    print(f"  Loaded value_history for {len(value_history)} entities")
 
     print("\nStep 5: Merging scores into entities...")
     entity_lookup = {}
@@ -492,8 +592,12 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
             "data_quality_notes": e.get("data_quality_notes"),
             "role_layer": e.get("role_layer"),
             "role_type": e.get("role_type"),
+            "nature": (classify_entity(e)[0] if _classifiable(e) else None),
+            "function": (classify_entity(e)[1] if _classifiable(e) else None),
+            "is_generic_rollup": bool(e.get("is_generic_rollup", False)),
             "unverified_fields": e.get("unverified_fields", []),
             "derived": e.get("derived", {}),
+            "value_history": value_history.get(e.get("id"), {}),
             "funding_source": (e.get("funding") or {}).get("primary_source"),
             "funding_ministry": (e.get("funding") or {}).get("ministry_responsible"),
             "audited_by": (e.get("audit") or {}).get("audited_by"),
@@ -516,6 +620,8 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
                 "structural_variations": e.get("structural_variations", []),
                 "unverified_fields": e.get("unverified_fields", []),
                 "jurisdiction_scope": e.get("jurisdiction_scope"),
+                "pecuniary_jurisdiction": e.get("pecuniary_jurisdiction"),
+                "report_publication": e.get("report_publication"),
                 "case_volume": e.get("case_volume"),
                 "judge_strength": e.get("judge_strength"),
                 "parent_hc": e.get("parent_hc"),
@@ -649,16 +755,25 @@ def build_graph_json(data_dir: Path, output_path: Path, no_derive: bool = False)
     print("\nStep 11: Building browse index...")
     browse_index = compute_browse_index(frontend_entities)
 
-    print("\nStep 12: Assembling final graph.json...")
+    version = resolve_release_version(release_version)
+    entity_counts = load_entity_counts(data_dir)
+    previous_graph = snapshot_previous_graph(output_path)
+    print(f"\nStep 12: Assembling final graph.json (release {version})...")
     graph = {
         "meta": {
-            "version": "1.0.0",
+            "version": version,
             "generated_at": datetime.now(timezone.utc).isoformat(),
+            # entity_count is every node the graph renders, generic rollups
+            # included. entity_counts.total_countable is the corpus size for
+            # reporting, which excludes them. Different questions, both true —
+            # they are named apart so neither gets quoted as the other.
             "entity_count": len(frontend_entities),
+            "entity_counts": entity_counts,
             "relationship_count": len(frontend_relationships),
             "canvas_width": CANVAS_WIDTH,
             "canvas_height": CANVAS_HEIGHT,
             "year_range": [1950, datetime.now().year],
+            **({"previous_graph": previous_graph} if previous_graph else {}),
         },
         "impact_metrics": impact,
         "timeline_events": TIMELINE_EVENTS,
@@ -721,6 +836,8 @@ if __name__ == "__main__":
                         help="Output path for graph.json (default: <repo>/graph.json)")
     parser.add_argument("--no-derive", action="store_true",
                         help="Skip re-running derive.py (use existing scores)")
+    parser.add_argument("--version", type=str, default=None,
+                        help="Release version for meta.version (default: git tag or RELEASE_VERSION)")
     args = parser.parse_args()
 
     script_dir = Path(__file__).parent
@@ -732,4 +849,9 @@ if __name__ == "__main__":
         # Repo root: …/<repository>/graph.json when this script lives in …/<repository>/jem/scripts/
         output_path = script_dir.parent.parent / "graph.json"
 
-    build_graph_json(data_dir, output_path, no_derive=args.no_derive)
+    build_graph_json(
+        data_dir,
+        output_path,
+        no_derive=args.no_derive,
+        release_version=args.version,
+    )

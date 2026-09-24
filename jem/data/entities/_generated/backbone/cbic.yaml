@@ -58,15 +58,15 @@ data_quality_notes: >
 
 sources:
   - label: 'Central Board of Revenue Act 1963'
-    url: https://india-code.nic.in/CodeofActs13/19630054.pdf
+    url: https://www.indiacode.nic.in/bitstream/123456789/1500/2/A1963-54.pdf
     type: CentralAct
     accessed_date: '2026-06-12'
   - label: 'Customs Act 1962'
-    url: https://india-code.nic.in/CodeofActs13/19620052.pdf
+    url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
     type: CentralAct
     accessed_date: '2026-06-12'
   - label: 'CGST Act 2017 (GST framework)'
-    url: https://india-code.nic.in/CodeofActs13/20170012.pdf
+    url: https://www.indiacode.nic.in/bitstream/123456789/15689/1/A2017-12.pdf
     type: CentralAct
     accessed_date: '2026-06-12'
   - label: 'CBIC official portal'

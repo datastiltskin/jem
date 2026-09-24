@@ -24,6 +24,6 @@ data_quality_notes: >
 
 sources:
   - label: Constitution of India — Articles 74 and 75
-    url: https://www.indiacode.nic.in/handle/123456789/1
+    url: https://www.indiacode.nic.in/bitstream/123456789/19150/1/constitution_of_india.pdf
     type: Constitution
     accessed_date: "2026-05-19"

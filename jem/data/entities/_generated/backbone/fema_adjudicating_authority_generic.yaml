@@ -6,6 +6,7 @@ aliases:
   - FEMA Adjudicating Officer
   - Adjudicating Authority under FEMA
 type: RegulatoryBodyQJ
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: Central
 jurisdiction_scope:
@@ -50,7 +51,7 @@ data_quality_notes: >-
   to ATFE — same tribunal, distinct statutory gateway.
 sources:
   - label: FEMA 1999 — ss.16–18 (India Code)
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: CentralAct
     accessed_date: '2026-06-26'
   - label: Enforcement Directorate — official website

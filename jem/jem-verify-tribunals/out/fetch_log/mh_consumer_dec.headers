@@ -1,0 +1,13 @@
+HTTP/2 200 
+content-length: 761030
+accept-ranges: bytes
+last-modified: Wed, 12 Feb 2025 11:51:42 GMT
+x-rgw-object-type: Normal
+etag: "ef5e1bfd39b17ec36c475cd31b875cb5"
+x-amz-request-id: tx00000cce05541047c4a6d-006a9a92b1-163f8aed-swaas-zone1
+content-type: application/pdf
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+date: Sun, 06 Sep 2026 04:15:24 GMT
+access-control-allow-credentials: true
+access-control-allow-origin: *
+

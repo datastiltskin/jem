@@ -25,13 +25,9 @@ complaint_mechanism:
 data_quality: partial
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   data_as_of: '2024-12-01'
   source_type: AnnualReport
@@ -42,7 +38,6 @@ case_volume:
   avg_disposal_days: 730
   disposal_rate: 0.875
   clog_severity: high
-data_quality_notes: >-
-  Merged into serc_tn (canonical id). Duplicate Tamil Nadu Electricity
-  Regulatory Commission node; use serc_tn for all relationships. NJDG snapshot
-  case_volume merged on deprecated id.
+data_quality_notes: 'Merged into serc_tn (canonical id). Duplicate Tamil Nadu Electricity
+  Regulatory Commission node; use serc_tn for all relationships. NJDG snapshot case_volume
+  merged on deprecated id. | verify-trib-01: NJDG source stamp stripped (non-eCourts body).'

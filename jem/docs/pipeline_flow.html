@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How the Map Gets Built</title>
+<style>
+@font-face{
+  font-family:'Source Serif';
+  src:local('Source Serif 4'),local('Source Serif Pro'),local('Georgia');
+}
+
+:root{
+  --bg:#f5f2ea;
+  --surface:#ffffff;
+  --ink:#211f1c;
+  --muted:#6d6759;
+  --hair:#ddd6c6;
+  --accent:#2b3a67;
+  --accent-soft:#e4e8f2;
+  --accent-line:#2b3a6733;
+  --warn:#8a5a2b;
+  --warn-soft:#f3e7d8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#171614;
+    --surface:#1f1d1a;
+    --ink:#eae6dc;
+    --muted:#a49d8c;
+    --hair:#3a362e;
+    --accent:#8fa3d9;
+    --accent-soft:#242c42;
+    --accent-line:#8fa3d955;
+    --warn:#e0b27a;
+    --warn-soft:#3a2e1c;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171614;
+  --surface:#1f1d1a;
+  --ink:#eae6dc;
+  --muted:#a49d8c;
+  --hair:#3a362e;
+  --accent:#8fa3d9;
+  --accent-soft:#242c42;
+  --accent-line:#8fa3d955;
+  --warn:#e0b27a;
+  --warn-soft:#3a2e1c;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  padding:3rem 1.5rem 5rem;
+}
+.wrap{max-width:1400px;margin:0 auto;}
+
+header{margin-bottom:2.5rem;}
+.eyebrow{
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:600;
+}
+h1{
+  font-family:'Source Serif',Georgia,serif;
+  font-size:2.1rem;
+  font-weight:600;
+  line-height:1.15;
+  margin:.35rem 0 .6rem;
+  text-wrap:balance;
+}
+.dek{
+  color:var(--muted);
+  font-size:1.02rem;
+  line-height:1.55;
+  max-width:60ch;
+}
+
+.flow{
+  display:flex;
+  align-items:flex-start;
+  gap:0;
+  overflow-x:auto;
+  padding-bottom:1rem;
+  margin-bottom:.5rem;
+}
+.stage{
+  flex:0 0 auto;
+  width:230px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:.6rem;
+}
+.arrow{
+  flex:0 0 auto;
+  width:34px;
+  align-self:center;
+  margin-top:20px;
+  color:var(--hair);
+  font-size:1.3rem;
+  text-align:center;
+}
+.node{
+  flex:0 0 auto;
+  width:40px;height:40px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--surface);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Source Serif',Georgia,serif;
+  font-weight:600;
+  font-size:1.05rem;
+}
+.card{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--hair);
+  border-radius:10px;
+  padding:1rem 1.1rem;
+  min-height:230px;
+}
+.card h2{
+  font-size:1.02rem;
+  margin:0 0 .3rem;
+  font-weight:650;
+}
+.card .cmd{
+  display:inline-block;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:.8rem;
+  background:var(--accent-soft);
+  color:var(--accent);
+  padding:.15rem .5rem;
+  border-radius:5px;
+  margin-bottom:.5rem;
+}
+.card p{
+  margin:0;
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.5;
+}
+.card .out{
+  margin-top:.55rem;
+  font-size:.82rem;
+  color:var(--ink);
+}
+.card .out b{color:var(--accent);font-weight:600;}
+
+.gate{
+  margin-top:.6rem;
+  display:flex;
+  gap:.5rem;
+  flex-wrap:wrap;
+}
+.gate span{
+  font-size:.72rem;
+  background:var(--warn-soft);
+  color:var(--warn);
+  padding:.15rem .5rem;
+  border-radius:5px;
+  font-weight:600;
+}
+
+.branch-label{
+  font-size:.78rem;
+  color:var(--muted);
+  margin:0 0 .6rem;
+  font-style:italic;
+}
+
+.split{
+  margin-bottom:2.2rem;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.7rem;
+  max-width:490px;
+}
+@media(max-width:520px){.split{grid-template-columns:1fr;}}
+.split .mini{
+  background:var(--surface);
+  border:1px dashed var(--hair);
+  border-radius:9px;
+  padding:.7rem .85rem;
+}
+.split .mini h3{
+  font-size:.85rem;
+  margin:0 0 .25rem;
+}
+.split .mini p{
+  margin:0;
+  font-size:.8rem;
+  color:var(--muted);
+  line-height:1.4;
+}
+
+footer{
+  padding-top:.3rem;
+  font-size:.85rem;
+  color:var(--muted);
+  border-top:1px solid var(--hair);
+  padding-top:1rem;
+}
+footer code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  background:var(--accent-soft);
+  color:var(--accent);
+  padding:.1rem .4rem;
+  border-radius:4px;
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">JEM Data Pipeline</div>
+    <h1>How the map gets built</h1>
+    <p class="dek">One YAML file per institution, pushed through five steps to become the graph the frontend renders. Source: <code style="font-family:ui-monospace,monospace">docs/PIPELINE_FLOW.md</code> and <code style="font-family:ui-monospace,monospace">docs/SESSION_WORKFLOW.md</code>.</p>
+  </header>
+
+  <div class="flow">
+    <div class="stage">
+      <div class="node">1</div>
+      <div class="card">
+        <h2>Write the entity</h2>
+        <span class="cmd">data/entities/**/*.yaml</span>
+        <p>One file per court, tribunal, or oversight body — appointer, funder, complaint path, sources. Hand-edited, or drafted by the scrape pipeline below.</p>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="stage">
+      <div class="node">2</div>
+      <div class="card">
+        <h2>Validate</h2>
+        <span class="cmd">scripts/validate.py --strict</span>
+        <p>Pydantic schema check across every entity: required fields, valid enums, no placeholder source URLs.</p>
+        <div class="gate">
+          <span>fails → fix YAML, re-run</span>
+        </div>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="stage">
+      <div class="node">3</div>
+      <div class="card">
+        <h2>Check relationships</h2>
+        <span class="cmd">scripts/validate_graph_refs.py</span>
+        <p>Confirms every appointment / appellate / funding relationship points at an entity ID that actually exists.</p>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="stage">
+      <div class="node">4</div>
+      <div class="card">
+        <h2>Derive scores</h2>
+        <span class="cmd">scripts/derive.py</span>
+        <p>Computes independence risk, discretionary power, and structural health from each entity's structural fields — never set by hand.</p>
+        <div class="out">writes → <b>data/derived/scores.yaml</b></div>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="stage">
+      <div class="node">5</div>
+      <div class="card">
+        <h2>Build the graph</h2>
+        <span class="cmd">scripts/build.py</span>
+        <p>Merges entities + derived scores + relationships into one artifact. <code style="font-family:ui-monospace,monospace">build_safe.sh</code> writes to staging first so a bad build never clobbers production.</p>
+        <div class="out">writes → <b>graph.json</b> (repo root)</div>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="stage">
+      <div class="node">6</div>
+      <div class="card">
+        <h2>Render</h2>
+        <span class="cmd">jem/web/</span>
+        <p>Vanilla JS + D3 frontend reads <code style="font-family:ui-monospace,monospace">graph.json</code> through a symlink and draws the four semantic zoom levels — constellation, backbone, sub-entity, detail card.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="branch-label">↑ optional: scrape pipeline drafts step 1 instead of a human</div>
+  <div class="split">
+    <div class="mini">
+      <h3>batch_scrape.py</h3>
+      <p>Pass 1 (author) drafts the entity from allowlisted GoI sources. Pass 2 (skeptic) re-fetches those sources and verifies the draft independently.</p>
+    </div>
+    <div class="mini">
+      <h3>run_gate.py</h3>
+      <p>Schema, source-host allowlist, and an L4 institution check reject anything unsupported before it reaches step 2. Failures queue as <code style="font-family:ui-monospace,monospace">needs_review</code>.</p>
+    </div>
+  </div>
+
+  <footer>
+    Standard order end to end: <code>validate → edit → validate → validate_graph_refs → derive → build → commit</code>. Shortcut: <code>./scripts/safe_pipeline.sh</code>.
+  </footer>
+</div>
+</body>
+</html>

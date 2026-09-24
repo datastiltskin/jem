@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JEM prompt registry</title>
+  <style>
+    :root { --ink:#1a1a1a; --muted:#5c5852; --rule:#d8d4cc; --paper:#faf8f5;
+      --card:#fff; --orch:#2c5f7c; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink);
+      font: 15px/1.5 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+    header, nav, main, footer { max-width: 1180px; margin: 0 auto; }
+    header { padding: 2rem 1.5rem 1.2rem; border-bottom: 1px solid var(--rule); }
+    header h1 { font-size: 1.45rem; margin: 0 0 .35rem; }
+    nav { padding: .7rem 1.5rem; display: flex; gap: 1.1rem; flex-wrap: wrap;
+      border-bottom: 1px solid var(--rule); font-size: .88rem; }
+    nav a, header a { color: var(--orch); }
+    main { padding: 1.4rem 1.5rem 4rem; }
+    .lede { color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; background: var(--card); font-size: .84rem; }
+    th, td { text-align: left; vertical-align: top; padding: .5rem .55rem;
+      border-bottom: 1px solid var(--rule); }
+    th { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em;
+      color: var(--muted); background: #f3efe8; }
+    .mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .78rem; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>JEM prompt registry</h1>
+  <p class="lede">Source of truth:
+    <a class="mono" href="prompt_registry.yaml">ledger/prompt_registry.yaml</a>.
+    Git history of that file is the changelog.</p>
+</header>
+<nav>
+  <a href="index.html">Orchestration dashboard</a>
+  <a href="consensus.html">Consensus</a>
+  <a href="prompt_registry.yaml">YAML</a>
+  <a href="prompts/">Prompt files</a>
+</nav>
+<main>
+  <p class="lede">23 registered prompts. Paths under ledger/ open here; scripts/ open on GitHub.</p>
+  <table>
+    <thead><tr><th>prompt_id</th><th>Version</th><th>Track</th><th>Status</th><th>Purpose</th><th>Path</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">verify-trib</td><td>v1</td><td>verification</td><td>active</td><td>Independent verifier — checks stored case_volume + NJDG source stamps for the contaminated 44 against primary sources; emits CSV + meta.json.</td><td class="mono"><a href="prompts/verifier_prompt.md">ledger/prompts/verifier_prompt.md</a></td></tr><tr><td class="mono">rater-card-agriya-codex</td><td>v1</td><td>verification</td><td>active</td><td>Per-rater harness/context card for Agriya (Codex CLI + API).</td><td class="mono"><a href="prompts/agriya_codex_card.md">ledger/prompts/agriya_codex_card.md</a></td></tr><tr><td class="mono">rater-card-prajna-deepseek</td><td>v1</td><td>verification</td><td>active</td><td>Per-rater harness/context card for Prajna (DeepSeek API + script).</td><td class="mono"><a href="prompts/prajna_deepseek_card.md">ledger/prompts/prajna_deepseek_card.md</a></td></tr><tr><td class="mono">inter-model-consensus</td><td>v1</td><td>verification</td><td>active</td><td>Deterministic join of independent rater CSVs (agreement × diversity). Writes ledger/runs/inter-model__*.jsonl. Never promotes this sample.</td><td class="mono"><a href="https://github.com/datastiltskin/jem/blob/main/jem/scripts/harness/inter_model.py">scripts/harness/inter_model.py</a></td></tr><tr><td class="mono">apply-consensus-verify-trib-01</td><td>v1</td><td>verification</td><td>active</td><td>Maintainer apply of verify-trib-01: decision-gate, 140 ledger events, unambiguous canon writes, value_history projection, consensus dashboard, DAKSH/TrustBridge expert packets. Pipeline exercise — not blinded calibration.</td><td class="mono"><a href="prompts/dispatch/apply_consensus_verify_trib_01.md">ledger/prompts/dispatch/apply_consensus_verify_trib_01.md</a></td></tr><tr><td class="mono">consensus-dashboard</td><td>v1</td><td>infrastructure</td><td>active</td><td>Derived friedso-renderable consensus dashboard JSON + static HTML.</td><td class="mono"><a href="https://github.com/datastiltskin/jem/blob/main/jem/scripts/harness/consensus_dashboard.py">scripts/harness/consensus_dashboard.py</a></td></tr><tr><td class="mono">expert-packet-daksh</td><td>v1</td><td>verification</td><td>active</td><td>Plain-language tribunal contested-cell workbook for DAKSH reviewers.</td><td class="mono"><a href="https://github.com/datastiltskin/jem/blob/main/jem/scripts/harness/expert_packets.py">scripts/harness/expert_packets.py</a></td></tr><tr><td class="mono">expert-packet-trustbridge</td><td>v1</td><td>verification</td><td>active</td><td>SEBI/CCI/TNERC/MERC/PNGRB/SAT/APTEL workbook plus IFSCA suggested-gap row. Overlap with DAKSH is deliberate. Ingest org tag = trustbridge.</td><td class="mono"><a href="https://github.com/datastiltskin/jem/blob/main/jem/scripts/harness/expert_packets.py">scripts/harness/expert_packets.py</a></td></tr><tr><td class="mono">expert-packet-all-tribunals</td><td>v2</td><td>verification</td><td>active</td><td>All 44 verify-trib-01 bodies, row-wise (fill) plus merged consolidated (one row per body). Includes unsourced gaps. org tag = daksh.</td><td class="mono"><a href="https://github.com/datastiltskin/jem/blob/main/jem/scripts/harness/expert_packets.py">scripts/harness/expert_packets.py</a></td></tr><tr><td class="mono">expert-packet-8-selected</td><td>v2</td><td>verification</td><td>active</td><td>Eight-body pack in listed order: SEBI, IFSCA, CCI, TNERC, MERC, PNGRB, SAT, APTEL. Row-wise + consolidated. IFSCA/PNGRB gap rows included.</td><td class="mono"><a href="https://github.com/datastiltskin/jem/blob/main/jem/scripts/harness/expert_packets.py">scripts/harness/expert_packets.py</a></td></tr><tr><td class="mono">engineering-dashboard-in-jem</td><td>v1</td><td>infrastructure</td><td>active</td><td>Serve the consensus dashboard as a JEM hash route (#/engineering) linked from About. Entity-page consensus notes sampled on SAT only.</td><td class="mono"><a href="prompts/dispatch/engineering_dashboard_in_jem.md">ledger/prompts/dispatch/engineering_dashboard_in_jem.md</a></td></tr><tr><td class="mono">consensus-harness</td><td>v1</td><td>infrastructure</td><td>active</td><td>The intra-run consensus pipeline (liveness → researcher → verifier → gated critic → reconcile → ledger). Cited by all generation tracks.</td><td class="mono"><a href="prompts/02_CONSENSUS_HARNESS_SPEC.md">ledger/prompts/02_CONSENSUS_HARNESS_SPEC.md</a></td></tr><tr><td class="mono">cursor-C-commercial</td><td>v1</td><td>generation</td><td>active</td><td>TN Commercial Courts (CommercialCourt), structural-first + suggested edges.</td><td class="mono"><a href="prompts/03_CURSOR_C_commercial_courts.md">ledger/prompts/03_CURSOR_C_commercial_courts.md</a></td></tr><tr><td class="mono">cursor-K-criminal</td><td>v1</td><td>generation</td><td>active</td><td>TN judicial criminal magistracy on BNSS (CrPC retained), suggested edges.</td><td class="mono"><a href="prompts/04_CURSOR_K_criminal_magistracy.md">ledger/prompts/04_CURSOR_K_criminal_magistracy.md</a></td></tr><tr><td class="mono">cursor-N-classification</td><td>v1</td><td>refactor</td><td>active</td><td>Two-axis classification + generic-exclusion counts + independent recount.</td><td class="mono"><a href="prompts/05_CURSOR_N_classification_counting.md">ledger/prompts/05_CURSOR_N_classification_counting.md</a></td></tr><tr><td class="mono">report-publication</td><td>v1</td><td>meta-provenance</td><td>active</td><td>Does a body that should publish reports actually do so; feeds ACS.</td><td class="mono"><a href="prompts/06_CURSOR_report_publication.md">ledger/prompts/06_CURSOR_report_publication.md</a></td></tr><tr><td class="mono">public-inspection</td><td>v1</td><td>audit</td><td>active</td><td>Read-only invariant audit anyone can run; doubles as the critic rung on other models. Emits a violations report, edits nothing.</td><td class="mono"><a href="prompts/08_public_inspection_prompt.md">ledger/prompts/08_public_inspection_prompt.md</a></td></tr><tr><td class="mono">dispatch-cursor-C-commercial</td><td>v1</td><td>generation</td><td>active</td><td>Track C as dispatched: governing prompt plus the tested TN source map, the liveness-gate invocation, staging paths, and an explicit statement that a documented empty result is a successful run.</td><td class="mono"><a href="prompts/dispatch/C_track_dispatch_v1.md">ledger/prompts/dispatch/C_track_dispatch_v1.md</a></td></tr><tr><td class="mono">dispatch-cursor-K-criminal</td><td>v1</td><td>generation</td><td>active</td><td>Track K as dispatched. Same shape as the C dispatch, scoped to the judicial criminal magistracy below District &amp; Sessions level.</td><td class="mono"><a href="prompts/dispatch/K_track_dispatch_v1.md">ledger/prompts/dispatch/K_track_dispatch_v1.md</a></td></tr><tr><td class="mono">dispatch-cursor-N-recount</td><td>v1</td><td>verification</td><td>active</td><td>The independent recount verifier. Carries the independence rules that make it a check rather than a mirror: do not read or import derive.py, and do not open the counts artifact until your own numbers are recorded.</td><td class="mono"><a href="prompts/dispatch/N_recount_dispatch_v1.md">ledger/prompts/dispatch/N_recount_dispatch_v1.md</a></td></tr><tr><td class="mono">dispatch-report-publication</td><td>v1</td><td>meta-provenance</td><td>active</td><td>Report-publication as dispatched, scoped to 12 named bodies with reachable sites rather than the governing prompt&#x27;s 44. See revision_trigger.</td><td class="mono"><a href="prompts/dispatch/report_publication_dispatch_v1.md">ledger/prompts/dispatch/report_publication_dispatch_v1.md</a></td></tr><tr><td class="mono">dispatch-packet-locator</td><td>v1</td><td>infrastructure</td><td>active</td><td>Agent 0 — establish whether the orchestrator packet already exists in the repo, on a branch, or as a zip on disk. A negative finding is the correct outcome and is what stopped a fabricated run from the screenshot.</td><td class="mono"><a href="prompts/dispatch/packet_locator_dispatch_v1.md">ledger/prompts/dispatch/packet_locator_dispatch_v1.md</a></td></tr><tr><td class="mono">orchestration-run-2026-09-01</td><td>v1</td><td>infrastructure</td><td>active</td><td>The run record for the 2026-09-01 packet execution: agent roster, firing order, permission grants, per-agent workflows and handovers.</td><td class="mono"><a href="ORCHESTRATION_RUN.md">ledger/ORCHESTRATION_RUN.md</a></td></tr>
+    </tbody>
+  </table>
+</main>
+</body>
+</html>
