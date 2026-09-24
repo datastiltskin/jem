@@ -5,7 +5,6 @@ import { State } from './state.js';
 import { loadD3 } from './loadD3.js';
 import { getProfileSections } from './panel.js';
 import { balanceProfileColumns } from './profileLayout.js';
-import { commentsHTML, wireComments } from './comments.js';
 import { mountConsensusNotes } from './consensusNotes.js';
 
 const SECTION_TAB_MAP = {
@@ -1281,11 +1280,10 @@ export function renderDetailView(entityId, fromEntityId = null) {
 
       </div>
 
-      <div class="dv-tab-activity">${commentsHTML('entity:' + entity.id, { title: 'Comments' })}</div>
+      <div class="dv-tab-activity" data-consensus-host></div>
     </div>
   `;
 
-  wireComments(container);
   mountConsensusNotes(container, entity.id);
 
   // Any .detail-connection-row inside a themed widget should navigate.

@@ -16,7 +16,6 @@ import { initSmartSearch, entityDisplayName } from './smartSearch.js';
 import { renderAboutPage } from './aboutContent.js';
 import { renderEngineeringView, renderConsensusView } from './engineeringView.js';
 import { renderPromptsView } from './promptsView.js';
-import { initToolbarAuth } from './auth.js';
 import { mountMapShell } from './mapShell.js';
 import { loadD3 } from './loadD3.js';
 import { loadFuse } from './loadFuse.js';
@@ -628,7 +627,6 @@ function showBootError(err) {
 
 async function boot() {
   initChromeTopSync();
-  initToolbarAuth(document.getElementById('toolbar-auth'));
   initAboutPage();
   initMapGate();
   initDistrictLatticeHotkeys();

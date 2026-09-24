@@ -1,4 +1,4 @@
-// Shared API client + LinkedIn sign-in for corrections and toolbar chrome.
+// Shared API client. Sign-in is not shown in the map UI.
 
 let apiBasePromise = null;
 
@@ -37,25 +37,6 @@ export function apiFetch(base, path, options = {}) {
   });
 }
 
-export function linkedinLoginHref(apiBase, returnTo = window.location.href) {
-  if (!apiBase) return null;
-  try {
-    const url = new URL(
-      `${apiBase.replace(/\/$/, '')}/auth/linkedin/login`,
-      window.location.href
-    );
-    url.searchParams.set('next', returnTo);
-    return url.href;
-  } catch {
-    return null;
-  }
-}
-
-export function linkedinButtonHtml(href, { className = 'jem-linkedin-signin', compact = false } = {}) {
-  const label = compact ? 'Sign in' : 'Sign in with LinkedIn';
-  return `<a href="${href}" class="${className}" rel="noopener">${label}</a>`;
-}
-
 export async function loadAuthState() {
   const apiBase = await resolveApiBase();
   if (!apiBase) return { apiBase: null, me: null, providers: null };
@@ -75,35 +56,4 @@ export async function loadAuthState() {
 
 export async function logout(apiBase) {
   await apiFetch(apiBase, '/auth/logout', { method: 'POST' });
-}
-
-export async function initToolbarAuth(container) {
-  if (!container) return;
-  const { apiBase, me, providers } = await loadAuthState();
-  if (!apiBase || !providers?.linkedin) {
-    container.innerHTML = '';
-    container.hidden = true;
-    return;
-  }
-  container.hidden = false;
-
-  if (me) {
-    container.innerHTML = `
-      <span class="jem-auth-user" title="${me.role}">${me.display_name}</span>
-      <button type="button" class="jem-auth-logout btn-ghost">Sign out</button>
-    `;
-    container.querySelector('.jem-auth-logout')?.addEventListener('click', async () => {
-      await logout(apiBase);
-      window.location.reload();
-    });
-    return;
-  }
-
-  const href = linkedinLoginHref(apiBase);
-  if (!href) {
-    container.innerHTML = '';
-    container.hidden = true;
-    return;
-  }
-  container.innerHTML = linkedinButtonHtml(href, { compact: true });
 }
