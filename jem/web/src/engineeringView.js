@@ -24,19 +24,20 @@ const EXPLAINER = `
     <ol class="about-pipeline">
       <li><strong>Prompt</strong> — registered text. Generation (new structure) and verification (check a stored field) are different tracks.</li>
       <li><strong>Upload</strong> — email, Discord-to-PR, or a form-and-drive path. Several files may exist for one field.</li>
-      <li><strong>Join</strong> — letters A|B|C are the current checks. Same person, newer file, replaces their letter; older files stay in the timestamped list.</li>
-      <li><strong>Gate</strong> — auto-apply only when the join is unambiguous. Splits and gaps stay on the entity page.</li>
+      <li><strong>Check</strong> — each person who looks at a stored figure is recorded by name. A newer file from the same person replaces their earlier check; older files stay dated.</li>
+      <li><strong>Gate</strong> — a figure moves into the map only when the checks are clear. Disagreements stay visible on the entity page.</li>
       <li><strong>Experts</strong> — one public queue; each reply records who the expert was. Canon can move when they answer.</li>
     </ol>
   </section>
 
   <section class="about-section">
-    <h2>How to read a data-point</h2>
-    <p>Trust is decided on the <strong>entity page</strong>, on that field. Expand the row: A|B|C, verdicts, values, join result, and the files that led there. SAT is the sample. A researcher index of every cell is <a href="#/consensus">#/consensus</a>.</p>
+    <h2>How to read a figure</h2>
+    <p>On an entity page, open a number. You will see what JEM first published, who checked it, and what the map shows now. SAT is the sample. A fuller index for researchers is the <a href="#/consensus">cell index</a>.</p>
     <ul>
-      <li><strong>Example — SAT pending cases.</strong> Stored 420 looked unsourced. Two independent verifications re-read SEBI’s FY25-26 table and both got 1,066. That figure is what the map shows; the old 420 stays in history.</li>
-      <li><strong>Example — NJDG stamp.</strong> Both checks said the National Judicial Data Grid does not cover that body. The Grid listing was stripped. The disagreement (if any) remains on the row.</li>
+      <li><strong>Example — SAT pending cases.</strong> JEM first published 420 (1 Dec, 2024). Prajna Prayas re-read SEBI’s annual report and found 1,066. That is what the map shows now. The earlier figure stays in the history.</li>
+      <li><strong>Example — National Judicial Data Grid.</strong> The checks found this body is not on the Grid, so that listing was removed.</li>
     </ul>
+    <p class="about-muted">The live map is <code>graph.json</code>. The build just before it is <code>graph.previous.json</code> in the repository. Field history on the entity page is the record of each figure.</p>
   </section>
 
   <section class="about-section">

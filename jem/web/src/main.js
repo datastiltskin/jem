@@ -20,9 +20,15 @@ import { mountMapShell } from './mapShell.js';
 import { loadD3 } from './loadD3.js';
 import { loadFuse } from './loadFuse.js';
 
-const GRAPH_URL = new URLSearchParams(location.search).get('graph') === 'staging'
-  ? './public/graph.staging.json'
-  : './public/graph.json';
+function graphUrlFromQuery() {
+  const q = new URLSearchParams(location.search).get('graph');
+  if (!q || q === 'live') return './public/graph.json';
+  if (q === 'staging') return './public/graph.staging.json';
+  if (q === 'previous') return './public/graph.previous.json';
+  return './public/graph.json';
+}
+
+const GRAPH_URL = graphUrlFromQuery();
 
 /** Keep app chrome below site header + toolbar when search chips wrap to a second row. */
 function syncChromeTop() {

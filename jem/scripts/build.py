@@ -16,6 +16,7 @@ import sys
 import os
 import json
 import argparse
+import shutil
 import subprocess
 import yaml
 from pathlib import Path
@@ -300,6 +301,27 @@ def load_entity_counts(data_dir: Path) -> Dict:
     if data and isinstance(data, dict):
         return data.get('entity_counts', {})
     return {}
+
+
+def snapshot_previous_graph(output_path: Path) -> Optional[str]:
+    """Before overwriting repo-root graph.json, keep only the previous file.
+
+    Writes graph.previous.json, replacing the older previous copy.
+    Staging --output paths are not snapshotted.
+    """
+    repo_root = Path(__file__).resolve().parent.parent.parent
+    canonical = (repo_root / "graph.json").resolve()
+    try:
+        target = output_path.resolve()
+    except OSError:
+        return None
+    if target != canonical or not output_path.is_file():
+        return None
+    snap_name = "graph.previous.json"
+    snap = repo_root / snap_name
+    shutil.copy2(output_path, snap)
+    print(f"  Kept previous graph → {snap_name}")
+    return snap_name
 
 
 def load_value_history(data_dir: Path) -> Dict:
@@ -735,6 +757,7 @@ def build_graph_json(
 
     version = resolve_release_version(release_version)
     entity_counts = load_entity_counts(data_dir)
+    previous_graph = snapshot_previous_graph(output_path)
     print(f"\nStep 12: Assembling final graph.json (release {version})...")
     graph = {
         "meta": {
@@ -750,6 +773,7 @@ def build_graph_json(
             "canvas_width": CANVAS_WIDTH,
             "canvas_height": CANVAS_HEIGHT,
             "year_range": [1950, datetime.now().year],
+            **({"previous_graph": previous_graph} if previous_graph else {}),
         },
         "impact_metrics": impact,
         "timeline_events": TIMELINE_EVENTS,

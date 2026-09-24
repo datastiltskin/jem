@@ -206,7 +206,7 @@ export function aboutPageHTML(ctx = {}) {
         <li><strong>Coverage gap</strong> — ${entityCount} of ~1,500 entities mapped; state district lattices and some quasi-judicial bodies remain incomplete per the <a href="${GITHUB}/blob/main/jem/docs/ENTITY_BUILD_ROADMAP.md" target="_blank" rel="noopener noreferrer">roadmap</a></li>
         <li><strong>Score validation</strong> — independence risk and discretionary power weights are algorithmic; marked ⚐ pending community review until expert sign-off</li>
         <li><strong>NJDG merge</strong> — district-level case volume is partial; many entities await annual-report or NJDG snapshots</li>
-        <li><strong>Consensus pipeline</strong> — verify-trib-01 is a pipeline exercise. See <a href="#/engineering">Engineering</a>. Expand a field on <a href="#/entity/sat">SAT</a> for A|B. SAT only until confirmed JEM-wide.</li>
+        <li><strong>Consensus pipeline</strong> — verify-trib-01 is a pipeline exercise. See <a href="#/engineering">Engineering</a>. Open a number on <a href="#/entity/sat">SAT</a> to see what JEM first published and what later checks found. SAT only until confirmed JEM-wide.</li>
         <li><strong>QA sprint</strong> — full operational audit of all 1,500 targets is ongoing</li>
         <li><strong>Discussion</strong> — on <a href="${LETI_DISCORD}" target="_blank" rel="noopener noreferrer">LETI (Discord)</a>. Sourced corrections go through <a href="${ISSUES}" target="_blank" rel="noopener noreferrer">GitHub issues</a>.</li>
       </ul>
