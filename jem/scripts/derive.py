@@ -90,6 +90,46 @@ def excluded_score_result(entity: Dict[str, Any]) -> Tuple[int, Dict[str, int]]:
     return 0, {GOVERNANCE_EXCLUDED_MESSAGE: 0}
 
 
+
+def is_executive_body(entity_id: Any) -> bool:
+    """State government nodes follow the government_<state> id convention."""
+    return isinstance(entity_id, str) and entity_id.startswith("government_")
+
+
+# ── Structural Circularity ────────────────────────────────────────────────────
+#
+# A loop is a documented conflict of roles: the same body appoints and hears
+# the appeal, funds and litigates, regulates and is regulated, and so on.
+# Loops are declared in entity YAML under structural_circularity.loops and
+# every loop must cite a source. The score is the number of documented loops.
+# It feeds the "⟳" marker in Gaps mode. It does not change structural health.
+
+def compute_circularity(entity: Dict[str, Any]) -> Tuple[int, Dict[str, int]]:
+    if is_scores_excluded(entity):
+        return 0, {}
+    block = entity.get('structural_circularity') or {}
+    loops = block.get('loops') or [] if isinstance(block, dict) else []
+    breakdown: Dict[str, int] = {}
+    for loop in loops:
+        if not isinstance(loop, dict):
+            continue
+        loop_id = loop.get('loop_id') or f"loop_{len(breakdown) + 1}"
+        loop_type = loop.get('loop_type') or 'Unspecified'
+        breakdown[f"{loop_type}: {loop_id}"] = 1
+    return sum(breakdown.values()), breakdown
+
+
+def derive_appellate_functional(entity: Dict[str, Any]) -> Optional[bool]:
+    """True/False from appellate_health.de_facto_operational, None when not recorded."""
+    health = entity.get('appellate_health')
+    if not isinstance(health, dict):
+        return None
+    flag = health.get('de_facto_operational')
+    if isinstance(flag, bool):
+        return flag
+    return None
+
+
 # ── Independence Risk Formula ─────────────────────────────────────────────────
 #
 # Higher score = higher structural independence risk.
@@ -135,6 +175,14 @@ def compute_independence_risk(entity: Dict[str, Any]) -> Tuple[int, Dict[str, in
         'ministry_law_justice', 'ministry_of_finance', 'ministry_personnel_dopt',
         'state_government', 'state_home_department'
     ]
+
+    # Concrete state government nodes (government_maharashtra, government_kl, ...)
+    # are executive bodies too. Fold them into the list so the executive
+    # appointment and removal factors fire for state appointees.
+    if is_executive_body(formally_appoints) and formally_appoints not in EXECUTIVE_BODIES:
+        EXECUTIVE_BODIES.append(formally_appoints)
+    if is_executive_body(removal_authority) and removal_authority not in EXECUTIVE_BODIES:
+        EXECUTIVE_BODIES.append(removal_authority)
 
     # Constitutional courts are typically "collegium nominates/recommends"
     # and only then "formally appoints" via president/governor.
@@ -459,6 +507,8 @@ def derive_scores_for_all(data_dir: Path) -> Dict[str, Dict]:
             ir_score, ir_breakdown = compute_independence_risk(entity)
             dp_score, dp_breakdown = compute_discretionary_power(entity)
             sh_score, sh_level, sh_breakdown = compute_structural_health(entity, ir_score, dp_score)
+            circ_score, circ_breakdown = compute_circularity(entity)
+            appellate_functional = derive_appellate_functional(entity)
 
             results[entity_id] = {
                 "independence_risk_score": ir_score,
@@ -473,6 +523,11 @@ def derive_scores_for_all(data_dir: Path) -> Dict[str, Dict]:
                 if entity.get("derived")
                 else False,
             }
+            if circ_score:
+                results[entity_id]["circularity_score"] = circ_score
+                results[entity_id]["circularity_breakdown"] = circ_breakdown
+            if appellate_functional is not None:
+                results[entity_id]["appellate_functional"] = appellate_functional
 
     return results
 
@@ -613,6 +668,15 @@ def explain_entity(entity_id: str, data_dir: Path):
                 print("     Breakdown:")
                 for reason, pts in sorted(dp_bd.items(), key=lambda x: -x[1]):
                     print(f"       +{pts:3d}  {reason}")
+
+                circ_score, circ_bd = compute_circularity(entity)
+                if circ_score:
+                    print(f"\n  └─ STRUCTURAL CIRCULARITY: {circ_score} documented loop(s)")
+                    for reason in circ_bd:
+                        print(f"       ⟳  {reason}")
+                appellate_functional = derive_appellate_functional(entity)
+                if appellate_functional is not None:
+                    print(f"\n  └─ APPELLATE PATH FUNCTIONAL (de facto): {appellate_functional}")
                 print()
                 return
 

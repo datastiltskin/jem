@@ -1,14 +1,14 @@
 {
   "meta": {
     "version": "dev",
-    "generated_at": "2026-09-23T08:19:15.321184+00:00",
-    "entity_count": 1151,
+    "generated_at": "2026-09-24T06:20:36.074775+00:00",
+    "entity_count": 1155,
     "entity_counts": {
       "generated_by": "scripts/derive.py :: compute_entity_counts",
       "buckets": {
         "institution": {
           "judicial": 404,
-          "quasi_judicial": 436,
+          "quasi_judicial": 440,
           "support_apparatus": 226
         },
         "personnel": {
@@ -19,7 +19,7 @@
       },
       "judicial_personnel": 8,
       "judicial_institutions": 404,
-      "total_countable": 1088,
+      "total_countable": 1092,
       "generics_excluded": 64,
       "generic_ids": [
         "air_act_appellate_authority_generic",
@@ -87,7 +87,7 @@
         "water_act_appellate_authority_generic",
         "wb_district_courts_generic"
       ],
-      "total_entity_files": 1152,
+      "total_entity_files": 1156,
       "unclassified": [],
       "by_type": {
         "ADRBody": 37,
@@ -111,17 +111,17 @@
         "ProfessionalBody": 33,
         "ProsecutionBody": 5,
         "ProsecutionRole": 1,
-        "RegulatoryBodyQJ": 93,
+        "RegulatoryBodyQJ": 96,
         "SecurityBody": 3,
         "SpecialCourt": 16,
-        "StateTribunal": 20,
+        "StateTribunal": 21,
         "StatutoryBodyNotConstituted": 8,
         "SubordinateCivilCourt": 339,
         "SubordinateCriminalCourt": 1,
         "TrainingBody": 36
       }
     },
-    "relationship_count": 1806,
+    "relationship_count": 1817,
     "canvas_width": 1800,
     "canvas_height": 1200,
     "year_range": [
@@ -131,11 +131,11 @@
     "previous_graph": "graph.previous.json"
   },
   "impact_metrics": {
-    "high_independence_risk_count": 158,
+    "high_independence_risk_count": 165,
     "appointer_equals_funder_removal_count": 1,
-    "no_public_appointment_criteria_count": 73,
+    "no_public_appointment_criteria_count": 74,
     "not_constituted_count": 9,
-    "no_external_complaint_mechanism_count": 1145
+    "no_external_complaint_mechanism_count": 1148
   },
   "timeline_events": [
     {
@@ -279,8 +279,8 @@
       "id": "tribunals_adr",
       "name": "Tribunals Adr",
       "color": "#2b6cb0",
-      "entity_count": 352,
-      "avg_independence_risk": 4.1,
+      "entity_count": 353,
+      "avg_independence_risk": 4.2,
       "not_constituted_count": 0,
       "position": {
         "x": 28,
@@ -295,8 +295,8 @@
       "id": "regulatory_bodies",
       "name": "Regulatory Bodies",
       "color": "#4a235a",
-      "entity_count": 97,
-      "avg_independence_risk": 3.7,
+      "entity_count": 100,
+      "avg_independence_risk": 3.8,
       "not_constituted_count": 0,
       "position": {
         "x": 466,
@@ -424,7 +424,7 @@
       "name": "Consumer Redressal",
       "color": "#6b3480",
       "entity_count": 4,
-      "avg_independence_risk": 4.8,
+      "avg_independence_risk": 6.2,
       "not_constituted_count": 0,
       "position": {
         "x": 904,
@@ -5326,7 +5326,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 502,
+        "x": 501,
         "y": 444
       }
     },
@@ -7045,7 +7045,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 84,
+        "x": 83,
         "y": 444
       }
     },
@@ -11093,7 +11093,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 102,
+        "x": 101,
         "y": 480
       }
     },
@@ -11499,7 +11499,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 103,
+        "x": 102,
         "y": 444
       }
     },
@@ -14061,7 +14061,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 119,
+        "x": 118,
         "y": 480
       }
     },
@@ -14226,7 +14226,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 120,
+        "x": 119,
         "y": 444
       }
     },
@@ -14381,7 +14381,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 121,
+        "x": 120,
         "y": 480
       }
     },
@@ -17023,7 +17023,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 517,
+        "x": 516,
         "y": 444
       }
     },
@@ -17112,7 +17112,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 137,
+        "x": 136,
         "y": 444
       }
     },
@@ -17693,7 +17693,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 138,
+        "x": 137,
         "y": 480
       },
       "gap_flag": true,
@@ -17883,7 +17883,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 139,
+        "x": 138,
         "y": 444
       },
       "gap_flag": true,
@@ -18244,7 +18244,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 521,
+        "x": 520,
         "y": 480
       }
     },
@@ -18526,7 +18526,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 525,
+        "x": 524,
         "y": 444
       }
     },
@@ -18939,7 +18939,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 140,
+        "x": 139,
         "y": 480
       }
     },
@@ -19287,7 +19287,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 528,
+        "x": 527,
         "y": 480
       }
     },
@@ -21311,7 +21311,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 155,
+        "x": 154,
         "y": 480
       }
     },
@@ -21454,7 +21454,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 156,
+        "x": 155,
         "y": 444
       }
     },
@@ -21597,7 +21597,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 157,
+        "x": 156,
         "y": 480
       }
     },
@@ -21740,7 +21740,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 158,
+        "x": 157,
         "y": 444
       }
     },
@@ -21883,7 +21883,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 159,
+        "x": 158,
         "y": 480
       }
     },
@@ -23639,22 +23639,23 @@
         },
         "discretionary_power_score": 2,
         "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
           "Lokpal has no jurisdiction": 1,
           "No bias complaint mechanism exists": 2,
           "No independent conduct oversight body": 1
         },
-        "independence_risk_level": "moderate",
-        "independence_risk_score": 4,
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
         "scores_validated": false,
         "structural_health_breakdown": {
-          "base_health_from_ir_dp": 0.76,
+          "base_health_from_ir_dp": 0.61,
           "discretionary_power_penalty": 0.15,
-          "final_structural_health": 0.76,
-          "independence_risk_penalty": 0.3,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
           "operational_status_modifier": 1.0
         },
         "structural_health_level": "watch",
-        "structural_health_score": 0.76
+        "structural_health_score": 0.61
       },
       "value_history": {},
       "funding_source": "State_Consolidated_Fund",
@@ -24217,7 +24218,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 532,
+        "x": 531,
         "y": 444
       },
       "gap_flag": true,
@@ -24458,22 +24459,23 @@
         },
         "discretionary_power_score": 2,
         "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
           "Lokpal has no jurisdiction": 1,
           "No bias complaint mechanism exists": 2,
           "No independent conduct oversight body": 1
         },
-        "independence_risk_level": "moderate",
-        "independence_risk_score": 4,
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
         "scores_validated": false,
         "structural_health_breakdown": {
-          "base_health_from_ir_dp": 0.76,
+          "base_health_from_ir_dp": 0.61,
           "discretionary_power_penalty": 0.15,
-          "final_structural_health": 0.76,
-          "independence_risk_penalty": 0.3,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
           "operational_status_modifier": 1.0
         },
         "structural_health_level": "watch",
-        "structural_health_score": 0.76
+        "structural_health_score": 0.61
       },
       "value_history": {},
       "funding_source": "State_Consolidated_Fund",
@@ -26187,7 +26189,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 173,
+        "x": 172,
         "y": 444
       }
     },
@@ -26893,7 +26895,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 174,
+        "x": 173,
         "y": 480
       }
     },
@@ -27266,7 +27268,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 175,
+        "x": 174,
         "y": 444
       }
     },
@@ -27653,7 +27655,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 176,
+        "x": 175,
         "y": 480
       },
       "gap_flag": true,
@@ -27837,7 +27839,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 536,
+        "x": 535,
         "y": 480
       }
     },
@@ -28180,7 +28182,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 540,
+        "x": 538,
         "y": 444
       },
       "gap_flag": true,
@@ -28426,7 +28428,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 544,
+        "x": 542,
         "y": 480
       }
     },
@@ -28584,7 +28586,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 547,
+        "x": 546,
         "y": 444
       }
     },
@@ -28818,7 +28820,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 551,
+        "x": 550,
         "y": 480
       }
     },
@@ -29052,7 +29054,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 177,
+        "x": 176,
         "y": 444
       }
     },
@@ -29726,7 +29728,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 178,
+        "x": 177,
         "y": 480
       },
       "gap_flag": true,
@@ -29970,7 +29972,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 555,
+        "x": 553,
         "y": 444
       }
     },
@@ -30920,7 +30922,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 559,
+        "x": 557,
         "y": 480
       }
     },
@@ -31039,7 +31041,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 563,
+        "x": 561,
         "y": 444
       }
     },
@@ -32313,7 +32315,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 567,
+        "x": 564,
         "y": 480
       }
     },
@@ -32512,7 +32514,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 570,
+        "x": 568,
         "y": 444
       }
     },
@@ -43249,7 +43251,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 574,
+        "x": 572,
         "y": 480
       }
     },
@@ -43358,7 +43360,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 578,
+        "x": 575,
         "y": 444
       }
     },
@@ -43467,7 +43469,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 582,
+        "x": 579,
         "y": 480
       }
     },
@@ -43576,7 +43578,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 586,
+        "x": 583,
         "y": 444
       }
     },
@@ -43685,7 +43687,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 589,
+        "x": 587,
         "y": 480
       }
     },
@@ -43794,7 +43796,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 593,
+        "x": 590,
         "y": 444
       }
     },
@@ -43903,7 +43905,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 597,
+        "x": 594,
         "y": 480
       }
     },
@@ -44012,7 +44014,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 601,
+        "x": 598,
         "y": 444
       }
     },
@@ -44121,7 +44123,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 605,
+        "x": 601,
         "y": 480
       }
     },
@@ -44230,7 +44232,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 608,
+        "x": 605,
         "y": 444
       }
     },
@@ -44339,7 +44341,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 612,
+        "x": 609,
         "y": 480
       }
     },
@@ -44448,7 +44450,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 616,
+        "x": 612,
         "y": 444
       }
     },
@@ -44557,7 +44559,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 620,
+        "x": 616,
         "y": 480
       }
     },
@@ -44666,7 +44668,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 624,
+        "x": 620,
         "y": 444
       }
     },
@@ -44775,7 +44777,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 628,
+        "x": 624,
         "y": 480
       }
     },
@@ -44884,7 +44886,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 631,
+        "x": 627,
         "y": 444
       }
     },
@@ -44993,7 +44995,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 635,
+        "x": 631,
         "y": 480
       }
     },
@@ -45102,7 +45104,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 639,
+        "x": 635,
         "y": 444
       }
     },
@@ -45211,7 +45213,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 643,
+        "x": 638,
         "y": 480
       }
     },
@@ -45320,7 +45322,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 647,
+        "x": 642,
         "y": 444
       }
     },
@@ -45429,7 +45431,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 650,
+        "x": 646,
         "y": 480
       }
     },
@@ -45538,7 +45540,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 654,
+        "x": 650,
         "y": 444
       }
     },
@@ -45647,7 +45649,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 658,
+        "x": 653,
         "y": 480
       }
     },
@@ -45756,7 +45758,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 662,
+        "x": 657,
         "y": 444
       }
     },
@@ -45865,7 +45867,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 666,
+        "x": 661,
         "y": 480
       }
     },
@@ -45974,7 +45976,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 670,
+        "x": 664,
         "y": 444
       }
     },
@@ -46083,7 +46085,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 673,
+        "x": 668,
         "y": 480
       }
     },
@@ -46192,7 +46194,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 677,
+        "x": 672,
         "y": 444
       }
     },
@@ -46301,7 +46303,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 681,
+        "x": 675,
         "y": 480
       }
     },
@@ -46410,7 +46412,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 685,
+        "x": 679,
         "y": 444
       }
     },
@@ -46519,7 +46521,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 689,
+        "x": 683,
         "y": 480
       }
     },
@@ -46628,7 +46630,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 692,
+        "x": 687,
         "y": 444
       }
     },
@@ -46737,7 +46739,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 696,
+        "x": 690,
         "y": 480
       }
     },
@@ -46846,7 +46848,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 700,
+        "x": 694,
         "y": 444
       }
     },
@@ -46954,7 +46956,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 704,
+        "x": 698,
         "y": 480
       }
     },
@@ -47069,7 +47071,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 708,
+        "x": 701,
         "y": 444
       }
     },
@@ -47178,7 +47180,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 712,
+        "x": 705,
         "y": 480
       }
     },
@@ -47293,7 +47295,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 715,
+        "x": 709,
         "y": 444
       }
     },
@@ -47408,7 +47410,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 719,
+        "x": 712,
         "y": 480
       }
     },
@@ -47523,7 +47525,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 723,
+        "x": 716,
         "y": 444
       }
     },
@@ -47631,7 +47633,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 727,
+        "x": 720,
         "y": 480
       }
     },
@@ -47746,7 +47748,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 731,
+        "x": 724,
         "y": 444
       }
     },
@@ -47861,7 +47863,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 734,
+        "x": 727,
         "y": 480
       }
     },
@@ -47976,7 +47978,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 738,
+        "x": 731,
         "y": 444
       }
     },
@@ -48091,7 +48093,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 742,
+        "x": 735,
         "y": 480
       }
     },
@@ -48206,7 +48208,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 746,
+        "x": 738,
         "y": 444
       }
     },
@@ -48321,7 +48323,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 750,
+        "x": 742,
         "y": 480
       }
     },
@@ -48436,7 +48438,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 754,
+        "x": 746,
         "y": 444
       }
     },
@@ -48544,7 +48546,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 757,
+        "x": 750,
         "y": 480
       }
     },
@@ -48652,7 +48654,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 761,
+        "x": 753,
         "y": 444
       }
     },
@@ -48767,7 +48769,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 765,
+        "x": 757,
         "y": 480
       }
     },
@@ -48882,7 +48884,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 769,
+        "x": 761,
         "y": 444
       }
     },
@@ -48997,7 +48999,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 773,
+        "x": 764,
         "y": 480
       }
     },
@@ -49112,7 +49114,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 776,
+        "x": 768,
         "y": 444
       }
     },
@@ -49227,7 +49229,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 780,
+        "x": 772,
         "y": 480
       }
     },
@@ -49342,7 +49344,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 784,
+        "x": 775,
         "y": 444
       }
     },
@@ -49457,7 +49459,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 788,
+        "x": 779,
         "y": 480
       }
     },
@@ -49565,7 +49567,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 792,
+        "x": 783,
         "y": 444
       }
     },
@@ -49680,7 +49682,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 795,
+        "x": 787,
         "y": 480
       }
     },
@@ -49795,7 +49797,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 799,
+        "x": 790,
         "y": 444
       }
     },
@@ -49910,7 +49912,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 803,
+        "x": 794,
         "y": 480
       }
     },
@@ -50025,7 +50027,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 807,
+        "x": 798,
         "y": 444
       }
     },
@@ -50140,7 +50142,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 811,
+        "x": 801,
         "y": 480
       }
     },
@@ -50255,7 +50257,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 815,
+        "x": 805,
         "y": 444
       }
     },
@@ -50370,7 +50372,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 818,
+        "x": 809,
         "y": 480
       }
     },
@@ -50485,7 +50487,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 822,
+        "x": 812,
         "y": 444
       }
     },
@@ -51119,7 +51121,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 191,
+        "x": 190,
         "y": 480
       }
     },
@@ -51904,7 +51906,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 192,
+        "x": 191,
         "y": 444
       }
     },
@@ -52012,7 +52014,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 193,
+        "x": 192,
         "y": 480
       }
     },
@@ -52319,7 +52321,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 194,
+        "x": 193,
         "y": 444
       }
     },
@@ -52428,7 +52430,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 195,
+        "x": 194,
         "y": 480
       }
     },
@@ -52537,7 +52539,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 196,
+        "x": 195,
         "y": 444
       }
     },
@@ -56557,7 +56559,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 208,
+        "x": 207,
         "y": 480
       }
     },
@@ -56864,7 +56866,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 209,
+        "x": 208,
         "y": 444
       }
     },
@@ -56973,7 +56975,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 210,
+        "x": 209,
         "y": 480
       }
     },
@@ -57082,7 +57084,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 211,
+        "x": 210,
         "y": 444
       }
     },
@@ -57191,7 +57193,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 212,
+        "x": 211,
         "y": 480
       }
     },
@@ -58550,7 +58552,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 213,
+        "x": 212,
         "y": 444
       }
     },
@@ -58658,7 +58660,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 214,
+        "x": 213,
         "y": 480
       }
     },
@@ -58965,7 +58967,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 215,
+        "x": 214,
         "y": 444
       }
     },
@@ -61738,7 +61740,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 226,
+        "x": 225,
         "y": 444
       }
     },
@@ -63097,7 +63099,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 227,
+        "x": 226,
         "y": 480
       }
     },
@@ -63205,7 +63207,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 228,
+        "x": 227,
         "y": 444
       }
     },
@@ -63512,7 +63514,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 229,
+        "x": 228,
         "y": 480
       }
     },
@@ -63621,7 +63623,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 230,
+        "x": 229,
         "y": 444
       }
     },
@@ -63730,7 +63732,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 231,
+        "x": 230,
         "y": 480
       }
     },
@@ -63839,7 +63841,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 232,
+        "x": 231,
         "y": 444
       }
     },
@@ -64506,7 +64508,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 233,
+        "x": 232,
         "y": 480
       }
     },
@@ -64614,7 +64616,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 234,
+        "x": 233,
         "y": 444
       }
     },
@@ -64915,7 +64917,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 826,
+        "x": 816,
         "y": 480
       }
     },
@@ -66949,7 +66951,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 830,
+        "x": 820,
         "y": 444
       }
     },
@@ -67928,7 +67930,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 244,
+        "x": 243,
         "y": 480
       }
     },
@@ -68037,7 +68039,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 245,
+        "x": 244,
         "y": 444
       }
     },
@@ -68146,7 +68148,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 246,
+        "x": 245,
         "y": 480
       }
     },
@@ -68255,7 +68257,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 247,
+        "x": 246,
         "y": 444
       }
     },
@@ -69614,7 +69616,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 248,
+        "x": 247,
         "y": 480
       }
     },
@@ -69722,7 +69724,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 249,
+        "x": 248,
         "y": 444
       }
     },
@@ -70029,7 +70031,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 250,
+        "x": 249,
         "y": 480
       }
     },
@@ -70138,7 +70140,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 251,
+        "x": 250,
         "y": 444
       }
     },
@@ -70247,7 +70249,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 252,
+        "x": 251,
         "y": 480
       }
     },
@@ -73950,7 +73952,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 262,
+        "x": 261,
         "y": 444
       }
     },
@@ -74270,7 +74272,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 263,
+        "x": 262,
         "y": 480
       }
     },
@@ -74378,7 +74380,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 264,
+        "x": 263,
         "y": 444
       }
     },
@@ -74685,7 +74687,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 265,
+        "x": 264,
         "y": 480
       }
     },
@@ -74794,7 +74796,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 266,
+        "x": 265,
         "y": 444
       }
     },
@@ -74903,7 +74905,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 267,
+        "x": 266,
         "y": 480
       }
     },
@@ -75012,7 +75014,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 268,
+        "x": 267,
         "y": 444
       }
     },
@@ -76607,7 +76609,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 269,
+        "x": 268,
         "y": 480
       }
     },
@@ -76715,7 +76717,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 270,
+        "x": 269,
         "y": 444
       }
     },
@@ -77022,7 +77024,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 271,
+        "x": 270,
         "y": 480
       }
     },
@@ -79341,7 +79343,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 280,
+        "x": 279,
         "y": 480
       }
     },
@@ -79450,7 +79452,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 281,
+        "x": 280,
         "y": 444
       }
     },
@@ -80487,7 +80489,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 282,
+        "x": 281,
         "y": 480
       }
     },
@@ -80807,7 +80809,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 283,
+        "x": 282,
         "y": 444
       }
     },
@@ -80915,7 +80917,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 284,
+        "x": 283,
         "y": 480
       }
     },
@@ -81334,7 +81336,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 285,
+        "x": 284,
         "y": 444
       }
     },
@@ -81443,7 +81445,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 286,
+        "x": 285,
         "y": 480
       }
     },
@@ -81552,7 +81554,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 287,
+        "x": 286,
         "y": 444
       }
     },
@@ -81661,7 +81663,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 288,
+        "x": 287,
         "y": 480
       }
     },
@@ -85908,7 +85910,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 834,
+        "x": 824,
         "y": 480
       }
     },
@@ -86171,7 +86173,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 289,
+        "x": 288,
         "y": 444
       }
     },
@@ -86580,7 +86582,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 290,
+        "x": 289,
         "y": 480
       }
     },
@@ -86624,21 +86626,22 @@
         },
         "discretionary_power_score": 4,
         "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
           "No bias complaint mechanism exists": 2,
           "No independent conduct oversight body": 1
         },
-        "independence_risk_level": "moderate",
-        "independence_risk_score": 3,
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
         "scores_validated": false,
         "structural_health_breakdown": {
-          "base_health_from_ir_dp": 0.76,
+          "base_health_from_ir_dp": 0.61,
           "discretionary_power_penalty": 0.15,
-          "final_structural_health": 0.76,
-          "independence_risk_penalty": 0.3,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
           "operational_status_modifier": 1.0
         },
         "structural_health_level": "watch",
-        "structural_health_score": 0.76
+        "structural_health_score": 0.61
       },
       "value_history": {
         "case_volume.avg_disposal_days": [
@@ -86875,7 +86878,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 837,
+        "x": 827,
         "y": 444
       }
     },
@@ -89213,7 +89216,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 297,
+        "x": 296,
         "y": 480
       }
     },
@@ -89322,7 +89325,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 298,
+        "x": 297,
         "y": 444
       }
     },
@@ -89430,7 +89433,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 299,
+        "x": 298,
         "y": 480
       }
     },
@@ -89737,7 +89740,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 300,
+        "x": 299,
         "y": 444
       }
     },
@@ -89846,7 +89849,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 301,
+        "x": 300,
         "y": 480
       }
     },
@@ -89955,7 +89958,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 302,
+        "x": 301,
         "y": 444
       }
     },
@@ -90064,7 +90067,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 303,
+        "x": 302,
         "y": 480
       }
     },
@@ -90849,7 +90852,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 304,
+        "x": 303,
         "y": 444
       }
     },
@@ -90957,7 +90960,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 305,
+        "x": 304,
         "y": 480
       }
     },
@@ -91264,7 +91267,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 306,
+        "x": 305,
         "y": 444
       }
     },
@@ -91373,7 +91376,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 307,
+        "x": 306,
         "y": 480
       }
     },
@@ -91482,7 +91485,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 308,
+        "x": 307,
         "y": 444
       }
     },
@@ -92545,21 +92548,22 @@
         },
         "discretionary_power_score": 4,
         "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
           "No bias complaint mechanism exists": 2,
           "No independent conduct oversight body": 1
         },
-        "independence_risk_level": "moderate",
-        "independence_risk_score": 3,
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
         "scores_validated": false,
         "structural_health_breakdown": {
-          "base_health_from_ir_dp": 0.76,
+          "base_health_from_ir_dp": 0.61,
           "discretionary_power_penalty": 0.15,
-          "final_structural_health": 0.76,
-          "independence_risk_penalty": 0.3,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
           "operational_status_modifier": 1.0
         },
         "structural_health_level": "watch",
-        "structural_health_score": 0.76
+        "structural_health_score": 0.61
       },
       "value_history": {
         "case_volume.avg_disposal_days": [
@@ -92796,7 +92800,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 841,
+        "x": 831,
         "y": 480
       }
     },
@@ -93484,7 +93488,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 315,
+        "x": 314,
         "y": 444
       }
     },
@@ -93667,7 +93671,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 316,
+        "x": 315,
         "y": 480
       }
     },
@@ -98578,7 +98582,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 317,
+        "x": 316,
         "y": 444
       }
     },
@@ -98959,7 +98963,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 845,
+        "x": 835,
         "y": 444
       }
     },
@@ -99068,7 +99072,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 318,
+        "x": 317,
         "y": 480
       }
     },
@@ -99331,7 +99335,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 319,
+        "x": 318,
         "y": 444
       }
     },
@@ -99792,7 +99796,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 320,
+        "x": 319,
         "y": 480
       }
     },
@@ -100099,7 +100103,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 321,
+        "x": 320,
         "y": 444
       }
     },
@@ -100208,7 +100212,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 322,
+        "x": 321,
         "y": 480
       }
     },
@@ -100317,7 +100321,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 323,
+        "x": 322,
         "y": 444
       }
     },
@@ -100426,7 +100430,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 324,
+        "x": 323,
         "y": 480
       }
     },
@@ -101674,7 +101678,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 325,
+        "x": 324,
         "y": 444
       }
     },
@@ -101782,7 +101786,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 326,
+        "x": 325,
         "y": 480
       }
     },
@@ -102089,7 +102093,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 327,
+        "x": 326,
         "y": 444
       }
     },
@@ -103765,7 +103769,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 333,
+        "x": 332,
         "y": 480
       }
     },
@@ -104072,7 +104076,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 334,
+        "x": 333,
         "y": 444
       }
     },
@@ -104181,7 +104185,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 335,
+        "x": 334,
         "y": 480
       }
     },
@@ -104290,7 +104294,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 336,
+        "x": 335,
         "y": 444
       }
     },
@@ -104399,7 +104403,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 337,
+        "x": 336,
         "y": 480
       }
     },
@@ -106112,7 +106116,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 338,
+        "x": 337,
         "y": 444
       }
     },
@@ -106221,7 +106225,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 339,
+        "x": 338,
         "y": 480
       }
     },
@@ -106329,7 +106333,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 340,
+        "x": 339,
         "y": 444
       }
     },
@@ -106636,7 +106640,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 341,
+        "x": 340,
         "y": 480
       }
     },
@@ -106745,7 +106749,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 342,
+        "x": 341,
         "y": 444
       }
     },
@@ -106854,7 +106858,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 343,
+        "x": 342,
         "y": 480
       }
     },
@@ -106963,7 +106967,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 344,
+        "x": 343,
         "y": 444
       }
     },
@@ -108211,7 +108215,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 345,
+        "x": 344,
         "y": 480
       }
     },
@@ -108319,7 +108323,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 346,
+        "x": 345,
         "y": 444
       }
     },
@@ -108953,7 +108957,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 351,
+        "x": 350,
         "y": 444
       }
     },
@@ -110201,7 +110205,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 352,
+        "x": 351,
         "y": 480
       }
     },
@@ -110309,7 +110313,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 353,
+        "x": 352,
         "y": 444
       }
     },
@@ -110616,7 +110620,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 354,
+        "x": 353,
         "y": 480
       }
     },
@@ -110725,7 +110729,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 355,
+        "x": 354,
         "y": 444
       }
     },
@@ -110834,7 +110838,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 356,
+        "x": 355,
         "y": 480
       }
     },
@@ -110943,7 +110947,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 357,
+        "x": 356,
         "y": 444
       }
     },
@@ -112327,7 +112331,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 358,
+        "x": 357,
         "y": 480
       }
     },
@@ -112647,7 +112651,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 359,
+        "x": 358,
         "y": 444
       }
     },
@@ -112756,7 +112760,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 360,
+        "x": 359,
         "y": 480
       }
     },
@@ -112864,7 +112868,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 361,
+        "x": 360,
         "y": 444
       }
     },
@@ -113171,7 +113175,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 362,
+        "x": 361,
         "y": 480
       }
     },
@@ -113280,7 +113284,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 363,
+        "x": 362,
         "y": 444
       }
     },
@@ -113389,7 +113393,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 364,
+        "x": 363,
         "y": 480
       }
     },
@@ -113498,7 +113502,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 365,
+        "x": 364,
         "y": 444
       }
     },
@@ -115310,7 +115314,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 369,
+        "x": 368,
         "y": 480
       }
     },
@@ -115670,7 +115674,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 370,
+        "x": 369,
         "y": 444
       }
     },
@@ -115779,7 +115783,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 371,
+        "x": 370,
         "y": 480
       }
     },
@@ -115888,7 +115892,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 372,
+        "x": 371,
         "y": 444
       }
     },
@@ -115997,7 +116001,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 373,
+        "x": 372,
         "y": 480
       }
     },
@@ -116106,7 +116110,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 374,
+        "x": 373,
         "y": 444
       }
     },
@@ -117186,7 +117190,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 375,
+        "x": 374,
         "y": 480
       }
     },
@@ -117602,7 +117606,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 376,
+        "x": 375,
         "y": 444
       }
     },
@@ -117711,7 +117715,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 377,
+        "x": 376,
         "y": 480
       }
     },
@@ -117820,7 +117824,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 378,
+        "x": 377,
         "y": 444
       }
     },
@@ -117929,7 +117933,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 379,
+        "x": 378,
         "y": 480
       }
     },
@@ -119070,7 +119074,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 849,
+        "x": 838,
         "y": 480
       }
     },
@@ -119390,7 +119394,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 380,
+        "x": 379,
         "y": 444
       }
     },
@@ -119498,7 +119502,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 381,
+        "x": 380,
         "y": 480
       }
     },
@@ -119805,7 +119809,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 382,
+        "x": 381,
         "y": 444
       }
     },
@@ -119914,7 +119918,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 383,
+        "x": 382,
         "y": 480
       }
     },
@@ -120132,7 +120136,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 386,
+        "x": 385,
         "y": 480
       }
     },
@@ -121262,7 +121266,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 387,
+        "x": 386,
         "y": 444
       }
     },
@@ -121370,7 +121374,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 388,
+        "x": 387,
         "y": 480
       }
     },
@@ -122727,7 +122731,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 389,
+        "x": 388,
         "y": 444
       }
     },
@@ -127460,7 +127464,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 390,
+        "x": 389,
         "y": 480
       }
     },
@@ -127724,7 +127728,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 853,
+        "x": 842,
         "y": 444
       }
     },
@@ -128034,7 +128038,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 391,
+        "x": 390,
         "y": 444
       }
     },
@@ -128343,7 +128347,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 392,
+        "x": 391,
         "y": 480
       }
     },
@@ -128622,7 +128626,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 857,
+        "x": 846,
         "y": 480
       }
     },
@@ -128730,7 +128734,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 393,
+        "x": 392,
         "y": 444
       }
     },
@@ -129037,7 +129041,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 394,
+        "x": 393,
         "y": 480
       }
     },
@@ -129146,7 +129150,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 395,
+        "x": 394,
         "y": 444
       }
     },
@@ -129255,7 +129259,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 396,
+        "x": 395,
         "y": 480
       }
     },
@@ -129364,7 +129368,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 397,
+        "x": 396,
         "y": 444
       }
     },
@@ -130605,7 +130609,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 398,
+        "x": 397,
         "y": 480
       }
     },
@@ -130713,7 +130717,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 399,
+        "x": 398,
         "y": 444
       }
     },
@@ -131020,7 +131024,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 400,
+        "x": 399,
         "y": 480
       }
     },
@@ -131129,7 +131133,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 401,
+        "x": 400,
         "y": 444
       }
     },
@@ -131238,7 +131242,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 402,
+        "x": 401,
         "y": 480
       }
     },
@@ -131347,7 +131351,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 404,
+        "x": 403,
         "y": 444
       }
     },
@@ -132731,7 +132735,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 405,
+        "x": 404,
         "y": 480
       }
     },
@@ -133051,7 +133055,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 406,
+        "x": 405,
         "y": 444
       }
     },
@@ -133160,7 +133164,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 407,
+        "x": 406,
         "y": 480
       }
     },
@@ -133268,7 +133272,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 408,
+        "x": 407,
         "y": 444
       }
     },
@@ -133575,7 +133579,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 409,
+        "x": 408,
         "y": 480
       }
     },
@@ -133684,7 +133688,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 410,
+        "x": 409,
         "y": 444
       }
     },
@@ -133793,7 +133797,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 411,
+        "x": 410,
         "y": 480
       }
     },
@@ -133902,7 +133906,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 412,
+        "x": 411,
         "y": 444
       }
     },
@@ -135261,7 +135265,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 413,
+        "x": 412,
         "y": 480
       }
     },
@@ -135369,7 +135373,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 414,
+        "x": 413,
         "y": 444
       }
     },
@@ -135676,7 +135680,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 415,
+        "x": 414,
         "y": 480
       }
     },
@@ -135785,7 +135789,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 416,
+        "x": 415,
         "y": 444
       }
     },
@@ -135894,7 +135898,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 417,
+        "x": 416,
         "y": 480
       }
     },
@@ -136003,7 +136007,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 418,
+        "x": 417,
         "y": 444
       }
     },
@@ -137380,7 +137384,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 860,
+        "x": 849,
         "y": 444
       }
     },
@@ -137700,7 +137704,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 419,
+        "x": 418,
         "y": 480
       }
     },
@@ -137808,7 +137812,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 420,
+        "x": 419,
         "y": 444
       }
     },
@@ -138115,7 +138119,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 422,
+        "x": 420,
         "y": 480
       }
     },
@@ -138224,7 +138228,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 423,
+        "x": 422,
         "y": 444
       }
     },
@@ -138333,7 +138337,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 424,
+        "x": 423,
         "y": 480
       }
     },
@@ -138442,7 +138446,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 425,
+        "x": 424,
         "y": 444
       }
     },
@@ -139488,7 +139492,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 426,
+        "x": 425,
         "y": 480
       }
     },
@@ -139692,7 +139696,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 864,
+        "x": 853,
         "y": 480
       }
     },
@@ -139801,7 +139805,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 427,
+        "x": 426,
         "y": 444
       }
     },
@@ -140121,7 +140125,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 428,
+        "x": 427,
         "y": 480
       }
     },
@@ -140230,7 +140234,7 @@
         "parent_hc": null
       },
       "position": {
-        "x": 429,
+        "x": 428,
         "y": 444
       }
     },
@@ -142889,6 +142893,824 @@
         "x": 850,
         "y": 1020
       }
+    },
+    {
+      "id": "mh_commissioner_food_safety",
+      "name": "Commissioner of Food Safety, Maharashtra (Commissioner, Food and Drug Administration)",
+      "aliases": [
+        "Maharashtra FDA Commissioner",
+        "Commissioner, Food and Drug Administration, Maharashtra State"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "Regulatory",
+          "Appellate",
+          "Supervisory"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": "MH CFS",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "State",
+      "created_year": 2011,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006 s.30 (appointment by State Government and functions), s.31(8) (appeal against refusal of licence), s.32(4) (final appellate authority over improvement notices and licence suspension, cancellation, or revocation), s.36(1) (appoints Designated Officers), s.30(2)(e) (sanctions prosecutions)",
+      "data_quality": "partial",
+      "data_quality_notes": "Statutory structure (s.30, s.31, s.32, s.36) is verified against the Act text on India Code. The identity of the Commissioner of Food Safety with the Commissioner, FDA Maharashtra, is confirmed by the Commissioner's own order of 28 July 2026, which recites that \"Section 30(1) of the Act provides for the appointment of the Commissioner of Food Safety for the State\" and is signed \"Food Safety Commissioner, Food and Drug Administration, Maharashtra State\", and by the Maharashtra recruitment rules 2022. The State Government notification appointing the Commissioner of Food Safety under s.30(1) has not been located. FSSAI's Manual for Food Safety Officers (2024) confirms the appeal route under s.31(8) and s.32(4)-(5) lies to the Commissioner. Writ-load figures come from a secondary source (ThePrint, 8 September 2026) and are marked partial. No case outcomes are recorded.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "quasi_judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [],
+      "derived": {
+        "circularity_breakdown": {
+          "Oversight_Subject: mh_fss_licence_appeal_loop": 1
+        },
+        "circularity_score": 1,
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
+          "No public criteria for key decisions": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 6,
+        "independence_risk_breakdown": {
+          "Appointed directly by executive body": 3,
+          "No bias complaint mechanism exists": 2,
+          "No publicly stated appointment criteria": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 7,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.53,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.53,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "at_risk",
+        "structural_health_score": 0.53
+      },
+      "value_history": {},
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": false,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006 (India Code)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Food Safety and Standards Act 2006, s.30 (Indian Kanoon)",
+          "url": "https://indiankanoon.org/doc/934148/",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Food Safety and Standards Act 2006, s.32 (Indian Kanoon)",
+          "url": "https://indiankanoon.org/doc/1292719/",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Joint Commissioner (Food)-cum-Adjudicating Officer, Assistant Commissioner (Food)-cum-Designated Officer and Food Safety Officer in the Office of Commissioner Food and Drugs Administration (Recruitment) Rules, 2022, Government of Maharashtra",
+          "url": "https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Commissioner, FDA Maharashtra — Order No. FDA/Food/SchoolFoodSafety/967-2026 of 28 July 2026 (\"Safe Food for Every School Child in Maharashtra\"), issued under s.30 of the FSS Act and signed as Food Safety Commissioner",
+          "url": "https://cdnbbsr.s3waas.gov.in/s3e14d02262d6510598edccb6180462efd/uploads/2026/08/20260803812644221.pdf",
+          "type": "OfficialReport",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "FSSAI, Manual for Food Safety Officers, 3rd edition (March 2024) — appeals under s.31(8) and s.32(4)-(5)",
+          "url": "https://fssai.gov.in/upload/uploadfiles/files/7729566bb3f339ffbdFSO%20Manual%20final-8%20web.pdf",
+          "type": "OfficialReport",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Food and Drug Administration, Maharashtra State — official website",
+          "url": "https://fda.maharashtra.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Medical Education and Drugs Department, Government of Maharashtra — FDA page",
+          "url": "https://medical.maharashtra.gov.in/en/food-drugs-administration-fda/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-09-24"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "government_maharashtra",
+          "recommends": null,
+          "formally_appoints": "government_maharashtra",
+          "criteria_public": false,
+          "criteria_document_url": null,
+          "tenure": "No statutory tenure. s.30(1) only says the State Government \"shall appoint\" the Commissioner. In Maharashtra the post is held by the Commissioner, Food and Drug Administration, an IAS posting made by executive order.",
+          "reappointment_possible": false,
+          "removal_authority": "government_maharashtra",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null,
+          "state_funding_notes": "Food and Drug Administration, Maharashtra, is a department under the Medical Education and Drugs Department, Government of Maharashtra."
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "government_maharashtra"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [],
+          "criminal_prosecution": {
+            "requires_sanction_from": "government_maharashtra",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "No statutory removal mechanism. The Commissioner is a State Government appointee under s.30(1) and holds office at the State Government's pleasure.",
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokayukta_jurisdiction": "Varies_by_State",
+          "source": "Food Safety and Standards Act 2006 s.30"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "Regulatory",
+            "Appellate",
+            "Supervisory"
+          ]
+        },
+        "pecuniary_jurisdiction": null,
+        "report_publication": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 857,
+        "y": 444
+      },
+      "gap_flag": true,
+      "gap_count": 2,
+      "gaps": [
+        {
+          "gap_id": "mh_cfs_appeal_in_own_cause",
+          "gap_type": "Independence_Gap",
+          "gap_severity": "High",
+          "gap_description": "The only statutory challenge to a licence suspension, cancellation, or improvement notice is an appeal to the Commissioner of Food Safety (s.32(4)), whose decision is final. The Commissioner heads the department that issued the order and appoints the officer who issued it (s.36(1)). The Food Safety Appellate Tribunal (s.70) has no jurisdiction over these orders: it hears appeals only from Adjudicating Officer penalty orders under s.68. A business that loses before the Commissioner has no statutory forum left and must file a writ petition under Article 226.",
+          "gap_source": "Food Safety and Standards Act 2006 s.32(4), s.36(1), s.70(1)",
+          "gap_since_year": 2011,
+          "gap_status": "Open",
+          "gap_resolution_note": "Requires legislative amendment: delete the finality clause in s.32(4) and extend the Food Safety Appellate Tribunal's jurisdiction under s.70(1) to orders under s.32. No amendment bill located as of September 2026.",
+          "gap_spillover": [
+            {
+              "affected_body": "hc_bombay",
+              "spillover_type": "writ_load",
+              "metric_note": "Writ petitions under Article 226 are the only route past the Commissioner. ThePrint (opinion, 8 September 2026) reports at least 16 reasoned Bombay High Court orders on Maharashtra FDA action in mid-2026, all against the department, and cites the Commissioner's own figure of 103 appeals filed against 165 suspensions. Secondary source. Counts are not independently verified and no case outcome is recorded in JEM.",
+              "source_url": "https://theprint.in/opinion/maharashtra-fda-tukaram-mundhe-bombay-high-court/3036725/",
+              "source_label": "ThePrint, \"Maharashtra FDA is judge, jury and executioner\" (8 Sep 2026)",
+              "data_as_of": "2026-09-08",
+              "spillover_data_quality": "partial"
+            }
+          ]
+        },
+        {
+          "gap_id": "mh_cfs_no_appeal_statistics",
+          "gap_type": "Data_Gap",
+          "gap_severity": "Moderate",
+          "gap_description": "No published statistics on appeals decided by the Commissioner under s.32(4): number filed, allowed, dismissed, or time to decision. The FDA Maharashtra website carries no appellate page, cause list, or orders (checked 24 September 2026). Quasi-judicial orders that are \"final\" by statute are not publicly available.",
+          "gap_source": "Food and Drug Administration, Maharashtra, website (no appellate section found); Food Safety and Standards Act 2006 s.32(4)",
+          "gap_since_year": 2011,
+          "gap_status": "Open",
+          "gap_resolution_note": "Administrative fix, no legislation needed: publish s.32(4) orders and monthly appeal statistics on the FDA website."
+        }
+      ],
+      "structural_circularity": {
+        "loops": [
+          {
+            "loop_id": "mh_fss_licence_appeal_loop",
+            "loop_type": "Oversight_Subject",
+            "entities_in_loop": [
+              "mh_fda_designated_officer",
+              "mh_commissioner_food_safety"
+            ],
+            "description": "A food business whose licence is suspended or cancelled by a Designated Officer (s.32(2), s.32(3)) can appeal only to the Commissioner of Food Safety (s.32(4)). The Commissioner appoints that Designated Officer (s.36(1)), supervises food safety administration in the State (s.30(2)), and heads the department whose officers passed the order. The Commissioner's decision \"shall be final\" (s.32(4)). The appellate authority, the appointing authority, and the enforcing department are the same office.",
+            "source": "Food Safety and Standards Act 2006 s.30(2), s.32(4), s.36(1)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mh_fda_designated_officer",
+      "name": "Designated Officers, Food and Drug Administration Maharashtra (FSS Act s.36)",
+      "aliases": [
+        "Assistant Commissioner (Food)-cum-Designated Officer, FDA Maharashtra",
+        "Maharashtra FDA licensing authority"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "Regulatory",
+          "Original"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": "MH FDA DO",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "State",
+      "created_year": 2011,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006 s.36 (Designated Officer for each district, appointed by the Commissioner of Food Safety), s.31 (licensing), s.32 (improvement notices; suspension and cancellation of licence)",
+      "data_quality": "partial",
+      "data_quality_notes": "Statutory role verified against the Act text on India Code. The Maharashtra cadre mapping (Assistant Commissioner (Food) acts as Designated Officer) is confirmed by the Commissioner's order of 28 July 2026, which addresses \"All Assistant Commissioners (Food)/Designated Officers, FDA Maharashtra\" and assigns them improvement notices and prosecution sanction, and by the Recruitment Rules 2022 (LegitQuest copy; official Gazette copy not yet linked). A district Designated Officer (\"Designated Officer, Food and Drug Administration (M.S.), Yavatmal\") appears as appellant no. 3 in First Appeal 158 of 2016 (Bombay HC Nagpur Bench, 8 December 2020). Modelled as one node for all district Designated Officers in the State (s.36(2): one per district). No case outcomes are recorded.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "quasi_judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [],
+      "derived": {
+        "circularity_breakdown": {
+          "Oversight_Subject: mh_fss_licence_appeal_loop": 1
+        },
+        "circularity_score": 1,
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 5,
+        "independence_risk_breakdown": {
+          "Complaint process is not public/transparent": 1,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "moderate",
+        "independence_risk_score": 3,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.68,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.68,
+          "independence_risk_penalty": 0.3,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.68
+      },
+      "value_history": {},
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": true,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006 (India Code)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Food Safety and Standards Act 2006, s.32 (Indian Kanoon)",
+          "url": "https://indiankanoon.org/doc/1292719/",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Joint Commissioner (Food)-cum-Adjudicating Officer, Assistant Commissioner (Food)-cum-Designated Officer and Food Safety Officer in the Office of Commissioner Food and Drugs Administration (Recruitment) Rules, 2022, Government of Maharashtra",
+          "url": "https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Commissioner, FDA Maharashtra — Order No. FDA/Food/SchoolFoodSafety/967-2026 of 28 July 2026 (\"Safe Food for Every School Child in Maharashtra\"), issued under s.30 of the FSS Act and signed as Food Safety Commissioner",
+          "url": "https://cdnbbsr.s3waas.gov.in/s3e14d02262d6510598edccb6180462efd/uploads/2026/08/20260803812644221.pdf",
+          "type": "OfficialReport",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "FSSAI, Manual for Food Safety Officers, 3rd edition (March 2024) — appeals under s.31(8) and s.32(4)-(5)",
+          "url": "https://fssai.gov.in/upload/uploadfiles/files/7729566bb3f339ffbdFSO%20Manual%20final-8%20web.pdf",
+          "type": "OfficialReport",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "State of Maharashtra (FDA, through Adjudicating Officer, Amravati Division) v Ruchi Soya Industries Ltd, First Appeal No. 158 of 2016, Bombay HC Nagpur Bench, 8 December 2020 (CNR HCBM040287702014) — official judgment PDF",
+          "url": "https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040287702014/2020-12-08/7?path=eyJpdiI6ImVleEdYOWNsMW52R3NkQWpicDJmQmc9PSIsInZhbHVlIjoiU0hmaVBRUk4zTXJLMk5hbFhCclpucGYwd3JRQ250S3NUdkFQOWRPRXI5K0J5Q3hWSHdNQkhjTWFKS2ljQk04SWJNUWhyUVF3M0Q2T3R5cFhhY1dVZkJCNmxEVTRmbU5BS2FiNW02bU14SkE9IiwibWFjIjoiODkwODA1ZDFmZTgyMDRiMDAzY2YwZjA1ZjhlZmJkNzYyNzAzNmUwMmMzMWQ3ZGYzMjhkZjQ3OThjNWU2MzgxMCIsInRhZyI6IiJ9",
+          "type": "HCJudgment",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Food and Drug Administration, Maharashtra — Roles and Duties",
+          "url": "https://fda.maharashtra.gov.in/roles-duties/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-09-24"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "mh_commissioner_food_safety",
+          "recommends": null,
+          "formally_appoints": "mh_commissioner_food_safety",
+          "criteria_public": true,
+          "criteria_document_url": "https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E",
+          "tenure": "Civil service post. In Maharashtra the Designated Officer is the Assistant Commissioner (Food), a Group-A cadre post of the FDA filled by promotion from Food Safety Officer or by MPSC examination (Recruitment Rules 2022). Not below the rank of Sub-Divisional Officer (s.36(1)).",
+          "reappointment_possible": false,
+          "removal_authority": "government_maharashtra",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "mh_commissioner_food_safety"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "mh_commissioner_food_safety",
+              "mechanism": "Statutory appeal under s.32(4) against an improvement notice, refusal of an improvement certificate, or suspension, cancellation, or revocation of licence, and under s.31(8) against refusal of a licence. Lies to the Commissioner of Food Safety, the officer who appoints and supervises the Designated Officer. The s.32(4) decision \"shall be final\". Appeal window 15 days (s.32(5)). No statutory time limit for the Commissioner's decision.",
+              "complainant_has_locus": true,
+              "is_public_process": false,
+              "timeframe_defined": false,
+              "external_to_judiciary": true
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "mh_commissioner_food_safety",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Departmental discipline under Maharashtra civil service rules.",
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokayukta_jurisdiction": "Varies_by_State",
+          "source": "Food Safety and Standards Act 2006 s.32, s.36"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "Regulatory",
+            "Original"
+          ]
+        },
+        "pecuniary_jurisdiction": null,
+        "report_publication": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 861,
+        "y": 480
+      },
+      "gap_flag": true,
+      "gap_count": 1,
+      "gaps": [
+        {
+          "gap_id": "mh_fda_do_no_external_appeal",
+          "gap_type": "Independence_Gap",
+          "gap_severity": "High",
+          "gap_description": "A licence suspension can shut a business, yet the only statutory appeal is internal to the department (s.32(4)). By contrast a monetary penalty under s.68 gets a Food Safety Appellate Tribunal (s.70) and a further appeal to the High Court (s.71(6)). The heavier sanction has the lighter appeal structure.",
+          "gap_source": "Food Safety and Standards Act 2006 s.32(4), s.68, s.70(1), s.71(6)",
+          "gap_since_year": 2011,
+          "gap_status": "Open",
+          "gap_resolution_note": "Legislative amendment to s.32(4) or s.70(1). See gap mh_cfs_appeal_in_own_cause on the Commissioner node."
+        }
+      ],
+      "structural_circularity": {
+        "loops": [
+          {
+            "loop_id": "mh_fss_licence_appeal_loop",
+            "loop_type": "Oversight_Subject",
+            "entities_in_loop": [
+              "mh_fda_designated_officer",
+              "mh_commissioner_food_safety"
+            ],
+            "description": "The Designated Officer suspends or cancels a food licence (s.32(2), s.32(3), including suspension \"forthwith in the interest of public health\"). The only appeal lies to the Commissioner of Food Safety (s.32(4)), who appointed the Designated Officer (s.36(1)) and heads the same department. The Commissioner's decision is final.",
+            "source": "Food Safety and Standards Act 2006 s.32, s.36(1)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mh_fsat",
+      "name": "Food Safety Appellate Tribunal, Maharashtra",
+      "aliases": [
+        "FSAT Maharashtra"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "Appellate"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": "MH FSAT",
+      "type": "StateTribunal",
+      "cluster": "tribunals_adr",
+      "level_of_government": "State",
+      "created_year": 2011,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006 s.70 (State Government may establish by notification; single Presiding Officer who is or has been a District Judge), s.71 (procedure, powers of a civil court, appeal to High Court under s.71(6) within 60 days), s.72 (civil court jurisdiction barred)",
+      "data_quality": "contested",
+      "data_quality_notes": "Contested because the constituting notification under s.70(1) and the Presiding Officer designations under s.70(3) have not been located. Search trail (24 September 2026): the Maharashtra e-Gazette portal (egazzete.mahaonline.gov.in) holds issues only from February 2015 onwards and states that earlier gazettes exist only on paper at the Directorate of Archives, Mumbai; the Government Resolutions portal (gr.maharashtra.gov.in) searched for 1 August 2011 to 31 December 2013 returned 15 orders for \"न्यायाधिकरण\" and 3 for \"अन्न सुरक्षा\", none concerning the Tribunal or the Commissioner of Food Safety; the FDA Maharashtra notification archive and two Gazette of India weekly issues (January 2025, January 2026) had no entry. The Tribunal's existence is established only through official Bombay High Court judgments that record its orders (Yavatmal, Appeal 2/2013 decided 2014; Buldhana, Appeal 1/2013 decided 2016). created_year is the year the Act came into force for these provisions (2011). The earliest documented appeal is Appeal No. 2/2013. The claim that Tribunal functions were merged into district consumer commissions is unverified and is recorded only as a contested gap. No case outcomes are recorded.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "quasi_judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [],
+      "derived": {
+        "appellate_functional": true,
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type StateTribunal": 1,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 3,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "No independent conduct oversight body": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.61,
+          "discretionary_power_penalty": 0.15,
+          "final_structural_health": 0.61,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "watch",
+        "structural_health_score": 0.61
+      },
+      "value_history": {},
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006 (India Code)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "State of Maharashtra (FDA, through Adjudicating Officer, Amravati Division) v Ruchi Soya Industries Ltd, First Appeal No. 158 of 2016, Bombay HC Nagpur Bench, 8 December 2020 (CNR HCBM040287702014) — official judgment PDF",
+          "url": "https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040287702014/2020-12-08/7?path=eyJpdiI6ImVleEdYOWNsMW52R3NkQWpicDJmQmc9PSIsInZhbHVlIjoiU0hmaVBRUk4zTXJLMk5hbFhCclpucGYwd3JRQ250S3NUdkFQOWRPRXI5K0J5Q3hWSHdNQkhjTWFKS2ljQk04SWJNUWhyUVF3M0Q2T3R5cFhhY1dVZkJCNmxEVTRmbU5BS2FiNW02bU14SkE9IiwibWFjIjoiODkwODA1ZDFmZTgyMDRiMDAzY2YwZjA1ZjhlZmJkNzYyNzAzNmUwMmMzMWQ3ZGYzMjhkZjQ3OThjNWU2MzgxMCIsInRhZyI6IiJ9",
+          "type": "HCJudgment",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Tata Chemicals Ltd v State of Maharashtra, Appeal Against Order No. 19 of 2019, Bombay HC Nagpur Bench, 9 May 2024, 2024:BHC-NAG:5692 (CNR HCBM040036442017) — official judgment PDF",
+          "url": "https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040036442017/2024-05-09/29?path=eyJpdiI6IjBpNThmbUtuRER4bzJOR0UxSnpGcFE9PSIsInZhbHVlIjoicUhVMFBnYjFGWGtObFE4cGhtdmxIVW1hRkRKaEhnR081aWVIZXdnaUI5R25FS3lBL2RWNHp6QzZHMzZneStQbXNHWkVrbHFDNkxSSGxVNjg2cGV1UkZ0QjV5K2sxT3hBUVRzUE1YRGJHMEk9IiwibWFjIjoiNDFlNzZjZmRkZDg0ZDdhZjRmMzAxZDgxNWZkYjZlZjcxMzE4Y2NiNTBkMzg0OGZhMzY4OTEzMzBiNjM0ZGRiZCIsInRhZyI6IiJ9",
+          "type": "HCJudgment",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Food and Drug Administration, Maharashtra State — official website",
+          "url": "https://fda.maharashtra.gov.in/",
+          "type": "GoIWebsite",
+          "accessed_date": "2026-09-24"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "government_maharashtra",
+          "recommends": null,
+          "formally_appoints": "government_maharashtra",
+          "criteria_public": true,
+          "tenure": "Presiding Officer must be, or have been, a District Judge (s.70(3) proviso). Term, salary, resignation, and removal are prescribed by the Central Government (s.70(4)).",
+          "reappointment_possible": false,
+          "removal_authority": "central_government",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": null
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "hc_bombay",
+              "mechanism": "Statutory appeal to the High Court on any question of fact or law within 60 days (s.71(6)), extendable by a further 60 days.",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "timeframe_defined": true,
+              "timeframe_days": 60,
+              "external_to_judiciary": false
+            }
+          ],
+          "lokpal_jurisdiction": "Not_Applicable",
+          "source": "Food Safety and Standards Act 2006 s.71(6)"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "Appellate"
+          ]
+        },
+        "pecuniary_jurisdiction": null,
+        "report_publication": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 429,
+        "y": 480
+      },
+      "gap_flag": true,
+      "gap_count": 2,
+      "gaps": [
+        {
+          "gap_id": "mh_fsat_no_licence_jurisdiction",
+          "gap_type": "Jurisdiction_Gap",
+          "gap_severity": "High",
+          "gap_description": "s.70(1) confines the Tribunal to \"appeals from the decisions of the Adjudicating Officer under section 68\", i.e. monetary penalties. Orders that suspend or cancel a food licence (s.32) are outside its jurisdiction and go to the Commissioner of Food Safety, whose decision is final (s.32(4)). The forum with a District Judge and civil-court powers handles the lighter sanction. The heavier sanction never reaches it.",
+          "gap_source": "Food Safety and Standards Act 2006 s.32(4), s.70(1)",
+          "gap_since_year": 2011,
+          "gap_status": "Open",
+          "gap_resolution_note": "Legislative amendment to s.70(1) to include orders under s.32."
+        },
+        {
+          "gap_id": "mh_fsat_no_public_footprint",
+          "gap_type": "Data_Gap",
+          "gap_severity": "High",
+          "gap_description": "No dedicated website, cause list, published orders, or caseload figures. The Maharashtra Government notification constituting the Tribunal and designating its Presiding Officer(s) has not been located online (searched 24 September 2026). The Tribunal's existence and activity are documented only indirectly, through official Bombay High Court judgments on s.71(6) appeals, which name district-level tribunals at Yavatmal and Buldhana. ThePrint (8 September 2026) reports that FDA offices could not direct callers to the Tribunal and that staff at FDA headquarters said its functions had been merged with district consumer commissions. No official document supports the merger claim. Compare the Rajasthan FSAT, which has a public website.",
+          "gap_source": "Bombay HC Nagpur Bench, First Appeal 158 of 2016 (8 Dec 2020) and Appeal Against Order 19 of 2019, 2024:BHC-NAG:5692 (9 May 2024); FDA Maharashtra website (no tribunal page); ThePrint, 8 Sep 2026 (secondary)",
+          "gap_since_year": 2011,
+          "gap_status": "Contested",
+          "gap_resolution_note": "Administrative fix: publish the constituting notification, bench list, procedure, orders, and caseload. Maintainers should replace this gap's status with Open or Addressed once the Maharashtra Gazette notification is located."
+        }
+      ],
+      "appellate_health": {
+        "de_jure_path": "Appeal from Adjudicating Officer (s.68) to the Tribunal (s.70(1)), then to the High Court (s.71(6)).",
+        "de_facto_operational": true,
+        "de_facto_note": "The Tribunal has decided appeals and sits district by district. Official Bombay High Court judgments record the \"Food Safety Appellate Tribunal, Yavatmal\" (respondent no. 8 in First Appeal No. 158 of 2016; it decided Appeal No. 2/2013 on 25 August 2014) and the \"Food Safety Appellate Tribunal, Buldhana\" (Appeal No. 1/2013, order dated 13 October 2016, taken to the High Court under s.71(6) in Appeal Against Order No. 19 of 2019, decided 9 May 2024). Time from Adjudicating Officer order to High Court decision in that matter: 14 May 2013 to 9 May 2024. It has no website, no published orders, and no published caseload. The Tribunal has no jurisdiction over licence suspension or cancellation orders under s.32, which go to the Commissioner of Food Safety instead.",
+        "de_facto_source": "State of Maharashtra FDA v Ruchi Soya Industries Ltd, Bombay HC, 8 Dec 2020; Tata Chemicals Ltd v State of Maharashtra, 2024:BHC-NAG:5692",
+        "workaround": "None needed for s.68 penalty orders. For s.32 licence orders the Tribunal is not available at all, and parties file writ petitions in the Bombay High Court after the Commissioner's final order."
+      }
+    },
+    {
+      "id": "mh_fss_adjudicating_officer",
+      "name": "Adjudicating Officers under the FSS Act, Maharashtra (Joint Commissioner (Food), FDA)",
+      "aliases": [
+        "Joint Commissioner (Food)-cum-Adjudicating Officer, FDA Maharashtra"
+      ],
+      "jurisdiction_scope": {
+        "states_covered": [
+          "MH"
+        ],
+        "is_all_india": false,
+        "jurisdiction_types": [
+          "Original",
+          "Regulatory"
+        ]
+      },
+      "name_hindi": null,
+      "abbreviation": "MH FSS AO",
+      "type": "RegulatoryBodyQJ",
+      "cluster": "regulatory_bodies",
+      "level_of_government": "State",
+      "created_year": 2011,
+      "abolished_year": null,
+      "operational_status": "Active",
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006 s.68 (Adjudicating Officer, not below the rank of Additional District Magistrate, notified by the State Government; imposes penalties under ss.50 to 58 after inquiry)",
+      "data_quality": "partial",
+      "data_quality_notes": "Statutory role verified against the Act text on India Code. Maharashtra cadre mapping from the Recruitment Rules 2022 as reproduced on LegitQuest, confirmed by the Bombay High Court's description of the first-tier authority in Tata Chemicals (2024, official PDF) and in Ruchi Soya (2020, appellant \"State of Maharashtra, FDA, Amravati, through Adjudicating Officer (Amravati Division)\"), and by the Commissioner's order of 28 July 2026, which places Joint Commissioners (Food) above the Designated Officers in the FDA reporting line. Modelled as one node for all Adjudicating Officers in the State. No case outcomes are recorded.",
+      "role_layer": null,
+      "role_type": null,
+      "nature": "institution",
+      "function": "quasi_judicial",
+      "is_generic_rollup": false,
+      "unverified_fields": [],
+      "derived": {
+        "discretionary_power_breakdown": {
+          "Base discretionary power for type RegulatoryBodyQJ": 3,
+          "Has removal authority over other entities": 1,
+          "No universal mandatory timeline for all decisions": 1
+        },
+        "discretionary_power_score": 5,
+        "independence_risk_breakdown": {
+          "All complaint mechanisms are internal (no external body)": 1,
+          "Appointed directly by executive body": 3,
+          "No defined timeframe for complaint resolution": 1,
+          "Removal by same authority that appoints (no independent committee)": 1
+        },
+        "independence_risk_level": "high",
+        "independence_risk_score": 6,
+        "scores_validated": false,
+        "structural_health_breakdown": {
+          "base_health_from_ir_dp": 0.53,
+          "discretionary_power_penalty": 0.35,
+          "final_structural_health": 0.53,
+          "independence_risk_penalty": 0.55,
+          "operational_status_modifier": 1.0
+        },
+        "structural_health_level": "at_risk",
+        "structural_health_score": 0.53
+      },
+      "value_history": {},
+      "funding_source": "State_Consolidated_Fund",
+      "funding_ministry": null,
+      "audited_by": "cag_india",
+      "audit_report_public": true,
+      "complaint_external_exists": false,
+      "appointment_criteria_public": true,
+      "reappointment_possible": false,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006 (India Code)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "State of Maharashtra (FDA, through Adjudicating Officer, Amravati Division) v Ruchi Soya Industries Ltd, First Appeal No. 158 of 2016, Bombay HC Nagpur Bench, 8 December 2020 (CNR HCBM040287702014) — official judgment PDF",
+          "url": "https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040287702014/2020-12-08/7?path=eyJpdiI6ImVleEdYOWNsMW52R3NkQWpicDJmQmc9PSIsInZhbHVlIjoiU0hmaVBRUk4zTXJLMk5hbFhCclpucGYwd3JRQ250S3NUdkFQOWRPRXI5K0J5Q3hWSHdNQkhjTWFKS2ljQk04SWJNUWhyUVF3M0Q2T3R5cFhhY1dVZkJCNmxEVTRmbU5BS2FiNW02bU14SkE9IiwibWFjIjoiODkwODA1ZDFmZTgyMDRiMDAzY2YwZjA1ZjhlZmJkNzYyNzAzNmUwMmMzMWQ3ZGYzMjhkZjQ3OThjNWU2MzgxMCIsInRhZyI6IiJ9",
+          "type": "HCJudgment",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Joint Commissioner (Food)-cum-Adjudicating Officer, Assistant Commissioner (Food)-cum-Designated Officer and Food Safety Officer in the Office of Commissioner Food and Drugs Administration (Recruitment) Rules, 2022, Government of Maharashtra",
+          "url": "https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Commissioner, FDA Maharashtra — Order No. FDA/Food/SchoolFoodSafety/967-2026 of 28 July 2026 (\"Safe Food for Every School Child in Maharashtra\"), issued under s.30 of the FSS Act and signed as Food Safety Commissioner",
+          "url": "https://cdnbbsr.s3waas.gov.in/s3e14d02262d6510598edccb6180462efd/uploads/2026/08/20260803812644221.pdf",
+          "type": "OfficialReport",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Tata Chemicals Ltd v State of Maharashtra, Appeal Against Order No. 19 of 2019, Bombay HC Nagpur Bench, 9 May 2024, 2024:BHC-NAG:5692 (CNR HCBM040036442017) — official judgment PDF",
+          "url": "https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040036442017/2024-05-09/29?path=eyJpdiI6IjBpNThmbUtuRER4bzJOR0UxSnpGcFE9PSIsInZhbHVlIjoicUhVMFBnYjFGWGtObFE4cGhtdmxIVW1hRkRKaEhnR081aWVIZXdnaUI5R25FS3lBL2RWNHp6QzZHMzZneStQbXNHWkVrbHFDNkxSSGxVNjg2cGV1UkZ0QjV5K2sxT3hBUVRzUE1YRGJHMEk9IiwibWFjIjoiNDFlNzZjZmRkZDg0ZDdhZjRmMzAxZDgxNWZkYjZlZjcxMzE4Y2NiNTBkMzg0OGZhMzY4OTEzMzBiNjM0ZGRiZCIsInRhZyI6IiJ9",
+          "type": "HCJudgment",
+          "accessed_date": "2026-09-24"
+        }
+      ],
+      "_detail": {
+        "appointment": {
+          "nominates": "mh_commissioner_food_safety",
+          "recommends": null,
+          "formally_appoints": "government_maharashtra",
+          "criteria_public": true,
+          "criteria_document_url": "https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E",
+          "tenure": "Civil service post. In Maharashtra the Adjudicating Officer is the Joint Commissioner (Food) of the FDA, a Group-A post filled by promotion from Assistant Commissioner (Food) (Recruitment Rules 2022). Rank requirement under s.68(1): not below Additional District Magistrate.",
+          "reappointment_possible": false,
+          "removal_authority": "government_maharashtra",
+          "removal_requires_parliament": false,
+          "removal_independent_committee": false
+        },
+        "funding": {
+          "primary_source": "State_Consolidated_Fund",
+          "ministry_responsible": null
+        },
+        "audit": {
+          "audited_by": "cag_india",
+          "audit_type": "CAG_Statutory",
+          "audit_report_public": true,
+          "conduct_oversight_body": "mh_commissioner_food_safety"
+        },
+        "complaint_mechanism": {
+          "bias_complaint_to": [
+            {
+              "body": "mh_fsat",
+              "mechanism": "Statutory appeal to the Food Safety Appellate Tribunal under s.70(1), then a further appeal to the High Court on fact or law under s.71(6) within 60 days. This is a full external appellate chain, unlike the s.32(4) route for licence orders.",
+              "complainant_has_locus": true,
+              "is_public_process": true,
+              "timeframe_defined": false,
+              "external_to_judiciary": false
+            }
+          ],
+          "criminal_prosecution": {
+            "requires_sanction_from": "mh_commissioner_food_safety",
+            "consultation_required_with": null,
+            "consultation_binding": null
+          },
+          "removal_mechanism": "Departmental discipline under Maharashtra civil service rules.",
+          "lokpal_jurisdiction": "Not_Applicable",
+          "lokayukta_jurisdiction": "Varies_by_State",
+          "source": "Food Safety and Standards Act 2006 s.68, s.70, s.71"
+        },
+        "training": null,
+        "digital_infrastructure": null,
+        "structural_variations": [],
+        "unverified_fields": [],
+        "jurisdiction_scope": {
+          "states_covered": [
+            "MH"
+          ],
+          "is_all_india": false,
+          "jurisdiction_types": [
+            "Original",
+            "Regulatory"
+          ]
+        },
+        "pecuniary_jurisdiction": null,
+        "report_publication": null,
+        "case_volume": null,
+        "judge_strength": null,
+        "parent_hc": null
+      },
+      "position": {
+        "x": 864,
+        "y": 444
+      },
+      "gap_flag": true,
+      "gap_count": 1,
+      "gaps": [
+        {
+          "gap_id": "mh_fss_ao_departmental_adjudicator",
+          "gap_type": "Independence_Gap",
+          "gap_severity": "Moderate",
+          "gap_description": "The Adjudicating Officer who decides penalty cases brought by Food Safety Officers of the FDA is himself an FDA officer (Joint Commissioner (Food)) under the Commissioner of Food Safety. The Bombay High Court records the first-tier order in Tata Chemicals as that of the \"Adjudicating Officer and Joint Commissioner, (Food), Food and Drug Administration, Amravati\", i.e. the divisional Joint Commissioner. Unlike the s.32(4) route, this tier is followed by an external tribunal (s.70) and a High Court appeal (s.71(6)).",
+          "gap_source": "Food Safety and Standards Act 2006 s.68(1); Maharashtra Recruitment Rules 2022; Tata Chemicals Ltd v State of Maharashtra, Appeal Against Order 19 of 2019, 2024:BHC-NAG:5692 (official PDF)",
+          "gap_since_year": 2011,
+          "gap_status": "Open",
+          "gap_resolution_note": "Indeterminate. s.68(1) requires only rank (ADM or above), not departmental independence."
+        }
+      ]
     }
   ],
   "relationships": [
@@ -164111,6 +164933,276 @@
           "url": "https://indiacode.nic.in/",
           "type": "GoIWebsite",
           "accessed_date": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_fda_do_appeal_cfs",
+      "source": "mh_fda_designated_officer",
+      "target": "mh_commissioner_food_safety",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.32(4) — appeal to the Commissioner of Food Safety, whose decision shall be final",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Only appeal against an improvement notice, refusal of an improvement certificate, or suspension, cancellation, or revocation of licence. Appeal window 15 days (s.32(5)). The appellate authority appoints the Designated Officer (s.36(1)) and heads the same department.",
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006, s.32 (Indian Kanoon)",
+          "url": "https://indiankanoon.org/doc/1292719/",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_cfs_appoints_do",
+      "source": "mh_commissioner_food_safety",
+      "target": "mh_fda_designated_officer",
+      "relationship_type": "FormallyAppoints",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.36(1) — the Commissioner of Food Safety shall, by order, appoint the Designated Officer",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "The power to appoint Designated Officers cannot be delegated (s.30(3)). Closes the loop with rel_mh_fda_do_appeal_cfs: the appellate authority is the appointing authority.",
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006 (India Code)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_cfs_supervises_do",
+      "source": "mh_commissioner_food_safety",
+      "target": "mh_fda_designated_officer",
+      "relationship_type": "AdministrativeSupervision",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.30(2)(d) — ensure efficient and uniform implementation; s.36(1) — Designated Officer in charge of food safety administration in the area specified",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006, s.30 (Indian Kanoon)",
+          "url": "https://indiankanoon.org/doc/934148/",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_cfs_writ_hc_bombay",
+      "source": "mh_commissioner_food_safety",
+      "target": "hc_bombay",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": false,
+      "is_constitutional": true,
+      "constitutional_basis": "Constitution of India, Article 226 — writ jurisdiction of the High Court",
+      "statutory_basis": null,
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Not a statutory appeal. s.32(4) makes the Commissioner's decision final, so the only route beyond the Commissioner is a writ petition. Recorded as an appellate-chain arc so the map shows where the s.32 stream ends.",
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006, s.32 (Indian Kanoon)",
+          "url": "https://indiankanoon.org/doc/1292719/",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_fss_ao_appeal_fsat",
+      "source": "mh_fss_adjudicating_officer",
+      "target": "mh_fsat",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.70(1) — Tribunal to hear appeals from the decisions of the Adjudicating Officer under s.68",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Penalty orders only. Licence suspension and cancellation orders under s.32 are outside the Tribunal's jurisdiction.",
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006 (India Code)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_fsat_appeal_hc_bombay",
+      "source": "mh_fsat",
+      "target": "hc_bombay",
+      "relationship_type": "AppealableTo",
+      "relationship_category": "appellate_chain",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.71(6) — appeal to the High Court within sixty days on any question of fact or law",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "Documented in practice: First Appeal 158 of 2016 (from FSAT Yavatmal, decided 8 Dec 2020) and Appeal Against Order 19 of 2019 (from FSAT Buldhana, decided 9 May 2024, 2024:BHC-NAG:5692) were both s.71(6) appeals from Tribunal orders, Bombay HC Nagpur Bench.",
+      "sources": [
+        {
+          "label": "State of Maharashtra (FDA) v Ruchi Soya Industries Ltd, First Appeal 158 of 2016, Bombay HC Nagpur Bench, 8 December 2020 (official PDF)",
+          "url": "https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040287702014/2020-12-08/7?path=eyJpdiI6ImVleEdYOWNsMW52R3NkQWpicDJmQmc9PSIsInZhbHVlIjoiU0hmaVBRUk4zTXJLMk5hbFhCclpucGYwd3JRQ250S3NUdkFQOWRPRXI5K0J5Q3hWSHdNQkhjTWFKS2ljQk04SWJNUWhyUVF3M0Q2T3R5cFhhY1dVZkJCNmxEVTRmbU5BS2FiNW02bU14SkE9IiwibWFjIjoiODkwODA1ZDFmZTgyMDRiMDAzY2YwZjA1ZjhlZmJkNzYyNzAzNmUwMmMzMWQ3ZGYzMjhkZjQ3OThjNWU2MzgxMCIsInRhZyI6IiJ9",
+          "type": "HCJudgment",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "label": "Tata Chemicals Ltd v State of Maharashtra, Appeal Against Order 19 of 2019, 2024:BHC-NAG:5692, 9 May 2024 (official PDF)",
+          "url": "https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040036442017/2024-05-09/29?path=eyJpdiI6IjBpNThmbUtuRER4bzJOR0UxSnpGcFE9PSIsInZhbHVlIjoicUhVMFBnYjFGWGtObFE4cGhtdmxIVW1hRkRKaEhnR081aWVIZXdnaUI5R25FS3lBL2RWNHp6QzZHMzZneStQbXNHWkVrbHFDNkxSSGxVNjg2cGV1UkZ0QjV5K2sxT3hBUVRzUE1YRGJHMEk9IiwibWFjIjoiNDFlNzZjZmRkZDg0ZDdhZjRmMzAxZDgxNWZkYjZlZjcxMzE4Y2NiNTBkMzg0OGZhMzY4OTEzMzBiNjM0ZGRiZCIsInRhZyI6IiJ9",
+          "type": "HCJudgment",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_gov_appoints_cfs",
+      "source": "government_maharashtra",
+      "target": "mh_commissioner_food_safety",
+      "relationship_type": "FormallyAppoints",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.30(1) — the State Government shall appoint the Commissioner of Food Safety for the State",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006, s.30 (Indian Kanoon)",
+          "url": "https://indiankanoon.org/doc/934148/",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_gov_notifies_ao",
+      "source": "government_maharashtra",
+      "target": "mh_fss_adjudicating_officer",
+      "relationship_type": "FormallyAppoints",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.68(1) — officer not below the rank of Additional District Magistrate notified by the State Government as Adjudicating Officer",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": null,
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006 (India Code)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_gov_appoints_fsat",
+      "source": "government_maharashtra",
+      "target": "mh_fsat",
+      "relationship_type": "FormallyAppoints",
+      "relationship_category": "appointment",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.70(1) and s.70(3) — State Government establishes the Tribunal and appoints its Presiding Officer by notification",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "contested",
+      "contested_note": "The Tribunal's existence is documented through Bombay High Court judgments, not through a located Maharashtra Gazette notification.",
+      "notes": "Constituting notification not yet located. See mh_fsat data_quality_notes.",
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006 (India Code)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_cfs_supervises_ao",
+      "source": "mh_commissioner_food_safety",
+      "target": "mh_fss_adjudicating_officer",
+      "relationship_type": "AdministrativeSupervision",
+      "relationship_category": "supervisory",
+      "is_binding": true,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Maharashtra Recruitment Rules 2022 — Joint Commissioner (Food)-cum-Adjudicating Officer is a post in the Office of the Commissioner, Food and Drugs Administration",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "The Adjudicating Officer is a departmental officer under the Commissioner, though appointed to the adjudicating role by State Government notification (s.68(1)).",
+      "sources": [
+        {
+          "label": "Joint Commissioner (Food)-cum-Adjudicating Officer, Assistant Commissioner (Food)-cum-Designated Officer and Food Safety Officer (Recruitment) Rules, 2022, Government of Maharashtra",
+          "url": "https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E",
+          "type": "GazetteNotification",
+          "accessed_date": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "id": "rel_mh_cfs_policy_fssai",
+      "source": "fssai",
+      "target": "mh_commissioner_food_safety",
+      "relationship_type": "PolicyOversight",
+      "relationship_category": "supervisory",
+      "is_binding": false,
+      "is_constitutional": false,
+      "constitutional_basis": null,
+      "statutory_basis": "Food Safety and Standards Act 2006, s.30(2)(b) and (d) — Commissioner ensures compliance with standards notified by the Food Authority; s.30(2)(f) — further functions prescribed by the State Government in consultation with the Food Authority",
+      "year_established": 2011,
+      "year_abolished": null,
+      "data_quality": "partial",
+      "contested_note": null,
+      "notes": "FSSAI sets standards and regulations. It does not hear appeals from state Commissioners.",
+      "sources": [
+        {
+          "label": "Food Safety and Standards Act 2006, s.30 (Indian Kanoon)",
+          "url": "https://indiankanoon.org/doc/934148/",
+          "type": "CentralAct",
+          "accessed_date": "2026-09-24"
         }
       ]
     },
@@ -186626,6 +187718,7 @@
         "mh_cdrc_mumbai",
         "mh_cdrc_nagpur",
         "mh_cdrc_pune",
+        "mh_fsat",
         "mh_industrial_tribunal",
         "mh_sat",
         "mh_slsa",
@@ -186780,6 +187873,9 @@
         "kerc",
         "lokpal_india",
         "merc",
+        "mh_commissioner_food_safety",
+        "mh_fda_designated_officer",
+        "mh_fss_adjudicating_officer",
         "mh_rera",
         "nhrc",
         "nmc",
@@ -187717,6 +188813,9 @@
         "kerc",
         "lokpal_india",
         "merc",
+        "mh_commissioner_food_safety",
+        "mh_fda_designated_officer",
+        "mh_fss_adjudicating_officer",
         "mh_rera",
         "nhrc",
         "nmc",
@@ -187949,6 +189048,7 @@
         "jk_sat",
         "kl_sat",
         "kl_vat_tribunal",
+        "mh_fsat",
         "mh_industrial_tribunal",
         "mh_sat",
         "mp_vat_tribunal",
@@ -190490,6 +191590,18 @@
       ],
       "{'is_all_india': True, 'jurisdiction_types': ['Special']}": [
         "enforcement_directorate"
+      ],
+      "{'states_covered': ['MH'], 'is_all_india': False, 'jurisdiction_types': ['Regulatory', 'Appellate', 'Supervisory']}": [
+        "mh_commissioner_food_safety"
+      ],
+      "{'states_covered': ['MH'], 'is_all_india': False, 'jurisdiction_types': ['Regulatory', 'Original']}": [
+        "mh_fda_designated_officer"
+      ],
+      "{'states_covered': ['MH'], 'is_all_india': False, 'jurisdiction_types': ['Appellate']}": [
+        "mh_fsat"
+      ],
+      "{'states_covered': ['MH'], 'is_all_india': False, 'jurisdiction_types': ['Original', 'Regulatory']}": [
+        "mh_fss_adjudicating_officer"
       ]
     }
   },

@@ -1,0 +1,148 @@
+# Hand-curated entity — Maharashtra food safety chain (FSS Act 2006).
+id: mh_fss_adjudicating_officer
+name: Adjudicating Officers under the FSS Act, Maharashtra (Joint Commissioner (Food), FDA)
+abbreviation: MH FSS AO
+aliases:
+  - Joint Commissioner (Food)-cum-Adjudicating Officer, FDA Maharashtra
+
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: State
+entity_scope: State
+legislature_status: full
+
+jurisdiction_scope:
+  states_covered:
+    - MH
+  is_all_india: false
+  jurisdiction_types:
+    - Original
+    - Regulatory
+
+created_year: 2011
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Food Safety and Standards Act 2006 s.68 (Adjudicating Officer, not below the
+  rank of Additional District Magistrate, notified by the State Government;
+  imposes penalties under ss.50 to 58 after inquiry)
+
+appointment:
+  nominates: mh_commissioner_food_safety
+  recommends: null
+  formally_appoints: government_maharashtra
+  criteria_public: true
+  criteria_document_url: https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E
+  tenure: >-
+    Civil service post. In Maharashtra the Adjudicating Officer is the Joint
+    Commissioner (Food) of the FDA, a Group-A post filled by promotion from
+    Assistant Commissioner (Food) (Recruitment Rules 2022). Rank requirement
+    under s.68(1): not below Additional District Magistrate.
+  reappointment_possible: false
+  removal_authority: government_maharashtra
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: mh_commissioner_food_safety
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: mh_fsat
+      mechanism: >-
+        Statutory appeal to the Food Safety Appellate Tribunal under s.70(1),
+        then a further appeal to the High Court on fact or law under s.71(6)
+        within 60 days. This is a full external appellate chain, unlike the
+        s.32(4) route for licence orders.
+      complainant_has_locus: true
+      is_public_process: true
+      timeframe_defined: false
+      external_to_judiciary: false
+  criminal_prosecution:
+    requires_sanction_from: mh_commissioner_food_safety
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: Departmental discipline under Maharashtra civil service rules.
+  lokpal_jurisdiction: Not_Applicable
+  lokayukta_jurisdiction: Varies_by_State
+  source: Food Safety and Standards Act 2006 s.68, s.70, s.71
+
+structural_gap:
+  flag: true
+  gaps:
+    - gap_id: mh_fss_ao_departmental_adjudicator
+      gap_type: Independence_Gap
+      gap_severity: Moderate
+      gap_description: >-
+        The Adjudicating Officer who decides penalty cases brought by Food
+        Safety Officers of the FDA is himself an FDA officer (Joint
+        Commissioner (Food)) under the Commissioner of Food Safety. The Bombay
+        High Court records the first-tier order in Tata Chemicals as that of
+        the "Adjudicating Officer and Joint Commissioner, (Food), Food and Drug
+        Administration, Amravati", i.e. the divisional Joint Commissioner.
+        Unlike the s.32(4) route, this tier is followed by an
+        external tribunal (s.70) and a High Court appeal (s.71(6)).
+      gap_source: >-
+        Food Safety and Standards Act 2006 s.68(1); Maharashtra Recruitment
+        Rules 2022; Tata Chemicals Ltd v State of Maharashtra, Appeal Against
+        Order 19 of 2019, 2024:BHC-NAG:5692 (official PDF)
+      gap_since_year: 2011
+      gap_status: Open
+      gap_resolution_note: >-
+        Indeterminate. s.68(1) requires only rank (ADM or above), not
+        departmental independence.
+
+data_quality: partial
+data_quality_notes: >-
+  Statutory role verified against the Act text on India Code. Maharashtra
+  cadre mapping from the Recruitment Rules 2022 as reproduced on LegitQuest,
+  confirmed by the Bombay High Court's description of the first-tier
+  authority in Tata Chemicals (2024, official PDF) and in Ruchi Soya (2020,
+  appellant "State of Maharashtra, FDA, Amravati, through Adjudicating
+  Officer (Amravati Division)"), and by the Commissioner's order of
+  28 July 2026, which places Joint Commissioners (Food) above the Designated
+  Officers in the FDA reporting line. Modelled as one node for all
+  Adjudicating Officers in the State. No case outcomes are recorded.
+
+sources:
+  - label: Food Safety and Standards Act 2006 (India Code)
+    url: https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf
+    type: CentralAct
+    accessed_date: '2026-09-24'
+  - label: >-
+      State of Maharashtra (FDA, through Adjudicating Officer, Amravati Division) v
+      Ruchi Soya Industries Ltd, First Appeal No. 158 of 2016, Bombay HC Nagpur
+      Bench, 8 December 2020 (CNR HCBM040287702014) — official judgment PDF
+    url: https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040287702014/2020-12-08/7?path=eyJpdiI6ImVleEdYOWNsMW52R3NkQWpicDJmQmc9PSIsInZhbHVlIjoiU0hmaVBRUk4zTXJLMk5hbFhCclpucGYwd3JRQ250S3NUdkFQOWRPRXI5K0J5Q3hWSHdNQkhjTWFKS2ljQk04SWJNUWhyUVF3M0Q2T3R5cFhhY1dVZkJCNmxEVTRmbU5BS2FiNW02bU14SkE9IiwibWFjIjoiODkwODA1ZDFmZTgyMDRiMDAzY2YwZjA1ZjhlZmJkNzYyNzAzNmUwMmMzMWQ3ZGYzMjhkZjQ3OThjNWU2MzgxMCIsInRhZyI6IiJ9
+    type: HCJudgment
+    accessed_date: '2026-09-24'
+  - label: >-
+      Joint Commissioner (Food)-cum-Adjudicating Officer, Assistant Commissioner
+      (Food)-cum-Designated Officer and Food Safety Officer in the Office of
+      Commissioner Food and Drugs Administration (Recruitment) Rules, 2022,
+      Government of Maharashtra
+    url: https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E
+    type: GazetteNotification
+    accessed_date: '2026-09-24'
+  - label: >-
+      Commissioner, FDA Maharashtra — Order No. FDA/Food/SchoolFoodSafety/967-2026
+      of 28 July 2026 ("Safe Food for Every School Child in Maharashtra"), issued
+      under s.30 of the FSS Act and signed as Food Safety Commissioner
+    url: https://cdnbbsr.s3waas.gov.in/s3e14d02262d6510598edccb6180462efd/uploads/2026/08/20260803812644221.pdf
+    type: OfficialReport
+    accessed_date: '2026-09-24'
+  - label: >-
+      Tata Chemicals Ltd v State of Maharashtra, Appeal Against Order No. 19 of
+      2019, Bombay HC Nagpur Bench, 9 May 2024, 2024:BHC-NAG:5692
+      (CNR HCBM040036442017) — official judgment PDF
+    url: https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040036442017/2024-05-09/29?path=eyJpdiI6IjBpNThmbUtuRER4bzJOR0UxSnpGcFE9PSIsInZhbHVlIjoicUhVMFBnYjFGWGtObFE4cGhtdmxIVW1hRkRKaEhnR081aWVIZXdnaUI5R25FS3lBL2RWNHp6QzZHMzZneStQbXNHWkVrbHFDNkxSSGxVNjg2cGV1UkZ0QjV5K2sxT3hBUVRzUE1YRGJHMEk9IiwibWFjIjoiNDFlNzZjZmRkZDg0ZDdhZjRmMzAxZDgxNWZkYjZlZjcxMzE4Y2NiNTBkMzg0OGZhMzY4OTEzMzBiNjM0ZGRiZCIsInRhZyI6IiJ9
+    type: HCJudgment
+    accessed_date: '2026-09-24'

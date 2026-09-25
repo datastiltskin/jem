@@ -68,8 +68,44 @@ export function entityHasGapContent(entity) {
     || entity.operational_status === 'Partial_Operational'
     || entity.operational_status === 'Not_Constituted'
     || entity.operational_status === 'De_Facto_Blocked'
-    || (entity.circularity_score ?? entity.derived?.circularity_score ?? 0) > 0,
+    || (entity.circularity_score ?? entity.derived?.circularity_score ?? 0) > 0
+    || extractCircularityLoops(entity).length > 0,
   );
+}
+
+/** Documented structural circularity loops (schema: structural_circularity.loops). */
+export function extractCircularityLoops(entity) {
+  const block = entity?.structural_circularity;
+  const loops = Array.isArray(block?.loops) ? block.loops : [];
+  return loops.filter((l) => l && typeof l === 'object');
+}
+
+function esc(v) {
+  return String(v ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
+}
+
+export function renderCircularityHTML(entity) {
+  const loops = extractCircularityLoops(entity);
+  if (!loops.length) return '';
+  let html = '<div class="gap-circ-block"><div class="gap-circ-title">⟳ Structural circularity</div><ul class="detail-gap-list">';
+  for (const l of loops) {
+    const type = esc(String(l.loop_type || 'loop').replace(/_/g, ' '));
+    const members = Array.isArray(l.entities_in_loop) ? l.entities_in_loop : [];
+    const chain = members.length
+      ? `<div class="gap-circ-chain">${members.map((id) => `<code>${esc(id)}</code>`).join(' → ')}${members.length > 1 ? ` → <code>${esc(members[0])}</code>` : ''}</div>`
+      : '';
+    html += `<li class="gap-item gap-circ-item">
+      <div class="gap-item-head">
+        <span class="gap-severity" style="color:#8e44ad">Loop</span>
+        <span class="gap-type">${type}</span>
+      </div>
+      ${chain}
+      ${l.description ? `<div class="gap-desc">${esc(l.description)}</div>` : ''}
+      ${l.source ? `<div class="gap-source">${esc(l.source)}</div>` : ''}
+    </li>`;
+  }
+  html += '</ul></div>';
+  return html;
 }
 
 export function renderGapListHTML(entity, { includeOperationalNote = true } = {}) {
@@ -83,11 +119,13 @@ export function renderGapListHTML(entity, { includeOperationalNote = true } = {}
     html += '<p class="gap-operational-note">Marked <strong class="gap-nc-label">Not Constituted</strong> — legislated or notified but not operational as a functioning body.</p>';
   }
 
+  const circHtml = renderCircularityHTML(entity);
+
   if (!entries.length) {
     if (entity.operational_status === 'Partial_Operational' || entity.operational_status === 'Not_Constituted') {
-      return `${html}<p class="detail-empty-hint">Status flagged in JEM; maintainer gap narrative pending primary-source citation.</p>`;
+      return `${html}${circHtml}<p class="detail-empty-hint">Status flagged in JEM; maintainer gap narrative pending primary-source citation.</p>`;
     }
-    return html;
+    return html + circHtml;
   }
 
   html += '<ul class="detail-gap-list">';
@@ -140,5 +178,5 @@ export function renderGapListHTML(entity, { includeOperationalNote = true } = {}
     </li>`;
   }
   html += '</ul>';
-  return html;
+  return html + circHtml;
 }
