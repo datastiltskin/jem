@@ -2,7 +2,7 @@
 # Judiciary Entity Map (India) - JEM
 # Entity Schema v0.1.0
 # License: CC0 (Public Domain)
-# Source of truth: india-code.nic.in, Constitution of India,
+# Source of truth: indiacode.nic.in, Constitution of India,
 #   official Government of India gazettes and acts.
 # ============================================================
 #
@@ -396,7 +396,7 @@ entity:
     required: true
     description: >
       At least one primary source required for data_quality: verified.
-      Primary sources: india-code.nic.in, official GoI gazette notifications,
+      Primary sources: indiacode.nic.in, official GoI gazette notifications,
       SC judgments on SCI website, doj.gov.in, ecommitteesci.gov.in.
     item_fields:
       label: string         # Short citation label

@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="https://www.derc.gov.in/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+  <title>Annual Reports | DELHI ELECTRICITY REGULATORY COMMISSION</title>
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+	
+   
+  <meta name="keywords" content="Delhi Electricity Regulatory Commission ">
+	<meta name="description" content="Delhi Electricity Regulatory Commission ">	
+	<meta name="lang" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <style>
+@import url("https://www.derc.gov.in/modules/system/system.base.css?tksir5");
+</style>
+<style>
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/jquery_update/replace/ui/themes/base/minified/jquery.ui.datepicker.min.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/date/date_popup/themes/jquery.timeentry.css?tksir5");
+</style>
+<style>
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/calendar/css/calendar_multiday.css?tksir5");
+@import url("https://www.derc.gov.in/modules/comment/comment.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/date/date_api/date.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/date/date_popup/themes/datepicker.1.7.css?tksir5");
+@import url("https://www.derc.gov.in/modules/field/theme/field.css?tksir5");
+@import url("https://www.derc.gov.in/modules/node/node.css?tksir5");
+@import url("https://www.derc.gov.in/modules/search/search.css?tksir5");
+@import url("https://www.derc.gov.in/modules/user/user.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/views/css/views.css?tksir5");
+</style>
+<style>
+@import url("https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/css/base.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/css/font.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/css/flexslider.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/css/base-responsive.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/css/custom-unee.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/cmf/content_statistic/css/content_statistic.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/ctools/css/ctools.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/lightbox2/css/lightbox.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/panels/css/panels.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/nice_menus/css/nice_menus.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/nice_menus/css/nice_menus_default.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/modules/contributed/responsive_menus/styles/meanMenu/meanmenu.min.css?tksir5");
+</style>
+<style>
+@import url("https://www.derc.gov.in/sites/all/themes/unee/css/site.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/themes/unee/css/site-responsive.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/themes/unee/css/bootstrap.min.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/themes/unee/css/font-awesome.min.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/themes/unee/css/font-awesome.css?tksir5");
+@import url("https://www.derc.gov.in/sites/all/themes/unee/css/jquery.bxslider.css?tksir5");
+</style>
+  <script src="https://www.derc.gov.in/sites/all/themes/unee/js/jquery-3.7.1.js?v=3.7.1"></script>
+<script src="https://www.derc.gov.in/misc/jquery-extend-3.4.0.js?v=3.7.1"></script>
+<script src="https://www.derc.gov.in/misc/jquery-html-prefilter-3.5.0-backport.js?v=3.7.1"></script>
+<script src="https://www.derc.gov.in/misc/jquery.once.js?v=1.2"></script>
+<script src="https://www.derc.gov.in/misc/drupal.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/jquery_update/js/jquery_browser.js?v=0.0.1"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/jquery_update/replace/ui/ui/minified/jquery.ui.datepicker.min.js?v=1.10.2"></script>
+<script src="https://www.derc.gov.in/misc/ui/jquery.ui.datepicker-1.13.0-backport.js?v=1.10.2"></script>
+<script src="https://www.derc.gov.in/modules/locale/locale.datepicker.js?v=1.10.2"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/date/date_popup/jquery.timeentry.pack.js?v=1.4.7"></script>
+<script src="https://www.derc.gov.in/sites/all/libraries/jquery.bgiframe/jquery.bgiframe.js?v=3.0.1"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/nice_menus/js/jquery.hoverIntent.js?v=0.5"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/nice_menus/js/superfish.js?v=1.4.8"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/nice_menus/js/nice_menus.js?v=1.0"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/admin_menu/admin_devel/admin_devel.js?tksir5"></script>
+<script>var base_url ="https://www.derc.gov.in"; var themePath = "sites/all/themes/unee"; var modulePath = "sites/all/modules/cmf/cmf_content";</script>
+<script src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/js/font-size.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/js/framework.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/js/swithcer.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/js/custom-unee.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/lightbox2/js/lightbox.js?1788667217"></script>
+<script>      // close script tag for SecKit protection
+      //--><!]]>
+      </script>
+      <script type="text/javascript" src="/sites/all/modules/contributed/seckit/js/seckit.document_write.js"></script>
+      <link type="text/css" rel="stylesheet" id="seckit-clickjacking-no-body" media="all" href="/sites/all/modules/contributed/seckit/css/seckit.no_body.css" />
+      <!-- stop SecKit protection -->
+      <noscript>
+      <link type="text/css" rel="stylesheet" id="seckit-clickjacking-noscript-tag" media="all" href="/sites/all/modules/contributed/seckit/css/seckit.noscript_tag.css" />
+      <div id="seckit-noscript-tag">
+        Sorry, you need to enable JavaScript to visit this website.
+      </div>
+      </noscript>
+      <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      // open script tag to avoid syntax errors</script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/date/date_popup/date_popup.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/responsive_menus/styles/meanMenu/jquery.meanmenu.min.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/modules/contributed/responsive_menus/styles/meanMenu/responsive_menus_mean_menu.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/themes/unee/js/jquery-migrate.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/themes/unee/js/jquery.flexslider.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/themes/unee/js/jquery.bxslider.min.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/themes/unee/js/bootstrap.bundle.min.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/themes/unee/js/custom.js?tksir5"></script>
+<script src="https://www.derc.gov.in/sites/all/themes/unee/js/jquery.marquee.js?tksir5"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"unee","theme_token":"V3u-OIZNWcPc40Hv8M3_k1wOle6HA84XnEuILeqo_W8","js":{"sites\/all\/themes\/unee\/js\/jquery-3.7.1.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contributed\/jquery_update\/js\/jquery_browser.js":1,"sites\/all\/modules\/contributed\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contributed\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.datepicker.min.js":1,"misc\/ui\/jquery.ui.datepicker-1.13.0-backport.js":1,"modules\/locale\/locale.datepicker.js":1,"sites\/all\/modules\/contributed\/date\/date_popup\/jquery.timeentry.pack.js":1,"sites\/all\/libraries\/jquery.bgiframe\/jquery.bgiframe.js":1,"sites\/all\/modules\/contributed\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/contributed\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/contributed\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/contributed\/admin_menu\/admin_devel\/admin_devel.js":1,"0":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/js\/font-size.js":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/js\/framework.js":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/js\/swithcer.js":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/js\/custom-unee.js":1,"sites\/all\/modules\/contributed\/lightbox2\/js\/lightbox.js":1,"1":1,"sites\/all\/modules\/contributed\/date\/date_popup\/date_popup.js":1,"sites\/all\/modules\/contributed\/responsive_menus\/styles\/meanMenu\/jquery.meanmenu.min.js":1,"sites\/all\/modules\/contributed\/responsive_menus\/styles\/meanMenu\/responsive_menus_mean_menu.js":1,"sites\/all\/themes\/unee\/js\/jquery-migrate.js":1,"sites\/all\/themes\/unee\/js\/jquery.flexslider.js":1,"sites\/all\/themes\/unee\/js\/jquery.bxslider.min.js":1,"sites\/all\/themes\/unee\/js\/bootstrap.bundle.min.js":1,"sites\/all\/themes\/unee\/js\/custom.js":1,"sites\/all\/themes\/unee\/js\/jquery.marquee.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.datepicker.css":1,"sites\/all\/modules\/contributed\/date\/date_popup\/themes\/jquery.timeentry.css":1,"sites\/all\/modules\/contributed\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contributed\/date\/date_api\/date.css":1,"sites\/all\/modules\/contributed\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contributed\/views\/css\/views.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/base.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/font.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/flexslider.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/base-responsive.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/font-awesome.min.css":1,"sites\/all\/modules\/cmf\/cmf_content\/assets\/css\/custom-unee.css":1,"sites\/all\/modules\/cmf\/content_statistic\/css\/content_statistic.css":1,"sites\/all\/modules\/contributed\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contributed\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/contributed\/panels\/css\/panels.css":1,"sites\/all\/modules\/contributed\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/contributed\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/modules\/contributed\/responsive_menus\/styles\/meanMenu\/meanmenu.min.css":1,"sites\/all\/themes\/unee\/system.menus.css":1,"sites\/all\/themes\/unee\/system.messages.css":1,"sites\/all\/themes\/unee\/system.theme.css":1,"sites\/all\/themes\/unee\/css\/site.css":1,"sites\/all\/themes\/unee\/css\/site-responsive.css":1,"sites\/all\/themes\/unee\/css\/bootstrap.min.css":1,"sites\/all\/themes\/unee\/css\/custom.css":1,"sites\/all\/themes\/unee\/css\/font-awesome.min.css":1,"sites\/all\/themes\/unee\/css\/font-awesome.css":1,"sites\/all\/themes\/unee\/css\/jquery.bxslider.css":1}},"encrypt_submissions":{"baseUrl":"https:\/\/www.derc.gov.in"},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/contributed\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":1,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":0},"jquery":{"ui":{"datepicker":{"isRTL":false,"firstDay":"0"}}},"datePopup":{"edit-field-date-value-min-datepicker-popup-0":{"func":"datepicker","settings":{"changeMonth":true,"changeYear":true,"autoPopUp":"focus","closeAtTop":false,"speed":"immediate","firstDay":0,"dateFormat":"dd\/mm\/yy","yearRange":"-60:+3","fromTo":false,"defaultDate":"0y"}},"edit-field-date-value-max-datepicker-popup-0":{"func":"datepicker","settings":{"changeMonth":true,"changeYear":true,"autoPopUp":"focus","closeAtTop":false,"speed":"immediate","firstDay":0,"dateFormat":"dd\/mm\/yy","yearRange":"-60:+3","fromTo":false,"defaultDate":"0y"}}},"urlIsAjaxTrusted":{"\/about-us\/reports\/annual-reports":true},"nice_menus_options":{"delay":"","speed":"fast"},"responsive_menus":[{"selectors":"#main-menu","container":"body","trigger_txt":"\u003Cspan \/\u003E\u003Cspan \/\u003E\u003Cspan \/\u003E","close_txt":"X","close_size":"18px","position":"right","media_size":"1024","show_children":"1","expand_children":"1","expand_txt":"+","contract_txt":"-","remove_attrs":"1","responsive_menus_style":"mean_menu"}]});</script>
+  
+  
+  <script type="text/javascript">
+        var fontSize = "100";
+  </script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-about-us page-about-us-reports page-about-us-reports-annual-reports i18n-en section-about-us page-views" >
+<noscript>
+"JavaScript is a standard programming language that is included to provide interactive features, Kindly enable Javascript in your browser. For details visit help page" 
+</noscript>
+    <!--Top-Header Section end-->
+<div id="fontSize">
+<section class="sec-one">
+  <div class="container-fluid top-header">
+    <div class="container">
+      <div class="row">
+    <div class="region region-header-top">
+    <div id="block-cmf-content-header-region-block" class="block block-cmf-content first last odd">
+
+      
+  <noscript class="no_scr">"JavaScript is a standard programming language that is included to provide interactive features, Kindly enable Javascript in your browser. For details visit help page"
+     </noscript><div class="wrapper common-wrapper">
+  <div class="container common-container ">
+      <div class="common-left clearfix">
+          <ul>
+              <li class="gov-india"></li><li class="ministry"></li></ul>
+
+        </div>
+        <div class="common-right clearfix">
+          <ul id="header-nav">
+              <li class="ico-skip"><a href="#skipCont" title="Skip to main content"><img src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-skip.png" alt="Skip to main content" /></a></li>
+<li class="ico-accessibility"><a href="javascript:void(0);" id="toggleAccessibility" title="Accessibility Drop Down">
+<img src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-accessibility.png" alt="Accessibility Drop Down" />
+</a>
+                  <ul>
+                     <li> <a onclick="set_font_size('increase')" title="Increase font size" href="javascript:void(0);">A<sup>+</sup></a> </li>
+                        <li> <a onclick="set_font_size()" title="Reset font size" href="javascript:void(0);">A<sup>&nbsp;</sup></a> </li>
+                        <li> <a onclick="set_font_size('decrease')" title="Decrease font size" href="javascript:void(0);">A<sup>-</sup></a> </li>
+        <li> <a href="javascript:void(0);" class="high-contrast dark" title="High Contrast">A</a> </li>
+       <li> <a href="javascript:void(0);" class="high-contrast light" title="Normal Contrast" style="display: none;">A</a> </li>
+                     
+                    </ul>
+                </li>
+                 <li class="ico-social"><a href="javascript:void(0);" id="toggleSocial" title="Social Medias"><img src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-social.png" alt="Social Media" /></a>
+                <ul> <li><a target="_blank" title="Facebook" href="#"><img alt="Facebook" src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-facebook.png"></a></li><li><a target="_blank" title="Twitter" href="#"><img alt="Twitter, External Link that opens in a new window" src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-twitter.png"></a></li></ul>
+                </li> <li class="ico-sitemap"><a href="https://www.derc.gov.in/site-map" title="Sitemap">
+                     <img src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/images/ico-sitemap.png" alt="Site Map" />
+                     </a></li> <li class="hindi cmf_lan"><a href="javascript:;" title="Click here to see the list of the Language">Language</a><div><ul><li><a target="_blank" href="https://www.derc.gov.in/hi/search/node/чай земляничный улун" class="alink" title="Click here to see हिन्दी (External site that opens in a new window).">हिन्दी</a></li></ul></div></li> </ul>
+        </div>
+    </div>
+</div>
+</div>
+  </div>
+	  </div>
+	 </div>
+	</div><!-- top header section closed -->
+      <!--Top-Header Section end-->
+  <!--section class="wrapper header-wrapper"-->
+	<div class="container-fluid">
+		<div class="row header-bar">
+			<div class="col-sm-8">
+				<!--<div class="logo-section"> 
+					<a href="" title="Delhi Electricity Regulatory Commission">
+					<img src="/sites/all/themes/unee/images/logo.png" alt="Delhi Electricity Regulatory Commission" title="Delhi Electricity Regulatory Commission">
+					<h1 class="logo"> <span></span> 
+					<span> </span> </h1>
+					</a> 
+				</div>-->
+				<div class="logo-section"> 
+					<a href="/" title="Delhi Electricity Regulatory Commission">
+					<img src="https://www.derc.gov.in/sites/all/themes/unee/images/vidyut.jpg" alt="Delhi Electricity Regulatory Commission" title="Delhi Electricity Regulatory Commission">
+					<!--<h1 class="logo"> <span></span> 
+					<span> </span> </h1>-->
+					</a> 
+				</div>
+				
+			</div>
+			<div class="col-sm-4 text-right">
+				<a href="https://gandhi.gov.in/" title="Gandhi 150"><img src="https://www.derc.gov.in/sites/all/themes/unee/images/gandhi-150.png" title="Gandhi 150" alt="Gandhi 150" class="gandhi-150"></a>				
+				<a href="https://www.india.gov.in/" title="emblem"><img src="https://www.derc.gov.in/sites/all/themes/unee/images/emblem-g.png" title="emblem" class="emblem"></a>
+			</div>
+		</div>
+	</div>
+
+  <!--/section-->
+	<!--Start code for Navigation-->
+	<div class="container-fluid navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <nav>
+		                  <div id="main-menu">
+                    					  <div class="region region-main-menu">
+    <div id="block-nice-menus-1" class="block block-nice-menus first last odd">
+
+      
+  <ul class="nice-menu nice-menu-down nice-menu-main-menu" id="nice-menu-1"><li class="menu__item menu-218 menu-path-dercgovin first odd "><a href="http://www.derc.gov.in" id="home1" class="menu__link">Home</a></li>
+<li class="menu__item menu-944 menuparent  menu-path-nolink active-trail  even "><a title="About Us" class="menu__link nolink">About Us</a><ul><li class="menu__item menu-3380 menu-path-about-us-profile-of-commission first odd "><a href="/about-us/profile-of-commission" title="Profile of the Commission" class="menu__link">Profile of the Commission</a></li>
+<li class="menu__item menu-3382 menu-path-node-104  even "><a href="/about-us/organization-structure" title="Organization Chart" class="menu__link">Organization Chart</a></li>
+<li class="menu__item menu-4087 menu-path-node-88019  odd "><a href="/about-us/function-derc" title="About DERC" class="menu__link">About DERC</a></li>
+<li class="menu__item menu-4646 menuparent  menu-path-nolink  even "><a title="State Advisory Committee" class="menu__link nolink">State Advisory Committee</a><ul><li class="menu__item menu-4647 menu-path-about-us-state-advisory-committee-minutes first odd "><a href="/about-us/state-advisory-committee/minutes" title="Minutes" class="menu__link">Minutes</a></li>
+<li class="menu__item menu-4648 menu-path-about-us-state-advisory-committee-notification  even last"><a href="/about-us/state-advisory-committee/notification" title="Notification" class="menu__link">Notification</a></li>
+</ul></li>
+<li class="menu__item menu-4638 menu-path-about-us-whos-who  odd "><a href="/about-us/whos-who" title="Who&#039;s Who" class="menu__link">Who&#039;s Who</a></li>
+<li class="menu__item menu-4091 menuparent  menu-path-nolink active-trail  even last"><a title="Reports" class="menu__link nolink">Reports</a><ul><li class="menu__item menu-4092 menu-path-about-us-reports-annual-reports active-trail first odd last"><a href="/about-us/reports/annual-reports" title="Annual Reports" class="menu__link active">Annual Reports</a></li>
+</ul></li>
+</ul></li>
+<li class="menu__item menu-3448 menuparent  menu-path-nolink  odd "><a title="Act/Rule/Policies" class="menu__link nolink">Act/Rule/Policies</a><ul><li class="menu__item menu-4094 menuparent  menu-path-nolink first odd "><a title="act" class="menu__link nolink">Act</a><ul><li class="menu__item menu-4204 menu-path-node-88147 first odd "><a href="/act-rule-policies/act/electricity-act-2003" title="Electricity Act 2003" class="menu__link">Electricity Act 2003</a></li>
+<li class="menu__item menu-4096 menu-path-node-88145  even last"><a href="/act-rule-policies/act/delhi-electricity-reforms-act-2000" title="DERA 2000" class="menu__link">DERA 2000</a></li>
+</ul></li>
+<li class="menu__item menu-4097 menu-path-act-rules-policies-rules  even "><a href="/act-rules-policies/rules" title="rules" class="menu__link">Rules</a></li>
+<li class="menu__item menu-4098 menu-path-act-rules-policies-policies  odd last"><a href="/act-rules-policies/policies" title="policies" class="menu__link">Policies</a></li>
+</ul></li>
+<li class="menu__item menu-3241 menuparent  menu-path-nolink  even "><a title="regulations" class="menu__link nolink">Regulations</a><ul><li class="menu__item menu-3366 menu-path-regulations-draft-regulations first odd "><a href="/regulations/draft-regulations" title="draft-regulations" class="menu__link">Draft Regulations</a></li>
+<li class="menu__item menu-3249 menu-path-regulations-derc-regulations  even "><a href="/regulations/derc-Regulations" title="Regulations" class="menu__link">Regulations</a></li>
+<li class="menu__item menu-4101 menu-path-regulations-repealed-regulations  odd last"><a href="/regulations/repealed-regulations" title="Repealed Regulations" class="menu__link">Repealed Regulations</a></li>
+</ul></li>
+<li class="menu__item menu-3245 menuparent  menu-path-nolink  odd "><a title="Notices" class="menu__link nolink">Notices</a><ul><li class="menu__item menu-4108 menu-path-notices-press-release first odd "><a href="/notices/press-release" title="Press Release" class="menu__link">Press Release</a></li>
+<li class="menu__item menu-4109 menu-path-notices-public-notice  even "><a href="/notices/public-notice" title="Public Notice" class="menu__link">Public Notice</a></li>
+<li class="menu__item menu-4110 menu-path-notices-statutory-advice  odd "><a href="/notices/statutory-advice" title="Statutory Advice" class="menu__link">Statutory Advice</a></li>
+<li class="menu__item menu-4106 menu-path-notices-gazette-notifications  even last"><a href="/notices/gazette-notifications" title="Gazette Notifications" class="menu__link">Gazette Notifications</a></li>
+</ul></li>
+<li class="menu__item menu-4111 menuparent  menu-path-nolink  even "><a title="Cause List" class="menu__link nolink">Cause List</a><ul><li class="menu__item menu-4533 menu-path-cause-list-daily first odd "><a href="/cause-list/daily" title="Daily" class="menu__link">Daily</a></li>
+<li class="menu__item menu-4535 menu-path-cause-list-monthly-provisional  even last"><a href="/cause-list/monthly-provisional" title="Monthly Provisional" class="menu__link">Monthly Provisional</a></li>
+</ul></li>
+<li class="menu__item menu-3447 menuparent  menu-path-nolink  odd "><a title="Commission&#039;s Proceedings &amp; Orders" class="menu__link nolink">Commission&#039;s Proceedings &amp; Orders</a><ul><li class="menu__item menu-4116 menuparent  menu-path-nolink first odd "><a title="Under Section 142" class="menu__link nolink">Under Section 142</a><ul><li class="menu__item menu-4117 menu-path-taxonomy-term-2337 first odd "><a href="/commissions-proceedings-orders/under-section-142/final-order" title="Final Order" class="menu__link">Final Order</a></li>
+<li class="menu__item menu-4120 menu-path-taxonomy-term-2339  even last"><a href="/commissions-proceedings-orders/under-section-142/interim-order" title="Interim Order" class="menu__link">Interim Order</a></li>
+</ul></li>
+<li class="menu__item menu-4119 menuparent  menu-path-nolink  even "><a title="Other Than 142" class="menu__link nolink">Other Than 142</a><ul><li class="menu__item menu-4118 menu-path-taxonomy-term-2338 first odd "><a href="/commissions-proceedings-orders/other-than-142/final-order" title="Final Order" class="menu__link">Final Order</a></li>
+<li class="menu__item menu-4121 menu-path-taxonomy-term-2340  even last"><a href="/commissions-proceedings-orders/other-than-142/interim-order" title="Interim Order" class="menu__link">Interim Order</a></li>
+</ul></li>
+<li class="menu__item menu-4531 menu-path-taxonomy-term-2379  odd last"><a href="/commissions-proceedings-orders/general-order" title="General Orders" class="menu__link">General Orders</a></li>
+</ul></li>
+<li class="menu__item menu-656 menu-path-rti  even "><a href="/rti" title="RTI" class="menu__link">RTI</a></li>
+<li class="menu__item menu-4122 menuparent  menu-path-nolink  odd "><a title="Consumer&#039;s Corner" class="menu__link nolink">Consumer&#039;s Corner</a><ul><li class="menu__item menu-4652 menu-path-taxonomy-term-2442 first odd "><a href="/consumers-corner/public-awareness-bulletins" title="Public Awareness Bulletins" class="menu__link">Public Awareness Bulletins</a></li>
+<li class="menu__item menu-4653 menu-path-taxonomy-term-2443  even "><a href="/consumers-corner/contact-list-oo-electricity-ombudsman" title="Contact list of O/o The Electricity Ombudsman" class="menu__link">Contact list of O/o The Electricity Ombudsman</a></li>
+<li class="menu__item menu-4654 menu-path-taxonomy-term-2444  odd "><a href="/consumers-corner/consumer-grievances-redressal-forum" title="Consumer Grievances Redressal Forum" class="menu__link">Consumer Grievances Redressal Forum</a></li>
+<li class="menu__item menu-4655 menu-path-consumers-corner-constitution-electricity-ombudsman-cgrfs  even "><a href="/consumers-corner/constitution-electricity-ombudsman-cgrfs" title="Constitution of Electricity Ombudsman &amp; the CGRFs" class="menu__link">Constitution of Electricity Ombudsman &amp; the CGRFs</a></li>
+<li class="menu__item menu-4656 menu-path-consumers-corner-complaint-handling-procedures  odd "><a href="/consumers-corner/complaint-handling-procedures" title="Complaint Handling Procedures" class="menu__link">Complaint Handling Procedures</a></li>
+<li class="menu__item menu-4657 menu-path-taxonomy-term-2447  even "><a href="/consumers-corner/disposal-grievances" class="menu__link">Disposal of Grievances</a></li>
+<li class="menu__item menu-4658 menu-path-taxonomy-term-2448  odd "><a href="/consumers-corner/consumer-satisfaction-survey" title="Consumer Satisfaction Survey" class="menu__link">Consumer Satisfaction Survey</a></li>
+<li class="menu__item menu-4659 menu-path-taxonomy-term-2449  even "><a href="/consumers-corner/minutes-monthly-meeting-gro" class="menu__link">Minutes of Monthly Meeting of GRO</a></li>
+<li class="menu__item menu-4660 menu-path-taxonomy-term-2450  odd last"><a href="/consumers-corner/general-notices" title="General Notices" class="menu__link">General Notices</a></li>
+</ul></li>
+<li class="menu__item menu-4644 menu-path-dercgovin-derc-petitionphp  even "><a href="http://derc.gov.in/derc/petition.php" title="e-Petitions" target="_self" class="menu__link">e-Petition</a></li>
+<li class="menu__item menu-4672 menuparent  menu-path-nolink  odd last"><a title="Supply Code &amp; Performance Standards" class="menu__link nolink">SC &amp; PS</a><ul><li class="menu__item menu-4685 menu-path-taxonomy-term-2451 first odd "><a href="/supply-code-%26-performance-standards/regulations" title="Regulations" class="menu__link">Regulations</a></li>
+<li class="menu__item menu-4686 menu-path-taxonomy-term-2452  even "><a href="/supply-code-%26-performance-standards/orders" title="Orders" class="menu__link">Orders</a></li>
+<li class="menu__item menu-4687 menu-path-taxonomy-term-2453  odd last"><a href="/supply-code-%26-performance-standards/clarifications" title="Clarifications" class="menu__link">Clarifications</a></li>
+</ul></li>
+</ul>
+
+</div>
+  </div>
+                </div>
+            		  </nav>
+		 </div>
+		</div>
+	</div>
+	</div>		
+ </section>
+    <!--Page Navigation End here-->
+	
+	<section class="wrapper banner-wrapper">
+	  <div class="region region-inner-banner">
+    <div id="block-block-11" class="block block-block first last odd">
+
+      
+  <img src="https://www.derc.gov.in/sites/default/files/uploadfiles/derc-innrbannr.jpg" alt="Inner Banner" title="derc">
+
+</div>
+  </div>
+	</section>
+	
+  <section class="wrapper breadcrumb-wrapper">
+  	<div class="container breadcrumb-container">
+    	            <div id="breadcrumb" class="breadcam clearfix">  <div class="region region-highlighted">
+    <div id="block-easy-breadcrumb-easy-breadcrumb" class="block block-easy-breadcrumb first last odd">
+
+      
+  <div class="easy-breadcrumb"><a href="/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">Home</a><span class="easy-breadcrumb_segment-separator"> ❯ </span><span class="easy-breadcrumb_segment easy-breadcrumb_segment-1">About Us</span><span class="easy-breadcrumb_segment-separator"> ❯ </span><span class="easy-breadcrumb_segment easy-breadcrumb_segment-2">Reports</span><span class="easy-breadcrumb_segment-separator"> ❯ </span><span class="easy-breadcrumb_segment easy-breadcrumb_segment-title">Annual Reports</span></div>
+</div>
+  </div>
+</div>
+              </div>
+  </section>
+  <div ></div>
+  <div id="skipCont" class="wrapper" ></div>
+  <div id="main2" class="wrapper" tabindex="0"></div>
+  <section  class="wrapper body-wrapper " id="fontSize" style="font-size: 100%;">
+    <div class="bg-wrapper inner-body-wrapper">
+      <div class="container body-container">
+          
+                              <div id="content" class="" role="main" >      
+            <a id="main-content" tabindex="0"></a>
+                                      <h1 class="heading" tabindex="0">Annual Reports</h1>
+                                                            
+                                    			<div tabindex="0">
+				
+
+
+<div class="view view-reports view-id-reports view-display-id-page view-dom-id-84c2d858efa3dfbc73c4994faf678f83">
+        
+      <div class="view-filters">
+      <form action="/about-us/reports/annual-reports" method="get" id="views-exposed-form-reports-page" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-title-wrapper" class="views-exposed-widget views-widget-filter-title">
+                  <label for="edit-title">
+            Title          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-title">
+ <input type="text" id="edit-title" name="title" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+              </div>
+          <div id="edit-field-date-value-wrapper" class="views-exposed-widget views-widget-filter-field_date_value">
+                        <div class="views-widget">
+          <div id="edit-field-date-value-min-wrapper"><div id="edit-field-date-value-min-inside-wrapper"><div  class="container-inline-date"><div class="form-item form-type-date-popup form-item-field-date-value-min">
+  <label for="edit-field-date-value-min">Start date </label>
+ <div id="edit-field-date-value-min"  class="date-padding"><div class="form-item form-type-textfield form-item-field-date-value-min-date">
+  <label class="element-invisible" for="edit-field-date-value-min-datepicker-popup-0">Date </label>
+ <input type="text" id="edit-field-date-value-min-datepicker-popup-0" name="field_date_value[min][date]" value="" size="20" maxlength="30" class="form-text" />
+<div class="description"> E.g., 06/09/2026</div>
+</div>
+</div>
+</div>
+</div></div></div><div id="edit-field-date-value-max-wrapper"><div id="edit-field-date-value-max-inside-wrapper"><div  class="container-inline-date"><div class="form-item form-type-date-popup form-item-field-date-value-max">
+  <label for="edit-field-date-value-max">End date </label>
+ <div id="edit-field-date-value-max"  class="date-padding"><div class="form-item form-type-textfield form-item-field-date-value-max-date">
+  <label class="element-invisible" for="edit-field-date-value-max-datepicker-popup-0">Date </label>
+ <input type="text" id="edit-field-date-value-max-datepicker-popup-0" name="field_date_value[max][date]" value="" size="20" maxlength="30" class="form-text" />
+<div class="description"> E.g., 06/09/2026</div>
+</div>
+</div>
+</div>
+</div></div></div>        </div>
+              </div>
+                  <div class="views-exposed-widget views-widget-per-page">
+        <div class="form-item form-type-select form-item-items-per-page">
+  <label for="edit-items-per-page">Items </label>
+ <select id="edit-items-per-page" name="items_per_page" class="form-select"><option value="5">5</option><option value="10" selected="selected">10</option><option value="20">20</option><option value="40">40</option><option value="50">50</option></select>
+</div>
+      </div>
+            <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-reports" value="Apply" class="form-submit" />    </div>
+      </div>
+</div>
+</div></form>    </div>
+  
+  
+      <div class="view-content">
+      <table class="views-table cols-4" >
+         <thead>
+      <tr>
+                  <th class="views-field views-field-counter"  scope="col">
+            S.No.          </th>
+                  <th class="views-field views-field-title"  scope="col">
+            Title          </th>
+                  <th class="views-field views-field-field-date"  scope="col">
+            Date          </th>
+                  <th class="views-field views-field-field-upload-attachement"  scope="col">
+            Details          </th>
+              </tr>
+    </thead>
+    <tbody>
+          <tr class="odd views-row-first">
+                  <td class="views-field views-field-counter" >
+            1          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report 2022-2023          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2024-07-05T00:00:00+05:30">05/07/2024</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/DERC%20Annual%20Report%2022-23.pdf" target="_blank">Download (25.23 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter" >
+            2          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report 2021-2022          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2024-07-05T00:00:00+05:30">05/07/2024</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/DERC%20Annual%20Report%202021-2022.pdf" target="_blank">Download (7.06 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter" >
+            3          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report 2020-2021          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2024-07-05T00:00:00+05:30">05/07/2024</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/DERC%20Annual%20Report%20%202020-21.pdf" target="_blank">Download (14.42 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter" >
+            4          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report 2019-2020          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2023-03-24T00:00:00+05:30">24/03/2023</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/Annual%20Report%202019-2020.pdf" target="_blank">Download (12.02 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter" >
+            5          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report (2018-19)          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2022-02-02T00:00:00+05:30">02/02/2022</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/Annual%20report2018-19.pdf" target="_blank">Download (60.66 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter" >
+            6          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report (2017-18)          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-10-03T00:00:00+05:30">03/10/2017</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/Annul-report_17-18.pdf" target="_blank">Download (6.9 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter" >
+            7          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report (2016-17)          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-01-01T00:00:00+05:30">01/01/2016</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/Annual%20Report16-17%20English.pdf" target="_blank">Download (10.77 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter" >
+            8          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report (2015-16)          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-01-01T00:00:00+05:30">01/01/2015</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/Annual%20Report%2015-16%20english_0.pdf" target="_blank">Download (33.37 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter" >
+            9          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report (2013-14)          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2013-01-01T00:00:00+05:30">01/01/2013</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/2013-14English.pdf" target="_blank">Download (8.47 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+          <tr class="even views-row-last">
+                  <td class="views-field views-field-counter" >
+            10          </td>
+                  <td class="views-field views-field-title" >
+            Annual Report (2012-13)          </td>
+                  <td class="views-field views-field-field-date" >
+            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2012-01-01T00:00:00+05:30">01/01/2012</span>          </td>
+                  <td class="views-field views-field-field-upload-attachement" >
+            <div class="item-list"><ul><li class="first last"><a href="https://www.derc.gov.in/sites/default/files/2012-13English.pdf" target="_blank">Download (9.88 MB) <img src='/sites/all/modules/cmf/cmf_utility/icons/application-pdf.png' width='16' height='16' alt='pdf' border='0'/></a></li>
+</ul></div>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a title="Go to page 2" href="/about-us/reports/annual-reports?page=1">2</a></li>
+<li class="pager-next"><a title="Go to next page" href="/about-us/reports/annual-reports?page=1">next ›</a></li>
+<li class="pager-last last"><a title="Go to last page" href="/about-us/reports/annual-reports?page=1">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>			</div>
+                    </div>
+
+          <div id="navigation">
+                      </div>
+
+                </div>
+    </div>
+  </section>
+  <footer id="footer" class="region region-footer">
+    <div id="block-cmf-content-footer-region-block" class="block block-cmf-content first odd">
+
+      
+  <div class="wrapper footer-wrapper">
+	<div class="footer-top-wrapper">
+    	<div class="container footer-top-container"><ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/feedback" title="feedback" class="menu__link">Feedback</a></li>
+<li class="menu__item is-leaf leaf"><a href="/terms-conditions" title="Terms &amp; Conditions" class="menu__link">Terms &amp; Conditions</a></li>
+<li class="menu__item is-leaf leaf"><a href="/basic-page/website-policy" title="Privacy Policy" class="menu__link">Privacy Policy</a></li>
+<li class="menu__item is-leaf leaf"><a href="/disclaimer" title="Disclaimer" class="menu__link">Disclaimer</a></li>
+<li class="menu__item is-leaf leaf"><a href="/help" title="Help" class="menu__link">Help</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://mail.gov.in/" title="Link to DERC Mail Account" target="_blank" class="menu__link">Link to DERC Mail Account</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/contactus" title="Contact Us" class="menu__link">Contact Us</a></li>
+</ul></div>
+    </div>
+    <div class="footer-bottom-wrapper">
+    	<div class="container footer-bottom-container">
+        	<div class="footer-content clearfix "><div class="copyright-content">
+            	Copyright © 2019. All Right Reserved by Delhi Electricity Regulatory Commission<span> Website is Designed, Developed and Content Managed by DERC</span>
+            <span class="lastupdated">Last Updated: 03 Sep 2026</span><span>Total Visitor[en]: 9165247</span></div><!--<div class="logo-cmf">
+            	<a href="#" target="_blank"><img src="https://www.derc.gov.in/sites/all/modules/cmf/cmf_content/assets/images/cmf-logo.png" alt="Content Management Framework"></a>
+            </div>-->
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="block-block-14" class="block block-block last even">
+
+      
+  <div class="stqc-logo" style=" position: absolute;right: 0;margin-top:-94px;margin-right: 107px;">
+<a title="STQC Certificate" href="http://www.derc.gov.in/sites/default/files/uploadfiles/STQC_DERC.pdf" target="_blank" role="link"><br /><img src="http://www.derc.gov.in/sites/default/files/uploadfiles/cqw_logo.png" alt="stqc logo" /></a>
+</div>
+
+</div>
+  </footer>
+</div>
+
+<div id="stop" class="scrollTop" ></div>
+<script type="text/javascript">
+	jQuery("label[for*='edit-field-year-value-min']").html('Start Year');
+	jQuery("label[for*='edit-field-year-value-max']").html('End Year');	
+		
+</script>  </body>
+</html>

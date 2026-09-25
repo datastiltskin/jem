@@ -6,6 +6,7 @@ aliases:
 - GST Appellate Tribunal Bench
 - GSTAT State Bench
 type: CentralTribunal
+is_generic_rollup: true
 cluster: tribunals_adr
 level_of_government: Central
 created_year: 2023
@@ -93,7 +94,7 @@ data_quality_notes: 'Generic scaffold only. GSTAT Principal Bench operational si
   stub attached'
 sources:
 - label: CGST Act 2017 s.109 — India Code
-  url: https://www.india-code.nic.in/CodeofActs/2017/2017_12.pdf
+  url: https://www.indiacode.nic.in/bitstream/123456789/15689/1/A2017-12.pdf
   type: CentralAct
   accessed_date: '2026-06-12'
 - label: CBIC — GSTAT information

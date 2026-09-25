@@ -25,13 +25,9 @@ complaint_mechanism:
 data_quality: partial
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   data_as_of: '2024-12-01'
   pending_cases: 42000
@@ -42,4 +38,5 @@ case_volume:
   source_type: AnnualReport
   disposal_rate: 0.8571
   clog_severity: high
-data_quality_notes: NJDG snapshot case_volume merged
+data_quality_notes: 'NJDG snapshot case_volume merged | verify-trib-01: NJDG source stamp
+  stripped (non-eCourts body).'

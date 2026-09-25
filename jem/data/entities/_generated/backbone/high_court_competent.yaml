@@ -13,6 +13,6 @@ data_quality_notes: Stub for graph connectivity; verify appointment/funding agai
   primary sources.
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-05-13'

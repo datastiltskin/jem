@@ -14,7 +14,8 @@ jurisdiction_scope:
   - Appellate
 created_year: 2016
 operational_status: Active
-statutory_basis: Companies Act 2013, Section 408; Insolvency and Bankruptcy Code 2016, Section 60
+statutory_basis: Companies Act 2013, Section 408; Insolvency and Bankruptcy Code 2016, Section
+  60
 appointment:
   nominates: central_government
   formally_appoints: central_government
@@ -22,7 +23,8 @@ appointment:
   - supreme_court_india
   consultation_binding: false
   criteria_public: true
-  tenure: 5 years or until age 67, whichever is earlier — Companies Act 2013, s.413(2) as amended by TRA 2021
+  tenure: 5 years or until age 67, whichever is earlier — Companies Act 2013, s.413(2) as
+    amended by TRA 2021
   reappointment_possible: false
   removal_authority: central_government
   removal_requires_parliament: false
@@ -35,32 +37,31 @@ audit:
   audit_type: CAG_Statutory
   audit_report_public: true
 data_quality: partial
-data_quality_notes: "created_year 2016 (operational); CA 2013 is statute date — maintainer policy. IBC 2016 s.60 significantly\
-  \ expanded NCLT jurisdiction post-2016. NCLAT (CA 2013 s.410) is a separate entity — not created here. ministry_responsible\
-  \ 'ministry_corporate_affairs' assumed — verify in graph. case_volume and judge_strength null — MCA NCLT portal in §3/§7.\n\
-  \ NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
+data_quality_notes: "created_year 2016 (operational); CA 2013 is statute date — maintainer\
+  \ policy. IBC 2016 s.60 significantly expanded NCLT jurisdiction post-2016. NCLAT (CA 2013\
+  \ s.410) is a separate entity — not created here. ministry_responsible 'ministry_corporate_affairs'\
+  \ assumed — verify in graph. case_volume and judge_strength null — MCA NCLT portal in §3/§7.\n\
+  \ NJDG snapshot case_volume merged v1.2 judge_strength stub attached | verify-trib-01: NJDG\
+  \ source stamp stripped (non-eCourts body). | verify-trib-01: pending_cases nulled (contamination);\
+  \ replacement held for expert review."
 sources:
 - label: Companies Act 2013 — Ministry of Corporate Affairs
   url: https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: Insolvency and Bankruptcy Code 2016 — India Code
-  url: https://india-code.nic.in/acts-detail/MjMxMDk=
+  url: https://www.indiacode.nic.in/bitstream/123456789/15479/1/the_insolvency_and_bankruptcy_code%2C_2016.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: Tribunals Reforms Act 2021 — India Code
-  url: https://india-code.nic.in/acts-detail/MjY5MzQ=
+  url: https://www.indiacode.nic.in/bitstream/123456789/16901/1/A2021-33.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   data_as_of: '2024-12-01'
   sanctioned_strength: 62
   working_strength: 45
-  pending_cases: 45000
+  pending_cases: null
   filed_last_year: 18000
   disposed_last_year: 14000
   avg_disposal_days: 547
@@ -75,3 +76,25 @@ judge_strength:
   source_type: Tribunal_Report
   source_url: https://nclt.gov.in/
   notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: unknown
+  report_type: annual_report
+  last_published_url: https://nclt.gov.in/sites/default/files/2026-02/AR%2024-25%20web_file.pdf
+  expected_cadence: annual
+  data_as_of: '2025-03-31'
+  source_type: AnnualReport
+  source_url: https://nclt.gov.in/sites/default/files/2026-02/AR%2024-25%20web_file.pdf
+  notes: 'NCLT publishes its own Annual Report on nclt.gov.in — verified live: "Annual Report
+    2024-25" (covering FY 2024-25, includes "From the Desk of the Hon''ble President" and
+    a performance overview) and the prior "Annual Report 2023-2024" (nclt.gov.in/sites/default/files/2026-02/AR23-24%20web_file.pdf,
+    also live). Both are hosted under a /2026-02/ upload path, suggesting a Feb 2026 site
+    refresh/re-upload of both editions rather than two closely-timed separate publications
+    — the document text itself does not carry an explicit publication/signing date, so last_published
+    is left null rather than guessed; data_as_of instead records the FY-2024-25 reporting
+    period end. Companies Act 2013 Ch. XXVII (NCLT/NCLAT provisions, ss.408-434) and IBC 2016
+    s.60 contain no annual-report-to-Parliament clause of the kind regulators have (cf. SEBI
+    Act s.18) — statutorily_required left unknown, not no.'
+unverified_fields:
+- field: case_volume.pending_cases
+  note: 'Figure withdrawn: no surviving primary after NJDG strip.'

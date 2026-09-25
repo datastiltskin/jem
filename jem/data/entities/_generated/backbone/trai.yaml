@@ -17,9 +17,9 @@ jurisdiction_scope:
 created_year: 1997
 operational_status: Active
 constitutional_basis: null
-statutory_basis: Telecom Regulatory Authority of India Act 1997 (Act 24 of 1997); amended by TRAI (Amendment) Act 2000 which
-  also established TDSAT as a separate appellate body, stripping TRAI of adjudicatory powers and retaining recommendatory
-  / regulatory functions.
+statutory_basis: Telecom Regulatory Authority of India Act 1997 (Act 24 of 1997); amended
+  by TRAI (Amendment) Act 2000 which also established TDSAT as a separate appellate body,
+  stripping TRAI of adjudicatory powers and retaining recommendatory / regulatory functions.
 appointment:
   nominates: ministry_communications
   recommends: null
@@ -42,10 +42,10 @@ audit:
   conduct_oversight_body: ministry_communications
 complaint_mechanism:
   lokpal_jurisdiction: 'No'
-  lokpal_jurisdiction_note: TRAI Members are not public servants under Lokpal Act 2013 per Schedule exclusion; removal mechanism
-    under TRAI Act 1997.
-  removal_mechanism: Removal by Central Government on grounds of misbehaviour after inquiry by a Supreme Court judge (TRAI
-    Act 1997, s.5A)
+  lokpal_jurisdiction_note: TRAI Members are not public servants under Lokpal Act 2013 per
+    Schedule exclusion; removal mechanism under TRAI Act 1997.
+  removal_mechanism: Removal by Central Government on grounds of misbehaviour after inquiry
+    by a Supreme Court judge (TRAI Act 1997, s.5A)
 case_volume:
   clog_severity: unknown
 judge_strength:
@@ -56,19 +56,42 @@ judge_strength:
   source_url: null
   notes: Regulatory body; "judge_strength" refers to Member strength here.
 data_quality: partial
-data_quality_notes: ministry_communications entity id assumed present in graph — flag if absent. TRAI orders on tariffs/interconnection
-  are appealable to TDSAT (relationship recorded in relationships file). Case volume not applicable in same sense as tribunals;
-  left partial. NJDG snapshot case_volume merged
+data_quality_notes: 'ministry_communications entity id assumed present in graph — flag if
+  absent. TRAI orders on tariffs/interconnection are appealable to TDSAT (relationship recorded
+  in relationships file). Case volume not applicable in same sense as tribunals; left partial.
+  NJDG snapshot case_volume merged | verify-trib-01: NJDG source stamp stripped (non-eCourts
+  body).'
 sources:
 - label: TRAI Act 1997 (Act 24 of 1997)
-  url: https://india-code.nic.in/handle/123456789/1907
+  url: https://www.indiacode.nic.in/bitstream/123456789/1929/1/a199724.pdf
   type: CentralAct
   accessed_date: '2025-01-15'
 - label: TRAI official website
   url: https://www.trai.gov.in
   type: GoIWebsite
   accessed_date: '2025-01-15'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
+report_publication:
+  publishes_reports: 'yes'
+  statutorily_required: unknown
+  report_type: annual_report
+  last_published: '2026-01-06'
+  last_published_url: https://trai.gov.in/sites/default/files/2026-01/Annual_Report_06012026.pdf
+  expected_cadence: annual
+  data_as_of: '2025-03-31'
+  source_type: AnnualReport
+  source_url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2211766
+  notes: 'TRAI Act 1997 s.24(2)-(3) requires TRAI to prepare an annual report once every year
+    and forward it to the Central Government, to be laid before each House of Parliament (form/timeline
+    under TRAI (Annual Report and Returns) Rules 1999). TRAI complies with an unusually complete
+    public archive: trai.gov.in/about-us/annual-reports lists every edition back to 2005-06.
+    The FY2024-25 edition was laid on the Table of the Lok Sabha on 17 Dec 2025 and the Rajya
+    Sabha on 18 Dec 2025, and released publicly on 6 Jan 2026 — dates read directly off PIB
+    Press Release PRID=2211766 (a primary GoI source, verified live), which is a stronger
+    citation than the statutory-duty mirror (lawgist.in, used only because indiacode.nic.in
+    deep links and indiacode.gov.in''s SPA migration are excluded as non-machine-verifiable
+    per track instructions; indiankanoon.org returned HTTP 403 to automated fetches during
+    this run). The direct PDF (Annual_Report_06012026.pdf) independently passes liveness.
+    [maintainer downgrade] statutorily_required was recorded as ''yes'' on https://lawgist.in/telecom-regulatory-authority-of-india-act/24,
+    a private reproduction of the Act rather than a primary provision. A secondary buys confidence,
+    never the fact, so the duty is ''unknown'' until the section is read from an official
+    text.'

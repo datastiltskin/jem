@@ -1,6 +1,7 @@
 id: sheriff_hc_generic
 name: High Court Sheriff (Generic)
 type: SecurityBody
+is_generic_rollup: true
 cluster: executive_interface
 level_of_government: State
 jurisdiction_scope:
@@ -20,6 +21,6 @@ complaint_mechanism:
 data_quality: partial
 sources:
 - label: India Code — Constitution & Acts
-  url: https://india-code.nic.in/
+  url: https://indiacode.nic.in/
   type: GoIWebsite
   accessed_date: '2026-06-12'

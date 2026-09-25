@@ -85,7 +85,7 @@ data_quality_notes: >-
 
 sources:
   - label: "SEBI Act 1992 (Act 15 of 1992)"
-    url: https://india-code.nic.in/handle/123456789/2080
+    url: https://indiacode.nic.in/handle/123456789/2080
     type: CentralAct
     accessed_date: "2025-01-15"
   - label: "SEBI official website"

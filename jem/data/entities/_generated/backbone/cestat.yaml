@@ -14,8 +14,8 @@ jurisdiction_scope:
   - Appellate
 created_year: 1982
 operational_status: Active
-statutory_basis: 'Customs Act 1962, Section 129; Central Excise Act 1944, Section 35B; Finance Act 1994, Section 86 (service
-  tax — now subsumed into GST)
+statutory_basis: 'Customs Act 1962, Section 129; Central Excise Act 1944, Section 35B; Finance
+  Act 1994, Section 86 (service tax — now subsumed into GST)
 
   '
 appointment:
@@ -38,15 +38,18 @@ audit:
   audit_type: CAG_Statutory
   audit_report_public: true
 data_quality: partial
-data_quality_notes: "created_year 1982 (CEGAT founding; entity continuity). Service tax jurisdiction added 2003; GST replaced\
-  \ service tax from 1 July 2017 but CESTAT retains jurisdiction over pre-GST disputes. Finance Act 1994 s.86 remains live\
-  \ for legacy service tax appeals. 9 locations: Principal Bench Delhi + 8 regional (Mumbai, Kolkata, Chennai, Bangalore,\
-  \ Ahmedabad, Allahabad, Chandigarh, Hyderabad — cestat.gov.in). Graph has 8 regional bench entities + principal.\
-  \ ministry_responsible 'ministry_of_finance' assumed — CBIC demand head; verify in graph.\
-  \ case_volume null — CESTAT Annual Report in §3/§7.\n NJDG snapshot case_volume merged v1.2 judge_strength stub attached"
+data_quality_notes: "created_year 1982 (CEGAT founding; entity continuity). Service tax jurisdiction\
+  \ added 2003; GST replaced service tax from 1 July 2017 but CESTAT retains jurisdiction\
+  \ over pre-GST disputes. Finance Act 1994 s.86 remains live for legacy service tax appeals.\
+  \ 9 locations: Principal Bench Delhi + 8 regional (Mumbai, Kolkata, Chennai, Bangalore,\
+  \ Ahmedabad, Allahabad, Chandigarh, Hyderabad — cestat.gov.in). Graph has 8 regional bench\
+  \ entities + principal. ministry_responsible 'ministry_of_finance' assumed — CBIC demand\
+  \ head; verify in graph. case_volume null — CESTAT Annual Report in §3/§7.\n NJDG snapshot\
+  \ case_volume merged v1.2 judge_strength stub attached | verify-trib-01: NJDG source stamp\
+  \ stripped (non-eCourts body)."
 sources:
 - label: Customs Act 1962 — CBIC
-  url: https://www.cbic.gov.in/resources//htdocs-cbec/customs/cs-act/formatted-htmls/cs-act.htm
+  url: https://www.indiacode.nic.in/bitstream/123456789/15359/1/the_customs_act%2C_1962.pdf
   type: GoIWebsite
   accessed_date: '2026-05-18'
 - label: CESTAT — About (9 bench locations)
@@ -54,17 +57,13 @@ sources:
   type: GoIWebsite
   accessed_date: '2026-06-17'
 - label: Tribunals Reforms Act 2021 — India Code
-  url: https://india-code.nic.in/acts-detail/MjY5MzQ=
+  url: https://www.indiacode.nic.in/bitstream/123456789/16901/1/A2021-33.pdf
   type: CentralAct
   accessed_date: '2026-05-18'
 - label: CESTAT — Official Website
   url: https://cestat.gov.in
   type: GoIWebsite
   accessed_date: '2026-05-18'
-- label: National Judicial Data Grid (NJDG)
-  url: https://njdg.ecourts.gov.in/
-  type: NJDG
-  accessed_date: '2024-12-01'
 case_volume:
   data_as_of: '2024-12-01'
   sanctioned_strength: 34
@@ -84,3 +83,20 @@ judge_strength:
   source_type: Tribunal_Report
   source_url: https://cestat.gov.in/
   notes: Member/chair strength from tribunal annual report or DoJ quarterly vacancy data.
+report_publication:
+  publishes_reports: 'no'
+  statutorily_required: unknown
+  data_as_of: '2026-09-01'
+  source_type: GoIWebsite
+  source_url: https://cestat.gov.in
+  notes: No annual report or consolidated activity report found after checking (1) cestat.gov.in
+    — no "Annual Report" or "Publications" page exists; the site's /openfile/ index only surfaces
+    internal monthly bench-wise pendency/disposal circulars (e.g. cestat.gov.in/openfile/2/8259,
+    dated Aug 2024) and consolidated monthly expenditure statements to Dept. of Revenue —
+    these are administrative memos incidentally web-indexed, not a public-facing report; (2)
+    CBIC / Department of Revenue, Ministry of Finance — no CESTAT-specific annual report found
+    on taxinformation.cbic.gov.in; (3) CAG audit reports — CAG Report No. 33 of 2025 audits
+    Dept. of Revenue's Duty Drawback Scheme, not a CESTAT institutional report. Statutory
+    basis (Customs Act 1962 ss.129/129A-129C; Central Excise Act 1944 s.35B) establishes CESTAT
+    and its procedure but contains no annual-report/ lay-before-Parliament clause analogous
+    to SEBI Act s.18 or TRAI Act s.24 — so statutorily_required is left unknown, not no.

@@ -32,10 +32,10 @@ data_quality_notes: >-
   scoring reduction. Assists AG; appears for Union in courts. ASGs share same status.
 sources:
   - label: Law Officers (Conditions of Service) Rules, 1987
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: GoIWebsite
     accessed_date: '2026-06-17'
   - label: Constitution of India — Article 76 (AG only; SG not mentioned)
-    url: https://india-code.nic.in/
+    url: https://indiacode.nic.in/
     type: Constitution
     accessed_date: '2026-06-17'

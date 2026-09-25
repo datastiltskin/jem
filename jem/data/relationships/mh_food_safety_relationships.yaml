@@ -1,0 +1,223 @@
+# Maharashtra food safety chain under the Food Safety and Standards Act 2006.
+# Two appellate streams from the same regulator:
+#   Stream A (licence orders, s.32): Designated Officer -> Commissioner of Food Safety (final) -> writ, Bombay HC
+#   Stream B (penalty orders, s.68): Adjudicating Officer -> Food Safety Appellate Tribunal -> Bombay HC (s.71(6))
+# Hand-curated. data_quality: partial unless stated.
+relationships:
+
+  # ── Stream A: licence suspension / cancellation ──────────────────────────
+  - id: rel_mh_fda_do_appeal_cfs
+    source: mh_fda_designated_officer
+    target: mh_commissioner_food_safety
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.32(4) — appeal to the Commissioner of Food Safety, whose decision shall be final"
+    year_established: 2011
+    notes: >-
+      Only appeal against an improvement notice, refusal of an improvement
+      certificate, or suspension, cancellation, or revocation of licence.
+      Appeal window 15 days (s.32(5)). The appellate authority appoints the
+      Designated Officer (s.36(1)) and heads the same department.
+    data_quality: partial
+    sources:
+      - label: Food Safety and Standards Act 2006, s.32 (Indian Kanoon)
+        url: https://indiankanoon.org/doc/1292719/
+        type: CentralAct
+        accessed_date: '2026-09-24'
+
+  - id: rel_mh_cfs_appoints_do
+    source: mh_commissioner_food_safety
+    target: mh_fda_designated_officer
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.36(1) — the Commissioner of Food Safety shall, by order, appoint the Designated Officer"
+    year_established: 2011
+    notes: >-
+      The power to appoint Designated Officers cannot be delegated (s.30(3)).
+      Closes the loop with rel_mh_fda_do_appeal_cfs: the appellate authority
+      is the appointing authority.
+    data_quality: partial
+    sources:
+      - label: Food Safety and Standards Act 2006 (India Code)
+        url: https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf
+        type: CentralAct
+        accessed_date: '2026-09-24'
+
+  - id: rel_mh_cfs_supervises_do
+    source: mh_commissioner_food_safety
+    target: mh_fda_designated_officer
+    relationship_type: AdministrativeSupervision
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.30(2)(d) — ensure efficient and uniform implementation; s.36(1) — Designated Officer in charge of food safety administration in the area specified"
+    year_established: 2011
+    data_quality: partial
+    sources:
+      - label: Food Safety and Standards Act 2006, s.30 (Indian Kanoon)
+        url: https://indiankanoon.org/doc/934148/
+        type: CentralAct
+        accessed_date: '2026-09-24'
+
+  - id: rel_mh_cfs_writ_hc_bombay
+    source: mh_commissioner_food_safety
+    target: hc_bombay
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: false
+    is_constitutional: true
+    constitutional_basis: "Constitution of India, Article 226 — writ jurisdiction of the High Court"
+    statutory_basis: null
+    year_established: 2011
+    notes: >-
+      Not a statutory appeal. s.32(4) makes the Commissioner's decision final,
+      so the only route beyond the Commissioner is a writ petition. Recorded
+      as an appellate-chain arc so the map shows where the s.32 stream ends.
+    data_quality: partial
+    sources:
+      - label: Food Safety and Standards Act 2006, s.32 (Indian Kanoon)
+        url: https://indiankanoon.org/doc/1292719/
+        type: CentralAct
+        accessed_date: '2026-09-24'
+
+  # ── Stream B: monetary penalties ─────────────────────────────────────────
+  - id: rel_mh_fss_ao_appeal_fsat
+    source: mh_fss_adjudicating_officer
+    target: mh_fsat
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.70(1) — Tribunal to hear appeals from the decisions of the Adjudicating Officer under s.68"
+    year_established: 2011
+    notes: >-
+      Penalty orders only. Licence suspension and cancellation orders under
+      s.32 are outside the Tribunal's jurisdiction.
+    data_quality: partial
+    sources:
+      - label: Food Safety and Standards Act 2006 (India Code)
+        url: https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf
+        type: CentralAct
+        accessed_date: '2026-09-24'
+
+  - id: rel_mh_fsat_appeal_hc_bombay
+    source: mh_fsat
+    target: hc_bombay
+    relationship_type: AppealableTo
+    relationship_category: appellate_chain
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.71(6) — appeal to the High Court within sixty days on any question of fact or law"
+    year_established: 2011
+    notes: >-
+      Documented in practice: First Appeal 158 of 2016 (from FSAT Yavatmal,
+      decided 8 Dec 2020) and Appeal Against Order 19 of 2019 (from FSAT
+      Buldhana, decided 9 May 2024, 2024:BHC-NAG:5692) were both s.71(6)
+      appeals from Tribunal orders, Bombay HC Nagpur Bench.
+    data_quality: partial
+    sources:
+      - label: State of Maharashtra (FDA) v Ruchi Soya Industries Ltd, First Appeal 158 of 2016, Bombay HC Nagpur Bench, 8 December 2020 (official PDF)
+        url: https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040287702014/2020-12-08/7?path=eyJpdiI6ImVleEdYOWNsMW52R3NkQWpicDJmQmc9PSIsInZhbHVlIjoiU0hmaVBRUk4zTXJLMk5hbFhCclpucGYwd3JRQ250S3NUdkFQOWRPRXI5K0J5Q3hWSHdNQkhjTWFKS2ljQk04SWJNUWhyUVF3M0Q2T3R5cFhhY1dVZkJCNmxEVTRmbU5BS2FiNW02bU14SkE9IiwibWFjIjoiODkwODA1ZDFmZTgyMDRiMDAzY2YwZjA1ZjhlZmJkNzYyNzAzNmUwMmMzMWQ3ZGYzMjhkZjQ3OThjNWU2MzgxMCIsInRhZyI6IiJ9
+        type: HCJudgment
+        accessed_date: '2026-09-24'
+      - label: Tata Chemicals Ltd v State of Maharashtra, Appeal Against Order 19 of 2019, 2024:BHC-NAG:5692, 9 May 2024 (official PDF)
+        url: https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040036442017/2024-05-09/29?path=eyJpdiI6IjBpNThmbUtuRER4bzJOR0UxSnpGcFE9PSIsInZhbHVlIjoicUhVMFBnYjFGWGtObFE4cGhtdmxIVW1hRkRKaEhnR081aWVIZXdnaUI5R25FS3lBL2RWNHp6QzZHMzZneStQbXNHWkVrbHFDNkxSSGxVNjg2cGV1UkZ0QjV5K2sxT3hBUVRzUE1YRGJHMEk9IiwibWFjIjoiNDFlNzZjZmRkZDg0ZDdhZjRmMzAxZDgxNWZkYjZlZjcxMzE4Y2NiNTBkMzg0OGZhMzY4OTEzMzBiNjM0ZGRiZCIsInRhZyI6IiJ9
+        type: HCJudgment
+        accessed_date: '2026-09-24'
+
+  # ── Appointment and supervision ──────────────────────────────────────────
+  - id: rel_mh_gov_appoints_cfs
+    source: government_maharashtra
+    target: mh_commissioner_food_safety
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.30(1) — the State Government shall appoint the Commissioner of Food Safety for the State"
+    year_established: 2011
+    data_quality: partial
+    sources:
+      - label: Food Safety and Standards Act 2006, s.30 (Indian Kanoon)
+        url: https://indiankanoon.org/doc/934148/
+        type: CentralAct
+        accessed_date: '2026-09-24'
+
+  - id: rel_mh_gov_notifies_ao
+    source: government_maharashtra
+    target: mh_fss_adjudicating_officer
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.68(1) — officer not below the rank of Additional District Magistrate notified by the State Government as Adjudicating Officer"
+    year_established: 2011
+    data_quality: partial
+    sources:
+      - label: Food Safety and Standards Act 2006 (India Code)
+        url: https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf
+        type: CentralAct
+        accessed_date: '2026-09-24'
+
+  - id: rel_mh_gov_appoints_fsat
+    source: government_maharashtra
+    target: mh_fsat
+    relationship_type: FormallyAppoints
+    relationship_category: appointment
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.70(1) and s.70(3) — State Government establishes the Tribunal and appoints its Presiding Officer by notification"
+    year_established: 2011
+    notes: Constituting notification not yet located. See mh_fsat data_quality_notes.
+    data_quality: contested
+    contested_note: >-
+      The Tribunal's existence is documented through Bombay High Court
+      judgments, not through a located Maharashtra Gazette notification.
+    sources:
+      - label: Food Safety and Standards Act 2006 (India Code)
+        url: https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf
+        type: CentralAct
+        accessed_date: '2026-09-24'
+
+  - id: rel_mh_cfs_supervises_ao
+    source: mh_commissioner_food_safety
+    target: mh_fss_adjudicating_officer
+    relationship_type: AdministrativeSupervision
+    relationship_category: supervisory
+    is_binding: true
+    is_constitutional: false
+    statutory_basis: "Maharashtra Recruitment Rules 2022 — Joint Commissioner (Food)-cum-Adjudicating Officer is a post in the Office of the Commissioner, Food and Drugs Administration"
+    year_established: 2011
+    notes: >-
+      The Adjudicating Officer is a departmental officer under the
+      Commissioner, though appointed to the adjudicating role by State
+      Government notification (s.68(1)).
+    data_quality: partial
+    sources:
+      - label: >-
+          Joint Commissioner (Food)-cum-Adjudicating Officer, Assistant Commissioner
+          (Food)-cum-Designated Officer and Food Safety Officer (Recruitment) Rules, 2022,
+          Government of Maharashtra
+        url: https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E
+        type: GazetteNotification
+        accessed_date: '2026-09-24'
+
+  - id: rel_mh_cfs_policy_fssai
+    source: fssai
+    target: mh_commissioner_food_safety
+    relationship_type: PolicyOversight
+    relationship_category: supervisory
+    is_binding: false
+    is_constitutional: false
+    statutory_basis: "Food Safety and Standards Act 2006, s.30(2)(b) and (d) — Commissioner ensures compliance with standards notified by the Food Authority; s.30(2)(f) — further functions prescribed by the State Government in consultation with the Food Authority"
+    year_established: 2011
+    notes: FSSAI sets standards and regulations. It does not hear appeals from state Commissioners.
+    data_quality: partial
+    sources:
+      - label: Food Safety and Standards Act 2006, s.30 (Indian Kanoon)
+        url: https://indiankanoon.org/doc/934148/
+        type: CentralAct
+        accessed_date: '2026-09-24'

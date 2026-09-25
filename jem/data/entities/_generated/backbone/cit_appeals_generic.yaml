@@ -7,6 +7,7 @@ aliases:
 - Joint Commissioner of Income Tax (Appeals)
 - JCIT(A)
 type: ExecutiveBody
+is_generic_rollup: true
 cluster: executive_interface
 level_of_government: Central
 created_year: 1974
@@ -121,11 +122,11 @@ data_quality_notes: >-
   Judge-strength concept not applicable — IRS officer posts sanctioned by CBDT/DoPT but not disaggregated publicly per CIT(A) unit.
 sources:
 - label: Income Tax Act 1961 s.246A — jurisdiction of CIT(A)
-  url: https://www.india-code.nic.in/CodeofActs/1961/1961_43.pdf
+  url: https://www.incometaxindia.gov.in/income-tax-act
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Finance Act 2023 — Joint CIT(A) introduction
-  url: https://www.india-code.nic.in/CodeofActs/2023/2023_08.pdf
+  url: https://indiankanoon.org/doc/39393385/
   type: CentralAct
   accessed_date: '2026-06-11'
 - label: Income Tax India — official portal
