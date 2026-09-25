@@ -1,0 +1,184 @@
+# Hand-curated entity — Maharashtra food safety chain (FSS Act 2006).
+id: mh_fsat
+name: Food Safety Appellate Tribunal, Maharashtra
+abbreviation: MH FSAT
+aliases:
+  - FSAT Maharashtra
+
+type: StateTribunal
+cluster: tribunals_adr
+level_of_government: State
+entity_scope: State
+legislature_status: full
+
+jurisdiction_scope:
+  states_covered:
+    - MH
+  is_all_india: false
+  jurisdiction_types:
+    - Appellate
+
+created_year: 2011
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Food Safety and Standards Act 2006 s.70 (State Government may establish by
+  notification; single Presiding Officer who is or has been a District Judge),
+  s.71 (procedure, powers of a civil court, appeal to High Court under s.71(6)
+  within 60 days), s.72 (civil court jurisdiction barred)
+
+appointment:
+  nominates: government_maharashtra
+  recommends: null
+  formally_appoints: government_maharashtra
+  criteria_public: true
+  tenure: >-
+    Presiding Officer must be, or have been, a District Judge (s.70(3)
+    proviso). Term, salary, resignation, and removal are prescribed by the
+    Central Government (s.70(4)).
+  reappointment_possible: false
+  removal_authority: central_government
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: null
+
+complaint_mechanism:
+  bias_complaint_to:
+    - body: hc_bombay
+      mechanism: >-
+        Statutory appeal to the High Court on any question of fact or law
+        within 60 days (s.71(6)), extendable by a further 60 days.
+      complainant_has_locus: true
+      is_public_process: true
+      timeframe_defined: true
+      timeframe_days: 60
+      external_to_judiciary: false
+  lokpal_jurisdiction: Not_Applicable
+  source: Food Safety and Standards Act 2006 s.71(6)
+
+appellate_health:
+  de_jure_path: >-
+    Appeal from Adjudicating Officer (s.68) to the Tribunal (s.70(1)), then to
+    the High Court (s.71(6)).
+  de_facto_operational: true
+  de_facto_note: >-
+    The Tribunal has decided appeals and sits district by district. Official
+    Bombay High Court judgments record the "Food Safety Appellate Tribunal,
+    Yavatmal" (respondent no. 8 in First Appeal No. 158 of 2016; it decided
+    Appeal No. 2/2013 on 25 August 2014) and the "Food Safety Appellate
+    Tribunal, Buldhana" (Appeal No. 1/2013, order dated 13 October 2016,
+    taken to the High Court under s.71(6) in Appeal Against Order No. 19 of
+    2019, decided 9 May 2024). Time from Adjudicating Officer order to High
+    Court decision in that matter: 14 May 2013 to 9 May 2024. It has no website, no published orders, and no published
+    caseload. The Tribunal has no jurisdiction over licence suspension or
+    cancellation orders under s.32, which go to the Commissioner of Food
+    Safety instead.
+  de_facto_source: >-
+    State of Maharashtra FDA v Ruchi Soya Industries Ltd, Bombay HC, 8 Dec 2020;
+    Tata Chemicals Ltd v State of Maharashtra, 2024:BHC-NAG:5692
+  workaround: >-
+    None needed for s.68 penalty orders. For s.32 licence orders the Tribunal
+    is not available at all, and parties file writ petitions in the Bombay
+    High Court after the Commissioner's final order.
+
+structural_gap:
+  flag: true
+  gaps:
+    - gap_id: mh_fsat_no_licence_jurisdiction
+      gap_type: Jurisdiction_Gap
+      gap_severity: High
+      gap_description: >-
+        s.70(1) confines the Tribunal to "appeals from the decisions of the
+        Adjudicating Officer under section 68", i.e. monetary penalties. Orders
+        that suspend or cancel a food licence (s.32) are outside its
+        jurisdiction and go to the Commissioner of Food Safety, whose decision
+        is final (s.32(4)). The forum with a District Judge and civil-court
+        powers handles the lighter sanction. The heavier sanction never
+        reaches it.
+      gap_source: Food Safety and Standards Act 2006 s.32(4), s.70(1)
+      gap_since_year: 2011
+      gap_status: Open
+      gap_resolution_note: >-
+        Legislative amendment to s.70(1) to include orders under s.32.
+    - gap_id: mh_fsat_no_public_footprint
+      gap_type: Data_Gap
+      gap_severity: High
+      gap_description: >-
+        No dedicated website, cause list, published orders, or caseload
+        figures. The Maharashtra Government notification constituting the
+        Tribunal and designating its Presiding Officer(s) has not been located
+        online (searched 24 September 2026). The Tribunal's existence and
+        activity are documented only indirectly, through official Bombay High
+        Court judgments on s.71(6) appeals, which name district-level
+        tribunals at Yavatmal and Buldhana. ThePrint (8 September 2026) reports
+        that FDA offices could not direct callers to the Tribunal and that
+        staff at FDA headquarters said its functions had been merged with
+        district consumer commissions. No official document supports the
+        merger claim. Compare the Rajasthan FSAT, which has a public website.
+      gap_source: >-
+        Bombay HC Nagpur Bench, First Appeal 158 of 2016 (8 Dec 2020) and
+        Appeal Against Order 19 of 2019, 2024:BHC-NAG:5692 (9 May 2024);
+        FDA Maharashtra website (no tribunal page); ThePrint, 8 Sep 2026
+        (secondary)
+      gap_since_year: 2011
+      gap_status: Contested
+      gap_resolution_note: >-
+        Administrative fix: publish the constituting notification, bench
+        list, procedure, orders, and caseload. Maintainers should replace this
+        gap's status with Open or Addressed once the Maharashtra Gazette
+        notification is located.
+
+data_quality: contested
+data_quality_notes: >-
+  Contested because the constituting notification under s.70(1) and the
+  Presiding Officer designations under s.70(3) have not been located. Search
+  trail (24 September 2026): the Maharashtra e-Gazette portal
+  (egazzete.mahaonline.gov.in) holds issues only from February 2015 onwards
+  and states that earlier gazettes exist only on paper at the Directorate of
+  Archives, Mumbai; the Government Resolutions portal (gr.maharashtra.gov.in)
+  searched for 1 August 2011 to 31 December 2013 returned 15 orders for
+  "न्यायाधिकरण" and 3 for "अन्न सुरक्षा", none concerning the Tribunal or
+  the Commissioner of Food Safety; the FDA Maharashtra notification archive
+  and two Gazette of India weekly issues (January 2025, January 2026) had no
+  entry. The
+  Tribunal's existence is established only through official Bombay High
+  Court judgments that record its orders (Yavatmal, Appeal 2/2013 decided
+  2014; Buldhana, Appeal 1/2013 decided 2016). created_year is the year the Act came
+  into force for these provisions (2011). The earliest documented appeal is
+  Appeal No. 2/2013. The claim that Tribunal functions were merged into
+  district consumer commissions is unverified and is recorded only as a
+  contested gap. No case outcomes are recorded.
+
+sources:
+  - label: Food Safety and Standards Act 2006 (India Code)
+    url: https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf
+    type: CentralAct
+    accessed_date: '2026-09-24'
+  - label: >-
+      State of Maharashtra (FDA, through Adjudicating Officer, Amravati Division) v
+      Ruchi Soya Industries Ltd, First Appeal No. 158 of 2016, Bombay HC Nagpur
+      Bench, 8 December 2020 (CNR HCBM040287702014) — official judgment PDF
+    url: https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040287702014/2020-12-08/7?path=eyJpdiI6ImVleEdYOWNsMW52R3NkQWpicDJmQmc9PSIsInZhbHVlIjoiU0hmaVBRUk4zTXJLMk5hbFhCclpucGYwd3JRQ250S3NUdkFQOWRPRXI5K0J5Q3hWSHdNQkhjTWFKS2ljQk04SWJNUWhyUVF3M0Q2T3R5cFhhY1dVZkJCNmxEVTRmbU5BS2FiNW02bU14SkE9IiwibWFjIjoiODkwODA1ZDFmZTgyMDRiMDAzY2YwZjA1ZjhlZmJkNzYyNzAzNmUwMmMzMWQ3ZGYzMjhkZjQ3OThjNWU2MzgxMCIsInRhZyI6IiJ9
+    type: HCJudgment
+    accessed_date: '2026-09-24'
+  - label: >-
+      Tata Chemicals Ltd v State of Maharashtra, Appeal Against Order No. 19 of
+      2019, Bombay HC Nagpur Bench, 9 May 2024, 2024:BHC-NAG:5692
+      (CNR HCBM040036442017) — official judgment PDF
+    url: https://bombayhighcourt.gov.in/bhc/judgments/order-pdf/HCBM040036442017/2024-05-09/29?path=eyJpdiI6IjBpNThmbUtuRER4bzJOR0UxSnpGcFE9PSIsInZhbHVlIjoicUhVMFBnYjFGWGtObFE4cGhtdmxIVW1hRkRKaEhnR081aWVIZXdnaUI5R25FS3lBL2RWNHp6QzZHMzZneStQbXNHWkVrbHFDNkxSSGxVNjg2cGV1UkZ0QjV5K2sxT3hBUVRzUE1YRGJHMEk9IiwibWFjIjoiNDFlNzZjZmRkZDg0ZDdhZjRmMzAxZDgxNWZkYjZlZjcxMzE4Y2NiNTBkMzg0OGZhMzY4OTEzMzBiNjM0ZGRiZCIsInRhZyI6IiJ9
+    type: HCJudgment
+    accessed_date: '2026-09-24'
+  - label: Food and Drug Administration, Maharashtra State — official website
+    url: https://fda.maharashtra.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-09-24'

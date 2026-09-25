@@ -654,6 +654,9 @@ def build_graph_json(
             fe["structural_exception"] = True
         if e.get("circularity_score") is not None:
             fe["circularity_score"] = e.get("circularity_score")
+        circ_block = e.get("structural_circularity")
+        if isinstance(circ_block, dict) and circ_block.get("loops"):
+            fe["structural_circularity"] = circ_block
         if e.get("appellate_health"):
             fe["appellate_health"] = e.get("appellate_health")
         if e.get("appellate_functional") is not None:

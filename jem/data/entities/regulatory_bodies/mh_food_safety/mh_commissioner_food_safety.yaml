@@ -1,0 +1,206 @@
+# Hand-curated entity — Maharashtra food safety chain (FSS Act 2006).
+# Sits outside data/entities/_generated so the state bundle generator cannot overwrite it.
+id: mh_commissioner_food_safety
+name: Commissioner of Food Safety, Maharashtra (Commissioner, Food and Drug Administration)
+abbreviation: MH CFS
+aliases:
+  - Maharashtra FDA Commissioner
+  - Commissioner, Food and Drug Administration, Maharashtra State
+
+type: RegulatoryBodyQJ
+cluster: regulatory_bodies
+level_of_government: State
+entity_scope: State
+legislature_status: full
+
+jurisdiction_scope:
+  states_covered:
+    - MH
+  is_all_india: false
+  jurisdiction_types:
+    - Regulatory
+    - Appellate
+    - Supervisory
+
+created_year: 2011
+operational_status: Active
+
+constitutional_basis: null
+statutory_basis: >-
+  Food Safety and Standards Act 2006 s.30 (appointment by State Government and
+  functions), s.31(8) (appeal against refusal of licence), s.32(4) (final
+  appellate authority over improvement notices and licence suspension,
+  cancellation, or revocation), s.36(1) (appoints Designated Officers),
+  s.30(2)(e) (sanctions prosecutions)
+
+appointment:
+  nominates: government_maharashtra
+  recommends: null
+  formally_appoints: government_maharashtra
+  criteria_public: false
+  criteria_document_url: null
+  tenure: >-
+    No statutory tenure. s.30(1) only says the State Government "shall appoint"
+    the Commissioner. In Maharashtra the post is held by the Commissioner, Food
+    and Drug Administration, an IAS posting made by executive order.
+  reappointment_possible: false
+  removal_authority: government_maharashtra
+  removal_requires_parliament: false
+  removal_independent_committee: false
+
+funding:
+  primary_source: State_Consolidated_Fund
+  ministry_responsible: null
+  state_funding_notes: >-
+    Food and Drug Administration, Maharashtra, is a department under the
+    Medical Education and Drugs Department, Government of Maharashtra.
+
+audit:
+  audited_by: cag_india
+  audit_type: CAG_Statutory
+  audit_report_public: true
+  conduct_oversight_body: government_maharashtra
+
+complaint_mechanism:
+  bias_complaint_to: []
+  criminal_prosecution:
+    requires_sanction_from: government_maharashtra
+    consultation_required_with: null
+    consultation_binding: null
+  removal_mechanism: >-
+    No statutory removal mechanism. The Commissioner is a State Government
+    appointee under s.30(1) and holds office at the State Government's pleasure.
+  lokpal_jurisdiction: Not_Applicable
+  lokayukta_jurisdiction: Varies_by_State
+  source: Food Safety and Standards Act 2006 s.30
+
+structural_circularity:
+  loops:
+    - loop_id: mh_fss_licence_appeal_loop
+      loop_type: Oversight_Subject
+      entities_in_loop:
+        - mh_fda_designated_officer
+        - mh_commissioner_food_safety
+      description: >-
+        A food business whose licence is suspended or cancelled by a Designated
+        Officer (s.32(2), s.32(3)) can appeal only to the Commissioner of Food
+        Safety (s.32(4)). The Commissioner appoints that Designated Officer
+        (s.36(1)), supervises food safety administration in the State (s.30(2)),
+        and heads the department whose officers passed the order. The
+        Commissioner's decision "shall be final" (s.32(4)). The appellate
+        authority, the appointing authority, and the enforcing department are
+        the same office.
+      source: Food Safety and Standards Act 2006 s.30(2), s.32(4), s.36(1)
+
+structural_gap:
+  flag: true
+  gaps:
+    - gap_id: mh_cfs_appeal_in_own_cause
+      gap_type: Independence_Gap
+      gap_severity: High
+      gap_description: >-
+        The only statutory challenge to a licence suspension, cancellation, or
+        improvement notice is an appeal to the Commissioner of Food Safety
+        (s.32(4)), whose decision is final. The Commissioner heads the
+        department that issued the order and appoints the officer who issued
+        it (s.36(1)). The Food Safety Appellate Tribunal (s.70) has no
+        jurisdiction over these orders: it hears appeals only from Adjudicating
+        Officer penalty orders under s.68. A business that loses before the
+        Commissioner has no statutory forum left and must file a writ petition
+        under Article 226.
+      gap_source: Food Safety and Standards Act 2006 s.32(4), s.36(1), s.70(1)
+      gap_since_year: 2011
+      gap_status: Open
+      gap_resolution_note: >-
+        Requires legislative amendment: delete the finality clause in s.32(4)
+        and extend the Food Safety Appellate Tribunal's jurisdiction under
+        s.70(1) to orders under s.32. No amendment bill located as of
+        September 2026.
+      gap_spillover:
+        - affected_body: hc_bombay
+          spillover_type: writ_load
+          metric_note: >-
+            Writ petitions under Article 226 are the only route past the
+            Commissioner. ThePrint (opinion, 8 September 2026) reports at least
+            16 reasoned Bombay High Court orders on Maharashtra FDA action in
+            mid-2026, all against the department, and cites the Commissioner's
+            own figure of 103 appeals filed against 165 suspensions. Secondary
+            source. Counts are not independently verified and no case outcome
+            is recorded in JEM.
+          source_url: https://theprint.in/opinion/maharashtra-fda-tukaram-mundhe-bombay-high-court/3036725/
+          source_label: ThePrint, "Maharashtra FDA is judge, jury and executioner" (8 Sep 2026)
+          data_as_of: '2026-09-08'
+          spillover_data_quality: partial
+    - gap_id: mh_cfs_no_appeal_statistics
+      gap_type: Data_Gap
+      gap_severity: Moderate
+      gap_description: >-
+        No published statistics on appeals decided by the Commissioner under
+        s.32(4): number filed, allowed, dismissed, or time to decision. The
+        FDA Maharashtra website carries no appellate page, cause list, or
+        orders (checked 24 September 2026). Quasi-judicial orders that are
+        "final" by statute are not publicly available.
+      gap_source: >-
+        Food and Drug Administration, Maharashtra, website (no appellate section
+        found); Food Safety and Standards Act 2006 s.32(4)
+      gap_since_year: 2011
+      gap_status: Open
+      gap_resolution_note: >-
+        Administrative fix, no legislation needed: publish s.32(4) orders and
+        monthly appeal statistics on the FDA website.
+
+data_quality: partial
+data_quality_notes: >-
+  Statutory structure (s.30, s.31, s.32, s.36) is verified against the Act
+  text on India Code. The identity of the Commissioner of Food Safety with
+  the Commissioner, FDA Maharashtra, is confirmed by the Commissioner's own
+  order of 28 July 2026, which recites that "Section 30(1) of the Act provides
+  for the appointment of the Commissioner of Food Safety for the State" and
+  is signed "Food Safety Commissioner, Food and Drug Administration,
+  Maharashtra State", and by the Maharashtra recruitment rules 2022. The
+  State Government notification appointing the Commissioner of Food Safety
+  under s.30(1) has not been located. FSSAI's Manual for Food Safety Officers
+  (2024) confirms the appeal route under s.31(8) and s.32(4)-(5) lies to the
+  Commissioner. Writ-load figures come from a secondary source (ThePrint,
+  8 September 2026) and are marked partial. No case outcomes are recorded.
+
+sources:
+  - label: Food Safety and Standards Act 2006 (India Code)
+    url: https://www.indiacode.nic.in/bitstream/123456789/7800/1/200634_food_safety_and_standards_act,_2006.pdf
+    type: CentralAct
+    accessed_date: '2026-09-24'
+  - label: Food Safety and Standards Act 2006, s.30 (Indian Kanoon)
+    url: https://indiankanoon.org/doc/934148/
+    type: CentralAct
+    accessed_date: '2026-09-24'
+  - label: Food Safety and Standards Act 2006, s.32 (Indian Kanoon)
+    url: https://indiankanoon.org/doc/1292719/
+    type: CentralAct
+    accessed_date: '2026-09-24'
+  - label: >-
+      Joint Commissioner (Food)-cum-Adjudicating Officer, Assistant Commissioner
+      (Food)-cum-Designated Officer and Food Safety Officer in the Office of
+      Commissioner Food and Drugs Administration (Recruitment) Rules, 2022,
+      Government of Maharashtra
+    url: https://www.legitquest.com/act/joint-commissioner-food-cum-adjudicating-officer-group-a-assistant-commissioner-food-cum-designated-officer-group-a-and-food-safety-officer-group-b/C78E
+    type: GazetteNotification
+    accessed_date: '2026-09-24'
+  - label: >-
+      Commissioner, FDA Maharashtra — Order No. FDA/Food/SchoolFoodSafety/967-2026
+      of 28 July 2026 ("Safe Food for Every School Child in Maharashtra"), issued
+      under s.30 of the FSS Act and signed as Food Safety Commissioner
+    url: https://cdnbbsr.s3waas.gov.in/s3e14d02262d6510598edccb6180462efd/uploads/2026/08/20260803812644221.pdf
+    type: OfficialReport
+    accessed_date: '2026-09-24'
+  - label: FSSAI, Manual for Food Safety Officers, 3rd edition (March 2024) — appeals under s.31(8) and s.32(4)-(5)
+    url: https://fssai.gov.in/upload/uploadfiles/files/7729566bb3f339ffbdFSO%20Manual%20final-8%20web.pdf
+    type: OfficialReport
+    accessed_date: '2026-09-24'
+  - label: Food and Drug Administration, Maharashtra State — official website
+    url: https://fda.maharashtra.gov.in/
+    type: GoIWebsite
+    accessed_date: '2026-09-24'
+  - label: Medical Education and Drugs Department, Government of Maharashtra — FDA page
+    url: https://medical.maharashtra.gov.in/en/food-drugs-administration-fda/
+    type: GoIWebsite
+    accessed_date: '2026-09-24'

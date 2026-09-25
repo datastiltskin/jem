@@ -576,7 +576,7 @@ export const State = {
       case 'blocked_or_absent': {
         // KPI card 3 — appellate vacuums + bodies legislated but never set up.
         const gapTypes = (entity.gaps || [])
-          .map(g => (g && typeof g === 'object' ? g.gap_type : null))
+          .map(g => (g && typeof g === 'object' ? String(g.gap_type || '').toLowerCase() : null))
           .filter(Boolean);
         return entity.operational_status === 'De_Facto_Blocked'
             || entity.operational_status === 'Not_Constituted'

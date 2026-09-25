@@ -1362,6 +1362,33 @@ body.jem-resizing-inspector * {
   font-size: 10px;
   opacity: 0.85;
 }
+.gap-circ-block {
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-left: 3px solid #8e44ad;
+  background: rgba(142, 68, 173, 0.06);
+  border-radius: 0 4px 4px 0;
+}
+.gap-circ-title {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8e44ad;
+  margin-bottom: 4px;
+}
+.gap-circ-chain {
+  font-size: 10px;
+  color: var(--text-primary);
+  margin: 2px 0 4px;
+  word-break: break-word;
+}
+.gap-circ-chain code {
+  font-size: 10px;
+  padding: 0 3px;
+  border-radius: 3px;
+  background: rgba(142, 68, 173, 0.12);
+}
 
 .clog-severity { font-weight: 600; text-transform: capitalize; }
 .clog-critical { color: #dc2626; }
